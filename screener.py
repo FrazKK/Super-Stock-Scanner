@@ -108,8 +108,18 @@ CORE_COLS = [
 OPTIONAL_COLS = [
     "SMA150", "price_earnings_ttm", "earnings_per_share_diluted_ttm",
     "earnings_per_share_diluted_yoy_growth_fq", "total_revenue_yoy_growth_fq",
-    "float_shares_outstanding", "sector", "industry",
+    "float_shares_outstanding", "sector", "industry", "typespecs",
 ]
+
+# Not operating companies: SPACs, funds, trusts, REITs, BDCs, units, preferreds
+EXCLUDE_NAME = re.compile(
+    r"\b(acquisition|spac|blank check|merger corp|investment company|fund|trust|reit|etf|etn|income|bdc|"
+    r"finance corp|capital corp|investment corp|lending|units?|warrants?|rights?|"
+    r"preferred|pref|notes?|debentures?|split corp|royalty)\b", re.I)
+EXCLUDE_TYPESPEC = {"reit", "etf", "etn", "fund", "closedend", "closed-end", "spac", "unit",
+                    "preferred", "trust", "right", "warrant"}
+EXCLUDE_INDUSTRY = re.compile(r"(real estate investment trusts|investment trusts|closed end|"
+                              r"financial conglomerates|investment managers)", re.I)
 
 
 def tv_scan(market: str) -> pd.DataFrame:
@@ -148,11 +158,31 @@ def tv_scan(market: str) -> pd.DataFrame:
     raise RuntimeError("TradingView scan failed")
 
 
+def is_excluded(row) -> bool:
+    name = str(row.get("description") or "")
+    tick = str(row.get("name") or "")
+    if EXCLUDE_NAME.search(name) or EXCLUDE_INDUSTRY.search(str(row.get("industry") or "")):
+        return True
+    if re.search(r"\.(UN|U|WT|PR\.?\w*|DB)$", tick, re.I):
+        return True
+    # SPAC shells: finance-sector "corps" parked near their $10 trust value
+    price = row.get("close")
+    if (str(row.get("sector") or "") == "Finance" and isinstance(price, (int, float))
+            and 9.5 <= price <= 11.5 and str(row.get("currency") or "") == "USD"
+            and re.search(r"(\b(I{1,3}|IV|VI{0,3}|\d+)\b|capital\d|treasury|financial ii)", name, re.I)):
+        return True
+    specs = row.get("typespecs")
+    if isinstance(specs, (list, tuple, np.ndarray)) and {str(x).lower() for x in specs} & EXCLUDE_TYPESPEC:
+        return True
+    return False
+
+
 def first_pass(df: pd.DataFrame, market: str) -> pd.DataFrame:
     cfg = MARKETS[market]
     d = df.copy()
     d = d[d["exchange"].astype(str).str.upper().isin(cfg["exchanges"]) | (len(cfg["exchanges"]) == 0)]
     d = d[d["close"].between(cfg["price_min"], cfg["price_max"])]
+    d = d[~d.apply(is_excluded, axis=1)]
     slow = d["SMA150"].where(d["SMA150"].notna(), d["SMA200"])
     d = d[(d["close"] > slow) & (d["SMA50"] > slow)]
     d = d[d["close"] >= 0.75 * d["price_52_week_high"]]
@@ -392,7 +422,7 @@ def build_row(rec, wk, s, ins, market) -> dict:
         "ticker": tick, "exchange": exch, "name": str(rec.get("description") or tick),
         "price": num(rec["close"]), "currency": cur,
         "mcap": num(rec.get("market_cap_basic")),
-        "sector": str(rec.get("sector") or ""),
+        "sector": str(rec.get("sector") or ""), "industry": str(rec.get("industry") or ""),
         "score": s["score"], "max_score": s["max_score"], "zone": s["zone"],
         "checks": s["checks"], "breakout": wk["breakout"],
         "dist_ma10": wk["dist_ma10"],
