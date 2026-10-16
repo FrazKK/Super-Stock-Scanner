@@ -131,6 +131,12 @@ HORIZONS = [4, 12, 26]         # weeks, for the track record
 
 ROOT = Path(__file__).resolve().parent
 
+# Holdings and alerts
+REPO = os.getenv("GITHUB_REPOSITORY", "FrazKK/Super-Stock-Scanner")
+BRANCH = "main"
+SITE = os.getenv("SITE_URL") or "https://frazkk.github.io/Super-Stock-Scanner/"
+WARN_BAND = {"stine": 0.03, "weinstein": 0.05, "minervini": 0.03, "episodic": 0.03, "other": 0.05}
+
 # ---------------------------------------------------------------------------
 # Helpers
 # ---------------------------------------------------------------------------
@@ -891,6 +897,272 @@ def summarise(ledger):
     return out
 
 
+
+# ---------------------------------------------------------------------------
+# Holdings: what you've bought, checked against each method's sell rule
+# ---------------------------------------------------------------------------
+
+STATUS_RANK = {"OK": 0, "WATCH": 1, "WARNING": 2, "SELL": 3, "ERROR": -1}
+
+
+def holding_path(market, ticker):
+    slug = re.sub(r"[^A-Za-z0-9]+", "-", str(ticker)).strip("-") or "stock"
+    return f"holdings/{market}-{slug}.json"
+
+
+def holding_template(card, today):
+    h = {
+        "ticker": card["ticker"], "exchange": card["exchange"], "market": card["market"],
+        "name": card["name"], "method": card["strategy"],
+        "bought": today, "price": round(card["entry_close"], 4),
+        "note": "Change price to what you paid (UK prices in pence). Delete this file when you sell.",
+    }
+    if card.get("stop") is not None:
+        h["stop"] = round(card["stop"], 4)
+    return json.dumps(h, indent=2)
+
+
+def gh_new_url(path, content):
+    from urllib.parse import quote
+    return (f"https://github.com/{REPO}/new/{BRANCH}?filename={quote(path)}&value={quote(content)}")
+
+
+def gh_edit_url(path):
+    return f"https://github.com/{REPO}/edit/{BRANCH}/{path}"
+
+
+def gh_delete_url(path):
+    return f"https://github.com/{REPO}/delete/{BRANCH}/{path}"
+
+
+def load_holdings(root: Path) -> list[dict]:
+    out = []
+    for f in sorted((root / "holdings").glob("*.json")):
+        rel = f"holdings/{f.name}"
+        try:
+            h = json.loads(f.read_text(encoding="utf-8"))
+            h["ticker"] = str(h["ticker"]).strip()
+            h["market"] = str(h.get("market") or "america").strip().lower()
+            if h["market"] not in MARKETS:
+                raise ValueError(f"market must be one of {', '.join(MARKETS)}")
+            h["exchange"] = str(h.get("exchange") or {"america": "NASDAQ", "canada": "TSX", "uk": "LSE"}[h["market"]]).upper()
+            h["method"] = str(h.get("method") or "other").lower()
+            if h["method"] not in STRATEGIES:
+                h["method"] = "other"
+            h["price"] = float(h["price"])
+            h["bought"] = str(h.get("bought") or dt.date.today().isoformat())[:10]
+            dt.date.fromisoformat(h["bought"])
+            h["ysym"] = h.get("yahoo") or yahoo_symbol(h["exchange"], h["ticker"])
+            h["file"] = rel
+            out.append(h)
+        except Exception as e:
+            out.append({"file": rel, "ticker": f.stem, "market": "america", "error": f"Couldn't read this file: {e}"})
+    return out
+
+
+def check_holding(h, d, today):
+    """Return status OK / WATCH / WARNING / SELL with a plain-English reason."""
+    st = {"file": h["file"], "ticker": h["ticker"], "market": h["market"], "name": h.get("name") or h["ticker"],
+          "method": h["method"], "paid": h["price"], "bought": h["bought"], "exchange": h["exchange"]}
+    if d is None or len(d) < 40:
+        st.update(status="ERROR", reason=f"No price data found for {h['ysym']}. Check the ticker and exchange.")
+        return st
+    c = d["Close"]
+    last = float(c.iloc[-1])
+    st.update(last=last, last_date=str(d.index[-1].date()), pl=last / h["price"] - 1)
+    t0 = pd.Timestamp(h["bought"])
+    m = h["method"]
+    band = WARN_BAND.get(m, 0.05)
+    if m in ("minervini", "episodic"):
+        stop = num(h.get("stop")) or h["price"] * (1 - MIN_STOP)
+        st["level"], st["level_name"] = stop, ("gap-day low" if m == "episodic" else "8% stop")
+        since = d.loc[d.index > t0]
+        hit = since[since["Low"] <= stop]
+        if not hit.empty:
+            st.update(status="SELL", reason=f"Hit the {st['level_name']} ({fmt_num(stop)}) on "
+                                             f"{hit.index[0].strftime('%d %b')}. The method says sell.")
+        elif last <= stop * (1 + band):
+            st.update(status="WARNING", reason=f"Within {band * 100:.0f}% of the {st['level_name']} ({fmt_num(stop)}).")
+        else:
+            st.update(status="OK", reason=f"{(last / stop - 1) * 100:.0f}% above the {st['level_name']}.")
+    else:
+        n = 10 if m == "stine" else 30
+        name = f"{n}-week MA"
+        w = to_weekly(d)
+        ma = w["Close"].rolling(n).mean()
+        complete = d.index[-1].weekday() == 4
+        k = -1 if complete else -2
+        wk_close, wk_ma, wk_date = float(w["Close"].iloc[k]), num(ma.iloc[k]), w.index[k]
+        cur_ma = num(ma.iloc[-1])
+        st["level"], st["level_name"] = cur_ma, name
+        if cur_ma is None:
+            st.update(status="ERROR", reason="Not enough price history to work out the moving average.")
+        elif wk_ma is not None and wk_close < wk_ma and wk_date >= t0:
+            st.update(status="SELL", reason=f"Week ending {wk_date.strftime('%d %b')} closed at {fmt_num(wk_close)}, "
+                                             f"below the {name} ({fmt_num(wk_ma)}). The method says sell.")
+        elif last < cur_ma:
+            st.update(status="WARNING", reason=f"Trading below the {name} ({fmt_num(cur_ma)}). "
+                                                f"Sell if the week closes below it.")
+        elif last <= cur_ma * (1 + band):
+            st.update(status="WATCH", reason=f"Within {band * 100:.0f}% of the {name} ({fmt_num(cur_ma)}).")
+        else:
+            st.update(status="OK", reason=f"{(last / cur_ma - 1) * 100:.0f}% above the {name} ({fmt_num(cur_ma)}).")
+    return st
+
+
+def choose_benches(prices):
+    out = {}
+    for m in MARKETS:
+        for b in MARKETS[m]["bench"]:
+            if b in prices and len(prices[b]) >= 200:
+                out[m] = b
+                break
+    return out
+
+
+def run_holdings(holdings, fetch_prices, today):
+    good = [h for h in holdings if "error" not in h]
+    syms = [h["ysym"] for h in good] + [b for m in MARKETS for b in MARKETS[m]["bench"]]
+    prices = fetch_prices(syms) if syms else {}
+    benches = choose_benches(prices)
+    markets = {m: market_check(b, to_weekly(prices[b])) for m, b in benches.items()}
+    rows = []
+    for h in holdings:
+        if "error" in h:
+            rows.append({"file": h["file"], "ticker": h["ticker"], "market": h["market"], "method": "other",
+                         "status": "ERROR", "reason": h["error"]})
+            continue
+        try:
+            rows.append(check_holding(h, prices.get(h["ysym"]), today))
+        except Exception as e:
+            rows.append({"file": h["file"], "ticker": h["ticker"], "market": h["market"], "method": h["method"],
+                         "status": "ERROR", "reason": f"Check failed: {e}"})
+    rows.sort(key=lambda r: STATUS_RANK.get(r["status"], 0), reverse=True)
+    return {"date": today.isoformat(), "holdings": rows, "markets": markets}
+
+
+# ---------------------------------------------------------------------------
+# Phone alerts via ntfy (free app, no account)
+# ---------------------------------------------------------------------------
+
+
+def push(title, message, priority=3, tags=""):
+    topic = os.getenv("NTFY_TOPIC")
+    if not topic:
+        print(f"[alert not sent, NTFY_TOPIC not set] {title}: {message}")
+        return False
+    import requests
+
+    try:
+        r = requests.post(f"https://ntfy.sh/{topic}", data=message.encode("utf-8"), timeout=20, headers={
+            "Title": title.encode("ascii", "ignore").decode(), "Priority": str(priority),
+            "Tags": tags, "Click": SITE})
+        r.raise_for_status()
+        print(f"[alert sent] {title}")
+        return True
+    except Exception as e:
+        print(f"[alert failed] {title}: {e}")
+        return False
+
+
+def send_alerts(hv, state: dict, digest: bool) -> dict:
+    new_state = {}
+    held_markets = {r["market"] for r in hv["holdings"]}
+    for r in hv["holdings"]:
+        key = r["file"]
+        prev = state.get(key)
+        cur = r["status"]
+        new_state[key] = cur
+        if f"watchping:{key}" in state:
+            new_state[f"watchping:{key}"] = state[f"watchping:{key}"]
+        label = f"{r['ticker']} ({MARKETS[r['market']]['label']})"
+        if prev is None:
+            if cur != "ERROR":
+                push(f"Now watching {label}", f"{STRATEGIES.get(r['method'], {}).get('short', 'Default')} sell rule. "
+                     f"Currently {cur}: {r['reason']}", 2, "eyes")
+            else:
+                push(f"Problem with {label}", r["reason"], 3, "warning")
+            continue
+        if cur == prev:
+            continue
+        if cur == "WATCH" and prev == "OK":
+            # avoid repeat pings when a price hovers around the watch band
+            last_ping = state.get(f"watchping:{key}")
+            if last_ping and (dt.date.fromisoformat(hv["date"]) - dt.date.fromisoformat(last_ping)).days < 7:
+                new_state[f"watchping:{key}"] = last_ping
+                continue
+            new_state[f"watchping:{key}"] = hv["date"]
+        if STATUS_RANK.get(cur, 0) > STATUS_RANK.get(prev, 0):
+            pri, tag = {"SELL": (5, "rotating_light"), "WARNING": (4, "warning"), "WATCH": (3, "eyes")}.get(cur, (3, ""))
+            push(f"{cur}: {label}", f"{r['reason']} Now {fmt_num(r.get('last'))}, {pct(r.get('pl'))} since you bought.", pri, tag)
+        elif cur == "ERROR":
+            push(f"Problem with {label}", r["reason"], 3, "warning")
+        elif prev in ("WARNING", "SELL") and cur != "ERROR":
+            push(f"Recovered to {cur}: {label}", r["reason"], 2, "white_check_mark")
+    for m, mc in hv["markets"].items():
+        key = f"market:{m}"
+        new_state[key] = mc["state"]
+        prev = state.get(key)
+        if m not in held_markets or prev is None or prev == mc["state"]:
+            continue
+        if mc["state"] == "down":
+            push(f"{MARKETS[m]['label']} market turned down", mc["text"] + " Consider tightening stops on your "
+                 f"{MARKETS[m]['label']} holdings.", 4, "chart_with_downwards_trend")
+        elif mc["state"] == "up":
+            push(f"{MARKETS[m]['label']} market back in an uptrend", mc["text"], 2, "chart_with_upwards_trend")
+    if digest:
+        rows = hv["holdings"]
+        if rows:
+            counts = {k: sum(1 for r in rows if r["status"] == k) for k in ("SELL", "WARNING", "WATCH", "OK", "ERROR")}
+            head = ", ".join(f"{v} {k.lower()}" for k, v in counts.items() if v)
+            lines = [f"{r['ticker']}: {r['status']} {pct(r.get('pl')) if r.get('pl') is not None else ''}" for r in rows]
+            push(f"Holdings check: {head}", "\n".join(lines), 3 if not counts["SELL"] else 4, "clipboard")
+        else:
+            push("Alerts are working", "No holdings yet. Tap 'I bought this' on a stock card to start tracking one.", 2, "white_check_mark")
+    return new_state
+
+
+def holdings_html(hv, demo=False):
+    add_tpl = json.dumps({"ticker": "ABC", "exchange": "LSE", "market": "uk", "method": "weinstein",
+                          "bought": dt.date.today().isoformat(), "price": 100.0,
+                          "note": "market: america, canada or uk. method: stine, weinstein, minervini, episodic or other. UK prices in pence."},
+                         indent=2)
+    add = (f'<a class="btn" href="{E(gh_new_url("holdings/new-stock.json", add_tpl))}" target="_blank" rel="noopener">'
+           'Add a stock by hand ↗</a>')
+    intro = ('<p class="blurb">Stocks you\'ve told the bot you bought. It checks each one against its method\'s sell rule '
+             'every weekday evening and every Saturday, and sends a phone alert when anything changes. '
+             'To add one, tap <b>I bought this</b> on its card. When you sell, tap <b>I sold it</b>.</p>')
+    if not hv or not hv.get("holdings"):
+        return intro + '<p class="empty">No holdings yet.</p>' + add
+    parts = [intro]
+    held = {r["market"] for r in hv["holdings"]}
+    for m in MARKETS:
+        if m in held and m in hv["markets"]:
+            parts.append(f'<div class="mk">{E(MARKETS[m]["label"])} market</div>' + banner(hv["markets"][m]))
+    cls = {"SELL": "h-sell", "WARNING": "h-warn", "WATCH": "h-watch", "OK": "h-ok", "ERROR": "h-err"}
+    for r in hv["holdings"]:
+        meth = STRATEGIES.get(r["method"], {}).get("short", "Default (30-week MA)")
+        money = ""
+        if r.get("last") is not None:
+            pl = r["pl"]
+            money = (f'<div class="hrow"><span>Paid {fmt_num(r["paid"])} on {dt.date.fromisoformat(r["bought"]).strftime("%d %b")}</span>'
+                     f'<b class="{"pos" if pl >= 0 else "neg"}">{fmt_num(r["last"])} ({pct(pl)})</b></div>')
+        lvl = ""
+        if r.get("level"):
+            gap = "" if r.get("last") is None else " (" + pct(r["level"] / r["last"] - 1, 0) + ")"
+            lvl = (f'<div class="hrow"><span>Sell level: {E(r["level_name"])}</span><b>{fmt_num(r["level"])}{gap}</b></div>')
+        links = ""
+        if not demo:
+            links = (f'<div class="links"><a href="{E(gh_delete_url(r["file"]))}" target="_blank" rel="noopener">I sold it ↗</a>'
+                     f'<a href="{E(gh_edit_url(r["file"]))}" target="_blank" rel="noopener">Edit ↗</a></div>')
+        parts.append(f'<div class="hold {cls.get(r["status"], "")}"><div class="hhead"><div><b>{E(r["ticker"])}</b> '
+                     f'<span class="ex">{E(MARKETS[r["market"]]["label"])} · {E(meth)}</span></div>'
+                     f'<span class="hst">{E(r["status"])}</span></div>'
+                     f'<div class="hreason">{E(r["reason"])}</div>{money}{lvl}{links}</div>')
+    parts.append(add)
+    return "".join(parts)
+
+
 # ---------------------------------------------------------------------------
 # Web page
 # ---------------------------------------------------------------------------
@@ -936,6 +1208,9 @@ def sparkline(r):
             f'<path d="{path(r["closes"])}" class="s-px"/></svg>')
 
 
+_PAGE: dict = {}
+
+
 def card_html(r, show_market=False):
     checks = "".join(
         f'<li class="{"ok" if c["pass"] else ("na" if c["pass"] is None else "no")}">'
@@ -950,6 +1225,11 @@ def card_html(r, show_market=False):
     mk = f' · {E(MARKETS[r["market"]]["label"])}' if show_market else ""
     strat = f'<span class="strat">{E(STRATEGIES[r["strategy"]]["short"])}</span>' if show_market else ""
     rs = f' · RS {r["rs_rank"]:.0f}' if r.get("rs_rank") is not None else ""
+    buy = ""
+    if _PAGE.get("date") and r.get("entry_close") and not _PAGE.get("demo"):
+        path = holding_path(r["market"], r["ticker"])
+        buy = (f'<a class="buy" href="{E(gh_new_url(path, holding_template(r, _PAGE["date"])))}" '
+               f'target="_blank" rel="noopener">I bought this ↗</a>')
     return f"""
 <details class="card">
   <summary>
@@ -966,6 +1246,7 @@ def card_html(r, show_market=False):
     {ins}{also}
     <div class="links"><a href="{E(r['chart_url'])}" target="_blank" rel="noopener">Weekly chart ↗</a>
       <a href="{E(r['insider_url'])}" target="_blank" rel="noopener">Insider filings ↗</a></div>
+    {buy}
   </div>
 </details>"""
 
@@ -1089,11 +1370,20 @@ table.picks{width:100%;border-collapse:collapse;font-size:13px;background:var(--
 .legend{color:var(--mute);font-size:12px;margin-top:18px;line-height:1.6}
 .legend i{display:inline-block;width:14px;height:2px;vertical-align:middle;margin-right:4px}
 footer{margin-top:20px;color:var(--mute);font-size:12px}
+.buy,.btn{display:inline-block;margin-top:10px;padding:8px 12px;border-radius:8px;background:var(--ink);color:var(--bg);font-weight:600;text-decoration:none;font-size:14px}
+.btn{margin-top:12px}
+.hold{background:var(--card);border:1px solid var(--line);border-left:5px solid var(--line);border-radius:12px;padding:12px;margin-bottom:8px}
+.hhead{display:flex;justify-content:space-between;align-items:center;gap:8px}.hst{font-size:12px;font-weight:700;padding:2px 8px;border-radius:99px;border:1px solid currentColor}
+.hreason{margin:8px 0;font-size:14px}.hrow{display:flex;justify-content:space-between;gap:10px;font-size:13px;padding:4px 0;border-top:1px dashed var(--line)}.hrow span{color:var(--mute)}
+.h-sell{border-left-color:var(--bad)}.h-sell .hst{color:var(--bad)}.h-warn{border-left-color:var(--warn)}.h-warn .hst{color:var(--warn)}
+.h-watch .hst{color:var(--acc)}.h-watch{border-left-color:var(--acc)}.h-ok{border-left-color:var(--good)}.h-ok .hst{color:var(--good)}.h-err .hst{color:var(--mute)}
 @media (max-width:420px){.spark{display:none}}
 """
 
 
-def render_page(results, ledger, summ, demo=False):
+def render_page(results, ledger, summ, demo=False, hv=None):
+    _PAGE.clear()
+    _PAGE.update(date=results["date"], demo=demo)
     tabs, secs = [], []
     first = True
     for m, data in results["markets"].items():
@@ -1139,6 +1429,15 @@ def render_page(results, ledger, summ, demo=False):
     secs.append(("resources", res_body))
     tabs.append(("track", "Track record"))
     secs.append(("track", track_html(ledger, summ, results["date"])))
+    hold_rows = (hv or {}).get("holdings") or []
+    alerts = sum(1 for r in hold_rows if r["status"] in ("SELL", "WARNING"))
+    mine = ("mine", f"My stocks ({len(hold_rows)})" + (" ⚠" if alerts else ""))
+    if hold_rows:
+        tabs.insert(0, mine)
+        secs.insert(0, ("mine", holdings_html(hv, demo)))
+    else:
+        tabs.append(mine)
+        secs.append(("mine", holdings_html(hv, demo)))
 
     nav = "".join(f'<button class="{"on" if i == 0 else ""}" data-t="{k}">{E(lbl)}</button>' for i, (k, lbl) in enumerate(tabs))
     main = "".join(f'<section id="{k}" class="{"on" if i == 0 else ""}">{b}</section>' for i, (k, b) in enumerate(secs))
@@ -1169,12 +1468,14 @@ try{{const t=localStorage.getItem('tab');t&&document.querySelector(`nav [data-t=
 </script></body></html>"""
 
 
-def write_outputs(results, ledger, docs: Path, demo=False):
+def write_outputs(results, ledger, docs: Path, demo=False, hv=None):
     (docs / "data").mkdir(parents=True, exist_ok=True)
     (docs / "history").mkdir(parents=True, exist_ok=True)
     summ = summarise(ledger)
-    page = render_page(results, ledger, summ, demo)
+    page = render_page(results, ledger, summ, demo, hv)
     (docs / "index.html").write_text(page, encoding="utf-8")
+    if hv is not None:
+        (docs / "data" / "holdings.json").write_text(json.dumps(hv, indent=1, default=jdefault), encoding="utf-8")
     slim = json.loads(json.dumps(results, default=jdefault))
     (docs / "data" / "latest.json").write_text(json.dumps(slim, indent=1), encoding="utf-8")
     (docs / "data" / "picks.json").write_text(json.dumps(ledger, indent=1, default=jdefault), encoding="utf-8")
@@ -1381,9 +1682,27 @@ def run_demo(weeks: int, docs: Path):
 # ---------------------------------------------------------------------------
 
 
+def load_json(path: Path, default):
+    try:
+        return json.loads(path.read_text(encoding="utf-8"))
+    except Exception:
+        return default
+
+
+def do_alerts(hv, docs: Path, scheduled_digest: bool):
+    manual = os.getenv("GITHUB_EVENT_NAME") == "workflow_dispatch"
+    sp = docs / "data" / "alert_state.json"
+    state = load_json(sp, {})
+    digest = manual or (scheduled_digest and bool(hv["holdings"]))
+    new_state = send_alerts(hv, state, digest)
+    sp.parent.mkdir(parents=True, exist_ok=True)
+    sp.write_text(json.dumps(new_state, indent=1), encoding="utf-8")
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--demo", action="store_true", help="simulated data, written to demo_docs/")
+    ap.add_argument("--holdings", action="store_true", help="only check holdings and send alerts (daily run)")
     ap.add_argument("--weeks", type=int, default=30, help="weeks to simulate in demo mode")
     ap.add_argument("--no-email", action="store_true")
     a = ap.parse_args()
@@ -1392,12 +1711,26 @@ def main():
         print(f"\nWrote {ROOT / 'demo_docs' / 'index.html'}")
         return
     docs = ROOT / "docs"
-    lp = docs / "data" / "picks.json"
-    ledger = json.loads(lp.read_text()) if lp.exists() else []
+    ledger = load_json(docs / "data" / "picks.json", [])
     today = dt.datetime.now(dt.timezone.utc).date()
+    holdings = load_holdings(ROOT)
+    print(f"{len(holdings)} holding(s) found")
+    if a.holdings:
+        hv = run_holdings(holdings, live_prices, today)
+        for r in hv["holdings"]:
+            print(f"  {r['ticker']}: {r['status']} - {r['reason']}")
+        res = load_json(docs / "data" / "latest.json", None)
+        if res and "markets" in res:
+            page = render_page(res, ledger, summarise(ledger), False, hv)
+            (docs / "index.html").write_text(page, encoding="utf-8")
+            (docs / "data" / "holdings.json").write_text(json.dumps(hv, indent=1, default=jdefault), encoding="utf-8")
+        do_alerts(hv, docs, scheduled_digest=False)
+        return
     res = run_pipeline(live_tv, live_prices, live_insiders, today, ledger)
-    summ = write_outputs(res, ledger, docs)
+    hv = run_holdings(holdings, live_prices, today)
+    summ = write_outputs(res, ledger, docs, hv=hv)
     print(f"\nWrote {docs / 'index.html'}  ({len(ledger)} picks in track record)")
+    do_alerts(hv, docs, scheduled_digest=True)
     if not a.no_email:
         try:
             send_email(res, summ)
