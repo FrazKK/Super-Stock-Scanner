@@ -1,0 +1,24 @@
+{
+ "date": "2026-10-16",
+ "holdings": [],
+ "markets": {
+  "america": {
+   "state": "down",
+   "text": "Downtrend: index below its 30-week MA. Most breakouts fail in weak markets, so go small or wait.",
+   "bench": "IWM",
+   "change_4w": -3.4
+  },
+  "canada": {
+   "state": "up",
+   "text": "Uptrend: index above a rising 30-week MA. Breakouts have the wind behind them.",
+   "bench": "XCS.TO",
+   "change_4w": -1.8
+  },
+  "uk": {
+   "state": "down",
+   "text": "Downtrend: index below its 30-week MA. Most breakouts fail in weak markets, so go small or wait.",
+   "bench": "^FTAI",
+   "change_4w": -3.0
+  }
+ }
+}
