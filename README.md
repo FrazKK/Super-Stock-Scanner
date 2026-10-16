@@ -1,67 +1,47 @@
-# Superstock Scanner
+# Superstock Scanner v2
 
-A free weekly screen of US, Canadian and UK stocks based on Jesse Stine's "Insider Buy Superstocks" checklist. Every Saturday morning GitHub runs the scan for you and updates a web page you can open on your phone. It can also email you a summary.
+A free weekly scan of US, Canadian and UK stocks. It runs four breakout methods side by side and keeps a track record, so you can see which method actually works before risking money on it. Every Saturday morning GitHub runs the scan and updates your page: https://frazkk.github.io/Super-Stock-Scanner/
 
-**Cost: £0.** It uses a free GitHub account, TradingView's public screener, Yahoo Finance and OpenInsider.
+## The four methods
 
-## What it checks
+| Method | Looks for | Needs earnings? | Sell rule used in the track record |
+|---|---|---|---|
+| **Stine superstocks** | Cheap, small, profitable stock breaking out of a 12-week base on 2.5x+ weekly volume, above a rising 30-week MA, within the last 8 weeks | Yes | Weekly close below the 10-week MA |
+| **Weinstein Stage 2** | Breakout above resistance on 2x+ volume after a flat "Stage 1" base, still above the 30-week MA | No | Weekly close below the 30-week MA |
+| **Minervini trend + VCP** | Passes all 8 Trend Template rules (incl. RS rank 70+), then a volatility contraction and a pivot breakout | Preferred | 8% stop below entry |
+| **Episodic pivots** | Gapped up 10%+ on 3x+ volume this week and still holding the gap | No | Below the gap-day low |
 
-| Check | Points |
-|---|---|
-| Price above a rising 30-week MA, 10-week MA above the 30-week | 2 |
-| Steep 30-week MA (up 3%+ in 4 weeks) | 1 |
-| Breakout from a 12-week base on 2.5x+ normal weekly volume (last 3 weeks) | 2 |
-| Biggest weekly volume in 6 months | 1 |
-| Tight base (under 40% high-to-low range) | 1 |
-| EPS growth over 25% | 1 |
-| P/E under 20 | 1 |
-| Float under 30M shares | 1 |
-| Insider buying in the last 90 days (US only, automatic) | 2 |
+Each stock card shows its checklist, the entry idea, the sell rule and links to the weekly chart and insider filings.
 
-Each stock is also labelled by where it sits relative to the 10-week MA (Stine's "magic line"): **Near magic line** (low-risk entry zone), **Extended** (wait for a pullback), and so on.
+## What's on the page
 
-Before scoring, stocks must pass these filters: price US $2–15, Canada C$0.50–15, UK 5p–1500p; market cap roughly 10m–1bn; decent volume; and above their 50-day and 150-day averages. Loss-making companies are excluded when earnings data exists.
+- **USA / Canada / UK tabs**: a market-trend banner (is the index above a rising 30-week MA?), then each method's picks. A **NEW** badge marks stocks that method hasn't flagged in the last 8 weeks. "Watching" lists strong Stine candidates that haven't broken out yet.
+- **Resources tab**: every pick in mining and oil & gas across all three markets.
+- **Track record tab**: each week the top 10 new picks per method and market are recorded at the Friday close. Their returns are then measured after 4, 12 and 26 weeks against the market's index (Russell 2000 for the US, TSX SmallCap for Canada, FTSE AIM All-Share for the UK, with fallbacks). Results are shown both as buy and hold and with each method's sell rule. Minervini "trend only" names are shown but not recorded, because Minervini only buys at a VCP or pivot.
 
-All the thresholds are in the **SETTINGS** block at the top of `screener.py`.
+Give the track record at least 3 months before drawing conclusions. A handful of picks proves nothing.
 
-## One-time setup (about 10 minutes, all in a web browser)
+## Tuning
 
-1. **Create a GitHub account** at github.com if you don't have one.
-2. **Create a new repository**: click **+** then **New repository**. Name it `superstock-scanner` and set it to **Public**. (Free GitHub Pages needs a public repo. The page only shows screen results, nothing personal.) Click **Create repository**.
-3. **Upload the files**: on the new repo page click **uploading an existing file**, then drag in everything from the unzipped folder, **including the `.github` folder**. Click **Commit changes**.
-   - If your computer hides the `.github` folder, create the workflow by hand instead: **Add file**, then **Create new file**, name it `.github/workflows/weekly-scan.yml`, and paste the contents in.
-4. **Let the scan save its results**: go to **Settings**, **Actions**, **General**. Under *Workflow permissions* choose **Read and write permissions**, then **Save**.
-5. **Run it once now**: go to the **Actions** tab, choose **Weekly superstock scan**, then **Run workflow**. It takes about 5–15 minutes.
-6. **Turn on the web page**: go to **Settings**, **Pages**. Under *Source* pick **Deploy from a branch**, set the branch to `main` and the folder to `/docs`, then **Save**. After a minute your page is at
-   `https://YOUR-USERNAME.github.io/superstock-scanner/`
-7. **Put it on your phone's home screen**: open that link on your phone. In Chrome on Android, tap the menu then **Add to Home screen**. It opens like an app.
+All thresholds are in the **SETTINGS** block at the top of `screener.py`.
 
-## Optional: weekly email
+## Running and maintenance
 
-Gmail needs an *app password* rather than your normal one.
+- It runs every Saturday at about 08:17 UK time. To run it now, go to **Actions**, then **Weekly superstock scan**, then **Run workflow**.
+- The track record lives in `docs/data/picks.json`. Don't delete it, or the scorecard starts again.
+- If a market shows "Scan failed", a free data source changed or blocked the request. Open the failed run in **Actions** and send the error to Claude.
 
-1. Turn on 2-Step Verification for your Google account, then create an app password at myaccount.google.com/apppasswords.
-2. In the repo go to **Settings**, **Secrets and variables**, **Actions**, **New repository secret**, and add:
-   - `SMTP_USER`: your Gmail address
-   - `SMTP_PASS`: the 16-character app password
-   - `EMAIL_TO`: where to send it (can be the same address)
-   - `SITE_URL`: your Pages link from step 6, so the email links to it
+## Optional weekly email
 
-Secrets are encrypted and stay hidden even though the repo is public.
-
-## Day-to-day
-
-- It runs by itself every Saturday at about 08:17 UK time. Press **Run workflow** for an extra run.
-- Past weeks are kept under **past weeks** on the page, so you can see how picks played out. That's how you'll prove (or disprove) the method.
-- If a week shows "Scan failed", one of the free sources changed or blocked the request. Open the failed run in the **Actions** tab to see the error. Claude Code can usually fix it in a few minutes.
+Add these repository secrets (**Settings**, **Secrets and variables**, **Actions**): `SMTP_USER` (your Gmail address), `SMTP_PASS` (a Gmail app password from myaccount.google.com/apppasswords), `EMAIL_TO`, and `SITE_URL` (your page link).
 
 ## Known limits
 
-- **Free data is unofficial.** TradingView and Yahoo can change without notice, and small-cap fundamentals (especially AIM) are often missing. Missing data shows as "no data" and scores 0 rather than excluding the stock.
-- **Insider buys are automatic for the US only.** For Canada (SEDI) and the UK (RNS director dealings) each stock has a link to check by hand.
-- Market cap limits use each market's own currency, so they're approximate.
+- **Free data is unofficial.** It can have gaps, especially fundamentals for AIM stocks. Missing data scores 0 rather than excluding a stock.
+- **Insider buying is automatic for the US only.** For Canada and the UK, use the filings link on each card.
+- **Track-record returns** use closing prices with no costs or spread. Small caps often have wide spreads, so real returns would be lower.
 - **Not financial advice.** It's a shortlist for your own research.
 
-## Preview without live data
+## Test without live data
 
-`python screener.py --demo` builds the page with made-up stocks so you can see the layout.
+`python screener.py --demo` simulates 30 weeks of made-up stocks into `demo_docs/`.
