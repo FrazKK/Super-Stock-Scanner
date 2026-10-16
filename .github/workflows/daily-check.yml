@@ -1,0 +1,38 @@
+name: Daily holdings check
+
+on:
+  schedule:
+    - cron: "40 21 * * 1-5"   # weekdays 21:40 UTC, after the US close
+  workflow_dispatch:           # run by hand to send a test alert
+
+permissions:
+  contents: write
+
+concurrency:
+  group: scanner
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Check holdings
+        env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+          SITE_URL: ${{ secrets.SITE_URL }}
+        run: python screener.py --holdings
+      - name: Save status
+        run: |
+          git config user.name "scanner-bot"
+          git config user.email "scanner-bot@users.noreply.github.com"
+          git add docs
+          git commit -m "Holdings check $(date -u +%F)" || echo "No changes"
+          git pull --rebase
+          git push

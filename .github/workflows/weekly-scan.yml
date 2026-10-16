@@ -8,6 +8,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: scanner
+  cancel-in-progress: false
+
 jobs:
   scan:
     runs-on: ubuntu-24.04
@@ -25,6 +29,7 @@ jobs:
           SMTP_PASS: ${{ secrets.SMTP_PASS }}
           EMAIL_TO: ${{ secrets.EMAIL_TO }}
           SITE_URL: ${{ secrets.SITE_URL }}
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
         run: python screener.py
       - name: Publish results
         run: |
