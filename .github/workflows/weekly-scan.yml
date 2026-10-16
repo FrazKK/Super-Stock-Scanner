@@ -2,19 +2,19 @@ name: Weekly superstock scan
 
 on:
   schedule:
-    - cron: "17 7 * * 6"
-  workflow_dispatch:
+    - cron: "17 7 * * 6"   # Saturdays 07:17 UTC, after the US Friday close
+  workflow_dispatch:        # lets you press "Run workflow" any time
 
 permissions:
   contents: write
 
 jobs:
   scan:
-    runs-on: ubuntu-latest
-    timeout-minutes: 40
+    runs-on: ubuntu-24.04
+    timeout-minutes: 60
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
           cache: pip
@@ -32,4 +32,5 @@ jobs:
           git config user.email "scanner-bot@users.noreply.github.com"
           git add docs
           git commit -m "Weekly scan $(date -u +%F)" || echo "No changes"
+          git pull --rebase
           git push
