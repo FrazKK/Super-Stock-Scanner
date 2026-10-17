@@ -18,6 +18,8 @@ jobs:
     timeout-minutes: 15
     steps:
       - uses: actions/checkout@v5
+        with:
+          ref: main            # always use the latest code and data, even on a re-run
       - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
@@ -34,5 +36,5 @@ jobs:
           git config user.email "scanner-bot@users.noreply.github.com"
           git add docs
           git commit -m "Holdings check $(date -u +%F)" || echo "No changes"
-          git pull --rebase
+          git pull --rebase -X theirs
           git push
