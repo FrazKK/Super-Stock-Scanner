@@ -1726,6 +1726,14 @@ def main():
             (docs / "data" / "holdings.json").write_text(json.dumps(hv, indent=1, default=jdefault), encoding="utf-8")
         do_alerts(hv, docs, scheduled_digest=False)
         return
+    # Backup schedules: skip if this weekend's scan already ran (unless started by hand)
+    prev = load_json(docs / "data" / "latest.json", {})
+    manual = os.getenv("GITHUB_EVENT_NAME") == "workflow_dispatch"
+    if not manual and today.weekday() in (5, 6) and prev.get("date"):
+        last = dt.date.fromisoformat(prev["date"])
+        if last.weekday() in (5, 6) and (today - last).days <= 1:
+            print(f"This weekend's scan already ran on {last}; nothing to do.")
+            return
     res = run_pipeline(live_tv, live_prices, live_insiders, today, ledger)
     hv = run_holdings(holdings, live_prices, today)
     summ = write_outputs(res, ledger, docs, hv=hv)
