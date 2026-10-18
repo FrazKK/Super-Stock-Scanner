@@ -1,0 +1,885 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Superstock Scanner</title>
+<link rel="manifest" href="../manifest.json">
+<meta name="apple-mobile-web-app-capable" content="yes"><meta name="theme-color" content="#0f1115">
+<style>
+:root{--bg:#f6f5f2;--card:#fff;--ink:#1b1d21;--mute:#6b6f76;--line:#e4e2dd;--good:#1f8a5b;--bad:#b4472e;--warn:#b07a12;--acc:#2f5bd3;--na:#8b8f96;
+--bup:#e5f3ec;--bmix:#fbf1dc;--bdown:#f8e3dd}
+@media (prefers-color-scheme:dark){:root{--bg:#0f1115;--card:#171a20;--ink:#e8e9ec;--mute:#9298a2;--line:#262a32;--good:#4cc38a;--bad:#e2795f;--warn:#e0ad46;--acc:#7c9cff;--na:#6d727b;
+--bup:#13261d;--bmix:#2a2312;--bdown:#2c1813}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.4 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;padding:0 16px 40px}
+header,nav,main,.legend,footer{max-width:760px;margin-left:auto;margin-right:auto}
+header{padding:22px 0 6px}h1{font-size:22px;margin:0 0 4px;letter-spacing:-.01em}
+.sub{color:var(--mute);font-size:13px}.sub a{color:inherit}.demo{background:var(--warn);color:#000;padding:8px 12px;border-radius:8px;margin-top:10px;font-weight:600}
+nav{position:sticky;top:0;background:var(--bg);display:flex;gap:6px;padding:8px 0;z-index:2;overflow-x:auto;scrollbar-width:none}
+nav::-webkit-scrollbar{display:none}
+nav button{flex:1 0 auto;border:1px solid var(--line);background:var(--card);color:var(--ink);padding:8px 12px;border-radius:10px;font:inherit;font-size:14px;font-weight:600;white-space:nowrap}
+nav button.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+section{display:none}section.on{display:block}
+.banner{border-radius:10px;padding:10px 12px;margin:6px 0 10px;font-size:14px;font-weight:500}
+.banner small{color:var(--mute);font-weight:400}.b-up{background:var(--bup)}.b-mixed{background:var(--bmix)}.b-down{background:var(--bdown)}
+.stats{color:var(--mute);font-size:12px;margin:4px 2px 8px}
+.sec{margin:10px 0 4px}.sec>summary{list-style:none;display:flex;justify-content:space-between;align-items:baseline;padding:8px 2px;cursor:pointer;border-bottom:2px solid var(--line)}
+.sec>summary::-webkit-details-marker{display:none}.st{font-weight:700;font-size:16px}.st::before{content:"▸ ";color:var(--mute)}
+.sec[open]>summary .st::before{content:"▾ "}.cnt{color:var(--mute);font-size:13px}
+.blurb{color:var(--mute);font-size:13px;margin:6px 2px 10px}.empty{color:var(--mute);font-size:14px;margin:8px 2px}
+.note{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 12px;font-size:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;margin-bottom:8px;overflow:hidden}
+.card>summary{list-style:none;display:flex;align-items:center;gap:12px;padding:12px;cursor:pointer}.card>summary::-webkit-details-marker{display:none}
+.score{width:44px;height:44px;border-radius:50%;flex:none;display:grid;place-content:center;text-align:center;
+ background:conic-gradient(var(--good) calc(var(--p)*360deg),var(--line) 0);position:relative}
+.score::before{content:"";position:absolute;inset:4px;border-radius:50%;background:var(--card)}
+.score b,.score small{position:relative;line-height:1}.score b{font-size:16px}.score small{font-size:10px;color:var(--mute)}
+.who{flex:1;min-width:0}.tick{font-weight:700}.ex{font-weight:500;font-size:11px;color:var(--mute)}
+.new{display:inline-block;margin-left:6px;font-size:10px;font-weight:700;background:var(--acc);color:#fff;border-radius:4px;padding:1px 5px;vertical-align:2px}
+.multi{display:inline-block;margin-left:6px;font-size:10px;font-weight:700;background:var(--good);color:#fff;border-radius:4px;padding:1px 5px;vertical-align:2px}
+.mcard{border-color:var(--good)}
+.mcount{width:44px;height:44px;border-radius:50%;flex:none;display:grid;place-content:center;text-align:center;background:var(--good);color:#fff;line-height:1}
+.mcount b{font-size:18px}.mcount small{font-size:7px;text-transform:uppercase}
+.mrows{margin:10px 0}.mrows .zone{margin:0}.kv small{color:var(--mute)}
+.plans{margin:6px 0 4px;padding-left:18px;font-size:13px}.plans li{margin:3px 0}
+.strat{display:inline-block;margin-left:6px;font-size:10px;font-weight:600;border:1px solid var(--line);color:var(--mute);border-radius:4px;padding:0 5px;vertical-align:2px}
+.nm{color:var(--mute);font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.spark{width:90px;height:32px;flex:none}.spark path{fill:none;stroke-width:1.5;vector-effect:non-scaling-stroke}
+.s-px{stroke:var(--ink)}.s-ma10{stroke:var(--acc)}.s-ma30{stroke:var(--warn)}
+.px{text-align:right;font-weight:600;flex:none;max-width:40%}.zone{display:inline-block;font-size:11px;font-weight:600;padding:2px 7px;border-radius:99px;margin-top:3px;border:1px solid currentColor}
+.z-buy{color:var(--good)}.z-ext{color:var(--bad)}.z-ok{color:var(--mute)}.z-low{color:var(--warn)}
+.body{padding:0 12px 12px;border-top:1px solid var(--line)}
+.checks{list-style:none;margin:10px 0;padding:0}.checks li{display:flex;justify-content:space-between;gap:10px;padding:5px 0;border-bottom:1px dashed var(--line)}
+.checks li span::before{display:inline-block;width:18px;font-weight:700}.checks li.ok span::before{content:"✓";color:var(--good)}
+.checks li.no span::before{content:"✗";color:var(--bad)}.checks li.na span::before{content:"?";color:var(--na)}
+.checks small{color:var(--mute);text-align:right}
+.plan{font-size:13px;margin:8px 0;padding:8px 10px;border-left:3px solid var(--acc);background:var(--bg);border-radius:0 6px 6px 0}
+.meta,.also{color:var(--mute);font-size:12px;margin:6px 0}.links{display:flex;gap:16px}.links a{color:var(--acc);font-weight:600;text-decoration:none}
+.tcard{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px;margin-bottom:10px}
+.th{font-weight:700}.th small{color:var(--mute);font-weight:400}.big{font-size:28px;font-weight:700;margin-top:6px}.bigl{color:var(--mute);font-size:12px;margin-bottom:6px}
+.pos{color:var(--good)}.neg{color:var(--bad)}
+.kv{display:flex;justify-content:space-between;gap:10px;font-size:13px;padding:4px 0;border-top:1px dashed var(--line)}.kv span{color:var(--mute)}.kv b{font-weight:500;text-align:right}
+h3{font-size:16px;margin:18px 2px 8px}
+table.picks{width:100%;border-collapse:collapse;font-size:13px;background:var(--card);border-radius:12px;overflow:hidden}
+.picks th{text-align:left;color:var(--mute);font-weight:500;padding:8px}.picks td{padding:8px;border-top:1px solid var(--line);vertical-align:top}
+.picks small{color:var(--mute)}
+.refresh{display:flex;gap:8px;margin-top:12px}
+.refresh button{flex:1;border:0;border-radius:10px;padding:11px 10px;font:inherit;font-weight:700;background:var(--acc);color:#fff}
+.refresh button.ghost{background:var(--card);color:var(--ink);border:1px solid var(--line)}
+.rstatus{margin-top:8px;padding:10px 12px;border-radius:10px;background:var(--card);border:1px solid var(--line);font-size:14px}
+.rstatus.good{border-color:var(--good)}.rstatus.bad{border-color:var(--bad)}.rstatus a{color:var(--acc)}
+.rsetup{margin-top:8px;font-size:14px;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:8px 12px}
+.rsetup summary{cursor:pointer;font-weight:600;color:var(--acc)}.rsetup ol{padding-left:20px;margin:8px 0}.rsetup li{margin:4px 0}.rsetup a{color:var(--acc)}
+.tokrow{display:flex;gap:6px}.tokrow input{flex:1;min-width:0;padding:9px;border-radius:8px;border:1px solid var(--line);background:var(--bg);color:var(--ink);font:inherit}
+.tokrow button{border:0;border-radius:8px;padding:9px 14px;background:var(--ink);color:var(--bg);font:inherit;font-weight:700}
+.small{font-size:12px;color:var(--mute)}.small a{color:var(--mute)}
+.sub{margin:6px 0 10px}.sub>summary{cursor:pointer;color:var(--mute);font-size:14px;font-weight:600;padding:6px 2px}
+.mk{font-size:15px;font-weight:700;margin:16px 2px 4px;color:var(--mute)}
+.legend{color:var(--mute);font-size:12px;margin-top:18px;line-height:1.6}
+.legend i{display:inline-block;width:14px;height:2px;vertical-align:middle;margin-right:4px}
+footer{margin-top:20px;color:var(--mute);font-size:12px}
+.buy,.btn{display:inline-block;margin-top:10px;padding:8px 12px;border-radius:8px;background:var(--ink);color:var(--bg);font-weight:600;text-decoration:none;font-size:14px}
+.btn{margin-top:12px}
+.hold{background:var(--card);border:1px solid var(--line);border-left:5px solid var(--line);border-radius:12px;padding:12px;margin-bottom:8px}
+.hhead{display:flex;justify-content:space-between;align-items:center;gap:8px}.hst{font-size:12px;font-weight:700;padding:2px 8px;border-radius:99px;border:1px solid currentColor}
+.hreason{margin:8px 0;font-size:14px}.hrow{display:flex;justify-content:space-between;gap:10px;font-size:13px;padding:4px 0;border-top:1px dashed var(--line)}.hrow span{color:var(--mute)}
+.h-sell{border-left-color:var(--bad)}.h-sell .hst{color:var(--bad)}.h-warn{border-left-color:var(--warn)}.h-warn .hst{color:var(--warn)}
+.h-watch .hst{color:var(--acc)}.h-watch{border-left-color:var(--acc)}.h-ok{border-left-color:var(--good)}.h-ok .hst{color:var(--good)}.h-err .hst{color:var(--mute)}
+@media (max-width:420px){.spark{display:none}}
+</style></head><body>
+<header><h1>Superstock Scanner</h1>
+<div class="sub">Four breakout methods · updated Sun 18 Oct 2026, 18:30 UTC · <a href="./">past weeks</a></div>
+
+<div class="refresh">
+  <button id="btn-scan" type="button">↻ Run a new scan</button>
+  <button id="btn-hold" type="button" class="ghost">Check my stocks</button>
+</div>
+<div id="rstatus" class="rstatus" hidden></div>
+<details id="rsetup" class="rsetup">
+  <summary>Set up the refresh buttons (one time)</summary>
+  <ol>
+    <li>Open <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">GitHub: new fine-grained token ↗</a>.</li>
+    <li>Name it <b>scanner refresh</b>. Choose the longest expiry offered.</li>
+    <li>Under <b>Repository access</b>, choose <b>Only select repositories</b> and pick <b>Super-Stock-Scanner</b>.</li>
+    <li>Under <b>Permissions → Repository permissions</b>, set <b>Actions</b> to <b>Read and write</b>. Leave everything else as it is.</li>
+    <li>Tap <b>Generate token</b>, copy it, and paste it here:</li>
+  </ol>
+  <div class="tokrow"><input id="tok" type="password" autocomplete="off" placeholder="github_pat_..." aria-label="GitHub token">
+  <button id="tok-save" type="button">Save</button></div>
+  <p class="small">The key is saved only in this browser on this phone. It can only start and check this scanner's runs, nothing else.
+  <a href="#" id="tok-forget">Forget the saved key</a></p>
+</details>
+</header>
+<nav><button class="on" data-t="america">USA (13)</button><button class="" data-t="canada">Canada (5)</button><button class="" data-t="uk">UK (15)</button><button class="" data-t="resources">Resources (6)</button><button class="" data-t="track">Track record</button><button class="" data-t="mine">My stocks (0)</button></nav>
+<main><section id="america" class="on"><div class="banner b-down">Downtrend: index below its 30-week MA. Most breakouts fail in weak markets, so go small or wait. <small>(IWM, -4.8% in 4 wks)</small></div><p class="stats">1479 stocks screened · 252 charts analysed</p><details class="sec"><summary><span class="st">Picked by 2+ methods</span><span class="cnt">0</span></summary><p class="blurb">Stocks that more than one method flagged this week. Agreement between different approaches can mean a stronger setup; the track record will show if it does. Each method's own label is shown; if one says "Extended" it's still worth waiting.</p><p class="empty">No overlap this week.</p></details><details class="sec" open><summary><span class="st">Stine superstocks</span><span class="cnt">1 ready</span></summary><p class="blurb">Cheap, small, profitable stocks breaking out of a base on huge volume. Buy the pullback to the 10-week MA.</p>
+<details class="card">
+  <summary>
+    <div class="score" style="--p:0.71"><b>10</b><small>/14</small></div>
+    <div class="who"><div class="tick">BNC <span class="ex">NASDAQ</span></div>
+      <div class="nm">BNB Standard Corporation</div></div>
+    <svg class="spark" viewBox="0 0 120 36" preserveAspectRatio="none" aria-hidden="true"><path d="M0.0,0.0 L4.1,4.5 L8.3,8.1 L12.4,9.9 L16.6,11.1 L20.7,12.3 L24.8,13.9 L29.0,15.2 L33.1,16.5 L37.2,17.6 L41.4,18.6 L45.5,19.3 L49.7,20.1 L53.8,21.2 L57.9,22.2 L62.1,23.2 L66.2,24.2 L70.3,25.2 L74.5,26.1 L78.6,26.9 L82.8,27.8 L86.9,28.4 L91.0,28.9 L95.2,29.2 L99.3,29.1 L103.4,28.5 L107.6,27.8 L111.7,27.2 L115.9,26.7 L120.0,26.4" class="s-ma30"/><path d="M0.0,21.7 L4.1,23.8 L8.3,25.6 L12.4,27.0 L16.6,27.9 L20.7,28.4 L24.8,28.6 L29.0,29.1 L33.1,29.6 L37.2,29.7 L41.4,30.3 L45.5,30.8 L49.7,31.0 L53.8,30.8 L57.9,31.1 L62.1,31.3 L66.2,31.6 L70.3,31.5 L74.5,31.5 L78.6,31.9 L82.8,31.6 L86.9,30.7 L91.0,30.2 L95.2,29.8 L99.3,28.2 L103.4,25.9 L107.6,23.4 L111.7,21.1 L115.9,19.1 L120.0,17.5" class="s-ma10"/><path d="M0.0,30.0 L4.1,31.1 L8.3,31.6 L12.4,30.7 L16.6,27.7 L20.7,27.5 L24.8,27.1 L29.0,30.8 L33.1,31.6 L37.2,29.4 L41.4,35.2 L45.5,36.0 L49.7,34.5 L53.8,28.4 L57.9,31.0 L62.1,29.4 L66.2,29.3 L70.3,30.3 L74.5,31.3 L78.6,33.7 L82.8,31.6 L86.9,27.6 L91.0,28.7 L95.2,25.0 L99.3,15.0 L103.4,6.0 L107.6,5.0 L111.7,7.0 L115.9,11.5 L120.0,17.4" class="s-px"/></svg>
+    <div class="px"><div>$4.49</div><span class="zone z-buy">At magic line</span></div>
+  </summary>
+  <div class="body">
+    <ul class="checks"><li class="ok"><span>Above rising 30-week MA</span><small></small></li><li class="ok"><span>Breakout on 3x+ weekly volume</span><small>65.5x volume, 5 wk ago</small></li><li class="ok"><span>Steep 30-week MA</span><small>+9.3% in 4 wks</small></li><li class="ok"><span>Biggest weekly volume in 6 months</span><small></small></li><li class="no"><span>Tight base</span><small>73% range</small></li><li class="ok"><span>EPS growth &gt; 25%</span><small>+84% YoY</small></li><li class="ok"><span>Low P/E</span><small>P/E 2.5</small></li><li class="no"><span>Small float</span><small>36.2M shares</small></li><li class="ok"><span>Market leader (RS rank 80+)</span><small>RS 85</small></li><li class="ok"><span>Low float / small company</span><small>float 36M shares</small></li><li class="no"><span>Insider buying (90 days)</span><small>none found</small></li></ul>
+    <div class="plan">Entry zone: near the 10-week MA (4.48). Sell rule: weekly close below it.</div>
+    <div class="meta">Mkt cap 185m · Producer Manufacturing · RS 85</div>
+    
+    <div class="links"><a href="https://www.tradingview.com/chart/?symbol=NASDAQ:BNC&amp;interval=W" target="_blank" rel="noopener">Weekly chart ↗</a>
+      <a href="http://openinsider.com/BNC" target="_blank" rel="noopener">Insider filings ↗</a></div>
+    <a class="buy" href="https://github.com/FrazKK/Super-Stock-Scanner/new/main?filename=holdings/america-BNC.json&amp;value=%7B%0A%20%20%22ticker%22%3A%20%22BNC%22%2C%0A%20%20%22exchange%22%3A%20%22NASDAQ%22%2C%0A%20%20%22market%22%3A%20%22america%22%2C%0A%20%20%22name%22%3A%20%22BNB%20Standard%20Corporation%22%2C%0A%20%20%22method%22%3A%20%22stine%22%2C%0A%20%20%22bought%22%3A%20%222026-10-18%22%2C%0A%20%20%22price%22%3A%204.49%2C%0A%20%20%22note%22%3A%20%22Change%20price%20to%20what%20you%20paid%20%28UK%20prices%20in%20pence%29.%20Delete%20this%20file%20when%20you%20sell.%22%0A%7D" target="_blank" rel="noopener">I bought this ↗</a>
+  </div>
+</details></details><details class="sec" open><summary><span class="st">Weinstein Stage 2</span><span class="cnt">1 ready · 1 new</span></summary><p class="blurb">Breakouts from a flat base above the 30-week MA, beating the market. No earnings needed, so it suits explorers.</p>
+<details class="card">
+  <summary>
+    <div class="score" style="--p:0.90"><b>9</b><small>/10</small></div>
+    <div class="who"><div class="tick">AFRI <span class="ex">NASDAQ</span><span class="new">NEW</span></div>
+      <div class="nm">Forafric Global PLC</div></div>
+    <svg class="spark" viewBox="0 0 120 36" preserveAspectRatio="none" aria-hidden="true"><path d="M0.0,32.2 L4.1,31.7 L8.3,31.2 L12.4,31.0 L16.6,30.5 L20.7,30.0 L24.8,29.4 L29.0,28.9 L33.1,28.7 L37.2,28.4 L41.4,28.3 L45.5,28.1 L49.7,27.9 L53.8,27.9 L57.9,28.0 L62.1,28.1 L66.2,28.1 L70.3,28.1 L74.5,28.2 L78.6,28.0 L82.8,27.8 L86.9,27.4 L91.0,27.2 L95.2,26.9 L99.3,26.4 L103.4,26.0 L107.6,25.5 L111.7,25.0 L115.9,23.9 L120.0,23.1" class="s-ma30"/><path d="M0.0,31.0 L4.1,31.3 L8.3,31.6 L12.4,32.0 L16.6,31.5 L20.7,31.2 L24.8,30.7 L29.0,30.4 L33.1,30.0 L37.2,29.5 L41.4,29.0 L45.5,28.7 L49.7,28.4 L53.8,27.9 L57.9,28.0 L62.1,27.6 L66.2,26.9 L70.3,26.4 L74.5,25.5 L78.6,24.4 L82.8,23.5 L86.9,22.3 L91.0,21.5 L95.2,20.7 L99.3,19.8 L103.4,19.2 L107.6,19.0 L111.7,18.3 L115.9,16.2 L120.0,15.5" class="s-ma10"/><path d="M0.0,36.0 L4.1,31.0 L8.3,31.5 L12.4,32.1 L16.6,24.8 L20.7,26.6 L24.8,27.0 L29.0,28.7 L33.1,30.1 L37.2,26.9 L41.4,31.0 L45.5,28.7 L49.7,28.2 L53.8,26.6 L57.9,26.4 L62.1,22.5 L66.2,19.7 L70.3,23.3 L74.5,21.2 L78.6,16.3 L82.8,22.2 L86.9,16.6 L91.0,20.6 L95.2,17.8 L99.3,17.4 L103.4,16.6 L107.6,18.5 L111.7,15.6 L115.9,0.0 L120.0,9.3" class="s-px"/></svg>
+    <div class="px"><div>$11.84</div><span class="zone z-buy">Fresh breakout</span></div>
+  </summary>
+  <div class="body">
+    <ul class="checks"><li class="ok"><span>Breakout above resistance on 2x+ volume</span><small>2.2x volume, 1 wk ago</small></li><li class="ok"><span>Came out of a flat Stage 1 base</span><small></small></li><li class="ok"><span>Still above 30-week MA, MA not falling</span><small>MA +2.7% in 4 wks</small></li><li class="ok"><span>Beating the market (Mansfield RS &gt; 0)</span><small>+14%</small></li><li class="ok"><span>30-week MA rising</span><small></small></li><li class="no"><span>Breakout volume 3x+</span><small></small></li><li class="ok"><span>Not extended (within 15% of breakout)</span><small>-1% vs breakout</small></li><li class="ok"><span>RS rank 70+</span><small>RS 83</small></li></ul>
+    <div class="plan">Breakout level 11.91. Sell rule: weekly close below the 30-week MA (10.53).</div>
+    <div class="meta">Mkt cap 319m · Process Industries · RS 83</div>
+    
+    <div class="links"><a href="https://www.tradingview.com/chart/?symbol=NASDAQ:AFRI&amp;interval=W" target="_blank" rel="noopener">Weekly chart ↗</a>
+      <a href="http://openinsider.com/AFRI" target="_blank" rel="noopener">Insider filings ↗</a></div>
+    <a class="buy" href="https://github.com/FrazKK/Super-Stock-Scanner/new/main?filename=holdings/america-AFRI.json&amp;value=%7B%0A%20%20%22ticker%22%3A%20%22AFRI%22%2C%0A%20%20%22exchange%22%3A%20%22NASDAQ%22%2C%0A%20%20%22market%22%3A%20%22america%22%2C%0A%20%20%22name%22%3A%20%22Forafric%20Global%20PLC%22%2C%0A%20%20%22method%22%3A%20%22weinstein%22%2C%0A%20%20%22bought%22%3A%20%222026-10-18%22%2C%0A%20%20%22price%22%3A%2011.84%2C%0A%20%20%22note%22%3A%20%22Change%20price%20to%20what%20you%20paid%20%28UK%20prices%20in%20pence%29.%20Delete%20this%20file%20when%20you%20sell.%22%0A%7D" target="_blank" rel="noopener">I bought this ↗</a>
+  </div>
+</details></details><details class="sec" open><summary><span class="st">Minervini trend + VCP</span><span class="cnt">7 ready · 3 new</span></summary><p class="blurb">Passes all 8 Trend Template rules. Best when pullbacks are shrinking and it breaks out of the tightest point.</p>
+<details class="card">
+  <summary>
+    <div class="score" style="--p:0.93"><b>13</b><small>/14</small></div>
+    <div class="who"><div class="tick">FCBC <span class="ex">NASDAQ</span></div>
+      <div class="nm">First Community Bankshares, Inc.</div></div>
+    <svg class="spark" viewBox="0 0 120 36" preserveAspectRatio="none" aria-hidden="true"><path d="M0.0,36.0 L4.1,35.5 L8.3,34.9 L12.4,34.3 L16.6,33.6 L20.7,32.8 L24.8,31.8 L29.0,31.0 L33.1,30.1 L37.2,29.2 L41.4,28.2 L45.5,27.2 L49.7,26.3 L53.8,25.2 L57.9,24.2 L62.1,23.3 L66.2,22.4 L70.3,21.1 L74.5,19.9 L78.6,18.6 L82.8,17.4 L86.9,16.1 L91.0,15.0 L95.2,14.4 L99.3,13.7 L103.4,13.2 L107.6,12.5 L111.7,11.7 L115.9,11.1 L120.0,10.4" class="s-ma30"/><path d="M0.0,26.1 L4.1,24.2 L8.3,22.5 L12.4,21.9 L16.6,21.3 L20.7,20.7 L24.8,19.7 L29.0,19.2 L33.1,18.6 L37.2,17.7 L41.4,17.2 L45.5,16.6 L49.7,16.5 L53.8,16.0 L57.9,15.3 L62.1,15.0 L66.2,14.6 L70.3,12.9 L74.5,11.6 L78.6,10.4 L82.8,8.8 L86.9,7.5 L91.0,6.1 L95.2,5.1 L99.3,4.5 L103.4,3.8 L107.6,3.1 L111.7,3.1 L115.9,3.1 L120.0,3.0" class="s-ma10"/><path d="M0.0,21.1 L4.1,19.3 L8.3,16.7 L12.4,16.2 L16.6,18.0 L20.7,16.5 L24.8,15.7 L29.0,20.5 L33.1,17.6 L37.2,15.9 L41.4,15.9 L45.5,13.6 L49.7,15.2 L53.8,11.1 L57.9,11.2 L62.1,13.8 L66.2,11.6 L70.3,3.2 L74.5,5.0 L78.6,3.1 L82.8,0.0 L86.9,0.8 L91.0,1.4 L95.2,1.0 L99.3,5.3 L103.4,6.2 L107.6,4.5 L111.7,3.6 L115.9,5.2 L120.0,1.7" class="s-px"/></svg>
+    <div class="px"><div>$48.80</div><span class="zone z-buy">Breaking out</span></div>
+  </summary>
+  <div class="body">
+    <ul class="checks"><li class="ok"><span>Above 150 and 200-day MAs</span><small></small></li><li class="ok"><span>150-day above 200-day</span><small></small></li><li class="ok"><span>200-day rising for a month</span><small></small></li><li class="ok"><span>50-day above 150 and 200-day</span><small></small></li><li class="ok"><span>Above 50-day MA</span><small></small></li><li class="ok"><span>30%+ above 52-week low</span><small>+65%</small></li><li class="ok"><span>Within 25% of 52-week high</span><small>-3%</small></li><li class="ok"><span>RS rank 70+</span><small>RS 82</small></li><li class="ok"><span>Volatility contraction (VCP)</span><small>pullbacks 13% &gt; 9% &gt; 6%</small></li><li class="no"><span>Volume drying up</span><small></small></li><li class="ok"><span>Pivot breakout on volume</span><small>pivot 48.74</small></li><li class="ok"><span>EPS growth &gt; 25%</span><small>+78% YoY</small></li></ul>
+    <div class="plan">Buy point: above the pivot 48.74. Sell rule: 8% stop below your entry.</div>
+    <div class="meta">Mkt cap 923m · Finance · RS 82</div>
+    
+    <div class="links"><a href="https://www.tradingview.com/chart/?symbol=NASDAQ:FCBC&amp;interval=W" target="_blank" rel="noopener">Weekly chart ↗</a>
+      <a href="http://openinsider.com/FCBC" target="_blank" rel="noopener">Insider filings ↗</a></div>
+    <a class="buy" href="https://github.com/FrazKK/Super-Stock-Scanner/new/main?filename=holdings/america-FCBC.json&amp;value=%7B%0A%20%20%22ticker%22%3A%20%22FCBC%22%2C%0A%20%20%22exchange%22%3A%20%22NASDAQ%22%2C%0A%20%20%22market%22%3A%20%22america%22%2C%0A%20%20%22name%22%3A%20%22First%20Community%20Bankshares%2C%20Inc.%22%2C%0A%20%20%22method%22%3A%20%22minervini%22%2C%0A%20%20%22bought%22%3A%20%222026-10-18%22%2C%0A%20%20%22price%22%3A%2048.8%2C%0A%20%20%22note%22%3A%20%22Change%20price%20to%20what%20you%20paid%20%28UK%20prices%20in%20pence%29.%20Delete%20this%20file%20when%20you%20sell.%22%0A%7D" target="_blank" rel="noopener">I bought this ↗</a>
+  </div>
+</details>
+<details class="card">
+  <summary>
+    <div class="score" style="--p:0.79"><b>11</b><small>/14</small></div>
+    <div class="who"><div class="tick">WEST <span class="ex">NASDAQ</span></div>
+      <div class="nm">Westrock Coffee Company</div></div>
+    <svg class="spark" viewBox="0 0 120 36" preserveAspectRatio="none" aria-hidden="true"><path d="M0.0,32.1 L4.1,32.3 L8.3,32.4 L12.4,32.3 L16.6,32.1 L20.7,31.9 L24.8,31.1 L29.0,30.3 L33.1,29.6 L37.2,28.8 L41.4,28.0 L45.5,26.8 L49.7,25.8 L53.8,24.7 L57.9,24.1 L62.1,23.5 L66.2,22.7 L70.3,22.0 L74.5,21.1 L78.6,20.2 L82.8,19.4 L86.9,18.6 L91.0,18.0 L95.2,17.4 L99.3,16.8 L103.4,16.2 L107.6,15.4 L111.7,14.5 L115.9,13.6 L120.0,12.7" class="s-ma30"/><path d="M0.0,32.1 L4.1,32.3 L8.3,32.2 L12.4,31.9 L16.6,31.5 L20.7,30.9 L24.8,28.4 L29.0,25.5 L33.1,22.9 L37.2,20.4 L41.4,18.1 L45.5,14.8 L49.7,12.2 L53.8,9.7 L57.9,8.7 L62.1,7.7 L66.2,8.1 L70.3,8.6 L74.5,8.8 L78.6,8.6 L82.8,8.1 L86.9,8.8 L91.0,9.5 L95.2,10.5 L99.3,10.1 L103.4,9.9 L107.6,9.6 L111.7,9.3 L115.9,9.2 L120.0,9.1" class="s-ma10"/><path d="M0.0,36.0 L4.1,32.8 L8.3,29.3 L12.4,25.8 L16.6,25.6 L20.7,23.2 L24.8,8.1 L29.0,6.8 L33.1,7.4 L37.2,9.5 L41.4,12.6 L45.5,0.0 L49.7,3.0 L53.8,0.7 L57.9,15.7 L62.1,13.3 L66.2,11.7 L70.3,12.2 L74.5,8.9 L78.6,8.2 L82.8,6.9 L86.9,7.6 L91.0,9.7 L95.2,11.3 L99.3,11.6 L103.4,10.7 L107.6,9.1 L111.7,8.8 L115.9,8.5 L120.0,6.8" class="s-px"/></svg>
+    <div class="px"><div>$8.44</div><span class="zone z-buy">Breaking out</span></div>
+  </summary>
+  <div class="body">
+    <ul class="checks"><li class="ok"><span>Above 150 and 200-day MAs</span><small></small></li><li class="ok"><span>150-day above 200-day</span><small></small></li><li class="ok"><span>200-day rising for a month</span><small></small></li><li class="ok"><span>50-day above 150 and 200-day</span><small></small></li><li class="ok"><span>Above 50-day MA</span><small></small></li><li class="ok"><span>30%+ above 52-week low</span><small>+135%</small></li><li class="ok"><span>Within 25% of 52-week high</span><small>-17%</small></li><li class="ok"><span>RS rank 70+</span><small>RS 92</small></li><li class="no"><span>Volatility contraction (VCP)</span><small>pullbacks 25% &gt; 8% &gt; 12%</small></li><li class="no"><span>Volume drying up</span><small></small></li><li class="ok"><span>Pivot breakout on volume</span><small>pivot 8.37</small></li><li class="ok"><span>EPS growth &gt; 25%</span><small>+39% YoY</small></li></ul>
+    <div class="plan">Buy point: above the pivot 8.37. Sell rule: 8% stop below your entry.</div>
+    <div class="meta">Mkt cap 824m · Consumer Non-Durables · RS 92</div>
+    
+    <div class="links"><a href="https://www.tradingview.com/chart/?symbol=NASDAQ:WEST&amp;interval=W" target="_blank" rel="noopener">Weekly chart ↗</a>
+      <a href="http://openinsider.com/WEST" target="_blank" rel="noopener">Insider filings ↗</a></div>
+    <a class="buy" href="https://github.com/FrazKK/Super-Stock-Scanner/new/main?filename=holdings/america-WEST.json&amp;value=%7B%0A%20%20%22ticker%22%3A%20%22WEST%22%2C%0A%20%20%22exchange%22%3A%20%22NASDAQ%22%2C%0A%20%20%22market%22%3A%20%22america%22%2C%0A%20%20%22name%22%3A%20%22Westrock%20Coffee%20Company%22%2C%0A%20%20%22method%22%3A%20%22minervini%22%2C%0A%20%20%22bought%22%3A%20%222026-10-18%22%2C%0A%20%20%22price%22%3A%208.44%2C%0A%20%20%22note%22%3A%20%22Change%20price%20to%20what%20you%20paid%20%28UK%20prices%20in%20pence%29.%20Delete%20this%20file%20when%20you%20sell.%22%0A%7D" target="_blank" rel="noopener">I bought this ↗</a>
+  </div>
+</details>
+<details class="card">
+  <summary>
+    <div class="score" style="--p:0.79"><b>11</b><small>/14</small></div>
+    <div class="who"><div class="tick">VABK <span class="ex">NASDAQ</span></div>
+      <div class="nm">Virginia National Bankshares Corporation</div></div>
+    <svg class="spark" viewBox="0 0 120 36" preserveAspectRatio="none" aria-hidden="true"><path d="M0.0,33.2 L4.1,33.3 L8.3,33.3 L12.4,33.1 L16.6,32.8 L20.7,32.3 L24.8,31.7 L29.0,31.4 L33.1,31.1 L37.2,30.6 L41.4,30.3 L45.5,29.7 L49.7,29.2 L53.8,28.7 L57.9,28.3 L62.1,27.8 L66.2,27.4 L70.3,27.0 L74.5,26.3 L78.6,25.6 L82.8,24.9 L86.9,24.1 L91.0,23.5 L95.2,23.0 L99.3,22.1 L103.4,21.4 L107.6,20.5 L111.7,19.7 L115.9,18.7 L120.0,17.5" class="s-ma30"/><path d="M0.0,33.0 L4.1,33.2 L8.3,33.2 L12.4,33.2 L16.6,32.7 L20.7,32.1 L24.8,30.8 L29.0,30.0 L33.1,28.9 L37.2,27.4 L41.4,26.2 L45.5,24.3 L49.7,23.1 L53.8,22.0 L57.9,21.2 L62.1,20.5 L66.2,19.7 L70.3,18.8 L74.5,17.9 L78.6,16.7 L82.8,15.4 L86.9,14.8 L91.0,14.3 L95.2,13.8 L99.3,12.4 L103.4,11.6 L107.6,10.9 L111.7,10.2 L115.9,9.4 L120.0,8.5" class="s-ma10"/><path d="M0.0,35.8 L4.1,36.0 L8.3,30.3 L12.4,27.0 L16.6,26.5 L20.7,24.4 L24.8,22.0 L29.0,26.7 L33.1,23.4 L37.2,21.5 L41.4,24.6 L45.5,17.1 L49.7,17.9 L53.8,15.6 L57.9,18.7 L62.1,18.0 L66.2,13.9 L70.3,17.4 L74.5,14.9 L78.6,9.1 L82.8,11.2 L86.9,11.5 L91.0,12.5 L95.2,10.8 L99.3,4.5 L103.4,10.4 L107.6,7.0 L111.7,10.4 L115.9,6.5 L120.0,0.0" class="s-px"/></svg>
+    <div class="px"><div>$50.85</div><span class="zone z-buy">Breaking out</span></div>
+  </summary>
+  <div class="body">
+    <ul class="checks"><li class="ok"><span>Above 150 and 200-day MAs</span><small></small></li><li class="ok"><span>150-day above 200-day</span><small></small></li><li class="ok"><span>200-day rising for a month</span><small></small></li><li class="ok"><span>50-day above 150 and 200-day</span><small></small></li><li class="ok"><span>Above 50-day MA</span><small></small></li><li class="ok"><span>30%+ above 52-week low</span><small>+39%</small></li><li class="ok"><span>Within 25% of 52-week high</span><small>-3%</small></li><li class="ok"><span>RS rank 70+</span><small>RS 79</small></li><li class="no"><span>Volatility contraction (VCP)</span><small>pullbacks 13% &gt; 7% &gt; 11%</small></li><li class="no"><span>Volume drying up</span><small></small></li><li class="ok"><span>Pivot breakout on volume</span><small>pivot 49.75</small></li><li class="ok"><span>EPS growth &gt; 25%</span><small>+111% YoY</small></li></ul>
+    <div class="plan">Buy point: above the pivot 49.75. Sell rule: 8% stop below your entry.</div>
+    <div class="meta">Mkt cap 276m · Finance · RS 79</div>
+    
+    <div class="links"><a href="https://www.tradingview.com/chart/?symbol=NASDAQ:VABK&amp;interval=W" target="_blank" rel="noopener">Weekly chart ↗</a>
+      <a href="http://openinsider.com/VABK" target="_blank" rel="noopener">Insider filings ↗</a></div>
+    <a class="buy" href="https://github.com/FrazKK/Super-Stock-Scanner/new/main?filename=holdings/america-VABK.json&amp;value=%7B%0A%20%20%22ticker%22%3A%20%22VABK%22%2C%0A%20%20%22exchange%22%3A%20%22NASDAQ%22%2C%0A%20%20%22market%22%3A%20%22america%22%2C%0A%20%20%22name%22%3A%20%22Virginia%20National%20Bankshares%20Corporation%22%2C%0A%20%20%22method%22%3A%20%22minervini%22%2C%0A%20%20%22bought%22%3A%20%222026-10-18%22%2C%0A%20%20%22price%22%3A%2050.86%2C%0A%20%20%22note%22%3A%20%22Change%20price%20to%20what%20you%20paid%20%28UK%20prices%20in%20pence%29.%20Delete%20this%20file%20when%20you%20sell.%22%0A%7D" target="_blank" rel="noopener">I bought this ↗</a>
+  </div>
+</details>
+<details class="card">
+  <summary>
+    <div class="score" style="--p:0.71"><b>10</b><small>/14</small></div>
+    <div class="who"><div class="tick">CBLL <span class="ex">NASDAQ</span></div>
+      <div class="nm">CeriBell, Inc.</div></div>
+    <svg class="spark" viewBox="0 0 120 36" preserveAspectRatio="none" aria-hidden="true"><path d="M0.0,33.2 L4.1,32.2 L8.3,31.3 L12.4,30.1 L16.6,28.7 L20.7,27.7 L24.8,26.5 L29.0,26.0 L33.1,25.2 L37.2,24.3 L41.4,23.4 L45.5,22.6 L49.7,22.3 L53.8,21.8 L57.9,21.9 L62.1,22.1 L66.2,22.4 L70.3,23.0 L74.5,23.5 L78.6,24.1 L82.8,23.9 L86.9,23.7 L91.0,23.2 L95.2,22.6 L99.3,22.1 L103.4,21.5 L107.6,20.8 L111.7,20.0 L115.9,19.3 L120.0,18.4" class="s-ma30"/><path d="M0.0,23.1 L4.1,24.6 L8.3,25.7 L12.4,25.2 L16.6,24.6 L20.7,24.5 L24.8,23.9 L29.0,24.5 L33.1,24.4 L37.2,24.4 L41.4,24.2 L45.5,24.3 L49.7,24.3 L53.8,24.8 L57.9,25.5 L62.1,25.9 L66.2,26.5 L70.3,26.2 L74.5,26.7 L78.6,26.5 L82.8,24.4 L86.9,22.1 L91.0,19.7 L95.2,17.8 L99.3,16.1 L103.4,14.1 L107.6,12.1 L111.7,9.3 L115.9,6.8 L120.0,4.3" class="s-ma10"/><path d="M0.0,29.9 L4.1,26.6 L8.3,28.4 L12.4,15.9 L16.6,15.9 L20.7,18.7 L24.8,19.9 L29.0,36.0 L33.1,25.8 L37.2,27.1 L41.4,28.0 L45.5,27.1 L49.7,28.9 L53.8,20.8 L57.9,22.6 L62.1,22.6 L66.2,26.0 L70.3,33.5 L74.5,30.3 L78.6,25.7 L82.8,7.0 L86.9,3.5 L91.0,5.4 L95.2,1.3 L99.3,5.8 L103.4,2.8 L107.6,5.6 L111.7,5.6 L115.9,5.8 L120.0,0.0" class="s-px"/></svg>
+    <div class="px"><div>$25.04</div><span class="zone z-buy">Breaking out</span></div>
+  </summary>
+  <div class="body">
+    <ul class="checks"><li class="ok"><span>Above 150 and 200-day MAs</span><small></small></li><li class="ok"><span>150-day above 200-day</span><small></small></li><li class="ok"><span>200-day rising for a month</span><small></small></li><li class="ok"><span>50-day above 150 and 200-day</span><small></small></li><li class="ok"><span>Above 50-day MA</span><small></small></li><li class="ok"><span>30%+ above 52-week low</span><small>+131%</small></li><li class="ok"><span>Within 25% of 52-week high</span><small>-10%</small></li><li class="ok"><span>RS rank 70+</span><small>RS 93</small></li><li class="no"><span>Volatility contraction (VCP)</span><small>pullbacks 37% &gt; 10% &gt; 19%</small></li><li class="no"><span>Volume drying up</span><small></small></li><li class="ok"><span>Pivot breakout on volume</span><small>pivot 25.63</small></li><li class="no"><span>EPS growth &gt; 25%</span><small>-35% YoY</small></li></ul>
+    <div class="plan">Buy point: above the pivot 25.63. Sell rule: 8% stop below your entry.</div>
+    <div class="meta">Mkt cap 961m · Health Technology · RS 93</div>
+    
+    <div class="links"><a href="https://www.tradingview.com/chart/?symbol=NASDAQ:CBLL&amp;interval=W" target="_blank" rel="noopener">Weekly chart ↗</a>
+      <a href="http://openinsider.com/CBLL" target="_blank" rel="noopener">Insider filings ↗</a></div>
+    <a class="buy" href="https://github.com/FrazKK/Super-Stock-Scanner/new/main?filename=holdings/america-CBLL.json&amp;value=%7B%0A%20%20%22ticker%22%3A%20%22CBLL%22%2C%0A%20%20%22exchange%22%3A%20%22NASDAQ%22%2C%0A%20%20%22market%22%3A%20%22america%22%2C%0A%20%20%22name%22%3A%20%22CeriBell%2C%20Inc.%22%2C%0A%20%20%22method%22%3A%20%22minervini%22%2C%0A%20%20%22bought%22%3A%20%222026-10-18%22%2C%0A%20%20%22price%22%3A%2025.04%2C%0A%20%20%22note%22%3A%20%22Change%20price%20to%20what%20you%20paid%20%28UK%20prices%20in%20pence%29.%20Delete%20this%20file%20when%20you%20sell.%22%0A%7D" target="_blank" rel="noopener">I bought this ↗</a>
+  </div>
+</details>
+<details class="card">
+  <summary>
+    <div class="score" style="--p:0.71"><b>10</b><small>/14</small></div>
+    <div class="who"><div class="tick">AII <span class="ex">NYSE</span><span class="new">NEW</span></div>
+      <div class="nm">American Integrity Insurance Group, Inc.</div></div>
+    <svg class="spark" viewBox="0 0 120 36" preserveAspectRatio="none" aria-hidden="true"><path d="M0.0,25.5 L4.1,25.4 L8.3,25.5 L12.4,25.6 L16.6,25.7 L20.7,25.9 L24.8,26.2 L29.0,26.7 L33.1,27.3 L37.2,28.0 L41.4,28.7 L45.5,29.5 L49.7,29.7 L53.8,29.8 L57.9,29.7 L62.1,29.8 L66.2,29.8 L70.3,29.9 L74.5,29.8 L78.6,29.6 L82.8,28.9 L86.9,28.1 L91.0,27.1 L95.2,26.2 L99.3,25.2 L103.4,24.2 L107.6,23.6 L111.7,22.8 L115.9,21.9 L120.0,20.9" class="s-ma30"/><path d="M0.0,30.7 L4.1,30.2 L8.3,30.0 L12.4,29.2 L16.6,28.3 L20.7,27.6 L24.8,27.5 L29.0,27.9 L33.1,28.3 L37.2,29.1 L41.4,29.6 L45.5,30.4 L49.7,30.8 L53.8,31.1 L57.9,31.3 L62.1,31.4 L66.2,31.7 L70.3,31.2 L74.5,30.1 L78.6,28.6 L82.8,26.4 L86.9,23.7 L91.0,20.6 L95.2,18.2 L99.3,16.1 L103.4,13.7 L107.6,11.6 L111.7,9.2 L115.9,7.1 L120.0,5.0" class="s-ma10"/><path d="M0.0,28.6 L4.1,26.9 L8.3,29.9 L12.4,25.5 L16.6,25.3 L20.7,26.3 L24.8,25.1 L29.0,33.7 L33.1,33.9 L37.2,36.0 L41.4,33.9 L45.5,33.9 L49.7,34.7 L53.8,28.4 L57.9,26.6 L62.1,27.4 L66.2,28.6 L70.3,28.5 L74.5,23.3 L78.6,21.0 L82.8,11.3 L86.9,6.9 L91.0,3.8 L95.2,4.8 L99.3,5.1 L103.4,3.5 L107.6,7.5 L111.7,4.7 L115.9,2.4 L120.0,0.0" class="s-px"/></svg>
+    <div class="px"><div>$27.50</div><span class="zone z-buy">Breaking out</span></div>
+  </summary>
+  <div class="body">
+    <ul class="checks"><li class="ok"><span>Above 150 and 200-day MAs</span><small></small></li><li class="ok"><span>150-day above 200-day</span><small></small></li><li class="ok"><span>200-day rising for a month</span><small></small></li><li class="ok"><span>50-day above 150 and 200-day</span><small></small></li><li class="ok"><span>Above 50-day MA</span><small></small></li><li class="ok"><span>30%+ above 52-week low</span><small>+70%</small></li><li class="ok"><span>Within 25% of 52-week high</span><small>-3%</small></li><li class="ok"><span>RS rank 70+</span><small>RS 89</small></li><li class="no"><span>Volatility contraction (VCP)</span><small>pullbacks 35% &gt; 8% &gt; 15%</small></li><li class="no"><span>Volume drying up</span><small></small></li><li class="ok"><span>Pivot breakout on volume</span><small>pivot 27.40</small></li><li class="no"><span>EPS growth &gt; 25%</span><small>+8% YoY</small></li></ul>
+    <div class="plan">Buy point: above the pivot 27.40. Sell rule: 8% stop below your entry.</div>
+    <div class="meta">Mkt cap 539m · Finance · RS 89</div>
+    
+    <div class="links"><a href="https://www.tradingview.com/chart/?symbol=NYSE:AII&amp;interval=W" target="_blank" rel="noopener">Weekly chart ↗</a>
+      <a href="http://openinsider.com/AII" target="_blank" rel="noopener">Insider filings ↗</a></div>
+    <a class="buy" href="https://github.com/FrazKK/Super-Stock-Scanner/new/main?filename=holdings/america-AII.json&amp;value=%7B%0A%20%20%22ticker%22%3A%20%22AII%22%2C%0A%20%20%22exchange%22%3A%20%22NYSE%22%2C%0A%20%20%22market%22%3A%20%22america%22%2C%0A%20%20%22name%22%3A%20%22American%20Integrity%20Insurance%20Group%2C%20Inc.%22%2C%0A%20%20%22method%22%3A%20%22minervini%22%2C%0A%20%20%22bought%22%3A%20%222026-10-18%22%2C%0A%20%20%22price%22%3A%2027.5%2C%0A%20%20%22note%22%3A%20%22Change%20price%20to%20what%20you%20paid%20%28UK%20prices%20in%20pence%29.%20Delete%20this%20file%20when%20you%20sell.%22%0A%7D" target="_blank" rel="noopener">I bought this ↗</a>
+  </div>
+</details>
+<details class="card">
+  <summary>
+    <div class="score" style="--p:0.71"><b>10</b><small>/14</small></div>
+    <div class="who"><div class="tick">NECB <span class="ex">NASDAQ</span><span class="new">NEW</span></div>
+      <div class="nm">NorthEast Community Bancorp, Inc.</div></div>
+    <svg class="spark" viewBox="0 0 120 36" preserveAspectRatio="none" aria-hidden="true"><path d="M0.0,36.0 L4.1,35.5 L8.3,34.6 L12.4,33.7 L16.6,33.0 L20.7,32.2 L24.8,31.2 L29.0,30.5 L33.1,29.9 L37.2,28.9 L41.4,27.9 L45.5,26.7 L49.7,25.6 L53.8,24.3 L57.9,23.2 L62.1,22.5 L66.2,21.7 L70.3,20.9 L74.5,20.0 L78.6,19.2 L82.8,18.4 L86.9,17.7 L91.0,17.0 L95.2,16.5 L99.3,15.9 L103.4,15.2 L107.6,14.6 L111.7,13.9 L115.9,13.0 L120.0,12.1" class="s-ma30"/><path d="M0.0,26.5 L4.1,25.8 L8.3,24.7 L12.4,24.3 L16.6,24.1 L20.7,23.8 L24.8,23.5 L29.0,23.5 L33.1,22.9 L37.2,22.2 L41.4,21.2 L45.5,20.2 L49.7,19.9 L53.8,18.6 L57.9,16.7 L62.1,15.3 L66.2,14.0 L70.3,11.9 L74.5,10.2 L78.6,8.7 L82.8,7.4 L86.9,7.0 L91.0,6.5 L95.2,6.7 L99.3,7.0 L103.4,6.4 L107.6,6.3 L111.7,6.3 L115.9,6.0 L120.0,5.3" class="s-ma10"/><path d="M0.0,27.8 L4.1,22.7 L8.3,16.1 L12.4,15.9 L16.6,21.9 L20.7,22.7 L24.8,21.0 L29.0,28.2 L33.1,23.6 L37.2,22.2 L41.4,17.9 L45.5,12.3 L49.7,13.7 L53.8,2.0 L57.9,3.0 L62.1,9.2 L66.2,7.9 L70.3,7.0 L74.5,6.8 L78.6,6.9 L82.8,4.9 L86.9,8.7 L91.0,8.4 L95.2,4.1 L99.3,6.2 L103.4,3.4 L107.6,6.4 L111.7,7.1 L115.9,3.7 L120.0,0.0" class="s-px"/></svg>
+    <div class="px"><div>$27.63</div><span class="zone z-buy">Breaking out</span></div>
+  </summary>
+  <div class="body">
+    <ul class="checks"><li class="ok"><span>Above 150 and 200-day MAs</span><small></small></li><li class="ok"><span>150-day above 200-day</span><small></small></li><li class="ok"><span>200-day rising for a month</span><small></small></li><li class="ok"><span>50-day above 150 and 200-day</span><small></small></li><li class="ok"><span>Above 50-day MA</span><small></small></li><li class="ok"><span>30%+ above 52-week low</span><small>+49%</small></li><li class="ok"><span>Within 25% of 52-week high</span><small>-3%</small></li><li class="ok"><span>RS rank 70+</span><small>RS 75</small></li><li class="no"><span>Volatility contraction (VCP)</span><small>pullbacks 7% &gt; 5% &gt; 10%</small></li><li class="no"><span>Volume drying up</span><small></small></li><li class="ok"><span>Pivot breakout on volume</span><small>pivot 27.42</small></li><li class="no"><span>EPS growth &gt; 25%</span><small>-12% YoY</small></li></ul>
+    <div class="plan">Buy point: above the pivot 27.42. Sell rule: 8% stop below your entry.</div>
+    <div class="meta">Mkt cap 380m · Finance · RS 75</div>
+    
+    <div class="links"><a href="https://www.tradingview.com/chart/?symbol=NASDAQ:NECB&amp;interval=W" target="_blank" rel="noopener">Weekly chart ↗</a>
+      <a href="http://openinsider.com/NECB" target="_blank" rel="noopener">Insider filings ↗</a></div>
+    <a class="buy" href="https://github.com/FrazKK/Super-Stock-Scanner/new/main?filename=holdings/america-NECB.json&amp;value=%7B%0A%20%20%22ticker%22%3A%20%22NECB%22%2C%0A%20%20%22exchange%22%3A%20%22NASDAQ%22%2C%0A%20%20%22market%22%3A%20%22america%22%2C%0A%20%20%22name%22%3A%20%22NorthEast%20Community%20Bancorp%2C%20Inc.%22%2C%0A%20%20%22method%22%3A%20%22minervini%22%2C%0A%20%20%22bought%22%3A%20%222026-10-18%22%2C%0A%20%20%22price%22%3A%2027.63%2C%0A%20%20%22note%22%3A%20%22Change%20price%20to%20what%20you%20paid%20%28UK%20prices%20in%20pence%29.%20Delete%20this%20file%20when%20you%20sell.%22%0A%7D" target="_blank" rel="noopener">I bought this ↗</a>
+  </div>
+</details>
+<details class="card">
+  <summary>
+    <div class="score" style="--p:0.71"><b>10</b><small>/14</small></div>
+    <div class="who"><div class="tick">WABC <span class="ex">NASDAQ</span><span class="new">NEW</span></div>
+      <div class="nm">Westamerica Bancorporation</div></div>
+    <svg class="spark" viewBox="0 0 120 36" preserveAspectRatio="none" aria-hidden="true"><path d="M0.0,36.0 L4.1,35.7 L8.3,35.2 L12.4,34.7 L16.6,34.1 L20.7,33.4 L24.8,32.4 L29.0,31.7 L33.1,31.0 L37.2,30.1 L41.4,29.3 L45.5,28.3 L49.7,27.3 L53.8,26.3 L57.9,25.1 L62.1,24.2 L66.2,23.1 L70.3,22.0 L74.5,20.9 L78.6,19.8 L82.8,18.8 L86.9,17.9 L91.0,17.1 L95.2,16.4 L99.3,15.7 L103.4,14.9 L107.6,14.0 L111.7,13.0 L115.9,12.2 L120.0,11.1" class="s-ma30"/><path d="M0.0,30.3 L4.1,29.6 L8.3,28.6 L12.4,28.2 L16.6,27.5 L20.7,26.9 L24.8,25.7 L29.0,24.6 L33.1,23.1 L37.2,21.4 L41.4,19.8 L45.5,18.0 L49.7,16.9 L53.8,15.4 L57.9,14.1 L62.1,13.2 L66.2,11.4 L70.3,9.6 L74.5,8.3 L78.6,7.2 L82.8,6.2 L86.9,6.0 L91.0,5.8 L95.2,5.5 L99.3,5.5 L103.4,4.7 L107.6,4.8 L111.7,4.9 L115.9,5.2 L120.0,4.6" class="s-ma10"/><path d="M0.0,29.6 L4.1,27.9 L8.3,22.6 L12.4,21.9 L16.6,19.4 L20.7,18.7 L24.8,18.6 L29.0,21.4 L33.1,17.2 L37.2,16.8 L41.4,13.9 L45.5,9.7 L49.7,10.8 L53.8,7.8 L57.9,6.1 L62.1,9.2 L66.2,1.1 L70.3,3.4 L74.5,4.4 L78.6,5.8 L82.8,3.8 L86.9,7.6 L91.0,8.7 L95.2,5.1 L99.3,5.9 L103.4,1.6 L107.6,1.6 L111.7,4.5 L115.9,7.1 L120.0,0.0" class="s-px"/></svg>
+    <div class="px"><div>$61.28</div><span class="zone z-buy">Breaking out</span></div>
+  </summary>
+  <div class="body">
+    <ul class="checks"><li class="ok"><span>Above 150 and 200-day MAs</span><small></small></li><li class="ok"><span>150-day above 200-day</span><small></small></li><li class="ok"><span>200-day rising for a month</span><small></small></li><li class="ok"><span>50-day above 150 and 200-day</span><small></small></li><li class="ok"><span>Above 50-day MA</span><small></small></li><li class="ok"><span>30%+ above 52-week low</span><small>+41%</small></li><li class="ok"><span>Within 25% of 52-week high</span><small>-3%</small></li><li class="ok"><span>RS rank 70+</span><small>RS 72</small></li><li class="no"><span>Volatility contraction (VCP)</span><small>pullbacks 12% &gt; 6% &gt; 9%</small></li><li class="no"><span>Volume drying up</span><small></small></li><li class="ok"><span>Pivot breakout on volume</span><small>pivot 61.00</small></li><li class="no"><span>EPS growth &gt; 25%</span><small>+9% YoY</small></li></ul>
+    <div class="plan">Buy point: above the pivot 61.00. Sell rule: 8% stop below your entry.</div>
+    <div class="meta">Mkt cap 1.42bn · Finance · RS 72</div>
+    
+    <div class="links"><a href="https://www.tradingview.com/chart/?symbol=NASDAQ:WABC&amp;interval=W" target="_blank" rel="noopener">Weekly chart ↗</a>
+      <a href="http://openinsider.com/WABC" target="_blank" rel="noopener">Insider filings ↗</a></div>
+    <a class="buy" href="https://github.com/FrazKK/Super-Stock-Scanner/new/main?filename=holdings/america-WABC.json&amp;value=%7B%0A%20%20%22ticker%22%3A%20%22WABC%22%2C%0A%20%20%22exchange%22%3A%20%22NASDAQ%22%2C%0A%20%20%22market%22%3A%20%22america%22%2C%0A%20%20%22name%22%3A%20%22Westamerica%20Bancorporation%22%2C%0A%20%20%22method%22%3A%20%22minervini%22%2C%0A%20%20%22bought%22%3A%20%222026-10-18%22%2C%0A%20%20%22price%22%3A%2061.28%2C%0A%20%20%22note%22%3A%20%22Change%20price%20to%20what%20you%20paid%20%28UK%20prices%20in%20pence%29.%20Delete%20this%20file%20when%20you%20sell.%22%0A%7D" target="_blank" rel="noopener">I bought this ↗</a>
+  </div>
+</details></details><details class="sec" open><summary><span class="st">Episodic pivots</span><span class="cnt">4 ready</span></summary><p class="blurb">Gapped up 10%+ on 3x+ volume this week after news, still holding the gap. Drill results and contract wins show up here.</p>
+<details class="card">
+  <summary>
+    <div class="score" style="--p:1.00"><b>9</b><small>/9</small></div>
+    <div class="who"><div class="tick">JBDI <span class="ex">NASDAQ</span></div>
+      <div class="nm">JBDI Holdings Limited</div></div>
+    <svg class="spark" viewBox="0 0 120 36" preserveAspectRatio="none" aria-hidden="true"><path d="M0.0,9.9 L4.1,10.6 L8.3,12.7 L12.4,13.9 L16.6,15.7 L20.7,17.0 L24.8,18.9 L29.0,20.4 L33.1,22.1 L37.2,23.3 L41.4,24.0 L45.5,24.6 L49.7,25.0 L53.8,25.5 L57.9,25.9 L62.1,26.2 L66.2,26.7 L70.3,27.1 L74.5,27.2 L78.6,27.3 L82.8,27.3 L86.9,27.2 L91.0,27.1 L95.2,27.6 L99.3,27.9 L103.4,28.1 L107.6,28.3 L111.7,28.6 L115.9,28.8 L120.0,28.0" class="s-ma30"/><path d="M0.0,23.8 L4.1,24.2 L8.3,24.1 L12.4,25.7 L16.6,26.5 L20.7,27.3 L24.8,27.7 L29.0,27.9 L33.1,29.0 L37.2,29.9 L41.4,30.4 L45.5,29.9 L49.7,29.8 L53.8,30.0 L57.9,29.9 L62.1,29.5 L66.2,29.6 L70.3,29.9 L74.5,29.0 L78.6,28.3 L82.8,27.6 L86.9,27.6 L91.0,27.5 L95.2,27.1 L99.3,27.1 L103.4,27.6 L107.6,27.7 L111.7,27.9 L115.9,28.5 L120.0,25.9" class="s-ma10"/><path d="M0.0,27.0 L4.1,29.9 L8.3,28.1 L12.4,28.7 L16.6,29.5 L20.7,29.8 L24.8,28.1 L29.0,28.3 L33.1,36.0 L37.2,33.5 L41.4,32.0 L45.5,25.0 L49.7,27.2 L53.8,30.8 L57.9,28.5 L62.1,26.0 L66.2,28.7 L70.3,31.4 L74.5,26.8 L78.6,26.6 L82.8,24.8 L86.9,25.6 L91.0,25.8 L95.2,26.6 L99.3,28.7 L103.4,31.2 L107.6,29.8 L111.7,33.2 L115.9,32.8 L120.0,0.0" class="s-px"/></svg>
+    <div class="px"><div>$2.59</div><span class="zone z-buy">Gap 3 days ago</span></div>
+  </summary>
+  <div class="body">
+    <ul class="checks"><li class="ok"><span>Gap up 10%+</span><small>+100% gap</small></li><li class="ok"><span>Volume 3x+ normal</span><small>5728.1x</small></li><li class="ok"><span>Held the gap</span><small>closed +243% that day</small></li><li class="ok"><span>Big gap (20%+)</span><small></small></li><li class="ok"><span>Huge volume (6x+)</span><small></small></li><li class="ok"><span>From neglect (not already run up)</span><small></small></li><li class="ok"><span>Not a takeover pin</span><small></small></li></ul>
+    <div class="plan">Check the news behind the gap. Sell rule: below the gap-day low (1.98).</div>
+    <div class="meta">Mkt cap 25m · Distribution Services · RS 96</div>
+    
+    <div class="links"><a href="https://www.tradingview.com/chart/?symbol=NASDAQ:JBDI&amp;interval=W" target="_blank" rel="noopener">Weekly chart ↗</a>
+      <a href="http://openinsider.com/JBDI" target="_blank" rel="noopener">Insider filings ↗</a></div>
+    <a class="buy" href="https://github.com/FrazKK/Super-Stock-Scanner/new/main?filename=holdings/america-JBDI.json&amp;value=%7B%0A%20%20%22ticker%22%3A%20%22JBDI%22%2C%0A%20%20%22exchange%22%3A%20%22NASDAQ%22%2C%0A%20%20%22market%22%3A%20%22america%22%2C%0A%20%20%22name%22%3A%20%22JBDI%20Holdings%20Limited%22%2C%0A%20%20%22method%22%3A%20%22episodic%22%2C%0A%20%20%22bought%22%3A%20%222026-10-18%22%2C%0A%20%20%22price%22%3A%202.59%2C%0A%20%20%22note%22%3A%20%22Change%20price%20to%20what%20you%20paid%20%28UK%20prices%20in%20pence%29.%20Delete%20this%20file%20when%20you%20sell.%22%2C%0A%20%20%22stop%22%3A%201.98%0A%7D" target="_blank" rel="noopener">I bought this ↗</a>
+  </div>
+</details>
+<details class="card">
+  <summary>
+    <div class="score" style="--p:1.00"><b>9</b><small>/9</small></div>
+    <div class="who"><div class="tick">PFAI <span class="ex">NASDAQ</span></div>
+      <div class="nm">Pinnacle Food Group Limited</div></div>
+    <svg class="spark" viewBox="0 0 120 36" preserveAspectRatio="none" aria-hidden="true"><path d="M0.0,35.6 L4.1,35.2 L8.3,34.3 L12.4,33.4 L16.6,32.5 L20.7,31.6 L24.8,30.6 L29.0,30.4 L33.1,30.0 L37.2,29.5 L41.4,28.8 L45.5,28.2 L49.7,27.5 L53.8,26.9 L57.9,26.4 L62.1,25.8 L66.2,25.3 L70.3,24.7 L74.5,24.5 L78.6,24.3 L82.8,24.0 L86.9,23.5 L91.0,23.2 L95.2,22.9 L99.3,22.5 L103.4,22.3 L107.6,22.0 L111.7,21.7 L115.9,21.4 L120.0,20.3" class="s-ma30"/><path d="M0.0,36.0 L4.1,34.2 L8.3,32.0 L12.4,29.7 L16.6,27.1 L20.7,25.0 L24.8,22.5 L29.0,19.8 L33.1,17.8 L37.2,15.9 L41.4,14.0 L45.5,13.5 L49.7,13.6 L53.8,14.0 L57.9,14.7 L62.1,15.0 L66.2,16.0 L70.3,16.8 L74.5,18.5 L78.6,20.5 L82.8,21.9 L86.9,22.9 L91.0,23.9 L95.2,25.2 L99.3,25.9 L103.4,26.9 L107.6,27.4 L111.7,28.6 L115.9,27.9 L120.0,24.6" class="s-ma10"/><path d="M0.0,31.3 L4.1,21.0 L8.3,14.0 L12.4,13.9 L16.6,11.8 L20.7,15.1 L24.8,11.2 L29.0,11.9 L33.1,15.3 L37.2,13.5 L41.4,12.6 L45.5,15.4 L49.7,15.3 L53.8,17.5 L57.9,18.7 L62.1,18.4 L66.2,21.3 L70.3,20.3 L74.5,32.4 L78.6,33.5 L82.8,25.7 L86.9,25.9 L91.0,25.2 L95.2,30.3 L99.3,25.9 L103.4,28.6 L107.6,26.1 L111.7,32.5 L115.9,25.2 L120.0,0.0" class="s-px"/></svg>
+    <div class="px"><div>$4.85</div><span class="zone z-buy">Gap 3 days ago</span></div>
+  </summary>
+  <div class="body">
+    <ul class="checks"><li class="ok"><span>Gap up 10%+</span><small>+130% gap</small></li><li class="ok"><span>Volume 3x+ normal</span><small>59.3x</small></li><li class="ok"><span>Held the gap</span><small>closed +80% that day</small></li><li class="ok"><span>Big gap (20%+)</span><small></small></li><li class="ok"><span>Huge volume (6x+)</span><small></small></li><li class="ok"><span>From neglect (not already run up)</span><small></small></li><li class="ok"><span>Not a takeover pin</span><small></small></li></ul>
+    <div class="plan">Check the news behind the gap. Sell rule: below the gap-day low (3.97).</div>
+    <div class="meta">Mkt cap 57m · Producer Manufacturing · RS 90</div>
+    
+    <div class="links"><a href="https://www.tradingview.com/chart/?symbol=NASDAQ:PFAI&amp;interval=W" target="_blank" rel="noopener">Weekly chart ↗</a>
+      <a href="http://openinsider.com/PFAI" target="_blank" rel="noopener">Insider filings ↗</a></div>
+    <a class="buy" href="https://github.com/FrazKK/Super-Stock-Scanner/new/main?filename=holdings/america-PFAI.json&amp;value=%7B%0A%20%20%22ticker%22%3A%20%22PFAI%22%2C%0A%20%20%22exchange%22%3A%20%22NASDAQ%22%2C%0A%20%20%22market%22%3A%20%22america%22%2C%0A%20%20%22name%22%3A%20%22Pinnacle%20Food%20Group%20Limited%22%2C%0A%20%20%22method%22%3A%20%22episodic%22%2C%0A%20%20%22bought%22%3A%20%222026-10-18%22%2C%0A%20%20%22price%22%3A%204.85%2C%0A%20%20%22note%22%3A%20%22Change%20price%20to%20what%20you%20paid%20%28UK%20prices%20in%20pence%29.%20Delete%20this%20file%20when%20you%20sell.%22%2C%0A%20%20%22stop%22%3A%203.97%0A%7D" target="_blank" rel="noopener">I bought this ↗</a>
+  </div>
+</details>
+<details class="card">
+  <summary>
+    <div class="score" style="--p:1.00"><b>9</b><small>/9</small></div>
+    <div class="who"><div class="tick">OPK <span class="ex">NASDAQ</span></div>
+      <div class="nm">Opko Health, Inc.</div></div>
+    <svg class="spark" viewBox="0 0 120 36" preserveAspectRatio="none" aria-hidden="true"><path d="M0.0,21.9 L4.1,22.4 L8.3,22.9 L12.4,23.3 L16.6,23.8 L20.7,24.7 L24.8,25.5 L29.0,26.4 L33.1,26.9 L37.2,26.7 L41.4,26.5 L45.5,26.2 L49.7,26.0 L53.8,25.6 L57.9,25.2 L62.1,25.3 L66.2,25.5 L70.3,25.7 L74.5,25.6 L78.6,25.6 L82.8,25.3 L86.9,25.0 L91.0,24.5 L95.2,23.7 L99.3,23.0 L103.4,22.0 L107.6,21.1 L111.7,20.3 L115.9,19.9 L120.0,19.0" class="s-ma30"/><path d="M0.0,29.3 L4.1,30.4 L8.3,31.1 L12.4,31.1 L16.6,31.1 L20.7,31.7 L24.8,32.1 L29.0,32.6 L33.1,32.1 L37.2,29.9 L41.4,27.9 L45.5,26.1 L49.7,24.5 L53.8,22.7 L57.9,20.8 L62.1,19.3 L66.2,18.9 L70.3,18.2 L74.5,17.9 L78.6,18.4 L82.8,18.8 L86.9,18.4 L91.0,18.1 L95.2,17.4 L99.3,17.1 L103.4,15.0 L107.6,12.2 L111.7,10.0 L115.9,9.7 L120.0,8.7" class="s-ma10"/><path d="M0.0,34.7 L4.1,33.5 L8.3,32.2 L12.4,27.2 L16.6,27.8 L20.7,36.0 L24.8,33.5 L29.0,36.0 L33.1,25.3 L37.2,13.3 L41.4,14.5 L45.5,15.8 L49.7,15.8 L53.8,8.8 L57.9,9.5 L62.1,20.2 L66.2,30.3 L70.3,28.4 L74.5,22.1 L78.6,18.9 L82.8,18.3 L86.9,12.0 L91.0,12.0 L95.2,1.9 L99.3,6.3 L103.4,0.0 L107.6,1.9 L111.7,6.9 L115.9,18.3 L120.0,8.8" class="s-px"/></svg>
+    <div class="px"><div>$1.53</div><span class="zone z-buy">Gap 1 day ago</span></div>
+  </summary>
+  <div class="body">
+    <ul class="checks"><li class="ok"><span>Gap up 10%+</span><small>+20% gap</small></li><li class="ok"><span>Volume 3x+ normal</span><small>22.1x</small></li><li class="ok"><span>Held the gap</span><small>closed +18% that day</small></li><li class="ok"><span>Big gap (20%+)</span><small></small></li><li class="ok"><span>Huge volume (6x+)</span><small></small></li><li class="ok"><span>From neglect (not already run up)</span><small></small></li><li class="ok"><span>Not a takeover pin</span><small></small></li></ul>
+    <div class="plan">Check the news behind the gap. Sell rule: below the gap-day low (1.48).</div>
+    <div class="meta">Mkt cap 1.14bn · Health Services · RS 79</div>
+    
+    <div class="links"><a href="https://www.tradingview.com/chart/?symbol=NASDAQ:OPK&amp;interval=W" target="_blank" rel="noopener">Weekly chart ↗</a>
+      <a href="http://openinsider.com/OPK" target="_blank" rel="noopener">Insider filings ↗</a></div>
+    <a class="buy" href="https://github.com/FrazKK/Super-Stock-Scanner/new/main?filename=holdings/america-OPK.json&amp;value=%7B%0A%20%20%22ticker%22%3A%20%22OPK%22%2C%0A%20%20%22exchange%22%3A%20%22NASDAQ%22%2C%0A%20%20%22market%22%3A%20%22america%22%2C%0A%20%20%22name%22%3A%20%22Opko%20Health%2C%20Inc.%22%2C%0A%20%20%22method%22%3A%20%22episodic%22%2C%0A%20%20%22bought%22%3A%20%222026-10-18%22%2C%0A%20%20%22price%22%3A%201.53%2C%0A%20%20%22note%22%3A%20%22Change%20price%20to%20what%20you%20paid%20%28UK%20prices%20in%20pence%29.%20Delete%20this%20file%20when%20you%20sell.%22%2C%0A%20%20%22stop%22%3A%201.48%0A%7D" target="_blank" rel="noopener">I bought this ↗</a>
+  </div>
+</details>
+<details class="card">
+  <summary>
+    <div class="score" style="--p:1.00"><b>9</b><small>/9</small></div>
+    <div class="who"><div class="tick">MXCT <span class="ex">NASDAQ</span></div>
+      <div class="nm">MaxCyte, Inc.</div></div>
+    <svg class="spark" viewBox="0 0 120 36" preserveAspectRatio="none" aria-hidden="true"><path d="M0.0,4.3 L4.1,5.4 L8.3,6.5 L12.4,7.7 L16.6,8.8 L20.7,10.3 L24.8,11.5 L29.0,12.5 L33.1,13.5 L37.2,14.0 L41.4,14.6 L45.5,15.4 L49.7,16.2 L53.8,17.0 L57.9,17.5 L62.1,17.8 L66.2,18.3 L70.3,19.2 L74.5,20.0 L78.6,20.5 L82.8,20.4 L86.9,20.0 L91.0,19.4 L95.2,18.6 L99.3,17.9 L103.4,17.1 L107.6,16.5 L111.7,16.0 L115.9,15.7 L120.0,14.7" class="s-ma30"/><path d="M0.0,29.0 L4.1,31.1 L8.3,31.7 L12.4,31.5 L16.6,30.8 L20.7,30.0 L24.8,29.9 L29.0,28.5 L33.1,27.4 L37.2,25.1 L41.4,22.7 L45.5,20.8 L49.7,18.7 L53.8,16.6 L57.9,14.8 L62.1,12.5 L66.2,10.4 L70.3,10.2 L74.5,10.2 L78.6,10.3 L82.8,9.4 L86.9,8.0 L91.0,8.0 L95.2,7.8 L99.3,8.1 L103.4,8.8 L107.6,9.2 L111.7,9.2 L115.9,9.4 L120.0,8.8" class="s-ma10"/><path d="M0.0,36.0 L4.1,32.6 L8.3,30.5 L12.4,27.5 L16.6,26.7 L20.7,25.9 L24.8,27.8 L29.0,17.6 L33.1,17.6 L37.2,8.8 L41.4,12.4 L45.5,13.4 L49.7,8.8 L53.8,7.2 L57.9,8.5 L62.1,2.6 L66.2,7.2 L70.3,15.5 L74.5,17.1 L78.6,10.3 L82.8,3.1 L86.9,0.0 L91.0,8.3 L95.2,5.2 L99.3,11.4 L103.4,9.8 L107.6,10.9 L111.7,16.0 L115.9,19.1 L120.0,4.1" class="s-px"/></svg>
+    <div class="px"><div>$1.30</div><span class="zone z-buy">Gap 2 days ago</span></div>
+  </summary>
+  <div class="body">
+    <ul class="checks"><li class="ok"><span>Gap up 10%+</span><small>+27% gap</small></li><li class="ok"><span>Volume 3x+ normal</span><small>23.2x</small></li><li class="ok"><span>Held the gap</span><small>closed +30% that day</small></li><li class="ok"><span>Big gap (20%+)</span><small></small></li><li class="ok"><span>Huge volume (6x+)</span><small></small></li><li class="ok"><span>From neglect (not already run up)</span><small></small></li><li class="ok"><span>Not a takeover pin</span><small></small></li></ul>
+    <div class="plan">Check the news behind the gap. Sell rule: below the gap-day low (1.20).</div>
+    <div class="meta">Mkt cap 134m · Health Technology · RS 66</div>
+    
+    <div class="links"><a href="https://www.tradingview.com/chart/?symbol=NASDAQ:MXCT&amp;interval=W" target="_blank" rel="noopener">Weekly chart ↗</a>
+      <a href="http://openinsider.com/MXCT" target="_blank" rel="noopener">Insider filings ↗</a></div>
+    <a class="buy" href="https://github.com/FrazKK/Super-Stock-Scanner/new/main?filename=holdings/america-MXCT.json&amp;value=%7B%0A%20%20%22ticker%22%3A%20%22MXCT%22%2C%0A%20%20%22exchange%22%3A%20%22NASDAQ%22%2C%0A%20%20%22market%22%3A%20%22america%22%2C%0A%20%20%22name%22%3A%20%22MaxCyte%2C%20Inc.%22%2C%0A%20%20%22method%22%3A%20%22episodic%22%2C%0A%20%20%22bought%22%3A%20%222026-10-18%22%2C%0A%20%20%22price%22%3A%201.3%2C%0A%20%20%22note%22%3A%20%22Change%20price%20to%20what%20you%20paid%20%28UK%20prices%20in%20pence%29.%20Delete%20this%20file%20when%20you%20sell.%22%2C%0A%20%20%22stop%22%3A%201.195%0A%7D" target="_blank" rel="noopener">I bought this ↗</a>
+  </div>
+</details></details></section><section id="canada" class=""><div class="banner b-down">Downtrend: index below its 30-week MA. Most breakouts fail in weak markets, so go small or wait. <small>(XCS.TO, -2.3% in 4 wks)</small></div><p class="stats">519 stocks screened · 153 charts analysed</p><details class="sec"><summary><span class="st">Picked by 2+ methods</span><span class="cnt">0</span></summary><p class="blurb">Stocks that more than one method flagged this week. Agreement between different approaches can mean a stronger setup; the track record will show if it does. Each method's own label is shown; if one says "Extended" it's still worth waiting.</p><p class="empty">No overlap this week.</p></details><details class="sec" open><summary><span class="st">Stine superstocks</span><span class="cnt">0 ready</span></summary><p class="blurb">Cheap, small, profitable stocks breaking out of a base on huge volume. Buy the pullback to the 10-week MA.</p><p class="empty">Nothing at a buy point right now.</p></details><details class="sec" open><summary><span class="st">Weinstein Stage 2</span><span class="cnt">2 ready</span></summary><p class="blurb">Breakouts from a flat base above the 30-week MA, beating the market. No earnings needed, so it suits explorers.</p>
+<details class="card">
+  <summary>
+    <div class="score" style="--p:0.90"><b>9</b><small>/10</small></div>
+    <div class="who"><div class="tick">ADY <span class="ex">TSXV</span></div>
+      <div class="nm">Adyton Resources Corporation</div></div>
+    <svg class="spark" viewBox="0 0 120 36" preserveAspectRatio="none" aria-hidden="true"><path d="M0.0,21.9 L4.1,23.1 L8.3,23.8 L12.4,24.2 L16.6,24.6 L20.7,24.6 L24.8,24.1 L29.0,23.5 L33.1,22.8 L37.2,22.0 L41.4,21.2 L45.5,20.7 L49.7,20.0 L53.8,19.7 L57.9,19.2 L62.1,18.9 L66.2,18.6 L70.3,18.8 L74.5,19.2 L78.6,19.3 L82.8,19.8 L86.9,20.2 L91.0,20.6 L95.2,20.8 L99.3,21.0 L103.4,21.2 L107.6,21.4 L111.7,21.0 L115.9,20.4 L120.0,19.8" class="s-ma30"/><path d="M0.0,14.2 L4.1,15.2 L8.3,16.0 L12.4,15.6 L16.6,14.9 L20.7,14.6 L24.8,14.6 L29.0,14.4 L33.1,14.3 L37.2,13.9 L41.4,14.8 L45.5,16.2 L49.7,17.0 L53.8,18.5 L57.9,19.7 L62.1,21.1 L66.2,23.6 L70.3,26.1 L74.5,28.0 L78.6,29.4 L82.8,30.3 L86.9,29.3 L91.0,28.7 L95.2,28.4 L99.3,28.3 L103.4,27.8 L107.6,25.9 L111.7,22.4 L115.9,18.8 L120.0,16.2" class="s-ma10"/><path d="M0.0,15.6 L4.1,14.6 L8.3,16.5 L12.4,11.7 L16.6,13.6 L20.7,14.6 L24.8,5.8 L29.0,11.7 L33.1,16.5 L37.2,18.5 L41.4,24.3 L45.5,29.2 L49.7,24.3 L53.8,26.3 L57.9,25.3 L62.1,29.2 L66.2,31.1 L70.3,36.0 L74.5,36.0 L78.6,32.1 L82.8,33.1 L86.9,19.5 L91.0,18.5 L95.2,23.4 L99.3,24.3 L103.4,24.3 L107.6,11.7 L111.7,1.0 L115.9,0.0 L120.0,6.8" class="s-px"/></svg>
+    <div class="px"><div>C$0.40</div><span class="zone z-buy">Back at breakout</span></div>
+  </summary>
+  <div class="body">
+    <ul class="checks"><li class="ok"><span>Breakout above resistance on 2x+ volume</span><small>2.4x volume, 2 wk ago</small></li><li class="ok"><span>Came out of a flat Stage 1 base</span><small></small></li><li class="ok"><span>Still above 30-week MA, MA not falling</span><small>MA +2.1% in 4 wks</small></li><li class="ok"><span>Beating the market (Mansfield RS &gt; 0)</span><small>+20%</small></li><li class="ok"><span>30-week MA rising</span><small></small></li><li class="no"><span>Breakout volume 3x+</span><small></small></li><li class="ok"><span>Not extended (within 15% of breakout)</span><small>+0% vs breakout</small></li><li class="ok"><span>RS rank 70+</span><small>RS 71</small></li></ul>
+    <div class="plan">Breakout level 0.40. Sell rule: weekly close below the 30-week MA (0.33).</div>
+    <div class="meta">Mkt cap 127m · Non-Energy Minerals · RS 71</div>
+    
+    <div class="links"><a href="https://www.tradingview.com/chart/?symbol=TSXV:ADY&amp;interval=W" target="_blank" rel="noopener">Weekly chart ↗</a>
+      <a href="https://www.canadianinsider.com/node/7?menu_tickersearch=ADY" target="_blank" rel="noopener">Insider filings ↗</a></div>
+    <a class="buy" href="https://github.com/FrazKK/Super-Stock-Scanner/new/main?filename=holdings/canada-ADY.json&amp;value=%7B%0A%20%20%22ticker%22%3A%20%22ADY%22%2C%0A%20%20%22exchange%22%3A%20%22TSXV%22%2C%0A%20%20%22market%22%3A%20%22canada%22%2C%0A%20%20%22name%22%3A%20%22Adyton%20Resources%20Corporation%22%2C%0A%20%20%22method%22%3A%20%22weinstein%22%2C%0A%20%20%22bought%22%3A%20%222026-10-18%22%2C%0A%20%20%22price%22%3A%200.4%2C%0A%20%20%22note%22%3A%20%22Change%20price%20to%20what%20you%20paid%20%28UK%20prices%20in%20pence%29.%20Delete%20this%20file%20when%20you%20sell.%22%0A%7D" target="_blank" rel="noopener">I bought this ↗</a>
+  </div>
+</details>
+<details class="card">
+  <summary>
+    <div class="score" style="--p:0.80"><b>8</b><small>/10</small></div>
+    <div class="who"><div class="tick">PCU <span class="ex">TSXV</span></div>
+      <div class="nm">Pecoy Copper Corp.</div></div>
+    <svg class="spark" viewBox="0 0 120 36" preserveAspectRatio="none" aria-hidden="true"><path d="M12.4,33.5 L16.6,31.7 L20.7,30.1 L24.8,28.5 L29.0,27.1 L33.1,25.5 L37.2,23.7 L41.4,22.1 L45.5,20.3 L49.7,18.3 L53.8,16.4 L57.9,15.1 L62.1,14.8 L66.2,14.7 L70.3,14.6 L74.5,14.3 L78.6,13.9 L82.8,13.7 L86.9,14.3 L91.0,14.9 L95.2,15.5 L99.3,15.6 L103.4,16.1 L107.6,17.0 L111.7,17.4 L115.9,17.2 L120.0,16.0" class="s-ma30"/><path d="M0.0,9.4 L4.1,10.3 L8.3,10.0 L12.4,10.1 L16.6,9.5 L20.7,10.7 L24.8,13.6 L29.0,15.6 L33.1,15.4 L37.2,12.6 L41.4,11.3 L45.5,11.3 L49.7,11.2 L53.8,11.0 L57.9,11.9 L62.1,13.3 L66.2,15.1 L70.3,16.8 L74.5,18.7 L78.6,20.0 L82.8,20.4 L86.9,21.4 L91.0,23.5 L95.2,25.3 L99.3,25.5 L103.4,24.4 L107.6,22.1 L111.7,19.9 L115.9,17.5 L120.0,15.5" class="s-ma10"/><path d="M0.0,27.9 L4.1,10.2 L8.3,5.4 L12.4,6.6 L16.6,9.0 L20.7,17.4 L24.8,17.4 L29.0,13.8 L33.1,12.0 L37.2,6.0 L41.4,15.0 L45.5,10.2 L49.7,4.2 L53.8,5.4 L57.9,17.4 L62.1,31.2 L66.2,36.0 L70.3,30.6 L74.5,31.2 L78.6,19.2 L82.8,18.6 L86.9,19.8 L91.0,25.8 L95.2,23.4 L99.3,19.2 L103.4,20.4 L107.6,13.2 L111.7,7.8 L115.9,7.2 L120.0,0.0" class="s-px"/></svg>
+    <div class="px"><div>C$1.95</div><span class="zone z-buy">Fresh breakout</span></div>
+  </summary>
+  <div class="body">
+    <ul class="checks"><li class="ok"><span>Breakout above resistance on 2x+ volume</span><small>2.2x volume, 0 wk ago</small></li><li class="ok"><span>Came out of a flat Stage 1 base</span><small></small></li><li class="ok"><span>Still above 30-week MA, MA not falling</span><small>MA +0.1% in 4 wks</small></li><li class="ok"><span>Beating the market (Mansfield RS &gt; 0)</span><small>+19%</small></li><li class="no"><span>30-week MA rising</span><small></small></li><li class="no"><span>Breakout volume 3x+</span><small></small></li><li class="ok"><span>Not extended (within 15% of breakout)</span><small>+2% vs breakout</small></li><li class="ok"><span>RS rank 70+</span><small>RS 80</small></li></ul>
+    <div class="plan">Breakout level 1.92. Sell rule: weekly close below the 30-week MA (1.68).</div>
+    <div class="meta">Mkt cap 409m · Non-Energy Minerals · RS 80</div>
+    
+    <div class="links"><a href="https://www.tradingview.com/chart/?symbol=TSXV:PCU&amp;interval=W" target="_blank" rel="noopener">Weekly chart ↗</a>
+      <a href="https://www.canadianinsider.com/node/7?menu_tickersearch=PCU" target="_blank" rel="noopener">Insider filings ↗</a></div>
+    <a class="buy" href="https://github.com/FrazKK/Super-Stock-Scanner/new/main?filename=holdings/canada-PCU.json&amp;value=%7B%0A%20%20%22ticker%22%3A%20%22PCU%22%2C%0A%20%20%22exchange%22%3A%20%22TSXV%22%2C%0A%20%20%22market%22%3A%20%22canada%22%2C%0A%20%20%22name%22%3A%20%22Pecoy%20Copper%20Corp.%22%2C%0A%20%20%22method%22%3A%20%22weinstein%22%2C%0A%20%20%22bought%22%3A%20%222026-10-18%22%2C%0A%20%20%22price%22%3A%201.95%2C%0A%20%20%22note%22%3A%20%22Change%20price%20to%20what%20you%20paid%20%28UK%20prices%20in%20pence%29.%20Delete%20this%20file%20when%20you%20sell.%22%0A%7D" target="_blank" rel="noopener">I bought this ↗</a>
+  </div>
+</details></details><details class="sec" open><summary><span class="st">Minervini trend + VCP</span><span class="cnt">1 ready</span></summary><p class="blurb">Passes all 8 Trend Template rules. Best when pullbacks are shrinking and it breaks out of the tightest point.</p>
+<details class="card">
+  <summary>
+    <div class="score" style="--p:0.79"><b>11</b><small>/14</small></div>
+    <div class="who"><div class="tick">PHX <span class="ex">TSX</span></div>
+      <div class="nm">PHX Energy Services Corp.</div></div>
+    <svg class="spark" viewBox="0 0 120 36" preserveAspectRatio="none" aria-hidden="true"><path d="M0.0,36.0 L4.1,34.8 L8.3,33.7 L12.4,32.8 L16.6,31.7 L20.7,30.6 L24.8,29.7 L29.0,28.7 L33.1,27.7 L37.2,26.9 L41.4,25.9 L45.5,24.9 L49.7,24.0 L53.8,23.3 L57.9,22.6 L62.1,21.9 L66.2,21.1 L70.3,20.2 L74.5,19.5 L78.6,18.5 L82.8,17.4 L86.9,16.3 L91.0,15.2 L95.2,14.3 L99.3,13.4 L103.4,12.6 L107.6,12.4 L111.7,12.3 L115.9,12.1 L120.0,11.9" class="s-ma30"/><path d="M0.0,21.5 L4.1,18.6 L8.3,16.1 L12.4,14.2 L16.6,11.8 L20.7,9.4 L24.8,9.8 L29.0,10.2 L33.1,10.4 L37.2,11.8 L41.4,13.2 L45.5,14.0 L49.7,14.7 L53.8,15.3 L57.9,16.6 L62.1,17.9 L66.2,18.1 L70.3,18.3 L74.5,18.9 L78.6,18.3 L82.8,17.3 L86.9,16.3 L91.0,15.0 L95.2,13.3 L99.3,11.7 L103.4,10.4 L107.6,9.5 L111.7,8.5 L115.9,6.9 L120.0,5.8" class="s-ma10"/><path d="M0.0,2.0 L4.1,8.3 L8.3,11.9 L12.4,16.6 L16.6,8.7 L20.7,8.1 L24.8,17.3 L29.0,14.6 L33.1,12.0 L37.2,18.1 L41.4,16.6 L45.5,16.2 L49.7,18.5 L53.8,23.0 L57.9,21.8 L62.1,20.8 L66.2,19.0 L70.3,16.5 L74.5,18.8 L78.6,11.7 L82.8,7.1 L86.9,6.0 L91.0,4.8 L95.2,6.4 L99.3,6.2 L103.4,7.8 L107.6,9.3 L111.7,6.5 L115.9,3.5 L120.0,0.0" class="s-px"/></svg>
+    <div class="px"><div>C$13.24</div><span class="zone z-buy">Breaking out</span></div>
+  </summary>
+  <div class="body">
+    <ul class="checks"><li class="ok"><span>Above 150 and 200-day MAs</span><small></small></li><li class="ok"><span>150-day above 200-day</span><small></small></li><li class="ok"><span>200-day rising for a month</span><small></small></li><li class="ok"><span>50-day above 150 and 200-day</span><small></small></li><li class="ok"><span>Above 50-day MA</span><small></small></li><li class="ok"><span>30%+ above 52-week low</span><small>+112%</small></li><li class="ok"><span>Within 25% of 52-week high</span><small>-2%</small></li><li class="ok"><span>RS rank 70+</span><small>RS 73</small></li><li class="no"><span>Volatility contraction (VCP)</span><small>pullbacks 18% &gt; 9% &gt; 13%</small></li><li class="no"><span>Volume drying up</span><small></small></li><li class="ok"><span>Pivot breakout on volume</span><small>pivot 12.76</small></li><li class="ok"><span>EPS growth &gt; 25%</span><small>+28% YoY</small></li></ul>
+    <div class="plan">Buy point: above the pivot 12.76. Sell rule: 8% stop below your entry.</div>
+    <div class="meta">Mkt cap 606m · Industrial Services · RS 73</div>
+    
+    <div class="links"><a href="https://www.tradingview.com/chart/?symbol=TSX:PHX&amp;interval=W" target="_blank" rel="noopener">Weekly chart ↗</a>
+      <a href="https://www.canadianinsider.com/node/7?menu_tickersearch=PHX" target="_blank" rel="noopener">Insider filings ↗</a></div>
+    <a class="buy" href="https://github.com/FrazKK/Super-Stock-Scanner/new/main?filename=holdings/canada-PHX.json&amp;value=%7B%0A%20%20%22ticker%22%3A%20%22PHX%22%2C%0A%20%20%22exchange%22%3A%20%22TSX%22%2C%0A%20%20%22market%22%3A%20%22canada%22%2C%0A%20%20%22name%22%3A%20%22PHX%20Energy%20Services%20Corp.%22%2C%0A%20%20%22method%22%3A%20%22minervini%22%2C%0A%20%20%22bought%22%3A%20%222026-10-18%22%2C%0A%20%20%22price%22%3A%2013.24%2C%0A%20%20%22note%22%3A%20%22Change%20price%20to%20what%20you%20paid%20%28UK%20prices%20in%20pence%29.%20Delete%20this%20file%20when%20you%20sell.%22%0A%7D" target="_blank" rel="noopener">I bought this ↗</a>
+  </div>
+</details></details><details class="sec" open><summary><span class="st">Episodic pivots</span><span class="cnt">2 ready</span></summary><p class="blurb">Gapped up 10%+ on 3x+ volume this week after news, still holding the gap. Drill results and contract wins show up here.</p>
+<details class="card">
+  <summary>
+    <div class="score" style="--p:0.89"><b>8</b><small>/9</small></div>
+    <div class="who"><div class="tick">BRW <span class="ex">TSXV</span></div>
+      <div class="nm">Brunswick Exploration, Inc.</div></div>
+    <svg class="spark" viewBox="0 0 120 36" preserveAspectRatio="none" aria-hidden="true"><path d="M0.0,19.6 L4.1,19.1 L8.3,18.3 L12.4,17.4 L16.6,17.2 L20.7,16.4 L24.8,15.7 L29.0,15.2 L33.1,14.5 L37.2,13.7 L41.4,13.3 L45.5,12.9 L49.7,12.8 L53.8,12.8 L57.9,12.8 L62.1,12.8 L66.2,13.2 L70.3,13.7 L74.5,14.4 L78.6,15.9 L82.8,17.8 L86.9,19.2 L91.0,20.0 L95.2,21.1 L99.3,21.7 L103.4,22.0 L107.6,22.2 L111.7,22.0 L115.9,21.4 L120.0,20.6" class="s-ma30"/><path d="M0.0,7.8 L4.1,11.7 L8.3,12.9 L12.4,14.1 L16.6,14.7 L20.7,14.7 L24.8,15.6 L29.0,16.8 L33.1,16.8 L37.2,15.9 L41.4,16.2 L45.5,16.2 L49.7,17.4 L53.8,19.2 L57.9,20.4 L62.1,22.8 L66.2,24.9 L70.3,26.4 L74.5,28.2 L78.6,30.0 L82.8,29.4 L86.9,29.7 L91.0,29.7 L95.2,30.0 L99.3,30.0 L103.4,28.5 L107.6,26.1 L111.7,22.8 L115.9,19.2 L120.0,15.9" class="s-ma10"/><path d="M0.0,24.0 L4.1,21.0 L8.3,15.0 L12.4,12.0 L16.6,18.0 L20.7,6.0 L24.8,12.0 L29.0,18.0 L33.1,18.0 L37.2,15.0 L41.4,27.0 L45.5,21.0 L49.7,27.0 L53.8,30.0 L57.9,30.0 L62.1,30.0 L66.2,33.0 L70.3,33.0 L74.5,36.0 L78.6,33.0 L82.8,21.0 L86.9,24.0 L91.0,27.0 L95.2,33.0 L99.3,30.0 L103.4,15.0 L107.6,9.0 L111.7,0.0 L115.9,0.0 L120.0,0.0" class="s-px"/></svg>
+    <div class="px"><div>C$0.25</div><span class="zone z-buy">Gap 1 day ago</span></div>
+  </summary>
+  <div class="body">
+    <ul class="checks"><li class="ok"><span>Gap up 10%+</span><small>+25% gap</small></li><li class="ok"><span>Volume 3x+ normal</span><small>4.2x</small></li><li class="ok"><span>Held the gap</span><small>closed +50% that day</small></li><li class="ok"><span>Big gap (20%+)</span><small></small></li><li class="no"><span>Huge volume (6x+)</span><small></small></li><li class="ok"><span>From neglect (not already run up)</span><small></small></li><li class="ok"><span>Not a takeover pin</span><small></small></li></ul>
+    <div class="plan">Check the news behind the gap. Sell rule: below the gap-day low (0.20).</div>
+    <div class="meta">Mkt cap 71m · Non-Energy Minerals · RS 84</div>
+    
+    <div class="links"><a href="https://www.tradingview.com/chart/?symbol=TSXV:BRW&amp;interval=W" target="_blank" rel="noopener">Weekly chart ↗</a>
+      <a href="https://www.canadianinsider.com/node/7?menu_tickersearch=BRW" target="_blank" rel="noopener">Insider filings ↗</a></div>
+    <a class="buy" href="https://github.com/FrazKK/Super-Stock-Scanner/new/main?filename=holdings/canada-BRW.json&amp;value=%7B%0A%20%20%22ticker%22%3A%20%22BRW%22%2C%0A%20%20%22exchange%22%3A%20%22TSXV%22%2C%0A%20%20%22market%22%3A%20%22canada%22%2C%0A%20%20%22name%22%3A%20%22Brunswick%20Exploration%2C%20Inc.%22%2C%0A%20%20%22method%22%3A%20%22episodic%22%2C%0A%20%20%22bought%22%3A%20%222026-10-18%22%2C%0A%20%20%22price%22%3A%200.25%2C%0A%20%20%22note%22%3A%20%22Change%20price%20to%20what%20you%20paid%20%28UK%20prices%20in%20pence%29.%20Delete%20this%20file%20when%20you%20sell.%22%2C%0A%20%20%22stop%22%3A%200.2%0A%7D" target="_blank" rel="noopener">I bought this ↗</a>
+  </div>
+</details>
+<details class="card">
+  <summary>
+    <div class="score" style="--p:0.78"><b>7</b><small>/9</small></div>
+    <div class="who"><div class="tick">BMM <span class="ex">TSXV</span></div>
+      <div class="nm">Black Mammoth Metals Corporation</div></div>
+    <svg class="spark" viewBox="0 0 120 36" preserveAspectRatio="none" aria-hidden="true"><path d="M0.0,6.7 L4.1,5.8 L8.3,5.4 L12.4,4.7 L16.6,4.9 L20.7,5.3 L24.8,5.7 L29.0,5.6 L33.1,5.7 L37.2,6.0 L41.4,6.2 L45.5,6.7 L49.7,6.6 L53.8,7.0 L57.9,7.5 L62.1,8.4 L66.2,9.4 L70.3,10.5 L74.5,12.5 L78.6,14.2 L82.8,15.5 L86.9,17.3 L91.0,18.4 L95.2,19.3 L99.3,20.2 L103.4,21.4 L107.6,22.7 L111.7,23.9 L115.9,24.4 L120.0,24.2" class="s-ma30"/><path d="M0.0,0.0 L4.1,4.4 L8.3,6.9 L12.4,7.7 L16.6,9.4 L20.7,12.5 L24.8,15.6 L29.0,18.1 L33.1,19.0 L37.2,20.1 L41.4,21.8 L45.5,23.4 L49.7,23.9 L53.8,25.4 L57.9,25.7 L62.1,25.9 L66.2,26.3 L70.3,26.6 L74.5,27.4 L78.6,25.9 L82.8,24.9 L86.9,24.1 L91.0,24.5 L95.2,24.9 L99.3,25.6 L103.4,25.8 L107.6,26.1 L111.7,26.9 L115.9,26.7 L120.0,26.6" class="s-ma10"/><path d="M0.0,15.1 L4.1,15.8 L8.3,14.0 L12.4,6.8 L16.6,19.2 L20.7,26.6 L24.8,24.5 L29.0,19.4 L33.1,23.8 L37.2,36.0 L41.4,31.6 L45.5,32.1 L49.7,19.0 L53.8,21.8 L57.9,22.7 L62.1,28.0 L66.2,28.7 L70.3,22.4 L74.5,31.9 L78.6,21.1 L82.8,20.9 L86.9,24.5 L91.0,23.3 L95.2,25.4 L99.3,29.6 L103.4,30.2 L107.6,31.8 L111.7,30.7 L115.9,29.8 L120.0,19.9" class="s-px"/></svg>
+    <div class="px"><div>C$4.26</div><span class="zone z-buy">Gap 1 day ago</span></div>
+  </summary>
+  <div class="body">
+    <ul class="checks"><li class="ok"><span>Gap up 10%+</span><small>+16% gap</small></li><li class="ok"><span>Volume 3x+ normal</span><small>5.2x</small></li><li class="ok"><span>Held the gap</span><small>closed +12% that day</small></li><li class="no"><span>Big gap (20%+)</span><small></small></li><li class="no"><span>Huge volume (6x+)</span><small></small></li><li class="ok"><span>From neglect (not already run up)</span><small></small></li><li class="ok"><span>Not a takeover pin</span><small></small></li></ul>
+    <div class="plan">Check the news behind the gap. Sell rule: below the gap-day low (3.68).</div>
+    <div class="meta">Mkt cap 230m · Non-Energy Minerals · RS 52</div>
+    
+    <div class="links"><a href="https://www.tradingview.com/chart/?symbol=TSXV:BMM&amp;interval=W" target="_blank" rel="noopener">Weekly chart ↗</a>
+      <a href="https://www.canadianinsider.com/node/7?menu_tickersearch=BMM" target="_blank" rel="noopener">Insider filings ↗</a></div>
+    <a class="buy" href="https://github.com/FrazKK/Super-Stock-Scanner/new/main?filename=holdings/canada-BMM.json&amp;value=%7B%0A%20%20%22ticker%22%3A%20%22BMM%22%2C%0A%20%20%22exchange%22%3A%20%22TSXV%22%2C%0A%20%20%22market%22%3A%20%22canada%22%2C%0A%20%20%22name%22%3A%20%22Black%20Mammoth%20Metals%20Corporation%22%2C%0A%20%20%22method%22%3A%20%22episodic%22%2C%0A%20%20%22bought%22%3A%20%222026-10-18%22%2C%0A%20%20%22price%22%3A%204.26%2C%0A%20%20%22note%22%3A%20%22Change%20price%20to%20what%20you%20paid%20%28UK%20prices%20in%20pence%29.%20Delete%20this%20file%20when%20you%20sell.%22%2C%0A%20%20%22stop%22%3A%203.68%0A%7D" target="_blank" rel="noopener">I bought this ↗</a>
+  </div>
+</details></details></section><section id="uk" class=""><div class="banner b-down">Downtrend: index below its 30-week MA. Most breakouts fail in weak markets, so go small or wait. <small>(^FTAI, -2.9% in 4 wks)</small></div><p class="stats">575 stocks screened · 239 charts analysed</p><details class="sec"><summary><span class="st">Picked by 2+ methods</span><span class="cnt">0</span></summary><p class="blurb">Stocks that more than one method flagged this week. Agreement between different approaches can mean a stronger setup; the track record will show if it does. Each method's own label is shown; if one says "Extended" it's still worth waiting.</p><p class="empty">No overlap this week.</p></details><details class="sec" open><summary><span class="st">Stine superstocks</span><span class="cnt">1 ready</span></summary><p class="blurb">Cheap, small, profitable stocks breaking out of a base on huge volume. Buy the pullback to the 10-week MA.</p>
+<details class="card">
+  <summary>
+    <div class="score" style="--p:0.83"><b>10</b><small>/12</small></div>
+    <div class="who"><div class="tick">KOO <span class="ex">LSE</span></div>
+      <div class="nm">Kooth PLC</div></div>
+    <svg class="spark" viewBox="0 0 120 36" preserveAspectRatio="none" aria-hidden="true"><path d="M0.0,28.2 L4.1,28.8 L8.3,29.2 L12.4,29.4 L16.6,29.4 L20.7,29.7 L24.8,29.8 L29.0,29.7 L33.1,29.1 L37.2,28.6 L41.4,28.2 L45.5,27.7 L49.7,27.3 L53.8,26.8 L57.9,26.3 L62.1,25.6 L66.2,25.1 L70.3,24.5 L74.5,24.0 L78.6,23.6 L82.8,23.0 L86.9,22.6 L91.0,21.8 L95.2,21.1 L99.3,20.2 L103.4,19.3 L107.6,18.5 L111.7,17.6 L115.9,16.5 L120.0,15.4" class="s-ma30"/><path d="M0.0,31.1 L4.1,31.4 L8.3,31.9 L12.4,31.6 L16.6,31.2 L20.7,31.0 L24.8,30.4 L29.0,29.5 L33.1,26.8 L37.2,24.1 L41.4,22.1 L45.5,19.8 L49.7,18.5 L53.8,17.8 L57.9,16.8 L62.1,15.2 L66.2,14.3 L70.3,13.5 L74.5,14.6 L78.6,15.4 L82.8,15.9 L86.9,16.5 L91.0,14.8 L95.2,13.7 L99.3,12.7 L103.4,11.8 L107.6,10.8 L111.7,9.6 L115.9,8.2 L120.0,6.7" class="s-ma10"/><path d="M0.0,35.8 L4.1,36.0 L8.3,28.8 L12.4,22.5 L16.6,24.5 L20.7,27.2 L24.8,24.5 L29.0,23.3 L33.1,8.8 L37.2,9.6 L41.4,15.1 L45.5,13.3 L49.7,16.4 L53.8,15.5 L57.9,13.9 L62.1,11.7 L66.2,15.1 L70.3,15.8 L74.5,19.2 L78.6,18.2 L82.8,19.4 L86.9,19.4 L91.0,0.0 L95.2,4.1 L99.3,4.1 L103.4,3.1 L107.6,4.7 L111.7,4.1 L115.9,4.9 L120.0,3.3" class="s-px"/></svg>
+    <div class="px"><div>187.0p</div><span class="zone z-buy">At magic line</span></div>
+  </summary>
+  <div class="body">
+    <ul class="checks"><li class="ok"><span>Above rising 30-week MA</span><small></small></li><li class="ok"><span>Breakout on 3x+ weekly volume</span><small>6.4x volume, 7 wk ago</small></li><li class="ok"><span>Steep 30-week MA</span><small>+6.5% in 4 wks</small></li><li class="ok"><span>Biggest weekly volume in 6 months</span><small></small></li><li class="ok"><span>Tight base</span><small>23% range</small></li><li class="no"><span>EPS growth &gt; 25%</span><small>no data</small></li><li class="ok"><span>Low P/E</span><small>P/E 12.1</small></li><li class="ok"><span>Small float</span><small>23.7M shares</small></li><li class="no"><span>Market leader (RS rank 80+)</span><small>RS 77</small></li><li class="ok"><span>Low float / small company</span><small>float 24M shares</small></li><li class="na"><span>Insider buying</span><small>check link</small></li></ul>
+    <div class="plan">Entry zone: near the 10-week MA (178.60). Sell rule: weekly close below it.</div>
+    <div class="meta">Mkt cap 68m · Health Services · RS 77</div>
+    
+    <div class="links"><a href="https://www.tradingview.com/chart/?symbol=LSE:KOO&amp;interval=W" target="_blank" rel="noopener">Weekly chart ↗</a>
+      <a href="https://www.investegate.co.uk/company/KOO" target="_blank" rel="noopener">Insider filings ↗</a></div>
+    <a class="buy" href="https://github.com/FrazKK/Super-Stock-Scanner/new/main?filename=holdings/uk-KOO.json&amp;value=%7B%0A%20%20%22ticker%22%3A%20%22KOO%22%2C%0A%20%20%22exchange%22%3A%20%22LSE%22%2C%0A%20%20%22market%22%3A%20%22uk%22%2C%0A%20%20%22name%22%3A%20%22Kooth%20PLC%22%2C%0A%20%20%22method%22%3A%20%22stine%22%2C%0A%20%20%22bought%22%3A%20%222026-10-18%22%2C%0A%20%20%22price%22%3A%20187.0%2C%0A%20%20%22note%22%3A%20%22Change%20price%20to%20what%20you%20paid%20%28UK%20prices%20in%20pence%29.%20Delete%20this%20file%20when%20you%20sell.%22%0A%7D" target="_blank" rel="noopener">I bought this ↗</a>
+  </div>
+</details></details><details class="sec" open><summary><span class="st">Weinstein Stage 2</span><span class="cnt">6 ready · 2 new</span></summary><p class="blurb">Breakouts from a flat base above the 30-week MA, beating the market. No earnings needed, so it suits explorers.</p>
+<details class="card">
+  <summary>
+    <div class="score" style="--p:1.00"><b>10</b><small>/10</small></div>
+    <div class="who"><div class="tick">HWG <span class="ex">LSE</span></div>
+      <div class="nm">Harworth Group PLC</div></div>
+    <svg class="spark" viewBox="0 0 120 36" preserveAspectRatio="none" aria-hidden="true"><path d="M0.0,12.5 L4.1,13.1 L8.3,13.5 L12.4,13.8 L16.6,14.4 L20.7,15.0 L24.8,15.4 L29.0,16.1 L33.1,16.9 L37.2,17.6 L41.4,18.3 L45.5,18.9 L49.7,19.6 L53.8,20.2 L57.9,20.9 L62.1,21.6 L66.2,22.3 L70.3,23.0 L74.5,23.6 L78.6,23.3 L82.8,23.1 L86.9,22.8 L91.0,22.5 L95.2,22.4 L99.3,22.1 L103.4,21.9 L107.6,21.7 L111.7,21.3 L115.9,20.9 L120.0,20.3" class="s-ma30"/><path d="M0.0,12.9 L4.1,14.1 L8.3,15.1 L12.4,15.9 L16.6,17.3 L20.7,19.0 L24.8,21.2 L29.0,23.4 L33.1,25.8 L37.2,27.5 L41.4,28.9 L45.5,29.6 L49.7,30.9 L53.8,32.3 L57.9,32.8 L62.1,33.3 L66.2,33.9 L70.3,33.9 L74.5,33.6 L78.6,30.4 L82.8,27.4 L86.9,24.6 L91.0,21.7 L95.2,18.8 L99.3,16.1 L103.4,13.2 L107.6,9.9 L111.7,6.5 L115.9,3.4 L120.0,3.1" class="s-ma10"/><path d="M0.0,19.8 L4.1,24.8 L8.3,22.2 L12.4,20.1 L16.6,28.5 L20.7,29.0 L24.8,27.9 L29.0,32.8 L33.1,34.4 L37.2,36.0 L41.4,33.8 L45.5,31.8 L49.7,34.4 L53.8,34.9 L57.9,33.5 L62.1,34.0 L66.2,33.0 L70.3,33.4 L74.5,31.5 L78.6,3.3 L82.8,4.1 L86.9,3.5 L91.0,5.7 L95.2,6.1 L99.3,5.9 L103.4,5.2 L107.6,0.0 L111.7,0.0 L115.9,0.0 L120.0,0.0" class="s-px"/></svg>
+    <div class="px"><div>187.0p</div><span class="zone z-buy">Back at breakout</span></div>
+  </summary>
+  <div class="body">
+    <ul class="checks"><li class="ok"><span>Breakout above resistance on 2x+ volume</span><small>54.6x volume, 3 wk ago</small></li><li class="ok"><span>Came out of a flat Stage 1 base</span><small></small></li><li class="ok"><span>Still above 30-week MA, MA not falling</span><small>MA +1.9% in 4 wks</small></li><li class="ok"><span>Beating the market (Mansfield RS &gt; 0)</span><small>+21%</small></li><li class="ok"><span>30-week MA rising</span><small></small></li><li class="ok"><span>Breakout volume 3x+</span><small></small></li><li class="ok"><span>Not extended (within 15% of breakout)</span><small>+1% vs breakout</small></li><li class="ok"><span>RS rank 70+</span><small>RS 80</small></li></ul>
+    <div class="plan">Breakout level 184.99. Sell rule: weekly close below the 30-week MA (150.53).</div>
+    <div class="meta">Mkt cap 607m · Finance · RS 80</div>
+    
+    <div class="links"><a href="https://www.tradingview.com/chart/?symbol=LSE:HWG&amp;interval=W" target="_blank" rel="noopener">Weekly chart ↗</a>
+      <a href="https://www.investegate.co.uk/company/HWG" target="_blank" rel="noopener">Insider filings ↗</a></div>
+    <a class="buy" href="https://github.com/FrazKK/Super-Stock-Scanner/new/main?filename=holdings/uk-HWG.json&amp;value=%7B%0A%20%20%22ticker%22%3A%20%22HWG%22%2C%0A%20%20%22exchange%22%3A%20%22LSE%22%2C%0A%20%20%22market%22%3A%20%22uk%22%2C%0A%20%20%22name%22%3A%20%22Harworth%20Group%20PLC%22%2C%0A%20%20%22method%22%3A%20%22weinstein%22%2C%0A%20%20%22bought%22%3A%20%222026-10-18%22%2C%0A%20%20%22price%22%3A%20187.0%2C%0A%20%20%22note%22%3A%20%22Change%20price%20to%20what%20you%20paid%20%28UK%20prices%20in%20pence%29.%20Delete%20this%20file%20when%20you%20sell.%22%0A%7D" target="_blank" rel="noopener">I bought this ↗</a>
+  </div>
+</details>
+<details class="card">
+  <summary>
+    <div class="score" style="--p:1.00"><b>10</b><small>/10</small></div>
+    <div class="who"><div class="tick">WVIA <span class="ex">LSE</span><span class="new">NEW</span></div>
+      <div class="nm">Winvia Entertainment PLC</div></div>
+    <svg class="spark" viewBox="0 0 120 36" preserveAspectRatio="none" aria-hidden="true"><path d="M37.2,31.9 L41.4,31.3 L45.5,30.6 L49.7,29.7 L53.8,29.0 L57.9,28.1 L62.1,27.2 L66.2,26.4 L70.3,25.6 L74.5,24.8 L78.6,24.2 L82.8,23.7 L86.9,23.5 L91.0,23.7 L95.2,23.7 L99.3,24.4 L103.4,24.7 L107.6,24.8 L111.7,24.0 L115.9,23.2 L120.0,22.2" class="s-ma30"/><path d="M0.0,24.3 L4.1,24.8 L8.3,26.0 L12.4,26.6 L16.6,29.3 L20.7,30.9 L24.8,32.4 L29.0,33.1 L33.1,32.2 L37.2,30.2 L41.4,28.4 L45.5,26.4 L49.7,25.0 L53.8,24.1 L57.9,22.3 L62.1,20.6 L66.2,19.1 L70.3,17.6 L74.5,17.3 L78.6,18.0 L82.8,18.5 L86.9,19.3 L91.0,20.1 L95.2,20.3 L99.3,21.4 L103.4,22.6 L107.6,22.9 L111.7,21.3 L115.9,20.0 L120.0,18.6" class="s-ma10"/><path d="M0.0,36.0 L4.1,36.0 L8.3,31.0 L12.4,32.3 L16.6,33.5 L20.7,33.5 L24.8,31.0 L29.0,31.0 L33.1,21.1 L37.2,16.2 L41.4,18.6 L45.5,16.1 L49.7,16.1 L53.8,23.6 L57.9,16.1 L62.1,16.1 L66.2,16.1 L70.3,16.1 L74.5,18.1 L78.6,23.1 L82.8,23.1 L86.9,24.8 L91.0,23.6 L95.2,26.1 L99.3,27.3 L103.4,27.3 L107.6,19.8 L111.7,0.0 L115.9,4.9 L120.0,8.7" class="s-px"/></svg>
+    <div class="px"><div>270.0p</div><span class="zone z-buy">Back at breakout</span></div>
+  </summary>
+  <div class="body">
+    <ul class="checks"><li class="ok"><span>Breakout above resistance on 2x+ volume</span><small>3.9x volume, 2 wk ago</small></li><li class="ok"><span>Came out of a flat Stage 1 base</span><small></small></li><li class="ok"><span>Still above 30-week MA, MA not falling</span><small>MA +2.1% in 4 wks</small></li><li class="ok"><span>Beating the market (Mansfield RS &gt; 0)</span><small>+17%</small></li><li class="ok"><span>30-week MA rising</span><small></small></li><li class="ok"><span>Breakout volume 3x+</span><small></small></li><li class="ok"><span>Not extended (within 15% of breakout)</span><small>+2% vs breakout</small></li><li class="ok"><span>RS rank 70+</span><small>RS 70</small></li></ul>
+    <div class="plan">Breakout level 264.95. Sell rule: weekly close below the 30-week MA (242.63).</div>
+    <div class="meta">Mkt cap 284m · Consumer Services · RS 70</div>
+    
+    <div class="links"><a href="https://www.tradingview.com/chart/?symbol=LSE:WVIA&amp;interval=W" target="_blank" rel="noopener">Weekly chart ↗</a>
+      <a href="https://www.investegate.co.uk/company/WVIA" target="_blank" rel="noopener">Insider filings ↗</a></div>
+    <a class="buy" href="https://github.com/FrazKK/Super-Stock-Scanner/new/main?filename=holdings/uk-WVIA.json&amp;value=%7B%0A%20%20%22ticker%22%3A%20%22WVIA%22%2C%0A%20%20%22exchange%22%3A%20%22LSE%22%2C%0A%20%20%22market%22%3A%20%22uk%22%2C%0A%20%20%22name%22%3A%20%22Winvia%20Entertainment%20PLC%22%2C%0A%20%20%22method%22%3A%20%22weinstein%22%2C%0A%20%20%22bought%22%3A%20%222026-10-18%22%2C%0A%20%20%22price%22%3A%20270.0%2C%0A%20%20%22note%22%3A%20%22Change%20price%20to%20what%20you%20paid%20%28UK%20prices%20in%20pence%29.%20Delete%20this%20file%20when%20you%20sell.%22%0A%7D" target="_blank" rel="noopener">I bought this ↗</a>
+  </div>
+</details>
+<details class="card">
+  <summary>
+    <div class="score" style="--p:0.90"><b>9</b><small>/10</small></div>
+    <div class="who"><div class="tick">SNWS <span class="ex">LSE</span></div>
+      <div class="nm">Smiths News PLC</div></div>
+    <svg class="spark" viewBox="0 0 120 36" preserveAspectRatio="none" aria-hidden="true"><path d="M0.0,30.8 L4.1,30.3 L8.3,29.3 L12.4,28.2 L16.6,27.6 L20.7,27.0 L24.8,26.4 L29.0,25.6 L33.1,25.3 L37.2,24.7 L41.4,25.0 L45.5,25.1 L49.7,25.0 L53.8,25.1 L57.9,25.0 L62.1,25.2 L66.2,25.4 L70.3,25.8 L74.5,26.1 L78.6,25.9 L82.8,25.8 L86.9,25.6 L91.0,25.5 L95.2,25.4 L99.3,25.7 L103.4,25.9 L107.6,25.7 L111.7,24.4 L115.9,23.7 L120.0,22.5" class="s-ma30"/><path d="M0.0,28.2 L4.1,28.7 L8.3,28.4 L12.4,27.9 L16.6,28.8 L20.7,29.7 L24.8,29.3 L29.0,28.3 L33.1,27.8 L37.2,27.0 L41.4,27.2 L45.5,27.2 L49.7,27.1 L53.8,28.0 L57.9,26.9 L62.1,26.9 L66.2,26.3 L70.3,26.0 L74.5,24.6 L78.6,23.6 L82.8,22.1 L86.9,20.8 L91.0,20.9 L95.2,20.2 L99.3,21.3 L103.4,21.0 L107.6,21.3 L111.7,19.0 L115.9,18.6 L120.0,16.9" class="s-ma10"/><path d="M0.0,34.1 L4.1,35.1 L8.3,21.4 L12.4,18.0 L16.6,26.8 L20.7,25.8 L24.8,26.8 L29.0,26.3 L33.1,28.3 L37.2,27.3 L41.4,36.0 L45.5,35.0 L49.7,20.9 L53.8,26.8 L57.9,16.1 L62.1,25.8 L66.2,20.9 L70.3,23.4 L74.5,13.6 L78.6,17.5 L82.8,20.9 L86.9,22.4 L91.0,21.9 L95.2,19.5 L99.3,26.8 L103.4,23.4 L107.6,23.8 L111.7,0.0 L115.9,10.2 L120.0,0.5" class="s-px"/></svg>
+    <div class="px"><div>78.4p</div><span class="zone z-buy">Back at breakout</span></div>
+  </summary>
+  <div class="body">
+    <ul class="checks"><li class="ok"><span>Breakout above resistance on 2x+ volume</span><small>2.2x volume, 2 wk ago</small></li><li class="ok"><span>Came out of a flat Stage 1 base</span><small></small></li><li class="ok"><span>Still above 30-week MA, MA not falling</span><small>MA +2.0% in 4 wks</small></li><li class="ok"><span>Beating the market (Mansfield RS &gt; 0)</span><small>+15%</small></li><li class="ok"><span>30-week MA rising</span><small></small></li><li class="no"><span>Breakout volume 3x+</span><small></small></li><li class="ok"><span>Not extended (within 15% of breakout)</span><small>+3% vs breakout</small></li><li class="ok"><span>RS rank 70+</span><small>RS 70</small></li></ul>
+    <div class="plan">Breakout level 76.00. Sell rule: weekly close below the 30-week MA (69.35).</div>
+    <div class="meta">Mkt cap 188m · Distribution Services · RS 70</div>
+    
+    <div class="links"><a href="https://www.tradingview.com/chart/?symbol=LSE:SNWS&amp;interval=W" target="_blank" rel="noopener">Weekly chart ↗</a>
+      <a href="https://www.investegate.co.uk/company/SNWS" target="_blank" rel="noopener">Insider filings ↗</a></div>
+    <a class="buy" href="https://github.com/FrazKK/Super-Stock-Scanner/new/main?filename=holdings/uk-SNWS.json&amp;value=%7B%0A%20%20%22ticker%22%3A%20%22SNWS%22%2C%0A%20%20%22exchange%22%3A%20%22LSE%22%2C%0A%20%20%22market%22%3A%20%22uk%22%2C%0A%20%20%22name%22%3A%20%22Smiths%20News%20PLC%22%2C%0A%20%20%22method%22%3A%20%22weinstein%22%2C%0A%20%20%22bought%22%3A%20%222026-10-18%22%2C%0A%20%20%22price%22%3A%2078.4%2C%0A%20%20%22note%22%3A%20%22Change%20price%20to%20what%20you%20paid%20%28UK%20prices%20in%20pence%29.%20Delete%20this%20file%20when%20you%20sell.%22%0A%7D" target="_blank" rel="noopener">I bought this ↗</a>
+  </div>
+</details>
+<details class="card">
+  <summary>
+    <div class="score" style="--p:0.90"><b>9</b><small>/10</small></div>
+    <div class="who"><div class="tick">FNX <span class="ex">LSE</span></div>
+      <div class="nm">Fonix plc</div></div>
+    <svg class="spark" viewBox="0 0 120 36" preserveAspectRatio="none" aria-hidden="true"><path d="M0.0,12.3 L4.1,13.7 L8.3,14.7 L12.4,16.0 L16.6,16.6 L20.7,17.3 L24.8,17.7 L29.0,18.4 L33.1,19.2 L37.2,19.8 L41.4,20.6 L45.5,21.4 L49.7,22.2 L53.8,23.1 L57.9,23.9 L62.1,24.5 L66.2,24.7 L70.3,24.7 L74.5,24.6 L78.6,24.6 L82.8,24.9 L86.9,25.0 L91.0,25.4 L95.2,25.6 L99.3,25.7 L103.4,25.5 L107.6,24.9 L111.7,24.1 L115.9,23.1 L120.0,22.5" class="s-ma30"/><path d="M0.0,22.6 L4.1,24.4 L8.3,25.5 L12.4,26.6 L16.6,26.2 L20.7,26.1 L24.8,26.2 L29.0,26.3 L33.1,25.9 L37.2,25.8 L41.4,25.8 L45.5,26.1 L49.7,27.6 L53.8,28.1 L57.9,29.1 L62.1,29.9 L66.2,30.8 L70.3,30.1 L74.5,28.7 L78.6,27.8 L82.8,26.2 L86.9,24.5 L91.0,23.2 L95.2,22.2 L99.3,21.8 L103.4,20.6 L107.6,17.6 L111.7,15.8 L115.9,14.7 L120.0,13.8" class="s-ma10"/><path d="M0.0,36.0 L4.1,29.9 L8.3,18.8 L12.4,27.6 L16.6,16.8 L20.7,20.2 L24.8,21.2 L29.0,29.3 L33.1,29.3 L37.2,28.6 L41.4,36.0 L45.5,33.0 L49.7,34.3 L53.8,32.6 L57.9,26.6 L62.1,28.1 L66.2,30.3 L70.3,21.9 L74.5,16.1 L78.6,19.5 L82.8,19.2 L86.9,16.8 L91.0,21.2 L95.2,21.9 L99.3,22.5 L103.4,16.8 L107.6,0.0 L111.7,4.0 L115.9,4.7 L120.0,10.8" class="s-px"/></svg>
+    <div class="px"><div>185.0p</div><span class="zone z-buy">Back at breakout</span></div>
+  </summary>
+  <div class="body">
+    <ul class="checks"><li class="ok"><span>Breakout above resistance on 2x+ volume</span><small>4.0x volume, 3 wk ago</small></li><li class="ok"><span>Came out of a flat Stage 1 base</span><small></small></li><li class="ok"><span>Still above 30-week MA, MA not falling</span><small>MA +2.8% in 4 wks</small></li><li class="ok"><span>Beating the market (Mansfield RS &gt; 0)</span><small>+9%</small></li><li class="ok"><span>30-week MA rising</span><small></small></li><li class="ok"><span>Breakout volume 3x+</span><small></small></li><li class="ok"><span>Not extended (within 15% of breakout)</span><small>+3% vs breakout</small></li><li class="no"><span>RS rank 70+</span><small>RS 62</small></li></ul>
+    <div class="plan">Breakout level 180.00. Sell rule: weekly close below the 30-week MA (167.61).</div>
+    <div class="meta">Mkt cap 181m · Technology Services · RS 62</div>
+    
+    <div class="links"><a href="https://www.tradingview.com/chart/?symbol=LSE:FNX&amp;interval=W" target="_blank" rel="noopener">Weekly chart ↗</a>
+      <a href="https://www.investegate.co.uk/company/FNX" target="_blank" rel="noopener">Insider filings ↗</a></div>
+    <a class="buy" href="https://github.com/FrazKK/Super-Stock-Scanner/new/main?filename=holdings/uk-FNX.json&amp;value=%7B%0A%20%20%22ticker%22%3A%20%22FNX%22%2C%0A%20%20%22exchange%22%3A%20%22LSE%22%2C%0A%20%20%22market%22%3A%20%22uk%22%2C%0A%20%20%22name%22%3A%20%22Fonix%20plc%22%2C%0A%20%20%22method%22%3A%20%22weinstein%22%2C%0A%20%20%22bought%22%3A%20%222026-10-18%22%2C%0A%20%20%22price%22%3A%20185.0%2C%0A%20%20%22note%22%3A%20%22Change%20price%20to%20what%20you%20paid%20%28UK%20prices%20in%20pence%29.%20Delete%20this%20file%20when%20you%20sell.%22%0A%7D" target="_blank" rel="noopener">I bought this ↗</a>
+  </div>
+</details>
+<details class="card">
+  <summary>
+    <div class="score" style="--p:0.90"><b>9</b><small>/10</small></div>
+    <div class="who"><div class="tick">BMS <span class="ex">LSE</span></div>
+      <div class="nm">Braemar PLC</div></div>
+    <svg class="spark" viewBox="0 0 120 36" preserveAspectRatio="none" aria-hidden="true"><path d="M0.0,19.5 L4.1,20.0 L8.3,21.5 L12.4,22.6 L16.6,23.7 L20.7,24.6 L24.8,25.7 L29.0,25.7 L33.1,25.7 L37.2,25.5 L41.4,25.1 L45.5,24.5 L49.7,24.4 L53.8,23.7 L57.9,22.7 L62.1,22.1 L66.2,21.4 L70.3,21.4 L74.5,21.0 L78.6,21.2 L82.8,21.5 L86.9,21.5 L91.0,21.3 L95.2,20.9 L99.3,20.2 L103.4,19.6 L107.6,18.6 L111.7,18.2 L115.9,18.1 L120.0,17.7" class="s-ma30"/><path d="M0.0,28.4 L4.1,28.1 L8.3,27.7 L12.4,26.3 L16.6,26.1 L20.7,26.1 L24.8,26.0 L29.0,24.1 L33.1,23.6 L37.2,23.1 L41.4,22.0 L45.5,19.8 L49.7,18.1 L53.8,15.8 L57.9,12.9 L62.1,10.2 L66.2,7.7 L70.3,9.8 L74.5,11.1 L78.6,12.8 L82.8,14.1 L86.9,16.8 L91.0,18.0 L95.2,20.5 L99.3,21.5 L103.4,22.4 L107.6,22.0 L111.7,20.7 L115.9,19.6 L120.0,17.3" class="s-ma10"/><path d="M0.0,26.4 L4.1,25.2 L8.3,28.8 L12.4,30.0 L16.6,36.0 L20.7,34.8 L24.8,33.6 L29.0,4.9 L33.1,5.5 L37.2,6.0 L41.4,15.6 L45.5,2.5 L49.7,12.0 L53.8,7.2 L57.9,7.2 L62.1,7.8 L66.2,8.4 L70.3,25.2 L74.5,19.2 L78.6,22.8 L82.8,28.8 L86.9,28.8 L91.0,24.6 L95.2,32.4 L99.3,16.8 L103.4,16.8 L107.6,4.8 L111.7,12.0 L115.9,8.4 L120.0,0.0" class="s-px"/></svg>
+    <div class="px"><div>244.0p</div><span class="zone z-buy">Fresh breakout</span></div>
+  </summary>
+  <div class="body">
+    <ul class="checks"><li class="ok"><span>Breakout above resistance on 2x+ volume</span><small>3.6x volume, 0 wk ago</small></li><li class="ok"><span>Came out of a flat Stage 1 base</span><small></small></li><li class="ok"><span>Still above 30-week MA, MA not falling</span><small>MA +0.7% in 4 wks</small></li><li class="ok"><span>Beating the market (Mansfield RS &gt; 0)</span><small>+9%</small></li><li class="ok"><span>30-week MA rising</span><small></small></li><li class="ok"><span>Breakout volume 3x+</span><small></small></li><li class="ok"><span>Not extended (within 15% of breakout)</span><small>+1% vs breakout</small></li><li class="no"><span>RS rank 70+</span><small>RS 55</small></li></ul>
+    <div class="plan">Breakout level 241.00. Sell rule: weekly close below the 30-week MA (229.19).</div>
+    <div class="meta">Mkt cap 78m · Commercial Services · RS 55</div>
+    
+    <div class="links"><a href="https://www.tradingview.com/chart/?symbol=LSE:BMS&amp;interval=W" target="_blank" rel="noopener">Weekly chart ↗</a>
+      <a href="https://www.investegate.co.uk/company/BMS" target="_blank" rel="noopener">Insider filings ↗</a></div>
+    <a class="buy" href="https://github.com/FrazKK/Super-Stock-Scanner/new/main?filename=holdings/uk-BMS.json&amp;value=%7B%0A%20%20%22ticker%22%3A%20%22BMS%22%2C%0A%20%20%22exchange%22%3A%20%22LSE%22%2C%0A%20%20%22market%22%3A%20%22uk%22%2C%0A%20%20%22name%22%3A%20%22Braemar%20PLC%22%2C%0A%20%20%22method%22%3A%20%22weinstein%22%2C%0A%20%20%22bought%22%3A%20%222026-10-18%22%2C%0A%20%20%22price%22%3A%20244.0%2C%0A%20%20%22note%22%3A%20%22Change%20price%20to%20what%20you%20paid%20%28UK%20prices%20in%20pence%29.%20Delete%20this%20file%20when%20you%20sell.%22%0A%7D" target="_blank" rel="noopener">I bought this ↗</a>
+  </div>
+</details>
+<details class="card">
+  <summary>
+    <div class="score" style="--p:0.80"><b>8</b><small>/10</small></div>
+    <div class="who"><div class="tick">GFM <span class="ex">LSE</span><span class="new">NEW</span></div>
+      <div class="nm">Griffin Mining Limited</div></div>
+    <svg class="spark" viewBox="0 0 120 36" preserveAspectRatio="none" aria-hidden="true"><path d="M0.0,36.0 L4.1,34.8 L8.3,33.5 L12.4,31.9 L16.6,30.0 L20.7,28.2 L24.8,26.2 L29.0,24.7 L33.1,23.1 L37.2,21.3 L41.4,19.3 L45.5,17.3 L49.7,15.4 L53.8,13.8 L57.9,12.7 L62.1,11.8 L66.2,10.9 L70.3,10.1 L74.5,9.6 L78.6,9.2 L82.8,9.3 L86.9,9.4 L91.0,9.7 L95.2,10.0 L99.3,10.8 L103.4,11.5 L107.6,12.0 L111.7,12.2 L115.9,12.1 L120.0,11.5" class="s-ma30"/><path d="M0.0,8.6 L4.1,9.4 L8.3,11.0 L12.4,11.1 L16.6,11.9 L20.7,12.7 L24.8,13.3 L29.0,14.0 L33.1,13.9 L37.2,12.6 L41.4,9.9 L45.5,7.7 L49.7,5.4 L53.8,4.7 L57.9,4.7 L62.1,5.1 L66.2,5.9 L70.3,5.9 L74.5,6.2 L78.6,7.2 L82.8,9.4 L86.9,11.2 L91.0,12.8 L95.2,14.2 L99.3,15.8 L103.4,16.7 L107.6,16.9 L111.7,16.8 L115.9,16.1 L120.0,14.7" class="s-ma10"/><path d="M0.0,28.4 L4.1,23.5 L8.3,22.6 L12.4,12.0 L16.6,6.2 L20.7,7.5 L24.8,3.1 L29.0,8.4 L33.1,9.8 L37.2,4.4 L41.4,1.3 L45.5,1.3 L49.7,0.0 L53.8,4.9 L57.9,5.8 L62.1,12.4 L66.2,11.1 L70.3,7.5 L74.5,13.3 L78.6,14.2 L82.8,23.9 L86.9,19.1 L91.0,15.5 L95.2,18.8 L99.3,22.2 L103.4,21.3 L107.6,12.9 L111.7,6.6 L115.9,6.6 L120.0,0.4" class="s-px"/></svg>
+    <div class="px"><div>324.0p</div><span class="zone z-buy">Fresh breakout</span></div>
+  </summary>
+  <div class="body">
+    <ul class="checks"><li class="ok"><span>Breakout above resistance on 2x+ volume</span><small>2.6x volume, 0 wk ago</small></li><li class="ok"><span>Came out of a flat Stage 1 base</span><small></small></li><li class="ok"><span>Still above 30-week MA, MA not falling</span><small>MA +0.0% in 4 wks</small></li><li class="ok"><span>Beating the market (Mansfield RS &gt; 0)</span><small>+16%</small></li><li class="no"><span>30-week MA rising</span><small></small></li><li class="no"><span>Breakout volume 3x+</span><small></small></li><li class="ok"><span>Not extended (within 15% of breakout)</span><small>+2% vs breakout</small></li><li class="ok"><span>RS rank 70+</span><small>RS 76</small></li></ul>
+    <div class="plan">Breakout level 319.00. Sell rule: weekly close below the 30-week MA (299.05).</div>
+    <div class="meta">Mkt cap 561m · Non-Energy Minerals · RS 76</div>
+    
+    <div class="links"><a href="https://www.tradingview.com/chart/?symbol=LSE:GFM&amp;interval=W" target="_blank" rel="noopener">Weekly chart ↗</a>
+      <a href="https://www.investegate.co.uk/company/GFM" target="_blank" rel="noopener">Insider filings ↗</a></div>
+    <a class="buy" href="https://github.com/FrazKK/Super-Stock-Scanner/new/main?filename=holdings/uk-GFM.json&amp;value=%7B%0A%20%20%22ticker%22%3A%20%22GFM%22%2C%0A%20%20%22exchange%22%3A%20%22LSE%22%2C%0A%20%20%22market%22%3A%20%22uk%22%2C%0A%20%20%22name%22%3A%20%22Griffin%20Mining%20Limited%22%2C%0A%20%20%22method%22%3A%20%22weinstein%22%2C%0A%20%20%22bought%22%3A%20%222026-10-18%22%2C%0A%20%20%22price%22%3A%20324.0%2C%0A%20%20%22note%22%3A%20%22Change%20price%20to%20what%20you%20paid%20%28UK%20prices%20in%20pence%29.%20Delete%20this%20file%20when%20you%20sell.%22%0A%7D" target="_blank" rel="noopener">I bought this ↗</a>
+  </div>
+</details></details><details class="sec" open><summary><span class="st">Minervini trend + VCP</span><span class="cnt">7 ready</span></summary><p class="blurb">Passes all 8 Trend Template rules. Best when pullbacks are shrinking and it breaks out of the tightest point.</p>
+<details class="card">
+  <summary>
+    <div class="score" style="--p:0.93"><b>13</b><small>/14</small></div>
+    <div class="who"><div class="tick">HFD <span class="ex">LSE</span></div>
+      <div class="nm">Halfords Group Plc</div></div>
+    <svg class="spark" viewBox="0 0 120 36" preserveAspectRatio="none" aria-hidden="true"><path d="M0.0,32.4 L4.1,32.5 L8.3,32.5 L12.4,32.4 L16.6,32.5 L20.7,32.5 L24.8,32.3 L29.0,32.2 L33.1,32.0 L37.2,31.8 L41.4,31.5 L45.5,31.1 L49.7,30.8 L53.8,30.1 L57.9,29.4 L62.1,28.6 L66.2,27.8 L70.3,27.0 L74.5,26.2 L78.6,25.4 L82.8,24.6 L86.9,23.9 L91.0,22.9 L95.2,22.0 L99.3,21.2 L103.4,20.4 L107.6,19.5 L111.7,18.5 L115.9,17.5 L120.0,16.3" class="s-ma30"/><path d="M0.0,32.2 L4.1,32.7 L8.3,33.0 L12.4,33.3 L16.6,33.7 L20.7,33.7 L24.8,33.5 L29.0,33.0 L33.1,32.2 L37.2,31.1 L41.4,29.8 L45.5,28.4 L49.7,27.3 L53.8,25.3 L57.9,22.8 L62.1,20.7 L66.2,18.7 L70.3,16.9 L74.5,15.0 L78.6,13.3 L82.8,11.8 L86.9,10.8 L91.0,8.5 L95.2,7.4 L99.3,7.1 L103.4,6.7 L107.6,6.2 L111.7,5.7 L115.9,5.2 L120.0,4.5" class="s-ma10"/><path d="M0.0,36.0 L4.1,35.0 L8.3,34.0 L12.4,33.3 L16.6,34.4 L20.7,30.8 L24.8,28.7 L29.0,27.8 L33.1,26.3 L37.2,24.6 L41.4,23.4 L45.5,20.6 L49.7,23.2 L53.8,13.7 L57.9,9.2 L62.1,9.6 L66.2,8.6 L70.3,9.4 L74.5,7.7 L78.6,7.0 L82.8,9.1 L86.9,10.3 L91.0,0.2 L95.2,2.6 L99.3,6.4 L103.4,5.5 L107.6,3.9 L111.7,4.0 L115.9,3.1 L120.0,0.0" class="s-px"/></svg>
+    <div class="px"><div>274.5p</div><span class="zone z-buy">Breaking out</span></div>
+  </summary>
+  <div class="body">
+    <ul class="checks"><li class="ok"><span>Above 150 and 200-day MAs</span><small></small></li><li class="ok"><span>150-day above 200-day</span><small></small></li><li class="ok"><span>200-day rising for a month</span><small></small></li><li class="ok"><span>50-day above 150 and 200-day</span><small></small></li><li class="ok"><span>Above 50-day MA</span><small></small></li><li class="ok"><span>30%+ above 52-week low</span><small>+122%</small></li><li class="ok"><span>Within 25% of 52-week high</span><small>-1%</small></li><li class="ok"><span>RS rank 70+</span><small>RS 91</small></li><li class="ok"><span>Volatility contraction (VCP)</span><small>pullbacks 17% &gt; 12% &gt; 8%</small></li><li class="ok"><span>Volume drying up</span><small></small></li><li class="ok"><span>Pivot breakout on volume</span><small>pivot 270.50</small></li><li class="no"><span>EPS growth &gt; 25%</span><small>no data</small></li></ul>
+    <div class="plan">Buy point: above the pivot 270.50. Sell rule: 8% stop below your entry.</div>
+    <div class="meta">Mkt cap 598m · Retail Trade · RS 91</div>
+    
+    <div class="links"><a href="https://www.tradingview.com/chart/?symbol=LSE:HFD&amp;interval=W" target="_blank" rel="noopener">Weekly chart ↗</a>
+      <a href="https://www.investegate.co.uk/company/HFD" target="_blank" rel="noopener">Insider filings ↗</a></div>
+    <a class="buy" href="https://github.com/FrazKK/Super-Stock-Scanner/new/main?filename=holdings/uk-HFD.json&amp;value=%7B%0A%20%20%22ticker%22%3A%20%22HFD%22%2C%0A%20%20%22exchange%22%3A%20%22LSE%22%2C%0A%20%20%22market%22%3A%20%22uk%22%2C%0A%20%20%22name%22%3A%20%22Halfords%20Group%20Plc%22%2C%0A%20%20%22method%22%3A%20%22minervini%22%2C%0A%20%20%22bought%22%3A%20%222026-10-18%22%2C%0A%20%20%22price%22%3A%20274.5%2C%0A%20%20%22note%22%3A%20%22Change%20price%20to%20what%20you%20paid%20%28UK%20prices%20in%20pence%29.%20Delete%20this%20file%20when%20you%20sell.%22%0A%7D" target="_blank" rel="noopener">I bought this ↗</a>
+  </div>
+</details>
+<details class="card">
+  <summary>
+    <div class="score" style="--p:0.79"><b>11</b><small>/14</small></div>
+    <div class="who"><div class="tick">STEM <span class="ex">LSE</span></div>
+      <div class="nm">SThree plc</div></div>
+    <svg class="spark" viewBox="0 0 120 36" preserveAspectRatio="none" aria-hidden="true"><path d="M0.0,30.7 L4.1,31.0 L8.3,31.3 L12.4,31.2 L16.6,31.2 L20.7,31.1 L24.8,31.0 L29.0,31.1 L33.1,31.1 L37.2,31.0 L41.4,30.9 L45.5,30.9 L49.7,30.9 L53.8,30.9 L57.9,30.9 L62.1,30.9 L66.2,30.7 L70.3,30.3 L74.5,29.8 L78.6,29.1 L82.8,28.3 L86.9,27.6 L91.0,26.8 L95.2,26.1 L99.3,25.3 L103.4,24.4 L107.6,23.5 L111.7,22.6 L115.9,21.7 L120.0,20.5" class="s-ma30"/><path d="M0.0,30.1 L4.1,31.0 L8.3,31.9 L12.4,32.4 L16.6,32.8 L20.7,32.8 L24.8,32.7 L29.0,33.2 L33.1,33.5 L37.2,33.2 L41.4,32.8 L45.5,32.2 L49.7,32.0 L53.8,32.0 L57.9,31.8 L62.1,31.8 L66.2,31.1 L70.3,29.3 L74.5,27.2 L78.6,24.7 L82.8,22.2 L86.9,19.5 L91.0,16.5 L95.2,13.9 L99.3,11.3 L103.4,8.6 L107.6,6.7 L111.7,5.4 L115.9,4.2 L120.0,3.6" class="s-ma10"/><path d="M0.0,35.6 L4.1,36.0 L8.3,34.9 L12.4,33.6 L16.6,33.5 L20.7,30.3 L24.8,28.9 L29.0,34.5 L33.1,33.5 L37.2,31.5 L41.4,30.7 L45.5,30.7 L49.7,32.7 L53.8,33.2 L57.9,31.9 L62.1,30.2 L66.2,22.2 L70.3,16.3 L74.5,12.8 L78.6,6.4 L82.8,5.4 L86.9,3.8 L91.0,3.2 L95.2,6.5 L99.3,5.9 L103.4,3.4 L107.6,3.0 L111.7,3.4 L115.9,1.5 L120.0,0.0" class="s-px"/></svg>
+    <div class="px"><div>316.0p</div><span class="zone z-buy">Breaking out</span></div>
+  </summary>
+  <div class="body">
+    <ul class="checks"><li class="ok"><span>Above 150 and 200-day MAs</span><small></small></li><li class="ok"><span>150-day above 200-day</span><small></small></li><li class="ok"><span>200-day rising for a month</span><small></small></li><li class="ok"><span>50-day above 150 and 200-day</span><small></small></li><li class="ok"><span>Above 50-day MA</span><small></small></li><li class="ok"><span>30%+ above 52-week low</span><small>+121%</small></li><li class="ok"><span>Within 25% of 52-week high</span><small>-3%</small></li><li class="ok"><span>RS rank 70+</span><small>RS 93</small></li><li class="no"><span>Volatility contraction (VCP)</span><small>pullbacks 33% &gt; 16% &gt; 11%</small></li><li class="ok"><span>Volume drying up</span><small></small></li><li class="ok"><span>Pivot breakout on volume</span><small>pivot 315.00</small></li><li class="no"><span>EPS growth &gt; 25%</span><small>no data</small></li></ul>
+    <div class="plan">Buy point: above the pivot 315.00. Sell rule: 8% stop below your entry.</div>
+    <div class="meta">Mkt cap 381m · Commercial Services · RS 93</div>
+    
+    <div class="links"><a href="https://www.tradingview.com/chart/?symbol=LSE:STEM&amp;interval=W" target="_blank" rel="noopener">Weekly chart ↗</a>
+      <a href="https://www.investegate.co.uk/company/STEM" target="_blank" rel="noopener">Insider filings ↗</a></div>
+    <a class="buy" href="https://github.com/FrazKK/Super-Stock-Scanner/new/main?filename=holdings/uk-STEM.json&amp;value=%7B%0A%20%20%22ticker%22%3A%20%22STEM%22%2C%0A%20%20%22exchange%22%3A%20%22LSE%22%2C%0A%20%20%22market%22%3A%20%22uk%22%2C%0A%20%20%22name%22%3A%20%22SThree%20plc%22%2C%0A%20%20%22method%22%3A%20%22minervini%22%2C%0A%20%20%22bought%22%3A%20%222026-10-18%22%2C%0A%20%20%22price%22%3A%20316.0%2C%0A%20%20%22note%22%3A%20%22Change%20price%20to%20what%20you%20paid%20%28UK%20prices%20in%20pence%29.%20Delete%20this%20file%20when%20you%20sell.%22%0A%7D" target="_blank" rel="noopener">I bought this ↗</a>
+  </div>
+</details>
+<details class="card">
+  <summary>
+    <div class="score" style="--p:0.79"><b>11</b><small>/14</small></div>
+    <div class="who"><div class="tick">AVG <span class="ex">LSE</span></div>
+      <div class="nm">Avingtrans plc</div></div>
+    <svg class="spark" viewBox="0 0 120 36" preserveAspectRatio="none" aria-hidden="true"><path d="M0.0,36.0 L4.1,35.6 L8.3,35.2 L12.4,34.4 L16.6,33.7 L20.7,33.1 L24.8,32.4 L29.0,31.6 L33.1,30.7 L37.2,29.8 L41.4,28.9 L45.5,28.3 L49.7,27.7 L53.8,27.2 L57.9,26.5 L62.1,25.7 L66.2,24.7 L70.3,23.6 L74.5,22.5 L78.6,21.5 L82.8,20.7 L86.9,19.9 L91.0,19.1 L95.2,18.5 L99.3,17.8 L103.4,17.1 L107.6,16.3 L111.7,15.5 L115.9,14.5 L120.0,13.3" class="s-ma30"/><path d="M0.0,28.7 L4.1,28.8 L8.3,29.3 L12.4,28.9 L16.6,28.5 L20.7,27.7 L24.8,26.6 L29.0,25.4 L33.1,23.7 L37.2,21.3 L41.4,19.9 L45.5,18.5 L49.7,17.5 L53.8,17.9 L57.9,17.6 L62.1,17.1 L66.2,16.6 L70.3,15.8 L74.5,14.9 L78.6,14.4 L82.8,13.4 L86.9,12.2 L91.0,10.6 L95.2,8.5 L99.3,7.2 L103.4,6.4 L107.6,5.7 L111.7,5.4 L115.9,4.9 L120.0,4.3" class="s-ma10"/><path d="M0.0,29.1 L4.1,32.0 L8.3,30.6 L12.4,20.7 L16.6,22.0 L20.7,18.5 L24.8,17.8 L29.0,15.8 L33.1,14.9 L37.2,12.1 L41.4,14.9 L45.5,17.8 L49.7,20.6 L53.8,24.9 L57.9,19.2 L62.1,13.5 L66.2,12.1 L70.3,7.8 L74.5,6.4 L78.6,6.4 L82.8,5.3 L86.9,6.4 L91.0,4.3 L95.2,3.8 L99.3,5.7 L103.4,5.7 L107.6,5.7 L111.7,4.1 L115.9,2.1 L120.0,0.0" class="s-px"/></svg>
+    <div class="px"><div>765.0p</div><span class="zone z-buy">Breaking out</span></div>
+  </summary>
+  <div class="body">
+    <ul class="checks"><li class="ok"><span>Above 150 and 200-day MAs</span><small></small></li><li class="ok"><span>150-day above 200-day</span><small></small></li><li class="ok"><span>200-day rising for a month</span><small></small></li><li class="ok"><span>50-day above 150 and 200-day</span><small></small></li><li class="ok"><span>Above 50-day MA</span><small></small></li><li class="ok"><span>30%+ above 52-week low</span><small>+63%</small></li><li class="ok"><span>Within 25% of 52-week high</span><small>-1%</small></li><li class="ok"><span>RS rank 70+</span><small>RS 79</small></li><li class="no"><span>Volatility contraction (VCP)</span><small>pullbacks 11% &gt; 3% &gt; 6%</small></li><li class="ok"><span>Volume drying up</span><small></small></li><li class="ok"><span>Pivot breakout on volume</span><small>pivot 760.00</small></li><li class="no"><span>EPS growth &gt; 25%</span><small>no data</small></li></ul>
+    <div class="plan">Buy point: above the pivot 760.00. Sell rule: 8% stop below your entry.</div>
+    <div class="meta">Mkt cap 283m · Producer Manufacturing · RS 79</div>
+    
+    <div class="links"><a href="https://www.tradingview.com/chart/?symbol=LSE:AVG&amp;interval=W" target="_blank" rel="noopener">Weekly chart ↗</a>
+      <a href="https://www.investegate.co.uk/company/AVG" target="_blank" rel="noopener">Insider filings ↗</a></div>
+    <a class="buy" href="https://github.com/FrazKK/Super-Stock-Scanner/new/main?filename=holdings/uk-AVG.json&amp;value=%7B%0A%20%20%22ticker%22%3A%20%22AVG%22%2C%0A%20%20%22exchange%22%3A%20%22LSE%22%2C%0A%20%20%22market%22%3A%20%22uk%22%2C%0A%20%20%22name%22%3A%20%22Avingtrans%20plc%22%2C%0A%20%20%22method%22%3A%20%22minervini%22%2C%0A%20%20%22bought%22%3A%20%222026-10-18%22%2C%0A%20%20%22price%22%3A%20765.0%2C%0A%20%20%22note%22%3A%20%22Change%20price%20to%20what%20you%20paid%20%28UK%20prices%20in%20pence%29.%20Delete%20this%20file%20when%20you%20sell.%22%0A%7D" target="_blank" rel="noopener">I bought this ↗</a>
+  </div>
+</details>
+<details class="card">
+  <summary>
+    <div class="score" style="--p:0.71"><b>10</b><small>/14</small></div>
+    <div class="who"><div class="tick">SFOR <span class="ex">LSE</span></div>
+      <div class="nm">S4 Capital plc</div></div>
+    <svg class="spark" viewBox="0 0 120 36" preserveAspectRatio="none" aria-hidden="true"><path d="M0.0,36.0 L4.1,35.7 L8.3,35.2 L12.4,34.4 L16.6,33.7 L20.7,33.2 L24.8,32.3 L29.0,31.6 L33.1,30.9 L37.2,30.2 L41.4,29.5 L45.5,28.8 L49.7,28.2 L53.8,27.7 L57.9,27.0 L62.1,26.4 L66.2,25.7 L70.3,25.0 L74.5,24.3 L78.6,23.2 L82.8,21.9 L86.9,20.8 L91.0,19.9 L95.2,19.0 L99.3,18.1 L103.4,17.2 L107.6,16.3 L111.7,15.5 L115.9,14.5 L120.0,13.4" class="s-ma30"/><path d="M0.0,34.3 L4.1,33.1 L8.3,32.0 L12.4,30.2 L16.6,28.4 L20.7,26.3 L24.8,23.5 L29.0,21.5 L33.1,18.9 L37.2,16.3 L41.4,15.0 L45.5,14.2 L49.7,14.5 L53.8,15.6 L57.9,16.2 L62.1,16.8 L66.2,17.9 L70.3,18.5 L74.5,19.2 L78.6,18.1 L82.8,16.5 L86.9,15.0 L91.0,13.3 L95.2,11.1 L99.3,9.8 L103.4,8.6 L107.6,7.5 L111.7,6.5 L115.9,5.5 L120.0,5.7" class="s-ma10"/><path d="M0.0,29.9 L4.1,25.6 L8.3,18.4 L12.4,14.6 L16.6,14.3 L20.7,14.2 L24.8,8.8 L29.0,14.9 L33.1,10.4 L37.2,11.7 L41.4,16.7 L45.5,17.9 L49.7,21.5 L53.8,26.1 L57.9,19.4 L62.1,20.9 L66.2,19.9 L70.3,20.0 L74.5,17.6 L78.6,1.3 L82.8,0.0 L86.9,3.1 L91.0,4.5 L95.2,4.4 L99.3,6.3 L103.4,8.8 L107.6,8.9 L111.7,10.1 L115.9,7.9 L120.0,2.6" class="s-px"/></svg>
+    <div class="px"><div>51.2p</div><span class="zone z-buy">Breaking out</span></div>
+  </summary>
+  <div class="body">
+    <ul class="checks"><li class="ok"><span>Above 150 and 200-day MAs</span><small></small></li><li class="ok"><span>150-day above 200-day</span><small></small></li><li class="ok"><span>200-day rising for a month</span><small></small></li><li class="ok"><span>50-day above 150 and 200-day</span><small></small></li><li class="ok"><span>Above 50-day MA</span><small></small></li><li class="ok"><span>30%+ above 52-week low</span><small>+226%</small></li><li class="ok"><span>Within 25% of 52-week high</span><small>-10%</small></li><li class="ok"><span>RS rank 70+</span><small>RS 91</small></li><li class="no"><span>Volatility contraction (VCP)</span><small>pullbacks 41% &gt; 14% &gt; 20%</small></li><li class="no"><span>Volume drying up</span><small></small></li><li class="ok"><span>Pivot breakout on volume</span><small>pivot 49.00</small></li><li class="no"><span>EPS growth &gt; 25%</span><small>no data</small></li></ul>
+    <div class="plan">Buy point: above the pivot 49.00. Sell rule: 8% stop below your entry.</div>
+    <div class="meta">Mkt cap 339m · Commercial Services · RS 91</div>
+    
+    <div class="links"><a href="https://www.tradingview.com/chart/?symbol=LSE:SFOR&amp;interval=W" target="_blank" rel="noopener">Weekly chart ↗</a>
+      <a href="https://www.investegate.co.uk/company/SFOR" target="_blank" rel="noopener">Insider filings ↗</a></div>
+    <a class="buy" href="https://github.com/FrazKK/Super-Stock-Scanner/new/main?filename=holdings/uk-SFOR.json&amp;value=%7B%0A%20%20%22ticker%22%3A%20%22SFOR%22%2C%0A%20%20%22exchange%22%3A%20%22LSE%22%2C%0A%20%20%22market%22%3A%20%22uk%22%2C%0A%20%20%22name%22%3A%20%22S4%20Capital%20plc%22%2C%0A%20%20%22method%22%3A%20%22minervini%22%2C%0A%20%20%22bought%22%3A%20%222026-10-18%22%2C%0A%20%20%22price%22%3A%2051.2%2C%0A%20%20%22note%22%3A%20%22Change%20price%20to%20what%20you%20paid%20%28UK%20prices%20in%20pence%29.%20Delete%20this%20file%20when%20you%20sell.%22%0A%7D" target="_blank" rel="noopener">I bought this ↗</a>
+  </div>
+</details>
+<details class="card">
+  <summary>
+    <div class="score" style="--p:0.71"><b>10</b><small>/14</small></div>
+    <div class="who"><div class="tick">JSE <span class="ex">LSE</span></div>
+      <div class="nm">Jadestone Energy PLC</div></div>
+    <svg class="spark" viewBox="0 0 120 36" preserveAspectRatio="none" aria-hidden="true"><path d="M0.0,36.0 L4.1,35.4 L8.3,34.9 L12.4,34.3 L16.6,33.5 L20.7,33.1 L24.8,32.7 L29.0,32.2 L33.1,31.6 L37.2,31.1 L41.4,30.4 L45.5,29.9 L49.7,29.6 L53.8,29.4 L57.9,29.0 L62.1,28.7 L66.2,28.1 L70.3,27.5 L74.5,27.0 L78.6,26.6 L82.8,26.2 L86.9,25.7 L91.0,25.2 L95.2,24.2 L99.3,23.3 L103.4,22.5 L107.6,21.4 L111.7,20.6 L115.9,20.0 L120.0,19.1" class="s-ma30"/><path d="M0.0,31.9 L4.1,31.3 L8.3,31.2 L12.4,30.4 L16.6,29.2 L20.7,28.1 L24.8,26.7 L29.0,25.9 L33.1,24.9 L37.2,24.3 L41.4,23.1 L45.5,22.3 L49.7,22.0 L53.8,21.8 L57.9,22.0 L62.1,22.4 L66.2,22.3 L70.3,21.9 L74.5,22.5 L78.6,22.9 L82.8,23.5 L86.9,23.5 L91.0,22.4 L95.2,20.4 L99.3,18.7 L103.4,17.1 L107.6,15.1 L111.7,14.0 L115.9,12.5 L120.0,10.2" class="s-ma10"/><path d="M0.0,26.8 L4.1,27.8 L8.3,31.3 L12.4,29.9 L16.6,22.6 L20.7,22.1 L24.8,24.7 L29.0,22.2 L33.1,16.8 L37.2,18.5 L41.4,15.4 L45.5,19.9 L49.7,27.8 L53.8,28.0 L57.9,24.7 L62.1,25.7 L66.2,24.2 L70.3,18.5 L74.5,22.6 L78.6,22.6 L82.8,21.2 L86.9,19.3 L91.0,17.0 L95.2,8.1 L99.3,8.1 L103.4,9.1 L107.6,5.0 L111.7,7.1 L115.9,7.1 L120.0,0.0" class="s-px"/></svg>
+    <div class="px"><div>40.9p</div><span class="zone z-buy">Breaking out</span></div>
+  </summary>
+  <div class="body">
+    <ul class="checks"><li class="ok"><span>Above 150 and 200-day MAs</span><small></small></li><li class="ok"><span>150-day above 200-day</span><small></small></li><li class="ok"><span>200-day rising for a month</span><small></small></li><li class="ok"><span>50-day above 150 and 200-day</span><small></small></li><li class="ok"><span>Above 50-day MA</span><small></small></li><li class="ok"><span>30%+ above 52-week low</span><small>+100%</small></li><li class="ok"><span>Within 25% of 52-week high</span><small>-0%</small></li><li class="ok"><span>RS rank 70+</span><small>RS 89</small></li><li class="no"><span>Volatility contraction (VCP)</span><small>pullbacks 15% &gt; 19% &gt; 12%</small></li><li class="no"><span>Volume drying up</span><small></small></li><li class="ok"><span>Pivot breakout on volume</span><small>pivot 39.00</small></li><li class="no"><span>EPS growth &gt; 25%</span><small>no data</small></li></ul>
+    <div class="plan">Buy point: above the pivot 39.00. Sell rule: 8% stop below your entry.</div>
+    <div class="meta">Mkt cap 223m · Energy Minerals · RS 89</div>
+    
+    <div class="links"><a href="https://www.tradingview.com/chart/?symbol=LSE:JSE&amp;interval=W" target="_blank" rel="noopener">Weekly chart ↗</a>
+      <a href="https://www.investegate.co.uk/company/JSE" target="_blank" rel="noopener">Insider filings ↗</a></div>
+    <a class="buy" href="https://github.com/FrazKK/Super-Stock-Scanner/new/main?filename=holdings/uk-JSE.json&amp;value=%7B%0A%20%20%22ticker%22%3A%20%22JSE%22%2C%0A%20%20%22exchange%22%3A%20%22LSE%22%2C%0A%20%20%22market%22%3A%20%22uk%22%2C%0A%20%20%22name%22%3A%20%22Jadestone%20Energy%20PLC%22%2C%0A%20%20%22method%22%3A%20%22minervini%22%2C%0A%20%20%22bought%22%3A%20%222026-10-18%22%2C%0A%20%20%22price%22%3A%2040.9%2C%0A%20%20%22note%22%3A%20%22Change%20price%20to%20what%20you%20paid%20%28UK%20prices%20in%20pence%29.%20Delete%20this%20file%20when%20you%20sell.%22%0A%7D" target="_blank" rel="noopener">I bought this ↗</a>
+  </div>
+</details>
+<details class="card">
+  <summary>
+    <div class="score" style="--p:0.71"><b>10</b><small>/14</small></div>
+    <div class="who"><div class="tick">SHOE <span class="ex">LSE</span></div>
+      <div class="nm">Shoe Zone PLC</div></div>
+    <svg class="spark" viewBox="0 0 120 36" preserveAspectRatio="none" aria-hidden="true"><path d="M0.0,13.5 L4.1,14.5 L8.3,15.3 L12.4,16.2 L16.6,17.1 L20.7,17.9 L24.8,18.9 L29.0,19.8 L33.1,20.2 L37.2,20.7 L41.4,21.4 L45.5,22.3 L49.7,23.2 L53.8,24.0 L57.9,25.0 L62.1,25.8 L66.2,26.0 L70.3,26.2 L74.5,26.4 L78.6,26.7 L82.8,26.1 L86.9,25.4 L91.0,24.7 L95.2,24.0 L99.3,23.2 L103.4,22.4 L107.6,21.6 L111.7,20.8 L115.9,19.9 L120.0,18.9" class="s-ma30"/><path d="M0.0,28.0 L4.1,29.4 L8.3,29.9 L12.4,30.4 L16.6,30.7 L20.7,30.9 L24.8,31.4 L29.0,32.2 L33.1,31.2 L37.2,29.3 L41.4,28.1 L45.5,27.5 L49.7,27.2 L53.8,27.2 L57.9,27.6 L62.1,27.6 L66.2,25.8 L70.3,23.8 L74.5,23.5 L78.6,23.9 L82.8,22.3 L86.9,19.4 L91.0,17.1 L95.2,14.4 L99.3,11.3 L103.4,8.7 L107.6,7.6 L111.7,6.4 L115.9,5.1 L120.0,3.5" class="s-ma10"/><path d="M0.0,32.9 L4.1,34.5 L8.3,30.9 L12.4,30.9 L16.6,30.9 L20.7,30.9 L24.8,33.4 L29.0,36.0 L33.1,20.6 L37.2,12.3 L41.4,20.6 L45.5,28.3 L49.7,27.8 L53.8,30.9 L57.9,35.0 L62.1,30.9 L66.2,15.9 L70.3,15.9 L74.5,17.0 L78.6,17.0 L82.8,4.1 L86.9,0.0 L91.0,4.1 L95.2,4.1 L99.3,4.1 L103.4,4.6 L107.6,4.6 L111.7,4.6 L115.9,3.6 L120.0,1.0" class="s-px"/></svg>
+    <div class="px"><div>76.5p</div><span class="zone z-buy">Breaking out</span></div>
+  </summary>
+  <div class="body">
+    <ul class="checks"><li class="ok"><span>Above 150 and 200-day MAs</span><small></small></li><li class="ok"><span>150-day above 200-day</span><small></small></li><li class="ok"><span>200-day rising for a month</span><small></small></li><li class="ok"><span>50-day above 150 and 200-day</span><small></small></li><li class="ok"><span>Above 50-day MA</span><small></small></li><li class="ok"><span>30%+ above 52-week low</span><small>+119%</small></li><li class="ok"><span>Within 25% of 52-week high</span><small>-8%</small></li><li class="ok"><span>RS rank 70+</span><small>RS 83</small></li><li class="no"><span>Volatility contraction (VCP)</span><small>pullbacks 31% &gt; 11% &gt; 11%</small></li><li class="no"><span>Volume drying up</span><small></small></li><li class="ok"><span>Pivot breakout on volume</span><small>pivot 75.00</small></li><li class="no"><span>EPS growth &gt; 25%</span><small>no data</small></li></ul>
+    <div class="plan">Buy point: above the pivot 75.00. Sell rule: 8% stop below your entry.</div>
+    <div class="meta">Mkt cap 35m · Consumer Non-Durables · RS 83</div>
+    
+    <div class="links"><a href="https://www.tradingview.com/chart/?symbol=LSE:SHOE&amp;interval=W" target="_blank" rel="noopener">Weekly chart ↗</a>
+      <a href="https://www.investegate.co.uk/company/SHOE" target="_blank" rel="noopener">Insider filings ↗</a></div>
+    <a class="buy" href="https://github.com/FrazKK/Super-Stock-Scanner/new/main?filename=holdings/uk-SHOE.json&amp;value=%7B%0A%20%20%22ticker%22%3A%20%22SHOE%22%2C%0A%20%20%22exchange%22%3A%20%22LSE%22%2C%0A%20%20%22market%22%3A%20%22uk%22%2C%0A%20%20%22name%22%3A%20%22Shoe%20Zone%20PLC%22%2C%0A%20%20%22method%22%3A%20%22minervini%22%2C%0A%20%20%22bought%22%3A%20%222026-10-18%22%2C%0A%20%20%22price%22%3A%2076.5%2C%0A%20%20%22note%22%3A%20%22Change%20price%20to%20what%20you%20paid%20%28UK%20prices%20in%20pence%29.%20Delete%20this%20file%20when%20you%20sell.%22%0A%7D" target="_blank" rel="noopener">I bought this ↗</a>
+  </div>
+</details>
+<details class="card">
+  <summary>
+    <div class="score" style="--p:0.71"><b>10</b><small>/14</small></div>
+    <div class="who"><div class="tick">FVA <span class="ex">LSE</span></div>
+      <div class="nm">Fevara PLC</div></div>
+    <svg class="spark" viewBox="0 0 120 36" preserveAspectRatio="none" aria-hidden="true"><path d="M0.0,26.9 L4.1,27.3 L8.3,27.7 L12.4,28.3 L16.6,28.6 L20.7,28.7 L24.8,28.4 L29.0,28.3 L33.1,28.1 L37.2,27.7 L41.4,27.5 L45.5,27.5 L49.7,27.5 L53.8,27.5 L57.9,27.3 L62.1,27.5 L66.2,27.6 L70.3,27.2 L74.5,27.6 L78.6,27.3 L82.8,27.3 L86.9,27.1 L91.0,26.8 L95.2,26.7 L99.3,26.5 L103.4,26.1 L107.6,25.6 L111.7,25.0 L115.9,24.3 L120.0,23.1" class="s-ma30"/><path d="M0.0,30.0 L4.1,31.5 L8.3,32.0 L12.4,32.3 L16.6,32.6 L20.7,32.7 L24.8,31.0 L29.0,29.9 L33.1,29.8 L37.2,29.3 L41.4,28.2 L45.5,27.6 L49.7,27.2 L53.8,26.5 L57.9,25.7 L62.1,25.5 L66.2,25.8 L70.3,25.3 L74.5,25.4 L78.6,24.4 L82.8,23.8 L86.9,22.3 L91.0,21.2 L95.2,21.4 L99.3,21.3 L103.4,20.2 L107.6,19.9 L111.7,19.7 L115.9,17.6 L120.0,15.6" class="s-ma10"/><path d="M0.0,36.0 L4.1,35.4 L8.3,29.3 L12.4,30.4 L16.6,32.1 L20.7,27.3 L24.8,19.1 L29.0,21.9 L33.1,30.9 L37.2,30.9 L41.4,24.5 L45.5,29.8 L49.7,24.7 L53.8,24.2 L57.9,23.6 L62.1,25.3 L66.2,21.9 L70.3,16.9 L74.5,32.6 L78.6,20.2 L82.8,19.1 L86.9,14.1 L91.0,14.1 L95.2,25.9 L99.3,22.5 L103.4,15.2 L107.6,18.6 L111.7,14.6 L115.9,11.8 L120.0,0.0" class="s-px"/></svg>
+    <div class="px"><div>157.5p</div><span class="zone z-buy">Breaking out</span></div>
+  </summary>
+  <div class="body">
+    <ul class="checks"><li class="ok"><span>Above 150 and 200-day MAs</span><small></small></li><li class="ok"><span>150-day above 200-day</span><small></small></li><li class="ok"><span>200-day rising for a month</span><small></small></li><li class="ok"><span>50-day above 150 and 200-day</span><small></small></li><li class="ok"><span>Above 50-day MA</span><small></small></li><li class="ok"><span>30%+ above 52-week low</span><small>+38%</small></li><li class="ok"><span>Within 25% of 52-week high</span><small>+0%</small></li><li class="ok"><span>RS rank 70+</span><small>RS 70</small></li><li class="no"><span>Volatility contraction (VCP)</span><small>pullbacks 16% &gt; 11% &gt; 14%</small></li><li class="no"><span>Volume drying up</span><small></small></li><li class="ok"><span>Pivot breakout on volume</span><small>pivot 152.00</small></li><li class="no"><span>EPS growth &gt; 25%</span><small>no data</small></li></ul>
+    <div class="plan">Buy point: above the pivot 152.00. Sell rule: 8% stop below your entry.</div>
+    <div class="meta">Mkt cap 82m · Consumer Non-Durables · RS 70</div>
+    
+    <div class="links"><a href="https://www.tradingview.com/chart/?symbol=LSE:FVA&amp;interval=W" target="_blank" rel="noopener">Weekly chart ↗</a>
+      <a href="https://www.investegate.co.uk/company/FVA" target="_blank" rel="noopener">Insider filings ↗</a></div>
+    <a class="buy" href="https://github.com/FrazKK/Super-Stock-Scanner/new/main?filename=holdings/uk-FVA.json&amp;value=%7B%0A%20%20%22ticker%22%3A%20%22FVA%22%2C%0A%20%20%22exchange%22%3A%20%22LSE%22%2C%0A%20%20%22market%22%3A%20%22uk%22%2C%0A%20%20%22name%22%3A%20%22Fevara%20PLC%22%2C%0A%20%20%22method%22%3A%20%22minervini%22%2C%0A%20%20%22bought%22%3A%20%222026-10-18%22%2C%0A%20%20%22price%22%3A%20157.5%2C%0A%20%20%22note%22%3A%20%22Change%20price%20to%20what%20you%20paid%20%28UK%20prices%20in%20pence%29.%20Delete%20this%20file%20when%20you%20sell.%22%0A%7D" target="_blank" rel="noopener">I bought this ↗</a>
+  </div>
+</details></details><details class="sec" open><summary><span class="st">Episodic pivots</span><span class="cnt">1 ready</span></summary><p class="blurb">Gapped up 10%+ on 3x+ volume this week after news, still holding the gap. Drill results and contract wins show up here.</p>
+<details class="card">
+  <summary>
+    <div class="score" style="--p:0.89"><b>8</b><small>/9</small></div>
+    <div class="who"><div class="tick">MARS <span class="ex">LSE</span></div>
+      <div class="nm">Marston&#x27;s PLC</div></div>
+    <svg class="spark" viewBox="0 0 120 36" preserveAspectRatio="none" aria-hidden="true"><path d="M0.0,15.8 L4.1,14.2 L8.3,12.6 L12.4,10.9 L16.6,9.9 L20.7,8.9 L24.8,7.9 L29.0,7.7 L33.1,7.8 L37.2,7.6 L41.4,7.5 L45.5,7.3 L49.7,7.3 L53.8,8.2 L57.9,8.9 L62.1,9.2 L66.2,9.5 L70.3,10.3 L74.5,11.1 L78.6,12.5 L82.8,13.6 L86.9,14.8 L91.0,15.5 L95.2,16.5 L99.3,17.8 L103.4,19.2 L107.6,20.5 L111.7,21.5 L115.9,22.2 L120.0,21.7" class="s-ma30"/><path d="M0.0,0.0 L4.1,3.0 L8.3,4.1 L12.4,5.5 L16.6,8.7 L20.7,11.5 L24.8,13.9 L29.0,17.2 L33.1,19.0 L37.2,20.2 L41.4,21.9 L45.5,23.4 L49.7,25.7 L53.8,27.2 L57.9,26.5 L62.1,25.5 L66.2,24.4 L70.3,23.0 L74.5,21.9 L78.6,20.8 L82.8,18.9 L86.9,18.0 L91.0,16.8 L95.2,16.8 L99.3,18.3 L103.4,20.6 L107.6,23.2 L111.7,24.3 L115.9,25.8 L120.0,24.3" class="s-ma10"/><path d="M0.0,18.1 L4.1,11.6 L8.3,5.6 L12.4,8.3 L16.6,21.4 L20.7,22.5 L24.8,18.9 L29.0,36.0 L33.1,31.0 L37.2,28.8 L41.4,34.6 L45.5,27.0 L49.7,28.5 L53.8,23.0 L57.9,15.1 L62.1,12.1 L66.2,8.0 L70.3,21.4 L74.5,20.6 L78.6,17.3 L82.8,15.9 L86.9,17.8 L91.0,16.8 L95.2,22.8 L99.3,30.0 L103.4,35.0 L107.6,34.1 L111.7,32.6 L115.9,35.2 L120.0,2.3" class="s-px"/></svg>
+    <div class="px"><div>57.7p</div><span class="zone z-buy">Gap 3 days ago</span></div>
+  </summary>
+  <div class="body">
+    <ul class="checks"><li class="ok"><span>Gap up 10%+</span><small>+11% gap</small></li><li class="ok"><span>Volume 3x+ normal</span><small>16.4x</small></li><li class="ok"><span>Held the gap</span><small>closed +15% that day</small></li><li class="no"><span>Big gap (20%+)</span><small></small></li><li class="ok"><span>Huge volume (6x+)</span><small></small></li><li class="ok"><span>From neglect (not already run up)</span><small></small></li><li class="ok"><span>Not a takeover pin</span><small></small></li></ul>
+    <div class="plan">Check the news behind the gap. Sell rule: below the gap-day low (49.52).</div>
+    <div class="meta">Mkt cap 367m · Consumer Services · RS 66</div>
+    
+    <div class="links"><a href="https://www.tradingview.com/chart/?symbol=LSE:MARS&amp;interval=W" target="_blank" rel="noopener">Weekly chart ↗</a>
+      <a href="https://www.investegate.co.uk/company/MARS" target="_blank" rel="noopener">Insider filings ↗</a></div>
+    <a class="buy" href="https://github.com/FrazKK/Super-Stock-Scanner/new/main?filename=holdings/uk-MARS.json&amp;value=%7B%0A%20%20%22ticker%22%3A%20%22MARS%22%2C%0A%20%20%22exchange%22%3A%20%22LSE%22%2C%0A%20%20%22market%22%3A%20%22uk%22%2C%0A%20%20%22name%22%3A%20%22Marston%27s%20PLC%22%2C%0A%20%20%22method%22%3A%20%22episodic%22%2C%0A%20%20%22bought%22%3A%20%222026-10-18%22%2C%0A%20%20%22price%22%3A%2057.7%2C%0A%20%20%22note%22%3A%20%22Change%20price%20to%20what%20you%20paid%20%28UK%20prices%20in%20pence%29.%20Delete%20this%20file%20when%20you%20sell.%22%2C%0A%20%20%22stop%22%3A%2049.521%0A%7D" target="_blank" rel="noopener">I bought this ↗</a>
+  </div>
+</details></details></section><section id="resources" class=""><p class="blurb">All picks from every method in mining and oil &amp; gas, across the three markets. Weinstein and Episodic pivots don't need earnings, so they can catch explorers.</p><div class="mk">Canada</div>
+<details class="card">
+  <summary>
+    <div class="score" style="--p:0.89"><b>8</b><small>/9</small></div>
+    <div class="who"><div class="tick">BRW <span class="ex">TSXV</span><span class="strat">Episodic</span></div>
+      <div class="nm">Brunswick Exploration, Inc.</div></div>
+    <svg class="spark" viewBox="0 0 120 36" preserveAspectRatio="none" aria-hidden="true"><path d="M0.0,19.6 L4.1,19.1 L8.3,18.3 L12.4,17.4 L16.6,17.2 L20.7,16.4 L24.8,15.7 L29.0,15.2 L33.1,14.5 L37.2,13.7 L41.4,13.3 L45.5,12.9 L49.7,12.8 L53.8,12.8 L57.9,12.8 L62.1,12.8 L66.2,13.2 L70.3,13.7 L74.5,14.4 L78.6,15.9 L82.8,17.8 L86.9,19.2 L91.0,20.0 L95.2,21.1 L99.3,21.7 L103.4,22.0 L107.6,22.2 L111.7,22.0 L115.9,21.4 L120.0,20.6" class="s-ma30"/><path d="M0.0,7.8 L4.1,11.7 L8.3,12.9 L12.4,14.1 L16.6,14.7 L20.7,14.7 L24.8,15.6 L29.0,16.8 L33.1,16.8 L37.2,15.9 L41.4,16.2 L45.5,16.2 L49.7,17.4 L53.8,19.2 L57.9,20.4 L62.1,22.8 L66.2,24.9 L70.3,26.4 L74.5,28.2 L78.6,30.0 L82.8,29.4 L86.9,29.7 L91.0,29.7 L95.2,30.0 L99.3,30.0 L103.4,28.5 L107.6,26.1 L111.7,22.8 L115.9,19.2 L120.0,15.9" class="s-ma10"/><path d="M0.0,24.0 L4.1,21.0 L8.3,15.0 L12.4,12.0 L16.6,18.0 L20.7,6.0 L24.8,12.0 L29.0,18.0 L33.1,18.0 L37.2,15.0 L41.4,27.0 L45.5,21.0 L49.7,27.0 L53.8,30.0 L57.9,30.0 L62.1,30.0 L66.2,33.0 L70.3,33.0 L74.5,36.0 L78.6,33.0 L82.8,21.0 L86.9,24.0 L91.0,27.0 L95.2,33.0 L99.3,30.0 L103.4,15.0 L107.6,9.0 L111.7,0.0 L115.9,0.0 L120.0,0.0" class="s-px"/></svg>
+    <div class="px"><div>C$0.25</div><span class="zone z-buy">Gap 1 day ago</span></div>
+  </summary>
+  <div class="body">
+    <ul class="checks"><li class="ok"><span>Gap up 10%+</span><small>+25% gap</small></li><li class="ok"><span>Volume 3x+ normal</span><small>4.2x</small></li><li class="ok"><span>Held the gap</span><small>closed +50% that day</small></li><li class="ok"><span>Big gap (20%+)</span><small></small></li><li class="no"><span>Huge volume (6x+)</span><small></small></li><li class="ok"><span>From neglect (not already run up)</span><small></small></li><li class="ok"><span>Not a takeover pin</span><small></small></li></ul>
+    <div class="plan">Check the news behind the gap. Sell rule: below the gap-day low (0.20).</div>
+    <div class="meta">Mkt cap 71m · Non-Energy Minerals · RS 84 · Canada</div>
+    
+    <div class="links"><a href="https://www.tradingview.com/chart/?symbol=TSXV:BRW&amp;interval=W" target="_blank" rel="noopener">Weekly chart ↗</a>
+      <a href="https://www.canadianinsider.com/node/7?menu_tickersearch=BRW" target="_blank" rel="noopener">Insider filings ↗</a></div>
+    <a class="buy" href="https://github.com/FrazKK/Super-Stock-Scanner/new/main?filename=holdings/canada-BRW.json&amp;value=%7B%0A%20%20%22ticker%22%3A%20%22BRW%22%2C%0A%20%20%22exchange%22%3A%20%22TSXV%22%2C%0A%20%20%22market%22%3A%20%22canada%22%2C%0A%20%20%22name%22%3A%20%22Brunswick%20Exploration%2C%20Inc.%22%2C%0A%20%20%22method%22%3A%20%22episodic%22%2C%0A%20%20%22bought%22%3A%20%222026-10-18%22%2C%0A%20%20%22price%22%3A%200.25%2C%0A%20%20%22note%22%3A%20%22Change%20price%20to%20what%20you%20paid%20%28UK%20prices%20in%20pence%29.%20Delete%20this%20file%20when%20you%20sell.%22%2C%0A%20%20%22stop%22%3A%200.2%0A%7D" target="_blank" rel="noopener">I bought this ↗</a>
+  </div>
+</details>
+<details class="card">
+  <summary>
+    <div class="score" style="--p:0.78"><b>7</b><small>/9</small></div>
+    <div class="who"><div class="tick">BMM <span class="ex">TSXV</span><span class="strat">Episodic</span></div>
+      <div class="nm">Black Mammoth Metals Corporation</div></div>
+    <svg class="spark" viewBox="0 0 120 36" preserveAspectRatio="none" aria-hidden="true"><path d="M0.0,6.7 L4.1,5.8 L8.3,5.4 L12.4,4.7 L16.6,4.9 L20.7,5.3 L24.8,5.7 L29.0,5.6 L33.1,5.7 L37.2,6.0 L41.4,6.2 L45.5,6.7 L49.7,6.6 L53.8,7.0 L57.9,7.5 L62.1,8.4 L66.2,9.4 L70.3,10.5 L74.5,12.5 L78.6,14.2 L82.8,15.5 L86.9,17.3 L91.0,18.4 L95.2,19.3 L99.3,20.2 L103.4,21.4 L107.6,22.7 L111.7,23.9 L115.9,24.4 L120.0,24.2" class="s-ma30"/><path d="M0.0,0.0 L4.1,4.4 L8.3,6.9 L12.4,7.7 L16.6,9.4 L20.7,12.5 L24.8,15.6 L29.0,18.1 L33.1,19.0 L37.2,20.1 L41.4,21.8 L45.5,23.4 L49.7,23.9 L53.8,25.4 L57.9,25.7 L62.1,25.9 L66.2,26.3 L70.3,26.6 L74.5,27.4 L78.6,25.9 L82.8,24.9 L86.9,24.1 L91.0,24.5 L95.2,24.9 L99.3,25.6 L103.4,25.8 L107.6,26.1 L111.7,26.9 L115.9,26.7 L120.0,26.6" class="s-ma10"/><path d="M0.0,15.1 L4.1,15.8 L8.3,14.0 L12.4,6.8 L16.6,19.2 L20.7,26.6 L24.8,24.5 L29.0,19.4 L33.1,23.8 L37.2,36.0 L41.4,31.6 L45.5,32.1 L49.7,19.0 L53.8,21.8 L57.9,22.7 L62.1,28.0 L66.2,28.7 L70.3,22.4 L74.5,31.9 L78.6,21.1 L82.8,20.9 L86.9,24.5 L91.0,23.3 L95.2,25.4 L99.3,29.6 L103.4,30.2 L107.6,31.8 L111.7,30.7 L115.9,29.8 L120.0,19.9" class="s-px"/></svg>
+    <div class="px"><div>C$4.26</div><span class="zone z-buy">Gap 1 day ago</span></div>
+  </summary>
+  <div class="body">
+    <ul class="checks"><li class="ok"><span>Gap up 10%+</span><small>+16% gap</small></li><li class="ok"><span>Volume 3x+ normal</span><small>5.2x</small></li><li class="ok"><span>Held the gap</span><small>closed +12% that day</small></li><li class="no"><span>Big gap (20%+)</span><small></small></li><li class="no"><span>Huge volume (6x+)</span><small></small></li><li class="ok"><span>From neglect (not already run up)</span><small></small></li><li class="ok"><span>Not a takeover pin</span><small></small></li></ul>
+    <div class="plan">Check the news behind the gap. Sell rule: below the gap-day low (3.68).</div>
+    <div class="meta">Mkt cap 230m · Non-Energy Minerals · RS 52 · Canada</div>
+    
+    <div class="links"><a href="https://www.tradingview.com/chart/?symbol=TSXV:BMM&amp;interval=W" target="_blank" rel="noopener">Weekly chart ↗</a>
+      <a href="https://www.canadianinsider.com/node/7?menu_tickersearch=BMM" target="_blank" rel="noopener">Insider filings ↗</a></div>
+    <a class="buy" href="https://github.com/FrazKK/Super-Stock-Scanner/new/main?filename=holdings/canada-BMM.json&amp;value=%7B%0A%20%20%22ticker%22%3A%20%22BMM%22%2C%0A%20%20%22exchange%22%3A%20%22TSXV%22%2C%0A%20%20%22market%22%3A%20%22canada%22%2C%0A%20%20%22name%22%3A%20%22Black%20Mammoth%20Metals%20Corporation%22%2C%0A%20%20%22method%22%3A%20%22episodic%22%2C%0A%20%20%22bought%22%3A%20%222026-10-18%22%2C%0A%20%20%22price%22%3A%204.26%2C%0A%20%20%22note%22%3A%20%22Change%20price%20to%20what%20you%20paid%20%28UK%20prices%20in%20pence%29.%20Delete%20this%20file%20when%20you%20sell.%22%2C%0A%20%20%22stop%22%3A%203.68%0A%7D" target="_blank" rel="noopener">I bought this ↗</a>
+  </div>
+</details>
+<details class="card">
+  <summary>
+    <div class="score" style="--p:0.90"><b>9</b><small>/10</small></div>
+    <div class="who"><div class="tick">ADY <span class="ex">TSXV</span><span class="strat">Weinstein</span></div>
+      <div class="nm">Adyton Resources Corporation</div></div>
+    <svg class="spark" viewBox="0 0 120 36" preserveAspectRatio="none" aria-hidden="true"><path d="M0.0,21.9 L4.1,23.1 L8.3,23.8 L12.4,24.2 L16.6,24.6 L20.7,24.6 L24.8,24.1 L29.0,23.5 L33.1,22.8 L37.2,22.0 L41.4,21.2 L45.5,20.7 L49.7,20.0 L53.8,19.7 L57.9,19.2 L62.1,18.9 L66.2,18.6 L70.3,18.8 L74.5,19.2 L78.6,19.3 L82.8,19.8 L86.9,20.2 L91.0,20.6 L95.2,20.8 L99.3,21.0 L103.4,21.2 L107.6,21.4 L111.7,21.0 L115.9,20.4 L120.0,19.8" class="s-ma30"/><path d="M0.0,14.2 L4.1,15.2 L8.3,16.0 L12.4,15.6 L16.6,14.9 L20.7,14.6 L24.8,14.6 L29.0,14.4 L33.1,14.3 L37.2,13.9 L41.4,14.8 L45.5,16.2 L49.7,17.0 L53.8,18.5 L57.9,19.7 L62.1,21.1 L66.2,23.6 L70.3,26.1 L74.5,28.0 L78.6,29.4 L82.8,30.3 L86.9,29.3 L91.0,28.7 L95.2,28.4 L99.3,28.3 L103.4,27.8 L107.6,25.9 L111.7,22.4 L115.9,18.8 L120.0,16.2" class="s-ma10"/><path d="M0.0,15.6 L4.1,14.6 L8.3,16.5 L12.4,11.7 L16.6,13.6 L20.7,14.6 L24.8,5.8 L29.0,11.7 L33.1,16.5 L37.2,18.5 L41.4,24.3 L45.5,29.2 L49.7,24.3 L53.8,26.3 L57.9,25.3 L62.1,29.2 L66.2,31.1 L70.3,36.0 L74.5,36.0 L78.6,32.1 L82.8,33.1 L86.9,19.5 L91.0,18.5 L95.2,23.4 L99.3,24.3 L103.4,24.3 L107.6,11.7 L111.7,1.0 L115.9,0.0 L120.0,6.8" class="s-px"/></svg>
+    <div class="px"><div>C$0.40</div><span class="zone z-buy">Back at breakout</span></div>
+  </summary>
+  <div class="body">
+    <ul class="checks"><li class="ok"><span>Breakout above resistance on 2x+ volume</span><small>2.4x volume, 2 wk ago</small></li><li class="ok"><span>Came out of a flat Stage 1 base</span><small></small></li><li class="ok"><span>Still above 30-week MA, MA not falling</span><small>MA +2.1% in 4 wks</small></li><li class="ok"><span>Beating the market (Mansfield RS &gt; 0)</span><small>+20%</small></li><li class="ok"><span>30-week MA rising</span><small></small></li><li class="no"><span>Breakout volume 3x+</span><small></small></li><li class="ok"><span>Not extended (within 15% of breakout)</span><small>+0% vs breakout</small></li><li class="ok"><span>RS rank 70+</span><small>RS 71</small></li></ul>
+    <div class="plan">Breakout level 0.40. Sell rule: weekly close below the 30-week MA (0.33).</div>
+    <div class="meta">Mkt cap 127m · Non-Energy Minerals · RS 71 · Canada</div>
+    
+    <div class="links"><a href="https://www.tradingview.com/chart/?symbol=TSXV:ADY&amp;interval=W" target="_blank" rel="noopener">Weekly chart ↗</a>
+      <a href="https://www.canadianinsider.com/node/7?menu_tickersearch=ADY" target="_blank" rel="noopener">Insider filings ↗</a></div>
+    <a class="buy" href="https://github.com/FrazKK/Super-Stock-Scanner/new/main?filename=holdings/canada-ADY.json&amp;value=%7B%0A%20%20%22ticker%22%3A%20%22ADY%22%2C%0A%20%20%22exchange%22%3A%20%22TSXV%22%2C%0A%20%20%22market%22%3A%20%22canada%22%2C%0A%20%20%22name%22%3A%20%22Adyton%20Resources%20Corporation%22%2C%0A%20%20%22method%22%3A%20%22weinstein%22%2C%0A%20%20%22bought%22%3A%20%222026-10-18%22%2C%0A%20%20%22price%22%3A%200.4%2C%0A%20%20%22note%22%3A%20%22Change%20price%20to%20what%20you%20paid%20%28UK%20prices%20in%20pence%29.%20Delete%20this%20file%20when%20you%20sell.%22%0A%7D" target="_blank" rel="noopener">I bought this ↗</a>
+  </div>
+</details>
+<details class="card">
+  <summary>
+    <div class="score" style="--p:0.80"><b>8</b><small>/10</small></div>
+    <div class="who"><div class="tick">PCU <span class="ex">TSXV</span><span class="strat">Weinstein</span></div>
+      <div class="nm">Pecoy Copper Corp.</div></div>
+    <svg class="spark" viewBox="0 0 120 36" preserveAspectRatio="none" aria-hidden="true"><path d="M12.4,33.5 L16.6,31.7 L20.7,30.1 L24.8,28.5 L29.0,27.1 L33.1,25.5 L37.2,23.7 L41.4,22.1 L45.5,20.3 L49.7,18.3 L53.8,16.4 L57.9,15.1 L62.1,14.8 L66.2,14.7 L70.3,14.6 L74.5,14.3 L78.6,13.9 L82.8,13.7 L86.9,14.3 L91.0,14.9 L95.2,15.5 L99.3,15.6 L103.4,16.1 L107.6,17.0 L111.7,17.4 L115.9,17.2 L120.0,16.0" class="s-ma30"/><path d="M0.0,9.4 L4.1,10.3 L8.3,10.0 L12.4,10.1 L16.6,9.5 L20.7,10.7 L24.8,13.6 L29.0,15.6 L33.1,15.4 L37.2,12.6 L41.4,11.3 L45.5,11.3 L49.7,11.2 L53.8,11.0 L57.9,11.9 L62.1,13.3 L66.2,15.1 L70.3,16.8 L74.5,18.7 L78.6,20.0 L82.8,20.4 L86.9,21.4 L91.0,23.5 L95.2,25.3 L99.3,25.5 L103.4,24.4 L107.6,22.1 L111.7,19.9 L115.9,17.5 L120.0,15.5" class="s-ma10"/><path d="M0.0,27.9 L4.1,10.2 L8.3,5.4 L12.4,6.6 L16.6,9.0 L20.7,17.4 L24.8,17.4 L29.0,13.8 L33.1,12.0 L37.2,6.0 L41.4,15.0 L45.5,10.2 L49.7,4.2 L53.8,5.4 L57.9,17.4 L62.1,31.2 L66.2,36.0 L70.3,30.6 L74.5,31.2 L78.6,19.2 L82.8,18.6 L86.9,19.8 L91.0,25.8 L95.2,23.4 L99.3,19.2 L103.4,20.4 L107.6,13.2 L111.7,7.8 L115.9,7.2 L120.0,0.0" class="s-px"/></svg>
+    <div class="px"><div>C$1.95</div><span class="zone z-buy">Fresh breakout</span></div>
+  </summary>
+  <div class="body">
+    <ul class="checks"><li class="ok"><span>Breakout above resistance on 2x+ volume</span><small>2.2x volume, 0 wk ago</small></li><li class="ok"><span>Came out of a flat Stage 1 base</span><small></small></li><li class="ok"><span>Still above 30-week MA, MA not falling</span><small>MA +0.1% in 4 wks</small></li><li class="ok"><span>Beating the market (Mansfield RS &gt; 0)</span><small>+19%</small></li><li class="no"><span>30-week MA rising</span><small></small></li><li class="no"><span>Breakout volume 3x+</span><small></small></li><li class="ok"><span>Not extended (within 15% of breakout)</span><small>+2% vs breakout</small></li><li class="ok"><span>RS rank 70+</span><small>RS 80</small></li></ul>
+    <div class="plan">Breakout level 1.92. Sell rule: weekly close below the 30-week MA (1.68).</div>
+    <div class="meta">Mkt cap 409m · Non-Energy Minerals · RS 80 · Canada</div>
+    
+    <div class="links"><a href="https://www.tradingview.com/chart/?symbol=TSXV:PCU&amp;interval=W" target="_blank" rel="noopener">Weekly chart ↗</a>
+      <a href="https://www.canadianinsider.com/node/7?menu_tickersearch=PCU" target="_blank" rel="noopener">Insider filings ↗</a></div>
+    <a class="buy" href="https://github.com/FrazKK/Super-Stock-Scanner/new/main?filename=holdings/canada-PCU.json&amp;value=%7B%0A%20%20%22ticker%22%3A%20%22PCU%22%2C%0A%20%20%22exchange%22%3A%20%22TSXV%22%2C%0A%20%20%22market%22%3A%20%22canada%22%2C%0A%20%20%22name%22%3A%20%22Pecoy%20Copper%20Corp.%22%2C%0A%20%20%22method%22%3A%20%22weinstein%22%2C%0A%20%20%22bought%22%3A%20%222026-10-18%22%2C%0A%20%20%22price%22%3A%201.95%2C%0A%20%20%22note%22%3A%20%22Change%20price%20to%20what%20you%20paid%20%28UK%20prices%20in%20pence%29.%20Delete%20this%20file%20when%20you%20sell.%22%0A%7D" target="_blank" rel="noopener">I bought this ↗</a>
+  </div>
+</details><div class="mk">UK</div>
+<details class="card">
+  <summary>
+    <div class="score" style="--p:0.80"><b>8</b><small>/10</small></div>
+    <div class="who"><div class="tick">GFM <span class="ex">LSE</span><span class="new">NEW</span><span class="strat">Weinstein</span></div>
+      <div class="nm">Griffin Mining Limited</div></div>
+    <svg class="spark" viewBox="0 0 120 36" preserveAspectRatio="none" aria-hidden="true"><path d="M0.0,36.0 L4.1,34.8 L8.3,33.5 L12.4,31.9 L16.6,30.0 L20.7,28.2 L24.8,26.2 L29.0,24.7 L33.1,23.1 L37.2,21.3 L41.4,19.3 L45.5,17.3 L49.7,15.4 L53.8,13.8 L57.9,12.7 L62.1,11.8 L66.2,10.9 L70.3,10.1 L74.5,9.6 L78.6,9.2 L82.8,9.3 L86.9,9.4 L91.0,9.7 L95.2,10.0 L99.3,10.8 L103.4,11.5 L107.6,12.0 L111.7,12.2 L115.9,12.1 L120.0,11.5" class="s-ma30"/><path d="M0.0,8.6 L4.1,9.4 L8.3,11.0 L12.4,11.1 L16.6,11.9 L20.7,12.7 L24.8,13.3 L29.0,14.0 L33.1,13.9 L37.2,12.6 L41.4,9.9 L45.5,7.7 L49.7,5.4 L53.8,4.7 L57.9,4.7 L62.1,5.1 L66.2,5.9 L70.3,5.9 L74.5,6.2 L78.6,7.2 L82.8,9.4 L86.9,11.2 L91.0,12.8 L95.2,14.2 L99.3,15.8 L103.4,16.7 L107.6,16.9 L111.7,16.8 L115.9,16.1 L120.0,14.7" class="s-ma10"/><path d="M0.0,28.4 L4.1,23.5 L8.3,22.6 L12.4,12.0 L16.6,6.2 L20.7,7.5 L24.8,3.1 L29.0,8.4 L33.1,9.8 L37.2,4.4 L41.4,1.3 L45.5,1.3 L49.7,0.0 L53.8,4.9 L57.9,5.8 L62.1,12.4 L66.2,11.1 L70.3,7.5 L74.5,13.3 L78.6,14.2 L82.8,23.9 L86.9,19.1 L91.0,15.5 L95.2,18.8 L99.3,22.2 L103.4,21.3 L107.6,12.9 L111.7,6.6 L115.9,6.6 L120.0,0.4" class="s-px"/></svg>
+    <div class="px"><div>324.0p</div><span class="zone z-buy">Fresh breakout</span></div>
+  </summary>
+  <div class="body">
+    <ul class="checks"><li class="ok"><span>Breakout above resistance on 2x+ volume</span><small>2.6x volume, 0 wk ago</small></li><li class="ok"><span>Came out of a flat Stage 1 base</span><small></small></li><li class="ok"><span>Still above 30-week MA, MA not falling</span><small>MA +0.0% in 4 wks</small></li><li class="ok"><span>Beating the market (Mansfield RS &gt; 0)</span><small>+16%</small></li><li class="no"><span>30-week MA rising</span><small></small></li><li class="no"><span>Breakout volume 3x+</span><small></small></li><li class="ok"><span>Not extended (within 15% of breakout)</span><small>+2% vs breakout</small></li><li class="ok"><span>RS rank 70+</span><small>RS 76</small></li></ul>
+    <div class="plan">Breakout level 319.00. Sell rule: weekly close below the 30-week MA (299.05).</div>
+    <div class="meta">Mkt cap 561m · Non-Energy Minerals · RS 76 · UK</div>
+    
+    <div class="links"><a href="https://www.tradingview.com/chart/?symbol=LSE:GFM&amp;interval=W" target="_blank" rel="noopener">Weekly chart ↗</a>
+      <a href="https://www.investegate.co.uk/company/GFM" target="_blank" rel="noopener">Insider filings ↗</a></div>
+    <a class="buy" href="https://github.com/FrazKK/Super-Stock-Scanner/new/main?filename=holdings/uk-GFM.json&amp;value=%7B%0A%20%20%22ticker%22%3A%20%22GFM%22%2C%0A%20%20%22exchange%22%3A%20%22LSE%22%2C%0A%20%20%22market%22%3A%20%22uk%22%2C%0A%20%20%22name%22%3A%20%22Griffin%20Mining%20Limited%22%2C%0A%20%20%22method%22%3A%20%22weinstein%22%2C%0A%20%20%22bought%22%3A%20%222026-10-18%22%2C%0A%20%20%22price%22%3A%20324.0%2C%0A%20%20%22note%22%3A%20%22Change%20price%20to%20what%20you%20paid%20%28UK%20prices%20in%20pence%29.%20Delete%20this%20file%20when%20you%20sell.%22%0A%7D" target="_blank" rel="noopener">I bought this ↗</a>
+  </div>
+</details>
+<details class="card">
+  <summary>
+    <div class="score" style="--p:0.71"><b>10</b><small>/14</small></div>
+    <div class="who"><div class="tick">JSE <span class="ex">LSE</span><span class="strat">Minervini</span></div>
+      <div class="nm">Jadestone Energy PLC</div></div>
+    <svg class="spark" viewBox="0 0 120 36" preserveAspectRatio="none" aria-hidden="true"><path d="M0.0,36.0 L4.1,35.4 L8.3,34.9 L12.4,34.3 L16.6,33.5 L20.7,33.1 L24.8,32.7 L29.0,32.2 L33.1,31.6 L37.2,31.1 L41.4,30.4 L45.5,29.9 L49.7,29.6 L53.8,29.4 L57.9,29.0 L62.1,28.7 L66.2,28.1 L70.3,27.5 L74.5,27.0 L78.6,26.6 L82.8,26.2 L86.9,25.7 L91.0,25.2 L95.2,24.2 L99.3,23.3 L103.4,22.5 L107.6,21.4 L111.7,20.6 L115.9,20.0 L120.0,19.1" class="s-ma30"/><path d="M0.0,31.9 L4.1,31.3 L8.3,31.2 L12.4,30.4 L16.6,29.2 L20.7,28.1 L24.8,26.7 L29.0,25.9 L33.1,24.9 L37.2,24.3 L41.4,23.1 L45.5,22.3 L49.7,22.0 L53.8,21.8 L57.9,22.0 L62.1,22.4 L66.2,22.3 L70.3,21.9 L74.5,22.5 L78.6,22.9 L82.8,23.5 L86.9,23.5 L91.0,22.4 L95.2,20.4 L99.3,18.7 L103.4,17.1 L107.6,15.1 L111.7,14.0 L115.9,12.5 L120.0,10.2" class="s-ma10"/><path d="M0.0,26.8 L4.1,27.8 L8.3,31.3 L12.4,29.9 L16.6,22.6 L20.7,22.1 L24.8,24.7 L29.0,22.2 L33.1,16.8 L37.2,18.5 L41.4,15.4 L45.5,19.9 L49.7,27.8 L53.8,28.0 L57.9,24.7 L62.1,25.7 L66.2,24.2 L70.3,18.5 L74.5,22.6 L78.6,22.6 L82.8,21.2 L86.9,19.3 L91.0,17.0 L95.2,8.1 L99.3,8.1 L103.4,9.1 L107.6,5.0 L111.7,7.1 L115.9,7.1 L120.0,0.0" class="s-px"/></svg>
+    <div class="px"><div>40.9p</div><span class="zone z-buy">Breaking out</span></div>
+  </summary>
+  <div class="body">
+    <ul class="checks"><li class="ok"><span>Above 150 and 200-day MAs</span><small></small></li><li class="ok"><span>150-day above 200-day</span><small></small></li><li class="ok"><span>200-day rising for a month</span><small></small></li><li class="ok"><span>50-day above 150 and 200-day</span><small></small></li><li class="ok"><span>Above 50-day MA</span><small></small></li><li class="ok"><span>30%+ above 52-week low</span><small>+100%</small></li><li class="ok"><span>Within 25% of 52-week high</span><small>-0%</small></li><li class="ok"><span>RS rank 70+</span><small>RS 89</small></li><li class="no"><span>Volatility contraction (VCP)</span><small>pullbacks 15% &gt; 19% &gt; 12%</small></li><li class="no"><span>Volume drying up</span><small></small></li><li class="ok"><span>Pivot breakout on volume</span><small>pivot 39.00</small></li><li class="no"><span>EPS growth &gt; 25%</span><small>no data</small></li></ul>
+    <div class="plan">Buy point: above the pivot 39.00. Sell rule: 8% stop below your entry.</div>
+    <div class="meta">Mkt cap 223m · Energy Minerals · RS 89 · UK</div>
+    
+    <div class="links"><a href="https://www.tradingview.com/chart/?symbol=LSE:JSE&amp;interval=W" target="_blank" rel="noopener">Weekly chart ↗</a>
+      <a href="https://www.investegate.co.uk/company/JSE" target="_blank" rel="noopener">Insider filings ↗</a></div>
+    <a class="buy" href="https://github.com/FrazKK/Super-Stock-Scanner/new/main?filename=holdings/uk-JSE.json&amp;value=%7B%0A%20%20%22ticker%22%3A%20%22JSE%22%2C%0A%20%20%22exchange%22%3A%20%22LSE%22%2C%0A%20%20%22market%22%3A%20%22uk%22%2C%0A%20%20%22name%22%3A%20%22Jadestone%20Energy%20PLC%22%2C%0A%20%20%22method%22%3A%20%22minervini%22%2C%0A%20%20%22bought%22%3A%20%222026-10-18%22%2C%0A%20%20%22price%22%3A%2040.9%2C%0A%20%20%22note%22%3A%20%22Change%20price%20to%20what%20you%20paid%20%28UK%20prices%20in%20pence%29.%20Delete%20this%20file%20when%20you%20sell.%22%0A%7D" target="_blank" rel="noopener">I bought this ↗</a>
+  </div>
+</details></section><section id="track" class=""><p class="blurb">Each weekend scan, the stocks at a buy point are recorded at that Friday's close and compared with the market's index. "Buy and hold" ignores the sell rules; "With sell rules" exits when the method says to.</p><p class="blurb">Counting picks under the current rules (since 18 Oct). 86 earlier picks are kept in the data but left out here.</p><p class="note">First 4-week results arrive around 15 Nov. Give it at least 3 months before drawing conclusions.</p><div class="tcard"><div class="th">Stine superstocks <small>0 picks</small></div><div class="big">-</div><div class="bigl">no results yet</div><div class="kv"><span>After 4 weeks</span><b>waiting</b></div><div class="kv"><span>After 12 weeks</span><b>waiting</b></div><div class="kv"><span>After 26 weeks</span><b>waiting</b></div></div><div class="tcard"><div class="th">Weinstein Stage 2 <small>5 picks</small></div><div class="big">-</div><div class="bigl">no results yet</div><div class="kv"><span>After 4 weeks</span><b>waiting</b></div><div class="kv"><span>After 12 weeks</span><b>waiting</b></div><div class="kv"><span>After 26 weeks</span><b>waiting</b></div></div><div class="tcard"><div class="th">Minervini trend + VCP <small>6 picks</small></div><div class="big">-</div><div class="bigl">no results yet</div><div class="kv"><span>After 4 weeks</span><b>waiting</b></div><div class="kv"><span>After 12 weeks</span><b>waiting</b></div><div class="kv"><span>After 26 weeks</span><b>waiting</b></div></div><div class="tcard"><div class="th">Episodic pivots <small>0 picks</small></div><div class="big">-</div><div class="bigl">no results yet</div><div class="kv"><span>After 4 weeks</span><b>waiting</b></div><div class="kv"><span>After 12 weeks</span><b>waiting</b></div><div class="kv"><span>After 26 weeks</span><b>waiting</b></div></div><div class="tcard"><div class="th">Picked by 2+ methods <small>0 picks</small></div><div class="big">-</div><div class="bigl">no results yet</div><div class="kv"><span>After 4 weeks</span><b>waiting</b></div><div class="kv"><span>After 12 weeks</span><b>waiting</b></div><div class="kv"><span>After 26 weeks</span><b>waiting</b></div></div><h3>Latest 40 picks</h3><table class="picks"><tr><th>Date</th><th>Pick</th><th>Return</th><th>Status</th></tr><tr><td>18 Oct</td><td><b>AFRI</b><br><small>Weinstein · USA</small></td><td class="pos">-<br><small></small></td><td><small>Just added</small></td></tr><tr><td>18 Oct</td><td><b>SNWS</b><br><small>Weinstein · UK</small></td><td class="pos">-<br><small></small></td><td><small>Just added</small></td></tr><tr><td>18 Oct</td><td><b>FNX</b><br><small>Weinstein · UK</small></td><td class="pos">-<br><small></small></td><td><small>Just added</small></td></tr><tr><td>18 Oct</td><td><b>BMS</b><br><small>Weinstein · UK</small></td><td class="pos">-<br><small></small></td><td><small>Just added</small></td></tr><tr><td>18 Oct</td><td><b>GFM</b><br><small>Weinstein · UK</small></td><td class="pos">-<br><small></small></td><td><small>Just added</small></td></tr><tr><td>18 Oct</td><td><b>CBLL</b><br><small>Minervini · USA</small></td><td class="pos">-<br><small></small></td><td><small>Just added</small></td></tr><tr><td>18 Oct</td><td><b>AII</b><br><small>Minervini · USA</small></td><td class="pos">-<br><small></small></td><td><small>Just added</small></td></tr><tr><td>18 Oct</td><td><b>NECB</b><br><small>Minervini · USA</small></td><td class="pos">-<br><small></small></td><td><small>Just added</small></td></tr><tr><td>18 Oct</td><td><b>WABC</b><br><small>Minervini · USA</small></td><td class="pos">-<br><small></small></td><td><small>Just added</small></td></tr><tr><td>18 Oct</td><td><b>SHOE</b><br><small>Minervini · UK</small></td><td class="pos">-<br><small></small></td><td><small>Just added</small></td></tr><tr><td>18 Oct</td><td><b>FVA</b><br><small>Minervini · UK</small></td><td class="pos">-<br><small></small></td><td><small>Just added</small></td></tr></table></section><section id="mine" class=""><p class="blurb">Stocks you've told the bot you bought. It checks each one against its method's sell rule every weekday evening and every Saturday, and sends a phone alert when anything changes. To add one, tap <b>I bought this</b> on its card. When you sell, tap <b>I sold it</b>.</p><p class="empty">No holdings yet.</p><a class="btn" href="https://github.com/FrazKK/Super-Stock-Scanner/new/main?filename=holdings/new-stock.json&amp;value=%7B%0A%20%20%22ticker%22%3A%20%22ABC%22%2C%0A%20%20%22exchange%22%3A%20%22LSE%22%2C%0A%20%20%22market%22%3A%20%22uk%22%2C%0A%20%20%22method%22%3A%20%22weinstein%22%2C%0A%20%20%22bought%22%3A%20%222026-10-18%22%2C%0A%20%20%22price%22%3A%20100.0%2C%0A%20%20%22note%22%3A%20%22market%3A%20america%2C%20canada%20or%20uk.%20method%3A%20stine%2C%20weinstein%2C%20minervini%2C%20episodic%20or%20other.%20UK%20prices%20in%20pence.%22%0A%7D" target="_blank" rel="noopener">Add a stock by hand ↗</a></section></main>
+<div class="legend">Chart: <i style="background:var(--ink)"></i>price <i style="background:var(--acc)"></i>10-week MA
+ <i style="background:var(--warn)"></i>30-week MA · last 30 weeks. Only stocks at a buy point right now are listed, up to 10 per method. <b>NEW</b> = not on that method's list last time. <b>×2</b>, <b>×3</b> = picked by that many methods.
+ Tap a stock for its checklist, entry and sell rule. Canada and UK insider buys aren't scored automatically, so use the filings link.</div>
+<footer>Free, unofficial data from TradingView, Yahoo Finance and OpenInsider. It can be delayed or wrong, so check everything before acting.
+A research shortlist, not financial advice.</footer>
+<script>
+document.querySelectorAll('nav button').forEach(b=>b.onclick=()=>{
+ document.querySelectorAll('nav button,section').forEach(x=>x.classList.remove('on'));
+ b.classList.add('on');document.getElementById(b.dataset.t).classList.add('on');
+ try{localStorage.setItem('tab',b.dataset.t)}catch(e){}});
+try{const t=localStorage.getItem('tab');t&&document.querySelector(`nav [data-t="${t}"]`)?.click()}catch(e){}
+</script>
+<script>
+(function(){
+ const REPO='FrazKK/Super-Stock-Scanner', GEN='2026-10-18T18:30+00:00', API='https://api.github.com/repos/'+REPO+'/actions/workflows/';
+ const $=id=>document.getElementById(id), st=$('rstatus');
+ const get=k=>{try{return localStorage.getItem(k)}catch(e){return null}};
+ const put=(k,v)=>{try{v===null?localStorage.removeItem(k):localStorage.setItem(k,v)}catch(e){}};
+ const hdr=()=>({'Authorization':'Bearer '+get('gh_token'),'Accept':'application/vnd.github+json','X-GitHub-Api-Version':'2022-11-28'});
+ function say(msg,cls){st.hidden=false;st.className='rstatus '+(cls||'');st.innerHTML=msg;}
+ if(get('gh_token')) $('rsetup').hidden=true;
+ $('tok-save').onclick=async()=>{
+   const t=$('tok').value.trim(); if(!t){say('Paste the token first.','bad');return;}
+   put('gh_token',t); say('Checking the key…');
+   try{const r=await fetch(API+'weekly-scan.yml',{headers:hdr()});
+     if(r.ok){say('Key saved. The buttons are ready.','good');$('tok').value='';$('rsetup').open=false;$('rsetup').hidden=true;}
+     else{put('gh_token',null);say('GitHub didn\'t accept that key ('+r.status+'). Check it has <b>Actions: Read and write</b> on this repo.','bad');}
+   }catch(e){put('gh_token',null);say('Couldn\'t reach GitHub. Check your connection.','bad');}
+ };
+ $('tok-forget').onclick=e=>{e.preventDefault();put('gh_token',null);put('gh_pending',null);$('rsetup').hidden=false;say('Saved key removed.');};
+ async function start(wf,label){
+   if(!get('gh_token')){$('rsetup').hidden=false;$('rsetup').open=true;$('rsetup').scrollIntoView({behavior:'smooth'});return;}
+   say('Starting '+label+'…');
+   try{
+     const r=await fetch(API+wf+'/dispatches',{method:'POST',headers:hdr(),body:JSON.stringify({ref:'main'})});
+     if(r.status===204){put('gh_pending',JSON.stringify({wf,label,t:Date.now()}));poll();}
+     else if(r.status===401||r.status===403||r.status===404){say('GitHub refused ('+r.status+'). The key may have expired. <a href="#" onclick="document.getElementById(\'rsetup\').hidden=false;document.getElementById(\'rsetup\').open=true;return false">Set it up again</a>.','bad');}
+     else say('Couldn\'t start it ('+r.status+'). Try again in a minute.','bad');
+   }catch(e){say('Couldn\'t reach GitHub. Check your connection.','bad');}
+ }
+ async function poll(){
+   const p=JSON.parse(get('gh_pending')||'null'); if(!p) return;
+   const mins=Math.round((Date.now()-p.t)/60000);
+   if(Date.now()-p.t>90*60000){put('gh_pending',null);return;}
+   try{
+     const r=await fetch(API+p.wf+'/runs?per_page=5&event=workflow_dispatch',{headers:hdr()});
+     const j=await r.json(); const run=(j.workflow_runs||[]).find(x=>Date.parse(x.created_at)>=p.t-120000);
+     if(!run){say(p.label+' requested. Waiting for GitHub to pick it up…');}
+     else if(run.status!=='completed'){
+       say(p.label+' running ('+mins+' min so far). '+(p.wf==='weekly-scan.yml'?'A full scan takes about 15–20 minutes.':'This takes about 2 minutes.')+' You can leave this page; it carries on.');}
+     else if(run.conclusion==='success'){
+       put('gh_pending',null); say('Finished. Updating the page…','good');
+       waitForPage(p.wf==='weekly-scan.yml'); return;}
+     else{put('gh_pending',null);say(p.label+' failed. <a href="'+run.html_url+'" target="_blank" rel="noopener">See what went wrong ↗</a>','bad');return;}
+   }catch(e){say('Lost contact with GitHub; retrying…');}
+   setTimeout(poll,20000);
+ }
+ async function waitForPage(scan){
+   for(let i=0;i<12;i++){
+     await new Promise(r=>setTimeout(r,15000));
+     if(!scan && i>=4) break;
+     try{const j=await (await fetch('data/latest.json?t='+Date.now(),{cache:'no-store'})).json();
+       if(scan && j.generated!==GEN) break;}catch(e){}
+   }
+   location.replace(location.pathname+'?t='+Date.now());
+ }
+ $('btn-scan').onclick=()=>start('weekly-scan.yml','New scan');
+ $('btn-hold').onclick=()=>start('daily-check.yml','Holdings check');
+ if(get('gh_pending')) poll();
+})();
+</script></body></html>
