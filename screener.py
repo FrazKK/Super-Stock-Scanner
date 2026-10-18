@@ -54,7 +54,8 @@ MARKETS = {
         "universe_price_min": 1.0,
         "stine_price": (2.0, 15.0),            # USD
         "mcap": (20e6, 1.5e9),
-        "min_avg_value": 300_000,              # average daily traded value, USD
+        "min_avg_value": 300_000,              # average daily traded value, USD (data hygiene)
+        "stine_max_mcap": 500e6,
         "exchanges": {"NASDAQ", "NYSE", "AMEX", "NYSE ARCA", "NYSEARCA"},
         "bench": ["IWM", "SPY"],               # small caps first, fallback
     },
@@ -63,7 +64,8 @@ MARKETS = {
         "universe_price_min": 0.10,
         "stine_price": (0.50, 15.0),           # CAD
         "mcap": (10e6, 1.5e9),
-        "min_avg_value": 50_000,
+        "min_avg_value": 75_000,
+        "stine_max_mcap": 700e6,
         "exchanges": {"TSX", "TSXV", "CSE", "NEO"},
         "bench": ["XCS.TO", "XIC.TO", "^GSPTSE"],
     },
@@ -72,7 +74,8 @@ MARKETS = {
         "universe_price_min": 1.0,             # pence
         "stine_price": (5.0, 1500.0),          # pence (5p to 15)
         "mcap": (5e6, 1.0e9),
-        "min_avg_value": 20_000,               # GBP
+        "min_avg_value": 30_000,               # GBP
+        "stine_max_mcap": 400e6,
         "exchanges": {"LSE", "LSIN"},
         "bench": ["^FTAI", "^FTMC", "^FTSE"],  # AIM All-Share, FTSE 250, FTSE 100
     },
@@ -93,11 +96,17 @@ STRATEGIES = {
                           "Drill results and contract wins show up here."},
 }
 
+# Not a separate scan: stocks that two or more of the methods above picked the same week.
+CONSENSUS = {"label": "Picked by 2+ methods", "short": "2+ methods",
+             "blurb": "Stocks that more than one method flagged this week. Agreement between different "
+                      "approaches can mean a stronger setup; the track record will show if it does."}
+TRACKED = {**STRATEGIES, "consensus": CONSENSUS}
+
 RESOURCE_SECTORS = {"Energy Minerals", "Non-Energy Minerals"}
 
 REQUIRE_PROFIT = True          # Stine only: drop loss-makers when EPS data exists
 MAX_CANDIDATES = 400           # per market, how many get full price analysis
-SHOW_PER_LIST = 20             # cards per strategy per market
+SHOW_PER_LIST = 10             # max picks per method per market (buy-zone only)
 RECORD_PER_LIST = 10           # how many of those go into the track record
                                # (Minervini "trend only" names are shown but not recorded)
 NEW_WINDOW_WEEKS = 8           # a pick is "NEW" if not picked in this many weeks
@@ -107,7 +116,8 @@ WATCH_SHOW = 10
 STINE_BASE_WEEKS = 12
 STINE_BASE_MAX_DEPTH = 0.40
 STINE_BREAKOUT_LOOKBACK = 8    # breakout must be within the last 8 weeks
-STINE_VOL_MULT = 2.5
+STINE_VOL_MULT = 3.0           # Stine: breakout week on huge volume...
+STINE_LOW_FLOAT = 50e6         # ...in a low-float stock (shares); market cap is used when float is unknown
 STINE_STEEP = 0.03             # 30-wk MA up 3%+ in 4 weeks
 STINE_MIN_SCORE = 6
 EPS_GROWTH_MIN = 25.0
@@ -116,10 +126,14 @@ SMALL_FLOAT = 30e6
 
 # Weinstein
 WEIN_LOOKBACK = 8
-WEIN_VOL_MULT = 2.0
+WEIN_VOL_MULT = 2.0            # Weinstein: breakout volume at least 2x the recent average
 
 # Minervini
-MIN_RS = 70
+MIN_RS = 70                    # Minervini's Trend Template: RS rank 70 or higher
+MIN_PIVOT_CHASE = 0.05         # Minervini: don't buy more than 5% above the pivot
+EP_MAX_DAYS = 3                # episodic pivot: gap within the last 3 trading days
+MARKET_FILTER = False          # True = hide Weinstein/Minervini buys when the market is in a downtrend
+                               # (both authors advise against new buys then); False = show with a warning
 MIN_STOP = 0.08
 
 # Episodic pivot
@@ -128,6 +142,8 @@ EP_VOL_MULT = 3.0
 EP_MIN_MOVE = 0.08
 
 HORIZONS = [4, 12, 26]         # weeks, for the track record
+RULES_VERSION = 3              # bump when the selection rules change; the track record restarts from then
+RULES_SINCE = "2026-10-18"
 
 ROOT = Path(__file__).resolve().parent
 
@@ -390,10 +406,10 @@ def stine(rec, w, insider, market):
         checks.append({"label": label, "pass": bool(ok), "pts": pts if ok else 0, "max": pts, "note": note, "req": req})
 
     add("Above rising 30-week MA", trend, 2, req=True)
-    add("Base breakout on big volume", bo, 2,
+    add(f"Breakout on {STINE_VOL_MULT:.0f}x+ weekly volume", bo, 2,
         f"{bo_vol:.1f}x volume, {bo_back} wk ago" if bo else "no breakout in 8 weeks", req=True)
     add("Steep 30-week MA", slope >= STINE_STEEP, 1, f"{slope * 100:+.1f}% in 4 wks")
-    add("Biggest weekly volume in 6 months", record_vol, 1)
+    add("Biggest weekly volume in 6 months", record_vol, 1, req=True)
     add("Tight base", depth <= STINE_BASE_MAX_DEPTH, 1, f"{depth * 100:.0f}% range")
     eg, pe, flt = (num(rec.get(k)) for k in ("earnings_per_share_diluted_yoy_growth_fq",
                                               "price_earnings_ttm", "float_shares_outstanding"))
@@ -402,6 +418,13 @@ def stine(rec, w, insider, market):
     add("Small float", flt is not None and flt <= SMALL_FLOAT, 1, "no data" if flt is None else f"{flt / 1e6:.1f}M shares")
     rs = num(rec.get("rs_rank"))
     add("Market leader (RS rank 80+)", rs is not None and rs >= 80, 1, "no data" if rs is None else f"RS {rs:.0f}")
+    cap, capmax = num(rec.get("market_cap_basic")), MARKETS[market]["stine_max_mcap"]
+    if flt is not None:
+        small, note = flt <= STINE_LOW_FLOAT, f"float {flt / 1e6:.0f}M shares"
+    else:
+        small = cap is not None and cap <= capmax
+        note = "no data" if cap is None else f"no float data; mkt cap {cap / 1e6:,.0f}m"
+    add("Low float / small company", small, 1, note, req=True)
     if market == "america":
         add("Insider buying (90 days)", bool(insider), 2,
             f"{insider['buys']} buy(s), ${insider['value']:,.0f}" if insider else "none found")
@@ -422,7 +445,8 @@ def stine(rec, w, insider, market):
     plan = (f"Entry zone: near the 10-week MA ({fmt_num(ma10.iloc[-1])}). "
             f"Sell rule: weekly close below it.")
     return {"strategy": "stine", "checks": checks, "tag": tag, "tag_class": cls, "plan": plan,
-            "stop": None, "required_ok": trend and bo, "trend_ok": trend, "dist_ma10": dist}
+            "stop": None, "required_ok": all(ch["pass"] for ch in checks if ch["req"]),
+            "trend_ok": trend, "dist_ma10": dist}
 
 
 # ---------------------------------------------------------------------------
@@ -473,10 +497,10 @@ def weinstein(rec, w, bench_w):
     def add(label, ok, pts, note="", req=False):
         checks.append({"label": label, "pass": bool(ok), "pts": pts if ok else 0, "max": pts, "note": note, "req": req})
 
-    add("Breakout above resistance on volume", True, 2, f"{found['vx']:.1f}x volume, {found['back']} wk ago", req=True)
+    add(f"Breakout above resistance on {WEIN_VOL_MULT:.0f}x+ volume", True, 2, f"{found['vx']:.1f}x volume, {found['back']} wk ago", req=True)
     add("Came out of a flat Stage 1 base", found["flat"] and found["basing"], 1, req=True)
     add("Still above 30-week MA, MA not falling", above and slope >= -0.005, 1, f"MA {slope * 100:+.1f}% in 4 wks", req=True)
-    add("Beating the market (Mansfield RS > 0)", mrs is not None and mrs > 0, 2,
+    add("Beating the market (Mansfield RS > 0)", mrs is not None and mrs > 0, 2, req=True, note=
         "no index data" if mrs is None else f"{mrs * 100:+.0f}%")
     add("30-week MA rising", slope > 0.005, 1)
     add("Breakout volume 3x+", found["vx"] >= 3, 1)
@@ -484,9 +508,9 @@ def weinstein(rec, w, bench_w):
         f"{(last / found['res'] - 1) * 100:+.0f}% vs breakout")
     add("RS rank 70+", rs is not None and rs >= 70, 1, "no data" if rs is None else f"RS {rs:.0f}")
 
-    if last > ma30.iloc[-1] * 1.25:
+    if last > ma30.iloc[-1] * 1.25 or last > found["res"] * 1.15:
         tag, cls = "Extended, wait", "z-ext"
-    elif found["back"] <= 1:
+    elif found["back"] <= 1 and last <= found["res"] * 1.10:
         tag, cls = "Fresh breakout", "z-buy"
     elif last <= found["res"] * 1.05:
         tag, cls = "Back at breakout", "z-buy"
@@ -524,7 +548,7 @@ def minervini(rec, d):
     add("Above 50-day MA", last > s50.iloc[-1], 1, req=True)
     add("30%+ above 52-week low", last >= lo52 * 1.30, 1, f"{(last / lo52 - 1) * 100:+.0f}%", req=True)
     add("Within 25% of 52-week high", last >= hi52 * 0.75, 1, f"{(last / hi52 - 1) * 100:+.0f}%", req=True)
-    add("RS rank 70+", rs is not None and rs >= MIN_RS, 1, "no data" if rs is None else f"RS {rs:.0f}", req=True)
+    add(f"RS rank {MIN_RS}+", rs is not None and rs >= MIN_RS, 1, "no data" if rs is None else f"RS {rs:.0f}", req=True)
     if not all(ch["pass"] for ch in checks):
         return None
 
@@ -538,7 +562,7 @@ def minervini(rec, d):
     dry = v.iloc[-10:].mean() < 0.8 * v.iloc[-60:-10].mean()
     pivot = float(h.iloc[-25:-5].max())
     avg50 = v.iloc[-55:-5].mean()
-    base_ok = depth(d.iloc[-25:-5]) <= 0.15          # a real consolidation before the pivot
+    base_ok = depth(d.iloc[-25:-5]) <= 0.12          # a real consolidation before the pivot
     brk = bool(base_ok and (c.iloc[-5:] > pivot).any() and v.iloc[-5:].max() >= 1.4 * avg50 and last > pivot * 0.97)
     eg = num(rec.get("earnings_per_share_diluted_yoy_growth_fq"))
 
@@ -547,14 +571,14 @@ def minervini(rec, d):
     add("Pivot breakout on volume", brk, 2, f"pivot {fmt_num(pivot)}")
     add("EPS growth > 25%", eg is not None and eg >= EPS_GROWTH_MIN, 1, "no data" if eg is None else f"{eg:+.0f}% YoY")
 
-    if brk and last > pivot * 1.10:
+    if brk and last > pivot * (1 + MIN_PIVOT_CHASE):
         tag, cls = "Extended from pivot", "z-ext"
     elif brk:
         tag, cls = "Breaking out", "z-buy"
     elif vcp:
         tag, cls = "VCP forming", "z-ok"
     else:
-        tag, cls = "Trend only", "z-ok"
+        return None               # trend alone isn't a Minervini buy signal
     return {"strategy": "minervini", "checks": checks, "tag": tag, "tag_class": cls,
             "plan": f"Buy point: above the pivot {fmt_num(pivot)}. Sell rule: 8% stop below your entry.",
             "stop_pct": MIN_STOP, "required_ok": True}
@@ -586,7 +610,7 @@ def episodic(rec, d):
     if not best:
         return None
     last = c.iloc[-1]
-    if last < best["low"]:
+    if last < best["low"] or n - 1 - best["j"] > EP_MAX_DAYS:
         return None
     j = best["j"]
     days_ago = n - 1 - j
@@ -610,6 +634,8 @@ def episodic(rec, d):
 
     tag = "Possible takeover bid" if pinned else ("Gap today" if days_ago == 0 else f"Gap {days_ago} day{'s' if days_ago > 1 else ''} ago")
     cls = "z-low" if pinned else "z-buy"
+    if not pinned and last > c.iloc[j] * 1.10:
+        tag, cls = "Ran on after gap, wait", "z-ext"
     return {"strategy": "episodic", "checks": checks, "tag": tag, "tag_class": cls,
             "plan": f"Check the news behind the gap. Sell rule: below the gap-day low ({fmt_num(best['low'])}).",
             "stop": best["low"], "required_ok": True, "gap_date": str(d.index[j].date())}
@@ -676,7 +702,8 @@ def make_card(rec, res, w, market, insider, ysym):
     }
 
 
-def run_pipeline(fetch_tv, fetch_prices, fetch_insiders, today: dt.date, ledger: list[dict]) -> dict:
+def run_pipeline(fetch_tv, fetch_prices, fetch_insiders, today: dt.date, ledger: list[dict], prev=None,
+                 record=True) -> dict:
     results = {"generated": dt.datetime.combine(today, dt.datetime.now(dt.timezone.utc).time(), dt.timezone.utc)
                .isoformat(timespec="minutes"), "date": today.isoformat(), "markets": {}}
     print("Fetching US insider purchases...")
@@ -712,7 +739,6 @@ def run_pipeline(fetch_tv, fetch_prices, fetch_insiders, today: dt.date, ledger:
         bsym = benches.get(m)
         bench_w = to_weekly(prices[bsym]) if bsym else None
         lists = {k: [] for k in STRATEGIES}
-        watch = []
         lo, hi = MARKETS[m]["stine_price"]
         for rec in cand.to_dict("records"):
             d = prices.get(rec["ysym"])
@@ -726,37 +752,53 @@ def run_pipeline(fetch_tv, fetch_prices, fetch_insiders, today: dt.date, ledger:
                 if lo <= (num(rec.get("close")) or 0) <= hi and not (REQUIRE_PROFIT and eps is not None and eps <= 0):
                     r = stine(rec, w, ins, m)
                     if r:
-                        card = make_card(rec, r, w, m, ins, rec["ysym"])
-                        if r["required_ok"] and card["score"] >= STINE_MIN_SCORE:
-                            lists["stine"].append(card)
-                        elif r["trend_ok"] and not r["required_ok"] and card["score"] >= STINE_MIN_SCORE - 2:
-                            watch.append(card)
+                        if r["required_ok"]:
+                            lists["stine"].append(make_card(rec, r, w, m, ins, rec["ysym"]))
                 for fn, args in ((weinstein, (rec, w, bench_w)), (minervini, (rec, d)), (episodic, (rec, d))):
                     r = fn(*args)
                     if r and r["required_ok"]:
                         lists[r["strategy"]].append(make_card(rec, r, w, m, ins, rec["ysym"]))
             except Exception as e:
                 print(f"  {rec['ysym']}: analysis error {e}")
+        mc = market_check(bsym, bench_w)
+        held_back = {}
         for k in lists:
-            lists[k].sort(key=lambda x: (x["score"], x.get("rs_rank") or 0), reverse=True)
-            lists[k] = lists[k][:SHOW_PER_LIST]
-        watch.sort(key=lambda x: x["score"], reverse=True)
-        # cross-reference which methods flagged each ticker
-        flagged = {}
+            # only stocks at a buy point right now, best first, max 10
+            ripe = [x for x in lists[k] if x["tag_class"] == "z-buy"]
+            if MARKET_FILTER and mc["state"] == "down" and k in ("weinstein", "minervini"):
+                held_back[k] = len(ripe)
+                ripe = []
+            ripe.sort(key=lambda x: (x["score"], x.get("rs_rank") or 0), reverse=True)
+            lists[k] = ripe[:SHOW_PER_LIST]
+        # cross-reference which methods flagged each ticker (Minervini "trend only" doesn't count)
+        flagged: dict[str, list] = {}
         for k, L in lists.items():
             for x in L:
-                flagged.setdefault(x["ticker"], []).append(STRATEGIES[k]["short"])
+                if not (k == "minervini" and x["tag"] == "Trend only"):
+                    flagged.setdefault(x["ticker"], []).append((k, x))
         for k, L in lists.items():
             for x in L:
-                x["also"] = [s for s in flagged[x["ticker"]] if s != STRATEGIES[k]["short"]]
+                x["also"] = [STRATEGIES[kk]["short"] for kk, _ in flagged.get(x["ticker"], []) if kk != k]
+        multi = []
+        for tick, hits in flagged.items():
+            if len(hits) < 2:
+                continue
+            best = max(hits, key=lambda h: h[1]["score"] / max(h[1]["max_score"], 1))[1]
+            multi.append({**best, "strategy": best["strategy"], "count": len(hits),
+                          "methods": [{"strategy": kk, "tag": x["tag"], "tag_class": x["tag_class"],
+                                       "score": x["score"], "max_score": x["max_score"], "plan": x["plan"]}
+                                      for kk, x in hits],
+                          "avg_pct": float(np.mean([x["score"] / max(x["max_score"], 1) for _, x in hits]))})
+        multi.sort(key=lambda e: (e["count"], e["avg_pct"]), reverse=True)
         results["markets"][m] = {
             "label": MARKETS[m]["label"], "universe": int(len(universes[m])), "checked": int(len(cand)),
-            "market": market_check(bsym, bench_w), "bench": bsym,
-            "lists": lists, "watch": watch[:WATCH_SHOW],
+            "market": mc, "bench": bsym, "held_back": held_back,
+            "lists": lists, "multi": multi,
         }
-        print(f"  " + ", ".join(f"{STRATEGIES[k]['short']} {len(v)}" for k, v in lists.items()))
+        print(f"  " + ", ".join(f"{STRATEGIES[k]['short']} {len(v)}" for k, v in lists.items())
+              + f", 2+ methods {len(multi)}")
 
-    update_ledger(ledger, results, prices, today)
+    update_ledger(ledger, results, prices, today, prev, record)
     return results
 
 
@@ -802,7 +844,7 @@ def evaluate_pick(p, d, bd, today):
 
     # sell rule
     exit_px, exit_date = None, None
-    if p["strategy"] in ("stine", "weinstein"):
+    if p["strategy"] in ("stine", "weinstein", "consensus"):
         w = to_weekly(d)
         ma = w["Close"].rolling(10 if p["strategy"] == "stine" else 30).mean()
         wk = w.loc[w.index > t0]
@@ -834,11 +876,23 @@ def evaluate_pick(p, d, bd, today):
         p["final"] = True
 
 
-def update_ledger(ledger, results, prices, today):
+def previous_keys(prev):
+    """(method, market, ticker) for everything listed in last week's scan."""
+    keys = set()
+    for m, data in ((prev or {}).get("markets") or {}).items():
+        for k, L in (data.get("lists") or {}).items():
+            keys.update((k, m, x["ticker"]) for x in L)
+        keys.update(("consensus", m, x["ticker"]) for x in data.get("multi") or [])
+    return keys
+
+
+def update_ledger(ledger, results, prices, today, prev=None, record=True):
     today_s = today.isoformat()
-    ledger[:] = [p for p in ledger if p["date"] != today_s]       # re-runs on the same day replace
+    if record:
+        ledger[:] = [p for p in ledger if p["date"] != today_s]   # re-runs on the same day replace
     recent = {(p["strategy"], p["market"], p["ticker"]) for p in ledger
               if (today - dt.date.fromisoformat(p["date"])).days <= NEW_WINDOW_WEEKS * 7}
+    last_week = previous_keys(prev)
     for m, data in results["markets"].items():
         if "lists" not in data:
             continue
@@ -847,20 +901,32 @@ def update_ledger(ledger, results, prices, today):
         for k, L in data["lists"].items():
             for i, x in enumerate(L):
                 key = (k, m, x["ticker"])
-                x["new"] = key not in recent and not (k == "minervini" and x["tag"] == "Trend only")
-                if i >= RECORD_PER_LIST or not x["new"]:
+                x["new"] = key not in last_week
+                # only record what you'd actually buy: buy-zone picks, once per 8 weeks
+                if not record or i >= RECORD_PER_LIST or key in recent or x["tag_class"] != "z-buy":
                     continue
                 if x["tag"] == "Possible takeover bid":
                     continue
-                if k == "minervini" and x["tag"] == "Trend only":
-                    continue          # Minervini only buys at a VCP or pivot, so don't score trend-only names
                 ledger.append({
                     "date": today_s, "market": m, "strategy": k, "ticker": x["ticker"],
                     "exchange": x["exchange"], "name": x["name"], "sector": x["sector"], "ysym": x["ysym"],
                     "entry": x["entry_close"], "bench": bsym, "bench_entry": bclose,
                     "score": x["score"], "max_score": x["max_score"], "tag": x["tag"],
-                    "stop": x.get("stop"), "stop_pct": x.get("stop_pct"),
+                    "stop": x.get("stop"), "stop_pct": x.get("stop_pct"), "rules": RULES_VERSION,
                 })
+        for i, x in enumerate(data.get("multi", [])):
+            key = ("consensus", m, x["ticker"])
+            x["new"] = key not in last_week
+            if not record or i >= RECORD_PER_LIST or key in recent or not any(h["tag_class"] == "z-buy" for h in x["methods"]):
+                continue
+            ledger.append({
+                "date": today_s, "market": m, "strategy": "consensus", "ticker": x["ticker"],
+                "exchange": x["exchange"], "name": x["name"], "sector": x["sector"], "ysym": x["ysym"],
+                "entry": x["entry_close"], "bench": bsym, "bench_entry": bclose,
+                "score": x["count"], "max_score": len(STRATEGIES),
+                "tag": " + ".join(STRATEGIES[h["strategy"]]["short"] for h in x["methods"]),
+                "stop": None, "stop_pct": None, "rules": RULES_VERSION,
+            })
     for p in ledger:
         if p["date"] == today_s or not needs_update(p, today):
             continue
@@ -874,9 +940,14 @@ def update_ledger(ledger, results, prices, today):
             print(f"  track record {p['ysym']}: {e}")
 
 
+def current(ledger):
+    return [p for p in ledger if p.get("rules", 1) == RULES_VERSION]
+
+
 def summarise(ledger):
     out = {}
-    for k in STRATEGIES:
+    ledger = current(ledger)
+    for k in TRACKED:
         ps = [p for p in ledger if p["strategy"] == k]
         row = {"picks": len(ps)}
         live = [p for p in ps if "ret_now" in p]
@@ -1208,6 +1279,89 @@ def sparkline(r):
             f'<path d="{path(r["closes"])}" class="s-px"/></svg>')
 
 
+REFRESH_HTML = """
+<div class="refresh">
+  <button id="btn-scan" type="button">↻ Run a new scan</button>
+  <button id="btn-hold" type="button" class="ghost">Check my stocks</button>
+</div>
+<div id="rstatus" class="rstatus" hidden></div>
+<details id="rsetup" class="rsetup">
+  <summary>Set up the refresh buttons (one time)</summary>
+  <ol>
+    <li>Open <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">GitHub: new fine-grained token ↗</a>.</li>
+    <li>Name it <b>scanner refresh</b>. Choose the longest expiry offered.</li>
+    <li>Under <b>Repository access</b>, choose <b>Only select repositories</b> and pick <b>__REPONAME__</b>.</li>
+    <li>Under <b>Permissions → Repository permissions</b>, set <b>Actions</b> to <b>Read and write</b>. Leave everything else as it is.</li>
+    <li>Tap <b>Generate token</b>, copy it, and paste it here:</li>
+  </ol>
+  <div class="tokrow"><input id="tok" type="password" autocomplete="off" placeholder="github_pat_..." aria-label="GitHub token">
+  <button id="tok-save" type="button">Save</button></div>
+  <p class="small">The key is saved only in this browser on this phone. It can only start and check this scanner's runs, nothing else.
+  <a href="#" id="tok-forget">Forget the saved key</a></p>
+</details>
+"""
+
+REFRESH_JS = """
+(function(){
+ const REPO='__REPO__', GEN='__GEN__', API='https://api.github.com/repos/'+REPO+'/actions/workflows/';
+ const $=id=>document.getElementById(id), st=$('rstatus');
+ const get=k=>{try{return localStorage.getItem(k)}catch(e){return null}};
+ const put=(k,v)=>{try{v===null?localStorage.removeItem(k):localStorage.setItem(k,v)}catch(e){}};
+ const hdr=()=>({'Authorization':'Bearer '+get('gh_token'),'Accept':'application/vnd.github+json','X-GitHub-Api-Version':'2022-11-28'});
+ function say(msg,cls){st.hidden=false;st.className='rstatus '+(cls||'');st.innerHTML=msg;}
+ if(get('gh_token')) $('rsetup').hidden=true;
+ $('tok-save').onclick=async()=>{
+   const t=$('tok').value.trim(); if(!t){say('Paste the token first.','bad');return;}
+   put('gh_token',t); say('Checking the key…');
+   try{const r=await fetch(API+'weekly-scan.yml',{headers:hdr()});
+     if(r.ok){say('Key saved. The buttons are ready.','good');$('tok').value='';$('rsetup').open=false;$('rsetup').hidden=true;}
+     else{put('gh_token',null);say('GitHub didn\\'t accept that key ('+r.status+'). Check it has <b>Actions: Read and write</b> on this repo.','bad');}
+   }catch(e){put('gh_token',null);say('Couldn\\'t reach GitHub. Check your connection.','bad');}
+ };
+ $('tok-forget').onclick=e=>{e.preventDefault();put('gh_token',null);put('gh_pending',null);$('rsetup').hidden=false;say('Saved key removed.');};
+ async function start(wf,label){
+   if(!get('gh_token')){$('rsetup').hidden=false;$('rsetup').open=true;$('rsetup').scrollIntoView({behavior:'smooth'});return;}
+   say('Starting '+label+'…');
+   try{
+     const r=await fetch(API+wf+'/dispatches',{method:'POST',headers:hdr(),body:JSON.stringify({ref:'main'})});
+     if(r.status===204){put('gh_pending',JSON.stringify({wf,label,t:Date.now()}));poll();}
+     else if(r.status===401||r.status===403||r.status===404){say('GitHub refused ('+r.status+'). The key may have expired. <a href="#" onclick="document.getElementById(\\'rsetup\\').hidden=false;document.getElementById(\\'rsetup\\').open=true;return false">Set it up again</a>.','bad');}
+     else say('Couldn\\'t start it ('+r.status+'). Try again in a minute.','bad');
+   }catch(e){say('Couldn\\'t reach GitHub. Check your connection.','bad');}
+ }
+ async function poll(){
+   const p=JSON.parse(get('gh_pending')||'null'); if(!p) return;
+   const mins=Math.round((Date.now()-p.t)/60000);
+   if(Date.now()-p.t>90*60000){put('gh_pending',null);return;}
+   try{
+     const r=await fetch(API+p.wf+'/runs?per_page=5&event=workflow_dispatch',{headers:hdr()});
+     const j=await r.json(); const run=(j.workflow_runs||[]).find(x=>Date.parse(x.created_at)>=p.t-120000);
+     if(!run){say(p.label+' requested. Waiting for GitHub to pick it up…');}
+     else if(run.status!=='completed'){
+       say(p.label+' running ('+mins+' min so far). '+(p.wf==='weekly-scan.yml'?'A full scan takes about 15–20 minutes.':'This takes about 2 minutes.')+' You can leave this page; it carries on.');}
+     else if(run.conclusion==='success'){
+       put('gh_pending',null); say('Finished. Updating the page…','good');
+       waitForPage(p.wf==='weekly-scan.yml'); return;}
+     else{put('gh_pending',null);say(p.label+' failed. <a href="'+run.html_url+'" target="_blank" rel="noopener">See what went wrong ↗</a>','bad');return;}
+   }catch(e){say('Lost contact with GitHub; retrying…');}
+   setTimeout(poll,20000);
+ }
+ async function waitForPage(scan){
+   for(let i=0;i<12;i++){
+     await new Promise(r=>setTimeout(r,15000));
+     if(!scan && i>=4) break;
+     try{const j=await (await fetch('data/latest.json?t='+Date.now(),{cache:'no-store'})).json();
+       if(scan && j.generated!==GEN) break;}catch(e){}
+   }
+   location.replace(location.pathname+'?t='+Date.now());
+ }
+ $('btn-scan').onclick=()=>start('weekly-scan.yml','New scan');
+ $('btn-hold').onclick=()=>start('daily-check.yml','Holdings check');
+ if(get('gh_pending')) poll();
+})();
+"""
+
+
 _PAGE: dict = {}
 
 
@@ -1217,6 +1371,8 @@ def card_html(r, show_market=False):
         f'<span>{E(c["label"])}</span><small>{E(c["note"])}</small></li>' for c in r["checks"])
     p = r["score"] / r["max_score"] if r["max_score"] else 0
     new = '<span class="new">NEW</span>' if r.get("new") else ""
+    if r.get("also"):
+        new += f'<span class="multi" title="Picked by {1 + len(r["also"])} methods">×{1 + len(r["also"])}</span>'
     also = (f'<div class="also">Also flagged by: {E(", ".join(r["also"]))}</div>' if r.get("also") else "")
     ins = ""
     if r.get("insider"):
@@ -1251,6 +1407,46 @@ def card_html(r, show_market=False):
 </details>"""
 
 
+def multi_html(e):
+    rows = "".join(
+        f'<div class="kv"><span>{E(STRATEGIES[h["strategy"]]["short"])} <small>{h["score"]}/{h["max_score"]}</small></span>'
+        f'<b class="zone {h["tag_class"]}">{E(h["tag"])}</b></div>' for h in e["methods"])
+    plans = "".join(f'<li><b>{E(STRATEGIES[h["strategy"]]["short"])}:</b> {E(h["plan"])}</li>' for h in e["methods"])
+    new = '<span class="new">NEW</span>' if e.get("new") else ""
+    buy = ""
+    if _PAGE.get("date") and e.get("entry_close") and not _PAGE.get("demo"):
+        path = holding_path(e["market"], e["ticker"])
+        buy = (f'<a class="buy" href="{E(gh_new_url(path, holding_template(e, _PAGE["date"])))}" '
+               f'target="_blank" rel="noopener">I bought this ↗</a>')
+    return f"""
+<details class="card mcard">
+  <summary>
+    <div class="mcount"><b>{e['count']}</b><small>methods</small></div>
+    <div class="who"><div class="tick">{E(e['ticker'])} <span class="ex">{E(e['exchange'])}</span>{new}</div>
+      <div class="nm">{E(e['name'])}</div></div>
+    {sparkline(e)}
+    <div class="px"><div>{fmt_price(e['price'], e['currency'], e['exchange'])}</div></div>
+  </summary>
+  <div class="body">
+    <div class="mrows">{rows}</div>
+    <ul class="plans">{plans}</ul>
+    <div class="meta">Mkt cap {fmt_cap(e['mcap'])} · {E(e['sector'] or '-')}{f" · RS {e['rs_rank']:.0f}" if e.get('rs_rank') is not None else ""}</div>
+    <div class="links"><a href="{E(e['chart_url'])}" target="_blank" rel="noopener">Weekly chart ↗</a>
+      <a href="{E(e['insider_url'])}" target="_blank" rel="noopener">Insider filings ↗</a></div>
+    {buy}
+  </div>
+</details>"""
+
+
+def multi_section(entries):
+    body = "".join(multi_html(e) for e in entries) if entries else '<p class="empty">No overlap this week.</p>'
+    new = sum(1 for e in entries if e.get("new"))
+    return (f'<details class="sec"{" open" if entries else ""}><summary><span class="st">{E(CONSENSUS["label"])}</span>'
+            f'<span class="cnt">{len(entries)}{f" · {new} new" if new else ""}</span></summary>'
+            f'<p class="blurb">{E(CONSENSUS["blurb"])} Each method\'s own label is shown; '
+            f'if one says "Extended" it\'s still worth waiting.</p>{body}</details>')
+
+
 def banner(mc):
     if not mc:
         return ""
@@ -1259,26 +1455,40 @@ def banner(mc):
     return f'<div class="banner {cls}">{E(mc["text"])}{extra}</div>'
 
 
-def strategy_section(k, L, open_=True, show_market=False):
+def strategy_section(k, L, open_=True, show_market=False, held=0):
     s = STRATEGIES[k]
-    body = "".join(card_html(r, show_market) for r in L) if L else '<p class="empty">Nothing this week.</p>'
-    new = sum(1 for r in L if r.get("new"))
+    buy = [r for r in L if r["tag_class"] == "z-buy"]
+    if buy:
+        body = "".join(card_html(r, show_market) for r in buy)
+    elif held:
+        body = (f'<p class="empty">{held} stock(s) reached a buy point, but held back because the market is in a '
+                'downtrend and this method says not to start new positions then.</p>')
+    else:
+        body = '<p class="empty">Nothing at a buy point right now.</p>'
+    new = sum(1 for r in buy if r.get("new"))
     newtxt = f' · {new} new' if new else ""
     return (f'<details class="sec"{" open" if open_ else ""}><summary><span class="st">{E(s["label"])}</span>'
-            f'<span class="cnt">{len(L)}{newtxt}</span></summary><p class="blurb">{E(s["blurb"])}</p>{body}</details>')
+            f'<span class="cnt">{len(buy)} ready{newtxt}</span></summary><p class="blurb">{E(s["blurb"])}</p>{body}</details>')
 
 
 def track_html(ledger, summ, today):
+    old = len(ledger) - len(current(ledger))
+    ledger = current(ledger)
     if not ledger:
-        return '<p class="empty">The track record starts with this week\'s picks.</p>'
-    parts = ['<p class="blurb">Each week the top 10 new picks per method and market are recorded at that '
+        return ('<p class="empty">The track record starts with the next weekend scan '
+                f'(current rules since {dt.date.fromisoformat(RULES_SINCE).strftime("%d %b")}).</p>')
+    parts = ['<p class="blurb">Each weekend scan, the stocks at a buy point are recorded at that '
              'Friday\'s close and compared with the market\'s index. "Buy and hold" ignores the sell rules; '
              '"With sell rules" exits when the method says to.</p>']
+    if old:
+        parts.append(f'<p class="blurb">Counting picks under the current rules (since '
+                     f'{dt.date.fromisoformat(RULES_SINCE).strftime("%d %b")}). {old} earlier picks are kept in the data '
+                     'but left out here.</p>')
     first4 = min(dt.date.fromisoformat(p["date"]) for p in ledger) + dt.timedelta(weeks=4)
     if not any("r4" in p for p in ledger):
         parts.append(f'<p class="note">First 4-week results arrive around {first4.strftime("%d %b")}. '
                      'Give it at least 3 months before drawing conclusions.</p>')
-    for k, s in STRATEGIES.items():
+    for k, s in TRACKED.items():
         row = summ.get(k, {})
         sf = row.get("so_far")
         if sf:
@@ -1306,7 +1516,7 @@ def track_html(ledger, summ, today):
                   else ("Holding" if r is not None else "Just added"))
         cls = "pos" if (ex or 0) >= 0 else "neg"
         items.append(f'<tr><td>{dt.date.fromisoformat(p["date"]).strftime("%d %b")}</td>'
-                     f'<td><b>{E(p["ticker"])}</b><br><small>{E(STRATEGIES[p["strategy"]]["short"])} · '
+                     f'<td><b>{E(p["ticker"])}</b><br><small>{E(TRACKED.get(p["strategy"], {}).get("short", p["strategy"]))} · '
                      f'{E(MARKETS[p["market"]]["label"])}</small></td>'
                      f'<td class="{cls}">{pct(r) if r is not None else "-"}<br><small>{pct(ex) + " vs idx" if ex is not None else ""}</small></td>'
                      f'<td><small>{E(status)}</small></td></tr>')
@@ -1345,6 +1555,12 @@ section{display:none}section.on{display:block}
 .score b,.score small{position:relative;line-height:1}.score b{font-size:16px}.score small{font-size:10px;color:var(--mute)}
 .who{flex:1;min-width:0}.tick{font-weight:700}.ex{font-weight:500;font-size:11px;color:var(--mute)}
 .new{display:inline-block;margin-left:6px;font-size:10px;font-weight:700;background:var(--acc);color:#fff;border-radius:4px;padding:1px 5px;vertical-align:2px}
+.multi{display:inline-block;margin-left:6px;font-size:10px;font-weight:700;background:var(--good);color:#fff;border-radius:4px;padding:1px 5px;vertical-align:2px}
+.mcard{border-color:var(--good)}
+.mcount{width:44px;height:44px;border-radius:50%;flex:none;display:grid;place-content:center;text-align:center;background:var(--good);color:#fff;line-height:1}
+.mcount b{font-size:18px}.mcount small{font-size:7px;text-transform:uppercase}
+.mrows{margin:10px 0}.mrows .zone{margin:0}.kv small{color:var(--mute)}
+.plans{margin:6px 0 4px;padding-left:18px;font-size:13px}.plans li{margin:3px 0}
 .strat{display:inline-block;margin-left:6px;font-size:10px;font-weight:600;border:1px solid var(--line);color:var(--mute);border-radius:4px;padding:0 5px;vertical-align:2px}
 .nm{color:var(--mute);font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .spark{width:90px;height:32px;flex:none}.spark path{fill:none;stroke-width:1.5;vector-effect:non-scaling-stroke}
@@ -1366,6 +1582,17 @@ h3{font-size:16px;margin:18px 2px 8px}
 table.picks{width:100%;border-collapse:collapse;font-size:13px;background:var(--card);border-radius:12px;overflow:hidden}
 .picks th{text-align:left;color:var(--mute);font-weight:500;padding:8px}.picks td{padding:8px;border-top:1px solid var(--line);vertical-align:top}
 .picks small{color:var(--mute)}
+.refresh{display:flex;gap:8px;margin-top:12px}
+.refresh button{flex:1;border:0;border-radius:10px;padding:11px 10px;font:inherit;font-weight:700;background:var(--acc);color:#fff}
+.refresh button.ghost{background:var(--card);color:var(--ink);border:1px solid var(--line)}
+.rstatus{margin-top:8px;padding:10px 12px;border-radius:10px;background:var(--card);border:1px solid var(--line);font-size:14px}
+.rstatus.good{border-color:var(--good)}.rstatus.bad{border-color:var(--bad)}.rstatus a{color:var(--acc)}
+.rsetup{margin-top:8px;font-size:14px;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:8px 12px}
+.rsetup summary{cursor:pointer;font-weight:600;color:var(--acc)}.rsetup ol{padding-left:20px;margin:8px 0}.rsetup li{margin:4px 0}.rsetup a{color:var(--acc)}
+.tokrow{display:flex;gap:6px}.tokrow input{flex:1;min-width:0;padding:9px;border-radius:8px;border:1px solid var(--line);background:var(--bg);color:var(--ink);font:inherit}
+.tokrow button{border:0;border-radius:8px;padding:9px 14px;background:var(--ink);color:var(--bg);font:inherit;font-weight:700}
+.small{font-size:12px;color:var(--mute)}.small a{color:var(--mute)}
+.sub{margin:6px 0 10px}.sub>summary{cursor:pointer;color:var(--mute);font-size:14px;font-weight:600;padding:6px 2px}
 .mk{font-size:15px;font-weight:700;margin:16px 2px 4px;color:var(--mute)}
 .legend{color:var(--mute);font-size:12px;margin-top:18px;line-height:1.6}
 .legend i{display:inline-block;width:14px;height:2px;vertical-align:middle;margin-right:4px}
@@ -1392,16 +1619,11 @@ def render_page(results, ledger, summ, demo=False, hv=None):
             n = 0
         else:
             L = data["lists"]
-            n = sum(len(v) for v in L.values())
+            n = sum(1 for v in L.values() for r in v if r["tag_class"] == "z-buy")
             body = banner(data.get("market"))
             body += (f'<p class="stats">{data["universe"]} stocks screened · {data["checked"]} charts analysed</p>')
-            body += "".join(strategy_section(k, L[k]) for k in STRATEGIES)
-            if data.get("watch"):
-                body += ('<details class="sec"><summary><span class="st">Watching</span>'
-                         f'<span class="cnt">{len(data["watch"])}</span></summary>'
-                         '<p class="blurb">Strong Stine candidates in an uptrend that haven\'t broken out on '
-                         'volume yet. Not recorded in the track record.</p>'
-                         + "".join(card_html(r) for r in data["watch"]) + "</details>")
+            body += multi_section(data.get("multi", []))
+            body += "".join(strategy_section(k, L[k], held=(data.get("held_back") or {}).get(k, 0)) for k in STRATEGIES)
         tabs.append((m, f"{data['label']} ({n})"))
         secs.append((m, body))
 
@@ -1441,7 +1663,7 @@ def render_page(results, ledger, summ, demo=False, hv=None):
 
     nav = "".join(f'<button class="{"on" if i == 0 else ""}" data-t="{k}">{E(lbl)}</button>' for i, (k, lbl) in enumerate(tabs))
     main = "".join(f'<section id="{k}" class="{"on" if i == 0 else ""}">{b}</section>' for i, (k, b) in enumerate(secs))
-    gen = dt.datetime.fromisoformat(results["generated"]).strftime("%a %d %b %Y")
+    gen = dt.datetime.fromisoformat(results["generated"]).strftime("%a %d %b %Y, %H:%M UTC")
     demo_b = '<div class="demo">SAMPLE DATA: simulated stocks to test the layout</div>' if demo else ""
     return f"""<!doctype html>
 <html lang="en"><head><meta charset="utf-8">
@@ -1451,11 +1673,12 @@ def render_page(results, ledger, summ, demo=False, hv=None):
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="theme-color" content="#0f1115">
 <style>{CSS}</style></head><body>
 <header><h1>Superstock Scanner</h1>
-<div class="sub">Four breakout methods, scanned weekly · updated {gen} · <a href="history/">past weeks</a></div>{demo_b}</header>
+<div class="sub">Four breakout methods · updated {gen} · <a href="history/">past weeks</a></div>{demo_b}
+{"" if demo else REFRESH_HTML.replace("__REPONAME__", E(REPO.split("/")[-1]))}</header>
 <nav>{nav}</nav>
 <main>{main}</main>
 <div class="legend">Chart: <i style="background:var(--ink)"></i>price <i style="background:var(--acc)"></i>10-week MA
- <i style="background:var(--warn)"></i>30-week MA · last 30 weeks. <b>NEW</b> = not flagged by that method in the last 8 weeks.
+ <i style="background:var(--warn)"></i>30-week MA · last 30 weeks. Only stocks at a buy point right now are listed, up to 10 per method. <b>NEW</b> = not on that method's list last time. <b>×2</b>, <b>×3</b> = picked by that many methods.
  Tap a stock for its checklist, entry and sell rule. Canada and UK insider buys aren't scored automatically, so use the filings link.</div>
 <footer>Free, unofficial data from TradingView, Yahoo Finance and OpenInsider. It can be delayed or wrong, so check everything before acting.
 A research shortlist, not financial advice.</footer>
@@ -1465,7 +1688,8 @@ document.querySelectorAll('nav button').forEach(b=>b.onclick=()=>{{
  b.classList.add('on');document.getElementById(b.dataset.t).classList.add('on');
  try{{localStorage.setItem('tab',b.dataset.t)}}catch(e){{}}}});
 try{{const t=localStorage.getItem('tab');t&&document.querySelector(`nav [data-t="${{t}}"]`)?.click()}}catch(e){{}}
-</script></body></html>"""
+</script>
+<script>{"" if demo else REFRESH_JS.replace("__REPO__", REPO).replace("__GEN__", results["generated"])}</script></body></html>"""
 
 
 def write_outputs(results, ledger, docs: Path, demo=False, hv=None):
@@ -1515,6 +1739,13 @@ def email_html(results, summ):
             continue
         if data.get("market"):
             parts.append(f"<p><i>{E(data['market']['text'])}</i></p>")
+        if data.get("multi"):
+            parts.append(f"<b>{E(CONSENSUS['label'])}</b><ul>")
+            for e in data["multi"][:5]:
+                parts.append(f'<li><a href="{E(e["chart_url"])}">{E(e["ticker"])}</a> {E(e["name"][:30])}: '
+                             + ", ".join(f'{E(STRATEGIES[h["strategy"]]["short"])} ({E(h["tag"])})' for h in e["methods"])
+                             + (" <b>NEW</b>" if e.get("new") else "") + "</li>")
+            parts.append("</ul>")
         for k, s in STRATEGIES.items():
             L = data["lists"][k][:5]
             if not L:
@@ -1525,7 +1756,7 @@ def email_html(results, summ):
                              f'{r["score"]}/{r["max_score"]}, {E(r["tag"])}{" <b>NEW</b>" if r.get("new") else ""}</li>')
             parts.append("</ul>")
     parts.append("<h3>Track record (average vs index so far)</h3><ul>")
-    for k, s in STRATEGIES.items():
+    for k, s in TRACKED.items():
         sf = summ.get(k, {}).get("so_far")
         parts.append(f"<li>{E(s['label'])}: {pct(sf['excess']) + ' over ' + str(sf['n']) + ' picks' if sf else 'no results yet'}</li>")
     parts.append("</ul><p style='color:#888;font-size:12px'>Research shortlist from free data. Not financial advice.</p>")
@@ -1671,9 +1902,10 @@ def run_demo(weeks: int, docs: Path):
         shutil.rmtree(docs)
     ledger: list[dict] = []
     fridays = [d for d in sim.days if d.weekday() == 4][-weeks:]
+    res = None
     for fri in fridays:
         sim.asof = fri
-        res = run_pipeline(sim.tv, sim.fetch_prices, sim.insiders, fri.date(), ledger)
+        res = run_pipeline(sim.tv, sim.fetch_prices, sim.insiders, fri.date(), ledger, res)
         res["demo"] = True
         summ = write_outputs(res, ledger, docs, demo=True)
     return res, ledger, summ
@@ -1734,7 +1966,8 @@ def main():
         if last.weekday() in (5, 6) and (today - last).days <= 1:
             print(f"This weekend's scan already ran on {last}; nothing to do.")
             return
-    res = run_pipeline(live_tv, live_prices, live_insiders, today, ledger)
+    # only weekend scans (Friday closes) go into the track record; weekday refreshes just update the page
+    res = run_pipeline(live_tv, live_prices, live_insiders, today, ledger, prev, record=today.weekday() in (5, 6))
     hv = run_holdings(holdings, live_prices, today)
     summ = write_outputs(res, ledger, docs, hv=hv)
     print(f"\nWrote {docs / 'index.html'}  ({len(ledger)} picks in track record)")
