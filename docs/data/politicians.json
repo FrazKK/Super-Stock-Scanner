@@ -1,0 +1,31 @@
+{
+ "seen": [
+  "20035130",
+  "20035143",
+  "20035553"
+ ],
+ "buys": [
+  {
+   "who": "Nancy Pelosi",
+   "filed": "2026-10-02",
+   "url": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035553.pdf",
+   "unreadable": true,
+   "doc": "20035553"
+  },
+  {
+   "who": "Nancy Pelosi",
+   "filed": "2026-08-21",
+   "url": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035143.pdf",
+   "unreadable": true,
+   "doc": "20035143"
+  },
+  {
+   "who": "Michael Guest",
+   "filed": "2026-08-14",
+   "url": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035130.pdf",
+   "unreadable": true,
+   "doc": "20035130"
+  }
+ ],
+ "updated": "2026-10-19"
+}
