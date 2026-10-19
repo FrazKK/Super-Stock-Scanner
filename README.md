@@ -27,6 +27,21 @@ The first time, you'll need to give it a GitHub key. Follow **Set up the refresh
 
 Only weekend scans (Friday closes) go into the track record. A weekday refresh updates the page but doesn't add picks.
 
+## US politicians' buys
+
+The **Politicians** tab and a phone alert show purchases reported by a watch-list of House members. The list is the members with the best estimated returns in Unusual Whales' 2024 and 2025 Congress-trading reports: Pelosi, Rouzer, Crenshaw, Davidson, Norcross, Sewell, Steil, LaLota, Guest, McClintock and Evans. You can edit `POLITICIANS` in SETTINGS.
+
+- The data comes from the House Clerk's free official disclosure files and is checked every weekday evening and at the weekend scan.
+- You get one alert per new purchase. It's marked more urgently if the same stock is also on one of this week's method lists. A 🏛 badge appears on any US card a watched member has bought in the last 90 days.
+- **Late signals:** members can report up to 45 days after trading.
+- **No senators:** the Senate disclosure site blocks automated access from servers.
+- **Scanned forms:** a few members file on paper. Those can't be read automatically, so you get a "filed a trade report" alert with a link instead.
+- **No backlog of alerts:** the first run quietly records what's already been filed. Alerts start with the next new filing.
+
+## UK director buying
+
+For UK stocks that reach a buy point under the rules above, the scan reads their recent RNS "Director/PDMR Shareholding" announcements (via Investegate). It counts only genuine purchases, not awards, options, share-scheme or dividend-reinvestment shares, or sales. Director buys in the last 90 days are shown on the card with name, role and value, and earn Stine's insider-buying points. You get a phone alert when a ready UK pick has director buying.
+
 ## What's on the page
 
 - **My stocks tab**: your holdings and their sell-rule status (see below).

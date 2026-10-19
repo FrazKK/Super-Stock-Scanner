@@ -147,6 +147,23 @@ RULES_SINCE = "2026-10-18"
 
 ROOT = Path(__file__).resolve().parent
 
+# US politicians: House members with the best estimated returns in Unusual Whales'
+# 2024 and 2025 Congress-trading reports. Edit freely: (first name, last name).
+# Senators can't be included: the Senate disclosure site blocks automated access from servers.
+POLITICIANS = [
+    ("Nancy", "Pelosi"), ("David", "Rouzer"), ("Dan", "Crenshaw"),            # 2024 standouts
+    ("Warren", "Davidson"), ("Donald", "Norcross"), ("Terri", "Sewell"),      # 2025 top 10 (House)
+    ("Bryan", "Steil"), ("Nick", "LaLota"), ("Michael", "Guest"),
+    ("Tom", "McClintock"), ("Dwight", "Evans"),
+]
+POL_DAYS = 90                  # show and badge buys reported in the last 90 days
+HOUSE_ZIP = "https://disclosures-clerk.house.gov/public_disc/financial-pdfs/{year}FD.zip"
+HOUSE_PTR = "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/{year}/{doc}.pdf"
+
+# UK director dealings (RNS "Director/PDMR Shareholding"), checked for UK picks only
+UK_DEALING_DAYS = 90
+INVESTEGATE = "https://www.investegate.co.uk"
+
 # Holdings and alerts
 REPO = os.getenv("GITHUB_REPOSITORY", "FrazKK/Super-Stock-Scanner")
 BRANCH = "main"
@@ -703,7 +720,7 @@ def make_card(rec, res, w, market, insider, ysym):
 
 
 def run_pipeline(fetch_tv, fetch_prices, fetch_insiders, today: dt.date, ledger: list[dict], prev=None,
-                 record=True) -> dict:
+                 record=True, fetch_uk_dealings=None) -> dict:
     results = {"generated": dt.datetime.combine(today, dt.datetime.now(dt.timezone.utc).time(), dt.timezone.utc)
                .isoformat(timespec="minutes"), "date": today.isoformat(), "markets": {}}
     print("Fetching US insider purchases...")
@@ -770,6 +787,12 @@ def run_pipeline(fetch_tv, fetch_prices, fetch_insiders, today: dt.date, ledger:
                 ripe = []
             ripe.sort(key=lambda x: (x["score"], x.get("rs_rank") or 0), reverse=True)
             lists[k] = ripe[:SHOW_PER_LIST]
+        if m == "uk" and fetch_uk_dealings:
+            ticks = sorted({x["ticker"] for L in lists.values() for x in L})
+            try:
+                apply_uk_dealings(lists, fetch_uk_dealings(ticks, today) if ticks else {})
+            except Exception as e:
+                print(f"  UK director dealings failed: {e}")
         # cross-reference which methods flagged each ticker (Minervini "trend only" doesn't count)
         flagged: dict[str, list] = {}
         for k, L in lists.items():
@@ -967,6 +990,382 @@ def summarise(ledger):
         out[k] = row
     return out
 
+
+
+# ---------------------------------------------------------------------------
+# US politicians' disclosed buys (House periodic transaction reports)
+# ---------------------------------------------------------------------------
+
+UA = {"User-Agent": "Mozilla/5.0 (compatible; superstock-scanner; personal research)"}
+
+
+def pol_match(first, last):
+    first, last = (first or "").strip().lower(), (last or "").strip().lower()
+    for f, l in POLITICIANS:
+        if last == l.lower() and first[:1] == f[:1].lower():
+            return f"{f} {l}"
+    return None
+
+
+def house_index(year):
+    """Periodic transaction report filings for one year from the House Clerk's free annual file."""
+    import requests, zipfile
+    import xml.etree.ElementTree as ET
+
+    r = requests.get(HOUSE_ZIP.format(year=year), headers=UA, timeout=90)
+    r.raise_for_status()
+    z = zipfile.ZipFile(io.BytesIO(r.content))
+    xml_name = next(n for n in z.namelist() if n.lower().endswith(".xml"))
+    root = ET.fromstring(z.read(xml_name))
+    out = []
+    for m in root.iter("Member"):
+        g = {c.tag: (c.text or "").strip() for c in m}
+        if g.get("FilingType") != "P":
+            continue
+        who = pol_match(g.get("First"), g.get("Last"))
+        if not who:
+            continue
+        try:
+            filed = dt.datetime.strptime(g.get("FilingDate", ""), "%m/%d/%Y").date()
+        except ValueError:
+            continue
+        out.append({"who": who, "state": g.get("StateDst", ""), "filed": filed.isoformat(),
+                    "doc": g.get("DocID", ""), "year": int(g.get("Year") or year)})
+    return out
+
+
+AMOUNT = r"(?:\$[\d,]+\s*-\s*\$[\d,]+|Over\s+\$[\d,]+|\$[\d,]+)"
+TRADE_RE = re.compile(r"\(([A-Z][A-Z0-9.\-]{0,6})\)\s*\[([A-Z]{2})\]\s*(P|S\s*\(partial\)|S|E)\s+"
+                      r"(\d{2}/\d{2}/\d{4})\s+(\d{2}/\d{2}/\d{4})\s+(" + AMOUNT + ")")
+
+
+def parse_ptr_text(text):
+    """Pull trades out of the text of an electronically filed House PTR."""
+    t = re.sub(r"\s+", " ", text.replace("\x00", ""))
+    trades, prev_end = [], 0
+    for m in TRADE_RE.finditer(t):
+        seg = t[prev_end:m.start()]
+        seg = re.split(r"Cap\.? Gains > \$200\??|F\s*S\s*:\s*(?:New|Amended)|Filing Status:\s*\w+", seg)[-1]
+        parts = re.split(r"(?:^|\s)(?:SP|JT|DC)\s", seg)
+        if len(parts) > 1:
+            name = parts[-1]
+        elif re.search(r"\bD\s*:|Description:", seg):
+            name = re.split(r"\.\s+", seg)[-1]
+        else:
+            name = seg
+        name = re.sub(r"\s*(gfedc|Yes|No)\s*$", "", name.strip()).strip(" -:")[-90:]
+        trades.append({
+            "ticker": m.group(1),
+            "asset_type": {"ST": "Stock", "OP": "Option", "AB": "Bond", "EF": "Fund", "OT": "Other"}.get(m.group(2), m.group(2)),
+            "type": "buy" if m.group(3) == "P" else ("exchange" if m.group(3) == "E" else "sell"),
+            "traded": dt.datetime.strptime(m.group(4), "%m/%d/%Y").date().isoformat(),
+            "amount": re.sub(r"\s+", " ", m.group(6)).replace(" - ", "–").replace("-", "–"),
+            "asset": name[-90:],
+        })
+        prev_end = m.end()
+    return trades
+
+
+def ptr_text(year, doc):
+    import requests
+
+    r = requests.get(HOUSE_PTR.format(year=year, doc=doc), headers=UA, timeout=60)
+    r.raise_for_status()
+    try:
+        import pdfplumber
+        with pdfplumber.open(io.BytesIO(r.content)) as pdf:
+            return "\n".join((pg.extract_text() or "") for pg in pdf.pages)
+    except ImportError:
+        from pypdf import PdfReader
+        return "\n".join((pg.extract_text() or "") for pg in PdfReader(io.BytesIO(r.content)).pages)
+
+
+def live_politicians(today, seen: set):
+    """New watch-list filings since last run -> (list of filings with parsed trades, all doc ids seen)."""
+    years = {today.year} | ({today.year - 1} if today.month <= 2 else set())
+    filings = []
+    for y in sorted(years):
+        try:
+            filings += house_index(y)
+        except Exception as e:
+            print(f"  House index {y} unavailable: {e}")
+    cutoff = (today - dt.timedelta(days=POL_DAYS)).isoformat()
+    out = []
+    for f in filings:
+        if f["doc"] in seen or f["filed"] < cutoff:
+            continue
+        try:
+            f["trades"] = parse_ptr_text(ptr_text(f["year"], f["doc"]))
+            f["readable"] = bool(f["trades"])
+        except Exception as e:
+            print(f"  PTR {f['doc']} failed: {e}")
+            f["trades"], f["readable"] = [], False
+        f["url"] = HOUSE_PTR.format(year=f["year"], doc=f["doc"])
+        out.append(f)
+        time.sleep(0.5)
+    print(f"  politicians: {len(out)} new filing(s) from the watch-list")
+    return out
+
+
+def update_politicians(state: dict, new_filings: list, today) -> tuple[dict, list]:
+    """Merge new filings into saved state. Returns (state, newly reported buys to alert on)."""
+    first_run = not state.get("seen")
+    seen = set(state.get("seen", []))
+    buys = state.get("buys", [])
+    fresh = []
+    for f in new_filings:
+        seen.add(f["doc"])
+        if not f["readable"]:
+            item = {"who": f["who"], "filed": f["filed"], "url": f["url"], "unreadable": True, "doc": f["doc"]}
+            buys.append(item)
+            fresh.append(item)
+            continue
+        for t in f["trades"]:
+            if t["type"] != "buy":
+                continue
+            item = {**t, "who": f["who"], "filed": f["filed"], "url": f["url"], "doc": f["doc"],
+                    "lag": (dt.date.fromisoformat(f["filed"]) - dt.date.fromisoformat(t["traded"])).days}
+            buys.append(item)
+            fresh.append(item)
+    cutoff = (today - dt.timedelta(days=POL_DAYS)).isoformat()
+    buys = [b for b in buys if b["filed"] >= cutoff]
+    buys.sort(key=lambda b: (b["filed"], b.get("traded", "")), reverse=True)
+    state = {"seen": sorted(seen), "buys": buys, "updated": today.isoformat()}
+    return state, ([] if first_run else fresh)
+
+
+def pol_by_ticker(state):
+    out = {}
+    for b in (state or {}).get("buys", []):
+        if b.get("ticker") and b.get("asset_type") in ("Stock", "Option"):
+            out.setdefault(b["ticker"].upper(), []).append(b)
+    return out
+
+
+def politician_alerts(fresh, results=None):
+    if not fresh:
+        return
+    listed = {}
+    for data in ((results or {}).get("markets") or {}).values():
+        for k, L in (data.get("lists") or {}).items():
+            for x in L:
+                listed.setdefault(x["ticker"].upper(), []).append(STRATEGIES[k]["short"])
+    for b in fresh[:15]:
+        if b.get("unreadable"):
+            push(f"{b['who']} filed a trade report", "It couldn't be read automatically (scanned form). Tap to open it.",
+                 3, "classical_building")
+            continue
+        when = dt.date.fromisoformat(b["traded"]).strftime("%d %b")
+        also = listed.get(b["ticker"].upper())
+        extra = f" Also on this week's {', '.join(also)} list." if also else ""
+        push(f"{b['who']} bought {b['ticker']}",
+             f"{b['asset_type']}: {b['asset']} · {b['amount']} · traded {when}, reported {b['lag']} days later.{extra}",
+             4 if also else 3, "classical_building")
+
+
+def politicians_html(state):
+    intro = ('<p class="blurb">Purchases reported by the House members on your watch-list (the best estimated returns '
+             'in Unusual Whales\' 2024 and 2025 Congress-trading reports). Members can report up to 45 days after trading, '
+             'so these are <b>late signals</b>, not live ones. Senators aren\'t included because the Senate site blocks '
+             'automated access. Edit the list in SETTINGS.</p>')
+    names = ", ".join(f"{f} {l}" for f, l in POLITICIANS)
+    intro += f'<p class="small">Watching: {E(names)}</p>'
+    buys = (state or {}).get("buys") or []
+    if not buys:
+        return intro + f'<p class="empty">No purchases reported by the watch-list in the last {POL_DAYS} days.</p>'
+    rows = []
+    for b in buys[:60]:
+        filed = dt.date.fromisoformat(b["filed"]).strftime("%d %b")
+        if b.get("unreadable"):
+            rows.append(f'<tr><td><b>{E(b["who"])}</b><br><small>filed {filed}</small></td>'
+                        f'<td colspan="2"><a href="{E(b["url"])}" target="_blank" rel="noopener">Scanned report, open it ↗</a></td></tr>')
+            continue
+        traded = dt.date.fromisoformat(b["traded"]).strftime("%d %b")
+        tick = E(b["ticker"])
+        chart = f"https://www.tradingview.com/chart/?symbol={tick}&interval=W"
+        rows.append(f'<tr><td><b>{E(b["who"])}</b><br><small>traded {traded} · filed {filed} ({b["lag"]}d)</small></td>'
+                    f'<td><a href="{chart}" target="_blank" rel="noopener"><b>{tick}</b></a> <small>{E(b["asset_type"])}</small>'
+                    f'<br><small>{E(b["asset"][:40])}</small></td>'
+                    f'<td><small>{E(b["amount"])}</small><br><a href="{E(b["url"])}" target="_blank" rel="noopener"><small>report ↗</small></a></td></tr>')
+    return intro + '<table class="picks"><tr><th>Who</th><th>Bought</th><th>Amount</th></tr>' + "".join(rows) + "</table>"
+
+
+# ---------------------------------------------------------------------------
+# UK director / PDMR dealings (RNS), for UK picks only
+# ---------------------------------------------------------------------------
+
+def _clean_html(h):
+    h = re.sub(r"(?is)<(script|style|nav|header|footer)[^>]*>.*?</\1>", " ", h)
+    h = re.sub(r"(?i)<br\s*/?>|</(p|div|tr|td|th|li|h\d)>", "\n", h)
+    t = html.unescape(re.sub(r"<[^>]+>", " ", h))
+    return re.sub(r"[ \t\xa0]+", " ", t)
+
+
+NOT_A_BUY = re.compile(r"\b(sale|sold|dispos|exercis|award|grant|vest|transfer|gift|lapse|share incentive|SIP\b|"
+                       r"dividend reinvest|DRIP|partnership shares|matching shares|nil[- ]cost|LTIP|option)", re.I)
+IS_BUY = re.compile(r"\b(purchas|acqui|bought|buy|subscri)", re.I)
+
+
+def _parse_date(sn):
+    for fmt in ("%Y-%m-%d", "%d %B %Y", "%d %b %Y", "%d/%m/%Y", "%d.%m.%Y"):
+        try:
+            return dt.datetime.strptime(sn.strip().rstrip(".,"), fmt).date()
+        except ValueError:
+            pass
+    return None
+
+
+def gbp(sn):
+    """'185.5p' -> 1.855, '£1.85' -> 1.85, 'GBP 1.85' -> 1.85. A bare number is ambiguous, so None."""
+    sn = sn.strip()
+    v = re.search(r"[\d.,]+", sn)
+    if not v:
+        return None
+    x = float(v.group(0).replace(",", ""))
+    if "£" in sn or "GBP" in sn.upper():
+        return x
+    if re.search(r"p\b|pence", sn, re.I):
+        return x / 100
+    return None
+
+
+def parse_pdmr(text):
+    """Read a Director/PDMR Shareholding announcement. Returns a dict for a purchase, else None."""
+    t = re.sub(r"\s+", " ", text)
+    nat = re.search(r"Nature of the transaction\s*:?\s*(.{0,160}?)(?:\s[c-f]\)|\sPrice\(s\)|\sPrice)", t, re.I)
+    nature = nat.group(1).strip() if nat else ""
+    basis = nature or t[:1500]
+    if not IS_BUY.search(basis) or (nature and NOT_A_BUY.search(nature)):
+        return None
+    if not nature and NOT_A_BUY.search(t[:800]) and not re.search(r"\b(purchased|bought)\b", t[:1500], re.I):
+        return None
+    who = re.search(r"\bName\s*:?\s+(?:of natural person\s+)?([A-Z][A-Za-z'\-]+(?:\s+[A-Z][A-Za-z'\-]+){1,3})", t)
+    role = re.search(r"Position\s*/\s*status\s*:?\s+(.{3,60}?)(?:\s[a-f]\)|\sInitial|\s3\b)", t, re.I)
+    if not who:
+        pm = re.search(r"\bthat\s+((?:Mr|Mrs|Ms|Dr)\.?\s+)?([A-Z][a-z]+(?:\s+[A-Z][A-Za-z'\-]+){1,2}),\s+(?:the\s+|a\s+|an\s+|our\s+)?"
+                       r"([^,]{3,50}?),\s+(?:has\s+)?(?:purchased|bought|acquired|subscribed)", t)
+        if pm:
+            who, role = pm, pm
+            name_s, role_s = pm.group(2), pm.group(3)
+    when = re.search(r"Date of the transaction\s*:?\s*(\d{4}-\d{2}-\d{2}|\d{1,2}\s+[A-Z][a-z]+\s+\d{4}|\d{1,2}/\d{1,2}/\d{4})", t, re.I)
+    shares = price = None
+    agg = re.search(r"Aggregated.{0,160}?volume[^0-9]{0,40}([\d,]{2,})", t, re.I)
+    if agg:
+        shares = int(agg.group(1).replace(",", ""))
+        chunk = t[agg.start():agg.start() + 260]
+        pr = re.search(r"(£\s*[\d.,]+|GBP\s*[\d.,]+|[\d.,]+\s*(?:p\b|pence|GBP))", chunk, re.I)
+        price = gbp(pr.group(1)) if pr else None
+    if shares is None:
+        pv = re.search(r"Price\(s\)\s*(?:and|&)\s*volume\(s\).{0,80}?((?:£|GBP)?\s*[\d.]+\s*(?:p\b|pence|GBP)?)\s+([\d,]{3,})", t, re.I)
+        if pv:
+            price, shares = gbp(pv.group(1)), int(pv.group(2).replace(",", ""))
+    if shares is None:
+        fb = re.search(r"(?:purchased|bought|acquired|subscribed for)\s+(?:a total of\s+)?([\d,]{3,})\s+(?:new\s+)?(?:ordinary\s+)?shares"
+                       r".{0,80}?(?:at|price of)\s+(?:an average (?:price )?of\s+)?((?:£)?[\d.]+\s*(?:p\b|pence)?)", t, re.I)
+        if fb:
+            shares, price = int(fb.group(1).replace(",", "")), gbp(fb.group(2))
+    if who is not None and who.re.pattern.startswith("\\bthat"):
+        nm, rl = who.group(2), who.group(3).strip()
+    else:
+        nm, rl = (who.group(1) if who else None), (role.group(1).strip() if role else None)
+    return {"name": nm, "role": rl,
+            "nature": nature[:80] or "purchase", "date": (_parse_date(when.group(1)).isoformat()
+                                                         if when and _parse_date(when.group(1)) else None),
+            "shares": shares, "price_gbp": price,
+            "value_gbp": round(shares * price) if shares and price else None}
+
+
+def live_uk_dealings(tickers, today):
+    """Director purchases in the last 90 days for each UK ticker, from Investegate's RNS pages."""
+    import requests
+
+    out = {}
+    cutoff = today - dt.timedelta(days=UK_DEALING_DAYS)
+    for tk in tickers:
+        sym = str(tk).rstrip(".").replace(".", "")
+        try:
+            r = requests.get(f"{INVESTEGATE}/company/{sym}", headers=UA, timeout=30)
+            if r.status_code != 200:
+                continue
+            links = re.findall(r'<a[^>]+href="([^"]*/announcement/[^"]+)"[^>]*>(.*?)</a>', r.text, re.I | re.S)
+            seen, items = set(), []
+            for href, label in links:
+                lab = re.sub(r"<[^>]+>", " ", label)
+                if not re.search(r"director|pdmr", lab, re.I) or not re.search(r"shareholding|dealing|purchase|share", lab, re.I):
+                    continue
+                url = href if href.startswith("http") else INVESTEGATE + href
+                if url in seen:
+                    continue
+                seen.add(url)
+                if len(seen) > 6:
+                    break
+                a = requests.get(url, headers=UA, timeout=30)
+                if a.status_code != 200:
+                    continue
+                text = _clean_html(a.text)
+                pub = re.search(r"(\d{1,2}\s+(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\s+\d{4})", text)
+                pub_d = _parse_date(pub.group(1)) if pub else None
+                if pub_d and pub_d < cutoff:
+                    break                      # announcements are newest first
+                d = parse_pdmr(text)
+                if d:
+                    d["date"] = d["date"] or (pub_d.isoformat() if pub_d else None)
+                    if d["date"] and dt.date.fromisoformat(d["date"]) < cutoff:
+                        continue
+                    d["url"] = url
+                    items.append(d)
+                time.sleep(0.4)
+            if items:
+                out[str(tk)] = items
+        except Exception as e:
+            print(f"  RNS {tk}: {e}")
+        time.sleep(0.4)
+    print(f"  RNS: director buys found for {len(out)} of {len(tickers)} UK picks")
+    return out
+
+
+def apply_uk_dealings(lists, dealings):
+    for k, L in lists.items():
+        for x in L:
+            items = dealings.get(x["ticker"])
+            if not items:
+                continue
+            vals = [i["value_gbp"] for i in items if i.get("value_gbp")]
+            latest = max((i["date"] for i in items if i.get("date")), default="")
+            x["insider"] = {"buys": len(items), "value": float(sum(vals)) if vals else None, "currency": "GBP",
+                            "insiders": sorted({f'{i["name"]}{" (" + i["role"] + ")" if i.get("role") else ""}'
+                                                for i in items if i.get("name")})[:4],
+                            "latest": latest, "source": "RNS", "url": items[0]["url"]}
+            for c in x["checks"]:
+                if c["label"] == "Insider buying":
+                    c.update(label="Director buying (90 days)", **{"pass": True}, pts=2, max=2,
+                             note=f'{len(items)} buy(s)' + (f', £{sum(vals):,.0f}' if vals else ""))
+            x["score"] = sum(c["pts"] for c in x["checks"])
+            x["max_score"] = sum(c["max"] for c in x["checks"])
+        L.sort(key=lambda y: (y["score"], y.get("rs_rank") or 0), reverse=True)
+
+
+def uk_dealing_alerts(results, state: dict) -> dict:
+    data = (results.get("markets") or {}).get("uk") or {}
+    new_state = dict(state)
+    sent = 0
+    for k, L in (data.get("lists") or {}).items():
+        for x in L:
+            ins = x.get("insider")
+            if not ins or ins.get("source") != "RNS":
+                continue
+            key = f'{x["ticker"]}:{ins.get("latest")}'
+            if key in new_state:
+                continue
+            new_state[key] = "sent"
+            if sent < 10:
+                who = ", ".join(ins["insiders"][:2]) or "a director"
+                val = f' (£{ins["value"]:,.0f})' if ins.get("value") else ""
+                push(f'Director buying: {x["ticker"]} ({STRATEGIES[k]["short"]})',
+                     f'{who} bought{val}, latest {ins.get("latest") or "recently"}. {x["name"]} is at a '
+                     f'{STRATEGIES[k]["short"]} buy point: {x["tag"]}.', 4, "moneybag")
+                sent += 1
+    return new_state
 
 
 # ---------------------------------------------------------------------------
@@ -1377,7 +1776,18 @@ def card_html(r, show_market=False):
     ins = ""
     if r.get("insider"):
         i = r["insider"]
-        ins = f'<div class="meta">Insider buys (90 days): {i["buys"]}, ${i["value"]:,.0f}</div>'
+        cur = "£" if i.get("currency") == "GBP" else "$"
+        val = f', {cur}{i["value"]:,.0f}' if i.get("value") else ""
+        who = f' · {E(", ".join(i.get("insiders") or []))}' if i.get("source") == "RNS" and i.get("insiders") else ""
+        src = (f' <a href="{E(i["url"])}" target="_blank" rel="noopener">RNS ↗</a>' if i.get("url") else "")
+        ins = f'<div class="meta">{"Director" if i.get("source") == "RNS" else "Insider"} buys (90 days): {i["buys"]}{val}{who}{src}</div>'
+    pol = _PAGE.get("pol", {}).get(r["ticker"].upper()) if r.get("market") == "america" else None
+    if pol:
+        new += '<span class="pol" title="Bought by a watched politician">🏛</span>'
+        p0 = pol[0]
+        ins += (f'<div class="meta">🏛 {E(p0["who"])} bought {E(p0["amount"])} on '
+                f'{dt.date.fromisoformat(p0["traded"]).strftime("%d %b")} (reported {dt.date.fromisoformat(p0["filed"]).strftime("%d %b")})'
+                f'{f" + {len(pol) - 1} more" if len(pol) > 1 else ""}</div>')
     mk = f' · {E(MARKETS[r["market"]]["label"])}' if show_market else ""
     strat = f'<span class="strat">{E(STRATEGIES[r["strategy"]]["short"])}</span>' if show_market else ""
     rs = f' · RS {r["rs_rank"]:.0f}' if r.get("rs_rank") is not None else ""
@@ -1557,6 +1967,7 @@ section{display:none}section.on{display:block}
 .new{display:inline-block;margin-left:6px;font-size:10px;font-weight:700;background:var(--acc);color:#fff;border-radius:4px;padding:1px 5px;vertical-align:2px}
 .multi{display:inline-block;margin-left:6px;font-size:10px;font-weight:700;background:var(--good);color:#fff;border-radius:4px;padding:1px 5px;vertical-align:2px}
 .mcard{border-color:var(--good)}
+.pol{margin-left:6px;font-size:12px;vertical-align:1px}
 .mcount{width:44px;height:44px;border-radius:50%;flex:none;display:grid;place-content:center;text-align:center;background:var(--good);color:#fff;line-height:1}
 .mcount b{font-size:18px}.mcount small{font-size:7px;text-transform:uppercase}
 .mrows{margin:10px 0}.mrows .zone{margin:0}.kv small{color:var(--mute)}
@@ -1581,7 +1992,7 @@ section{display:none}section.on{display:block}
 h3{font-size:16px;margin:18px 2px 8px}
 table.picks{width:100%;border-collapse:collapse;font-size:13px;background:var(--card);border-radius:12px;overflow:hidden}
 .picks th{text-align:left;color:var(--mute);font-weight:500;padding:8px}.picks td{padding:8px;border-top:1px solid var(--line);vertical-align:top}
-.picks small{color:var(--mute)}
+.picks small{color:var(--mute)}.picks a{color:var(--acc);text-decoration:none}
 .refresh{display:flex;gap:8px;margin-top:12px}
 .refresh button{flex:1;border:0;border-radius:10px;padding:11px 10px;font:inherit;font-weight:700;background:var(--acc);color:#fff}
 .refresh button.ghost{background:var(--card);color:var(--ink);border:1px solid var(--line)}
@@ -1608,9 +2019,9 @@ footer{margin-top:20px;color:var(--mute);font-size:12px}
 """
 
 
-def render_page(results, ledger, summ, demo=False, hv=None):
+def render_page(results, ledger, summ, demo=False, hv=None, pol=None):
     _PAGE.clear()
-    _PAGE.update(date=results["date"], demo=demo)
+    _PAGE.update(date=results["date"], demo=demo, pol=pol_by_ticker(pol))
     tabs, secs = [], []
     first = True
     for m, data in results["markets"].items():
@@ -1649,6 +2060,9 @@ def render_page(results, ledger, summ, demo=False, hv=None):
         res_body += '<p class="empty">No resource stocks flagged this week.</p>'
     tabs.append(("resources", f"Resources ({rn})"))
     secs.append(("resources", res_body))
+    pn = len((pol or {}).get("buys") or [])
+    tabs.append(("politics", f"Politicians ({pn})"))
+    secs.append(("politics", politicians_html(pol)))
     tabs.append(("track", "Track record"))
     secs.append(("track", track_html(ledger, summ, results["date"])))
     hold_rows = (hv or {}).get("holdings") or []
@@ -1692,11 +2106,11 @@ try{{const t=localStorage.getItem('tab');t&&document.querySelector(`nav [data-t=
 <script>{"" if demo else REFRESH_JS.replace("__REPO__", REPO).replace("__GEN__", results["generated"])}</script></body></html>"""
 
 
-def write_outputs(results, ledger, docs: Path, demo=False, hv=None):
+def write_outputs(results, ledger, docs: Path, demo=False, hv=None, pol=None):
     (docs / "data").mkdir(parents=True, exist_ok=True)
     (docs / "history").mkdir(parents=True, exist_ok=True)
     summ = summarise(ledger)
-    page = render_page(results, ledger, summ, demo, hv)
+    page = render_page(results, ledger, summ, demo, hv, pol)
     (docs / "index.html").write_text(page, encoding="utf-8")
     if hv is not None:
         (docs / "data" / "holdings.json").write_text(json.dumps(hv, indent=1, default=jdefault), encoding="utf-8")
@@ -1891,6 +2305,11 @@ class Simulator:
                 out[s] = d
         return out
 
+    def uk_dealings(self, ticks, today):
+        return {t: [{"name": "Jane Example", "role": "CEO", "nature": "Purchase of ordinary shares",
+                     "date": today.isoformat(), "shares": 20000, "price_gbp": 1.5, "value_gbp": 30000,
+                     "url": "https://example.com"}] for t in ticks[:1]}
+
     def insiders(self):
         return {"AM00": {"buys": 2, "value": 250000.0, "insiders": [], "latest": ""},
                 "AM07": {"buys": 1, "value": 90000.0, "insiders": [], "latest": ""}}
@@ -1905,7 +2324,8 @@ def run_demo(weeks: int, docs: Path):
     res = None
     for fri in fridays:
         sim.asof = fri
-        res = run_pipeline(sim.tv, sim.fetch_prices, sim.insiders, fri.date(), ledger, res)
+        res = run_pipeline(sim.tv, sim.fetch_prices, sim.insiders, fri.date(), ledger, res,
+                           fetch_uk_dealings=sim.uk_dealings)
         res["demo"] = True
         summ = write_outputs(res, ledger, docs, demo=True)
     return res, ledger, summ
@@ -1931,6 +2351,20 @@ def do_alerts(hv, docs: Path, scheduled_digest: bool):
     sp.write_text(json.dumps(new_state, indent=1), encoding="utf-8")
 
 
+def refresh_politicians(docs: Path, today):
+    sp = docs / "data" / "politicians.json"
+    state = load_json(sp, {})
+    try:
+        new = live_politicians(today, set(state.get("seen", [])))
+        state, fresh = update_politicians(state, new, today)
+        sp.parent.mkdir(parents=True, exist_ok=True)
+        sp.write_text(json.dumps(state, indent=1), encoding="utf-8")
+        return state, fresh
+    except Exception as e:
+        print(f"  politicians check failed: {e}")
+        return state, []
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--demo", action="store_true", help="simulated data, written to demo_docs/")
@@ -1951,9 +2385,11 @@ def main():
         hv = run_holdings(holdings, live_prices, today)
         for r in hv["holdings"]:
             print(f"  {r['ticker']}: {r['status']} - {r['reason']}")
+        pol, fresh = refresh_politicians(docs, today)
         res = load_json(docs / "data" / "latest.json", None)
+        politician_alerts(fresh, res)
         if res and "markets" in res:
-            page = render_page(res, ledger, summarise(ledger), False, hv)
+            page = render_page(res, ledger, summarise(ledger), False, hv, pol)
             (docs / "index.html").write_text(page, encoding="utf-8")
             (docs / "data" / "holdings.json").write_text(json.dumps(hv, indent=1, default=jdefault), encoding="utf-8")
         do_alerts(hv, docs, scheduled_digest=False)
@@ -1967,11 +2403,16 @@ def main():
             print(f"This weekend's scan already ran on {last}; nothing to do.")
             return
     # only weekend scans (Friday closes) go into the track record; weekday refreshes just update the page
-    res = run_pipeline(live_tv, live_prices, live_insiders, today, ledger, prev, record=today.weekday() in (5, 6))
+    res = run_pipeline(live_tv, live_prices, live_insiders, today, ledger, prev, record=today.weekday() in (5, 6),
+                       fetch_uk_dealings=live_uk_dealings)
     hv = run_holdings(holdings, live_prices, today)
-    summ = write_outputs(res, ledger, docs, hv=hv)
+    pol, fresh = refresh_politicians(docs, today)
+    summ = write_outputs(res, ledger, docs, hv=hv, pol=pol)
     print(f"\nWrote {docs / 'index.html'}  ({len(ledger)} picks in track record)")
     do_alerts(hv, docs, scheduled_digest=True)
+    politician_alerts(fresh, res)
+    rp = docs / "data" / "rns_alerted.json"
+    rp.write_text(json.dumps(uk_dealing_alerts(res, load_json(rp, {})), indent=1), encoding="utf-8")
     if not a.no_email:
         try:
             send_email(res, summ)
