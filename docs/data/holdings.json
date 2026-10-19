@@ -1,6 +1,24 @@
 {
  "date": "2026-10-19",
- "holdings": [],
+ "holdings": [
+  {
+   "file": "holdings/uk-BMS.json",
+   "ticker": "BMS",
+   "market": "uk",
+   "name": "Braemar PLC",
+   "method": "weinstein",
+   "paid": 244.0,
+   "bought": "2026-10-19",
+   "exchange": "LSE",
+   "last": 246.0,
+   "last_date": "2026-10-19",
+   "pl": 0.008196721311475308,
+   "level": 229.9901570638021,
+   "level_name": "30-week MA",
+   "status": "OK",
+   "reason": "7% above the 30-week MA (229.99)."
+  }
+ ],
  "markets": {
   "america": {
    "state": "down",
