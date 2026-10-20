@@ -94,7 +94,12 @@ STRATEGIES = {
     "episodic": {"label": "Episodic pivots", "short": "Episodic",
                  "blurb": "Gapped up 10%+ on 3x+ volume this week after news, still holding the gap. "
                           "Drill results and contract wins show up here."},
+    "stage2": {"label": "Simple Stage 2", "short": "Stage 2",
+               "blurb": "Just entered Stage 2: above a rising 30-week MA, 10-week above 30-week, beating the "
+                        "market, and not yet stretched. No volume or base rules, so it catches more names."},
 }
+STAGE2_MAX_WEEKS = 8           # entered Stage 2 within the last 8 weeks (early, not late)
+STAGE2_MAX_EXT = 0.15          # no more than 15% above the 30-week MA
 
 # Not a separate scan: stocks that two or more of the methods above picked the same week.
 CONSENSUS = {"label": "Picked by 2+ methods", "short": "2+ methods",
@@ -168,7 +173,7 @@ INVESTEGATE = "https://www.investegate.co.uk"
 REPO = os.getenv("GITHUB_REPOSITORY", "FrazKK/Super-Stock-Scanner")
 BRANCH = "main"
 SITE = os.getenv("SITE_URL") or "https://frazkk.github.io/Super-Stock-Scanner/"
-WARN_BAND = {"stine": 0.03, "weinstein": 0.05, "minervini": 0.03, "episodic": 0.03, "other": 0.05}
+WARN_BAND = {"stine": 0.03, "weinstein": 0.05, "minervini": 0.03, "episodic": 0.03, "stage2": 0.05, "other": 0.05}
 
 # ---------------------------------------------------------------------------
 # Helpers
@@ -659,6 +664,49 @@ def episodic(rec, d):
 
 
 # ---------------------------------------------------------------------------
+# Strategy 5: simple Stage 2 (Weinstein's trend definition only)
+# ---------------------------------------------------------------------------
+
+
+def stage2_simple(rec, w, bench_w):
+    c = w["Close"]
+    if len(w) < 45:
+        return None
+    ma10, ma30 = c.rolling(10).mean(), c.rolling(30).mean()
+    rising = ma30 > ma30.shift(4)
+    in_s2 = (c > ma30) & rising & (ma10 > ma30)
+    if not bool(in_s2.iloc[-1]):
+        return None
+    weeks = 0
+    for v in reversed(in_s2.tolist()):
+        if not v:
+            break
+        weeks += 1
+    m = mansfield_rs(w, bench_w)
+    mrs = num(m.iloc[-1]) if m is not None else None
+    ext = float(c.iloc[-1] / ma30.iloc[-1] - 1)
+    rs = num(rec.get("rs_rank"))
+    checks = []
+
+    def add(label, ok, pts, note="", req=False):
+        checks.append({"label": label, "pass": bool(ok), "pts": pts if ok else 0, "max": pts, "note": note, "req": req})
+
+    add("Above a rising 30-week MA", True, 2, f"{ext * 100:+.0f}% above it", req=True)
+    add("10-week MA above 30-week MA", True, 1, req=True)
+    add("Beating the market (Mansfield RS > 0)", mrs is not None and mrs > 0, 2,
+        "no index data" if mrs is None else f"{mrs * 100:+.0f}%", req=True)
+    add(f"Early Stage 2 (last {STAGE2_MAX_WEEKS} weeks)", weeks <= STAGE2_MAX_WEEKS, 2,
+        f"{weeks} week{'s' if weeks != 1 else ''} in Stage 2", req=True)
+    add("Not stretched", ext <= STAGE2_MAX_EXT, 1, f"within {STAGE2_MAX_EXT * 100:.0f}% of the 30-week MA", req=True)
+    add("RS rank 70+", rs is not None and rs >= 70, 1, "no data" if rs is None else f"RS {rs:.0f}")
+    ok = all(ch["pass"] for ch in checks if ch["req"])
+    return {"strategy": "stage2", "checks": checks,
+            "tag": f"Stage 2 · {weeks} wk{'s' if weeks != 1 else ''}", "tag_class": "z-buy" if ok else "z-ok",
+            "plan": f"Sell rule: weekly close below the 30-week MA ({fmt_num(ma30.iloc[-1])}).",
+            "stop": None, "required_ok": ok}
+
+
+# ---------------------------------------------------------------------------
 # Market check
 # ---------------------------------------------------------------------------
 
@@ -771,7 +819,8 @@ def run_pipeline(fetch_tv, fetch_prices, fetch_insiders, today: dt.date, ledger:
                     if r:
                         if r["required_ok"]:
                             lists["stine"].append(make_card(rec, r, w, m, ins, rec["ysym"]))
-                for fn, args in ((weinstein, (rec, w, bench_w)), (minervini, (rec, d)), (episodic, (rec, d))):
+                for fn, args in ((weinstein, (rec, w, bench_w)), (minervini, (rec, d)), (episodic, (rec, d)),
+                                 (stage2_simple, (rec, w, bench_w))):
                     r = fn(*args)
                     if r and r["required_ok"]:
                         lists[r["strategy"]].append(make_card(rec, r, w, m, ins, rec["ysym"]))
@@ -782,7 +831,7 @@ def run_pipeline(fetch_tv, fetch_prices, fetch_insiders, today: dt.date, ledger:
         for k in lists:
             # only stocks at a buy point right now, best first, max 10
             ripe = [x for x in lists[k] if x["tag_class"] == "z-buy"]
-            if MARKET_FILTER and mc["state"] == "down" and k in ("weinstein", "minervini"):
+            if MARKET_FILTER and mc["state"] == "down" and k in ("weinstein", "minervini", "stage2"):
                 held_back[k] = len(ripe)
                 ripe = []
             ripe.sort(key=lambda x: (x["score"], x.get("rs_rank") or 0), reverse=True)
@@ -797,7 +846,7 @@ def run_pipeline(fetch_tv, fetch_prices, fetch_insiders, today: dt.date, ledger:
         flagged: dict[str, list] = {}
         for k, L in lists.items():
             for x in L:
-                if not (k == "minervini" and x["tag"] == "Trend only"):
+                if not (k == "minervini" and x["tag"] == "Trend only") and k != "stage2":
                     flagged.setdefault(x["ticker"], []).append((k, x))
         for k, L in lists.items():
             for x in L:
@@ -867,7 +916,7 @@ def evaluate_pick(p, d, bd, today):
 
     # sell rule
     exit_px, exit_date = None, None
-    if p["strategy"] in ("stine", "weinstein", "consensus"):
+    if p["strategy"] in ("stine", "weinstein", "consensus", "stage2"):
         w = to_weekly(d)
         ma = w["Close"].rolling(10 if p["strategy"] == "stine" else 30).mean()
         wk = w.loc[w.index > t0]
@@ -2046,7 +2095,7 @@ def render_page(results, ledger, summ, demo=False, hv=None, pol=None):
         if "lists" not in data:
             continue
         seen, cards = set(), []
-        for k in ("episodic", "weinstein", "stine", "minervini"):
+        for k in ("episodic", "weinstein", "stage2", "stine", "minervini"):
             for r in data["lists"][k]:
                 if r["tag"] == "Trend only":
                     continue
@@ -2087,7 +2136,7 @@ def render_page(results, ledger, summ, demo=False, hv=None, pol=None):
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="theme-color" content="#0f1115">
 <style>{CSS}</style></head><body>
 <header><h1>Superstock Scanner</h1>
-<div class="sub">Four breakout methods · updated {gen} · <a href="history/">past weeks</a></div>{demo_b}
+<div class="sub">Five methods · updated {gen} · <a href="history/">past weeks</a></div>{demo_b}
 {"" if demo else REFRESH_HTML.replace("__REPONAME__", E(REPO.split("/")[-1]))}</header>
 <nav>{nav}</nav>
 <main>{main}</main>

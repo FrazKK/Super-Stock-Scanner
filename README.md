@@ -2,7 +2,7 @@
 
 A free weekly scan of US, Canadian and UK stocks. It runs four breakout methods side by side and keeps a track record, so you can see which method actually works before risking money on it. Every Saturday morning GitHub runs the scan and updates your page: https://frazkk.github.io/Super-Stock-Scanner/
 
-## The four methods (each author's own rules)
+## The five methods (each author's own rules)
 
 Only stocks at a **buy point right now** are listed, up to **10 per method per market**. Nothing to watch, nothing already gone.
 
@@ -12,8 +12,9 @@ Only stocks at a **buy point right now** are listed, up to **10 per method per m
 | **Weinstein Stage 2** | Breakout above resistance on 2x+ volume from a flat Stage 1 base, above a flat or rising 30-week MA, beating the market (Mansfield RS > 0) | Breakout in the last 2 weeks and within 10% of the breakout level, or a pullback to the breakout level | Weekly close below the 30-week MA |
 | **Minervini trend + VCP** | All 8 Trend Template rules, including RS rank 70+ | Breaking out of the pivot on volume, no more than 5% above it | 8% stop below entry |
 | **Episodic pivots** | Gapped up 10%+ on 3x+ volume, still holding the gap | Gap in the last 3 trading days, not run on more than 10% since | Below the gap-day low |
+| **Simple Stage 2** | Above a rising 30-week MA, 10-week MA above the 30-week, beating the market (Mansfield RS > 0). No volume or base rules | Entered Stage 2 in the last 8 weeks and no more than 15% above the 30-week MA | Weekly close below the 30-week MA |
 
-**Picked by 2+ methods** appears at the top of each market tab. It lists stocks that more than one method has at a buy point, with each method's plan. A green **×2** or **×3** badge on a card shows the same thing. These overlap picks are tracked as their own line in the track record, using the 30-week MA sell rule.
+**Picked by 2+ methods** appears at the top of each market tab. It lists stocks that more than one method has at a buy point, with each method's plan. Simple Stage 2 doesn't count towards this, because it overlaps Weinstein by design. A green **×2** or **×3** badge on a card shows the same thing. These overlap picks are tracked as their own line in the track record, using the 30-week MA sell rule.
 
 **Market downtrends:** Weinstein and Minervini both advise against new buys when the market is in a downtrend. By default the page still lists their picks under a red banner. Set `MARKET_FILTER = True` in SETTINGS to hide them instead.
 
