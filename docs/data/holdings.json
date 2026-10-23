@@ -1,5 +1,5 @@
 {
- "date": "2026-10-22",
+ "date": "2026-10-23",
  "holdings": [],
  "markets": {
   "america": {
@@ -12,13 +12,13 @@
    "state": "down",
    "text": "Downtrend: index below its 30-week MA. Most breakouts fail in weak markets, so go small or wait.",
    "bench": "XCS.TO",
-   "change_4w": -2.6
+   "change_4w": -4.8
   },
   "uk": {
    "state": "down",
    "text": "Downtrend: index below its 30-week MA. Most breakouts fail in weak markets, so go small or wait.",
    "bench": "^FTAI",
-   "change_4w": -4.1
+   "change_4w": -3.0
   }
  }
 }
