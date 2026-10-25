@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-25T20:49:22+00:00",
+ "generated": "2026-10-25T20:51:14+00:00",
  "items": [
   {
    "key": "AXL:uk",
@@ -2412,14 +2412,6 @@
     "bench": "^FTAI",
     "change_4w": -5.0
    },
-   "added": "2026-10-25"
-  },
-  {
-   "key": "JMAT:uk",
-   "ticker": "JMAT",
-   "market": "uk",
-   "updated": "2026-10-25",
-   "error": "Found JMAT, but couldn't get its price history.",
    "added": "2026-10-25"
   }
  ]
