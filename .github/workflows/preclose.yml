@@ -1,0 +1,62 @@
+name: Pre-close check
+
+on:
+  schedule:
+    # Every 15 minutes through the hour before each close (UTC, covering both summer and winter time).
+    # The script acts once per market per day, about an hour before the close.
+    - cron: "0,15,30,45 14-15 * * 1-5"   # London close 16:30
+    - cron: "0,15 16 * * 1-5"
+    - cron: "30,45 18 * * 1-5"           # New York close 16:00 (US and Canada)
+    - cron: "0,15,30,45 19-20 * * 1-5"
+  workflow_dispatch:
+    inputs:
+      markets:
+        description: "Run now for these markets (uk, america, canada). Leave blank for all with holdings."
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+
+concurrency:
+  group: scanner
+  cancel-in-progress: false
+
+jobs:
+  preclose:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: main
+      - id: due
+        run: python preclose_due.py
+      - if: steps.due.outputs.due == 'true'
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: pip
+      - if: steps.due.outputs.due == 'true'
+        run: pip install -r requirements.txt
+      - if: steps.due.outputs.due == 'true'
+        name: Hold or sell?
+        env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+          SITE_URL: ${{ secrets.SITE_URL }}
+          MARKETS: ${{ inputs.markets }}
+        run: |
+          if [ "$GITHUB_EVENT_NAME" = "workflow_dispatch" ]; then
+            python screener.py --preclose --markets "${MARKETS:-uk,america,canada}"
+          else
+            python screener.py --preclose
+          fi
+      - if: steps.due.outputs.due == 'true'
+        name: Save
+        run: |
+          git config user.name "scanner-bot"
+          git config user.email "scanner-bot@users.noreply.github.com"
+          git add docs
+          git commit -m "Pre-close check $(date -u +%F)" || echo "No changes"
+          git pull --rebase -X theirs
+          git push
