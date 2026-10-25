@@ -2,7 +2,7 @@
 
 A free weekly scan of US, Canadian and UK stocks. It runs four breakout methods side by side and keeps a track record, so you can see which method actually works before risking money on it. Every Saturday morning GitHub runs the scan and updates your page: https://frazkk.github.io/Super-Stock-Scanner/
 
-## The five methods (each author's own rules)
+## The ten methods (each author's own rules)
 
 Only stocks at a **buy point right now** are listed, up to **10 per method per market**. Nothing to watch, nothing already gone.
 
@@ -13,6 +13,14 @@ Only stocks at a **buy point right now** are listed, up to **10 per method per m
 | **Minervini trend + VCP** | All 8 Trend Template rules, including RS rank 70+ | Breaking out of the pivot on volume, no more than 5% above it | 8% stop below entry |
 | **Episodic pivots** | Gapped up 10%+ on 3x+ volume, still holding the gap | Gap in the last 3 trading days, not run on more than 10% since | Below the gap-day low |
 | **Simple Stage 2** | Above a rising 30-week MA, 10-week MA above the 30-week, beating the market (Mansfield RS > 0). No volume or base rules | Entered Stage 2 in the last 8 weeks and no more than 15% above the 30-week MA | Weekly close below the 30-week MA |
+| **Luk pullback** (Martin Luk, 2025 US Investing Champion, record +969%) | Up 30%+ in 1 or 3 months, average daily range 5%+, EMAs stacked 9 > 21 > 50, above the anchored VWAP from its 1-year high, market's 9-day EMA above its 21-day | Dipped to the 9-day EMA today or yesterday and closed back above it, in the upper part of the day's range | Stop at the bounce-day low (max 5%); daily close below the 9-day EMA |
+| **Kell wedge pop / EMA crossback** (Oliver Kell, 2020 US Investing Champion, +941%) | RS rank 80+. Wedge pop: drifted below the 10-day EMA with lower highs, then popped above recent highs and both EMAs on 1.3x volume. Crossback: uptrend (10 EMA > 20 EMA > rising 50-day) that ran 8%+ above the 20-day EMA, dipped to it and bounced | Either pattern today or yesterday, still above the 10-day EMA | Stop under the pattern low; daily close below the 20-day EMA |
+| **Slater Zulu** (Jim Slater; Stockopedia's version has returned about 23% a year since 2012) | Forecast EPS growth over 15%, PEG under 0.75, forward P/E under 20, return on capital over 12%, beating the market over a year, market cap 20m to 1bn | Price above its 50-day MA | None (Slater reviewed on forecast cuts); tracked as buy and hold |
+| **Piotroski F-Score** (academic study: high scorers beat low scorers by 23 points a year, best in small caps) | F-Score 8 or 9, and in the cheapest 20% by price-to-book in its market | Price above its 50-day MA | None (annual rebalance); tracked as buy and hold |
+| **Greenblatt Magic Formula** | Top 30 in its market when ranked on earnings yield (EBIT/EV) plus return on capital, excluding financials and utilities, market cap 50m+ | Price above its 50-day MA | None (hold a year); tracked as buy and hold |
+
+The 50-day MA check on the three value methods is our addition, so you aren't shown cheap stocks that are still falling. Their sell rules aren't the authors': none of the three used stops.
+
 
 **Picked by 2+ methods** appears at the top of each market tab. It lists stocks that more than one method has at a buy point, with each method's plan. Simple Stage 2 doesn't count towards this, because it overlaps Weinstein by design. A green **×2** or **×3** badge on a card shows the same thing. These overlap picks are tracked as their own line in the track record, using the 30-week MA sell rule.
 
@@ -42,6 +50,24 @@ The **Politicians** tab and a phone alert show purchases reported by a watch-lis
 ## UK director buying
 
 For UK stocks that reach a buy point under the rules above, the scan reads their recent RNS "Director/PDMR Shareholding" announcements (via Investegate). It counts only genuine purchases, not awards, options, share-scheme or dividend-reinvestment shares, or sales. Director buys in the last 90 days are shown on the card with name, role and value, and earn Stine's insider-buying points. You get a phone alert when a ready UK pick has director buying.
+
+## Pre-close check (hold or sell?)
+
+About an hour before each market closes (UK 16:30, US and Canada 16:00 New York time), the bot checks the stocks you've marked as bought in that market. It uses today's live price (delayed about 15 minutes) and sends one phone alert per market:
+
+- **Sell before the close**: if the stock closed here, its method would say sell. For example, a Luk stock below its 9-day EMA, or a Weinstein stock below its 30-week MA on a Friday.
+- **Hold for now, watch closely** / **Consider selling**: it's below or near the sell level, but the rule isn't broken yet. Weekly-rule methods only sell on Friday's close.
+- **Hold**: nothing to do.
+
+The advice also appears on each card in the **My stocks** tab. It runs from `.github/workflows/preclose.yml` and `preclose_due.py`. GitHub can delay scheduled runs, so the workflow tries every 15 minutes through that hour and acts once per market per day. To run it immediately: Actions, Pre-close check, Run workflow.
+
+## Evaluate a stock
+
+The **Evaluate** tab lets you check any stock yourself. Type its ticker, choose UK, USA or Canada, and tap **Evaluate**. About 2–3 minutes later the page shows the stock against all ten methods. For each method it gives a verdict (**Buy point now**, **Qualifies, not at a buy point** or **Doesn't qualify**), and you can tap it to see every check, which ones failed, and that method's entry and sell plan. UK stocks also show recent director buying.
+
+- Stocks stay on the tab and are re-checked at every weekend scan. Tap **Remove** to take one off.
+- The button uses the same GitHub key as the refresh buttons. If you haven't set that up, the page asks you to.
+- This runs through the **Evaluate stocks** workflow (`.github/workflows/evaluate.yml`). You can also run it from GitHub: Actions, Evaluate stocks, Run workflow, then type e.g. `KOO:uk, TSLA:us`.
 
 ## What's on the page
 
