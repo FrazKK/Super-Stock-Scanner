@@ -3,5 +3,10 @@
   "ticker": "AXL",
   "market": "uk",
   "added": "2026-10-25"
+ },
+ {
+  "ticker": "CMRS",
+  "market": "uk",
+  "added": "2026-10-25"
  }
 ]
