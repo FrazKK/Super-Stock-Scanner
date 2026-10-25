@@ -1,851 +1,12 @@
 {
- "generated": "2026-10-25T20:41:17+00:00",
+ "generated": "2026-10-25T20:41:49+00:00",
  "items": [
   {
    "key": "AXL:uk",
    "ticker": "AXL",
    "market": "uk",
    "updated": "2026-10-25",
-   "card": {
-    "strategy": "slater",
-    "market": "uk",
-    "ticker": "AXL",
-    "exchange": "LSE",
-    "name": "Arrow Exploration Corp.",
-    "ysym": "AXL.L",
-    "price": 42.5,
-    "currency": "GBX",
-    "mcap": 120319394.24059142,
-    "sector": "Energy Minerals",
-    "industry": "Oil & Gas Production",
-    "rs_rank": 96.0,
-    "score": 9,
-    "max_score": 9,
-    "tag": "Zulu buy",
-    "tag_class": "z-buy",
-    "plan": "A growth-at-a-low-price holding. Review if forecasts are cut, the PEG rises above 1, or it underperforms the market.",
-    "checks": [
-     {
-      "label": "Forecast EPS growth over 15%",
-      "pass": true,
-      "pts": 2,
-      "max": 2,
-      "note": "+188%",
-      "req": true
-     },
-     {
-      "label": "PEG under 0.75",
-      "pass": true,
-      "pts": 2,
-      "max": 2,
-      "note": "PEG 0.06",
-      "req": true
-     },
-     {
-      "label": "Forward P/E under 20",
-      "pass": true,
-      "pts": 1,
-      "max": 1,
-      "note": "P/E 11.0",
-      "req": true
-     },
-     {
-      "label": "Return on capital over 12%",
-      "pass": true,
-      "pts": 1,
-      "max": 1,
-      "note": "19%",
-      "req": true
-     },
-     {
-      "label": "Beating the market over 1 year",
-      "pass": true,
-      "pts": 1,
-      "max": 1,
-      "note": "+319 pts",
-      "req": true
-     },
-     {
-      "label": "Small company (20m to 1bn)",
-      "pass": true,
-      "pts": 1,
-      "max": 1,
-      "note": "120m",
-      "req": true
-     },
-     {
-      "label": "Price above its 50-day MA (momentum check)",
-      "pass": true,
-      "pts": 1,
-      "max": 1,
-      "note": "",
-      "req": true
-     }
-    ],
-    "stop": null,
-    "stop_pct": null,
-    "dist_ma10": 0.24469175991927572,
-    "closes": [
-     21.25,
-     22.0,
-     20.25,
-     22.9,
-     21.25,
-     21.5,
-     24.0,
-     23.5,
-     24.6,
-     29.0,
-     27.0,
-     26.5,
-     23.75,
-     24.0,
-     24.5,
-     25.25,
-     28.0,
-     26.5,
-     26.0,
-     26.75,
-     27.8,
-     27.25,
-     29.6,
-     34.0,
-     36.0,
-     36.8,
-     34.5,
-     36.0,
-     37.0,
-     42.5
-    ],
-    "ma10": [
-     18.75,
-     19.3,
-     19.725,
-     20.29,
-     20.69,
-     21.165,
-     21.665,
-     21.915,
-     22.175,
-     23.025,
-     23.6,
-     24.05,
-     24.4,
-     24.51,
-     24.835,
-     25.21,
-     25.61,
-     25.91,
-     26.05,
-     25.825,
-     25.905,
-     25.98,
-     26.565,
-     27.565,
-     28.715,
-     29.87,
-     30.52,
-     31.47,
-     32.57,
-     34.145
-    ],
-    "ma30": [
-     14.47,
-     14.795,
-     15.0033,
-     15.3083,
-     15.6333,
-     15.975,
-     16.4167,
-     16.8333,
-     17.2533,
-     17.8367,
-     18.37,
-     18.895,
-     19.3167,
-     19.7,
-     20.1083,
-     20.5167,
-     21.0167,
-     21.45,
-     21.8833,
-     22.3417,
-     22.7517,
-     23.11,
-     23.5633,
-     24.1217,
-     24.7467,
-     25.415,
-     25.9317,
-     26.4317,
-     26.9317,
-     27.665
-    ],
-    "insider": null,
-    "entry_close": 42.5,
-    "chart_url": "https://www.tradingview.com/chart/?symbol=LSE:AXL&interval=W",
-    "insider_url": "https://www.investegate.co.uk/company/AXL"
-   },
-   "methods": {
-    "stine": {
-     "verdict": "Doesn't qualify",
-     "vclass": "v-no",
-     "tag": "No breakout yet",
-     "plan": "Entry zone: near the 10-week MA (34.14). Sell rule: weekly close below it.",
-     "checks": [
-      {
-       "label": "Above rising 30-week MA",
-       "pass": true,
-       "pts": 2,
-       "max": 2,
-       "note": "",
-       "req": true
-      },
-      {
-       "label": "Breakout on 3x+ weekly volume",
-       "pass": false,
-       "pts": 0,
-       "max": 2,
-       "note": "no breakout in 8 weeks",
-       "req": true
-      },
-      {
-       "label": "Steep 30-week MA",
-       "pass": true,
-       "pts": 1,
-       "max": 1,
-       "note": "+8.9% in 4 wks",
-       "req": false
-      },
-      {
-       "label": "Biggest weekly volume in 6 months",
-       "pass": false,
-       "pts": 0,
-       "max": 1,
-       "note": "",
-       "req": true
-      },
-      {
-       "label": "Tight base",
-       "pass": false,
-       "pts": 0,
-       "max": 1,
-       "note": "52% range",
-       "req": false
-      },
-      {
-       "label": "EPS growth > 25%",
-       "pass": false,
-       "pts": 0,
-       "max": 1,
-       "note": "no data",
-       "req": false
-      },
-      {
-       "label": "Low P/E",
-       "pass": true,
-       "pts": 1,
-       "max": 1,
-       "note": "P/E 11.0",
-       "req": false
-      },
-      {
-       "label": "Small float",
-       "pass": false,
-       "pts": 0,
-       "max": 1,
-       "note": "211.9M shares",
-       "req": false
-      },
-      {
-       "label": "Market leader (RS rank 80+)",
-       "pass": true,
-       "pts": 1,
-       "max": 1,
-       "note": "RS 96",
-       "req": false
-      },
-      {
-       "label": "Low float / small company",
-       "pass": false,
-       "pts": 0,
-       "max": 1,
-       "note": "float 212M shares",
-       "req": true
-      },
-      {
-       "label": "Insider buying",
-       "pass": null,
-       "pts": 0,
-       "max": 0,
-       "note": "check link",
-       "req": false
-      }
-     ],
-     "score": 5,
-     "max_score": 12
-    },
-    "weinstein": {
-     "verdict": "Doesn't qualify",
-     "vclass": "v-no",
-     "tag": "Extended, wait",
-     "plan": "Breakout level 31.00. Sell rule: weekly close below the 30-week MA (27.66).",
-     "checks": [
-      {
-       "label": "Breakout above resistance on 2x+ volume",
-       "pass": true,
-       "pts": 2,
-       "max": 2,
-       "note": "2.5x volume, 6 wk ago",
-       "req": true
-      },
-      {
-       "label": "Came out of a flat Stage 1 base",
-       "pass": false,
-       "pts": 0,
-       "max": 1,
-       "note": "",
-       "req": true
-      },
-      {
-       "label": "Still above 30-week MA, MA not falling",
-       "pass": true,
-       "pts": 1,
-       "max": 1,
-       "note": "MA +8.9% in 4 wks",
-       "req": true
-      },
-      {
-       "label": "Beating the market (Mansfield RS > 0)",
-       "pass": true,
-       "pts": 2,
-       "max": 2,
-       "note": "+100%",
-       "req": true
-      },
-      {
-       "label": "30-week MA rising",
-       "pass": true,
-       "pts": 1,
-       "max": 1,
-       "note": "",
-       "req": false
-      },
-      {
-       "label": "Breakout volume 3x+",
-       "pass": false,
-       "pts": 0,
-       "max": 1,
-       "note": "",
-       "req": false
-      },
-      {
-       "label": "Not extended (within 15% of breakout)",
-       "pass": false,
-       "pts": 0,
-       "max": 1,
-       "note": "+37% vs breakout",
-       "req": false
-      },
-      {
-       "label": "RS rank 70+",
-       "pass": true,
-       "pts": 1,
-       "max": 1,
-       "note": "RS 96",
-       "req": false
-      }
-     ],
-     "score": 7,
-     "max_score": 10
-    },
-    "minervini": {
-     "verdict": "Qualifies, not at a buy point",
-     "vclass": "v-wait",
-     "tag": "Extended from pivot",
-     "plan": "Buy point: above the pivot 38.05. Sell rule: 8% stop below your entry.",
-     "checks": [
-      {
-       "label": "Above 150 and 200-day MAs",
-       "pass": true,
-       "pts": 1,
-       "max": 1,
-       "note": "",
-       "req": true
-      },
-      {
-       "label": "150-day above 200-day",
-       "pass": true,
-       "pts": 1,
-       "max": 1,
-       "note": "",
-       "req": true
-      },
-      {
-       "label": "200-day rising for a month",
-       "pass": true,
-       "pts": 1,
-       "max": 1,
-       "note": "",
-       "req": true
-      },
-      {
-       "label": "50-day above 150 and 200-day",
-       "pass": true,
-       "pts": 1,
-       "max": 1,
-       "note": "",
-       "req": true
-      },
-      {
-       "label": "Above 50-day MA",
-       "pass": true,
-       "pts": 1,
-       "max": 1,
-       "note": "",
-       "req": true
-      },
-      {
-       "label": "30%+ above 52-week low",
-       "pass": true,
-       "pts": 1,
-       "max": 1,
-       "note": "+305%",
-       "req": true
-      },
-      {
-       "label": "Within 25% of 52-week high",
-       "pass": true,
-       "pts": 1,
-       "max": 1,
-       "note": "-1%",
-       "req": true
-      },
-      {
-       "label": "RS rank 70+",
-       "pass": true,
-       "pts": 1,
-       "max": 1,
-       "note": "RS 96",
-       "req": true
-      },
-      {
-       "label": "Volatility contraction (VCP)",
-       "pass": false,
-       "pts": 0,
-       "max": 2,
-       "note": "pullbacks 19% > 24% > 20%",
-       "req": false
-      },
-      {
-       "label": "Volume drying up",
-       "pass": false,
-       "pts": 0,
-       "max": 1,
-       "note": "",
-       "req": false
-      },
-      {
-       "label": "Pivot breakout on volume",
-       "pass": true,
-       "pts": 2,
-       "max": 2,
-       "note": "pivot 38.05",
-       "req": false
-      },
-      {
-       "label": "EPS growth > 25%",
-       "pass": false,
-       "pts": 0,
-       "max": 1,
-       "note": "no data",
-       "req": false
-      }
-     ],
-     "score": 10,
-     "max_score": 14
-    },
-    "episodic": {
-     "verdict": "Doesn't qualify",
-     "vclass": "v-no",
-     "tag": "No recent gap",
-     "plan": "",
-     "checks": [
-      {
-       "label": "Gap up 10%+ on 3x+ volume in the last 3 days, still holding it",
-       "pass": false,
-       "pts": 0,
-       "max": 2,
-       "note": "",
-       "req": true
-      }
-     ],
-     "score": 0,
-     "max_score": 2
-    },
-    "stage2": {
-     "verdict": "Doesn't qualify",
-     "vclass": "v-no",
-     "tag": "Stage 2 \u00b7 36 wks",
-     "plan": "Sell rule: weekly close below the 30-week MA (27.66).",
-     "checks": [
-      {
-       "label": "Above a rising 30-week MA",
-       "pass": true,
-       "pts": 2,
-       "max": 2,
-       "note": "+54% above it",
-       "req": true
-      },
-      {
-       "label": "10-week MA above 30-week MA",
-       "pass": true,
-       "pts": 1,
-       "max": 1,
-       "note": "",
-       "req": true
-      },
-      {
-       "label": "Beating the market (Mansfield RS > 0)",
-       "pass": true,
-       "pts": 2,
-       "max": 2,
-       "note": "+100%",
-       "req": true
-      },
-      {
-       "label": "Early Stage 2 (last 8 weeks)",
-       "pass": false,
-       "pts": 0,
-       "max": 2,
-       "note": "36 weeks in Stage 2",
-       "req": true
-      },
-      {
-       "label": "Not stretched",
-       "pass": false,
-       "pts": 0,
-       "max": 1,
-       "note": "within 15% of the 30-week MA",
-       "req": true
-      },
-      {
-       "label": "RS rank 70+",
-       "pass": true,
-       "pts": 1,
-       "max": 1,
-       "note": "RS 96",
-       "req": false
-      }
-     ],
-     "score": 6,
-     "max_score": 9
-    },
-    "luk": {
-     "verdict": "Doesn't qualify",
-     "vclass": "v-no",
-     "tag": "Not set up",
-     "plan": "Stop at the bounce-day low 40.38 (max 5% risk). Sell on a daily close below the 9-day EMA (38.91).",
-     "checks": [
-      {
-       "label": "Big mover: up 30%+ in 1 or 3 months",
-       "pass": true,
-       "pts": 2,
-       "max": 2,
-       "note": "+60%",
-       "req": true
-      },
-      {
-       "label": "Volatile enough (avg daily range 5%+)",
-       "pass": true,
-       "pts": 1,
-       "max": 1,
-       "note": "5.2%",
-       "req": true
-      },
-      {
-       "label": "EMAs stacked 9 > 21 > 50",
-       "pass": true,
-       "pts": 1,
-       "max": 1,
-       "note": "",
-       "req": true
-      },
-      {
-       "label": "Above anchored VWAP from 1-year high",
-       "pass": true,
-       "pts": 1,
-       "max": 1,
-       "note": "VWAP 41.83",
-       "req": true
-      },
-      {
-       "label": "Pulled back to 9-day EMA and bounced",
-       "pass": false,
-       "pts": 0,
-       "max": 2,
-       "note": "",
-       "req": true
-      },
-      {
-       "label": "Still above the 9-day EMA",
-       "pass": true,
-       "pts": 1,
-       "max": 1,
-       "note": "",
-       "req": true
-      },
-      {
-       "label": "Market OK (index 9-day EMA above 21-day)",
-       "pass": false,
-       "pts": 0,
-       "max": 1,
-       "note": "",
-       "req": true
-      },
-      {
-       "label": "Very fast mover (up 50%+)",
-       "pass": true,
-       "pts": 1,
-       "max": 1,
-       "note": "",
-       "req": false
-      },
-      {
-       "label": "RS rank 90+",
-       "pass": true,
-       "pts": 1,
-       "max": 1,
-       "note": "RS 96",
-       "req": false
-      }
-     ],
-     "score": 8,
-     "max_score": 11
-    },
-    "kell": {
-     "verdict": "Doesn't qualify",
-     "vclass": "v-no",
-     "tag": "No wedge pop yet",
-     "plan": "Stop under the wedge pop low 37.00. Sell on a daily close below the 20-day EMA (37.31).",
-     "checks": [
-      {
-       "label": "Drifted below the 10-day EMA (wedge)",
-       "pass": false,
-       "pts": 0,
-       "max": 1,
-       "note": "",
-       "req": true
-      },
-      {
-       "label": "Lower highs into the pop",
-       "pass": false,
-       "pts": 0,
-       "max": 1,
-       "note": "",
-       "req": true
-      },
-      {
-       "label": "Popped above recent highs and both EMAs",
-       "pass": true,
-       "pts": 1,
-       "max": 1,
-       "note": "",
-       "req": true
-      },
-      {
-       "label": "Volume 1.3x+ average",
-       "pass": true,
-       "pts": 1,
-       "max": 1,
-       "note": "",
-       "req": true
-      },
-      {
-       "label": "Longer trend OK (50-day rising or above 200-day)",
-       "pass": true,
-       "pts": 1,
-       "max": 1,
-       "note": "",
-       "req": true
-      },
-      {
-       "label": "Market leader (RS rank 80+)",
-       "pass": true,
-       "pts": 1,
-       "max": 1,
-       "note": "RS 96",
-       "req": true
-      },
-      {
-       "label": "Above the 200-day MA",
-       "pass": true,
-       "pts": 1,
-       "max": 1,
-       "note": "",
-       "req": false
-      }
-     ],
-     "score": 5,
-     "max_score": 7
-    },
-    "slater": {
-     "verdict": "Buy point now",
-     "vclass": "v-buy",
-     "tag": "Zulu buy",
-     "plan": "A growth-at-a-low-price holding. Review if forecasts are cut, the PEG rises above 1, or it underperforms the market.",
-     "checks": [
-      {
-       "label": "Forecast EPS growth over 15%",
-       "pass": true,
-       "pts": 2,
-       "max": 2,
-       "note": "+188%",
-       "req": true
-      },
-      {
-       "label": "PEG under 0.75",
-       "pass": true,
-       "pts": 2,
-       "max": 2,
-       "note": "PEG 0.06",
-       "req": true
-      },
-      {
-       "label": "Forward P/E under 20",
-       "pass": true,
-       "pts": 1,
-       "max": 1,
-       "note": "P/E 11.0",
-       "req": true
-      },
-      {
-       "label": "Return on capital over 12%",
-       "pass": true,
-       "pts": 1,
-       "max": 1,
-       "note": "19%",
-       "req": true
-      },
-      {
-       "label": "Beating the market over 1 year",
-       "pass": true,
-       "pts": 1,
-       "max": 1,
-       "note": "+319 pts",
-       "req": true
-      },
-      {
-       "label": "Small company (20m to 1bn)",
-       "pass": true,
-       "pts": 1,
-       "max": 1,
-       "note": "120m",
-       "req": true
-      },
-      {
-       "label": "Price above its 50-day MA (momentum check)",
-       "pass": true,
-       "pts": 1,
-       "max": 1,
-       "note": "",
-       "req": true
-      }
-     ],
-     "score": 9,
-     "max_score": 9
-    },
-    "piotroski": {
-     "verdict": "Doesn't qualify",
-     "vclass": "v-no",
-     "tag": "Doesn't fit",
-     "plan": "Piotroski held for a year and rebalanced. Review when new annual figures drop the score.",
-     "checks": [
-      {
-       "label": "F-Score 8 or 9 (strong, improving finances)",
-       "pass": false,
-       "pts": 0,
-       "max": 3,
-       "note": "F-Score 7/9",
-       "req": true
-      },
-      {
-       "label": "Cheap: lowest 20% price-to-book in its market",
-       "pass": false,
-       "pts": 0,
-       "max": 2,
-       "note": "P/B 2.32 (cut-off 0.84)",
-       "req": true
-      },
-      {
-       "label": "Low bankruptcy risk (Altman Z over 1.8)",
-       "pass": true,
-       "pts": 1,
-       "max": 1,
-       "note": "Z 2.6",
-       "req": false
-      },
-      {
-       "label": "Price above its 50-day MA (momentum check)",
-       "pass": true,
-       "pts": 1,
-       "max": 1,
-       "note": "",
-       "req": true
-      }
-     ],
-     "score": 2,
-     "max_score": 7
-    },
-    "magic": {
-     "verdict": "Buy point now",
-     "vclass": "v-buy",
-     "tag": "Magic #7",
-     "plan": "Greenblatt held each pick for a year, then re-ranked. Expect long spells of lagging the market.",
-     "checks": [
-      {
-       "label": "Top 30 on Magic Formula rank",
-       "pass": true,
-       "pts": 3,
-       "max": 3,
-       "note": "#7 of 293",
-       "req": true
-      },
-      {
-       "label": "High earnings yield (EBIT / EV)",
-       "pass": true,
-       "pts": 1,
-       "max": 1,
-       "note": "22%",
-       "req": false
-      },
-      {
-       "label": "High return on capital",
-       "pass": true,
-       "pts": 1,
-       "max": 1,
-       "note": "24%",
-       "req": false
-      },
-      {
-       "label": "Price above its 50-day MA (momentum check)",
-       "pass": true,
-       "pts": 1,
-       "max": 1,
-       "note": "",
-       "req": true
-      }
-     ],
-     "score": 6,
-     "max_score": 6
-    }
-   },
-   "market_state": {
-    "state": "down",
-    "text": "Downtrend: index below its 30-week MA. Most breakouts fail in weak markets, so go small or wait.",
-    "bench": "^FTAI",
-    "change_4w": -5.0
-   },
+   "error": "Found AXL, but couldn't get its price history.",
    "added": "2026-10-25"
   },
   {
@@ -1620,6 +781,789 @@
       }
      ],
      "score": 0,
+     "max_score": 6
+    }
+   },
+   "market_state": {
+    "state": "down",
+    "text": "Downtrend: index below its 30-week MA. Most breakouts fail in weak markets, so go small or wait.",
+    "bench": "^FTAI",
+    "change_4w": -5.0
+   },
+   "added": "2026-10-25"
+  },
+  {
+   "key": "ROCK:uk",
+   "ticker": "ROCK",
+   "market": "uk",
+   "updated": "2026-10-25",
+   "card": {
+    "strategy": "stine",
+    "market": "uk",
+    "ticker": "ROCK",
+    "exchange": "LSE",
+    "name": "Rockfire Resources PLC",
+    "ysym": "ROCK.L",
+    "price": 0.1525,
+    "currency": "GBX",
+    "mcap": 16326542.0,
+    "sector": "Non-Energy Minerals",
+    "industry": "Other Metals/Minerals",
+    "rs_rank": 66.0,
+    "score": 1,
+    "max_score": 12,
+    "tag": "No breakout yet",
+    "tag_class": "z-ok",
+    "plan": "Entry zone: near the 10-week MA (0.12). Sell rule: weekly close below it.",
+    "checks": [
+     {
+      "label": "Price under 15 and profitable",
+      "pass": false,
+      "pts": 0,
+      "max": 0,
+      "note": "outside Stine's price range or loss-making",
+      "req": true
+     },
+     {
+      "label": "Above rising 30-week MA",
+      "pass": false,
+      "pts": 0,
+      "max": 2,
+      "note": "",
+      "req": true
+     },
+     {
+      "label": "Breakout on 3x+ weekly volume",
+      "pass": false,
+      "pts": 0,
+      "max": 2,
+      "note": "no breakout in 8 weeks",
+      "req": true
+     },
+     {
+      "label": "Steep 30-week MA",
+      "pass": false,
+      "pts": 0,
+      "max": 1,
+      "note": "-3.2% in 4 wks",
+      "req": false
+     },
+     {
+      "label": "Biggest weekly volume in 6 months",
+      "pass": true,
+      "pts": 1,
+      "max": 1,
+      "note": "",
+      "req": true
+     },
+     {
+      "label": "Tight base",
+      "pass": false,
+      "pts": 0,
+      "max": 1,
+      "note": "80% range",
+      "req": false
+     },
+     {
+      "label": "EPS growth > 25%",
+      "pass": false,
+      "pts": 0,
+      "max": 1,
+      "note": "no data",
+      "req": false
+     },
+     {
+      "label": "Low P/E",
+      "pass": false,
+      "pts": 0,
+      "max": 1,
+      "note": "no data",
+      "req": false
+     },
+     {
+      "label": "Small float",
+      "pass": false,
+      "pts": 0,
+      "max": 1,
+      "note": "8537.1M shares",
+      "req": false
+     },
+     {
+      "label": "Market leader (RS rank 80+)",
+      "pass": false,
+      "pts": 0,
+      "max": 1,
+      "note": "RS 66",
+      "req": false
+     },
+     {
+      "label": "Low float / small company",
+      "pass": false,
+      "pts": 0,
+      "max": 1,
+      "note": "float 8537M shares",
+      "req": true
+     },
+     {
+      "label": "Insider buying",
+      "pass": null,
+      "pts": 0,
+      "max": 0,
+      "note": "check link",
+      "req": false
+     }
+    ],
+    "stop": null,
+    "stop_pct": null,
+    "dist_ma10": 0.2551271409196163,
+    "closes": [
+     0.158,
+     0.14,
+     0.145,
+     0.135,
+     0.135,
+     0.135,
+     0.13,
+     0.15,
+     0.15,
+     0.148,
+     0.13,
+     0.145,
+     0.135,
+     0.128,
+     0.125,
+     0.115,
+     0.11,
+     0.13,
+     0.135,
+     0.108,
+     0.11,
+     0.105,
+     0.115,
+     0.11,
+     0.108,
+     0.108,
+     0.12,
+     0.13,
+     0.16,
+     0.153
+    ],
+    "ma10": [
+     0.188,
+     0.1825,
+     0.1745,
+     0.168,
+     0.162,
+     0.1542,
+     0.1484,
+     0.1449,
+     0.1436,
+     0.1426,
+     0.1398,
+     0.1403,
+     0.1393,
+     0.1386,
+     0.1376,
+     0.1356,
+     0.1336,
+     0.1316,
+     0.1301,
+     0.1261,
+     0.1241,
+     0.1201,
+     0.1181,
+     0.1163,
+     0.1146,
+     0.1139,
+     0.1149,
+     0.1149,
+     0.1174,
+     0.1219
+    ],
+    "ma30": [
+     0.183,
+     0.1783,
+     0.1747,
+     0.1722,
+     0.1687,
+     0.1655,
+     0.1632,
+     0.1612,
+     0.16,
+     0.1599,
+     0.1595,
+     0.1594,
+     0.159,
+     0.1574,
+     0.1569,
+     0.1561,
+     0.1551,
+     0.1547,
+     0.1547,
+     0.1526,
+     0.1506,
+     0.1476,
+     0.144,
+     0.141,
+     0.1381,
+     0.1346,
+     0.1323,
+     0.1305,
+     0.1304,
+     0.1302
+    ],
+    "insider": null,
+    "entry_close": 0.15299999713897705,
+    "chart_url": "https://www.tradingview.com/chart/?symbol=LSE:ROCK&interval=W",
+    "insider_url": "https://www.investegate.co.uk/company/ROCK"
+   },
+   "methods": {
+    "stine": {
+     "verdict": "Doesn't qualify",
+     "vclass": "v-no",
+     "tag": "No breakout yet",
+     "plan": "Entry zone: near the 10-week MA (0.12). Sell rule: weekly close below it.",
+     "checks": [
+      {
+       "label": "Price under 15 and profitable",
+       "pass": false,
+       "pts": 0,
+       "max": 0,
+       "note": "outside Stine's price range or loss-making",
+       "req": true
+      },
+      {
+       "label": "Above rising 30-week MA",
+       "pass": false,
+       "pts": 0,
+       "max": 2,
+       "note": "",
+       "req": true
+      },
+      {
+       "label": "Breakout on 3x+ weekly volume",
+       "pass": false,
+       "pts": 0,
+       "max": 2,
+       "note": "no breakout in 8 weeks",
+       "req": true
+      },
+      {
+       "label": "Steep 30-week MA",
+       "pass": false,
+       "pts": 0,
+       "max": 1,
+       "note": "-3.2% in 4 wks",
+       "req": false
+      },
+      {
+       "label": "Biggest weekly volume in 6 months",
+       "pass": true,
+       "pts": 1,
+       "max": 1,
+       "note": "",
+       "req": true
+      },
+      {
+       "label": "Tight base",
+       "pass": false,
+       "pts": 0,
+       "max": 1,
+       "note": "80% range",
+       "req": false
+      },
+      {
+       "label": "EPS growth > 25%",
+       "pass": false,
+       "pts": 0,
+       "max": 1,
+       "note": "no data",
+       "req": false
+      },
+      {
+       "label": "Low P/E",
+       "pass": false,
+       "pts": 0,
+       "max": 1,
+       "note": "no data",
+       "req": false
+      },
+      {
+       "label": "Small float",
+       "pass": false,
+       "pts": 0,
+       "max": 1,
+       "note": "8537.1M shares",
+       "req": false
+      },
+      {
+       "label": "Market leader (RS rank 80+)",
+       "pass": false,
+       "pts": 0,
+       "max": 1,
+       "note": "RS 66",
+       "req": false
+      },
+      {
+       "label": "Low float / small company",
+       "pass": false,
+       "pts": 0,
+       "max": 1,
+       "note": "float 8537M shares",
+       "req": true
+      },
+      {
+       "label": "Insider buying",
+       "pass": null,
+       "pts": 0,
+       "max": 0,
+       "note": "check link",
+       "req": false
+      }
+     ],
+     "score": 1,
+     "max_score": 12
+    },
+    "weinstein": {
+     "verdict": "Doesn't qualify",
+     "vclass": "v-no",
+     "tag": "No Stage 2 breakout",
+     "plan": "",
+     "checks": [
+      {
+       "label": "Breakout above resistance on 2x+ volume (last 8 weeks)",
+       "pass": false,
+       "pts": 0,
+       "max": 2,
+       "note": "",
+       "req": true
+      },
+      {
+       "label": "Above a rising 30-week MA",
+       "pass": false,
+       "pts": 0,
+       "max": 1,
+       "note": "",
+       "req": true
+      }
+     ],
+     "score": 0,
+     "max_score": 3
+    },
+    "minervini": {
+     "verdict": "Doesn't qualify",
+     "vclass": "v-no",
+     "tag": "Fails the Trend Template",
+     "plan": "",
+     "checks": [
+      {
+       "label": "Above 150 and 200-day MAs",
+       "pass": true,
+       "pts": 1,
+       "max": 1,
+       "note": "",
+       "req": true
+      },
+      {
+       "label": "150-day above 200-day",
+       "pass": false,
+       "pts": 0,
+       "max": 1,
+       "note": "",
+       "req": true
+      },
+      {
+       "label": "200-day rising for a month",
+       "pass": false,
+       "pts": 0,
+       "max": 1,
+       "note": "",
+       "req": true
+      },
+      {
+       "label": "50-day above 150 and 200-day",
+       "pass": false,
+       "pts": 0,
+       "max": 1,
+       "note": "",
+       "req": true
+      },
+      {
+       "label": "Above 50-day MA",
+       "pass": true,
+       "pts": 1,
+       "max": 1,
+       "note": "",
+       "req": true
+      },
+      {
+       "label": "30%+ above 52-week low",
+       "pass": true,
+       "pts": 1,
+       "max": 1,
+       "note": "+53%",
+       "req": true
+      },
+      {
+       "label": "Within 25% of 52-week high",
+       "pass": false,
+       "pts": 0,
+       "max": 1,
+       "note": "-36%",
+       "req": true
+      },
+      {
+       "label": "RS rank 70+",
+       "pass": false,
+       "pts": 0,
+       "max": 1,
+       "note": "RS 66",
+       "req": true
+      }
+     ],
+     "score": 3,
+     "max_score": 8
+    },
+    "episodic": {
+     "verdict": "Doesn't qualify",
+     "vclass": "v-no",
+     "tag": "No recent gap",
+     "plan": "",
+     "checks": [
+      {
+       "label": "Gap up 10%+ on 3x+ volume in the last 3 days, still holding it",
+       "pass": false,
+       "pts": 0,
+       "max": 2,
+       "note": "",
+       "req": true
+      }
+     ],
+     "score": 0,
+     "max_score": 2
+    },
+    "stage2": {
+     "verdict": "Doesn't qualify",
+     "vclass": "v-no",
+     "tag": "Not in Stage 2",
+     "plan": "",
+     "checks": [
+      {
+       "label": "Above a rising 30-week MA",
+       "pass": false,
+       "pts": 0,
+       "max": 2,
+       "note": "",
+       "req": true
+      },
+      {
+       "label": "10-week MA above 30-week MA",
+       "pass": false,
+       "pts": 0,
+       "max": 1,
+       "note": "",
+       "req": true
+      }
+     ],
+     "score": 0,
+     "max_score": 3
+    },
+    "luk": {
+     "verdict": "Doesn't qualify",
+     "vclass": "v-no",
+     "tag": "Not set up",
+     "plan": "Stop at the bounce-day low 0.15 (max 5% risk). Sell on a daily close below the 9-day EMA (0.16).",
+     "checks": [
+      {
+       "label": "Big mover: up 30%+ in 1 or 3 months",
+       "pass": true,
+       "pts": 2,
+       "max": 2,
+       "note": "+46%",
+       "req": true
+      },
+      {
+       "label": "Volatile enough (avg daily range 5%+)",
+       "pass": true,
+       "pts": 1,
+       "max": 1,
+       "note": "17.0%",
+       "req": true
+      },
+      {
+       "label": "EMAs stacked 9 > 21 > 50",
+       "pass": true,
+       "pts": 1,
+       "max": 1,
+       "note": "",
+       "req": true
+      },
+      {
+       "label": "Above anchored VWAP from 1-year high",
+       "pass": true,
+       "pts": 1,
+       "max": 1,
+       "note": "VWAP 0.14",
+       "req": true
+      },
+      {
+       "label": "Pulled back to 9-day EMA and bounced",
+       "pass": false,
+       "pts": 0,
+       "max": 2,
+       "note": "",
+       "req": true
+      },
+      {
+       "label": "Still above the 9-day EMA",
+       "pass": false,
+       "pts": 0,
+       "max": 1,
+       "note": "",
+       "req": true
+      },
+      {
+       "label": "Market OK (index 9-day EMA above 21-day)",
+       "pass": false,
+       "pts": 0,
+       "max": 1,
+       "note": "",
+       "req": true
+      },
+      {
+       "label": "Very fast mover (up 50%+)",
+       "pass": false,
+       "pts": 0,
+       "max": 1,
+       "note": "",
+       "req": false
+      },
+      {
+       "label": "RS rank 90+",
+       "pass": false,
+       "pts": 0,
+       "max": 1,
+       "note": "RS 66",
+       "req": false
+      }
+     ],
+     "score": 5,
+     "max_score": 11
+    },
+    "kell": {
+     "verdict": "Doesn't qualify",
+     "vclass": "v-no",
+     "tag": "No ema crossback yet",
+     "plan": "Stop under the ema crossback low 0.14. Sell on a daily close below the 20-day EMA (0.15).",
+     "checks": [
+      {
+       "label": "Uptrend: 10 EMA > 20 EMA > 50-day, 50-day rising",
+       "pass": true,
+       "pts": 1,
+       "max": 1,
+       "note": "",
+       "req": true
+      },
+      {
+       "label": "Had run 8%+ above the 20-day EMA, then pulled back",
+       "pass": true,
+       "pts": 1,
+       "max": 1,
+       "note": "",
+       "req": true
+      },
+      {
+       "label": "Dipped to the 20-day EMA",
+       "pass": true,
+       "pts": 1,
+       "max": 1,
+       "note": "",
+       "req": true
+      },
+      {
+       "label": "Bounced: closed above the 10-day EMA and the prior day's high",
+       "pass": false,
+       "pts": 0,
+       "max": 1,
+       "note": "",
+       "req": true
+      },
+      {
+       "label": "Not stretched (within 5% of the 20-day EMA)",
+       "pass": true,
+       "pts": 1,
+       "max": 1,
+       "note": "",
+       "req": true
+      },
+      {
+       "label": "Market leader (RS rank 80+)",
+       "pass": false,
+       "pts": 0,
+       "max": 1,
+       "note": "RS 66",
+       "req": true
+      },
+      {
+       "label": "Above the 200-day MA",
+       "pass": true,
+       "pts": 1,
+       "max": 1,
+       "note": "",
+       "req": false
+      }
+     ],
+     "score": 5,
+     "max_score": 7
+    },
+    "slater": {
+     "verdict": "Doesn't qualify",
+     "vclass": "v-no",
+     "tag": "Doesn't fit",
+     "plan": "A growth-at-a-low-price holding. Review if forecasts are cut, the PEG rises above 1, or it underperforms the market.",
+     "checks": [
+      {
+       "label": "Forecast EPS growth over 15%",
+       "pass": false,
+       "pts": 0,
+       "max": 2,
+       "note": "no forecast",
+       "req": true
+      },
+      {
+       "label": "PEG under 0.75",
+       "pass": false,
+       "pts": 0,
+       "max": 2,
+       "note": "n/a",
+       "req": true
+      },
+      {
+       "label": "Forward P/E under 20",
+       "pass": false,
+       "pts": 0,
+       "max": 1,
+       "note": "no data",
+       "req": true
+      },
+      {
+       "label": "Return on capital over 12%",
+       "pass": false,
+       "pts": 0,
+       "max": 1,
+       "note": "-21%",
+       "req": true
+      },
+      {
+       "label": "Beating the market over 1 year",
+       "pass": false,
+       "pts": 0,
+       "max": 1,
+       "note": "-23 pts",
+       "req": true
+      },
+      {
+       "label": "Small company (20m to 1bn)",
+       "pass": false,
+       "pts": 0,
+       "max": 1,
+       "note": "16m",
+       "req": true
+      },
+      {
+       "label": "Price above its 50-day MA (momentum check)",
+       "pass": true,
+       "pts": 1,
+       "max": 1,
+       "note": "",
+       "req": true
+      }
+     ],
+     "score": 1,
+     "max_score": 9
+    },
+    "piotroski": {
+     "verdict": "Doesn't qualify",
+     "vclass": "v-no",
+     "tag": "Doesn't fit",
+     "plan": "Piotroski held for a year and rebalanced. Review when new annual figures drop the score.",
+     "checks": [
+      {
+       "label": "F-Score 8 or 9 (strong, improving finances)",
+       "pass": false,
+       "pts": 0,
+       "max": 3,
+       "note": "F-Score 4/9",
+       "req": true
+      },
+      {
+       "label": "Cheap: lowest 20% price-to-book in its market",
+       "pass": false,
+       "pts": 0,
+       "max": 2,
+       "note": "P/B 1.47 (cut-off 0.84)",
+       "req": true
+      },
+      {
+       "label": "Low bankruptcy risk (Altman Z over 1.8)",
+       "pass": true,
+       "pts": 1,
+       "max": 1,
+       "note": "Z 6.2",
+       "req": false
+      },
+      {
+       "label": "Price above its 50-day MA (momentum check)",
+       "pass": true,
+       "pts": 1,
+       "max": 1,
+       "note": "",
+       "req": true
+      }
+     ],
+     "score": 2,
+     "max_score": 7
+    },
+    "magic": {
+     "verdict": "Doesn't qualify",
+     "vclass": "v-no",
+     "tag": "Doesn't fit",
+     "plan": "Greenblatt held each pick for a year, then re-ranked. Expect long spells of lagging the market.",
+     "checks": [
+      {
+       "label": "Top 30 on Magic Formula rank",
+       "pass": false,
+       "pts": 0,
+       "max": 3,
+       "note": "not ranked (financial, utility, loss-making or no data)",
+       "req": true
+      },
+      {
+       "label": "High earnings yield (EBIT / EV)",
+       "pass": false,
+       "pts": 0,
+       "max": 1,
+       "note": "no data",
+       "req": false
+      },
+      {
+       "label": "High return on capital",
+       "pass": false,
+       "pts": 0,
+       "max": 1,
+       "note": "-28%",
+       "req": false
+      },
+      {
+       "label": "Price above its 50-day MA (momentum check)",
+       "pass": true,
+       "pts": 1,
+       "max": 1,
+       "note": "",
+       "req": true
+      }
+     ],
+     "score": 1,
      "max_score": 6
     }
    },
