@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-25T15:11:48+00:00",
+ "generated": "2026-10-25T15:12:13+00:00",
  "items": [
   {
    "key": "AXL:uk",
@@ -846,6 +846,14 @@
     "bench": "^FTAI",
     "change_4w": -5.0
    },
+   "added": "2026-10-25"
+  },
+  {
+   "key": "ECO:uk",
+   "ticker": "ECO",
+   "market": "uk",
+   "updated": "2026-10-25",
+   "error": "Found ECO, but couldn't get its price history.",
    "added": "2026-10-25"
   }
  ]
