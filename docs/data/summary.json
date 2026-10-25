@@ -1,36 +1,83 @@
 {
  "stine": {
-  "picks": 1
+  "picks": 1,
+  "so_far": {
+   "n": 1,
+   "avg": 0.0,
+   "excess": 0.0,
+   "beat": 0.0,
+   "rule_avg": 0.0,
+   "rule_excess": 0.0
+  }
  },
  "weinstein": {
   "picks": 12,
   "so_far": {
-   "n": 5,
-   "avg": -0.014253456380264207,
-   "excess": 0.009189243584778128,
-   "beat": 0.6,
-   "rule_avg": -0.014253456380264207,
-   "rule_excess": 0.009189243584778128
+   "n": 12,
+   "avg": -0.005938940158443419,
+   "excess": 0.0038288514936575535,
+   "beat": 0.25,
+   "rule_avg": -0.005938940158443419,
+   "rule_excess": 0.0038288514936575535
   }
  },
  "minervini": {
   "picks": 17,
   "so_far": {
-   "n": 6,
-   "avg": 0.011292321991196489,
-   "excess": 0.009606561846656536,
-   "beat": 0.5,
-   "rule_avg": 0.011292321991196489,
-   "rule_excess": 0.009606561846656536
+   "n": 17,
+   "avg": 0.0039855254086575845,
+   "excess": 0.0033905512399964245,
+   "beat": 0.17647058823529413,
+   "rule_avg": 0.0039855254086575845,
+   "rule_excess": 0.0033905512399964245
   }
  },
  "episodic": {
-  "picks": 6
+  "picks": 6,
+  "so_far": {
+   "n": 6,
+   "avg": 0.0,
+   "excess": 0.0,
+   "beat": 0.0,
+   "rule_avg": 0.0,
+   "rule_excess": 0.0
+  }
+ },
+ "luk": {
+  "picks": 0
+ },
+ "kell": {
+  "picks": 5
+ },
+ "slater": {
+  "picks": 7
+ },
+ "piotroski": {
+  "picks": 2
+ },
+ "magic": {
+  "picks": 23
  },
  "stage2": {
-  "picks": 30
+  "picks": 31,
+  "so_far": {
+   "n": 30,
+   "avg": 0.0,
+   "excess": 0.0,
+   "beat": 0.0,
+   "rule_avg": 0.0,
+   "rule_excess": 0.0
+  }
  },
  "consensus": {
-  "picks": 1
+  "picks": 4,
+  "so_far": {
+   "n": 1,
+   "avg": 0.0,
+   "excess": 0.0,
+   "beat": 0.0,
+   "rule_avg": 0.0,
+   "rule_excess": 0.0
+  }
  }
 }
