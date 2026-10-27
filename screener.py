@@ -2203,9 +2203,35 @@ def _news_time(x):
         return None
 
 
-def live_news(market, ticker, ysym, since):
-    """Recent headlines: RNS via Investegate for UK stocks, Yahoo Finance for all."""
+def _rss_items(url, since, source_default):
+    """Headlines from an RSS feed (Yahoo Finance or Google News)."""
     import requests
+    import xml.etree.ElementTree as ET
+    from email.utils import parsedate_to_datetime
+
+    out = []
+    r = requests.get(url, headers={"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"}, timeout=20)
+    if r.status_code != 200:
+        print(f"    rss {r.status_code}: {url[:80]}")
+        return out
+    for it in ET.fromstring(r.content).iter("item"):
+        title = (it.findtext("title") or "").strip()
+        try:
+            when = parsedate_to_datetime(it.findtext("pubDate") or "")
+        except Exception:
+            when = None
+        if not title or not when or when < since:
+            continue
+        src = it.find("source")
+        out.append({"title": title, "date": when.date().isoformat(), "url": (it.findtext("link") or "").strip(),
+                    "source": (src.text if src is not None and src.text else source_default)})
+    return out
+
+
+def live_news(market, ticker, ysym, since, name=""):
+    """Recent headlines: RNS (UK), then Yahoo Finance RSS, Google News RSS and Yahoo's news API."""
+    import requests
+    from urllib.parse import quote
 
     items = []
     if market == "uk":
@@ -2222,6 +2248,26 @@ def live_news(market, ticker, ysym, since):
                         items.append({"title": title, "date": d.isoformat(), "url": url, "source": "RNS"})
         except Exception as e:
             print(f"  news {ticker}: {e}")
+    def add(new):
+        for n in new:
+            if not any(n["title"].lower() == i["title"].lower() for i in items):
+                items.append(n)
+
+    try:
+        add(_rss_items(f"https://feeds.finance.yahoo.com/rss/2.0/headline?s={quote(ysym)}&region=US&lang=en-US",
+                       since, "Yahoo Finance"))
+    except Exception as e:
+        print(f"  yahoo rss {ysym}: {e}")
+    if len(items) < 2 and name:
+        try:
+            clean = re.sub(r"\b(plc|inc|corp|corporation|ltd|limited|holdings|group|co|class [a-z])\b\.?", "",
+                           name, flags=re.I).strip(" ,.")
+            q = quote(f'"{clean}" when:{OPEN_NEWS_DAYS + 2}d')
+            gl = {"uk": "GB", "canada": "CA"}.get(market, "US")
+            add(_rss_items(f"https://news.google.com/rss/search?q={q}&hl=en-{gl}&gl={gl}&ceid={gl}:en", since,
+                           "Google News"))
+        except Exception as e:
+            print(f"  google news {ticker}: {e}")
     try:
         import yfinance as yf
         for n in (yf.Ticker(ysym).news or [])[:15]:
@@ -2260,9 +2306,10 @@ def opening_scan(market, fetch_open, fetch_news, now_utc, context=None):
             continue
         close, op, hi, lo = (num(rec.get(k)) for k in ("close", "open", "high", "low"))
         s20, s50, s200 = (num(rec.get(k)) for k in ("SMA20", "SMA50", "SMA200"))
-        trend = bool(close and s20 and s50 and close > s20 > s50 and (s200 is None or s50 > s200))
+        trend = bool(close and s20 and s50 and close > s20 > s50)
         if not trend:
             continue
+        longterm = s200 is None or s50 > s200          # shown as a flag, not required: catches turnarounds
         rng = (hi - lo) if hi and lo else 0
         holding = bool(close and op and close >= op and (rng <= 0 or (close - lo) / rng >= 0.5))
         chg = (num(rec.get("change")) or 0) / 100
@@ -2274,10 +2321,11 @@ def opening_scan(market, fetch_open, fetch_news, now_utc, context=None):
                 "value": num(rec["value"]), "mcap": num(rec.get("market_cap_basic")),
                 "sector": str(rec.get("sector") or ""), "holding": holding,
                 "extended": chg > OPEN_EXTENDED, "near_high": bool(hi52 and close and close >= 0.95 * hi52),
+                "longterm_down": not longterm,
                 "chart_url": f"https://www.tradingview.com/chart/?symbol={str(rec['exchange']).upper()}:{rec['ticker']}&interval=D",
                 "lists": context.get("lists", {}).get(rec["ticker"], []),
                 "owned": rec["ticker"] in context.get("owned", set())}
-        news = fetch_news(market, rec["ticker"], rec["ysym"], since)
+        news = fetch_news(market, rec["ticker"], rec["ysym"], since, str(rec.get("description") or ""))
         item["news"] = news
         tones = {n["tone"] for n in news}
         if "neg" in tones:
@@ -2304,11 +2352,12 @@ def opening_alerts(op, markets):
         if not picks:
             push(f"{MARKETS[m]['label']} opening check: nothing qualifies",
                  f"No stock has traded a full day's volume in the first 15 minutes while trending up with positive news. "
-                 f"{len(data['quiet'])} had the volume and trend but no clear good news.", 1, "zzz")
+                 f"{len(data['quiet'])} had the volume and trend but no clear good news.", 2, "zzz")
             continue
         lines = []
         for x in picks:
             flags = [f for f, on in (("holding gains", x["holding"]), ("near 52-wk high", x["near_high"]),
+                                     ("long-term trend still down", x.get("longterm_down")),
                                      ("up a lot already", x["extended"]), ("you own it", x["owned"])) if on]
             lst = f" On {', '.join(x['lists'])} list." if x["lists"] else ""
             top = next((n for n in x["news"] if n["tone"] == "pos"), None)
@@ -2322,7 +2371,7 @@ def opening_alerts(op, markets):
 def opening_html(op):
     intro = ('<p class="blurb">Checked about 30 minutes after each open (the free data runs about 15 minutes behind, '
              'so it shows the first 15 minutes of trading). Listed: stocks that have <b>already traded more than a '
-             'normal full day\'s volume</b>, are <b>trending up</b> (above rising 20 and 50-day averages) and are up today, '
+             'normal full day\'s volume</b>, are <b>trending up</b> (price above the 20-day average, 20-day above the 50-day) and are up today, '
              'with <b>positive-looking news in the last 3 days</b>. Placings, warnings and similar are left out. '
              'Headlines are sorted by keywords, so read them before acting.</p>')
     mk = (op or {}).get("markets") or {}
@@ -2340,6 +2389,7 @@ def opening_html(op):
             flags = "".join(f'<span class="flag {c}">{E(t)}</span>' for t, c, on in (
                 ("holding gains", "fg", x["holding"]), ("fading", "fb", not x["holding"]),
                 ("near 52-wk high", "fg", x["near_high"]), ("up 20%+ already", "fb", x["extended"]),
+                ("long-term trend still down", "fb", x.get("longterm_down")),
                 ("you own it", "fn", x["owned"])) if on)
             flags += "".join(f'<span class="flag fn">{E(l)}</span>' for l in x["lists"])
             news = "".join(f'<li class="{n["tone"]}"><a href="{E(n["url"])}" target="_blank" rel="noopener">{E(n["title"])}</a>'

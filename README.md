@@ -56,7 +56,7 @@ For UK stocks that reach a buy point under the rules above, the scan reads their
 About 30 minutes after each market opens (08:30 UK; 10:00 New York for US and Canada), the bot looks for stocks that:
 
 - have **already traded more than a normal full day's volume** (their 10-day average). The free data is about 15 minutes behind, so this covers the first 15 minutes of trading;
-- are **trending up**: price above the 20-day MA, 20-day above the 50-day, and 50-day above the 200-day, and up today;
+- are **trending up**: price above the 20-day MA and the 20-day above the 50-day, and up today. If the 50-day is still below the 200-day, the stock is flagged "long-term trend still down" but not excluded, so turnarounds are still caught;
 - have **positive-looking news in the last 3 days** (RNS for UK stocks, Yahoo Finance news for all three markets). Headlines are sorted by keywords, so read them yourself.
 
 Also checked at the same time:
