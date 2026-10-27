@@ -2119,6 +2119,248 @@ def run_holdings(holdings, fetch_prices, today):
 
 
 # ---------------------------------------------------------------------------
+# Opening surge: heavy volume in the first 15 minutes + uptrend + good news
+# ---------------------------------------------------------------------------
+
+OPEN_TIMES = {"uk": ("Europe/London", 8, 0), "america": ("America/New_York", 9, 30),
+              "canada": ("America/New_York", 9, 30)}
+OPEN_VOL_MULT = 1.0            # volume so far must already match a full normal day (10-day average)
+OPEN_NEWS_DAYS = 3             # news must be from the last 3 days
+OPEN_MIN_VALUE = {"america": 250_000, "canada": 50_000, "uk": 25_000}   # traded value so far, local currency
+OPEN_EXTENDED = 0.20           # up more than 20% today = chasing risk
+OPEN_ALERT_MAX = 8
+
+POS_NEWS = re.compile(
+    r"ahead of (market |board )?expectations|upgrad|raise[sd]? (guidance|outlook)|record|contract|order|award|"
+    r"approv|FDA|positive|success|discover|intercept|high[- ]grade|resource (upgrade|increase|update)|offtake|"
+    r"partnership|strategic (investment|alliance)|agreement|recommended (cash )?offer|offer for|takeover|acquir|"
+    r"beat|exceed|strong|profit|growth|licen[cs]|permit|first (oil|gas|gold|production|revenue)|flow test|"
+    r"commercial|milestone|director.{0,25}(purchase|buy|dealing)|insider (purchase|buy)|buyback|dividend increase|"
+    r"breakthrough|patent|launch|win|wins|won|selected|expan", re.I)
+NEG_NEWS = re.compile(
+    r"placing|fundrais|fund rais|subscription|share issue|offering|priced|dilut|warning|below (market )?expectations|"
+    r"delay|suspen|default|going concern|downgrad|loss widen|miss|resign|investigat|lawsuit|recall|halt|"
+    r"impairment|withdraw|terminat|cancel|restat|delist|reverse split|convertible|at-the-market|ATM program", re.I)
+
+
+def classify_headline(t):
+    if NEG_NEWS.search(t or ""):
+        return "neg"
+    if POS_NEWS.search(t or ""):
+        return "pos"
+    return "neutral"
+
+
+def minutes_since_open(market, now_utc=None):
+    from zoneinfo import ZoneInfo
+    tz, hh, mm = OPEN_TIMES[market]
+    now = (now_utc or dt.datetime.now(dt.timezone.utc)).astimezone(ZoneInfo(tz))
+    if now.weekday() >= 5:
+        return None, now
+    return (now - now.replace(hour=hh, minute=mm, second=0, microsecond=0)).total_seconds() / 60, now
+
+
+OPEN_FIELDS = ["name", "description", "exchange", "close", "open", "high", "low", "change", "volume",
+               "average_volume_10d_calc", "SMA20", "SMA50", "SMA200", "price_52_week_high", "market_cap_basic",
+               "currency", "type", "typespecs", "sector", "industry", "Perf.1M", "Perf.3M", "float_shares_outstanding",
+               "relative_volume_intraday|5"]
+
+
+def live_opening_tv(market):
+    from tradingview_screener import Query, col
+
+    cfg = MARKETS[market]
+    cols = list(OPEN_FIELDS)
+    for _ in range(4):
+        try:
+            q = (Query().set_markets(market).select(*cols)
+                 .where(col("type") == "stock", col("market_cap_basic").between(*cfg["mcap"]),
+                        col("volume") >= col("average_volume_10d_calc"), col("change") > 0,
+                        col("close") > col("SMA50"))
+                 .order_by("change", ascending=False).limit(400))
+            total, df = q.get_scanner_data()
+            for c in OPEN_FIELDS:
+                if c not in df.columns:
+                    df[c] = np.nan
+            print(f"  [{market}] opening screen: {len(df)} of {total}")
+            return df
+        except Exception as e:
+            bad = [b for b in re.findall(r'[Uu]nknown field "?([\w.|]+)"?', str(e)) if b in cols]
+            if not bad and "relative_volume_intraday|5" in cols:
+                bad = ["relative_volume_intraday|5"]
+            if not bad:
+                raise
+            cols = [c for c in cols if c not in bad]
+    raise RuntimeError("opening screen failed")
+
+
+def _news_time(x):
+    try:
+        if isinstance(x, (int, float)):
+            return dt.datetime.fromtimestamp(x, dt.timezone.utc)
+        return dt.datetime.fromisoformat(str(x).replace("Z", "+00:00"))
+    except Exception:
+        return None
+
+
+def live_news(market, ticker, ysym, since):
+    """Recent headlines: RNS via Investegate for UK stocks, Yahoo Finance for all."""
+    import requests
+
+    items = []
+    if market == "uk":
+        try:
+            sym = str(ticker).rstrip(".").replace(".", "")
+            r = requests.get(f"{INVESTEGATE}/company/{sym}", headers=UA, timeout=20)
+            if r.status_code == 200:
+                for m in re.finditer(r'(\d{1,2}\s+(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\s+\d{4})'
+                                     r'.{0,600}?<a[^>]+href="([^"]*/announcement/[^"]+)"[^>]*>(.*?)</a>', r.text, re.S):
+                    d = _parse_date(m.group(1))
+                    title = html.unescape(re.sub(r"<[^>]+>", " ", m.group(3))).strip()
+                    if d and d >= since.date() and title:
+                        url = m.group(2) if m.group(2).startswith("http") else INVESTEGATE + m.group(2)
+                        items.append({"title": title, "date": d.isoformat(), "url": url, "source": "RNS"})
+        except Exception as e:
+            print(f"  news {ticker}: {e}")
+    try:
+        import yfinance as yf
+        for n in (yf.Ticker(ysym).news or [])[:15]:
+            c = n.get("content") or n
+            when = _news_time(c.get("pubDate") or c.get("providerPublishTime") or n.get("providerPublishTime"))
+            title = c.get("title") or ""
+            url = ((c.get("canonicalUrl") or {}).get("url") or (c.get("clickThroughUrl") or {}).get("url")
+                   or c.get("link") or "")
+            if when and when >= since and title and not any(title == i["title"] for i in items):
+                items.append({"title": title, "date": when.date().isoformat(), "url": url,
+                              "source": (c.get("provider") or {}).get("displayName") or c.get("publisher") or "Yahoo"})
+    except Exception as e:
+        print(f"  yahoo news {ysym}: {e}")
+    for i in items:
+        i["tone"] = classify_headline(i["title"])
+    return items[:8]
+
+
+def opening_scan(market, fetch_open, fetch_news, now_utc, context=None):
+    """Stocks that have traded a full normal day's volume already, are trending up, and have good news."""
+    cfg = MARKETS[market]
+    df = fetch_open(market)
+    df = df[df["exchange"].astype(str).str.upper().isin(cfg["exchanges"])]
+    df = df[~df.apply(is_excluded, axis=1)]
+    pence = df["currency"].astype(str).str.upper().eq("GBX")
+    df = df.assign(value=df["volume"] * df["close"] / np.where(pence, 100.0, 1.0),
+                   ticker=df["name"].astype(str),
+                   ysym=[yahoo_symbol(e, n) for e, n in zip(df["exchange"], df["name"])])
+    df = df[(df["value"] >= OPEN_MIN_VALUE[market]) & (df["close"] >= cfg["universe_price_min"])]
+    since = now_utc - dt.timedelta(days=OPEN_NEWS_DAYS + (2 if now_utc.weekday() <= 1 else 0))
+    context = context or {}
+    picks, quiet = [], []
+    for rec in df.to_dict("records"):
+        vx = num(rec["volume"]) / max(num(rec["average_volume_10d_calc"]) or 1, 1)
+        if vx < OPEN_VOL_MULT:
+            continue
+        close, op, hi, lo = (num(rec.get(k)) for k in ("close", "open", "high", "low"))
+        s20, s50, s200 = (num(rec.get(k)) for k in ("SMA20", "SMA50", "SMA200"))
+        trend = bool(close and s20 and s50 and close > s20 > s50 and (s200 is None or s50 > s200))
+        if not trend:
+            continue
+        rng = (hi - lo) if hi and lo else 0
+        holding = bool(close and op and close >= op and (rng <= 0 or (close - lo) / rng >= 0.5))
+        chg = (num(rec.get("change")) or 0) / 100
+        hi52 = num(rec.get("price_52_week_high"))
+        item = {"ticker": rec["ticker"], "name": str(rec.get("description") or rec["ticker"]),
+                "exchange": str(rec["exchange"]).upper(), "ysym": rec["ysym"], "market": market,
+                "price": close, "currency": str(rec.get("currency") or ""), "change": chg, "vol_x": round(vx, 2),
+                "rvol_time": num(rec.get("relative_volume_intraday|5")),
+                "value": num(rec["value"]), "mcap": num(rec.get("market_cap_basic")),
+                "sector": str(rec.get("sector") or ""), "holding": holding,
+                "extended": chg > OPEN_EXTENDED, "near_high": bool(hi52 and close and close >= 0.95 * hi52),
+                "chart_url": f"https://www.tradingview.com/chart/?symbol={str(rec['exchange']).upper()}:{rec['ticker']}&interval=D",
+                "lists": context.get("lists", {}).get(rec["ticker"], []),
+                "owned": rec["ticker"] in context.get("owned", set())}
+        news = fetch_news(market, rec["ticker"], rec["ysym"], since)
+        item["news"] = news
+        tones = {n["tone"] for n in news}
+        if "neg" in tones:
+            continue                          # placings, warnings and the like: volume for the wrong reason
+        if "pos" in tones:
+            item["score"] = round(vx + (1 if holding else 0) + (1 if item["near_high"] else 0)
+                                  + 0.5 * sum(n["tone"] == "pos" for n in news) - (1 if item["extended"] else 0), 2)
+            picks.append(item)
+        else:
+            quiet.append(item)
+        if len(picks) >= 25:
+            break
+    picks.sort(key=lambda x: x["score"], reverse=True)
+    quiet.sort(key=lambda x: x["vol_x"], reverse=True)
+    return picks[:15], quiet[:10]
+
+
+def opening_alerts(op, markets):
+    for m in markets:
+        data = (op.get("markets") or {}).get(m)
+        if not data:
+            continue
+        picks = data["picks"][:OPEN_ALERT_MAX]
+        if not picks:
+            push(f"{MARKETS[m]['label']} opening check: nothing qualifies",
+                 f"No stock has traded a full day's volume in the first 15 minutes while trending up with positive news. "
+                 f"{len(data['quiet'])} had the volume and trend but no clear good news.", 1, "zzz")
+            continue
+        lines = []
+        for x in picks:
+            flags = [f for f, on in (("holding gains", x["holding"]), ("near 52-wk high", x["near_high"]),
+                                     ("up a lot already", x["extended"]), ("you own it", x["owned"])) if on]
+            lst = f" On {', '.join(x['lists'])} list." if x["lists"] else ""
+            top = next((n for n in x["news"] if n["tone"] == "pos"), None)
+            lines.append(f"{x['ticker']} {pct(x['change'])}, {x['vol_x']:.1f}x a normal day's volume"
+                         f"{' (' + ', '.join(flags) + ')' if flags else ''}.{lst}"
+                         f"{' News: ' + top['title'][:90] if top else ''}")
+        push(f"{MARKETS[m]['label']} opening surge: {', '.join(x['ticker'] for x in picks[:5])}",
+             "\n\n".join(lines), 4, "chart_with_upwards_trend")
+
+
+def opening_html(op):
+    intro = ('<p class="blurb">Checked about 30 minutes after each open (the free data runs about 15 minutes behind, '
+             'so it shows the first 15 minutes of trading). Listed: stocks that have <b>already traded more than a '
+             'normal full day\'s volume</b>, are <b>trending up</b> (above rising 20 and 50-day averages) and are up today, '
+             'with <b>positive-looking news in the last 3 days</b>. Placings, warnings and similar are left out. '
+             'Headlines are sorted by keywords, so read them before acting.</p>')
+    mk = (op or {}).get("markets") or {}
+    if not mk:
+        return intro + '<p class="empty">No opening check has run yet.</p>'
+    parts = [intro]
+    for m in MARKETS:
+        data = mk.get(m)
+        if not data:
+            continue
+        parts.append(f'<div class="mk">{E(MARKETS[m]["label"])} · {E(data["time"])}</div>')
+        if not data["picks"]:
+            parts.append('<p class="empty">Nothing qualified.</p>')
+        for x in data["picks"]:
+            flags = "".join(f'<span class="flag {c}">{E(t)}</span>' for t, c, on in (
+                ("holding gains", "fg", x["holding"]), ("fading", "fb", not x["holding"]),
+                ("near 52-wk high", "fg", x["near_high"]), ("up 20%+ already", "fb", x["extended"]),
+                ("you own it", "fn", x["owned"])) if on)
+            flags += "".join(f'<span class="flag fn">{E(l)}</span>' for l in x["lists"])
+            news = "".join(f'<li class="{n["tone"]}"><a href="{E(n["url"])}" target="_blank" rel="noopener">{E(n["title"])}</a>'
+                           f' <small>{E(n["source"])} · {E(n["date"])}</small></li>' for n in x["news"])
+            rv = f' · {x["rvol_time"]:.1f}x usual for this time' if x.get("rvol_time") else ""
+            parts.append(f'<div class="opc"><div class="ophead"><div><b>{E(x["ticker"])}</b> <span class="ex">{E(x["exchange"])}</span>'
+                         f'<div class="nm">{E(x["name"])}</div></div><div class="px">{fmt_price(x["price"], x["currency"], x["exchange"])}'
+                         f'<div class="pos">{pct(x["change"])}</div></div></div>'
+                         f'<div class="meta">{x["vol_x"]:.1f}x a normal day\'s volume already{rv} · mkt cap {fmt_cap(x["mcap"])} · {E(x["sector"])}</div>'
+                         f'<div class="flags">{flags}</div><ul class="news">{news}</ul>'
+                         f'<div class="links"><a href="{E(x["chart_url"])}" target="_blank" rel="noopener">Chart ↗</a></div></div>')
+        if data["quiet"]:
+            parts.append('<details class="sub"><summary>Volume and trend, but no clear good news ('
+                         f'{len(data["quiet"])})</summary>' + "".join(
+                f'<div class="meta">{E(x["ticker"])} {pct(x["change"])}, {x["vol_x"]:.1f}x volume'
+                f'{" · " + E(x["news"][0]["title"][:80]) if x["news"] else " · no headlines found"}</div>' for x in data["quiet"])
+                + "</details>")
+    return "".join(parts)
+
+
+# ---------------------------------------------------------------------------
 # Pre-close check: about an hour before each market closes, hold or sell?
 # ---------------------------------------------------------------------------
 
@@ -2736,6 +2978,11 @@ footer{margin-top:20px;color:var(--mute);font-size:12px}
 .hold{background:var(--card);border:1px solid var(--line);border-left:5px solid var(--line);border-radius:12px;padding:12px;margin-bottom:8px}
 .hhead{display:flex;justify-content:space-between;align-items:center;gap:8px}.hst{font-size:12px;font-weight:700;padding:2px 8px;border-radius:99px;border:1px solid currentColor}
 .hreason{margin:8px 0;font-size:14px}.hrow{display:flex;justify-content:space-between;gap:10px;font-size:13px;padding:4px 0;border-top:1px dashed var(--line)}.hrow span{color:var(--mute)}
+.opc{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px;margin:8px 0}
+.ophead{display:flex;justify-content:space-between;gap:10px}.flags{margin:6px 0}.flag{display:inline-block;font-size:11px;font-weight:600;border-radius:99px;padding:2px 8px;margin:2px 4px 2px 0;border:1px solid currentColor}
+.flag.fg{color:var(--good)}.flag.fb{color:var(--bad)}.flag.fn{color:var(--acc)}
+.news{list-style:none;padding:0;margin:6px 0;font-size:14px}.news li{padding:4px 0;border-top:1px dashed var(--line)}.news a{color:var(--ink);text-decoration:none}
+.news li.pos a::before{content:"▲ ";color:var(--good)}.news li.neutral a::before{content:"• ";color:var(--mute)}.news small{color:var(--mute)}
 .pcl{margin:6px 0 8px;padding:8px 10px;border-radius:8px;background:var(--bg);font-size:14px}.pcl small{color:var(--mute)}.warnc{color:var(--warn)}
 .h-sell{border-left-color:var(--bad)}.h-sell .hst{color:var(--bad)}.h-warn{border-left-color:var(--warn)}.h-warn .hst{color:var(--warn)}
 .h-watch .hst{color:var(--acc)}.h-watch{border-left-color:var(--acc)}.h-ok{border-left-color:var(--good)}.h-ok .hst{color:var(--good)}.h-err .hst{color:var(--mute)}
@@ -2743,7 +2990,7 @@ footer{margin-top:20px;color:var(--mute);font-size:12px}
 """
 
 
-def render_page(results, ledger, summ, demo=False, hv=None, pol=None, ev=None):
+def render_page(results, ledger, summ, demo=False, hv=None, pol=None, ev=None, op=None):
     _PAGE.clear()
     _PAGE.update(date=results["date"], demo=demo, pol=pol_by_ticker(pol))
     tabs, secs = [], []
@@ -2784,6 +3031,12 @@ def render_page(results, ledger, summ, demo=False, hv=None, pol=None, ev=None):
         res_body += '<p class="empty">No resource stocks flagged this week.</p>'
     tabs.append(("resources", f"Resources ({rn})"))
     secs.append(("resources", res_body))
+    if op is None and not demo:
+        op = load_json(ROOT / "docs" / "data" / "opening.json", {})
+    on = sum(len(v["picks"]) for v in ((op or {}).get("markets") or {}).values()
+             if v.get("date") == dt.date.today().isoformat())
+    tabs.insert(0 if on else len(tabs), ("opening", f"Opening movers ({on})"))
+    secs.insert(0 if on else len(secs), ("opening", opening_html(op)))
     en = len((ev or {}).get("items") or [])
     tabs.append(("evaluate", f"Evaluate ({en})"))
     secs.append(("evaluate", evaluate_html(ev, demo)))
@@ -3118,6 +3371,7 @@ def main():
     ap.add_argument("--no-email", action="store_true")
     ap.add_argument("--evaluate", action="store_true", help="evaluate the stocks on your Evaluate list")
     ap.add_argument("--preclose", action="store_true", help="hold/sell check about an hour before the close")
+    ap.add_argument("--opening", action="store_true", help="volume surge check just after the open")
     ap.add_argument("--markets", default="", help="with --preclose: force these markets (uk,america,canada)")
     ap.add_argument("--add", default="", help="with --evaluate: tickers to add, e.g. 'KOO:uk, TSLA:us'")
     ap.add_argument("--remove", default="", help="with --evaluate: tickers to remove")
@@ -3149,6 +3403,43 @@ def main():
             (docs / "index.html").write_text(page, encoding="utf-8")
         return
     ev_saved = load_json(docs / "data" / "evaluations.json", None)
+    if a.opening:
+        sp = docs / "data" / "opening_state.json"
+        state = load_json(sp, {})
+        now_utc = dt.datetime.now(dt.timezone.utc)
+        forced = [m for m in re.split(r"[,\s]+", a.markets.strip().lower()) if m in MARKETS] if a.markets.strip() else []
+        due = forced or [m for m in MARKETS if (lambda ms: ms[0] is not None and 25 <= ms[0] <= 80
+                                                 and state.get(m) != ms[1].date().isoformat())(minutes_since_open(m, now_utc))]
+        if not due:
+            print("Opening check: nothing due.")
+            return
+        latest = load_json(docs / "data" / "latest.json", {}) or {}
+        context = {"owned": {h["ticker"] for h in holdings if "error" not in h}, "lists": {}}
+        for mdata in (latest.get("markets") or {}).values():
+            for k, L in (mdata.get("lists") or {}).items():
+                for x in L:
+                    context["lists"].setdefault(x["ticker"], []).append(STRATEGIES.get(k, {}).get("short", k))
+        op = load_json(docs / "data" / "opening.json", {}) or {}
+        op.setdefault("markets", {})
+        for m in due:
+            try:
+                picks, quiet = opening_scan(m, live_opening_tv, live_news, now_utc, context)
+            except Exception as e:
+                print(f"  opening {m} failed: {e}")
+                continue
+            local = minutes_since_open(m, now_utc)[1]
+            op["markets"][m] = {"date": local.date().isoformat(), "time": local.strftime("%a %d %b %H:%M"),
+                                "picks": picks, "quiet": quiet}
+            state[m] = local.date().isoformat()
+            print(f"  {m}: {len(picks)} picks, {len(quiet)} without clear news")
+        opening_alerts(op, due)
+        (docs / "data" / "opening.json").write_text(json.dumps(op, indent=1, default=jdefault), encoding="utf-8")
+        sp.write_text(json.dumps(state, indent=1), encoding="utf-8")
+        if latest.get("markets"):
+            page = render_page(latest, ledger, summarise(ledger), False, load_json(docs / "data" / "holdings.json", None),
+                               load_json(docs / "data" / "politicians.json", {}), ev_saved, op)
+            (docs / "index.html").write_text(page, encoding="utf-8")
+        return
     if a.preclose:
         sp = docs / "data" / "preclose_state.json"
         state = load_json(sp, {})

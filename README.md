@@ -51,6 +51,37 @@ The **Politicians** tab and a phone alert show purchases reported by a watch-lis
 
 For UK stocks that reach a buy point under the rules above, the scan reads their recent RNS "Director/PDMR Shareholding" announcements (via Investegate). It counts only genuine purchases, not awards, options, share-scheme or dividend-reinvestment shares, or sales. Director buys in the last 90 days are shown on the card with name, role and value, and earn Stine's insider-buying points. You get a phone alert when a ready UK pick has director buying.
 
+## Opening surge alert
+
+About 30 minutes after each market opens (08:30 UK; 10:00 New York for US and Canada), the bot looks for stocks that:
+
+- have **already traded more than a normal full day's volume** (their 10-day average). The free data is about 15 minutes behind, so this covers the first 15 minutes of trading;
+- are **trending up**: price above the 20-day MA, 20-day above the 50-day, and 50-day above the 200-day, and up today;
+- have **positive-looking news in the last 3 days** (RNS for UK stocks, Yahoo Finance news for all three markets). Headlines are sorted by keywords, so read them yourself.
+
+Also checked at the same time:
+
+- **Placings, fundraises, warnings, delays and similar** rule a stock out. Volume from those is usually bad news.
+- **Holding gains**: price above the open and in the top half of today's range, so not fading.
+- **Up 20%+ already**: flagged as chasing risk.
+- **Near a 52-week high**: flagged as a breakout.
+- **Minimum traded value so far** (UK £25k, US $250k, Canada C$50k), so one trade in a thin stock can't trigger it.
+- **Cross-checks**: whether the stock is on one of this week's method lists, and whether you own it.
+
+You get one phone alert per market and the results appear on an **Opening movers** tab. Stocks with the volume and trend but no clear good news are listed underneath for reference.
+
+**On-time alerts (recommended, free):** GitHub's own timer is often late, so let cron-job.org start the check at the exact time.
+
+1. Create a free account at https://cron-job.org.
+2. Create a GitHub fine-grained token for this repo with **Actions: Read and write** (the same kind you made for the page buttons; you can make a second one).
+3. In cron-job.org, create a cron job:
+   - **URL:** `https://api.github.com/repos/FrazKK/Super-Stock-Scanner/actions/workflows/opening.yml/dispatches`
+   - **Schedule:** Monday to Friday at 08:30, time zone Europe/London
+   - **Advanced:** request method **POST**, request body `{"ref":"main"}`, and headers `Authorization: Bearer YOUR_TOKEN`, `Accept: application/vnd.github+json`, `X-GitHub-Api-Version: 2022-11-28`
+4. Clone the job and change the schedule to 10:00, time zone America/New_York, for the US and Canada.
+
+The workflow still runs on GitHub's own timer as a backup. It only acts once per market per day, so you won't get duplicates. To test now: Actions, Opening surge check, Run workflow, and enter `uk` (or `america`).
+
 ## Pre-close check (hold or sell?)
 
 About an hour before each market closes (UK 16:30, US and Canada 16:00 New York time), the bot checks the stocks you've marked as bought in that market. It uses today's live price (delayed about 15 minutes) and sends one phone alert per market:
