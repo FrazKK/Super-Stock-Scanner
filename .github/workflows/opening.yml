@@ -1,0 +1,57 @@
+name: Opening surge check
+
+on:
+  schedule:
+    # Backup timer only. GitHub often runs these late, so for on-time alerts start this workflow
+    # from cron-job.org (see README). The script acts once per market per day, 25-80 minutes after the open.
+    - cron: "*/10 7-9 * * 1-5"     # London open 08:00
+    - cron: "*/10 13-15 * * 1-5"   # New York open 09:30 (US and Canada)
+  workflow_dispatch:
+    inputs:
+      markets:
+        description: "Force a check now for these markets (uk, america, canada). Leave blank to use the timetable."
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+
+concurrency:
+  group: scanner
+  cancel-in-progress: false
+
+jobs:
+  opening:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: main
+      - id: due
+        env:
+          MARKETS: ${{ inputs.markets }}
+        run: python opening_due.py
+      - if: steps.due.outputs.due == 'true'
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: pip
+      - if: steps.due.outputs.due == 'true'
+        run: pip install -r requirements.txt
+      - if: steps.due.outputs.due == 'true'
+        name: Opening surge check
+        env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+          SITE_URL: ${{ secrets.SITE_URL }}
+          MARKETS: ${{ inputs.markets }}
+        run: python screener.py --opening --markets "$MARKETS"
+      - if: steps.due.outputs.due == 'true'
+        name: Save
+        run: |
+          git config user.name "scanner-bot"
+          git config user.email "scanner-bot@users.noreply.github.com"
+          git add docs
+          git commit -m "Opening check $(date -u +%F)" || echo "No changes"
+          git pull --rebase -X theirs
+          git push
