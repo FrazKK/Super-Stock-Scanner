@@ -2,8 +2,90 @@
  "markets": {
   "america": {
    "date": "2026-10-27",
-   "time": "Tue 27 Oct 10:38",
-   "picks": [],
+   "time": "Tue 27 Oct 11:06",
+   "picks": [
+    {
+     "ticker": "BOW",
+     "name": "Bowhead Specialty Holdings Inc.",
+     "exchange": "NYSE",
+     "ysym": "BOW",
+     "market": "america",
+     "price": 34.305,
+     "currency": "USD",
+     "change": 0.004833040421792593,
+     "vol_x": 1.36,
+     "rvol_time": 11.562604984166322,
+     "value": 7371527.01,
+     "mcap": 1130183559.6586118,
+     "sector": "Finance",
+     "holding": true,
+     "extended": false,
+     "near_high": true,
+     "longterm_down": false,
+     "chart_url": "https://www.tradingview.com/chart/?symbol=NYSE:BOW&interval=D",
+     "lists": [],
+     "owned": false,
+     "news": [
+      {
+       "title": "The Hanover Insurance Group, Inc. (THG) Hits Fresh High: Is There Still Room to Run?",
+       "date": "2026-10-23",
+       "url": "https://finance.yahoo.com/markets/stocks/articles/hanover-insurance-group-inc-thg-121502367.html?.tsrc=rss",
+       "source": "Yahoo Finance",
+       "tone": "neutral"
+      },
+      {
+       "title": "Bowhead Specialty Holdings I (NYSE:BOW) Meets Minervini Trend Template With High Growth Momentum - ChartMill",
+       "date": "2026-10-27",
+       "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOUGtIS3ZONzcyVjV6M1N3cVdhOWhCaUZ3ZG5nOGU2bU94cjE3VGRtcWozbUdnR2kteF9MQUFfRzNTODJGTWNSZFRDVEphZlBObDRxLU1wRnY5ZkpDcm11NDFOWnVxdVpsZ01YVjlPV25vQmx0bG5KdEUtLUVKQVdqSzVGRmdzMXduTWk4elBrZ1FPVjdZZWJ2WkdUeHgwTHRFSlZEaC1kei01U3NjOVBOQ1NYY3dVZGhGdWFPWC1QZkI3bFUycjBDdWhLME1TLVY2Yk9wNUZ4bFZBNTd6?oc=5",
+       "source": "ChartMill",
+       "tone": "pos"
+      },
+      {
+       "title": "Bowhead Specialty (BOW) Projected to Announce Quarterly Earnings on Tuesday - MarketBeat",
+       "date": "2026-10-27",
+       "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNRzZQR1pXVy1qeUo2Y29nel9vVTBkbGdYdzY1cWFPTWRGMVdFMmNQVVpWNy1KVHZfN2hGOF96THdDaDBNbG5WZDk0UEw1S0Fwc2hsLWluT0dtb2pMLWU5Z2Y2MUJjSE1ZZ0k3TWpXWXdFZzQ3VkVmbEhqblJOTVh6RUxUSktUU1Y4U2xhY3I4YWlhY0hHSEVoVjVTLTJzUjgxeTJHaFFJTUtjU3lEdGNpSER0XzV6Zl9KeURTdWVFa3czR2s3VXFEZFlaOGZDY2VwLWc?oc=5",
+       "source": "MarketBeat",
+       "tone": "pos"
+      },
+      {
+       "title": "Bowhead Specialty Holdings Inc. Estimates \u2013 NYSE:BOW - TradingView",
+       "date": "2026-10-25",
+       "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1kdkZqWTQzNU1XM05Cd1ZrQ1BVQnNPaXBnZGw5VG1wMEp3TGItNkx5eWVCMGMzWW9uNjBocG5lVXJmeGJnYkZHelA3WEE5RXFOQUU3OFRqclh4dDdKWFRnaWJTdkhwY21LZ3gycnVPSkJpWGxs?oc=5",
+       "source": "TradingView",
+       "tone": "neutral"
+      },
+      {
+       "title": "Analysts Offer Insights on Financial Companies: American Express (AXP) and Willis Towers Watson (WTW) - The Globe and Mail",
+       "date": "2026-10-27",
+       "url": "https://news.google.com/rss/articles/CBMijwJBVV95cUxNRXpXdDJSSW1TVkVSQWJ1blpIU0l3TnVHQ1UtSk5DbzJsTFVuWjRHY01GUnNfZ2Vob3hIcEhDWW1qQVBaNU1halc3RzlGNEk2dnlrWlQ0NWxBRjZFbHBIR3IyV2JJbldyeklLSGFyVERYWmczSXlzaUVlWDJuYlFHQnJlOHp4OHpKUFVscmwwSXFPWDZTSWNhdHRKdF9yZDRCRWlDZmJ2ekRsRWtkM2NsbEJPeUJPaEhjdmJPUjRuY2pDbVM3NlJ4cFo1aDUwVnVjMnVadUdiQzE0ZzA2ZVVVaWhCVnJKNVQxYko2eEIxRVZvRzFLaXNpb203cEstRk9YR0VJMFJteEJsXzdnaVBV?oc=5",
+       "source": "The Globe and Mail",
+       "tone": "neutral"
+      },
+      {
+       "title": "Guidewire to Buy London's hyperexponential for $1.7 Billion, Betting on AI Underwriting - BigGo Finance",
+       "date": "2026-10-27",
+       "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE4zOUtFMFBqQzFfX3ZuWFlCX0hUaDhMaWVKV21tZkxfVXRITE5hdnUyQjFaWXd6S3BJZVY0dTRqQXZTUHZVQjI1a1VKVXd0ZXhMU1plSklnNXdxOGtzRXcyYkRlRnN0d0JZS1VkLUZpWmJjSm5yOHc?oc=5",
+       "source": "BigGo Finance",
+       "tone": "neutral"
+      },
+      {
+       "title": "The Hanover Insurance Group, Inc. (THG) Hits Fresh High: Is There Still Room to Run? - Yahoo Finance",
+       "date": "2026-10-23",
+       "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPeTh3VHRYSThMbklfRWpDZUM2SXg3YXhUWUlQeURvU1RVbGtrTWFKbU0zeEplNDh3RjhDUnQydW41WDkxMVpJNFN4cHY2SjJTOWwyTWVSSjVkS3BUSXNhSllCMzdZWXR2TFdmb19aVmRiQ21Jal9acFVUZnJsam82TjJqaXkzRlBPcnB4Q1FndTZmSWhXZTFoZjZVWmg?oc=5",
+       "source": "Yahoo Finance",
+       "tone": "neutral"
+      },
+      {
+       "title": "(BOW) as a Liquidity Pulse for Institutional Tactics - Stock Traders Daily",
+       "date": "2026-10-26",
+       "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQMHJ3akxxSGZ3WDd1OUgzeHpWSFhEUlZCd3VNN0VZRGl0bl9TLTJLV0owcHJXQ2F2VUh3bkZZRGlMU1lnbXJxMUVRWlJieGwzVy1TUHAwYTVlbXJQOVFkaGZlRjJBcjNDb29ReDAtQUlQem05ZENzY1hldUljZlM5RWJyT3hzRHctWFpiNUhzWmRCSXc1WlZISFRBMG5LZmhUd2J4c3ZuenBvSmE3WXg3bmQ3ek1OS1M0NWVKQW5Qd3I1OUhJd3gxcEJB?oc=5",
+       "source": "Stock Traders Daily",
+       "tone": "neutral"
+      }
+     ],
+     "score": 4.36
+    }
+   ],
    "quiet": [
     {
      "ticker": "EFOI",
@@ -11,43 +93,79 @@
      "exchange": "NASDAQ",
      "ysym": "EFOI",
      "market": "america",
-     "price": 4.41,
+     "price": 4.24,
      "currency": "USD",
-     "change": 0.1697612732095491,
-     "vol_x": 1.88,
-     "rvol_time": 14.533485629961298,
-     "value": 498775.41000000003,
-     "mcap": 28088269.090185676,
+     "change": 0.12466843501326265,
+     "vol_x": 2.04,
+     "rvol_time": 13.16003900199213,
+     "value": 529707.4400000001,
+     "mcap": 27005501.347480107,
      "sector": "Producer Manufacturing",
      "holding": true,
      "extended": false,
      "near_high": false,
+     "longterm_down": false,
      "chart_url": "https://www.tradingview.com/chart/?symbol=NASDAQ:EFOI&interval=D",
      "lists": [],
      "owned": false,
-     "news": []
-    },
-    {
-     "ticker": "BOW",
-     "name": "Bowhead Specialty Holdings Inc.",
-     "exchange": "NYSE",
-     "ysym": "BOW",
-     "market": "america",
-     "price": 34.22,
-     "currency": "USD",
-     "change": 0.0023432923257175834,
-     "vol_x": 1.32,
-     "rvol_time": 16.662204445017903,
-     "value": 7140105.66,
-     "mcap": 1127383221.440539,
-     "sector": "Finance",
-     "holding": true,
-     "extended": false,
-     "near_high": true,
-     "chart_url": "https://www.tradingview.com/chart/?symbol=NYSE:BOW&interval=D",
-     "lists": [],
-     "owned": false,
-     "news": []
+     "news": [
+      {
+       "title": "Optimize Renewables Becomes Optimize Resilience, Building on a Decade of Integrated Energy Innovation. - Knoxville News Sentinel",
+       "date": "2026-10-26",
+       "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxPVHltMUFTZGZPM1dKbEp1bU9JeURCYlJVMkxrTTZDOGMteUgxNnNVVC1kYVZ1MFAzem50MDBLVzlmNzZpY2hGbmZ0dk5Xel9lVVM0QzlEYUJMYmRWX0Nnc3hwRzl1QnFWeTJDRDlWbWhxR29ZTzNHV0cyQjNiS0E0cXNhdzV6ZFVNbW1jZTAyenc0cFdKaldmUkN1NkFsUFJCWHl4bk1DRDBhUW81RVNxZXViNWg5NEM5ZnIyYnBRWlJrZ3k5NFpOQTF5U1JUV0wtVHRGeFdRLUJfQnVoUHNDcmk1X2I2OGZy?oc=5",
+       "source": "Knoxville News Sentinel",
+       "tone": "neutral"
+      },
+      {
+       "title": "PETAN Chairman Urges Indigenous Oil Producers to Invest in Training Young Engineers as Experienced Professionals Retire - Energy Focus Report",
+       "date": "2026-10-27",
+       "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOM3hyaUFYdmFIZmI2c3prc0pvQkNCNkhmTGUwUkZuWm9CM05ESE90TzNGY3pHNExmMEpFZjd5TDRvb3hUb096R3M4YmhReGl4UEZRZDZoMTBEb2NvOTVCTkp2R0xBenpQdUtkdjNCMTQyOFF4c0JLN0lKSHgwMU1uYXl0NkRoaEJfeXZKT2xiMXd2VlUzRU1mRzBuSzVrb2VlREV2R3o0VnVIU2UyYnFaQmIwTkxPQzQ4ejBocnowdnV6cU4tRmZ3aFhqN1IxRnQ4MVlpci1nT3d2QjNld2FBMXlLcUstT29ORWc?oc=5",
+       "source": "Energy Focus Report",
+       "tone": "neutral"
+      },
+      {
+       "title": "Your Desk Job May Be Affecting Your Metabolic Health: How to eat for energy, focus and better health at work - Businessday NG",
+       "date": "2026-10-27",
+       "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNM3JuVklvbE5CSGJTcG9Nd0lLcjdsZ05Wc05ubEUzd3ZWQnViWDVkZWx1YXFkWkh0endSLWJXV0x2VER6LXkzQm1MTW1NOS15NF9JUl9oZldWOHItcEUwNlpWaUdURjlBV1lXQlJKemZMQVZBZkt5RzR5ZGp2YklxODZkMlgxWlJVbDlXVFVXbmZhWVlBMEl5RzJQNmdRdE5Tbkx2MUk1X3dXZGNCdkFYS0NZeWd2VEtKS0tkYjVyVTNRelhFdVNBaTNTM1pJeWtWRVZWeDFXb0gtb3VDcDZyRE1n0gHnAUFVX3lxTFA1SEJtMTZfOUtKYWFLREJhOG5xMS03RTJPLW12Y0w3TExobXZKb1ltamhRMTRZVWRuNXpGQ1RpX01NMV84TndUTEcwWlh0MGlOV2d2R0pEeUZsRWlzc3AxYllEb1FhMWhEbEdEendyMWFVd0FOUFBVZWxVa0pKc2tEbWNQdTdOQnMydkJGUFEzZjVzUUQ3R3FwV3Q4SXNMS1BuNFdiS0tGUE8zSFhtbTc4Z2JlQ1k3b0ZsVW1BOThPbFpEZzFPczJ6eU5mNnpCUkdUZW54dE9fREIyeUY2YlRMTXp0a0Nrdw?oc=5",
+       "source": "Businessday NG",
+       "tone": "neutral"
+      },
+      {
+       "title": "Energy Focus, Inc. Estimates \u2013 NASDAQ:EFOI - TradingView",
+       "date": "2026-10-23",
+       "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9pLUliWHlWUkdjcFlSNjJVd1k4YWh4WTZoNUU0Ti12Q0lnV0E5UTUwQS1JZEZSTjZiY2IzS3V6M1hnUFZwS19SUEs3ek9HbV84STVzMFRSLWQ1OG5rNHlQbnFiVmFJOGU0M2pKTGFsbUdZVklPal9mbg?oc=5",
+       "source": "TradingView",
+       "tone": "neutral"
+      },
+      {
+       "title": "Finding Nuance in Energy Products - Nutritional Outlook",
+       "date": "2026-10-25",
+       "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFAwbU9SQk9vMDZRS2pEZFNWNGpvTU5penRCVmNKYkdwQTlZdkhwNllyYkR5clFpQUlQdE9ERmZxTDU4SEZNemJBd1FfSVI5cU9KSmlLSlFqQWItUHZFQXNXZ1NfSVFNV2d2QVdOZ05VaFZ4VVJuN08wazJn?oc=5",
+       "source": "Nutritional Outlook",
+       "tone": "neutral"
+      },
+      {
+       "title": "US Secretary of State's Visit to Jamnagar Highlights Energy Focus - India News Network",
+       "date": "2026-10-26",
+       "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNVHNUUDBWSDZfNWdESWlLOUREVDZySTRSR05aLXZrX1NvY2IyMldrMEx6WHFOTUpNdFFzYTZWWThYbHNzMWNPekVra2dFNWl6cDlHdnAtYkFRQ2pDRUc2WkVGRE9EVXFtRFFyQlZVTU9RR2tQbkVDNjl0WGV6V3JsMFFtckh5bW5WYWpBQ3hNOHd0S3ZLOTd5RU8zOUdCSk1CU2hxYQ?oc=5",
+       "source": "India News Network",
+       "tone": "neutral"
+      },
+      {
+       "title": "Emad Shash: Starting ESMO 2026 With Energy, Focus, and Purpose - Oncodaily",
+       "date": "2026-10-23",
+       "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5OSjQzM3Y2M0U0NGRLZHhmZ1hpZEg2TU9OaHVtQmdRRVdFT0h6ZWZIaEkzNnozc3UxZXJNU1V6RVd4MTlMOFkzR3JRMl9iT2JMLXExTGMtUzN3QQ?oc=5",
+       "source": "Oncodaily",
+       "tone": "neutral"
+      },
+      {
+       "title": "Africa Has Money for Energy Deals. It Needs Risk Capital for Energy Projects - Energy Focus Report",
+       "date": "2026-10-27",
+       "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNcGZRcDNjOVJfV1hkR21McEpKdi05Rm1BZEUydmNUSWxpSzZjcHIyUjJDS0E4LTlrVVJlQ0N1VU9JLTZ5SFRLVmtNTVgxYW5nWktISGhIUExrYjNMTzZWclFKcVk1WUNVWkNzYlM3QkczMUkxbGVHaGx3TUVEWERPUDlCcXV1b3NheVFKcTIwblBvS05OUHFWNWxEazBST001QVRBbHRPYWRYVHJIRzRr?oc=5",
+       "source": "Energy Focus Report",
+       "tone": "neutral"
+      }
+     ]
     },
     {
      "ticker": "MKTW",
@@ -66,10 +184,78 @@
      "holding": true,
      "extended": false,
      "near_high": false,
+     "longterm_down": false,
      "chart_url": "https://www.tradingview.com/chart/?symbol=NASDAQ:MKTW&interval=D",
      "lists": [],
      "owned": false,
-     "news": []
+     "news": [
+      {
+       "title": "MarketWise, Inc. Declares Quarterly Dividend on Class A Common Stock of $0.45 Per Share",
+       "date": "2026-10-27",
+       "url": "https://finance.yahoo.com/markets/stocks/articles/marketwise-inc-declares-quarterly-dividend-130000059.html?.tsrc=rss",
+       "source": "Yahoo Finance",
+       "tone": "neutral"
+      },
+      {
+       "title": "MarketWise, Inc. Declares Quarterly Dividend on Class A Common Stock of $0.45 Per Share - StreetInsider",
+       "date": "2026-10-27",
+       "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQUGJHLVRRMWFwMHpBYUJYMW0wRjRhUjFqSXV6RC11N09nb3JWaHlIM2hXTzE0dVpxYnZSck5MR3ozMzVNekxtenozU0V2T2U5aTFwOFNJb0lkM2tkSk1wRjZuM1I2OGpNVkRhM0dVV0NnQy1ZbElybTV6US1kVnlxY1lFUkdsTUNsQjFjTUVha04xQXNqNkN0TllUNjc3aHBJRlVKYzN1VVhlc0tnb0hqS0gteTNOR0pKbTRjWEc4dFlyYndHOE02NGM5Qmk0VEgzZzNVWFNtejVJYkpWSldJc2NOSTk?oc=5",
+       "source": "StreetInsider",
+       "tone": "neutral"
+      },
+      {
+       "title": "Biotech Stocks Are Surging: Why IBB and XBI Could Have More Room to Run - MarketWise",
+       "date": "2026-10-23",
+       "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPdjhWaTdDSm1VVGc0U2kzUGhzTTZMRTdZMU1rbGRBZDZVWWRocF9sTEkyY3VXOGE5Nzd2OGVZSkM0RjcxWnRGdV9MbmpyaDlhaDNlZ0k4N210alR0YUVVdkhtNHJLSm1GWWdNMGl5Q0pDZ181MHhWV0RwYUV0TXF4Z0NWdy1uR2NlVTZwaXY5Ry1jRF8xYjQ3NE9NWmlQV2NjOS1OYkNPc3BrOEtRZE1MaXFQTnlRQ0FGR2c?oc=5",
+       "source": "MarketWise",
+       "tone": "neutral"
+      },
+      {
+       "title": "MarketWise, Inc. Class A Estimates \u2013 BMV:MKTW - TradingView",
+       "date": "2026-10-24",
+       "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1VTFJWR2F0M01kYzlfZktQeGJqeUFpUklTZFNhcTdCT0tCb1BwLXc0eENwZXpJM1RXN1YySmxLb1Rac3hhWGJhdnpZc1dEWWZlX2tEZGFJaHN6Y2hCSFlIbEJ6QzJoWk5QdnpCcmNDeU9ISlo1?oc=5",
+       "source": "TradingView",
+       "tone": "neutral"
+      },
+      {
+       "title": "AI Stocks Face a Crucial Test as Big Tech Spending Surges - MarketWise",
+       "date": "2026-10-22",
+       "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPTkprMzZLOF9rMThwcXRqWnJvVGdWYmlaYTVsTlNwdFBBeld5MW1fV1BBdi1yeXUxRldkLXpOc3h5UFk5dXNLN1c0UTY0U0hKNm43TG1UQ3F4SjF6UTJ3Uk11d2trdi0zMWZycV9PZDBxSHhQSkg0NFZVUlNHQktyc2ZZNDJEc3A2ZzJtbjU3UEltMHJyZkZIU2VQSFVnckYzRnc?oc=5",
+       "source": "MarketWise",
+       "tone": "neutral"
+      }
+     ]
+    },
+    {
+     "ticker": "EDHL",
+     "name": "Everbright Digital Holding Limited",
+     "exchange": "NASDAQ",
+     "ysym": "EDHL",
+     "market": "america",
+     "price": 5.81,
+     "currency": "USD",
+     "change": 0.01396160558464209,
+     "vol_x": 1.02,
+     "rvol_time": 3.0362927685782566,
+     "value": 2679641.7199999997,
+     "mcap": 34623386.98952879,
+     "sector": "Commercial Services",
+     "holding": true,
+     "extended": false,
+     "near_high": false,
+     "longterm_down": false,
+     "chart_url": "https://www.tradingview.com/chart/?symbol=NASDAQ:EDHL&interval=D",
+     "lists": [],
+     "owned": false,
+     "news": [
+      {
+       "title": "Vantage Corp (VNTG) stock price, news, quote and history - Yahoo Finance UK",
+       "date": "2026-10-24",
+       "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1RVFVzbUV0aXVVVlFFZWZab1pLMGxqQkV3NkNJWWxhODVXclphS3VVcno4SEV1Y0xCWXBNdDFCY1JTZjFVZjlwdjJVVlFWa2dzYWc?oc=5",
+       "source": "Yahoo Finance UK",
+       "tone": "neutral"
+      }
+     ]
     }
    ]
   },
