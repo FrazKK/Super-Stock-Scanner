@@ -2248,8 +2248,20 @@ def live_news(market, ticker, ysym, since, name=""):
                         items.append({"title": title, "date": d.isoformat(), "url": url, "source": "RNS"})
         except Exception as e:
             print(f"  news {ticker}: {e}")
+    key_words = [w for w in re.findall(r"[A-Za-z][A-Za-z'&-]{2,}", re.sub(
+        r"\b(plc|inc|corp|corporation|ltd|limited|holdings|group|company|class|the|and|resources|energy|"
+        r"technologies|technology|international|global)\b", "", name or "", flags=re.I))][:2]
+    tick_re = re.compile(rf"\b{re.escape(str(ticker).rstrip('.'))}\b") if len(str(ticker).rstrip(".")) >= 3 else None
+
+    def relevant(title):
+        if tick_re and tick_re.search(title):
+            return True
+        return bool(key_words) and all(re.search(rf"\b{re.escape(w)}", title, re.I) for w in key_words[:1])
+
     def add(new):
         for n in new:
+            if not relevant(n["title"]):
+                continue
             if not any(n["title"].lower() == i["title"].lower() for i in items):
                 items.append(n)
 
@@ -2276,7 +2288,7 @@ def live_news(market, ticker, ysym, since, name=""):
             title = c.get("title") or ""
             url = ((c.get("canonicalUrl") or {}).get("url") or (c.get("clickThroughUrl") or {}).get("url")
                    or c.get("link") or "")
-            if when and when >= since and title and not any(title == i["title"] for i in items):
+            if when and when >= since and title and relevant(title) and not any(title == i["title"] for i in items):
                 items.append({"title": title, "date": when.date().isoformat(), "url": url,
                               "source": (c.get("provider") or {}).get("displayName") or c.get("publisher") or "Yahoo"})
     except Exception as e:
@@ -2292,6 +2304,8 @@ def opening_scan(market, fetch_open, fetch_news, now_utc, context=None):
     df = fetch_open(market)
     df = df[df["exchange"].astype(str).str.upper().isin(cfg["exchanges"])]
     df = df[~df.apply(is_excluded, axis=1)]
+    if market == "uk":
+        df = df[~df["name"].astype(str).str.match(r"^0[A-Z0-9]{3}$")]    # International Order Book (foreign shares)
     pence = df["currency"].astype(str).str.upper().eq("GBX")
     df = df.assign(value=df["volume"] * df["close"] / np.where(pence, 100.0, 1.0),
                    ticker=df["name"].astype(str),
@@ -2306,7 +2320,7 @@ def opening_scan(market, fetch_open, fetch_news, now_utc, context=None):
             continue
         close, op, hi, lo = (num(rec.get(k)) for k in ("close", "open", "high", "low"))
         s20, s50, s200 = (num(rec.get(k)) for k in ("SMA20", "SMA50", "SMA200"))
-        trend = bool(close and s20 and s50 and close > s20 > s50)
+        trend = bool(close and s20 and s50 and close > s20 and close > s50 and s20 >= 0.97 * s50)
         if not trend:
             continue
         longterm = s200 is None or s50 > s200          # shown as a flag, not required: catches turnarounds
@@ -2371,7 +2385,7 @@ def opening_alerts(op, markets):
 def opening_html(op):
     intro = ('<p class="blurb">Checked about 30 minutes after each open (the free data runs about 15 minutes behind, '
              'so it shows the first 15 minutes of trading). Listed: stocks that have <b>already traded more than a '
-             'normal full day\'s volume</b>, are <b>trending up</b> (price above the 20-day average, 20-day above the 50-day) and are up today, '
+             'normal full day\'s volume</b>, are <b>trending up</b> (price above its 20- and 50-day averages, and the 20-day not below the 50-day) and are up today, '
              'with <b>positive-looking news in the last 3 days</b>. Placings, warnings and similar are left out. '
              'Headlines are sorted by keywords, so read them before acting.</p>')
     mk = (op or {}).get("markets") or {}

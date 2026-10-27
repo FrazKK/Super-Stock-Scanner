@@ -56,7 +56,7 @@ For UK stocks that reach a buy point under the rules above, the scan reads their
 About 30 minutes after each market opens (08:30 UK; 10:00 New York for US and Canada), the bot looks for stocks that:
 
 - have **already traded more than a normal full day's volume** (their 10-day average). The free data is about 15 minutes behind, so this covers the first 15 minutes of trading;
-- are **trending up**: price above the 20-day MA and the 20-day above the 50-day, and up today. If the 50-day is still below the 200-day, the stock is flagged "long-term trend still down" but not excluded, so turnarounds are still caught;
+- are **trending up**: price above its 20- and 50-day averages, with the 20-day not below the 50-day (so breakouts from flat bases count), and up today. If the 50-day is still below the 200-day, the stock is flagged "long-term trend still down" but not excluded;
 - have **positive-looking news in the last 3 days** (RNS for UK stocks, Yahoo Finance news for all three markets). Headlines are sorted by keywords, so read them yourself.
 
 Also checked at the same time:
@@ -68,7 +68,7 @@ Also checked at the same time:
 - **Minimum traded value so far** (UK £25k, US $250k, Canada C$50k), so one trade in a thin stock can't trigger it.
 - **Cross-checks**: whether the stock is on one of this week's method lists, and whether you own it.
 
-You get one phone alert per market and the results appear on an **Opening movers** tab. Stocks with the volume and trend but no clear good news are listed underneath for reference.
+You get one phone alert per market and the results appear on an **Opening movers** tab. Stocks with the volume and trend but no clear good news are listed underneath for reference. News from Yahoo and Google only counts if the headline names the company or its ticker. London International Order Book lines (foreign shares with codes like 0NCA) are skipped.
 
 **On-time alerts (recommended, free):** GitHub's own timer is often late, so let cron-job.org start the check at the exact time.
 
