@@ -6,7 +6,7 @@
    "state": "down",
    "text": "Downtrend: index below its 30-week MA. Most breakouts fail in weak markets, so go small or wait.",
    "bench": "IWM",
-   "change_4w": -2.2
+   "change_4w": -0.8
   },
   "canada": {
    "state": "down",
@@ -18,7 +18,7 @@
    "state": "down",
    "text": "Downtrend: index below its 30-week MA. Most breakouts fail in weak markets, so go small or wait.",
    "bench": "^FTAI",
-   "change_4w": -5.0
+   "change_4w": -3.3
   }
  }
 }
