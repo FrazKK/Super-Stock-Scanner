@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-28T14:19:30+00:00",
+ "generated": "2026-10-28T14:20:05+00:00",
  "items": [
   {
    "key": "AXL:uk",
@@ -763,9 +763,9 @@
     "exchange": "NASDAQ",
     "name": "DMC Global Inc.",
     "ysym": "BOOM",
-    "price": 7.12,
+    "price": 7.08,
     "currency": "USD",
-    "mcap": 146251552.68785048,
+    "mcap": 145429914.75140187,
     "sector": "Industrial Services",
     "industry": "Oilfield Services/Equipment",
     "rs_rank": 48.0,
@@ -788,7 +788,7 @@
       "pass": true,
       "pts": 2,
       "max": 2,
-      "note": "32.8x",
+      "note": "32.9x",
       "req": true
      },
      {
@@ -796,7 +796,7 @@
       "pass": true,
       "pts": 1,
       "max": 1,
-      "note": "closed +35% that day",
+      "note": "closed +34% that day",
       "req": true
      },
      {
@@ -834,7 +834,7 @@
     ],
     "stop": 6.619999885559082,
     "stop_pct": null,
-    "dist_ma10": 0.1718860275525571,
+    "dist_ma10": 0.16098388775750117,
     "closes": [
      5.09,
      5.18,
@@ -865,7 +865,7 @@
      5.66,
      5.33,
      5.49,
-     7.2399
+     7.1637
     ],
     "ma10": [
      6.183,
@@ -897,7 +897,7 @@
      6.594,
      6.361,
      6.155,
-     6.178
+     6.1704
     ],
     "ma30": [
      6.869,
@@ -929,10 +929,10 @@
      6.435,
      6.4543,
      6.464,
-     6.5203
+     6.5178
     ],
     "insider": null,
-    "entry_close": 7.2399001121521,
+    "entry_close": 7.163700103759766,
     "chart_url": "https://www.tradingview.com/chart/?symbol=NASDAQ:BOOM&interval=W",
     "insider_url": "http://openinsider.com/BOOM"
    },
@@ -941,7 +941,7 @@
      "verdict": "Doesn't qualify",
      "vclass": "v-no",
      "tag": "No breakout yet",
-     "plan": "Entry zone: near the 10-week MA (6.18). Sell rule: weekly close below it.",
+     "plan": "Entry zone: near the 10-week MA (6.17). Sell rule: weekly close below it.",
      "checks": [
       {
        "label": "Price under 15 and profitable",
@@ -1120,7 +1120,7 @@
        "pass": true,
        "pts": 1,
        "max": 1,
-       "note": "+54%",
+       "note": "+53%",
        "req": true
       },
       {
@@ -1128,7 +1128,7 @@
        "pass": true,
        "pts": 1,
        "max": 1,
-       "note": "-21%",
+       "note": "-22%",
        "req": true
       },
       {
@@ -1162,7 +1162,7 @@
        "pass": true,
        "pts": 2,
        "max": 2,
-       "note": "32.8x",
+       "note": "32.9x",
        "req": true
       },
       {
@@ -1170,7 +1170,7 @@
        "pass": true,
        "pts": 1,
        "max": 1,
-       "note": "closed +35% that day",
+       "note": "closed +34% that day",
        "req": true
       },
       {
@@ -1239,14 +1239,14 @@
      "verdict": "Doesn't qualify",
      "vclass": "v-no",
      "tag": "Not set up",
-     "plan": "Stop at the bounce-day low 6.88 (max 5% risk). Sell on a daily close below the 9-day EMA (5.77).",
+     "plan": "Stop at the bounce-day low 6.81 (max 5% risk). Sell on a daily close below the 9-day EMA (5.75).",
      "checks": [
       {
        "label": "Big mover: up 30%+ in 1 or 3 months",
        "pass": false,
        "pts": 0,
        "max": 2,
-       "note": "+28%",
+       "note": "+27%",
        "req": true
       },
       {
@@ -1270,7 +1270,7 @@
        "pass": true,
        "pts": 1,
        "max": 1,
-       "note": "VWAP 6.45",
+       "note": "VWAP 6.44",
        "req": true
       },
       {
@@ -1321,7 +1321,7 @@
      "verdict": "Doesn't qualify",
      "vclass": "v-no",
      "tag": "No wedge pop yet",
-     "plan": "Stop under the wedge pop low 5.13. Sell on a daily close below the 20-day EMA (5.72).",
+     "plan": "Stop under the wedge pop low 5.13. Sell on a daily close below the 20-day EMA (5.71).",
      "checks": [
       {
        "label": "Drifted below the 10-day EMA (wedge)",
@@ -1434,7 +1434,7 @@
        "pass": true,
        "pts": 1,
        "max": 1,
-       "note": "146m",
+       "note": "145m",
        "req": true
       },
       {
@@ -1468,7 +1468,7 @@
        "pass": true,
        "pts": 2,
        "max": 2,
-       "note": "P/B 0.62 (cut-off 0.87)",
+       "note": "P/B 0.61 (cut-off 0.87)",
        "req": true
       },
       {
@@ -1538,7 +1538,757 @@
     "state": "down",
     "text": "Downtrend: index below its 30-week MA. Most breakouts fail in weak markets, so go small or wait.",
     "bench": "IWM",
-    "change_4w": -0.3
+    "change_4w": -0.4
+   },
+   "added": "2026-10-28"
+  },
+  {
+   "key": "AVPT:america",
+   "ticker": "AVPT",
+   "market": "america",
+   "updated": "2026-10-28",
+   "card": {
+    "strategy": "stine",
+    "market": "america",
+    "ticker": "AVPT",
+    "exchange": "NASDAQ",
+    "name": "AvePoint, Inc.",
+    "ysym": "AVPT",
+    "price": 17.15,
+    "currency": "USD",
+    "mcap": 3628346655.844471,
+    "sector": "Technology Services",
+    "industry": "Packaged Software",
+    "rs_rank": 88.0,
+    "score": 6,
+    "max_score": 14,
+    "tag": "No breakout yet",
+    "tag_class": "z-ok",
+    "plan": "Entry zone: near the 10-week MA (14.29). Sell rule: weekly close below it.",
+    "checks": [
+     {
+      "label": "Price under 15 and profitable",
+      "pass": false,
+      "pts": 0,
+      "max": 0,
+      "note": "outside Stine's price range or loss-making",
+      "req": true
+     },
+     {
+      "label": "Above rising 30-week MA",
+      "pass": true,
+      "pts": 2,
+      "max": 2,
+      "note": "",
+      "req": true
+     },
+     {
+      "label": "Breakout on 3x+ weekly volume",
+      "pass": false,
+      "pts": 0,
+      "max": 2,
+      "note": "no breakout in 8 weeks",
+      "req": true
+     },
+     {
+      "label": "Steep 30-week MA",
+      "pass": true,
+      "pts": 1,
+      "max": 1,
+      "note": "+6.5% in 4 wks",
+      "req": false
+     },
+     {
+      "label": "Biggest weekly volume in 6 months",
+      "pass": false,
+      "pts": 0,
+      "max": 1,
+      "note": "",
+      "req": true
+     },
+     {
+      "label": "Tight base",
+      "pass": true,
+      "pts": 1,
+      "max": 1,
+      "note": "35% range",
+      "req": false
+     },
+     {
+      "label": "EPS growth > 25%",
+      "pass": true,
+      "pts": 1,
+      "max": 1,
+      "note": "+958% YoY",
+      "req": false
+     },
+     {
+      "label": "Low P/E",
+      "pass": false,
+      "pts": 0,
+      "max": 1,
+      "note": "P/E 54.3",
+      "req": false
+     },
+     {
+      "label": "Small float",
+      "pass": false,
+      "pts": 0,
+      "max": 1,
+      "note": "140.8M shares",
+      "req": false
+     },
+     {
+      "label": "Market leader (RS rank 80+)",
+      "pass": true,
+      "pts": 1,
+      "max": 1,
+      "note": "RS 88",
+      "req": false
+     },
+     {
+      "label": "Low float / small company",
+      "pass": false,
+      "pts": 0,
+      "max": 1,
+      "note": "float 141M shares",
+      "req": true
+     },
+     {
+      "label": "Insider buying (90 days)",
+      "pass": false,
+      "pts": 0,
+      "max": 2,
+      "note": "none found",
+      "req": false
+     }
+    ],
+    "stop": null,
+    "stop_pct": null,
+    "dist_ma10": 0.19801322442621028,
+    "closes": [
+     8.99,
+     10.04,
+     9.85,
+     10.21,
+     11.4,
+     9.93,
+     10.29,
+     10.91,
+     10.74,
+     10.87,
+     10.41,
+     10.89,
+     11.46,
+     12.44,
+     13.22,
+     12.24,
+     13.03,
+     12.79,
+     13.48,
+     13.37,
+     14.0,
+     13.43,
+     12.66,
+     13.19,
+     13.0,
+     14.07,
+     14.63,
+     14.33,
+     16.51,
+     17.125
+    ],
+    "ma10": [
+     10.26,
+     10.207,
+     10.136,
+     10.107,
+     10.169,
+     10.053,
+     10.039,
+     10.1,
+     10.23,
+     10.323,
+     10.465,
+     10.55,
+     10.711,
+     10.934,
+     11.116,
+     11.347,
+     11.621,
+     11.809,
+     12.083,
+     12.333,
+     12.692,
+     12.946,
+     13.066,
+     13.141,
+     13.119,
+     13.302,
+     13.462,
+     13.616,
+     13.919,
+     14.2945
+    ],
+    "ma30": [
+     12.5307,
+     12.343,
+     12.1597,
+     11.9963,
+     11.8917,
+     11.7533,
+     11.5997,
+     11.4943,
+     11.4497,
+     11.378,
+     11.2997,
+     11.2293,
+     11.1647,
+     11.1163,
+     11.0923,
+     11.0413,
+     11.035,
+     11.0073,
+     11.034,
+     11.06,
+     11.139,
+     11.2343,
+     11.3043,
+     11.394,
+     11.468,
+     11.5673,
+     11.7073,
+     11.8417,
+     12.0773,
+     12.3168
+    ],
+    "insider": null,
+    "entry_close": 17.125,
+    "chart_url": "https://www.tradingview.com/chart/?symbol=NASDAQ:AVPT&interval=W",
+    "insider_url": "http://openinsider.com/AVPT"
+   },
+   "methods": {
+    "stine": {
+     "verdict": "Doesn't qualify",
+     "vclass": "v-no",
+     "tag": "No breakout yet",
+     "plan": "Entry zone: near the 10-week MA (14.29). Sell rule: weekly close below it.",
+     "checks": [
+      {
+       "label": "Price under 15 and profitable",
+       "pass": false,
+       "pts": 0,
+       "max": 0,
+       "note": "outside Stine's price range or loss-making",
+       "req": true
+      },
+      {
+       "label": "Above rising 30-week MA",
+       "pass": true,
+       "pts": 2,
+       "max": 2,
+       "note": "",
+       "req": true
+      },
+      {
+       "label": "Breakout on 3x+ weekly volume",
+       "pass": false,
+       "pts": 0,
+       "max": 2,
+       "note": "no breakout in 8 weeks",
+       "req": true
+      },
+      {
+       "label": "Steep 30-week MA",
+       "pass": true,
+       "pts": 1,
+       "max": 1,
+       "note": "+6.5% in 4 wks",
+       "req": false
+      },
+      {
+       "label": "Biggest weekly volume in 6 months",
+       "pass": false,
+       "pts": 0,
+       "max": 1,
+       "note": "",
+       "req": true
+      },
+      {
+       "label": "Tight base",
+       "pass": true,
+       "pts": 1,
+       "max": 1,
+       "note": "35% range",
+       "req": false
+      },
+      {
+       "label": "EPS growth > 25%",
+       "pass": true,
+       "pts": 1,
+       "max": 1,
+       "note": "+958% YoY",
+       "req": false
+      },
+      {
+       "label": "Low P/E",
+       "pass": false,
+       "pts": 0,
+       "max": 1,
+       "note": "P/E 54.3",
+       "req": false
+      },
+      {
+       "label": "Small float",
+       "pass": false,
+       "pts": 0,
+       "max": 1,
+       "note": "140.8M shares",
+       "req": false
+      },
+      {
+       "label": "Market leader (RS rank 80+)",
+       "pass": true,
+       "pts": 1,
+       "max": 1,
+       "note": "RS 88",
+       "req": false
+      },
+      {
+       "label": "Low float / small company",
+       "pass": false,
+       "pts": 0,
+       "max": 1,
+       "note": "float 141M shares",
+       "req": true
+      },
+      {
+       "label": "Insider buying (90 days)",
+       "pass": false,
+       "pts": 0,
+       "max": 2,
+       "note": "none found",
+       "req": false
+      }
+     ],
+     "score": 6,
+     "max_score": 14
+    },
+    "weinstein": {
+     "verdict": "Doesn't qualify",
+     "vclass": "v-no",
+     "tag": "No Stage 2 breakout",
+     "plan": "",
+     "checks": [
+      {
+       "label": "Breakout above resistance on 2x+ volume (last 8 weeks)",
+       "pass": false,
+       "pts": 0,
+       "max": 2,
+       "note": "",
+       "req": true
+      },
+      {
+       "label": "Above a rising 30-week MA",
+       "pass": true,
+       "pts": 1,
+       "max": 1,
+       "note": "",
+       "req": true
+      }
+     ],
+     "score": 1,
+     "max_score": 3
+    },
+    "minervini": {
+     "verdict": "No data",
+     "vclass": "v-na",
+     "tag": "",
+     "plan": "",
+     "checks": [],
+     "score": 0,
+     "max_score": 0
+    },
+    "episodic": {
+     "verdict": "Doesn't qualify",
+     "vclass": "v-no",
+     "tag": "No recent gap",
+     "plan": "",
+     "checks": [
+      {
+       "label": "Gap up 10%+ on 3x+ volume in the last 3 days, still holding it",
+       "pass": false,
+       "pts": 0,
+       "max": 2,
+       "note": "",
+       "req": true
+      }
+     ],
+     "score": 0,
+     "max_score": 2
+    },
+    "stage2": {
+     "verdict": "Doesn't qualify",
+     "vclass": "v-no",
+     "tag": "Stage 2 \u00b7 11 wks",
+     "plan": "Sell rule: weekly close below the 30-week MA (12.32).",
+     "checks": [
+      {
+       "label": "Above a rising 30-week MA",
+       "pass": true,
+       "pts": 2,
+       "max": 2,
+       "note": "+39% above it",
+       "req": true
+      },
+      {
+       "label": "10-week MA above 30-week MA",
+       "pass": true,
+       "pts": 1,
+       "max": 1,
+       "note": "",
+       "req": true
+      },
+      {
+       "label": "Beating the market (Mansfield RS > 0)",
+       "pass": true,
+       "pts": 2,
+       "max": 2,
+       "note": "+35%",
+       "req": true
+      },
+      {
+       "label": "Early Stage 2 (last 8 weeks)",
+       "pass": false,
+       "pts": 0,
+       "max": 2,
+       "note": "11 weeks in Stage 2",
+       "req": true
+      },
+      {
+       "label": "Not stretched",
+       "pass": false,
+       "pts": 0,
+       "max": 1,
+       "note": "within 15% of the 30-week MA",
+       "req": true
+      },
+      {
+       "label": "RS rank 70+",
+       "pass": true,
+       "pts": 1,
+       "max": 1,
+       "note": "RS 88",
+       "req": false
+      }
+     ],
+     "score": 6,
+     "max_score": 9
+    },
+    "luk": {
+     "verdict": "Doesn't qualify",
+     "vclass": "v-no",
+     "tag": "Not set up",
+     "plan": "Stop at the bounce-day low 16.27 (max 5% risk). Sell on a daily close below the 9-day EMA (16.08).",
+     "checks": [
+      {
+       "label": "Big mover: up 30%+ in 1 or 3 months",
+       "pass": true,
+       "pts": 2,
+       "max": 2,
+       "note": "+34%",
+       "req": true
+      },
+      {
+       "label": "Volatile enough (avg daily range 5%+)",
+       "pass": false,
+       "pts": 0,
+       "max": 1,
+       "note": "3.9%",
+       "req": true
+      },
+      {
+       "label": "EMAs stacked 9 > 21 > 50",
+       "pass": true,
+       "pts": 1,
+       "max": 1,
+       "note": "",
+       "req": true
+      },
+      {
+       "label": "Above anchored VWAP from 1-year high",
+       "pass": false,
+       "pts": 0,
+       "max": 1,
+       "note": "VWAP 17.19",
+       "req": true
+      },
+      {
+       "label": "Pulled back to 9-day EMA and bounced",
+       "pass": false,
+       "pts": 0,
+       "max": 2,
+       "note": "",
+       "req": true
+      },
+      {
+       "label": "Still above the 9-day EMA",
+       "pass": true,
+       "pts": 1,
+       "max": 1,
+       "note": "",
+       "req": true
+      },
+      {
+       "label": "Market OK (index 9-day EMA above 21-day)",
+       "pass": false,
+       "pts": 0,
+       "max": 1,
+       "note": "",
+       "req": true
+      },
+      {
+       "label": "Very fast mover (up 50%+)",
+       "pass": false,
+       "pts": 0,
+       "max": 1,
+       "note": "",
+       "req": false
+      },
+      {
+       "label": "RS rank 90+",
+       "pass": false,
+       "pts": 0,
+       "max": 1,
+       "note": "RS 88",
+       "req": false
+      }
+     ],
+     "score": 4,
+     "max_score": 11
+    },
+    "kell": {
+     "verdict": "Doesn't qualify",
+     "vclass": "v-no",
+     "tag": "No ema crossback yet",
+     "plan": "Stop under the ema crossback low 15.96. Sell on a daily close below the 20-day EMA (15.29).",
+     "checks": [
+      {
+       "label": "Uptrend: 10 EMA > 20 EMA > 50-day, 50-day rising",
+       "pass": true,
+       "pts": 1,
+       "max": 1,
+       "note": "",
+       "req": true
+      },
+      {
+       "label": "Had run 8%+ above the 20-day EMA, then pulled back",
+       "pass": true,
+       "pts": 1,
+       "max": 1,
+       "note": "",
+       "req": true
+      },
+      {
+       "label": "Dipped to the 20-day EMA",
+       "pass": false,
+       "pts": 0,
+       "max": 1,
+       "note": "",
+       "req": true
+      },
+      {
+       "label": "Bounced: closed above the 10-day EMA and the prior day's high",
+       "pass": true,
+       "pts": 1,
+       "max": 1,
+       "note": "",
+       "req": true
+      },
+      {
+       "label": "Not stretched (within 5% of the 20-day EMA)",
+       "pass": false,
+       "pts": 0,
+       "max": 1,
+       "note": "",
+       "req": true
+      },
+      {
+       "label": "Market leader (RS rank 80+)",
+       "pass": true,
+       "pts": 1,
+       "max": 1,
+       "note": "RS 88",
+       "req": true
+      },
+      {
+       "label": "Above the 200-day MA",
+       "pass": true,
+       "pts": 1,
+       "max": 1,
+       "note": "",
+       "req": false
+      }
+     ],
+     "score": 5,
+     "max_score": 7
+    },
+    "slater": {
+     "verdict": "Doesn't qualify",
+     "vclass": "v-no",
+     "tag": "Doesn't fit",
+     "plan": "A growth-at-a-low-price holding. Review if forecasts are cut, the PEG rises above 1, or it underperforms the market.",
+     "checks": [
+      {
+       "label": "Forecast EPS growth over 15%",
+       "pass": true,
+       "pts": 2,
+       "max": 2,
+       "note": "+40%",
+       "req": true
+      },
+      {
+       "label": "PEG under 0.75",
+       "pass": false,
+       "pts": 0,
+       "max": 2,
+       "note": "PEG 1.37",
+       "req": true
+      },
+      {
+       "label": "Forward P/E under 20",
+       "pass": false,
+       "pts": 0,
+       "max": 1,
+       "note": "P/E 54.3",
+       "req": true
+      },
+      {
+       "label": "Return on capital over 12%",
+       "pass": false,
+       "pts": 0,
+       "max": 1,
+       "note": "8%",
+       "req": true
+      },
+      {
+       "label": "Beating the market over 1 year",
+       "pass": true,
+       "pts": 1,
+       "max": 1,
+       "note": "+3 pts",
+       "req": true
+      },
+      {
+       "label": "Small company (20m to 1bn)",
+       "pass": false,
+       "pts": 0,
+       "max": 1,
+       "note": "3.63bn",
+       "req": true
+      },
+      {
+       "label": "Price above its 50-day MA (momentum check)",
+       "pass": true,
+       "pts": 1,
+       "max": 1,
+       "note": "",
+       "req": true
+      }
+     ],
+     "score": 4,
+     "max_score": 9
+    },
+    "piotroski": {
+     "verdict": "Doesn't qualify",
+     "vclass": "v-no",
+     "tag": "Doesn't fit",
+     "plan": "Piotroski held for a year and rebalanced. Review when new annual figures drop the score.",
+     "checks": [
+      {
+       "label": "F-Score 8 or 9 (strong, improving finances)",
+       "pass": false,
+       "pts": 0,
+       "max": 3,
+       "note": "F-Score 4/9",
+       "req": true
+      },
+      {
+       "label": "Cheap: lowest 20% price-to-book in its market",
+       "pass": false,
+       "pts": 0,
+       "max": 2,
+       "note": "P/B 8.30 (cut-off 0.87)",
+       "req": true
+      },
+      {
+       "label": "Low bankruptcy risk (Altman Z over 1.8)",
+       "pass": true,
+       "pts": 1,
+       "max": 1,
+       "note": "Z 4.7",
+       "req": false
+      },
+      {
+       "label": "Price above its 50-day MA (momentum check)",
+       "pass": true,
+       "pts": 1,
+       "max": 1,
+       "note": "",
+       "req": true
+      }
+     ],
+     "score": 2,
+     "max_score": 7
+    },
+    "magic": {
+     "verdict": "Doesn't qualify",
+     "vclass": "v-no",
+     "tag": "Doesn't fit",
+     "plan": "Greenblatt held each pick for a year, then re-ranked. Expect long spells of lagging the market.",
+     "checks": [
+      {
+       "label": "Top 30 on Magic Formula rank",
+       "pass": false,
+       "pts": 0,
+       "max": 3,
+       "note": "not ranked (financial, utility, loss-making or no data)",
+       "req": true
+      },
+      {
+       "label": "High earnings yield (EBIT / EV)",
+       "pass": true,
+       "pts": 1,
+       "max": 1,
+       "note": "1%",
+       "req": false
+      },
+      {
+       "label": "High return on capital",
+       "pass": true,
+       "pts": 1,
+       "max": 1,
+       "note": "16%",
+       "req": false
+      },
+      {
+       "label": "Price above its 50-day MA (momentum check)",
+       "pass": true,
+       "pts": 1,
+       "max": 1,
+       "note": "",
+       "req": true
+      }
+     ],
+     "score": 3,
+     "max_score": 6
+    }
+   },
+   "market_state": {
+    "state": "down",
+    "text": "Downtrend: index below its 30-week MA. Most breakouts fail in weak markets, so go small or wait.",
+    "bench": "IWM",
+    "change_4w": -0.4
    },
    "added": "2026-10-28"
   }
