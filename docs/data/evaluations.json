@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-28T14:22:19+00:00",
+ "generated": "2026-10-28T15:28:23+00:00",
  "items": [
   {
    "key": "AXL:uk",
@@ -13,7 +13,7 @@
     "exchange": "LSE",
     "name": "Arrow Exploration Corp.",
     "ysym": "AXL.L",
-    "price": 40.925,
+    "price": 41.2,
     "currency": "GBX",
     "mcap": 116164269.66869597,
     "sector": "Energy Minerals",
@@ -46,7 +46,7 @@
       "pass": true,
       "pts": 1,
       "max": 1,
-      "note": "P/E 10.6",
+      "note": "P/E 10.7",
       "req": true
      },
      {
@@ -62,7 +62,7 @@
       "pass": true,
       "pts": 1,
       "max": 1,
-      "note": "+273 pts",
+      "note": "+276 pts",
       "req": true
      },
      {
@@ -84,7 +84,7 @@
     ],
     "stop": null,
     "stop_pct": null,
-    "dist_ma10": 0.16852034477194167,
+    "dist_ma10": 0.16105398671688764,
     "closes": [
      22.0,
      20.25,
@@ -115,7 +115,7 @@
      36.0,
      37.0,
      42.5,
-     41.5
+     41.2
     ],
     "ma10": [
      19.3,
@@ -147,7 +147,7 @@
      31.47,
      32.57,
      34.145,
-     35.515
+     35.485
     ],
     "ma30": [
      14.795,
@@ -179,10 +179,10 @@
      26.4317,
      26.9317,
      27.665,
-     28.34
+     28.33
     ],
     "insider": null,
-    "entry_close": 41.5,
+    "entry_close": 41.20000076293945,
     "chart_url": "https://www.tradingview.com/chart/?symbol=LSE:AXL&interval=W",
     "insider_url": "https://www.investegate.co.uk/company/AXL"
    },
@@ -191,7 +191,7 @@
      "verdict": "Doesn't qualify",
      "vclass": "v-no",
      "tag": "No breakout yet",
-     "plan": "Entry zone: near the 10-week MA (35.51). Sell rule: weekly close below it.",
+     "plan": "Entry zone: near the 10-week MA (35.49). Sell rule: weekly close below it.",
      "checks": [
       {
        "label": "Above rising 30-week MA",
@@ -214,7 +214,7 @@
        "pass": true,
        "pts": 1,
        "max": 1,
-       "note": "+9.3% in 4 wks",
+       "note": "+9.2% in 4 wks",
        "req": false
       },
       {
@@ -246,7 +246,7 @@
        "pass": true,
        "pts": 1,
        "max": 1,
-       "note": "P/E 10.6",
+       "note": "P/E 10.7",
        "req": false
       },
       {
@@ -289,7 +289,7 @@
      "verdict": "Doesn't qualify",
      "vclass": "v-no",
      "tag": "Extended, wait",
-     "plan": "Breakout level 31.00. Sell rule: weekly close below the 30-week MA (28.34).",
+     "plan": "Breakout level 31.00. Sell rule: weekly close below the 30-week MA (28.33).",
      "checks": [
       {
        "label": "Breakout above resistance on 2x+ volume",
@@ -312,7 +312,7 @@
        "pass": true,
        "pts": 1,
        "max": 1,
-       "note": "MA +9.3% in 4 wks",
+       "note": "MA +9.2% in 4 wks",
        "req": true
       },
       {
@@ -320,7 +320,7 @@
        "pass": true,
        "pts": 2,
        "max": 2,
-       "note": "+86%",
+       "note": "+85%",
        "req": true
       },
       {
@@ -344,7 +344,7 @@
        "pass": false,
        "pts": 0,
        "max": 1,
-       "note": "+34% vs breakout",
+       "note": "+33% vs breakout",
        "req": false
       },
       {
@@ -390,14 +390,14 @@
      "verdict": "Doesn't qualify",
      "vclass": "v-no",
      "tag": "Stage 2 \u00b7 37 wks",
-     "plan": "Sell rule: weekly close below the 30-week MA (28.34).",
+     "plan": "Sell rule: weekly close below the 30-week MA (28.33).",
      "checks": [
       {
        "label": "Above a rising 30-week MA",
        "pass": true,
        "pts": 2,
        "max": 2,
-       "note": "+46% above it",
+       "note": "+45% above it",
        "req": true
       },
       {
@@ -413,7 +413,7 @@
        "pass": true,
        "pts": 2,
        "max": 2,
-       "note": "+86%",
+       "note": "+85%",
        "req": true
       },
       {
@@ -448,14 +448,14 @@
      "verdict": "Doesn't qualify",
      "vclass": "v-no",
      "tag": "Not set up",
-     "plan": "Stop at the bounce-day low 39.42 (max 5% risk). Sell on a daily close below the 9-day EMA (40.25).",
+     "plan": "Stop at the bounce-day low 39.14 (max 5% risk). Sell on a daily close below the 9-day EMA (40.19).",
      "checks": [
       {
        "label": "Big mover: up 30%+ in 1 or 3 months",
        "pass": true,
        "pts": 2,
        "max": 2,
-       "note": "+57%",
+       "note": "+55%",
        "req": true
       },
       {
@@ -479,7 +479,7 @@
        "pass": false,
        "pts": 0,
        "max": 1,
-       "note": "VWAP 41.63",
+       "note": "VWAP 41.62",
        "req": true
       },
       {
@@ -530,7 +530,7 @@
      "verdict": "Doesn't qualify",
      "vclass": "v-no",
      "tag": "No ema crossback yet",
-     "plan": "Stop under the ema crossback low 40.00. Sell on a daily close below the 20-day EMA (38.45).",
+     "plan": "Stop under the ema crossback low 40.00. Sell on a daily close below the 20-day EMA (38.42).",
      "checks": [
       {
        "label": "Uptrend: 10 EMA > 20 EMA > 50-day, 50-day rising",
@@ -619,7 +619,7 @@
        "pass": true,
        "pts": 1,
        "max": 1,
-       "note": "P/E 10.6",
+       "note": "P/E 10.7",
        "req": true
       },
       {
@@ -635,7 +635,7 @@
        "pass": true,
        "pts": 1,
        "max": 1,
-       "note": "+273 pts",
+       "note": "+276 pts",
        "req": true
       },
       {
@@ -677,7 +677,7 @@
        "pass": false,
        "pts": 0,
        "max": 2,
-       "note": "P/B 2.24 (cut-off 0.80)",
+       "note": "P/B 2.25 (cut-off 0.79)",
        "req": true
       },
       {
@@ -747,17 +747,9 @@
     "state": "down",
     "text": "Downtrend: index below its 30-week MA. Most breakouts fail in weak markets, so go small or wait.",
     "bench": "^FTAI",
-    "change_4w": -2.7
+    "change_4w": -2.9
    },
    "added": "2026-10-25"
-  },
-  {
-   "key": "AXGN:uk",
-   "ticker": "AXGN",
-   "market": "uk",
-   "updated": "2026-10-28",
-   "error": "Couldn't find AXGN on the UK market.",
-   "added": "2026-10-28"
   },
   {
    "key": "BOOM:america",
@@ -771,12 +763,12 @@
     "exchange": "NASDAQ",
     "name": "DMC Global Inc.",
     "ysym": "BOOM",
-    "price": 7.12,
+    "price": 7.24,
     "currency": "USD",
-    "mcap": 146251552.68785048,
+    "mcap": 148716466.4971963,
     "sector": "Industrial Services",
     "industry": "Oilfield Services/Equipment",
-    "rs_rank": 48.0,
+    "rs_rank": 51.0,
     "score": 9,
     "max_score": 9,
     "tag": "Gap today",
@@ -796,7 +788,7 @@
       "pass": true,
       "pts": 2,
       "max": 2,
-      "note": "33.3x",
+      "note": "42.1x",
       "req": true
      },
      {
@@ -804,7 +796,7 @@
       "pass": true,
       "pts": 1,
       "max": 1,
-      "note": "closed +33% that day",
+      "note": "closed +35% that day",
       "req": true
      },
      {
@@ -842,7 +834,7 @@
     ],
     "stop": 6.619999885559082,
     "stop_pct": null,
-    "dist_ma10": 0.15629714073991363,
+    "dist_ma10": 0.1719002684188793,
     "closes": [
      5.09,
      5.18,
@@ -873,7 +865,7 @@
      5.66,
      5.33,
      5.49,
-     7.131
+     7.24
     ],
     "ma10": [
      6.183,
@@ -905,7 +897,7 @@
      6.594,
      6.361,
      6.155,
-     6.1671
+     6.178
     ],
     "ma30": [
      6.869,
@@ -937,10 +929,10 @@
      6.435,
      6.4543,
      6.464,
-     6.5167
+     6.5203
     ],
     "insider": null,
-    "entry_close": 7.13100004196167,
+    "entry_close": 7.239999771118164,
     "chart_url": "https://www.tradingview.com/chart/?symbol=NASDAQ:BOOM&interval=W",
     "insider_url": "http://openinsider.com/BOOM"
    },
@@ -949,7 +941,7 @@
      "verdict": "Doesn't qualify",
      "vclass": "v-no",
      "tag": "No breakout yet",
-     "plan": "Entry zone: near the 10-week MA (6.17). Sell rule: weekly close below it.",
+     "plan": "Entry zone: near the 10-week MA (6.18). Sell rule: weekly close below it.",
      "checks": [
       {
        "label": "Price under 15 and profitable",
@@ -1028,7 +1020,7 @@
        "pass": false,
        "pts": 0,
        "max": 1,
-       "note": "RS 48",
+       "note": "RS 51",
        "req": false
       },
       {
@@ -1128,7 +1120,7 @@
        "pass": true,
        "pts": 1,
        "max": 1,
-       "note": "+52%",
+       "note": "+54%",
        "req": true
       },
       {
@@ -1136,7 +1128,7 @@
        "pass": true,
        "pts": 1,
        "max": 1,
-       "note": "-22%",
+       "note": "-21%",
        "req": true
       },
       {
@@ -1144,7 +1136,7 @@
        "pass": false,
        "pts": 0,
        "max": 1,
-       "note": "RS 48",
+       "note": "RS 51",
        "req": true
       }
      ],
@@ -1170,7 +1162,7 @@
        "pass": true,
        "pts": 2,
        "max": 2,
-       "note": "33.3x",
+       "note": "42.1x",
        "req": true
       },
       {
@@ -1178,7 +1170,7 @@
        "pass": true,
        "pts": 1,
        "max": 1,
-       "note": "closed +33% that day",
+       "note": "closed +35% that day",
        "req": true
       },
       {
@@ -1247,14 +1239,14 @@
      "verdict": "Doesn't qualify",
      "vclass": "v-no",
      "tag": "Not set up",
-     "plan": "Stop at the bounce-day low 6.77 (max 5% risk). Sell on a daily close below the 9-day EMA (5.75).",
+     "plan": "Stop at the bounce-day low 6.88 (max 5% risk). Sell on a daily close below the 9-day EMA (5.77).",
      "checks": [
       {
        "label": "Big mover: up 30%+ in 1 or 3 months",
        "pass": false,
        "pts": 0,
        "max": 2,
-       "note": "+26%",
+       "note": "+28%",
        "req": true
       },
       {
@@ -1262,7 +1254,7 @@
        "pass": true,
        "pts": 1,
        "max": 1,
-       "note": "5.0%",
+       "note": "5.1%",
        "req": true
       },
       {
@@ -1278,7 +1270,7 @@
        "pass": true,
        "pts": 1,
        "max": 1,
-       "note": "VWAP 6.44",
+       "note": "VWAP 6.46",
        "req": true
       },
       {
@@ -1318,7 +1310,7 @@
        "pass": false,
        "pts": 0,
        "max": 1,
-       "note": "RS 48",
+       "note": "RS 51",
        "req": false
       }
      ],
@@ -1329,7 +1321,7 @@
      "verdict": "Doesn't qualify",
      "vclass": "v-no",
      "tag": "No wedge pop yet",
-     "plan": "Stop under the wedge pop low 5.13. Sell on a daily close below the 20-day EMA (5.71).",
+     "plan": "Stop under the wedge pop low 5.13. Sell on a daily close below the 20-day EMA (5.72).",
      "checks": [
       {
        "label": "Drifted below the 10-day EMA (wedge)",
@@ -1376,7 +1368,7 @@
        "pass": false,
        "pts": 0,
        "max": 1,
-       "note": "RS 48",
+       "note": "RS 51",
        "req": true
       },
       {
@@ -1434,7 +1426,7 @@
        "pass": false,
        "pts": 0,
        "max": 1,
-       "note": "-29 pts",
+       "note": "-27 pts",
        "req": true
       },
       {
@@ -1442,7 +1434,7 @@
        "pass": true,
        "pts": 1,
        "max": 1,
-       "note": "146m",
+       "note": "149m",
        "req": true
       },
       {
@@ -1476,7 +1468,7 @@
        "pass": true,
        "pts": 2,
        "max": 2,
-       "note": "P/B 0.62 (cut-off 0.87)",
+       "note": "P/B 0.63 (cut-off 0.87)",
        "req": true
       },
       {
@@ -1546,7 +1538,7 @@
     "state": "down",
     "text": "Downtrend: index below its 30-week MA. Most breakouts fail in weak markets, so go small or wait.",
     "bench": "IWM",
-    "change_4w": -0.3
+    "change_4w": -0.5
    },
    "added": "2026-10-28"
   },
@@ -1572,7 +1564,7 @@
     "max_score": 14,
     "tag": "No breakout yet",
     "tag_class": "z-ok",
-    "plan": "Entry zone: near the 10-week MA (14.29). Sell rule: weekly close below it.",
+    "plan": "Entry zone: near the 10-week MA (14.28). Sell rule: weekly close below it.",
     "checks": [
      {
       "label": "Price under 15 and profitable",
@@ -1603,7 +1595,7 @@
       "pass": true,
       "pts": 1,
       "max": 1,
-      "note": "+6.5% in 4 wks",
+      "note": "+6.4% in 4 wks",
       "req": false
      },
      {
@@ -1673,7 +1665,7 @@
     ],
     "stop": null,
     "stop_pct": null,
-    "dist_ma10": 0.19708952450985007,
+    "dist_ma10": 0.18815002771422917,
     "closes": [
      8.99,
      10.04,
@@ -1704,7 +1696,7 @@
      14.63,
      14.33,
      16.51,
-     17.11
+     16.965
     ],
     "ma10": [
      10.26,
@@ -1736,7 +1728,7 @@
      13.462,
      13.616,
      13.919,
-     14.293
+     14.2785
     ],
     "ma30": [
      12.5307,
@@ -1768,10 +1760,10 @@
      11.7073,
      11.8417,
      12.0773,
-     12.3163
+     12.3115
     ],
     "insider": null,
-    "entry_close": 17.110000610351562,
+    "entry_close": 16.96500015258789,
     "chart_url": "https://www.tradingview.com/chart/?symbol=NASDAQ:AVPT&interval=W",
     "insider_url": "http://openinsider.com/AVPT"
    },
@@ -1780,7 +1772,7 @@
      "verdict": "Doesn't qualify",
      "vclass": "v-no",
      "tag": "No breakout yet",
-     "plan": "Entry zone: near the 10-week MA (14.29). Sell rule: weekly close below it.",
+     "plan": "Entry zone: near the 10-week MA (14.28). Sell rule: weekly close below it.",
      "checks": [
       {
        "label": "Price under 15 and profitable",
@@ -1811,7 +1803,7 @@
        "pass": true,
        "pts": 1,
        "max": 1,
-       "note": "+6.5% in 4 wks",
+       "note": "+6.4% in 4 wks",
        "req": false
       },
       {
@@ -1939,14 +1931,14 @@
      "verdict": "Doesn't qualify",
      "vclass": "v-no",
      "tag": "Stage 2 \u00b7 11 wks",
-     "plan": "Sell rule: weekly close below the 30-week MA (12.32).",
+     "plan": "Sell rule: weekly close below the 30-week MA (12.31).",
      "checks": [
       {
        "label": "Above a rising 30-week MA",
        "pass": true,
        "pts": 2,
        "max": 2,
-       "note": "+39% above it",
+       "note": "+38% above it",
        "req": true
       },
       {
@@ -1997,14 +1989,14 @@
      "verdict": "Doesn't qualify",
      "vclass": "v-no",
      "tag": "Not set up",
-     "plan": "Stop at the bounce-day low 16.25 (max 5% risk). Sell on a daily close below the 9-day EMA (16.08).",
+     "plan": "Stop at the bounce-day low 16.12 (max 5% risk). Sell on a daily close below the 9-day EMA (16.05).",
      "checks": [
       {
        "label": "Big mover: up 30%+ in 1 or 3 months",
        "pass": true,
        "pts": 2,
        "max": 2,
-       "note": "+33%",
+       "note": "+32%",
        "req": true
       },
       {
@@ -2028,7 +2020,7 @@
        "pass": false,
        "pts": 0,
        "max": 1,
-       "note": "VWAP 17.19",
+       "note": "VWAP 17.13",
        "req": true
       },
       {
@@ -2079,7 +2071,7 @@
      "verdict": "Doesn't qualify",
      "vclass": "v-no",
      "tag": "No ema crossback yet",
-     "plan": "Stop under the ema crossback low 15.96. Sell on a daily close below the 20-day EMA (15.29).",
+     "plan": "Stop under the ema crossback low 15.96. Sell on a daily close below the 20-day EMA (15.28).",
      "checks": [
       {
        "label": "Uptrend: 10 EMA > 20 EMA > 50-day, 50-day rising",
@@ -2107,8 +2099,8 @@
       },
       {
        "label": "Bounced: closed above the 10-day EMA and the prior day's high",
-       "pass": true,
-       "pts": 1,
+       "pass": false,
+       "pts": 0,
        "max": 1,
        "note": "",
        "req": true
@@ -2138,7 +2130,7 @@
        "req": false
       }
      ],
-     "score": 5,
+     "score": 4,
      "max_score": 7
     },
     "slater": {
@@ -2184,7 +2176,7 @@
        "pass": true,
        "pts": 1,
        "max": 1,
-       "note": "+2 pts",
+       "note": "+3 pts",
        "req": true
       },
       {
@@ -2296,7 +2288,7 @@
     "state": "down",
     "text": "Downtrend: index below its 30-week MA. Most breakouts fail in weak markets, so go small or wait.",
     "bench": "IWM",
-    "change_4w": -0.3
+    "change_4w": -0.5
    },
    "added": "2026-10-28"
   }
