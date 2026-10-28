@@ -1,234 +1,142 @@
 {
  "markets": {
   "america": {
-   "date": "2026-10-27",
-   "time": "Tue 27 Oct 11:16",
+   "date": "2026-10-28",
+   "time": "Wed 28 Oct 10:17",
    "picks": [
     {
-     "ticker": "AEYE",
-     "name": "AudioEye, Inc.",
+     "ticker": "ULBI",
+     "name": "Ultralife Corporation",
      "exchange": "NASDAQ",
-     "ysym": "AEYE",
+     "ysym": "ULBI",
      "market": "america",
-     "price": 9.65,
+     "price": 15.61,
      "currency": "USD",
-     "change": 0.30053908355795156,
-     "vol_x": 4.05,
-     "rvol_time": 48.18805508870144,
-     "value": 7938157.550000001,
-     "mcap": 121297351.39487872,
-     "sector": "Technology Services",
-     "holding": true,
-     "extended": true,
-     "near_high": false,
-     "longterm_down": false,
-     "chart_url": "https://www.tradingview.com/chart/?symbol=NASDAQ:AEYE&interval=D",
-     "lists": [],
-     "owned": false,
-     "news": [
-      {
-       "title": "AudioEye (AEYE) Q3 2026 Earnings Call Transcript",
-       "date": "2026-10-27",
-       "url": "https://www.fool.com/earnings/call-transcripts/2026/10/26/audioeye-aeye-q3-2026-earnings-call-transcript/?.tsrc=rss",
-       "source": "Yahoo Finance",
-       "tone": "neutral"
-      },
-      {
-       "title": "What Audioeye (AEYE) Said on Its Q3 Earnings Call",
-       "date": "2026-10-27",
-       "url": "https://www.marketbeat.com/instant-alerts/transcript-what-audioeye-aeye-said-on-its-q3-earnings-call-2026-10-26/?utm_source=yahoofinance&utm_medium=yahoofinance&.tsrc=rss",
-       "source": "Yahoo Finance",
-       "tone": "neutral"
-      },
-      {
-       "title": "AudioEye (AEYE) Q3 Earnings and Revenues Beat Estimates",
-       "date": "2026-10-26",
-       "url": "https://finance.yahoo.com/markets/stocks/articles/audioeye-aeye-q3-earnings-revenues-202001576.html?.tsrc=rss",
-       "source": "Yahoo Finance",
-       "tone": "pos"
-      },
-      {
-       "title": "AudioEye: Q3 Earnings Snapshot",
-       "date": "2026-10-26",
-       "url": "https://finance.yahoo.com/markets/stocks/articles/audioeye-q3-earnings-snapshot-201638731.html?.tsrc=rss",
-       "source": "Yahoo Finance",
-       "tone": "neutral"
-      },
-      {
-       "title": "AudioEye Reports Record Third Quarter 2026 Results",
-       "date": "2026-10-26",
-       "url": "https://finance.yahoo.com/markets/stocks/articles/audioeye-reports-record-third-quarter-200100202.html?.tsrc=rss",
-       "source": "Yahoo Finance",
-       "tone": "pos"
-      },
-      {
-       "title": "Why the Market Dipped But AudioEye (AEYE) Gained Today",
-       "date": "2026-10-22",
-       "url": "https://finance.yahoo.com/markets/stocks/articles/why-market-dipped-audioeye-aeye-211503900.html?.tsrc=rss",
-       "source": "Yahoo Finance",
-       "tone": "neutral"
-      }
-     ],
-     "score": 5.05
-    },
-    {
-     "ticker": "BOW",
-     "name": "Bowhead Specialty Holdings Inc.",
-     "exchange": "NYSE",
-     "ysym": "BOW",
-     "market": "america",
-     "price": 34.305,
-     "currency": "USD",
-     "change": 0.004833040421792593,
-     "vol_x": 1.36,
-     "rvol_time": 10.953457128276696,
-     "value": 7401200.835,
-     "mcap": 1130183559.6586118,
-     "sector": "Finance",
-     "holding": true,
-     "extended": false,
-     "near_high": true,
-     "longterm_down": false,
-     "chart_url": "https://www.tradingview.com/chart/?symbol=NYSE:BOW&interval=D",
-     "lists": [],
-     "owned": false,
-     "news": [
-      {
-       "title": "Bowhead Specialty Holdings I (NYSE:BOW) Meets Minervini Trend Template With High Growth Momentum - ChartMill",
-       "date": "2026-10-27",
-       "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOUGtIS3ZONzcyVjV6M1N3cVdhOWhCaUZ3ZG5nOGU2bU94cjE3VGRtcWozbUdnR2kteF9MQUFfRzNTODJGTWNSZFRDVEphZlBObDRxLU1wRnY5ZkpDcm11NDFOWnVxdVpsZ01YVjlPV25vQmx0bG5KdEUtLUVKQVdqSzVGRmdzMXduTWk4elBrZ1FPVjdZZWJ2WkdUeHgwTHRFSlZEaC1kei01U3NjOVBOQ1NYY3dVZGhGdWFPWC1QZkI3bFUycjBDdWhLME1TLVY2Yk9wNUZ4bFZBNTd6?oc=5",
-       "source": "ChartMill",
-       "tone": "pos"
-      },
-      {
-       "title": "Bowhead Specialty (BOW) Projected to Announce Quarterly Earnings on Tuesday - MarketBeat",
-       "date": "2026-10-27",
-       "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNRzZQR1pXVy1qeUo2Y29nel9vVTBkbGdYdzY1cWFPTWRGMVdFMmNQVVpWNy1KVHZfN2hGOF96THdDaDBNbG5WZDk0UEw1S0Fwc2hsLWluT0dtb2pMLWU5Z2Y2MUJjSE1ZZ0k3TWpXWXdFZzQ3VkVmbEhqblJOTVh6RUxUSktUU1Y4U2xhY3I4YWlhY0hHSEVoVjVTLTJzUjgxeTJHaFFJTUtjU3lEdGNpSER0XzV6Zl9KeURTdWVFa3czR2s3VXFEZFlaOGZDY2VwLWc?oc=5",
-       "source": "MarketBeat",
-       "tone": "pos"
-      },
-      {
-       "title": "Bowhead Specialty Holdings Inc. Estimates \u2013 NYSE:BOW - TradingView",
-       "date": "2026-10-25",
-       "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1kdkZqWTQzNU1XM05Cd1ZrQ1BVQnNPaXBnZGw5VG1wMEp3TGItNkx5eWVCMGMzWW9uNjBocG5lVXJmeGJnYkZHelA3WEE5RXFOQUU3OFRqclh4dDdKWFRnaWJTdkhwY21LZ3gycnVPSkJpWGxs?oc=5",
-       "source": "TradingView",
-       "tone": "neutral"
-      },
-      {
-       "title": "(BOW) as a Liquidity Pulse for Institutional Tactics - Stock Traders Daily",
-       "date": "2026-10-26",
-       "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQMHJ3akxxSGZ3WDd1OUgzeHpWSFhEUlZCd3VNN0VZRGl0bl9TLTJLV0owcHJXQ2F2VUh3bkZZRGlMU1lnbXJxMUVRWlJieGwzVy1TUHAwYTVlbXJQOVFkaGZlRjJBcjNDb29ReDAtQUlQem05ZENzY1hldUljZlM5RWJyT3hzRHctWFpiNUhzWmRCSXc1WlZISFRBMG5LZmhUd2J4c3ZuenBvSmE3WXg3bmQ3ek1OS1M0NWVKQW5Qd3I1OUhJd3gxcEJB?oc=5",
-       "source": "Stock Traders Daily",
-       "tone": "neutral"
-      }
-     ],
-     "score": 4.36
-    },
-    {
-     "ticker": "EFOI",
-     "name": "Energy Focus, Inc.",
-     "exchange": "NASDAQ",
-     "ysym": "EFOI",
-     "market": "america",
-     "price": 4.235,
-     "currency": "USD",
-     "change": 0.12334217506631308,
-     "vol_x": 2.08,
-     "rvol_time": 12.814391080390365,
-     "value": 540699.39,
-     "mcap": 26973655.23740053,
+     "change": 1.4544025157232705,
+     "vol_x": 4.96,
+     "rvol_time": 643.0303978530306,
+     "value": 16624041.209999999,
+     "mcap": 105978393.0,
      "sector": "Producer Manufacturing",
-     "holding": true,
-     "extended": false,
-     "near_high": false,
-     "longterm_down": false,
-     "chart_url": "https://www.tradingview.com/chart/?symbol=NASDAQ:EFOI&interval=D",
+     "holding": false,
+     "extended": true,
+     "near_high": true,
+     "longterm_down": true,
+     "chart_url": "https://www.tradingview.com/chart/?symbol=NASDAQ:ULBI&interval=D",
      "lists": [],
      "owned": false,
      "news": [
       {
-       "title": "Domestic Refiners Took Over 127 Million Barrels of Nigerian Crude in Nine Months \u2013 NUPRC - Energy Focus Report",
+       "title": "Ultralife and EnerSys climb after announcing $320 million defense power tie-up",
+       "date": "2026-10-28",
+       "url": "https://finance.yahoo.com/markets/stocks/articles/ultralife-enersys-climb-announcing-320-135220886.html?.tsrc=rss",
+       "source": "Yahoo Finance",
+       "tone": "neutral"
+      },
+      {
+       "title": "EnerSys To Acquire Ultralife, Expanding Differentiated Battery Technologies and Accelerating Growth in Defense Market",
        "date": "2026-10-27",
-       "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNblE0ekRXdy11am1XT2lTaVg1QkV2MVh5R1dNVHotWENsNFRTZUQ5RG9MWENWRlZSNEZvQXItZ1ZLNy1iaWUtV3lZeFY1YTFwYWRYTk1FLVlCd2g4WnJGUEJlUWh6UzdULU0ybmRwcE04WWVlSVVaMk56RDVqSTJfajg5X3BiXzJ6Z3lJSGZWdHVYcGFKZDBOR1F4dVduaGdjY3IyaE9VbS02MXphYXhpS3lGZWxzeXI2dXQwUHdB?oc=5",
-       "source": "Energy Focus Report",
-       "tone": "neutral"
-      },
-      {
-       "title": "Your Desk Job May Be Affecting Your Metabolic Health: How to eat for energy, focus and better health at work - Businessday NG",
-       "date": "2026-10-27",
-       "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNM3JuVklvbE5CSGJTcG9Nd0lLcjdsZ05Wc05ubEUzd3ZWQnViWDVkZWx1YXFkWkh0endSLWJXV0x2VER6LXkzQm1MTW1NOS15NF9JUl9oZldWOHItcEUwNlpWaUdURjlBV1lXQlJKemZMQVZBZkt5RzR5ZGp2YklxODZkMlgxWlJVbDlXVFVXbmZhWVlBMEl5RzJQNmdRdE5Tbkx2MUk1X3dXZGNCdkFYS0NZeWd2VEtKS0tkYjVyVTNRelhFdVNBaTNTM1pJeWtWRVZWeDFXb0gtb3VDcDZyRE1n0gHnAUFVX3lxTFA1SEJtMTZfOUtKYWFLREJhOG5xMS03RTJPLW12Y0w3TExobXZKb1ltamhRMTRZVWRuNXpGQ1RpX01NMV84TndUTEcwWlh0MGlOV2d2R0pEeUZsRWlzc3AxYllEb1FhMWhEbEdEendyMWFVd0FOUFBVZWxVa0pKc2tEbWNQdTdOQnMydkJGUFEzZjVzUUQ3R3FwV3Q4SXNMS1BuNFdiS0tGUE8zSFhtbTc4Z2JlQ1k3b0ZsVW1BOThPbFpEZzFPczJ6eU5mNnpCUkdUZW54dE9fREIyeUY2YlRMTXp0a0Nrdw?oc=5",
-       "source": "Businessday NG",
-       "tone": "neutral"
-      },
-      {
-       "title": "Energy Focus, Inc. Estimates \u2013 NASDAQ:EFOI - TradingView",
-       "date": "2026-10-23",
-       "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9pLUliWHlWUkdjcFlSNjJVd1k4YWh4WTZoNUU0Ti12Q0lnV0E5UTUwQS1JZEZSTjZiY2IzS3V6M1hnUFZwS19SUEs3ek9HbV84STVzMFRSLWQ1OG5rNHlQbnFiVmFJOGU0M2pKTGFsbUdZVklPal9mbg?oc=5",
-       "source": "TradingView",
-       "tone": "neutral"
-      },
-      {
-       "title": "US Secretary of State's Visit to Jamnagar Highlights Energy Focus - India News Network",
-       "date": "2026-10-26",
-       "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNVHNUUDBWSDZfNWdESWlLOUREVDZySTRSR05aLXZrX1NvY2IyMldrMEx6WHFOTUpNdFFzYTZWWThYbHNzMWNPekVra2dFNWl6cDlHdnAtYkFRQ2pDRUc2WkVGRE9EVXFtRFFyQlZVTU9RR2tQbkVDNjl0WGV6V3JsMFFtckh5bW5WYWpBQ3hNOHd0S3ZLOTd5RU8zOUdCSk1CU2hxYQ?oc=5",
-       "source": "India News Network",
-       "tone": "neutral"
-      },
-      {
-       "title": "Emad Shash: Starting ESMO 2026 With Energy, Focus, and Purpose - Oncodaily",
-       "date": "2026-10-23",
-       "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5OSjQzM3Y2M0U0NGRLZHhmZ1hpZEg2TU9OaHVtQmdRRVdFT0h6ZWZIaEkzNnozc3UxZXJNU1V6RVd4MTlMOFkzR3JRMl9iT2JMLXExTGMtUzN3QQ?oc=5",
-       "source": "Oncodaily",
-       "tone": "neutral"
-      },
-      {
-       "title": "PETAN Chairman Urges Indigenous Oil Producers to Invest in Training Young Engineers as Experienced Professionals Retire - Energy Focus Report",
-       "date": "2026-10-27",
-       "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOM3hyaUFYdmFIZmI2c3prc0pvQkNCNkhmTGUwUkZuWm9CM05ESE90TzNGY3pHNExmMEpFZjd5TDRvb3hUb096R3M4YmhReGl4UEZRZDZoMTBEb2NvOTVCTkp2R0xBenpQdUtkdjNCMTQyOFF4c0JLN0lKSHgwMU1uYXl0NkRoaEJfeXZKT2xiMXd2VlUzRU1mRzBuSzVrb2VlREV2R3o0VnVIU2UyYnFaQmIwTkxPQzQ4ejBocnowdnV6cU4tRmZ3aFhqN1IxRnQ4MVlpci1nT3d2QjNld2FBMXlLcUstT29ORWc?oc=5",
-       "source": "Energy Focus Report",
-       "tone": "neutral"
-      },
-      {
-       "title": "Africa Has Money for Energy Deals. It Needs Risk Capital for Energy Projects - Energy Focus Report",
-       "date": "2026-10-27",
-       "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNcGZRcDNjOVJfV1hkR21McEpKdi05Rm1BZEUydmNUSWxpSzZjcHIyUjJDS0E4LTlrVVJlQ0N1VU9JLTZ5SFRLVmtNTVgxYW5nWktISGhIUExrYjNMTzZWclFKcVk1WUNVWkNzYlM3QkczMUkxbGVHaGx3TUVEWERPUDlCcXV1b3NheVFKcTIwblBvS05OUHFWNWxEazBST001QVRBbHRPYWRYVHJIRzRr?oc=5",
-       "source": "Energy Focus Report",
-       "tone": "neutral"
-      },
-      {
-       "title": "NNPC Calls for Stronger Investment, Regional Cooperation to Boost Nigeria\u2019s Energy Security - Energy Focus Report",
-       "date": "2026-10-27",
-       "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOcUZTbUFOUHU1RlpHUk1XOHZPV2MwU205NTdEWGRvNHpzZGhQNDhyUkh0QXgyQUdKTy1LQUVmS2x0dDRLbURpaGRUaFg2d09KUjB6d21zWnJsQktGVFMzN3pMYmU3eXB1Z1ZtLTJXYjVfVVRlU0dVbnBsckVvdUJqT0JXbjF0ODhaVzZFS3lsS1B0R1ZwNVJEQWp2NHE1VTZ0YlVSRXh3ZUVieGJQQnE0QzhGUGotdDEyWEVHOUFkMHZSUQ?oc=5",
-       "source": "Energy Focus Report",
+       "url": "https://finance.yahoo.com/markets/stocks/articles/enersys-acquire-ultralife-expanding-differentiated-203100007.html?.tsrc=rss",
+       "source": "Yahoo Finance",
        "tone": "pos"
+      },
+      {
+       "title": "EnerSys to Acquire Ultralife Corporation in a $320 Million All-Cash Transaction",
+       "date": "2026-10-27",
+       "url": "https://finance.yahoo.com/markets/stocks/articles/enersys-acquire-ultralife-corporation-320-201500253.html?.tsrc=rss",
+       "source": "Yahoo Finance",
+       "tone": "pos"
+      },
+      {
+       "title": "Ultralife Stock Soars 145%. EnerSys to Buy It for the \u2018Battlefield of the Future.\u2019",
+       "date": "2026-10-28",
+       "url": "https://finance.yahoo.com/m/9d632cb8-296f-395e-8bfa-2d1e0fa9427d/ultralife-stock-soars-145%25..html?.tsrc=rss",
+       "source": "Yahoo Finance",
+       "tone": "neutral"
       }
      ],
-     "score": 3.58
+     "score": 5.96
     }
    ],
    "quiet": [
     {
-     "ticker": "EDHL",
-     "name": "Everbright Digital Holding Limited",
-     "exchange": "NASDAQ",
-     "ysym": "EDHL",
+     "ticker": "EGG",
+     "name": "Enigmatig Limited",
+     "exchange": "AMEX",
+     "ysym": "EGG",
      "market": "america",
-     "price": 5.83,
+     "price": 5.32,
      "currency": "USD",
-     "change": 0.01745200698080273,
-     "vol_x": 1.03,
-     "rvol_time": 2.8733311426959656,
-     "value": 2708309.0100000002,
-     "mcap": 34742572.48691099,
+     "change": 0.03300970873786406,
+     "vol_x": 2.63,
+     "rvol_time": 3.1699084285809773,
+     "value": 283502.8,
+     "mcap": 148987671.0,
      "sector": "Commercial Services",
      "holding": true,
      "extended": false,
      "near_high": false,
-     "longterm_down": false,
-     "chart_url": "https://www.tradingview.com/chart/?symbol=NASDAQ:EDHL&interval=D",
+     "longterm_down": true,
+     "chart_url": "https://www.tradingview.com/chart/?symbol=AMEX:EGG&interval=D",
      "lists": [],
      "owned": false,
      "news": []
+    },
+    {
+     "ticker": "TCI",
+     "name": "Transcontinental Realty Investors, Inc.",
+     "exchange": "NYSE",
+     "ysym": "TCI",
+     "market": "america",
+     "price": 49.3,
+     "currency": "USD",
+     "change": 0.018595041322314022,
+     "vol_x": 2.26,
+     "rvol_time": 3.099000102378596,
+     "value": 911557.0,
+     "mcap": 425918300.0,
+     "sector": "Finance",
+     "holding": true,
+     "extended": false,
+     "near_high": false,
+     "longterm_down": false,
+     "chart_url": "https://www.tradingview.com/chart/?symbol=NYSE:TCI&interval=D",
+     "lists": [],
+     "owned": false,
+     "news": []
+    },
+    {
+     "ticker": "SBFG",
+     "name": "SB Financial Group, Inc.",
+     "exchange": "NASDAQ",
+     "ysym": "SBFG",
+     "market": "america",
+     "price": 30.6,
+     "currency": "USD",
+     "change": 0.006578947368421146,
+     "vol_x": 1.6,
+     "rvol_time": 2.044710820231913,
+     "value": 721762.2000000001,
+     "mcap": 191341562.0,
+     "sector": "Finance",
+     "holding": false,
+     "extended": false,
+     "near_high": false,
+     "longterm_down": false,
+     "chart_url": "https://www.tradingview.com/chart/?symbol=NASDAQ:SBFG&interval=D",
+     "lists": [
+      "Kell"
+     ],
+     "owned": false,
+     "news": [
+      {
+       "title": "C&F Financial (CFFI) Q3 Earnings Strength Leaves Stock Price Unmoved - Yahoo Finance",
+       "date": "2026-10-27",
+       "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPSkpnX0dDdm85eVplQ0pic3lWdW05M2lQc3MzQjEwOURybENvajRHdHNkQ3JnY3h6YVo2UVpDTy1weVNZSG45NVROVUI1NDNMNTJuX1RuMVQ2YVNpUmsta1lhZWN2dXJ1TnU2bldaMEFPNWdrd3RVUUhfMHJCdGlrTWdNMXp1SGZfTW81cGdoZw?oc=5",
+       "source": "Yahoo Finance",
+       "tone": "neutral"
+      }
+     ]
     }
    ]
   },
