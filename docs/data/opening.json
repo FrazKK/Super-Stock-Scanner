@@ -1,138 +1,73 @@
 {
  "markets": {
   "america": {
-   "date": "2026-10-28",
-   "time": "Wed 28 Oct 10:17",
-   "picks": [
-    {
-     "ticker": "ULBI",
-     "name": "Ultralife Corporation",
-     "exchange": "NASDAQ",
-     "ysym": "ULBI",
-     "market": "america",
-     "price": 15.61,
-     "currency": "USD",
-     "change": 1.4544025157232705,
-     "vol_x": 4.96,
-     "rvol_time": 643.0303978530306,
-     "value": 16624041.209999999,
-     "mcap": 105978393.0,
-     "sector": "Producer Manufacturing",
-     "holding": false,
-     "extended": true,
-     "near_high": true,
-     "longterm_down": true,
-     "chart_url": "https://www.tradingview.com/chart/?symbol=NASDAQ:ULBI&interval=D",
-     "lists": [],
-     "owned": false,
-     "news": [
-      {
-       "title": "Ultralife and EnerSys climb after announcing $320 million defense power tie-up",
-       "date": "2026-10-28",
-       "url": "https://finance.yahoo.com/markets/stocks/articles/ultralife-enersys-climb-announcing-320-135220886.html?.tsrc=rss",
-       "source": "Yahoo Finance",
-       "tone": "neutral"
-      },
-      {
-       "title": "EnerSys To Acquire Ultralife, Expanding Differentiated Battery Technologies and Accelerating Growth in Defense Market",
-       "date": "2026-10-27",
-       "url": "https://finance.yahoo.com/markets/stocks/articles/enersys-acquire-ultralife-expanding-differentiated-203100007.html?.tsrc=rss",
-       "source": "Yahoo Finance",
-       "tone": "pos"
-      },
-      {
-       "title": "EnerSys to Acquire Ultralife Corporation in a $320 Million All-Cash Transaction",
-       "date": "2026-10-27",
-       "url": "https://finance.yahoo.com/markets/stocks/articles/enersys-acquire-ultralife-corporation-320-201500253.html?.tsrc=rss",
-       "source": "Yahoo Finance",
-       "tone": "pos"
-      },
-      {
-       "title": "Ultralife Stock Soars 145%. EnerSys to Buy It for the \u2018Battlefield of the Future.\u2019",
-       "date": "2026-10-28",
-       "url": "https://finance.yahoo.com/m/9d632cb8-296f-395e-8bfa-2d1e0fa9427d/ultralife-stock-soars-145%25..html?.tsrc=rss",
-       "source": "Yahoo Finance",
-       "tone": "neutral"
-      }
-     ],
-     "score": 5.96
-    }
-   ],
+   "date": "2026-10-29",
+   "time": "Thu 29 Oct 09:58",
+   "picks": [],
    "quiet": [
     {
-     "ticker": "EGG",
-     "name": "Enigmatig Limited",
+     "ticker": "MXC",
+     "name": "Mexco Energy Corporation",
      "exchange": "AMEX",
-     "ysym": "EGG",
+     "ysym": "MXC",
      "market": "america",
-     "price": 5.32,
+     "price": 10.42,
      "currency": "USD",
-     "change": 0.03300970873786406,
-     "vol_x": 2.63,
-     "rvol_time": 3.1699084285809773,
-     "value": 283502.8,
-     "mcap": 148987671.0,
-     "sector": "Commercial Services",
-     "holding": true,
-     "extended": false,
-     "near_high": false,
-     "longterm_down": true,
-     "chart_url": "https://www.tradingview.com/chart/?symbol=AMEX:EGG&interval=D",
-     "lists": [],
-     "owned": false,
-     "news": []
-    },
-    {
-     "ticker": "TCI",
-     "name": "Transcontinental Realty Investors, Inc.",
-     "exchange": "NYSE",
-     "ysym": "TCI",
-     "market": "america",
-     "price": 49.3,
-     "currency": "USD",
-     "change": 0.018595041322314022,
-     "vol_x": 2.26,
-     "rvol_time": 3.099000102378596,
-     "value": 911557.0,
-     "mcap": 425918300.0,
-     "sector": "Finance",
+     "change": 0.012633624878522915,
+     "vol_x": 1.8,
+     "rvol_time": 2.0791212058534567,
+     "value": 758471.8,
+     "mcap": 21319320.000000004,
+     "sector": "Energy Minerals",
      "holding": true,
      "extended": false,
      "near_high": false,
      "longterm_down": false,
-     "chart_url": "https://www.tradingview.com/chart/?symbol=NYSE:TCI&interval=D",
+     "chart_url": "https://www.tradingview.com/chart/?symbol=AMEX:MXC&interval=D",
      "lists": [],
      "owned": false,
      "news": []
     },
     {
-     "ticker": "SBFG",
-     "name": "SB Financial Group, Inc.",
+     "ticker": "CFFI",
+     "name": "C&F Financial Corporation",
      "exchange": "NASDAQ",
-     "ysym": "SBFG",
+     "ysym": "CFFI",
      "market": "america",
-     "price": 30.6,
+     "price": 109.73,
      "currency": "USD",
-     "change": 0.006578947368421146,
-     "vol_x": 1.6,
-     "rvol_time": 2.044710820231913,
-     "value": 721762.2000000001,
-     "mcap": 191341562.0,
+     "change": 0.010684351109883125,
+     "vol_x": 1.22,
+     "rvol_time": 1.4446591132359683,
+     "value": 9557592.73,
+     "mcap": 356808048.99999994,
      "sector": "Finance",
-     "holding": false,
+     "holding": true,
      "extended": false,
-     "near_high": false,
+     "near_high": true,
      "longterm_down": false,
-     "chart_url": "https://www.tradingview.com/chart/?symbol=NASDAQ:SBFG&interval=D",
-     "lists": [
-      "Kell"
-     ],
+     "chart_url": "https://www.tradingview.com/chart/?symbol=NASDAQ:CFFI&interval=D",
+     "lists": [],
      "owned": false,
      "news": [
       {
-       "title": "C&F Financial (CFFI) Q3 Earnings Strength Leaves Stock Price Unmoved - Yahoo Finance",
+       "title": "C&F Financial (CFFI) Q3 Earnings Strength Leaves Stock Price Unmoved",
        "date": "2026-10-27",
-       "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPSkpnX0dDdm85eVplQ0pic3lWdW05M2lQc3MzQjEwOURybENvajRHdHNkQ3JnY3h6YVo2UVpDTy1weVNZSG45NVROVUI1NDNMNTJuX1RuMVQ2YVNpUmsta1lhZWN2dXJ1TnU2bldaMEFPNWdrd3RVUUhfMHJCdGlrTWdNMXp1SGZfTW81cGdoZw?oc=5",
+       "url": "https://finance.yahoo.com/markets/stocks/articles/c-f-financial-cffi-q3-221225504.html?.tsrc=rss",
+       "source": "Yahoo Finance",
+       "tone": "neutral"
+      },
+      {
+       "title": "C&F: Q3 Earnings Snapshot",
+       "date": "2026-10-26",
+       "url": "https://finance.yahoo.com/markets/stocks/articles/c-f-q3-earnings-snapshot-204733327.html?.tsrc=rss",
+       "source": "Yahoo Finance",
+       "tone": "neutral"
+      },
+      {
+       "title": "C&F Financial Corporation Announces Net Income for Third Quarter and First Nine Months of 2026",
+       "date": "2026-10-26",
+       "url": "https://finance.yahoo.com/markets/stocks/articles/c-f-financial-corporation-announces-200500335.html?.tsrc=rss",
        "source": "Yahoo Finance",
        "tone": "neutral"
       }
@@ -141,99 +76,340 @@
    ]
   },
   "canada": {
-   "date": "2026-10-27",
-   "time": "Tue 27 Oct 10:18",
-   "picks": [],
-   "quiet": [
+   "date": "2026-10-29",
+   "time": "Thu 29 Oct 09:58",
+   "picks": [
     {
-     "ticker": "TGO",
-     "name": "TeraGo Inc.",
-     "exchange": "TSX",
-     "ysym": "TGO.TO",
+     "ticker": "CFW",
+     "name": "Calfrac Well Services Ltd.",
+     "exchange": "NEO",
+     "ysym": "CFW.NE",
      "market": "canada",
-     "price": 1.81,
+     "price": 7.9,
      "currency": "CAD",
-     "change": 0.011173184357541908,
-     "vol_x": 6.35,
-     "rvol_time": 129.75,
-     "value": 187959.45,
-     "mcap": 69873761.0,
-     "sector": "Communications",
+     "change": 0.01542416452442161,
+     "vol_x": 6.6,
+     "rvol_time": 19.868818630702336,
+     "value": 1064920.0,
+     "mcap": 798455983.0,
+     "sector": "Industrial Services",
+     "holding": false,
+     "extended": false,
+     "near_high": true,
+     "longterm_down": false,
+     "chart_url": "https://www.tradingview.com/chart/?symbol=NEO:CFW&interval=D",
+     "lists": [],
+     "owned": false,
+     "news": [
+      {
+       "title": "VARCOE: As New CEO Takes Helm at Calfrac, Investor Sentiment Improves For Oilfield Services Sector - EnergyNow",
+       "date": "2026-10-28",
+       "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPOWp5dFN5UWh5UVNVYVVHSjZlYUlmbDVFcEF2ZlE5eGI4c3BQbGJTYkd5VXk3UG1jb2xrYThacTMxbGdKSHNpeXpSdWhNcFY3VTBrNlo2a0NHUUdBUGdyVHoweXcwekl5Vm51aUktU09Pck5HcHZPT0F3MmZpeW9oQUZpRl84QW42TlU4M3NVWXFGTmt5dTkyOFQxVmpIZC02dkYzMDJXSFJTVFhtOHloX3N0TTg5aWRzSVhqblFza3Y4dmUt?oc=5",
+       "source": "EnergyNow",
+       "tone": "neutral"
+      },
+      {
+       "title": "Calfrac Well Services Ltd. (TSX:CFW) Advances as Buying Interest Supports a Constructive Market Outlook - kalkine.ca",
+       "date": "2026-10-27",
+       "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOM2FLZmtFV2lNUlc2SUFOQ1c2ai1TQmRmZkZUb2lpSjJMRXdlaU92bGt2OU5fZGlMeU0wR3NHSkhaSkdoQWJHaWZNSjRLazdoOFJBdFllUm45STVTQjJxd3JIQUpZWnR5bFB2TE9NcEdQN1pfRW9YUGlxUGxNM191eThmZ3hZWUFMZ0ctUUNBQ19xMlN2WEtvdFhfQnJiWEpLRUxnOGtIZ2Vual9mMVRtMktuUFJpd2dDamFkbnozSUdnVWJxTzFQMlVB?oc=5",
+       "source": "kalkine.ca",
+       "tone": "neutral"
+      },
+      {
+       "title": "Calfrac Well Services (TSE:CFW) Reaches New 1-Year High - Should You Buy? - MarketBeat",
+       "date": "2026-10-26",
+       "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPa0NaaVRlSE5ZMW9vaXFNUExwTHZrQlI5M1h0MnhjRzJRQVdiWTI3SmJvNFBlQWZMMDhnNklHcjZCT0Ztd19yVzNIMUM4Zjd2cUVLb0doc2t0QzBTNjBENnB6VldyczZ3WGtRTmtqaXplcDN6TlBzeUg3akkxX1dVaUdxZ0szV3NwaTBIN3ViSldPSEhJcUNvVGVUNXJEUHR6R3VraXFkR19MdXZMQjlPeDFtQlVfbDc1LVllZll4MmpWckstVmNn?oc=5",
+       "source": "MarketBeat",
+       "tone": "pos"
+      },
+      {
+       "title": "TMX, Calfrac, Baytex at 52-Week Highs on News - Yahoo! Finance Canada",
+       "date": "2026-10-27",
+       "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQLXFuOFd5bFBsUDdMaVVGYTJzX1dRZXlnX1owLUNUdWlMenR6dDRSakJvdEtlX00yYXcxUG5OdWxmamt2b3dDVXB5bE04Y19RXzBBT0FWU2pUMmZBNEIzYXdxN2RSVXRrUHQ4ZS1HOGt3SU5xbU9IMWNUQWIwcENuTA?oc=5",
+       "source": "Yahoo! Finance Canada",
+       "tone": "neutral"
+      }
+     ],
+     "score": 8.1
+    },
+    {
+     "ticker": "HLF",
+     "name": "High Liner Foods Incorporated",
+     "exchange": "NEO",
+     "ysym": "HLF.NE",
+     "market": "canada",
+     "price": 26.78,
+     "currency": "CAD",
+     "change": 0.0011214953271028462,
+     "vol_x": 1.19,
+     "rvol_time": 1.3457056088276917,
+     "value": 8288865.260000001,
+     "mcap": 750810586.0,
+     "sector": "Consumer Non-Durables",
+     "holding": true,
+     "extended": false,
+     "near_high": true,
+     "longterm_down": true,
+     "chart_url": "https://www.tradingview.com/chart/?symbol=NEO:HLF&interval=D",
+     "lists": [],
+     "owned": false,
+     "news": [
+      {
+       "title": "Umios adds to acquisition spree with High Liner Foods",
+       "date": "2026-10-27",
+       "url": "https://www.just-food.com/news/umios-acquisition-high-liner-foods/?.tsrc=rss",
+       "source": "Yahoo Finance",
+       "tone": "neutral"
+      },
+      {
+       "title": "Stocks in play: High Liner Foods Incorporated - Yahoo! Finance Canada",
+       "date": "2026-10-26",
+       "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPRTFQNW5tQlZxQURFX19Qb0gwajNDWTF2aGhpZmRGNHZnREhyUVVybmZqcDNvaTFPZjR4WlZwNWtEbnozU1E4VUJLV0VaMFhQT1I2NmhmTlI4Q3BLRnVOZlc1cXdienZBRE5ZV1Nnc0c5UmY5a0MwZWRfTDBmOU0xV0dhYw?oc=5",
+       "source": "Yahoo! Finance Canada",
+       "tone": "neutral"
+      },
+      {
+       "title": "High Liner Foods Incorporated (TSX:HLF) Advances as Renewed Buying Interest Lifts Investor Sentiment - kalkine.ca",
+       "date": "2026-10-27",
+       "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPY2ZPMXZ6Ujg0Z0l2OWFETG9oSlRBZS1zc09QclNMN29ySE9hN2Y5LWhmUHhxdkw1OU9qX000SlNXeXcwMXRLNlFEWXIwT2l4MWVuRnJ2WUxvTXRJTEROWURsODJTemtWNjdHNUF1ajh4UE96UjJ2ZEZNcGRRUzlkQXZ6dXZHbFNIM1VSZzdveXh2dERrUjc5cWxGdm8zZXZlZzMtQVFiSVRHRDZFZEFKdHhaYmZFWVgxckotcldudkk0Zk1UVzBN?oc=5",
+       "source": "kalkine.ca",
+       "tone": "neutral"
+      },
+      {
+       "title": "Umios Set to Acquire High Liner Foods - Foodservice and Hospitality Magazine",
+       "date": "2026-10-27",
+       "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOLVU5MS1ZX0ZVZ0wzb2ZoV2tiREctUWQ3emVQWUlIZHFoQzFFZlJpaFZLbDNvdWU4YWdqRk9HZ0dsNmg2XzE3eF96NWN3S1BtVXNSaDYxdUlVOElJZjhnYnE1TkdkU2k3LTl0R1FYdzVKR2FQeEEtTU96M1BNS3BDOVhCT2ZWS0E?oc=5",
+       "source": "Foodservice and Hospitality Magazine",
+       "tone": "pos"
+      },
+      {
+       "title": "High Liner Foods enters into agreement to be acquired by Umios - \ud83c\udde8\ud83c\udde6 Grocery Business Canada",
+       "date": "2026-10-26",
+       "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPSUtnay1JOUNMdXNTLWVPeHBjbzYyTURZekFwSmtIeVExZVhqTjB3Slg5MHlpNEJrWkNnMUdxd29SOW02aWNURmQ5RFRWTVhVcDVXM0FOajFkZ3habnhjdG8zR3JRaE1JWEZ4eHVuN3VnbzhFYmhadmdrNGRiMEh3ZUt4eHFwTGM4SWo3Yzl2VUVyNlFQRkZjM0Fn?oc=5",
+       "source": "\ud83c\udde8\ud83c\udde6 Grocery Business Canada",
+       "tone": "pos"
+      },
+      {
+       "title": "Umios to Acquire High Liner Foods - Food Engineering Magazine",
+       "date": "2026-10-28",
+       "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNZm85S1UxbWQyblN4bHEyemx1YUh0ci1Db2RGTnpFbkg4NENHUzBSWjFuWTlnTFBieEpnZ09GOXZSX2wxMEM4S1ZacV9QWS1sb3FSaVFfV3k2UTJVU3NsckRNNkcwS19hemlTUlpZRGk2RVNBRXExODVyckRleXpTcnBxY0ZDQURMN0I5Mw?oc=5",
+       "source": "Food Engineering Magazine",
+       "tone": "pos"
+      },
+      {
+       "title": "Umios Corporation to acquire High Liner Foods in transaction valued at C$1.3 billion - Borden Ladner Gervais LLP (BLG)",
+       "date": "2026-10-27",
+       "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPTDU2dTVyWkZST1lSWVBJOHFiRS03LVl1YTVkZXR1ZmpKcjF2a2ZMRV9CWUF6YWJWTEVnVEN2cERQazExUU5SaFZqQmpVRDBpWUg5VDJBNkFZeGNFOEpuLWloenZ2SkhQckNqSjVSdEFnWTV2VUZOQndtcG5Xd3hYb0Iwc19nanZXUHJVTG5jQzR5UGw3UnpFazJaSlJ6WFFfaHBQUk5nVVAyd080aFJVd3ZLSk5qMDVFSFJCLVB0R092N2diRzkxR1FkUG5iSTA2cEpj?oc=5",
+       "source": "Borden Ladner Gervais LLP (BLG)",
+       "tone": "pos"
+      },
+      {
+       "title": "Umios Announces Definitive Agreement to Acquire High Liner Foods in $804 Million Cash Transaction - Global AgInvesting",
+       "date": "2026-10-28",
+       "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQbUZTNXIxd2szQ0pXaUc5R1BIQmM3NFBwd3JHc1hWU0dUWWRSQjZTT0wyOTlPajF4eHI4MWR0aWpmOUg1U1hYTGJibkIzZks4RWZKWTZwSnJvMnRpVFBmTE4tbFdDZ0hNdlJzVFM5OGVSWk0xZURqeklOUnRaNXZ5SVhPZXZ4eUdyblFISzFzM3pwcUVYNTJSWnAwQWxWTi03aU56bkg4dnJXZDJUeVJucjNzc3F2dTNtcHktOTdHQkdXZURxUWc?oc=5",
+       "source": "Global AgInvesting",
+       "tone": "pos"
+      }
+     ],
+     "score": 5.69
+    },
+    {
+     "ticker": "ZDC",
+     "name": "Zedcor Inc",
+     "exchange": "NEO",
+     "ysym": "ZDC.NE",
+     "market": "canada",
+     "price": 5.03,
+     "currency": "CAD",
+     "change": 0.016161616161616175,
+     "vol_x": 3.02,
+     "rvol_time": 3.81419827917566,
+     "value": 129774.0,
+     "mcap": 569586482.0,
+     "sector": "Finance",
      "holding": true,
      "extended": false,
      "near_high": false,
-     "chart_url": "https://www.tradingview.com/chart/?symbol=TSX:TGO&interval=D",
+     "longterm_down": true,
+     "chart_url": "https://www.tradingview.com/chart/?symbol=NEO:ZDC&interval=D",
      "lists": [],
      "owned": false,
-     "news": []
+     "news": [
+      {
+       "title": "Zedcor Inc. Announces Timing of Third Quarter Financial Results Conference Call",
+       "date": "2026-10-26",
+       "url": "https://finance.yahoo.com/markets/stocks/articles/zedcor-inc-announces-timing-third-233400884.html?.tsrc=rss",
+       "source": "Yahoo Finance",
+       "tone": "neutral"
+      },
+      {
+       "title": "Zedcor Inc. (TSXV:ZDC): Tower Fleet Expansion and Enlarged Credit Capacity Frame a Steady Scaling Outlook - kalkine.ca",
+       "date": "2026-10-27",
+       "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQVXZkWnNkYmlxeU04d3BxUFdGZDlTQkpMWmtUVmJLSFlJWVo3REZNb3gzVmlBUXZfWGd3Zll5Mi1wR2tKUnF2NHN6YkpFRHdNMVd0VDF6QVJTa3RMbVh3VkMzdTZUcjh3WHNUTVpvV2pDanVLZjRnQzRrcXUtbG5SVHkwLXN5X2ZnWlMtT3plRFRFa2tScVdUYXdWc0o0dXQtRVNOSXFrSlRBaDhLR2VkeXd2d1pKTmtQZ1MxdjlGc0hKXzZuV0VWaGJfbU8ta19JcEE?oc=5",
+       "source": "kalkine.ca",
+       "tone": "pos"
+      },
+      {
+       "title": "Zedcor Inc. Announces Timing of Third Quarter Financial Results Conference Call - TradingView",
+       "date": "2026-10-26",
+       "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQUmcxT2VyU29WVDZZUVAzMHl6aEh6RWJ2bHlXSHF2Wnp4dVkwRGlhOGlVTDVzM3BIVlIwWTFsMThaWFoxR1JibUhjNmJ6Vld3MnN4RGFhb2txTnFsNWhsUFpueEkzYnZjWmJrNm0tSExwWFl4UHdEeFg1NTZ4ZFV1c1laR0tMSENENDlMaDVSTUF3Y2pPRHI4RUJoNXdLSmRtOWZVMVh2RVQyeGpqbndHdzRvN281bWNqNkVOS24xWXhETG9OYWk2a3RLRnFuVXBHRzZidDBmc2c?oc=5",
+       "source": "TradingView",
+       "tone": "neutral"
+      },
+      {
+       "title": "What Zedcor Holders Got Wrong Before The Slide - Simply Wall Street",
+       "date": "2026-10-27",
+       "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPVHMzMmd0YzRZRllWdGVvaW9Na3VLY3JsMWE3eHFfZmZDS29MandnTFlHbVZhTF9tcGlWandvUWRwX05XbTBObHZxTXlVUG5yQ3FnVE0xZFJDQ0JCX1lMR0tJRDJyX2JWTXAwVDBwWFdnMFJMYWlJU1pweGFhS0lSQVdhdjFrNVE0cWI5YkRpYlBUSnJLcTNhSzlJLWxTVXZOWFRCb3JPcE11WFJhdkIzcDZZLUpITjJIUUpkctIBwgFBVV95cUxPTGVXbnJDeGhvSFpPRHR1Vm9TWVEwOG1fakZmbV9hc3lhYTZwcTRvVmhsSHd3TkcyaXFoVXFpY05aNDhYWEN1NFdLbllTWjJXUmhtLVU1RElweURYSl9PNHlTQnhUS0JKQW1lbWNHYU9QSnRWWWlPZDlTa2E0akJBNzhwNWxlU1FublR0WlE0b2prMGlKVHIycUhQR2dYUFBBTUZJMHg3VEhJc2p6eXdUZnE2M2NCdktFQUJoY1RIVE5LQQ?oc=5",
+       "source": "Simply Wall Street",
+       "tone": "neutral"
+      },
+      {
+       "title": "Third-quarter results will be released after the Nov. 4 market close; Zedcor's call follows the next morning. - Stock Titan",
+       "date": "2026-10-26",
+       "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPa3UzVHpzWmZ1bUxVRnFHbFFlVlczVklGbjNjaDJjUTRkZW1rVE5HQm5Yc05ISUQ4TkdGempRS0s0WXdXS0Q3QVRSYUhDWTV1N2M1c1JPdU1YYnJmUFNZUWRfcVhjdllYa2FsVWZ5ekFxTGdaVjd2SlJ4eUt2TEZESE9XZ3lEZ3VmTUZTTjlSby1tS0syeXdGa25nSUpzM0t5cFZUajRObTRIenlndFh0R0F6ZmRDcXBEOUE?oc=5",
+       "source": "Stock Titan",
+       "tone": "neutral"
+      },
+      {
+       "title": "Will U.S. Market Expansion Strengthen the Outlook for Zedcor Inc. (ZDC:TSXV)? - kalkine.ca",
+       "date": "2026-10-27",
+       "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPUElYekpvSUQzSkV2UVYyajR3Q1AtcUJaUUllNmJXa04zNmlOdDNNWnNIOHVuQTZWQlhXV1h2ZFhOaUtZdF9NbmtmUUxrSjJsdHUybkYzSHdPdXIzaU04VVBzVi1ZZDNNeXQtak5LOXNVZ3lrNnNuamtreGd4TDFtSVlyMXdZcnhRenpFbDZMTHNEdVltRGlVdFdRb2EwQ3RWZkphaVpkaDA?oc=5",
+       "source": "kalkine.ca",
+       "tone": "pos"
+      },
+      {
+       "title": "Zedcor Inc Q3FY26 Results: Earnings call scheduled for Nov 5 - scanx.trade",
+       "date": "2026-10-27",
+       "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPYkZTWHVGT05BSzd4bkVfNHF6MnJ1Y3RPYXA2b2YwTkFmLTJSNHZKcmc3MTNnLWQzdXRUT25qQmdjdE9GWm1LcGFfNEhxZm95d0R5enhXVGxrZXZ3VzhxRFhBYmE2T2Q1X2ZfM3ptZUFVd1BxNFRqYnl1WkFyWG00eDJIVGZxdVZmYTZYeTZHWlF4ZnFQSE5YY05iaDFzVXRMNnhZYXZPLU50MmVGRFJUYnR3?oc=5",
+       "source": "scanx.trade",
+       "tone": "neutral"
+      }
+     ],
+     "score": 5.02
     },
     {
-     "ticker": "CLCO",
-     "name": "Culico Metals Inc.",
-     "exchange": "TSXV",
-     "ysym": "CLCO.V",
+     "ticker": "PSI",
+     "name": "Pason Systems Inc.",
+     "exchange": "NEO",
+     "ysym": "PSI.NE",
      "market": "canada",
-     "price": 0.54,
+     "price": 14.62,
      "currency": "CAD",
-     "change": 0.22727272727272735,
-     "vol_x": 5.04,
-     "rvol_time": 43.46153846153846,
-     "value": 61606.44,
-     "mcap": 35522745.0,
-     "sector": "Non-Energy Minerals",
-     "holding": true,
-     "extended": true,
-     "near_high": false,
-     "chart_url": "https://www.tradingview.com/chart/?symbol=TSXV:CLCO&interval=D",
-     "lists": [],
-     "owned": false,
-     "news": []
-    },
-    {
-     "ticker": "SME",
-     "name": "Sama Resources Inc.",
-     "exchange": "TSXV",
-     "ysym": "SME.V",
-     "market": "canada",
-     "price": 0.165,
-     "currency": "CAD",
-     "change": 0.03125000000000003,
-     "vol_x": 1.38,
-     "rvol_time": 1.5882739006781885,
-     "value": 59895.0,
-     "mcap": 36311293.0,
-     "sector": "Non-Energy Minerals",
+     "change": 0.012465373961218818,
+     "vol_x": 1.68,
+     "rvol_time": 1.7183770883054892,
+     "value": 105264.0,
+     "mcap": 1133548253.0,
+     "sector": "Technology Services",
      "holding": false,
      "extended": false,
      "near_high": false,
-     "chart_url": "https://www.tradingview.com/chart/?symbol=TSXV:SME&interval=D",
+     "longterm_down": false,
+     "chart_url": "https://www.tradingview.com/chart/?symbol=NEO:PSI&interval=D",
      "lists": [],
      "owned": false,
-     "news": []
+     "news": [
+      {
+       "title": "Why Is Pason Systems (TSX:PSI) on the TSX Watchlist as Investors Assess Drilling Activity And The Digitization Of Field Operations? - kalkine.ca",
+       "date": "2026-10-28",
+       "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxQRGROcFhfeEZsVXhCaVUwT1NrVm5SU1J1N19zX3c3cHVrMVVPcmZtU3RvQkZnWGpORVV4YjlxdGVKZHFRR3ZVNlBjVnROZ2hVZ1U1bzJfVl9hQW03WUpmTkJ6V3BDUUN4ZlFjTWN6MzdaWWJjRUx3U1BDNzJISkpFQUl0NDRtS2ZwSDdQUFhkS3lIU1dNX0NPd1g4S2RVa1ZQRzZuU3hzaUVWZHp3Y19kdzN1d29vczlPY2x1aGJkUU04b3lJRVdEMVlIZmFXcXNDWG9tTzFKUzhGa19QQ1lyRFFjM3FJSWhVUmRQcnhOeWZ3SWJP?oc=5",
+       "source": "kalkine.ca",
+       "tone": "neutral"
+      },
+      {
+       "title": "Pason Systems Inc. (TSX:PSI) Advances as Buying Interest Supports a Constructive Market Outlook - kalkine.ca",
+       "date": "2026-10-27",
+       "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQOXpGUE12eGtPRE5iVmxGMHpwRUFsWXNqUlg5QjhWMFhFSThnNkR3UzBtVEZVVjluZWwwQlQ0RnFyVE9oMHlLYmlTb3hVX19IeG9YNlhqZWYwbDRuTnVBb0pLVFVVcDctbG1sNUVrNUFCUzF2ai1TNllVSG95elpRalFPSWtySXNtai1YZ25ZOTlGaW50NlFRLXBYRWVuXzVLSnZ6NG4zcXdWUUhKTmRMZ2taTENWUmhydlhxdFhFeDRaeUtm?oc=5",
+       "source": "kalkine.ca",
+       "tone": "neutral"
+      },
+      {
+       "title": "Pason Systems (TSE:PSI) Stock Price Crosses Above Fifty Day Moving Average - Time to Sell? - MarketBeat",
+       "date": "2026-10-27",
+       "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNd0RiZ2RGLTFIVDVHZndybHByTzhBbGhrRURkdDMtQkhUT01qRzk5dG9xa0ZZTGR1QXdiMUl5WmRRTTBrLV9fc3YxTE03WTJQOTdyUE5kTTN3QnpJSl9veWlYUlltNG5KMWl2T3ZINDFHcVZGSFk0YUNCcG5malJGOVJUeFZIeENqVFlnY256WVhOd3ZINTQ4RHlsdm5LbDBzNF9fUXpmREFPMkF2NVhyTnVVajVoR1BxMWZNRzBONHkzeVpsNmVCa2x4NEhFLVJiY0szWHM4QkQyNkhtdHc?oc=5",
+       "source": "MarketBeat",
+       "tone": "pos"
+      },
+      {
+       "title": "Pason Systems (TSE:PSI) Price Target Raised to C$17.00 - MarketBeat",
+       "date": "2026-10-26",
+       "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPLWhOeENQTVlERkJSMHE5M2tzVVh5aG1wU1JhLWxpYllIdWVOdklNN01nNlBJVUVyTlUzNVB1SllpWlBFN19KTTZmR2Q5VTVVTnloTnJOYUJ2aVdiMmw3a2UxbTFVWnotM1RLSnZPeHNYRmVNNjdWVVEzMjRNUTZXTGJiOVFyb3FZTjhDQTJOdjdQbkx4N0Vac3djOHgtUDVZcmo0SmpQV1loTEt6d1pmOF9R?oc=5",
+       "source": "MarketBeat",
+       "tone": "pos"
+      }
+     ],
+     "score": 2.68
+    }
+   ],
+   "quiet": [
+    {
+     "ticker": "ARGO",
+     "name": "Argo Graphene Solutions Corp.",
+     "exchange": "CSE",
+     "ysym": "ARGO.CN",
+     "market": "canada",
+     "price": 1.06,
+     "currency": "CAD",
+     "change": 0.06000000000000005,
+     "vol_x": 2.7,
+     "rvol_time": 3.6672423719055844,
+     "value": 69733.16,
+     "mcap": 31442160.0,
+     "sector": "Process Industries",
+     "holding": true,
+     "extended": false,
+     "near_high": false,
+     "longterm_down": false,
+     "chart_url": "https://www.tradingview.com/chart/?symbol=CSE:ARGO&interval=D",
+     "lists": [],
+     "owned": false,
+     "news": [
+      {
+       "title": "Argo Graphene Locks In Lubricant Data While Chicago Refinery Site Nears Finish Line - ad-hoc-news.de",
+       "date": "2026-10-28",
+       "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxOdldMaUhsakxEWGtabFJPN0dGMWR6SThic0tRM0VleUh5cEtrM3M3b25tVFBsRVEtYmZoQ2w2cWFOSlpDd04zTEM5dEY4TUxycEM4Z1JXaWVzUmN0ZGdPTmFRVVZaVnc3RE1Jbl96SE93VHYtQ1d6NFdsZkRTMjdkV1k1bDdULVVWekdGS0pkalAtdWpJZXJ1b3Bhdy1CRi1yb2NSdVFkcUdLdnhjNzU0cjRTQ1piYVBZX19WOXBicUc2X3JZNTJjY0VWZkpET05GU2hidUZ4UmgwY0d1Y3NGVkRfbGtUZ3h1NFBJ?oc=5",
+       "source": "ad-hoc-news.de",
+       "tone": "neutral"
+      }
+     ]
     },
     {
-     "ticker": "BNE",
-     "name": "Bonterra Energy Corp.",
-     "exchange": "NEO",
-     "ysym": "BNE.NE",
+     "ticker": "NSE",
+     "name": "New Stratus Energy Inc",
+     "exchange": "TSXV",
+     "ysym": "NSE.V",
      "market": "canada",
-     "price": 7.0,
+     "price": 0.73,
      "currency": "CAD",
-     "change": 0.0263929618768328,
-     "vol_x": 1.02,
-     "rvol_time": 1.0892018779342723,
-     "value": 81200.0,
-     "mcap": 252841454.0,
+     "change": 0.013888888888888902,
+     "vol_x": 1.27,
+     "rvol_time": 1.136701337295691,
+     "value": 56231.9,
+     "mcap": 112528329.0,
      "sector": "Energy Minerals",
      "holding": true,
      "extended": false,
      "near_high": false,
-     "chart_url": "https://www.tradingview.com/chart/?symbol=NEO:BNE&interval=D",
-     "lists": [
-      "Stage 2"
-     ],
+     "longterm_down": false,
+     "chart_url": "https://www.tradingview.com/chart/?symbol=TSXV:NSE&interval=D",
+     "lists": [],
      "owned": false,
-     "news": []
+     "news": [
+      {
+       "title": "Arrow Exploration Corp. (AXL.V) Stock Price, News, Quote & History - Yahoo! Finance Canada",
+       "date": "2026-10-27",
+       "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5zQ1AySkNzN3VDdG5qOEtPZktjMlRfUi1xQlVONUlKQTZSQnEzVk9BcDg5WE5HR2tSVUdJWWFQSWljOThUeTZzSm1NUTJjM3hvRzRB?oc=5",
+       "source": "Yahoo! Finance Canada",
+       "tone": "neutral"
+      },
+      {
+       "title": "Arrow Exploration Corp. (AXL.V) stock price, news, quote and history - Yahoo Finance UK",
+       "date": "2026-10-27",
+       "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE93UENzdTJmc1NLQ3d3ZDRHU0lPOC1kMWV3VDZycVBNMFZTWU90TDZManBDYXBvUE9aTnctVXhfLVRfcGpDclZmNDF5VzE1Ykt4OEZB?oc=5",
+       "source": "Yahoo Finance UK",
+       "tone": "neutral"
+      }
+     ]
     }
    ]
   },
