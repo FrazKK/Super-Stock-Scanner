@@ -2446,7 +2446,7 @@ def opening_scan(market, fetch_open, fetch_news, now_utc, context=None, fetch_ba
         hi52 = num(rec.get("price_52_week_high"))
         item = {"ticker": rec["ticker"], "name": str(rec.get("description") or rec["ticker"]),
                 "exchange": str(rec["exchange"]).upper(), "ysym": rec["ysym"], "market": market,
-                "price": close, "currency": str(rec.get("currency") or ""), "change": chg, "vol_x": round(vx, 2),
+                "price": close, "low": lo, "currency": str(rec.get("currency") or ""), "change": chg, "vol_x": round(vx, 2),
                 "vol_basis": basis, "vol_day_x": round(tv_vol / avg, 2),
                 "buy_pct30": round(flow30["buy_pct"], 3) if flow30 and flow30["buy_pct"] is not None else None,
                 "buy_pct": round(flow_all["buy_pct"], 3) if flow_all and flow_all["buy_pct"] is not None else None,
@@ -3244,6 +3244,10 @@ def render_page(results, ledger, summ, demo=False, hv=None, pol=None, ev=None, o
              if v.get("date") == dt.date.today().isoformat())
     tabs.insert(0 if on else len(tabs), ("opening", f"Opening movers ({on})"))
     secs.insert(0 if on else len(secs), ("opening", opening_html(op)))
+    pr = None if demo else load_json(ROOT / "docs" / "data" / "practice.json", None)
+    if pr:
+        tabs.append(("practice", f"Practice ({len(pr.get('open') or [])})"))
+        secs.append(("practice", practice_html(pr)))
     en = len((ev or {}).get("items") or [])
     tabs.append(("evaluate", f"Evaluate ({en})"))
     secs.append(("evaluate", evaluate_html(ev, demo)))
@@ -3291,6 +3295,91 @@ document.querySelectorAll('nav button').forEach(b=>b.onclick=()=>{{
 try{{const t=localStorage.getItem('tab');t&&document.querySelector(`nav [data-t="${{t}}"]`)?.click()}}catch(e){{}}
 </script>
 <script>{"" if demo else REFRESH_JS.replace("__REPO__", REPO).replace("__GEN__", results["generated"]).replace("__EVGEN__", (ev or {}).get("generated", ""))}</script></body></html>"""
+
+
+def money(x, sign=False):
+    if x is None:
+        return "–"
+    if sign:
+        return f"{'+' if x >= 0 else '-'}£{abs(x):,.0f}"
+    return f"£{x:,.0f}"
+
+
+def practice_html(pr):
+    """The Trading 212 practice account the bot trades by the agreed rules."""
+    r = pr.get("rules") or {}
+    intro = ('<p class="blurb">The bot trades a Trading 212 <b>practice</b> account (no real money) by fixed rules: '
+             f'it buys <b>opening-surge picks</b> with good news and buyers in control (not already up 20%+), and the '
+             f'weekly <b>2+ methods agree</b> picks at the first opening check after the scan. '
+             f'<b>£{r.get("trade_gbp", 1000):,.0f} per trade</b>, at most <b>{r.get("max_open", 10)} open</b>. '
+             'It sells by each method\'s own rule about an hour before the close (for 2+ method picks, the first '
+             'method to say sell wins; opening-surge trades sell on a close below the 10-day EMA), and keeps a '
+             'stop-loss order at Trading 212 that only ever moves up.</p>')
+    acct = pr.get("account") or {}
+    parts = [intro]
+    sv, v = pr.get("start_value"), acct.get("value")
+    if v is not None:
+        chg = f' ({pct(v / sv - 1)} since {E(pr.get("started", ""))})' if sv else ""
+        parts.append(f'<div class="opc"><b>Account value {money(v)}</b>{chg}<div class="meta">Cash {money(acct.get("cash"))}'
+                     f' · updated {E(str(acct.get("time", ""))[:16].replace("T", " "))} UTC</div></div>')
+    closed = pr.get("closed") or []
+    done = [c for c in closed if c.get("pl_gbp") is not None]
+    if done:
+        wins = sum(c["pl_gbp"] > 0 for c in done)
+        tot = sum(c["pl_gbp"] for c in done)
+        by = []
+        for src, lbl in (("opening", "Opening surge"), ("consensus", "2+ methods")):
+            xs = [c for c in done if c["source"] == src]
+            if xs:
+                by.append(f'{lbl}: {len(xs)} trades, {sum(c["pl_gbp"] > 0 for c in xs)} won, '
+                          f'{money(sum(c["pl_gbp"] for c in xs), True)}')
+        parts.append(f'<div class="opc"><b>Closed trades: {len(done)}, {wins} won ({wins / len(done):.0%}), '
+                     f'total {money(tot, True)}</b><div class="meta">{" · ".join(by)}</div></div>')
+    opn = pr.get("open") or []
+    parts.append(f'<div class="mk">Open positions ({len(opn)})</div>')
+    if not opn:
+        parts.append('<p class="empty">None open.</p>')
+    for p in opn:
+        pl = p.get("pl_gbp")
+        cls = "pos" if (pl or 0) >= 0 else "neg"
+        src = "Opening surge" if p["source"] == "opening" else "2+ methods"
+        meths = ", ".join(STRATEGIES.get(m["method"], {}).get("short", "Surge rule") for m in p["methods"])
+        stop = p.get("stop_local") or p.get("initial_stop")
+        status = "buy order waiting" if p["status"] == "pending" else ""
+        parts.append(f'<div class="opc"><div class="ophead"><div><b>{E(p["ticker"])}</b> <span class="ex">{E(p["exchange"])}</span>'
+                     f'<div class="nm">{E(p["name"])}</div></div><div class="px">{money(p.get("value_gbp") or p.get("cost_gbp"))}'
+                     f'<div class="{cls}">{money(pl, True) if pl is not None else E(status)}</div></div></div>'
+                     f'<div class="flags"><span class="flag fn">{E(src)}</span><span class="flag fn">{E(meths)}</span></div>'
+                     f'<div class="meta">Bought {E(p["bought"])} · {(p.get("qty") or 0):,.0f} shares at '
+                     f'{fmt_num(p.get("entry_local") or p["ref_price"])} · stop {fmt_num(stop) if stop else "–"}</div>'
+                     f'<div class="meta">{E(p.get("why", ""))}</div>'
+                     + (f'<div class="meta">Last check: {E(p["last_check"])}</div>' if p.get("last_check") else "")
+                     + '</div>')
+    if closed:
+        rows = "".join(f'<tr><td>{E(c["sold"])}</td><td><b>{E(c["ticker"])}</b><br><small>{"Surge" if c["source"] == "opening" else "2+ methods"}'
+                       f', {c.get("days", 0)}d</small></td><td class="{"pos" if (c.get("pl_gbp") or 0) >= 0 else "neg"}">'
+                       f'{money(c.get("pl_gbp"), True)}<br><small>{pct(c["pl_pct"]) if c.get("pl_pct") is not None else ""}</small></td>'
+                       f'<td><small>{E(c.get("reason", "")[:140])}</small></td></tr>' for c in reversed(closed[-40:]))
+        parts.append('<div class="mk">Closed trades</div><table class="picks"><tr><th>Sold</th><th>Stock</th>'
+                     f'<th>P&amp;L</th><th>Why</th></tr>{rows}</table>')
+    lg = pr.get("log") or []
+    if lg:
+        parts.append('<details class="sub"><summary>Bot activity</summary>' + "".join(
+            f'<div class="meta">{E(x["time"][:16].replace("T", " "))} · {E(x["text"])}</div>' for x in reversed(lg[-30:]))
+            + '</details>')
+    return "".join(parts)
+
+
+def rerender_page(docs: Path):
+    """Rebuild index.html from the saved data (used by the practice bot)."""
+    latest = load_json(docs / "data" / "latest.json", {}) or {}
+    if not latest.get("markets"):
+        return
+    ledger = load_json(docs / "data" / "picks.json", [])
+    page = render_page(latest, ledger, summarise(ledger), False, load_json(docs / "data" / "holdings.json", None),
+                       load_json(docs / "data" / "politicians.json", {}), load_json(docs / "data" / "evaluations.json", None),
+                       None)
+    (docs / "index.html").write_text(page, encoding="utf-8")
 
 
 def write_outputs(results, ledger, docs: Path, demo=False, hv=None, pol=None, ev=None):

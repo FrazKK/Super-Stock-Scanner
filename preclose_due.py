@@ -13,6 +13,11 @@ for f in (root / "holdings").glob("*.json"):
         markets.add(str(json.loads(f.read_text()).get("market", "america")).lower())
     except Exception:
         pass
+try:     # the practice bot's open positions need the pre-close check too
+    markets |= {str(x.get("market", "")).lower() for x in
+                json.loads((root / "docs" / "data" / "practice.json").read_text()).get("open", [])}
+except Exception:
+    pass
 try:
     state = json.loads((root / "docs" / "data" / "preclose_state.json").read_text())
 except Exception:
