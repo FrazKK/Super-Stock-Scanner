@@ -2147,7 +2147,31 @@ NEG_NEWS = re.compile(
     r"impairment|withdraw|terminat|cancel|restat|delist|reverse split|convertible|at-the-market|ATM program", re.I)
 
 
-def classify_headline(t):
+# Takeover / buyout news: the price jumps to the offer price before we can act, then sits there, so these
+# stocks are left off the opening list (and the day trader) altogether.
+TAKEOVER_NEWS = re.compile(
+    r"to be acquired|acquired by|agree[sd]? to be (acquired|bought|purchased)|take[- ]private|taken private|go(ing)?[- ]private|"
+    r"tender offer|per share in cash|all[- ]cash (deal|transaction|offer|acquisition)|merger agreement|"
+    r"definitive agreement to be|recommended (cash |final |share )?offer|rule 2\.7|firm offer|possible offer|"
+    r"offer for |bid for |buyout|takeover (offer|bid|approach)|approach regarding|strategic alternatives.{0,40}sale", re.I)
+TAKEOVER_VERB = r"(to acquire|acquires?|acquisition of|to buy|buys|to purchase|purchase of|take over|takeover of|merge with|merger with|combination with|combine with)"
+NAME_SKIP = {"inc", "corp", "corporation", "plc", "ltd", "limited", "holdings", "group", "company", "the", "and", "class",
+             "resources", "energy", "technologies", "technology", "international", "global", "co"}
+
+
+def is_takeover(title, name="", ticker=""):
+    """True when the headline says this company is being bought (or merging), not when it buys something small."""
+    t = title or ""
+    if TAKEOVER_NEWS.search(t):
+        return True
+    words = [w for w in re.findall(r"[A-Za-z][A-Za-z'&-]{2,}", name or "") if w.lower() not in NAME_SKIP][:1]
+    keys = words + ([str(ticker).rstrip(".")] if len(str(ticker).rstrip(".")) >= 3 else [])
+    return any(re.search(rf"{TAKEOVER_VERB}\b[^.;:]{{0,50}}\b{re.escape(k)}\b", t, re.I) for k in keys)
+
+
+def classify_headline(t, name="", ticker=""):
+    if is_takeover(t, name, ticker):
+        return "deal"
     if NEG_NEWS.search(t or ""):
         return "neg"
     if POS_NEWS.search(t or ""):
@@ -2305,7 +2329,7 @@ def live_news(market, ticker, ysym, since, name=""):
     except Exception as e:
         print(f"  yahoo news {ysym}: {e}")
     for i in items:
-        i["tone"] = classify_headline(i["title"])
+        i["tone"] = classify_headline(i["title"], name, ticker)
     return items[:8]
 
 
@@ -2461,8 +2485,8 @@ def opening_scan(market, fetch_open, fetch_news, now_utc, context=None, fetch_ba
         news = fetch_news(market, rec["ticker"], rec["ysym"], since, str(rec.get("description") or ""))
         item["news"] = news
         tones = {n["tone"] for n in news}
-        if "neg" in tones:
-            continue                          # placings, warnings and the like: volume for the wrong reason
+        if "neg" in tones or "deal" in tones:
+            continue                          # placings, warnings, takeovers: volume for the wrong reason
         bp = item["buy_pct30"] if item["buy_pct30"] is not None else item["buy_pct"]
         item["buyers"] = bp is not None and bp >= OPEN_BUYERS
         item["sellers"] = bp is not None and bp <= OPEN_SELLERS

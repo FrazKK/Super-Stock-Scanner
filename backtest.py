@@ -38,6 +38,20 @@ def last_weekday(before):
     return d
 
 
+def parse_day(text):
+    """Accepts 2026-10-29 as well as UK style 29-10-2026, 29/10/2026 or 29/10/26."""
+    t = text.strip().replace("/", "-").replace(".", "-")
+    try:
+        return dt.date.fromisoformat(t)
+    except ValueError:
+        for fmt in ("%d-%m-%Y", "%d-%m-%y"):
+            try:
+                return dt.datetime.strptime(t, fmt).date()
+            except ValueError:
+                pass
+    raise SystemExit(f"Couldn't read the date '{text}'. Use e.g. 29-10-2026 or 2026-10-29.")
+
+
 def download(syms, **kw):
     import yfinance as yf
 
@@ -127,7 +141,7 @@ def build_list(day):
         news = [n for n in S.live_news("america", c["ticker"], c["ysym"], since, c["name"]) if n["date"] <= day.isoformat()]
         c["news"] = news
         tones = {n["tone"] for n in news}
-        if "neg" in tones:
+        if "neg" in tones or "deal" in tones:
             continue
         if "pos" in tones:
             bp = c["buy_pct30"]
@@ -227,7 +241,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--date", default="")
     a = ap.parse_args()
-    day = dt.date.fromisoformat(a.date) if a.date.strip() else last_weekday(dt.datetime.now(NY).date())
+    day = parse_day(a.date) if a.date.strip() else last_weekday(dt.datetime.now(NY).date())
     print(f"Replaying {day} (US)")
     picks, quiet, mins = build_list(day)
     t212 = set((S.load_json(ROOT / "docs" / "data" / "t212_tickers.json", {}) or {}).get("us") or [])
