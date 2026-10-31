@@ -2119,12 +2119,16 @@ def run_holdings(holdings, fetch_prices, today):
 
 
 # ---------------------------------------------------------------------------
-# Opening surge: heavy volume in the first 15 minutes + uptrend + good news
+# Opening surge: heavy volume in the first 30 minutes + uptrend + good news + buying pressure
 # ---------------------------------------------------------------------------
 
 OPEN_TIMES = {"uk": ("Europe/London", 8, 0), "america": ("America/New_York", 9, 30),
               "canada": ("America/New_York", 9, 30)}
-OPEN_VOL_MULT = 1.0            # volume so far must already match a full normal day (10-day average)
+OPEN_VOL_MULT = 0.5            # first-30-minute volume must be at least half a normal day (10-day average)
+OPEN_WINDOW = 30               # minutes after the open that the volume test covers
+OPEN_DUE = (45, 110)           # run between 45 and 110 minutes after the open (free data lags ~15 minutes)
+OPEN_BUYERS = 0.60             # estimated share of volume from buyers: at or above = "buyers in control"
+OPEN_SELLERS = 0.45            # at or below = "sellers in control"
 OPEN_NEWS_DAYS = 3             # news must be from the last 3 days
 OPEN_MIN_VALUE = {"america": 250_000, "canada": 50_000, "uk": 25_000}   # traded value so far, local currency
 OPEN_EXTENDED = 0.20           # up more than 20% today = chasing risk
@@ -2171,13 +2175,17 @@ def live_opening_tv(market):
 
     cfg = MARKETS[market]
     cols = list(OPEN_FIELDS)
-    for _ in range(4):
+    relvol = True          # TradingView's "relative volume" (today so far / 10-day average); dropped if unavailable
+    for _ in range(5):
         try:
-            q = (Query().set_markets(market).select(*cols)
-                 .where(col("type") == "stock", col("market_cap_basic").between(*cfg["mcap"]),
-                        col("volume") >= col("average_volume_10d_calc"), col("change") > 0,
-                        col("close") > col("SMA50"))
-                 .order_by("change", ascending=False).limit(400))
+            conds = [col("type") == "stock", col("market_cap_basic").between(*cfg["mcap"]),
+                     col("change") > 0, col("close") > col("SMA50")]
+            if relvol:
+                conds.append(col("relative_volume_10d_calc") >= OPEN_VOL_MULT * 0.8)
+            else:
+                conds.append(col("volume") >= col("average_volume_10d_calc"))   # stricter fallback
+            q = (Query().set_markets(market).select(*cols).where(*conds)
+                 .order_by("change", ascending=False).limit(500))
             total, df = q.get_scanner_data()
             for c in OPEN_FIELDS:
                 if c not in df.columns:
@@ -2185,6 +2193,9 @@ def live_opening_tv(market):
             print(f"  [{market}] opening screen: {len(df)} of {total}")
             return df
         except Exception as e:
+            if relvol and "relative_volume_10d_calc" in str(e):
+                relvol = False
+                continue
             bad = [b for b in re.findall(r'[Uu]nknown field "?([\w.|]+)"?', str(e)) if b in cols]
             if not bad and "relative_volume_intraday|5" in cols:
                 bad = ["relative_volume_intraday|5"]
@@ -2298,8 +2309,73 @@ def live_news(market, ticker, ysym, since, name=""):
     return items[:8]
 
 
-def opening_scan(market, fetch_open, fetch_news, now_utc, context=None):
-    """Stocks that have traded a full normal day's volume already, are trending up, and have good news."""
+def live_intraday(ysyms):
+    """Today's 1-minute bars from Yahoo for a list of Yahoo symbols: {symbol: DataFrame}."""
+    import yfinance as yf
+
+    out = {}
+    syms = list(dict.fromkeys(s for s in ysyms if s))
+    for i in range(0, len(syms), 40):
+        chunk = syms[i:i + 40]
+        try:
+            data = yf.download(chunk, period="1d", interval="1m", group_by="ticker", auto_adjust=False,
+                               prepost=False, progress=False, threads=True)
+        except Exception as e:
+            print(f"  intraday download failed: {e}")
+            continue
+        if data is None or data.empty:
+            continue
+        for s in chunk:
+            try:
+                if isinstance(data.columns, pd.MultiIndex):
+                    if s not in data.columns.get_level_values(0):
+                        continue
+                    d = data[s]
+                else:
+                    d = data
+                d = d.dropna(subset=["Close"])
+                if len(d):
+                    out[s] = d
+            except Exception:
+                continue
+    print(f"  intraday bars for {len(out)} of {len(syms)}")
+    return out
+
+
+def flow_split(bars, start_utc, end_utc=None):
+    """Estimated buying vs selling volume from 1-minute bars.
+
+    Each minute's volume is split by where the close sits in that minute's range: closing at the high counts
+    as all buying, at the low as all selling, in the middle as half each. Minutes with no range use the move
+    from the previous minute. It is an estimate (true buy/sell data needs paid trade-by-trade feeds)."""
+    idx = pd.DatetimeIndex(bars.index)
+    idx = idx.tz_localize("UTC") if idx.tz is None else idx.tz_convert("UTC")
+    keep = idx >= start_utc
+    if end_utc is not None:
+        keep &= idx < end_utc
+    b = bars[keep]
+    buy = sell = 0.0
+    prev = None
+    for o, h, l, c, v in zip(b["Open"], b["High"], b["Low"], b["Close"], b["Volume"]):
+        v = float(v or 0)
+        if v <= 0 or c != c:
+            prev = c if c == c else prev
+            continue
+        if h == h and l == l and h > l:
+            f = (c - l) / (h - l)
+        else:
+            ref = prev if prev is not None else o
+            f = 1.0 if c > ref else 0.0 if c < ref else 0.5
+        buy += v * f
+        sell += v * (1 - f)
+        prev = c
+    tot = buy + sell
+    return {"volume": tot, "buy_pct": (buy / tot) if tot else None}
+
+
+def opening_scan(market, fetch_open, fetch_news, now_utc, context=None, fetch_bars=None):
+    """Stocks that traded at least half a normal day's volume in the first 30 minutes, are trending up,
+    have good news, with an estimate of how much of that volume was buying."""
     cfg = MARKETS[market]
     df = fetch_open(market)
     df = df[df["exchange"].astype(str).str.upper().isin(cfg["exchanges"])]
@@ -2313,16 +2389,56 @@ def opening_scan(market, fetch_open, fetch_news, now_utc, context=None):
     df = df[(df["value"] >= OPEN_MIN_VALUE[market]) & (df["close"] >= cfg["universe_price_min"])]
     since = now_utc - dt.timedelta(days=OPEN_NEWS_DAYS + (2 if now_utc.weekday() <= 1 else 0))
     context = context or {}
-    picks, quiet = [], []
+    from zoneinfo import ZoneInfo
+    tz, hh, mm = OPEN_TIMES[market]
+    local_now = now_utc.astimezone(ZoneInfo(tz))
+    open_utc = local_now.replace(hour=hh, minute=mm, second=0, microsecond=0).astimezone(dt.timezone.utc)
+    win_end = open_utc + dt.timedelta(minutes=OPEN_WINDOW)
+    mins = (now_utc - open_utc).total_seconds() / 60
+
+    # pass 1: trend and rough volume from TradingView (volume so far today, which includes the first 30 minutes)
+    cands = []
     for rec in df.to_dict("records"):
-        vx = num(rec["volume"]) / max(num(rec["average_volume_10d_calc"]) or 1, 1)
+        avg = max(num(rec["average_volume_10d_calc"]) or 1, 1)
+        if num(rec["volume"]) / avg < OPEN_VOL_MULT:
+            continue
+        close = num(rec.get("close"))
+        s20, s50 = num(rec.get("SMA20")), num(rec.get("SMA50"))
+        if not bool(close and s20 and s50 and close > s20 and close > s50 and s20 >= 0.97 * s50):
+            continue
+        cands.append(rec)
+    cands.sort(key=lambda r: num(r["volume"]) / max(num(r["average_volume_10d_calc"]) or 1, 1), reverse=True)
+    cands = cands[:150]
+
+    # pass 2: first-30-minute volume and buy/sell estimate from 1-minute bars
+    bars = {}
+    if fetch_bars and cands:
+        try:
+            bars = fetch_bars([r["ysym"] for r in cands]) or {}
+        except Exception as e:
+            print(f"  intraday bars failed: {e}")
+    picks, quiet = [], []
+    for rec in cands:
+        avg = max(num(rec["average_volume_10d_calc"]) or 1, 1)
+        tv_vol = num(rec["volume"]) or 0
+        b = bars.get(rec["ysym"])
+        flow30 = flow_all = None
+        if b is not None and len(b):
+            flow30 = flow_split(b, open_utc, win_end)
+            flow_all = flow_split(b, open_utc)
+            # Yahoo's minute bars can miss some trades (notably UK off-book trades), so scale its first-30-minute
+            # share up to TradingView's total for the day so far.
+            scale = tv_vol / flow_all["volume"] if flow_all["volume"] and tv_vol > flow_all["volume"] else 1.0
+            vol30 = flow30["volume"] * scale
+            basis = "first30"
+        else:
+            vol30 = tv_vol
+            basis = "first30" if mins <= OPEN_WINDOW + 20 else "sofar"
+        vx = vol30 / avg
         if vx < OPEN_VOL_MULT:
             continue
         close, op, hi, lo = (num(rec.get(k)) for k in ("close", "open", "high", "low"))
-        s20, s50, s200 = (num(rec.get(k)) for k in ("SMA20", "SMA50", "SMA200"))
-        trend = bool(close and s20 and s50 and close > s20 and close > s50 and s20 >= 0.97 * s50)
-        if not trend:
-            continue
+        s200, s50 = num(rec.get("SMA200")), num(rec.get("SMA50"))
         longterm = s200 is None or s50 > s200          # shown as a flag, not required: catches turnarounds
         rng = (hi - lo) if hi and lo else 0
         holding = bool(close and op and close >= op and (rng <= 0 or (close - lo) / rng >= 0.5))
@@ -2331,6 +2447,9 @@ def opening_scan(market, fetch_open, fetch_news, now_utc, context=None):
         item = {"ticker": rec["ticker"], "name": str(rec.get("description") or rec["ticker"]),
                 "exchange": str(rec["exchange"]).upper(), "ysym": rec["ysym"], "market": market,
                 "price": close, "currency": str(rec.get("currency") or ""), "change": chg, "vol_x": round(vx, 2),
+                "vol_basis": basis, "vol_day_x": round(tv_vol / avg, 2),
+                "buy_pct30": round(flow30["buy_pct"], 3) if flow30 and flow30["buy_pct"] is not None else None,
+                "buy_pct": round(flow_all["buy_pct"], 3) if flow_all and flow_all["buy_pct"] is not None else None,
                 "rvol_time": num(rec.get("relative_volume_intraday|5")),
                 "value": num(rec["value"]), "mcap": num(rec.get("market_cap_basic")),
                 "sector": str(rec.get("sector") or ""), "holding": holding,
@@ -2344,9 +2463,13 @@ def opening_scan(market, fetch_open, fetch_news, now_utc, context=None):
         tones = {n["tone"] for n in news}
         if "neg" in tones:
             continue                          # placings, warnings and the like: volume for the wrong reason
+        bp = item["buy_pct30"] if item["buy_pct30"] is not None else item["buy_pct"]
+        item["buyers"] = bp is not None and bp >= OPEN_BUYERS
+        item["sellers"] = bp is not None and bp <= OPEN_SELLERS
         if "pos" in tones:
-            item["score"] = round(vx + (1 if holding else 0) + (1 if item["near_high"] else 0)
-                                  + 0.5 * sum(n["tone"] == "pos" for n in news) - (1 if item["extended"] else 0), 2)
+            item["score"] = round(2 * vx + (1 if holding else 0) + (1 if item["near_high"] else 0)
+                                  + 0.5 * sum(n["tone"] == "pos" for n in news) - (1 if item["extended"] else 0)
+                                  + (4 * (bp - 0.5) if bp is not None else 0), 2)
             picks.append(item)
         else:
             quiet.append(item)
@@ -2357,6 +2480,22 @@ def opening_scan(market, fetch_open, fetch_news, now_utc, context=None):
     return picks[:15], quiet[:10]
 
 
+def vol_text(x):
+    if x.get("vol_basis") == "sofar":
+        return f"{x['vol_x']:.1f}x a normal day's volume so far today"
+    return f"{x['vol_x']:.1f}x a normal day's volume in the first 30 min"
+
+
+def flow_text(x):
+    bp = x.get("buy_pct30") if x.get("buy_pct30") is not None else x.get("buy_pct")
+    if bp is None:
+        return ", buy/sell split not available"
+    s = f", est. {bp:.0%} buying"
+    if x.get("buy_pct30") is not None and x.get("buy_pct") is not None and abs(x["buy_pct"] - x["buy_pct30"]) >= 0.05:
+        s += f" in the first 30 min, {x['buy_pct']:.0%} so far today"
+    return s
+
+
 def opening_alerts(op, markets):
     for m in markets:
         data = (op.get("markets") or {}).get(m)
@@ -2365,17 +2504,18 @@ def opening_alerts(op, markets):
         picks = data["picks"][:OPEN_ALERT_MAX]
         if not picks:
             push(f"{MARKETS[m]['label']} opening check: nothing qualifies",
-                 f"No stock has traded a full day's volume in the first 15 minutes while trending up with positive news. "
+                 f"No stock traded half a normal day's volume in the first 30 minutes while trending up with positive news. "
                  f"{len(data['quiet'])} had the volume and trend but no clear good news.", 2, "zzz")
             continue
         lines = []
         for x in picks:
-            flags = [f for f, on in (("holding gains", x["holding"]), ("near 52-wk high", x["near_high"]),
+            flags = [f for f, on in (("buyers in control", x.get("buyers")), ("sellers in control", x.get("sellers")),
+                                     ("holding gains", x["holding"]), ("near 52-wk high", x["near_high"]),
                                      ("long-term trend still down", x.get("longterm_down")),
                                      ("up a lot already", x["extended"]), ("you own it", x["owned"])) if on]
             lst = f" On {', '.join(x['lists'])} list." if x["lists"] else ""
             top = next((n for n in x["news"] if n["tone"] == "pos"), None)
-            lines.append(f"{x['ticker']} {pct(x['change'])}, {x['vol_x']:.1f}x a normal day's volume"
+            lines.append(f"{x['ticker']} {pct(x['change'])}, {vol_text(x)}{flow_text(x)}"
                          f"{' (' + ', '.join(flags) + ')' if flags else ''}.{lst}"
                          f"{' News: ' + top['title'][:90] if top else ''}")
         push(f"{MARKETS[m]['label']} opening surge: {', '.join(x['ticker'] for x in picks[:5])}",
@@ -2383,10 +2523,12 @@ def opening_alerts(op, markets):
 
 
 def opening_html(op):
-    intro = ('<p class="blurb">Checked about 30 minutes after each open (the free data runs about 15 minutes behind, '
-             'so it shows the first 15 minutes of trading). Listed: stocks that have <b>already traded more than a '
-             'normal full day\'s volume</b>, are <b>trending up</b> (price above its 20- and 50-day averages, and the 20-day not below the 50-day) and are up today, '
+    intro = ('<p class="blurb">Checked about 45 minutes after each open (the free data runs about 15 minutes behind). '
+             'Listed: stocks that traded <b>at least half a normal day\'s volume in the first 30 minutes</b>, are '
+             '<b>trending up</b> (price above its 20- and 50-day averages, and the 20-day not below the 50-day) and are up today, '
              'with <b>positive-looking news in the last 3 days</b>. Placings, warnings and similar are left out. '
+             '<b>Buying %</b> is an estimate from 1-minute price bars (how near the top of each minute\'s range the '
+             'price closed): 60%+ suggests buyers are in control, 45% or less suggests sellers. '
              'Headlines are sorted by keywords, so read them before acting.</p>')
     mk = (op or {}).get("markets") or {}
     if not mk:
@@ -2401,6 +2543,7 @@ def opening_html(op):
             parts.append('<p class="empty">Nothing qualified.</p>')
         for x in data["picks"]:
             flags = "".join(f'<span class="flag {c}">{E(t)}</span>' for t, c, on in (
+                ("buyers in control", "fg", x.get("buyers")), ("sellers in control", "fb", x.get("sellers")),
                 ("holding gains", "fg", x["holding"]), ("fading", "fb", not x["holding"]),
                 ("near 52-wk high", "fg", x["near_high"]), ("up 20%+ already", "fb", x["extended"]),
                 ("long-term trend still down", "fb", x.get("longterm_down")),
@@ -2412,13 +2555,13 @@ def opening_html(op):
             parts.append(f'<div class="opc"><div class="ophead"><div><b>{E(x["ticker"])}</b> <span class="ex">{E(x["exchange"])}</span>'
                          f'<div class="nm">{E(x["name"])}</div></div><div class="px">{fmt_price(x["price"], x["currency"], x["exchange"])}'
                          f'<div class="pos">{pct(x["change"])}</div></div></div>'
-                         f'<div class="meta">{x["vol_x"]:.1f}x a normal day\'s volume already{rv} · mkt cap {fmt_cap(x["mcap"])} · {E(x["sector"])}</div>'
+                         f'<div class="meta">{E(vol_text(x) + flow_text(x))}{rv} · mkt cap {fmt_cap(x["mcap"])} · {E(x["sector"])}</div>'
                          f'<div class="flags">{flags}</div><ul class="news">{news}</ul>'
                          f'<div class="links"><a href="{E(x["chart_url"])}" target="_blank" rel="noopener">Chart ↗</a></div></div>')
         if data["quiet"]:
             parts.append('<details class="sub"><summary>Volume and trend, but no clear good news ('
                          f'{len(data["quiet"])})</summary>' + "".join(
-                f'<div class="meta">{E(x["ticker"])} {pct(x["change"])}, {x["vol_x"]:.1f}x volume'
+                f'<div class="meta">{E(x["ticker"])} {pct(x["change"])}, {E(vol_text(x) + flow_text(x))}'
                 f'{" · " + E(x["news"][0]["title"][:80]) if x["news"] else " · no headlines found"}</div>' for x in data["quiet"])
                 + "</details>")
     return "".join(parts)
@@ -3472,7 +3615,7 @@ def main():
         state = load_json(sp, {})
         now_utc = dt.datetime.now(dt.timezone.utc)
         forced = [m for m in re.split(r"[,\s]+", a.markets.strip().lower()) if m in MARKETS] if a.markets.strip() else []
-        due = forced or [m for m in MARKETS if (lambda ms: ms[0] is not None and 25 <= ms[0] <= 80
+        due = forced or [m for m in MARKETS if (lambda ms: ms[0] is not None and OPEN_DUE[0] <= ms[0] <= OPEN_DUE[1]
                                                  and state.get(m) != ms[1].date().isoformat())(minutes_since_open(m, now_utc))]
         if not due:
             print("Opening check: nothing due.")
@@ -3487,7 +3630,7 @@ def main():
         op.setdefault("markets", {})
         for m in due:
             try:
-                picks, quiet = opening_scan(m, live_opening_tv, live_news, now_utc, context)
+                picks, quiet = opening_scan(m, live_opening_tv, live_news, now_utc, context, live_intraday)
             except Exception as e:
                 print(f"  opening {m} failed: {e}")
                 continue

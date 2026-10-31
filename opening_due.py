@@ -18,7 +18,7 @@ for m, (tz, hh, mm) in OPEN.items():
     if local.weekday() >= 5:
         continue
     mins = (local - local.replace(hour=hh, minute=mm, second=0, microsecond=0)).total_seconds() / 60
-    if 25 <= mins <= 80 and state.get(m) != local.date().isoformat():
+    if 45 <= mins <= 110 and state.get(m) != local.date().isoformat():
         due.append(m)
 forced = os.getenv("MARKETS", "").strip()
 result = "true" if (due or forced) else "false"
