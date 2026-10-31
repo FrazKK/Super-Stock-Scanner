@@ -1,0 +1,71 @@
+{
+ "date": "2026-10-29",
+ "generated": "2026-10-31T21:38+00:00",
+ "fx_gbpusd": 1.3378641605377197,
+ "result": "done",
+ "list": [
+  {
+   "ticker": "MAX",
+   "name": "MediaAlpha, Inc.",
+   "vol_x": 0.54,
+   "buy_pct30": 0.46305702107709784,
+   "change": 0.21245731351415875,
+   "score": 2.43,
+   "news": [
+    "MediaAlpha (NYSE:MAX) beats expectations in strong Q3 2026, stock jumps 18%"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "TTEC",
+   "vol_x": 1.58
+  },
+  {
+   "ticker": "SFST",
+   "vol_x": 0.5
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "MAX",
+   "bought_at": "2026-10-29T14:16+00:00",
+   "sold_at": "2026-10-29T14:54+00:00",
+   "entry": 14.449999809265137,
+   "exit": 13.73,
+   "cost_gbp": 993.6733651031318,
+   "pl_gbp": -49.511739985447434,
+   "pl_pct": -0.04982697707743096,
+   "reason": "Stop-loss order filled"
+  },
+  {
+   "ticker": "MAX",
+   "bought_at": "2026-10-29T15:54+00:00",
+   "sold_at": "2026-10-29T19:50+00:00",
+   "entry": 13.930000305175781,
+   "exit": 13.975000381469727,
+   "cost_gbp": 999.5633852388945,
+   "pl_gbp": 3.229032850751082,
+   "pl_pct": 0.003230443309985136,
+   "reason": "End of day: sold 10 minutes before the close."
+  }
+ ],
+ "total_gbp": -46.28270713469635,
+ "alerts": [
+  "10:16 Day trade: bought MAX: 92 MAX at $14.45 (about \u00a3994). Stop $13.73. Highest first-30-minute volume on today's list (0.5x a normal day).",
+  "10:54 Day trade update: MAX: stop-loss order filled (-\u00a350)",
+  "11:54 Day trade: bought MAX: 96 MAX at $13.93 (about \u00a31,000). Stop $13.23. Strongest buying on the list: 0.06x normal volume bought in the last 30 min, and rising.",
+  "15:50 Day trade: sold MAX (+\u00a33): End of day: sold 10 minutes before the close. Result +\u00a33 (+0.3%).",
+  "15:50 Day trade summary: 2 trade(s) today: MAX -\u00a350, MAX +\u00a33. Total -\u00a346."
+ ],
+ "log": [
+  "Day trade buy order: 92 MAX at about $14.45. Highest first-30-minute volume on today's list (0.5x a normal day).",
+  "Bought 92 MAX at 14.45 (cost \u00a3994).",
+  "MAX: stop-loss order filled, P&L -\u00a350.",
+  "Day trade buy order: 96 MAX at about $13.93. Strongest buying on the list: 0.06x normal volume bought in the last 30 min, and rising.",
+  "Bought 96 MAX at 13.93 (cost \u00a31,000).",
+  "Sold MAX (about +\u00a33). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 2 trade(s), total -\u00a346."
+ ]
+}
