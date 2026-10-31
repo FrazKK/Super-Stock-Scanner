@@ -1,22 +1,26 @@
 """
 Practice-account trading on Trading 212. It only ever uses the PRACTICE (demo) account.
 
-Rules (agreed 31 Oct 2026):
-  Buy   - Opening-surge picks with good news and "buyers in control" (60%+ estimated buying),
-          skipping any already up 20%+ on the day (chasing risk).
-        - "2+ methods agree" picks from the weekly scan, bought at the first opening check after the scan.
-  Size  - A fixed GBP 1,000 per trade in whole shares, with at most 10 of the bot's positions open.
-  Sell  - Each method's own sell rule, checked about an hour before the close. For a stock several methods
-          agreed on, the first method to say sell wins. Opening-surge trades use an episodic-pivot style
-          rule: stop at the day's low (never more than 8% away), then sell on a close below the 10-day EMA.
-        - A stop-loss order is placed at Trading 212 straight after buying. It sits at the method's stop
-          (or just under the weekly moving average for weekly methods) and is only ever raised, never lowered.
+Current rules: US day trading, one stock at a time (agreed 31 Oct 2026)
+  List   - The US opening-surge list: stocks with positive news that traded at least half a normal
+           day's volume in the first 30 minutes, trending up. Only stocks Trading 212 offers.
+  Buy    - First buy of the day: the stock on that list with the highest first-30-minute volume
+           (compared with its normal daily volume).
+  Sell   - When the price is 5% below the buy price (a stop-loss order also sits at Trading 212), or
+         - when it hasn't made a new high for 15 minutes AND another stock on the list has overtaken it on
+           buying volume over the last 30 minutes (estimated buying volume compared with each stock's normal
+           daily volume). It then buys that stock straight away.
+         - Everything is sold 10 minutes before the close. Nothing is held overnight.
+  Size   - GBP 1,000 per trade, whole shares. After a stop-out it buys the list's strongest current buyer.
+           No new buys in the last 30 minutes, at most 12 buys a day, and a stock that was sold can't be
+           bought back for 45 minutes.
+
+The older rules (opening-surge and 2+ methods picks held for days by each method's sell rule) are still
+here as --opening / --preclose / --sync, but the workflows no longer run them.
 
 Commands:
   python practice.py --check      test the connection and send a phone alert with the account value
-  python practice.py --opening    after the opening check: buy
-  python practice.py --preclose   about an hour before the close: sell or raise stops
-  python practice.py --sync       evening: record stop-outs, make sure every position has a stop, refresh page
+  python practice.py --daytrade   watch and trade the US session (runs until 10 minutes before the close)
 
 Needs repository secrets T212_KEY and T212_SECRET created in the Trading 212 PRACTICE account.
 """
@@ -40,6 +44,17 @@ SURGE_MAX_RISK = 0.08        # opening-surge stop: the day's low, but never more
 SURGE_EMA = 10               # opening-surge exit: a close below the 10-day EMA (from the day after buying)
 WEEKLY_SAFETY = 0.03         # weekly-MA methods: the stop order sits 3% under the moving average
 CONSENSUS_MAX_AGE = 7        # days: only buy "2+ methods" picks from a scan this recent
+
+# Day trading (US)
+DT_STOP = 0.05               # sell 5% below the buy price
+DT_FLAT_MIN = 15             # "slowing down": no new high for this many minutes
+DT_WINDOW = 30               # minutes of buying volume compared between stocks
+DT_POLL = 120                # seconds between checks
+DT_LAST_BUY = 30             # no new buys in the last 30 minutes before the close
+DT_EXIT = 10                 # sell 10 minutes before the close
+DT_MAX_BUYS = 12             # buys per day, to stop it churning
+DT_COOLDOWN = 45             # minutes before a stock that was sold can be bought again
+DT_RUN_LIMIT = 5.6 * 3600    # GitHub stops a job at 6 hours: stop just before, the backup timer restarts it
 ROOT = Path(__file__).resolve().parent
 DOCS = ROOT / "docs"
 STATE = DOCS / "data" / "practice.json"
@@ -352,7 +367,7 @@ def record_closed(st, pos, exit_local, proceeds, reason, when):
         "days": (when.date() - dt.date.fromisoformat(pos["bought"])).days,
         "entry": pos.get("entry_local"), "exit": exit_local, "cost_gbp": cost,
         "proceeds_gbp": proceeds, "pl_gbp": pl, "pl_pct": (pl / cost) if (pl is not None and cost) else None,
-        "reason": reason})
+        "reason": reason, "bought_at": pos.get("bought_at"), "sold_at": when.isoformat(timespec="minutes")})
     st["open"] = [x for x in st["open"] if x["id"] != pos["id"]]
 
 
@@ -542,6 +557,29 @@ def buy_all(api, st, cands, positions, when):
 # Commands
 # ---------------------------------------------------------------------------
 
+def save_tickers(api, insts=None):
+    """Publish which US and UK shares Trading 212 offers, for the morning news summaries to check against."""
+    try:
+        insts = insts if insts is not None else api.instruments()
+    except T212Error as e:
+        print(f"  instrument list failed: {e}")
+        return
+    out = {"updated": now_utc().isoformat(timespec="minutes"), "us": [], "uk": []}
+    for i in insts:
+        if i.get("type", "STOCK") != "STOCK" or not i.get("shortName"):
+            continue
+        if str(i.get("ticker", "")).endswith("_US_EQ"):
+            out["us"].append(str(i["shortName"]).upper())
+        elif i.get("currencyCode") in ("GBX", "GBP"):
+            out["uk"].append(str(i["shortName"]).upper())
+    out["us"], out["uk"] = sorted(set(out["us"])), sorted(set(out["uk"]))
+    if out["us"]:
+        f = DOCS / "data" / "t212_tickers.json"
+        f.parent.mkdir(parents=True, exist_ok=True)
+        f.write_text(json.dumps(out, separators=(",", ":")), encoding="utf-8")
+        print(f"  Trading 212 list saved: {len(out['us'])} US, {len(out['uk'])} UK shares")
+
+
 def cmd_opening(api, st, when):
     positions, active, events = reconcile(api, st, when)
     op = S.load_json(DOCS / "data" / "opening.json", {}) or {}
@@ -640,6 +678,262 @@ def fmt_buy(pos):
             f"{', stop ' + S.fmt_num(stop) if stop else ''}. {pos['why']}")
 
 
+# ---------------------------------------------------------------------------
+# Day trading: one US stock at a time, rotating to the strongest buyer
+# ---------------------------------------------------------------------------
+
+def git_save(msg):
+    """Commit the practice data mid-run so the page stays up to date (only on GitHub)."""
+    if not os.getenv("GITHUB_ACTIONS"):
+        return
+    import subprocess
+
+    try:
+        S.rerender_page(DOCS)
+    except Exception as e:
+        print(f"  page refresh failed: {e}")
+    for c in (["git", "add", "docs"], ["git", "commit", "-q", "-m", msg],
+              ["git", "pull", "-q", "--rebase", "-X", "theirs"], ["git", "push", "-q"]):
+        r = subprocess.run(c, cwd=ROOT, capture_output=True, text=True)
+        if r.returncode and c[1] == "commit":
+            return                                   # nothing new to save
+        if r.returncode:
+            print(f"  git {c[1]} failed: {(r.stderr or r.stdout)[:200]}")
+            return
+
+
+def live_avg_volume(ysyms):
+    """Average daily volume over the last 10 complete days."""
+    import pandas as pd
+    import yfinance as yf
+
+    out = {}
+    try:
+        data = yf.download(list(ysyms), period="1mo", interval="1d", group_by="ticker", auto_adjust=False,
+                           progress=False, threads=True)
+    except Exception as e:
+        print(f"  average volume download failed: {e}")
+        return out
+    today = dt.date.today()
+    for s in ysyms:
+        try:
+            d = data[s] if isinstance(data.columns, pd.MultiIndex) else data
+            v = d["Volume"].dropna()
+            v = v[[ix.date() < today for ix in v.index]]
+            if len(v):
+                out[s] = float(v.iloc[-10:].mean())
+        except Exception:
+            continue
+    return out
+
+
+def ny(when):
+    from zoneinfo import ZoneInfo
+    return when.astimezone(ZoneInfo("America/New_York"))
+
+
+def dt_metrics(bars, avg, when):
+    """Buying volume over the last 30 minutes (as a multiple of normal daily volume) and whether it's rising."""
+    if bars is None or not len(bars):
+        return None
+    f = S.flow_split(bars, when - dt.timedelta(minutes=DT_WINDOW))
+    buy_vol = f["volume"] * f["buy_pct"] if f["buy_pct"] is not None else 0.0
+    idx = bars.index.tz_convert("UTC") if bars.index.tz is not None else bars.index.tz_localize("UTC")
+    last = float(bars["Close"].iloc[-1])
+    earlier = bars["Close"][idx <= when - dt.timedelta(minutes=DT_FLAT_MIN)]
+    p15 = float(earlier.iloc[-1]) if len(earlier) else None
+    return {"buy_x": (buy_vol / avg) if avg else 0.0, "buy_vol": buy_vol, "last": last,
+            "rising": p15 is None or last >= p15, "p15": p15}
+
+
+def dt_holding(st):
+    return next((p for p in st["open"] if p.get("source") == "daytrade"), None)
+
+
+def dt_buy(api, st, day, c, price, why, fx, when, positions):
+    pg = to_gbp(price, "USD", "america", fx)
+    qty = math.floor(TRADE_GBP / pg) if pg else 0
+    if qty < 1:
+        log(st, f"{c['ticker']}: one share costs more than £{TRADE_GBP:,.0f}, skipped.")
+        day["skip"][c["ticker"]] = when.isoformat()
+        return None
+    if c["t212"] in positions:
+        log(st, f"{c['ticker']}: already held in the practice account (not by the bot), skipped.")
+        day["skip"][c["ticker"]] = when.isoformat()
+        return None
+    try:
+        o = api.market(c["t212"], qty)
+    except T212Error as e:
+        log(st, f"{c['ticker']}: buy order refused ({e.text[:120]}).")
+        day["skip"][c["ticker"]] = when.isoformat()
+        return None
+    day["buys"] += 1
+    pos = {"id": f"america-{c['ticker']}-{when.date().isoformat()}-{day['buys']}", "status": "pending",
+           "ticker": c["ticker"], "t212": c["t212"], "name": c["name"], "market": "america",
+           "exchange": c["exchange"], "ysym": c["ysym"], "source": "daytrade", "methods": [{"method": "daytrade"}],
+           "bought": when.date().isoformat(), "bought_at": when.isoformat(timespec="minutes"), "ref_price": price,
+           "qty": qty, "why": why, "initial_stop": price * (1 - DT_STOP),
+           "high": price, "high_time": when.isoformat()}
+    pos["order_id"] = (o or {}).get("id")
+    st["open"].append(pos)
+    log(st, f"Day trade buy order: {qty} {c['ticker']} at about ${price:,.2f}. {why}")
+    for _ in range(4):                     # wait for the fill, then set the 5% stop from the actual price
+        time.sleep(3)
+        reconcile(api, st, when)
+        if pos["status"] == "open":
+            break
+    if pos["status"] == "open":
+        pos["high"] = pos["entry_local"]
+        S.push(f"Day trade: bought {c['ticker']}",
+               f"{qty_txt(pos['qty'])} {c['ticker']} at ${pos['entry_local']:,.2f} (about £{pos.get('cost_gbp') or 0:,.0f}). "
+               f"Stop ${pos['entry_local'] * (1 - DT_STOP):,.2f}. {why}", 3, "money_with_wings")
+    return pos
+
+
+def dt_sell(api, st, day, pos, positions, active, why, when):
+    p = positions.get(pos["t212"])
+    if not p:
+        return False
+    if not sell(api, st, pos, p, active, why, when):
+        return False
+    c = st["closed"][-1]
+    day["sold"][pos["ticker"]] = when.isoformat()
+    pl = c.get("pl_gbp")
+    S.push(f"Day trade: sold {pos['ticker']}" + (f" ({gbp_txt(pl)})" if pl is not None else ""),
+           f"{why}" + (f" Result {gbp_txt(pl)} ({S.pct(c['pl_pct'])})." if pl is not None else ""), 3, "moneybag")
+    time.sleep(3)
+    return True
+
+
+def cmd_daytrade(api, st, fetch_bars=None, fetch_avg=None, clock=None, pause=None):
+    fetch_bars = fetch_bars or S.live_intraday
+    fetch_avg = fetch_avg or live_avg_volume
+    clock = clock or now_utc
+    pause = pause or time.sleep
+    started = time.time()
+    when = clock()
+    today = ny(when).date().isoformat()
+    day = st.get("day") or {}
+    if day.get("date") != today:
+        day = {"date": today, "buys": 0, "sold": {}, "skip": {}, "finished": False}
+    day.setdefault("skip", {})
+    st["day"] = day
+    if day.get("finished"):
+        print("Day trading already finished for today.")
+        return "done"
+    op = S.load_json(DOCS / "data" / "opening.json", {}) or {}
+    data = (op.get("markets") or {}).get("america") or {}
+    if data.get("date") != today:
+        print("No US opening list for today yet.")
+        return "wait"
+    picks = [x for x in data.get("picks") or [] if any(n.get("tone") == "pos" for n in x.get("news") or [])]
+    insts = api.instruments()
+    save_tickers(api, insts)
+    cands = []
+    for x in picks:
+        inst = find_instrument(insts, "america", x["ticker"], x["name"])
+        if inst:
+            cands.append({**{k: x.get(k) for k in ("ticker", "name", "exchange", "ysym", "vol_x")}, "t212": inst["ticker"]})
+    missing = [x["ticker"] for x in picks if x["ticker"] not in {c["ticker"] for c in cands}]
+    if missing:
+        print(f"  not on Trading 212: {', '.join(missing)}")
+    if not cands and not dt_holding(st):
+        log(st, "Day trade: no stock on today's US list is available on Trading 212, so no trades today.")
+        day["finished"] = True
+        return "done"
+    by_ticker = {c["ticker"]: c for c in cands}
+    avg = fetch_avg([c["ysym"] for c in cands]) if cands else {}
+    fx = fx_rates()
+    day["list"] = [c["ticker"] for c in cands]
+    print(f"  day trading {len(cands)} stocks: {', '.join(day['list'])}")
+    last_save = 0.0
+    while True:
+        when = clock()
+        left, _ = S.minutes_to_close("america", when)
+        mins, _ = S.minutes_since_open("america", when)
+        if left is None or mins is None or mins < 0:
+            save_state(st)
+            return "wait"                           # weekend or before the open
+        if time.time() - started > DT_RUN_LIMIT:
+            save_state(st)
+            git_save("Day trade (handing over)")
+            return "resume"
+        positions, active, events = reconcile(api, st, when)
+        for e in events:
+            S.push("Day trade update", e, 3, "memo")
+            tick = e.split(":")[0]
+            if "stop-loss" in e:
+                day["sold"][tick] = when.isoformat()
+        hold = dt_holding(st)
+        if left <= DT_EXIT:
+            if hold and hold["status"] == "open":
+                dt_sell(api, st, day, hold, positions, active, "End of day: sold 10 minutes before the close.", when)
+            break
+        bars = fetch_bars(list({c["ysym"] for c in cands} | ({hold["ysym"]} if hold else set())))
+        met = {c["ticker"]: dt_metrics(bars.get(c["ysym"]), avg.get(c["ysym"]), when) for c in cands}
+
+        def eligible(c):
+            m = met.get(c["ticker"])
+            if not m or not m["rising"]:
+                return False
+            for book in (day["sold"], day["skip"]):
+                t = book.get(c["ticker"])
+                if t and (when - dt.datetime.fromisoformat(t)).total_seconds() < DT_COOLDOWN * 60:
+                    return False
+            return not hold or c["ticker"] != hold["ticker"]
+
+        ranked = sorted((c for c in cands if eligible(c)), key=lambda c: met[c["ticker"]]["buy_x"], reverse=True)
+        traded = False
+        if hold and hold["status"] == "open":
+            p = positions.get(hold["t212"]) or {}
+            price = S.num(p.get("currentPrice")) or (met.get(hold["ticker"]) or {}).get("last")
+            if price and price > hold.get("high", 0):
+                hold["high"], hold["high_time"] = price, when.isoformat()
+            entry = hold.get("entry_local") or hold["ref_price"]
+            flat = (when - dt.datetime.fromisoformat(hold["high_time"])).total_seconds() / 60
+            mine = (met.get(hold["ticker"]) or {}).get("buy_x", 0.0)
+            hold["last_check"] = (f"${price:,.2f} ({S.pct(price / entry - 1)}), high ${hold['high']:,.2f}, "
+                                  f"no new high for {flat:.0f} min, buying {mine:.2f}x normal in 30 min")
+            if price and price <= entry * (1 - DT_STOP):
+                if dt_sell(api, st, day, hold, positions, active,
+                           f"Fell 5% below the buy price (${price:,.2f} vs ${entry:,.2f}).", when):
+                    hold, traded = None, True
+            elif flat >= DT_FLAT_MIN and ranked and met[ranked[0]["ticker"]]["buy_x"] > mine:
+                best = ranked[0]
+                why = (f"No new high for {flat:.0f} min, and {best['ticker']} overtook it on buying volume "
+                       f"({met[best['ticker']]['buy_x']:.2f}x vs {mine:.2f}x normal in 30 min).")
+                if dt_sell(api, st, day, hold, positions, active, why, when):
+                    hold, traded = None, True
+                    positions, active, _ = reconcile(api, st, when)
+        if not hold and left > DT_LAST_BUY and day["buys"] < DT_MAX_BUYS:
+            if day["buys"] == 0:
+                pool = [c for c in cands if eligible(c) or (met.get(c["ticker"]) and c["ticker"] not in day["skip"])]
+                pick = max(pool, key=lambda c: c.get("vol_x") or 0, default=None)
+                why = (f"Highest first-30-minute volume on today's list ({pick['vol_x']:.1f}x a normal day)."
+                       if pick else "")
+            else:
+                pick = ranked[0] if ranked else None
+                why = (f"Strongest buying on the list: {met[pick['ticker']]['buy_x']:.2f}x normal volume bought "
+                       f"in the last 30 min, and rising." if pick else "")
+            if pick and met.get(pick["ticker"]):
+                if dt_buy(api, st, day, pick, met[pick["ticker"]]["last"], why, fx, when, positions):
+                    traded = True
+        if traded or time.time() - last_save > 600:
+            save_state(st)
+            git_save(f"Day trade {when.strftime('%H:%M')}")
+            last_save = time.time()
+        pause(DT_POLL)
+    day["finished"] = True
+    done = [c for c in st["closed"] if c.get("source") == "daytrade" and c.get("sold") == when.date().isoformat()]
+    tot = sum(c["pl_gbp"] for c in done if c.get("pl_gbp") is not None)
+    if done:
+        S.push("Day trade summary", f"{len(done)} trade(s) today: " + ", ".join(
+            f"{c['ticker']} {gbp_txt(c['pl_gbp'])}" for c in done if c.get("pl_gbp") is not None)
+               + f". Total {gbp_txt(tot)}.", 3, "bar_chart")
+    log(st, f"Day trading finished: {len(done)} trade(s), total {gbp_txt(tot)}.")
+    return "done"
+
+
 def main():
     ap = argparse.ArgumentParser()
     g = ap.add_mutually_exclusive_group(required=True)
@@ -647,6 +941,7 @@ def main():
     g.add_argument("--opening", action="store_true")
     g.add_argument("--preclose", action="store_true")
     g.add_argument("--sync", action="store_true")
+    g.add_argument("--daytrade", action="store_true")
     ap.add_argument("--markets", default="")
     a = ap.parse_args()
     key, secret = os.getenv("T212_KEY", ""), os.getenv("T212_SECRET", "")
@@ -666,6 +961,7 @@ def main():
                    f"cash {acct.get('cash') or 0:,.2f}, {n} position(s). The bot will trade it by the agreed rules.",
                    3, "white_check_mark")
             log(st, "Connection check OK.")
+            save_tickers(api)
         elif a.opening:
             bought, events = cmd_opening(api, st, when)
             update_account(api, st)
@@ -685,9 +981,15 @@ def main():
                 S.push(f"Practice: sold {', '.join(c['ticker'] for c in sold)}", "\n\n".join(lines), 3, "moneybag")
             if events:
                 S.push("Practice account update", "\n".join(events), 3, "memo")
+        elif a.daytrade:
+            res = cmd_daytrade(api, st)
+            update_account(api, st)
+            if res == "resume":
+                Path(ROOT / ".daytrade_resume").write_text("1")
         elif a.sync:
             _, _, events = reconcile(api, st, when)
             update_account(api, st)
+            save_tickers(api)
             if events:
                 S.push("Practice account update", "\n".join(events), 3, "memo")
     except T212Error as e:
