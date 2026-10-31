@@ -1,0 +1,39 @@
+{
+ "date": "2026-10-26",
+ "generated": "2026-10-31T21:52+00:00",
+ "fx_gbpusd": 1.3377747535705566,
+ "result": "done",
+ "list": [],
+ "quiet": [
+  {
+   "ticker": "BWMX",
+   "vol_x": 1.82
+  },
+  {
+   "ticker": "EAF",
+   "vol_x": 0.83
+  },
+  {
+   "ticker": "MED",
+   "vol_x": 0.77
+  },
+  {
+   "ticker": "FNWD",
+   "vol_x": 0.57
+  },
+  {
+   "ticker": "TSBK",
+   "vol_x": 0.55
+  },
+  {
+   "ticker": "NBN",
+   "vol_x": 0.54
+  }
+ ],
+ "trades": [],
+ "total_gbp": 0,
+ "alerts": [],
+ "log": [
+  "Day trade: no stock on today's US list is available on Trading 212, so no trades today."
+ ]
+}
