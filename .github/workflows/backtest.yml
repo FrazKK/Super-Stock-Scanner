@@ -1,0 +1,50 @@
+name: Replay a day (day trader)
+
+# Replays one past US trading day with the day-trader rules, using 1-minute prices, and saves the result to
+# docs/data/backtest-<date>.json (plus a phone alert). It never touches Trading 212. Yahoo keeps 1-minute
+# prices for about the last 30 days.
+
+on:
+  workflow_dispatch:
+    inputs:
+      date:
+        description: "Day to replay, e.g. 2026-10-29 (blank = the last weekday)"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+
+concurrency:
+  group: backtest
+  cancel-in-progress: false
+
+jobs:
+  replay:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: main
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Replay
+        env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+          SITE_URL: ${{ secrets.SITE_URL }}
+          DAY: ${{ inputs.date }}
+        run: python backtest.py --date "$DAY"
+      - name: Save
+        run: |
+          git config user.name "scanner-bot"
+          git config user.email "scanner-bot@users.noreply.github.com"
+          git add docs/data/backtest-*.json
+          git commit -m "Replay $DAY" || echo "No changes"
+          git pull --rebase -X theirs
+          git push
+        env:
+          DAY: ${{ inputs.date }}
