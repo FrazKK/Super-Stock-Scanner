@@ -1,79 +1,10 @@
 {
  "markets": {
   "america": {
-   "date": "2026-10-29",
-   "time": "Thu 29 Oct 09:58",
+   "date": "2026-10-31",
+   "time": "Sat 31 Oct 14:47",
    "picks": [],
-   "quiet": [
-    {
-     "ticker": "MXC",
-     "name": "Mexco Energy Corporation",
-     "exchange": "AMEX",
-     "ysym": "MXC",
-     "market": "america",
-     "price": 10.42,
-     "currency": "USD",
-     "change": 0.012633624878522915,
-     "vol_x": 1.8,
-     "rvol_time": 2.0791212058534567,
-     "value": 758471.8,
-     "mcap": 21319320.000000004,
-     "sector": "Energy Minerals",
-     "holding": true,
-     "extended": false,
-     "near_high": false,
-     "longterm_down": false,
-     "chart_url": "https://www.tradingview.com/chart/?symbol=AMEX:MXC&interval=D",
-     "lists": [],
-     "owned": false,
-     "news": []
-    },
-    {
-     "ticker": "CFFI",
-     "name": "C&F Financial Corporation",
-     "exchange": "NASDAQ",
-     "ysym": "CFFI",
-     "market": "america",
-     "price": 109.73,
-     "currency": "USD",
-     "change": 0.010684351109883125,
-     "vol_x": 1.22,
-     "rvol_time": 1.4446591132359683,
-     "value": 9557592.73,
-     "mcap": 356808048.99999994,
-     "sector": "Finance",
-     "holding": true,
-     "extended": false,
-     "near_high": true,
-     "longterm_down": false,
-     "chart_url": "https://www.tradingview.com/chart/?symbol=NASDAQ:CFFI&interval=D",
-     "lists": [],
-     "owned": false,
-     "news": [
-      {
-       "title": "C&F Financial (CFFI) Q3 Earnings Strength Leaves Stock Price Unmoved",
-       "date": "2026-10-27",
-       "url": "https://finance.yahoo.com/markets/stocks/articles/c-f-financial-cffi-q3-221225504.html?.tsrc=rss",
-       "source": "Yahoo Finance",
-       "tone": "neutral"
-      },
-      {
-       "title": "C&F: Q3 Earnings Snapshot",
-       "date": "2026-10-26",
-       "url": "https://finance.yahoo.com/markets/stocks/articles/c-f-q3-earnings-snapshot-204733327.html?.tsrc=rss",
-       "source": "Yahoo Finance",
-       "tone": "neutral"
-      },
-      {
-       "title": "C&F Financial Corporation Announces Net Income for Third Quarter and First Nine Months of 2026",
-       "date": "2026-10-26",
-       "url": "https://finance.yahoo.com/markets/stocks/articles/c-f-financial-corporation-announces-200500335.html?.tsrc=rss",
-       "source": "Yahoo Finance",
-       "tone": "neutral"
-      }
-     ]
-    }
-   ]
+   "quiet": []
   },
   "canada": {
    "date": "2026-10-29",
