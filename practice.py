@@ -881,9 +881,9 @@ def live_discover(when, known):
     for r in df.to_dict("records"):
         tick = str(r["name"])
         close, s20, s50 = (S.num(r.get(k)) for k in ("close", "SMA20", "SMA50"))
-        if tick in known or not (close and s20 and s50) or close < cfg["universe_price_min"]:
+        if tick in known or not close or close < cfg["universe_price_min"]:
             continue
-        if close > s20 and close > s50 and s20 >= 0.97 * s50:
+        if not S.OPEN_REQUIRE_TREND or (s20 and s50 and close > s20 and close > s50 and s20 >= 0.97 * s50):
             rows.append(r)
     rows.sort(key=lambda r: (S.num(r.get("volume")) or 0) / max(S.num(r.get("average_volume_10d_calc")) or 1, 1),
               reverse=True)

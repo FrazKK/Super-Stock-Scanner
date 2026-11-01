@@ -2132,6 +2132,7 @@ OPEN_NEWS_DAYS = 3             # news must be from the last 3 days
 OPEN_MIN_VALUE = {"america": 250_000, "canada": 50_000, "uk": 25_000}   # traded value so far, local currency
 OPEN_EXTENDED = 0.20           # up more than 20% today = chasing risk
 OPEN_ALERT_MAX = 8
+OPEN_REQUIRE_TREND = True      # price above its 20- and 50-day averages; False lets news gaps from a downtrend in
 OPEN_ANY_SIZE = True           # opening list and day trader: no company size limit (liquidity rules still apply)
 
 POS_NEWS = re.compile(
@@ -2142,9 +2143,12 @@ POS_NEWS = re.compile(
     r"commercial|milestone|director.{0,25}(purchase|buy|dealing)|insider (purchase|buy)|buyback|dividend increase|"
     r"breakthrough|patent|launch|win|wins|won|selected|expan", re.I)
 NEG_NEWS = re.compile(
-    r"placing|fundrais|fund rais|subscription|share issue|offering|priced|dilut|warning|below (market )?expectations|"
-    r"delay|suspen|default|going concern|downgrad|loss widen|miss|resign|investigat|lawsuit|recall|halt|"
-    r"impairment|withdraw|terminat|cancel|restat|delist|reverse split|convertible|at-the-market|ATM program", re.I)
+    r"placing|fundrais|fund rais|subscription (for|to raise|of new)|share issue|"
+    r"(public|private|registered|underwritten|secondary|follow-on|direct|stock|share|equity|common|unit) offering|"
+    r"offering of (common|shares|units|stock|\$)|\bpriced? (an? |its |the )?(offering|placing|public|private|underwritten)|"
+    r"dilut|warning|below (market )?expectations|delay|suspen|default|going concern|downgrad|loss widen|"
+    r"\bmiss(es|ed)?\b|\bresign|investigat|lawsuit|recall|\bhalt|impairment|withdraw|terminat|cancel|restat|delist|"
+    r"reverse (stock )?split|convertible|at-the-market|ATM program", re.I)
 
 
 # Takeover / buyout news: the price jumps to the offer price before we can act, then sits there, so these
@@ -2429,7 +2433,7 @@ def opening_scan(market, fetch_open, fetch_news, now_utc, context=None, fetch_ba
             continue
         close = num(rec.get("close"))
         s20, s50 = num(rec.get("SMA20")), num(rec.get("SMA50"))
-        if not bool(close and s20 and s50 and close > s20 and close > s50 and s20 >= 0.97 * s50):
+        if OPEN_REQUIRE_TREND and not bool(close and s20 and s50 and close > s20 and close > s50 and s20 >= 0.97 * s50):
             continue
         cands.append(rec)
     cands.sort(key=lambda r: num(r["volume"]) / max(num(r["average_volume_10d_calc"]) or 1, 1), reverse=True)

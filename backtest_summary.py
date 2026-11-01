@@ -15,7 +15,7 @@ for f in sorted(root.glob("backtest-2*.json")):
     if not str(d.get("date", "")).startswith("20"):
         continue                                   # e.g. a mistyped year like 2626
     mode = (d.get("strategy") or "older rotation run") + ("" if d.get("require_news", True) else ", no news") \
-        + (", 5-min bars" if d.get("bars") == "5m" else "")
+        + ("" if d.get("require_trend", True) else ", no trend rule") + (", 5-min bars" if d.get("bars") == "5m" else "")
     rows.setdefault(mode, {})
     trades = [t for t in d.get("trades", []) if t.get("pl_gbp") is not None]
     rows[mode][d["date"]] = {"total": round(d.get("total_gbp") or 0, 2), "trades": len(trades),

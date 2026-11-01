@@ -93,7 +93,8 @@ def replay_drift(day, meta, mins):
 
 def result_suffix(a):
     """File name ending for a replay: strategy, then -nonews and -5m when used."""
-    return f"-{a.strategy}" + ("" if not a.no_news else "-nonews") + ("-5m" if a.bars == "5m" else "")
+    return (f"-{a.strategy}" + ("" if not a.no_news else "-nonews") + ("-notrend" if a.no_trend else "")
+            + ("-5m" if a.bars == "5m" else ""))
 
 
 def parse_day(text):
@@ -181,7 +182,7 @@ def build_list(day):
         vx = vol30 / i["avg"]
         sma20 = (sum(i["closes"][-19:]) + price) / 20
         sma50 = (sum(i["closes"][-49:]) + price) / 50
-        trend = price > sma20 and price > sma50 and sma20 >= 0.97 * sma50
+        trend = not S.OPEN_REQUIRE_TREND or (price > sma20 and price > sma50 and sma20 >= 0.97 * sma50)
         if vx < S.OPEN_VOL_MULT or not trend or price <= i["prev"] or vol30 * price < S.OPEN_MIN_VALUE["america"]:
             continue
         flow = S.flow_split(first, open_t.astimezone(dt.timezone.utc), t30.astimezone(dt.timezone.utc))
@@ -308,6 +309,7 @@ def main():
     ap.add_argument("--no-news", action="store_true", help="also trade heavy buying + uptrend without news")
     ap.add_argument("--strategy", default="breakout", choices=["breakout", "breakout-market", "breakout-strong", "drift", "rotation"])
     ap.add_argument("--bars", default="1m", choices=["1m", "5m"])
+    ap.add_argument("--no-trend", action="store_true", help="don't require an uptrend (lets news gaps in)")
     a = ap.parse_args()
     P.DT_REQUIRE_NEWS = not a.no_news
     P.DT_STRATEGY = a.strategy if a.strategy in ("rotation", "drift") else "breakout"
@@ -315,6 +317,7 @@ def main():
     if a.strategy == "breakout-strong":        # only heavily traded "in play" stocks: a full normal day's volume
         P.DT_BO_MIN_VOLX, P.DT_TOP_N = 1.0, 3   # in the first 30 minutes, top 3 only
     BAR.update(interval=a.bars, minutes=5 if a.bars == "5m" else 1)
+    S.OPEN_REQUIRE_TREND = not a.no_trend
     day = parse_day(a.date) if a.date.strip() else last_weekday(dt.datetime.now(NY).date())
     print(f"Replaying {day} (US)")
     picks, quiet, mins, info, meta, since = build_list(day)
@@ -359,7 +362,7 @@ def main():
             last = sc["last"]
             sma20 = (sum(i["closes"][-19:]) + last) / 20
             sma50 = (sum(i["closes"][-49:]) + last) / 50
-            if not (last > sma20 and last > sma50 and sma20 >= 0.97 * sma50):
+            if S.OPEN_REQUIRE_TREND and not (last > sma20 and last > sma50 and sma20 >= 0.97 * sma50):
                 continue
             name = str(meta[ys].get("description") or tick)
             if tick not in news_cache:
@@ -402,7 +405,7 @@ def main():
     total = sum(c["pl_gbp"] for c in trades if c.get("pl_gbp") is not None)
     out = {"date": day.isoformat(), "generated": dt.datetime.now(dt.timezone.utc).isoformat(timespec="minutes"),
            "fx_gbpusd": fxr, "result": res, "require_news": P.DT_REQUIRE_NEWS, "strategy": a.strategy,
-           "bars": a.bars,
+           "bars": a.bars, "require_trend": not a.no_trend,
            "added_during_day": [x["text"] for x in st["log"] if x["text"].startswith("Added ")],
            "drift_list": [{k: c.get(k) for k in ("ticker", "name", "price", "why")} for c in drift_list],
            "list": [{k: p.get(k) for k in ("ticker", "name", "vol_x", "buy_pct30", "change", "score")}
