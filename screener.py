@@ -2124,7 +2124,7 @@ def run_holdings(holdings, fetch_prices, today):
 
 OPEN_TIMES = {"uk": ("Europe/London", 8, 0), "america": ("America/New_York", 9, 30),
               "canada": ("America/New_York", 9, 30)}
-OPEN_VOL_MULT = 0.5            # first-30-minute volume must be at least half a normal day (10-day average)
+OPEN_VOL_MULT = 1 / 3          # first-30-minute volume must be at least a third of a normal day (10-day average)
 OPEN_WINDOW = 30               # minutes after the open that the volume test covers
 OPEN_DUE = (45, 110)           # run between 45 and 110 minutes after the open (free data lags ~15 minutes)
 OPEN_BUYERS = 0.60             # estimated share of volume from buyers: at or above = "buyers in control"
@@ -2398,7 +2398,7 @@ def flow_split(bars, start_utc, end_utc=None):
 
 
 def opening_scan(market, fetch_open, fetch_news, now_utc, context=None, fetch_bars=None):
-    """Stocks that traded at least half a normal day's volume in the first 30 minutes, are trending up,
+    """Stocks that traded at least a third of a normal day's volume in the first 30 minutes, are trending up,
     have good news, with an estimate of how much of that volume was buying."""
     cfg = MARKETS[market]
     df = fetch_open(market)
@@ -2528,7 +2528,7 @@ def opening_alerts(op, markets):
         picks = data["picks"][:OPEN_ALERT_MAX]
         if not picks:
             push(f"{MARKETS[m]['label']} opening check: nothing qualifies",
-                 f"No stock traded half a normal day's volume in the first 30 minutes while trending up with positive news. "
+                 f"No stock traded a third of a normal day's volume in the first 30 minutes while trending up with positive news. "
                  f"{len(data['quiet'])} had the volume and trend but no clear good news.", 2, "zzz")
             continue
         lines = []
@@ -2548,7 +2548,7 @@ def opening_alerts(op, markets):
 
 def opening_html(op):
     intro = ('<p class="blurb">Checked about 45 minutes after each open (the free data runs about 15 minutes behind). '
-             'Listed: stocks that traded <b>at least half a normal day\'s volume in the first 30 minutes</b>, are '
+             'Listed: stocks that traded <b>at least a third of a normal day\'s volume in the first 30 minutes</b>, are '
              '<b>trending up</b> (price above its 20- and 50-day averages, and the 20-day not below the 50-day) and are up today, '
              'with <b>positive-looking news in the last 3 days</b>. Placings, warnings and similar are left out. '
              '<b>Buying %</b> is an estimate from 1-minute price bars (how near the top of each minute\'s range the '

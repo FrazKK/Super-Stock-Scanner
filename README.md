@@ -55,7 +55,7 @@ For UK stocks that reach a buy point under the rules above, the scan reads their
 
 About 45 minutes after each market opens (08:45 UK; 10:15 New York for US and Canada), the bot looks for stocks that:
 
-- traded **at least half a normal day's volume in the first 30 minutes** (against their 10-day average). It measures the first 30 minutes from Yahoo's 1-minute bars, so a slightly late run doesn't change the result;
+- traded **at least a third of a normal day's volume in the first 30 minutes** (against their 10-day average). It measures the first 30 minutes from Yahoo's 1-minute bars, so a slightly late run doesn't change the result;
 - are **trending up**: price above its 20- and 50-day averages, with the 20-day not below the 50-day (so breakouts from flat bases count), and up today. If the 50-day is still below the 200-day, the stock is flagged "long-term trend still down" but not excluded;
 - have **positive-looking news in the last 3 days** (RNS for UK stocks, Yahoo Finance news for all three markets). Headlines are sorted by keywords, so read them yourself.
 
@@ -89,7 +89,8 @@ The workflow still runs on GitHub's own timer as a backup. It only acts once per
 The bot day-trades a Trading 212 **practice** account, one US stock at a time. It only ever talks to the practice server (`demo.trading212.com`); the real-money address isn't in the code at all.
 
 **Rules**
-- **List:** the US opening-surge list. These are stocks with positive news that traded at least half a normal day's volume in the first 30 minutes and are trending up, limited to ones Trading 212 offers.
+- **List:** the US opening-surge list. These are stocks with positive news that traded at least a third of a normal day's volume in the first 30 minutes and are trending up, limited to ones Trading 212 offers.
+- **New movers during the day:** every 15 minutes it looks for stocks that have just traded a third of a normal day's volume in the last 30 minutes, are rising and trending up, and have positive news. Any it finds are added to the list. Takeover targets and stocks with bad news (placings, warnings) are always left out.
 - **First buy:** the stock on that list with the highest first-30-minute volume, compared with its normal daily volume.
 - **Sell** when either of these happens:
   - the price is **5% below the buy price** (a stop-loss order also sits at Trading 212), or
@@ -107,6 +108,8 @@ It checks every 2 minutes. The opening check starts it (about 45 minutes after t
 3. Go to **Actions → Practice account check → Run workflow**. You should get a "Practice account connected" phone alert, and a **Practice** tab appears on the page. It also saves Trading 212's list of shares for the morning US news summary to check against.
 
 The settings are at the top of `practice.py` (the `DT_` lines).
+
+**Replaying past days:** Actions, then **Replay a day (day trader)**, then Run workflow. Enter a date (e.g. `2026-10-29`) and choose whether news is required. It rebuilds that day's list from 1-minute prices and runs the same trading code against a pretend account. The result goes to `docs/data/backtest-<date>.json` (or `-nonews.json`) and to your phone. Yahoo keeps 1-minute prices for about the last 30 days.
 
 ## Pre-close check (hold or sell?)
 

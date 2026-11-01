@@ -3,9 +3,10 @@ Replay one past US trading day with the day-trading rules in practice.py, using 
 
   python backtest.py --date 2026-10-29
 
-It rebuilds that day's opening-surge list with the current rule (half a normal day's volume in the first 30
+It rebuilds that day's opening-surge list with the current rule (a third of a normal day's volume in the first 30
 minutes, trending up, up on the day, positive news in the 3 days before), then runs the exact same trading
-code as the live bot against a pretend account fed by the minute bars. The result is saved to
+code as the live bot against a pretend account fed by the minute bars, including its search for new movers
+every 15 minutes. Add --no-news to let stocks without news qualify (saved as backtest-<date>-nonews.json). The result is saved to
 docs/data/backtest-<date>.json and sent as a phone alert. Nothing touches Trading 212.
 
 Approximations: today's list of US companies is used (not that day's), news comes from feeds that may have
@@ -104,15 +105,15 @@ def build_list(day):
                     prepost=False)
     open_t = dt.datetime.combine(day, dt.time(9, 30), NY)
     t30 = open_t + dt.timedelta(minutes=30)
+    for ys in list(mins):
+        b = mins[ys].copy()
+        b.index = b.index.tz_convert(NY) if b.index.tz is not None else b.index.tz_localize("UTC").tz_convert(NY)
+        mins[ys] = b[[x.date() == day for x in b.index]]
     cands = []
     for ys, b in mins.items():
-        b = b.copy()
-        b.index = b.index.tz_convert(NY) if b.index.tz is not None else b.index.tz_localize("UTC").tz_convert(NY)
-        b = b[[x.date() == day for x in b.index]]
         first = b[(b.index >= open_t) & (b.index < t30)]
         if first.empty:
             continue
-        mins[ys] = b
         i = info[ys]
         vol30 = float(first["Volume"].sum())
         price = float(first["Close"].iloc[-1])
@@ -153,7 +154,7 @@ def build_list(day):
         if len(picks) >= 25:
             break
     picks.sort(key=lambda x: x["score"], reverse=True)
-    return picks[:15], quiet, mins
+    return picks[:15], quiet, mins, info, meta, since
 
 
 class ReplayAccount:
@@ -240,10 +241,12 @@ class ReplayAccount:
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--date", default="")
+    ap.add_argument("--no-news", action="store_true", help="also trade heavy buying + uptrend without news")
     a = ap.parse_args()
+    P.DT_REQUIRE_NEWS = not a.no_news
     day = parse_day(a.date) if a.date.strip() else last_weekday(dt.datetime.now(NY).date())
     print(f"Replaying {day} (US)")
-    picks, quiet, mins = build_list(day)
+    picks, quiet, mins, info, meta, since = build_list(day)
     t212 = set((S.load_json(ROOT / "docs" / "data" / "t212_tickers.json", {}) or {}).get("us") or [])
     print(f"  list: {[(p['ticker'], p['vol_x']) for p in picks]}")
 
@@ -251,7 +254,7 @@ def main():
     (tmp / "data").mkdir()
     P.DOCS, P.STATE = tmp, tmp / "data" / "practice.json"
     (tmp / "data" / "opening.json").write_text(json.dumps(
-        {"markets": {"america": {"date": day.isoformat(), "picks": picks}}}, default=S.jdefault))
+        {"markets": {"america": {"date": day.isoformat(), "picks": picks, "quiet": quiet}}}, default=S.jdefault))
     clock_t = {"now": dt.datetime.combine(day, dt.time(10, 16), NY).astimezone(dt.timezone.utc)}
     clock = lambda: clock_t["now"]
     fxr = 1.30
@@ -262,8 +265,41 @@ def main():
     except Exception:
         pass
     acct = ReplayAccount(mins, clock, fx=fxr)
-    acct.names = {p["ticker"]: p["name"] for p in picks if not t212 or p["ticker"] in t212}
-    acct.sym = {f"{p['ticker']}_US_EQ": p["ysym"] for p in picks}
+    acct.names = {meta[ys]["ticker"]: str(meta[ys].get("description") or meta[ys]["ticker"]) for ys in mins
+                  if not t212 or meta[ys]["ticker"] in t212}
+    acct.sym = {f"{meta[ys]['ticker']}_US_EQ": ys for ys in mins}
+    news_cache = {}
+
+    def discover(when, known):
+        """Replay version of the bot's search for new movers, from the day's 1-minute bars."""
+        cut = when - dt.timedelta(minutes=1)
+        found, rejected = [], []
+        for ys, b in mins.items():
+            tick = meta[ys]["ticker"]
+            if tick in known:
+                continue
+            i = info[ys]
+            sc = P.surge_check(b[b.index <= cut], i["avg"], when, i["prev"])
+            if not sc:
+                continue
+            last = sc["last"]
+            sma20 = (sum(i["closes"][-19:]) + last) / 20
+            sma50 = (sum(i["closes"][-49:]) + last) / 50
+            if not (last > sma20 and last > sma50 and sma20 >= 0.97 * sma50):
+                continue
+            name = str(meta[ys].get("description") or tick)
+            if tick not in news_cache:
+                news_cache[tick] = [n for n in S.live_news("america", tick, ys, since, name) if n["date"] <= day.isoformat()]
+            news = news_cache[tick]
+            if not P.news_ok(news, P.DT_REQUIRE_NEWS):
+                rejected.append(tick)
+                continue
+            top = next((n["title"] for n in news if n.get("tone") == "pos"), "")
+            found.append({"ticker": tick, "name": name, "exchange": str(meta[ys]["exchange"]).upper(), "ysym": ys,
+                          "vol_x": sc["vol_x"], "avg": i["avg"],
+                          "why": f"{sc['vol_x']:.1f}x normal volume in the last 30 min"
+                                 + (f"; news: {top[:80]}" if top else "; no news found")})
+        return found, rejected
     alerts = []
     real_push = S.push
     S.push = lambda title, msg, *x: alerts.append(f"{clock().astimezone(NY).strftime('%H:%M')} {title}: {msg}")
@@ -279,13 +315,15 @@ def main():
         return {y: mins[y][mins[y].index <= cut] for y in ysyms if y in mins}
 
     st = P.load_state()
-    res = P.cmd_daytrade(acct, st, fetch_bars=fetch_bars, fetch_avg=lambda ys: {p["ysym"]: p["avg"] for p in picks},
-                         clock=clock, pause=pause)
+    res = P.cmd_daytrade(acct, st, fetch_bars=fetch_bars,
+                         fetch_avg=lambda ys: {y: info[y]["avg"] for y in ys if y in info},
+                         clock=clock, pause=pause, discover=discover)
     S.push = real_push
     trades = [c for c in st["closed"]]
     total = sum(c["pl_gbp"] for c in trades if c.get("pl_gbp") is not None)
     out = {"date": day.isoformat(), "generated": dt.datetime.now(dt.timezone.utc).isoformat(timespec="minutes"),
-           "fx_gbpusd": fxr, "result": res,
+           "fx_gbpusd": fxr, "result": res, "require_news": P.DT_REQUIRE_NEWS,
+           "added_during_day": [x["text"] for x in st["log"] if x["text"].startswith("Added ")],
            "list": [{k: p.get(k) for k in ("ticker", "name", "vol_x", "buy_pct30", "change", "score")}
                     | {"news": [n["title"] for n in p["news"] if n["tone"] == "pos"][:2],
                        "on_t212": (not t212) or p["ticker"] in t212} for p in picks],
@@ -293,11 +331,11 @@ def main():
            "trades": [{k: c.get(k) for k in ("ticker", "bought_at", "sold_at", "entry", "exit", "cost_gbp", "pl_gbp",
                                             "pl_pct", "reason")} for c in trades],
            "total_gbp": total, "alerts": alerts, "log": [x["text"] for x in st["log"]]}
-    f = ROOT / "docs" / "data" / f"backtest-{day.isoformat()}.json"
+    f = ROOT / "docs" / "data" / f"backtest-{day.isoformat()}{'' if P.DT_REQUIRE_NEWS else '-nonews'}.json"
     f.write_text(json.dumps(out, indent=1, default=S.jdefault), encoding="utf-8")
     print(json.dumps({k: out[k] for k in ("list", "trades", "total_gbp")}, indent=1, default=S.jdefault))
     lines = [f"{c['ticker']}: {P.gbp_txt(c['pl_gbp'])} ({c['reason'][:80]})" for c in trades if c.get("pl_gbp") is not None]
-    S.push(f"Replay of {day:%a %d %b}: {P.gbp_txt(total)}",
+    S.push(f"Replay of {day:%a %d %b}{'' if P.DT_REQUIRE_NEWS else ' (no news needed)'}: {P.gbp_txt(total)}",
            ("\n".join(lines) if lines else "No trades: nothing on the list qualified.")
            + f"\nList: {', '.join(p['ticker'] for p in picks) or 'empty'}", 3, "rewind")
 

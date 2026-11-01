@@ -2,8 +2,11 @@
 Practice-account trading on Trading 212. It only ever uses the PRACTICE (demo) account.
 
 Current rules: US day trading, one stock at a time (agreed 31 Oct 2026)
-  List   - The US opening-surge list: stocks with positive news that traded at least half a normal
+  List   - The US opening-surge list: stocks with positive news that traded at least a third of a normal
            day's volume in the first 30 minutes, trending up. Only stocks Trading 212 offers.
+           Every 15 minutes it also looks for NEW movers: a third of a normal day's volume in the last 30 minutes,
+           rising, trending up, with positive news (set PRACTICE_REQUIRE_NEWS=no to drop the news requirement;
+           stocks with bad news, placings or takeover news are always left out).
   Buy    - First buy of the day: the stock on that list with the highest first-30-minute volume
            (compared with its normal daily volume).
   Sell   - When the price is 5% below the buy price (a stop-loss order also sits at Trading 212), or
@@ -55,6 +58,11 @@ DT_EXIT = 10                 # sell 10 minutes before the close
 DT_MAX_BUYS = 12             # buys per day, to stop it churning
 DT_COOLDOWN = 45             # minutes before a stock that was sold can be bought again
 DT_RUN_LIMIT = 5.6 * 3600    # GitHub stops a job at 6 hours: stop just before, the backup timer restarts it
+DT_RESCAN = 15               # minutes between searches for new movers during the day
+DT_RECHECK = 60              # minutes before a stock that didn't qualify is looked at again
+DT_REQUIRE_NEWS = os.getenv("PRACTICE_REQUIRE_NEWS", "yes").lower() not in ("no", "false", "0")
+                             # True: only stocks with positive news. False: heavy buying + uptrend is enough
+                             # (stocks with bad news, placings or takeover news are always left out)
 ROOT = Path(__file__).resolve().parent
 DOCS = ROOT / "docs"
 STATE = DOCS / "data" / "practice.json"
@@ -805,7 +813,68 @@ def dt_sell(api, st, day, pos, positions, active, why, when):
     return True
 
 
-def cmd_daytrade(api, st, fetch_bars=None, fetch_avg=None, clock=None, pause=None):
+def surge_check(bars, avg, when, prev_close=None):
+    """A fresh surge: at least a third of a normal day's volume in the last 30 minutes, price rising."""
+    if bars is None or not len(bars) or not avg:
+        return None
+    f = S.flow_split(bars, when - dt.timedelta(minutes=DT_WINDOW))
+    m = dt_metrics(bars, avg, when)
+    vx = f["volume"] / avg
+    last = float(bars["Close"].iloc[-1])
+    if vx < S.OPEN_VOL_MULT or not m["rising"] or f["volume"] * last < S.OPEN_MIN_VALUE["america"]:
+        return None
+    if prev_close and last <= prev_close:
+        return None
+    return {"vol_x": round(vx, 2), "buy_pct": f["buy_pct"], "last": last}
+
+
+def news_ok(news, require):
+    tones = {n.get("tone") for n in news}
+    if "neg" in tones or "deal" in tones:
+        return False
+    return "pos" in tones or not require
+
+
+def live_discover(when, known):
+    """Look for stocks surging now (live data): TradingView shortlist, then Yahoo 1-minute bars and news."""
+    cfg = S.MARKETS["america"]
+    df = S.live_opening_tv("america")
+    df = df[df["exchange"].astype(str).str.upper().isin(cfg["exchanges"])]
+    df = df[~df.apply(S.is_excluded, axis=1)]
+    rows = []
+    for r in df.to_dict("records"):
+        tick = str(r["name"])
+        close, s20, s50 = (S.num(r.get(k)) for k in ("close", "SMA20", "SMA50"))
+        if tick in known or not (close and s20 and s50) or close < cfg["universe_price_min"]:
+            continue
+        if close > s20 and close > s50 and s20 >= 0.97 * s50:
+            rows.append(r)
+    rows.sort(key=lambda r: (S.num(r.get("volume")) or 0) / max(S.num(r.get("average_volume_10d_calc")) or 1, 1),
+              reverse=True)
+    rows = rows[:60]
+    for r in rows:
+        r["ysym"] = S.yahoo_symbol(r["exchange"], r["name"])
+    bars = S.live_intraday([r["ysym"] for r in rows]) if rows else {}
+    since = when - dt.timedelta(days=S.OPEN_NEWS_DAYS + (2 if ny(when).weekday() <= 1 else 0))
+    found, rejected = [], []
+    for r in rows:
+        tick = str(r["name"])
+        sc = surge_check(bars.get(r["ysym"]), S.num(r.get("average_volume_10d_calc")), when)
+        if not sc:
+            continue
+        news = S.live_news("america", tick, r["ysym"], since, str(r.get("description") or ""))
+        if not news_ok(news, DT_REQUIRE_NEWS):
+            rejected.append(tick)
+            continue
+        top = next((n["title"] for n in news if n.get("tone") == "pos"), "")
+        found.append({"ticker": tick, "name": str(r.get("description") or tick), "exchange": str(r["exchange"]).upper(),
+                      "ysym": r["ysym"], "vol_x": sc["vol_x"], "avg": S.num(r.get("average_volume_10d_calc")),
+                      "why": f"{sc['vol_x']:.1f}x normal volume in the last 30 min" + (f"; news: {top[:80]}" if top else
+                                                                                         "; no news found")})
+    return found, rejected
+
+
+def cmd_daytrade(api, st, fetch_bars=None, fetch_avg=None, clock=None, pause=None, discover=None):
     fetch_bars = fetch_bars or S.live_intraday
     fetch_avg = fetch_avg or live_avg_volume
     clock = clock or now_utc
@@ -826,7 +895,10 @@ def cmd_daytrade(api, st, fetch_bars=None, fetch_avg=None, clock=None, pause=Non
     if data.get("date") != today:
         print("No US opening list for today yet.")
         return "wait"
-    picks = [x for x in data.get("picks") or [] if any(n.get("tone") == "pos" for n in x.get("news") or [])]
+    discover = discover or live_discover
+    picks = [x for x in data.get("picks") or [] if news_ok(x.get("news") or [], True)]
+    if not DT_REQUIRE_NEWS:
+        picks += [x for x in data.get("quiet") or [] if news_ok(x.get("news") or [], False)]
     insts = api.instruments()
     save_tickers(api, insts)
     cands = []
@@ -837,12 +909,11 @@ def cmd_daytrade(api, st, fetch_bars=None, fetch_avg=None, clock=None, pause=Non
     missing = [x["ticker"] for x in picks if x["ticker"] not in {c["ticker"] for c in cands}]
     if missing:
         print(f"  not on Trading 212: {', '.join(missing)}")
-    if not cands and not dt_holding(st):
-        log(st, "Day trade: no stock on today's US list is available on Trading 212, so no trades today.")
-        day["finished"] = True
-        return "done"
-    by_ticker = {c["ticker"]: c for c in cands}
+    if not cands:
+        print("  nothing on the opening list yet; will keep looking for movers during the day")
     avg = fetch_avg([c["ysym"] for c in cands]) if cands else {}
+    checked = {}
+    last_scan = None
     fx = fx_rates()
     day["list"] = [c["ticker"] for c in cands]
     print(f"  day trading {len(cands)} stocks: {', '.join(day['list'])}")
@@ -869,6 +940,29 @@ def cmd_daytrade(api, st, fetch_bars=None, fetch_avg=None, clock=None, pause=Non
             if hold and hold["status"] == "open":
                 dt_sell(api, st, day, hold, positions, active, "End of day: sold 10 minutes before the close.", when)
             break
+        if left > DT_LAST_BUY and (last_scan is None or (when - last_scan).total_seconds() >= DT_RESCAN * 60):
+            last_scan = when
+            known = {c["ticker"] for c in cands} | {t for t, x in checked.items()
+                                                     if (when - dt.datetime.fromisoformat(x)).total_seconds() < DT_RECHECK * 60}
+            try:
+                found, rejected = discover(when, known)
+            except Exception as e:
+                print(f"  search for new movers failed: {e}")
+                found, rejected = [], []
+            for t in rejected:
+                checked[t] = when.isoformat()
+            for x in found:
+                inst = find_instrument(insts, "america", x["ticker"], x["name"])
+                checked[x["ticker"]] = when.isoformat()
+                if not inst:
+                    continue
+                cands.append({**{k: x.get(k) for k in ("ticker", "name", "exchange", "ysym", "vol_x")}, "t212": inst["ticker"]})
+                if x.get("avg"):
+                    avg[x["ysym"]] = x["avg"]
+                else:
+                    avg.update(fetch_avg([x["ysym"]]))
+                day["list"].append(x["ticker"])
+                log(st, f"Added {x['ticker']} to today's list at {ny(when):%H:%M} New York: {x.get('why', '')}")
         bars = fetch_bars(list({c["ysym"] for c in cands} | ({hold["ysym"]} if hold else set())))
         met = {c["ticker"]: dt_metrics(bars.get(c["ysym"]), avg.get(c["ysym"]), when) for c in cands}
 
