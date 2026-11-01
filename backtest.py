@@ -17,6 +17,7 @@ import argparse
 import datetime as dt
 import itertools
 import json
+import os
 import tempfile
 import time
 from pathlib import Path
@@ -335,6 +336,8 @@ def main():
     f.write_text(json.dumps(out, indent=1, default=S.jdefault), encoding="utf-8")
     print(json.dumps({k: out[k] for k in ("list", "trades", "total_gbp")}, indent=1, default=S.jdefault))
     lines = [f"{c['ticker']}: {P.gbp_txt(c['pl_gbp'])} ({c['reason'][:80]})" for c in trades if c.get("pl_gbp") is not None]
+    if os.getenv("REPLAY_BATCH"):
+        return                                  # batch runs send one summary alert at the end instead
     S.push(f"Replay of {day:%a %d %b}{'' if P.DT_REQUIRE_NEWS else ' (no news needed)'}: {P.gbp_txt(total)}",
            ("\n".join(lines) if lines else "No trades: nothing on the list qualified.")
            + f"\nList: {', '.join(p['ticker'] for p in picks) or 'empty'}", 3, "rewind")
