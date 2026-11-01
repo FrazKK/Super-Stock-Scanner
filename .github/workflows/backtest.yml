@@ -11,6 +11,13 @@ on:
         description: "Day to replay, e.g. 2026-10-29 (blank = the last weekday)"
         required: false
         default: ""
+      news:
+        description: "Must stocks have positive news?"
+        type: choice
+        options:
+          - "required"
+          - "not required"
+        default: "required"
 
 permissions:
   contents: write
@@ -37,7 +44,13 @@ jobs:
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
           SITE_URL: ${{ secrets.SITE_URL }}
           DAY: ${{ inputs.date }}
-        run: python backtest.py --date "$DAY"
+          NEWS: ${{ inputs.news }}
+        run: |
+          if [ "$NEWS" = "not required" ]; then
+            python backtest.py --date "$DAY" --no-news
+          else
+            python backtest.py --date "$DAY"
+          fi
       - name: Save
         run: |
           git config user.name "scanner-bot"
