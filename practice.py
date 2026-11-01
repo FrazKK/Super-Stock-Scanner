@@ -1,7 +1,10 @@
 """
 Practice-account trading on Trading 212. It only ever uses the PRACTICE (demo) account.
 
-Strategy (PRACTICE_STRATEGY, default "breakout"), agreed 1 Nov 2026:
+Strategy (PRACTICE_STRATEGY, default "catalyst"), agreed 1 Nov 2026:
+  catalyst - Fraz's rules: positive news in the last 24-48 hours, relative volume 1.5x+, green and breaking above
+             the opening-range high. No uptrend rule. One stock at a time (up to 5 a day), each held until its
+             sell rule fires. No new buys after 11:00 New York, nothing under $1. Exits as breakout below.
   breakout - one trade a day. Watch the 5 US stocks "in play" (positive news, the most unusual volume, and
              normally moving 4%+ a day). Buy the first to break above its opening-range high (first 30 minutes).
              Stop at the opening-range low (never more than 5% away); at +1x the risk the stop moves to break-even
@@ -70,11 +73,13 @@ DT_OVERTAKE_MIN = 1 / 3      # ...and at least a third of a normal day's volume 
 DT_MAX_UP = 0.20             # don't buy a stock already up more than 20% on the day
 
 # Which day-trading strategy to run: "breakout" (default), "catalyst", "drift" or "rotation"
-DT_STRATEGY = os.getenv("PRACTICE_STRATEGY", "breakout").strip().lower()
+DT_STRATEGY = os.getenv("PRACTICE_STRATEGY", "catalyst").strip().lower()
 # Breakout (opening-range breakout on "stocks in play"):
 DT_OR_MIN = 30               # opening range = the first 30 minutes' high and low
 DT_TOP_N = 5                 # only the 5 stocks with the most unusual volume count as "in play"
 DT_BO_MIN_VOLX = 0.0         # minimum volume vs a normal day (first 30 min, or last 30 min for later movers)
+DT_BUY_UNTIL = None          # minutes after the open after which no new buys are made (None = until DT_LAST_BUY)
+DT_MIN_PRICE = 0.0           # skip stocks priced below this (US dollars)
 DT_MIN_RANGE = 0.04          # the stock must normally move at least 4% a day (14-day average high-low range)
 DT_BO_BUYS = 1               # buys per day
 DT_BO_MAX_RISK = 0.05        # stop at the opening-range low, but never more than 5% below the buy price
@@ -1013,8 +1018,9 @@ def cmd_breakout(api, st, fetch_bars, fetch_stats, clock, pause, discover):
     op = S.load_json(DOCS / "data" / "opening.json", {}) or {}
     data = (op.get("markets") or {}).get("america") or {}
     if data.get("date") != day["date"]:
-        print("No US opening list for today yet.")
-        return "wait"
+        # the opening check didn't run (GitHub's timer is unreliable): carry on with the 15-minute search alone
+        print("No US opening list for today; relying on the search for movers every 15 minutes.")
+        data = {}
     insts = api.instruments()
     save_tickers(api, insts)
     cands = []
@@ -1048,7 +1054,8 @@ def cmd_breakout(api, st, fetch_bars, fetch_stats, clock, pause, discover):
             if hold and hold["status"] == "open":
                 dt_sell(api, st, day, hold, positions, active, "End of day: sold 10 minutes before the close.", when)
             break
-        can_buy = not hold and day["buys"] < DT_BO_BUYS and left > DT_LAST_BUY
+        can_buy = (not hold and day["buys"] < DT_BO_BUYS and left > DT_LAST_BUY
+                   and (DT_BUY_UNTIL is None or mins <= DT_BUY_UNTIL))
         if can_buy and (last_scan is None or (when - last_scan).total_seconds() >= DT_RESCAN * 60):
             last_scan = when
             known = {c["ticker"] for c in cands} | {t for t, x in checked.items()
@@ -1088,7 +1095,7 @@ def cmd_breakout(api, st, fetch_bars, fetch_stats, clock, pause, discover):
                 if not rng or b is None or not len(b):
                     continue
                 last = float(b["Close"].iloc[-1])
-                if last <= rng[0] or (prev and last / prev - 1 > DT_MAX_UP):
+                if last <= rng[0] or last < DT_MIN_PRICE or (prev and last / prev - 1 > DT_MAX_UP):
                     continue
                 stop = max(rng[1], last * (1 - DT_BO_MAX_RISK))
                 if stop >= last * 0.995:
@@ -1253,21 +1260,21 @@ def apply_catalyst():
     green on the day and breaking above short-term resistance (the opening-range high). No uptrend or
     daily-range requirement. Trades exactly like breakout: one trade a day, stop at the opening-range low
     (max 5%), break-even then trailing stop, sold before the close."""
-    global DT_STRATEGY, DT_MIN_RANGE, DT_BO_BUYS
+    global DT_STRATEGY, DT_MIN_RANGE, DT_BO_BUYS, DT_BUY_UNTIL, DT_MIN_PRICE
     S.OPEN_VOL_MULT = 0.22
     S.OPEN_NEWS_DAYS = 2
     S.OPEN_REQUIRE_TREND = False
     DT_MIN_RANGE = 0.0
     DT_BO_BUYS = 5             # one at a time: hold until the sell rule fires, then look for the next that matches
+    DT_BUY_UNTIL = 90          # no new buys after 11:00 New York (later buys lost in both months tested)
+    DT_MIN_PRICE = 1.0         # skip sub-$1 stocks
     DT_STRATEGY = "breakout"
-
-
-if DT_STRATEGY == "catalyst":
-    apply_catalyst()
 
 
 def cmd_daytrade(api, st, fetch_bars=None, fetch_avg=None, clock=None, pause=None, discover=None, fetch_stats=None,
                  find_drift=None):
+    if DT_STRATEGY == "catalyst":
+        apply_catalyst()                        # sets its rules, then runs the breakout engine
     if DT_STRATEGY == "drift":
         return cmd_drift(api, st, fetch_bars or S.live_intraday, clock or now_utc, pause or time.sleep,
                          find_drift or live_find_drift)
