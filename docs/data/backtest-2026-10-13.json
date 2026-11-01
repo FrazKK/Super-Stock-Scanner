@@ -1,0 +1,159 @@
+{
+ "date": "2026-10-13",
+ "generated": "2026-11-01T11:03+00:00",
+ "fx_gbpusd": 1.3209795951843262,
+ "result": "done",
+ "require_news": true,
+ "added_during_day": [
+  "Added AGBK to today's list at 10:16 New York: 0.9x normal volume in the last 30 min; news: AGI (AGBK) Rebounds Following A Sharp Rally But Is The Undervalued Case Still In",
+  "Added GTE to today's list at 12:40 New York: 0.8x normal volume in the last 30 min; news: Gran Tierra Energy Inc. Stockholders Approve Sale of Colombian and Ecuadorian Bu",
+  "Added PD to today's list at 15:20 New York: 0.5x normal volume in the last 30 min; news: PagerDuty (PD) Could Be 28% Overvalued On Earnings Beat And Customer Growth",
+  "Added ACIC to today's list at 15:20 New York: 0.3x normal volume in the last 30 min; news: American Coastal Eyes $200M Premium Opportunity With E&S Expansion"
+ ],
+ "list": [
+  {
+   "ticker": "RELL",
+   "name": "Richardson Electronics, Ltd.",
+   "vol_x": 0.53,
+   "buy_pct30": 0.2503484477420974,
+   "change": 0.0067502117258166905,
+   "score": 1.06,
+   "news": [
+    "ComEd, Richardson Electronics, Ltd. Announce Expansion and Plans to Install Illinois\u2019 Largest Commercial Battery Energy Storage System",
+    "RELL Q3 Deep Dive: Demand for Engineered Power Solutions and Energy Storage Drives Growth"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "BMBL",
+   "vol_x": 9.54
+  },
+  {
+   "ticker": "PFAI",
+   "vol_x": 6.85
+  },
+  {
+   "ticker": "ENGS",
+   "vol_x": 0.64
+  },
+  {
+   "ticker": "JRSH",
+   "vol_x": 0.48
+  },
+  {
+   "ticker": "CANG",
+   "vol_x": 0.34
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "AGBK",
+   "bought_at": "2026-10-13T14:16+00:00",
+   "sold_at": "2026-10-13T15:46+00:00",
+   "entry": 7.429999828338623,
+   "exit": 7.460000038146973,
+   "cost_gbp": 995.5566114800048,
+   "pl_gbp": 4.01977226252086,
+   "pl_pct": 0.004037713391853251,
+   "reason": "No new high for 28 min, and RELL overtook it on buying volume (0.06x vs 0.05x normal in 30 min)."
+  },
+  {
+   "ticker": "RELL",
+   "bought_at": "2026-10-13T15:46+00:00",
+   "sold_at": "2026-10-13T16:52+00:00",
+   "entry": 20.639999389648438,
+   "exit": 20.959999084472656,
+   "cost_gbp": 999.9851366009757,
+   "pl_gbp": 15.503631201731196,
+   "pl_pct": 0.015503861641813195,
+   "reason": "No new high for 16 min, and GTE overtook it on buying volume (0.40x vs 0.02x normal in 30 min)."
+  },
+  {
+   "ticker": "GTE",
+   "bought_at": "2026-10-13T16:52+00:00",
+   "sold_at": "2026-10-13T17:32+00:00",
+   "entry": 10.635000228881836,
+   "exit": 10.604999542236328,
+   "cost_gbp": 998.3046166563489,
+   "pl_gbp": -2.8161564021160075,
+   "pl_pct": -0.0028209389750677937,
+   "reason": "No new high for 32 min, and AGBK overtook it on buying volume (0.01x vs 0.01x normal in 30 min)."
+  },
+  {
+   "ticker": "AGBK",
+   "bought_at": "2026-10-13T17:32+00:00",
+   "sold_at": "2026-10-13T18:28+00:00",
+   "entry": 7.510000228881836,
+   "exit": 7.585000038146973,
+   "cost_gbp": 994.9056327936195,
+   "pl_gbp": 9.93578301227842,
+   "pl_pct": 0.009986658718957592,
+   "reason": "No new high for 20 min, and GTE overtook it on buying volume (0.03x vs 0.01x normal in 30 min)."
+  },
+  {
+   "ticker": "GTE",
+   "bought_at": "2026-10-13T18:28+00:00",
+   "sold_at": "2026-10-13T19:18+00:00",
+   "entry": 10.59000015258789,
+   "exit": 10.59000015258789,
+   "cost_gbp": 994.0804715743269,
+   "pl_gbp": 0.0,
+   "pl_pct": 0.0,
+   "reason": "No new high for 38 min, and RELL overtook it on buying volume (0.04x vs 0.04x normal in 30 min)."
+  },
+  {
+   "ticker": "RELL",
+   "bought_at": "2026-10-13T19:18+00:00",
+   "sold_at": "2026-10-13T19:48+00:00",
+   "entry": 21.10770034790039,
+   "exit": 21.219999313354492,
+   "cost_gbp": 990.6870827836025,
+   "pl_gbp": 5.270736870983001,
+   "pl_pct": 0.005320284237655995,
+   "reason": "No new high for 18 min, and AGBK overtook it on buying volume (0.04x vs 0.03x normal in 30 min)."
+  }
+ ],
+ "total_gbp": 31.91376694539747,
+ "alerts": [
+  "10:16 Day trade: bought AGBK: 177 AGBK at $7.43 (about \u00a3996). Stop $7.06. Highest first-30-minute volume on today's list (0.9x a normal day).",
+  "11:46 Day trade: sold AGBK (+\u00a34): No new high for 28 min, and RELL overtook it on buying volume (0.06x vs 0.05x normal in 30 min). Result +\u00a34 (+0.4%).",
+  "11:46 Day trade: bought RELL: 64 RELL at $20.64 (about \u00a31,000). Stop $19.61. Strongest buying on the list: 0.06x normal volume bought in the last 30 min, and rising.",
+  "12:52 Day trade: sold RELL (+\u00a316): No new high for 16 min, and GTE overtook it on buying volume (0.40x vs 0.02x normal in 30 min). Result +\u00a316 (+1.6%).",
+  "12:52 Day trade: bought GTE: 124 GTE at $10.64 (about \u00a3998). Stop $10.10. Strongest buying on the list: 0.40x normal volume bought in the last 30 min, and rising.",
+  "13:32 Day trade: sold GTE (-\u00a33): No new high for 32 min, and AGBK overtook it on buying volume (0.01x vs 0.01x normal in 30 min). Result -\u00a33 (-0.3%).",
+  "13:32 Day trade: bought AGBK: 175 AGBK at $7.51 (about \u00a3995). Stop $7.13. Strongest buying on the list: 0.01x normal volume bought in the last 30 min, and rising.",
+  "14:28 Day trade: sold AGBK (+\u00a310): No new high for 20 min, and GTE overtook it on buying volume (0.03x vs 0.01x normal in 30 min). Result +\u00a310 (+1.0%).",
+  "14:28 Day trade: bought GTE: 124 GTE at $10.59 (about \u00a3994). Stop $10.06. Strongest buying on the list: 0.03x normal volume bought in the last 30 min, and rising.",
+  "15:18 Day trade: sold GTE (+\u00a30): No new high for 38 min, and RELL overtook it on buying volume (0.04x vs 0.04x normal in 30 min). Result +\u00a30 (+0.0%).",
+  "15:18 Day trade: bought RELL: 62 RELL at $21.11 (about \u00a3991). Stop $20.05. Strongest buying on the list: 0.04x normal volume bought in the last 30 min, and rising.",
+  "15:48 Day trade: sold RELL (+\u00a35): No new high for 18 min, and AGBK overtook it on buying volume (0.04x vs 0.03x normal in 30 min). Result +\u00a35 (+0.5%).",
+  "15:50 Day trade summary: 6 trade(s) today: AGBK +\u00a34, RELL +\u00a316, GTE -\u00a33, AGBK +\u00a310, GTE +\u00a30, RELL +\u00a35. Total +\u00a332."
+ ],
+ "log": [
+  "Added AGBK to today's list at 10:16 New York: 0.9x normal volume in the last 30 min; news: AGI (AGBK) Rebounds Following A Sharp Rally But Is The Undervalued Case Still In",
+  "Day trade buy order: 177 AGBK at about $7.43. Highest first-30-minute volume on today's list (0.9x a normal day).",
+  "Bought 177 AGBK at 7.43 (cost \u00a3996).",
+  "Sold AGBK (about +\u00a34). No new high for 28 min, and RELL overtook it on buying volume (0.06x vs 0.05x normal in 30 min).",
+  "Day trade buy order: 64 RELL at about $20.64. Strongest buying on the list: 0.06x normal volume bought in the last 30 min, and rising.",
+  "Bought 64 RELL at 20.64 (cost \u00a31,000).",
+  "Added GTE to today's list at 12:40 New York: 0.8x normal volume in the last 30 min; news: Gran Tierra Energy Inc. Stockholders Approve Sale of Colombian and Ecuadorian Bu",
+  "Sold RELL (about +\u00a316). No new high for 16 min, and GTE overtook it on buying volume (0.40x vs 0.02x normal in 30 min).",
+  "Day trade buy order: 124 GTE at about $10.64. Strongest buying on the list: 0.40x normal volume bought in the last 30 min, and rising.",
+  "Bought 124 GTE at 10.64 (cost \u00a3998).",
+  "Sold GTE (about -\u00a33). No new high for 32 min, and AGBK overtook it on buying volume (0.01x vs 0.01x normal in 30 min).",
+  "Day trade buy order: 175 AGBK at about $7.51. Strongest buying on the list: 0.01x normal volume bought in the last 30 min, and rising.",
+  "Bought 175 AGBK at 7.51 (cost \u00a3995).",
+  "Sold AGBK (about +\u00a310). No new high for 20 min, and GTE overtook it on buying volume (0.03x vs 0.01x normal in 30 min).",
+  "Day trade buy order: 124 GTE at about $10.59. Strongest buying on the list: 0.03x normal volume bought in the last 30 min, and rising.",
+  "Bought 124 GTE at 10.59 (cost \u00a3994).",
+  "Sold GTE (about +\u00a30). No new high for 38 min, and RELL overtook it on buying volume (0.04x vs 0.04x normal in 30 min).",
+  "Day trade buy order: 62 RELL at about $21.11. Strongest buying on the list: 0.04x normal volume bought in the last 30 min, and rising.",
+  "Bought 62 RELL at 21.11 (cost \u00a3991).",
+  "Added PD to today's list at 15:20 New York: 0.5x normal volume in the last 30 min; news: PagerDuty (PD) Could Be 28% Overvalued On Earnings Beat And Customer Growth",
+  "Added ACIC to today's list at 15:20 New York: 0.3x normal volume in the last 30 min; news: American Coastal Eyes $200M Premium Opportunity With E&S Expansion",
+  "Sold RELL (about +\u00a35). No new high for 18 min, and AGBK overtook it on buying volume (0.04x vs 0.03x normal in 30 min).",
+  "Day trading finished: 6 trade(s), total +\u00a332."
+ ]
+}

@@ -1,0 +1,112 @@
+{
+ "date": "2026-10-05",
+ "generated": "2026-11-01T10:59+00:00",
+ "fx_gbpusd": 1.3242928981781006,
+ "result": "done",
+ "require_news": true,
+ "added_during_day": [
+  "Added FATE to today's list at 15:04 New York: 1.1x normal volume in the last 30 min; news: Fate Therapeutics Reports New Employee Inducement Awards Under Nasdaq Listing Ru"
+ ],
+ "list": [
+  {
+   "ticker": "AIFA",
+   "name": "All In FutureTech Alliance, Inc.",
+   "vol_x": 0.98,
+   "buy_pct30": 0.7571875326992107,
+   "change": 0.16554816167532627,
+   "score": 3.49,
+   "news": [
+    "All In FutureTech Alliance Inc. Launches New Digital Platform for Consumers and Businesses, Advancing Its AI-Enabled Global Services Strategy"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "ALEC",
+   "vol_x": 61.26
+  },
+  {
+   "ticker": "PMI",
+   "vol_x": 1.62
+  },
+  {
+   "ticker": "ACB",
+   "vol_x": 1.43
+  },
+  {
+   "ticker": "NAUT",
+   "vol_x": 1.26
+  },
+  {
+   "ticker": "SOTK",
+   "vol_x": 0.87
+  },
+  {
+   "ticker": "NTWK",
+   "vol_x": 0.63
+  },
+  {
+   "ticker": "PXS",
+   "vol_x": 0.53
+  },
+  {
+   "ticker": "CRVO",
+   "vol_x": 0.48
+  },
+  {
+   "ticker": "DNA",
+   "vol_x": 0.38
+  },
+  {
+   "ticker": "LCUT",
+   "vol_x": 0.36
+  },
+  {
+   "ticker": "PDS",
+   "vol_x": 0.35
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "AIFA",
+   "bought_at": "2026-10-05T14:16+00:00",
+   "sold_at": "2026-10-05T19:04+00:00",
+   "entry": 5.304999828338623,
+   "exit": 6.034200191497803,
+   "cost_gbp": 997.4719029858203,
+   "pl_gbp": 137.1078034749204,
+   "pl_pct": 0.13745530381808604,
+   "reason": "No new high for 112 min, and FATE overtook it on buying volume (0.62x vs 0.11x normal in 30 min)."
+  },
+  {
+   "ticker": "FATE",
+   "bought_at": "2026-10-05T19:04+00:00",
+   "sold_at": "2026-10-05T19:50+00:00",
+   "entry": 2.505000114440918,
+   "exit": 2.4649999141693115,
+   "cost_gbp": 998.7519092222198,
+   "pl_gbp": -15.948213399365159,
+   "pl_pct": -0.01596814309149593,
+   "reason": "End of day: sold 10 minutes before the close."
+  }
+ ],
+ "total_gbp": 121.15959007555523,
+ "alerts": [
+  "10:16 Day trade: bought AIFA: 249 AIFA at $5.30 (about \u00a3997). Stop $5.04. Highest first-30-minute volume on today's list (1.0x a normal day).",
+  "15:04 Day trade: sold AIFA (+\u00a3137): No new high for 112 min, and FATE overtook it on buying volume (0.62x vs 0.11x normal in 30 min). Result +\u00a3137 (+13.7%).",
+  "15:04 Day trade: bought FATE: 528 FATE at $2.51 (about \u00a3999). Stop $2.38. Strongest buying on the list: 0.62x normal volume bought in the last 30 min, and rising.",
+  "15:50 Day trade: sold FATE (-\u00a316): End of day: sold 10 minutes before the close. Result -\u00a316 (-1.6%).",
+  "15:50 Day trade summary: 2 trade(s) today: AIFA +\u00a3137, FATE -\u00a316. Total +\u00a3121."
+ ],
+ "log": [
+  "Day trade buy order: 249 AIFA at about $5.30. Highest first-30-minute volume on today's list (1.0x a normal day).",
+  "Bought 249 AIFA at 5.30 (cost \u00a3997).",
+  "Added FATE to today's list at 15:04 New York: 1.1x normal volume in the last 30 min; news: Fate Therapeutics Reports New Employee Inducement Awards Under Nasdaq Listing Ru",
+  "Sold AIFA (about +\u00a3137). No new high for 112 min, and FATE overtook it on buying volume (0.62x vs 0.11x normal in 30 min).",
+  "Day trade buy order: 528 FATE at about $2.51. Strongest buying on the list: 0.62x normal volume bought in the last 30 min, and rising.",
+  "Bought 528 FATE at 2.51 (cost \u00a3999).",
+  "Sold FATE (about -\u00a316). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 2 trade(s), total +\u00a3121."
+ ]
+}

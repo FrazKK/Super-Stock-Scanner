@@ -1,0 +1,25 @@
+{
+ "date": "2026-10-07",
+ "generated": "2026-11-01T10:59+00:00",
+ "fx_gbpusd": 1.326682209968567,
+ "result": "done",
+ "require_news": true,
+ "added_during_day": [],
+ "list": [],
+ "quiet": [
+  {
+   "ticker": "CANG",
+   "vol_x": 0.92
+  },
+  {
+   "ticker": "PNTG",
+   "vol_x": 0.45
+  }
+ ],
+ "trades": [],
+ "total_gbp": 0,
+ "alerts": [],
+ "log": [
+  "Day trading finished: 0 trade(s), total +\u00a30."
+ ]
+}

@@ -1,0 +1,301 @@
+{
+ "date": "2026-10-30",
+ "generated": "2026-11-01T11:13+00:00",
+ "fx_gbpusd": 1.3378641605377197,
+ "result": "done",
+ "require_news": true,
+ "added_during_day": [
+  "Added BSIN to today's list at 10:16 New York: 0.6x normal volume in the last 30 min; news: Big Sky Industrial Inc. Common Stock (BSIN) Institutional Ownership 2026 - Marke",
+  "Added CZFS to today's list at 10:32 New York: 0.4x normal volume in the last 30 min; news: Citizens Financial Services (CZFS) Q3 Earnings and Revenues Beat Estimates",
+  "Added PROF to today's list at 10:32 New York: 0.4x normal volume in the last 30 min; news: Profound Medical and Cook Medical\u2019s iMRI Division Partner to Expand U.S. TULSA-P",
+  "Added COOK to today's list at 10:32 New York: 0.5x normal volume in the last 30 min; news: Traeger, Inc.'s (NYSE:COOK) Path To Profitability - Simply Wall St",
+  "Added TASK to today's list at 11:36 New York: 0.5x normal volume in the last 30 min; news: 3,512,150 Shares in TaskUs, Inc. $TASK Purchased by Brooklands Fund Management L",
+  "Added ACEL to today's list at 11:52 New York: 0.3x normal volume in the last 30 min; news: Accel Entertainment (NYSE:ACEL) Share Price Breaks Above 50-Day Moving Average -",
+  "Added DEC to today's list at 12:08 New York: 0.8x normal volume in the last 30 min; news: Diversified Energy Positioned To Benefit From Permian Infrastructure Expansion -",
+  "Added FNRN to today's list at 12:08 New York: 0.6x normal volume in the last 30 min; news: First Northern Profit Rises 11.1% to $16.8 Million - grafa.com",
+  "Added MAX to today's list at 13:12 New York: 0.7x normal volume in the last 30 min; news: MediaAlpha (NYSE:MAX) beats expectations in strong Q3 2026, stock jumps 18%",
+  "Added BDL to today's list at 13:28 New York: 0.3x normal volume in the last 30 min; news: Flanigan's Enterprises, Inc. (NYSEAMERICAN:BDL) Stock Short Interest Report for ",
+  "Added BRBR to today's list at 13:44 New York: 0.3x normal volume in the last 30 min; news: BellRing Brands (BRBR) Stock Fair Value Falls As Analysts Trim Growth And P E Vi",
+  "Added VTS to today's list at 14:16 New York: 0.6x normal volume in the last 30 min; news: Vitesse Energy Keeps Quarterly Dividend at $0.4375 per Share, Payable Dec. 31 to",
+  "Added FRAF to today's list at 14:16 New York: 1.0x normal volume in the last 30 min; news: FRAF Q3 Earnings Rise Y/Y as Margin & Deposit Growth Improve",
+  "Added FLO to today's list at 14:32 New York: 0.5x normal volume in the last 30 min; news: Flowers Foods (FLO) Stock Price, News & Analysis $FLO - MarketBeat",
+  "Added VYX to today's list at 14:32 New York: 0.5x normal volume in the last 30 min; news: First Watch selects NCR Voyix to upgrade restaurant technology",
+  "Added EPC to today's list at 14:48 New York: 0.5x normal volume in the last 30 min; news: Edgewell Personal Care (NYSE:EPC) Share Price Crosses Above Fifty Day Moving Ave",
+  "Added REI to today's list at 15:04 New York: 0.5x normal volume in the last 30 min; news: Ring Energy (REI) Expected to Post Earnings on Thursday - MarketBeat"
+ ],
+ "list": [
+  {
+   "ticker": "GCBC",
+   "name": "Greene County Bancorp, Inc.",
+   "vol_x": 0.48,
+   "buy_pct30": 0.8906211936662607,
+   "change": 0.003066646602372325,
+   "score": 5.02,
+   "news": [
+    "Greene County Bancorp (NASDAQ:GCBC) Sees Large Volume Increase - Here's What Happened - MarketBeat"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "FBIZ",
+   "name": "First Business Financial Services, Inc.",
+   "vol_x": 0.59,
+   "buy_pct30": 0.790553874434989,
+   "change": 0.011523840150535758,
+   "score": 4.84,
+   "news": [
+    "First Business Bank Reports Record Third Quarter Earnings"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "CBK",
+   "name": "Commercial Bancgroup, Inc.",
+   "vol_x": 0.49,
+   "buy_pct30": 0.5789876241291868,
+   "change": 0.004849949659643249,
+   "score": 3.8,
+   "news": [
+    "Commercial Bancgroup (CBK) Q3 Earnings Beat Meets Questions Over Staying Power",
+    "Commercial Bancgroup (CBK) Q3 Earnings Beat Meets Questions Over Staying Power - Yahoo Finance"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "SMP",
+   "name": "Standard Motor Products, Inc.",
+   "vol_x": 0.38,
+   "buy_pct30": 0.8009476283099705,
+   "change": 0.13751629598779624,
+   "score": 3.46,
+   "news": [
+    "Standard Motor Products Expands Climate Control Portfolio with New Line of OE-Engineered A/C Condensers"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "ACCO",
+   "vol_x": 1.36
+  },
+  {
+   "ticker": "OSPN",
+   "vol_x": 1.23
+  },
+  {
+   "ticker": "PARK",
+   "vol_x": 1.08
+  },
+  {
+   "ticker": "GDYN",
+   "vol_x": 0.74
+  },
+  {
+   "ticker": "RRBI",
+   "vol_x": 0.39
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "FBIZ",
+   "bought_at": "2026-10-30T14:16+00:00",
+   "sold_at": "2026-10-30T14:40+00:00",
+   "entry": 74.75,
+   "exit": 74.65499877929688,
+   "cost_gbp": 949.8348468272408,
+   "pl_gbp": -1.2071634771232311,
+   "pl_pct": -0.0012709193405101447,
+   "reason": "No new high for 16 min, and COOK overtook it on buying volume (0.25x vs 0.19x normal in 30 min)."
+  },
+  {
+   "ticker": "COOK",
+   "bought_at": "2026-10-30T14:40+00:00",
+   "sold_at": "2026-10-30T14:56+00:00",
+   "entry": 53.400001525878906,
+   "exit": 53.349998474121094,
+   "cost_gbp": 997.8591829609996,
+   "pl_gbp": -0.9343820776564371,
+   "pl_pct": -0.0009363867102809,
+   "reason": "No new high for 16 min, and PROF overtook it on buying volume (0.16x vs 0.11x normal in 30 min)."
+  },
+  {
+   "ticker": "PROF",
+   "bought_at": "2026-10-30T14:56+00:00",
+   "sold_at": "2026-10-30T15:52+00:00",
+   "entry": 6.260000228881836,
+   "exit": 6.364999771118164,
+   "cost_gbp": 996.6483056216362,
+   "pl_gbp": 16.716870932060033,
+   "pl_pct": 0.016773089200842292,
+   "reason": "No new high for 16 min, and FBIZ overtook it on buying volume (0.17x vs 0.09x normal in 30 min)."
+  },
+  {
+   "ticker": "FBIZ",
+   "bought_at": "2026-10-30T15:52+00:00",
+   "sold_at": "2026-10-30T16:40+00:00",
+   "entry": 75.6500015258789,
+   "exit": 76.00499725341797,
+   "cost_gbp": 961.2710048403173,
+   "pl_gbp": 4.510867056740949,
+   "pl_pct": 0.004692607010954498,
+   "reason": "No new high for 18 min, and PROF overtook it on buying volume (0.25x vs 0.11x normal in 30 min)."
+  },
+  {
+   "ticker": "PROF",
+   "bought_at": "2026-10-30T16:40+00:00",
+   "sold_at": "2026-10-30T17:12+00:00",
+   "entry": 6.630000114440918,
+   "exit": 6.559999942779541,
+   "cost_gbp": 996.0876913445446,
+   "pl_gbp": -10.516788564155604,
+   "pl_pct": -0.010558095090965107,
+   "reason": "No new high for 32 min, and MAX overtook it on buying volume (0.72x vs 0.15x normal in 30 min)."
+  },
+  {
+   "ticker": "MAX",
+   "bought_at": "2026-10-30T17:12+00:00",
+   "sold_at": "2026-10-30T17:34+00:00",
+   "entry": 14.449999809265137,
+   "exit": 14.354999542236328,
+   "cost_gbp": 993.6733651031318,
+   "pl_gbp": -6.532819119048327,
+   "pl_pct": -0.006574413029950033,
+   "reason": "No new high for 16 min, and ACEL overtook it on buying volume (0.25x vs 0.03x normal in 30 min)."
+  },
+  {
+   "ticker": "ACEL",
+   "bought_at": "2026-10-30T17:34+00:00",
+   "sold_at": "2026-10-30T18:00+00:00",
+   "entry": 11.404999732971191,
+   "exit": 11.385000228881836,
+   "cost_gbp": 997.3994431701557,
+   "pl_gbp": -1.7490131266496292,
+   "pl_pct": -0.0017535733939158102,
+   "reason": "No new high for 16 min, and BRBR overtook it on buying volume (0.32x vs 0.01x normal in 30 min)."
+  },
+  {
+   "ticker": "BRBR",
+   "bought_at": "2026-10-30T18:00+00:00",
+   "sold_at": "2026-10-30T18:16+00:00",
+   "entry": 9.21500015258789,
+   "exit": 9.1850004196167,
+   "cost_gbp": 998.7374365333199,
+   "pl_gbp": -3.2514222363759018,
+   "pl_pct": -0.0032555325528417075,
+   "reason": "No new high for 16 min, and VTS overtook it on buying volume (0.55x vs 0.01x normal in 30 min)."
+  },
+  {
+   "ticker": "VTS",
+   "bought_at": "2026-10-30T18:16+00:00",
+   "sold_at": "2026-10-30T18:34+00:00",
+   "entry": 18.31999969482422,
+   "exit": 18.270000457763672,
+   "cost_gbp": 999.6231434921247,
+   "pl_gbp": -2.728187519391213,
+   "pl_pct": -0.0027292160422181205,
+   "reason": "No new high for 16 min, and CZFS overtook it on buying volume (0.54x vs 0.03x normal in 30 min)."
+  },
+  {
+   "ticker": "CZFS",
+   "bought_at": "2026-10-30T18:34+00:00",
+   "sold_at": "2026-10-30T19:08+00:00",
+   "entry": 85.5,
+   "exit": 85.66000366210938,
+   "cost_gbp": 958.6175023064617,
+   "pl_gbp": 1.7939451570897518,
+   "pl_pct": 0.0018713878609283342,
+   "reason": "No new high for 18 min, and FRAF overtook it on buying volume (0.07x vs 0.03x normal in 30 min)."
+  },
+  {
+   "ticker": "FRAF",
+   "bought_at": "2026-10-30T19:08+00:00",
+   "sold_at": "2026-10-30T19:36+00:00",
+   "entry": 71.4000015258789,
+   "exit": 71.29000091552734,
+   "cost_gbp": 960.6356649461837,
+   "pl_gbp": -1.4799790925950447,
+   "pl_pct": -0.0015406247619152839,
+   "reason": "No new high for 16 min, and DEC overtook it on buying volume (2.49x vs 0.00x normal in 30 min)."
+  }
+ ],
+ "total_gbp": -5.378072067104654,
+ "alerts": [
+  "10:16 Day trade: bought FBIZ: 17 FBIZ at $74.75 (about \u00a3950). Stop $71.01. Highest first-30-minute volume on today's list (0.6x a normal day).",
+  "10:40 Day trade: sold FBIZ (-\u00a31): No new high for 16 min, and COOK overtook it on buying volume (0.25x vs 0.19x normal in 30 min). Result -\u00a31 (-0.1%).",
+  "10:40 Day trade: bought COOK: 25 COOK at $53.40 (about \u00a3998). Stop $50.73. Strongest buying on the list: 0.25x normal volume bought in the last 30 min, and rising.",
+  "10:56 Day trade: sold COOK (-\u00a31): No new high for 16 min, and PROF overtook it on buying volume (0.16x vs 0.11x normal in 30 min). Result -\u00a31 (-0.1%).",
+  "10:56 Day trade: bought PROF: 213 PROF at $6.26 (about \u00a3997). Stop $5.95. Strongest buying on the list: 0.16x normal volume bought in the last 30 min, and rising.",
+  "11:52 Day trade: sold PROF (+\u00a317): No new high for 16 min, and FBIZ overtook it on buying volume (0.17x vs 0.09x normal in 30 min). Result +\u00a317 (+1.7%).",
+  "11:52 Day trade: bought FBIZ: 17 FBIZ at $75.65 (about \u00a3961). Stop $71.87. Strongest buying on the list: 0.17x normal volume bought in the last 30 min, and rising.",
+  "12:40 Day trade: sold FBIZ (+\u00a35): No new high for 18 min, and PROF overtook it on buying volume (0.25x vs 0.11x normal in 30 min). Result +\u00a35 (+0.5%).",
+  "12:40 Day trade: bought PROF: 201 PROF at $6.63 (about \u00a3996). Stop $6.30. Strongest buying on the list: 0.25x normal volume bought in the last 30 min, and rising.",
+  "13:12 Day trade: sold PROF (-\u00a311): No new high for 32 min, and MAX overtook it on buying volume (0.72x vs 0.15x normal in 30 min). Result -\u00a311 (-1.1%).",
+  "13:12 Day trade: bought MAX: 92 MAX at $14.45 (about \u00a3994). Stop $13.73. Strongest buying on the list: 0.72x normal volume bought in the last 30 min, and rising.",
+  "13:34 Day trade: sold MAX (-\u00a37): No new high for 16 min, and ACEL overtook it on buying volume (0.25x vs 0.03x normal in 30 min). Result -\u00a37 (-0.7%).",
+  "13:34 Day trade: bought ACEL: 117 ACEL at $11.40 (about \u00a3997). Stop $10.83. Strongest buying on the list: 0.25x normal volume bought in the last 30 min, and rising.",
+  "14:00 Day trade: sold ACEL (-\u00a32): No new high for 16 min, and BRBR overtook it on buying volume (0.32x vs 0.01x normal in 30 min). Result -\u00a32 (-0.2%).",
+  "14:00 Day trade: bought BRBR: 145 BRBR at $9.22 (about \u00a3999). Stop $8.75. Strongest buying on the list: 0.32x normal volume bought in the last 30 min, and rising.",
+  "14:16 Day trade: sold BRBR (-\u00a33): No new high for 16 min, and VTS overtook it on buying volume (0.55x vs 0.01x normal in 30 min). Result -\u00a33 (-0.3%).",
+  "14:16 Day trade: bought VTS: 73 VTS at $18.32 (about \u00a31,000). Stop $17.40. Strongest buying on the list: 0.55x normal volume bought in the last 30 min, and rising.",
+  "14:34 Day trade: sold VTS (-\u00a33): No new high for 16 min, and CZFS overtook it on buying volume (0.54x vs 0.03x normal in 30 min). Result -\u00a33 (-0.3%).",
+  "14:34 Day trade: bought CZFS: 15 CZFS at $85.50 (about \u00a3959). Stop $81.22. Strongest buying on the list: 0.54x normal volume bought in the last 30 min, and rising.",
+  "15:08 Day trade: sold CZFS (+\u00a32): No new high for 18 min, and FRAF overtook it on buying volume (0.07x vs 0.03x normal in 30 min). Result +\u00a32 (+0.2%).",
+  "15:08 Day trade: bought FRAF: 18 FRAF at $71.40 (about \u00a3961). Stop $67.83. Strongest buying on the list: 0.07x normal volume bought in the last 30 min, and rising.",
+  "15:36 Day trade: sold FRAF (-\u00a31): No new high for 16 min, and DEC overtook it on buying volume (2.49x vs 0.00x normal in 30 min). Result -\u00a31 (-0.2%).",
+  "15:50 Day trade summary: 11 trade(s) today: FBIZ -\u00a31, COOK -\u00a31, PROF +\u00a317, FBIZ +\u00a35, PROF -\u00a311, MAX -\u00a37, ACEL -\u00a32, BRBR -\u00a33, VTS -\u00a33, CZFS +\u00a32, FRAF -\u00a31. Total -\u00a35."
+ ],
+ "log": [
+  "Added BSIN to today's list at 10:16 New York: 0.6x normal volume in the last 30 min; news: Big Sky Industrial Inc. Common Stock (BSIN) Institutional Ownership 2026 - Marke",
+  "Day trade buy order: 17 FBIZ at about $74.75. Highest first-30-minute volume on today's list (0.6x a normal day).",
+  "Bought 17 FBIZ at 74.75 (cost \u00a3950).",
+  "Added CZFS to today's list at 10:32 New York: 0.4x normal volume in the last 30 min; news: Citizens Financial Services (CZFS) Q3 Earnings and Revenues Beat Estimates",
+  "Added PROF to today's list at 10:32 New York: 0.4x normal volume in the last 30 min; news: Profound Medical and Cook Medical\u2019s iMRI Division Partner to Expand U.S. TULSA-P",
+  "Added COOK to today's list at 10:32 New York: 0.5x normal volume in the last 30 min; news: Traeger, Inc.'s (NYSE:COOK) Path To Profitability - Simply Wall St",
+  "Sold FBIZ (about -\u00a31). No new high for 16 min, and COOK overtook it on buying volume (0.25x vs 0.19x normal in 30 min).",
+  "Day trade buy order: 25 COOK at about $53.40. Strongest buying on the list: 0.25x normal volume bought in the last 30 min, and rising.",
+  "Bought 25 COOK at 53.40 (cost \u00a3998).",
+  "Sold COOK (about -\u00a31). No new high for 16 min, and PROF overtook it on buying volume (0.16x vs 0.11x normal in 30 min).",
+  "Day trade buy order: 213 PROF at about $6.26. Strongest buying on the list: 0.16x normal volume bought in the last 30 min, and rising.",
+  "Bought 213 PROF at 6.26 (cost \u00a3997).",
+  "Added TASK to today's list at 11:36 New York: 0.5x normal volume in the last 30 min; news: 3,512,150 Shares in TaskUs, Inc. $TASK Purchased by Brooklands Fund Management L",
+  "Added ACEL to today's list at 11:52 New York: 0.3x normal volume in the last 30 min; news: Accel Entertainment (NYSE:ACEL) Share Price Breaks Above 50-Day Moving Average -",
+  "Sold PROF (about +\u00a317). No new high for 16 min, and FBIZ overtook it on buying volume (0.17x vs 0.09x normal in 30 min).",
+  "Day trade buy order: 17 FBIZ at about $75.65. Strongest buying on the list: 0.17x normal volume bought in the last 30 min, and rising.",
+  "Bought 17 FBIZ at 75.65 (cost \u00a3961).",
+  "Added DEC to today's list at 12:08 New York: 0.8x normal volume in the last 30 min; news: Diversified Energy Positioned To Benefit From Permian Infrastructure Expansion -",
+  "Added FNRN to today's list at 12:08 New York: 0.6x normal volume in the last 30 min; news: First Northern Profit Rises 11.1% to $16.8 Million - grafa.com",
+  "Sold FBIZ (about +\u00a35). No new high for 18 min, and PROF overtook it on buying volume (0.25x vs 0.11x normal in 30 min).",
+  "Day trade buy order: 201 PROF at about $6.63. Strongest buying on the list: 0.25x normal volume bought in the last 30 min, and rising.",
+  "Bought 201 PROF at 6.63 (cost \u00a3996).",
+  "Added MAX to today's list at 13:12 New York: 0.7x normal volume in the last 30 min; news: MediaAlpha (NYSE:MAX) beats expectations in strong Q3 2026, stock jumps 18%",
+  "Sold PROF (about -\u00a311). No new high for 32 min, and MAX overtook it on buying volume (0.72x vs 0.15x normal in 30 min).",
+  "Day trade buy order: 92 MAX at about $14.45. Strongest buying on the list: 0.72x normal volume bought in the last 30 min, and rising.",
+  "Bought 92 MAX at 14.45 (cost \u00a3994).",
+  "Added BDL to today's list at 13:28 New York: 0.3x normal volume in the last 30 min; news: Flanigan's Enterprises, Inc. (NYSEAMERICAN:BDL) Stock Short Interest Report for ",
+  "Sold MAX (about -\u00a37). No new high for 16 min, and ACEL overtook it on buying volume (0.25x vs 0.03x normal in 30 min).",
+  "Day trade buy order: 117 ACEL at about $11.40. Strongest buying on the list: 0.25x normal volume bought in the last 30 min, and rising.",
+  "Bought 117 ACEL at 11.40 (cost \u00a3997).",
+  "Added BRBR to today's list at 13:44 New York: 0.3x normal volume in the last 30 min; news: BellRing Brands (BRBR) Stock Fair Value Falls As Analysts Trim Growth And P E Vi",
+  "Sold ACEL (about -\u00a32). No new high for 16 min, and BRBR overtook it on buying volume (0.32x vs 0.01x normal in 30 min).",
+  "Day trade buy order: 145 BRBR at about $9.22. Strongest buying on the list: 0.32x normal volume bought in the last 30 min, and rising.",
+  "Bought 145 BRBR at 9.22 (cost \u00a3999).",
+  "Added VTS to today's list at 14:16 New York: 0.6x normal volume in the last 30 min; news: Vitesse Energy Keeps Quarterly Dividend at $0.4375 per Share, Payable Dec. 31 to",
+  "Added FRAF to today's list at 14:16 New York: 1.0x normal volume in the last 30 min; news: FRAF Q3 Earnings Rise Y/Y as Margin & Deposit Growth Improve",
+  "Sold BRBR (about -\u00a33). No new high for 16 min, and VTS overtook it on buying volume (0.55x vs 0.01x normal in 30 min).",
+  "Day trade buy order: 73 VTS at about $18.32. Strongest buying on the list: 0.55x normal volume bought in the last 30 min, and rising.",
+  "Bought 73 VTS at 18.32 (cost \u00a31,000).",
+  "Added FLO to today's list at 14:32 New York: 0.5x normal volume in the last 30 min; news: Flowers Foods (FLO) Stock Price, News & Analysis $FLO - MarketBeat",
+  "Added VYX to today's list at 14:32 New York: 0.5x normal volume in the last 30 min; news: First Watch selects NCR Voyix to upgrade restaurant technology",
+  "Sold VTS (about -\u00a33). No new high for 16 min, and CZFS overtook it on buying volume (0.54x vs 0.03x normal in 30 min).",
+  "Day trade buy order: 15 CZFS at about $85.50. Strongest buying on the list: 0.54x normal volume bought in the last 30 min, and rising.",
+  "Bought 15 CZFS at 85.50 (cost \u00a3959).",
+  "Added EPC to today's list at 14:48 New York: 0.5x normal volume in the last 30 min; news: Edgewell Personal Care (NYSE:EPC) Share Price Crosses Above Fifty Day Moving Ave",
+  "Added REI to today's list at 15:04 New York: 0.5x normal volume in the last 30 min; news: Ring Energy (REI) Expected to Post Earnings on Thursday - MarketBeat",
+  "Sold CZFS (about +\u00a32). No new high for 18 min, and FRAF overtook it on buying volume (0.07x vs 0.03x normal in 30 min).",
+  "Day trade buy order: 18 FRAF at about $71.40. Strongest buying on the list: 0.07x normal volume bought in the last 30 min, and rising.",
+  "Bought 18 FRAF at 71.40 (cost \u00a3961).",
+  "Sold FRAF (about -\u00a31). No new high for 16 min, and DEC overtook it on buying volume (2.49x vs 0.00x normal in 30 min).",
+  "Day trading finished: 11 trade(s), total -\u00a35."
+ ]
+}

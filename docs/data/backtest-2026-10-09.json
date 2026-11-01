@@ -1,0 +1,139 @@
+{
+ "date": "2026-10-09",
+ "generated": "2026-11-01T11:00+00:00",
+ "fx_gbpusd": 1.322908878326416,
+ "result": "done",
+ "require_news": true,
+ "added_during_day": [
+  "Added EGY to today's list at 12:40 New York: 0.4x normal volume in the last 30 min; news: VAALCO Energy, Inc. Announces Positive Operational Updates",
+  "Added RSKD to today's list at 12:56 New York: 0.4x normal volume in the last 30 min; news: Riskified Launches Agent Identity Risk Intelligence: Know Who Is Behind AI Perso"
+ ],
+ "list": [
+  {
+   "ticker": "GFUZ",
+   "name": "General Fusion Group Ltd.",
+   "vol_x": 1.23,
+   "buy_pct30": 0.25867060764671934,
+   "change": 0.022962090515407763,
+   "score": 2.49,
+   "news": [
+    "General Fusion Achieves World-First 1 keV Electron Temperature Milestone on its Path to Commercial Fusion Power",
+    "General Fusion, UKAEA Announce Magnetized Target Fusion Milestone"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "IMMR",
+   "vol_x": 0.49
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "GFUZ",
+   "bought_at": "2026-10-09T14:16+00:00",
+   "sold_at": "2026-10-09T16:40+00:00",
+   "entry": 9.069999694824219,
+   "exit": 8.850000381469727,
+   "cost_gbp": 994.1349531294098,
+   "pl_gbp": -24.113452528005723,
+   "pl_pct": -0.024255713424117777,
+   "reason": "No new high for 102 min, and EGY overtook it on buying volume (0.35x vs 0.16x normal in 30 min)."
+  },
+  {
+   "ticker": "EGY",
+   "bought_at": "2026-10-09T16:40+00:00",
+   "sold_at": "2026-10-09T16:58+00:00",
+   "entry": 6.065000057220459,
+   "exit": 6.059999942779541,
+   "cost_gbp": 999.4414839415919,
+   "pl_gbp": -0.8239607171576608,
+   "pl_pct": -0.0008244211696197851,
+   "reason": "No new high for 18 min, and RSKD overtook it on buying volume (0.22x vs 0.01x normal in 30 min)."
+  },
+  {
+   "ticker": "RSKD",
+   "bought_at": "2026-10-09T16:58+00:00",
+   "sold_at": "2026-10-09T17:26+00:00",
+   "entry": 8.225000381469727,
+   "exit": 8.204999923706055,
+   "cost_gbp": 994.7775561836127,
+   "pl_gbp": -2.4189672430318296,
+   "pl_pct": -0.0024316664846279912,
+   "reason": "No new high for 28 min, and GFUZ overtook it on buying volume (0.10x vs 0.01x normal in 30 min)."
+  },
+  {
+   "ticker": "GFUZ",
+   "bought_at": "2026-10-09T17:26+00:00",
+   "sold_at": "2026-10-09T19:02+00:00",
+   "entry": 8.645500183105469,
+   "exit": 8.489999771118164,
+   "cost_gbp": 999.888616431794,
+   "pl_gbp": -17.984279509980865,
+   "pl_pct": -0.01798628288634751,
+   "reason": "No new high for 42 min, and EGY overtook it on buying volume (0.10x vs 0.05x normal in 30 min)."
+  },
+  {
+   "ticker": "EGY",
+   "bought_at": "2026-10-09T19:02+00:00",
+   "sold_at": "2026-10-09T19:18+00:00",
+   "entry": 6.054999828338623,
+   "exit": 6.034999847412109,
+   "cost_gbp": 997.7935625072765,
+   "pl_gbp": -3.295764291411956,
+   "pl_pct": -0.003303052269780425,
+   "reason": "No new high for 16 min, and RSKD overtook it on buying volume (0.05x vs 0.04x normal in 30 min)."
+  },
+  {
+   "ticker": "RSKD",
+   "bought_at": "2026-10-09T19:18+00:00",
+   "sold_at": "2026-10-09T19:50+00:00",
+   "entry": 8.46500015258789,
+   "exit": 8.550000190734863,
+   "cost_gbp": 998.2093592676604,
+   "pl_gbp": 10.023370595034976,
+   "pl_pct": 0.010041351047227863,
+   "reason": "End of day: sold 10 minutes before the close."
+  }
+ ],
+ "total_gbp": -38.61305369455306,
+ "alerts": [
+  "10:16 Day trade: bought GFUZ: 145 GFUZ at $9.07 (about \u00a3994). Stop $8.62. Highest first-30-minute volume on today's list (1.2x a normal day).",
+  "12:40 Day trade: sold GFUZ (-\u00a324): No new high for 102 min, and EGY overtook it on buying volume (0.35x vs 0.16x normal in 30 min). Result -\u00a324 (-2.4%).",
+  "12:40 Day trade: bought EGY: 218 EGY at $6.07 (about \u00a3999). Stop $5.76. Strongest buying on the list: 0.35x normal volume bought in the last 30 min, and rising.",
+  "12:58 Day trade: sold EGY (-\u00a31): No new high for 18 min, and RSKD overtook it on buying volume (0.22x vs 0.01x normal in 30 min). Result -\u00a31 (-0.1%).",
+  "12:58 Day trade: bought RSKD: 160 RSKD at $8.23 (about \u00a3995). Stop $7.81. Strongest buying on the list: 0.22x normal volume bought in the last 30 min, and rising.",
+  "13:26 Day trade: sold RSKD (-\u00a32): No new high for 28 min, and GFUZ overtook it on buying volume (0.10x vs 0.01x normal in 30 min). Result -\u00a32 (-0.2%).",
+  "13:26 Day trade: bought GFUZ: 153 GFUZ at $8.65 (about \u00a31,000). Stop $8.21. Strongest buying on the list: 0.10x normal volume bought in the last 30 min, and rising.",
+  "15:02 Day trade: sold GFUZ (-\u00a318): No new high for 42 min, and EGY overtook it on buying volume (0.10x vs 0.05x normal in 30 min). Result -\u00a318 (-1.8%).",
+  "15:02 Day trade: bought EGY: 218 EGY at $6.05 (about \u00a3998). Stop $5.75. Strongest buying on the list: 0.10x normal volume bought in the last 30 min, and rising.",
+  "15:18 Day trade: sold EGY (-\u00a33): No new high for 16 min, and RSKD overtook it on buying volume (0.05x vs 0.04x normal in 30 min). Result -\u00a33 (-0.3%).",
+  "15:18 Day trade: bought RSKD: 156 RSKD at $8.47 (about \u00a3998). Stop $8.04. Strongest buying on the list: 0.05x normal volume bought in the last 30 min, and rising.",
+  "15:50 Day trade: sold RSKD (+\u00a310): End of day: sold 10 minutes before the close. Result +\u00a310 (+1.0%).",
+  "15:50 Day trade summary: 6 trade(s) today: GFUZ -\u00a324, EGY -\u00a31, RSKD -\u00a32, GFUZ -\u00a318, EGY -\u00a33, RSKD +\u00a310. Total -\u00a339."
+ ],
+ "log": [
+  "Day trade buy order: 145 GFUZ at about $9.07. Highest first-30-minute volume on today's list (1.2x a normal day).",
+  "Bought 145 GFUZ at 9.07 (cost \u00a3994).",
+  "Added EGY to today's list at 12:40 New York: 0.4x normal volume in the last 30 min; news: VAALCO Energy, Inc. Announces Positive Operational Updates",
+  "Sold GFUZ (about -\u00a324). No new high for 102 min, and EGY overtook it on buying volume (0.35x vs 0.16x normal in 30 min).",
+  "Day trade buy order: 218 EGY at about $6.07. Strongest buying on the list: 0.35x normal volume bought in the last 30 min, and rising.",
+  "Bought 218 EGY at 6.07 (cost \u00a3999).",
+  "Added RSKD to today's list at 12:56 New York: 0.4x normal volume in the last 30 min; news: Riskified Launches Agent Identity Risk Intelligence: Know Who Is Behind AI Perso",
+  "Sold EGY (about -\u00a31). No new high for 18 min, and RSKD overtook it on buying volume (0.22x vs 0.01x normal in 30 min).",
+  "Day trade buy order: 160 RSKD at about $8.23. Strongest buying on the list: 0.22x normal volume bought in the last 30 min, and rising.",
+  "Bought 160 RSKD at 8.23 (cost \u00a3995).",
+  "Sold RSKD (about -\u00a32). No new high for 28 min, and GFUZ overtook it on buying volume (0.10x vs 0.01x normal in 30 min).",
+  "Day trade buy order: 153 GFUZ at about $8.65. Strongest buying on the list: 0.10x normal volume bought in the last 30 min, and rising.",
+  "Bought 153 GFUZ at 8.65 (cost \u00a31,000).",
+  "Sold GFUZ (about -\u00a318). No new high for 42 min, and EGY overtook it on buying volume (0.10x vs 0.05x normal in 30 min).",
+  "Day trade buy order: 218 EGY at about $6.05. Strongest buying on the list: 0.10x normal volume bought in the last 30 min, and rising.",
+  "Bought 218 EGY at 6.05 (cost \u00a3998).",
+  "Sold EGY (about -\u00a33). No new high for 16 min, and RSKD overtook it on buying volume (0.05x vs 0.04x normal in 30 min).",
+  "Day trade buy order: 156 RSKD at about $8.47. Strongest buying on the list: 0.05x normal volume bought in the last 30 min, and rising.",
+  "Bought 156 RSKD at 8.47 (cost \u00a3998).",
+  "Sold RSKD (about +\u00a310). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 6 trade(s), total -\u00a339."
+ ]
+}

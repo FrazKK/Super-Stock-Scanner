@@ -1,0 +1,149 @@
+{
+ "date": "2026-10-22",
+ "generated": "2026-11-01T11:09+00:00",
+ "fx_gbpusd": 1.339566707611084,
+ "result": "done",
+ "require_news": true,
+ "added_during_day": [
+  "Added PEBK to today's list at 10:16 New York: 0.4x normal volume in the last 30 min; news: Peoples Bancorp Stock Slips Post Q3 Earnings Despite NIM Expansion",
+  "Added WCCB to today's list at 10:32 New York: 0.6x normal volume in the last 30 min; news: West Coast Community Bank Continues Expansion with New Full-Service Branch in Sa",
+  "Added AVBH to today's list at 12:24 New York: 0.3x normal volume in the last 30 min; news: Avidbank Holdings Inc. (AVBH) Reports Next Week: Wall Street Expects Earnings Gr",
+  "Added NABL to today's list at 13:44 New York: 0.6x normal volume in the last 30 min; news: As AI Accelerates Cyberattacks, N-able and SentinelOne Expand Their Strategic Pa"
+ ],
+ "list": [],
+ "quiet": [
+  {
+   "ticker": "EDHL",
+   "vol_x": 1.01
+  },
+  {
+   "ticker": "RRBI",
+   "vol_x": 0.87
+  },
+  {
+   "ticker": "HLP",
+   "vol_x": 0.56
+  },
+  {
+   "ticker": "FMAO",
+   "vol_x": 0.52
+  },
+  {
+   "ticker": "BPRN",
+   "vol_x": 0.4
+  },
+  {
+   "ticker": "FORR",
+   "vol_x": 0.36
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "PEBK",
+   "bought_at": "2026-10-22T14:16+00:00",
+   "sold_at": "2026-10-22T14:32+00:00",
+   "entry": 44.13999938964844,
+   "exit": 44.06999969482422,
+   "cost_gbp": 988.5285847772112,
+   "pl_gbp": -1.5676642550124598,
+   "pl_pct": -0.00158585627077822,
+   "reason": "No new high for 16 min, and WCCB overtook it on buying volume (0.30x vs 0.14x normal in 30 min)."
+  },
+  {
+   "ticker": "WCCB",
+   "bought_at": "2026-10-22T14:32+00:00",
+   "sold_at": "2026-10-22T15:34+00:00",
+   "entry": 61.27000045776367,
+   "exit": 61.36000061035156,
+   "cost_gbp": 960.5120837226686,
+   "pl_gbp": 1.4109063726406248,
+   "pl_pct": 0.0014689105910800804,
+   "reason": "No new high for 16 min, and PEBK overtook it on buying volume (0.11x vs 0.03x normal in 30 min)."
+  },
+  {
+   "ticker": "PEBK",
+   "bought_at": "2026-10-22T15:34+00:00",
+   "sold_at": "2026-10-22T16:22+00:00",
+   "entry": 44.16999816894531,
+   "exit": 44.25,
+   "cost_gbp": 989.2004164775609,
+   "pl_gbp": 1.7916651093254359,
+   "pl_pct": 0.0018112255913774963,
+   "reason": "No new high for 22 min, and WCCB overtook it on buying volume (0.07x vs 0.03x normal in 30 min)."
+  },
+  {
+   "ticker": "WCCB",
+   "bought_at": "2026-10-22T16:22+00:00",
+   "sold_at": "2026-10-22T16:44+00:00",
+   "entry": 61.75,
+   "exit": 61.58000183105469,
+   "cost_gbp": 968.0368977761166,
+   "pl_gbp": -2.665012147262132,
+   "pl_pct": -0.00275300678453941,
+   "reason": "No new high for 18 min, and AVBH overtook it on buying volume (0.28x vs 0.06x normal in 30 min)."
+  },
+  {
+   "ticker": "AVBH",
+   "bought_at": "2026-10-22T16:44+00:00",
+   "sold_at": "2026-10-22T17:52+00:00",
+   "entry": 31.579999923706055,
+   "exit": 31.600000381469727,
+   "cost_gbp": 990.1410577462157,
+   "pl_gbp": 0.6270827882639196,
+   "pl_pct": 0.0006333267198224276,
+   "reason": "No new high for 16 min, and NABL overtook it on buying volume (0.61x vs 0.02x normal in 30 min)."
+  },
+  {
+   "ticker": "NABL",
+   "bought_at": "2026-10-22T17:52+00:00",
+   "sold_at": "2026-10-22T19:50+00:00",
+   "entry": 4.894999980926514,
+   "exit": 4.90500020980835,
+   "cost_gbp": 997.5874939263689,
+   "pl_gbp": 2.0380190618576535,
+   "pl_pct": 0.0020429476855571707,
+   "reason": "End of day: sold 10 minutes before the close."
+  }
+ ],
+ "total_gbp": 1.6349969298130418,
+ "alerts": [
+  "10:16 Day trade: bought PEBK: 30 PEBK at $44.14 (about \u00a3989). Stop $41.93. Highest first-30-minute volume on today's list (0.4x a normal day).",
+  "10:32 Day trade: sold PEBK (-\u00a32): No new high for 16 min, and WCCB overtook it on buying volume (0.30x vs 0.14x normal in 30 min). Result -\u00a32 (-0.2%).",
+  "10:32 Day trade: bought WCCB: 21 WCCB at $61.27 (about \u00a3961). Stop $58.21. Strongest buying on the list: 0.30x normal volume bought in the last 30 min, and rising.",
+  "11:34 Day trade: sold WCCB (+\u00a31): No new high for 16 min, and PEBK overtook it on buying volume (0.11x vs 0.03x normal in 30 min). Result +\u00a31 (+0.1%).",
+  "11:34 Day trade: bought PEBK: 30 PEBK at $44.17 (about \u00a3989). Stop $41.96. Strongest buying on the list: 0.11x normal volume bought in the last 30 min, and rising.",
+  "12:22 Day trade: sold PEBK (+\u00a32): No new high for 22 min, and WCCB overtook it on buying volume (0.07x vs 0.03x normal in 30 min). Result +\u00a32 (+0.2%).",
+  "12:22 Day trade: bought WCCB: 21 WCCB at $61.75 (about \u00a3968). Stop $58.66. Strongest buying on the list: 0.07x normal volume bought in the last 30 min, and rising.",
+  "12:44 Day trade: sold WCCB (-\u00a33): No new high for 18 min, and AVBH overtook it on buying volume (0.28x vs 0.06x normal in 30 min). Result -\u00a33 (-0.3%).",
+  "12:44 Day trade: bought AVBH: 42 AVBH at $31.58 (about \u00a3990). Stop $30.00. Strongest buying on the list: 0.28x normal volume bought in the last 30 min, and rising.",
+  "13:52 Day trade: sold AVBH (+\u00a31): No new high for 16 min, and NABL overtook it on buying volume (0.61x vs 0.02x normal in 30 min). Result +\u00a31 (+0.1%).",
+  "13:52 Day trade: bought NABL: 273 NABL at $4.89 (about \u00a3998). Stop $4.65. Strongest buying on the list: 0.61x normal volume bought in the last 30 min, and rising.",
+  "15:50 Day trade: sold NABL (+\u00a32): End of day: sold 10 minutes before the close. Result +\u00a32 (+0.2%).",
+  "15:50 Day trade summary: 6 trade(s) today: PEBK -\u00a32, WCCB +\u00a31, PEBK +\u00a32, WCCB -\u00a33, AVBH +\u00a31, NABL +\u00a32. Total +\u00a32."
+ ],
+ "log": [
+  "Added PEBK to today's list at 10:16 New York: 0.4x normal volume in the last 30 min; news: Peoples Bancorp Stock Slips Post Q3 Earnings Despite NIM Expansion",
+  "Day trade buy order: 30 PEBK at about $44.14. Highest first-30-minute volume on today's list (0.4x a normal day).",
+  "Bought 30 PEBK at 44.14 (cost \u00a3989).",
+  "Added WCCB to today's list at 10:32 New York: 0.6x normal volume in the last 30 min; news: West Coast Community Bank Continues Expansion with New Full-Service Branch in Sa",
+  "Sold PEBK (about -\u00a32). No new high for 16 min, and WCCB overtook it on buying volume (0.30x vs 0.14x normal in 30 min).",
+  "Day trade buy order: 21 WCCB at about $61.27. Strongest buying on the list: 0.30x normal volume bought in the last 30 min, and rising.",
+  "Bought 21 WCCB at 61.27 (cost \u00a3961).",
+  "Sold WCCB (about +\u00a31). No new high for 16 min, and PEBK overtook it on buying volume (0.11x vs 0.03x normal in 30 min).",
+  "Day trade buy order: 30 PEBK at about $44.17. Strongest buying on the list: 0.11x normal volume bought in the last 30 min, and rising.",
+  "Bought 30 PEBK at 44.17 (cost \u00a3989).",
+  "Sold PEBK (about +\u00a32). No new high for 22 min, and WCCB overtook it on buying volume (0.07x vs 0.03x normal in 30 min).",
+  "Day trade buy order: 21 WCCB at about $61.75. Strongest buying on the list: 0.07x normal volume bought in the last 30 min, and rising.",
+  "Bought 21 WCCB at 61.75 (cost \u00a3968).",
+  "Added AVBH to today's list at 12:24 New York: 0.3x normal volume in the last 30 min; news: Avidbank Holdings Inc. (AVBH) Reports Next Week: Wall Street Expects Earnings Gr",
+  "Sold WCCB (about -\u00a33). No new high for 18 min, and AVBH overtook it on buying volume (0.28x vs 0.06x normal in 30 min).",
+  "Day trade buy order: 42 AVBH at about $31.58. Strongest buying on the list: 0.28x normal volume bought in the last 30 min, and rising.",
+  "Bought 42 AVBH at 31.58 (cost \u00a3990).",
+  "Added NABL to today's list at 13:44 New York: 0.6x normal volume in the last 30 min; news: As AI Accelerates Cyberattacks, N-able and SentinelOne Expand Their Strategic Pa",
+  "Sold AVBH (about +\u00a31). No new high for 16 min, and NABL overtook it on buying volume (0.61x vs 0.02x normal in 30 min).",
+  "Day trade buy order: 273 NABL at about $4.89. Strongest buying on the list: 0.61x normal volume bought in the last 30 min, and rising.",
+  "Bought 273 NABL at 4.89 (cost \u00a3998).",
+  "Sold NABL (about +\u00a32). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 6 trade(s), total +\u00a32."
+ ]
+}

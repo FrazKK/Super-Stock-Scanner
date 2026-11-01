@@ -1,32 +1,55 @@
 {
  "date": "2026-10-28",
- "generated": "2026-10-31T21:43+00:00",
+ "generated": "2026-11-01T11:12+00:00",
  "fx_gbpusd": 1.330629587173462,
  "result": "done",
+ "require_news": true,
+ "added_during_day": [
+  "Added TLS to today's list at 11:04 New York: 0.3x normal volume in the last 30 min; news: Why Telos (TLS) is Poised to Beat Earnings Estimates Again",
+  "Added LAW to today's list at 12:40 New York: 0.5x normal volume in the last 30 min; news: CS Disco (LAW) Expected to Announce Quarterly Earnings on Wednesday - MarketBeat",
+  "Added AVBH to today's list at 12:56 New York: 0.4x normal volume in the last 30 min; news: Avidbank Holdings Inc. (AVBH) Q3 Earnings and Revenues Beat Estimates",
+  "Added YEXT to today's list at 13:44 New York: 0.5x normal volume in the last 30 min; news: What Does A Record Margin Mean For Yext (NYSE:YEXT) Amid AI Search Moves? - Kalk",
+  "Added BRCC to today's list at 13:44 New York: 0.4x normal volume in the last 30 min; news: BRC Group Holdings grants Andy Moore substitute stock award - TradingView",
+  "Added NABL to today's list at 14:00 New York: 0.4x normal volume in the last 30 min; news: N-able Launches AI-Accelerated Vulnerability and Patch Management",
+  "Added ASC to today's list at 14:48 New York: 0.5x normal volume in the last 30 min; news: Ardmore Shipping (ASC) Expected to Announce Quarterly Earnings on Tuesday - Mark",
+  "Added SGP to today's list at 15:04 New York: 0.7x normal volume in the last 30 min; news: Spyglass Pharma (NASDAQ:SGP) Sets New 12-Month High - Still a Buy? - MarketBeat",
+  "Added CHMG to today's list at 15:04 New York: 0.3x normal volume in the last 30 min; news: Raymond James raises Chemung Financial stock price target on strong earnings - I"
+ ],
  "list": [
-  {
-   "ticker": "ULBI",
-   "name": "Ultralife Corporation",
-   "vol_x": 9.49,
-   "buy_pct30": 0.6929345270529614,
-   "change": 1.455188591716214,
-   "score": 20.75,
-   "news": [
-    "EnerSys To Acquire Ultralife, Expanding Differentiated Battery Technologies and Accelerating Growth in Defense Market",
-    "EnerSys to Acquire Ultralife Corporation in a $320 Million All-Cash Transaction"
-   ],
-   "on_t212": true
-  },
   {
    "ticker": "CLAR",
    "name": "Clarus Corporation",
    "vol_x": 0.81,
    "buy_pct30": 0.8667811022189887,
    "change": 0.08181580317577208,
-   "score": 5.59,
+   "score": 5.09,
    "news": [
     "Synchrony and Clarus Technology Announce Strategic Partnership to Provide Real-Time Financial and Insurance Coverage Insights for Veterinary Practices - marketscreener.com",
     "Synchrony and Clarus launch portal integrating pet insurance and financing for smoother vet payments. - Pluang"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "RDWR",
+   "name": "Radware Ltd.",
+   "vol_x": 0.47,
+   "buy_pct30": 0.6106463778383072,
+   "change": 0.05451266866334725,
+   "score": 3.88,
+   "news": [
+    "Radware Selected by Major Global Cloud Provider to Modernize DDoS Protection Infrastructure"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "PRME",
+   "name": "Prime Medicine, Inc.",
+   "vol_x": 0.36,
+   "buy_pct30": 0.6060313890578763,
+   "change": 0.12528737660742073,
+   "score": 2.64,
+   "news": [
+    "PRME, BEAM, EDIT, NTLA, CRSP Stocks Gain As FDA Signals Faster Route For Patient-Specific Gene Edits"
    ],
    "on_t212": true
   }
@@ -35,63 +58,136 @@
   {
    "ticker": "RCKY",
    "vol_x": 0.56
+  },
+  {
+   "ticker": "MLAB",
+   "vol_x": 0.49
+  },
+  {
+   "ticker": "PDSB",
+   "vol_x": 0.45
+  },
+  {
+   "ticker": "CFFI",
+   "vol_x": 0.35
+  },
+  {
+   "ticker": "SMWB",
+   "vol_x": 0.33
   }
  ],
  "trades": [
   {
-   "ticker": "ULBI",
+   "ticker": "CLAR",
    "bought_at": "2026-10-28T14:16+00:00",
-   "sold_at": "2026-10-28T17:12+00:00",
-   "entry": 15.635000228881836,
-   "exit": 15.609999656677246,
-   "cost_gbp": 998.7565527367984,
-   "pl_gbp": -1.5970249405803543,
-   "pl_pct": -0.0015990132292040312,
-   "reason": "No new high for 176 min, and CLAR overtook it on buying volume (0.30x vs 0.23x normal in 30 min)."
+   "sold_at": "2026-10-28T14:48+00:00",
+   "entry": 4.284999847412109,
+   "exit": 4.304999828338623,
+   "cost_gbp": 998.286800099981,
+   "pl_gbp": 4.659444030843588,
+   "pl_pct": 0.004667440289080185,
+   "reason": "No new high for 28 min, and PRME overtook it on buying volume (0.20x vs 0.20x normal in 30 min)."
+  },
+  {
+   "ticker": "PRME",
+   "bought_at": "2026-10-28T14:48+00:00",
+   "sold_at": "2026-10-28T16:14+00:00",
+   "entry": 5.045000076293945,
+   "exit": 5.130000114440918,
+   "cost_gbp": 997.148291947863,
+   "pl_gbp": 16.800325385925476,
+   "pl_pct": 0.01684837202409198,
+   "reason": "No new high for 38 min, and CLAR overtook it on buying volume (0.16x vs 0.09x normal in 30 min)."
   },
   {
    "ticker": "CLAR",
-   "bought_at": "2026-10-28T17:12+00:00",
-   "sold_at": "2026-10-28T18:00+00:00",
-   "entry": 4.335000038146973,
-   "exit": 4.309999942779541,
-   "cost_gbp": 996.9040403578887,
-   "pl_gbp": -5.749180129598926,
-   "pl_pct": -0.00576703463608691,
-   "reason": "No new high for 42 min, and ULBI overtook it on buying volume (0.84x vs 0.07x normal in 30 min)."
+   "bought_at": "2026-10-28T16:14+00:00",
+   "sold_at": "2026-10-28T17:42+00:00",
+   "entry": 4.255000114440918,
+   "exit": 4.320000171661377,
+   "cost_gbp": 997.6931585638225,
+   "pl_gbp": 15.240919071897565,
+   "pl_pct": 0.015276158747882806,
+   "reason": "No new high for 24 min, and LAW overtook it on buying volume (0.28x vs 0.10x normal in 30 min)."
   },
   {
-   "ticker": "ULBI",
-   "bought_at": "2026-10-28T18:00+00:00",
+   "ticker": "LAW",
+   "bought_at": "2026-10-28T17:42+00:00",
+   "sold_at": "2026-10-28T18:14+00:00",
+   "entry": 5.085000038146973,
+   "exit": 5.090000152587891,
+   "cost_gbp": 997.4113177323683,
+   "pl_gbp": 0.9807611988035205,
+   "pl_pct": 0.0009833066673368997,
+   "reason": "No new high for 18 min, and BRCC overtook it on buying volume (0.12x vs 0.04x normal in 30 min)."
+  },
+  {
+   "ticker": "BRCC",
+   "bought_at": "2026-10-28T18:14+00:00",
+   "sold_at": "2026-10-28T19:22+00:00",
+   "entry": 11.880000114440918,
+   "exit": 11.875,
+   "cost_gbp": 999.9477132052754,
+   "pl_gbp": -0.4208630431646725,
+   "pl_pct": -0.000420885049894879,
+   "reason": "No new high for 16 min, and YEXT overtook it on buying volume (0.79x vs 0.08x normal in 30 min)."
+  },
+  {
+   "ticker": "YEXT",
+   "bought_at": "2026-10-28T19:22+00:00",
    "sold_at": "2026-10-28T19:50+00:00",
-   "entry": 15.630000114440918,
-   "exit": 15.645000457763672,
-   "cost_gbp": 998.4371477486824,
-   "pl_gbp": 0.9582149643481443,
-   "pl_pct": 0.000959714856872831,
+   "entry": 7.239999771118164,
+   "exit": 7.284999847412109,
+   "cost_gbp": 995.7090770309968,
+   "pl_gbp": 6.188810200203648,
+   "pl_pct": 0.006215480347590512,
    "reason": "End of day: sold 10 minutes before the close."
   }
  ],
- "total_gbp": -6.387990105831136,
+ "total_gbp": 43.449396844509124,
  "alerts": [
-  "10:16 Day trade: bought ULBI: 85 ULBI at $15.64 (about \u00a3999). Stop $14.85. Highest first-30-minute volume on today's list (9.5x a normal day).",
-  "13:12 Day trade: sold ULBI (-\u00a32): No new high for 176 min, and CLAR overtook it on buying volume (0.30x vs 0.23x normal in 30 min). Result -\u00a32 (-0.2%).",
-  "13:12 Day trade: bought CLAR: 306 CLAR at $4.34 (about \u00a3997). Stop $4.12. Strongest buying on the list: 0.30x normal volume bought in the last 30 min, and rising.",
-  "14:00 Day trade: sold CLAR (-\u00a36): No new high for 42 min, and ULBI overtook it on buying volume (0.84x vs 0.07x normal in 30 min). Result -\u00a36 (-0.6%).",
-  "14:00 Day trade: bought ULBI: 85 ULBI at $15.63 (about \u00a3998). Stop $14.85. Strongest buying on the list: 0.84x normal volume bought in the last 30 min, and rising.",
-  "15:50 Day trade: sold ULBI (+\u00a31): End of day: sold 10 minutes before the close. Result +\u00a31 (+0.1%).",
-  "15:50 Day trade summary: 3 trade(s) today: ULBI -\u00a32, CLAR -\u00a36, ULBI +\u00a31. Total -\u00a36."
+  "10:16 Day trade: bought CLAR: 310 CLAR at $4.28 (about \u00a3998). Stop $4.07. Highest first-30-minute volume on today's list (0.8x a normal day).",
+  "10:48 Day trade: sold CLAR (+\u00a35): No new high for 28 min, and PRME overtook it on buying volume (0.20x vs 0.20x normal in 30 min). Result +\u00a35 (+0.5%).",
+  "10:48 Day trade: bought PRME: 263 PRME at $5.05 (about \u00a3997). Stop $4.79. Strongest buying on the list: 0.20x normal volume bought in the last 30 min, and rising.",
+  "12:14 Day trade: sold PRME (+\u00a317): No new high for 38 min, and CLAR overtook it on buying volume (0.16x vs 0.09x normal in 30 min). Result +\u00a317 (+1.7%).",
+  "12:14 Day trade: bought CLAR: 312 CLAR at $4.26 (about \u00a3998). Stop $4.04. Strongest buying on the list: 0.16x normal volume bought in the last 30 min, and rising.",
+  "13:42 Day trade: sold CLAR (+\u00a315): No new high for 24 min, and LAW overtook it on buying volume (0.28x vs 0.10x normal in 30 min). Result +\u00a315 (+1.5%).",
+  "13:42 Day trade: bought LAW: 261 LAW at $5.09 (about \u00a3997). Stop $4.83. Strongest buying on the list: 0.28x normal volume bought in the last 30 min, and rising.",
+  "14:14 Day trade: sold LAW (+\u00a31): No new high for 18 min, and BRCC overtook it on buying volume (0.12x vs 0.04x normal in 30 min). Result +\u00a31 (+0.1%).",
+  "14:14 Day trade: bought BRCC: 112 BRCC at $11.88 (about \u00a31,000). Stop $11.29. Strongest buying on the list: 0.12x normal volume bought in the last 30 min, and rising.",
+  "15:22 Day trade: sold BRCC (-\u00a30): No new high for 16 min, and YEXT overtook it on buying volume (0.79x vs 0.08x normal in 30 min). Result -\u00a30 (-0.0%).",
+  "15:22 Day trade: bought YEXT: 183 YEXT at $7.24 (about \u00a3996). Stop $6.88. Strongest buying on the list: 0.79x normal volume bought in the last 30 min, and rising.",
+  "15:50 Day trade: sold YEXT (+\u00a36): End of day: sold 10 minutes before the close. Result +\u00a36 (+0.6%).",
+  "15:50 Day trade summary: 6 trade(s) today: CLAR +\u00a35, PRME +\u00a317, CLAR +\u00a315, LAW +\u00a31, BRCC -\u00a30, YEXT +\u00a36. Total +\u00a343."
  ],
  "log": [
-  "Day trade buy order: 85 ULBI at about $15.64. Highest first-30-minute volume on today's list (9.5x a normal day).",
-  "Bought 85 ULBI at 15.64 (cost \u00a3999).",
-  "Sold ULBI (about -\u00a32). No new high for 176 min, and CLAR overtook it on buying volume (0.30x vs 0.23x normal in 30 min).",
-  "Day trade buy order: 306 CLAR at about $4.34. Strongest buying on the list: 0.30x normal volume bought in the last 30 min, and rising.",
-  "Bought 306 CLAR at 4.34 (cost \u00a3997).",
-  "Sold CLAR (about -\u00a36). No new high for 42 min, and ULBI overtook it on buying volume (0.84x vs 0.07x normal in 30 min).",
-  "Day trade buy order: 85 ULBI at about $15.63. Strongest buying on the list: 0.84x normal volume bought in the last 30 min, and rising.",
-  "Bought 85 ULBI at 15.63 (cost \u00a3998).",
-  "Sold ULBI (about +\u00a31). End of day: sold 10 minutes before the close.",
-  "Day trading finished: 3 trade(s), total -\u00a36."
+  "Day trade buy order: 310 CLAR at about $4.28. Highest first-30-minute volume on today's list (0.8x a normal day).",
+  "Bought 310 CLAR at 4.28 (cost \u00a3998).",
+  "Sold CLAR (about +\u00a35). No new high for 28 min, and PRME overtook it on buying volume (0.20x vs 0.20x normal in 30 min).",
+  "Day trade buy order: 263 PRME at about $5.05. Strongest buying on the list: 0.20x normal volume bought in the last 30 min, and rising.",
+  "Bought 263 PRME at 5.05 (cost \u00a3997).",
+  "Added TLS to today's list at 11:04 New York: 0.3x normal volume in the last 30 min; news: Why Telos (TLS) is Poised to Beat Earnings Estimates Again",
+  "Sold PRME (about +\u00a317). No new high for 38 min, and CLAR overtook it on buying volume (0.16x vs 0.09x normal in 30 min).",
+  "Day trade buy order: 312 CLAR at about $4.26. Strongest buying on the list: 0.16x normal volume bought in the last 30 min, and rising.",
+  "Bought 312 CLAR at 4.26 (cost \u00a3998).",
+  "Added LAW to today's list at 12:40 New York: 0.5x normal volume in the last 30 min; news: CS Disco (LAW) Expected to Announce Quarterly Earnings on Wednesday - MarketBeat",
+  "Added AVBH to today's list at 12:56 New York: 0.4x normal volume in the last 30 min; news: Avidbank Holdings Inc. (AVBH) Q3 Earnings and Revenues Beat Estimates",
+  "Sold CLAR (about +\u00a315). No new high for 24 min, and LAW overtook it on buying volume (0.28x vs 0.10x normal in 30 min).",
+  "Day trade buy order: 261 LAW at about $5.09. Strongest buying on the list: 0.28x normal volume bought in the last 30 min, and rising.",
+  "Bought 261 LAW at 5.09 (cost \u00a3997).",
+  "Added YEXT to today's list at 13:44 New York: 0.5x normal volume in the last 30 min; news: What Does A Record Margin Mean For Yext (NYSE:YEXT) Amid AI Search Moves? - Kalk",
+  "Added BRCC to today's list at 13:44 New York: 0.4x normal volume in the last 30 min; news: BRC Group Holdings grants Andy Moore substitute stock award - TradingView",
+  "Added NABL to today's list at 14:00 New York: 0.4x normal volume in the last 30 min; news: N-able Launches AI-Accelerated Vulnerability and Patch Management",
+  "Sold LAW (about +\u00a31). No new high for 18 min, and BRCC overtook it on buying volume (0.12x vs 0.04x normal in 30 min).",
+  "Day trade buy order: 112 BRCC at about $11.88. Strongest buying on the list: 0.12x normal volume bought in the last 30 min, and rising.",
+  "Bought 112 BRCC at 11.88 (cost \u00a31,000).",
+  "Added ASC to today's list at 14:48 New York: 0.5x normal volume in the last 30 min; news: Ardmore Shipping (ASC) Expected to Announce Quarterly Earnings on Tuesday - Mark",
+  "Added SGP to today's list at 15:04 New York: 0.7x normal volume in the last 30 min; news: Spyglass Pharma (NASDAQ:SGP) Sets New 12-Month High - Still a Buy? - MarketBeat",
+  "Added CHMG to today's list at 15:04 New York: 0.3x normal volume in the last 30 min; news: Raymond James raises Chemung Financial stock price target on strong earnings - I",
+  "Sold BRCC (about -\u00a30). No new high for 16 min, and YEXT overtook it on buying volume (0.79x vs 0.08x normal in 30 min).",
+  "Day trade buy order: 183 YEXT at about $7.24. Strongest buying on the list: 0.79x normal volume bought in the last 30 min, and rising.",
+  "Bought 183 YEXT at 7.24 (cost \u00a3996).",
+  "Sold YEXT (about +\u00a36). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 6 trade(s), total +\u00a343."
  ]
 }

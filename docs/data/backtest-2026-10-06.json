@@ -1,0 +1,262 @@
+{
+ "date": "2026-10-06",
+ "generated": "2026-11-01T11:00+00:00",
+ "fx_gbpusd": 1.32185959815979,
+ "result": "done",
+ "require_news": true,
+ "added_during_day": [
+  "Added RLGT to today's list at 14:48 New York: 0.5x normal volume in the last 30 min; news: RADIANT LOGISTICS ACQUIRES WHITACRE LOGISTICS' DALLAS OPERATIONS",
+  "Added HLF to today's list at 15:04 New York: 0.4x normal volume in the last 30 min; news: Herbalife to Participate in 1 on 1 Meetings at Maxim Growth Summit on October 14"
+ ],
+ "list": [
+  {
+   "ticker": "OSTX",
+   "name": "OS Therapies Incorporated",
+   "vol_x": 8.22,
+   "buy_pct30": 0.4513458029410702,
+   "change": 0.0750000018626451,
+   "score": 17.75,
+   "news": [
+    "OS Therapies Appoints Kerry Clem as Chief Commercial Officer and Frank Knuettel II as Chief Financial Officer"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "AIFA",
+   "name": "All In FutureTech Alliance, Inc.",
+   "vol_x": 3.0,
+   "buy_pct30": 0.37428736617642044,
+   "change": 0.261054390737552,
+   "score": 6.0,
+   "news": [
+    "All In FutureTech Alliance Inc. Launches New Digital Platform for Consumers and Businesses, Advancing Its AI-Enabled Global Services Strategy"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "CBNA",
+   "name": "Chain Bridge Bancorp, Inc.",
+   "vol_x": 0.36,
+   "buy_pct30": 0.7359670781893004,
+   "change": 0.05274139378911791,
+   "score": 3.16,
+   "news": [
+    "Raymond James upgrades Chain Bridge Bancorp to Outperform on rate tailwinds"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "QTEX",
+   "vol_x": 1.59
+  },
+  {
+   "ticker": "DNA",
+   "vol_x": 0.99
+  },
+  {
+   "ticker": "PRME",
+   "vol_x": 0.75
+  },
+  {
+   "ticker": "SOTK",
+   "vol_x": 0.64
+  },
+  {
+   "ticker": "FBIZ",
+   "vol_x": 0.48
+  },
+  {
+   "ticker": "OVBC",
+   "vol_x": 0.48
+  },
+  {
+   "ticker": "GCTS",
+   "vol_x": 0.48
+  },
+  {
+   "ticker": "PACB",
+   "vol_x": 0.46
+  },
+  {
+   "ticker": "NKSH",
+   "vol_x": 0.43
+  },
+  {
+   "ticker": "OPY",
+   "vol_x": 0.34
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "OSTX",
+   "bought_at": "2026-10-06T14:16+00:00",
+   "sold_at": "2026-10-06T14:32+00:00",
+   "entry": 1.7050000429153442,
+   "exit": 1.690000057220459,
+   "cost_gbp": 999.6334218088874,
+   "pl_gbp": -8.79442032249085,
+   "pl_pct": -0.008797645347408354,
+   "reason": "No new high for 16 min, and AIFA overtook it on buying volume (5.97x vs 0.18x normal in 30 min)."
+  },
+  {
+   "ticker": "AIFA",
+   "bought_at": "2026-10-06T14:32+00:00",
+   "sold_at": "2026-10-06T15:12+00:00",
+   "entry": 8.26990032196045,
+   "exit": 7.86,
+   "cost_gbp": 994.745699938369,
+   "pl_gbp": -49.30489689104866,
+   "pl_pct": -0.049565327996998046,
+   "reason": "Stop-loss order filled"
+  },
+  {
+   "ticker": "CBNA",
+   "bought_at": "2026-10-06T15:12+00:00",
+   "sold_at": "2026-10-06T15:46+00:00",
+   "entry": 49.29999923706055,
+   "exit": 49.93000030517578,
+   "cost_gbp": 969.6944985292051,
+   "pl_gbp": 12.391654751986835,
+   "pl_pct": 0.012778926528697455,
+   "reason": "No new high for 32 min, and OSTX overtook it on buying volume (0.37x vs 0.01x normal in 30 min)."
+  },
+  {
+   "ticker": "OSTX",
+   "bought_at": "2026-10-06T15:46+00:00",
+   "sold_at": "2026-10-06T16:36+00:00",
+   "entry": 1.684999942779541,
+   "exit": 1.6699999570846558,
+   "cost_gbp": 999.379931861318,
+   "pl_gbp": -8.896549074623067,
+   "pl_pct": -0.008902068963955966,
+   "reason": "No new high for 30 min, and AIFA overtook it on buying volume (0.31x vs 0.15x normal in 30 min)."
+  },
+  {
+   "ticker": "AIFA",
+   "bought_at": "2026-10-06T16:36+00:00",
+   "sold_at": "2026-10-06T17:32+00:00",
+   "entry": 7.8256001472473145,
+   "exit": 7.559999942779541,
+   "cost_gbp": 994.5843163432734,
+   "pl_gbp": -33.756107239153266,
+   "pl_pct": -0.03393991508257667,
+   "reason": "No new high for 46 min, and CBNA overtook it on buying volume (0.94x vs 0.26x normal in 30 min)."
+  },
+  {
+   "ticker": "CBNA",
+   "bought_at": "2026-10-06T17:32+00:00",
+   "sold_at": "2026-10-06T18:14+00:00",
+   "entry": 50.349998474121094,
+   "exit": 49.4900016784668,
+   "cost_gbp": 990.3472064276684,
+   "pl_gbp": -16.915500495014612,
+   "pl_pct": -0.0170803738176143,
+   "reason": "No new high for 42 min, and OSTX overtook it on buying volume (0.15x vs 0.00x normal in 30 min)."
+  },
+  {
+   "ticker": "OSTX",
+   "bought_at": "2026-10-06T18:14+00:00",
+   "sold_at": "2026-10-06T18:30+00:00",
+   "entry": 1.5499000549316406,
+   "exit": 1.524999976158142,
+   "cost_gbp": 998.9826821548186,
+   "pl_gbp": -16.049259047295664,
+   "pl_pct": -0.016065602871790735,
+   "reason": "No new high for 16 min, and AIFA overtook it on buying volume (0.17x vs 0.05x normal in 30 min)."
+  },
+  {
+   "ticker": "AIFA",
+   "bought_at": "2026-10-06T18:30+00:00",
+   "sold_at": "2026-10-06T18:48+00:00",
+   "entry": 7.590000152587891,
+   "exit": 7.5,
+   "cost_gbp": 999.0925120858773,
+   "pl_gbp": -11.846966631020223,
+   "pl_pct": -0.011857727375302272,
+   "reason": "No new high for 18 min, and RLGT overtook it on buying volume (0.29x vs 0.14x normal in 30 min)."
+  },
+  {
+   "ticker": "RLGT",
+   "bought_at": "2026-10-06T18:48+00:00",
+   "sold_at": "2026-10-06T19:08+00:00",
+   "entry": 9.40999984741211,
+   "exit": 9.369999885559082,
+   "cost_gbp": 996.6262532508724,
+   "pl_gbp": -4.236451940296661,
+   "pl_pct": -0.004250793039494871,
+   "reason": "No new high for 16 min, and HLF overtook it on buying volume (0.40x vs 0.28x normal in 30 min)."
+  },
+  {
+   "ticker": "HLF",
+   "bought_at": "2026-10-06T19:08+00:00",
+   "sold_at": "2026-10-06T19:34+00:00",
+   "entry": 12.739999771118164,
+   "exit": 12.670000076293945,
+   "cost_gbp": 992.7075297951168,
+   "pl_gbp": -5.4544132954299585,
+   "pl_pct": -0.005494481639074185,
+   "reason": "No new high for 26 min, and AIFA overtook it on buying volume (0.30x vs 0.01x normal in 30 min)."
+  }
+ ],
+ "total_gbp": -142.86291018438612,
+ "alerts": [
+  "10:16 Day trade: bought OSTX: 775 OSTX at $1.71 (about \u00a31,000). Stop $1.62. Highest first-30-minute volume on today's list (8.2x a normal day).",
+  "10:32 Day trade: sold OSTX (-\u00a39): No new high for 16 min, and AIFA overtook it on buying volume (5.97x vs 0.18x normal in 30 min). Result -\u00a39 (-0.9%).",
+  "10:32 Day trade: bought AIFA: 159 AIFA at $8.27 (about \u00a3995). Stop $7.86. Strongest buying on the list: 5.97x normal volume bought in the last 30 min, and rising.",
+  "11:12 Day trade update: AIFA: stop-loss order filled (-\u00a349)",
+  "11:12 Day trade: bought CBNA: 26 CBNA at $49.30 (about \u00a3970). Stop $46.83. Strongest buying on the list: 0.00x normal volume bought in the last 30 min, and rising.",
+  "11:46 Day trade: sold CBNA (+\u00a312): No new high for 32 min, and OSTX overtook it on buying volume (0.37x vs 0.01x normal in 30 min). Result +\u00a312 (+1.3%).",
+  "11:46 Day trade: bought OSTX: 784 OSTX at $1.68 (about \u00a3999). Stop $1.60. Strongest buying on the list: 0.37x normal volume bought in the last 30 min, and rising.",
+  "12:36 Day trade: sold OSTX (-\u00a39): No new high for 30 min, and AIFA overtook it on buying volume (0.31x vs 0.15x normal in 30 min). Result -\u00a39 (-0.9%).",
+  "12:36 Day trade: bought AIFA: 168 AIFA at $7.83 (about \u00a3995). Stop $7.43. Strongest buying on the list: 0.31x normal volume bought in the last 30 min, and rising.",
+  "13:32 Day trade: sold AIFA (-\u00a334): No new high for 46 min, and CBNA overtook it on buying volume (0.94x vs 0.26x normal in 30 min). Result -\u00a334 (-3.4%).",
+  "13:32 Day trade: bought CBNA: 26 CBNA at $50.35 (about \u00a3990). Stop $47.83. Strongest buying on the list: 0.94x normal volume bought in the last 30 min, and rising.",
+  "14:14 Day trade: sold CBNA (-\u00a317): No new high for 42 min, and OSTX overtook it on buying volume (0.15x vs 0.00x normal in 30 min). Result -\u00a317 (-1.7%).",
+  "14:14 Day trade: bought OSTX: 852 OSTX at $1.55 (about \u00a3999). Stop $1.47. Strongest buying on the list: 0.15x normal volume bought in the last 30 min, and rising.",
+  "14:30 Day trade: sold OSTX (-\u00a316): No new high for 16 min, and AIFA overtook it on buying volume (0.17x vs 0.05x normal in 30 min). Result -\u00a316 (-1.6%).",
+  "14:30 Day trade: bought AIFA: 174 AIFA at $7.59 (about \u00a3999). Stop $7.21. Strongest buying on the list: 0.17x normal volume bought in the last 30 min, and rising.",
+  "14:48 Day trade: sold AIFA (-\u00a312): No new high for 18 min, and RLGT overtook it on buying volume (0.29x vs 0.14x normal in 30 min). Result -\u00a312 (-1.2%).",
+  "14:48 Day trade: bought RLGT: 140 RLGT at $9.41 (about \u00a3997). Stop $8.94. Strongest buying on the list: 0.29x normal volume bought in the last 30 min, and rising.",
+  "15:08 Day trade: sold RLGT (-\u00a34): No new high for 16 min, and HLF overtook it on buying volume (0.40x vs 0.28x normal in 30 min). Result -\u00a34 (-0.4%).",
+  "15:08 Day trade: bought HLF: 103 HLF at $12.74 (about \u00a3993). Stop $12.10. Strongest buying on the list: 0.40x normal volume bought in the last 30 min, and rising.",
+  "15:34 Day trade: sold HLF (-\u00a35): No new high for 26 min, and AIFA overtook it on buying volume (0.30x vs 0.01x normal in 30 min). Result -\u00a35 (-0.5%).",
+  "15:50 Day trade summary: 10 trade(s) today: OSTX -\u00a39, AIFA -\u00a349, CBNA +\u00a312, OSTX -\u00a39, AIFA -\u00a334, CBNA -\u00a317, OSTX -\u00a316, AIFA -\u00a312, RLGT -\u00a34, HLF -\u00a35. Total -\u00a3143."
+ ],
+ "log": [
+  "Day trade buy order: 775 OSTX at about $1.71. Highest first-30-minute volume on today's list (8.2x a normal day).",
+  "Bought 775 OSTX at 1.71 (cost \u00a31,000).",
+  "Sold OSTX (about -\u00a39). No new high for 16 min, and AIFA overtook it on buying volume (5.97x vs 0.18x normal in 30 min).",
+  "Day trade buy order: 159 AIFA at about $8.27. Strongest buying on the list: 5.97x normal volume bought in the last 30 min, and rising.",
+  "Bought 159 AIFA at 8.27 (cost \u00a3995).",
+  "AIFA: stop-loss order filled, P&L -\u00a349.",
+  "Day trade buy order: 26 CBNA at about $49.30. Strongest buying on the list: 0.00x normal volume bought in the last 30 min, and rising.",
+  "Bought 26 CBNA at 49.30 (cost \u00a3970).",
+  "Sold CBNA (about +\u00a312). No new high for 32 min, and OSTX overtook it on buying volume (0.37x vs 0.01x normal in 30 min).",
+  "Day trade buy order: 784 OSTX at about $1.68. Strongest buying on the list: 0.37x normal volume bought in the last 30 min, and rising.",
+  "Bought 784 OSTX at 1.68 (cost \u00a3999).",
+  "Sold OSTX (about -\u00a39). No new high for 30 min, and AIFA overtook it on buying volume (0.31x vs 0.15x normal in 30 min).",
+  "Day trade buy order: 168 AIFA at about $7.83. Strongest buying on the list: 0.31x normal volume bought in the last 30 min, and rising.",
+  "Bought 168 AIFA at 7.83 (cost \u00a3995).",
+  "Sold AIFA (about -\u00a334). No new high for 46 min, and CBNA overtook it on buying volume (0.94x vs 0.26x normal in 30 min).",
+  "Day trade buy order: 26 CBNA at about $50.35. Strongest buying on the list: 0.94x normal volume bought in the last 30 min, and rising.",
+  "Bought 26 CBNA at 50.35 (cost \u00a3990).",
+  "Sold CBNA (about -\u00a317). No new high for 42 min, and OSTX overtook it on buying volume (0.15x vs 0.00x normal in 30 min).",
+  "Day trade buy order: 852 OSTX at about $1.55. Strongest buying on the list: 0.15x normal volume bought in the last 30 min, and rising.",
+  "Bought 852 OSTX at 1.55 (cost \u00a3999).",
+  "Sold OSTX (about -\u00a316). No new high for 16 min, and AIFA overtook it on buying volume (0.17x vs 0.05x normal in 30 min).",
+  "Day trade buy order: 174 AIFA at about $7.59. Strongest buying on the list: 0.17x normal volume bought in the last 30 min, and rising.",
+  "Bought 174 AIFA at 7.59 (cost \u00a3999).",
+  "Added RLGT to today's list at 14:48 New York: 0.5x normal volume in the last 30 min; news: RADIANT LOGISTICS ACQUIRES WHITACRE LOGISTICS' DALLAS OPERATIONS",
+  "Sold AIFA (about -\u00a312). No new high for 18 min, and RLGT overtook it on buying volume (0.29x vs 0.14x normal in 30 min).",
+  "Day trade buy order: 140 RLGT at about $9.41. Strongest buying on the list: 0.29x normal volume bought in the last 30 min, and rising.",
+  "Bought 140 RLGT at 9.41 (cost \u00a3997).",
+  "Added HLF to today's list at 15:04 New York: 0.4x normal volume in the last 30 min; news: Herbalife to Participate in 1 on 1 Meetings at Maxim Growth Summit on October 14",
+  "Sold RLGT (about -\u00a34). No new high for 16 min, and HLF overtook it on buying volume (0.40x vs 0.28x normal in 30 min).",
+  "Day trade buy order: 103 HLF at about $12.74. Strongest buying on the list: 0.40x normal volume bought in the last 30 min, and rising.",
+  "Bought 103 HLF at 12.74 (cost \u00a3993).",
+  "Sold HLF (about -\u00a35). No new high for 26 min, and AIFA overtook it on buying volume (0.30x vs 0.01x normal in 30 min).",
+  "Day trading finished: 10 trade(s), total -\u00a3143."
+ ]
+}

@@ -1,16 +1,72 @@
 {
  "date": "2026-10-29",
- "generated": "2026-10-31T21:38+00:00",
+ "generated": "2026-11-01T11:14+00:00",
  "fx_gbpusd": 1.3378641605377197,
  "result": "done",
+ "require_news": true,
+ "added_during_day": [
+  "Added COOK to today's list at 10:16 New York: 0.8x normal volume in the last 30 min; news: Traeger, Inc.'s (NYSE:COOK) Path To Profitability - Simply Wall St",
+  "Added QNBC to today's list at 10:48 New York: 0.5x normal volume in the last 30 min; news: QNB (QNBC) Q3 Earnings Contrast A Sharp Swing To Loss",
+  "Added NDLS to today's list at 11:04 New York: 0.6x normal volume in the last 30 min; news: Noodles & Company Q3 2026 Earnings Date and Estimates - MarketBeat",
+  "Added GCBC to today's list at 11:20 New York: 0.6x normal volume in the last 30 min; news: Greene County Bancorp (NASDAQ:GCBC) Sees Large Volume Increase - Here's What Hap",
+  "Added BCBP to today's list at 11:20 New York: 0.5x normal volume in the last 30 min; news: BCB Bancorp (BCBP) Reports Q3 Loss, Beats Revenue Estimates",
+  "Added TRC to today's list at 11:52 New York: 0.4x normal volume in the last 30 min; news: Tejon Ranch (TRC) Projected to Post Earnings on Thursday - MarketBeat",
+  "Added CLAR to today's list at 12:08 New York: 0.5x normal volume in the last 30 min; news: Synchrony and Clarus Technology Announce Strategic Partnership to Provide Real-T",
+  "Added AMWL to today's list at 12:24 New York: 0.6x normal volume in the last 30 min; news: Teladoc Soars 26% as Revenue and Profit Beat Estimates; Hims & Hers Health and A",
+  "Added AEYE to today's list at 13:12 New York: 0.4x normal volume in the last 30 min; news: AudioEye (AEYE) Q3 Earnings and Revenues Beat Estimates",
+  "Added DIN to today's list at 14:16 New York: 0.4x normal volume in the last 30 min; news: Dine Brands Global, Inc. Adopts Limited Duration Stockholder Rights Agreement",
+  "Added CHPT to today's list at 14:32 New York: 0.4x normal volume in the last 30 min; news: ChargePoint Launches New Channel Partner Program to Help Resellers Grow Profitab",
+  "Added GNK to today's list at 14:48 New York: 0.3x normal volume in the last 30 min; news: Clarksons Securities predicts more dividend records for Genco - TradeWinds News",
+  "Added PAR to today's list at 15:04 New York: 0.5x normal volume in the last 30 min; news: 100,513 PAR Technology Corporation $PAR Shares Sold by Redmond Asset Management ",
+  "Added SG to today's list at 15:20 New York: 0.4x normal volume in the last 30 min; news: Sweetgreen, Inc. (SG) Expected to Beat Earnings Estimates: Can the Stock Move Hi",
+  "Added HIPO to today's list at 15:20 New York: 0.8x normal volume in the last 30 min; news: Will Hippo Holdings (HIPO) Beat Estimates Again in Its Next Earnings Report?",
+  "Added PEBK to today's list at 15:20 New York: 0.4x normal volume in the last 30 min; news: Peoples Bancorp of North Carolina (NASDAQ:PEBK) Director Sells 1,000 Shares of C"
+ ],
  "list": [
+  {
+   "ticker": "PRME",
+   "name": "Prime Medicine, Inc.",
+   "vol_x": 0.35,
+   "buy_pct30": 0.6081354696823479,
+   "change": 0.06529848804370886,
+   "score": 3.63,
+   "news": [
+    "PRME, BEAM, EDIT, NTLA, CRSP Stocks Gain As FDA Signals Faster Route For Patient-Specific Gene Edits"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "FRAF",
+   "name": "Franklin Financial Services Corporation",
+   "vol_x": 0.35,
+   "buy_pct30": 0.49869321717486,
+   "change": 0.007156146849077727,
+   "score": 3.19,
+   "news": [
+    "FRAF Q3 Earnings Rise Y/Y as Margin & Deposit Growth Improve",
+    "Franklin Financial Services (NASDAQ:FRAF) Posts Q3 2026 Earnings Beat as Revenue Holds in Line - ChartMill"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "CLMB",
+   "name": "Climb Global Solutions, Inc.",
+   "vol_x": 0.42,
+   "buy_pct30": 0.8809877215388806,
+   "change": 0.20736488712330736,
+   "score": 2.86,
+   "news": [
+    "Climb Global Solutions Reports Record Third Quarter 2026 Results"
+   ],
+   "on_t212": true
+  },
   {
    "ticker": "MAX",
    "name": "MediaAlpha, Inc.",
    "vol_x": 0.54,
-   "buy_pct30": 0.46305702107709784,
+   "buy_pct30": 0.45878089092541796,
    "change": 0.21245731351415875,
-   "score": 2.43,
+   "score": 2.42,
    "news": [
     "MediaAlpha (NYSE:MAX) beats expectations in strong Q3 2026, stock jumps 18%"
    ],
@@ -25,47 +81,191 @@
   {
    "ticker": "SFST",
    "vol_x": 0.5
+  },
+  {
+   "ticker": "TMP",
+   "vol_x": 0.43
+  },
+  {
+   "ticker": "EDHL",
+   "vol_x": 0.4
+  },
+  {
+   "ticker": "PDSB",
+   "vol_x": 0.36
+  },
+  {
+   "ticker": "PTLE",
+   "vol_x": 0.35
   }
  ],
  "trades": [
   {
-   "ticker": "MAX",
+   "ticker": "COOK",
    "bought_at": "2026-10-29T14:16+00:00",
-   "sold_at": "2026-10-29T14:54+00:00",
-   "entry": 14.449999809265137,
-   "exit": 13.73,
-   "cost_gbp": 993.6733651031318,
-   "pl_gbp": -49.511739985447434,
-   "pl_pct": -0.04982697707743096,
-   "reason": "Stop-loss order filled"
+   "sold_at": "2026-10-29T14:50+00:00",
+   "entry": 50.400001525878906,
+   "exit": 50.415000915527344,
+   "cost_gbp": 979.471667098228,
+   "pl_gbp": 0.2914975543575338,
+   "pl_pct": 0.00029760692845881006,
+   "reason": "No new high for 16 min, and QNBC overtook it on buying volume (0.52x vs 0.07x normal in 30 min)."
   },
   {
-   "ticker": "MAX",
-   "bought_at": "2026-10-29T15:54+00:00",
+   "ticker": "QNBC",
+   "bought_at": "2026-10-29T14:50+00:00",
+   "sold_at": "2026-10-29T15:44+00:00",
+   "entry": 47.61000061035156,
+   "exit": 47.76499938964844,
+   "cost_gbp": 996.4240439433305,
+   "pl_gbp": 3.2439510290552107,
+   "pl_pct": 0.003255592886154505,
+   "reason": "No new high for 16 min, and BCBP overtook it on buying volume (0.23x vs 0.00x normal in 30 min)."
+  },
+  {
+   "ticker": "BCBP",
+   "bought_at": "2026-10-29T15:44+00:00",
+   "sold_at": "2026-10-29T16:08+00:00",
+   "entry": 8.569999694824219,
+   "exit": 8.5,
+   "cost_gbp": 999.2942421413231,
+   "pl_gbp": -8.162228060724146,
+   "pl_pct": -0.00816799268575173,
+   "reason": "No new high for 24 min, and CLAR overtook it on buying volume (0.37x vs 0.20x normal in 30 min)."
+  },
+  {
+   "ticker": "CLAR",
+   "bought_at": "2026-10-29T16:08+00:00",
+   "sold_at": "2026-10-29T16:40+00:00",
+   "entry": 4.420000076293945,
+   "exit": 4.449999809265137,
+   "cost_gbp": 997.7395780631923,
+   "pl_gbp": 6.771927692313966,
+   "pl_pct": 0.006787269785828886,
+   "reason": "No new high for 16 min, and AMWL overtook it on buying volume (0.31x vs 0.06x normal in 30 min)."
+  },
+  {
+   "ticker": "AMWL",
+   "bought_at": "2026-10-29T16:40+00:00",
+   "sold_at": "2026-10-29T17:42+00:00",
+   "entry": 14.704999923706055,
+   "exit": 14.949999809265137,
+   "cost_gbp": 989.2259858441971,
+   "pl_gbp": 16.481486200702875,
+   "pl_pct": 0.016660991963972433,
+   "reason": "No new high for 16 min, and CLMB overtook it on buying volume (0.10x vs 0.07x normal in 30 min)."
+  },
+  {
+   "ticker": "CLMB",
+   "bought_at": "2026-10-29T17:42+00:00",
+   "sold_at": "2026-10-29T18:04+00:00",
+   "entry": 41.48500061035156,
+   "exit": 40.599998474121094,
+   "cost_gbp": 992.2681679414208,
+   "pl_gbp": -21.168119450925815,
+   "pl_pct": -0.02133306311220445,
+   "reason": "No new high for 18 min, and AEYE overtook it on buying volume (0.11x vs 0.07x normal in 30 min)."
+  },
+  {
+   "ticker": "AEYE",
+   "bought_at": "2026-10-29T18:04+00:00",
+   "sold_at": "2026-10-29T18:42+00:00",
+   "entry": 13.489999771118164,
+   "exit": 13.597299575805664,
+   "cost_gbp": 998.2403421315395,
+   "pl_gbp": 7.940029322403689,
+   "pl_pct": 0.007954025686288503,
+   "reason": "No new high for 16 min, and CHPT overtook it on buying volume (0.40x vs 0.05x normal in 30 min)."
+  },
+  {
+   "ticker": "CHPT",
+   "bought_at": "2026-10-29T18:42+00:00",
+   "sold_at": "2026-10-29T19:18+00:00",
+   "entry": 9.335000038146973,
+   "exit": 9.279999732971191,
+   "cost_gbp": 997.7881498211947,
+   "pl_gbp": -5.878805840030623,
+   "pl_pct": -0.00589183770230596,
+   "reason": "No new high for 16 min, and CLMB overtook it on buying volume (0.21x vs 0.02x normal in 30 min)."
+  },
+  {
+   "ticker": "CLMB",
+   "bought_at": "2026-10-29T19:18+00:00",
    "sold_at": "2026-10-29T19:50+00:00",
-   "entry": 13.930000305175781,
-   "exit": 13.975000381469727,
-   "cost_gbp": 999.5633852388945,
-   "pl_gbp": 3.229032850751082,
-   "pl_pct": 0.003230443309985136,
+   "entry": 42.56999969482422,
+   "exit": 41.61000061035156,
+   "cost_gbp": 986.4005849511237,
+   "pl_gbp": -22.24438959983138,
+   "pl_pct": -0.02255107097380076,
    "reason": "End of day: sold 10 minutes before the close."
   }
  ],
- "total_gbp": -46.28270713469635,
+ "total_gbp": -22.72465115267869,
  "alerts": [
-  "10:16 Day trade: bought MAX: 92 MAX at $14.45 (about \u00a3994). Stop $13.73. Highest first-30-minute volume on today's list (0.5x a normal day).",
-  "10:54 Day trade update: MAX: stop-loss order filled (-\u00a350)",
-  "11:54 Day trade: bought MAX: 96 MAX at $13.93 (about \u00a31,000). Stop $13.23. Strongest buying on the list: 0.06x normal volume bought in the last 30 min, and rising.",
-  "15:50 Day trade: sold MAX (+\u00a33): End of day: sold 10 minutes before the close. Result +\u00a33 (+0.3%).",
-  "15:50 Day trade summary: 2 trade(s) today: MAX -\u00a350, MAX +\u00a33. Total -\u00a346."
+  "10:16 Day trade: bought COOK: 26 COOK at $50.40 (about \u00a3979). Stop $47.88. Highest first-30-minute volume on today's list (0.8x a normal day).",
+  "10:50 Day trade: sold COOK (+\u00a30): No new high for 16 min, and QNBC overtook it on buying volume (0.52x vs 0.07x normal in 30 min). Result +\u00a30 (+0.0%).",
+  "10:50 Day trade: bought QNBC: 28 QNBC at $47.61 (about \u00a3996). Stop $45.23. Strongest buying on the list: 0.52x normal volume bought in the last 30 min, and rising.",
+  "11:44 Day trade: sold QNBC (+\u00a33): No new high for 16 min, and BCBP overtook it on buying volume (0.23x vs 0.00x normal in 30 min). Result +\u00a33 (+0.3%).",
+  "11:44 Day trade: bought BCBP: 156 BCBP at $8.57 (about \u00a3999). Stop $8.14. Strongest buying on the list: 0.23x normal volume bought in the last 30 min, and rising.",
+  "12:08 Day trade: sold BCBP (-\u00a38): No new high for 24 min, and CLAR overtook it on buying volume (0.37x vs 0.20x normal in 30 min). Result -\u00a38 (-0.8%).",
+  "12:08 Day trade: bought CLAR: 302 CLAR at $4.42 (about \u00a3998). Stop $4.20. Strongest buying on the list: 0.37x normal volume bought in the last 30 min, and rising.",
+  "12:40 Day trade: sold CLAR (+\u00a37): No new high for 16 min, and AMWL overtook it on buying volume (0.31x vs 0.06x normal in 30 min). Result +\u00a37 (+0.7%).",
+  "12:40 Day trade: bought AMWL: 90 AMWL at $14.70 (about \u00a3989). Stop $13.97. Strongest buying on the list: 0.31x normal volume bought in the last 30 min, and rising.",
+  "13:42 Day trade: sold AMWL (+\u00a316): No new high for 16 min, and CLMB overtook it on buying volume (0.10x vs 0.07x normal in 30 min). Result +\u00a316 (+1.7%).",
+  "13:42 Day trade: bought CLMB: 32 CLMB at $41.49 (about \u00a3992). Stop $39.41. Strongest buying on the list: 0.10x normal volume bought in the last 30 min, and rising.",
+  "14:04 Day trade: sold CLMB (-\u00a321): No new high for 18 min, and AEYE overtook it on buying volume (0.11x vs 0.07x normal in 30 min). Result -\u00a321 (-2.1%).",
+  "14:04 Day trade: bought AEYE: 99 AEYE at $13.49 (about \u00a3998). Stop $12.82. Strongest buying on the list: 0.11x normal volume bought in the last 30 min, and rising.",
+  "14:42 Day trade: sold AEYE (+\u00a38): No new high for 16 min, and CHPT overtook it on buying volume (0.40x vs 0.05x normal in 30 min). Result +\u00a38 (+0.8%).",
+  "14:42 Day trade: bought CHPT: 143 CHPT at $9.34 (about \u00a3998). Stop $8.87. Strongest buying on the list: 0.40x normal volume bought in the last 30 min, and rising.",
+  "15:18 Day trade: sold CHPT (-\u00a36): No new high for 16 min, and CLMB overtook it on buying volume (0.21x vs 0.02x normal in 30 min). Result -\u00a36 (-0.6%).",
+  "15:18 Day trade: bought CLMB: 31 CLMB at $42.57 (about \u00a3986). Stop $40.44. Strongest buying on the list: 0.21x normal volume bought in the last 30 min, and rising.",
+  "15:50 Day trade: sold CLMB (-\u00a322): End of day: sold 10 minutes before the close. Result -\u00a322 (-2.3%).",
+  "15:50 Day trade summary: 9 trade(s) today: COOK +\u00a30, QNBC +\u00a33, BCBP -\u00a38, CLAR +\u00a37, AMWL +\u00a316, CLMB -\u00a321, AEYE +\u00a38, CHPT -\u00a36, CLMB -\u00a322. Total -\u00a323."
  ],
  "log": [
-  "Day trade buy order: 92 MAX at about $14.45. Highest first-30-minute volume on today's list (0.5x a normal day).",
-  "Bought 92 MAX at 14.45 (cost \u00a3994).",
-  "MAX: stop-loss order filled, P&L -\u00a350.",
-  "Day trade buy order: 96 MAX at about $13.93. Strongest buying on the list: 0.06x normal volume bought in the last 30 min, and rising.",
-  "Bought 96 MAX at 13.93 (cost \u00a31,000).",
-  "Sold MAX (about +\u00a33). End of day: sold 10 minutes before the close.",
-  "Day trading finished: 2 trade(s), total -\u00a346."
+  "Added COOK to today's list at 10:16 New York: 0.8x normal volume in the last 30 min; news: Traeger, Inc.'s (NYSE:COOK) Path To Profitability - Simply Wall St",
+  "Day trade buy order: 26 COOK at about $50.40. Highest first-30-minute volume on today's list (0.8x a normal day).",
+  "Bought 26 COOK at 50.40 (cost \u00a3979).",
+  "Added QNBC to today's list at 10:48 New York: 0.5x normal volume in the last 30 min; news: QNB (QNBC) Q3 Earnings Contrast A Sharp Swing To Loss",
+  "Sold COOK (about +\u00a30). No new high for 16 min, and QNBC overtook it on buying volume (0.52x vs 0.07x normal in 30 min).",
+  "Day trade buy order: 28 QNBC at about $47.61. Strongest buying on the list: 0.52x normal volume bought in the last 30 min, and rising.",
+  "Bought 28 QNBC at 47.61 (cost \u00a3996).",
+  "Added NDLS to today's list at 11:04 New York: 0.6x normal volume in the last 30 min; news: Noodles & Company Q3 2026 Earnings Date and Estimates - MarketBeat",
+  "Added GCBC to today's list at 11:20 New York: 0.6x normal volume in the last 30 min; news: Greene County Bancorp (NASDAQ:GCBC) Sees Large Volume Increase - Here's What Hap",
+  "Added BCBP to today's list at 11:20 New York: 0.5x normal volume in the last 30 min; news: BCB Bancorp (BCBP) Reports Q3 Loss, Beats Revenue Estimates",
+  "Sold QNBC (about +\u00a33). No new high for 16 min, and BCBP overtook it on buying volume (0.23x vs 0.00x normal in 30 min).",
+  "Day trade buy order: 156 BCBP at about $8.57. Strongest buying on the list: 0.23x normal volume bought in the last 30 min, and rising.",
+  "Bought 156 BCBP at 8.57 (cost \u00a3999).",
+  "Added TRC to today's list at 11:52 New York: 0.4x normal volume in the last 30 min; news: Tejon Ranch (TRC) Projected to Post Earnings on Thursday - MarketBeat",
+  "Added CLAR to today's list at 12:08 New York: 0.5x normal volume in the last 30 min; news: Synchrony and Clarus Technology Announce Strategic Partnership to Provide Real-T",
+  "Sold BCBP (about -\u00a38). No new high for 24 min, and CLAR overtook it on buying volume (0.37x vs 0.20x normal in 30 min).",
+  "Day trade buy order: 302 CLAR at about $4.42. Strongest buying on the list: 0.37x normal volume bought in the last 30 min, and rising.",
+  "Bought 302 CLAR at 4.42 (cost \u00a3998).",
+  "Added AMWL to today's list at 12:24 New York: 0.6x normal volume in the last 30 min; news: Teladoc Soars 26% as Revenue and Profit Beat Estimates; Hims & Hers Health and A",
+  "Sold CLAR (about +\u00a37). No new high for 16 min, and AMWL overtook it on buying volume (0.31x vs 0.06x normal in 30 min).",
+  "Day trade buy order: 90 AMWL at about $14.70. Strongest buying on the list: 0.31x normal volume bought in the last 30 min, and rising.",
+  "Bought 90 AMWL at 14.70 (cost \u00a3989).",
+  "Added AEYE to today's list at 13:12 New York: 0.4x normal volume in the last 30 min; news: AudioEye (AEYE) Q3 Earnings and Revenues Beat Estimates",
+  "Sold AMWL (about +\u00a316). No new high for 16 min, and CLMB overtook it on buying volume (0.10x vs 0.07x normal in 30 min).",
+  "Day trade buy order: 32 CLMB at about $41.49. Strongest buying on the list: 0.10x normal volume bought in the last 30 min, and rising.",
+  "Bought 32 CLMB at 41.49 (cost \u00a3992).",
+  "Sold CLMB (about -\u00a321). No new high for 18 min, and AEYE overtook it on buying volume (0.11x vs 0.07x normal in 30 min).",
+  "Day trade buy order: 99 AEYE at about $13.49. Strongest buying on the list: 0.11x normal volume bought in the last 30 min, and rising.",
+  "Bought 99 AEYE at 13.49 (cost \u00a3998).",
+  "Added DIN to today's list at 14:16 New York: 0.4x normal volume in the last 30 min; news: Dine Brands Global, Inc. Adopts Limited Duration Stockholder Rights Agreement",
+  "Added CHPT to today's list at 14:32 New York: 0.4x normal volume in the last 30 min; news: ChargePoint Launches New Channel Partner Program to Help Resellers Grow Profitab",
+  "Sold AEYE (about +\u00a38). No new high for 16 min, and CHPT overtook it on buying volume (0.40x vs 0.05x normal in 30 min).",
+  "Day trade buy order: 143 CHPT at about $9.34. Strongest buying on the list: 0.40x normal volume bought in the last 30 min, and rising.",
+  "Bought 143 CHPT at 9.34 (cost \u00a3998).",
+  "Added GNK to today's list at 14:48 New York: 0.3x normal volume in the last 30 min; news: Clarksons Securities predicts more dividend records for Genco - TradeWinds News",
+  "Added PAR to today's list at 15:04 New York: 0.5x normal volume in the last 30 min; news: 100,513 PAR Technology Corporation $PAR Shares Sold by Redmond Asset Management ",
+  "Sold CHPT (about -\u00a36). No new high for 16 min, and CLMB overtook it on buying volume (0.21x vs 0.02x normal in 30 min).",
+  "Day trade buy order: 31 CLMB at about $42.57. Strongest buying on the list: 0.21x normal volume bought in the last 30 min, and rising.",
+  "Bought 31 CLMB at 42.57 (cost \u00a3986).",
+  "Added SG to today's list at 15:20 New York: 0.4x normal volume in the last 30 min; news: Sweetgreen, Inc. (SG) Expected to Beat Earnings Estimates: Can the Stock Move Hi",
+  "Added HIPO to today's list at 15:20 New York: 0.8x normal volume in the last 30 min; news: Will Hippo Holdings (HIPO) Beat Estimates Again in Its Next Earnings Report?",
+  "Added PEBK to today's list at 15:20 New York: 0.4x normal volume in the last 30 min; news: Peoples Bancorp of North Carolina (NASDAQ:PEBK) Director Sells 1,000 Shares of C",
+  "Sold CLMB (about -\u00a322). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 9 trade(s), total -\u00a323."
  ]
 }

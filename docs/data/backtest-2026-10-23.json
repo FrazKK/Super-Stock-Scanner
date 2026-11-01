@@ -1,0 +1,69 @@
+{
+ "date": "2026-10-23",
+ "generated": "2026-11-01T11:09+00:00",
+ "fx_gbpusd": 1.3403927087783813,
+ "result": "done",
+ "require_news": true,
+ "added_during_day": [
+  "Added AUNA to today's list at 11:52 New York: 0.5x normal volume in the last 30 min; news: Auna Investor Day: Colombia Pressure Prompts 2026 EBITDA Growth Reset",
+  "Added ARCO to today's list at 15:04 New York: 0.6x normal volume in the last 30 min; news: Is Arcos Dorados (ARCO) a Solid Growth Stock? 3 Reasons to Think \"Yes\""
+ ],
+ "list": [],
+ "quiet": [
+  {
+   "ticker": "EDHL",
+   "vol_x": 0.84
+  },
+  {
+   "ticker": "MWYN",
+   "vol_x": 0.47
+  },
+  {
+   "ticker": "TMP",
+   "vol_x": 0.41
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "AUNA",
+   "bought_at": "2026-10-23T15:52+00:00",
+   "sold_at": "2026-10-23T19:04+00:00",
+   "entry": 5.204999923706055,
+   "exit": 5.184999942779541,
+   "cost_gbp": 997.9798991980543,
+   "pl_gbp": -3.834693418168854,
+   "pl_pct": -0.0038424555657386433,
+   "reason": "No new high for 148 min, and ARCO overtook it on buying volume (0.27x vs 0.01x normal in 30 min)."
+  },
+  {
+   "ticker": "ARCO",
+   "bought_at": "2026-10-23T19:04+00:00",
+   "sold_at": "2026-10-23T19:50+00:00",
+   "entry": 8.074999809265137,
+   "exit": 8.074999809265137,
+   "cost_gbp": 994.0183647694256,
+   "pl_gbp": 0.0,
+   "pl_pct": 0.0,
+   "reason": "End of day: sold 10 minutes before the close."
+  }
+ ],
+ "total_gbp": -3.834693418168854,
+ "alerts": [
+  "11:52 Day trade: bought AUNA: 257 AUNA at $5.20 (about \u00a3998). Stop $4.94. Highest first-30-minute volume on today's list (0.5x a normal day).",
+  "15:04 Day trade: sold AUNA (-\u00a34): No new high for 148 min, and ARCO overtook it on buying volume (0.27x vs 0.01x normal in 30 min). Result -\u00a34 (-0.4%).",
+  "15:04 Day trade: bought ARCO: 165 ARCO at $8.07 (about \u00a3994). Stop $7.67. Strongest buying on the list: 0.27x normal volume bought in the last 30 min, and rising.",
+  "15:50 Day trade: sold ARCO (+\u00a30): End of day: sold 10 minutes before the close. Result +\u00a30 (+0.0%).",
+  "15:50 Day trade summary: 2 trade(s) today: AUNA -\u00a34, ARCO +\u00a30. Total -\u00a34."
+ ],
+ "log": [
+  "Added AUNA to today's list at 11:52 New York: 0.5x normal volume in the last 30 min; news: Auna Investor Day: Colombia Pressure Prompts 2026 EBITDA Growth Reset",
+  "Day trade buy order: 257 AUNA at about $5.20. Highest first-30-minute volume on today's list (0.5x a normal day).",
+  "Bought 257 AUNA at 5.20 (cost \u00a3998).",
+  "Added ARCO to today's list at 15:04 New York: 0.6x normal volume in the last 30 min; news: Is Arcos Dorados (ARCO) a Solid Growth Stock? 3 Reasons to Think \"Yes\"",
+  "Sold AUNA (about -\u00a34). No new high for 148 min, and ARCO overtook it on buying volume (0.27x vs 0.01x normal in 30 min).",
+  "Day trade buy order: 165 ARCO at about $8.07. Strongest buying on the list: 0.27x normal volume bought in the last 30 min, and rising.",
+  "Bought 165 ARCO at 8.07 (cost \u00a3994).",
+  "Sold ARCO (about +\u00a30). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 2 trade(s), total -\u00a34."
+ ]
+}

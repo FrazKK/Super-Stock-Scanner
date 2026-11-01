@@ -1,0 +1,81 @@
+{
+ "date": "2026-10-15",
+ "generated": "2026-11-01T11:04+00:00",
+ "fx_gbpusd": 1.3230137825012207,
+ "result": "done",
+ "require_news": true,
+ "added_during_day": [
+  "Added HLP to today's list at 10:32 New York: 1.4x normal volume in the last 30 min; news: Hongli Group Provides Strategic Update on Proposed Advanced Battery Collaboratio",
+  "Added NRXS to today's list at 12:08 New York: 0.5x normal volume in the last 30 min; news: NeurAxis Announces Medical Policy Coverage Milestone, Expanding Access to 26 Mil",
+  "Added VSTM to today's list at 13:44 New York: 0.4x normal volume in the last 30 min; news: Verastem\u2019s KRAS inhibitor posts wins in mPDAC, mCRC and NSCLC",
+  "Added YEXT to today's list at 15:04 New York: 0.7x normal volume in the last 30 min; news: Yext Board Approves Long-Term Performance Equity Award For CEO"
+ ],
+ "list": [],
+ "quiet": [
+  {
+   "ticker": "OPK",
+   "vol_x": 17.51
+  },
+  {
+   "ticker": "CANG",
+   "vol_x": 0.89
+  },
+  {
+   "ticker": "BCAL",
+   "vol_x": 0.6
+  },
+  {
+   "ticker": "NTWK",
+   "vol_x": 0.39
+  },
+  {
+   "ticker": "BRBS",
+   "vol_x": 0.37
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "HLP",
+   "bought_at": "2026-10-15T14:32+00:00",
+   "sold_at": "2026-10-15T16:08+00:00",
+   "entry": 3.0999999046325684,
+   "exit": 3.098599910736084,
+   "cost_gbp": 998.1755117296034,
+   "pl_gbp": -0.45078698936515593,
+   "pl_pct": -0.000451610948243008,
+   "reason": "No new high for 96 min, and NRXS overtook it on buying volume (0.27x vs 0.00x normal in 30 min)."
+  },
+  {
+   "ticker": "NRXS",
+   "bought_at": "2026-10-15T16:08+00:00",
+   "sold_at": "2026-10-15T19:50+00:00",
+   "entry": 7.21999979019165,
+   "exit": 7.675000190734863,
+   "cost_gbp": 998.6743744325679,
+   "pl_gbp": 62.93590769855132,
+   "pl_pct": 0.06301944788991964,
+   "reason": "End of day: sold 10 minutes before the close."
+  }
+ ],
+ "total_gbp": 62.48512070918616,
+ "alerts": [
+  "10:32 Day trade: bought HLP: 426 HLP at $3.10 (about \u00a3998). Stop $2.94. Highest first-30-minute volume on today's list (1.4x a normal day).",
+  "12:08 Day trade: sold HLP (-\u00a30): No new high for 96 min, and NRXS overtook it on buying volume (0.27x vs 0.00x normal in 30 min). Result -\u00a30 (-0.0%).",
+  "12:08 Day trade: bought NRXS: 183 NRXS at $7.22 (about \u00a3999). Stop $6.86. Strongest buying on the list: 0.27x normal volume bought in the last 30 min, and rising.",
+  "15:50 Day trade: sold NRXS (+\u00a363): End of day: sold 10 minutes before the close. Result +\u00a363 (+6.3%).",
+  "15:50 Day trade summary: 2 trade(s) today: HLP -\u00a30, NRXS +\u00a363. Total +\u00a362."
+ ],
+ "log": [
+  "Added HLP to today's list at 10:32 New York: 1.4x normal volume in the last 30 min; news: Hongli Group Provides Strategic Update on Proposed Advanced Battery Collaboratio",
+  "Day trade buy order: 426 HLP at about $3.10. Highest first-30-minute volume on today's list (1.4x a normal day).",
+  "Bought 426 HLP at 3.10 (cost \u00a3998).",
+  "Added NRXS to today's list at 12:08 New York: 0.5x normal volume in the last 30 min; news: NeurAxis Announces Medical Policy Coverage Milestone, Expanding Access to 26 Mil",
+  "Sold HLP (about -\u00a30). No new high for 96 min, and NRXS overtook it on buying volume (0.27x vs 0.00x normal in 30 min).",
+  "Day trade buy order: 183 NRXS at about $7.22. Strongest buying on the list: 0.27x normal volume bought in the last 30 min, and rising.",
+  "Bought 183 NRXS at 7.22 (cost \u00a3999).",
+  "Added VSTM to today's list at 13:44 New York: 0.4x normal volume in the last 30 min; news: Verastem\u2019s KRAS inhibitor posts wins in mPDAC, mCRC and NSCLC",
+  "Added YEXT to today's list at 15:04 New York: 0.7x normal volume in the last 30 min; news: Yext Board Approves Long-Term Performance Equity Award For CEO",
+  "Sold NRXS (about +\u00a363). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 2 trade(s), total +\u00a362."
+ ]
+}

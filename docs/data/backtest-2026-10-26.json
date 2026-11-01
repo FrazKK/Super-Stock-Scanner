@@ -1,9 +1,39 @@
 {
  "date": "2026-10-26",
- "generated": "2026-10-31T21:52+00:00",
+ "generated": "2026-11-01T11:12+00:00",
  "fx_gbpusd": 1.3377747535705566,
  "result": "done",
- "list": [],
+ "require_news": true,
+ "added_during_day": [
+  "Added CHMG to today's list at 12:56 New York: 0.4x normal volume in the last 30 min; news: Chemung Financial (CHMG) Q3 Earnings Signal Stronger Profit Engine",
+  "Added NABL to today's list at 14:32 New York: 0.3x normal volume in the last 30 min; news: As AI Accelerates Cyberattacks, N-able and SentinelOne Expand Their Strategic Pa"
+ ],
+ "list": [
+  {
+   "ticker": "PEBK",
+   "name": "Peoples Bancorp of North Carolina, Inc.",
+   "vol_x": 0.41,
+   "buy_pct30": 0.6988183354952485,
+   "change": 0.011499540139467967,
+   "score": 4.12,
+   "news": [
+    "Peoples Bancorp Stock Slips Post Q3 Earnings Despite NIM Expansion"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "FRBA",
+   "name": "First Bank",
+   "vol_x": 0.48,
+   "buy_pct30": 0.4631117475133199,
+   "change": 0.018566303335922463,
+   "score": 3.31,
+   "news": [
+    "First Bank (FRBA) Q3 Earnings Put Buyback And Credit Cleanup In Focus"
+   ],
+   "on_t212": true
+  }
+ ],
  "quiet": [
   {
    "ticker": "BWMX",
@@ -28,12 +58,149 @@
   {
    "ticker": "NBN",
    "vol_x": 0.54
+  },
+  {
+   "ticker": "SFST",
+   "vol_x": 0.41
   }
  ],
- "trades": [],
- "total_gbp": 0,
- "alerts": [],
+ "trades": [
+  {
+   "ticker": "FRBA",
+   "bought_at": "2026-10-26T14:16+00:00",
+   "sold_at": "2026-10-26T14:54+00:00",
+   "entry": 19.860000610351562,
+   "exit": 19.8700008392334,
+   "cost_gbp": 994.6517807591257,
+   "pl_gbp": 0.500843160102022,
+   "pl_pct": 0.0005035361819990658,
+   "reason": "No new high for 16 min, and PEBK overtook it on buying volume (0.04x vs 0.01x normal in 30 min)."
+  },
+  {
+   "ticker": "PEBK",
+   "bought_at": "2026-10-26T14:54+00:00",
+   "sold_at": "2026-10-26T16:24+00:00",
+   "entry": 43.810001373291016,
+   "exit": 43.599998474121094,
+   "cost_gbp": 982.4524178609504,
+   "pl_gbp": -4.709377986303366,
+   "pl_pct": -0.004793492184137409,
+   "reason": "No new high for 88 min, and FRBA overtook it on buying volume (0.07x vs 0.01x normal in 30 min)."
+  },
+  {
+   "ticker": "FRBA",
+   "bought_at": "2026-10-26T16:24+00:00",
+   "sold_at": "2026-10-26T16:56+00:00",
+   "entry": 19.59000015258789,
+   "exit": 19.579999923706055,
+   "cost_gbp": 995.7730229401568,
+   "pl_gbp": -0.5083184311482682,
+   "pl_pct": -0.0005104762023451772,
+   "reason": "No new high for 16 min, and CHMG overtook it on buying volume (0.17x vs 0.09x normal in 30 min)."
+  },
+  {
+   "ticker": "CHMG",
+   "bought_at": "2026-10-26T16:56+00:00",
+   "sold_at": "2026-10-26T17:12+00:00",
+   "entry": 84.55000305175781,
+   "exit": 84.55000305175781,
+   "cost_gbp": 948.0295859907461,
+   "pl_gbp": 0.0,
+   "pl_pct": 0.0,
+   "reason": "No new high for 16 min, and PEBK overtook it on buying volume (0.07x vs 0.02x normal in 30 min)."
+  },
+  {
+   "ticker": "PEBK",
+   "bought_at": "2026-10-26T17:12+00:00",
+   "sold_at": "2026-10-26T17:58+00:00",
+   "entry": 43.849998474121094,
+   "exit": 43.849998474121094,
+   "cost_gbp": 983.3493648407763,
+   "pl_gbp": 0.0,
+   "pl_pct": 0.0,
+   "reason": "No new high for 46 min, and CHMG overtook it on buying volume (0.01x vs 0.00x normal in 30 min)."
+  },
+  {
+   "ticker": "CHMG",
+   "bought_at": "2026-10-26T17:58+00:00",
+   "sold_at": "2026-10-26T18:14+00:00",
+   "entry": 84.62999725341797,
+   "exit": 84.6050033569336,
+   "cost_gbp": 948.9265329705719,
+   "pl_gbp": -0.28024781172234725,
+   "pl_pct": -0.0002953314107943047,
+   "reason": "No new high for 16 min, and FRBA overtook it on buying volume (0.12x vs 0.01x normal in 30 min)."
+  },
+  {
+   "ticker": "FRBA",
+   "bought_at": "2026-10-26T18:14+00:00",
+   "sold_at": "2026-10-26T18:54+00:00",
+   "entry": 19.565000534057617,
+   "exit": 19.4950008392334,
+   "cost_gbp": 994.5022753381998,
+   "pl_gbp": -3.5581320662109874,
+   "pl_pct": -0.0035778018355975866,
+   "reason": "No new high for 36 min, and PEBK overtook it on buying volume (0.13x vs 0.08x normal in 30 min)."
+  },
+  {
+   "ticker": "PEBK",
+   "bought_at": "2026-10-26T18:54+00:00",
+   "sold_at": "2026-10-26T19:40+00:00",
+   "entry": 43.72999954223633,
+   "exit": 43.57500076293945,
+   "cost_gbp": 980.6583528098386,
+   "pl_gbp": -3.475894104366489,
+   "pl_pct": -0.003544449597973808,
+   "reason": "No new high for 46 min, and CHMG overtook it on buying volume (0.11x vs 0.11x normal in 30 min)."
+  }
+ ],
+ "total_gbp": -12.031127239649436,
+ "alerts": [
+  "10:16 Day trade: bought FRBA: 67 FRBA at $19.86 (about \u00a3995). Stop $18.87. Highest first-30-minute volume on today's list (0.5x a normal day).",
+  "10:54 Day trade: sold FRBA (+\u00a31): No new high for 16 min, and PEBK overtook it on buying volume (0.04x vs 0.01x normal in 30 min). Result +\u00a31 (+0.1%).",
+  "10:54 Day trade: bought PEBK: 30 PEBK at $43.81 (about \u00a3982). Stop $41.62. Strongest buying on the list: 0.04x normal volume bought in the last 30 min, and rising.",
+  "12:24 Day trade: sold PEBK (-\u00a35): No new high for 88 min, and FRBA overtook it on buying volume (0.07x vs 0.01x normal in 30 min). Result -\u00a35 (-0.5%).",
+  "12:24 Day trade: bought FRBA: 68 FRBA at $19.59 (about \u00a3996). Stop $18.61. Strongest buying on the list: 0.07x normal volume bought in the last 30 min, and rising.",
+  "12:56 Day trade: sold FRBA (-\u00a31): No new high for 16 min, and CHMG overtook it on buying volume (0.17x vs 0.09x normal in 30 min). Result -\u00a31 (-0.1%).",
+  "12:56 Day trade: bought CHMG: 15 CHMG at $84.55 (about \u00a3948). Stop $80.32. Strongest buying on the list: 0.17x normal volume bought in the last 30 min, and rising.",
+  "13:12 Day trade: sold CHMG (+\u00a30): No new high for 16 min, and PEBK overtook it on buying volume (0.07x vs 0.02x normal in 30 min). Result +\u00a30 (+0.0%).",
+  "13:12 Day trade: bought PEBK: 30 PEBK at $43.85 (about \u00a3983). Stop $41.66. Strongest buying on the list: 0.07x normal volume bought in the last 30 min, and rising.",
+  "13:58 Day trade: sold PEBK (+\u00a30): No new high for 46 min, and CHMG overtook it on buying volume (0.01x vs 0.00x normal in 30 min). Result +\u00a30 (+0.0%).",
+  "13:58 Day trade: bought CHMG: 15 CHMG at $84.63 (about \u00a3949). Stop $80.40. Strongest buying on the list: 0.01x normal volume bought in the last 30 min, and rising.",
+  "14:14 Day trade: sold CHMG (-\u00a30): No new high for 16 min, and FRBA overtook it on buying volume (0.12x vs 0.01x normal in 30 min). Result -\u00a30 (-0.0%).",
+  "14:14 Day trade: bought FRBA: 68 FRBA at $19.57 (about \u00a3995). Stop $18.59. Strongest buying on the list: 0.12x normal volume bought in the last 30 min, and rising.",
+  "14:54 Day trade: sold FRBA (-\u00a34): No new high for 36 min, and PEBK overtook it on buying volume (0.13x vs 0.08x normal in 30 min). Result -\u00a34 (-0.4%).",
+  "14:54 Day trade: bought PEBK: 30 PEBK at $43.73 (about \u00a3981). Stop $41.54. Strongest buying on the list: 0.13x normal volume bought in the last 30 min, and rising.",
+  "15:40 Day trade: sold PEBK (-\u00a33): No new high for 46 min, and CHMG overtook it on buying volume (0.11x vs 0.11x normal in 30 min). Result -\u00a33 (-0.4%).",
+  "15:50 Day trade summary: 8 trade(s) today: FRBA +\u00a31, PEBK -\u00a35, FRBA -\u00a31, CHMG +\u00a30, PEBK +\u00a30, CHMG -\u00a30, FRBA -\u00a34, PEBK -\u00a33. Total -\u00a312."
+ ],
  "log": [
-  "Day trade: no stock on today's US list is available on Trading 212, so no trades today."
+  "Day trade buy order: 67 FRBA at about $19.86. Highest first-30-minute volume on today's list (0.5x a normal day).",
+  "Bought 67 FRBA at 19.86 (cost \u00a3995).",
+  "Sold FRBA (about +\u00a31). No new high for 16 min, and PEBK overtook it on buying volume (0.04x vs 0.01x normal in 30 min).",
+  "Day trade buy order: 30 PEBK at about $43.81. Strongest buying on the list: 0.04x normal volume bought in the last 30 min, and rising.",
+  "Bought 30 PEBK at 43.81 (cost \u00a3982).",
+  "Sold PEBK (about -\u00a35). No new high for 88 min, and FRBA overtook it on buying volume (0.07x vs 0.01x normal in 30 min).",
+  "Day trade buy order: 68 FRBA at about $19.59. Strongest buying on the list: 0.07x normal volume bought in the last 30 min, and rising.",
+  "Bought 68 FRBA at 19.59 (cost \u00a3996).",
+  "Added CHMG to today's list at 12:56 New York: 0.4x normal volume in the last 30 min; news: Chemung Financial (CHMG) Q3 Earnings Signal Stronger Profit Engine",
+  "Sold FRBA (about -\u00a31). No new high for 16 min, and CHMG overtook it on buying volume (0.17x vs 0.09x normal in 30 min).",
+  "Day trade buy order: 15 CHMG at about $84.55. Strongest buying on the list: 0.17x normal volume bought in the last 30 min, and rising.",
+  "Bought 15 CHMG at 84.55 (cost \u00a3948).",
+  "Sold CHMG (about +\u00a30). No new high for 16 min, and PEBK overtook it on buying volume (0.07x vs 0.02x normal in 30 min).",
+  "Day trade buy order: 30 PEBK at about $43.85. Strongest buying on the list: 0.07x normal volume bought in the last 30 min, and rising.",
+  "Bought 30 PEBK at 43.85 (cost \u00a3983).",
+  "Sold PEBK (about +\u00a30). No new high for 46 min, and CHMG overtook it on buying volume (0.01x vs 0.00x normal in 30 min).",
+  "Day trade buy order: 15 CHMG at about $84.63. Strongest buying on the list: 0.01x normal volume bought in the last 30 min, and rising.",
+  "Bought 15 CHMG at 84.63 (cost \u00a3949).",
+  "Sold CHMG (about -\u00a30). No new high for 16 min, and FRBA overtook it on buying volume (0.12x vs 0.01x normal in 30 min).",
+  "Day trade buy order: 68 FRBA at about $19.57. Strongest buying on the list: 0.12x normal volume bought in the last 30 min, and rising.",
+  "Bought 68 FRBA at 19.57 (cost \u00a3995).",
+  "Added NABL to today's list at 14:32 New York: 0.3x normal volume in the last 30 min; news: As AI Accelerates Cyberattacks, N-able and SentinelOne Expand Their Strategic Pa",
+  "Sold FRBA (about -\u00a34). No new high for 36 min, and PEBK overtook it on buying volume (0.13x vs 0.08x normal in 30 min).",
+  "Day trade buy order: 30 PEBK at about $43.73. Strongest buying on the list: 0.13x normal volume bought in the last 30 min, and rising.",
+  "Bought 30 PEBK at 43.73 (cost \u00a3981).",
+  "Sold PEBK (about -\u00a33). No new high for 46 min, and CHMG overtook it on buying volume (0.11x vs 0.11x normal in 30 min).",
+  "Day trading finished: 8 trade(s), total -\u00a312."
  ]
 }
