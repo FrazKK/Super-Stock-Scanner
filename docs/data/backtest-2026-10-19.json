@@ -1,0 +1,97 @@
+{
+ "date": "2026-10-19",
+ "generated": "2026-11-01T09:59+00:00",
+ "fx_gbpusd": 1.3335645198822021,
+ "result": "done",
+ "require_news": true,
+ "added_during_day": [
+  "Added CFFI to today's list at 11:20 New York: 0.7x normal volume in the last 30 min; news: C&F Financial's 2026 Outlook: Aggressive Market Expansion Drives New Retail Grow",
+  "Added BWMN to today's list at 14:32 New York: 0.3x normal volume in the last 30 min; news: Bowman Acquires Dymaptic, Expanding AI-Powered Geospatial Data Collection and Da"
+ ],
+ "list": [],
+ "quiet": [
+  {
+   "ticker": "FUFU",
+   "vol_x": 167.55
+  },
+  {
+   "ticker": "DH",
+   "vol_x": 2.19
+  },
+  {
+   "ticker": "KRSA",
+   "vol_x": 0.94
+  },
+  {
+   "ticker": "ENGS",
+   "vol_x": 0.42
+  },
+  {
+   "ticker": "PMI",
+   "vol_x": 0.41
+  },
+  {
+   "ticker": "AII",
+   "vol_x": 0.34
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "CFFI",
+   "bought_at": "2026-10-19T15:20+00:00",
+   "sold_at": "2026-10-19T18:32+00:00",
+   "entry": 103.1500015258789,
+   "exit": 102.91000366210938,
+   "cost_gbp": 928.1890751111806,
+   "pl_gbp": -2.159606319976774,
+   "pl_pct": -0.002326687932324663,
+   "reason": "No new high for 192 min, and BWMN overtook it on buying volume (0.15x vs 0.01x normal in 30 min)."
+  },
+  {
+   "ticker": "BWMN",
+   "bought_at": "2026-10-19T18:32+00:00",
+   "sold_at": "2026-10-19T19:24+00:00",
+   "entry": 42.790000915527344,
+   "exit": 42.79999923706055,
+   "cost_gbp": 994.695051198963,
+   "pl_gbp": 0.23242067624653373,
+   "pl_pct": 0.00023366023181314088,
+   "reason": "No new high for 24 min, and CFFI overtook it on buying volume (0.05x vs 0.02x normal in 30 min)."
+  },
+  {
+   "ticker": "CFFI",
+   "bought_at": "2026-10-19T19:24+00:00",
+   "sold_at": "2026-10-19T19:50+00:00",
+   "entry": 101.9800033569336,
+   "exit": 101.26499938964844,
+   "cost_gbp": 994.1326601559881,
+   "pl_gbp": -6.970080139450715,
+   "pl_pct": -0.007011217334271111,
+   "reason": "End of day: sold 10 minutes before the close."
+  }
+ ],
+ "total_gbp": -8.897265783180956,
+ "alerts": [
+  "11:20 Day trade: bought CFFI: 12 CFFI at $103.15 (about \u00a3928). Stop $97.99. Highest first-30-minute volume on today's list (0.7x a normal day).",
+  "14:32 Day trade: sold CFFI (-\u00a32): No new high for 192 min, and BWMN overtook it on buying volume (0.15x vs 0.01x normal in 30 min). Result -\u00a32 (-0.2%).",
+  "14:32 Day trade: bought BWMN: 31 BWMN at $42.79 (about \u00a3995). Stop $40.65. Strongest buying on the list: 0.15x normal volume bought in the last 30 min, and rising.",
+  "15:24 Day trade: sold BWMN (+\u00a30): No new high for 24 min, and CFFI overtook it on buying volume (0.05x vs 0.02x normal in 30 min). Result +\u00a30 (+0.0%).",
+  "15:24 Day trade: bought CFFI: 13 CFFI at $101.98 (about \u00a3994). Stop $96.88. Strongest buying on the list: 0.05x normal volume bought in the last 30 min, and rising.",
+  "15:50 Day trade: sold CFFI (-\u00a37): End of day: sold 10 minutes before the close. Result -\u00a37 (-0.7%).",
+  "15:50 Day trade summary: 3 trade(s) today: CFFI -\u00a32, BWMN +\u00a30, CFFI -\u00a37. Total -\u00a39."
+ ],
+ "log": [
+  "Added CFFI to today's list at 11:20 New York: 0.7x normal volume in the last 30 min; news: C&F Financial's 2026 Outlook: Aggressive Market Expansion Drives New Retail Grow",
+  "Day trade buy order: 12 CFFI at about $103.15. Highest first-30-minute volume on today's list (0.7x a normal day).",
+  "Bought 12 CFFI at 103.15 (cost \u00a3928).",
+  "Added BWMN to today's list at 14:32 New York: 0.3x normal volume in the last 30 min; news: Bowman Acquires Dymaptic, Expanding AI-Powered Geospatial Data Collection and Da",
+  "Sold CFFI (about -\u00a32). No new high for 192 min, and BWMN overtook it on buying volume (0.15x vs 0.01x normal in 30 min).",
+  "Day trade buy order: 31 BWMN at about $42.79. Strongest buying on the list: 0.15x normal volume bought in the last 30 min, and rising.",
+  "Bought 31 BWMN at 42.79 (cost \u00a3995).",
+  "Sold BWMN (about +\u00a30). No new high for 24 min, and CFFI overtook it on buying volume (0.05x vs 0.02x normal in 30 min).",
+  "Day trade buy order: 13 CFFI at about $101.98. Strongest buying on the list: 0.05x normal volume bought in the last 30 min, and rising.",
+  "Bought 13 CFFI at 101.98 (cost \u00a3994).",
+  "Sold CFFI (about -\u00a37). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 3 trade(s), total -\u00a39."
+ ]
+}
