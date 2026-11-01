@@ -1,23 +1,25 @@
-name: Replay a day (day trader)
+name: Replay days (day trader)
 
-# Replays one past US trading day with the day-trader rules, using 1-minute prices, and saves the result to
-# docs/data/backtest-<date>.json (plus a phone alert). It never touches Trading 212. Yahoo keeps 1-minute
-# prices for about the last 30 days.
+# Replays past US trading days with the day-trader rules, using 1-minute prices. Several days run side by side.
+# Results are saved to docs/data/backtest-<date>.json (and -nonews.json), totals to backtest-summary.json,
+# and one phone alert is sent at the end. It never touches Trading 212.
+# Yahoo keeps 1-minute prices for about the last 30 days.
 
 on:
   workflow_dispatch:
     inputs:
-      date:
-        description: "Day to replay, e.g. 2026-10-29 (blank = the last weekday)"
+      dates:
+        description: "Days: one date, a list (2026-10-27, 2026-10-28) or a range (2026-10-05 to 2026-10-30). Blank = last 10 weekdays"
         required: false
         default: ""
       news:
         description: "Must stocks have positive news?"
         type: choice
         options:
+          - "both"
           - "required"
           - "not required"
-        default: "required"
+        default: "both"
 
 permissions:
   contents: write
@@ -27,9 +29,31 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  plan:
+    runs-on: ubuntu-24.04
+    outputs:
+      matrix: ${{ steps.plan.outputs.matrix }}
+      count: ${{ steps.plan.outputs.count }}
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: main
+      - id: plan
+        env:
+          DATES: ${{ inputs.dates }}
+          NEWS: ${{ inputs.news }}
+        run: python backtest_plan.py
+
   replay:
+    needs: plan
+    if: needs.plan.outputs.count != '0'
     runs-on: ubuntu-24.04
     timeout-minutes: 40
+    strategy:
+      fail-fast: false
+      max-parallel: 5
+      matrix: ${{ fromJSON(needs.plan.outputs.matrix) }}
+    name: ${{ matrix.day }} (news ${{ matrix.news }})
     steps:
       - uses: actions/checkout@v5
         with:
@@ -41,23 +65,50 @@ jobs:
       - run: pip install -r requirements.txt
       - name: Replay
         env:
-          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
-          SITE_URL: ${{ secrets.SITE_URL }}
-          DAY: ${{ inputs.date }}
-          NEWS: ${{ inputs.news }}
+          DAY: ${{ matrix.day }}
+          NEWS: ${{ matrix.news }}
+          REPLAY_BATCH: "1"
         run: |
           if [ "$NEWS" = "not required" ]; then
             python backtest.py --date "$DAY" --no-news
           else
             python backtest.py --date "$DAY"
           fi
+      - uses: actions/upload-artifact@v4
+        with:
+          name: replay-${{ matrix.day }}-${{ matrix.news == 'required' && 'news' || 'nonews' }}
+          path: docs/data/backtest-${{ matrix.day }}${{ matrix.news == 'required' && '' || '-nonews' }}.json
+          if-no-files-found: warn
+          retention-days: 3
+
+  save:
+    needs: [plan, replay]
+    if: always() && needs.plan.outputs.count != '0'
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: main
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: replay-*
+          path: docs/data
+          merge-multiple: true
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Add up the results
+        env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+          SITE_URL: ${{ secrets.SITE_URL }}
+        run: python backtest_summary.py
       - name: Save
         run: |
           git config user.name "scanner-bot"
           git config user.email "scanner-bot@users.noreply.github.com"
           git add docs/data/backtest-*.json
-          git commit -m "Replay $DAY" || echo "No changes"
+          git commit -m "Replays $(date -u +%F)" || echo "No changes"
           git pull --rebase -X theirs
           git push
-        env:
-          DAY: ${{ inputs.date }}
