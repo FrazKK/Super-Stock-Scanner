@@ -89,16 +89,18 @@ The workflow still runs on GitHub's own timer as a backup. It only acts once per
 The bot day-trades a Trading 212 **practice** account, one US stock at a time. It only ever talks to the practice server (`demo.trading212.com`); the real-money address isn't in the code at all.
 
 **Rules**
-- **List:** the US opening-surge list. These are stocks with positive news that traded at least a third of a normal day's volume in the first 30 minutes and are trending up, limited to ones Trading 212 offers.
-- **New movers during the day:** every 15 minutes it looks for stocks that have just traded a third of a normal day's volume in the last 30 minutes, are rising and trending up, and have positive news. Any it finds are added to the list. Takeover targets and stocks with bad news (placings, warnings) are always left out.
-- **First buy:** the stock on that list with the highest first-30-minute volume, compared with its normal daily volume.
+- **List:** the US opening-surge list. These are stocks with positive news that traded at least a third of a normal day's volume in the first 30 minutes and are trending up, limited to ones Trading 212 offers. There's no company size limit, but takeover targets and stocks with bad news (placings, warnings) are always left out.
+- **New movers during the day:** every 15 minutes it looks for stocks that have just traded a third of a normal day's volume in the last 30 minutes, are rising and trending up, and have positive news. Any it finds are added to the list.
+- **First buy:** the stock on the list with the highest first-30-minute volume, compared with its normal daily volume.
 - **Sell** when either of these happens:
   - the price is **5% below the buy price** (a stop-loss order also sits at Trading 212), or
-  - it has made **no new high for 15 minutes AND another stock on the list has overtaken it on buying volume** over the last 30 minutes. It then buys that stock straight away.
-- **Comparing buying volume:** each stock's estimated buying volume, from 1-minute price bars, is divided by its normal daily volume, so big and small companies compare fairly.
-- **After a stop-out:** it buys the list's strongest current buyer, as long as that stock is rising.
-- **End of day:** everything is sold **10 minutes before the close**, so nothing is held overnight.
-- **Size and limits:** £1,000 per trade in whole shares. No new buys in the last 30 minutes, at most 12 buys a day, and a stock it has sold can't be bought back for 45 minutes.
+  - after holding it at least **45 minutes**, it has made **no new high for 30 minutes AND another stock on the list is buying clearly harder**. That means at least 1.5x the buying volume over the last 30 minutes, and at least a third of a normal day's volume bought. It then buys that stock straight away.
+- **Everything is sold 10 minutes before the close**, so nothing is held overnight.
+- **Size and limits:**
+  - £1,000 per trade in whole shares, at most **4 buys a day** and no new buys in the last 30 minutes;
+  - it never buys a stock already **up 20%+** on the day;
+  - it never re-buys a stock it was **stopped out of** that day;
+  - a stock sold for any other reason can't be bought back for 45 minutes.
 
 It checks every 2 minutes. The opening check starts it (about 45 minutes after the US open) and it runs until the close as one long GitHub job, which is free for public repositories. If it ever stops, a backup timer restarts it within 15 minutes, and the stop-loss order protects the position in the meantime. You get a phone alert for every buy and sell, plus a summary at the end of the day. The **Practice** tab shows the trades, results and a log of everything the bot did.
 
@@ -109,7 +111,7 @@ It checks every 2 minutes. The opening check starts it (about 45 minutes after t
 
 The settings are at the top of `practice.py` (the `DT_` lines).
 
-**Replaying past days:** Actions, then **Replay a day (day trader)**, then Run workflow. Enter a date (e.g. `2026-10-29`) and choose whether news is required. It rebuilds that day's list from 1-minute prices and runs the same trading code against a pretend account. The result goes to `docs/data/backtest-<date>.json` (or `-nonews.json`) and to your phone. Yahoo keeps 1-minute prices for about the last 30 days.
+**Replaying past days:** Actions, then **Replay a day (day trader)**, then Run workflow. Enter a date (e.g. `2026-10-29`) and choose whether news is required. It rebuilds that day's list from 1-minute prices and runs the same trading code against a pretend account, including a 0.1% spread and Trading 212's 0.15% currency fee on every buy and sell. The result goes to `docs/data/backtest-<date>.json` (or `-nonews.json`) and to your phone. Yahoo keeps 1-minute prices for about the last 30 days.
 
 ## Pre-close check (hold or sell?)
 

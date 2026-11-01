@@ -283,7 +283,7 @@ TV_VALUE = ["piotroski_f_score_ttm", "price_book_fq", "enterprise_value_to_ebit_
             "altman_z_score_ttm"]
 
 
-def live_tv(market: str, names: list[str] | None = None) -> pd.DataFrame:
+def live_tv(market: str, names: list[str] | None = None, any_size: bool = False) -> pd.DataFrame:
     from tradingview_screener import Query, col
 
     cfg = MARKETS[market]
@@ -294,11 +294,10 @@ def live_tv(market: str, names: list[str] | None = None) -> pd.DataFrame:
             if names:
                 q = Query().set_markets(market).select(*cols).where(col("name").isin(names)).limit(100)
             else:
+                size = [] if any_size else [col("market_cap_basic").between(*cfg["mcap"])]
                 q = (Query().set_markets(market).select(*cols)
-                     .where(col("type") == "stock",
-                            col("market_cap_basic").between(*cfg["mcap"]),
-                            col("average_volume_10d_calc") > 5000)
-                     .limit(6000))
+                     .where(col("type") == "stock", *size, col("average_volume_10d_calc") > 5000)
+                     .limit(9000 if any_size else 6000))
             total, df = q.get_scanner_data()
             print(f"  [{market}] TradingView returned {len(df)} of {total}")
             for c in TV_CORE + TV_OPTIONAL + TV_VALUE:
@@ -2133,6 +2132,7 @@ OPEN_NEWS_DAYS = 3             # news must be from the last 3 days
 OPEN_MIN_VALUE = {"america": 250_000, "canada": 50_000, "uk": 25_000}   # traded value so far, local currency
 OPEN_EXTENDED = 0.20           # up more than 20% today = chasing risk
 OPEN_ALERT_MAX = 8
+OPEN_ANY_SIZE = True           # opening list and day trader: no company size limit (liquidity rules still apply)
 
 POS_NEWS = re.compile(
     r"ahead of (market |board )?expectations|upgrad|raise[sd]? (guidance|outlook)|record|contract|order|award|"
@@ -2202,8 +2202,9 @@ def live_opening_tv(market):
     relvol = True          # TradingView's "relative volume" (today so far / 10-day average); dropped if unavailable
     for _ in range(5):
         try:
-            conds = [col("type") == "stock", col("market_cap_basic").between(*cfg["mcap"]),
-                     col("change") > 0, col("close") > col("SMA50")]
+            conds = [col("type") == "stock", col("change") > 0, col("close") > col("SMA50")]
+            if not OPEN_ANY_SIZE:
+                conds.append(col("market_cap_basic").between(*cfg["mcap"]))
             if relvol:
                 conds.append(col("relative_volume_10d_calc") >= OPEN_VOL_MULT * 0.8)
             else:

@@ -10,8 +10,8 @@ every 15 minutes. Add --no-news to let stocks without news qualify (saved as bac
 docs/data/backtest-<date>.json and sent as a phone alert. Nothing touches Trading 212.
 
 Approximations: today's list of US companies is used (not that day's), news comes from feeds that may have
-dropped older items, fills are at the last 1-minute close (no spread or slippage), and stop-loss orders fill at
-the stop price (or the next price if it gapped through).
+dropped older items, fills are at the last 1-minute close plus 0.1% spread and Trading 212's 0.15% currency fee each way,
+and stop-loss orders fill at the stop price (or the next price if it gapped through).
 """
 import argparse
 import datetime as dt
@@ -30,6 +30,8 @@ import practice as P
 import screener as S
 
 NY = ZoneInfo("America/New_York")
+SPREAD = 0.001                 # 0.1% each way (half the bid/offer spread on a liquid small cap)
+FX_FEE = 0.0015                # Trading 212's currency conversion fee, charged on buys and sells
 ROOT = Path(__file__).resolve().parent
 
 
@@ -84,7 +86,7 @@ def download(syms, **kw):
 
 def build_list(day):
     """Rebuild that day's US opening-surge list (as the 10:15 check would have seen it, with data to 10:00)."""
-    uni = S.prepare_universe(S.live_tv("america"), "america")
+    uni = S.prepare_universe(S.live_tv("america", any_size=S.OPEN_ANY_SIZE), "america")
     meta = {r["ysym"]: r for r in uni.to_dict("records")}
     daily = download(list(meta), start=(day - dt.timedelta(days=150)).isoformat(),
                      end=(day + dt.timedelta(days=1)).isoformat(), interval="1d")
@@ -194,7 +196,10 @@ class ReplayAccount:
                 for t, n in self.names.items()]
 
     def _fill(self, t, q, price, oid):
-        gbp = price * abs(q) / self.fx
+        # dealing costs: buy a little above / sell a little below the last price (spread), plus
+        # Trading 212's 0.15% currency conversion fee on each US trade
+        price = price * (1 + SPREAD) if q > 0 else price * (1 - SPREAD)
+        gbp = price * abs(q) / self.fx * ((1 + FX_FEE) if q > 0 else (1 - FX_FEE))
         if q > 0:
             self.cash -= gbp
             self.pos[t] = {"instrument": {"ticker": t}, "quantity": q, "quantityAvailableForTrading": q,
@@ -297,7 +302,7 @@ def main():
                 continue
             top = next((n["title"] for n in news if n.get("tone") == "pos"), "")
             found.append({"ticker": tick, "name": name, "exchange": str(meta[ys]["exchange"]).upper(), "ysym": ys,
-                          "vol_x": sc["vol_x"], "avg": i["avg"],
+                          "vol_x": sc["vol_x"], "avg": i["avg"], "prev": i["prev"],
                           "why": f"{sc['vol_x']:.1f}x normal volume in the last 30 min"
                                  + (f"; news: {top[:80]}" if top else "; no news found")})
         return found, rejected

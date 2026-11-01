@@ -10,13 +10,14 @@ Current rules: US day trading, one stock at a time (agreed 31 Oct 2026)
   Buy    - First buy of the day: the stock on that list with the highest first-30-minute volume
            (compared with its normal daily volume).
   Sell   - When the price is 5% below the buy price (a stop-loss order also sits at Trading 212), or
-         - when it hasn't made a new high for 15 minutes AND another stock on the list has overtaken it on
-           buying volume over the last 30 minutes (estimated buying volume compared with each stock's normal
-           daily volume). It then buys that stock straight away.
+         - after holding at least 45 minutes, when it hasn't made a new high for 30 minutes AND another stock
+           on the list is buying clearly harder over the last 30 minutes (at least 1.5x as much buying, and at
+           least a third of a normal day's volume bought). It then buys that stock straight away.
          - Everything is sold 10 minutes before the close. Nothing is held overnight.
   Size   - GBP 1,000 per trade, whole shares. After a stop-out it buys the list's strongest current buyer.
-           No new buys in the last 30 minutes, at most 12 buys a day, and a stock that was sold can't be
-           bought back for 45 minutes.
+           No new buys in the last 30 minutes, at most 4 buys a day, nothing already up 20%+ on the day, a stock
+           that was stopped out is never bought again that day, and one sold for any other reason can't be
+           bought back for 45 minutes. No company size limit.
 
 The older rules (opening-surge and 2+ methods picks held for days by each method's sell rule) are still
 here as --opening / --preclose / --sync, but the workflows no longer run them.
@@ -50,12 +51,17 @@ CONSENSUS_MAX_AGE = 7        # days: only buy "2+ methods" picks from a scan thi
 
 # Day trading (US)
 DT_STOP = 0.05               # sell 5% below the buy price
-DT_FLAT_MIN = 15             # "slowing down": no new high for this many minutes
+DT_FLAT_MIN = 30             # "slowing down": no new high for this many minutes
+DT_RISING_MIN = 15           # "rising": price higher than this many minutes ago
+DT_MIN_HOLD = 45             # minutes a stock is held before it can be swapped (the 5% stop always applies)
+DT_OVERTAKE = 1.5            # to swap, the new stock's buying must be at least 1.5x the current one's...
+DT_OVERTAKE_MIN = 1 / 3      # ...and at least a third of a normal day's volume bought in the last 30 minutes
+DT_MAX_UP = 0.20             # don't buy a stock already up more than 20% on the day
 DT_WINDOW = 30               # minutes of buying volume compared between stocks
 DT_POLL = 120                # seconds between checks
 DT_LAST_BUY = 30             # no new buys in the last 30 minutes before the close
 DT_EXIT = 10                 # sell 10 minutes before the close
-DT_MAX_BUYS = 12             # buys per day, to stop it churning
+DT_MAX_BUYS = 4              # buys per day, to stop it churning
 DT_COOLDOWN = 45             # minutes before a stock that was sold can be bought again
 DT_RUN_LIMIT = 5.6 * 3600    # GitHub stops a job at 6 hours: stop just before, the backup timer restarts it
 DT_RESCAN = 15               # minutes between searches for new movers during the day
@@ -748,7 +754,7 @@ def dt_metrics(bars, avg, when):
     buy_vol = f["volume"] * f["buy_pct"] if f["buy_pct"] is not None else 0.0
     idx = bars.index.tz_convert("UTC") if bars.index.tz is not None else bars.index.tz_localize("UTC")
     last = float(bars["Close"].iloc[-1])
-    earlier = bars["Close"][idx <= when - dt.timedelta(minutes=DT_FLAT_MIN)]
+    earlier = bars["Close"][idx <= when - dt.timedelta(minutes=DT_RISING_MIN)]
     p15 = float(earlier.iloc[-1]) if len(earlier) else None
     return {"buy_x": (buy_vol / avg) if avg else 0.0, "buy_vol": buy_vol, "last": last,
             "rising": p15 is None or last >= p15, "p15": p15}
@@ -867,8 +873,10 @@ def live_discover(when, known):
             rejected.append(tick)
             continue
         top = next((n["title"] for n in news if n.get("tone") == "pos"), "")
+        chg = S.num(r.get("change"))
         found.append({"ticker": tick, "name": str(r.get("description") or tick), "exchange": str(r["exchange"]).upper(),
                       "ysym": r["ysym"], "vol_x": sc["vol_x"], "avg": S.num(r.get("average_volume_10d_calc")),
+                      "prev": (S.num(r.get("close")) / (1 + chg / 100)) if chg is not None and S.num(r.get("close")) else None,
                       "why": f"{sc['vol_x']:.1f}x normal volume in the last 30 min" + (f"; news: {top[:80]}" if top else
                                                                                          "; no news found")})
     return found, rejected
@@ -905,7 +913,9 @@ def cmd_daytrade(api, st, fetch_bars=None, fetch_avg=None, clock=None, pause=Non
     for x in picks:
         inst = find_instrument(insts, "america", x["ticker"], x["name"])
         if inst:
-            cands.append({**{k: x.get(k) for k in ("ticker", "name", "exchange", "ysym", "vol_x")}, "t212": inst["ticker"]})
+            prev = (x["price"] / (1 + x["change"])) if x.get("price") and x.get("change") is not None else None
+            cands.append({**{k: x.get(k) for k in ("ticker", "name", "exchange", "ysym", "vol_x")}, "t212": inst["ticker"],
+                          "prev": prev})
     missing = [x["ticker"] for x in picks if x["ticker"] not in {c["ticker"] for c in cands}]
     if missing:
         print(f"  not on Trading 212: {', '.join(missing)}")
@@ -935,6 +945,7 @@ def cmd_daytrade(api, st, fetch_bars=None, fetch_avg=None, clock=None, pause=Non
             tick = e.split(":")[0]
             if "stop-loss" in e:
                 day["sold"][tick] = when.isoformat()
+                day.setdefault("stopped", []).append(tick)
         hold = dt_holding(st)
         if left <= DT_EXIT:
             if hold and hold["status"] == "open":
@@ -956,7 +967,8 @@ def cmd_daytrade(api, st, fetch_bars=None, fetch_avg=None, clock=None, pause=Non
                 checked[x["ticker"]] = when.isoformat()
                 if not inst:
                     continue
-                cands.append({**{k: x.get(k) for k in ("ticker", "name", "exchange", "ysym", "vol_x")}, "t212": inst["ticker"]})
+                cands.append({**{k: x.get(k) for k in ("ticker", "name", "exchange", "ysym", "vol_x", "prev")},
+                              "t212": inst["ticker"]})
                 if x.get("avg"):
                     avg[x["ysym"]] = x["avg"]
                 else:
@@ -966,9 +978,13 @@ def cmd_daytrade(api, st, fetch_bars=None, fetch_avg=None, clock=None, pause=Non
         bars = fetch_bars(list({c["ysym"] for c in cands} | ({hold["ysym"]} if hold else set())))
         met = {c["ticker"]: dt_metrics(bars.get(c["ysym"]), avg.get(c["ysym"]), when) for c in cands}
 
+        def too_far_up(c):
+            m = met.get(c["ticker"])
+            return bool(m and c.get("prev") and m["last"] / c["prev"] - 1 > DT_MAX_UP)
+
         def eligible(c):
             m = met.get(c["ticker"])
-            if not m or not m["rising"]:
+            if not m or not m["rising"] or too_far_up(c) or c["ticker"] in day.get("stopped", []):
                 return False
             for book in (day["sold"], day["skip"]):
                 t = book.get(c["ticker"])
@@ -988,11 +1004,15 @@ def cmd_daytrade(api, st, fetch_bars=None, fetch_avg=None, clock=None, pause=Non
             mine = (met.get(hold["ticker"]) or {}).get("buy_x", 0.0)
             hold["last_check"] = (f"${price:,.2f} ({S.pct(price / entry - 1)}), high ${hold['high']:,.2f}, "
                                   f"no new high for {flat:.0f} min, buying {mine:.2f}x normal in 30 min")
+            held = (when - dt.datetime.fromisoformat(hold.get("bought_at") or hold["high_time"])).total_seconds() / 60
+            best_x = met[ranked[0]["ticker"]]["buy_x"] if ranked else 0.0
             if price and price <= entry * (1 - DT_STOP):
                 if dt_sell(api, st, day, hold, positions, active,
                            f"Fell 5% below the buy price (${price:,.2f} vs ${entry:,.2f}).", when):
+                    day.setdefault("stopped", []).append(hold["ticker"])
                     hold, traded = None, True
-            elif flat >= DT_FLAT_MIN and ranked and met[ranked[0]["ticker"]]["buy_x"] > mine:
+            elif (held >= DT_MIN_HOLD and flat >= DT_FLAT_MIN and ranked and day["buys"] < DT_MAX_BUYS
+                  and best_x >= DT_OVERTAKE_MIN and best_x >= DT_OVERTAKE * mine):
                 best = ranked[0]
                 why = (f"No new high for {flat:.0f} min, and {best['ticker']} overtook it on buying volume "
                        f"({met[best['ticker']]['buy_x']:.2f}x vs {mine:.2f}x normal in 30 min).")
@@ -1001,7 +1021,8 @@ def cmd_daytrade(api, st, fetch_bars=None, fetch_avg=None, clock=None, pause=Non
                     positions, active, _ = reconcile(api, st, when)
         if not hold and left > DT_LAST_BUY and day["buys"] < DT_MAX_BUYS:
             if day["buys"] == 0:
-                pool = [c for c in cands if eligible(c) or (met.get(c["ticker"]) and c["ticker"] not in day["skip"])]
+                pool = [c for c in cands if eligible(c) or (met.get(c["ticker"]) and c["ticker"] not in day["skip"]
+                                                            and not too_far_up(c))]
                 pick = max(pool, key=lambda c: c.get("vol_x") or 0, default=None)
                 why = (f"Highest first-30-minute volume on today's list ({pick['vol_x']:.1f}x a normal day)."
                        if pick else "")
