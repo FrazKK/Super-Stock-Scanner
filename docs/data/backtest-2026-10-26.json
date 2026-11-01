@@ -1,14 +1,59 @@
 {
  "date": "2026-10-26",
- "generated": "2026-11-01T11:12+00:00",
+ "generated": "2026-11-01T12:27+00:00",
  "fx_gbpusd": 1.3377747535705566,
  "result": "done",
  "require_news": true,
  "added_during_day": [
+  "Added MFC to today's list at 10:16 New York: 0.5x normal volume in the last 30 min; news: Manulife and UpLink announce winners of the 'Shaping Canada's Longevity Advantag",
+  "Added CACI to today's list at 12:08 New York: 0.5x normal volume in the last 30 min; news: CACI Gains 6% on Jefferies Upgrade and $281 Million Navy Win as Booz Allen Jumps",
+  "Added AZO to today's list at 12:24 New York: 0.3x normal volume in the last 30 min; news: O'Reilly Automotive, AutoZone, Advance Auto Parts Poised for Net Positive Impact",
+  "Added RNG to today's list at 12:40 New York: 0.9x normal volume in the last 30 min; news: RingCentral (RNG) Stock Price Climbs As Q3 Earnings Recast The Profit Story",
+  "Added CON to today's list at 12:40 New York: 0.6x normal volume in the last 30 min; news: Concentra Expands Presence on Gulf Coast with First Pensacola Health Center",
   "Added CHMG to today's list at 12:56 New York: 0.4x normal volume in the last 30 min; news: Chemung Financial (CHMG) Q3 Earnings Signal Stronger Profit Engine",
-  "Added NABL to today's list at 14:32 New York: 0.3x normal volume in the last 30 min; news: As AI Accelerates Cyberattacks, N-able and SentinelOne Expand Their Strategic Pa"
+  "Added DK to today's list at 13:12 New York: 0.6x normal volume in the last 30 min; news: Does Delek US Holdings (DK) Trade At A Premium After Refinery Expansion?",
+  "Added DGX to today's list at 13:28 New York: 0.3x normal volume in the last 30 min; news: Quest Diagnostics (DGX) Stock Price Stalls After Strong Q3 Earnings",
+  "Added FBP to today's list at 13:28 New York: 0.6x normal volume in the last 30 min; news: FBP Q3 deep dive: stable profitability and capital returns as funding costs rise",
+  "Added DCOM to today's list at 13:28 New York: 0.6x normal volume in the last 30 min; news: Dime Commercial Bancshares (DCOM) Stock Looks Fairly Valued On Its 153% Run",
+  "Added ABM to today's list at 13:44 New York: 0.5x normal volume in the last 30 min; news: How Investors May Respond To ABM Industries (ABM) UK Public Sector Framework Win",
+  "Added CRBG to today's list at 14:00 New York: 0.4x normal volume in the last 30 min; news: Corebridge Financial (CRBG) Reports Next Week: Wall Street Expects Earnings Grow",
+  "Added FNB to today's list at 14:00 New York: 0.6x normal volume in the last 30 min; news: Learn Why The Bull Case For F.N.B (FNB) Could Change Following Record Net Intere",
+  "Added UCB to today's list at 14:00 New York: 0.4x normal volume in the last 30 min; news: United Community Banks (UCB) Upgraded to Strong Buy: Here's What You Should Know",
+  "Added ESTC to today's list at 14:16 New York: 0.6x normal volume in the last 30 min; news: Elastic (ESTC) Stock May Be 31% Below Fair Value As Partnership News Lands",
+  "Added AUB to today's list at 14:32 New York: 0.4x normal volume in the last 30 min; news: How Investors May Respond To Atlantic Union Bankshares (AUB) Stronger Quarterly ",
+  "Added MTN to today's list at 14:48 New York: 0.6x normal volume in the last 30 min; news: Winter Music Expansion Might Change The Case For Investing In Vail Resorts (MTN)",
+  "Added BMI to today's list at 14:48 New York: 0.7x normal volume in the last 30 min; news: Badger Meter (BMI) Upgraded to Buy: Here's Why",
+  "Added AMTB to today's list at 15:04 New York: 0.7x normal volume in the last 30 min; news: Amerant Bancorp (AMTB) Q3 Earnings Put Profit Strength Under Credit Watch",
+  "Added S to today's list at 15:20 New York: 0.5x normal volume in the last 30 min; news: SentinelOne's AI Security Products, Channel Strategy Support Growth Outlook, Opp",
+  "Added NJR to today's list at 15:20 New York: 0.5x normal volume in the last 30 min; news: Why New Jersey Resources (NJR) is Poised to Beat Earnings Estimates Again",
+  "Added CUBI to today's list at 15:20 New York: 0.8x normal volume in the last 30 min; news: CUBI Q3 deep dive: AI-driven efficiency and diversified deposit growth highlight"
  ],
  "list": [
+  {
+   "ticker": "SGRY",
+   "name": "Surgery Partners, Inc.",
+   "vol_x": 6.4,
+   "buy_pct30": 0.6136541071494834,
+   "change": 0.46222226581876247,
+   "score": 13.75,
+   "news": [
+    "Surgery Partners shares surge 46% as $5.7 billion takeover deal agreed"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "XNCR",
+   "name": "Xencor, Inc.",
+   "vol_x": 2.9,
+   "buy_pct30": 0.6557798706056169,
+   "change": 0.17633044004153442,
+   "score": 7.42,
+   "news": [
+    "Xencor Soars 31% on Kidney Cancer Trial Data Showing \u201cImpressive Antitumor Activity\u201d",
+    "Xencor stock surges on positive cancer drug trial data"
+   ],
+   "on_t212": true
+  },
   {
    "ticker": "PEBK",
    "name": "Peoples Bancorp of North Carolina, Inc.",
@@ -18,6 +63,18 @@
    "score": 4.12,
    "news": [
     "Peoples Bancorp Stock Slips Post Q3 Earnings Despite NIM Expansion"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "NWBI",
+   "name": "Northwest Bancshares, Inc.",
+   "vol_x": 0.36,
+   "buy_pct30": 0.5962273886890982,
+   "change": 0.017441890552192252,
+   "score": 3.6,
+   "news": [
+    "Northwest Bancshares\u2019s (NASDAQ:NWBI) Q3 2026 sales beat estimates"
    ],
    "on_t212": true
   },
@@ -32,20 +89,36 @@
     "First Bank (FRBA) Q3 Earnings Put Buyback And Credit Cleanup In Focus"
    ],
    "on_t212": true
+  },
+  {
+   "ticker": "CHCO",
+   "name": "City Holding Company",
+   "vol_x": 0.44,
+   "buy_pct30": 0.5922604458608903,
+   "change": 0.02070278540335213,
+   "score": 2.75,
+   "news": [
+    "City Holding (CHCO) Expected to Beat Earnings Estimates: Can the Stock Move Higher?"
+   ],
+   "on_t212": true
   }
  ],
  "quiet": [
   {
-   "ticker": "BWMX",
-   "vol_x": 1.82
+   "ticker": "RRC",
+   "vol_x": 2.2
   },
   {
-   "ticker": "EAF",
-   "vol_x": 0.83
+   "ticker": "BWMX",
+   "vol_x": 1.0
   },
   {
    "ticker": "MED",
    "vol_x": 0.77
+  },
+  {
+   "ticker": "TSLA",
+   "vol_x": 0.66
   },
   {
    "ticker": "FNWD",
@@ -60,147 +133,115 @@
    "vol_x": 0.54
   },
   {
+   "ticker": "HHH",
+   "vol_x": 0.5
+  },
+  {
+   "ticker": "EAF",
+   "vol_x": 0.49
+  },
+  {
+   "ticker": "DDS",
+   "vol_x": 0.42
+  },
+  {
    "ticker": "SFST",
    "vol_x": 0.41
+  },
+  {
+   "ticker": "GEF.B",
+   "vol_x": 0.4
+  },
+  {
+   "ticker": "WMK",
+   "vol_x": 0.4
+  },
+  {
+   "ticker": "RXO",
+   "vol_x": 0.37
+  },
+  {
+   "ticker": "ARLP",
+   "vol_x": 0.34
   }
  ],
  "trades": [
   {
    "ticker": "FRBA",
    "bought_at": "2026-10-26T14:16+00:00",
-   "sold_at": "2026-10-26T14:54+00:00",
-   "entry": 19.860000610351562,
-   "exit": 19.8700008392334,
-   "cost_gbp": 994.6517807591257,
-   "pl_gbp": 0.500843160102022,
-   "pl_pct": 0.0005035361819990658,
-   "reason": "No new high for 16 min, and PEBK overtook it on buying volume (0.04x vs 0.01x normal in 30 min)."
+   "sold_at": "2026-10-26T16:40+00:00",
+   "entry": 19.879860610961913,
+   "exit": 19.649999618530273,
+   "cost_gbp": 997.1399021886947,
+   "pl_gbp": -13.005636739581405,
+   "pl_pct": -0.013042940826091092,
+   "reason": "No new high for 64 min, and RNG overtook it on buying volume (0.49x vs 0.12x normal in 30 min)."
   },
   {
-   "ticker": "PEBK",
-   "bought_at": "2026-10-26T14:54+00:00",
-   "sold_at": "2026-10-26T16:24+00:00",
-   "entry": 43.810001373291016,
-   "exit": 43.599998474121094,
-   "cost_gbp": 982.4524178609504,
-   "pl_gbp": -4.709377986303366,
-   "pl_pct": -0.004793492184137409,
-   "reason": "No new high for 88 min, and FRBA overtook it on buying volume (0.07x vs 0.01x normal in 30 min)."
+   "ticker": "RNG",
+   "bought_at": "2026-10-26T16:40+00:00",
+   "sold_at": "2026-10-26T19:16+00:00",
+   "entry": 86.92683633422851,
+   "exit": 87.51499938964844,
+   "cost_gbp": 976.1422058127325,
+   "pl_gbp": 5.1328461652094575,
+   "pl_pct": 0.005258297545833363,
+   "reason": "No new high for 30 min, and MTN overtook it on buying volume (0.64x vs 0.04x normal in 30 min)."
   },
   {
-   "ticker": "FRBA",
-   "bought_at": "2026-10-26T16:24+00:00",
-   "sold_at": "2026-10-26T16:56+00:00",
-   "entry": 19.59000015258789,
-   "exit": 19.579999923706055,
-   "cost_gbp": 995.7730229401568,
-   "pl_gbp": -0.5083184311482682,
-   "pl_pct": -0.0005104762023451772,
-   "reason": "No new high for 16 min, and CHMG overtook it on buying volume (0.17x vs 0.09x normal in 30 min)."
-  },
-  {
-   "ticker": "CHMG",
-   "bought_at": "2026-10-26T16:56+00:00",
-   "sold_at": "2026-10-26T17:12+00:00",
-   "entry": 84.55000305175781,
-   "exit": 84.55000305175781,
-   "cost_gbp": 948.0295859907461,
-   "pl_gbp": 0.0,
-   "pl_pct": 0.0,
-   "reason": "No new high for 16 min, and PEBK overtook it on buying volume (0.07x vs 0.02x normal in 30 min)."
-  },
-  {
-   "ticker": "PEBK",
-   "bought_at": "2026-10-26T17:12+00:00",
-   "sold_at": "2026-10-26T17:58+00:00",
-   "entry": 43.849998474121094,
-   "exit": 43.849998474121094,
-   "cost_gbp": 983.3493648407763,
-   "pl_gbp": 0.0,
-   "pl_pct": 0.0,
-   "reason": "No new high for 46 min, and CHMG overtook it on buying volume (0.01x vs 0.00x normal in 30 min)."
-  },
-  {
-   "ticker": "CHMG",
-   "bought_at": "2026-10-26T17:58+00:00",
-   "sold_at": "2026-10-26T18:14+00:00",
-   "entry": 84.62999725341797,
-   "exit": 84.6050033569336,
-   "cost_gbp": 948.9265329705719,
-   "pl_gbp": -0.28024781172234725,
-   "pl_pct": -0.0002953314107943047,
-   "reason": "No new high for 16 min, and FRBA overtook it on buying volume (0.12x vs 0.01x normal in 30 min)."
-  },
-  {
-   "ticker": "FRBA",
-   "bought_at": "2026-10-26T18:14+00:00",
-   "sold_at": "2026-10-26T18:54+00:00",
-   "entry": 19.565000534057617,
-   "exit": 19.4950008392334,
-   "cost_gbp": 994.5022753381998,
-   "pl_gbp": -3.5581320662109874,
-   "pl_pct": -0.0035778018355975866,
-   "reason": "No new high for 36 min, and PEBK overtook it on buying volume (0.13x vs 0.08x normal in 30 min)."
-  },
-  {
-   "ticker": "PEBK",
-   "bought_at": "2026-10-26T18:54+00:00",
-   "sold_at": "2026-10-26T19:40+00:00",
-   "entry": 43.72999954223633,
-   "exit": 43.57500076293945,
-   "cost_gbp": 980.6583528098386,
-   "pl_gbp": -3.475894104366489,
-   "pl_pct": -0.003544449597973808,
-   "reason": "No new high for 46 min, and CHMG overtook it on buying volume (0.11x vs 0.11x normal in 30 min)."
+   "ticker": "MTN",
+   "bought_at": "2026-10-26T19:16+00:00",
+   "sold_at": "2026-10-26T19:50+00:00",
+   "entry": 148.92877877807615,
+   "exit": 149.5050048828125,
+   "cost_gbp": 891.9419150235994,
+   "pl_gbp": 2.109969174571461,
+   "pl_pct": 0.002365590336132633,
+   "reason": "End of day: sold 10 minutes before the close."
   }
  ],
- "total_gbp": -12.031127239649436,
+ "total_gbp": -5.762821399800487,
  "alerts": [
-  "10:16 Day trade: bought FRBA: 67 FRBA at $19.86 (about \u00a3995). Stop $18.87. Highest first-30-minute volume on today's list (0.5x a normal day).",
-  "10:54 Day trade: sold FRBA (+\u00a31): No new high for 16 min, and PEBK overtook it on buying volume (0.04x vs 0.01x normal in 30 min). Result +\u00a31 (+0.1%).",
-  "10:54 Day trade: bought PEBK: 30 PEBK at $43.81 (about \u00a3982). Stop $41.62. Strongest buying on the list: 0.04x normal volume bought in the last 30 min, and rising.",
-  "12:24 Day trade: sold PEBK (-\u00a35): No new high for 88 min, and FRBA overtook it on buying volume (0.07x vs 0.01x normal in 30 min). Result -\u00a35 (-0.5%).",
-  "12:24 Day trade: bought FRBA: 68 FRBA at $19.59 (about \u00a3996). Stop $18.61. Strongest buying on the list: 0.07x normal volume bought in the last 30 min, and rising.",
-  "12:56 Day trade: sold FRBA (-\u00a31): No new high for 16 min, and CHMG overtook it on buying volume (0.17x vs 0.09x normal in 30 min). Result -\u00a31 (-0.1%).",
-  "12:56 Day trade: bought CHMG: 15 CHMG at $84.55 (about \u00a3948). Stop $80.32. Strongest buying on the list: 0.17x normal volume bought in the last 30 min, and rising.",
-  "13:12 Day trade: sold CHMG (+\u00a30): No new high for 16 min, and PEBK overtook it on buying volume (0.07x vs 0.02x normal in 30 min). Result +\u00a30 (+0.0%).",
-  "13:12 Day trade: bought PEBK: 30 PEBK at $43.85 (about \u00a3983). Stop $41.66. Strongest buying on the list: 0.07x normal volume bought in the last 30 min, and rising.",
-  "13:58 Day trade: sold PEBK (+\u00a30): No new high for 46 min, and CHMG overtook it on buying volume (0.01x vs 0.00x normal in 30 min). Result +\u00a30 (+0.0%).",
-  "13:58 Day trade: bought CHMG: 15 CHMG at $84.63 (about \u00a3949). Stop $80.40. Strongest buying on the list: 0.01x normal volume bought in the last 30 min, and rising.",
-  "14:14 Day trade: sold CHMG (-\u00a30): No new high for 16 min, and FRBA overtook it on buying volume (0.12x vs 0.01x normal in 30 min). Result -\u00a30 (-0.0%).",
-  "14:14 Day trade: bought FRBA: 68 FRBA at $19.57 (about \u00a3995). Stop $18.59. Strongest buying on the list: 0.12x normal volume bought in the last 30 min, and rising.",
-  "14:54 Day trade: sold FRBA (-\u00a34): No new high for 36 min, and PEBK overtook it on buying volume (0.13x vs 0.08x normal in 30 min). Result -\u00a34 (-0.4%).",
-  "14:54 Day trade: bought PEBK: 30 PEBK at $43.73 (about \u00a3981). Stop $41.54. Strongest buying on the list: 0.13x normal volume bought in the last 30 min, and rising.",
-  "15:40 Day trade: sold PEBK (-\u00a33): No new high for 46 min, and CHMG overtook it on buying volume (0.11x vs 0.11x normal in 30 min). Result -\u00a33 (-0.4%).",
-  "15:50 Day trade summary: 8 trade(s) today: FRBA +\u00a31, PEBK -\u00a35, FRBA -\u00a31, CHMG +\u00a30, PEBK +\u00a30, CHMG -\u00a30, FRBA -\u00a34, PEBK -\u00a33. Total -\u00a312."
+  "10:16 Day trade: bought FRBA: 67 FRBA at $19.88 (about \u00a3997). Stop $18.89. Highest first-30-minute volume on today's list (0.5x a normal day).",
+  "12:40 Day trade: sold FRBA (-\u00a313): No new high for 64 min, and RNG overtook it on buying volume (0.49x vs 0.12x normal in 30 min). Result -\u00a313 (-1.3%).",
+  "12:40 Day trade: bought RNG: 15 RNG at $86.93 (about \u00a3976). Stop $82.58. Strongest buying on the list: 0.49x normal volume bought in the last 30 min, and rising.",
+  "15:16 Day trade: sold RNG (+\u00a35): No new high for 30 min, and MTN overtook it on buying volume (0.64x vs 0.04x normal in 30 min). Result +\u00a35 (+0.5%).",
+  "15:16 Day trade: bought MTN: 8 MTN at $148.93 (about \u00a3892). Stop $141.48. Strongest buying on the list: 0.64x normal volume bought in the last 30 min, and rising.",
+  "15:50 Day trade: sold MTN (+\u00a32): End of day: sold 10 minutes before the close. Result +\u00a32 (+0.2%).",
+  "15:50 Day trade summary: 3 trade(s) today: FRBA -\u00a313, RNG +\u00a35, MTN +\u00a32. Total -\u00a36."
  ],
  "log": [
+  "Added MFC to today's list at 10:16 New York: 0.5x normal volume in the last 30 min; news: Manulife and UpLink announce winners of the 'Shaping Canada's Longevity Advantag",
   "Day trade buy order: 67 FRBA at about $19.86. Highest first-30-minute volume on today's list (0.5x a normal day).",
-  "Bought 67 FRBA at 19.86 (cost \u00a3995).",
-  "Sold FRBA (about +\u00a31). No new high for 16 min, and PEBK overtook it on buying volume (0.04x vs 0.01x normal in 30 min).",
-  "Day trade buy order: 30 PEBK at about $43.81. Strongest buying on the list: 0.04x normal volume bought in the last 30 min, and rising.",
-  "Bought 30 PEBK at 43.81 (cost \u00a3982).",
-  "Sold PEBK (about -\u00a35). No new high for 88 min, and FRBA overtook it on buying volume (0.07x vs 0.01x normal in 30 min).",
-  "Day trade buy order: 68 FRBA at about $19.59. Strongest buying on the list: 0.07x normal volume bought in the last 30 min, and rising.",
-  "Bought 68 FRBA at 19.59 (cost \u00a3996).",
+  "Bought 67 FRBA at 19.88 (cost \u00a3997).",
+  "Added CACI to today's list at 12:08 New York: 0.5x normal volume in the last 30 min; news: CACI Gains 6% on Jefferies Upgrade and $281 Million Navy Win as Booz Allen Jumps",
+  "Added AZO to today's list at 12:24 New York: 0.3x normal volume in the last 30 min; news: O'Reilly Automotive, AutoZone, Advance Auto Parts Poised for Net Positive Impact",
+  "Added RNG to today's list at 12:40 New York: 0.9x normal volume in the last 30 min; news: RingCentral (RNG) Stock Price Climbs As Q3 Earnings Recast The Profit Story",
+  "Added CON to today's list at 12:40 New York: 0.6x normal volume in the last 30 min; news: Concentra Expands Presence on Gulf Coast with First Pensacola Health Center",
+  "Sold FRBA (about -\u00a313). No new high for 64 min, and RNG overtook it on buying volume (0.49x vs 0.12x normal in 30 min).",
+  "Day trade buy order: 15 RNG at about $86.84. Strongest buying on the list: 0.49x normal volume bought in the last 30 min, and rising.",
+  "Bought 15 RNG at 86.93 (cost \u00a3976).",
   "Added CHMG to today's list at 12:56 New York: 0.4x normal volume in the last 30 min; news: Chemung Financial (CHMG) Q3 Earnings Signal Stronger Profit Engine",
-  "Sold FRBA (about -\u00a31). No new high for 16 min, and CHMG overtook it on buying volume (0.17x vs 0.09x normal in 30 min).",
-  "Day trade buy order: 15 CHMG at about $84.55. Strongest buying on the list: 0.17x normal volume bought in the last 30 min, and rising.",
-  "Bought 15 CHMG at 84.55 (cost \u00a3948).",
-  "Sold CHMG (about +\u00a30). No new high for 16 min, and PEBK overtook it on buying volume (0.07x vs 0.02x normal in 30 min).",
-  "Day trade buy order: 30 PEBK at about $43.85. Strongest buying on the list: 0.07x normal volume bought in the last 30 min, and rising.",
-  "Bought 30 PEBK at 43.85 (cost \u00a3983).",
-  "Sold PEBK (about +\u00a30). No new high for 46 min, and CHMG overtook it on buying volume (0.01x vs 0.00x normal in 30 min).",
-  "Day trade buy order: 15 CHMG at about $84.63. Strongest buying on the list: 0.01x normal volume bought in the last 30 min, and rising.",
-  "Bought 15 CHMG at 84.63 (cost \u00a3949).",
-  "Sold CHMG (about -\u00a30). No new high for 16 min, and FRBA overtook it on buying volume (0.12x vs 0.01x normal in 30 min).",
-  "Day trade buy order: 68 FRBA at about $19.57. Strongest buying on the list: 0.12x normal volume bought in the last 30 min, and rising.",
-  "Bought 68 FRBA at 19.57 (cost \u00a3995).",
-  "Added NABL to today's list at 14:32 New York: 0.3x normal volume in the last 30 min; news: As AI Accelerates Cyberattacks, N-able and SentinelOne Expand Their Strategic Pa",
-  "Sold FRBA (about -\u00a34). No new high for 36 min, and PEBK overtook it on buying volume (0.13x vs 0.08x normal in 30 min).",
-  "Day trade buy order: 30 PEBK at about $43.73. Strongest buying on the list: 0.13x normal volume bought in the last 30 min, and rising.",
-  "Bought 30 PEBK at 43.73 (cost \u00a3981).",
-  "Sold PEBK (about -\u00a33). No new high for 46 min, and CHMG overtook it on buying volume (0.11x vs 0.11x normal in 30 min).",
-  "Day trading finished: 8 trade(s), total -\u00a312."
+  "Added DK to today's list at 13:12 New York: 0.6x normal volume in the last 30 min; news: Does Delek US Holdings (DK) Trade At A Premium After Refinery Expansion?",
+  "Added DGX to today's list at 13:28 New York: 0.3x normal volume in the last 30 min; news: Quest Diagnostics (DGX) Stock Price Stalls After Strong Q3 Earnings",
+  "Added FBP to today's list at 13:28 New York: 0.6x normal volume in the last 30 min; news: FBP Q3 deep dive: stable profitability and capital returns as funding costs rise",
+  "Added DCOM to today's list at 13:28 New York: 0.6x normal volume in the last 30 min; news: Dime Commercial Bancshares (DCOM) Stock Looks Fairly Valued On Its 153% Run",
+  "Added ABM to today's list at 13:44 New York: 0.5x normal volume in the last 30 min; news: How Investors May Respond To ABM Industries (ABM) UK Public Sector Framework Win",
+  "Added CRBG to today's list at 14:00 New York: 0.4x normal volume in the last 30 min; news: Corebridge Financial (CRBG) Reports Next Week: Wall Street Expects Earnings Grow",
+  "Added FNB to today's list at 14:00 New York: 0.6x normal volume in the last 30 min; news: Learn Why The Bull Case For F.N.B (FNB) Could Change Following Record Net Intere",
+  "Added UCB to today's list at 14:00 New York: 0.4x normal volume in the last 30 min; news: United Community Banks (UCB) Upgraded to Strong Buy: Here's What You Should Know",
+  "Added ESTC to today's list at 14:16 New York: 0.6x normal volume in the last 30 min; news: Elastic (ESTC) Stock May Be 31% Below Fair Value As Partnership News Lands",
+  "Added AUB to today's list at 14:32 New York: 0.4x normal volume in the last 30 min; news: How Investors May Respond To Atlantic Union Bankshares (AUB) Stronger Quarterly ",
+  "Added MTN to today's list at 14:48 New York: 0.6x normal volume in the last 30 min; news: Winter Music Expansion Might Change The Case For Investing In Vail Resorts (MTN)",
+  "Added BMI to today's list at 14:48 New York: 0.7x normal volume in the last 30 min; news: Badger Meter (BMI) Upgraded to Buy: Here's Why",
+  "Added AMTB to today's list at 15:04 New York: 0.7x normal volume in the last 30 min; news: Amerant Bancorp (AMTB) Q3 Earnings Put Profit Strength Under Credit Watch",
+  "Sold RNG (about +\u00a35). No new high for 30 min, and MTN overtook it on buying volume (0.64x vs 0.04x normal in 30 min).",
+  "Day trade buy order: 8 MTN at about $148.78. Strongest buying on the list: 0.64x normal volume bought in the last 30 min, and rising.",
+  "Bought 8 MTN at 148.93 (cost \u00a3892).",
+  "Added S to today's list at 15:20 New York: 0.5x normal volume in the last 30 min; news: SentinelOne's AI Security Products, Channel Strategy Support Growth Outlook, Opp",
+  "Added NJR to today's list at 15:20 New York: 0.5x normal volume in the last 30 min; news: Why New Jersey Resources (NJR) is Poised to Beat Earnings Estimates Again",
+  "Added CUBI to today's list at 15:20 New York: 0.8x normal volume in the last 30 min; news: CUBI Q3 deep dive: AI-driven efficiency and diversified deposit growth highlight",
+  "Sold MTN (about +\u00a32). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 3 trade(s), total -\u00a36."
  ]
 }

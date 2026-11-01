@@ -1,21 +1,32 @@
 {
  "date": "2026-10-14",
- "generated": "2026-11-01T11:02+00:00",
+ "generated": "2026-11-01T11:52+00:00",
  "fx_gbpusd": 1.3257324695587158,
  "result": "done",
  "require_news": true,
  "added_during_day": [
-  "Added HLP to today's list at 10:16 New York: 1.6x normal volume in the last 30 min; news: Hongli Group Provides Strategic Update on Proposed Advanced Battery Collaboratio"
+  "Added HLP to today's list at 10:16 New York: 1.6x normal volume in the last 30 min; news: Hongli Group Provides Strategic Update on Proposed Advanced Battery Collaboratio",
+  "Added BAP to today's list at 12:56 New York: 0.5x normal volume in the last 30 min; news: Will Credicorp (BAP) Beat Estimates Again in Its Next Earnings Report?",
+  "Added BOX to today's list at 14:00 New York: 0.8x normal volume in the last 30 min; news: Why Box Stock Is An 'Underappreciated AI Winner' And BofA's Top Pick",
+  "Added MTD to today's list at 15:20 New York: 1.1x normal volume in the last 30 min; news: Mettler-Toledo (MTD) Upgraded to Buy: What Does It Mean for the Stock?"
  ],
  "list": [],
  "quiet": [
   {
    "ticker": "AEHL",
-   "vol_x": 10.75
+   "vol_x": 10.74
   },
   {
    "ticker": "VSTM",
    "vol_x": 4.22
+  },
+  {
+   "ticker": "RGC",
+   "vol_x": 1.5
+  },
+  {
+   "ticker": "NCPL",
+   "vol_x": 1.32
   },
   {
    "ticker": "CANG",
@@ -24,6 +35,14 @@
   {
    "ticker": "JRSH",
    "vol_x": 0.56
+  },
+  {
+   "ticker": "GFS",
+   "vol_x": 0.45
+  },
+  {
+   "ticker": "VAL",
+   "vol_x": 0.36
   }
  ],
  "trades": [
@@ -31,41 +50,60 @@
    "ticker": "HLP",
    "bought_at": "2026-10-14T14:16+00:00",
    "sold_at": "2026-10-14T15:28+00:00",
-   "entry": 2.859999895095825,
-   "exit": 2.72,
-   "cost_gbp": 998.8289355771262,
-   "pl_gbp": -48.89368927574276,
-   "pl_pct": -0.04895101406677996,
+   "entry": 2.8628598949909208,
+   "exit": 2.71728,
+   "cost_gbp": 1001.3275061594724,
+   "pl_gbp": -53.765673070972866,
+   "pl_pct": -0.05369439343296148,
    "reason": "Stop-loss order filled"
   },
   {
-   "ticker": "HLP",
-   "bought_at": "2026-10-14T16:14+00:00",
+   "ticker": "BAP",
+   "bought_at": "2026-10-14T16:56+00:00",
+   "sold_at": "2026-10-14T19:18+00:00",
+   "entry": 383.33296221923825,
+   "exit": 386.7699890136719,
+   "cost_gbp": 868.7453248927854,
+   "pl_gbp": 6.476481681234077,
+   "pl_pct": 0.007454983060810554,
+   "reason": "No new high for 44 min, and BOX overtook it on buying volume (0.93x vs 0.02x normal in 30 min)."
+  },
+  {
+   "ticker": "BOX",
+   "bought_at": "2026-10-14T19:18+00:00",
    "sold_at": "2026-10-14T19:50+00:00",
-   "entry": 2.9200000762939453,
-   "exit": 2.75,
-   "cost_gbp": 999.9604483389608,
-   "pl_gbp": -58.216900022929394,
-   "pl_pct": -0.05821920268910013,
-   "reason": "Stop-loss order filled"
+   "entry": 37.917881069183345,
+   "exit": 37.935001373291016,
+   "cost_gbp": 973.908234077221,
+   "pl_gbp": -1.0196035971853235,
+   "pl_pct": -0.0010469195777478963,
+   "reason": "End of day: sold 10 minutes before the close."
   }
  ],
- "total_gbp": -107.11058929867215,
+ "total_gbp": -48.30879498692411,
  "alerts": [
-  "10:16 Day trade: bought HLP: 463 HLP at $2.86 (about \u00a3999). Stop $2.72. Highest first-30-minute volume on today's list (1.6x a normal day).",
-  "11:28 Day trade update: HLP: stop-loss order filled (-\u00a349)",
-  "12:14 Day trade: bought HLP: 454 HLP at $2.92 (about \u00a31,000). Stop $2.77. Strongest buying on the list: 0.00x normal volume bought in the last 30 min, and rising.",
-  "15:50 Day trade update: HLP: stop-loss order filled (-\u00a358)",
-  "15:50 Day trade summary: 2 trade(s) today: HLP -\u00a349, HLP -\u00a358. Total -\u00a3107."
+  "10:16 Day trade: bought HLP: 463 HLP at $2.86 (about \u00a31,001). Stop $2.72. Highest first-30-minute volume on today's list (1.6x a normal day).",
+  "11:28 Day trade update: HLP: stop-loss order filled (-\u00a354)",
+  "12:56 Day trade: bought BAP: 3 BAP at $383.33 (about \u00a3869). Stop $364.17. Strongest buying on the list: 0.06x normal volume bought in the last 30 min, and rising.",
+  "15:18 Day trade: sold BAP (+\u00a36): No new high for 44 min, and BOX overtook it on buying volume (0.93x vs 0.02x normal in 30 min). Result +\u00a36 (+0.7%).",
+  "15:18 Day trade: bought BOX: 34 BOX at $37.92 (about \u00a3974). Stop $36.02. Strongest buying on the list: 0.93x normal volume bought in the last 30 min, and rising.",
+  "15:50 Day trade: sold BOX (-\u00a31): End of day: sold 10 minutes before the close. Result -\u00a31 (-0.1%).",
+  "15:50 Day trade summary: 3 trade(s) today: HLP -\u00a354, BAP +\u00a36, BOX -\u00a31. Total -\u00a348."
  ],
  "log": [
   "Added HLP to today's list at 10:16 New York: 1.6x normal volume in the last 30 min; news: Hongli Group Provides Strategic Update on Proposed Advanced Battery Collaboratio",
   "Day trade buy order: 463 HLP at about $2.86. Highest first-30-minute volume on today's list (1.6x a normal day).",
-  "Bought 463 HLP at 2.86 (cost \u00a3999).",
-  "HLP: stop-loss order filled, P&L -\u00a349.",
-  "Day trade buy order: 454 HLP at about $2.92. Strongest buying on the list: 0.00x normal volume bought in the last 30 min, and rising.",
-  "Bought 454 HLP at 2.92 (cost \u00a31,000).",
-  "HLP: stop-loss order filled, P&L -\u00a358.",
-  "Day trading finished: 2 trade(s), total -\u00a3107."
+  "Bought 463 HLP at 2.86 (cost \u00a31,001).",
+  "HLP: stop-loss order filled, P&L -\u00a354.",
+  "Added BAP to today's list at 12:56 New York: 0.5x normal volume in the last 30 min; news: Will Credicorp (BAP) Beat Estimates Again in Its Next Earnings Report?",
+  "Day trade buy order: 3 BAP at about $382.95. Strongest buying on the list: 0.06x normal volume bought in the last 30 min, and rising.",
+  "Bought 3 BAP at 383.33 (cost \u00a3869).",
+  "Added BOX to today's list at 14:00 New York: 0.8x normal volume in the last 30 min; news: Why Box Stock Is An 'Underappreciated AI Winner' And BofA's Top Pick",
+  "Sold BAP (about +\u00a36). No new high for 44 min, and BOX overtook it on buying volume (0.93x vs 0.02x normal in 30 min).",
+  "Day trade buy order: 34 BOX at about $37.88. Strongest buying on the list: 0.93x normal volume bought in the last 30 min, and rising.",
+  "Bought 34 BOX at 37.92 (cost \u00a3974).",
+  "Added MTD to today's list at 15:20 New York: 1.1x normal volume in the last 30 min; news: Mettler-Toledo (MTD) Upgraded to Buy: What Does It Mean for the Stock?",
+  "Sold BOX (about -\u00a31). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 3 trade(s), total -\u00a348."
  ]
 }

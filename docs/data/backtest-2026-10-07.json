@@ -1,25 +1,102 @@
 {
  "date": "2026-10-07",
- "generated": "2026-11-01T10:59+00:00",
+ "generated": "2026-11-01T11:33+00:00",
  "fx_gbpusd": 1.326682209968567,
  "result": "done",
  "require_news": true,
- "added_during_day": [],
- "list": [],
+ "added_during_day": [
+  "Added SBH to today's list at 11:52 New York: 0.4x normal volume in the last 30 min; news: What Sally Beauty Holdings (SBH)'s Dallas Cowboys Partnership Means For Sharehol",
+  "Added ZIM to today's list at 12:08 New York: 0.5x normal volume in the last 30 min; news: Zim lifts profit forecast 72% on strong demand",
+  "Added ECO to today's list at 14:16 New York: 0.6x normal volume in the last 30 min; news: ECO or SBLK: Which Shipping Company Is a Stronger Play Now?",
+  "Added EBS to today's list at 14:48 New York: 0.7x normal volume in the last 30 min; news: NVAX, EBS, ARCT, MRNA Rally After Russia Plague Lab Worker's Death: Retail Trade"
+ ],
+ "list": [
+  {
+   "ticker": "BKH",
+   "name": "Black Hills Corporation",
+   "vol_x": 0.58,
+   "buy_pct30": 0.5256600684552913,
+   "change": 0.07471026041430173,
+   "score": 2.76,
+   "news": [
+    "Black Hills Corp. Executes Definitive Agreements to Serve Google\u2019s Planned Data Center in Cheyenne, Wyoming"
+   ],
+   "on_t212": true
+  }
+ ],
  "quiet": [
+  {
+   "ticker": "PENG",
+   "vol_x": 2.49
+  },
   {
    "ticker": "CANG",
    "vol_x": 0.92
   },
   {
+   "ticker": "NWE",
+   "vol_x": 0.45
+  },
+  {
    "ticker": "PNTG",
    "vol_x": 0.45
+  },
+  {
+   "ticker": "BWLP",
+   "vol_x": 0.43
+  },
+  {
+   "ticker": "PG",
+   "vol_x": 0.34
+  },
+  {
+   "ticker": "ELF",
+   "vol_x": 0.33
   }
  ],
- "trades": [],
- "total_gbp": 0,
- "alerts": [],
+ "trades": [
+  {
+   "ticker": "BKH",
+   "bought_at": "2026-10-07T14:16+00:00",
+   "sold_at": "2026-10-07T16:58+00:00",
+   "entry": 76.00593030548094,
+   "exit": 76.93109893798828,
+   "cost_gbp": 975.3948283113147,
+   "pl_gbp": 10.39413615877288,
+   "pl_pct": 0.01065633716427232,
+   "reason": "No new high for 106 min, and SBH overtook it on buying volume (0.41x vs 0.07x normal in 30 min)."
+  },
+  {
+   "ticker": "SBH",
+   "bought_at": "2026-10-07T16:58+00:00",
+   "sold_at": "2026-10-07T19:30+00:00",
+   "entry": 16.646629159927365,
+   "exit": 16.53499984741211,
+   "cost_gbp": 992.7443959777816,
+   "pl_gbp": -8.134081517843128,
+   "pl_pct": -0.008193530530919438,
+   "reason": "No new high for 48 min, and EBS overtook it on buying volume (0.88x vs 0.03x normal in 30 min)."
+  }
+ ],
+ "total_gbp": 2.260054640929752,
+ "alerts": [
+  "10:16 Day trade: bought BKH: 17 BKH at $76.01 (about \u00a3975). Stop $72.21. Highest first-30-minute volume on today's list (0.6x a normal day).",
+  "12:58 Day trade: sold BKH (+\u00a310): No new high for 106 min, and SBH overtook it on buying volume (0.41x vs 0.07x normal in 30 min). Result +\u00a310 (+1.1%).",
+  "12:58 Day trade: bought SBH: 79 SBH at $16.65 (about \u00a3993). Stop $15.81. Strongest buying on the list: 0.41x normal volume bought in the last 30 min, and rising.",
+  "15:30 Day trade: sold SBH (-\u00a38): No new high for 48 min, and EBS overtook it on buying volume (0.88x vs 0.03x normal in 30 min). Result -\u00a38 (-0.8%).",
+  "15:50 Day trade summary: 2 trade(s) today: BKH +\u00a310, SBH -\u00a38. Total +\u00a32."
+ ],
  "log": [
-  "Day trading finished: 0 trade(s), total +\u00a30."
+  "Day trade buy order: 17 BKH at about $75.93. Highest first-30-minute volume on today's list (0.6x a normal day).",
+  "Bought 17 BKH at 76.01 (cost \u00a3975).",
+  "Added SBH to today's list at 11:52 New York: 0.4x normal volume in the last 30 min; news: What Sally Beauty Holdings (SBH)'s Dallas Cowboys Partnership Means For Sharehol",
+  "Added ZIM to today's list at 12:08 New York: 0.5x normal volume in the last 30 min; news: Zim lifts profit forecast 72% on strong demand",
+  "Sold BKH (about +\u00a310). No new high for 106 min, and SBH overtook it on buying volume (0.41x vs 0.07x normal in 30 min).",
+  "Day trade buy order: 79 SBH at about $16.63. Strongest buying on the list: 0.41x normal volume bought in the last 30 min, and rising.",
+  "Bought 79 SBH at 16.65 (cost \u00a3993).",
+  "Added ECO to today's list at 14:16 New York: 0.6x normal volume in the last 30 min; news: ECO or SBLK: Which Shipping Company Is a Stronger Play Now?",
+  "Added EBS to today's list at 14:48 New York: 0.7x normal volume in the last 30 min; news: NVAX, EBS, ARCT, MRNA Rally After Russia Plague Lab Worker's Death: Retail Trade",
+  "Sold SBH (about -\u00a38). No new high for 48 min, and EBS overtook it on buying volume (0.88x vs 0.03x normal in 30 min).",
+  "Day trading finished: 2 trade(s), total +\u00a32."
  ]
 }

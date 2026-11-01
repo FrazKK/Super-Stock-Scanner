@@ -1,17 +1,91 @@
 {
  "date": "2026-10-22",
- "generated": "2026-11-01T11:09+00:00",
+ "generated": "2026-11-01T12:17+00:00",
  "fx_gbpusd": 1.339566707611084,
  "result": "done",
  "require_news": true,
  "added_during_day": [
+  "Added PKG to today's list at 10:16 New York: 0.4x normal volume in the last 30 min; news: Packaging Corp Of America (PKG) Q3 Earnings Beat Meets Rising Cost Risk",
+  "Added ZGN to today's list at 10:16 New York: 0.6x normal volume in the last 30 min; news: Ermenegildo Zegna Group Q3 2026 Revenues1 up 9% With Solid Growth Across All Reg",
   "Added PEBK to today's list at 10:16 New York: 0.4x normal volume in the last 30 min; news: Peoples Bancorp Stock Slips Post Q3 Earnings Despite NIM Expansion",
+  "Added MANE to today's list at 10:32 New York: 0.3x normal volume in the last 30 min; news: Could This Pill Be a Game Changer for Hair Loss? Veradermics Reports Major Break",
   "Added WCCB to today's list at 10:32 New York: 0.6x normal volume in the last 30 min; news: West Coast Community Bank Continues Expansion with New Full-Service Branch in Sa",
+  "Added UCB to today's list at 11:04 New York: 0.4x normal volume in the last 30 min; news: United Community Banks (UCB) Upgraded to Strong Buy: Here's What You Should Know",
+  "Added MTD to today's list at 12:08 New York: 0.4x normal volume in the last 30 min; news: Will Mettler-Toledo (MTD) Beat Estimates Again in Its Next Earnings Report?",
   "Added AVBH to today's list at 12:24 New York: 0.3x normal volume in the last 30 min; news: Avidbank Holdings Inc. (AVBH) Reports Next Week: Wall Street Expects Earnings Gr",
-  "Added NABL to today's list at 13:44 New York: 0.6x normal volume in the last 30 min; news: As AI Accelerates Cyberattacks, N-able and SentinelOne Expand Their Strategic Pa"
+  "Added CENTA to today's list at 12:40 New York: 0.4x normal volume in the last 30 min; news: Central Garden & Pet Acquires Burpee, an Iconic Brand in the Packet Seed and You",
+  "Added MFC to today's list at 12:56 New York: 0.5x normal volume in the last 30 min; news: Manulife and UpLink announce winners of the 'Shaping Canada's Longevity Advantag",
+  "Added MET to today's list at 13:28 New York: 0.3x normal volume in the last 30 min; news: MetLife's ChatGPT Integration Opens a New Pet Insurance Growth Avenue",
+  "Added NIQ to today's list at 13:28 New York: 0.4x normal volume in the last 30 min; news: NIQ Expands ConnectAI Charter Program with Mars Snacking",
+  "Added DBX to today's list at 13:44 New York: 0.4x normal volume in the last 30 min; news: Dropbox (DBX) Beats Stock Market Upswing: What Investors Need to Know",
+  "Added SPNT to today's list at 13:44 New York: 1.1x normal volume in the last 30 min; news: SiriusPoint (SPNT) Expected to Beat Earnings Estimates: Can the Stock Move Highe",
+  "Added NOMD to today's list at 13:44 New York: 0.4x normal volume in the last 30 min; news: Nomad Foods CEO Dominic Brisby Outlines Several Avenues for Continued Growth",
+  "Added PEN to today's list at 14:16 New York: 0.8x normal volume in the last 30 min; news: Penumbra's CAVT Technology Receives FDA Clearance for the Treatment of Deep Vein",
+  "Added ELV to today's list at 14:32 New York: 0.5x normal volume in the last 30 min; news: ELV Q3 deep dive: Carelon expansion and Medicaid margin actions underpin raised ",
+  "Added BKH to today's list at 14:32 New York: 0.4x normal volume in the last 30 min; news: Subject to Receipt of Satisfactory Final Regulatory Approval and Completion of P",
+  "Added SHAK to today's list at 14:32 New York: 0.4x normal volume in the last 30 min; news: Shake Shack (SHAK) Upgraded to Buy: Here's What You Should Know",
+  "Added SJM to today's list at 14:48 New York: 0.5x normal volume in the last 30 min; news: Campbell\u2019s Dividend Cut Changes the Math. Is Smucker the Clear Winner?",
+  "Added G to today's list at 14:48 New York: 0.9x normal volume in the last 30 min; news: Will Genpact (G) Beat Estimates Again in Its Next Earnings Report?",
+  "Added BBWI to today's list at 14:48 New York: 0.4x normal volume in the last 30 min; news: Spotting winners: Bath and Body Works (NYSE:BBWI) and beauty and cosmetics retai",
+  "Added MSI to today's list at 15:20 New York: 0.9x normal volume in the last 30 min; news: What Makes Motorola (MSI) a Strong Bet?",
+  "Added DOCS to today's list at 15:20 New York: 0.4x normal volume in the last 30 min; news: Doximity and Wolters Kluwer Sign Partnership to Bring UpToDate to Doximity Ask"
  ],
- "list": [],
+ "list": [
+  {
+   "ticker": "QCRH",
+   "name": "QCR Holdings, Inc.",
+   "vol_x": 0.36,
+   "buy_pct30": 0.5673465604090971,
+   "change": 0.017090549184474613,
+   "score": 3.99,
+   "news": [
+    "Does Record Earnings Beat Change The Bull Case For QCR Holdings Stock (QCRH)?",
+    "QCR Holdings (QCRH) Stock Climbs As Q3 Earnings Extend Record Profitability"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "CBZ",
+   "name": "CBIZ, Inc.",
+   "vol_x": 0.73,
+   "buy_pct30": 0.6645742058288232,
+   "change": 0.0005177834445333485,
+   "score": 3.62,
+   "news": [
+    "CBIZ (CBZ) Q3 Results Put Profit Momentum Ahead Of A Tepid Stock Reaction"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "MKTX",
+   "name": "MarketAxess Holdings, Inc.",
+   "vol_x": 0.46,
+   "buy_pct30": 0.5240020763971707,
+   "change": 0.00383541278388555,
+   "score": 2.52,
+   "news": [
+    "Will MarketAxess (MKTX) Beat Estimates Again in Its Next Earnings Report?"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "GIB",
+   "name": "CGI Inc.",
+   "vol_x": 0.35,
+   "buy_pct30": 0.23661082872412822,
+   "change": 0.00892294944320371,
+   "score": 0.15,
+   "news": [
+    "CGI selected to join PCI Security Standards Council Global Executive Assessor Roundtable"
+   ],
+   "on_t212": true
+  }
+ ],
  "quiet": [
+  {
+   "ticker": "QGEN",
+   "vol_x": 4.28
+  },
   {
    "ticker": "EDHL",
    "vol_x": 1.01
@@ -19,6 +93,26 @@
   {
    "ticker": "RRBI",
    "vol_x": 0.87
+  },
+  {
+   "ticker": "SPOT",
+   "vol_x": 0.8
+  },
+  {
+   "ticker": "ROKU",
+   "vol_x": 0.78
+  },
+  {
+   "ticker": "BMI",
+   "vol_x": 0.68
+  },
+  {
+   "ticker": "TSLA",
+   "vol_x": 0.65
+  },
+  {
+   "ticker": "PG",
+   "vol_x": 0.6
   },
   {
    "ticker": "HLP",
@@ -29,121 +123,121 @@
    "vol_x": 0.52
   },
   {
+   "ticker": "FBP",
+   "vol_x": 0.44
+  },
+  {
    "ticker": "BPRN",
    "vol_x": 0.4
   },
   {
-   "ticker": "FORR",
-   "vol_x": 0.36
+   "ticker": "CSX",
+   "vol_x": 0.39
+  },
+  {
+   "ticker": "ULTA",
+   "vol_x": 0.39
+  },
+  {
+   "ticker": "URI",
+   "vol_x": 0.38
   }
  ],
  "trades": [
   {
-   "ticker": "PEBK",
+   "ticker": "CBZ",
    "bought_at": "2026-10-22T14:16+00:00",
-   "sold_at": "2026-10-22T14:32+00:00",
-   "entry": 44.13999938964844,
-   "exit": 44.06999969482422,
-   "cost_gbp": 988.5285847772112,
-   "pl_gbp": -1.5676642550124598,
-   "pl_pct": -0.00158585627077822,
-   "reason": "No new high for 16 min, and WCCB overtook it on buying volume (0.30x vs 0.14x normal in 30 min)."
-  },
-  {
-   "ticker": "WCCB",
-   "bought_at": "2026-10-22T14:32+00:00",
-   "sold_at": "2026-10-22T15:34+00:00",
-   "entry": 61.27000045776367,
-   "exit": 61.36000061035156,
-   "cost_gbp": 960.5120837226686,
-   "pl_gbp": 1.4109063726406248,
-   "pl_pct": 0.0014689105910800804,
-   "reason": "No new high for 16 min, and PEBK overtook it on buying volume (0.11x vs 0.03x normal in 30 min)."
+   "sold_at": "2026-10-22T15:02+00:00",
+   "entry": 54.89484015274047,
+   "exit": 54.88999938964844,
+   "cost_gbp": 984.9844508783852,
+   "pl_gbp": -1.5619920589389267,
+   "pl_pct": -0.0015858037733955902,
+   "reason": "No new high for 46 min, and PEBK overtook it on buying volume (0.40x vs 0.01x normal in 30 min)."
   },
   {
    "ticker": "PEBK",
-   "bought_at": "2026-10-22T15:34+00:00",
-   "sold_at": "2026-10-22T16:22+00:00",
-   "entry": 44.16999816894531,
-   "exit": 44.25,
-   "cost_gbp": 989.2004164775609,
-   "pl_gbp": 1.7916651093254359,
-   "pl_pct": 0.0018112255913774963,
-   "reason": "No new high for 22 min, and WCCB overtook it on buying volume (0.07x vs 0.03x normal in 30 min)."
+   "bought_at": "2026-10-22T15:02+00:00",
+   "sold_at": "2026-10-22T15:52+00:00",
+   "entry": 44.28424168014526,
+   "exit": 44.16999816894531,
+   "cost_gbp": 993.2465727315268,
+   "pl_gbp": -4.046156253965933,
+   "pl_pct": -0.004073667470946917,
+   "reason": "No new high for 46 min, and GIB overtook it on buying volume (0.44x vs 0.00x normal in 30 min)."
   },
   {
-   "ticker": "WCCB",
-   "bought_at": "2026-10-22T16:22+00:00",
-   "sold_at": "2026-10-22T16:44+00:00",
-   "entry": 61.75,
-   "exit": 61.58000183105469,
-   "cost_gbp": 968.0368977761166,
-   "pl_gbp": -2.665012147262132,
-   "pl_pct": -0.00275300678453941,
-   "reason": "No new high for 18 min, and AVBH overtook it on buying volume (0.28x vs 0.06x normal in 30 min)."
+   "ticker": "GIB",
+   "bought_at": "2026-10-22T15:52+00:00",
+   "sold_at": "2026-10-22T16:52+00:00",
+   "entry": 81.60151663970946,
+   "exit": 81.23500061035156,
+   "cost_gbp": 976.1236190817118,
+   "pl_gbp": -5.83971878715181,
+   "pl_pct": -0.005982560684932022,
+   "reason": "No new high for 30 min, and CENTA overtook it on buying volume (0.50x vs 0.02x normal in 30 min)."
   },
   {
-   "ticker": "AVBH",
-   "bought_at": "2026-10-22T16:44+00:00",
-   "sold_at": "2026-10-22T17:52+00:00",
-   "entry": 31.579999923706055,
-   "exit": 31.600000381469727,
-   "cost_gbp": 990.1410577462157,
-   "pl_gbp": 0.6270827882639196,
-   "pl_pct": 0.0006333267198224276,
-   "reason": "No new high for 16 min, and NABL overtook it on buying volume (0.61x vs 0.02x normal in 30 min)."
-  },
-  {
-   "ticker": "NABL",
-   "bought_at": "2026-10-22T17:52+00:00",
+   "ticker": "CENTA",
+   "bought_at": "2026-10-22T16:52+00:00",
    "sold_at": "2026-10-22T19:50+00:00",
-   "entry": 4.894999980926514,
-   "exit": 4.90500020980835,
-   "cost_gbp": 997.5874939263689,
-   "pl_gbp": 2.0380190618576535,
-   "pl_pct": 0.0020429476855571707,
+   "entry": 38.49845908355712,
+   "exit": 38.7599983215332,
+   "cost_gbp": 978.6082490748195,
+   "pl_gbp": 5.172502898554399,
+   "pl_pct": 0.005285570506323144,
    "reason": "End of day: sold 10 minutes before the close."
   }
  ],
- "total_gbp": 1.6349969298130418,
+ "total_gbp": -6.275364201502271,
  "alerts": [
-  "10:16 Day trade: bought PEBK: 30 PEBK at $44.14 (about \u00a3989). Stop $41.93. Highest first-30-minute volume on today's list (0.4x a normal day).",
-  "10:32 Day trade: sold PEBK (-\u00a32): No new high for 16 min, and WCCB overtook it on buying volume (0.30x vs 0.14x normal in 30 min). Result -\u00a32 (-0.2%).",
-  "10:32 Day trade: bought WCCB: 21 WCCB at $61.27 (about \u00a3961). Stop $58.21. Strongest buying on the list: 0.30x normal volume bought in the last 30 min, and rising.",
-  "11:34 Day trade: sold WCCB (+\u00a31): No new high for 16 min, and PEBK overtook it on buying volume (0.11x vs 0.03x normal in 30 min). Result +\u00a31 (+0.1%).",
-  "11:34 Day trade: bought PEBK: 30 PEBK at $44.17 (about \u00a3989). Stop $41.96. Strongest buying on the list: 0.11x normal volume bought in the last 30 min, and rising.",
-  "12:22 Day trade: sold PEBK (+\u00a32): No new high for 22 min, and WCCB overtook it on buying volume (0.07x vs 0.03x normal in 30 min). Result +\u00a32 (+0.2%).",
-  "12:22 Day trade: bought WCCB: 21 WCCB at $61.75 (about \u00a3968). Stop $58.66. Strongest buying on the list: 0.07x normal volume bought in the last 30 min, and rising.",
-  "12:44 Day trade: sold WCCB (-\u00a33): No new high for 18 min, and AVBH overtook it on buying volume (0.28x vs 0.06x normal in 30 min). Result -\u00a33 (-0.3%).",
-  "12:44 Day trade: bought AVBH: 42 AVBH at $31.58 (about \u00a3990). Stop $30.00. Strongest buying on the list: 0.28x normal volume bought in the last 30 min, and rising.",
-  "13:52 Day trade: sold AVBH (+\u00a31): No new high for 16 min, and NABL overtook it on buying volume (0.61x vs 0.02x normal in 30 min). Result +\u00a31 (+0.1%).",
-  "13:52 Day trade: bought NABL: 273 NABL at $4.89 (about \u00a3998). Stop $4.65. Strongest buying on the list: 0.61x normal volume bought in the last 30 min, and rising.",
-  "15:50 Day trade: sold NABL (+\u00a32): End of day: sold 10 minutes before the close. Result +\u00a32 (+0.2%).",
-  "15:50 Day trade summary: 6 trade(s) today: PEBK -\u00a32, WCCB +\u00a31, PEBK +\u00a32, WCCB -\u00a33, AVBH +\u00a31, NABL +\u00a32. Total +\u00a32."
+  "10:16 Day trade: bought CBZ: 24 CBZ at $54.89 (about \u00a3985). Stop $52.15. Highest first-30-minute volume on today's list (0.7x a normal day).",
+  "11:02 Day trade: sold CBZ (-\u00a32): No new high for 46 min, and PEBK overtook it on buying volume (0.40x vs 0.01x normal in 30 min). Result -\u00a32 (-0.2%).",
+  "11:02 Day trade: bought PEBK: 30 PEBK at $44.28 (about \u00a3993). Stop $42.07. Strongest buying on the list: 0.40x normal volume bought in the last 30 min, and rising.",
+  "11:52 Day trade: sold PEBK (-\u00a34): No new high for 46 min, and GIB overtook it on buying volume (0.44x vs 0.00x normal in 30 min). Result -\u00a34 (-0.4%).",
+  "11:52 Day trade: bought GIB: 16 GIB at $81.60 (about \u00a3976). Stop $77.52. Strongest buying on the list: 0.44x normal volume bought in the last 30 min, and rising.",
+  "12:52 Day trade: sold GIB (-\u00a36): No new high for 30 min, and CENTA overtook it on buying volume (0.50x vs 0.02x normal in 30 min). Result -\u00a36 (-0.6%).",
+  "12:52 Day trade: bought CENTA: 34 CENTA at $38.50 (about \u00a3979). Stop $36.57. Strongest buying on the list: 0.50x normal volume bought in the last 30 min, and rising.",
+  "15:50 Day trade: sold CENTA (+\u00a35): End of day: sold 10 minutes before the close. Result +\u00a35 (+0.5%).",
+  "15:50 Day trade summary: 4 trade(s) today: CBZ -\u00a32, PEBK -\u00a34, GIB -\u00a36, CENTA +\u00a35. Total -\u00a36."
  ],
  "log": [
+  "Added PKG to today's list at 10:16 New York: 0.4x normal volume in the last 30 min; news: Packaging Corp Of America (PKG) Q3 Earnings Beat Meets Rising Cost Risk",
+  "Added ZGN to today's list at 10:16 New York: 0.6x normal volume in the last 30 min; news: Ermenegildo Zegna Group Q3 2026 Revenues1 up 9% With Solid Growth Across All Reg",
   "Added PEBK to today's list at 10:16 New York: 0.4x normal volume in the last 30 min; news: Peoples Bancorp Stock Slips Post Q3 Earnings Despite NIM Expansion",
-  "Day trade buy order: 30 PEBK at about $44.14. Highest first-30-minute volume on today's list (0.4x a normal day).",
-  "Bought 30 PEBK at 44.14 (cost \u00a3989).",
+  "Day trade buy order: 24 CBZ at about $54.84. Highest first-30-minute volume on today's list (0.7x a normal day).",
+  "Bought 24 CBZ at 54.89 (cost \u00a3985).",
+  "Added MANE to today's list at 10:32 New York: 0.3x normal volume in the last 30 min; news: Could This Pill Be a Game Changer for Hair Loss? Veradermics Reports Major Break",
   "Added WCCB to today's list at 10:32 New York: 0.6x normal volume in the last 30 min; news: West Coast Community Bank Continues Expansion with New Full-Service Branch in Sa",
-  "Sold PEBK (about -\u00a32). No new high for 16 min, and WCCB overtook it on buying volume (0.30x vs 0.14x normal in 30 min).",
-  "Day trade buy order: 21 WCCB at about $61.27. Strongest buying on the list: 0.30x normal volume bought in the last 30 min, and rising.",
-  "Bought 21 WCCB at 61.27 (cost \u00a3961).",
-  "Sold WCCB (about +\u00a31). No new high for 16 min, and PEBK overtook it on buying volume (0.11x vs 0.03x normal in 30 min).",
-  "Day trade buy order: 30 PEBK at about $44.17. Strongest buying on the list: 0.11x normal volume bought in the last 30 min, and rising.",
-  "Bought 30 PEBK at 44.17 (cost \u00a3989).",
-  "Sold PEBK (about +\u00a32). No new high for 22 min, and WCCB overtook it on buying volume (0.07x vs 0.03x normal in 30 min).",
-  "Day trade buy order: 21 WCCB at about $61.75. Strongest buying on the list: 0.07x normal volume bought in the last 30 min, and rising.",
-  "Bought 21 WCCB at 61.75 (cost \u00a3968).",
+  "Sold CBZ (about -\u00a32). No new high for 46 min, and PEBK overtook it on buying volume (0.40x vs 0.01x normal in 30 min).",
+  "Day trade buy order: 30 PEBK at about $44.24. Strongest buying on the list: 0.40x normal volume bought in the last 30 min, and rising.",
+  "Bought 30 PEBK at 44.28 (cost \u00a3993).",
+  "Added UCB to today's list at 11:04 New York: 0.4x normal volume in the last 30 min; news: United Community Banks (UCB) Upgraded to Strong Buy: Here's What You Should Know",
+  "Sold PEBK (about -\u00a34). No new high for 46 min, and GIB overtook it on buying volume (0.44x vs 0.00x normal in 30 min).",
+  "Day trade buy order: 16 GIB at about $81.52. Strongest buying on the list: 0.44x normal volume bought in the last 30 min, and rising.",
+  "Bought 16 GIB at 81.60 (cost \u00a3976).",
+  "Added MTD to today's list at 12:08 New York: 0.4x normal volume in the last 30 min; news: Will Mettler-Toledo (MTD) Beat Estimates Again in Its Next Earnings Report?",
   "Added AVBH to today's list at 12:24 New York: 0.3x normal volume in the last 30 min; news: Avidbank Holdings Inc. (AVBH) Reports Next Week: Wall Street Expects Earnings Gr",
-  "Sold WCCB (about -\u00a33). No new high for 18 min, and AVBH overtook it on buying volume (0.28x vs 0.06x normal in 30 min).",
-  "Day trade buy order: 42 AVBH at about $31.58. Strongest buying on the list: 0.28x normal volume bought in the last 30 min, and rising.",
-  "Bought 42 AVBH at 31.58 (cost \u00a3990).",
-  "Added NABL to today's list at 13:44 New York: 0.6x normal volume in the last 30 min; news: As AI Accelerates Cyberattacks, N-able and SentinelOne Expand Their Strategic Pa",
-  "Sold AVBH (about +\u00a31). No new high for 16 min, and NABL overtook it on buying volume (0.61x vs 0.02x normal in 30 min).",
-  "Day trade buy order: 273 NABL at about $4.89. Strongest buying on the list: 0.61x normal volume bought in the last 30 min, and rising.",
-  "Bought 273 NABL at 4.89 (cost \u00a3998).",
-  "Sold NABL (about +\u00a32). End of day: sold 10 minutes before the close.",
-  "Day trading finished: 6 trade(s), total +\u00a32."
+  "Added CENTA to today's list at 12:40 New York: 0.4x normal volume in the last 30 min; news: Central Garden & Pet Acquires Burpee, an Iconic Brand in the Packet Seed and You",
+  "Sold GIB (about -\u00a36). No new high for 30 min, and CENTA overtook it on buying volume (0.50x vs 0.02x normal in 30 min).",
+  "Day trade buy order: 34 CENTA at about $38.46. Strongest buying on the list: 0.50x normal volume bought in the last 30 min, and rising.",
+  "Bought 34 CENTA at 38.50 (cost \u00a3979).",
+  "Added MFC to today's list at 12:56 New York: 0.5x normal volume in the last 30 min; news: Manulife and UpLink announce winners of the 'Shaping Canada's Longevity Advantag",
+  "Added MET to today's list at 13:28 New York: 0.3x normal volume in the last 30 min; news: MetLife's ChatGPT Integration Opens a New Pet Insurance Growth Avenue",
+  "Added NIQ to today's list at 13:28 New York: 0.4x normal volume in the last 30 min; news: NIQ Expands ConnectAI Charter Program with Mars Snacking",
+  "Added DBX to today's list at 13:44 New York: 0.4x normal volume in the last 30 min; news: Dropbox (DBX) Beats Stock Market Upswing: What Investors Need to Know",
+  "Added SPNT to today's list at 13:44 New York: 1.1x normal volume in the last 30 min; news: SiriusPoint (SPNT) Expected to Beat Earnings Estimates: Can the Stock Move Highe",
+  "Added NOMD to today's list at 13:44 New York: 0.4x normal volume in the last 30 min; news: Nomad Foods CEO Dominic Brisby Outlines Several Avenues for Continued Growth",
+  "Added PEN to today's list at 14:16 New York: 0.8x normal volume in the last 30 min; news: Penumbra's CAVT Technology Receives FDA Clearance for the Treatment of Deep Vein",
+  "Added ELV to today's list at 14:32 New York: 0.5x normal volume in the last 30 min; news: ELV Q3 deep dive: Carelon expansion and Medicaid margin actions underpin raised ",
+  "Added BKH to today's list at 14:32 New York: 0.4x normal volume in the last 30 min; news: Subject to Receipt of Satisfactory Final Regulatory Approval and Completion of P",
+  "Added SHAK to today's list at 14:32 New York: 0.4x normal volume in the last 30 min; news: Shake Shack (SHAK) Upgraded to Buy: Here's What You Should Know",
+  "Added SJM to today's list at 14:48 New York: 0.5x normal volume in the last 30 min; news: Campbell\u2019s Dividend Cut Changes the Math. Is Smucker the Clear Winner?",
+  "Added G to today's list at 14:48 New York: 0.9x normal volume in the last 30 min; news: Will Genpact (G) Beat Estimates Again in Its Next Earnings Report?",
+  "Added BBWI to today's list at 14:48 New York: 0.4x normal volume in the last 30 min; news: Spotting winners: Bath and Body Works (NYSE:BBWI) and beauty and cosmetics retai",
+  "Added MSI to today's list at 15:20 New York: 0.9x normal volume in the last 30 min; news: What Makes Motorola (MSI) a Strong Bet?",
+  "Added DOCS to today's list at 15:20 New York: 0.4x normal volume in the last 30 min; news: Doximity and Wolters Kluwer Sign Partnership to Bring UpToDate to Doximity Ask",
+  "Sold CENTA (about +\u00a35). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 4 trade(s), total -\u00a36."
  ]
 }

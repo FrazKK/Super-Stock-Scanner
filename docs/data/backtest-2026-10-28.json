@@ -1,19 +1,41 @@
 {
  "date": "2026-10-28",
- "generated": "2026-11-01T11:12+00:00",
+ "generated": "2026-11-01T12:33+00:00",
  "fx_gbpusd": 1.330629587173462,
  "result": "done",
  "require_news": true,
  "added_during_day": [
+  "Added BHC to today's list at 10:16 New York: 0.7x normal volume in the last 30 min; news: Bausch Health soars on earnings beat and raised outlook",
+  "Added ASAN to today's list at 10:16 New York: 0.4x normal volume in the last 30 min; news: Asana tees up facelift and expansion for northwest Austin shopping center - Yaho",
   "Added TLS to today's list at 11:04 New York: 0.3x normal volume in the last 30 min; news: Why Telos (TLS) is Poised to Beat Earnings Estimates Again",
-  "Added LAW to today's list at 12:40 New York: 0.5x normal volume in the last 30 min; news: CS Disco (LAW) Expected to Announce Quarterly Earnings on Wednesday - MarketBeat",
+  "Added CTOS to today's list at 11:36 New York: 0.7x normal volume in the last 30 min; news: Is Custom Truck One Source (CTOS) A Bargain Following Its Third Quarter 2026 Res",
+  "Added MIR to today's list at 12:08 New York: 0.9x normal volume in the last 30 min; news: Mirion (NYSE:MIR) beats Q3 2026 sales expectations",
+  "Added FTV to today's list at 12:24 New York: 1.1x normal volume in the last 30 min; news: Fortive Q3 Earnings Beat Estimates on Strong Core Growth, View Raised",
+  "Added NUE to today's list at 12:40 New York: 0.9x normal volume in the last 30 min; news: Nucor Soars 6% on Q3 Revenue Beat, Sees Q4 \u201cIn-Line With or Modestly Higher\u201d",
+  "Added STN to today's list at 12:40 New York: 0.3x normal volume in the last 30 min; news: Stantec (TSX:STN) Following Its Acquisition Push, Is Fair Value Back In Focus? -",
   "Added AVBH to today's list at 12:56 New York: 0.4x normal volume in the last 30 min; news: Avidbank Holdings Inc. (AVBH) Q3 Earnings and Revenues Beat Estimates",
+  "Added HAL to today's list at 13:12 New York: 0.4x normal volume in the last 30 min; news: TechnipFMC (FTI) vs. HAL and BKR: Can Deepwater Demand Turn Backlog Growth Into ",
+  "Added OVV to today's list at 13:12 New York: 0.4x normal volume in the last 30 min; news: Ovintiv (OVV) Upgraded to Strong Buy: What Does It Mean for the Stock?",
+  "Added ASC to today's list at 13:12 New York: 0.4x normal volume in the last 30 min; news: Ardmore Shipping (ASC) Expected to Announce Quarterly Earnings on Tuesday - Mark",
+  "Added R to today's list at 13:28 New York: 0.4x normal volume in the last 30 min; news: Ryder Invests in Metro Detroit with Expansion of Roseville Truck Rental and Main",
+  "Added LAW to today's list at 13:28 New York: 0.5x normal volume in the last 30 min; news: CS Disco (LAW) Expected to Announce Quarterly Earnings on Wednesday - MarketBeat",
+  "Added ROP to today's list at 13:44 New York: 0.4x normal volume in the last 30 min; news: Did Earnings Beat Just Shift Roper Technologies (ROP) Investment Narrative?",
+  "Added IEX to today's list at 13:44 New York: 1.1x normal volume in the last 30 min; news: IDEX Q3 Earnings Beat Estimates on HST Strength, View Raised",
+  "Added SDRL to today's list at 13:44 New York: 0.6x normal volume in the last 30 min; news: Seadrill (SDRL) Set to Post Quarterly Earnings on Tuesday - MarketBeat",
+  "Added TALO to today's list at 13:44 New York: 0.6x normal volume in the last 30 min; news: Talos Energy (TALO) Reports Next Week: Wall Street Expects Earnings Growth",
   "Added YEXT to today's list at 13:44 New York: 0.5x normal volume in the last 30 min; news: What Does A Record Margin Mean For Yext (NYSE:YEXT) Amid AI Search Moves? - Kalk",
-  "Added BRCC to today's list at 13:44 New York: 0.4x normal volume in the last 30 min; news: BRC Group Holdings grants Andy Moore substitute stock award - TradingView",
-  "Added NABL to today's list at 14:00 New York: 0.4x normal volume in the last 30 min; news: N-able Launches AI-Accelerated Vulnerability and Patch Management",
-  "Added ASC to today's list at 14:48 New York: 0.5x normal volume in the last 30 min; news: Ardmore Shipping (ASC) Expected to Announce Quarterly Earnings on Tuesday - Mark",
+  "Added RCL to today's list at 14:00 New York: 0.6x normal volume in the last 30 min; news: Royal Caribbean Q3 Earnings Call Highlights Demand & Resort Expansion",
+  "Added HLT to today's list at 14:16 New York: 0.5x normal volume in the last 30 min; news: Hilton Worldwide Holdings (HLT) Launched Pay With Points for Digital Bookings",
+  "Added CRL to today's list at 14:16 New York: 0.5x normal volume in the last 30 min; news: Charles River (CRL) Rises on Strong Earnings and Improving Biopharma Demand",
+  "Added SHAK to today's list at 14:16 New York: 0.5x normal volume in the last 30 min; news: Shake Shack Seen Delivering Solid Growth Through 2027, Oppenheimer Says",
+  "Added DHR to today's list at 14:32 New York: 0.4x normal volume in the last 30 min; news: Danaher (DHR) Upgraded to Buy: Here's Why",
+  "Added TNL to today's list at 14:48 New York: 0.8x normal volume in the last 30 min; news: Travel + Leisure (TNL) Lifts Guidance On An Earnings Beat As Undervalued Narrati",
+  "Added AEO to today's list at 14:48 New York: 0.4x normal volume in the last 30 min; news: American Eagle Outfitters (AEO) Surpasses Market Returns: Some Facts Worth Knowi",
+  "Added EVTC to today's list at 14:48 New York: 0.4x normal volume in the last 30 min; news: EVERTEC (EVTC) Stock Could Trade Below Fair Value After Earnings Beat",
+  "Added GFR to today's list at 14:48 New York: 0.5x normal volume in the last 30 min; news: Greenfire Resources (NYSE:GFR) Stock Could Be Overvalued As Analyst Upgrades Lan",
   "Added SGP to today's list at 15:04 New York: 0.7x normal volume in the last 30 min; news: Spyglass Pharma (NASDAQ:SGP) Sets New 12-Month High - Still a Buy? - MarketBeat",
-  "Added CHMG to today's list at 15:04 New York: 0.3x normal volume in the last 30 min; news: Raymond James raises Chemung Financial stock price target on strong earnings - I"
+  "Added PM to today's list at 15:20 New York: 0.3x normal volume in the last 30 min; news: Are Stronger Smoke Free Sales Altering The Investment Case For Philip Morris Int",
+  "Added ICLR to today's list at 15:20 New York: 0.4x normal volume in the last 30 min; news: Icon PLC (ICLR) Q3 Earnings and Revenues Beat Estimates"
  ],
  "list": [
   {
@@ -33,11 +55,60 @@
    "ticker": "RDWR",
    "name": "Radware Ltd.",
    "vol_x": 0.47,
-   "buy_pct30": 0.6106463778383072,
+   "buy_pct30": 0.6114725083462742,
    "change": 0.05451266866334725,
-   "score": 3.88,
+   "score": 3.89,
    "news": [
     "Radware Selected by Major Global Cloud Provider to Modernize DDoS Protection Infrastructure"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "BLCO",
+   "name": "Bausch + Lomb Corporation",
+   "vol_x": 0.56,
+   "buy_pct30": 0.6483017484541679,
+   "change": 0.07094210785828681,
+   "score": 3.71,
+   "news": [
+    "Bausch + Lomb Soars 16% on Big Q3 Profit Beat and Raised Full-Year Guidance",
+    "BAUSCH HEALTH ANNOUNCES THIRD QUARTER 2026 RESULTS, RAISES GUIDANCE"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "CHE",
+   "name": "Chemed Corp",
+   "vol_x": 0.37,
+   "buy_pct30": 0.5979197101402285,
+   "change": 0.08588855883645108,
+   "score": 3.63,
+   "news": [
+    "LH Stock Hits Record Levels, CHE Stock Surges To Over 52-Week Highs \u2013 Here\u2019s What\u2019s Driving Investor Enthusiasm"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "AVPT",
+   "name": "AvePoint, Inc.",
+   "vol_x": 0.34,
+   "buy_pct30": 0.503818551551686,
+   "change": 0.05042538743745495,
+   "score": 3.2,
+   "news": [
+    "Avepoint stock climbs following S&P Smallcap 600 inclusion news"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "STNG",
+   "name": "Scorpio Tankers Inc.",
+   "vol_x": 0.81,
+   "buy_pct30": 0.7539204167824513,
+   "change": 0.04740417300065247,
+   "score": 3.14,
+   "news": [
+    "Scorpio Tankers\u2019s (NYSE:STNG) Q3 2026: strong sales"
    ],
    "on_t212": true
   },
@@ -45,16 +116,56 @@
    "ticker": "PRME",
    "name": "Prime Medicine, Inc.",
    "vol_x": 0.36,
-   "buy_pct30": 0.6060313890578763,
+   "buy_pct30": 0.6061837147714362,
    "change": 0.12528737660742073,
    "score": 2.64,
    "news": [
     "PRME, BEAM, EDIT, NTLA, CRSP Stocks Gain As FDA Signals Faster Route For Patient-Specific Gene Edits"
    ],
    "on_t212": true
+  },
+  {
+   "ticker": "ECO",
+   "name": "Okeanis Eco Tankers Corp.",
+   "vol_x": 0.39,
+   "buy_pct30": 0.5603937221704122,
+   "change": 0.06124200395798951,
+   "score": 2.52,
+   "news": [
+    "Okeanis Eco Tankers (NYSE:ECO) Shares Gap Up - Here's Why - MarketBeat"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "GEHC",
+   "name": "GE HealthCare Technologies Inc.",
+   "vol_x": 0.5,
+   "buy_pct30": 0.4668074021253406,
+   "change": 0.07122770915387866,
+   "score": 1.37,
+   "news": [
+    "GE HealthCare (GEHC) Buys Into PET Supply After Strong Q3 And New Imaging Push"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "PPG",
+   "name": "PPG Industries, Inc.",
+   "vol_x": 0.47,
+   "buy_pct30": 0.3969134267319276,
+   "change": 0.042092681538425936,
+   "score": 1.03,
+   "news": [
+    "PPG reports record third quarter 2026 EPS and raises midpoint of full-year EPS guidance"
+   ],
+   "on_t212": true
   }
  ],
  "quiet": [
+  {
+   "ticker": "WING",
+   "vol_x": 0.62
+  },
   {
    "ticker": "RCKY",
    "vol_x": 0.56
@@ -68,8 +179,20 @@
    "vol_x": 0.45
   },
   {
+   "ticker": "ETSY",
+   "vol_x": 0.39
+  },
+  {
    "ticker": "CFFI",
-   "vol_x": 0.35
+   "vol_x": 0.37
+  },
+  {
+   "ticker": "SDGR",
+   "vol_x": 0.36
+  },
+  {
+   "ticker": "EXTR",
+   "vol_x": 0.34
   },
   {
    "ticker": "SMWB",
@@ -80,114 +203,104 @@
   {
    "ticker": "CLAR",
    "bought_at": "2026-10-28T14:16+00:00",
-   "sold_at": "2026-10-28T14:48+00:00",
-   "entry": 4.284999847412109,
-   "exit": 4.304999828338623,
-   "cost_gbp": 998.286800099981,
-   "pl_gbp": 4.659444030843588,
-   "pl_pct": 0.004667440289080185,
-   "reason": "No new high for 28 min, and PRME overtook it on buying volume (0.20x vs 0.20x normal in 30 min)."
+   "sold_at": "2026-10-28T15:32+00:00",
+   "entry": 4.289284847259521,
+   "exit": 4.329999923706055,
+   "cost_gbp": 1000.7840145304308,
+   "pl_gbp": 7.986562411425325,
+   "pl_pct": 0.007980305735771201,
+   "reason": "No new high for 34 min, and CHE overtook it on buying volume (0.60x vs 0.08x normal in 30 min)."
   },
   {
-   "ticker": "PRME",
-   "bought_at": "2026-10-28T14:48+00:00",
-   "sold_at": "2026-10-28T16:14+00:00",
-   "entry": 5.045000076293945,
-   "exit": 5.130000114440918,
-   "cost_gbp": 997.148291947863,
-   "pl_gbp": 16.800325385925476,
-   "pl_pct": 0.01684837202409198,
-   "reason": "No new high for 38 min, and CLAR overtook it on buying volume (0.16x vs 0.09x normal in 30 min)."
+   "ticker": "CHE",
+   "bought_at": "2026-10-28T15:32+00:00",
+   "sold_at": "2026-10-28T16:42+00:00",
+   "entry": 557.3167697753905,
+   "exit": 555.135009765625,
+   "cost_gbp": 838.9303083447707,
+   "pl_gbp": -4.53580048650349,
+   "pl_pct": -0.005406647538402483,
+   "reason": "No new high for 30 min, and NUE overtook it on buying volume (0.50x vs 0.02x normal in 30 min)."
   },
   {
-   "ticker": "CLAR",
-   "bought_at": "2026-10-28T16:14+00:00",
-   "sold_at": "2026-10-28T17:42+00:00",
-   "entry": 4.255000114440918,
-   "exit": 4.320000171661377,
-   "cost_gbp": 997.6931585638225,
-   "pl_gbp": 15.240919071897565,
-   "pl_pct": 0.015276158747882806,
-   "reason": "No new high for 24 min, and LAW overtook it on buying volume (0.28x vs 0.10x normal in 30 min)."
+   "ticker": "NUE",
+   "bought_at": "2026-10-28T16:42+00:00",
+   "sold_at": "2026-10-28T17:28+00:00",
+   "entry": 271.075797668457,
+   "exit": 269.7550048828125,
+   "cost_gbp": 816.1021338527296,
+   "pl_gbp": -5.192749353534509,
+   "pl_pct": -0.006362867021337272,
+   "reason": "No new high for 32 min, and R overtook it on buying volume (0.38x vs 0.02x normal in 30 min)."
   },
   {
-   "ticker": "LAW",
-   "bought_at": "2026-10-28T17:42+00:00",
-   "sold_at": "2026-10-28T18:14+00:00",
-   "entry": 5.085000038146973,
-   "exit": 5.090000152587891,
-   "cost_gbp": 997.4113177323683,
-   "pl_gbp": 0.9807611988035205,
-   "pl_pct": 0.0009833066673368997,
-   "reason": "No new high for 18 min, and BRCC overtook it on buying volume (0.12x vs 0.04x normal in 30 min)."
-  },
-  {
-   "ticker": "BRCC",
-   "bought_at": "2026-10-28T18:14+00:00",
-   "sold_at": "2026-10-28T19:22+00:00",
-   "entry": 11.880000114440918,
-   "exit": 11.875,
-   "cost_gbp": 999.9477132052754,
-   "pl_gbp": -0.4208630431646725,
-   "pl_pct": -0.000420885049894879,
-   "reason": "No new high for 16 min, and YEXT overtook it on buying volume (0.79x vs 0.08x normal in 30 min)."
-  },
-  {
-   "ticker": "YEXT",
-   "bought_at": "2026-10-28T19:22+00:00",
+   "ticker": "R",
+   "bought_at": "2026-10-28T17:28+00:00",
    "sold_at": "2026-10-28T19:50+00:00",
-   "entry": 7.239999771118164,
-   "exit": 7.284999847412109,
-   "cost_gbp": 995.7090770309968,
-   "pl_gbp": 6.188810200203648,
-   "pl_pct": 0.006215480347590512,
+   "entry": 280.6203363342285,
+   "exit": 276.3550109863281,
+   "cost_gbp": 844.836969049278,
+   "pl_gbp": -14.087333988586124,
+   "pl_pct": -0.016674618304687888,
    "reason": "End of day: sold 10 minutes before the close."
   }
  ],
- "total_gbp": 43.449396844509124,
+ "total_gbp": -15.829321417198798,
  "alerts": [
-  "10:16 Day trade: bought CLAR: 310 CLAR at $4.28 (about \u00a3998). Stop $4.07. Highest first-30-minute volume on today's list (0.8x a normal day).",
-  "10:48 Day trade: sold CLAR (+\u00a35): No new high for 28 min, and PRME overtook it on buying volume (0.20x vs 0.20x normal in 30 min). Result +\u00a35 (+0.5%).",
-  "10:48 Day trade: bought PRME: 263 PRME at $5.05 (about \u00a3997). Stop $4.79. Strongest buying on the list: 0.20x normal volume bought in the last 30 min, and rising.",
-  "12:14 Day trade: sold PRME (+\u00a317): No new high for 38 min, and CLAR overtook it on buying volume (0.16x vs 0.09x normal in 30 min). Result +\u00a317 (+1.7%).",
-  "12:14 Day trade: bought CLAR: 312 CLAR at $4.26 (about \u00a3998). Stop $4.04. Strongest buying on the list: 0.16x normal volume bought in the last 30 min, and rising.",
-  "13:42 Day trade: sold CLAR (+\u00a315): No new high for 24 min, and LAW overtook it on buying volume (0.28x vs 0.10x normal in 30 min). Result +\u00a315 (+1.5%).",
-  "13:42 Day trade: bought LAW: 261 LAW at $5.09 (about \u00a3997). Stop $4.83. Strongest buying on the list: 0.28x normal volume bought in the last 30 min, and rising.",
-  "14:14 Day trade: sold LAW (+\u00a31): No new high for 18 min, and BRCC overtook it on buying volume (0.12x vs 0.04x normal in 30 min). Result +\u00a31 (+0.1%).",
-  "14:14 Day trade: bought BRCC: 112 BRCC at $11.88 (about \u00a31,000). Stop $11.29. Strongest buying on the list: 0.12x normal volume bought in the last 30 min, and rising.",
-  "15:22 Day trade: sold BRCC (-\u00a30): No new high for 16 min, and YEXT overtook it on buying volume (0.79x vs 0.08x normal in 30 min). Result -\u00a30 (-0.0%).",
-  "15:22 Day trade: bought YEXT: 183 YEXT at $7.24 (about \u00a3996). Stop $6.88. Strongest buying on the list: 0.79x normal volume bought in the last 30 min, and rising.",
-  "15:50 Day trade: sold YEXT (+\u00a36): End of day: sold 10 minutes before the close. Result +\u00a36 (+0.6%).",
-  "15:50 Day trade summary: 6 trade(s) today: CLAR +\u00a35, PRME +\u00a317, CLAR +\u00a315, LAW +\u00a31, BRCC -\u00a30, YEXT +\u00a36. Total +\u00a343."
+  "10:16 Day trade: bought CLAR: 310 CLAR at $4.29 (about \u00a31,001). Stop $4.07. Highest first-30-minute volume on today's list (0.8x a normal day).",
+  "11:32 Day trade: sold CLAR (+\u00a38): No new high for 34 min, and CHE overtook it on buying volume (0.60x vs 0.08x normal in 30 min). Result +\u00a38 (+0.8%).",
+  "11:32 Day trade: bought CHE: 2 CHE at $557.32 (about \u00a3839). Stop $529.45. Strongest buying on the list: 0.60x normal volume bought in the last 30 min, and rising.",
+  "12:42 Day trade: sold CHE (-\u00a35): No new high for 30 min, and NUE overtook it on buying volume (0.50x vs 0.02x normal in 30 min). Result -\u00a35 (-0.5%).",
+  "12:42 Day trade: bought NUE: 4 NUE at $271.08 (about \u00a3816). Stop $257.52. Strongest buying on the list: 0.50x normal volume bought in the last 30 min, and rising.",
+  "13:28 Day trade: sold NUE (-\u00a35): No new high for 32 min, and R overtook it on buying volume (0.38x vs 0.02x normal in 30 min). Result -\u00a35 (-0.6%).",
+  "13:28 Day trade: bought R: 4 R at $280.62 (about \u00a3845). Stop $266.59. Strongest buying on the list: 0.38x normal volume bought in the last 30 min, and rising.",
+  "15:50 Day trade: sold R (-\u00a314): End of day: sold 10 minutes before the close. Result -\u00a314 (-1.7%).",
+  "15:50 Day trade summary: 4 trade(s) today: CLAR +\u00a38, CHE -\u00a35, NUE -\u00a35, R -\u00a314. Total -\u00a316."
  ],
  "log": [
+  "Added BHC to today's list at 10:16 New York: 0.7x normal volume in the last 30 min; news: Bausch Health soars on earnings beat and raised outlook",
+  "Added ASAN to today's list at 10:16 New York: 0.4x normal volume in the last 30 min; news: Asana tees up facelift and expansion for northwest Austin shopping center - Yaho",
   "Day trade buy order: 310 CLAR at about $4.28. Highest first-30-minute volume on today's list (0.8x a normal day).",
-  "Bought 310 CLAR at 4.28 (cost \u00a3998).",
-  "Sold CLAR (about +\u00a35). No new high for 28 min, and PRME overtook it on buying volume (0.20x vs 0.20x normal in 30 min).",
-  "Day trade buy order: 263 PRME at about $5.05. Strongest buying on the list: 0.20x normal volume bought in the last 30 min, and rising.",
-  "Bought 263 PRME at 5.05 (cost \u00a3997).",
+  "Bought 310 CLAR at 4.29 (cost \u00a31,001).",
   "Added TLS to today's list at 11:04 New York: 0.3x normal volume in the last 30 min; news: Why Telos (TLS) is Poised to Beat Earnings Estimates Again",
-  "Sold PRME (about +\u00a317). No new high for 38 min, and CLAR overtook it on buying volume (0.16x vs 0.09x normal in 30 min).",
-  "Day trade buy order: 312 CLAR at about $4.26. Strongest buying on the list: 0.16x normal volume bought in the last 30 min, and rising.",
-  "Bought 312 CLAR at 4.26 (cost \u00a3998).",
-  "Added LAW to today's list at 12:40 New York: 0.5x normal volume in the last 30 min; news: CS Disco (LAW) Expected to Announce Quarterly Earnings on Wednesday - MarketBeat",
+  "Sold CLAR (about +\u00a38). No new high for 34 min, and CHE overtook it on buying volume (0.60x vs 0.08x normal in 30 min).",
+  "Day trade buy order: 2 CHE at about $556.76. Strongest buying on the list: 0.60x normal volume bought in the last 30 min, and rising.",
+  "Bought 2 CHE at 557.32 (cost \u00a3839).",
+  "Added CTOS to today's list at 11:36 New York: 0.7x normal volume in the last 30 min; news: Is Custom Truck One Source (CTOS) A Bargain Following Its Third Quarter 2026 Res",
+  "Added MIR to today's list at 12:08 New York: 0.9x normal volume in the last 30 min; news: Mirion (NYSE:MIR) beats Q3 2026 sales expectations",
+  "Added FTV to today's list at 12:24 New York: 1.1x normal volume in the last 30 min; news: Fortive Q3 Earnings Beat Estimates on Strong Core Growth, View Raised",
+  "Added NUE to today's list at 12:40 New York: 0.9x normal volume in the last 30 min; news: Nucor Soars 6% on Q3 Revenue Beat, Sees Q4 \u201cIn-Line With or Modestly Higher\u201d",
+  "Added STN to today's list at 12:40 New York: 0.3x normal volume in the last 30 min; news: Stantec (TSX:STN) Following Its Acquisition Push, Is Fair Value Back In Focus? -",
+  "Sold CHE (about -\u00a35). No new high for 30 min, and NUE overtook it on buying volume (0.50x vs 0.02x normal in 30 min).",
+  "Day trade buy order: 4 NUE at about $270.80. Strongest buying on the list: 0.50x normal volume bought in the last 30 min, and rising.",
+  "Bought 4 NUE at 271.08 (cost \u00a3816).",
   "Added AVBH to today's list at 12:56 New York: 0.4x normal volume in the last 30 min; news: Avidbank Holdings Inc. (AVBH) Q3 Earnings and Revenues Beat Estimates",
-  "Sold CLAR (about +\u00a315). No new high for 24 min, and LAW overtook it on buying volume (0.28x vs 0.10x normal in 30 min).",
-  "Day trade buy order: 261 LAW at about $5.09. Strongest buying on the list: 0.28x normal volume bought in the last 30 min, and rising.",
-  "Bought 261 LAW at 5.09 (cost \u00a3997).",
+  "Added HAL to today's list at 13:12 New York: 0.4x normal volume in the last 30 min; news: TechnipFMC (FTI) vs. HAL and BKR: Can Deepwater Demand Turn Backlog Growth Into ",
+  "Added OVV to today's list at 13:12 New York: 0.4x normal volume in the last 30 min; news: Ovintiv (OVV) Upgraded to Strong Buy: What Does It Mean for the Stock?",
+  "Added ASC to today's list at 13:12 New York: 0.4x normal volume in the last 30 min; news: Ardmore Shipping (ASC) Expected to Announce Quarterly Earnings on Tuesday - Mark",
+  "Added R to today's list at 13:28 New York: 0.4x normal volume in the last 30 min; news: Ryder Invests in Metro Detroit with Expansion of Roseville Truck Rental and Main",
+  "Added LAW to today's list at 13:28 New York: 0.5x normal volume in the last 30 min; news: CS Disco (LAW) Expected to Announce Quarterly Earnings on Wednesday - MarketBeat",
+  "Sold NUE (about -\u00a35). No new high for 32 min, and R overtook it on buying volume (0.38x vs 0.02x normal in 30 min).",
+  "Day trade buy order: 4 R at about $280.34. Strongest buying on the list: 0.38x normal volume bought in the last 30 min, and rising.",
+  "Bought 4 R at 280.62 (cost \u00a3845).",
+  "Added ROP to today's list at 13:44 New York: 0.4x normal volume in the last 30 min; news: Did Earnings Beat Just Shift Roper Technologies (ROP) Investment Narrative?",
+  "Added IEX to today's list at 13:44 New York: 1.1x normal volume in the last 30 min; news: IDEX Q3 Earnings Beat Estimates on HST Strength, View Raised",
+  "Added SDRL to today's list at 13:44 New York: 0.6x normal volume in the last 30 min; news: Seadrill (SDRL) Set to Post Quarterly Earnings on Tuesday - MarketBeat",
+  "Added TALO to today's list at 13:44 New York: 0.6x normal volume in the last 30 min; news: Talos Energy (TALO) Reports Next Week: Wall Street Expects Earnings Growth",
   "Added YEXT to today's list at 13:44 New York: 0.5x normal volume in the last 30 min; news: What Does A Record Margin Mean For Yext (NYSE:YEXT) Amid AI Search Moves? - Kalk",
-  "Added BRCC to today's list at 13:44 New York: 0.4x normal volume in the last 30 min; news: BRC Group Holdings grants Andy Moore substitute stock award - TradingView",
-  "Added NABL to today's list at 14:00 New York: 0.4x normal volume in the last 30 min; news: N-able Launches AI-Accelerated Vulnerability and Patch Management",
-  "Sold LAW (about +\u00a31). No new high for 18 min, and BRCC overtook it on buying volume (0.12x vs 0.04x normal in 30 min).",
-  "Day trade buy order: 112 BRCC at about $11.88. Strongest buying on the list: 0.12x normal volume bought in the last 30 min, and rising.",
-  "Bought 112 BRCC at 11.88 (cost \u00a31,000).",
-  "Added ASC to today's list at 14:48 New York: 0.5x normal volume in the last 30 min; news: Ardmore Shipping (ASC) Expected to Announce Quarterly Earnings on Tuesday - Mark",
+  "Added RCL to today's list at 14:00 New York: 0.6x normal volume in the last 30 min; news: Royal Caribbean Q3 Earnings Call Highlights Demand & Resort Expansion",
+  "Added HLT to today's list at 14:16 New York: 0.5x normal volume in the last 30 min; news: Hilton Worldwide Holdings (HLT) Launched Pay With Points for Digital Bookings",
+  "Added CRL to today's list at 14:16 New York: 0.5x normal volume in the last 30 min; news: Charles River (CRL) Rises on Strong Earnings and Improving Biopharma Demand",
+  "Added SHAK to today's list at 14:16 New York: 0.5x normal volume in the last 30 min; news: Shake Shack Seen Delivering Solid Growth Through 2027, Oppenheimer Says",
+  "Added DHR to today's list at 14:32 New York: 0.4x normal volume in the last 30 min; news: Danaher (DHR) Upgraded to Buy: Here's Why",
+  "Added TNL to today's list at 14:48 New York: 0.8x normal volume in the last 30 min; news: Travel + Leisure (TNL) Lifts Guidance On An Earnings Beat As Undervalued Narrati",
+  "Added AEO to today's list at 14:48 New York: 0.4x normal volume in the last 30 min; news: American Eagle Outfitters (AEO) Surpasses Market Returns: Some Facts Worth Knowi",
+  "Added EVTC to today's list at 14:48 New York: 0.4x normal volume in the last 30 min; news: EVERTEC (EVTC) Stock Could Trade Below Fair Value After Earnings Beat",
+  "Added GFR to today's list at 14:48 New York: 0.5x normal volume in the last 30 min; news: Greenfire Resources (NYSE:GFR) Stock Could Be Overvalued As Analyst Upgrades Lan",
   "Added SGP to today's list at 15:04 New York: 0.7x normal volume in the last 30 min; news: Spyglass Pharma (NASDAQ:SGP) Sets New 12-Month High - Still a Buy? - MarketBeat",
-  "Added CHMG to today's list at 15:04 New York: 0.3x normal volume in the last 30 min; news: Raymond James raises Chemung Financial stock price target on strong earnings - I",
-  "Sold BRCC (about -\u00a30). No new high for 16 min, and YEXT overtook it on buying volume (0.79x vs 0.08x normal in 30 min).",
-  "Day trade buy order: 183 YEXT at about $7.24. Strongest buying on the list: 0.79x normal volume bought in the last 30 min, and rising.",
-  "Bought 183 YEXT at 7.24 (cost \u00a3996).",
-  "Sold YEXT (about +\u00a36). End of day: sold 10 minutes before the close.",
-  "Day trading finished: 6 trade(s), total +\u00a343."
+  "Added PM to today's list at 15:20 New York: 0.3x normal volume in the last 30 min; news: Are Stronger Smoke Free Sales Altering The Investment Case For Philip Morris Int",
+  "Added ICLR to today's list at 15:20 New York: 0.4x normal volume in the last 30 min; news: Icon PLC (ICLR) Q3 Earnings and Revenues Beat Estimates",
+  "Sold R (about -\u00a314). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 4 trade(s), total -\u00a316."
  ]
 }

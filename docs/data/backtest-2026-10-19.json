@@ -1,14 +1,29 @@
 {
  "date": "2026-10-19",
- "generated": "2026-11-01T11:07+00:00",
+ "generated": "2026-11-01T12:07+00:00",
  "fx_gbpusd": 1.3335645198822021,
  "result": "done",
  "require_news": true,
  "added_during_day": [
   "Added CFFI to today's list at 11:20 New York: 0.7x normal volume in the last 30 min; news: C&F Financial's 2026 Outlook: Aggressive Market Expansion Drives New Retail Grow",
-  "Added BWMN to today's list at 14:32 New York: 0.3x normal volume in the last 30 min; news: Bowman Acquires Dymaptic, Expanding AI-Powered Geospatial Data Collection and Da"
+  "Added BOX to today's list at 12:56 New York: 0.8x normal volume in the last 30 min; news: Why Box Stock Is An 'Underappreciated AI Winner' And BofA's Top Pick",
+  "Added BWMN to today's list at 14:32 New York: 0.3x normal volume in the last 30 min; news: Bowman Acquires Dymaptic, Expanding AI-Powered Geospatial Data Collection and Da",
+  "Added SU to today's list at 15:04 New York: 0.6x normal volume in the last 30 min; news: Suncor Energy (TSX:SU) Reshapes Portfolio And Lifts Share Buybacks"
  ],
- "list": [],
+ "list": [
+  {
+   "ticker": "TBBB",
+   "name": "BBB Foods Inc.",
+   "vol_x": 0.4,
+   "buy_pct30": 0.3069294060528872,
+   "change": 0.012482684065425076,
+   "score": 1.53,
+   "news": [
+    "BBB Foods (TBBB) Could Be 17% Undervalued As Q2 Sales Beat Expectations"
+   ],
+   "on_t212": true
+  }
+ ],
  "quiet": [
   {
    "ticker": "FUFU",
@@ -19,20 +34,32 @@
    "vol_x": 2.19
   },
   {
-   "ticker": "ATNM",
-   "vol_x": 1.49
-  },
-  {
    "ticker": "KRSA",
    "vol_x": 0.94
   },
   {
-   "ticker": "GTE",
-   "vol_x": 0.45
+   "ticker": "CLF",
+   "vol_x": 0.87
+  },
+  {
+   "ticker": "CVX",
+   "vol_x": 0.42
   },
   {
    "ticker": "ENGS",
    "vol_x": 0.42
+  },
+  {
+   "ticker": "PMI",
+   "vol_x": 0.41
+  },
+  {
+   "ticker": "TALO",
+   "vol_x": 0.39
+  },
+  {
+   "ticker": "FRO",
+   "vol_x": 0.36
   },
   {
    "ticker": "AII",
@@ -41,61 +68,63 @@
  ],
  "trades": [
   {
-   "ticker": "CFFI",
-   "bought_at": "2026-10-19T15:20+00:00",
-   "sold_at": "2026-10-19T18:32+00:00",
-   "entry": 103.1500015258789,
-   "exit": 102.91000366210938,
-   "cost_gbp": 928.1890751111806,
-   "pl_gbp": -2.159606319976774,
-   "pl_pct": -0.002326687932324663,
-   "reason": "No new high for 192 min, and BWMN overtook it on buying volume (0.15x vs 0.01x normal in 30 min)."
-  },
-  {
-   "ticker": "BWMN",
-   "bought_at": "2026-10-19T18:32+00:00",
-   "sold_at": "2026-10-19T19:24+00:00",
-   "entry": 42.790000915527344,
-   "exit": 42.79999923706055,
-   "cost_gbp": 994.695051198963,
-   "pl_gbp": 0.23242067624653373,
-   "pl_pct": 0.00023366023181314088,
-   "reason": "No new high for 24 min, and CFFI overtook it on buying volume (0.05x vs 0.02x normal in 30 min)."
+   "ticker": "TBBB",
+   "bought_at": "2026-10-19T14:16+00:00",
+   "sold_at": "2026-10-19T15:52+00:00",
+   "entry": 58.648590152740475,
+   "exit": 58.808101654052734,
+   "cost_gbp": 968.9852778547792,
+   "pl_gbp": 1.1801825336267484,
+   "pl_pct": 0.0012179571357776823,
+   "reason": "No new high for 34 min, and CFFI overtook it on buying volume (0.40x vs 0.03x normal in 30 min)."
   },
   {
    "ticker": "CFFI",
-   "bought_at": "2026-10-19T19:24+00:00",
+   "bought_at": "2026-10-19T15:52+00:00",
+   "sold_at": "2026-10-19T17:06+00:00",
+   "entry": 102.7025984725952,
+   "exit": 103.03500366210938,
+   "cost_gbp": 925.5493904057054,
+   "pl_gbp": 1.6048833556641284,
+   "pl_pct": 0.0017339791612424312,
+   "reason": "No new high for 30 min, and BOX overtook it on buying volume (0.42x vs 0.00x normal in 30 min)."
+  },
+  {
+   "ticker": "BOX",
+   "bought_at": "2026-10-19T17:06+00:00",
    "sold_at": "2026-10-19T19:50+00:00",
-   "entry": 101.9800033569336,
-   "exit": 101.26499938964844,
-   "cost_gbp": 994.1326601559881,
-   "pl_gbp": -6.970080139450715,
-   "pl_pct": -0.007011217334271111,
+   "entry": 40.525886554718014,
+   "exit": 40.33000183105469,
+   "cost_gbp": 973.9113428275128,
+   "pl_gbp": -6.159097358542908,
+   "pl_pct": -0.006324084223787228,
    "reason": "End of day: sold 10 minutes before the close."
   }
  ],
- "total_gbp": -8.897265783180956,
+ "total_gbp": -3.3740314692520315,
  "alerts": [
-  "11:20 Day trade: bought CFFI: 12 CFFI at $103.15 (about \u00a3928). Stop $97.99. Highest first-30-minute volume on today's list (0.7x a normal day).",
-  "14:32 Day trade: sold CFFI (-\u00a32): No new high for 192 min, and BWMN overtook it on buying volume (0.15x vs 0.01x normal in 30 min). Result -\u00a32 (-0.2%).",
-  "14:32 Day trade: bought BWMN: 31 BWMN at $42.79 (about \u00a3995). Stop $40.65. Strongest buying on the list: 0.15x normal volume bought in the last 30 min, and rising.",
-  "15:24 Day trade: sold BWMN (+\u00a30): No new high for 24 min, and CFFI overtook it on buying volume (0.05x vs 0.02x normal in 30 min). Result +\u00a30 (+0.0%).",
-  "15:24 Day trade: bought CFFI: 13 CFFI at $101.98 (about \u00a3994). Stop $96.88. Strongest buying on the list: 0.05x normal volume bought in the last 30 min, and rising.",
-  "15:50 Day trade: sold CFFI (-\u00a37): End of day: sold 10 minutes before the close. Result -\u00a37 (-0.7%).",
-  "15:50 Day trade summary: 3 trade(s) today: CFFI -\u00a32, BWMN +\u00a30, CFFI -\u00a37. Total -\u00a39."
+  "10:16 Day trade: bought TBBB: 22 TBBB at $58.65 (about \u00a3969). Stop $55.72. Highest first-30-minute volume on today's list (0.4x a normal day).",
+  "11:52 Day trade: sold TBBB (+\u00a31): No new high for 34 min, and CFFI overtook it on buying volume (0.40x vs 0.03x normal in 30 min). Result +\u00a31 (+0.1%).",
+  "11:52 Day trade: bought CFFI: 12 CFFI at $102.70 (about \u00a3926). Stop $97.57. Strongest buying on the list: 0.40x normal volume bought in the last 30 min, and rising.",
+  "13:06 Day trade: sold CFFI (+\u00a32): No new high for 30 min, and BOX overtook it on buying volume (0.42x vs 0.00x normal in 30 min). Result +\u00a32 (+0.2%).",
+  "13:06 Day trade: bought BOX: 32 BOX at $40.53 (about \u00a3974). Stop $38.50. Strongest buying on the list: 0.42x normal volume bought in the last 30 min, and rising.",
+  "15:50 Day trade: sold BOX (-\u00a36): End of day: sold 10 minutes before the close. Result -\u00a36 (-0.6%).",
+  "15:50 Day trade summary: 3 trade(s) today: TBBB +\u00a31, CFFI +\u00a32, BOX -\u00a36. Total -\u00a33."
  ],
  "log": [
+  "Day trade buy order: 22 TBBB at about $58.59. Highest first-30-minute volume on today's list (0.4x a normal day).",
+  "Bought 22 TBBB at 58.65 (cost \u00a3969).",
   "Added CFFI to today's list at 11:20 New York: 0.7x normal volume in the last 30 min; news: C&F Financial's 2026 Outlook: Aggressive Market Expansion Drives New Retail Grow",
-  "Day trade buy order: 12 CFFI at about $103.15. Highest first-30-minute volume on today's list (0.7x a normal day).",
-  "Bought 12 CFFI at 103.15 (cost \u00a3928).",
+  "Sold TBBB (about +\u00a31). No new high for 34 min, and CFFI overtook it on buying volume (0.40x vs 0.03x normal in 30 min).",
+  "Day trade buy order: 12 CFFI at about $102.60. Strongest buying on the list: 0.40x normal volume bought in the last 30 min, and rising.",
+  "Bought 12 CFFI at 102.70 (cost \u00a3926).",
+  "Added BOX to today's list at 12:56 New York: 0.8x normal volume in the last 30 min; news: Why Box Stock Is An 'Underappreciated AI Winner' And BofA's Top Pick",
+  "Sold CFFI (about +\u00a32). No new high for 30 min, and BOX overtook it on buying volume (0.42x vs 0.00x normal in 30 min).",
+  "Day trade buy order: 32 BOX at about $40.49. Strongest buying on the list: 0.42x normal volume bought in the last 30 min, and rising.",
+  "Bought 32 BOX at 40.53 (cost \u00a3974).",
   "Added BWMN to today's list at 14:32 New York: 0.3x normal volume in the last 30 min; news: Bowman Acquires Dymaptic, Expanding AI-Powered Geospatial Data Collection and Da",
-  "Sold CFFI (about -\u00a32). No new high for 192 min, and BWMN overtook it on buying volume (0.15x vs 0.01x normal in 30 min).",
-  "Day trade buy order: 31 BWMN at about $42.79. Strongest buying on the list: 0.15x normal volume bought in the last 30 min, and rising.",
-  "Bought 31 BWMN at 42.79 (cost \u00a3995).",
-  "Sold BWMN (about +\u00a30). No new high for 24 min, and CFFI overtook it on buying volume (0.05x vs 0.02x normal in 30 min).",
-  "Day trade buy order: 13 CFFI at about $101.98. Strongest buying on the list: 0.05x normal volume bought in the last 30 min, and rising.",
-  "Bought 13 CFFI at 101.98 (cost \u00a3994).",
-  "Sold CFFI (about -\u00a37). End of day: sold 10 minutes before the close.",
-  "Day trading finished: 3 trade(s), total -\u00a39."
+  "Added SU to today's list at 15:04 New York: 0.6x normal volume in the last 30 min; news: Suncor Energy (TSX:SU) Reshapes Portfolio And Lifts Share Buybacks",
+  "Sold BOX (about -\u00a36). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 3 trade(s), total -\u00a33."
  ]
 }

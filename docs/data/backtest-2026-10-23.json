@@ -1,18 +1,57 @@
 {
  "date": "2026-10-23",
- "generated": "2026-11-01T11:09+00:00",
+ "generated": "2026-11-01T12:19+00:00",
  "fx_gbpusd": 1.3403927087783813,
  "result": "done",
  "require_news": true,
  "added_during_day": [
-  "Added AUNA to today's list at 11:52 New York: 0.5x normal volume in the last 30 min; news: Auna Investor Day: Colombia Pressure Prompts 2026 EBITDA Growth Reset",
-  "Added ARCO to today's list at 15:04 New York: 0.6x normal volume in the last 30 min; news: Is Arcos Dorados (ARCO) a Solid Growth Stock? 3 Reasons to Think \"Yes\""
+  "Added DOV to today's list at 10:16 New York: 0.7x normal volume in the last 30 min; news: Dover (DOV) Stock May Be 19% Undervalued As AI Led Growth Builds",
+  "Added TCBI to today's list at 11:20 New York: 0.5x normal volume in the last 30 min; news: Texas Capital Hits Record Revenues in Q3: Can Growth Momentum Continue?",
+  "Added DOW to today's list at 12:08 New York: 0.4x normal volume in the last 30 min; news: Will Earnings Beat Change Dow (DOW) Narrative",
+  "Added CUBI to today's list at 12:08 New York: 1.1x normal volume in the last 30 min; news: Is Customers Bancorp (CUBI) Undervalued As Earnings Beat And 2026 Guidance Rise?",
+  "Added TTC to today's list at 13:44 New York: 0.4x normal volume in the last 30 min; news: North America Cordless Garden Equipment Market Forecasts Growth from $4.6 Billio",
+  "Added PCOR to today's list at 13:44 New York: 0.5x normal volume in the last 30 min; news: Procore Launches Voice-First AI Mobile App Built for the Jobsite",
+  "Added ALLE to today's list at 14:00 New York: 0.8x normal volume in the last 30 min; news: Allegion's Volume Growth Could Drive Re-Rating as Recovery Builds, BofA Says",
+  "Added SSB to today's list at 14:16 New York: 0.4x normal volume in the last 30 min; news: SSB Q3 deep dive: loan and deposit growth, stable margins, and cautious capital ",
+  "Added KNTK to today's list at 14:16 New York: 0.6x normal volume in the last 30 min; news: Is Kinetik (KNTK) a Good or Bad Investment After Growing Earnings 65%?",
+  "Added IFF to today's list at 14:32 New York: 0.3x normal volume in the last 30 min; news: What Does Sherwin-Williams Offer That IFF Does Not?",
+  "Added IOT to today's list at 15:04 New York: 0.5x normal volume in the last 30 min; news: Samsara (IOT): Does a Fourth Straight Profitable Quarter Ensures its Entry into ",
+  "Added TFX to today's list at 15:04 New York: 0.4x normal volume in the last 30 min; news: Teleflex Announces FDA Breakthrough Device Designation for Freesolve\u2122 Resorbable",
+  "Added KVYO to today's list at 15:04 New York: 0.5x normal volume in the last 30 min; news: Klaviyo shares jump 8% as Salesforce moves to acquire rival Braze for $5.7 billi",
+  "Added ARCO to today's list at 15:04 New York: 0.6x normal volume in the last 30 min; news: Is Arcos Dorados (ARCO) a Solid Growth Stock? 3 Reasons to Think \"Yes\"",
+  "Added WS to today's list at 15:20 New York: 0.5x normal volume in the last 30 min; news: Worthington Steel Confirms Its Kloeckner Strategy Following Shareholder Vote"
  ],
- "list": [],
+ "list": [
+  {
+   "ticker": "FCNCA",
+   "name": "First Citizens BancShares, Inc.",
+   "vol_x": 0.47,
+   "buy_pct30": 0.5073580741888202,
+   "change": 0.06266953206676784,
+   "score": 3.97,
+   "news": [
+    "First Citizens Soars 8% on Q3 Earnings Beat and New $1.2 Billion Buyback",
+    "First Citizens BancShares (NASDAQ:FCNCA) reports upbeat Q3 2026"
+   ],
+   "on_t212": true
+  }
+ ],
  "quiet": [
+  {
+   "ticker": "BOLT",
+   "vol_x": 8.26
+  },
+  {
+   "ticker": "YMAT",
+   "vol_x": 1.62
+  },
   {
    "ticker": "EDHL",
    "vol_x": 0.84
+  },
+  {
+   "ticker": "RNG",
+   "vol_x": 0.66
   },
   {
    "ticker": "MWYN",
@@ -21,49 +60,102 @@
   {
    "ticker": "TMP",
    "vol_x": 0.41
+  },
+  {
+   "ticker": "BWLP",
+   "vol_x": 0.38
+  },
+  {
+   "ticker": "HURN",
+   "vol_x": 0.34
   }
  ],
  "trades": [
   {
-   "ticker": "AUNA",
-   "bought_at": "2026-10-23T15:52+00:00",
-   "sold_at": "2026-10-23T19:04+00:00",
-   "entry": 5.204999923706055,
-   "exit": 5.184999942779541,
-   "cost_gbp": 997.9798991980543,
-   "pl_gbp": -3.834693418168854,
-   "pl_pct": -0.0038424555657386433,
-   "reason": "No new high for 148 min, and ARCO overtook it on buying volume (0.27x vs 0.01x normal in 30 min)."
+   "ticker": "DOV",
+   "bought_at": "2026-10-23T14:16+00:00",
+   "sold_at": "2026-10-23T16:08+00:00",
+   "entry": 195.77558183288573,
+   "exit": 197.55499267578125,
+   "cost_gbp": 877.6647795301587,
+   "pl_gbp": 6.6506515310738905,
+   "pl_pct": 0.007577667107291455,
+   "reason": "No new high for 40 min, and TCBI overtook it on buying volume (0.74x vs 0.02x normal in 30 min)."
   },
   {
-   "ticker": "ARCO",
-   "bought_at": "2026-10-23T19:04+00:00",
+   "ticker": "TCBI",
+   "bought_at": "2026-10-23T16:08+00:00",
+   "sold_at": "2026-10-23T17:44+00:00",
+   "entry": 101.92682194519041,
+   "exit": 101.4800033569336,
+   "cost_gbp": 990.0354199366336,
+   "pl_gbp": -5.816366072578262,
+   "pl_pct": -0.005874907054285526,
+   "reason": "No new high for 86 min, and PCOR overtook it on buying volume (0.48x vs 0.04x normal in 30 min)."
+  },
+  {
+   "ticker": "PCOR",
+   "bought_at": "2026-10-23T17:44+00:00",
+   "sold_at": "2026-10-23T18:36+00:00",
+   "entry": 63.65359015274047,
+   "exit": 63.52000045776367,
+   "cost_gbp": 998.7598951634591,
+   "pl_gbp": -3.588852470488405,
+   "pl_pct": -0.0035933085498001957,
+   "reason": "No new high for 36 min, and SSB overtook it on buying volume (0.41x vs 0.01x normal in 30 min)."
+  },
+  {
+   "ticker": "SSB",
+   "bought_at": "2026-10-23T18:36+00:00",
    "sold_at": "2026-10-23T19:50+00:00",
-   "entry": 8.074999809265137,
-   "exit": 8.074999809265137,
-   "cost_gbp": 994.0183647694256,
-   "pl_gbp": 0.0,
-   "pl_pct": 0.0,
+   "entry": 105.69058408355711,
+   "exit": 105.87999725341797,
+   "cost_gbp": 947.6248499395567,
+   "pl_gbp": 0.2764320653188861,
+   "pl_pct": 0.00029171044357534316,
    "reason": "End of day: sold 10 minutes before the close."
   }
  ],
- "total_gbp": -3.834693418168854,
+ "total_gbp": -2.4781349466738902,
  "alerts": [
-  "11:52 Day trade: bought AUNA: 257 AUNA at $5.20 (about \u00a3998). Stop $4.94. Highest first-30-minute volume on today's list (0.5x a normal day).",
-  "15:04 Day trade: sold AUNA (-\u00a34): No new high for 148 min, and ARCO overtook it on buying volume (0.27x vs 0.01x normal in 30 min). Result -\u00a34 (-0.4%).",
-  "15:04 Day trade: bought ARCO: 165 ARCO at $8.07 (about \u00a3994). Stop $7.67. Strongest buying on the list: 0.27x normal volume bought in the last 30 min, and rising.",
-  "15:50 Day trade: sold ARCO (+\u00a30): End of day: sold 10 minutes before the close. Result +\u00a30 (+0.0%).",
-  "15:50 Day trade summary: 2 trade(s) today: AUNA -\u00a34, ARCO +\u00a30. Total -\u00a34."
+  "10:16 Day trade: bought DOV: 6 DOV at $195.78 (about \u00a3878). Stop $185.99. Highest first-30-minute volume on today's list (0.7x a normal day).",
+  "12:08 Day trade: sold DOV (+\u00a37): No new high for 40 min, and TCBI overtook it on buying volume (0.74x vs 0.02x normal in 30 min). Result +\u00a37 (+0.8%).",
+  "12:08 Day trade: bought TCBI: 13 TCBI at $101.93 (about \u00a3990). Stop $96.83. Strongest buying on the list: 0.74x normal volume bought in the last 30 min, and rising.",
+  "13:44 Day trade: sold TCBI (-\u00a36): No new high for 86 min, and PCOR overtook it on buying volume (0.48x vs 0.04x normal in 30 min). Result -\u00a36 (-0.6%).",
+  "13:44 Day trade: bought PCOR: 21 PCOR at $63.65 (about \u00a3999). Stop $60.47. Strongest buying on the list: 0.48x normal volume bought in the last 30 min, and rising.",
+  "14:36 Day trade: sold PCOR (-\u00a34): No new high for 36 min, and SSB overtook it on buying volume (0.41x vs 0.01x normal in 30 min). Result -\u00a34 (-0.4%).",
+  "14:36 Day trade: bought SSB: 12 SSB at $105.69 (about \u00a3948). Stop $100.41. Strongest buying on the list: 0.41x normal volume bought in the last 30 min, and rising.",
+  "15:50 Day trade: sold SSB (+\u00a30): End of day: sold 10 minutes before the close. Result +\u00a30 (+0.0%).",
+  "15:50 Day trade summary: 4 trade(s) today: DOV +\u00a37, TCBI -\u00a36, PCOR -\u00a34, SSB +\u00a30. Total -\u00a32."
  ],
  "log": [
-  "Added AUNA to today's list at 11:52 New York: 0.5x normal volume in the last 30 min; news: Auna Investor Day: Colombia Pressure Prompts 2026 EBITDA Growth Reset",
-  "Day trade buy order: 257 AUNA at about $5.20. Highest first-30-minute volume on today's list (0.5x a normal day).",
-  "Bought 257 AUNA at 5.20 (cost \u00a3998).",
+  "Added DOV to today's list at 10:16 New York: 0.7x normal volume in the last 30 min; news: Dover (DOV) Stock May Be 19% Undervalued As AI Led Growth Builds",
+  "Day trade buy order: 6 DOV at about $195.58. Highest first-30-minute volume on today's list (0.7x a normal day).",
+  "Bought 6 DOV at 195.78 (cost \u00a3878).",
+  "Added TCBI to today's list at 11:20 New York: 0.5x normal volume in the last 30 min; news: Texas Capital Hits Record Revenues in Q3: Can Growth Momentum Continue?",
+  "Added DOW to today's list at 12:08 New York: 0.4x normal volume in the last 30 min; news: Will Earnings Beat Change Dow (DOW) Narrative",
+  "Added CUBI to today's list at 12:08 New York: 1.1x normal volume in the last 30 min; news: Is Customers Bancorp (CUBI) Undervalued As Earnings Beat And 2026 Guidance Rise?",
+  "Sold DOV (about +\u00a37). No new high for 40 min, and TCBI overtook it on buying volume (0.74x vs 0.02x normal in 30 min).",
+  "Day trade buy order: 13 TCBI at about $101.82. Strongest buying on the list: 0.74x normal volume bought in the last 30 min, and rising.",
+  "Bought 13 TCBI at 101.93 (cost \u00a3990).",
+  "Added TTC to today's list at 13:44 New York: 0.4x normal volume in the last 30 min; news: North America Cordless Garden Equipment Market Forecasts Growth from $4.6 Billio",
+  "Added PCOR to today's list at 13:44 New York: 0.5x normal volume in the last 30 min; news: Procore Launches Voice-First AI Mobile App Built for the Jobsite",
+  "Sold TCBI (about -\u00a36). No new high for 86 min, and PCOR overtook it on buying volume (0.48x vs 0.04x normal in 30 min).",
+  "Day trade buy order: 21 PCOR at about $63.59. Strongest buying on the list: 0.48x normal volume bought in the last 30 min, and rising.",
+  "Bought 21 PCOR at 63.65 (cost \u00a3999).",
+  "Added ALLE to today's list at 14:00 New York: 0.8x normal volume in the last 30 min; news: Allegion's Volume Growth Could Drive Re-Rating as Recovery Builds, BofA Says",
+  "Added SSB to today's list at 14:16 New York: 0.4x normal volume in the last 30 min; news: SSB Q3 deep dive: loan and deposit growth, stable margins, and cautious capital ",
+  "Added KNTK to today's list at 14:16 New York: 0.6x normal volume in the last 30 min; news: Is Kinetik (KNTK) a Good or Bad Investment After Growing Earnings 65%?",
+  "Added IFF to today's list at 14:32 New York: 0.3x normal volume in the last 30 min; news: What Does Sherwin-Williams Offer That IFF Does Not?",
+  "Sold PCOR (about -\u00a34). No new high for 36 min, and SSB overtook it on buying volume (0.41x vs 0.01x normal in 30 min).",
+  "Day trade buy order: 12 SSB at about $105.58. Strongest buying on the list: 0.41x normal volume bought in the last 30 min, and rising.",
+  "Bought 12 SSB at 105.69 (cost \u00a3948).",
+  "Added IOT to today's list at 15:04 New York: 0.5x normal volume in the last 30 min; news: Samsara (IOT): Does a Fourth Straight Profitable Quarter Ensures its Entry into ",
+  "Added TFX to today's list at 15:04 New York: 0.4x normal volume in the last 30 min; news: Teleflex Announces FDA Breakthrough Device Designation for Freesolve\u2122 Resorbable",
+  "Added KVYO to today's list at 15:04 New York: 0.5x normal volume in the last 30 min; news: Klaviyo shares jump 8% as Salesforce moves to acquire rival Braze for $5.7 billi",
   "Added ARCO to today's list at 15:04 New York: 0.6x normal volume in the last 30 min; news: Is Arcos Dorados (ARCO) a Solid Growth Stock? 3 Reasons to Think \"Yes\"",
-  "Sold AUNA (about -\u00a34). No new high for 148 min, and ARCO overtook it on buying volume (0.27x vs 0.01x normal in 30 min).",
-  "Day trade buy order: 165 ARCO at about $8.07. Strongest buying on the list: 0.27x normal volume bought in the last 30 min, and rising.",
-  "Bought 165 ARCO at 8.07 (cost \u00a3994).",
-  "Sold ARCO (about +\u00a30). End of day: sold 10 minutes before the close.",
-  "Day trading finished: 2 trade(s), total -\u00a34."
+  "Added WS to today's list at 15:20 New York: 0.5x normal volume in the last 30 min; news: Worthington Steel Confirms Its Kloeckner Strategy Following Shareholder Vote",
+  "Sold SSB (about +\u00a30). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 4 trade(s), total -\u00a32."
  ]
 }

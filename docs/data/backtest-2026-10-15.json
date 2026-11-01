@@ -1,14 +1,23 @@
 {
  "date": "2026-10-15",
- "generated": "2026-11-01T11:04+00:00",
+ "generated": "2026-11-01T11:59+00:00",
  "fx_gbpusd": 1.3230137825012207,
  "result": "done",
  "require_news": true,
  "added_during_day": [
   "Added HLP to today's list at 10:32 New York: 1.4x normal volume in the last 30 min; news: Hongli Group Provides Strategic Update on Proposed Advanced Battery Collaboratio",
+  "Added COTY to today's list at 11:20 New York: 0.5x normal volume in the last 30 min; news: Coty Launches Global Fragrance Club, a New Community for the Voices Shaping the ",
+  "Added WTRG to today's list at 11:36 New York: 0.4x normal volume in the last 30 min; news: WTRG Unit Expands Water Operations With Lake Tamarack Acquisition",
   "Added NRXS to today's list at 12:08 New York: 0.5x normal volume in the last 30 min; news: NeurAxis Announces Medical Policy Coverage Milestone, Expanding Access to 26 Mil",
+  "Added TBBB to today's list at 12:40 New York: 0.5x normal volume in the last 30 min; news: BBB Foods (TBBB) Could Be 17% Undervalued As Q2 Sales Beat Expectations",
+  "Added BOX to today's list at 12:40 New York: 0.5x normal volume in the last 30 min; news: Why Box Stock Is An 'Underappreciated AI Winner' And BofA's Top Pick",
+  "Added BF.A to today's list at 12:56 New York: 0.5x normal volume in the last 30 min; news: Brown-Forman\u2019s Dividend Growth Depends on a Recovery that Has Yet to Materialize",
+  "Added W to today's list at 13:12 New York: 0.8x normal volume in the last 30 min; news: Did Klarna\u2019s Expanded 0% Financing Push Just Reframe Wayfair\u2019s (W) Big-Ticket St",
   "Added VSTM to today's list at 13:44 New York: 0.4x normal volume in the last 30 min; news: Verastem\u2019s KRAS inhibitor posts wins in mPDAC, mCRC and NSCLC",
-  "Added YEXT to today's list at 15:04 New York: 0.7x normal volume in the last 30 min; news: Yext Board Approves Long-Term Performance Equity Award For CEO"
+  "Added BF.B to today's list at 14:32 New York: 0.8x normal volume in the last 30 min; news: Brown-Forman\u2019s Dividend Growth Depends on a Recovery that Has Yet to Materialize",
+  "Added GXO to today's list at 15:04 New York: 0.5x normal volume in the last 30 min; news: GXO and Action Expand Partnership in France",
+  "Added YEXT to today's list at 15:04 New York: 0.7x normal volume in the last 30 min; news: Yext Board Approves Long-Term Performance Equity Award For CEO",
+  "Added MTD to today's list at 15:20 New York: 0.7x normal volume in the last 30 min; news: Mettler-Toledo (MTD) Upgraded to Buy: What Does It Mean for the Stock?"
  ],
  "list": [],
  "quiet": [
@@ -17,65 +26,146 @@
    "vol_x": 17.51
   },
   {
+   "ticker": "NCPL",
+   "vol_x": 1.77
+  },
+  {
    "ticker": "CANG",
    "vol_x": 0.89
+  },
+  {
+   "ticker": "WMT",
+   "vol_x": 0.61
   },
   {
    "ticker": "BCAL",
    "vol_x": 0.6
   },
   {
+   "ticker": "PFE",
+   "vol_x": 0.45
+  },
+  {
+   "ticker": "GIB",
+   "vol_x": 0.45
+  },
+  {
+   "ticker": "MA",
+   "vol_x": 0.43
+  },
+  {
+   "ticker": "UNH",
+   "vol_x": 0.43
+  },
+  {
+   "ticker": "VEEV",
+   "vol_x": 0.43
+  },
+  {
+   "ticker": "LLY",
+   "vol_x": 0.4
+  },
+  {
    "ticker": "NTWK",
    "vol_x": 0.39
   },
   {
+   "ticker": "GILD",
+   "vol_x": 0.37
+  },
+  {
    "ticker": "BRBS",
    "vol_x": 0.37
+  },
+  {
+   "ticker": "GOOGL",
+   "vol_x": 0.36
   }
  ],
  "trades": [
   {
    "ticker": "HLP",
    "bought_at": "2026-10-15T14:32+00:00",
-   "sold_at": "2026-10-15T16:08+00:00",
-   "entry": 3.0999999046325684,
-   "exit": 3.098599910736084,
-   "cost_gbp": 998.1755117296034,
-   "pl_gbp": -0.45078698936515593,
-   "pl_pct": -0.000451610948243008,
-   "reason": "No new high for 96 min, and NRXS overtook it on buying volume (0.27x vs 0.00x normal in 30 min)."
+   "sold_at": "2026-10-15T15:36+00:00",
+   "entry": 3.1030999045372005,
+   "exit": 3.075000047683716,
+   "cost_gbp": 1000.6724477721948,
+   "pl_gbp": -10.546692742840605,
+   "pl_pct": -0.010539605408663737,
+   "reason": "No new high for 64 min, and WTRG overtook it on buying volume (0.35x vs 0.00x normal in 30 min)."
   },
   {
-   "ticker": "NRXS",
-   "bought_at": "2026-10-15T16:08+00:00",
+   "ticker": "WTRG",
+   "bought_at": "2026-10-15T15:36+00:00",
+   "sold_at": "2026-10-15T17:08+00:00",
+   "entry": 40.47043030548095,
+   "exit": 40.46500015258789,
+   "cost_gbp": 980.3347233299567,
+   "pl_gbp": -1.5996398338648987,
+   "pl_pct": -0.0016317282207767919,
+   "reason": "No new high for 38 min, and TBBB overtook it on buying volume (0.51x vs 0.02x normal in 30 min)."
+  },
+  {
+   "ticker": "TBBB",
+   "bought_at": "2026-10-15T17:08+00:00",
+   "sold_at": "2026-10-15T17:54+00:00",
+   "entry": 56.561506069183345,
+   "exit": 56.130001068115234,
+   "cost_gbp": 984.7713068320977,
+   "pl_gbp": -8.976465053524407,
+   "pl_pct": -0.009115278838089547,
+   "reason": "No new high for 46 min, and COTY overtook it on buying volume (0.84x vs 0.01x normal in 30 min)."
+  },
+  {
+   "ticker": "COTY",
+   "bought_at": "2026-10-15T17:54+00:00",
    "sold_at": "2026-10-15T19:50+00:00",
-   "entry": 7.21999979019165,
-   "exit": 7.675000190734863,
-   "cost_gbp": 998.6743744325679,
-   "pl_gbp": 62.93590769855132,
-   "pl_pct": 0.06301944788991964,
+   "entry": 3.173170076370239,
+   "exit": 3.174999952316284,
+   "cost_gbp": 1001.649988274356,
+   "pl_gbp": -0.9234670336984436,
+   "pl_pct": -0.0009219458338829454,
    "reason": "End of day: sold 10 minutes before the close."
   }
  ],
- "total_gbp": 62.48512070918616,
+ "total_gbp": -22.046264663928355,
  "alerts": [
-  "10:32 Day trade: bought HLP: 426 HLP at $3.10 (about \u00a3998). Stop $2.94. Highest first-30-minute volume on today's list (1.4x a normal day).",
-  "12:08 Day trade: sold HLP (-\u00a30): No new high for 96 min, and NRXS overtook it on buying volume (0.27x vs 0.00x normal in 30 min). Result -\u00a30 (-0.0%).",
-  "12:08 Day trade: bought NRXS: 183 NRXS at $7.22 (about \u00a3999). Stop $6.86. Strongest buying on the list: 0.27x normal volume bought in the last 30 min, and rising.",
-  "15:50 Day trade: sold NRXS (+\u00a363): End of day: sold 10 minutes before the close. Result +\u00a363 (+6.3%).",
-  "15:50 Day trade summary: 2 trade(s) today: HLP -\u00a30, NRXS +\u00a363. Total +\u00a362."
+  "10:32 Day trade: bought HLP: 426 HLP at $3.10 (about \u00a31,001). Stop $2.95. Highest first-30-minute volume on today's list (1.4x a normal day).",
+  "11:36 Day trade: sold HLP (-\u00a311): No new high for 64 min, and WTRG overtook it on buying volume (0.35x vs 0.00x normal in 30 min). Result -\u00a311 (-1.1%).",
+  "11:36 Day trade: bought WTRG: 32 WTRG at $40.47 (about \u00a3980). Stop $38.45. Strongest buying on the list: 0.35x normal volume bought in the last 30 min, and rising.",
+  "13:08 Day trade: sold WTRG (-\u00a32): No new high for 38 min, and TBBB overtook it on buying volume (0.51x vs 0.02x normal in 30 min). Result -\u00a32 (-0.2%).",
+  "13:08 Day trade: bought TBBB: 23 TBBB at $56.56 (about \u00a3985). Stop $53.73. Strongest buying on the list: 0.51x normal volume bought in the last 30 min, and rising.",
+  "13:54 Day trade: sold TBBB (-\u00a39): No new high for 46 min, and COTY overtook it on buying volume (0.84x vs 0.01x normal in 30 min). Result -\u00a39 (-0.9%).",
+  "13:54 Day trade: bought COTY: 417 COTY at $3.17 (about \u00a31,002). Stop $3.01. Strongest buying on the list: 0.84x normal volume bought in the last 30 min, and rising.",
+  "15:50 Day trade: sold COTY (-\u00a31): End of day: sold 10 minutes before the close. Result -\u00a31 (-0.1%).",
+  "15:50 Day trade summary: 4 trade(s) today: HLP -\u00a311, WTRG -\u00a32, TBBB -\u00a39, COTY -\u00a31. Total -\u00a322."
  ],
  "log": [
   "Added HLP to today's list at 10:32 New York: 1.4x normal volume in the last 30 min; news: Hongli Group Provides Strategic Update on Proposed Advanced Battery Collaboratio",
   "Day trade buy order: 426 HLP at about $3.10. Highest first-30-minute volume on today's list (1.4x a normal day).",
-  "Bought 426 HLP at 3.10 (cost \u00a3998).",
+  "Bought 426 HLP at 3.10 (cost \u00a31,001).",
+  "Added COTY to today's list at 11:20 New York: 0.5x normal volume in the last 30 min; news: Coty Launches Global Fragrance Club, a New Community for the Voices Shaping the ",
+  "Added WTRG to today's list at 11:36 New York: 0.4x normal volume in the last 30 min; news: WTRG Unit Expands Water Operations With Lake Tamarack Acquisition",
+  "Sold HLP (about -\u00a311). No new high for 64 min, and WTRG overtook it on buying volume (0.35x vs 0.00x normal in 30 min).",
+  "Day trade buy order: 32 WTRG at about $40.43. Strongest buying on the list: 0.35x normal volume bought in the last 30 min, and rising.",
+  "Bought 32 WTRG at 40.47 (cost \u00a3980).",
   "Added NRXS to today's list at 12:08 New York: 0.5x normal volume in the last 30 min; news: NeurAxis Announces Medical Policy Coverage Milestone, Expanding Access to 26 Mil",
-  "Sold HLP (about -\u00a30). No new high for 96 min, and NRXS overtook it on buying volume (0.27x vs 0.00x normal in 30 min).",
-  "Day trade buy order: 183 NRXS at about $7.22. Strongest buying on the list: 0.27x normal volume bought in the last 30 min, and rising.",
-  "Bought 183 NRXS at 7.22 (cost \u00a3999).",
+  "Added TBBB to today's list at 12:40 New York: 0.5x normal volume in the last 30 min; news: BBB Foods (TBBB) Could Be 17% Undervalued As Q2 Sales Beat Expectations",
+  "Added BOX to today's list at 12:40 New York: 0.5x normal volume in the last 30 min; news: Why Box Stock Is An 'Underappreciated AI Winner' And BofA's Top Pick",
+  "Added BF.A to today's list at 12:56 New York: 0.5x normal volume in the last 30 min; news: Brown-Forman\u2019s Dividend Growth Depends on a Recovery that Has Yet to Materialize",
+  "Sold WTRG (about -\u00a32). No new high for 38 min, and TBBB overtook it on buying volume (0.51x vs 0.02x normal in 30 min).",
+  "Day trade buy order: 23 TBBB at about $56.51. Strongest buying on the list: 0.51x normal volume bought in the last 30 min, and rising.",
+  "Bought 23 TBBB at 56.56 (cost \u00a3985).",
+  "Added W to today's list at 13:12 New York: 0.8x normal volume in the last 30 min; news: Did Klarna\u2019s Expanded 0% Financing Push Just Reframe Wayfair\u2019s (W) Big-Ticket St",
   "Added VSTM to today's list at 13:44 New York: 0.4x normal volume in the last 30 min; news: Verastem\u2019s KRAS inhibitor posts wins in mPDAC, mCRC and NSCLC",
+  "Sold TBBB (about -\u00a39). No new high for 46 min, and COTY overtook it on buying volume (0.84x vs 0.01x normal in 30 min).",
+  "Day trade buy order: 417 COTY at about $3.17. Strongest buying on the list: 0.84x normal volume bought in the last 30 min, and rising.",
+  "Bought 417 COTY at 3.17 (cost \u00a31,002).",
+  "Added BF.B to today's list at 14:32 New York: 0.8x normal volume in the last 30 min; news: Brown-Forman\u2019s Dividend Growth Depends on a Recovery that Has Yet to Materialize",
+  "Added GXO to today's list at 15:04 New York: 0.5x normal volume in the last 30 min; news: GXO and Action Expand Partnership in France",
   "Added YEXT to today's list at 15:04 New York: 0.7x normal volume in the last 30 min; news: Yext Board Approves Long-Term Performance Equity Award For CEO",
-  "Sold NRXS (about +\u00a363). End of day: sold 10 minutes before the close.",
-  "Day trading finished: 2 trade(s), total +\u00a362."
+  "Added MTD to today's list at 15:20 New York: 0.7x normal volume in the last 30 min; news: Mettler-Toledo (MTD) Upgraded to Buy: What Does It Mean for the Stock?",
+  "Sold COTY (about -\u00a31). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 4 trade(s), total -\u00a322."
  ]
 }

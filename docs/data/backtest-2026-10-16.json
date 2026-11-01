@@ -1,17 +1,24 @@
 {
  "date": "2026-10-16",
- "generated": "2026-11-01T11:05+00:00",
+ "generated": "2026-11-01T12:00+00:00",
  "fx_gbpusd": 1.327316164970398,
  "result": "done",
  "require_news": true,
  "added_during_day": [
-  "Added HLP to today's list at 12:08 New York: 0.8x normal volume in the last 30 min; news: Hongli Group Provides Strategic Update on Proposed Advanced Battery Collaboratio"
+  "Added BF.B to today's list at 11:20 New York: 0.3x normal volume in the last 30 min; news: Brown-Forman\u2019s Dividend Growth Depends on a Recovery that Has Yet to Materialize",
+  "Added COTY to today's list at 11:36 New York: 0.3x normal volume in the last 30 min; news: Coty Launches Global Fragrance Club, a New Community for the Voices Shaping the ",
+  "Added TEN to today's list at 11:36 New York: 0.4x normal volume in the last 30 min; news: Tsakos Energy Navigation (TEN) Shares Sit 23% Above Fair Value After Container V",
+  "Added HLP to today's list at 12:08 New York: 0.8x normal volume in the last 30 min; news: Hongli Group Provides Strategic Update on Proposed Advanced Battery Collaboratio",
+  "Added BIPC to today's list at 12:40 New York: 0.7x normal volume in the last 30 min; news: Brookfield Infrastructure Partners L.P. Unitholders Approve Proposed Corporate S",
+  "Added GORO to today's list at 13:28 New York: 0.4x normal volume in the last 30 min; news: Goldgroup Completes Strategic Investment in Luca Mining",
+  "Added CXT to today's list at 15:20 New York: 0.9x normal volume in the last 30 min; news: All You Need to Know About Crane NXT (CXT) Rating Upgrade to Buy",
+  "Added EFXT to today's list at 15:20 New York: 0.6x normal volume in the last 30 min; news: Enerflex Soars 13% on Gigawatt Data Center Power Award, Backlog Now \u201cOver 1.75 G"
  ],
  "list": [],
  "quiet": [
   {
-   "ticker": "PMI",
-   "vol_x": 0.83
+   "ticker": "NCPL",
+   "vol_x": 0.93
   },
   {
    "ticker": "PRAA",
@@ -22,42 +29,133 @@
    "vol_x": 0.75
   },
   {
+   "ticker": "RGC",
+   "vol_x": 0.62
+  },
+  {
+   "ticker": "TRI",
+   "vol_x": 0.57
+  },
+  {
    "ticker": "OPK",
    "vol_x": 0.52
+  },
+  {
+   "ticker": "TRV",
+   "vol_x": 0.48
   },
   {
    "ticker": "CZWI",
    "vol_x": 0.48
   },
   {
+   "ticker": "AIT",
+   "vol_x": 0.43
+  },
+  {
+   "ticker": "PMI",
+   "vol_x": 0.43
+  },
+  {
+   "ticker": "AAPL",
+   "vol_x": 0.4
+  },
+  {
    "ticker": "JMSB",
    "vol_x": 0.38
+  },
+  {
+   "ticker": "MO",
+   "vol_x": 0.37
+  },
+  {
+   "ticker": "TALO",
+   "vol_x": 0.36
+  },
+  {
+   "ticker": "BRK.B",
+   "vol_x": 0.35
   }
  ],
  "trades": [
   {
+   "ticker": "BF.B",
+   "bought_at": "2026-10-16T15:20+00:00",
+   "sold_at": "2026-10-16T16:08+00:00",
+   "entry": 29.124094312667843,
+   "exit": 28.8799991607666,
+   "cost_gbp": 988.8752620333158,
+   "pl_gbp": -9.75664920192537,
+   "pl_pct": -0.009866410432660478,
+   "reason": "No new high for 48 min, and HLP overtook it on buying volume (0.47x vs 0.04x normal in 30 min)."
+  },
+  {
    "ticker": "HLP",
    "bought_at": "2026-10-16T16:08+00:00",
+   "sold_at": "2026-10-16T16:56+00:00",
+   "entry": 3.02301998090744,
+   "exit": 3.0199999809265137,
+   "cost_gbp": 1001.3412518828441,
+   "pl_gbp": -2.498604881473966,
+   "pl_pct": -0.0024952581118332876,
+   "reason": "No new high for 48 min, and BIPC overtook it on buying volume (0.37x vs 0.00x normal in 30 min)."
+  },
+  {
+   "ticker": "BIPC",
+   "bought_at": "2026-10-16T16:56+00:00",
+   "sold_at": "2026-10-16T18:46+00:00",
+   "entry": 37.737700763702385,
+   "exit": 37.755001068115234,
+   "cost_gbp": 996.5980908920666,
+   "pl_gbp": -1.036466421453838,
+   "pl_pct": -0.001040004421969226,
+   "reason": "No new high for 64 min, and COTY overtook it on buying volume (0.44x vs 0.02x normal in 30 min)."
+  },
+  {
+   "ticker": "COTY",
+   "bought_at": "2026-10-16T18:46+00:00",
    "sold_at": "2026-10-16T19:50+00:00",
-   "entry": 3.0199999809265137,
-   "exit": 3.049999952316284,
-   "cost_gbp": 998.8426470013701,
-   "pl_gbp": 9.92226855038939,
-   "pl_pct": 0.009933765423590068,
+   "entry": 3.1981949331760404,
+   "exit": 3.2249999046325684,
+   "cost_gbp": 1001.4507535539612,
+   "pl_gbp": 6.88094295058977,
+   "pl_pct": 0.006870974859393327,
    "reason": "End of day: sold 10 minutes before the close."
   }
  ],
- "total_gbp": 9.92226855038939,
+ "total_gbp": -6.4107775542634045,
  "alerts": [
-  "12:08 Day trade: bought HLP: 439 HLP at $3.02 (about \u00a3999). Stop $2.87. Highest first-30-minute volume on today's list (0.8x a normal day).",
-  "15:50 Day trade: sold HLP (+\u00a310): End of day: sold 10 minutes before the close. Result +\u00a310 (+1.0%).",
-  "15:50 Day trade summary: 1 trade(s) today: HLP +\u00a310. Total +\u00a310."
+  "11:20 Day trade: bought BF.B: 45 BF.B at $29.12 (about \u00a3989). Stop $27.67. Highest first-30-minute volume on today's list (0.3x a normal day).",
+  "12:08 Day trade: sold BF.B (-\u00a310): No new high for 48 min, and HLP overtook it on buying volume (0.47x vs 0.04x normal in 30 min). Result -\u00a310 (-1.0%).",
+  "12:08 Day trade: bought HLP: 439 HLP at $3.02 (about \u00a31,001). Stop $2.87. Strongest buying on the list: 0.47x normal volume bought in the last 30 min, and rising.",
+  "12:56 Day trade: sold HLP (-\u00a32): No new high for 48 min, and BIPC overtook it on buying volume (0.37x vs 0.00x normal in 30 min). Result -\u00a32 (-0.2%).",
+  "12:56 Day trade: bought BIPC: 35 BIPC at $37.74 (about \u00a3997). Stop $35.85. Strongest buying on the list: 0.37x normal volume bought in the last 30 min, and rising.",
+  "14:46 Day trade: sold BIPC (-\u00a31): No new high for 64 min, and COTY overtook it on buying volume (0.44x vs 0.02x normal in 30 min). Result -\u00a31 (-0.1%).",
+  "14:46 Day trade: bought COTY: 415 COTY at $3.20 (about \u00a31,001). Stop $3.04. Strongest buying on the list: 0.44x normal volume bought in the last 30 min, and rising.",
+  "15:50 Day trade: sold COTY (+\u00a37): End of day: sold 10 minutes before the close. Result +\u00a37 (+0.7%).",
+  "15:50 Day trade summary: 4 trade(s) today: BF.B -\u00a310, HLP -\u00a32, BIPC -\u00a31, COTY +\u00a37. Total -\u00a36."
  ],
  "log": [
+  "Added BF.B to today's list at 11:20 New York: 0.3x normal volume in the last 30 min; news: Brown-Forman\u2019s Dividend Growth Depends on a Recovery that Has Yet to Materialize",
+  "Day trade buy order: 45 BF.B at about $29.09. Highest first-30-minute volume on today's list (0.3x a normal day).",
+  "Bought 45 BF.B at 29.12 (cost \u00a3989).",
+  "Added COTY to today's list at 11:36 New York: 0.3x normal volume in the last 30 min; news: Coty Launches Global Fragrance Club, a New Community for the Voices Shaping the ",
+  "Added TEN to today's list at 11:36 New York: 0.4x normal volume in the last 30 min; news: Tsakos Energy Navigation (TEN) Shares Sit 23% Above Fair Value After Container V",
   "Added HLP to today's list at 12:08 New York: 0.8x normal volume in the last 30 min; news: Hongli Group Provides Strategic Update on Proposed Advanced Battery Collaboratio",
-  "Day trade buy order: 439 HLP at about $3.02. Highest first-30-minute volume on today's list (0.8x a normal day).",
-  "Bought 439 HLP at 3.02 (cost \u00a3999).",
-  "Sold HLP (about +\u00a310). End of day: sold 10 minutes before the close.",
-  "Day trading finished: 1 trade(s), total +\u00a310."
+  "Sold BF.B (about -\u00a310). No new high for 48 min, and HLP overtook it on buying volume (0.47x vs 0.04x normal in 30 min).",
+  "Day trade buy order: 439 HLP at about $3.02. Strongest buying on the list: 0.47x normal volume bought in the last 30 min, and rising.",
+  "Bought 439 HLP at 3.02 (cost \u00a31,001).",
+  "Added BIPC to today's list at 12:40 New York: 0.7x normal volume in the last 30 min; news: Brookfield Infrastructure Partners L.P. Unitholders Approve Proposed Corporate S",
+  "Sold HLP (about -\u00a32). No new high for 48 min, and BIPC overtook it on buying volume (0.37x vs 0.00x normal in 30 min).",
+  "Day trade buy order: 35 BIPC at about $37.70. Strongest buying on the list: 0.37x normal volume bought in the last 30 min, and rising.",
+  "Bought 35 BIPC at 37.74 (cost \u00a3997).",
+  "Added GORO to today's list at 13:28 New York: 0.4x normal volume in the last 30 min; news: Goldgroup Completes Strategic Investment in Luca Mining",
+  "Sold BIPC (about -\u00a31). No new high for 64 min, and COTY overtook it on buying volume (0.44x vs 0.02x normal in 30 min).",
+  "Day trade buy order: 415 COTY at about $3.19. Strongest buying on the list: 0.44x normal volume bought in the last 30 min, and rising.",
+  "Bought 415 COTY at 3.20 (cost \u00a31,001).",
+  "Added CXT to today's list at 15:20 New York: 0.9x normal volume in the last 30 min; news: All You Need to Know About Crane NXT (CXT) Rating Upgrade to Buy",
+  "Added EFXT to today's list at 15:20 New York: 0.6x normal volume in the last 30 min; news: Enerflex Soars 13% on Gigawatt Data Center Power Award, Backlog Now \u201cOver 1.75 G",
+  "Sold COTY (about +\u00a37). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 4 trade(s), total -\u00a36."
  ]
 }

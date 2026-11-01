@@ -1,22 +1,47 @@
 {
  "date": "2026-10-27",
- "generated": "2026-11-01T11:12+00:00",
+ "generated": "2026-11-01T12:27+00:00",
  "fx_gbpusd": 1.334507703781128,
  "result": "done",
  "require_news": true,
  "added_during_day": [
   "Added BOW to today's list at 10:16 New York: 1.3x normal volume in the last 30 min; news: Bowhead Specialty (NYSE:BOW) Sees Strong Trading Volume - What's Next? - MarketB",
   "Added THFF to today's list at 10:16 New York: 0.5x normal volume in the last 30 min; news: First Financial Corp. (THFF) Q3 Earnings and Revenues Beat Estimates",
-  "Added DEC to today's list at 11:36 New York: 0.4x normal volume in the last 30 min; news: Diversified Energy Positioned To Benefit From Permian Infrastructure Expansion -",
+  "Added COTY to today's list at 11:52 New York: 0.5x normal volume in the last 30 min; news: Coty and Brandlight Unveil Strategic Partnership to Strengthen Brand Visibility ",
   "Added INSG to today's list at 11:52 New York: 0.7x normal volume in the last 30 min; news: MarketBeat cites Hold consensus and USD 13.00 target for Inseego stock - ad-hoc-",
-  "Added TLS to today's list at 12:08 New York: 0.3x normal volume in the last 30 min; news: Why Telos (TLS) is Poised to Beat Earnings Estimates Again"
+  "Added TLS to today's list at 12:08 New York: 0.3x normal volume in the last 30 min; news: Why Telos (TLS) is Poised to Beat Earnings Estimates Again",
+  "Added EW to today's list at 12:24 New York: 0.5x normal volume in the last 30 min; news: Does Valve Repair Approval Change The Bull Case For Edwards Lifesciences (EW)?",
+  "Added OIS to today's list at 12:24 New York: 0.3x normal volume in the last 30 min; news: Oil States International (OIS) Reports Next Week: Wall Street Expects Earnings G",
+  "Added RVTY to today's list at 12:40 New York: 0.3x normal volume in the last 30 min; news: Will Revvity (RVTY) Beat Estimates Again in Its Next Earnings Report?",
+  "Added AEO to today's list at 12:40 New York: 0.8x normal volume in the last 30 min; news: American Eagle Outfitters (AEO) Surpasses Market Returns: Some Facts Worth Knowi",
+  "Added PPG to today's list at 13:12 New York: 0.4x normal volume in the last 30 min; news: PPG reports record third quarter 2026 EPS and raises midpoint of full-year EPS g",
+  "Added AUB to today's list at 13:28 New York: 0.4x normal volume in the last 30 min; news: How Investors May Respond To Atlantic Union Bankshares (AUB) Stronger Quarterly ",
+  "Added WS to today's list at 13:28 New York: 0.6x normal volume in the last 30 min; news: Worthington Steel Confirms Its Kloeckner Strategy Following Shareholder Vote",
+  "Added ALLE to today's list at 13:44 New York: 0.4x normal volume in the last 30 min; news: Learn Why The Bull Case For Allegion Stock Could Change Following Raised 2026 Gu",
+  "Added CE to today's list at 14:48 New York: 0.4x normal volume in the last 30 min; news: Celanese and Cooper Standard Honored for Industry-First TPV Window Sealing Syste",
+  "Added APD to today's list at 15:04 New York: 0.4x normal volume in the last 30 min; news: Linde (LIN) vs. APD and DOW: Can Long-Term Contracts and Pricing Power Unlock Mo",
+  "Added BBY to today's list at 15:04 New York: 0.4x normal volume in the last 30 min; news: Zip US Expands Partnership with Best Buy to Stores Nationwide",
+  "Added BB to today's list at 15:04 New York: 0.7x normal volume in the last 30 min; news: BB Stock Rises Overnight: BlackBerry CEO Says QNX\u2019s Alloy Kore Expanding Market\u2014"
  ],
  "list": [
+  {
+   "ticker": "TEVA",
+   "name": "Teva Pharmaceutical Industries Limited",
+   "vol_x": 0.76,
+   "buy_pct30": 0.8599410090961955,
+   "change": 0.021276557143638852,
+   "score": 5.96,
+   "news": [
+    "Teva Acquires Worldwide Rights to BXCL501, Further Expanding Innovative Neuroscience Pipeline",
+    "Teva Pharmaceutical Industries (TEVA) Secured WELTRUZA Approval, Is It Still 16% Below Fair Value?"
+   ],
+   "on_t212": true
+  },
   {
    "ticker": "AEYE",
    "name": "AudioEye, Inc.",
    "vol_x": 2.0,
-   "buy_pct30": 0.6122168962528903,
+   "buy_pct30": 0.6122227394567593,
    "change": 0.2749326065872417,
    "score": 5.45,
    "news": [
@@ -24,9 +49,59 @@
     "AudioEye Reports Record Third Quarter 2026 Results"
    ],
    "on_t212": true
+  },
+  {
+   "ticker": "IQV",
+   "name": "IQVIA Holdings, Inc.",
+   "vol_x": 0.47,
+   "buy_pct30": 0.7256248317725362,
+   "change": 0.003654970678698133,
+   "score": 3.84,
+   "news": [
+    "IQVIA Holdings Q3 Earnings Beat Estimates, Revenues Increase 8% Y/Y",
+    "IQVIA\u2019s (NYSE:IQV) Q3 2026: beats on revenue"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "HWKN",
+   "name": "Hawkins, Inc.",
+   "vol_x": 0.58,
+   "buy_pct30": 0.48875798439153345,
+   "change": 0.1278056500780289,
+   "score": 2.62,
+   "news": [
+    "Hawkins (NASDAQ:HWKN) Shares Rise 8% After Q2 Earnings Exceed Estimates and Revenue Reaches $313.8 Million",
+    "Hawkins soars 12% on strong second quarter earnings beat"
+   ],
+   "on_t212": true
   }
  ],
  "quiet": [
+  {
+   "ticker": "POM",
+   "vol_x": 1.35
+  },
+  {
+   "ticker": "RCL",
+   "vol_x": 0.68
+  },
+  {
+   "ticker": "KNSA",
+   "vol_x": 0.68
+  },
+  {
+   "ticker": "EAF",
+   "vol_x": 0.65
+  },
+  {
+   "ticker": "ESQ",
+   "vol_x": 0.57
+  },
+  {
+   "ticker": "LECO",
+   "vol_x": 0.46
+  },
   {
    "ticker": "QSI",
    "vol_x": 0.43
@@ -36,182 +111,98 @@
    "vol_x": 0.37
   },
   {
-   "ticker": "EAF",
+   "ticker": "UPS",
    "vol_x": 0.34
   }
  ],
  "trades": [
   {
-   "ticker": "AEYE",
+   "ticker": "BOW",
    "bought_at": "2026-10-27T14:16+00:00",
-   "sold_at": "2026-10-27T15:32+00:00",
-   "entry": 9.529999732971191,
-   "exit": 9.869999885559082,
-   "cost_gbp": 999.7693972359326,
-   "pl_gbp": 35.66859990949263,
-   "pl_pct": 0.03567682708443145,
-   "reason": "No new high for 56 min, and BOW overtook it on buying volume (1.32x vs 0.63x normal in 30 min)."
-  },
-  {
-   "ticker": "BOW",
-   "bought_at": "2026-10-27T15:32+00:00",
-   "sold_at": "2026-10-27T15:48+00:00",
-   "entry": 34.25,
+   "sold_at": "2026-10-27T15:52+00:00",
+   "entry": 34.25422122192382,
    "exit": 34.2400016784668,
-   "cost_gbp": 975.2660073167015,
-   "pl_gbp": -0.2847014050089456,
-   "pl_pct": -0.00029192179658989545,
-   "reason": "No new high for 16 min, and DEC overtook it on buying volume (0.20x vs 0.03x normal in 30 min)."
-  },
-  {
-   "ticker": "DEC",
-   "bought_at": "2026-10-27T15:48+00:00",
-   "sold_at": "2026-10-27T16:10+00:00",
-   "entry": 14.479999542236328,
-   "exit": 14.449999809265137,
-   "cost_gbp": 998.240740095592,
-   "pl_gbp": -2.0681599855358854,
-   "pl_pct": -0.0020718048287007777,
-   "reason": "No new high for 16 min, and INSG overtook it on buying volume (0.60x vs 0.01x normal in 30 min)."
+   "cost_gbp": 976.8492855823633,
+   "pl_gbp": -1.8679796706708203,
+   "pl_pct": -0.0019122496154124699,
+   "reason": "No new high for 46 min, and INSG overtook it on buying volume (0.52x vs 0.00x normal in 30 min)."
   },
   {
    "ticker": "INSG",
-   "bought_at": "2026-10-27T16:10+00:00",
-   "sold_at": "2026-10-27T16:46+00:00",
-   "entry": 4.909999847412109,
-   "exit": 4.974999904632568,
-   "cost_gbp": 997.0792636704887,
-   "pl_gbp": 13.19963568350704,
-   "pl_pct": 0.01323830127097018,
-   "reason": "No new high for 20 min, and AEYE overtook it on buying volume (0.73x vs 0.47x normal in 30 min)."
+   "bought_at": "2026-10-27T15:52+00:00",
+   "sold_at": "2026-10-27T17:12+00:00",
+   "entry": 4.849844789981842,
+   "exit": 4.880000114440918,
+   "cost_gbp": 1000.8993387122049,
+   "pl_gbp": 4.714962103666153,
+   "pl_pct": 0.004710725565802254,
+   "reason": "No new high for 46 min, and PPG overtook it on buying volume (0.38x vs 0.03x normal in 30 min)."
   },
   {
-   "ticker": "AEYE",
-   "bought_at": "2026-10-27T16:46+00:00",
-   "sold_at": "2026-10-27T17:50+00:00",
-   "entry": 9.959699630737305,
-   "exit": 9.930000305175781,
-   "cost_gbp": 992.6057730014537,
-   "pl_gbp": -2.959900709820431,
-   "pl_pct": -0.0029819499244601875,
-   "reason": "No new high for 24 min, and BOW overtook it on buying volume (2.46x vs 0.15x normal in 30 min)."
+   "ticker": "PPG",
+   "bought_at": "2026-10-27T17:12+00:00",
+   "sold_at": "2026-10-27T18:22+00:00",
+   "entry": 112.00689163970947,
+   "exit": 111.72000122070312,
+   "cost_gbp": 924.6285489793131,
+   "pl_gbp": -3.7496286510352093,
+   "pl_pct": -0.00405528106954342,
+   "reason": "No new high for 36 min, and ALLE overtook it on buying volume (0.47x vs 0.04x normal in 30 min)."
   },
   {
-   "ticker": "BOW",
-   "bought_at": "2026-10-27T17:50+00:00",
-   "sold_at": "2026-10-27T18:18+00:00",
-   "entry": 34.310001373291016,
-   "exit": 34.310001373291016,
-   "cost_gbp": 976.9745416163526,
-   "pl_gbp": 0.0,
-   "pl_pct": 0.0,
-   "reason": "No new high for 26 min, and INSG overtook it on buying volume (0.24x vs 0.01x normal in 30 min)."
-  },
-  {
-   "ticker": "INSG",
-   "bought_at": "2026-10-27T18:18+00:00",
-   "sold_at": "2026-10-27T18:36+00:00",
-   "entry": 4.860000133514404,
-   "exit": 4.83519983291626,
-   "cost_gbp": 997.8511422676272,
-   "pl_gbp": -5.091976872548685,
-   "pl_pct": -0.005102942369717705,
-   "reason": "No new high for 18 min, and THFF overtook it on buying volume (0.04x vs 0.01x normal in 30 min)."
-  },
-  {
-   "ticker": "THFF",
-   "bought_at": "2026-10-27T18:36+00:00",
-   "sold_at": "2026-10-27T18:54+00:00",
-   "entry": 78.51000213623047,
-   "exit": 78.52999877929688,
-   "cost_gbp": 941.2909574223858,
-   "pl_gbp": 0.2397485515864446,
-   "pl_pct": 0.00025470185355117795,
-   "reason": "No new high for 16 min, and TLS overtook it on buying volume (0.04x vs 0.02x normal in 30 min)."
-  },
-  {
-   "ticker": "TLS",
-   "bought_at": "2026-10-27T18:54+00:00",
-   "sold_at": "2026-10-27T19:24+00:00",
-   "entry": 5.710000038146973,
-   "exit": 5.699999809265137,
-   "cost_gbp": 996.9444201173739,
-   "pl_gbp": -1.7460021570996105,
-   "pl_pct": -0.0017513535577981844,
-   "reason": "No new high for 16 min, and AEYE overtook it on buying volume (0.15x vs 0.02x normal in 30 min)."
-  },
-  {
-   "ticker": "AEYE",
-   "bought_at": "2026-10-27T19:24+00:00",
-   "sold_at": "2026-10-27T19:44+00:00",
-   "entry": 10.0,
-   "exit": 10.050100326538086,
-   "cost_gbp": 996.6221972579431,
-   "pl_gbp": 4.993109751772863,
-   "pl_pct": 0.005010032653808693,
-   "reason": "No new high for 16 min, and DEC overtook it on buying volume (0.67x vs 0.50x normal in 30 min)."
+   "ticker": "ALLE",
+   "bought_at": "2026-10-27T18:22+00:00",
+   "sold_at": "2026-10-27T19:50+00:00",
+   "entry": 178.99882733154294,
+   "exit": 180.7100067138672,
+   "cost_gbp": 940.3252416245269,
+   "pl_gbp": 7.567410784272852,
+   "pl_pct": 0.008047652502871478,
+   "reason": "End of day: sold 10 minutes before the close."
   }
  ],
- "total_gbp": 41.95035276634542,
+ "total_gbp": 6.664764566232975,
  "alerts": [
-  "10:16 Day trade: bought AEYE: 140 AEYE at $9.53 (about \u00a31,000). Stop $9.05. Highest first-30-minute volume on today's list (2.0x a normal day).",
-  "11:32 Day trade: sold AEYE (+\u00a336): No new high for 56 min, and BOW overtook it on buying volume (1.32x vs 0.63x normal in 30 min). Result +\u00a336 (+3.6%).",
-  "11:32 Day trade: bought BOW: 38 BOW at $34.25 (about \u00a3975). Stop $32.54. Strongest buying on the list: 1.32x normal volume bought in the last 30 min, and rising.",
-  "11:48 Day trade: sold BOW (-\u00a30): No new high for 16 min, and DEC overtook it on buying volume (0.20x vs 0.03x normal in 30 min). Result -\u00a30 (-0.0%).",
-  "11:48 Day trade: bought DEC: 92 DEC at $14.48 (about \u00a3998). Stop $13.76. Strongest buying on the list: 0.20x normal volume bought in the last 30 min, and rising.",
-  "12:10 Day trade: sold DEC (-\u00a32): No new high for 16 min, and INSG overtook it on buying volume (0.60x vs 0.01x normal in 30 min). Result -\u00a32 (-0.2%).",
-  "12:10 Day trade: bought INSG: 271 INSG at $4.91 (about \u00a3997). Stop $4.66. Strongest buying on the list: 0.60x normal volume bought in the last 30 min, and rising.",
-  "12:46 Day trade: sold INSG (+\u00a313): No new high for 20 min, and AEYE overtook it on buying volume (0.73x vs 0.47x normal in 30 min). Result +\u00a313 (+1.3%).",
-  "12:46 Day trade: bought AEYE: 133 AEYE at $9.96 (about \u00a3993). Stop $9.46. Strongest buying on the list: 0.73x normal volume bought in the last 30 min, and rising.",
-  "13:50 Day trade: sold AEYE (-\u00a33): No new high for 24 min, and BOW overtook it on buying volume (2.46x vs 0.15x normal in 30 min). Result -\u00a33 (-0.3%).",
-  "13:50 Day trade: bought BOW: 38 BOW at $34.31 (about \u00a3977). Stop $32.59. Strongest buying on the list: 2.46x normal volume bought in the last 30 min, and rising.",
-  "14:18 Day trade: sold BOW (+\u00a30): No new high for 26 min, and INSG overtook it on buying volume (0.24x vs 0.01x normal in 30 min). Result +\u00a30 (+0.0%).",
-  "14:18 Day trade: bought INSG: 274 INSG at $4.86 (about \u00a3998). Stop $4.62. Strongest buying on the list: 0.24x normal volume bought in the last 30 min, and rising.",
-  "14:36 Day trade: sold INSG (-\u00a35): No new high for 18 min, and THFF overtook it on buying volume (0.04x vs 0.01x normal in 30 min). Result -\u00a35 (-0.5%).",
-  "14:36 Day trade: bought THFF: 16 THFF at $78.51 (about \u00a3941). Stop $74.58. Strongest buying on the list: 0.04x normal volume bought in the last 30 min, and rising.",
-  "14:54 Day trade: sold THFF (+\u00a30): No new high for 16 min, and TLS overtook it on buying volume (0.04x vs 0.02x normal in 30 min). Result +\u00a30 (+0.0%).",
-  "14:54 Day trade: bought TLS: 233 TLS at $5.71 (about \u00a3997). Stop $5.42. Strongest buying on the list: 0.04x normal volume bought in the last 30 min, and rising.",
-  "15:24 Day trade: sold TLS (-\u00a32): No new high for 16 min, and AEYE overtook it on buying volume (0.15x vs 0.02x normal in 30 min). Result -\u00a32 (-0.2%).",
-  "15:24 Day trade: bought AEYE: 133 AEYE at $10.00 (about \u00a3997). Stop $9.50. Strongest buying on the list: 0.15x normal volume bought in the last 30 min, and rising.",
-  "15:44 Day trade: sold AEYE (+\u00a35): No new high for 16 min, and DEC overtook it on buying volume (0.67x vs 0.50x normal in 30 min). Result +\u00a35 (+0.5%).",
-  "15:50 Day trade summary: 10 trade(s) today: AEYE +\u00a336, BOW -\u00a30, DEC -\u00a32, INSG +\u00a313, AEYE -\u00a33, BOW +\u00a30, INSG -\u00a35, THFF +\u00a30, TLS -\u00a32, AEYE +\u00a35. Total +\u00a342."
+  "10:16 Day trade: bought BOW: 38 BOW at $34.25 (about \u00a3977). Stop $32.54. Highest first-30-minute volume on today's list (1.3x a normal day).",
+  "11:52 Day trade: sold BOW (-\u00a32): No new high for 46 min, and INSG overtook it on buying volume (0.52x vs 0.00x normal in 30 min). Result -\u00a32 (-0.2%).",
+  "11:52 Day trade: bought INSG: 275 INSG at $4.85 (about \u00a31,001). Stop $4.61. Strongest buying on the list: 0.52x normal volume bought in the last 30 min, and rising.",
+  "13:12 Day trade: sold INSG (+\u00a35): No new high for 46 min, and PPG overtook it on buying volume (0.38x vs 0.03x normal in 30 min). Result +\u00a35 (+0.5%).",
+  "13:12 Day trade: bought PPG: 11 PPG at $112.01 (about \u00a3925). Stop $106.41. Strongest buying on the list: 0.38x normal volume bought in the last 30 min, and rising.",
+  "14:22 Day trade: sold PPG (-\u00a34): No new high for 36 min, and ALLE overtook it on buying volume (0.47x vs 0.04x normal in 30 min). Result -\u00a34 (-0.4%).",
+  "14:22 Day trade: bought ALLE: 7 ALLE at $179.00 (about \u00a3940). Stop $170.05. Strongest buying on the list: 0.47x normal volume bought in the last 30 min, and rising.",
+  "15:50 Day trade: sold ALLE (+\u00a38): End of day: sold 10 minutes before the close. Result +\u00a38 (+0.8%).",
+  "15:50 Day trade summary: 4 trade(s) today: BOW -\u00a32, INSG +\u00a35, PPG -\u00a34, ALLE +\u00a38. Total +\u00a37."
  ],
  "log": [
   "Added BOW to today's list at 10:16 New York: 1.3x normal volume in the last 30 min; news: Bowhead Specialty (NYSE:BOW) Sees Strong Trading Volume - What's Next? - MarketB",
   "Added THFF to today's list at 10:16 New York: 0.5x normal volume in the last 30 min; news: First Financial Corp. (THFF) Q3 Earnings and Revenues Beat Estimates",
-  "Day trade buy order: 140 AEYE at about $9.53. Highest first-30-minute volume on today's list (2.0x a normal day).",
-  "Bought 140 AEYE at 9.53 (cost \u00a31,000).",
-  "Sold AEYE (about +\u00a336). No new high for 56 min, and BOW overtook it on buying volume (1.32x vs 0.63x normal in 30 min).",
-  "Day trade buy order: 38 BOW at about $34.25. Strongest buying on the list: 1.32x normal volume bought in the last 30 min, and rising.",
-  "Bought 38 BOW at 34.25 (cost \u00a3975).",
-  "Added DEC to today's list at 11:36 New York: 0.4x normal volume in the last 30 min; news: Diversified Energy Positioned To Benefit From Permian Infrastructure Expansion -",
-  "Sold BOW (about -\u00a30). No new high for 16 min, and DEC overtook it on buying volume (0.20x vs 0.03x normal in 30 min).",
-  "Day trade buy order: 92 DEC at about $14.48. Strongest buying on the list: 0.20x normal volume bought in the last 30 min, and rising.",
-  "Bought 92 DEC at 14.48 (cost \u00a3998).",
+  "Day trade buy order: 38 BOW at about $34.22. Highest first-30-minute volume on today's list (1.3x a normal day).",
+  "Bought 38 BOW at 34.25 (cost \u00a3977).",
+  "Added COTY to today's list at 11:52 New York: 0.5x normal volume in the last 30 min; news: Coty and Brandlight Unveil Strategic Partnership to Strengthen Brand Visibility ",
   "Added INSG to today's list at 11:52 New York: 0.7x normal volume in the last 30 min; news: MarketBeat cites Hold consensus and USD 13.00 target for Inseego stock - ad-hoc-",
+  "Sold BOW (about -\u00a32). No new high for 46 min, and INSG overtook it on buying volume (0.52x vs 0.00x normal in 30 min).",
+  "Day trade buy order: 275 INSG at about $4.84. Strongest buying on the list: 0.52x normal volume bought in the last 30 min, and rising.",
+  "Bought 275 INSG at 4.85 (cost \u00a31,001).",
   "Added TLS to today's list at 12:08 New York: 0.3x normal volume in the last 30 min; news: Why Telos (TLS) is Poised to Beat Earnings Estimates Again",
-  "Sold DEC (about -\u00a32). No new high for 16 min, and INSG overtook it on buying volume (0.60x vs 0.01x normal in 30 min).",
-  "Day trade buy order: 271 INSG at about $4.91. Strongest buying on the list: 0.60x normal volume bought in the last 30 min, and rising.",
-  "Bought 271 INSG at 4.91 (cost \u00a3997).",
-  "Sold INSG (about +\u00a313). No new high for 20 min, and AEYE overtook it on buying volume (0.73x vs 0.47x normal in 30 min).",
-  "Day trade buy order: 133 AEYE at about $9.96. Strongest buying on the list: 0.73x normal volume bought in the last 30 min, and rising.",
-  "Bought 133 AEYE at 9.96 (cost \u00a3993).",
-  "Sold AEYE (about -\u00a33). No new high for 24 min, and BOW overtook it on buying volume (2.46x vs 0.15x normal in 30 min).",
-  "Day trade buy order: 38 BOW at about $34.31. Strongest buying on the list: 2.46x normal volume bought in the last 30 min, and rising.",
-  "Bought 38 BOW at 34.31 (cost \u00a3977).",
-  "Sold BOW (about +\u00a30). No new high for 26 min, and INSG overtook it on buying volume (0.24x vs 0.01x normal in 30 min).",
-  "Day trade buy order: 274 INSG at about $4.86. Strongest buying on the list: 0.24x normal volume bought in the last 30 min, and rising.",
-  "Bought 274 INSG at 4.86 (cost \u00a3998).",
-  "Sold INSG (about -\u00a35). No new high for 18 min, and THFF overtook it on buying volume (0.04x vs 0.01x normal in 30 min).",
-  "Day trade buy order: 16 THFF at about $78.51. Strongest buying on the list: 0.04x normal volume bought in the last 30 min, and rising.",
-  "Bought 16 THFF at 78.51 (cost \u00a3941).",
-  "Sold THFF (about +\u00a30). No new high for 16 min, and TLS overtook it on buying volume (0.04x vs 0.02x normal in 30 min).",
-  "Day trade buy order: 233 TLS at about $5.71. Strongest buying on the list: 0.04x normal volume bought in the last 30 min, and rising.",
-  "Bought 233 TLS at 5.71 (cost \u00a3997).",
-  "Sold TLS (about -\u00a32). No new high for 16 min, and AEYE overtook it on buying volume (0.15x vs 0.02x normal in 30 min).",
-  "Day trade buy order: 133 AEYE at about $10.00. Strongest buying on the list: 0.15x normal volume bought in the last 30 min, and rising.",
-  "Bought 133 AEYE at 10.00 (cost \u00a3997).",
-  "Sold AEYE (about +\u00a35). No new high for 16 min, and DEC overtook it on buying volume (0.67x vs 0.50x normal in 30 min).",
-  "Day trading finished: 10 trade(s), total +\u00a342."
+  "Added EW to today's list at 12:24 New York: 0.5x normal volume in the last 30 min; news: Does Valve Repair Approval Change The Bull Case For Edwards Lifesciences (EW)?",
+  "Added OIS to today's list at 12:24 New York: 0.3x normal volume in the last 30 min; news: Oil States International (OIS) Reports Next Week: Wall Street Expects Earnings G",
+  "Added RVTY to today's list at 12:40 New York: 0.3x normal volume in the last 30 min; news: Will Revvity (RVTY) Beat Estimates Again in Its Next Earnings Report?",
+  "Added AEO to today's list at 12:40 New York: 0.8x normal volume in the last 30 min; news: American Eagle Outfitters (AEO) Surpasses Market Returns: Some Facts Worth Knowi",
+  "Added PPG to today's list at 13:12 New York: 0.4x normal volume in the last 30 min; news: PPG reports record third quarter 2026 EPS and raises midpoint of full-year EPS g",
+  "Sold INSG (about +\u00a35). No new high for 46 min, and PPG overtook it on buying volume (0.38x vs 0.03x normal in 30 min).",
+  "Day trade buy order: 11 PPG at about $111.89. Strongest buying on the list: 0.38x normal volume bought in the last 30 min, and rising.",
+  "Bought 11 PPG at 112.01 (cost \u00a3925).",
+  "Added AUB to today's list at 13:28 New York: 0.4x normal volume in the last 30 min; news: How Investors May Respond To Atlantic Union Bankshares (AUB) Stronger Quarterly ",
+  "Added WS to today's list at 13:28 New York: 0.6x normal volume in the last 30 min; news: Worthington Steel Confirms Its Kloeckner Strategy Following Shareholder Vote",
+  "Added ALLE to today's list at 13:44 New York: 0.4x normal volume in the last 30 min; news: Learn Why The Bull Case For Allegion Stock Could Change Following Raised 2026 Gu",
+  "Sold PPG (about -\u00a34). No new high for 36 min, and ALLE overtook it on buying volume (0.47x vs 0.04x normal in 30 min).",
+  "Day trade buy order: 7 ALLE at about $178.82. Strongest buying on the list: 0.47x normal volume bought in the last 30 min, and rising.",
+  "Bought 7 ALLE at 179.00 (cost \u00a3940).",
+  "Added CE to today's list at 14:48 New York: 0.4x normal volume in the last 30 min; news: Celanese and Cooper Standard Honored for Industry-First TPV Window Sealing Syste",
+  "Added APD to today's list at 15:04 New York: 0.4x normal volume in the last 30 min; news: Linde (LIN) vs. APD and DOW: Can Long-Term Contracts and Pricing Power Unlock Mo",
+  "Added BBY to today's list at 15:04 New York: 0.4x normal volume in the last 30 min; news: Zip US Expands Partnership with Best Buy to Stores Nationwide",
+  "Added BB to today's list at 15:04 New York: 0.7x normal volume in the last 30 min; news: BB Stock Rises Overnight: BlackBerry CEO Says QNX\u2019s Alloy Kore Expanding Market\u2014",
+  "Sold ALLE (about +\u00a38). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 4 trade(s), total +\u00a37."
  ]
 }
