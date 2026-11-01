@@ -1,0 +1,130 @@
+{
+ "date": "2026-10-05",
+ "generated": "2026-11-01T13:58+00:00",
+ "fx_gbpusd": 1.3242928981781006,
+ "result": "done",
+ "require_news": true,
+ "strategy": "breakout",
+ "bars": "1m",
+ "added_during_day": [
+  "Added CON to today's list at 12:40 New York: 0.3x normal volume in the last 30 min; news: Why Concentra\u2019s Quiet Healthcare Business Keeps Winning",
+  "Added PAYO to today's list at 12:56 New York: 0.6x normal volume in the last 30 min; news: Payoneer Renews Partnership with Etsy Through 2029",
+  "Added GTE to today's list at 14:00 New York: 0.4x normal volume in the last 30 min; news: Gran Tierra Energy Inc. Announces Ratification of its Onshore Exploration, Devel"
+ ],
+ "list": [
+  {
+   "ticker": "VEEA",
+   "name": "Veea Inc.",
+   "vol_x": 4.05,
+   "buy_pct30": 0.26302140288631726,
+   "change": 0.678498481280776,
+   "score": 7.65,
+   "news": [
+    "Veea Announces TROLLEE Agreement for Phased Deployment of VeeaONE to 1,000 Unattended Stores"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "AIFA",
+   "name": "All In FutureTech Alliance, Inc.",
+   "vol_x": 0.98,
+   "buy_pct30": 0.7572885030240322,
+   "change": 0.16554816167532627,
+   "score": 3.49,
+   "news": [
+    "All In FutureTech Alliance Inc. Launches New Digital Platform for Consumers and Businesses, Advancing Its AI-Enabled Global Services Strategy"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "ALEC",
+   "vol_x": 61.26
+  },
+  {
+   "ticker": "PCVX",
+   "vol_x": 3.03
+  },
+  {
+   "ticker": "PMI",
+   "vol_x": 1.62
+  },
+  {
+   "ticker": "PAGS",
+   "vol_x": 1.51
+  },
+  {
+   "ticker": "STNE",
+   "vol_x": 1.49
+  },
+  {
+   "ticker": "XP",
+   "vol_x": 1.48
+  },
+  {
+   "ticker": "ACB",
+   "vol_x": 1.43
+  },
+  {
+   "ticker": "NAUT",
+   "vol_x": 1.26
+  },
+  {
+   "ticker": "INTR",
+   "vol_x": 1.25
+  },
+  {
+   "ticker": "ALVO",
+   "vol_x": 1.17
+  },
+  {
+   "ticker": "SOTK",
+   "vol_x": 0.87
+  },
+  {
+   "ticker": "SPCX",
+   "vol_x": 0.79
+  },
+  {
+   "ticker": "NTWK",
+   "vol_x": 0.63
+  },
+  {
+   "ticker": "VST",
+   "vol_x": 0.54
+  },
+  {
+   "ticker": "NU",
+   "vol_x": 0.53
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "GTE",
+   "bought_at": "2026-10-05T18:00+00:00",
+   "sold_at": "2026-10-05T19:50+00:00",
+   "entry": 10.63061988544464,
+   "exit": 10.520000457763672,
+   "cost_gbp": 996.8898594186084,
+   "pl_gbp": -11.850931431199228,
+   "pl_pct": -0.011887904485366876,
+   "reason": "End of day: sold 10 minutes before the close."
+  }
+ ],
+ "total_gbp": -11.850931431199228,
+ "alerts": [
+  "14:00 Day trade: bought GTE: 124 GTE at $10.63 (about \u00a3997). Stop $10.10. Broke above its opening-range high ($10.41) at $10.62. In play: 0.4x normal volume, normally moves 4% a day. Stop $10.14.",
+  "15:50 Day trade: sold GTE (-\u00a312): End of day: sold 10 minutes before the close. Result -\u00a312 (-1.2%).",
+  "15:50 Day trade summary: 1 trade(s) today: GTE -\u00a312. Total -\u00a312."
+ ],
+ "log": [
+  "Added CON to today's list at 12:40 New York: 0.3x normal volume in the last 30 min; news: Why Concentra\u2019s Quiet Healthcare Business Keeps Winning",
+  "Added PAYO to today's list at 12:56 New York: 0.6x normal volume in the last 30 min; news: Payoneer Renews Partnership with Etsy Through 2029",
+  "Added GTE to today's list at 14:00 New York: 0.4x normal volume in the last 30 min; news: Gran Tierra Energy Inc. Announces Ratification of its Onshore Exploration, Devel",
+  "Day trade buy order: 124 GTE at about $10.62. Broke above its opening-range high ($10.41) at $10.62. In play: 0.4x normal volume, normally moves 4% a day. Stop $10.14.",
+  "Bought 124 GTE at 10.63 (cost \u00a3997).",
+  "Sold GTE (about -\u00a312). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 1 trade(s), total -\u00a312."
+ ]
+}

@@ -1,0 +1,167 @@
+{
+ "date": "2026-10-23",
+ "generated": "2026-11-01T14:17+00:00",
+ "fx_gbpusd": 1.3403927087783813,
+ "result": "done",
+ "require_news": true,
+ "strategy": "rotation",
+ "bars": "1m",
+ "added_during_day": [
+  "Added TCBI to today's list at 11:20 New York: 0.5x normal volume in the last 30 min; news: Texas Capital Hits Record Revenues in Q3: Can Growth Momentum Continue?",
+  "Added CUBI to today's list at 11:20 New York: 0.7x normal volume in the last 30 min; news: Is Customers Bancorp (CUBI) Undervalued As Earnings Beat And 2026 Guidance Rise?",
+  "Added DCOM to today's list at 11:20 New York: 0.3x normal volume in the last 30 min; news: Dime Commercial Bancshares (DCOM) Stock Looks Fairly Valued On Its 153% Run",
+  "Added AUNA to today's list at 11:52 New York: 0.5x normal volume in the last 30 min; news: Auna Investor Day: Colombia Pressure Prompts 2026 EBITDA Growth Reset",
+  "Added DOW to today's list at 12:08 New York: 0.4x normal volume in the last 30 min; news: Will Earnings Beat Change Dow (DOW) Narrative",
+  "Added IMAX to today's list at 12:40 New York: 0.5x normal volume in the last 30 min; news: Will Imax (IMAX) Beat Estimates Again in Its Next Earnings Report?",
+  "Added BMI to today's list at 12:56 New York: 0.8x normal volume in the last 30 min; news: BMI Q3 deep dive: Strong margin management and software growth offset flat sales",
+  "Added NOG to today's list at 13:44 New York: 0.4x normal volume in the last 30 min; news: Will Northern Oil and Gas (NOG) Beat Estimates Again in Its Next Earnings Report",
+  "Added ALLE to today's list at 14:00 New York: 0.8x normal volume in the last 30 min; news: Allegion's Volume Growth Could Drive Re-Rating as Recovery Builds, BofA Says",
+  "Added KNTK to today's list at 14:16 New York: 0.6x normal volume in the last 30 min; news: Is Kinetik (KNTK) a Good or Bad Investment After Growing Earnings 65%?",
+  "Added IFF to today's list at 14:32 New York: 0.3x normal volume in the last 30 min; news: What Does Sherwin-Williams Offer That IFF Does Not?",
+  "Added SAIL to today's list at 14:32 New York: 1.0x normal volume in the last 30 min; news: SailPoint, Inc.  (SAIL) Upgraded to Buy: Here's Why",
+  "Added CE to today's list at 14:48 New York: 0.6x normal volume in the last 30 min; news: Celanese and Cooper Standard Honored for Industry-First TPV Window Sealing Syste",
+  "Added TTC to today's list at 15:04 New York: 0.6x normal volume in the last 30 min; news: North America Cordless Garden Equipment Market Forecasts Growth from $4.6 Billio",
+  "Added TFX to today's list at 15:04 New York: 0.4x normal volume in the last 30 min; news: Teleflex Announces FDA Breakthrough Device Designation for Freesolve\u2122 Resorbable",
+  "Added TDC to today's list at 15:04 New York: 0.5x normal volume in the last 30 min; news: Teradata Expands Sovereign AI Across On-Premises and Air-Gapped Cloud Environmen",
+  "Added ARCO to today's list at 15:04 New York: 0.6x normal volume in the last 30 min; news: Is Arcos Dorados (ARCO) a Solid Growth Stock? 3 Reasons to Think \"Yes\"",
+  "Added WS to today's list at 15:20 New York: 0.5x normal volume in the last 30 min; news: Worthington Steel Confirms Its Kloeckner Strategy Following Shareholder Vote"
+ ],
+ "list": [
+  {
+   "ticker": "FCNCA",
+   "name": "First Citizens BancShares, Inc.",
+   "vol_x": 0.47,
+   "buy_pct30": 0.5075327004431333,
+   "change": 0.06266953206676784,
+   "score": 3.97,
+   "news": [
+    "First Citizens Soars 8% on Q3 Earnings Beat and New $1.2 Billion Buyback",
+    "First Citizens BancShares (NASDAQ:FCNCA) reports upbeat Q3 2026"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "DOV",
+   "name": "Dover Corporation",
+   "vol_x": 0.41,
+   "buy_pct30": 0.7031453047911449,
+   "change": 0.0026088009233482534,
+   "score": 2.63,
+   "news": [
+    "Dover (DOV) Stock May Be 19% Undervalued As AI Led Growth Builds",
+    "DOV Q3 deep dive: secular markets and capacity investments drive growth amid cautious outlook"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "BOLT",
+   "vol_x": 8.26
+  },
+  {
+   "ticker": "YMAT",
+   "vol_x": 1.62
+  },
+  {
+   "ticker": "EDHL",
+   "vol_x": 0.84
+  },
+  {
+   "ticker": "RNG",
+   "vol_x": 0.66
+  },
+  {
+   "ticker": "MWYN",
+   "vol_x": 0.47
+  },
+  {
+   "ticker": "TMP",
+   "vol_x": 0.41
+  },
+  {
+   "ticker": "BWLP",
+   "vol_x": 0.38
+  },
+  {
+   "ticker": "HURN",
+   "vol_x": 0.34
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "DOV",
+   "bought_at": "2026-10-23T14:18+00:00",
+   "sold_at": "2026-10-23T16:06+00:00",
+   "entry": 195.47527877807616,
+   "exit": 197.50999450683594,
+   "cost_gbp": 876.3185165696602,
+   "pl_gbp": 7.795489183971313,
+   "pl_pct": 0.008895725739639366,
+   "reason": "No new high for 38 min, and CUBI overtook it on buying volume (0.55x vs 0.02x normal in 30 min)."
+  },
+  {
+   "ticker": "CUBI",
+   "bought_at": "2026-10-23T16:06+00:00",
+   "sold_at": "2026-10-23T19:28+00:00",
+   "entry": 83.76368030548095,
+   "exit": 84.76000213623047,
+   "cost_gbp": 1001.3701241618355,
+   "pl_gbp": 10.39308918455481,
+   "pl_pct": 0.010378868845576964,
+   "reason": "No new high for 32 min, and DCOM overtook it on buying volume (0.59x vs 0.16x normal in 30 min)."
+  },
+  {
+   "ticker": "DCOM",
+   "bought_at": "2026-10-23T19:28+00:00",
+   "sold_at": "2026-10-23T19:50+00:00",
+   "entry": 42.677633319854735,
+   "exit": 42.6150016784668,
+   "cost_gbp": 988.5096615248318,
+   "pl_gbp": -2.9290601229677122,
+   "pl_pct": -0.002963107227955134,
+   "reason": "End of day: sold 10 minutes before the close."
+  }
+ ],
+ "total_gbp": 15.25951824555841,
+ "alerts": [
+  "10:18 Day trade: bought DOV: 6 DOV at $195.48 (about \u00a3876). Stop $185.70. Highest first-30-minute volume on today's list (0.4x a normal day).",
+  "12:06 Day trade: sold DOV (+\u00a38): No new high for 38 min, and CUBI overtook it on buying volume (0.55x vs 0.02x normal in 30 min). Result +\u00a38 (+0.9%).",
+  "12:06 Day trade: bought CUBI: 16 CUBI at $83.76 (about \u00a31,001). Stop $79.58. Strongest buying on the list: 0.55x normal volume bought in the last 30 min, and rising.",
+  "15:28 Day trade: sold CUBI (+\u00a310): No new high for 32 min, and DCOM overtook it on buying volume (0.59x vs 0.16x normal in 30 min). Result +\u00a310 (+1.0%).",
+  "15:28 Day trade: bought DCOM: 31 DCOM at $42.68 (about \u00a3989). Stop $40.54. Strongest buying on the list: 0.59x normal volume bought in the last 30 min, and rising.",
+  "15:50 Day trade: sold DCOM (-\u00a33): End of day: sold 10 minutes before the close. Result -\u00a33 (-0.3%).",
+  "15:50 Day trade summary: 3 trade(s) today: DOV +\u00a38, CUBI +\u00a310, DCOM -\u00a33. Total +\u00a315."
+ ],
+ "log": [
+  "FCNCA: one share costs more than \u00a31,000, skipped.",
+  "Day trade buy order: 6 DOV at about $195.28. Highest first-30-minute volume on today's list (0.4x a normal day).",
+  "Bought 6 DOV at 195.48 (cost \u00a3876).",
+  "Added TCBI to today's list at 11:20 New York: 0.5x normal volume in the last 30 min; news: Texas Capital Hits Record Revenues in Q3: Can Growth Momentum Continue?",
+  "Added CUBI to today's list at 11:20 New York: 0.7x normal volume in the last 30 min; news: Is Customers Bancorp (CUBI) Undervalued As Earnings Beat And 2026 Guidance Rise?",
+  "Added DCOM to today's list at 11:20 New York: 0.3x normal volume in the last 30 min; news: Dime Commercial Bancshares (DCOM) Stock Looks Fairly Valued On Its 153% Run",
+  "Added AUNA to today's list at 11:52 New York: 0.5x normal volume in the last 30 min; news: Auna Investor Day: Colombia Pressure Prompts 2026 EBITDA Growth Reset",
+  "Sold DOV (about +\u00a38). No new high for 38 min, and CUBI overtook it on buying volume (0.55x vs 0.02x normal in 30 min).",
+  "Day trade buy order: 16 CUBI at about $83.68. Strongest buying on the list: 0.55x normal volume bought in the last 30 min, and rising.",
+  "Bought 16 CUBI at 83.76 (cost \u00a31,001).",
+  "Added DOW to today's list at 12:08 New York: 0.4x normal volume in the last 30 min; news: Will Earnings Beat Change Dow (DOW) Narrative",
+  "Added IMAX to today's list at 12:40 New York: 0.5x normal volume in the last 30 min; news: Will Imax (IMAX) Beat Estimates Again in Its Next Earnings Report?",
+  "Added BMI to today's list at 12:56 New York: 0.8x normal volume in the last 30 min; news: BMI Q3 deep dive: Strong margin management and software growth offset flat sales",
+  "Added NOG to today's list at 13:44 New York: 0.4x normal volume in the last 30 min; news: Will Northern Oil and Gas (NOG) Beat Estimates Again in Its Next Earnings Report",
+  "Added ALLE to today's list at 14:00 New York: 0.8x normal volume in the last 30 min; news: Allegion's Volume Growth Could Drive Re-Rating as Recovery Builds, BofA Says",
+  "Added KNTK to today's list at 14:16 New York: 0.6x normal volume in the last 30 min; news: Is Kinetik (KNTK) a Good or Bad Investment After Growing Earnings 65%?",
+  "Added IFF to today's list at 14:32 New York: 0.3x normal volume in the last 30 min; news: What Does Sherwin-Williams Offer That IFF Does Not?",
+  "Added SAIL to today's list at 14:32 New York: 1.0x normal volume in the last 30 min; news: SailPoint, Inc.  (SAIL) Upgraded to Buy: Here's Why",
+  "Added CE to today's list at 14:48 New York: 0.6x normal volume in the last 30 min; news: Celanese and Cooper Standard Honored for Industry-First TPV Window Sealing Syste",
+  "Added TTC to today's list at 15:04 New York: 0.6x normal volume in the last 30 min; news: North America Cordless Garden Equipment Market Forecasts Growth from $4.6 Billio",
+  "Added TFX to today's list at 15:04 New York: 0.4x normal volume in the last 30 min; news: Teleflex Announces FDA Breakthrough Device Designation for Freesolve\u2122 Resorbable",
+  "Added TDC to today's list at 15:04 New York: 0.5x normal volume in the last 30 min; news: Teradata Expands Sovereign AI Across On-Premises and Air-Gapped Cloud Environmen",
+  "Added ARCO to today's list at 15:04 New York: 0.6x normal volume in the last 30 min; news: Is Arcos Dorados (ARCO) a Solid Growth Stock? 3 Reasons to Think \"Yes\"",
+  "Added WS to today's list at 15:20 New York: 0.5x normal volume in the last 30 min; news: Worthington Steel Confirms Its Kloeckner Strategy Following Shareholder Vote",
+  "Sold CUBI (about +\u00a310). No new high for 32 min, and DCOM overtook it on buying volume (0.59x vs 0.16x normal in 30 min).",
+  "Day trade buy order: 31 DCOM at about $42.63. Strongest buying on the list: 0.59x normal volume bought in the last 30 min, and rising.",
+  "Bought 31 DCOM at 42.68 (cost \u00a3989).",
+  "Sold DCOM (about -\u00a33). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 3 trade(s), total +\u00a315."
+ ]
+}

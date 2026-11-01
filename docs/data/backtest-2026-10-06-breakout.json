@@ -1,0 +1,140 @@
+{
+ "date": "2026-10-06",
+ "generated": "2026-11-01T13:59+00:00",
+ "fx_gbpusd": 1.32185959815979,
+ "result": "done",
+ "require_news": true,
+ "strategy": "breakout",
+ "bars": "1m",
+ "added_during_day": [
+  "Added SBH to today's list at 14:48 New York: 0.4x normal volume in the last 30 min; news: What Sally Beauty Holdings (SBH)'s Dallas Cowboys Partnership Means For Sharehol",
+  "Added RLGT to today's list at 14:48 New York: 0.5x normal volume in the last 30 min; news: RADIANT LOGISTICS ACQUIRES WHITACRE LOGISTICS' DALLAS OPERATIONS",
+  "Added CPA to today's list at 15:04 New York: 0.7x normal volume in the last 30 min; news: Copa Holdings (CPA) Exceeds Market Returns: Some Facts to Consider",
+  "Added HLF to today's list at 15:04 New York: 0.4x normal volume in the last 30 min; news: Herbalife to Participate in 1 on 1 Meetings at Maxim Growth Summit on October 14"
+ ],
+ "list": [
+  {
+   "ticker": "OSTX",
+   "name": "OS Therapies Incorporated",
+   "vol_x": 8.22,
+   "buy_pct30": 0.4513458029410702,
+   "change": 0.0750000018626451,
+   "score": 17.75,
+   "news": [
+    "OS Therapies Appoints Kerry Clem as Chief Commercial Officer and Frank Knuettel II as Chief Financial Officer"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "AIFA",
+   "name": "All In FutureTech Alliance, Inc.",
+   "vol_x": 3.0,
+   "buy_pct30": 0.37428736617642044,
+   "change": 0.261054390737552,
+   "score": 6.0,
+   "news": [
+    "All In FutureTech Alliance Inc. Launches New Digital Platform for Consumers and Businesses, Advancing Its AI-Enabled Global Services Strategy"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "CBNA",
+   "name": "Chain Bridge Bancorp, Inc.",
+   "vol_x": 0.36,
+   "buy_pct30": 0.7359670781893004,
+   "change": 0.05274139378911791,
+   "score": 3.16,
+   "news": [
+    "Raymond James upgrades Chain Bridge Bancorp to Outperform on rate tailwinds"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "DGII",
+   "name": "Digi International Inc.",
+   "vol_x": 0.86,
+   "buy_pct30": 0.00427031560253074,
+   "change": 0.0076448459427092,
+   "score": 0.74,
+   "news": [
+    "Digi International Acquires Disruptive Technologies to Expand SmartSense IoT Reach",
+    "Digi International Announces Intent to Acquire Disruptive Technologies to Advance SmartSense Physical-World Intelligence Platform and Enter Europe"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "MRVL",
+   "vol_x": 1.69
+  },
+  {
+   "ticker": "QTEX",
+   "vol_x": 1.59
+  },
+  {
+   "ticker": "CEG",
+   "vol_x": 1.34
+  },
+  {
+   "ticker": "DNA",
+   "vol_x": 0.99
+  },
+  {
+   "ticker": "VST",
+   "vol_x": 0.88
+  },
+  {
+   "ticker": "SPCX",
+   "vol_x": 0.77
+  },
+  {
+   "ticker": "PRME",
+   "vol_x": 0.75
+  },
+  {
+   "ticker": "SOTK",
+   "vol_x": 0.64
+  },
+  {
+   "ticker": "FRSH",
+   "vol_x": 0.55
+  },
+  {
+   "ticker": "ALAB",
+   "vol_x": 0.5
+  },
+  {
+   "ticker": "FBIZ",
+   "vol_x": 0.48
+  },
+  {
+   "ticker": "OVBC",
+   "vol_x": 0.48
+  },
+  {
+   "ticker": "GCTS",
+   "vol_x": 0.48
+  },
+  {
+   "ticker": "SLDE",
+   "vol_x": 0.47
+  },
+  {
+   "ticker": "NBIS",
+   "vol_x": 0.46
+  }
+ ],
+ "trades": [],
+ "total_gbp": 0,
+ "alerts": [
+  "15:50 Day trade summary: No trade today: nothing in play broke out."
+ ],
+ "log": [
+  "Added SBH to today's list at 14:48 New York: 0.4x normal volume in the last 30 min; news: What Sally Beauty Holdings (SBH)'s Dallas Cowboys Partnership Means For Sharehol",
+  "Added RLGT to today's list at 14:48 New York: 0.5x normal volume in the last 30 min; news: RADIANT LOGISTICS ACQUIRES WHITACRE LOGISTICS' DALLAS OPERATIONS",
+  "Added CPA to today's list at 15:04 New York: 0.7x normal volume in the last 30 min; news: Copa Holdings (CPA) Exceeds Market Returns: Some Facts to Consider",
+  "Added HLF to today's list at 15:04 New York: 0.4x normal volume in the last 30 min; news: Herbalife to Participate in 1 on 1 Meetings at Maxim Growth Summit on October 14",
+  "Day trading finished: 0 trade(s), total +\u00a30."
+ ]
+}

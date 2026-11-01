@@ -1,0 +1,262 @@
+{
+ "date": "2026-10-26",
+ "generated": "2026-11-01T14:21+00:00",
+ "fx_gbpusd": 1.3377747535705566,
+ "result": "done",
+ "require_news": true,
+ "strategy": "rotation",
+ "bars": "1m",
+ "added_during_day": [
+  "Added MFC to today's list at 10:16 New York: 0.5x normal volume in the last 30 min; news: Manulife and UpLink announce winners of the 'Shaping Canada's Longevity Advantag",
+  "Added CACI to today's list at 11:04 New York: 0.3x normal volume in the last 30 min; news: CACI Gains 6% on Jefferies Upgrade and $281 Million Navy Win as Booz Allen Jumps",
+  "Added BAH to today's list at 11:04 New York: 0.4x normal volume in the last 30 min; news: Booz Allen Jumped 7% as TD Cowen Upgrades to Buy on Improving Backlog",
+  "Added RNR to today's list at 11:20 New York: 0.3x normal volume in the last 30 min; news: Did Earnings Estimate Upgrades Just Shift RenaissanceRe Holdings' (RNR) Investme",
+  "Added CON to today's list at 11:20 New York: 0.4x normal volume in the last 30 min; news: Concentra Expands Presence on Gulf Coast with First Pensacola Health Center",
+  "Added RNG to today's list at 11:52 New York: 0.4x normal volume in the last 30 min; news: RingCentral (RNG) Stock Price Climbs As Q3 Earnings Recast The Profit Story",
+  "Added DK to today's list at 11:52 New York: 0.4x normal volume in the last 30 min; news: Does Delek US Holdings (DK) Trade At A Premium After Refinery Expansion?",
+  "Added FBP to today's list at 11:52 New York: 0.3x normal volume in the last 30 min; news: FBP Q3 deep dive: stable profitability and capital returns as funding costs rise",
+  "Added TCBI to today's list at 12:24 New York: 0.5x normal volume in the last 30 min; news: Texas Capital Bancshares (DB:TCA) Can Q3 Earnings Sustain Record Margin Strength",
+  "Added AZO to today's list at 12:56 New York: 0.4x normal volume in the last 30 min; news: O'Reilly Automotive, AutoZone, Advance Auto Parts Poised for Net Positive Impact",
+  "Added NOG to today's list at 12:56 New York: 0.3x normal volume in the last 30 min; news: Will Northern Oil and Gas (NOG) Beat Estimates Again in Its Next Earnings Report",
+  "Added CHMG to today's list at 12:56 New York: 0.4x normal volume in the last 30 min; news: Chemung Financial (CHMG) Q3 Earnings Signal Stronger Profit Engine",
+  "Added ESTC to today's list at 13:12 New York: 0.6x normal volume in the last 30 min; news: Elastic (ESTC) Stock May Be 31% Below Fair Value As Partnership News Lands",
+  "Added FNB to today's list at 14:00 New York: 0.6x normal volume in the last 30 min; news: Learn Why The Bull Case For F.N.B (FNB) Could Change Following Record Net Intere",
+  "Added NABL to today's list at 14:32 New York: 0.3x normal volume in the last 30 min; news: As AI Accelerates Cyberattacks, N-able and SentinelOne Expand Their Strategic Pa",
+  "Added UNP to today's list at 15:20 New York: 0.4x normal volume in the last 30 min; news: How Earnings Beat At Union Pacific Stock Has Changed Its Investment Story",
+  "Added GWW to today's list at 15:20 New York: 0.7x normal volume in the last 30 min; news: Fastenal vs. Grainger vs. MSC Industrial: Which Dividend Wins for Retirement?",
+  "Added CRBG to today's list at 15:20 New York: 0.4x normal volume in the last 30 min; news: Corebridge Financial (CRBG) Reports Next Week: Wall Street Expects Earnings Grow",
+  "Added SSB to today's list at 15:20 New York: 0.5x normal volume in the last 30 min; news: SSB Q3 deep dive: loan and deposit growth, stable margins, and cautious capital ",
+  "Added S to today's list at 15:20 New York: 0.5x normal volume in the last 30 min; news: SentinelOne's AI Security Products, Channel Strategy Support Growth Outlook, Opp",
+  "Added AUB to today's list at 15:20 New York: 0.6x normal volume in the last 30 min; news: How Investors May Respond To Atlantic Union Bankshares (AUB) Stronger Quarterly ",
+  "Added CE to today's list at 15:20 New York: 0.4x normal volume in the last 30 min; news: Celanese and Cooper Standard Honored for Industry-First TPV Window Sealing Syste",
+  "Added MTN to today's list at 15:20 New York: 0.7x normal volume in the last 30 min; news: Winter Music Expansion Might Change The Case For Investing In Vail Resorts (MTN)",
+  "Added UCB to today's list at 15:20 New York: 0.5x normal volume in the last 30 min; news: United Community Banks (UCB) Upgraded to Strong Buy: Here's What You Should Know"
+ ],
+ "list": [
+  {
+   "ticker": "SGRY",
+   "name": "Surgery Partners, Inc.",
+   "vol_x": 6.4,
+   "buy_pct30": 0.6136520654000828,
+   "change": 0.46222226581876247,
+   "score": 13.75,
+   "news": [
+    "Surgery Partners shares surge 46% as $5.7 billion takeover deal agreed"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "XNCR",
+   "name": "Xencor, Inc.",
+   "vol_x": 2.9,
+   "buy_pct30": 0.6462845697962986,
+   "change": 0.17633044004153442,
+   "score": 7.39,
+   "news": [
+    "Xencor Soars 31% on Kidney Cancer Trial Data Showing \u201cImpressive Antitumor Activity\u201d",
+    "Xencor stock surges on positive cancer drug trial data"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "PEBK",
+   "name": "Peoples Bancorp of North Carolina, Inc.",
+   "vol_x": 0.41,
+   "buy_pct30": 0.6988183354952485,
+   "change": 0.011499540139467967,
+   "score": 4.12,
+   "news": [
+    "Peoples Bancorp Stock Slips Post Q3 Earnings Despite NIM Expansion"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "NWBI",
+   "name": "Northwest Bancshares, Inc.",
+   "vol_x": 0.36,
+   "buy_pct30": 0.5772761240376485,
+   "change": 0.017441890552192252,
+   "score": 3.53,
+   "news": [
+    "Northwest Bancshares\u2019s (NASDAQ:NWBI) Q3 2026 sales beat estimates"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "FRBA",
+   "name": "First Bank",
+   "vol_x": 0.48,
+   "buy_pct30": 0.4631117475133199,
+   "change": 0.018566303335922463,
+   "score": 3.31,
+   "news": [
+    "First Bank (FRBA) Q3 Earnings Put Buyback And Credit Cleanup In Focus"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "CHCO",
+   "name": "City Holding Company",
+   "vol_x": 0.44,
+   "buy_pct30": 0.5692694663167104,
+   "change": 0.02070278540335213,
+   "score": 2.66,
+   "news": [
+    "City Holding (CHCO) Expected to Beat Earnings Estimates: Can the Stock Move Higher?"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "RRC",
+   "vol_x": 2.2
+  },
+  {
+   "ticker": "BWMX",
+   "vol_x": 1.82
+  },
+  {
+   "ticker": "EAF",
+   "vol_x": 0.83
+  },
+  {
+   "ticker": "MED",
+   "vol_x": 0.77
+  },
+  {
+   "ticker": "FNWD",
+   "vol_x": 0.57
+  },
+  {
+   "ticker": "TSBK",
+   "vol_x": 0.55
+  },
+  {
+   "ticker": "NBN",
+   "vol_x": 0.54
+  },
+  {
+   "ticker": "HHH",
+   "vol_x": 0.5
+  },
+  {
+   "ticker": "AR",
+   "vol_x": 0.44
+  },
+  {
+   "ticker": "SFST",
+   "vol_x": 0.41
+  },
+  {
+   "ticker": "GEF.B",
+   "vol_x": 0.4
+  },
+  {
+   "ticker": "TSLA",
+   "vol_x": 0.38
+  },
+  {
+   "ticker": "ARLP",
+   "vol_x": 0.34
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "FRBA",
+   "bought_at": "2026-10-26T14:16+00:00",
+   "sold_at": "2026-10-26T15:26+00:00",
+   "entry": 19.879860610961913,
+   "exit": 19.920000076293945,
+   "cost_gbp": 997.1399021886947,
+   "pl_gbp": 0.5168420049780025,
+   "pl_pct": 0.000518324463642011,
+   "reason": "No new high for 30 min, and BAH overtook it on buying volume (0.38x vs 0.01x normal in 30 min)."
+  },
+  {
+   "ticker": "BAH",
+   "bought_at": "2026-10-26T15:26+00:00",
+   "sold_at": "2026-10-26T16:12+00:00",
+   "entry": 84.60612041473388,
+   "exit": 84.38500213623047,
+   "cost_gbp": 950.0817985524237,
+   "pl_gbp": -3.9023100659878764,
+   "pl_pct": -0.004107341148871146,
+   "reason": "No new high for 34 min, and DK overtook it on buying volume (0.40x vs 0.02x normal in 30 min)."
+  },
+  {
+   "ticker": "DK",
+   "bought_at": "2026-10-26T16:12+00:00",
+   "sold_at": "2026-10-26T16:58+00:00",
+   "entry": 79.58951213836669,
+   "exit": 78.9749984741211,
+   "cost_gbp": 953.3311486864774,
+   "pl_gbp": -8.777536642779182,
+   "pl_pct": -0.009207227367817662,
+   "reason": "No new high for 30 min, and AZO overtook it on buying volume (0.39x vs 0.01x normal in 30 min)."
+  },
+  {
+   "ticker": "CON",
+   "bought_at": "2026-10-26T17:00+00:00",
+   "sold_at": "2026-10-26T19:50+00:00",
+   "entry": 40.26022122192382,
+   "exit": 40.13999938964844,
+   "cost_gbp": 994.621985295071,
+   "pl_gbp": -4.455310133238072,
+   "pl_pct": -0.004479400414536715,
+   "reason": "End of day: sold 10 minutes before the close."
+  }
+ ],
+ "total_gbp": -16.61831483702713,
+ "alerts": [
+  "10:16 Day trade: bought FRBA: 67 FRBA at $19.88 (about \u00a3997). Stop $18.89. Highest first-30-minute volume on today's list (0.5x a normal day).",
+  "11:26 Day trade: sold FRBA (+\u00a31): No new high for 30 min, and BAH overtook it on buying volume (0.38x vs 0.01x normal in 30 min). Result +\u00a31 (+0.1%).",
+  "11:26 Day trade: bought BAH: 15 BAH at $84.61 (about \u00a3950). Stop $80.38. Strongest buying on the list: 0.38x normal volume bought in the last 30 min, and rising.",
+  "12:12 Day trade: sold BAH (-\u00a34): No new high for 34 min, and DK overtook it on buying volume (0.40x vs 0.02x normal in 30 min). Result -\u00a34 (-0.4%).",
+  "12:12 Day trade: bought DK: 16 DK at $79.59 (about \u00a3953). Stop $75.61. Strongest buying on the list: 0.40x normal volume bought in the last 30 min, and rising.",
+  "12:58 Day trade: sold DK (-\u00a39): No new high for 30 min, and AZO overtook it on buying volume (0.39x vs 0.01x normal in 30 min). Result -\u00a39 (-0.9%).",
+  "13:00 Day trade: bought CON: 33 CON at $40.26 (about \u00a3995). Stop $38.25. Strongest buying on the list: 0.03x normal volume bought in the last 30 min, and rising.",
+  "15:50 Day trade: sold CON (-\u00a34): End of day: sold 10 minutes before the close. Result -\u00a34 (-0.4%).",
+  "15:50 Day trade summary: 4 trade(s) today: FRBA +\u00a31, BAH -\u00a34, DK -\u00a39, CON -\u00a34. Total -\u00a317."
+ ],
+ "log": [
+  "Added MFC to today's list at 10:16 New York: 0.5x normal volume in the last 30 min; news: Manulife and UpLink announce winners of the 'Shaping Canada's Longevity Advantag",
+  "Day trade buy order: 67 FRBA at about $19.86. Highest first-30-minute volume on today's list (0.5x a normal day).",
+  "Bought 67 FRBA at 19.88 (cost \u00a3997).",
+  "Added CACI to today's list at 11:04 New York: 0.3x normal volume in the last 30 min; news: CACI Gains 6% on Jefferies Upgrade and $281 Million Navy Win as Booz Allen Jumps",
+  "Added BAH to today's list at 11:04 New York: 0.4x normal volume in the last 30 min; news: Booz Allen Jumped 7% as TD Cowen Upgrades to Buy on Improving Backlog",
+  "Added RNR to today's list at 11:20 New York: 0.3x normal volume in the last 30 min; news: Did Earnings Estimate Upgrades Just Shift RenaissanceRe Holdings' (RNR) Investme",
+  "Added CON to today's list at 11:20 New York: 0.4x normal volume in the last 30 min; news: Concentra Expands Presence on Gulf Coast with First Pensacola Health Center",
+  "Sold FRBA (about +\u00a31). No new high for 30 min, and BAH overtook it on buying volume (0.38x vs 0.01x normal in 30 min).",
+  "Day trade buy order: 15 BAH at about $84.52. Strongest buying on the list: 0.38x normal volume bought in the last 30 min, and rising.",
+  "Bought 15 BAH at 84.61 (cost \u00a3950).",
+  "Added RNG to today's list at 11:52 New York: 0.4x normal volume in the last 30 min; news: RingCentral (RNG) Stock Price Climbs As Q3 Earnings Recast The Profit Story",
+  "Added DK to today's list at 11:52 New York: 0.4x normal volume in the last 30 min; news: Does Delek US Holdings (DK) Trade At A Premium After Refinery Expansion?",
+  "Added FBP to today's list at 11:52 New York: 0.3x normal volume in the last 30 min; news: FBP Q3 deep dive: stable profitability and capital returns as funding costs rise",
+  "Sold BAH (about -\u00a34). No new high for 34 min, and DK overtook it on buying volume (0.40x vs 0.02x normal in 30 min).",
+  "Day trade buy order: 16 DK at about $79.51. Strongest buying on the list: 0.40x normal volume bought in the last 30 min, and rising.",
+  "Bought 16 DK at 79.59 (cost \u00a3953).",
+  "Added TCBI to today's list at 12:24 New York: 0.5x normal volume in the last 30 min; news: Texas Capital Bancshares (DB:TCA) Can Q3 Earnings Sustain Record Margin Strength",
+  "Added AZO to today's list at 12:56 New York: 0.4x normal volume in the last 30 min; news: O'Reilly Automotive, AutoZone, Advance Auto Parts Poised for Net Positive Impact",
+  "Added NOG to today's list at 12:56 New York: 0.3x normal volume in the last 30 min; news: Will Northern Oil and Gas (NOG) Beat Estimates Again in Its Next Earnings Report",
+  "Added CHMG to today's list at 12:56 New York: 0.4x normal volume in the last 30 min; news: Chemung Financial (CHMG) Q3 Earnings Signal Stronger Profit Engine",
+  "Sold DK (about -\u00a39). No new high for 30 min, and AZO overtook it on buying volume (0.39x vs 0.01x normal in 30 min).",
+  "AZO: one share costs more than \u00a31,000, skipped.",
+  "Day trade buy order: 33 CON at about $40.22. Strongest buying on the list: 0.03x normal volume bought in the last 30 min, and rising.",
+  "Bought 33 CON at 40.26 (cost \u00a3995).",
+  "Added ESTC to today's list at 13:12 New York: 0.6x normal volume in the last 30 min; news: Elastic (ESTC) Stock May Be 31% Below Fair Value As Partnership News Lands",
+  "Added FNB to today's list at 14:00 New York: 0.6x normal volume in the last 30 min; news: Learn Why The Bull Case For F.N.B (FNB) Could Change Following Record Net Intere",
+  "Added NABL to today's list at 14:32 New York: 0.3x normal volume in the last 30 min; news: As AI Accelerates Cyberattacks, N-able and SentinelOne Expand Their Strategic Pa",
+  "Added UNP to today's list at 15:20 New York: 0.4x normal volume in the last 30 min; news: How Earnings Beat At Union Pacific Stock Has Changed Its Investment Story",
+  "Added GWW to today's list at 15:20 New York: 0.7x normal volume in the last 30 min; news: Fastenal vs. Grainger vs. MSC Industrial: Which Dividend Wins for Retirement?",
+  "Added CRBG to today's list at 15:20 New York: 0.4x normal volume in the last 30 min; news: Corebridge Financial (CRBG) Reports Next Week: Wall Street Expects Earnings Grow",
+  "Added SSB to today's list at 15:20 New York: 0.5x normal volume in the last 30 min; news: SSB Q3 deep dive: loan and deposit growth, stable margins, and cautious capital ",
+  "Added S to today's list at 15:20 New York: 0.5x normal volume in the last 30 min; news: SentinelOne's AI Security Products, Channel Strategy Support Growth Outlook, Opp",
+  "Added AUB to today's list at 15:20 New York: 0.6x normal volume in the last 30 min; news: How Investors May Respond To Atlantic Union Bankshares (AUB) Stronger Quarterly ",
+  "Added CE to today's list at 15:20 New York: 0.4x normal volume in the last 30 min; news: Celanese and Cooper Standard Honored for Industry-First TPV Window Sealing Syste",
+  "Added MTN to today's list at 15:20 New York: 0.7x normal volume in the last 30 min; news: Winter Music Expansion Might Change The Case For Investing In Vail Resorts (MTN)",
+  "Added UCB to today's list at 15:20 New York: 0.5x normal volume in the last 30 min; news: United Community Banks (UCB) Upgraded to Strong Buy: Here's What You Should Know",
+  "Sold CON (about -\u00a34). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 4 trade(s), total -\u00a317."
+ ]
+}

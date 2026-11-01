@@ -1,0 +1,129 @@
+{
+ "date": "2026-10-19",
+ "generated": "2026-11-01T14:13+00:00",
+ "fx_gbpusd": 1.3335645198822021,
+ "result": "done",
+ "require_news": true,
+ "strategy": "rotation",
+ "bars": "1m",
+ "added_during_day": [
+  "Added CFFI to today's list at 11:20 New York: 0.7x normal volume in the last 30 min; news: C&F Financial's 2026 Outlook: Aggressive Market Expansion Drives New Retail Grow",
+  "Added TBBB to today's list at 12:24 New York: 0.8x normal volume in the last 30 min; news: BBB Foods (TBBB) Could Be 17% Undervalued As Q2 Sales Beat Expectations",
+  "Added MANE to today's list at 12:24 New York: 0.8x normal volume in the last 30 min; news: Veradermics\u2019 stock up on male hair loss trial success",
+  "Added BOX to today's list at 12:56 New York: 0.8x normal volume in the last 30 min; news: Why Box Stock Is An 'Underappreciated AI Winner' And BofA's Top Pick",
+  "Added ZETA to today's list at 13:12 New York: 0.6x normal volume in the last 30 min; news: Goldman upgrades Zeta to Buy, cuts Klaviyo on visibility gap",
+  "Added PAYC to today's list at 13:28 New York: 0.4x normal volume in the last 30 min; news: Paycom Software (PAYC) Surge Driven by Accelerating Growth and Margin Expansion",
+  "Added YOU to today's list at 14:32 New York: 0.5x normal volume in the last 30 min; news: Clear Secure (YOU) Exceeds Market Returns: Some Facts to Consider",
+  "Added BWMN to today's list at 14:32 New York: 0.3x normal volume in the last 30 min; news: Bowman Acquires Dymaptic, Expanding AI-Powered Geospatial Data Collection and Da",
+  "Added CVE to today's list at 14:48 New York: 0.5x normal volume in the last 30 min; news: 3 Reasons Why Growth Investors Shouldn't Overlook Cenovus (CVE)"
+ ],
+ "list": [],
+ "quiet": [
+  {
+   "ticker": "FUFU",
+   "vol_x": 167.55
+  },
+  {
+   "ticker": "DH",
+   "vol_x": 2.19
+  },
+  {
+   "ticker": "ATNM",
+   "vol_x": 1.49
+  },
+  {
+   "ticker": "KRSA",
+   "vol_x": 0.94
+  },
+  {
+   "ticker": "CLF",
+   "vol_x": 0.87
+  },
+  {
+   "ticker": "CVX",
+   "vol_x": 0.45
+  },
+  {
+   "ticker": "GTE",
+   "vol_x": 0.45
+  },
+  {
+   "ticker": "ENGS",
+   "vol_x": 0.42
+  },
+  {
+   "ticker": "TALO",
+   "vol_x": 0.39
+  },
+  {
+   "ticker": "AII",
+   "vol_x": 0.34
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "CFFI",
+   "bought_at": "2026-10-19T15:20+00:00",
+   "sold_at": "2026-10-19T16:24+00:00",
+   "entry": 103.25315152740477,
+   "exit": 102.0999984741211,
+   "cost_gbp": 930.5109400825712,
+   "pl_gbp": -11.770254181840414,
+   "pl_pct": -0.012649237827118884,
+   "reason": "No new high for 64 min, and TBBB overtook it on buying volume (0.77x vs 0.07x normal in 30 min)."
+  },
+  {
+   "ticker": "TBBB",
+   "bought_at": "2026-10-19T16:24+00:00",
+   "sold_at": "2026-10-19T17:28+00:00",
+   "entry": 58.848790916442866,
+   "exit": 58.88999938964844,
+   "cost_gbp": 972.2929719039913,
+   "pl_gbp": -0.7764331416161667,
+   "pl_pct": -0.0007985588336566062,
+   "reason": "No new high for 38 min, and PAYC overtook it on buying volume (0.39x vs 0.03x normal in 30 min)."
+  },
+  {
+   "ticker": "PAYC",
+   "bought_at": "2026-10-19T17:28+00:00",
+   "sold_at": "2026-10-19T19:50+00:00",
+   "entry": 253.29303327941892,
+   "exit": 253.4199981689453,
+   "cost_gbp": 951.1087354504069,
+   "pl_gbp": -0.9484905177857854,
+   "pl_pct": -0.000997247194177665,
+   "reason": "End of day: sold 10 minutes before the close."
+  }
+ ],
+ "total_gbp": -13.495177841242366,
+ "alerts": [
+  "11:20 Day trade: bought CFFI: 12 CFFI at $103.25 (about \u00a3931). Stop $98.09. Highest first-30-minute volume on today's list (0.7x a normal day).",
+  "12:24 Day trade: sold CFFI (-\u00a312): No new high for 64 min, and TBBB overtook it on buying volume (0.77x vs 0.07x normal in 30 min). Result -\u00a312 (-1.3%).",
+  "12:24 Day trade: bought TBBB: 22 TBBB at $58.85 (about \u00a3972). Stop $55.91. Strongest buying on the list: 0.77x normal volume bought in the last 30 min, and rising.",
+  "13:28 Day trade: sold TBBB (-\u00a31): No new high for 38 min, and PAYC overtook it on buying volume (0.39x vs 0.03x normal in 30 min). Result -\u00a31 (-0.1%).",
+  "13:28 Day trade: bought PAYC: 5 PAYC at $253.29 (about \u00a3951). Stop $240.63. Strongest buying on the list: 0.39x normal volume bought in the last 30 min, and rising.",
+  "15:50 Day trade: sold PAYC (-\u00a31): End of day: sold 10 minutes before the close. Result -\u00a31 (-0.1%).",
+  "15:50 Day trade summary: 3 trade(s) today: CFFI -\u00a312, TBBB -\u00a31, PAYC -\u00a31. Total -\u00a313."
+ ],
+ "log": [
+  "Added CFFI to today's list at 11:20 New York: 0.7x normal volume in the last 30 min; news: C&F Financial's 2026 Outlook: Aggressive Market Expansion Drives New Retail Grow",
+  "Day trade buy order: 12 CFFI at about $103.15. Highest first-30-minute volume on today's list (0.7x a normal day).",
+  "Bought 12 CFFI at 103.25 (cost \u00a3931).",
+  "Added TBBB to today's list at 12:24 New York: 0.8x normal volume in the last 30 min; news: BBB Foods (TBBB) Could Be 17% Undervalued As Q2 Sales Beat Expectations",
+  "Added MANE to today's list at 12:24 New York: 0.8x normal volume in the last 30 min; news: Veradermics\u2019 stock up on male hair loss trial success",
+  "Sold CFFI (about -\u00a312). No new high for 64 min, and TBBB overtook it on buying volume (0.77x vs 0.07x normal in 30 min).",
+  "Day trade buy order: 22 TBBB at about $58.79. Strongest buying on the list: 0.77x normal volume bought in the last 30 min, and rising.",
+  "Bought 22 TBBB at 58.85 (cost \u00a3972).",
+  "Added BOX to today's list at 12:56 New York: 0.8x normal volume in the last 30 min; news: Why Box Stock Is An 'Underappreciated AI Winner' And BofA's Top Pick",
+  "Added ZETA to today's list at 13:12 New York: 0.6x normal volume in the last 30 min; news: Goldman upgrades Zeta to Buy, cuts Klaviyo on visibility gap",
+  "Added PAYC to today's list at 13:28 New York: 0.4x normal volume in the last 30 min; news: Paycom Software (PAYC) Surge Driven by Accelerating Growth and Margin Expansion",
+  "Sold TBBB (about -\u00a31). No new high for 38 min, and PAYC overtook it on buying volume (0.39x vs 0.03x normal in 30 min).",
+  "Day trade buy order: 5 PAYC at about $253.04. Strongest buying on the list: 0.39x normal volume bought in the last 30 min, and rising.",
+  "Bought 5 PAYC at 253.29 (cost \u00a3951).",
+  "Added YOU to today's list at 14:32 New York: 0.5x normal volume in the last 30 min; news: Clear Secure (YOU) Exceeds Market Returns: Some Facts to Consider",
+  "Added BWMN to today's list at 14:32 New York: 0.3x normal volume in the last 30 min; news: Bowman Acquires Dymaptic, Expanding AI-Powered Geospatial Data Collection and Da",
+  "Added CVE to today's list at 14:48 New York: 0.5x normal volume in the last 30 min; news: 3 Reasons Why Growth Investors Shouldn't Overlook Cenovus (CVE)",
+  "Sold PAYC (about -\u00a31). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 3 trade(s), total -\u00a313."
+ ]
+}

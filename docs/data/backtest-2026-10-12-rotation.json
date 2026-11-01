@@ -1,0 +1,123 @@
+{
+ "date": "2026-10-12",
+ "generated": "2026-11-01T14:03+00:00",
+ "fx_gbpusd": 1.3241524696350098,
+ "result": "done",
+ "require_news": true,
+ "strategy": "rotation",
+ "bars": "1m",
+ "added_during_day": [
+  "Added RSKD to today's list at 10:48 New York: 0.4x normal volume in the last 30 min; news: Riskified Launches Agent Identity Risk Intelligence: Know Who Is Behind AI Perso",
+  "Added ECO to today's list at 11:52 New York: 0.6x normal volume in the last 30 min; news: ECO or SBLK: Which Shipping Company Is a Stronger Play Now?",
+  "Added USNA to today's list at 12:08 New York: 0.5x normal volume in the last 30 min; news: USANA Health Sciences and University of Utah Athletics Announce New Partnership",
+  "Added TOP to today's list at 12:40 New York: 1.0x normal volume in the last 30 min; news: TOP Financial Group (TOP) Faces A Valuation Test Following Its $1.47b Shelf Fili",
+  "Added PD to today's list at 13:12 New York: 0.5x normal volume in the last 30 min; news: PagerDuty (PD) Could Be 28% Overvalued On Earnings Beat And Customer Growth",
+  "Added EGY to today's list at 14:00 New York: 0.4x normal volume in the last 30 min; news: VAALCO Energy, Inc. Announces Positive Operational Updates",
+  "Added SPNT to today's list at 15:04 New York: 0.4x normal volume in the last 30 min; news: Is SiriusPoint (SPNT) Still Undervalued Following Its Recent Share Price Gain?",
+  "Added GSL to today's list at 15:04 New York: 0.7x normal volume in the last 30 min; news: Global Ship Lease (GSL) Expands Newbuild Orderbook To 17 Containerships"
+ ],
+ "list": [],
+ "quiet": [
+  {
+   "ticker": "NCPL",
+   "vol_x": 1.44
+  },
+  {
+   "ticker": "ALLT",
+   "vol_x": 0.98
+  },
+  {
+   "ticker": "AI",
+   "vol_x": 0.86
+  },
+  {
+   "ticker": "MSGM",
+   "vol_x": 0.64
+  },
+  {
+   "ticker": "FIGS",
+   "vol_x": 0.6
+  },
+  {
+   "ticker": "CBNA",
+   "vol_x": 0.57
+  },
+  {
+   "ticker": "PEBK",
+   "vol_x": 0.5
+  },
+  {
+   "ticker": "ENGS",
+   "vol_x": 0.48
+  },
+  {
+   "ticker": "HSHP",
+   "vol_x": 0.42
+  },
+  {
+   "ticker": "PLMR",
+   "vol_x": 0.38
+  },
+  {
+   "ticker": "SHOP",
+   "vol_x": 0.37
+  },
+  {
+   "ticker": "BORR",
+   "vol_x": 0.36
+  },
+  {
+   "ticker": "BOTJ",
+   "vol_x": 0.35
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "RSKD",
+   "bought_at": "2026-10-12T14:48+00:00",
+   "sold_at": "2026-10-12T18:00+00:00",
+   "entry": 8.626218041419982,
+   "exit": 8.614999771118164,
+   "cost_gbp": 998.2166764693665,
+   "pl_gbp": -2.7913042353067112,
+   "pl_pct": -0.002796290926714819,
+   "reason": "No new high for 150 min, and EGY overtook it on buying volume (0.41x vs 0.02x normal in 30 min)."
+  },
+  {
+   "ticker": "EGY",
+   "bought_at": "2026-10-12T18:00+00:00",
+   "sold_at": "2026-10-12T19:46+00:00",
+   "entry": 6.12611988544464,
+   "exit": 6.099999904632568,
+   "cost_gbp": 1000.8113026925162,
+   "pl_gbp": -5.759743589342179,
+   "pl_pct": -0.005755074481919367,
+   "reason": "No new high for 106 min, and ECO overtook it on buying volume (1.12x vs 0.01x normal in 30 min)."
+  }
+ ],
+ "total_gbp": -8.55104782464889,
+ "alerts": [
+  "10:48 Day trade: bought RSKD: 153 RSKD at $8.63 (about \u00a3998). Stop $8.19. Highest first-30-minute volume on today's list (0.4x a normal day).",
+  "14:00 Day trade: sold RSKD (-\u00a33): No new high for 150 min, and EGY overtook it on buying volume (0.41x vs 0.02x normal in 30 min). Result -\u00a33 (-0.3%).",
+  "14:00 Day trade: bought EGY: 216 EGY at $6.13 (about \u00a31,001). Stop $5.82. Strongest buying on the list: 0.41x normal volume bought in the last 30 min, and rising.",
+  "15:46 Day trade: sold EGY (-\u00a36): No new high for 106 min, and ECO overtook it on buying volume (1.12x vs 0.01x normal in 30 min). Result -\u00a36 (-0.6%).",
+  "15:50 Day trade summary: 2 trade(s) today: RSKD -\u00a33, EGY -\u00a36. Total -\u00a39."
+ ],
+ "log": [
+  "Added RSKD to today's list at 10:48 New York: 0.4x normal volume in the last 30 min; news: Riskified Launches Agent Identity Risk Intelligence: Know Who Is Behind AI Perso",
+  "Day trade buy order: 153 RSKD at about $8.62. Highest first-30-minute volume on today's list (0.4x a normal day).",
+  "Bought 153 RSKD at 8.63 (cost \u00a3998).",
+  "Added ECO to today's list at 11:52 New York: 0.6x normal volume in the last 30 min; news: ECO or SBLK: Which Shipping Company Is a Stronger Play Now?",
+  "Added USNA to today's list at 12:08 New York: 0.5x normal volume in the last 30 min; news: USANA Health Sciences and University of Utah Athletics Announce New Partnership",
+  "Added TOP to today's list at 12:40 New York: 1.0x normal volume in the last 30 min; news: TOP Financial Group (TOP) Faces A Valuation Test Following Its $1.47b Shelf Fili",
+  "Added PD to today's list at 13:12 New York: 0.5x normal volume in the last 30 min; news: PagerDuty (PD) Could Be 28% Overvalued On Earnings Beat And Customer Growth",
+  "Added EGY to today's list at 14:00 New York: 0.4x normal volume in the last 30 min; news: VAALCO Energy, Inc. Announces Positive Operational Updates",
+  "Sold RSKD (about -\u00a33). No new high for 150 min, and EGY overtook it on buying volume (0.41x vs 0.02x normal in 30 min).",
+  "Day trade buy order: 216 EGY at about $6.12. Strongest buying on the list: 0.41x normal volume bought in the last 30 min, and rising.",
+  "Bought 216 EGY at 6.13 (cost \u00a31,001).",
+  "Added SPNT to today's list at 15:04 New York: 0.4x normal volume in the last 30 min; news: Is SiriusPoint (SPNT) Still Undervalued Following Its Recent Share Price Gain?",
+  "Added GSL to today's list at 15:04 New York: 0.7x normal volume in the last 30 min; news: Global Ship Lease (GSL) Expands Newbuild Orderbook To 17 Containerships",
+  "Sold EGY (about -\u00a36). No new high for 106 min, and ECO overtook it on buying volume (1.12x vs 0.01x normal in 30 min).",
+  "Day trading finished: 2 trade(s), total -\u00a39."
+ ]
+}

@@ -1,0 +1,178 @@
+{
+ "date": "2026-10-21",
+ "generated": "2026-11-01T14:14+00:00",
+ "fx_gbpusd": 1.337327480316162,
+ "result": "done",
+ "require_news": true,
+ "strategy": "rotation",
+ "bars": "1m",
+ "added_during_day": [
+  "Added GDRX to today's list at 10:48 New York: 0.4x normal volume in the last 30 min; news: GoodRx Holdings And 2 Penny Stocks With Strong Balance Sheets",
+  "Added MFC to today's list at 11:36 New York: 0.3x normal volume in the last 30 min; news: Manulife and UpLink announce winners of the 'Shaping Canada's Longevity Advantag",
+  "Added SLE to today's list at 11:52 New York: 0.4x normal volume in the last 30 min; news: Super League Shareholders Approve Metaplanet Investment Involving 2,100 Bitcoin ",
+  "Added MANE to today's list at 14:00 New York: 0.4x normal volume in the last 30 min; news: Veradermics\u2019 stock up on male hair loss trial success",
+  "Added NABL to today's list at 14:16 New York: 0.5x normal volume in the last 30 min; news: As AI Accelerates Cyberattacks, N-able and SentinelOne Expand Their Strategic Pa",
+  "Added MET to today's list at 14:48 New York: 0.4x normal volume in the last 30 min; news: MetLife's ChatGPT Integration Opens a New Pet Insurance Growth Avenue",
+  "Added KNTK to today's list at 14:48 New York: 0.4x normal volume in the last 30 min; news: Is Kinetik (KNTK) a Good or Bad Investment After Growing Earnings 65%?",
+  "Added HTB to today's list at 14:48 New York: 1.1x normal volume in the last 30 min; news: Why HomeTrust Bancshares (HTB) is Poised to Beat Earnings Estimates Again",
+  "Added UNM to today's list at 15:20 New York: 0.4x normal volume in the last 30 min; news: Unum Group's Premium Growth and Share Buybacks Support 2026 Outlook",
+  "Added MAT to today's list at 15:20 New York: 0.3x normal volume in the last 30 min; news: Mattel Enters into Cooperation Agreement with EdgePoint Investment Group Inc.",
+  "Added TDC to today's list at 15:20 New York: 0.6x normal volume in the last 30 min; news: Teradata Expands Sovereign AI Across On-Premises and Air-Gapped Cloud Environmen"
+ ],
+ "list": [
+  {
+   "ticker": "NTWK",
+   "name": "NETSOL Technologies Inc.",
+   "vol_x": 0.39,
+   "buy_pct30": 0.9098634962571555,
+   "change": 0.03287464126023831,
+   "score": 2.92,
+   "news": [
+    "Mercedes-Benz USA approves NETSOL as a digital retail provider for its dealerships"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "SWBI",
+   "name": "Smith & Wesson Brands, Inc.",
+   "vol_x": 0.45,
+   "buy_pct30": 0.5796119493498649,
+   "change": 0.00947228321056337,
+   "score": 1.72,
+   "news": [
+    "Smith & Wesson Acquires Savage Arms"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "SPHL",
+   "vol_x": 65.9
+  },
+  {
+   "ticker": "QGEN",
+   "vol_x": 1.79
+  },
+  {
+   "ticker": "TDY",
+   "vol_x": 0.92
+  },
+  {
+   "ticker": "SPCX",
+   "vol_x": 0.73
+  },
+  {
+   "ticker": "CPIX",
+   "vol_x": 0.62
+  },
+  {
+   "ticker": "KIDS",
+   "vol_x": 0.59
+  },
+  {
+   "ticker": "MCB",
+   "vol_x": 0.58
+  },
+  {
+   "ticker": "DHR",
+   "vol_x": 0.56
+  },
+  {
+   "ticker": "CZFS",
+   "vol_x": 0.53
+  },
+  {
+   "ticker": "TSLA",
+   "vol_x": 0.5
+  },
+  {
+   "ticker": "RAMP",
+   "vol_x": 0.47
+  },
+  {
+   "ticker": "BRBS",
+   "vol_x": 0.39
+  },
+  {
+   "ticker": "LAW",
+   "vol_x": 0.37
+  },
+  {
+   "ticker": "TMO",
+   "vol_x": 0.35
+  },
+  {
+   "ticker": "NNI",
+   "vol_x": 0.34
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "SWBI",
+   "bought_at": "2026-10-21T14:16+00:00",
+   "sold_at": "2026-10-21T18:16+00:00",
+   "entry": 14.954939579963682,
+   "exit": 14.914999961853027,
+   "cost_gbp": 996.7536947162389,
+   "pl_gbp": -4.150898360707515,
+   "pl_pct": -0.004164417330691927,
+   "reason": "No new high for 200 min, and NABL overtook it on buying volume (0.50x vs 0.02x normal in 30 min)."
+  },
+  {
+   "ticker": "NABL",
+   "bought_at": "2026-10-21T18:16+00:00",
+   "sold_at": "2026-10-21T19:14+00:00",
+   "entry": 4.8449399113655085,
+   "exit": 4.815000057220459,
+   "cost_gbp": 1001.4070901643169,
+   "pl_gbp": -7.6789006570860465,
+   "pl_pct": -0.00766811093361247,
+   "reason": "No new high for 50 min, and HTB overtook it on buying volume (0.42x vs 0.03x normal in 30 min)."
+  },
+  {
+   "ticker": "HTB",
+   "bought_at": "2026-10-21T19:14+00:00",
+   "sold_at": "2026-10-21T19:50+00:00",
+   "entry": 47.016971221923825,
+   "exit": 47.369998931884766,
+   "cost_gbp": 985.8841057341383,
+   "pl_gbp": 5.914828794003029,
+   "pl_pct": 0.0059995173465126036,
+   "reason": "End of day: sold 10 minutes before the close."
+  }
+ ],
+ "total_gbp": -5.914970223790533,
+ "alerts": [
+  "10:16 Day trade: bought SWBI: 89 SWBI at $14.95 (about \u00a3997). Stop $14.21. Highest first-30-minute volume on today's list (0.5x a normal day).",
+  "14:16 Day trade: sold SWBI (-\u00a34): No new high for 200 min, and NABL overtook it on buying volume (0.50x vs 0.02x normal in 30 min). Result -\u00a34 (-0.4%).",
+  "14:16 Day trade: bought NABL: 276 NABL at $4.84 (about \u00a31,001). Stop $4.60. Strongest buying on the list: 0.50x normal volume bought in the last 30 min, and rising.",
+  "15:14 Day trade: sold NABL (-\u00a38): No new high for 50 min, and HTB overtook it on buying volume (0.42x vs 0.03x normal in 30 min). Result -\u00a38 (-0.8%).",
+  "15:14 Day trade: bought HTB: 28 HTB at $47.02 (about \u00a3986). Stop $44.67. Strongest buying on the list: 0.42x normal volume bought in the last 30 min, and rising.",
+  "15:50 Day trade: sold HTB (+\u00a36): End of day: sold 10 minutes before the close. Result +\u00a36 (+0.6%).",
+  "15:50 Day trade summary: 3 trade(s) today: SWBI -\u00a34, NABL -\u00a38, HTB +\u00a36. Total -\u00a36."
+ ],
+ "log": [
+  "Day trade buy order: 89 SWBI at about $14.94. Highest first-30-minute volume on today's list (0.5x a normal day).",
+  "Bought 89 SWBI at 14.95 (cost \u00a3997).",
+  "Added GDRX to today's list at 10:48 New York: 0.4x normal volume in the last 30 min; news: GoodRx Holdings And 2 Penny Stocks With Strong Balance Sheets",
+  "Added MFC to today's list at 11:36 New York: 0.3x normal volume in the last 30 min; news: Manulife and UpLink announce winners of the 'Shaping Canada's Longevity Advantag",
+  "Added SLE to today's list at 11:52 New York: 0.4x normal volume in the last 30 min; news: Super League Shareholders Approve Metaplanet Investment Involving 2,100 Bitcoin ",
+  "Added MANE to today's list at 14:00 New York: 0.4x normal volume in the last 30 min; news: Veradermics\u2019 stock up on male hair loss trial success",
+  "Added NABL to today's list at 14:16 New York: 0.5x normal volume in the last 30 min; news: As AI Accelerates Cyberattacks, N-able and SentinelOne Expand Their Strategic Pa",
+  "Sold SWBI (about -\u00a34). No new high for 200 min, and NABL overtook it on buying volume (0.50x vs 0.02x normal in 30 min).",
+  "Day trade buy order: 276 NABL at about $4.84. Strongest buying on the list: 0.50x normal volume bought in the last 30 min, and rising.",
+  "Bought 276 NABL at 4.84 (cost \u00a31,001).",
+  "Added MET to today's list at 14:48 New York: 0.4x normal volume in the last 30 min; news: MetLife's ChatGPT Integration Opens a New Pet Insurance Growth Avenue",
+  "Added KNTK to today's list at 14:48 New York: 0.4x normal volume in the last 30 min; news: Is Kinetik (KNTK) a Good or Bad Investment After Growing Earnings 65%?",
+  "Added HTB to today's list at 14:48 New York: 1.1x normal volume in the last 30 min; news: Why HomeTrust Bancshares (HTB) is Poised to Beat Earnings Estimates Again",
+  "Sold NABL (about -\u00a38). No new high for 50 min, and HTB overtook it on buying volume (0.42x vs 0.03x normal in 30 min).",
+  "Day trade buy order: 28 HTB at about $46.97. Strongest buying on the list: 0.42x normal volume bought in the last 30 min, and rising.",
+  "Bought 28 HTB at 47.02 (cost \u00a3986).",
+  "Added UNM to today's list at 15:20 New York: 0.4x normal volume in the last 30 min; news: Unum Group's Premium Growth and Share Buybacks Support 2026 Outlook",
+  "Added MAT to today's list at 15:20 New York: 0.3x normal volume in the last 30 min; news: Mattel Enters into Cooperation Agreement with EdgePoint Investment Group Inc.",
+  "Added TDC to today's list at 15:20 New York: 0.6x normal volume in the last 30 min; news: Teradata Expands Sovereign AI Across On-Premises and Air-Gapped Cloud Environmen",
+  "Sold HTB (about +\u00a36). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 3 trade(s), total -\u00a36."
+ ]
+}

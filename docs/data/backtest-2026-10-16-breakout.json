@@ -1,0 +1,97 @@
+{
+ "date": "2026-10-16",
+ "generated": "2026-11-01T14:05+00:00",
+ "fx_gbpusd": 1.327316164970398,
+ "result": "done",
+ "require_news": true,
+ "strategy": "breakout",
+ "bars": "1m",
+ "added_during_day": [
+  "Added W to today's list at 10:48 New York: 0.4x normal volume in the last 30 min; news: Did Klarna\u2019s Expanded 0% Financing Push Just Reframe Wayfair\u2019s (W) Big-Ticket St",
+  "Added CAAP to today's list at 11:52 New York: 0.4x normal volume in the last 30 min; news: Corporacion America Airports stock rises on September passenger growth",
+  "Added HLP to today's list at 12:08 New York: 0.8x normal volume in the last 30 min; news: Hongli Group Provides Strategic Update on Proposed Advanced Battery Collaboratio"
+ ],
+ "list": [],
+ "quiet": [
+  {
+   "ticker": "NCPL",
+   "vol_x": 0.93
+  },
+  {
+   "ticker": "PMI",
+   "vol_x": 0.83
+  },
+  {
+   "ticker": "PRAA",
+   "vol_x": 0.79
+  },
+  {
+   "ticker": "ENGS",
+   "vol_x": 0.75
+  },
+  {
+   "ticker": "RGC",
+   "vol_x": 0.62
+  },
+  {
+   "ticker": "TRI",
+   "vol_x": 0.57
+  },
+  {
+   "ticker": "OPK",
+   "vol_x": 0.52
+  },
+  {
+   "ticker": "TRV",
+   "vol_x": 0.48
+  },
+  {
+   "ticker": "CZWI",
+   "vol_x": 0.48
+  },
+  {
+   "ticker": "AIT",
+   "vol_x": 0.43
+  },
+  {
+   "ticker": "AAPL",
+   "vol_x": 0.4
+  },
+  {
+   "ticker": "JMSB",
+   "vol_x": 0.38
+  },
+  {
+   "ticker": "TALO",
+   "vol_x": 0.36
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "HLP",
+   "bought_at": "2026-10-16T16:08+00:00",
+   "sold_at": "2026-10-16T19:50+00:00",
+   "entry": 3.02301998090744,
+   "exit": 3.049999952316284,
+   "cost_gbp": 1001.3412518828441,
+   "pl_gbp": 7.423663668915424,
+   "pl_pct": 0.007413720003002518,
+   "reason": "End of day: sold 10 minutes before the close."
+  }
+ ],
+ "total_gbp": 7.423663668915424,
+ "alerts": [
+  "12:08 Day trade: bought HLP: 439 HLP at $3.02 (about \u00a31,001). Stop $2.87. Broke above its opening-range high ($3.01) at $3.02. In play: 0.8x normal volume, normally moves 7% a day. Stop $2.91.",
+  "15:50 Day trade: sold HLP (+\u00a37): End of day: sold 10 minutes before the close. Result +\u00a37 (+0.7%).",
+  "15:50 Day trade summary: 1 trade(s) today: HLP +\u00a37. Total +\u00a37."
+ ],
+ "log": [
+  "Added W to today's list at 10:48 New York: 0.4x normal volume in the last 30 min; news: Did Klarna\u2019s Expanded 0% Financing Push Just Reframe Wayfair\u2019s (W) Big-Ticket St",
+  "Added CAAP to today's list at 11:52 New York: 0.4x normal volume in the last 30 min; news: Corporacion America Airports stock rises on September passenger growth",
+  "Added HLP to today's list at 12:08 New York: 0.8x normal volume in the last 30 min; news: Hongli Group Provides Strategic Update on Proposed Advanced Battery Collaboratio",
+  "Day trade buy order: 439 HLP at about $3.02. Broke above its opening-range high ($3.01) at $3.02. In play: 0.8x normal volume, normally moves 7% a day. Stop $2.91.",
+  "Bought 439 HLP at 3.02 (cost \u00a31,001).",
+  "Sold HLP (about +\u00a37). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 1 trade(s), total +\u00a37."
+ ]
+}

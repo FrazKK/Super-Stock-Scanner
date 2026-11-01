@@ -1,0 +1,168 @@
+{
+ "date": "2026-10-05",
+ "generated": "2026-11-01T13:58+00:00",
+ "fx_gbpusd": 1.3242928981781006,
+ "result": "done",
+ "require_news": true,
+ "strategy": "rotation",
+ "bars": "1m",
+ "added_during_day": [
+  "Added ESTC to today's list at 11:52 New York: 0.5x normal volume in the last 30 min; news: What Is Drawing Attention To Elastic (ESTC) Today?",
+  "Added CON to today's list at 12:40 New York: 0.6x normal volume in the last 30 min; news: Why Concentra\u2019s Quiet Healthcare Business Keeps Winning",
+  "Added PAYO to today's list at 12:56 New York: 0.6x normal volume in the last 30 min; news: Payoneer Renews Partnership with Etsy Through 2029",
+  "Added TEN to today's list at 14:00 New York: 0.6x normal volume in the last 30 min; news: Tsakos Energy Navigation Highlights $3.6B Contract Backlog, Tanker Fleet Expansi",
+  "Added SFL to today's list at 14:16 New York: 0.5x normal volume in the last 30 min; news: SFL - Newbuild order for two Very Large Ammonia Carriers in combination with lon",
+  "Added FATE to today's list at 15:04 New York: 1.1x normal volume in the last 30 min; news: Fate Therapeutics Reports New Employee Inducement Awards Under Nasdaq Listing Ru"
+ ],
+ "list": [
+  {
+   "ticker": "VEEA",
+   "name": "Veea Inc.",
+   "vol_x": 4.05,
+   "buy_pct30": 0.26302756179202524,
+   "change": 0.678498481280776,
+   "score": 7.65,
+   "news": [
+    "Veea Announces TROLLEE Agreement for Phased Deployment of VeeaONE to 1,000 Unattended Stores"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "AIFA",
+   "name": "All In FutureTech Alliance, Inc.",
+   "vol_x": 0.98,
+   "buy_pct30": 0.7571875326992107,
+   "change": 0.16554816167532627,
+   "score": 3.49,
+   "news": [
+    "All In FutureTech Alliance Inc. Launches New Digital Platform for Consumers and Businesses, Advancing Its AI-Enabled Global Services Strategy"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "ALEC",
+   "vol_x": 61.26
+  },
+  {
+   "ticker": "PCVX",
+   "vol_x": 3.03
+  },
+  {
+   "ticker": "PMI",
+   "vol_x": 1.62
+  },
+  {
+   "ticker": "PAGS",
+   "vol_x": 1.51
+  },
+  {
+   "ticker": "STNE",
+   "vol_x": 1.49
+  },
+  {
+   "ticker": "XP",
+   "vol_x": 1.48
+  },
+  {
+   "ticker": "ACB",
+   "vol_x": 1.43
+  },
+  {
+   "ticker": "NAUT",
+   "vol_x": 1.26
+  },
+  {
+   "ticker": "INTR",
+   "vol_x": 1.25
+  },
+  {
+   "ticker": "ALVO",
+   "vol_x": 1.17
+  },
+  {
+   "ticker": "SOTK",
+   "vol_x": 0.87
+  },
+  {
+   "ticker": "NTWK",
+   "vol_x": 0.63
+  },
+  {
+   "ticker": "SPCX",
+   "vol_x": 0.56
+  },
+  {
+   "ticker": "VST",
+   "vol_x": 0.54
+  },
+  {
+   "ticker": "NU",
+   "vol_x": 0.53
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "AIFA",
+   "bought_at": "2026-10-05T14:16+00:00",
+   "sold_at": "2026-10-05T18:00+00:00",
+   "entry": 5.310304828166961,
+   "exit": 6.039400100708008,
+   "cost_gbp": 999.9670789511392,
+   "pl_gbp": 135.59033976277624,
+   "pl_pct": 0.13559480368593366,
+   "reason": "No new high for 48 min, and TEN overtook it on buying volume (0.56x vs 0.22x normal in 30 min)."
+  },
+  {
+   "ticker": "TEN",
+   "bought_at": "2026-10-05T18:00+00:00",
+   "sold_at": "2026-10-05T19:02+00:00",
+   "entry": 51.2261742362976,
+   "exit": 51.25,
+   "cost_gbp": 968.4982372145978,
+   "pl_gbp": -1.0007887553611,
+   "pl_pct": -0.0010333408125133708,
+   "reason": "No new high for 50 min, and ESTC overtook it on buying volume (0.97x vs 0.03x normal in 30 min)."
+  },
+  {
+   "ticker": "ESTC",
+   "bought_at": "2026-10-05T19:02+00:00",
+   "sold_at": "2026-10-05T19:50+00:00",
+   "entry": 95.26516816711425,
+   "exit": 95.12000274658203,
+   "cost_gbp": 936.5789536877354,
+   "pl_gbp": -2.8277892687710846,
+   "pl_pct": -0.0030192748381081998,
+   "reason": "End of day: sold 10 minutes before the close."
+  }
+ ],
+ "total_gbp": 131.76176173864405,
+ "alerts": [
+  "10:16 Day trade: bought AIFA: 249 AIFA at $5.31 (about \u00a31,000). Stop $5.04. Highest first-30-minute volume on today's list (1.0x a normal day).",
+  "14:00 Day trade: sold AIFA (+\u00a3136): No new high for 48 min, and TEN overtook it on buying volume (0.56x vs 0.22x normal in 30 min). Result +\u00a3136 (+13.6%).",
+  "14:00 Day trade: bought TEN: 25 TEN at $51.23 (about \u00a3968). Stop $48.66. Strongest buying on the list: 0.56x normal volume bought in the last 30 min, and rising.",
+  "15:02 Day trade: sold TEN (-\u00a31): No new high for 50 min, and ESTC overtook it on buying volume (0.97x vs 0.03x normal in 30 min). Result -\u00a31 (-0.1%).",
+  "15:02 Day trade: bought ESTC: 13 ESTC at $95.27 (about \u00a3937). Stop $90.50. Strongest buying on the list: 0.97x normal volume bought in the last 30 min, and rising.",
+  "15:50 Day trade: sold ESTC (-\u00a33): End of day: sold 10 minutes before the close. Result -\u00a33 (-0.3%).",
+  "15:50 Day trade summary: 3 trade(s) today: AIFA +\u00a3136, TEN -\u00a31, ESTC -\u00a33. Total +\u00a3132."
+ ],
+ "log": [
+  "Day trade buy order: 249 AIFA at about $5.30. Highest first-30-minute volume on today's list (1.0x a normal day).",
+  "Bought 249 AIFA at 5.31 (cost \u00a31,000).",
+  "Added ESTC to today's list at 11:52 New York: 0.5x normal volume in the last 30 min; news: What Is Drawing Attention To Elastic (ESTC) Today?",
+  "Added CON to today's list at 12:40 New York: 0.6x normal volume in the last 30 min; news: Why Concentra\u2019s Quiet Healthcare Business Keeps Winning",
+  "Added PAYO to today's list at 12:56 New York: 0.6x normal volume in the last 30 min; news: Payoneer Renews Partnership with Etsy Through 2029",
+  "Added TEN to today's list at 14:00 New York: 0.6x normal volume in the last 30 min; news: Tsakos Energy Navigation Highlights $3.6B Contract Backlog, Tanker Fleet Expansi",
+  "Sold AIFA (about +\u00a3136). No new high for 48 min, and TEN overtook it on buying volume (0.56x vs 0.22x normal in 30 min).",
+  "Day trade buy order: 25 TEN at about $51.17. Strongest buying on the list: 0.56x normal volume bought in the last 30 min, and rising.",
+  "Bought 25 TEN at 51.23 (cost \u00a3968).",
+  "Added SFL to today's list at 14:16 New York: 0.5x normal volume in the last 30 min; news: SFL - Newbuild order for two Very Large Ammonia Carriers in combination with lon",
+  "Sold TEN (about -\u00a31). No new high for 50 min, and ESTC overtook it on buying volume (0.97x vs 0.03x normal in 30 min).",
+  "Day trade buy order: 13 ESTC at about $95.17. Strongest buying on the list: 0.97x normal volume bought in the last 30 min, and rising.",
+  "Bought 13 ESTC at 95.27 (cost \u00a3937).",
+  "Added FATE to today's list at 15:04 New York: 1.1x normal volume in the last 30 min; news: Fate Therapeutics Reports New Employee Inducement Awards Under Nasdaq Listing Ru",
+  "Sold ESTC (about -\u00a33). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 3 trade(s), total +\u00a3132."
+ ]
+}

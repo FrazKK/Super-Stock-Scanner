@@ -1,0 +1,83 @@
+{
+ "date": "2026-10-15",
+ "generated": "2026-11-01T14:05+00:00",
+ "fx_gbpusd": 1.3230137825012207,
+ "result": "done",
+ "require_news": true,
+ "strategy": "breakout",
+ "bars": "1m",
+ "added_during_day": [
+  "Added HLP to today's list at 10:32 New York: 1.4x normal volume in the last 30 min; news: Hongli Group Provides Strategic Update on Proposed Advanced Battery Collaboratio",
+  "Added COTY to today's list at 12:08 New York: 0.7x normal volume in the last 30 min; news: Coty Launches Global Fragrance Club, a New Community for the Voices Shaping the ",
+  "Added NRXS to today's list at 12:08 New York: 5.4x normal volume in the last 30 min; news: NeurAxis Announces Medical Policy Coverage Milestone, Expanding Access to 26 Mil",
+  "Added WTRG to today's list at 13:12 New York: 0.5x normal volume in the last 30 min; news: WTRG Unit Expands Water Operations With Lake Tamarack Acquisition"
+ ],
+ "list": [],
+ "quiet": [
+  {
+   "ticker": "OPK",
+   "vol_x": 17.51
+  },
+  {
+   "ticker": "NCPL",
+   "vol_x": 1.78
+  },
+  {
+   "ticker": "CANG",
+   "vol_x": 0.89
+  },
+  {
+   "ticker": "BCAL",
+   "vol_x": 0.6
+  },
+  {
+   "ticker": "LLY",
+   "vol_x": 0.48
+  },
+  {
+   "ticker": "PFE",
+   "vol_x": 0.45
+  },
+  {
+   "ticker": "WMT",
+   "vol_x": 0.43
+  },
+  {
+   "ticker": "NTWK",
+   "vol_x": 0.39
+  },
+  {
+   "ticker": "MSFT",
+   "vol_x": 0.36
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "NRXS",
+   "bought_at": "2026-10-15T17:12+00:00",
+   "sold_at": "2026-10-15T19:50+00:00",
+   "entry": 7.557550190925597,
+   "exit": 7.675000190734863,
+   "cost_gbp": 1001.165035358107,
+   "pl_gbp": 14.036054111542398,
+   "pl_pct": 0.014019720641284518,
+   "reason": "End of day: sold 10 minutes before the close."
+  }
+ ],
+ "total_gbp": 14.036054111542398,
+ "alerts": [
+  "13:12 Day trade: bought NRXS: 175 NRXS at $7.56 (about \u00a31,001). Stop $7.18. Broke above its opening-range high ($7.49) at $7.55. In play: 5.4x normal volume, normally moves 7% a day. Stop $7.17.",
+  "15:50 Day trade: sold NRXS (+\u00a314): End of day: sold 10 minutes before the close. Result +\u00a314 (+1.4%).",
+  "15:50 Day trade summary: 1 trade(s) today: NRXS +\u00a314. Total +\u00a314."
+ ],
+ "log": [
+  "Added HLP to today's list at 10:32 New York: 1.4x normal volume in the last 30 min; news: Hongli Group Provides Strategic Update on Proposed Advanced Battery Collaboratio",
+  "Added COTY to today's list at 12:08 New York: 0.7x normal volume in the last 30 min; news: Coty Launches Global Fragrance Club, a New Community for the Voices Shaping the ",
+  "Added NRXS to today's list at 12:08 New York: 5.4x normal volume in the last 30 min; news: NeurAxis Announces Medical Policy Coverage Milestone, Expanding Access to 26 Mil",
+  "Added WTRG to today's list at 13:12 New York: 0.5x normal volume in the last 30 min; news: WTRG Unit Expands Water Operations With Lake Tamarack Acquisition",
+  "Day trade buy order: 175 NRXS at about $7.55. Broke above its opening-range high ($7.49) at $7.55. In play: 5.4x normal volume, normally moves 7% a day. Stop $7.17.",
+  "Bought 175 NRXS at 7.56 (cost \u00a31,001).",
+  "Sold NRXS (about +\u00a314). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 1 trade(s), total +\u00a314."
+ ]
+}

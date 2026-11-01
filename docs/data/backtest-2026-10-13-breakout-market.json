@@ -1,0 +1,108 @@
+{
+ "date": "2026-10-13",
+ "generated": "2026-11-01T14:04+00:00",
+ "fx_gbpusd": 1.3209795951843262,
+ "result": "done",
+ "require_news": true,
+ "strategy": "breakout-market",
+ "bars": "1m",
+ "added_during_day": [
+  "Added AGBK to today's list at 10:16 New York: 0.8x normal volume in the last 30 min; news: AGI (AGBK) Rebounds Following A Sharp Rally But Is The Undervalued Case Still In"
+ ],
+ "list": [
+  {
+   "ticker": "EFXT",
+   "name": "Enerflex Ltd",
+   "vol_x": 0.57,
+   "buy_pct30": 0.6679720490967713,
+   "change": 0.13621265353146628,
+   "score": 3.81,
+   "news": [
+    "Enerflex Soars 13% on Gigawatt Data Center Power Award, Backlog Now \u201cOver 1.75 Gigawatts\u201d",
+    "Enerflex shares jump 13% on more than 1GW data centre power contract"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "RELL",
+   "name": "Richardson Electronics, Ltd.",
+   "vol_x": 0.53,
+   "buy_pct30": 0.2503484477420974,
+   "change": 0.0067502117258166905,
+   "score": 1.06,
+   "news": [
+    "ComEd, Richardson Electronics, Ltd. Announce Expansion and Plans to Install Illinois\u2019 Largest Commercial Battery Energy Storage System",
+    "RELL Q3 Deep Dive: Demand for Engineered Power Solutions and Energy Storage Drives Growth"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "BMBL",
+   "vol_x": 9.54
+  },
+  {
+   "ticker": "PFAI",
+   "vol_x": 6.85
+  },
+  {
+   "ticker": "ENGS",
+   "vol_x": 0.64
+  },
+  {
+   "ticker": "JRSH",
+   "vol_x": 0.48
+  },
+  {
+   "ticker": "MSFT",
+   "vol_x": 0.42
+  },
+  {
+   "ticker": "NOW",
+   "vol_x": 0.42
+  },
+  {
+   "ticker": "META",
+   "vol_x": 0.38
+  },
+  {
+   "ticker": "FIGS",
+   "vol_x": 0.37
+  },
+  {
+   "ticker": "VFC",
+   "vol_x": 0.36
+  },
+  {
+   "ticker": "CANG",
+   "vol_x": 0.34
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "EFXT",
+   "bought_at": "2026-10-13T14:16+00:00",
+   "sold_at": "2026-10-13T19:50+00:00",
+   "entry": 27.422395458221434,
+   "exit": 27.510000228881836,
+   "cost_gbp": 997.9331999323394,
+   "pl_gbp": 1.6886078534739681,
+   "pl_pct": 0.0016921050964017,
+   "reason": "End of day: sold 10 minutes before the close."
+  }
+ ],
+ "total_gbp": 1.6886078534739681,
+ "alerts": [
+  "10:16 Day trade: bought EFXT: 48 EFXT at $27.42 (about \u00a3998). Stop $26.05. Broke above its opening-range high ($27.39) at $27.40. In play: 0.6x normal volume, normally moves 4% a day. Stop $26.03.",
+  "15:50 Day trade: sold EFXT (+\u00a32): End of day: sold 10 minutes before the close. Result +\u00a32 (+0.2%).",
+  "15:50 Day trade summary: 1 trade(s) today: EFXT +\u00a32. Total +\u00a32."
+ ],
+ "log": [
+  "Added AGBK to today's list at 10:16 New York: 0.8x normal volume in the last 30 min; news: AGI (AGBK) Rebounds Following A Sharp Rally But Is The Undervalued Case Still In",
+  "Day trade buy order: 48 EFXT at about $27.40. Broke above its opening-range high ($27.39) at $27.40. In play: 0.6x normal volume, normally moves 4% a day. Stop $26.03.",
+  "Bought 48 EFXT at 27.42 (cost \u00a3998).",
+  "Sold EFXT (about +\u00a32). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 1 trade(s), total +\u00a32."
+ ]
+}

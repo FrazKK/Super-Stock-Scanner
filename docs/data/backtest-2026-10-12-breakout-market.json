@@ -1,0 +1,95 @@
+{
+ "date": "2026-10-12",
+ "generated": "2026-11-01T14:03+00:00",
+ "fx_gbpusd": 1.3241524696350098,
+ "result": "done",
+ "require_news": true,
+ "strategy": "breakout-market",
+ "bars": "1m",
+ "added_during_day": [
+  "Added RSKD to today's list at 10:48 New York: 0.4x normal volume in the last 30 min; news: Riskified Launches Agent Identity Risk Intelligence: Know Who Is Behind AI Perso",
+  "Added ECO to today's list at 11:52 New York: 0.6x normal volume in the last 30 min; news: ECO or SBLK: Which Shipping Company Is a Stronger Play Now?"
+ ],
+ "list": [],
+ "quiet": [
+  {
+   "ticker": "NCPL",
+   "vol_x": 1.44
+  },
+  {
+   "ticker": "ALLT",
+   "vol_x": 0.98
+  },
+  {
+   "ticker": "AI",
+   "vol_x": 0.86
+  },
+  {
+   "ticker": "MSGM",
+   "vol_x": 0.64
+  },
+  {
+   "ticker": "FIGS",
+   "vol_x": 0.6
+  },
+  {
+   "ticker": "CBNA",
+   "vol_x": 0.57
+  },
+  {
+   "ticker": "PEBK",
+   "vol_x": 0.5
+  },
+  {
+   "ticker": "ENGS",
+   "vol_x": 0.48
+  },
+  {
+   "ticker": "HSHP",
+   "vol_x": 0.42
+  },
+  {
+   "ticker": "PLMR",
+   "vol_x": 0.38
+  },
+  {
+   "ticker": "SHOP",
+   "vol_x": 0.37
+  },
+  {
+   "ticker": "BORR",
+   "vol_x": 0.36
+  },
+  {
+   "ticker": "BOTJ",
+   "vol_x": 0.35
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "RSKD",
+   "bought_at": "2026-10-12T15:54+00:00",
+   "sold_at": "2026-10-12T19:50+00:00",
+   "entry": 8.71370492362976,
+   "exit": 8.569999694824219,
+   "cost_gbp": 1001.7501032037045,
+   "pl_gbp": -17.99635619574724,
+   "pl_pct": -0.017964915739157858,
+   "reason": "End of day: sold 10 minutes before the close."
+  }
+ ],
+ "total_gbp": -17.99635619574724,
+ "alerts": [
+  "11:54 Day trade: bought RSKD: 152 RSKD at $8.71 (about \u00a31,002). Stop $8.28. Broke above its opening-range high ($8.60) at $8.70. In play: 0.4x normal volume, normally moves 5% a day. Stop $8.40.",
+  "15:50 Day trade: sold RSKD (-\u00a318): End of day: sold 10 minutes before the close. Result -\u00a318 (-1.8%).",
+  "15:50 Day trade summary: 1 trade(s) today: RSKD -\u00a318. Total -\u00a318."
+ ],
+ "log": [
+  "Added RSKD to today's list at 10:48 New York: 0.4x normal volume in the last 30 min; news: Riskified Launches Agent Identity Risk Intelligence: Know Who Is Behind AI Perso",
+  "Added ECO to today's list at 11:52 New York: 0.6x normal volume in the last 30 min; news: ECO or SBLK: Which Shipping Company Is a Stronger Play Now?",
+  "Day trade buy order: 152 RSKD at about $8.70. Broke above its opening-range high ($8.60) at $8.70. In play: 0.4x normal volume, normally moves 5% a day. Stop $8.40.",
+  "Bought 152 RSKD at 8.71 (cost \u00a31,002).",
+  "Sold RSKD (about -\u00a318). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 1 trade(s), total -\u00a318."
+ ]
+}

@@ -1,0 +1,126 @@
+{
+ "date": "2026-10-21",
+ "generated": "2026-11-01T14:13+00:00",
+ "fx_gbpusd": 1.337327480316162,
+ "result": "done",
+ "require_news": true,
+ "strategy": "breakout-market",
+ "bars": "1m",
+ "added_during_day": [
+  "Added GDRX to today's list at 10:48 New York: 0.4x normal volume in the last 30 min; news: GoodRx Holdings And 2 Penny Stocks With Strong Balance Sheets",
+  "Added MFC to today's list at 11:36 New York: 0.6x normal volume in the last 30 min; news: Manulife and UpLink announce winners of the 'Shaping Canada's Longevity Advantag",
+  "Added GIB to today's list at 11:36 New York: 0.4x normal volume in the last 30 min; news: CGI selected to join PCI Security Standards Council Global Executive Assessor Ro"
+ ],
+ "list": [
+  {
+   "ticker": "NTWK",
+   "name": "NETSOL Technologies Inc.",
+   "vol_x": 0.39,
+   "buy_pct30": 0.9098634962571555,
+   "change": 0.03287464126023831,
+   "score": 2.92,
+   "news": [
+    "Mercedes-Benz USA approves NETSOL as a digital retail provider for its dealerships"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "SWBI",
+   "name": "Smith & Wesson Brands, Inc.",
+   "vol_x": 0.45,
+   "buy_pct30": 0.5790743064833287,
+   "change": 0.00947228321056337,
+   "score": 1.72,
+   "news": [
+    "Smith & Wesson Acquires Savage Arms"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "SPHL",
+   "vol_x": 65.9
+  },
+  {
+   "ticker": "QGEN",
+   "vol_x": 1.86
+  },
+  {
+   "ticker": "SPCX",
+   "vol_x": 0.73
+  },
+  {
+   "ticker": "CPIX",
+   "vol_x": 0.64
+  },
+  {
+   "ticker": "TDY",
+   "vol_x": 0.63
+  },
+  {
+   "ticker": "KIDS",
+   "vol_x": 0.59
+  },
+  {
+   "ticker": "MCB",
+   "vol_x": 0.58
+  },
+  {
+   "ticker": "DHR",
+   "vol_x": 0.56
+  },
+  {
+   "ticker": "CZFS",
+   "vol_x": 0.53
+  },
+  {
+   "ticker": "BRBS",
+   "vol_x": 0.39
+  },
+  {
+   "ticker": "LAW",
+   "vol_x": 0.37
+  },
+  {
+   "ticker": "TSLA",
+   "vol_x": 0.36
+  },
+  {
+   "ticker": "TMO",
+   "vol_x": 0.35
+  },
+  {
+   "ticker": "NNI",
+   "vol_x": 0.34
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "NTWK",
+   "bought_at": "2026-10-21T15:46+00:00",
+   "sold_at": "2026-10-21T19:50+00:00",
+   "entry": 6.906900095462798,
+   "exit": 6.900000095367432,
+   "cost_gbp": 998.2829827787112,
+   "pl_gbp": -2.4909737106835337,
+   "pl_pct": -0.0024952581118331115,
+   "reason": "End of day: sold 10 minutes before the close."
+  }
+ ],
+ "total_gbp": -2.4909737106835337,
+ "alerts": [
+  "11:46 Day trade: bought NTWK: 193 NTWK at $6.91 (about \u00a3998). Stop $6.56. Broke above its opening-range high ($6.85) at $6.90. In play: 0.4x normal volume, normally moves 6% a day. Stop $6.71.",
+  "15:50 Day trade: sold NTWK (-\u00a32): End of day: sold 10 minutes before the close. Result -\u00a32 (-0.2%).",
+  "15:50 Day trade summary: 1 trade(s) today: NTWK -\u00a32. Total -\u00a32."
+ ],
+ "log": [
+  "Added GDRX to today's list at 10:48 New York: 0.4x normal volume in the last 30 min; news: GoodRx Holdings And 2 Penny Stocks With Strong Balance Sheets",
+  "Added MFC to today's list at 11:36 New York: 0.6x normal volume in the last 30 min; news: Manulife and UpLink announce winners of the 'Shaping Canada's Longevity Advantag",
+  "Added GIB to today's list at 11:36 New York: 0.4x normal volume in the last 30 min; news: CGI selected to join PCI Security Standards Council Global Executive Assessor Ro",
+  "Day trade buy order: 193 NTWK at about $6.90. Broke above its opening-range high ($6.85) at $6.90. In play: 0.4x normal volume, normally moves 6% a day. Stop $6.71.",
+  "Bought 193 NTWK at 6.91 (cost \u00a3998).",
+  "Sold NTWK (about -\u00a32). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 1 trade(s), total -\u00a32."
+ ]
+}

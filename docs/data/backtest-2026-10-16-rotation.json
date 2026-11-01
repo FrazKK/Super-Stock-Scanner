@@ -1,0 +1,159 @@
+{
+ "date": "2026-10-16",
+ "generated": "2026-11-01T14:10+00:00",
+ "fx_gbpusd": 1.327316164970398,
+ "result": "done",
+ "require_news": true,
+ "strategy": "rotation",
+ "bars": "1m",
+ "added_during_day": [
+  "Added W to today's list at 10:48 New York: 0.4x normal volume in the last 30 min; news: Did Klarna\u2019s Expanded 0% Financing Push Just Reframe Wayfair\u2019s (W) Big-Ticket St",
+  "Added CAAP to today's list at 11:52 New York: 0.4x normal volume in the last 30 min; news: Corporacion America Airports stock rises on September passenger growth",
+  "Added HLP to today's list at 12:08 New York: 0.8x normal volume in the last 30 min; news: Hongli Group Provides Strategic Update on Proposed Advanced Battery Collaboratio",
+  "Added CVE to today's list at 12:40 New York: 0.4x normal volume in the last 30 min; news: 3 Reasons Why Growth Investors Shouldn't Overlook Cenovus (CVE)",
+  "Added BIPC to today's list at 12:40 New York: 0.7x normal volume in the last 30 min; news: Brookfield Infrastructure Partners L.P. Unitholders Approve Proposed Corporate S",
+  "Added COTY to today's list at 12:56 New York: 0.4x normal volume in the last 30 min; news: Coty Launches Global Fragrance Club, a New Community for the Voices Shaping the ",
+  "Added BF.B to today's list at 13:28 New York: 0.5x normal volume in the last 30 min; news: Brown-Forman\u2019s Dividend Growth Depends on a Recovery that Has Yet to Materialize",
+  "Added BF.A to today's list at 14:32 New York: 0.5x normal volume in the last 30 min; news: Brown-Forman\u2019s Dividend Growth Depends on a Recovery that Has Yet to Materialize",
+  "Added CXT to today's list at 15:20 New York: 0.9x normal volume in the last 30 min; news: All You Need to Know About Crane NXT (CXT) Rating Upgrade to Buy",
+  "Added EFXT to today's list at 15:20 New York: 0.6x normal volume in the last 30 min; news: Enerflex Soars 13% on Gigawatt Data Center Power Award, Backlog Now \u201cOver 1.75 G"
+ ],
+ "list": [],
+ "quiet": [
+  {
+   "ticker": "NCPL",
+   "vol_x": 0.93
+  },
+  {
+   "ticker": "PMI",
+   "vol_x": 0.83
+  },
+  {
+   "ticker": "PRAA",
+   "vol_x": 0.79
+  },
+  {
+   "ticker": "ENGS",
+   "vol_x": 0.75
+  },
+  {
+   "ticker": "RGC",
+   "vol_x": 0.62
+  },
+  {
+   "ticker": "TRI",
+   "vol_x": 0.57
+  },
+  {
+   "ticker": "OPK",
+   "vol_x": 0.52
+  },
+  {
+   "ticker": "TRV",
+   "vol_x": 0.48
+  },
+  {
+   "ticker": "CZWI",
+   "vol_x": 0.48
+  },
+  {
+   "ticker": "AIT",
+   "vol_x": 0.43
+  },
+  {
+   "ticker": "AAPL",
+   "vol_x": 0.4
+  },
+  {
+   "ticker": "JMSB",
+   "vol_x": 0.38
+  },
+  {
+   "ticker": "TALO",
+   "vol_x": 0.36
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "W",
+   "bought_at": "2026-10-16T14:48+00:00",
+   "sold_at": "2026-10-16T15:52+00:00",
+   "entry": 112.55244244384764,
+   "exit": 110.98999786376953,
+   "cost_gbp": 934.166263401381,
+   "pl_gbp": -14.347753899017334,
+   "pl_pct": -0.015358886807553838,
+   "reason": "No new high for 60 min, and CAAP overtook it on buying volume (0.34x vs 0.01x normal in 30 min)."
+  },
+  {
+   "ticker": "CAAP",
+   "bought_at": "2026-10-16T15:52+00:00",
+   "sold_at": "2026-10-16T16:40+00:00",
+   "entry": 25.375350381851195,
+   "exit": 25.262500762939453,
+   "cost_gbp": 995.6162156855213,
+   "pl_gbp": -5.912274498193938,
+   "pl_pct": -0.005938306754197552,
+   "reason": "No new high for 46 min, and BIPC overtook it on buying volume (0.39x vs 0.03x normal in 30 min)."
+  },
+  {
+   "ticker": "BIPC",
+   "bought_at": "2026-10-16T16:40+00:00",
+   "sold_at": "2026-10-16T18:32+00:00",
+   "entry": 37.737700763702385,
+   "exit": 37.66999816894531,
+   "cost_gbp": 996.5980908920666,
+   "pl_gbp": -3.2779078726047146,
+   "pl_pct": -0.003289097081924591,
+   "reason": "No new high for 50 min, and BF.A overtook it on buying volume (0.47x vs 0.04x normal in 30 min)."
+  },
+  {
+   "ticker": "BF.A",
+   "bought_at": "2026-10-16T18:32+00:00",
+   "sold_at": "2026-10-16T19:50+00:00",
+   "entry": 29.34931969451904,
+   "exit": 29.459999084472656,
+   "cost_gbp": 996.5225318884261,
+   "pl_gbp": 2.2598183821557996,
+   "pl_pct": 0.0022677042513764415,
+   "reason": "End of day: sold 10 minutes before the close."
+  }
+ ],
+ "total_gbp": -21.278117887660187,
+ "alerts": [
+  "10:48 Day trade: bought W: 11 W at $112.55 (about \u00a3934). Stop $106.92. Highest first-30-minute volume on today's list (0.4x a normal day).",
+  "11:52 Day trade: sold W (-\u00a314): No new high for 60 min, and CAAP overtook it on buying volume (0.34x vs 0.01x normal in 30 min). Result -\u00a314 (-1.5%).",
+  "11:52 Day trade: bought CAAP: 52 CAAP at $25.38 (about \u00a3996). Stop $24.11. Strongest buying on the list: 0.34x normal volume bought in the last 30 min, and rising.",
+  "12:40 Day trade: sold CAAP (-\u00a36): No new high for 46 min, and BIPC overtook it on buying volume (0.39x vs 0.03x normal in 30 min). Result -\u00a36 (-0.6%).",
+  "12:40 Day trade: bought BIPC: 35 BIPC at $37.74 (about \u00a3997). Stop $35.85. Strongest buying on the list: 0.39x normal volume bought in the last 30 min, and rising.",
+  "14:32 Day trade: sold BIPC (-\u00a33): No new high for 50 min, and BF.A overtook it on buying volume (0.47x vs 0.04x normal in 30 min). Result -\u00a33 (-0.3%).",
+  "14:32 Day trade: bought BF.A: 45 BF.A at $29.35 (about \u00a3997). Stop $27.88. Strongest buying on the list: 0.47x normal volume bought in the last 30 min, and rising.",
+  "15:50 Day trade: sold BF.A (+\u00a32): End of day: sold 10 minutes before the close. Result +\u00a32 (+0.2%).",
+  "15:50 Day trade summary: 4 trade(s) today: W -\u00a314, CAAP -\u00a36, BIPC -\u00a33, BF.A +\u00a32. Total -\u00a321."
+ ],
+ "log": [
+  "Added W to today's list at 10:48 New York: 0.4x normal volume in the last 30 min; news: Did Klarna\u2019s Expanded 0% Financing Push Just Reframe Wayfair\u2019s (W) Big-Ticket St",
+  "Day trade buy order: 11 W at about $112.44. Highest first-30-minute volume on today's list (0.4x a normal day).",
+  "Bought 11 W at 112.55 (cost \u00a3934).",
+  "Added CAAP to today's list at 11:52 New York: 0.4x normal volume in the last 30 min; news: Corporacion America Airports stock rises on September passenger growth",
+  "Sold W (about -\u00a314). No new high for 60 min, and CAAP overtook it on buying volume (0.34x vs 0.01x normal in 30 min).",
+  "Day trade buy order: 52 CAAP at about $25.35. Strongest buying on the list: 0.34x normal volume bought in the last 30 min, and rising.",
+  "Bought 52 CAAP at 25.38 (cost \u00a3996).",
+  "Added HLP to today's list at 12:08 New York: 0.8x normal volume in the last 30 min; news: Hongli Group Provides Strategic Update on Proposed Advanced Battery Collaboratio",
+  "Added CVE to today's list at 12:40 New York: 0.4x normal volume in the last 30 min; news: 3 Reasons Why Growth Investors Shouldn't Overlook Cenovus (CVE)",
+  "Added BIPC to today's list at 12:40 New York: 0.7x normal volume in the last 30 min; news: Brookfield Infrastructure Partners L.P. Unitholders Approve Proposed Corporate S",
+  "Sold CAAP (about -\u00a36). No new high for 46 min, and BIPC overtook it on buying volume (0.39x vs 0.03x normal in 30 min).",
+  "Day trade buy order: 35 BIPC at about $37.70. Strongest buying on the list: 0.39x normal volume bought in the last 30 min, and rising.",
+  "Bought 35 BIPC at 37.74 (cost \u00a3997).",
+  "Added COTY to today's list at 12:56 New York: 0.4x normal volume in the last 30 min; news: Coty Launches Global Fragrance Club, a New Community for the Voices Shaping the ",
+  "Added BF.B to today's list at 13:28 New York: 0.5x normal volume in the last 30 min; news: Brown-Forman\u2019s Dividend Growth Depends on a Recovery that Has Yet to Materialize",
+  "Added BF.A to today's list at 14:32 New York: 0.5x normal volume in the last 30 min; news: Brown-Forman\u2019s Dividend Growth Depends on a Recovery that Has Yet to Materialize",
+  "Sold BIPC (about -\u00a33). No new high for 50 min, and BF.A overtook it on buying volume (0.47x vs 0.04x normal in 30 min).",
+  "Day trade buy order: 45 BF.A at about $29.32. Strongest buying on the list: 0.47x normal volume bought in the last 30 min, and rising.",
+  "Bought 45 BF.A at 29.35 (cost \u00a3997).",
+  "Added CXT to today's list at 15:20 New York: 0.9x normal volume in the last 30 min; news: All You Need to Know About Crane NXT (CXT) Rating Upgrade to Buy",
+  "Added EFXT to today's list at 15:20 New York: 0.6x normal volume in the last 30 min; news: Enerflex Soars 13% on Gigawatt Data Center Power Award, Backlog Now \u201cOver 1.75 G",
+  "Sold BF.A (about +\u00a32). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 4 trade(s), total -\u00a321."
+ ]
+}

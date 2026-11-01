@@ -1,0 +1,120 @@
+{
+ "date": "2026-10-20",
+ "generated": "2026-11-01T14:11+00:00",
+ "fx_gbpusd": 1.330849051475525,
+ "result": "done",
+ "require_news": true,
+ "strategy": "breakout",
+ "bars": "1m",
+ "added_during_day": [
+  "Added CFFI to today's list at 10:32 New York: 0.4x normal volume in the last 30 min; news: C&F Financial's 2026 Outlook: Aggressive Market Expansion Drives New Retail Grow",
+  "Added PEN to today's list at 11:04 New York: 0.4x normal volume in the last 30 min; news: Penumbra's CAVT Technology Receives FDA Clearance for the Treatment of Deep Vein",
+  "Added WCCB to today's list at 11:04 New York: 0.6x normal volume in the last 30 min; news: West Coast Community Bank Continues Expansion with New Full-Service Branch in Sa",
+  "Added GORO to today's list at 11:52 New York: 0.3x normal volume in the last 30 min; news: Goldgroup Completes Strategic Investment in Luca Mining"
+ ],
+ "list": [
+  {
+   "ticker": "MYGN",
+   "name": "Myriad Genetics, Inc.",
+   "vol_x": 6.61,
+   "buy_pct30": 0.48489399087969315,
+   "change": 0.33135391170697504,
+   "score": 13.66,
+   "news": [
+    "Myriad Genetics and Labcorp Announce Definitive Agreement for Myriad to Sell Prenatal Health Testing Business to Labcorp"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "BRZE",
+   "vol_x": 10.83
+  },
+  {
+   "ticker": "HAS",
+   "vol_x": 1.29
+  },
+  {
+   "ticker": "QNBC",
+   "vol_x": 1.1
+  },
+  {
+   "ticker": "TMP",
+   "vol_x": 0.85
+  },
+  {
+   "ticker": "HLT",
+   "vol_x": 0.56
+  },
+  {
+   "ticker": "EDHL",
+   "vol_x": 0.56
+  },
+  {
+   "ticker": "MMM",
+   "vol_x": 0.55
+  },
+  {
+   "ticker": "NPK",
+   "vol_x": 0.51
+  },
+  {
+   "ticker": "FBIZ",
+   "vol_x": 0.49
+  },
+  {
+   "ticker": "COSO",
+   "vol_x": 0.49
+  },
+  {
+   "ticker": "SFST",
+   "vol_x": 0.48
+  },
+  {
+   "ticker": "BRBS",
+   "vol_x": 0.48
+  },
+  {
+   "ticker": "PFE",
+   "vol_x": 0.46
+  },
+  {
+   "ticker": "MCY",
+   "vol_x": 0.44
+  },
+  {
+   "ticker": "PDS",
+   "vol_x": 0.34
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "GORO",
+   "bought_at": "2026-10-20T15:52+00:00",
+   "sold_at": "2026-10-20T19:50+00:00",
+   "entry": 3.4710677073001857,
+   "exit": 3.424999952316284,
+   "cost_gbp": 1000.4237962356925,
+   "pl_gbp": -14.756052562764694,
+   "pl_pct": -0.014749801652347218,
+   "reason": "End of day: sold 10 minutes before the close."
+  }
+ ],
+ "total_gbp": -14.756052562764694,
+ "alerts": [
+  "11:52 Day trade: bought GORO: 383 GORO at $3.47 (about \u00a31,000). Stop $3.30. Broke above its opening-range high ($3.44) at $3.47. In play: 0.3x normal volume, normally moves 5% a day. Stop $3.32.",
+  "15:50 Day trade: sold GORO (-\u00a315): End of day: sold 10 minutes before the close. Result -\u00a315 (-1.5%).",
+  "15:50 Day trade summary: 1 trade(s) today: GORO -\u00a315. Total -\u00a315."
+ ],
+ "log": [
+  "Added CFFI to today's list at 10:32 New York: 0.4x normal volume in the last 30 min; news: C&F Financial's 2026 Outlook: Aggressive Market Expansion Drives New Retail Grow",
+  "Added PEN to today's list at 11:04 New York: 0.4x normal volume in the last 30 min; news: Penumbra's CAVT Technology Receives FDA Clearance for the Treatment of Deep Vein",
+  "Added WCCB to today's list at 11:04 New York: 0.6x normal volume in the last 30 min; news: West Coast Community Bank Continues Expansion with New Full-Service Branch in Sa",
+  "Added GORO to today's list at 11:52 New York: 0.3x normal volume in the last 30 min; news: Goldgroup Completes Strategic Investment in Luca Mining",
+  "Day trade buy order: 383 GORO at about $3.47. Broke above its opening-range high ($3.44) at $3.47. In play: 0.3x normal volume, normally moves 5% a day. Stop $3.32.",
+  "Bought 383 GORO at 3.47 (cost \u00a31,000).",
+  "Sold GORO (about -\u00a315). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 1 trade(s), total -\u00a315."
+ ]
+}

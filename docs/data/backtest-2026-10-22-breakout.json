@@ -1,0 +1,167 @@
+{
+ "date": "2026-10-22",
+ "generated": "2026-11-01T14:17+00:00",
+ "fx_gbpusd": 1.339566707611084,
+ "result": "done",
+ "require_news": true,
+ "strategy": "breakout",
+ "bars": "1m",
+ "added_during_day": [
+  "Added WCN to today's list at 10:16 New York: 0.7x normal volume in the last 30 min; news: Waste Connections Soars 10% on Raised 2026 Outlook After \u201cAnother Top to Bottom ",
+  "Added PKG to today's list at 10:16 New York: 0.4x normal volume in the last 30 min; news: Packaging Corp Of America (PKG) Q3 Earnings Beat Meets Rising Cost Risk",
+  "Added ZGN to today's list at 10:16 New York: 0.6x normal volume in the last 30 min; news: Ermenegildo Zegna Group Q3 2026 Revenues1 up 9% With Solid Growth Across All Reg",
+  "Added PEBK to today's list at 10:16 New York: 0.4x normal volume in the last 30 min; news: Peoples Bancorp Stock Slips Post Q3 Earnings Despite NIM Expansion",
+  "Added WCCB to today's list at 10:32 New York: 0.6x normal volume in the last 30 min; news: West Coast Community Bank Continues Expansion with New Full-Service Branch in Sa",
+  "Added MTD to today's list at 10:48 New York: 0.4x normal volume in the last 30 min; news: Will Mettler-Toledo (MTD) Beat Estimates Again in Its Next Earnings Report?",
+  "Added GIB to today's list at 11:52 New York: 0.5x normal volume in the last 30 min; news: CGI selected to join PCI Security Standards Council Global Executive Assessor Ro",
+  "Added G to today's list at 11:52 New York: 0.7x normal volume in the last 30 min; news: Will Genpact (G) Beat Estimates Again in Its Next Earnings Report?",
+  "Added PEN to today's list at 12:08 New York: 0.4x normal volume in the last 30 min; news: Penumbra's CAVT Technology Receives FDA Clearance for the Treatment of Deep Vein",
+  "Added AVBH to today's list at 12:24 New York: 0.3x normal volume in the last 30 min; news: Avidbank Holdings Inc. (AVBH) Reports Next Week: Wall Street Expects Earnings Gr",
+  "Added CENTA to today's list at 12:40 New York: 0.4x normal volume in the last 30 min; news: Central Garden & Pet Acquires Burpee, an Iconic Brand in the Packet Seed and You",
+  "Added MFC to today's list at 13:28 New York: 0.6x normal volume in the last 30 min; news: Manulife and UpLink announce winners of the 'Shaping Canada's Longevity Advantag",
+  "Added MET to today's list at 13:28 New York: 0.3x normal volume in the last 30 min; news: MetLife's ChatGPT Integration Opens a New Pet Insurance Growth Avenue",
+  "Added IOT to today's list at 13:44 New York: 0.4x normal volume in the last 30 min; news: Samsara (IOT): Does a Fourth Straight Profitable Quarter Ensures its Entry into ",
+  "Added NABL to today's list at 13:44 New York: 0.6x normal volume in the last 30 min; news: As AI Accelerates Cyberattacks, N-able and SentinelOne Expand Their Strategic Pa"
+ ],
+ "list": [
+  {
+   "ticker": "CBZ",
+   "name": "CBIZ, Inc.",
+   "vol_x": 0.79,
+   "buy_pct30": 0.9002081679578219,
+   "change": 0.0005177834445333485,
+   "score": 4.68,
+   "news": [
+    "CBIZ (CBZ) Q3 Results Put Profit Momentum Ahead Of A Tepid Stock Reaction"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "QCRH",
+   "name": "QCR Holdings, Inc.",
+   "vol_x": 0.36,
+   "buy_pct30": 0.40889023609131236,
+   "change": 0.017090549184474613,
+   "score": 3.36,
+   "news": [
+    "Does Record Earnings Beat Change The Bull Case For QCR Holdings Stock (QCRH)?",
+    "QCR Holdings (QCRH) Stock Climbs As Q3 Earnings Extend Record Profitability"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "MKTX",
+   "name": "MarketAxess Holdings, Inc.",
+   "vol_x": 0.46,
+   "buy_pct30": 0.5245386465391616,
+   "change": 0.00383541278388555,
+   "score": 2.52,
+   "news": [
+    "Will MarketAxess (MKTX) Beat Estimates Again in Its Next Earnings Report?"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "QGEN",
+   "vol_x": 4.28
+  },
+  {
+   "ticker": "EDHL",
+   "vol_x": 1.01
+  },
+  {
+   "ticker": "RRBI",
+   "vol_x": 0.87
+  },
+  {
+   "ticker": "SPOT",
+   "vol_x": 0.8
+  },
+  {
+   "ticker": "ROKU",
+   "vol_x": 0.78
+  },
+  {
+   "ticker": "TSLA",
+   "vol_x": 0.77
+  },
+  {
+   "ticker": "PG",
+   "vol_x": 0.6
+  },
+  {
+   "ticker": "HLP",
+   "vol_x": 0.56
+  },
+  {
+   "ticker": "FMAO",
+   "vol_x": 0.52
+  },
+  {
+   "ticker": "FBP",
+   "vol_x": 0.44
+  },
+  {
+   "ticker": "BPRN",
+   "vol_x": 0.4
+  },
+  {
+   "ticker": "CSX",
+   "vol_x": 0.39
+  },
+  {
+   "ticker": "ULTA",
+   "vol_x": 0.39
+  },
+  {
+   "ticker": "URI",
+   "vol_x": 0.38
+  },
+  {
+   "ticker": "FORR",
+   "vol_x": 0.36
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "IOT",
+   "bought_at": "2026-10-22T17:44+00:00",
+   "sold_at": "2026-10-22T19:50+00:00",
+   "entry": 43.84880530548095,
+   "exit": 43.709999084472656,
+   "cost_gbp": 983.4802163399737,
+   "pl_gbp": -4.581617947149994,
+   "pl_pct": -0.0046585766251613136,
+   "reason": "End of day: sold 10 minutes before the close."
+  }
+ ],
+ "total_gbp": -4.581617947149994,
+ "alerts": [
+  "13:44 Day trade: bought IOT: 30 IOT at $43.85 (about \u00a3983). Stop $41.66. Broke above its opening-range high ($43.75) at $43.81. In play: 0.4x normal volume, normally moves 5% a day. Stop $42.93.",
+  "15:50 Day trade: sold IOT (-\u00a35): End of day: sold 10 minutes before the close. Result -\u00a35 (-0.5%).",
+  "15:50 Day trade summary: 1 trade(s) today: IOT -\u00a35. Total -\u00a35."
+ ],
+ "log": [
+  "Added WCN to today's list at 10:16 New York: 0.7x normal volume in the last 30 min; news: Waste Connections Soars 10% on Raised 2026 Outlook After \u201cAnother Top to Bottom ",
+  "Added PKG to today's list at 10:16 New York: 0.4x normal volume in the last 30 min; news: Packaging Corp Of America (PKG) Q3 Earnings Beat Meets Rising Cost Risk",
+  "Added ZGN to today's list at 10:16 New York: 0.6x normal volume in the last 30 min; news: Ermenegildo Zegna Group Q3 2026 Revenues1 up 9% With Solid Growth Across All Reg",
+  "Added PEBK to today's list at 10:16 New York: 0.4x normal volume in the last 30 min; news: Peoples Bancorp Stock Slips Post Q3 Earnings Despite NIM Expansion",
+  "Added WCCB to today's list at 10:32 New York: 0.6x normal volume in the last 30 min; news: West Coast Community Bank Continues Expansion with New Full-Service Branch in Sa",
+  "Added MTD to today's list at 10:48 New York: 0.4x normal volume in the last 30 min; news: Will Mettler-Toledo (MTD) Beat Estimates Again in Its Next Earnings Report?",
+  "Added GIB to today's list at 11:52 New York: 0.5x normal volume in the last 30 min; news: CGI selected to join PCI Security Standards Council Global Executive Assessor Ro",
+  "Added G to today's list at 11:52 New York: 0.7x normal volume in the last 30 min; news: Will Genpact (G) Beat Estimates Again in Its Next Earnings Report?",
+  "Added PEN to today's list at 12:08 New York: 0.4x normal volume in the last 30 min; news: Penumbra's CAVT Technology Receives FDA Clearance for the Treatment of Deep Vein",
+  "Added AVBH to today's list at 12:24 New York: 0.3x normal volume in the last 30 min; news: Avidbank Holdings Inc. (AVBH) Reports Next Week: Wall Street Expects Earnings Gr",
+  "Added CENTA to today's list at 12:40 New York: 0.4x normal volume in the last 30 min; news: Central Garden & Pet Acquires Burpee, an Iconic Brand in the Packet Seed and You",
+  "Added MFC to today's list at 13:28 New York: 0.6x normal volume in the last 30 min; news: Manulife and UpLink announce winners of the 'Shaping Canada's Longevity Advantag",
+  "Added MET to today's list at 13:28 New York: 0.3x normal volume in the last 30 min; news: MetLife's ChatGPT Integration Opens a New Pet Insurance Growth Avenue",
+  "Added IOT to today's list at 13:44 New York: 0.4x normal volume in the last 30 min; news: Samsara (IOT): Does a Fourth Straight Profitable Quarter Ensures its Entry into ",
+  "Added NABL to today's list at 13:44 New York: 0.6x normal volume in the last 30 min; news: As AI Accelerates Cyberattacks, N-able and SentinelOne Expand Their Strategic Pa",
+  "Day trade buy order: 30 IOT at about $43.81. Broke above its opening-range high ($43.75) at $43.81. In play: 0.4x normal volume, normally moves 5% a day. Stop $42.93.",
+  "Bought 30 IOT at 43.85 (cost \u00a3983).",
+  "Sold IOT (about -\u00a35). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 1 trade(s), total -\u00a35."
+ ]
+}

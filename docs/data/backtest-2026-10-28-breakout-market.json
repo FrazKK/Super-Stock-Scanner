@@ -1,0 +1,206 @@
+{
+ "date": "2026-10-28",
+ "generated": "2026-11-01T14:23+00:00",
+ "fx_gbpusd": 1.330629587173462,
+ "result": "done",
+ "require_news": true,
+ "strategy": "breakout-market",
+ "bars": "1m",
+ "added_during_day": [
+  "Added BHC to today's list at 10:16 New York: 0.7x normal volume in the last 30 min; news: Bausch Health soars on earnings beat and raised outlook",
+  "Added ASAN to today's list at 10:16 New York: 0.4x normal volume in the last 30 min; news: Asana tees up facelift and expansion for northwest Austin shopping center - Yaho",
+  "Added TLS to today's list at 11:04 New York: 0.3x normal volume in the last 30 min; news: Why Telos (TLS) is Poised to Beat Earnings Estimates Again",
+  "Added CTOS to today's list at 11:36 New York: 0.7x normal volume in the last 30 min; news: Is Custom Truck One Source (CTOS) A Bargain Following Its Third Quarter 2026 Res"
+ ],
+ "list": [
+  {
+   "ticker": "CLAR",
+   "name": "Clarus Corporation",
+   "vol_x": 0.81,
+   "buy_pct30": 0.8667811022189887,
+   "change": 0.08181580317577208,
+   "score": 5.09,
+   "news": [
+    "Synchrony and Clarus Technology Announce Strategic Partnership to Provide Real-Time Financial and Insurance Coverage Insights for Veterinary Practices - marketscreener.com",
+    "Synchrony and Clarus launch portal integrating pet insurance and financing for smoother vet payments. - Pluang"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "RDWR",
+   "name": "Radware Ltd.",
+   "vol_x": 0.47,
+   "buy_pct30": 0.6114725083462742,
+   "change": 0.05451266866334725,
+   "score": 3.89,
+   "news": [
+    "Radware Selected by Major Global Cloud Provider to Modernize DDoS Protection Infrastructure"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "BLCO",
+   "name": "Bausch + Lomb Corporation",
+   "vol_x": 0.56,
+   "buy_pct30": 0.6483017484541679,
+   "change": 0.07094210785828681,
+   "score": 3.71,
+   "news": [
+    "Bausch + Lomb Soars 16% on Big Q3 Profit Beat and Raised Full-Year Guidance",
+    "BAUSCH HEALTH ANNOUNCES THIRD QUARTER 2026 RESULTS, RAISES GUIDANCE"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "CHE",
+   "name": "Chemed Corp",
+   "vol_x": 0.37,
+   "buy_pct30": 0.5979197101402285,
+   "change": 0.08588855883645108,
+   "score": 3.63,
+   "news": [
+    "LH Stock Hits Record Levels, CHE Stock Surges To Over 52-Week Highs \u2013 Here\u2019s What\u2019s Driving Investor Enthusiasm"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "AVPT",
+   "name": "AvePoint, Inc.",
+   "vol_x": 0.34,
+   "buy_pct30": 0.503818551551686,
+   "change": 0.05042538743745495,
+   "score": 3.2,
+   "news": [
+    "Avepoint stock climbs following S&P Smallcap 600 inclusion news"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "STNG",
+   "name": "Scorpio Tankers Inc.",
+   "vol_x": 0.81,
+   "buy_pct30": 0.7539204167824513,
+   "change": 0.04740417300065247,
+   "score": 3.14,
+   "news": [
+    "Scorpio Tankers\u2019s (NYSE:STNG) Q3 2026: strong sales"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "PRME",
+   "name": "Prime Medicine, Inc.",
+   "vol_x": 0.36,
+   "buy_pct30": 0.6061837147714362,
+   "change": 0.12528737660742073,
+   "score": 2.64,
+   "news": [
+    "PRME, BEAM, EDIT, NTLA, CRSP Stocks Gain As FDA Signals Faster Route For Patient-Specific Gene Edits"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "ECO",
+   "name": "Okeanis Eco Tankers Corp.",
+   "vol_x": 0.39,
+   "buy_pct30": 0.5603937221704122,
+   "change": 0.06124200395798951,
+   "score": 2.52,
+   "news": [
+    "Okeanis Eco Tankers (NYSE:ECO) Shares Gap Up - Here's Why - MarketBeat"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "GEHC",
+   "name": "GE HealthCare Technologies Inc.",
+   "vol_x": 0.5,
+   "buy_pct30": 0.4668074021253406,
+   "change": 0.07122770915387866,
+   "score": 1.37,
+   "news": [
+    "GE HealthCare (GEHC) Buys Into PET Supply After Strong Q3 And New Imaging Push"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "PPG",
+   "name": "PPG Industries, Inc.",
+   "vol_x": 0.47,
+   "buy_pct30": 0.3969134267319276,
+   "change": 0.042092681538425936,
+   "score": 1.03,
+   "news": [
+    "PPG reports record third quarter 2026 EPS and raises midpoint of full-year EPS guidance"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "WING",
+   "vol_x": 0.62
+  },
+  {
+   "ticker": "RCKY",
+   "vol_x": 0.56
+  },
+  {
+   "ticker": "MLAB",
+   "vol_x": 0.49
+  },
+  {
+   "ticker": "PDSB",
+   "vol_x": 0.45
+  },
+  {
+   "ticker": "ETSY",
+   "vol_x": 0.39
+  },
+  {
+   "ticker": "CFFI",
+   "vol_x": 0.37
+  },
+  {
+   "ticker": "SDGR",
+   "vol_x": 0.36
+  },
+  {
+   "ticker": "EXTR",
+   "vol_x": 0.34
+  },
+  {
+   "ticker": "SMWB",
+   "vol_x": 0.33
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "PRME",
+   "bought_at": "2026-10-28T15:40+00:00",
+   "sold_at": "2026-10-28T19:50+00:00",
+   "entry": 5.195190057277679,
+   "exit": 5.304999828338623,
+   "cost_gbp": 1001.0025483308636,
+   "pl_gbp": 19.627061250820134,
+   "pl_pct": 0.01960740388078688,
+   "reason": "End of day: sold 10 minutes before the close."
+  }
+ ],
+ "total_gbp": 19.627061250820134,
+ "alerts": [
+  "11:40 Day trade: bought PRME: 256 PRME at $5.20 (about \u00a31,001). Stop $4.94. Broke above its opening-range high ($4.92) at $5.19. In play: 0.4x normal volume, normally moves 10% a day. Stop $4.93.",
+  "15:50 Day trade: sold PRME (+\u00a320): End of day: sold 10 minutes before the close. Result +\u00a320 (+2.0%).",
+  "15:50 Day trade summary: 1 trade(s) today: PRME +\u00a320. Total +\u00a320."
+ ],
+ "log": [
+  "Added BHC to today's list at 10:16 New York: 0.7x normal volume in the last 30 min; news: Bausch Health soars on earnings beat and raised outlook",
+  "Added ASAN to today's list at 10:16 New York: 0.4x normal volume in the last 30 min; news: Asana tees up facelift and expansion for northwest Austin shopping center - Yaho",
+  "Added TLS to today's list at 11:04 New York: 0.3x normal volume in the last 30 min; news: Why Telos (TLS) is Poised to Beat Earnings Estimates Again",
+  "Added CTOS to today's list at 11:36 New York: 0.7x normal volume in the last 30 min; news: Is Custom Truck One Source (CTOS) A Bargain Following Its Third Quarter 2026 Res",
+  "Day trade buy order: 256 PRME at about $5.19. Broke above its opening-range high ($4.92) at $5.19. In play: 0.4x normal volume, normally moves 10% a day. Stop $4.93.",
+  "Bought 256 PRME at 5.20 (cost \u00a31,001).",
+  "Sold PRME (about +\u00a320). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 1 trade(s), total +\u00a320."
+ ]
+}

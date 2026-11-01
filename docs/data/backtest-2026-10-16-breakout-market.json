@@ -1,0 +1,94 @@
+{
+ "date": "2026-10-16",
+ "generated": "2026-11-01T14:07+00:00",
+ "fx_gbpusd": 1.327316164970398,
+ "result": "done",
+ "require_news": true,
+ "strategy": "breakout-market",
+ "bars": "1m",
+ "added_during_day": [
+  "Added W to today's list at 10:48 New York: 0.4x normal volume in the last 30 min; news: Did Klarna\u2019s Expanded 0% Financing Push Just Reframe Wayfair\u2019s (W) Big-Ticket St",
+  "Added CAAP to today's list at 11:52 New York: 0.4x normal volume in the last 30 min; news: Corporacion America Airports stock rises on September passenger growth",
+  "Added HLP to today's list at 12:08 New York: 0.8x normal volume in the last 30 min; news: Hongli Group Provides Strategic Update on Proposed Advanced Battery Collaboratio",
+  "Added CVE to today's list at 12:40 New York: 0.4x normal volume in the last 30 min; news: 3 Reasons Why Growth Investors Shouldn't Overlook Cenovus (CVE)",
+  "Added BIPC to today's list at 12:40 New York: 0.7x normal volume in the last 30 min; news: Brookfield Infrastructure Partners L.P. Unitholders Approve Proposed Corporate S",
+  "Added COTY to today's list at 12:56 New York: 0.4x normal volume in the last 30 min; news: Coty Launches Global Fragrance Club, a New Community for the Voices Shaping the ",
+  "Added BF.B to today's list at 13:28 New York: 0.5x normal volume in the last 30 min; news: Brown-Forman\u2019s Dividend Growth Depends on a Recovery that Has Yet to Materialize",
+  "Added BF.A to today's list at 14:32 New York: 0.5x normal volume in the last 30 min; news: Brown-Forman\u2019s Dividend Growth Depends on a Recovery that Has Yet to Materialize",
+  "Added CXT to today's list at 15:20 New York: 0.9x normal volume in the last 30 min; news: All You Need to Know About Crane NXT (CXT) Rating Upgrade to Buy",
+  "Added EFXT to today's list at 15:20 New York: 0.6x normal volume in the last 30 min; news: Enerflex Soars 13% on Gigawatt Data Center Power Award, Backlog Now \u201cOver 1.75 G"
+ ],
+ "list": [],
+ "quiet": [
+  {
+   "ticker": "NCPL",
+   "vol_x": 0.93
+  },
+  {
+   "ticker": "PMI",
+   "vol_x": 0.83
+  },
+  {
+   "ticker": "PRAA",
+   "vol_x": 0.79
+  },
+  {
+   "ticker": "ENGS",
+   "vol_x": 0.75
+  },
+  {
+   "ticker": "RGC",
+   "vol_x": 0.62
+  },
+  {
+   "ticker": "TRI",
+   "vol_x": 0.57
+  },
+  {
+   "ticker": "OPK",
+   "vol_x": 0.52
+  },
+  {
+   "ticker": "TRV",
+   "vol_x": 0.48
+  },
+  {
+   "ticker": "CZWI",
+   "vol_x": 0.48
+  },
+  {
+   "ticker": "AIT",
+   "vol_x": 0.43
+  },
+  {
+   "ticker": "AAPL",
+   "vol_x": 0.4
+  },
+  {
+   "ticker": "JMSB",
+   "vol_x": 0.38
+  },
+  {
+   "ticker": "TALO",
+   "vol_x": 0.36
+  }
+ ],
+ "trades": [],
+ "total_gbp": 0,
+ "alerts": [
+  "15:50 Day trade summary: No trade today: nothing in play broke out."
+ ],
+ "log": [
+  "Added W to today's list at 10:48 New York: 0.4x normal volume in the last 30 min; news: Did Klarna\u2019s Expanded 0% Financing Push Just Reframe Wayfair\u2019s (W) Big-Ticket St",
+  "Added CAAP to today's list at 11:52 New York: 0.4x normal volume in the last 30 min; news: Corporacion America Airports stock rises on September passenger growth",
+  "Added HLP to today's list at 12:08 New York: 0.8x normal volume in the last 30 min; news: Hongli Group Provides Strategic Update on Proposed Advanced Battery Collaboratio",
+  "Added CVE to today's list at 12:40 New York: 0.4x normal volume in the last 30 min; news: 3 Reasons Why Growth Investors Shouldn't Overlook Cenovus (CVE)",
+  "Added BIPC to today's list at 12:40 New York: 0.7x normal volume in the last 30 min; news: Brookfield Infrastructure Partners L.P. Unitholders Approve Proposed Corporate S",
+  "Added COTY to today's list at 12:56 New York: 0.4x normal volume in the last 30 min; news: Coty Launches Global Fragrance Club, a New Community for the Voices Shaping the ",
+  "Added BF.B to today's list at 13:28 New York: 0.5x normal volume in the last 30 min; news: Brown-Forman\u2019s Dividend Growth Depends on a Recovery that Has Yet to Materialize",
+  "Added BF.A to today's list at 14:32 New York: 0.5x normal volume in the last 30 min; news: Brown-Forman\u2019s Dividend Growth Depends on a Recovery that Has Yet to Materialize",
+  "Added CXT to today's list at 15:20 New York: 0.9x normal volume in the last 30 min; news: All You Need to Know About Crane NXT (CXT) Rating Upgrade to Buy",
+  "Added EFXT to today's list at 15:20 New York: 0.6x normal volume in the last 30 min; news: Enerflex Soars 13% on Gigawatt Data Center Power Award, Backlog Now \u201cOver 1.75 G",
+  "Day trading finished: 0 trade(s), total +\u00a30."
+ ]
+}

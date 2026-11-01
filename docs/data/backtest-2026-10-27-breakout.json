@@ -1,0 +1,136 @@
+{
+ "date": "2026-10-27",
+ "generated": "2026-11-01T14:20+00:00",
+ "fx_gbpusd": 1.334507703781128,
+ "result": "done",
+ "require_news": true,
+ "strategy": "breakout",
+ "bars": "1m",
+ "added_during_day": [
+  "Added BOW to today's list at 10:16 New York: 1.3x normal volume in the last 30 min; news: Bowhead Specialty (NYSE:BOW) Sees Strong Trading Volume - What's Next? - MarketB",
+  "Added THFF to today's list at 10:16 New York: 0.5x normal volume in the last 30 min; news: First Financial Corp. (THFF) Q3 Earnings and Revenues Beat Estimates",
+  "Added COTY to today's list at 11:52 New York: 0.5x normal volume in the last 30 min; news: Coty and Brandlight Unveil Strategic Partnership to Strengthen Brand Visibility ",
+  "Added INSG to today's list at 11:52 New York: 0.7x normal volume in the last 30 min; news: MarketBeat cites Hold consensus and USD 13.00 target for Inseego stock - ad-hoc-"
+ ],
+ "list": [
+  {
+   "ticker": "TEVA",
+   "name": "Teva Pharmaceutical Industries Limited",
+   "vol_x": 0.76,
+   "buy_pct30": 0.8599410090961955,
+   "change": 0.021276557143638852,
+   "score": 5.96,
+   "news": [
+    "Teva Acquires Worldwide Rights to BXCL501, Further Expanding Innovative Neuroscience Pipeline",
+    "Teva Pharmaceutical Industries (TEVA) Secured WELTRUZA Approval, Is It Still 16% Below Fair Value?"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "AEYE",
+   "name": "AudioEye, Inc.",
+   "vol_x": 2.0,
+   "buy_pct30": 0.6122227394567593,
+   "change": 0.2749326065872417,
+   "score": 5.45,
+   "news": [
+    "AudioEye (AEYE) Q3 Earnings and Revenues Beat Estimates",
+    "AudioEye Reports Record Third Quarter 2026 Results"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "IQV",
+   "name": "IQVIA Holdings, Inc.",
+   "vol_x": 0.47,
+   "buy_pct30": 0.7256248317725362,
+   "change": 0.003654970678698133,
+   "score": 3.84,
+   "news": [
+    "IQVIA Holdings Q3 Earnings Beat Estimates, Revenues Increase 8% Y/Y",
+    "IQVIA\u2019s (NYSE:IQV) Q3 2026: beats on revenue"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "HWKN",
+   "name": "Hawkins, Inc.",
+   "vol_x": 0.58,
+   "buy_pct30": 0.48875798439153345,
+   "change": 0.1278056500780289,
+   "score": 2.62,
+   "news": [
+    "Hawkins (NASDAQ:HWKN) Shares Rise 8% After Q2 Earnings Exceed Estimates and Revenue Reaches $313.8 Million",
+    "Hawkins soars 12% on strong second quarter earnings beat"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "POM",
+   "vol_x": 1.35
+  },
+  {
+   "ticker": "RCL",
+   "vol_x": 0.68
+  },
+  {
+   "ticker": "KNSA",
+   "vol_x": 0.68
+  },
+  {
+   "ticker": "EAF",
+   "vol_x": 0.65
+  },
+  {
+   "ticker": "ESQ",
+   "vol_x": 0.57
+  },
+  {
+   "ticker": "LECO",
+   "vol_x": 0.46
+  },
+  {
+   "ticker": "QSI",
+   "vol_x": 0.43
+  },
+  {
+   "ticker": "NAUT",
+   "vol_x": 0.37
+  },
+  {
+   "ticker": "UPS",
+   "vol_x": 0.34
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "INSG",
+   "bought_at": "2026-10-27T15:52+00:00",
+   "sold_at": "2026-10-27T19:50+00:00",
+   "entry": 4.849844789981842,
+   "exit": 4.889999866485596,
+   "cost_gbp": 1000.8993387122049,
+   "pl_gbp": 6.775596002215252,
+   "pl_pct": 0.006769507921678709,
+   "reason": "End of day: sold 10 minutes before the close."
+  }
+ ],
+ "total_gbp": 6.775596002215252,
+ "alerts": [
+  "11:52 Day trade: bought INSG: 275 INSG at $4.85 (about \u00a31,001). Stop $4.61. Broke above its opening-range high ($4.61) at $4.84. In play: 0.7x normal volume, normally moves 5% a day. Stop $4.60.",
+  "15:50 Day trade: sold INSG (+\u00a37): End of day: sold 10 minutes before the close. Result +\u00a37 (+0.7%).",
+  "15:50 Day trade summary: 1 trade(s) today: INSG +\u00a37. Total +\u00a37."
+ ],
+ "log": [
+  "Added BOW to today's list at 10:16 New York: 1.3x normal volume in the last 30 min; news: Bowhead Specialty (NYSE:BOW) Sees Strong Trading Volume - What's Next? - MarketB",
+  "Added THFF to today's list at 10:16 New York: 0.5x normal volume in the last 30 min; news: First Financial Corp. (THFF) Q3 Earnings and Revenues Beat Estimates",
+  "Added COTY to today's list at 11:52 New York: 0.5x normal volume in the last 30 min; news: Coty and Brandlight Unveil Strategic Partnership to Strengthen Brand Visibility ",
+  "Added INSG to today's list at 11:52 New York: 0.7x normal volume in the last 30 min; news: MarketBeat cites Hold consensus and USD 13.00 target for Inseego stock - ad-hoc-",
+  "Day trade buy order: 275 INSG at about $4.84. Broke above its opening-range high ($4.61) at $4.84. In play: 0.7x normal volume, normally moves 5% a day. Stop $4.60.",
+  "Bought 275 INSG at 4.85 (cost \u00a31,001).",
+  "Sold INSG (about +\u00a37). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 1 trade(s), total +\u00a37."
+ ]
+}

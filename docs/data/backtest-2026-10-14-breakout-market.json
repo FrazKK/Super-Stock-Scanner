@@ -1,0 +1,62 @@
+{
+ "date": "2026-10-14",
+ "generated": "2026-11-01T14:04+00:00",
+ "fx_gbpusd": 1.3257324695587158,
+ "result": "done",
+ "require_news": true,
+ "strategy": "breakout-market",
+ "bars": "1m",
+ "added_during_day": [
+  "Added HLP to today's list at 10:16 New York: 1.6x normal volume in the last 30 min; news: Hongli Group Provides Strategic Update on Proposed Advanced Battery Collaboratio",
+  "Added BAP to today's list at 12:56 New York: 0.5x normal volume in the last 30 min; news: Will Credicorp (BAP) Beat Estimates Again in Its Next Earnings Report?",
+  "Added BOX to today's list at 14:00 New York: 0.8x normal volume in the last 30 min; news: Why Box Stock Is An 'Underappreciated AI Winner' And BofA's Top Pick",
+  "Added MTD to today's list at 15:20 New York: 1.1x normal volume in the last 30 min; news: Mettler-Toledo (MTD) Upgraded to Buy: What Does It Mean for the Stock?"
+ ],
+ "list": [],
+ "quiet": [
+  {
+   "ticker": "AEHL",
+   "vol_x": 10.74
+  },
+  {
+   "ticker": "VSTM",
+   "vol_x": 4.22
+  },
+  {
+   "ticker": "RGC",
+   "vol_x": 1.5
+  },
+  {
+   "ticker": "NCPL",
+   "vol_x": 1.32
+  },
+  {
+   "ticker": "CANG",
+   "vol_x": 0.62
+  },
+  {
+   "ticker": "JRSH",
+   "vol_x": 0.56
+  },
+  {
+   "ticker": "GFS",
+   "vol_x": 0.45
+  },
+  {
+   "ticker": "VAL",
+   "vol_x": 0.36
+  }
+ ],
+ "trades": [],
+ "total_gbp": 0,
+ "alerts": [
+  "15:50 Day trade summary: No trade today: nothing in play broke out."
+ ],
+ "log": [
+  "Added HLP to today's list at 10:16 New York: 1.6x normal volume in the last 30 min; news: Hongli Group Provides Strategic Update on Proposed Advanced Battery Collaboratio",
+  "Added BAP to today's list at 12:56 New York: 0.5x normal volume in the last 30 min; news: Will Credicorp (BAP) Beat Estimates Again in Its Next Earnings Report?",
+  "Added BOX to today's list at 14:00 New York: 0.8x normal volume in the last 30 min; news: Why Box Stock Is An 'Underappreciated AI Winner' And BofA's Top Pick",
+  "Added MTD to today's list at 15:20 New York: 1.1x normal volume in the last 30 min; news: Mettler-Toledo (MTD) Upgraded to Buy: What Does It Mean for the Stock?",
+  "Day trading finished: 0 trade(s), total +\u00a30."
+ ]
+}

@@ -1,0 +1,113 @@
+{
+ "date": "2026-10-23",
+ "generated": "2026-11-01T14:18+00:00",
+ "fx_gbpusd": 1.3403927087783813,
+ "result": "done",
+ "require_news": true,
+ "strategy": "breakout-market",
+ "bars": "1m",
+ "added_during_day": [
+  "Added DOV to today's list at 10:16 New York: 0.7x normal volume in the last 30 min; news: Dover (DOV) Stock May Be 19% Undervalued As AI Led Growth Builds",
+  "Added TCBI to today's list at 11:20 New York: 0.5x normal volume in the last 30 min; news: Texas Capital Hits Record Revenues in Q3: Can Growth Momentum Continue?",
+  "Added DOW to today's list at 12:08 New York: 0.4x normal volume in the last 30 min; news: Will Earnings Beat Change Dow (DOW) Narrative",
+  "Added CUBI to today's list at 12:08 New York: 1.1x normal volume in the last 30 min; news: Is Customers Bancorp (CUBI) Undervalued As Earnings Beat And 2026 Guidance Rise?",
+  "Added TTC to today's list at 13:44 New York: 0.4x normal volume in the last 30 min; news: North America Cordless Garden Equipment Market Forecasts Growth from $4.6 Billio",
+  "Added PCOR to today's list at 13:44 New York: 0.5x normal volume in the last 30 min; news: Procore Launches Voice-First AI Mobile App Built for the Jobsite",
+  "Added ALLE to today's list at 14:00 New York: 0.8x normal volume in the last 30 min; news: Allegion's Volume Growth Could Drive Re-Rating as Recovery Builds, BofA Says",
+  "Added SSB to today's list at 14:16 New York: 0.4x normal volume in the last 30 min; news: SSB Q3 deep dive: loan and deposit growth, stable margins, and cautious capital ",
+  "Added KNTK to today's list at 14:16 New York: 0.6x normal volume in the last 30 min; news: Is Kinetik (KNTK) a Good or Bad Investment After Growing Earnings 65%?",
+  "Added IFF to today's list at 14:32 New York: 0.3x normal volume in the last 30 min; news: What Does Sherwin-Williams Offer That IFF Does Not?",
+  "Added IOT to today's list at 15:04 New York: 0.5x normal volume in the last 30 min; news: Samsara (IOT): Does a Fourth Straight Profitable Quarter Ensures its Entry into ",
+  "Added TFX to today's list at 15:04 New York: 0.4x normal volume in the last 30 min; news: Teleflex Announces FDA Breakthrough Device Designation for Freesolve\u2122 Resorbable",
+  "Added KVYO to today's list at 15:04 New York: 0.5x normal volume in the last 30 min; news: Klaviyo shares jump 8% as Salesforce moves to acquire rival Braze for $5.7 billi",
+  "Added ARCO to today's list at 15:04 New York: 0.6x normal volume in the last 30 min; news: Is Arcos Dorados (ARCO) a Solid Growth Stock? 3 Reasons to Think \"Yes\""
+ ],
+ "list": [
+  {
+   "ticker": "FCNCA",
+   "name": "First Citizens BancShares, Inc.",
+   "vol_x": 0.47,
+   "buy_pct30": 0.5073580741888202,
+   "change": 0.06266953206676784,
+   "score": 3.97,
+   "news": [
+    "First Citizens Soars 8% on Q3 Earnings Beat and New $1.2 Billion Buyback",
+    "First Citizens BancShares (NASDAQ:FCNCA) reports upbeat Q3 2026"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "BOLT",
+   "vol_x": 8.26
+  },
+  {
+   "ticker": "YMAT",
+   "vol_x": 1.62
+  },
+  {
+   "ticker": "EDHL",
+   "vol_x": 0.84
+  },
+  {
+   "ticker": "RNG",
+   "vol_x": 0.66
+  },
+  {
+   "ticker": "MWYN",
+   "vol_x": 0.47
+  },
+  {
+   "ticker": "TMP",
+   "vol_x": 0.41
+  },
+  {
+   "ticker": "BWLP",
+   "vol_x": 0.38
+  },
+  {
+   "ticker": "HURN",
+   "vol_x": 0.34
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "IOT",
+   "bought_at": "2026-10-23T19:04+00:00",
+   "sold_at": "2026-10-23T19:50+00:00",
+   "entry": 44.87483183288574,
+   "exit": 44.81999969482422,
+   "cost_gbp": 972.3435302227583,
+   "pl_gbp": -2.642648803829161,
+   "pl_pct": -0.0027178139430040177,
+   "reason": "End of day: sold 10 minutes before the close."
+  }
+ ],
+ "total_gbp": -2.642648803829161,
+ "alerts": [
+  "15:04 Day trade: bought IOT: 29 IOT at $44.87 (about \u00a3972). Stop $42.63. Broke above its opening-range high ($44.45) at $44.83. In play: 0.5x normal volume, normally moves 5% a day. Stop $43.22.",
+  "15:50 Day trade: sold IOT (-\u00a33): End of day: sold 10 minutes before the close. Result -\u00a33 (-0.3%).",
+  "15:50 Day trade summary: 1 trade(s) today: IOT -\u00a33. Total -\u00a33."
+ ],
+ "log": [
+  "Added DOV to today's list at 10:16 New York: 0.7x normal volume in the last 30 min; news: Dover (DOV) Stock May Be 19% Undervalued As AI Led Growth Builds",
+  "Added TCBI to today's list at 11:20 New York: 0.5x normal volume in the last 30 min; news: Texas Capital Hits Record Revenues in Q3: Can Growth Momentum Continue?",
+  "Added DOW to today's list at 12:08 New York: 0.4x normal volume in the last 30 min; news: Will Earnings Beat Change Dow (DOW) Narrative",
+  "Added CUBI to today's list at 12:08 New York: 1.1x normal volume in the last 30 min; news: Is Customers Bancorp (CUBI) Undervalued As Earnings Beat And 2026 Guidance Rise?",
+  "Added TTC to today's list at 13:44 New York: 0.4x normal volume in the last 30 min; news: North America Cordless Garden Equipment Market Forecasts Growth from $4.6 Billio",
+  "Added PCOR to today's list at 13:44 New York: 0.5x normal volume in the last 30 min; news: Procore Launches Voice-First AI Mobile App Built for the Jobsite",
+  "Added ALLE to today's list at 14:00 New York: 0.8x normal volume in the last 30 min; news: Allegion's Volume Growth Could Drive Re-Rating as Recovery Builds, BofA Says",
+  "Added SSB to today's list at 14:16 New York: 0.4x normal volume in the last 30 min; news: SSB Q3 deep dive: loan and deposit growth, stable margins, and cautious capital ",
+  "Added KNTK to today's list at 14:16 New York: 0.6x normal volume in the last 30 min; news: Is Kinetik (KNTK) a Good or Bad Investment After Growing Earnings 65%?",
+  "Added IFF to today's list at 14:32 New York: 0.3x normal volume in the last 30 min; news: What Does Sherwin-Williams Offer That IFF Does Not?",
+  "Added IOT to today's list at 15:04 New York: 0.5x normal volume in the last 30 min; news: Samsara (IOT): Does a Fourth Straight Profitable Quarter Ensures its Entry into ",
+  "Added TFX to today's list at 15:04 New York: 0.4x normal volume in the last 30 min; news: Teleflex Announces FDA Breakthrough Device Designation for Freesolve\u2122 Resorbable",
+  "Added KVYO to today's list at 15:04 New York: 0.5x normal volume in the last 30 min; news: Klaviyo shares jump 8% as Salesforce moves to acquire rival Braze for $5.7 billi",
+  "Added ARCO to today's list at 15:04 New York: 0.6x normal volume in the last 30 min; news: Is Arcos Dorados (ARCO) a Solid Growth Stock? 3 Reasons to Think \"Yes\"",
+  "Day trade buy order: 29 IOT at about $44.83. Broke above its opening-range high ($44.45) at $44.83. In play: 0.5x normal volume, normally moves 5% a day. Stop $43.22.",
+  "Bought 29 IOT at 44.87 (cost \u00a3972).",
+  "Sold IOT (about -\u00a33). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 1 trade(s), total -\u00a33."
+ ]
+}

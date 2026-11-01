@@ -1,0 +1,181 @@
+{
+ "date": "2026-10-26",
+ "generated": "2026-11-01T14:18+00:00",
+ "fx_gbpusd": 1.3377747535705566,
+ "result": "done",
+ "require_news": true,
+ "strategy": "breakout",
+ "bars": "1m",
+ "added_during_day": [
+  "Added MFC to today's list at 10:16 New York: 0.5x normal volume in the last 30 min; news: Manulife and UpLink announce winners of the 'Shaping Canada's Longevity Advantag",
+  "Added CACI to today's list at 11:04 New York: 0.3x normal volume in the last 30 min; news: CACI Gains 6% on Jefferies Upgrade and $281 Million Navy Win as Booz Allen Jumps",
+  "Added BAH to today's list at 11:04 New York: 0.4x normal volume in the last 30 min; news: Booz Allen Jumped 7% as TD Cowen Upgrades to Buy on Improving Backlog",
+  "Added RNR to today's list at 11:20 New York: 0.3x normal volume in the last 30 min; news: Did Earnings Estimate Upgrades Just Shift RenaissanceRe Holdings' (RNR) Investme",
+  "Added CON to today's list at 11:20 New York: 0.4x normal volume in the last 30 min; news: Concentra Expands Presence on Gulf Coast with First Pensacola Health Center",
+  "Added RNG to today's list at 11:52 New York: 0.4x normal volume in the last 30 min; news: RingCentral (RNG) Stock Price Climbs As Q3 Earnings Recast The Profit Story",
+  "Added DK to today's list at 11:52 New York: 0.4x normal volume in the last 30 min; news: Does Delek US Holdings (DK) Trade At A Premium After Refinery Expansion?",
+  "Added FBP to today's list at 11:52 New York: 0.3x normal volume in the last 30 min; news: FBP Q3 deep dive: stable profitability and capital returns as funding costs rise"
+ ],
+ "list": [
+  {
+   "ticker": "SGRY",
+   "name": "Surgery Partners, Inc.",
+   "vol_x": 6.4,
+   "buy_pct30": 0.6136520654000828,
+   "change": 0.46222226581876247,
+   "score": 13.75,
+   "news": [
+    "Surgery Partners shares surge 46% as $5.7 billion takeover deal agreed"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "XNCR",
+   "name": "Xencor, Inc.",
+   "vol_x": 2.9,
+   "buy_pct30": 0.6462845697962986,
+   "change": 0.17633044004153442,
+   "score": 7.39,
+   "news": [
+    "Xencor Soars 31% on Kidney Cancer Trial Data Showing \u201cImpressive Antitumor Activity\u201d",
+    "Xencor stock surges on positive cancer drug trial data"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "PEBK",
+   "name": "Peoples Bancorp of North Carolina, Inc.",
+   "vol_x": 0.41,
+   "buy_pct30": 0.6988183354952485,
+   "change": 0.011499540139467967,
+   "score": 4.12,
+   "news": [
+    "Peoples Bancorp Stock Slips Post Q3 Earnings Despite NIM Expansion"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "NWBI",
+   "name": "Northwest Bancshares, Inc.",
+   "vol_x": 0.36,
+   "buy_pct30": 0.5772761240376485,
+   "change": 0.017441890552192252,
+   "score": 3.53,
+   "news": [
+    "Northwest Bancshares\u2019s (NASDAQ:NWBI) Q3 2026 sales beat estimates"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "FRBA",
+   "name": "First Bank",
+   "vol_x": 0.48,
+   "buy_pct30": 0.4631117475133199,
+   "change": 0.018566303335922463,
+   "score": 3.31,
+   "news": [
+    "First Bank (FRBA) Q3 Earnings Put Buyback And Credit Cleanup In Focus"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "CHCO",
+   "name": "City Holding Company",
+   "vol_x": 0.44,
+   "buy_pct30": 0.5692694663167104,
+   "change": 0.02070278540335213,
+   "score": 2.66,
+   "news": [
+    "City Holding (CHCO) Expected to Beat Earnings Estimates: Can the Stock Move Higher?"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "RRC",
+   "vol_x": 2.2
+  },
+  {
+   "ticker": "BWMX",
+   "vol_x": 1.82
+  },
+  {
+   "ticker": "EAF",
+   "vol_x": 0.83
+  },
+  {
+   "ticker": "MED",
+   "vol_x": 0.77
+  },
+  {
+   "ticker": "FNWD",
+   "vol_x": 0.57
+  },
+  {
+   "ticker": "TSBK",
+   "vol_x": 0.55
+  },
+  {
+   "ticker": "NBN",
+   "vol_x": 0.54
+  },
+  {
+   "ticker": "HHH",
+   "vol_x": 0.5
+  },
+  {
+   "ticker": "AR",
+   "vol_x": 0.44
+  },
+  {
+   "ticker": "SFST",
+   "vol_x": 0.41
+  },
+  {
+   "ticker": "GEF.B",
+   "vol_x": 0.4
+  },
+  {
+   "ticker": "TSLA",
+   "vol_x": 0.38
+  },
+  {
+   "ticker": "ARLP",
+   "vol_x": 0.34
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "RNG",
+   "bought_at": "2026-10-26T15:52+00:00",
+   "sold_at": "2026-10-26T19:50+00:00",
+   "entry": 86.47638938903808,
+   "exit": 86.5199966430664,
+   "cost_gbp": 971.0839258473927,
+   "pl_gbp": -0.9654913485106817,
+   "pl_pct": -0.0009942408918654166,
+   "reason": "End of day: sold 10 minutes before the close."
+  }
+ ],
+ "total_gbp": -0.9654913485106817,
+ "alerts": [
+  "11:52 Day trade: bought RNG: 15 RNG at $86.48 (about \u00a3971). Stop $82.15. Broke above its opening-range high ($84.21) at $86.39. In play: 0.4x normal volume, normally moves 6% a day. Stop $82.23.",
+  "15:50 Day trade: sold RNG (-\u00a31): End of day: sold 10 minutes before the close. Result -\u00a31 (-0.1%).",
+  "15:50 Day trade summary: 1 trade(s) today: RNG -\u00a31. Total -\u00a31."
+ ],
+ "log": [
+  "Added MFC to today's list at 10:16 New York: 0.5x normal volume in the last 30 min; news: Manulife and UpLink announce winners of the 'Shaping Canada's Longevity Advantag",
+  "Added CACI to today's list at 11:04 New York: 0.3x normal volume in the last 30 min; news: CACI Gains 6% on Jefferies Upgrade and $281 Million Navy Win as Booz Allen Jumps",
+  "Added BAH to today's list at 11:04 New York: 0.4x normal volume in the last 30 min; news: Booz Allen Jumped 7% as TD Cowen Upgrades to Buy on Improving Backlog",
+  "Added RNR to today's list at 11:20 New York: 0.3x normal volume in the last 30 min; news: Did Earnings Estimate Upgrades Just Shift RenaissanceRe Holdings' (RNR) Investme",
+  "Added CON to today's list at 11:20 New York: 0.4x normal volume in the last 30 min; news: Concentra Expands Presence on Gulf Coast with First Pensacola Health Center",
+  "Added RNG to today's list at 11:52 New York: 0.4x normal volume in the last 30 min; news: RingCentral (RNG) Stock Price Climbs As Q3 Earnings Recast The Profit Story",
+  "Added DK to today's list at 11:52 New York: 0.4x normal volume in the last 30 min; news: Does Delek US Holdings (DK) Trade At A Premium After Refinery Expansion?",
+  "Added FBP to today's list at 11:52 New York: 0.3x normal volume in the last 30 min; news: FBP Q3 deep dive: stable profitability and capital returns as funding costs rise",
+  "Day trade buy order: 15 RNG at about $86.39. Broke above its opening-range high ($84.21) at $86.39. In play: 0.4x normal volume, normally moves 6% a day. Stop $82.23.",
+  "Bought 15 RNG at 86.48 (cost \u00a3971).",
+  "Sold RNG (about -\u00a31). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 1 trade(s), total -\u00a31."
+ ]
+}

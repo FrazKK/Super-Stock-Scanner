@@ -1,0 +1,224 @@
+{
+ "date": "2026-10-27",
+ "generated": "2026-11-01T14:24+00:00",
+ "fx_gbpusd": 1.334507703781128,
+ "result": "done",
+ "require_news": true,
+ "strategy": "rotation",
+ "bars": "1m",
+ "added_during_day": [
+  "Added BOW to today's list at 10:16 New York: 1.3x normal volume in the last 30 min; news: Bowhead Specialty (NYSE:BOW) Sees Strong Trading Volume - What's Next? - MarketB",
+  "Added THFF to today's list at 10:16 New York: 0.5x normal volume in the last 30 min; news: First Financial Corp. (THFF) Q3 Earnings and Revenues Beat Estimates",
+  "Added CDNS to today's list at 11:20 New York: 0.6x normal volume in the last 30 min; news: Cadence Q3 Earnings Beat Estimates on AI Demand, Outlook Raised",
+  "Added DEC to today's list at 11:36 New York: 0.4x normal volume in the last 30 min; news: Diversified Energy Positioned To Benefit From Permian Infrastructure Expansion -",
+  "Added COTY to today's list at 11:52 New York: 0.5x normal volume in the last 30 min; news: Coty and Brandlight Unveil Strategic Partnership to Strengthen Brand Visibility ",
+  "Added INSG to today's list at 11:52 New York: 0.7x normal volume in the last 30 min; news: MarketBeat cites Hold consensus and USD 13.00 target for Inseego stock - ad-hoc-",
+  "Added TLS to today's list at 12:08 New York: 0.3x normal volume in the last 30 min; news: Why Telos (TLS) is Poised to Beat Earnings Estimates Again",
+  "Added CRBG to today's list at 12:40 New York: 0.5x normal volume in the last 30 min; news: Corebridge Financial (CRBG) Reports Next Week: Wall Street Expects Earnings Grow",
+  "Added CNP to today's list at 13:12 New York: 1.1x normal volume in the last 30 min; news: CenterPoint Energy Q3 Earnings Beat Estimates, Revenues Improve Y/Y",
+  "Added COKE to today's list at 13:12 New York: 0.5x normal volume in the last 30 min; news: Coca-Cola Raises Outlook Again As North America Goes Flat",
+  "Added ASB to today's list at 13:12 New York: 0.4x normal volume in the last 30 min; news: Associated Banc Corp (ASB) Q3 Earnings Reinforce Its Margin Expansion Story",
+  "Added BB to today's list at 13:12 New York: 0.5x normal volume in the last 30 min; news: BB Stock Rises Overnight: BlackBerry CEO Says QNX\u2019s Alloy Kore Expanding Market\u2014",
+  "Added AUB to today's list at 13:28 New York: 0.4x normal volume in the last 30 min; news: How Investors May Respond To Atlantic Union Bankshares (AUB) Stronger Quarterly ",
+  "Added WS to today's list at 13:28 New York: 0.6x normal volume in the last 30 min; news: Worthington Steel Confirms Its Kloeckner Strategy Following Shareholder Vote",
+  "Added BY to today's list at 13:28 New York: 0.3x normal volume in the last 30 min; news: Byline Bancorp (BY) Could Be 11% Undervalued After Earnings Beat And Higher Payo",
+  "Added NTB to today's list at 13:44 New York: 0.4x normal volume in the last 30 min; news: Butterfield Bank (NYSE:NTB) exceeds Q3 2026 expectations",
+  "Added ST to today's list at 14:00 New York: 0.7x normal volume in the last 30 min; news: Sensata Technologies (NYSE:ST) beats Q3 sales targets",
+  "Added EW to today's list at 14:48 New York: 0.4x normal volume in the last 30 min; news: Does Valve Repair Approval Change The Bull Case For Edwards Lifesciences (EW)?",
+  "Added LUV to today's list at 15:04 New York: 0.5x normal volume in the last 30 min; news: Southwest Airlines Beats Expectations but Slashes Profit Outlook on Rising Fuel ",
+  "Added BBY to today's list at 15:04 New York: 0.4x normal volume in the last 30 min; news: Zip US Expands Partnership with Best Buy to Stores Nationwide",
+  "Added ALLE to today's list at 15:04 New York: 0.5x normal volume in the last 30 min; news: Learn Why The Bull Case For Allegion Stock Could Change Following Raised 2026 Gu",
+  "Added SYF to today's list at 15:20 New York: 0.4x normal volume in the last 30 min; news: Synchrony (SYF) Upgraded to Buy: What Does It Mean for the Stock?"
+ ],
+ "list": [
+  {
+   "ticker": "AEYE",
+   "name": "AudioEye, Inc.",
+   "vol_x": 2.0,
+   "buy_pct30": 0.6122168962528903,
+   "change": 0.2749326065872417,
+   "score": 5.45,
+   "news": [
+    "AudioEye (AEYE) Q3 Earnings and Revenues Beat Estimates",
+    "AudioEye Reports Record Third Quarter 2026 Results"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "TEVA",
+   "name": "Teva Pharmaceutical Industries Limited",
+   "vol_x": 0.5,
+   "buy_pct30": 0.7895313443186566,
+   "change": 0.021276557143638852,
+   "score": 5.16,
+   "news": [
+    "Teva Acquires Worldwide Rights to BXCL501, Further Expanding Innovative Neuroscience Pipeline",
+    "Teva Pharmaceutical Industries (TEVA) Secured WELTRUZA Approval, Is It Still 16% Below Fair Value?"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "IQV",
+   "name": "IQVIA Holdings, Inc.",
+   "vol_x": 0.47,
+   "buy_pct30": 0.7257452311376955,
+   "change": 0.003654970678698133,
+   "score": 3.84,
+   "news": [
+    "IQVIA Holdings Q3 Earnings Beat Estimates, Revenues Increase 8% Y/Y",
+    "IQVIA\u2019s (NYSE:IQV) Q3 2026: beats on revenue"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "HWKN",
+   "name": "Hawkins, Inc.",
+   "vol_x": 0.58,
+   "buy_pct30": 0.4889709763136853,
+   "change": 0.1278056500780289,
+   "score": 2.62,
+   "news": [
+    "Hawkins (NASDAQ:HWKN) Shares Rise 8% After Q2 Earnings Exceed Estimates and Revenue Reaches $313.8 Million",
+    "Hawkins soars 12% on strong second quarter earnings beat"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "POM",
+   "vol_x": 1.35
+  },
+  {
+   "ticker": "RCL",
+   "vol_x": 0.68
+  },
+  {
+   "ticker": "KNSA",
+   "vol_x": 0.68
+  },
+  {
+   "ticker": "ESQ",
+   "vol_x": 0.57
+  },
+  {
+   "ticker": "LECO",
+   "vol_x": 0.46
+  },
+  {
+   "ticker": "QSI",
+   "vol_x": 0.43
+  },
+  {
+   "ticker": "NAUT",
+   "vol_x": 0.37
+  },
+  {
+   "ticker": "TSLA",
+   "vol_x": 0.34
+  },
+  {
+   "ticker": "UPS",
+   "vol_x": 0.34
+  },
+  {
+   "ticker": "EAF",
+   "vol_x": 0.34
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "BOW",
+   "bought_at": "2026-10-27T14:16+00:00",
+   "sold_at": "2026-10-27T15:52+00:00",
+   "entry": 34.25422122192382,
+   "exit": 34.2400016784668,
+   "cost_gbp": 976.8492855823633,
+   "pl_gbp": -1.8679796706708203,
+   "pl_pct": -0.0019122496154124699,
+   "reason": "No new high for 46 min, and INSG overtook it on buying volume (0.52x vs 0.00x normal in 30 min)."
+  },
+  {
+   "ticker": "INSG",
+   "bought_at": "2026-10-27T15:52+00:00",
+   "sold_at": "2026-10-27T17:12+00:00",
+   "entry": 4.849844789981842,
+   "exit": 4.880000114440918,
+   "cost_gbp": 1000.8993387122049,
+   "pl_gbp": 4.714962103666153,
+   "pl_pct": 0.004710725565802254,
+   "reason": "No new high for 46 min, and CNP overtook it on buying volume (0.82x vs 0.03x normal in 30 min)."
+  },
+  {
+   "ticker": "CNP",
+   "bought_at": "2026-10-27T17:12+00:00",
+   "sold_at": "2026-10-27T17:58+00:00",
+   "entry": 41.49645683288574,
+   "exit": 41.435001373291016,
+   "cost_gbp": 996.5311139173724,
+   "pl_gbp": -2.966190921037196,
+   "pl_pct": -0.0029765161163679815,
+   "reason": "No new high for 36 min, and BOW overtook it on buying volume (2.46x vs 0.02x normal in 30 min)."
+  },
+  {
+   "ticker": "BOW",
+   "bought_at": "2026-10-27T17:58+00:00",
+   "sold_at": "2026-10-27T19:50+00:00",
+   "entry": 34.3443113746643,
+   "exit": 34.33000183105469,
+   "cost_gbp": 979.4184434322057,
+   "pl_gbp": -1.874390382636193,
+   "pl_pct": -0.0019137789319830553,
+   "reason": "End of day: sold 10 minutes before the close."
+  }
+ ],
+ "total_gbp": -1.9935988706780563,
+ "alerts": [
+  "10:16 Day trade: bought BOW: 38 BOW at $34.25 (about \u00a3977). Stop $32.54. Highest first-30-minute volume on today's list (1.3x a normal day).",
+  "11:52 Day trade: sold BOW (-\u00a32): No new high for 46 min, and INSG overtook it on buying volume (0.52x vs 0.00x normal in 30 min). Result -\u00a32 (-0.2%).",
+  "11:52 Day trade: bought INSG: 275 INSG at $4.85 (about \u00a31,001). Stop $4.61. Strongest buying on the list: 0.52x normal volume bought in the last 30 min, and rising.",
+  "13:12 Day trade: sold INSG (+\u00a35): No new high for 46 min, and CNP overtook it on buying volume (0.82x vs 0.03x normal in 30 min). Result +\u00a35 (+0.5%).",
+  "13:12 Day trade: bought CNP: 32 CNP at $41.50 (about \u00a3997). Stop $39.42. Strongest buying on the list: 0.82x normal volume bought in the last 30 min, and rising.",
+  "13:58 Day trade: sold CNP (-\u00a33): No new high for 36 min, and BOW overtook it on buying volume (2.46x vs 0.02x normal in 30 min). Result -\u00a33 (-0.3%).",
+  "13:58 Day trade: bought BOW: 38 BOW at $34.34 (about \u00a3979). Stop $32.63. Strongest buying on the list: 2.46x normal volume bought in the last 30 min, and rising.",
+  "15:50 Day trade: sold BOW (-\u00a32): End of day: sold 10 minutes before the close. Result -\u00a32 (-0.2%).",
+  "15:50 Day trade summary: 4 trade(s) today: BOW -\u00a32, INSG +\u00a35, CNP -\u00a33, BOW -\u00a32. Total -\u00a32."
+ ],
+ "log": [
+  "Added BOW to today's list at 10:16 New York: 1.3x normal volume in the last 30 min; news: Bowhead Specialty (NYSE:BOW) Sees Strong Trading Volume - What's Next? - MarketB",
+  "Added THFF to today's list at 10:16 New York: 0.5x normal volume in the last 30 min; news: First Financial Corp. (THFF) Q3 Earnings and Revenues Beat Estimates",
+  "Day trade buy order: 38 BOW at about $34.22. Highest first-30-minute volume on today's list (1.3x a normal day).",
+  "Bought 38 BOW at 34.25 (cost \u00a3977).",
+  "Added CDNS to today's list at 11:20 New York: 0.6x normal volume in the last 30 min; news: Cadence Q3 Earnings Beat Estimates on AI Demand, Outlook Raised",
+  "Added DEC to today's list at 11:36 New York: 0.4x normal volume in the last 30 min; news: Diversified Energy Positioned To Benefit From Permian Infrastructure Expansion -",
+  "Added COTY to today's list at 11:52 New York: 0.5x normal volume in the last 30 min; news: Coty and Brandlight Unveil Strategic Partnership to Strengthen Brand Visibility ",
+  "Added INSG to today's list at 11:52 New York: 0.7x normal volume in the last 30 min; news: MarketBeat cites Hold consensus and USD 13.00 target for Inseego stock - ad-hoc-",
+  "Sold BOW (about -\u00a32). No new high for 46 min, and INSG overtook it on buying volume (0.52x vs 0.00x normal in 30 min).",
+  "Day trade buy order: 275 INSG at about $4.84. Strongest buying on the list: 0.52x normal volume bought in the last 30 min, and rising.",
+  "Bought 275 INSG at 4.85 (cost \u00a31,001).",
+  "Added TLS to today's list at 12:08 New York: 0.3x normal volume in the last 30 min; news: Why Telos (TLS) is Poised to Beat Earnings Estimates Again",
+  "Added CRBG to today's list at 12:40 New York: 0.5x normal volume in the last 30 min; news: Corebridge Financial (CRBG) Reports Next Week: Wall Street Expects Earnings Grow",
+  "Added CNP to today's list at 13:12 New York: 1.1x normal volume in the last 30 min; news: CenterPoint Energy Q3 Earnings Beat Estimates, Revenues Improve Y/Y",
+  "Added COKE to today's list at 13:12 New York: 0.5x normal volume in the last 30 min; news: Coca-Cola Raises Outlook Again As North America Goes Flat",
+  "Added ASB to today's list at 13:12 New York: 0.4x normal volume in the last 30 min; news: Associated Banc Corp (ASB) Q3 Earnings Reinforce Its Margin Expansion Story",
+  "Added BB to today's list at 13:12 New York: 0.5x normal volume in the last 30 min; news: BB Stock Rises Overnight: BlackBerry CEO Says QNX\u2019s Alloy Kore Expanding Market\u2014",
+  "Sold INSG (about +\u00a35). No new high for 46 min, and CNP overtook it on buying volume (0.82x vs 0.03x normal in 30 min).",
+  "Day trade buy order: 32 CNP at about $41.46. Strongest buying on the list: 0.82x normal volume bought in the last 30 min, and rising.",
+  "Bought 32 CNP at 41.50 (cost \u00a3997).",
+  "Added AUB to today's list at 13:28 New York: 0.4x normal volume in the last 30 min; news: How Investors May Respond To Atlantic Union Bankshares (AUB) Stronger Quarterly ",
+  "Added WS to today's list at 13:28 New York: 0.6x normal volume in the last 30 min; news: Worthington Steel Confirms Its Kloeckner Strategy Following Shareholder Vote",
+  "Added BY to today's list at 13:28 New York: 0.3x normal volume in the last 30 min; news: Byline Bancorp (BY) Could Be 11% Undervalued After Earnings Beat And Higher Payo",
+  "Added NTB to today's list at 13:44 New York: 0.4x normal volume in the last 30 min; news: Butterfield Bank (NYSE:NTB) exceeds Q3 2026 expectations",
+  "Sold CNP (about -\u00a33). No new high for 36 min, and BOW overtook it on buying volume (2.46x vs 0.02x normal in 30 min).",
+  "Day trade buy order: 38 BOW at about $34.31. Strongest buying on the list: 2.46x normal volume bought in the last 30 min, and rising.",
+  "Bought 38 BOW at 34.34 (cost \u00a3979).",
+  "Added ST to today's list at 14:00 New York: 0.7x normal volume in the last 30 min; news: Sensata Technologies (NYSE:ST) beats Q3 sales targets",
+  "Added EW to today's list at 14:48 New York: 0.4x normal volume in the last 30 min; news: Does Valve Repair Approval Change The Bull Case For Edwards Lifesciences (EW)?",
+  "Added LUV to today's list at 15:04 New York: 0.5x normal volume in the last 30 min; news: Southwest Airlines Beats Expectations but Slashes Profit Outlook on Rising Fuel ",
+  "Added BBY to today's list at 15:04 New York: 0.4x normal volume in the last 30 min; news: Zip US Expands Partnership with Best Buy to Stores Nationwide",
+  "Added ALLE to today's list at 15:04 New York: 0.5x normal volume in the last 30 min; news: Learn Why The Bull Case For Allegion Stock Could Change Following Raised 2026 Gu",
+  "Added SYF to today's list at 15:20 New York: 0.4x normal volume in the last 30 min; news: Synchrony (SYF) Upgraded to Buy: What Does It Mean for the Stock?",
+  "Sold BOW (about -\u00a32). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 4 trade(s), total -\u00a32."
+ ]
+}

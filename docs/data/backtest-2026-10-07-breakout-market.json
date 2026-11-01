@@ -1,0 +1,63 @@
+{
+ "date": "2026-10-07",
+ "generated": "2026-11-01T13:56+00:00",
+ "fx_gbpusd": 1.326682209968567,
+ "result": "done",
+ "require_news": true,
+ "strategy": "breakout-market",
+ "bars": "1m",
+ "added_during_day": [
+  "Added SBH to today's list at 12:40 New York: 0.4x normal volume in the last 30 min; news: What Sally Beauty Holdings (SBH)'s Dallas Cowboys Partnership Means For Sharehol",
+  "Added ZIM to today's list at 15:04 New York: 0.7x normal volume in the last 30 min; news: Zim lifts profit forecast 72% on strong demand"
+ ],
+ "list": [
+  {
+   "ticker": "BKH",
+   "name": "Black Hills Corporation",
+   "vol_x": 0.58,
+   "buy_pct30": 0.5255822085288184,
+   "change": 0.07471026041430173,
+   "score": 2.76,
+   "news": [
+    "Black Hills Corp. Executes Definitive Agreements to Serve Google\u2019s Planned Data Center in Cheyenne, Wyoming"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "PENG",
+   "vol_x": 2.49
+  },
+  {
+   "ticker": "CANG",
+   "vol_x": 0.92
+  },
+  {
+   "ticker": "NWE",
+   "vol_x": 0.45
+  },
+  {
+   "ticker": "PNTG",
+   "vol_x": 0.45
+  },
+  {
+   "ticker": "BWLP",
+   "vol_x": 0.43
+  },
+  {
+   "ticker": "PG",
+   "vol_x": 0.34
+  }
+ ],
+ "trades": [],
+ "total_gbp": 0,
+ "alerts": [
+  "15:50 Day trade summary: No trade today: nothing in play broke out."
+ ],
+ "log": [
+  "Added SBH to today's list at 12:40 New York: 0.4x normal volume in the last 30 min; news: What Sally Beauty Holdings (SBH)'s Dallas Cowboys Partnership Means For Sharehol",
+  "Added ZIM to today's list at 15:04 New York: 0.7x normal volume in the last 30 min; news: Zim lifts profit forecast 72% on strong demand",
+  "Day trading finished: 0 trade(s), total +\u00a30."
+ ]
+}

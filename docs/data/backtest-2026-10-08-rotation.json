@@ -1,0 +1,127 @@
+{
+ "date": "2026-10-08",
+ "generated": "2026-11-01T13:59+00:00",
+ "fx_gbpusd": 1.3214927911758423,
+ "result": "done",
+ "require_news": true,
+ "strategy": "rotation",
+ "bars": "1m",
+ "added_during_day": [
+  "Added HLF to today's list at 12:56 New York: 0.4x normal volume in the last 30 min; news: Herbalife to Participate in 1 on 1 Meetings at Maxim Growth Summit on October 14",
+  "Added ECO to today's list at 13:12 New York: 0.9x normal volume in the last 30 min; news: ECO or SBLK: Which Shipping Company Is a Stronger Play Now?",
+  "Added GTE to today's list at 13:12 New York: 0.4x normal volume in the last 30 min; news: Gran Tierra Energy Inc. Announces Ratification of its Onshore Exploration, Devel",
+  "Added GSL to today's list at 14:00 New York: 0.5x normal volume in the last 30 min; news: Global Ship Lease (GSL) Expands Newbuild Orderbook To 17 Containerships",
+  "Added BKH to today's list at 14:16 New York: 0.8x normal volume in the last 30 min; news: Black Hills Corp. Executes Definitive Agreements to Serve Google\u2019s Planned Data "
+ ],
+ "list": [
+  {
+   "ticker": "GFUZ",
+   "name": "General Fusion Group Ltd.",
+   "vol_x": 1.95,
+   "buy_pct30": 0.3342855289893205,
+   "change": 0.12434212941046918,
+   "score": 5.24,
+   "news": [
+    "General Fusion Achieves World-First 1 keV Electron Temperature Milestone on its Path to Commercial Fusion Power",
+    "General Fusion, UKAEA Announce Magnetized Target Fusion Milestone"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "HAE",
+   "vol_x": 2.25
+  },
+  {
+   "ticker": "WOLF",
+   "vol_x": 2.22
+  },
+  {
+   "ticker": "HELE",
+   "vol_x": 1.42
+  },
+  {
+   "ticker": "MANE",
+   "vol_x": 1.1
+  },
+  {
+   "ticker": "RCMT",
+   "vol_x": 0.89
+  },
+  {
+   "ticker": "PLTR",
+   "vol_x": 0.88
+  },
+  {
+   "ticker": "ASC",
+   "vol_x": 0.8
+  },
+  {
+   "ticker": "GFS",
+   "vol_x": 0.73
+  },
+  {
+   "ticker": "ADCT",
+   "vol_x": 0.62
+  },
+  {
+   "ticker": "FEAM",
+   "vol_x": 0.43
+  },
+  {
+   "ticker": "OPY",
+   "vol_x": 0.42
+  },
+  {
+   "ticker": "BORR",
+   "vol_x": 0.34
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "GFUZ",
+   "bought_at": "2026-10-08T14:16+00:00",
+   "sold_at": "2026-10-08T16:56+00:00",
+   "entry": 8.448439579963683,
+   "exit": 8.585000038146973,
+   "cost_gbp": 998.8200602756154,
+   "pl_gbp": 14.62474615369274,
+   "pl_pct": 0.014642022858108368,
+   "reason": "No new high for 138 min, and HLF overtook it on buying volume (0.36x vs 0.21x normal in 30 min)."
+  },
+  {
+   "ticker": "HLF",
+   "bought_at": "2026-10-08T16:56+00:00",
+   "sold_at": "2026-10-08T19:50+00:00",
+   "entry": 12.817805305480956,
+   "exit": 12.8100004196167,
+   "cost_gbp": 1000.5459781643993,
+   "pl_gbp": -2.10690075822356,
+   "pl_pct": -0.0021057510641228883,
+   "reason": "End of day: sold 10 minutes before the close."
+  }
+ ],
+ "total_gbp": 12.51784539546918,
+ "alerts": [
+  "10:16 Day trade: bought GFUZ: 156 GFUZ at $8.45 (about \u00a3999). Stop $8.03. Highest first-30-minute volume on today's list (1.9x a normal day).",
+  "12:56 Day trade: sold GFUZ (+\u00a315): No new high for 138 min, and HLF overtook it on buying volume (0.36x vs 0.21x normal in 30 min). Result +\u00a315 (+1.5%).",
+  "12:56 Day trade: bought HLF: 103 HLF at $12.82 (about \u00a31,001). Stop $12.18. Strongest buying on the list: 0.36x normal volume bought in the last 30 min, and rising.",
+  "15:50 Day trade: sold HLF (-\u00a32): End of day: sold 10 minutes before the close. Result -\u00a32 (-0.2%).",
+  "15:50 Day trade summary: 2 trade(s) today: GFUZ +\u00a315, HLF -\u00a32. Total +\u00a313."
+ ],
+ "log": [
+  "Day trade buy order: 156 GFUZ at about $8.44. Highest first-30-minute volume on today's list (1.9x a normal day).",
+  "Bought 156 GFUZ at 8.45 (cost \u00a3999).",
+  "Added HLF to today's list at 12:56 New York: 0.4x normal volume in the last 30 min; news: Herbalife to Participate in 1 on 1 Meetings at Maxim Growth Summit on October 14",
+  "Sold GFUZ (about +\u00a315). No new high for 138 min, and HLF overtook it on buying volume (0.36x vs 0.21x normal in 30 min).",
+  "Day trade buy order: 103 HLF at about $12.81. Strongest buying on the list: 0.36x normal volume bought in the last 30 min, and rising.",
+  "Bought 103 HLF at 12.82 (cost \u00a31,001).",
+  "Added ECO to today's list at 13:12 New York: 0.9x normal volume in the last 30 min; news: ECO or SBLK: Which Shipping Company Is a Stronger Play Now?",
+  "Added GTE to today's list at 13:12 New York: 0.4x normal volume in the last 30 min; news: Gran Tierra Energy Inc. Announces Ratification of its Onshore Exploration, Devel",
+  "Added GSL to today's list at 14:00 New York: 0.5x normal volume in the last 30 min; news: Global Ship Lease (GSL) Expands Newbuild Orderbook To 17 Containerships",
+  "Added BKH to today's list at 14:16 New York: 0.8x normal volume in the last 30 min; news: Black Hills Corp. Executes Definitive Agreements to Serve Google\u2019s Planned Data ",
+  "Sold HLF (about -\u00a32). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 2 trade(s), total +\u00a313."
+ ]
+}

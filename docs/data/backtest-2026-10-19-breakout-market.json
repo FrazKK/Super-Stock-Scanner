@@ -1,0 +1,85 @@
+{
+ "date": "2026-10-19",
+ "generated": "2026-11-01T14:11+00:00",
+ "fx_gbpusd": 1.3335645198822021,
+ "result": "done",
+ "require_news": true,
+ "strategy": "breakout-market",
+ "bars": "1m",
+ "added_during_day": [
+  "Added CFFI to today's list at 11:20 New York: 0.7x normal volume in the last 30 min; news: C&F Financial's 2026 Outlook: Aggressive Market Expansion Drives New Retail Grow",
+  "Added TBBB to today's list at 12:24 New York: 0.8x normal volume in the last 30 min; news: BBB Foods (TBBB) Could Be 17% Undervalued As Q2 Sales Beat Expectations",
+  "Added MANE to today's list at 12:24 New York: 0.8x normal volume in the last 30 min; news: Veradermics\u2019 stock up on male hair loss trial success"
+ ],
+ "list": [],
+ "quiet": [
+  {
+   "ticker": "FUFU",
+   "vol_x": 167.55
+  },
+  {
+   "ticker": "DH",
+   "vol_x": 2.19
+  },
+  {
+   "ticker": "ATNM",
+   "vol_x": 1.49
+  },
+  {
+   "ticker": "KRSA",
+   "vol_x": 0.94
+  },
+  {
+   "ticker": "CLF",
+   "vol_x": 0.87
+  },
+  {
+   "ticker": "CVX",
+   "vol_x": 0.45
+  },
+  {
+   "ticker": "GTE",
+   "vol_x": 0.45
+  },
+  {
+   "ticker": "ENGS",
+   "vol_x": 0.42
+  },
+  {
+   "ticker": "TALO",
+   "vol_x": 0.39
+  },
+  {
+   "ticker": "AII",
+   "vol_x": 0.34
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "MANE",
+   "bought_at": "2026-10-19T16:24+00:00",
+   "sold_at": "2026-10-19T19:50+00:00",
+   "entry": 120.2301106109619,
+   "exit": 123.32499694824219,
+   "cost_gbp": 993.2140468634095,
+   "pl_gbp": 24.040796232216962,
+   "pl_pct": 0.024205050571060985,
+   "reason": "End of day: sold 10 minutes before the close."
+  }
+ ],
+ "total_gbp": 24.040796232216962,
+ "alerts": [
+  "12:24 Day trade: bought MANE: 11 MANE at $120.23 (about \u00a3993). Stop $114.22. Broke above its opening-range high ($119.38) at $120.11. In play: 0.8x normal volume, normally moves 7% a day. Stop $114.10.",
+  "15:50 Day trade: sold MANE (+\u00a324): End of day: sold 10 minutes before the close. Result +\u00a324 (+2.4%).",
+  "15:50 Day trade summary: 1 trade(s) today: MANE +\u00a324. Total +\u00a324."
+ ],
+ "log": [
+  "Added CFFI to today's list at 11:20 New York: 0.7x normal volume in the last 30 min; news: C&F Financial's 2026 Outlook: Aggressive Market Expansion Drives New Retail Grow",
+  "Added TBBB to today's list at 12:24 New York: 0.8x normal volume in the last 30 min; news: BBB Foods (TBBB) Could Be 17% Undervalued As Q2 Sales Beat Expectations",
+  "Added MANE to today's list at 12:24 New York: 0.8x normal volume in the last 30 min; news: Veradermics\u2019 stock up on male hair loss trial success",
+  "Day trade buy order: 11 MANE at about $120.11. Broke above its opening-range high ($119.38) at $120.11. In play: 0.8x normal volume, normally moves 7% a day. Stop $114.10.",
+  "Bought 11 MANE at 120.23 (cost \u00a3993).",
+  "Sold MANE (about +\u00a324). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 1 trade(s), total +\u00a324."
+ ]
+}

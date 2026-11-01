@@ -1,0 +1,71 @@
+{
+ "date": "2026-10-07",
+ "generated": "2026-11-01T13:55+00:00",
+ "fx_gbpusd": 1.326682209968567,
+ "result": "done",
+ "require_news": true,
+ "strategy": "breakout",
+ "bars": "1m",
+ "added_during_day": [
+  "Added SBH to today's list at 11:52 New York: 0.4x normal volume in the last 30 min; news: What Sally Beauty Holdings (SBH)'s Dallas Cowboys Partnership Means For Sharehol",
+  "Added ZIM to today's list at 12:08 New York: 0.5x normal volume in the last 30 min; news: Zim lifts profit forecast 72% on strong demand",
+  "Added ECO to today's list at 14:16 New York: 0.6x normal volume in the last 30 min; news: ECO or SBLK: Which Shipping Company Is a Stronger Play Now?",
+  "Added EBS to today's list at 14:48 New York: 0.7x normal volume in the last 30 min; news: NVAX, EBS, ARCT, MRNA Rally After Russia Plague Lab Worker's Death: Retail Trade"
+ ],
+ "list": [
+  {
+   "ticker": "BKH",
+   "name": "Black Hills Corporation",
+   "vol_x": 0.58,
+   "buy_pct30": 0.5256600684552913,
+   "change": 0.07471026041430173,
+   "score": 2.76,
+   "news": [
+    "Black Hills Corp. Executes Definitive Agreements to Serve Google\u2019s Planned Data Center in Cheyenne, Wyoming"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "PENG",
+   "vol_x": 2.49
+  },
+  {
+   "ticker": "CANG",
+   "vol_x": 0.92
+  },
+  {
+   "ticker": "NWE",
+   "vol_x": 0.45
+  },
+  {
+   "ticker": "PNTG",
+   "vol_x": 0.45
+  },
+  {
+   "ticker": "BWLP",
+   "vol_x": 0.43
+  },
+  {
+   "ticker": "PG",
+   "vol_x": 0.34
+  },
+  {
+   "ticker": "ELF",
+   "vol_x": 0.33
+  }
+ ],
+ "trades": [],
+ "total_gbp": 0,
+ "alerts": [
+  "15:50 Day trade summary: No trade today: nothing in play broke out."
+ ],
+ "log": [
+  "Added SBH to today's list at 11:52 New York: 0.4x normal volume in the last 30 min; news: What Sally Beauty Holdings (SBH)'s Dallas Cowboys Partnership Means For Sharehol",
+  "Added ZIM to today's list at 12:08 New York: 0.5x normal volume in the last 30 min; news: Zim lifts profit forecast 72% on strong demand",
+  "Added ECO to today's list at 14:16 New York: 0.6x normal volume in the last 30 min; news: ECO or SBLK: Which Shipping Company Is a Stronger Play Now?",
+  "Added EBS to today's list at 14:48 New York: 0.7x normal volume in the last 30 min; news: NVAX, EBS, ARCT, MRNA Rally After Russia Plague Lab Worker's Death: Retail Trade",
+  "Day trading finished: 0 trade(s), total +\u00a30."
+ ]
+}

@@ -1,0 +1,272 @@
+{
+ "date": "2026-10-29",
+ "generated": "2026-11-01T14:24+00:00",
+ "fx_gbpusd": 1.3378641605377197,
+ "result": "done",
+ "require_news": true,
+ "strategy": "breakout",
+ "bars": "1m",
+ "added_during_day": [
+  "Added COOK to today's list at 10:16 New York: 0.8x normal volume in the last 30 min; news: Traeger, Inc.'s (NYSE:COOK) Path To Profitability - Simply Wall St"
+ ],
+ "list": [
+  {
+   "ticker": "NUWE",
+   "name": "Nuwellis, Inc.",
+   "vol_x": 3.91,
+   "buy_pct30": 0.06621158426468472,
+   "change": 0.09922265431495525,
+   "score": 8.08,
+   "news": [
+    "NUWE Stock Rockets As Nuwellis Targets Pediatric Growth - Timothy Sykes",
+    "Can Approvals Lift Glaukos (NYSE:GKOS), SS Innovations (NASDAQ:SSII), Nuwellis (NASDAQ:NUWE) and Baird Medical (NASDAQ:BDMD) on Oct 29? - Kalkine"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "BHC",
+   "name": "Bausch Health Companies Inc.",
+   "vol_x": 1.72,
+   "buy_pct30": 0.5725276038233059,
+   "change": 0.19364163841245752,
+   "score": 5.73,
+   "news": [
+    "BHC Q3 Earnings Beat on Salix Growth, Stock Gains 9% as Outlook Rises",
+    "Bausch Health soars on earnings beat and raised outlook"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "TDOC",
+   "name": "Teladoc Health, Inc.",
+   "vol_x": 2.11,
+   "buy_pct30": 0.7062791518282359,
+   "change": 0.27056682491468576,
+   "score": 5.55,
+   "news": [
+    "Teladoc Soars 11% on Q3 Beat and Raised Outlook as \u201cInsurance Revenue Exceeded Our Expectations\u201d"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "VTRS",
+   "name": "Viatris Inc.",
+   "vol_x": 0.43,
+   "buy_pct30": 0.8352664841809555,
+   "change": 0.015450133250197284,
+   "score": 5.2,
+   "news": [
+    "RYZUMVI Approval Could Be A Key Test For Viatris Stock (VTRS)",
+    "Viatris (VTRS) Expected to Beat Earnings Estimates: Should You Buy?"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "OPCH",
+   "name": "Option Care Health, Inc.",
+   "vol_x": 2.14,
+   "buy_pct30": 0.5847057411021168,
+   "change": 0.012304196556994995,
+   "score": 5.12,
+   "news": [
+    "Option Care Health (NASDAQ:OPCH) Sees Large Volume Increase - Here's Why - MarketBeat"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "BLCO",
+   "name": "Bausch + Lomb Corporation",
+   "vol_x": 0.52,
+   "buy_pct30": 0.5685799786538794,
+   "change": 0.04215689345260487,
+   "score": 4.31,
+   "news": [
+    "Bausch + Lomb Soars 16% on Big Q3 Profit Beat and Raised Full-Year Guidance",
+    "BAUSCH HEALTH ANNOUNCES THIRD QUARTER 2026 RESULTS, RAISES GUIDANCE"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "FRAF",
+   "name": "Franklin Financial Services Corporation",
+   "vol_x": 0.35,
+   "buy_pct30": 0.49869321717486,
+   "change": 0.007156146849077727,
+   "score": 3.69,
+   "news": [
+    "FRAF Q3 Earnings Rise Y/Y as Margin & Deposit Growth Improve",
+    "Franklin Financial Services (NASDAQ:FRAF) Issues Quarterly Earnings Results - MarketBeat"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "PRME",
+   "name": "Prime Medicine, Inc.",
+   "vol_x": 0.35,
+   "buy_pct30": 0.6081354696823479,
+   "change": 0.06529848804370886,
+   "score": 3.63,
+   "news": [
+    "PRME, BEAM, EDIT, NTLA, CRSP Stocks Gain As FDA Signals Faster Route For Patient-Specific Gene Edits"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "NCLH",
+   "name": "Norwegian Cruise Line Holdings Ltd.",
+   "vol_x": 0.95,
+   "buy_pct30": 0.5539087106751456,
+   "change": 0.10273970569110813,
+   "score": 3.62,
+   "news": [
+    "Stock Market Today, Oct. 29: Norwegian Cruise Line Holdings Beats Q3 Estimates, Raises Full-Year Guidance",
+    "Norwegian Cruise Line Soars After Beat-And-Raise Quarter"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "GKOS",
+   "name": "Glaukos Corporation",
+   "vol_x": 1.24,
+   "buy_pct30": 0.5972641101983249,
+   "change": 0.2725018157816743,
+   "score": 3.37,
+   "news": [
+    "Why Glaukos Stock Is Surging 30% and Headed for Record Close After Earnings"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "CROX",
+   "name": "Crocs, Inc.",
+   "vol_x": 0.88,
+   "buy_pct30": 0.5056710127803915,
+   "change": 0.22888297864203033,
+   "score": 3.28,
+   "news": [
+    "Crocs Lifts Full-Year Guidance Following Third-Quarter Beat; Shares Surge"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "BAND",
+   "name": "Bandwidth Inc.",
+   "vol_x": 0.36,
+   "buy_pct30": 0.6868802429367121,
+   "change": 0.09907119012332766,
+   "score": 2.97,
+   "news": [
+    "Bandwidth (BAND) Q3 Earnings and Revenues Beat Estimates"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "CLMB",
+   "name": "Climb Global Solutions, Inc.",
+   "vol_x": 0.42,
+   "buy_pct30": 0.8809877215388806,
+   "change": 0.20736488712330736,
+   "score": 2.86,
+   "news": [
+    "Climb Global Solutions Reports Record Third Quarter 2026 Results"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "HII",
+   "name": "Huntington Ingalls Industries, Inc.",
+   "vol_x": 1.13,
+   "buy_pct30": 0.47363000197030913,
+   "change": 0.08343474532040496,
+   "score": 2.65,
+   "news": [
+    "What Defense Slump? L3Harris, Huntington Post Strong Earnings, Like Peers."
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "MAX",
+   "name": "MediaAlpha, Inc.",
+   "vol_x": 0.54,
+   "buy_pct30": 0.45878089092541796,
+   "change": 0.21245731351415875,
+   "score": 2.42,
+   "news": [
+    "MediaAlpha (NYSE:MAX) beats expectations in strong Q3 2026, stock jumps 18%"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "TTEC",
+   "vol_x": 1.58
+  },
+  {
+   "ticker": "NCPL",
+   "vol_x": 1.42
+  },
+  {
+   "ticker": "PRCH",
+   "vol_x": 1.03
+  },
+  {
+   "ticker": "LLY",
+   "vol_x": 0.93
+  },
+  {
+   "ticker": "EG",
+   "vol_x": 0.54
+  },
+  {
+   "ticker": "SFST",
+   "vol_x": 0.5
+  },
+  {
+   "ticker": "CSL",
+   "vol_x": 0.47
+  },
+  {
+   "ticker": "TMP",
+   "vol_x": 0.43
+  },
+  {
+   "ticker": "EDHL",
+   "vol_x": 0.4
+  },
+  {
+   "ticker": "PDSB",
+   "vol_x": 0.36
+  },
+  {
+   "ticker": "PTLE",
+   "vol_x": 0.35
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "COOK",
+   "bought_at": "2026-10-29T14:16+00:00",
+   "sold_at": "2026-10-29T19:50+00:00",
+   "entry": 50.45040152740478,
+   "exit": 51.0,
+   "cost_gbp": 981.9218154734741,
+   "pl_gbp": 9.21019860712488,
+   "pl_pct": 0.009379767779865246,
+   "reason": "End of day: sold 10 minutes before the close."
+  }
+ ],
+ "total_gbp": 9.21019860712488,
+ "alerts": [
+  "10:16 Day trade: bought COOK: 26 COOK at $50.45 (about \u00a3982). Stop $47.93. Broke above its opening-range high ($50.33) at $50.40. In play: 0.8x normal volume, normally moves 5% a day. Stop $49.10.",
+  "15:50 Day trade: sold COOK (+\u00a39): End of day: sold 10 minutes before the close. Result +\u00a39 (+0.9%).",
+  "15:50 Day trade summary: 1 trade(s) today: COOK +\u00a39. Total +\u00a39."
+ ],
+ "log": [
+  "Added COOK to today's list at 10:16 New York: 0.8x normal volume in the last 30 min; news: Traeger, Inc.'s (NYSE:COOK) Path To Profitability - Simply Wall St",
+  "Day trade buy order: 26 COOK at about $50.40. Broke above its opening-range high ($50.33) at $50.40. In play: 0.8x normal volume, normally moves 5% a day. Stop $49.10.",
+  "Bought 26 COOK at 50.45 (cost \u00a3982).",
+  "Sold COOK (about +\u00a39). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 1 trade(s), total +\u00a39."
+ ]
+}

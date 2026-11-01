@@ -1,0 +1,183 @@
+{
+ "date": "2026-10-26",
+ "generated": "2026-11-01T14:21+00:00",
+ "fx_gbpusd": 1.3377747535705566,
+ "result": "done",
+ "require_news": true,
+ "strategy": "breakout-market",
+ "bars": "1m",
+ "added_during_day": [
+  "Added MFC to today's list at 10:16 New York: 0.5x normal volume in the last 30 min; news: Manulife and UpLink announce winners of the 'Shaping Canada's Longevity Advantag",
+  "Added CACI to today's list at 12:08 New York: 0.5x normal volume in the last 30 min; news: CACI Gains 6% on Jefferies Upgrade and $281 Million Navy Win as Booz Allen Jumps",
+  "Added AZO to today's list at 12:24 New York: 0.3x normal volume in the last 30 min; news: O'Reilly Automotive, AutoZone, Advance Auto Parts Poised for Net Positive Impact",
+  "Added RNG to today's list at 12:40 New York: 0.9x normal volume in the last 30 min; news: RingCentral (RNG) Stock Price Climbs As Q3 Earnings Recast The Profit Story",
+  "Added CON to today's list at 12:40 New York: 0.6x normal volume in the last 30 min; news: Concentra Expands Presence on Gulf Coast with First Pensacola Health Center"
+ ],
+ "list": [
+  {
+   "ticker": "SGRY",
+   "name": "Surgery Partners, Inc.",
+   "vol_x": 6.4,
+   "buy_pct30": 0.6136541071494834,
+   "change": 0.46222226581876247,
+   "score": 13.75,
+   "news": [
+    "Surgery Partners shares surge 46% as $5.7 billion takeover deal agreed"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "XNCR",
+   "name": "Xencor, Inc.",
+   "vol_x": 2.9,
+   "buy_pct30": 0.6557798706056169,
+   "change": 0.17633044004153442,
+   "score": 7.42,
+   "news": [
+    "Xencor Soars 31% on Kidney Cancer Trial Data Showing \u201cImpressive Antitumor Activity\u201d",
+    "Xencor stock surges on positive cancer drug trial data"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "PEBK",
+   "name": "Peoples Bancorp of North Carolina, Inc.",
+   "vol_x": 0.41,
+   "buy_pct30": 0.6988183354952485,
+   "change": 0.011499540139467967,
+   "score": 4.12,
+   "news": [
+    "Peoples Bancorp Stock Slips Post Q3 Earnings Despite NIM Expansion"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "NWBI",
+   "name": "Northwest Bancshares, Inc.",
+   "vol_x": 0.36,
+   "buy_pct30": 0.5962273886890982,
+   "change": 0.017441890552192252,
+   "score": 3.6,
+   "news": [
+    "Northwest Bancshares\u2019s (NASDAQ:NWBI) Q3 2026 sales beat estimates"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "FRBA",
+   "name": "First Bank",
+   "vol_x": 0.48,
+   "buy_pct30": 0.4631117475133199,
+   "change": 0.018566303335922463,
+   "score": 3.31,
+   "news": [
+    "First Bank (FRBA) Q3 Earnings Put Buyback And Credit Cleanup In Focus"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "CHCO",
+   "name": "City Holding Company",
+   "vol_x": 0.44,
+   "buy_pct30": 0.5922604458608903,
+   "change": 0.02070278540335213,
+   "score": 2.75,
+   "news": [
+    "City Holding (CHCO) Expected to Beat Earnings Estimates: Can the Stock Move Higher?"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "RRC",
+   "vol_x": 2.2
+  },
+  {
+   "ticker": "BWMX",
+   "vol_x": 1.0
+  },
+  {
+   "ticker": "MED",
+   "vol_x": 0.77
+  },
+  {
+   "ticker": "TSLA",
+   "vol_x": 0.66
+  },
+  {
+   "ticker": "FNWD",
+   "vol_x": 0.57
+  },
+  {
+   "ticker": "TSBK",
+   "vol_x": 0.55
+  },
+  {
+   "ticker": "NBN",
+   "vol_x": 0.54
+  },
+  {
+   "ticker": "HHH",
+   "vol_x": 0.5
+  },
+  {
+   "ticker": "EAF",
+   "vol_x": 0.49
+  },
+  {
+   "ticker": "DDS",
+   "vol_x": 0.42
+  },
+  {
+   "ticker": "SFST",
+   "vol_x": 0.41
+  },
+  {
+   "ticker": "GEF.B",
+   "vol_x": 0.4
+  },
+  {
+   "ticker": "WMK",
+   "vol_x": 0.4
+  },
+  {
+   "ticker": "RXO",
+   "vol_x": 0.37
+  },
+  {
+   "ticker": "ARLP",
+   "vol_x": 0.34
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "RNG",
+   "bought_at": "2026-10-26T16:40+00:00",
+   "sold_at": "2026-10-26T19:50+00:00",
+   "entry": 86.92683633422851,
+   "exit": 86.5199966430664,
+   "cost_gbp": 976.1422058127325,
+   "pl_gbp": -6.023771313850489,
+   "pl_pct": -0.006170997707076007,
+   "reason": "End of day: sold 10 minutes before the close."
+  }
+ ],
+ "total_gbp": -6.023771313850489,
+ "alerts": [
+  "12:40 Day trade: bought RNG: 15 RNG at $86.93 (about \u00a3976). Stop $82.58. Broke above its opening-range high ($84.21) at $86.84. In play: 0.9x normal volume, normally moves 6% a day. Stop $82.50.",
+  "15:50 Day trade: sold RNG (-\u00a36): End of day: sold 10 minutes before the close. Result -\u00a36 (-0.6%).",
+  "15:50 Day trade summary: 1 trade(s) today: RNG -\u00a36. Total -\u00a36."
+ ],
+ "log": [
+  "Added MFC to today's list at 10:16 New York: 0.5x normal volume in the last 30 min; news: Manulife and UpLink announce winners of the 'Shaping Canada's Longevity Advantag",
+  "Added CACI to today's list at 12:08 New York: 0.5x normal volume in the last 30 min; news: CACI Gains 6% on Jefferies Upgrade and $281 Million Navy Win as Booz Allen Jumps",
+  "Added AZO to today's list at 12:24 New York: 0.3x normal volume in the last 30 min; news: O'Reilly Automotive, AutoZone, Advance Auto Parts Poised for Net Positive Impact",
+  "Added RNG to today's list at 12:40 New York: 0.9x normal volume in the last 30 min; news: RingCentral (RNG) Stock Price Climbs As Q3 Earnings Recast The Profit Story",
+  "Added CON to today's list at 12:40 New York: 0.6x normal volume in the last 30 min; news: Concentra Expands Presence on Gulf Coast with First Pensacola Health Center",
+  "Day trade buy order: 15 RNG at about $86.84. Broke above its opening-range high ($84.21) at $86.84. In play: 0.9x normal volume, normally moves 6% a day. Stop $82.50.",
+  "Bought 15 RNG at 86.93 (cost \u00a3976).",
+  "Sold RNG (about -\u00a36). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 1 trade(s), total -\u00a36."
+ ]
+}

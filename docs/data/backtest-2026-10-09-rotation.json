@@ -1,0 +1,168 @@
+{
+ "date": "2026-10-09",
+ "generated": "2026-11-01T13:58+00:00",
+ "fx_gbpusd": 1.322908878326416,
+ "result": "done",
+ "require_news": true,
+ "strategy": "rotation",
+ "bars": "1m",
+ "added_during_day": [
+  "Added ERO to today's list at 11:20 New York: 0.4x normal volume in the last 30 min; news: Is Ero Copper (TSX:ERO) Fully Valued As Strong Production And Copper Demand Lift",
+  "Added EGY to today's list at 12:40 New York: 0.4x normal volume in the last 30 min; news: VAALCO Energy, Inc. Announces Positive Operational Updates",
+  "Added RSKD to today's list at 12:56 New York: 0.4x normal volume in the last 30 min; news: Riskified Launches Agent Identity Risk Intelligence: Know Who Is Behind AI Perso",
+  "Added MTD to today's list at 13:28 New York: 0.3x normal volume in the last 30 min; news: Mettler-Toledo (MTD): AI-Driven Pharma R&D Productivity Catalyzes Growth",
+  "Added ATEN to today's list at 13:28 New York: 0.4x normal volume in the last 30 min; news: A10 Networks\u2019 Adjusted Profit Is Twice Its GAAP Profit. What Should Investors Co",
+  "Added RBRK to today's list at 13:44 New York: 0.4x normal volume in the last 30 min; news: Rubrik Expands Project Hourglass as Selling Costs Fall Relative to Revenue",
+  "Added PVH to today's list at 14:00 New York: 0.4x normal volume in the last 30 min; news: PVH Conference: Calvin Klein, Tommy Hilfiger Target Repeatable Growth",
+  "Added OPLN to today's list at 14:16 New York: 0.3x normal volume in the last 30 min; news: OPENLANE (OPLN) Could Be 23% Undervalued Following Its November Results Date Upd",
+  "Added NIQ to today's list at 14:32 New York: 0.3x normal volume in the last 30 min; news: NIQ Reaches Key Milestone in Acquisition of The U Group, Strengthening Trusted I"
+ ],
+ "list": [
+  {
+   "ticker": "VEEA",
+   "name": "Veea Inc.",
+   "vol_x": 2.46,
+   "buy_pct30": 0.7811740495651771,
+   "change": 0.44832046119395597,
+   "score": 5.54,
+   "news": [
+    "Veea Secures Landmark Smart Community Agreement with La Estadia Community for Agentic Real-time Aware and Secure Community"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "GFUZ",
+   "name": "General Fusion Group Ltd.",
+   "vol_x": 1.23,
+   "buy_pct30": 0.25867060764671934,
+   "change": 0.022962090515407763,
+   "score": 2.49,
+   "news": [
+    "General Fusion Achieves World-First 1 keV Electron Temperature Milestone on its Path to Commercial Fusion Power",
+    "General Fusion, UKAEA Announce Magnetized Target Fusion Milestone"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "HUM",
+   "vol_x": 0.99
+  },
+  {
+   "ticker": "TEVA",
+   "vol_x": 0.69
+  },
+  {
+   "ticker": "CLOV",
+   "vol_x": 0.64
+  },
+  {
+   "ticker": "SPCX",
+   "vol_x": 0.53
+  },
+  {
+   "ticker": "IMMR",
+   "vol_x": 0.49
+  },
+  {
+   "ticker": "FSLY",
+   "vol_x": 0.44
+  },
+  {
+   "ticker": "SNOW",
+   "vol_x": 0.38
+  },
+  {
+   "ticker": "PLTR",
+   "vol_x": 0.34
+  },
+  {
+   "ticker": "RDDT",
+   "vol_x": 0.34
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "GFUZ",
+   "bought_at": "2026-10-09T14:16+00:00",
+   "sold_at": "2026-10-09T15:28+00:00",
+   "entry": 9.079069694519042,
+   "exit": 9.420000076293945,
+   "cost_gbp": 996.621781714663,
+   "pl_gbp": 35.87564380008075,
+   "pl_pct": 0.035997250369500855,
+   "reason": "No new high for 30 min, and ERO overtook it on buying volume (0.37x vs 0.07x normal in 30 min)."
+  },
+  {
+   "ticker": "ERO",
+   "bought_at": "2026-10-09T15:28+00:00",
+   "sold_at": "2026-10-09T16:40+00:00",
+   "entry": 37.807770458221434,
+   "exit": 37.63999938964844,
+   "cost_gbp": 1001.7748733105195,
+   "pl_gbp": -5.939105465110515,
+   "pl_pct": -0.005928582981407615,
+   "reason": "No new high for 72 min, and EGY overtook it on buying volume (0.35x vs 0.02x normal in 30 min)."
+  },
+  {
+   "ticker": "EGY",
+   "bought_at": "2026-10-09T16:40+00:00",
+   "sold_at": "2026-10-09T18:28+00:00",
+   "entry": 6.0710650572776785,
+   "exit": 6.085000038146973,
+   "cost_gbp": 1001.9415868136717,
+   "pl_gbp": 0.7956614193320775,
+   "pl_pct": 0.0007941195672518226,
+   "reason": "No new high for 54 min, and MTD overtook it on buying volume (0.43x vs 0.01x normal in 30 min)."
+  },
+  {
+   "ticker": "RSKD",
+   "bought_at": "2026-10-09T18:30+00:00",
+   "sold_at": "2026-10-09T19:50+00:00",
+   "entry": 8.413404732704162,
+   "exit": 8.550000190734863,
+   "cost_gbp": 999.9826303400882,
+   "pl_gbp": 14.71312984223971,
+   "pl_pct": 0.01471338540874041,
+   "reason": "End of day: sold 10 minutes before the close."
+  }
+ ],
+ "total_gbp": 45.445329596542024,
+ "alerts": [
+  "10:16 Day trade: bought GFUZ: 145 GFUZ at $9.08 (about \u00a3997). Stop $8.63. Highest first-30-minute volume on today's list (1.2x a normal day).",
+  "11:28 Day trade: sold GFUZ (+\u00a336): No new high for 30 min, and ERO overtook it on buying volume (0.37x vs 0.07x normal in 30 min). Result +\u00a336 (+3.6%).",
+  "11:28 Day trade: bought ERO: 35 ERO at $37.81 (about \u00a31,002). Stop $35.92. Strongest buying on the list: 0.37x normal volume bought in the last 30 min, and rising.",
+  "12:40 Day trade: sold ERO (-\u00a36): No new high for 72 min, and EGY overtook it on buying volume (0.35x vs 0.02x normal in 30 min). Result -\u00a36 (-0.6%).",
+  "12:40 Day trade: bought EGY: 218 EGY at $6.07 (about \u00a31,002). Stop $5.77. Strongest buying on the list: 0.35x normal volume bought in the last 30 min, and rising.",
+  "14:28 Day trade: sold EGY (+\u00a31): No new high for 54 min, and MTD overtook it on buying volume (0.43x vs 0.01x normal in 30 min). Result +\u00a31 (+0.1%).",
+  "14:30 Day trade: bought RSKD: 157 RSKD at $8.41 (about \u00a31,000). Stop $7.99. Strongest buying on the list: 0.05x normal volume bought in the last 30 min, and rising.",
+  "15:50 Day trade: sold RSKD (+\u00a315): End of day: sold 10 minutes before the close. Result +\u00a315 (+1.5%).",
+  "15:50 Day trade summary: 4 trade(s) today: GFUZ +\u00a336, ERO -\u00a36, EGY +\u00a31, RSKD +\u00a315. Total +\u00a345."
+ ],
+ "log": [
+  "Day trade buy order: 145 GFUZ at about $9.07. Highest first-30-minute volume on today's list (1.2x a normal day).",
+  "Bought 145 GFUZ at 9.08 (cost \u00a3997).",
+  "Added ERO to today's list at 11:20 New York: 0.4x normal volume in the last 30 min; news: Is Ero Copper (TSX:ERO) Fully Valued As Strong Production And Copper Demand Lift",
+  "Sold GFUZ (about +\u00a336). No new high for 30 min, and ERO overtook it on buying volume (0.37x vs 0.07x normal in 30 min).",
+  "Day trade buy order: 35 ERO at about $37.77. Strongest buying on the list: 0.37x normal volume bought in the last 30 min, and rising.",
+  "Bought 35 ERO at 37.81 (cost \u00a31,002).",
+  "Added EGY to today's list at 12:40 New York: 0.4x normal volume in the last 30 min; news: VAALCO Energy, Inc. Announces Positive Operational Updates",
+  "Sold ERO (about -\u00a36). No new high for 72 min, and EGY overtook it on buying volume (0.35x vs 0.02x normal in 30 min).",
+  "Day trade buy order: 218 EGY at about $6.07. Strongest buying on the list: 0.35x normal volume bought in the last 30 min, and rising.",
+  "Bought 218 EGY at 6.07 (cost \u00a31,002).",
+  "Added RSKD to today's list at 12:56 New York: 0.4x normal volume in the last 30 min; news: Riskified Launches Agent Identity Risk Intelligence: Know Who Is Behind AI Perso",
+  "Added MTD to today's list at 13:28 New York: 0.3x normal volume in the last 30 min; news: Mettler-Toledo (MTD): AI-Driven Pharma R&D Productivity Catalyzes Growth",
+  "Added ATEN to today's list at 13:28 New York: 0.4x normal volume in the last 30 min; news: A10 Networks\u2019 Adjusted Profit Is Twice Its GAAP Profit. What Should Investors Co",
+  "Added RBRK to today's list at 13:44 New York: 0.4x normal volume in the last 30 min; news: Rubrik Expands Project Hourglass as Selling Costs Fall Relative to Revenue",
+  "Added PVH to today's list at 14:00 New York: 0.4x normal volume in the last 30 min; news: PVH Conference: Calvin Klein, Tommy Hilfiger Target Repeatable Growth",
+  "Added OPLN to today's list at 14:16 New York: 0.3x normal volume in the last 30 min; news: OPENLANE (OPLN) Could Be 23% Undervalued Following Its November Results Date Upd",
+  "Sold EGY (about +\u00a31). No new high for 54 min, and MTD overtook it on buying volume (0.43x vs 0.01x normal in 30 min).",
+  "MTD: one share costs more than \u00a31,000, skipped.",
+  "Day trade buy order: 157 RSKD at about $8.40. Strongest buying on the list: 0.05x normal volume bought in the last 30 min, and rising.",
+  "Bought 157 RSKD at 8.41 (cost \u00a31,000).",
+  "Added NIQ to today's list at 14:32 New York: 0.3x normal volume in the last 30 min; news: NIQ Reaches Key Milestone in Acquisition of The U Group, Strengthening Trusted I",
+  "Sold RSKD (about +\u00a315). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 4 trade(s), total +\u00a345."
+ ]
+}

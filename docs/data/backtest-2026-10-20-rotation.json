@@ -1,0 +1,178 @@
+{
+ "date": "2026-10-20",
+ "generated": "2026-11-01T14:13+00:00",
+ "fx_gbpusd": 1.330849051475525,
+ "result": "done",
+ "require_news": true,
+ "strategy": "rotation",
+ "bars": "1m",
+ "added_during_day": [
+  "Added CFFI to today's list at 10:32 New York: 0.4x normal volume in the last 30 min; news: C&F Financial's 2026 Outlook: Aggressive Market Expansion Drives New Retail Grow",
+  "Added EPAM to today's list at 11:04 New York: 0.3x normal volume in the last 30 min; news: Is EPAM Systems (EPAM) Undervalued Following Its Global Delivery Shift And Earni",
+  "Added WCCB to today's list at 11:04 New York: 0.6x normal volume in the last 30 min; news: West Coast Community Bank Continues Expansion with New Full-Service Branch in Sa",
+  "Added CAAP to today's list at 11:36 New York: 0.6x normal volume in the last 30 min; news: Corporacion America Airports stock rises on September passenger growth",
+  "Added PAYC to today's list at 12:24 New York: 0.6x normal volume in the last 30 min; news: Paycom Software (PAYC) Surge Driven by Accelerating Growth and Margin Expansion",
+  "Added MANE to today's list at 12:24 New York: 0.5x normal volume in the last 30 min; news: Veradermics\u2019 stock up on male hair loss trial success",
+  "Added NWFL to today's list at 12:24 New York: 0.3x normal volume in the last 30 min; news: Norwood Financial Corp. (NWFL) Reports Next Week: Wall Street Expects Earnings G",
+  "Added DOCS to today's list at 12:40 New York: 0.6x normal volume in the last 30 min; news: Doximity and Wolters Kluwer Sign Partnership to Bring UpToDate to Doximity Ask",
+  "Added LION to today's list at 12:40 New York: 0.5x normal volume in the last 30 min; news: Lionsgate shares spike as Legendary Entertainment revives takeover talks",
+  "Added WTRG to today's list at 12:56 New York: 0.4x normal volume in the last 30 min; news: WTRG Unit Expands Water Operations With Lake Tamarack Acquisition",
+  "Added PAGS to today's list at 12:56 New York: 0.4x normal volume in the last 30 min; news: PagSeguro Digital Ltd. (PAGS) Surpasses Market Returns: Some Facts Worth Knowing",
+  "Added WWW to today's list at 13:28 New York: 0.5x normal volume in the last 30 min; news: Wolverine's Strong Portfolio Anchors Its Improving Growth Prospects",
+  "Added TSN to today's list at 13:44 New York: 0.4x normal volume in the last 30 min; news: Is Tyson Foods' Chicken Business Driving Long-Term Profit Growth?",
+  "Added GORO to today's list at 13:44 New York: 0.4x normal volume in the last 30 min; news: Goldgroup Completes Strategic Investment in Luca Mining",
+  "Added ZETA to today's list at 14:16 New York: 0.4x normal volume in the last 30 min; news: Goldman upgrades Zeta to Buy, cuts Klaviyo on visibility gap",
+  "Added SBH to today's list at 14:32 New York: 0.3x normal volume in the last 30 min; news: Can Sally Beauty's Digital Growth Become a Larger Share of Sales?",
+  "Added BIPC to today's list at 14:48 New York: 0.3x normal volume in the last 30 min; news: Brookfield Infrastructure Partners L.P. Unitholders Approve Proposed Corporate S"
+ ],
+ "list": [
+  {
+   "ticker": "MYGN",
+   "name": "Myriad Genetics, Inc.",
+   "vol_x": 6.61,
+   "buy_pct30": 0.4849153241909872,
+   "change": 0.33135391170697504,
+   "score": 13.66,
+   "news": [
+    "Myriad Genetics and Labcorp Announce Definitive Agreement for Myriad to Sell Prenatal Health Testing Business to Labcorp"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "BRZE",
+   "vol_x": 10.83
+  },
+  {
+   "ticker": "HAS",
+   "vol_x": 1.29
+  },
+  {
+   "ticker": "QNBC",
+   "vol_x": 1.12
+  },
+  {
+   "ticker": "MMM",
+   "vol_x": 0.85
+  },
+  {
+   "ticker": "TMP",
+   "vol_x": 0.85
+  },
+  {
+   "ticker": "HLT",
+   "vol_x": 0.56
+  },
+  {
+   "ticker": "EDHL",
+   "vol_x": 0.56
+  },
+  {
+   "ticker": "NPK",
+   "vol_x": 0.51
+  },
+  {
+   "ticker": "FBIZ",
+   "vol_x": 0.49
+  },
+  {
+   "ticker": "COSO",
+   "vol_x": 0.49
+  },
+  {
+   "ticker": "SFST",
+   "vol_x": 0.48
+  },
+  {
+   "ticker": "AGBK",
+   "vol_x": 0.47
+  },
+  {
+   "ticker": "MCY",
+   "vol_x": 0.39
+  },
+  {
+   "ticker": "BRBS",
+   "vol_x": 0.36
+  },
+  {
+   "ticker": "PDS",
+   "vol_x": 0.34
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "CFFI",
+   "bought_at": "2026-10-20T14:32+00:00",
+   "sold_at": "2026-10-20T15:36+00:00",
+   "entry": 104.84473786163329,
+   "exit": 104.45999908447266,
+   "cost_gbp": 946.7820999114125,
+   "pl_gbp": -4.887158765470758,
+   "pl_pct": -0.005161862234117053,
+   "reason": "No new high for 48 min, and CAAP overtook it on buying volume (0.57x vs 0.02x normal in 30 min)."
+  },
+  {
+   "ticker": "CAAP",
+   "bought_at": "2026-10-20T15:36+00:00",
+   "sold_at": "2026-10-20T17:12+00:00",
+   "entry": 25.375350381851195,
+   "exit": 25.520000457763672,
+   "cost_gbp": 992.9732419472291,
+   "pl_gbp": 4.1646545951391545,
+   "pl_pct": 0.004194125701687822,
+   "reason": "No new high for 34 min, and LION overtook it on buying volume (0.80x vs 0.02x normal in 30 min)."
+  },
+  {
+   "ticker": "LION",
+   "bought_at": "2026-10-20T17:12+00:00",
+   "sold_at": "2026-10-20T19:38+00:00",
+   "entry": 12.17215984725952,
+   "exit": 12.210000038146973,
+   "cost_gbp": 998.4269591003659,
+   "pl_gbp": 1.6038127459601128,
+   "pl_pct": 0.0016063395838241694,
+   "reason": "No new high for 32 min, and CAAP overtook it on buying volume (1.23x vs 0.21x normal in 30 min)."
+  }
+ ],
+ "total_gbp": 0.8813085756285091,
+ "alerts": [
+  "10:32 Day trade: bought CFFI: 12 CFFI at $104.84 (about \u00a3947). Stop $99.60. Highest first-30-minute volume on today's list (0.4x a normal day).",
+  "11:36 Day trade: sold CFFI (-\u00a35): No new high for 48 min, and CAAP overtook it on buying volume (0.57x vs 0.02x normal in 30 min). Result -\u00a35 (-0.5%).",
+  "11:36 Day trade: bought CAAP: 52 CAAP at $25.38 (about \u00a3993). Stop $24.11. Strongest buying on the list: 0.57x normal volume bought in the last 30 min, and rising.",
+  "13:12 Day trade: sold CAAP (+\u00a34): No new high for 34 min, and LION overtook it on buying volume (0.80x vs 0.02x normal in 30 min). Result +\u00a34 (+0.4%).",
+  "13:12 Day trade: bought LION: 109 LION at $12.17 (about \u00a3998). Stop $11.56. Strongest buying on the list: 0.80x normal volume bought in the last 30 min, and rising.",
+  "15:38 Day trade: sold LION (+\u00a32): No new high for 32 min, and CAAP overtook it on buying volume (1.23x vs 0.21x normal in 30 min). Result +\u00a32 (+0.2%).",
+  "15:50 Day trade summary: 3 trade(s) today: CFFI -\u00a35, CAAP +\u00a34, LION +\u00a32. Total +\u00a31."
+ ],
+ "log": [
+  "Added CFFI to today's list at 10:32 New York: 0.4x normal volume in the last 30 min; news: C&F Financial's 2026 Outlook: Aggressive Market Expansion Drives New Retail Grow",
+  "Day trade buy order: 12 CFFI at about $104.74. Highest first-30-minute volume on today's list (0.4x a normal day).",
+  "Bought 12 CFFI at 104.84 (cost \u00a3947).",
+  "Added EPAM to today's list at 11:04 New York: 0.3x normal volume in the last 30 min; news: Is EPAM Systems (EPAM) Undervalued Following Its Global Delivery Shift And Earni",
+  "Added WCCB to today's list at 11:04 New York: 0.6x normal volume in the last 30 min; news: West Coast Community Bank Continues Expansion with New Full-Service Branch in Sa",
+  "Added CAAP to today's list at 11:36 New York: 0.6x normal volume in the last 30 min; news: Corporacion America Airports stock rises on September passenger growth",
+  "Sold CFFI (about -\u00a35). No new high for 48 min, and CAAP overtook it on buying volume (0.57x vs 0.02x normal in 30 min).",
+  "Day trade buy order: 52 CAAP at about $25.35. Strongest buying on the list: 0.57x normal volume bought in the last 30 min, and rising.",
+  "Bought 52 CAAP at 25.38 (cost \u00a3993).",
+  "Added PAYC to today's list at 12:24 New York: 0.6x normal volume in the last 30 min; news: Paycom Software (PAYC) Surge Driven by Accelerating Growth and Margin Expansion",
+  "Added MANE to today's list at 12:24 New York: 0.5x normal volume in the last 30 min; news: Veradermics\u2019 stock up on male hair loss trial success",
+  "Added NWFL to today's list at 12:24 New York: 0.3x normal volume in the last 30 min; news: Norwood Financial Corp. (NWFL) Reports Next Week: Wall Street Expects Earnings G",
+  "Added DOCS to today's list at 12:40 New York: 0.6x normal volume in the last 30 min; news: Doximity and Wolters Kluwer Sign Partnership to Bring UpToDate to Doximity Ask",
+  "Added LION to today's list at 12:40 New York: 0.5x normal volume in the last 30 min; news: Lionsgate shares spike as Legendary Entertainment revives takeover talks",
+  "Added WTRG to today's list at 12:56 New York: 0.4x normal volume in the last 30 min; news: WTRG Unit Expands Water Operations With Lake Tamarack Acquisition",
+  "Added PAGS to today's list at 12:56 New York: 0.4x normal volume in the last 30 min; news: PagSeguro Digital Ltd. (PAGS) Surpasses Market Returns: Some Facts Worth Knowing",
+  "Sold CAAP (about +\u00a34). No new high for 34 min, and LION overtook it on buying volume (0.80x vs 0.02x normal in 30 min).",
+  "Day trade buy order: 109 LION at about $12.16. Strongest buying on the list: 0.80x normal volume bought in the last 30 min, and rising.",
+  "Bought 109 LION at 12.17 (cost \u00a3998).",
+  "Added WWW to today's list at 13:28 New York: 0.5x normal volume in the last 30 min; news: Wolverine's Strong Portfolio Anchors Its Improving Growth Prospects",
+  "Added TSN to today's list at 13:44 New York: 0.4x normal volume in the last 30 min; news: Is Tyson Foods' Chicken Business Driving Long-Term Profit Growth?",
+  "Added GORO to today's list at 13:44 New York: 0.4x normal volume in the last 30 min; news: Goldgroup Completes Strategic Investment in Luca Mining",
+  "Added ZETA to today's list at 14:16 New York: 0.4x normal volume in the last 30 min; news: Goldman upgrades Zeta to Buy, cuts Klaviyo on visibility gap",
+  "Added SBH to today's list at 14:32 New York: 0.3x normal volume in the last 30 min; news: Can Sally Beauty's Digital Growth Become a Larger Share of Sales?",
+  "Added BIPC to today's list at 14:48 New York: 0.3x normal volume in the last 30 min; news: Brookfield Infrastructure Partners L.P. Unitholders Approve Proposed Corporate S",
+  "Sold LION (about +\u00a32). No new high for 32 min, and CAAP overtook it on buying volume (1.23x vs 0.21x normal in 30 min).",
+  "Day trading finished: 3 trade(s), total +\u00a31."
+ ]
+}
