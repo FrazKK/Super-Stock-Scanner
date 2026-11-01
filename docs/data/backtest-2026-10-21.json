@@ -1,0 +1,206 @@
+{
+ "date": "2026-10-21",
+ "generated": "2026-11-01T10:19+00:00",
+ "fx_gbpusd": 1.337327480316162,
+ "result": "done",
+ "require_news": true,
+ "added_during_day": [
+  "Added GDRX to today's list at 10:48 New York: 0.4x normal volume in the last 30 min; news: GoodRx Holdings And 2 Penny Stocks With Strong Balance Sheets",
+  "Added NABL to today's list at 14:16 New York: 0.5x normal volume in the last 30 min; news: As AI Accelerates Cyberattacks, N-able and SentinelOne Expand Their Strategic Pa"
+ ],
+ "list": [
+  {
+   "ticker": "NTWK",
+   "name": "NETSOL Technologies Inc.",
+   "vol_x": 0.39,
+   "buy_pct30": 0.9098634962571555,
+   "change": 0.03287464126023831,
+   "score": 2.92,
+   "news": [
+    "Mercedes-Benz USA approves NETSOL as a digital retail provider for its dealerships"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "SWBI",
+   "name": "Smith & Wesson Brands, Inc.",
+   "vol_x": 0.45,
+   "buy_pct30": 0.5790743064833287,
+   "change": 0.00947228321056337,
+   "score": 1.72,
+   "news": [
+    "Smith & Wesson Acquires Savage Arms"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "SPHL",
+   "vol_x": 65.9
+  },
+  {
+   "ticker": "CPIX",
+   "vol_x": 0.64
+  },
+  {
+   "ticker": "KIDS",
+   "vol_x": 0.59
+  },
+  {
+   "ticker": "MCB",
+   "vol_x": 0.58
+  },
+  {
+   "ticker": "CZFS",
+   "vol_x": 0.53
+  },
+  {
+   "ticker": "BRBS",
+   "vol_x": 0.39
+  },
+  {
+   "ticker": "LAW",
+   "vol_x": 0.37
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "SWBI",
+   "bought_at": "2026-10-21T14:16+00:00",
+   "sold_at": "2026-10-21T15:12+00:00",
+   "entry": 14.9399995803833,
+   "exit": 15.079999923706055,
+   "cost_gbp": 994.2665369739985,
+   "pl_gbp": 9.317112479270577,
+   "pl_pct": 0.009370839843033189,
+   "reason": "No new high for 16 min, and GDRX overtook it on buying volume (0.12x vs 0.03x normal in 30 min)."
+  },
+  {
+   "ticker": "GDRX",
+   "bought_at": "2026-10-21T15:12+00:00",
+   "sold_at": "2026-10-21T15:46+00:00",
+   "entry": 3.555000066757202,
+   "exit": 3.569999933242798,
+   "cost_gbp": 999.5158588864853,
+   "pl_gbp": 4.217328875385647,
+   "pl_pct": 0.004219371646672999,
+   "reason": "No new high for 16 min, and NTWK overtook it on buying volume (0.03x vs 0.01x normal in 30 min)."
+  },
+  {
+   "ticker": "NTWK",
+   "bought_at": "2026-10-21T15:46+00:00",
+   "sold_at": "2026-10-21T16:02+00:00",
+   "entry": 6.900000095367432,
+   "exit": 6.875,
+   "cost_gbp": 995.7920090680277,
+   "pl_gbp": -3.607955775180585,
+   "pl_pct": -0.0036232021770864673,
+   "reason": "No new high for 16 min, and SWBI overtook it on buying volume (0.08x vs 0.04x normal in 30 min)."
+  },
+  {
+   "ticker": "SWBI",
+   "bought_at": "2026-10-21T16:02+00:00",
+   "sold_at": "2026-10-21T17:26+00:00",
+   "entry": 14.954999923706055,
+   "exit": 14.859999656677246,
+   "cost_gbp": 995.2648194256607,
+   "pl_gbp": -6.322328591920609,
+   "pl_pct": -0.006352408392742192,
+   "reason": "No new high for 84 min, and NTWK overtook it on buying volume (0.03x vs 0.02x normal in 30 min)."
+  },
+  {
+   "ticker": "NTWK",
+   "bought_at": "2026-10-21T17:26+00:00",
+   "sold_at": "2026-10-21T17:44+00:00",
+   "entry": 6.909999847412109,
+   "exit": 6.875,
+   "cost_gbp": 997.2351500884803,
+   "pl_gbp": -5.051096795633157,
+   "pl_pct": -0.005065101039794872,
+   "reason": "No new high for 18 min, and GDRX overtook it on buying volume (0.03x vs 0.03x normal in 30 min)."
+  },
+  {
+   "ticker": "GDRX",
+   "bought_at": "2026-10-21T17:44+00:00",
+   "sold_at": "2026-10-21T18:16+00:00",
+   "entry": 3.6050000190734863,
+   "exit": 3.6050000190734863,
+   "cost_gbp": 997.399684587241,
+   "pl_gbp": 0.0,
+   "pl_pct": 0.0,
+   "reason": "No new high for 32 min, and NABL overtook it on buying volume (0.50x vs 0.05x normal in 30 min)."
+  },
+  {
+   "ticker": "NABL",
+   "bought_at": "2026-10-21T18:16+00:00",
+   "sold_at": "2026-10-21T19:14+00:00",
+   "entry": 4.840099811553955,
+   "exit": 4.815000057220459,
+   "cost_gbp": 998.9083209993372,
+   "pl_gbp": -5.180131492106398,
+   "pl_pct": -0.005185792713113094,
+   "reason": "No new high for 50 min, and SWBI overtook it on buying volume (0.04x vs 0.03x normal in 30 min)."
+  },
+  {
+   "ticker": "SWBI",
+   "bought_at": "2026-10-21T19:14+00:00",
+   "sold_at": "2026-10-21T19:50+00:00",
+   "entry": 14.869999885559082,
+   "exit": 15.140000343322754,
+   "cost_gbp": 989.6080124681815,
+   "pl_gbp": 17.96870332409958,
+   "pl_pct": 0.01815739474388837,
+   "reason": "End of day: sold 10 minutes before the close."
+  }
+ ],
+ "total_gbp": 11.341632023915054,
+ "alerts": [
+  "10:16 Day trade: bought SWBI: 89 SWBI at $14.94 (about \u00a3994). Stop $14.19. Highest first-30-minute volume on today's list (0.5x a normal day).",
+  "11:12 Day trade: sold SWBI (+\u00a39): No new high for 16 min, and GDRX overtook it on buying volume (0.12x vs 0.03x normal in 30 min). Result +\u00a39 (+0.9%).",
+  "11:12 Day trade: bought GDRX: 376 GDRX at $3.56 (about \u00a31,000). Stop $3.38. Strongest buying on the list: 0.12x normal volume bought in the last 30 min, and rising.",
+  "11:46 Day trade: sold GDRX (+\u00a34): No new high for 16 min, and NTWK overtook it on buying volume (0.03x vs 0.01x normal in 30 min). Result +\u00a34 (+0.4%).",
+  "11:46 Day trade: bought NTWK: 193 NTWK at $6.90 (about \u00a3996). Stop $6.56. Strongest buying on the list: 0.03x normal volume bought in the last 30 min, and rising.",
+  "12:02 Day trade: sold NTWK (-\u00a34): No new high for 16 min, and SWBI overtook it on buying volume (0.08x vs 0.04x normal in 30 min). Result -\u00a34 (-0.4%).",
+  "12:02 Day trade: bought SWBI: 89 SWBI at $14.95 (about \u00a3995). Stop $14.21. Strongest buying on the list: 0.08x normal volume bought in the last 30 min, and rising.",
+  "13:26 Day trade: sold SWBI (-\u00a36): No new high for 84 min, and NTWK overtook it on buying volume (0.03x vs 0.02x normal in 30 min). Result -\u00a36 (-0.6%).",
+  "13:26 Day trade: bought NTWK: 193 NTWK at $6.91 (about \u00a3997). Stop $6.56. Strongest buying on the list: 0.03x normal volume bought in the last 30 min, and rising.",
+  "13:44 Day trade: sold NTWK (-\u00a35): No new high for 18 min, and GDRX overtook it on buying volume (0.03x vs 0.03x normal in 30 min). Result -\u00a35 (-0.5%).",
+  "13:44 Day trade: bought GDRX: 370 GDRX at $3.61 (about \u00a3997). Stop $3.42. Strongest buying on the list: 0.03x normal volume bought in the last 30 min, and rising.",
+  "14:16 Day trade: sold GDRX (+\u00a30): No new high for 32 min, and NABL overtook it on buying volume (0.50x vs 0.05x normal in 30 min). Result +\u00a30 (+0.0%).",
+  "14:16 Day trade: bought NABL: 276 NABL at $4.84 (about \u00a3999). Stop $4.60. Strongest buying on the list: 0.50x normal volume bought in the last 30 min, and rising.",
+  "15:14 Day trade: sold NABL (-\u00a35): No new high for 50 min, and SWBI overtook it on buying volume (0.04x vs 0.03x normal in 30 min). Result -\u00a35 (-0.5%).",
+  "15:14 Day trade: bought SWBI: 89 SWBI at $14.87 (about \u00a3990). Stop $14.13. Strongest buying on the list: 0.04x normal volume bought in the last 30 min, and rising.",
+  "15:50 Day trade: sold SWBI (+\u00a318): End of day: sold 10 minutes before the close. Result +\u00a318 (+1.8%).",
+  "15:50 Day trade summary: 8 trade(s) today: SWBI +\u00a39, GDRX +\u00a34, NTWK -\u00a34, SWBI -\u00a36, NTWK -\u00a35, GDRX +\u00a30, NABL -\u00a35, SWBI +\u00a318. Total +\u00a311."
+ ],
+ "log": [
+  "Day trade buy order: 89 SWBI at about $14.94. Highest first-30-minute volume on today's list (0.5x a normal day).",
+  "Bought 89 SWBI at 14.94 (cost \u00a3994).",
+  "Added GDRX to today's list at 10:48 New York: 0.4x normal volume in the last 30 min; news: GoodRx Holdings And 2 Penny Stocks With Strong Balance Sheets",
+  "Sold SWBI (about +\u00a39). No new high for 16 min, and GDRX overtook it on buying volume (0.12x vs 0.03x normal in 30 min).",
+  "Day trade buy order: 376 GDRX at about $3.56. Strongest buying on the list: 0.12x normal volume bought in the last 30 min, and rising.",
+  "Bought 376 GDRX at 3.56 (cost \u00a31,000).",
+  "Sold GDRX (about +\u00a34). No new high for 16 min, and NTWK overtook it on buying volume (0.03x vs 0.01x normal in 30 min).",
+  "Day trade buy order: 193 NTWK at about $6.90. Strongest buying on the list: 0.03x normal volume bought in the last 30 min, and rising.",
+  "Bought 193 NTWK at 6.90 (cost \u00a3996).",
+  "Sold NTWK (about -\u00a34). No new high for 16 min, and SWBI overtook it on buying volume (0.08x vs 0.04x normal in 30 min).",
+  "Day trade buy order: 89 SWBI at about $14.95. Strongest buying on the list: 0.08x normal volume bought in the last 30 min, and rising.",
+  "Bought 89 SWBI at 14.95 (cost \u00a3995).",
+  "Sold SWBI (about -\u00a36). No new high for 84 min, and NTWK overtook it on buying volume (0.03x vs 0.02x normal in 30 min).",
+  "Day trade buy order: 193 NTWK at about $6.91. Strongest buying on the list: 0.03x normal volume bought in the last 30 min, and rising.",
+  "Bought 193 NTWK at 6.91 (cost \u00a3997).",
+  "Sold NTWK (about -\u00a35). No new high for 18 min, and GDRX overtook it on buying volume (0.03x vs 0.03x normal in 30 min).",
+  "Day trade buy order: 370 GDRX at about $3.61. Strongest buying on the list: 0.03x normal volume bought in the last 30 min, and rising.",
+  "Bought 370 GDRX at 3.61 (cost \u00a3997).",
+  "Added NABL to today's list at 14:16 New York: 0.5x normal volume in the last 30 min; news: As AI Accelerates Cyberattacks, N-able and SentinelOne Expand Their Strategic Pa",
+  "Sold GDRX (about +\u00a30). No new high for 32 min, and NABL overtook it on buying volume (0.50x vs 0.05x normal in 30 min).",
+  "Day trade buy order: 276 NABL at about $4.84. Strongest buying on the list: 0.50x normal volume bought in the last 30 min, and rising.",
+  "Bought 276 NABL at 4.84 (cost \u00a3999).",
+  "Sold NABL (about -\u00a35). No new high for 50 min, and SWBI overtook it on buying volume (0.04x vs 0.03x normal in 30 min).",
+  "Day trade buy order: 89 SWBI at about $14.87. Strongest buying on the list: 0.04x normal volume bought in the last 30 min, and rising.",
+  "Bought 89 SWBI at 14.87 (cost \u00a3990).",
+  "Sold SWBI (about +\u00a318). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 8 trade(s), total +\u00a311."
+ ]
+}
