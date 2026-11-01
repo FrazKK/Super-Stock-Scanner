@@ -1,0 +1,300 @@
+{
+ "date": "2026-10-21",
+ "generated": "2026-11-01T10:40+00:00",
+ "fx_gbpusd": 1.337327480316162,
+ "result": "done",
+ "require_news": false,
+ "added_during_day": [
+  "Added GDRX to today's list at 10:48 New York: 0.4x normal volume in the last 30 min; news: GoodRx Holdings And 2 Penny Stocks With Strong Balance Sheets",
+  "Added TBCH to today's list at 11:04 New York: 0.8x normal volume in the last 30 min; no news found",
+  "Added ENGS to today's list at 11:04 New York: 0.6x normal volume in the last 30 min; no news found",
+  "Added OABI to today's list at 11:20 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Added ASPN to today's list at 12:08 New York: 1.0x normal volume in the last 30 min; no news found",
+  "Added FOSL to today's list at 12:08 New York: 1.3x normal volume in the last 30 min; no news found",
+  "Added NPK to today's list at 13:12 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Added DHX to today's list at 13:28 New York: 0.8x normal volume in the last 30 min; no news found",
+  "Added MTW to today's list at 13:44 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Added PHR to today's list at 13:44 New York: 0.7x normal volume in the last 30 min; no news found",
+  "Added HLF to today's list at 14:00 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Added HIPO to today's list at 14:00 New York: 0.6x normal volume in the last 30 min; no news found",
+  "Added INTT to today's list at 14:00 New York: 0.7x normal volume in the last 30 min; no news found",
+  "Added NABL to today's list at 14:16 New York: 0.5x normal volume in the last 30 min; news: As AI Accelerates Cyberattacks, N-able and SentinelOne Expand Their Strategic Pa",
+  "Added HTB to today's list at 14:48 New York: 1.1x normal volume in the last 30 min; news: Why HomeTrust Bancshares (HTB) is Poised to Beat Earnings Estimates Again",
+  "Added ASTL to today's list at 14:48 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Added EXFY to today's list at 15:20 New York: 0.6x normal volume in the last 30 min; no news found"
+ ],
+ "list": [
+  {
+   "ticker": "NTWK",
+   "name": "NETSOL Technologies Inc.",
+   "vol_x": 0.39,
+   "buy_pct30": 0.9098634962571555,
+   "change": 0.03287464126023831,
+   "score": 2.92,
+   "news": [
+    "Mercedes-Benz USA approves NETSOL as a digital retail provider for its dealerships"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "SWBI",
+   "name": "Smith & Wesson Brands, Inc.",
+   "vol_x": 0.45,
+   "buy_pct30": 0.5796119493498649,
+   "change": 0.00947228321056337,
+   "score": 1.72,
+   "news": [
+    "Smith & Wesson Acquires Savage Arms"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "SPHL",
+   "vol_x": 65.9
+  },
+  {
+   "ticker": "CPIX",
+   "vol_x": 0.62
+  },
+  {
+   "ticker": "KIDS",
+   "vol_x": 0.59
+  },
+  {
+   "ticker": "MCB",
+   "vol_x": 0.58
+  },
+  {
+   "ticker": "CZFS",
+   "vol_x": 0.53
+  },
+  {
+   "ticker": "BRBS",
+   "vol_x": 0.39
+  },
+  {
+   "ticker": "LAW",
+   "vol_x": 0.37
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "SPHL",
+   "bought_at": "2026-10-21T14:16+00:00",
+   "sold_at": "2026-10-21T14:48+00:00",
+   "entry": 3.839900016784668,
+   "exit": 3.65,
+   "cost_gbp": 999.2206288359145,
+   "pl_gbp": -49.41587368371506,
+   "pl_pct": -0.04945441703028513,
+   "reason": "Stop-loss order filled"
+  },
+  {
+   "ticker": "GDRX",
+   "bought_at": "2026-10-21T14:48+00:00",
+   "sold_at": "2026-10-21T15:08+00:00",
+   "entry": 3.5399999618530273,
+   "exit": 3.5450000762939453,
+   "cost_gbp": 997.9455333581261,
+   "pl_gbp": 1.4095598662045177,
+   "pl_pct": 0.001412461721694663,
+   "reason": "No new high for 16 min, and TBCH overtook it on buying volume (0.51x vs 0.13x normal in 30 min)."
+  },
+  {
+   "ticker": "TBCH",
+   "bought_at": "2026-10-21T15:08+00:00",
+   "sold_at": "2026-10-21T15:24+00:00",
+   "entry": 16.020000457763672,
+   "exit": 16.0,
+   "cost_gbp": 994.2665933104398,
+   "pl_gbp": -1.2413100148007743,
+   "pl_pct": -0.0012484679895236107,
+   "reason": "No new high for 16 min, and OABI overtook it on buying volume (0.22x vs 0.20x normal in 30 min)."
+  },
+  {
+   "ticker": "OABI",
+   "bought_at": "2026-10-21T15:24+00:00",
+   "sold_at": "2026-10-21T15:40+00:00",
+   "entry": 5.074999809265137,
+   "exit": 5.025000095367432,
+   "cost_gbp": 998.053931802242,
+   "pl_gbp": -9.832987767504505,
+   "pl_pct": -0.009852160744208008,
+   "reason": "No new high for 16 min, and BRBS overtook it on buying volume (0.26x vs 0.04x normal in 30 min)."
+  },
+  {
+   "ticker": "BRBS",
+   "bought_at": "2026-10-21T15:40+00:00",
+   "sold_at": "2026-10-21T15:56+00:00",
+   "entry": 4.005000114440918,
+   "exit": 3.994999885559082,
+   "cost_gbp": 997.2613722059532,
+   "pl_gbp": -2.490097800775061,
+   "pl_pct": -0.0024969359790472353,
+   "reason": "No new high for 16 min, and SPHL overtook it on buying volume (1.23x vs 0.26x normal in 30 min)."
+  },
+  {
+   "ticker": "SPHL",
+   "bought_at": "2026-10-21T15:56+00:00",
+   "sold_at": "2026-10-21T16:32+00:00",
+   "entry": 3.7049999237060547,
+   "exit": 3.52,
+   "cost_gbp": 997.3622707721908,
+   "pl_gbp": -49.8007956274364,
+   "pl_pct": -0.04993250405279416,
+   "reason": "Stop-loss order filled"
+  },
+  {
+   "ticker": "KIDS",
+   "bought_at": "2026-10-21T16:32+00:00",
+   "sold_at": "2026-10-21T17:14+00:00",
+   "entry": 23.450000762939453,
+   "exit": 23.559999465942383,
+   "cost_gbp": 999.4934398353549,
+   "pl_gbp": 4.68839993453571,
+   "pl_pct": 0.004690776094846629,
+   "reason": "No new high for 16 min, and MCB overtook it on buying volume (1.39x vs 0.01x normal in 30 min)."
+  },
+  {
+   "ticker": "MCB",
+   "bought_at": "2026-10-21T17:14+00:00",
+   "sold_at": "2026-10-21T17:32+00:00",
+   "entry": 92.0,
+   "exit": 91.12999725341797,
+   "cost_gbp": 963.1148831963728,
+   "pl_gbp": -9.107745583205201,
+   "pl_pct": -0.00945655159328297,
+   "reason": "No new high for 18 min, and SPHL overtook it on buying volume (0.30x vs 0.07x normal in 30 min)."
+  },
+  {
+   "ticker": "SPHL",
+   "bought_at": "2026-10-21T17:32+00:00",
+   "sold_at": "2026-10-21T18:30+00:00",
+   "entry": 3.257499933242798,
+   "exit": 3.380000114440918,
+   "cost_gbp": 998.6895448479077,
+   "pl_gbp": 37.556301676650946,
+   "pl_pct": 0.03760558210546849,
+   "reason": "No new high for 16 min, and PHR overtook it on buying volume (0.53x vs 0.45x normal in 30 min)."
+  },
+  {
+   "ticker": "PHR",
+   "bought_at": "2026-10-21T18:30+00:00",
+   "sold_at": "2026-10-21T18:50+00:00",
+   "entry": 12.479999542236328,
+   "exit": 12.460000038146973,
+   "cost_gbp": 998.528760288086,
+   "pl_gbp": -1.600166727341275,
+   "pl_pct": -0.0016025244249145212,
+   "reason": "No new high for 16 min, and ASTL overtook it on buying volume (0.32x vs 0.02x normal in 30 min)."
+  },
+  {
+   "ticker": "ASTL",
+   "bought_at": "2026-10-21T18:50+00:00",
+   "sold_at": "2026-10-21T19:12+00:00",
+   "entry": 4.329999923706055,
+   "exit": 4.284999847412109,
+   "cost_gbp": 997.2426321383708,
+   "pl_gbp": -10.363971205660391,
+   "pl_pct": -0.010392627502734314,
+   "reason": "No new high for 18 min, and BRBS overtook it on buying volume (0.86x vs 0.19x normal in 30 min)."
+  },
+  {
+   "ticker": "BRBS",
+   "bought_at": "2026-10-21T19:12+00:00",
+   "sold_at": "2026-10-21T19:44+00:00",
+   "entry": 3.9700000286102295,
+   "exit": 3.990000009536743,
+   "cost_gbp": 997.4520296985751,
+   "pl_gbp": 5.024942424513597,
+   "pl_pct": 0.005037778534604926,
+   "reason": "No new high for 16 min, and SPHL overtook it on buying volume (0.65x vs 0.07x normal in 30 min)."
+  }
+ ],
+ "total_gbp": -85.1737445085339,
+ "alerts": [
+  "10:16 Day trade: bought SPHL: 348 SPHL at $3.84 (about \u00a3999). Stop $3.65. Highest first-30-minute volume on today's list (65.9x a normal day).",
+  "10:48 Day trade update: SPHL: stop-loss order filled (-\u00a349)",
+  "10:48 Day trade: bought GDRX: 377 GDRX at $3.54 (about \u00a3998). Stop $3.36. Strongest buying on the list: 0.13x normal volume bought in the last 30 min, and rising.",
+  "11:08 Day trade: sold GDRX (+\u00a31): No new high for 16 min, and TBCH overtook it on buying volume (0.51x vs 0.13x normal in 30 min). Result +\u00a31 (+0.1%).",
+  "11:08 Day trade: bought TBCH: 83 TBCH at $16.02 (about \u00a3994). Stop $15.22. Strongest buying on the list: 0.51x normal volume bought in the last 30 min, and rising.",
+  "11:24 Day trade: sold TBCH (-\u00a31): No new high for 16 min, and OABI overtook it on buying volume (0.22x vs 0.20x normal in 30 min). Result -\u00a31 (-0.1%).",
+  "11:24 Day trade: bought OABI: 263 OABI at $5.07 (about \u00a3998). Stop $4.82. Strongest buying on the list: 0.22x normal volume bought in the last 30 min, and rising.",
+  "11:40 Day trade: sold OABI (-\u00a310): No new high for 16 min, and BRBS overtook it on buying volume (0.26x vs 0.04x normal in 30 min). Result -\u00a310 (-1.0%).",
+  "11:40 Day trade: bought BRBS: 333 BRBS at $4.01 (about \u00a3997). Stop $3.80. Strongest buying on the list: 0.26x normal volume bought in the last 30 min, and rising.",
+  "11:56 Day trade: sold BRBS (-\u00a32): No new high for 16 min, and SPHL overtook it on buying volume (1.23x vs 0.26x normal in 30 min). Result -\u00a32 (-0.2%).",
+  "11:56 Day trade: bought SPHL: 360 SPHL at $3.70 (about \u00a3997). Stop $3.52. Strongest buying on the list: 1.23x normal volume bought in the last 30 min, and rising.",
+  "12:32 Day trade update: SPHL: stop-loss order filled (-\u00a350)",
+  "12:32 Day trade: bought KIDS: 57 KIDS at $23.45 (about \u00a3999). Stop $22.28. Strongest buying on the list: 0.13x normal volume bought in the last 30 min, and rising.",
+  "13:14 Day trade: sold KIDS (+\u00a35): No new high for 16 min, and MCB overtook it on buying volume (1.39x vs 0.01x normal in 30 min). Result +\u00a35 (+0.5%).",
+  "13:14 Day trade: bought MCB: 14 MCB at $92.00 (about \u00a3963). Stop $87.40. Strongest buying on the list: 1.39x normal volume bought in the last 30 min, and rising.",
+  "13:32 Day trade: sold MCB (-\u00a39): No new high for 18 min, and SPHL overtook it on buying volume (0.30x vs 0.07x normal in 30 min). Result -\u00a39 (-0.9%).",
+  "13:32 Day trade: bought SPHL: 410 SPHL at $3.26 (about \u00a3999). Stop $3.09. Strongest buying on the list: 0.30x normal volume bought in the last 30 min, and rising.",
+  "14:30 Day trade: sold SPHL (+\u00a338): No new high for 16 min, and PHR overtook it on buying volume (0.53x vs 0.45x normal in 30 min). Result +\u00a338 (+3.8%).",
+  "14:30 Day trade: bought PHR: 107 PHR at $12.48 (about \u00a3999). Stop $11.86. Strongest buying on the list: 0.53x normal volume bought in the last 30 min, and rising.",
+  "14:50 Day trade: sold PHR (-\u00a32): No new high for 16 min, and ASTL overtook it on buying volume (0.32x vs 0.02x normal in 30 min). Result -\u00a32 (-0.2%).",
+  "14:50 Day trade: bought ASTL: 308 ASTL at $4.33 (about \u00a3997). Stop $4.11. Strongest buying on the list: 0.32x normal volume bought in the last 30 min, and rising.",
+  "15:12 Day trade: sold ASTL (-\u00a310): No new high for 18 min, and BRBS overtook it on buying volume (0.86x vs 0.19x normal in 30 min). Result -\u00a310 (-1.0%).",
+  "15:12 Day trade: bought BRBS: 336 BRBS at $3.97 (about \u00a3997). Stop $3.77. Strongest buying on the list: 0.86x normal volume bought in the last 30 min, and rising.",
+  "15:44 Day trade: sold BRBS (+\u00a35): No new high for 16 min, and SPHL overtook it on buying volume (0.65x vs 0.07x normal in 30 min). Result +\u00a35 (+0.5%).",
+  "15:50 Day trade summary: 12 trade(s) today: SPHL -\u00a349, GDRX +\u00a31, TBCH -\u00a31, OABI -\u00a310, BRBS -\u00a32, SPHL -\u00a350, KIDS +\u00a35, MCB -\u00a39, SPHL +\u00a338, PHR -\u00a32, ASTL -\u00a310, BRBS +\u00a35. Total -\u00a385."
+ ],
+ "log": [
+  "Day trade buy order: 348 SPHL at about $3.84. Highest first-30-minute volume on today's list (65.9x a normal day).",
+  "Bought 348 SPHL at 3.84 (cost \u00a3999).",
+  "SPHL: stop-loss order filled, P&L -\u00a349.",
+  "Added GDRX to today's list at 10:48 New York: 0.4x normal volume in the last 30 min; news: GoodRx Holdings And 2 Penny Stocks With Strong Balance Sheets",
+  "Day trade buy order: 377 GDRX at about $3.54. Strongest buying on the list: 0.13x normal volume bought in the last 30 min, and rising.",
+  "Bought 377 GDRX at 3.54 (cost \u00a3998).",
+  "Added TBCH to today's list at 11:04 New York: 0.8x normal volume in the last 30 min; no news found",
+  "Added ENGS to today's list at 11:04 New York: 0.6x normal volume in the last 30 min; no news found",
+  "Sold GDRX (about +\u00a31). No new high for 16 min, and TBCH overtook it on buying volume (0.51x vs 0.13x normal in 30 min).",
+  "Day trade buy order: 83 TBCH at about $16.02. Strongest buying on the list: 0.51x normal volume bought in the last 30 min, and rising.",
+  "Bought 83 TBCH at 16.02 (cost \u00a3994).",
+  "Added OABI to today's list at 11:20 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Sold TBCH (about -\u00a31). No new high for 16 min, and OABI overtook it on buying volume (0.22x vs 0.20x normal in 30 min).",
+  "Day trade buy order: 263 OABI at about $5.07. Strongest buying on the list: 0.22x normal volume bought in the last 30 min, and rising.",
+  "Bought 263 OABI at 5.07 (cost \u00a3998).",
+  "Sold OABI (about -\u00a310). No new high for 16 min, and BRBS overtook it on buying volume (0.26x vs 0.04x normal in 30 min).",
+  "Day trade buy order: 333 BRBS at about $4.01. Strongest buying on the list: 0.26x normal volume bought in the last 30 min, and rising.",
+  "Bought 333 BRBS at 4.01 (cost \u00a3997).",
+  "Sold BRBS (about -\u00a32). No new high for 16 min, and SPHL overtook it on buying volume (1.23x vs 0.26x normal in 30 min).",
+  "Day trade buy order: 360 SPHL at about $3.70. Strongest buying on the list: 1.23x normal volume bought in the last 30 min, and rising.",
+  "Bought 360 SPHL at 3.70 (cost \u00a3997).",
+  "Added ASPN to today's list at 12:08 New York: 1.0x normal volume in the last 30 min; no news found",
+  "Added FOSL to today's list at 12:08 New York: 1.3x normal volume in the last 30 min; no news found",
+  "SPHL: stop-loss order filled, P&L -\u00a350.",
+  "Day trade buy order: 57 KIDS at about $23.45. Strongest buying on the list: 0.13x normal volume bought in the last 30 min, and rising.",
+  "Bought 57 KIDS at 23.45 (cost \u00a3999).",
+  "Added NPK to today's list at 13:12 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Sold KIDS (about +\u00a35). No new high for 16 min, and MCB overtook it on buying volume (1.39x vs 0.01x normal in 30 min).",
+  "Day trade buy order: 14 MCB at about $92.00. Strongest buying on the list: 1.39x normal volume bought in the last 30 min, and rising.",
+  "Bought 14 MCB at 92.00 (cost \u00a3963).",
+  "Added DHX to today's list at 13:28 New York: 0.8x normal volume in the last 30 min; no news found",
+  "Sold MCB (about -\u00a39). No new high for 18 min, and SPHL overtook it on buying volume (0.30x vs 0.07x normal in 30 min).",
+  "Day trade buy order: 410 SPHL at about $3.26. Strongest buying on the list: 0.30x normal volume bought in the last 30 min, and rising.",
+  "Bought 410 SPHL at 3.26 (cost \u00a3999).",
+  "Added MTW to today's list at 13:44 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Added PHR to today's list at 13:44 New York: 0.7x normal volume in the last 30 min; no news found",
+  "Added HLF to today's list at 14:00 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Added HIPO to today's list at 14:00 New York: 0.6x normal volume in the last 30 min; no news found",
+  "Added INTT to today's list at 14:00 New York: 0.7x normal volume in the last 30 min; no news found",
+  "Added NABL to today's list at 14:16 New York: 0.5x normal volume in the last 30 min; news: As AI Accelerates Cyberattacks, N-able and SentinelOne Expand Their Strategic Pa",
+  "Sold SPHL (about +\u00a338). No new high for 16 min, and PHR overtook it on buying volume (0.53x vs 0.45x normal in 30 min).",
+  "Day trade buy order: 107 PHR at about $12.48. Strongest buying on the list: 0.53x normal volume bought in the last 30 min, and rising.",
+  "Bought 107 PHR at 12.48 (cost \u00a3999).",
+  "Added HTB to today's list at 14:48 New York: 1.1x normal volume in the last 30 min; news: Why HomeTrust Bancshares (HTB) is Poised to Beat Earnings Estimates Again",
+  "Added ASTL to today's list at 14:48 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Sold PHR (about -\u00a32). No new high for 16 min, and ASTL overtook it on buying volume (0.32x vs 0.02x normal in 30 min).",
+  "Day trade buy order: 308 ASTL at about $4.33. Strongest buying on the list: 0.32x normal volume bought in the last 30 min, and rising.",
+  "Bought 308 ASTL at 4.33 (cost \u00a3997).",
+  "Sold ASTL (about -\u00a310). No new high for 18 min, and BRBS overtook it on buying volume (0.86x vs 0.19x normal in 30 min).",
+  "Day trade buy order: 336 BRBS at about $3.97. Strongest buying on the list: 0.86x normal volume bought in the last 30 min, and rising.",
+  "Bought 336 BRBS at 3.97 (cost \u00a3997).",
+  "Added EXFY to today's list at 15:20 New York: 0.6x normal volume in the last 30 min; no news found",
+  "Sold BRBS (about +\u00a35). No new high for 16 min, and SPHL overtook it on buying volume (0.65x vs 0.07x normal in 30 min).",
+  "Day trading finished: 12 trade(s), total -\u00a385."
+ ]
+}

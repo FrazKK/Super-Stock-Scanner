@@ -1,0 +1,230 @@
+{
+ "date": "2026-10-05",
+ "generated": "2026-11-01T10:23+00:00",
+ "fx_gbpusd": 1.3242928981781006,
+ "result": "done",
+ "require_news": false,
+ "added_during_day": [
+  "Added NKSH to today's list at 10:16 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Added WCCB to today's list at 10:32 New York: 0.5x normal volume in the last 30 min; no news found",
+  "Added GPRK to today's list at 10:48 New York: 0.3x normal volume in the last 30 min; no news found",
+  "Added SXC to today's list at 11:04 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Added TCI to today's list at 11:20 New York: 0.5x normal volume in the last 30 min; no news found",
+  "Added PDSB to today's list at 11:20 New York: 0.7x normal volume in the last 30 min; no news found",
+  "Added FRNM to today's list at 12:08 New York: 0.3x normal volume in the last 30 min; no news found",
+  "Added EDRY to today's list at 12:08 New York: 0.5x normal volume in the last 30 min; no news found",
+  "Added CANG to today's list at 12:24 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Added CNTN to today's list at 12:56 New York: 0.6x normal volume in the last 30 min; no news found",
+  "Added HZO to today's list at 13:12 New York: 0.9x normal volume in the last 30 min; no news found",
+  "Added OIS to today's list at 13:12 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Added DNA to today's list at 13:28 New York: 1.7x normal volume in the last 30 min; no news found",
+  "Added GIBO to today's list at 13:28 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Added NABL to today's list at 13:44 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Added QNBC to today's list at 13:44 New York: 0.9x normal volume in the last 30 min; no news found",
+  "Added GTE to today's list at 14:00 New York: 0.4x normal volume in the last 30 min; news: Gran Tierra Energy Inc. Announces Ratification of its Onshore Exploration, Devel",
+  "Added EBS to today's list at 14:00 New York: 1.5x normal volume in the last 30 min; no news found",
+  "Added PD to today's list at 14:16 New York: 0.5x normal volume in the last 30 min; no news found",
+  "Added FIRY to today's list at 14:16 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Added YEXT to today's list at 14:32 New York: 0.3x normal volume in the last 30 min; news: Yext Announces Multiplayer Agent Harness Purpose-built for Marketing Growth",
+  "Added TLYS to today's list at 14:32 New York: 0.5x normal volume in the last 30 min; no news found",
+  "Added TOP to today's list at 15:04 New York: 0.5x normal volume in the last 30 min; no news found",
+  "Added ASC to today's list at 15:04 New York: 0.5x normal volume in the last 30 min; no news found",
+  "Added SPOK to today's list at 15:04 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Added FATE to today's list at 15:04 New York: 1.1x normal volume in the last 30 min; news: Fate Therapeutics Reports New Employee Inducement Awards Under Nasdaq Listing Ru",
+  "Added NVA to today's list at 15:04 New York: 0.8x normal volume in the last 30 min; no news found",
+  "Added WNC to today's list at 15:20 New York: 0.6x normal volume in the last 30 min; no news found",
+  "Added BRBS to today's list at 15:20 New York: 1.4x normal volume in the last 30 min; no news found",
+  "Added ADCT to today's list at 15:20 New York: 0.4x normal volume in the last 30 min; no news found"
+ ],
+ "list": [
+  {
+   "ticker": "AIFA",
+   "name": "All In FutureTech Alliance, Inc.",
+   "vol_x": 0.98,
+   "buy_pct30": 0.7572885030240322,
+   "change": 0.16554816167532627,
+   "score": 3.49,
+   "news": [
+    "All In FutureTech Alliance Inc. Launches New Digital Platform for Consumers and Businesses, Advancing Its AI-Enabled Global Services Strategy"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "ALEC",
+   "vol_x": 61.26
+  },
+  {
+   "ticker": "PMI",
+   "vol_x": 1.62
+  },
+  {
+   "ticker": "ACB",
+   "vol_x": 1.43
+  },
+  {
+   "ticker": "NAUT",
+   "vol_x": 1.26
+  },
+  {
+   "ticker": "SOTK",
+   "vol_x": 0.87
+  },
+  {
+   "ticker": "NTWK",
+   "vol_x": 0.63
+  },
+  {
+   "ticker": "PXS",
+   "vol_x": 0.53
+  },
+  {
+   "ticker": "CRVO",
+   "vol_x": 0.48
+  },
+  {
+   "ticker": "LCUT",
+   "vol_x": 0.36
+  },
+  {
+   "ticker": "PDS",
+   "vol_x": 0.35
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "ALEC",
+   "bought_at": "2026-10-05T14:16+00:00",
+   "sold_at": "2026-10-05T15:30+00:00",
+   "entry": 2.1700000762939453,
+   "exit": 2.2202000617980957,
+   "cost_gbp": 999.5523258943625,
+   "pl_gbp": 23.123276731046417,
+   "pl_pct": 0.02313363305953649,
+   "reason": "No new high for 54 min, and PDSB overtook it on buying volume (0.89x vs 0.86x normal in 30 min)."
+  },
+  {
+   "ticker": "PDSB",
+   "bought_at": "2026-10-05T15:30+00:00",
+   "sold_at": "2026-10-05T17:34+00:00",
+   "entry": 0.9958000183105469,
+   "exit": 1.3193000555038452,
+   "cost_gbp": 999.3395163225695,
+   "pl_gbp": 324.6498943106718,
+   "pl_pct": 0.32486446198519026,
+   "reason": "No new high for 16 min, and DNA overtook it on buying volume (1.64x vs 0.55x normal in 30 min)."
+  },
+  {
+   "ticker": "DNA",
+   "bought_at": "2026-10-05T17:34+00:00",
+   "sold_at": "2026-10-05T17:54+00:00",
+   "entry": 14.805000305175781,
+   "exit": 14.779999732971191,
+   "cost_gbp": 994.9800599047221,
+   "pl_gbp": -1.6801803658916015,
+   "pl_pct": -0.001688657324502054,
+   "reason": "No new high for 18 min, and QNBC overtook it on buying volume (0.77x vs 0.03x normal in 30 min)."
+  },
+  {
+   "ticker": "QNBC",
+   "bought_at": "2026-10-05T17:54+00:00",
+   "sold_at": "2026-10-05T18:10+00:00",
+   "entry": 45.599998474121094,
+   "exit": 45.56999969482422,
+   "cost_gbp": 998.5706013894712,
+   "pl_gbp": -0.6569276334610095,
+   "pl_pct": -0.0006578679890504696,
+   "reason": "No new high for 16 min, and EBS overtook it on buying volume (1.00x vs 0.08x normal in 30 min)."
+  },
+  {
+   "ticker": "EBS",
+   "bought_at": "2026-10-05T18:10+00:00",
+   "sold_at": "2026-10-05T18:54+00:00",
+   "entry": 7.480000019073486,
+   "exit": 7.46999979019165,
+   "cost_gbp": 999.7486244904345,
+   "pl_gbp": -1.3365929202823281,
+   "pl_pct": -0.0013369289914888164,
+   "reason": "No new high for 16 min, and DNA overtook it on buying volume (1.79x vs 0.09x normal in 30 min)."
+  },
+  {
+   "ticker": "DNA",
+   "bought_at": "2026-10-05T18:54+00:00",
+   "sold_at": "2026-10-05T19:34+00:00",
+   "entry": 15.119999885559082,
+   "exit": 15.069999694824219,
+   "cost_gbp": 993.3149923656316,
+   "pl_gbp": -3.284784355422971,
+   "pl_pct": -0.0033068909466473324,
+   "reason": "No new high for 16 min, and PDSB overtook it on buying volume (0.12x vs 0.09x normal in 30 min)."
+  }
+ ],
+ "total_gbp": 340.8146857666603,
+ "alerts": [
+  "10:16 Day trade: bought ALEC: 610 ALEC at $2.17 (about \u00a31,000). Stop $2.06. Highest first-30-minute volume on today's list (61.3x a normal day).",
+  "11:30 Day trade: sold ALEC (+\u00a323): No new high for 54 min, and PDSB overtook it on buying volume (0.89x vs 0.86x normal in 30 min). Result +\u00a323 (+2.3%).",
+  "11:30 Day trade: bought PDSB: 1,329 PDSB at $1.00 (about \u00a3999). Stop $0.95. Strongest buying on the list: 0.89x normal volume bought in the last 30 min, and rising.",
+  "13:34 Day trade: sold PDSB (+\u00a3325): No new high for 16 min, and DNA overtook it on buying volume (1.64x vs 0.55x normal in 30 min). Result +\u00a3325 (+32.5%).",
+  "13:34 Day trade: bought DNA: 89 DNA at $14.81 (about \u00a3995). Stop $14.06. Strongest buying on the list: 1.64x normal volume bought in the last 30 min, and rising.",
+  "13:54 Day trade: sold DNA (-\u00a32): No new high for 18 min, and QNBC overtook it on buying volume (0.77x vs 0.03x normal in 30 min). Result -\u00a32 (-0.2%).",
+  "13:54 Day trade: bought QNBC: 29 QNBC at $45.60 (about \u00a3999). Stop $43.32. Strongest buying on the list: 0.77x normal volume bought in the last 30 min, and rising.",
+  "14:10 Day trade: sold QNBC (-\u00a31): No new high for 16 min, and EBS overtook it on buying volume (1.00x vs 0.08x normal in 30 min). Result -\u00a31 (-0.1%).",
+  "14:10 Day trade: bought EBS: 177 EBS at $7.48 (about \u00a31,000). Stop $7.11. Strongest buying on the list: 1.00x normal volume bought in the last 30 min, and rising.",
+  "14:54 Day trade: sold EBS (-\u00a31): No new high for 16 min, and DNA overtook it on buying volume (1.79x vs 0.09x normal in 30 min). Result -\u00a31 (-0.1%).",
+  "14:54 Day trade: bought DNA: 87 DNA at $15.12 (about \u00a3993). Stop $14.36. Strongest buying on the list: 1.79x normal volume bought in the last 30 min, and rising.",
+  "15:34 Day trade: sold DNA (-\u00a33): No new high for 16 min, and PDSB overtook it on buying volume (0.12x vs 0.09x normal in 30 min). Result -\u00a33 (-0.3%).",
+  "15:50 Day trade summary: 6 trade(s) today: ALEC +\u00a323, PDSB +\u00a3325, DNA -\u00a32, QNBC -\u00a31, EBS -\u00a31, DNA -\u00a33. Total +\u00a3341."
+ ],
+ "log": [
+  "Added NKSH to today's list at 10:16 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Day trade buy order: 610 ALEC at about $2.17. Highest first-30-minute volume on today's list (61.3x a normal day).",
+  "Bought 610 ALEC at 2.17 (cost \u00a31,000).",
+  "Added WCCB to today's list at 10:32 New York: 0.5x normal volume in the last 30 min; no news found",
+  "Added GPRK to today's list at 10:48 New York: 0.3x normal volume in the last 30 min; no news found",
+  "Added SXC to today's list at 11:04 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Added TCI to today's list at 11:20 New York: 0.5x normal volume in the last 30 min; no news found",
+  "Added PDSB to today's list at 11:20 New York: 0.7x normal volume in the last 30 min; no news found",
+  "Sold ALEC (about +\u00a323). No new high for 54 min, and PDSB overtook it on buying volume (0.89x vs 0.86x normal in 30 min).",
+  "Day trade buy order: 1329 PDSB at about $1.00. Strongest buying on the list: 0.89x normal volume bought in the last 30 min, and rising.",
+  "Bought 1,329 PDSB at 1.00 (cost \u00a3999).",
+  "Added FRNM to today's list at 12:08 New York: 0.3x normal volume in the last 30 min; no news found",
+  "Added EDRY to today's list at 12:08 New York: 0.5x normal volume in the last 30 min; no news found",
+  "Added CANG to today's list at 12:24 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Added CNTN to today's list at 12:56 New York: 0.6x normal volume in the last 30 min; no news found",
+  "Added HZO to today's list at 13:12 New York: 0.9x normal volume in the last 30 min; no news found",
+  "Added OIS to today's list at 13:12 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Added DNA to today's list at 13:28 New York: 1.7x normal volume in the last 30 min; no news found",
+  "Added GIBO to today's list at 13:28 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Sold PDSB (about +\u00a3325). No new high for 16 min, and DNA overtook it on buying volume (1.64x vs 0.55x normal in 30 min).",
+  "Day trade buy order: 89 DNA at about $14.81. Strongest buying on the list: 1.64x normal volume bought in the last 30 min, and rising.",
+  "Bought 89 DNA at 14.81 (cost \u00a3995).",
+  "Added NABL to today's list at 13:44 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Added QNBC to today's list at 13:44 New York: 0.9x normal volume in the last 30 min; no news found",
+  "Sold DNA (about -\u00a32). No new high for 18 min, and QNBC overtook it on buying volume (0.77x vs 0.03x normal in 30 min).",
+  "Day trade buy order: 29 QNBC at about $45.60. Strongest buying on the list: 0.77x normal volume bought in the last 30 min, and rising.",
+  "Bought 29 QNBC at 45.60 (cost \u00a3999).",
+  "Added GTE to today's list at 14:00 New York: 0.4x normal volume in the last 30 min; news: Gran Tierra Energy Inc. Announces Ratification of its Onshore Exploration, Devel",
+  "Added EBS to today's list at 14:00 New York: 1.5x normal volume in the last 30 min; no news found",
+  "Sold QNBC (about -\u00a31). No new high for 16 min, and EBS overtook it on buying volume (1.00x vs 0.08x normal in 30 min).",
+  "Day trade buy order: 177 EBS at about $7.48. Strongest buying on the list: 1.00x normal volume bought in the last 30 min, and rising.",
+  "Bought 177 EBS at 7.48 (cost \u00a31,000).",
+  "Added PD to today's list at 14:16 New York: 0.5x normal volume in the last 30 min; no news found",
+  "Added FIRY to today's list at 14:16 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Added YEXT to today's list at 14:32 New York: 0.3x normal volume in the last 30 min; news: Yext Announces Multiplayer Agent Harness Purpose-built for Marketing Growth",
+  "Added TLYS to today's list at 14:32 New York: 0.5x normal volume in the last 30 min; no news found",
+  "Sold EBS (about -\u00a31). No new high for 16 min, and DNA overtook it on buying volume (1.79x vs 0.09x normal in 30 min).",
+  "Day trade buy order: 87 DNA at about $15.12. Strongest buying on the list: 1.79x normal volume bought in the last 30 min, and rising.",
+  "Bought 87 DNA at 15.12 (cost \u00a3993).",
+  "Added TOP to today's list at 15:04 New York: 0.5x normal volume in the last 30 min; no news found",
+  "Added ASC to today's list at 15:04 New York: 0.5x normal volume in the last 30 min; no news found",
+  "Added SPOK to today's list at 15:04 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Added FATE to today's list at 15:04 New York: 1.1x normal volume in the last 30 min; news: Fate Therapeutics Reports New Employee Inducement Awards Under Nasdaq Listing Ru",
+  "Added NVA to today's list at 15:04 New York: 0.8x normal volume in the last 30 min; no news found",
+  "Added WNC to today's list at 15:20 New York: 0.6x normal volume in the last 30 min; no news found",
+  "Added BRBS to today's list at 15:20 New York: 1.4x normal volume in the last 30 min; no news found",
+  "Added ADCT to today's list at 15:20 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Sold DNA (about -\u00a33). No new high for 16 min, and PDSB overtook it on buying volume (0.12x vs 0.09x normal in 30 min).",
+  "Day trading finished: 6 trade(s), total +\u00a3341."
+ ]
+}

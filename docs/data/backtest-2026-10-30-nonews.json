@@ -1,0 +1,313 @@
+{
+ "date": "2026-10-30",
+ "generated": "2026-11-01T10:52+00:00",
+ "fx_gbpusd": 1.3378641605377197,
+ "result": "done",
+ "require_news": false,
+ "added_during_day": [
+  "Added OVBC to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
+  "Added BSIN to today's list at 10:16 New York: 0.6x normal volume in the last 30 min; news: Big Sky Industrial Inc. Common Stock (BSIN) Institutional Ownership 2026 - Marke",
+  "Added CZFS to today's list at 10:32 New York: 0.4x normal volume in the last 30 min; news: Citizens Financial Services (CZFS) Q3 Earnings and Revenues Beat Estimates",
+  "Added PROF to today's list at 10:32 New York: 0.4x normal volume in the last 30 min; news: Profound Medical and Cook Medical\u2019s iMRI Division Partner to Expand U.S. TULSA-P",
+  "Added COOK to today's list at 10:32 New York: 0.5x normal volume in the last 30 min; news: Traeger, Inc.'s (NYSE:COOK) Path To Profitability - Simply Wall St",
+  "Added TASK to today's list at 11:36 New York: 0.5x normal volume in the last 30 min; news: 3,512,150 Shares in TaskUs, Inc. $TASK Purchased by Brooklands Fund Management L",
+  "Added SMP to today's list at 12:08 New York: 1.0x normal volume in the last 30 min; news: Standard Motor Products Expands Climate Control Portfolio with New Line of OE-En",
+  "Added FNRN to today's list at 12:08 New York: 0.6x normal volume in the last 30 min; news: First Northern Profit Rises 11.1% to $16.8 Million - grafa.com",
+  "Added FLO to today's list at 12:24 New York: 0.4x normal volume in the last 30 min; news: Flowers Foods (FLO) Stock Price, News & Analysis $FLO - MarketBeat",
+  "Added AVBC to today's list at 12:24 New York: 0.8x normal volume in the last 30 min; no news found",
+  "Added VABK to today's list at 12:24 New York: 1.8x normal volume in the last 30 min; no news found",
+  "Added EGY to today's list at 12:56 New York: 0.4x normal volume in the last 30 min; news: Vaalco Energy (EGY) Set to Announce Earnings on Thursday - MarketBeat",
+  "Added LXU to today's list at 13:12 New York: 0.5x normal volume in the last 30 min; no news found",
+  "Added BDL to today's list at 13:28 New York: 0.3x normal volume in the last 30 min; news: Flanigan's Enterprises, Inc. (NYSEAMERICAN:BDL) Stock Short Interest Report for ",
+  "Added OSG to today's list at 13:44 New York: 0.8x normal volume in the last 30 min; no news found",
+  "Added BV to today's list at 14:16 New York: 2.2x normal volume in the last 30 min; no news found",
+  "Added SXC to today's list at 14:16 New York: 0.6x normal volume in the last 30 min; no news found",
+  "Added FRAF to today's list at 14:16 New York: 1.0x normal volume in the last 30 min; news: FRAF Q3 Earnings Rise Y/Y as Margin & Deposit Growth Improve",
+  "Added ACEL to today's list at 14:48 New York: 0.3x normal volume in the last 30 min; news: Accel Entertainment (NYSE:ACEL) Share Price Breaks Above 50-Day Moving Average -",
+  "Added OIS to today's list at 15:20 New York: 1.6x normal volume in the last 30 min; no news found",
+  "Added KWY to today's list at 15:20 New York: 0.9x normal volume in the last 30 min; news: Five-tower rental housing project part of \u2018rapid growth and transformation\u2019 of K"
+ ],
+ "list": [
+  {
+   "ticker": "GCBC",
+   "name": "Greene County Bancorp, Inc.",
+   "vol_x": 0.48,
+   "buy_pct30": 0.8916069847911805,
+   "change": 0.003066646602372325,
+   "score": 5.03,
+   "news": [
+    "Greene County Bancorp (NASDAQ:GCBC) Sees Large Volume Increase - Here's What Happened - MarketBeat"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "FBIZ",
+   "name": "First Business Financial Services, Inc.",
+   "vol_x": 0.59,
+   "buy_pct30": 0.7909051381753047,
+   "change": 0.011523840150535758,
+   "score": 4.84,
+   "news": [
+    "First Business Bank Reports Record Third Quarter Earnings"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "CBK",
+   "name": "Commercial Bancgroup, Inc.",
+   "vol_x": 0.5,
+   "buy_pct30": 0.5796530133625654,
+   "change": 0.004849949659643249,
+   "score": 3.82,
+   "news": [
+    "Commercial Bancgroup (CBK) Q3 Earnings Beat Meets Questions Over Staying Power",
+    "Commercial Bancgroup (CBK) Q3 Earnings Beat Meets Questions Over Staying Power - Yahoo Finance"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "ACCO",
+   "vol_x": 1.36
+  },
+  {
+   "ticker": "OSPN",
+   "vol_x": 1.23
+  },
+  {
+   "ticker": "PARK",
+   "vol_x": 1.08
+  },
+  {
+   "ticker": "GDYN",
+   "vol_x": 0.74
+  },
+  {
+   "ticker": "RRBI",
+   "vol_x": 0.39
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "ACCO",
+   "bought_at": "2026-10-30T14:16+00:00",
+   "sold_at": "2026-10-30T14:38+00:00",
+   "entry": 5.059999942779541,
+   "exit": 5.099999904632568,
+   "cost_gbp": 998.4870095906393,
+   "pl_gbp": 7.893170503165948,
+   "pl_pct": 0.007905130890387845,
+   "reason": "No new high for 16 min, and GDYN overtook it on buying volume (0.31x vs 0.25x normal in 30 min)."
+  },
+  {
+   "ticker": "GDYN",
+   "bought_at": "2026-10-30T14:38+00:00",
+   "sold_at": "2026-10-30T15:54+00:00",
+   "entry": 12.3100004196167,
+   "exit": 12.579999923706055,
+   "cost_gbp": 993.7332088963752,
+   "pl_gbp": 21.795894756557573,
+   "pl_pct": 0.021933346457007064,
+   "reason": "No new high for 16 min, and TASK overtook it on buying volume (0.28x vs 0.14x normal in 30 min)."
+  },
+  {
+   "ticker": "TASK",
+   "bought_at": "2026-10-30T15:54+00:00",
+   "sold_at": "2026-10-30T16:14+00:00",
+   "entry": 8.319999694824219,
+   "exit": 8.3149995803833,
+   "cost_gbp": 995.0187697956075,
+   "pl_gbp": -0.5979817190299173,
+   "pl_pct": -0.0006009753154231977,
+   "reason": "No new high for 16 min, and FNRN overtook it on buying volume (0.53x vs 0.06x normal in 30 min)."
+  },
+  {
+   "ticker": "FNRN",
+   "bought_at": "2026-10-30T16:14+00:00",
+   "sold_at": "2026-10-30T16:32+00:00",
+   "entry": 17.329999923706055,
+   "exit": 17.309999465942383,
+   "cost_gbp": 997.4181486325449,
+   "pl_gbp": -1.1511148091326504,
+   "pl_pct": -0.0011540945096204865,
+   "reason": "No new high for 16 min, and PROF overtook it on buying volume (0.32x vs 0.14x normal in 30 min)."
+  },
+  {
+   "ticker": "PROF",
+   "bought_at": "2026-10-30T16:32+00:00",
+   "sold_at": "2026-10-30T17:00+00:00",
+   "entry": 6.534999847412109,
+   "exit": 6.525000095367432,
+   "cost_gbp": 996.4688555049187,
+   "pl_gbp": -1.5247806745151138,
+   "pl_pct": -0.001530183975235729,
+   "reason": "No new high for 16 min, and GDYN overtook it on buying volume (0.19x vs 0.16x normal in 30 min)."
+  },
+  {
+   "ticker": "GDYN",
+   "bought_at": "2026-10-30T17:00+00:00",
+   "sold_at": "2026-10-30T17:16+00:00",
+   "entry": 12.835000038146973,
+   "exit": 12.694999694824219,
+   "cost_gbp": 997.7395638065235,
+   "pl_gbp": -10.8830448823104,
+   "pl_pct": -0.010907701044539099,
+   "reason": "No new high for 16 min, and LXU overtook it on buying volume (0.55x vs 0.14x normal in 30 min)."
+  },
+  {
+   "ticker": "LXU",
+   "bought_at": "2026-10-30T17:16+00:00",
+   "sold_at": "2026-10-30T17:32+00:00",
+   "entry": 11.739999771118164,
+   "exit": 11.555000305175781,
+   "cost_gbp": 991.5954199738426,
+   "pl_gbp": -15.625607044505273,
+   "pl_pct": -0.015758046809975647,
+   "reason": "No new high for 16 min, and BDL overtook it on buying volume (0.19x vs 0.06x normal in 30 min)."
+  },
+  {
+   "ticker": "BDL",
+   "bought_at": "2026-10-30T17:32+00:00",
+   "sold_at": "2026-10-30T17:50+00:00",
+   "entry": 59.720001220703125,
+   "exit": 59.58000183105469,
+   "cost_gbp": 982.042920058046,
+   "pl_gbp": -2.302166888922102,
+   "pl_pct": -0.002344263007146395,
+   "reason": "No new high for 16 min, and ACCO overtook it on buying volume (0.34x vs 0.17x normal in 30 min)."
+  },
+  {
+   "ticker": "ACCO",
+   "bought_at": "2026-10-30T17:50+00:00",
+   "sold_at": "2026-10-30T18:06+00:00",
+   "entry": 5.385000228881836,
+   "exit": 5.355000019073486,
+   "cost_gbp": 998.2179776950851,
+   "pl_gbp": -5.561141595631284,
+   "pl_pct": -0.005571069365502838,
+   "reason": "No new high for 16 min, and OSG overtook it on buying volume (0.39x vs 0.19x normal in 30 min)."
+  },
+  {
+   "ticker": "OSG",
+   "bought_at": "2026-10-30T18:06+00:00",
+   "sold_at": "2026-10-30T18:42+00:00",
+   "entry": 4.994999885559082,
+   "exit": 5.034999847412109,
+   "cost_gbp": 996.8612724540307,
+   "pl_gbp": 7.982865622520194,
+   "pl_pct": 0.00800800055444858,
+   "reason": "No new high for 16 min, and CZFS overtook it on buying volume (0.77x vs 0.12x normal in 30 min)."
+  },
+  {
+   "ticker": "CZFS",
+   "bought_at": "2026-10-30T18:42+00:00",
+   "sold_at": "2026-10-30T19:06+00:00",
+   "entry": 85.61000061035156,
+   "exit": 85.66000366210938,
+   "cost_gbp": 959.8508182169576,
+   "pl_gbp": 0.5606292465938623,
+   "pl_pct": 0.0005840795631505539,
+   "reason": "No new high for 16 min, and LXU overtook it on buying volume (0.81x vs 0.29x normal in 30 min)."
+  },
+  {
+   "ticker": "LXU",
+   "bought_at": "2026-10-30T19:06+00:00",
+   "sold_at": "2026-10-30T19:28+00:00",
+   "entry": 11.430000305175781,
+   "exit": 11.460000038146973,
+   "cost_gbp": 999.5858138303588,
+   "pl_gbp": 2.62356139073097,
+   "pl_pct": 0.002624648483833143,
+   "reason": "No new high for 16 min, and GDYN overtook it on buying volume (0.22x vs 0.04x normal in 30 min)."
+  }
+ ],
+ "total_gbp": 3.2102839055218055,
+ "alerts": [
+  "10:16 Day trade: bought ACCO: 264 ACCO at $5.06 (about \u00a3998). Stop $4.81. Highest first-30-minute volume on today's list (1.4x a normal day).",
+  "10:38 Day trade: sold ACCO (+\u00a38): No new high for 16 min, and GDYN overtook it on buying volume (0.31x vs 0.25x normal in 30 min). Result +\u00a38 (+0.8%).",
+  "10:38 Day trade: bought GDYN: 108 GDYN at $12.31 (about \u00a3994). Stop $11.69. Strongest buying on the list: 0.31x normal volume bought in the last 30 min, and rising.",
+  "11:54 Day trade: sold GDYN (+\u00a322): No new high for 16 min, and TASK overtook it on buying volume (0.28x vs 0.14x normal in 30 min). Result +\u00a322 (+2.2%).",
+  "11:54 Day trade: bought TASK: 160 TASK at $8.32 (about \u00a3995). Stop $7.90. Strongest buying on the list: 0.28x normal volume bought in the last 30 min, and rising.",
+  "12:14 Day trade: sold TASK (-\u00a31): No new high for 16 min, and FNRN overtook it on buying volume (0.53x vs 0.06x normal in 30 min). Result -\u00a31 (-0.1%).",
+  "12:14 Day trade: bought FNRN: 77 FNRN at $17.33 (about \u00a3997). Stop $16.46. Strongest buying on the list: 0.53x normal volume bought in the last 30 min, and rising.",
+  "12:32 Day trade: sold FNRN (-\u00a31): No new high for 16 min, and PROF overtook it on buying volume (0.32x vs 0.14x normal in 30 min). Result -\u00a31 (-0.1%).",
+  "12:32 Day trade: bought PROF: 204 PROF at $6.53 (about \u00a3996). Stop $6.21. Strongest buying on the list: 0.32x normal volume bought in the last 30 min, and rising.",
+  "13:00 Day trade: sold PROF (-\u00a32): No new high for 16 min, and GDYN overtook it on buying volume (0.19x vs 0.16x normal in 30 min). Result -\u00a32 (-0.2%).",
+  "13:00 Day trade: bought GDYN: 104 GDYN at $12.84 (about \u00a3998). Stop $12.19. Strongest buying on the list: 0.19x normal volume bought in the last 30 min, and rising.",
+  "13:16 Day trade: sold GDYN (-\u00a311): No new high for 16 min, and LXU overtook it on buying volume (0.55x vs 0.14x normal in 30 min). Result -\u00a311 (-1.1%).",
+  "13:16 Day trade: bought LXU: 113 LXU at $11.74 (about \u00a3992). Stop $11.15. Strongest buying on the list: 0.55x normal volume bought in the last 30 min, and rising.",
+  "13:32 Day trade: sold LXU (-\u00a316): No new high for 16 min, and BDL overtook it on buying volume (0.19x vs 0.06x normal in 30 min). Result -\u00a316 (-1.6%).",
+  "13:32 Day trade: bought BDL: 22 BDL at $59.72 (about \u00a3982). Stop $56.73. Strongest buying on the list: 0.19x normal volume bought in the last 30 min, and rising.",
+  "13:50 Day trade: sold BDL (-\u00a32): No new high for 16 min, and ACCO overtook it on buying volume (0.34x vs 0.17x normal in 30 min). Result -\u00a32 (-0.2%).",
+  "13:50 Day trade: bought ACCO: 248 ACCO at $5.39 (about \u00a3998). Stop $5.12. Strongest buying on the list: 0.34x normal volume bought in the last 30 min, and rising.",
+  "14:06 Day trade: sold ACCO (-\u00a36): No new high for 16 min, and OSG overtook it on buying volume (0.39x vs 0.19x normal in 30 min). Result -\u00a36 (-0.6%).",
+  "14:06 Day trade: bought OSG: 267 OSG at $4.99 (about \u00a3997). Stop $4.75. Strongest buying on the list: 0.39x normal volume bought in the last 30 min, and rising.",
+  "14:42 Day trade: sold OSG (+\u00a38): No new high for 16 min, and CZFS overtook it on buying volume (0.77x vs 0.12x normal in 30 min). Result +\u00a38 (+0.8%).",
+  "14:42 Day trade: bought CZFS: 15 CZFS at $85.61 (about \u00a3960). Stop $81.33. Strongest buying on the list: 0.77x normal volume bought in the last 30 min, and rising.",
+  "15:06 Day trade: sold CZFS (+\u00a31): No new high for 16 min, and LXU overtook it on buying volume (0.81x vs 0.29x normal in 30 min). Result +\u00a31 (+0.1%).",
+  "15:06 Day trade: bought LXU: 117 LXU at $11.43 (about \u00a31,000). Stop $10.86. Strongest buying on the list: 0.81x normal volume bought in the last 30 min, and rising.",
+  "15:28 Day trade: sold LXU (+\u00a33): No new high for 16 min, and GDYN overtook it on buying volume (0.22x vs 0.04x normal in 30 min). Result +\u00a33 (+0.3%).",
+  "15:50 Day trade summary: 12 trade(s) today: ACCO +\u00a38, GDYN +\u00a322, TASK -\u00a31, FNRN -\u00a31, PROF -\u00a32, GDYN -\u00a311, LXU -\u00a316, BDL -\u00a32, ACCO -\u00a36, OSG +\u00a38, CZFS +\u00a31, LXU +\u00a33. Total +\u00a33."
+ ],
+ "log": [
+  "Added OVBC to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
+  "Added BSIN to today's list at 10:16 New York: 0.6x normal volume in the last 30 min; news: Big Sky Industrial Inc. Common Stock (BSIN) Institutional Ownership 2026 - Marke",
+  "Day trade buy order: 264 ACCO at about $5.06. Highest first-30-minute volume on today's list (1.4x a normal day).",
+  "Bought 264 ACCO at 5.06 (cost \u00a3998).",
+  "Added CZFS to today's list at 10:32 New York: 0.4x normal volume in the last 30 min; news: Citizens Financial Services (CZFS) Q3 Earnings and Revenues Beat Estimates",
+  "Added PROF to today's list at 10:32 New York: 0.4x normal volume in the last 30 min; news: Profound Medical and Cook Medical\u2019s iMRI Division Partner to Expand U.S. TULSA-P",
+  "Added COOK to today's list at 10:32 New York: 0.5x normal volume in the last 30 min; news: Traeger, Inc.'s (NYSE:COOK) Path To Profitability - Simply Wall St",
+  "Sold ACCO (about +\u00a38). No new high for 16 min, and GDYN overtook it on buying volume (0.31x vs 0.25x normal in 30 min).",
+  "Day trade buy order: 108 GDYN at about $12.31. Strongest buying on the list: 0.31x normal volume bought in the last 30 min, and rising.",
+  "Bought 108 GDYN at 12.31 (cost \u00a3994).",
+  "Added TASK to today's list at 11:36 New York: 0.5x normal volume in the last 30 min; news: 3,512,150 Shares in TaskUs, Inc. $TASK Purchased by Brooklands Fund Management L",
+  "Sold GDYN (about +\u00a322). No new high for 16 min, and TASK overtook it on buying volume (0.28x vs 0.14x normal in 30 min).",
+  "Day trade buy order: 160 TASK at about $8.32. Strongest buying on the list: 0.28x normal volume bought in the last 30 min, and rising.",
+  "Bought 160 TASK at 8.32 (cost \u00a3995).",
+  "Added SMP to today's list at 12:08 New York: 1.0x normal volume in the last 30 min; news: Standard Motor Products Expands Climate Control Portfolio with New Line of OE-En",
+  "Added FNRN to today's list at 12:08 New York: 0.6x normal volume in the last 30 min; news: First Northern Profit Rises 11.1% to $16.8 Million - grafa.com",
+  "Sold TASK (about -\u00a31). No new high for 16 min, and FNRN overtook it on buying volume (0.53x vs 0.06x normal in 30 min).",
+  "Day trade buy order: 77 FNRN at about $17.33. Strongest buying on the list: 0.53x normal volume bought in the last 30 min, and rising.",
+  "Bought 77 FNRN at 17.33 (cost \u00a3997).",
+  "Added FLO to today's list at 12:24 New York: 0.4x normal volume in the last 30 min; news: Flowers Foods (FLO) Stock Price, News & Analysis $FLO - MarketBeat",
+  "Added AVBC to today's list at 12:24 New York: 0.8x normal volume in the last 30 min; no news found",
+  "Added VABK to today's list at 12:24 New York: 1.8x normal volume in the last 30 min; no news found",
+  "Sold FNRN (about -\u00a31). No new high for 16 min, and PROF overtook it on buying volume (0.32x vs 0.14x normal in 30 min).",
+  "Day trade buy order: 204 PROF at about $6.53. Strongest buying on the list: 0.32x normal volume bought in the last 30 min, and rising.",
+  "Bought 204 PROF at 6.53 (cost \u00a3996).",
+  "Added EGY to today's list at 12:56 New York: 0.4x normal volume in the last 30 min; news: Vaalco Energy (EGY) Set to Announce Earnings on Thursday - MarketBeat",
+  "Sold PROF (about -\u00a32). No new high for 16 min, and GDYN overtook it on buying volume (0.19x vs 0.16x normal in 30 min).",
+  "Day trade buy order: 104 GDYN at about $12.84. Strongest buying on the list: 0.19x normal volume bought in the last 30 min, and rising.",
+  "Bought 104 GDYN at 12.84 (cost \u00a3998).",
+  "Added LXU to today's list at 13:12 New York: 0.5x normal volume in the last 30 min; no news found",
+  "Sold GDYN (about -\u00a311). No new high for 16 min, and LXU overtook it on buying volume (0.55x vs 0.14x normal in 30 min).",
+  "Day trade buy order: 113 LXU at about $11.74. Strongest buying on the list: 0.55x normal volume bought in the last 30 min, and rising.",
+  "Bought 113 LXU at 11.74 (cost \u00a3992).",
+  "Added BDL to today's list at 13:28 New York: 0.3x normal volume in the last 30 min; news: Flanigan's Enterprises, Inc. (NYSEAMERICAN:BDL) Stock Short Interest Report for ",
+  "Sold LXU (about -\u00a316). No new high for 16 min, and BDL overtook it on buying volume (0.19x vs 0.06x normal in 30 min).",
+  "Day trade buy order: 22 BDL at about $59.72. Strongest buying on the list: 0.19x normal volume bought in the last 30 min, and rising.",
+  "Bought 22 BDL at 59.72 (cost \u00a3982).",
+  "Added OSG to today's list at 13:44 New York: 0.8x normal volume in the last 30 min; no news found",
+  "Sold BDL (about -\u00a32). No new high for 16 min, and ACCO overtook it on buying volume (0.34x vs 0.17x normal in 30 min).",
+  "Day trade buy order: 248 ACCO at about $5.39. Strongest buying on the list: 0.34x normal volume bought in the last 30 min, and rising.",
+  "Bought 248 ACCO at 5.39 (cost \u00a3998).",
+  "Sold ACCO (about -\u00a36). No new high for 16 min, and OSG overtook it on buying volume (0.39x vs 0.19x normal in 30 min).",
+  "Day trade buy order: 267 OSG at about $4.99. Strongest buying on the list: 0.39x normal volume bought in the last 30 min, and rising.",
+  "Bought 267 OSG at 4.99 (cost \u00a3997).",
+  "Added BV to today's list at 14:16 New York: 2.2x normal volume in the last 30 min; no news found",
+  "Added SXC to today's list at 14:16 New York: 0.6x normal volume in the last 30 min; no news found",
+  "Added FRAF to today's list at 14:16 New York: 1.0x normal volume in the last 30 min; news: FRAF Q3 Earnings Rise Y/Y as Margin & Deposit Growth Improve",
+  "Sold OSG (about +\u00a38). No new high for 16 min, and CZFS overtook it on buying volume (0.77x vs 0.12x normal in 30 min).",
+  "Day trade buy order: 15 CZFS at about $85.61. Strongest buying on the list: 0.77x normal volume bought in the last 30 min, and rising.",
+  "Bought 15 CZFS at 85.61 (cost \u00a3960).",
+  "Added ACEL to today's list at 14:48 New York: 0.3x normal volume in the last 30 min; news: Accel Entertainment (NYSE:ACEL) Share Price Breaks Above 50-Day Moving Average -",
+  "Sold CZFS (about +\u00a31). No new high for 16 min, and LXU overtook it on buying volume (0.81x vs 0.29x normal in 30 min).",
+  "Day trade buy order: 117 LXU at about $11.43. Strongest buying on the list: 0.81x normal volume bought in the last 30 min, and rising.",
+  "Bought 117 LXU at 11.43 (cost \u00a31,000).",
+  "Added OIS to today's list at 15:20 New York: 1.6x normal volume in the last 30 min; no news found",
+  "Added KWY to today's list at 15:20 New York: 0.9x normal volume in the last 30 min; news: Five-tower rental housing project part of \u2018rapid growth and transformation\u2019 of K",
+  "Sold LXU (about +\u00a33). No new high for 16 min, and GDYN overtook it on buying volume (0.22x vs 0.04x normal in 30 min).",
+  "Day trading finished: 12 trade(s), total +\u00a33."
+ ]
+}

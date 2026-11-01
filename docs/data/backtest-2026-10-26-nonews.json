@@ -1,0 +1,294 @@
+{
+ "date": "2026-10-26",
+ "generated": "2026-11-01T10:48+00:00",
+ "fx_gbpusd": 1.3377747535705566,
+ "result": "done",
+ "require_news": false,
+ "added_during_day": [
+  "Added OSUR to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
+  "Added RDWR to today's list at 10:32 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Added NUTX to today's list at 10:32 New York: 0.6x normal volume in the last 30 min; no news found",
+  "Added TLS to today's list at 10:32 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Added BRBS to today's list at 11:04 New York: 0.3x normal volume in the last 30 min; no news found",
+  "Added INTT to today's list at 11:04 New York: 0.6x normal volume in the last 30 min; no news found",
+  "Added CHPT to today's list at 12:24 New York: 0.5x normal volume in the last 30 min; no news found",
+  "Added CMTV to today's list at 12:24 New York: 0.5x normal volume in the last 30 min; no news found",
+  "Added TMP to today's list at 12:40 New York: 1.5x normal volume in the last 30 min; no news found",
+  "Added ISBA to today's list at 12:40 New York: 0.5x normal volume in the last 30 min; no news found",
+  "Added RES to today's list at 12:56 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Added CHMG to today's list at 12:56 New York: 0.4x normal volume in the last 30 min; news: Chemung Financial (CHMG) Q3 Earnings Signal Stronger Profit Engine",
+  "Added CYH to today's list at 12:56 New York: 0.6x normal volume in the last 30 min; no news found",
+  "Added REF to today's list at 13:28 New York: 0.6x normal volume in the last 30 min; no news found",
+  "Added AVBC to today's list at 13:44 New York: 0.6x normal volume in the last 30 min; no news found",
+  "Added ENGS to today's list at 14:00 New York: 0.3x normal volume in the last 30 min; no news found",
+  "Added WTI to today's list at 14:16 New York: 0.7x normal volume in the last 30 min; no news found",
+  "Added STAA to today's list at 14:32 New York: 0.5x normal volume in the last 30 min; no news found",
+  "Added NABL to today's list at 14:32 New York: 0.3x normal volume in the last 30 min; news: As AI Accelerates Cyberattacks, N-able and SentinelOne Expand Their Strategic Pa",
+  "Added CFFI to today's list at 14:32 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Added OVBC to today's list at 15:04 New York: 0.6x normal volume in the last 30 min; no news found",
+  "Added CZWI to today's list at 15:20 New York: 0.6x normal volume in the last 30 min; no news found"
+ ],
+ "list": [
+  {
+   "ticker": "PEBK",
+   "name": "Peoples Bancorp of North Carolina, Inc.",
+   "vol_x": 0.41,
+   "buy_pct30": 0.6988183354952485,
+   "change": 0.011499540139467967,
+   "score": 4.12,
+   "news": [
+    "Peoples Bancorp Stock Slips Post Q3 Earnings Despite NIM Expansion"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "FRBA",
+   "name": "First Bank",
+   "vol_x": 0.48,
+   "buy_pct30": 0.4631117475133199,
+   "change": 0.018566303335922463,
+   "score": 3.31,
+   "news": [
+    "First Bank (FRBA) Q3 Earnings Put Buyback And Credit Cleanup In Focus"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "BWMX",
+   "vol_x": 1.82
+  },
+  {
+   "ticker": "EAF",
+   "vol_x": 0.83
+  },
+  {
+   "ticker": "MED",
+   "vol_x": 0.77
+  },
+  {
+   "ticker": "FNWD",
+   "vol_x": 0.57
+  },
+  {
+   "ticker": "TSBK",
+   "vol_x": 0.55
+  },
+  {
+   "ticker": "NBN",
+   "vol_x": 0.54
+  },
+  {
+   "ticker": "SFST",
+   "vol_x": 0.41
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "BWMX",
+   "bought_at": "2026-10-26T14:16+00:00",
+   "sold_at": "2026-10-26T15:12+00:00",
+   "entry": 16.719999313354492,
+   "exit": 17.344999313354492,
+   "cost_gbp": 999.869328897312,
+   "pl_gbp": 37.37549977419485,
+   "pl_pct": 0.037380384310231565,
+   "reason": "No new high for 16 min, and EAF overtook it on buying volume (0.31x vs 0.26x normal in 30 min)."
+  },
+  {
+   "ticker": "EAF",
+   "bought_at": "2026-10-26T15:12+00:00",
+   "sold_at": "2026-10-26T15:50+00:00",
+   "entry": 10.510000228881836,
+   "exit": 10.739999771118164,
+   "cost_gbp": 997.7539384006584,
+   "pl_gbp": 21.83472351085379,
+   "pl_pct": 0.021883876044482053,
+   "reason": "No new high for 22 min, and PEBK overtook it on buying volume (0.15x vs 0.13x normal in 30 min)."
+  },
+  {
+   "ticker": "PEBK",
+   "bought_at": "2026-10-26T15:50+00:00",
+   "sold_at": "2026-10-26T16:10+00:00",
+   "entry": 43.665000915527344,
+   "exit": 43.599998474121094,
+   "cost_gbp": 979.2007391151078,
+   "pl_gbp": -1.4576992404607836,
+   "pl_pct": -0.0014886623163480137,
+   "reason": "No new high for 20 min, and NUTX overtook it on buying volume (0.06x vs 0.05x normal in 30 min)."
+  },
+  {
+   "ticker": "NUTX",
+   "bought_at": "2026-10-26T16:10+00:00",
+   "sold_at": "2026-10-26T16:26+00:00",
+   "entry": 211.77999877929688,
+   "exit": 211.375,
+   "cost_gbp": 949.8459955865532,
+   "pl_gbp": -1.8164438140991024,
+   "pl_pct": -0.0019123561319826419,
+   "reason": "No new high for 16 min, and CMTV overtook it on buying volume (0.42x vs 0.02x normal in 30 min)."
+  },
+  {
+   "ticker": "CMTV",
+   "bought_at": "2026-10-26T16:26+00:00",
+   "sold_at": "2026-10-26T16:44+00:00",
+   "entry": 43.099998474121094,
+   "exit": 43.099998474121094,
+   "cost_gbp": 998.7480696071348,
+   "pl_gbp": 0.0,
+   "pl_pct": 0.0,
+   "reason": "No new high for 18 min, and BWMX overtook it on buying volume (0.25x vs 0.03x normal in 30 min)."
+  },
+  {
+   "ticker": "BWMX",
+   "bought_at": "2026-10-26T16:44+00:00",
+   "sold_at": "2026-10-26T17:18+00:00",
+   "entry": 17.299999237060547,
+   "exit": 17.309999465942383,
+   "cost_gbp": 995.7580210706262,
+   "pl_gbp": 0.5755958705650528,
+   "pl_pct": 0.0005780479377371016,
+   "reason": "No new high for 16 min, and FNWD overtook it on buying volume (0.20x vs 0.10x normal in 30 min)."
+  },
+  {
+   "ticker": "FNWD",
+   "bought_at": "2026-10-26T17:18+00:00",
+   "sold_at": "2026-10-26T17:34+00:00",
+   "entry": 44.0,
+   "exit": 44.0,
+   "cost_gbp": 986.7131940387458,
+   "pl_gbp": 0.0,
+   "pl_pct": 0.0,
+   "reason": "No new high for 16 min, and REF overtook it on buying volume (0.59x vs 0.00x normal in 30 min)."
+  },
+  {
+   "ticker": "REF",
+   "bought_at": "2026-10-26T17:34+00:00",
+   "sold_at": "2026-10-26T18:16+00:00",
+   "entry": 15.899999618530273,
+   "exit": 15.885000228881836,
+   "cost_gbp": 998.3743260154902,
+   "pl_gbp": -0.9418242698226322,
+   "pl_pct": -0.000943357862157224,
+   "reason": "No new high for 16 min, and ENGS overtook it on buying volume (0.18x vs 0.08x normal in 30 min)."
+  },
+  {
+   "ticker": "ENGS",
+   "bought_at": "2026-10-26T18:16+00:00",
+   "sold_at": "2026-10-26T18:42+00:00",
+   "entry": 4.369999885559082,
+   "exit": 4.40500020980835,
+   "cost_gbp": 999.5852899839851,
+   "pl_gbp": 8.005906219780513,
+   "pl_pct": 0.008009227726739336,
+   "reason": "No new high for 16 min, and BWMX overtook it on buying volume (0.18x vs 0.02x normal in 30 min)."
+  },
+  {
+   "ticker": "BWMX",
+   "bought_at": "2026-10-26T18:42+00:00",
+   "sold_at": "2026-10-26T18:58+00:00",
+   "entry": 16.979999542236328,
+   "exit": 16.84000015258789,
+   "cost_gbp": 990.0321117284266,
+   "pl_gbp": -8.162773563660494,
+   "pl_pct": -0.008244958387672587,
+   "reason": "No new high for 16 min, and EAF overtook it on buying volume (0.10x vs 0.07x normal in 30 min)."
+  },
+  {
+   "ticker": "EAF",
+   "bought_at": "2026-10-26T18:58+00:00",
+   "sold_at": "2026-10-26T19:34+00:00",
+   "entry": 10.199999809265137,
+   "exit": 10.260000228881836,
+   "cost_gbp": 998.8228372881006,
+   "pl_gbp": 5.875469654969152,
+   "pl_pct": 0.0058823941900663914,
+   "reason": "No new high for 16 min, and PEBK overtook it on buying volume (0.34x vs 0.08x normal in 30 min)."
+  }
+ ],
+ "total_gbp": 61.28845414232035,
+ "alerts": [
+  "10:16 Day trade: bought BWMX: 80 BWMX at $16.72 (about \u00a31,000). Stop $15.88. Highest first-30-minute volume on today's list (1.8x a normal day).",
+  "11:12 Day trade: sold BWMX (+\u00a337): No new high for 16 min, and EAF overtook it on buying volume (0.31x vs 0.26x normal in 30 min). Result +\u00a337 (+3.7%).",
+  "11:12 Day trade: bought EAF: 127 EAF at $10.51 (about \u00a3998). Stop $9.98. Strongest buying on the list: 0.31x normal volume bought in the last 30 min, and rising.",
+  "11:50 Day trade: sold EAF (+\u00a322): No new high for 22 min, and PEBK overtook it on buying volume (0.15x vs 0.13x normal in 30 min). Result +\u00a322 (+2.2%).",
+  "11:50 Day trade: bought PEBK: 30 PEBK at $43.67 (about \u00a3979). Stop $41.48. Strongest buying on the list: 0.15x normal volume bought in the last 30 min, and rising.",
+  "12:10 Day trade: sold PEBK (-\u00a31): No new high for 20 min, and NUTX overtook it on buying volume (0.06x vs 0.05x normal in 30 min). Result -\u00a31 (-0.1%).",
+  "12:10 Day trade: bought NUTX: 6 NUTX at $211.78 (about \u00a3950). Stop $201.19. Strongest buying on the list: 0.06x normal volume bought in the last 30 min, and rising.",
+  "12:26 Day trade: sold NUTX (-\u00a32): No new high for 16 min, and CMTV overtook it on buying volume (0.42x vs 0.02x normal in 30 min). Result -\u00a32 (-0.2%).",
+  "12:26 Day trade: bought CMTV: 31 CMTV at $43.10 (about \u00a3999). Stop $40.94. Strongest buying on the list: 0.42x normal volume bought in the last 30 min, and rising.",
+  "12:44 Day trade: sold CMTV (+\u00a30): No new high for 18 min, and BWMX overtook it on buying volume (0.25x vs 0.03x normal in 30 min). Result +\u00a30 (+0.0%).",
+  "12:44 Day trade: bought BWMX: 77 BWMX at $17.30 (about \u00a3996). Stop $16.43. Strongest buying on the list: 0.25x normal volume bought in the last 30 min, and rising.",
+  "13:18 Day trade: sold BWMX (+\u00a31): No new high for 16 min, and FNWD overtook it on buying volume (0.20x vs 0.10x normal in 30 min). Result +\u00a31 (+0.1%).",
+  "13:18 Day trade: bought FNWD: 30 FNWD at $44.00 (about \u00a3987). Stop $41.80. Strongest buying on the list: 0.20x normal volume bought in the last 30 min, and rising.",
+  "13:34 Day trade: sold FNWD (+\u00a30): No new high for 16 min, and REF overtook it on buying volume (0.59x vs 0.00x normal in 30 min). Result +\u00a30 (+0.0%).",
+  "13:34 Day trade: bought REF: 84 REF at $15.90 (about \u00a3998). Stop $15.10. Strongest buying on the list: 0.59x normal volume bought in the last 30 min, and rising.",
+  "14:16 Day trade: sold REF (-\u00a31): No new high for 16 min, and ENGS overtook it on buying volume (0.18x vs 0.08x normal in 30 min). Result -\u00a31 (-0.1%).",
+  "14:16 Day trade: bought ENGS: 306 ENGS at $4.37 (about \u00a31,000). Stop $4.15. Strongest buying on the list: 0.18x normal volume bought in the last 30 min, and rising.",
+  "14:42 Day trade: sold ENGS (+\u00a38): No new high for 16 min, and BWMX overtook it on buying volume (0.18x vs 0.02x normal in 30 min). Result +\u00a38 (+0.8%).",
+  "14:42 Day trade: bought BWMX: 78 BWMX at $16.98 (about \u00a3990). Stop $16.13. Strongest buying on the list: 0.18x normal volume bought in the last 30 min, and rising.",
+  "14:58 Day trade: sold BWMX (-\u00a38): No new high for 16 min, and EAF overtook it on buying volume (0.10x vs 0.07x normal in 30 min). Result -\u00a38 (-0.8%).",
+  "14:58 Day trade: bought EAF: 131 EAF at $10.20 (about \u00a3999). Stop $9.69. Strongest buying on the list: 0.10x normal volume bought in the last 30 min, and rising.",
+  "15:34 Day trade: sold EAF (+\u00a36): No new high for 16 min, and PEBK overtook it on buying volume (0.34x vs 0.08x normal in 30 min). Result +\u00a36 (+0.6%).",
+  "15:50 Day trade summary: 11 trade(s) today: BWMX +\u00a337, EAF +\u00a322, PEBK -\u00a31, NUTX -\u00a32, CMTV +\u00a30, BWMX +\u00a31, FNWD +\u00a30, REF -\u00a31, ENGS +\u00a38, BWMX -\u00a38, EAF +\u00a36. Total +\u00a361."
+ ],
+ "log": [
+  "Added OSUR to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
+  "Day trade buy order: 80 BWMX at about $16.72. Highest first-30-minute volume on today's list (1.8x a normal day).",
+  "Bought 80 BWMX at 16.72 (cost \u00a31,000).",
+  "Added RDWR to today's list at 10:32 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Added NUTX to today's list at 10:32 New York: 0.6x normal volume in the last 30 min; no news found",
+  "Added TLS to today's list at 10:32 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Added BRBS to today's list at 11:04 New York: 0.3x normal volume in the last 30 min; no news found",
+  "Added INTT to today's list at 11:04 New York: 0.6x normal volume in the last 30 min; no news found",
+  "Sold BWMX (about +\u00a337). No new high for 16 min, and EAF overtook it on buying volume (0.31x vs 0.26x normal in 30 min).",
+  "Day trade buy order: 127 EAF at about $10.51. Strongest buying on the list: 0.31x normal volume bought in the last 30 min, and rising.",
+  "Bought 127 EAF at 10.51 (cost \u00a3998).",
+  "Sold EAF (about +\u00a322). No new high for 22 min, and PEBK overtook it on buying volume (0.15x vs 0.13x normal in 30 min).",
+  "Day trade buy order: 30 PEBK at about $43.67. Strongest buying on the list: 0.15x normal volume bought in the last 30 min, and rising.",
+  "Bought 30 PEBK at 43.67 (cost \u00a3979).",
+  "Sold PEBK (about -\u00a31). No new high for 20 min, and NUTX overtook it on buying volume (0.06x vs 0.05x normal in 30 min).",
+  "Day trade buy order: 6 NUTX at about $211.78. Strongest buying on the list: 0.06x normal volume bought in the last 30 min, and rising.",
+  "Bought 6 NUTX at 211.78 (cost \u00a3950).",
+  "Added CHPT to today's list at 12:24 New York: 0.5x normal volume in the last 30 min; no news found",
+  "Added CMTV to today's list at 12:24 New York: 0.5x normal volume in the last 30 min; no news found",
+  "Sold NUTX (about -\u00a32). No new high for 16 min, and CMTV overtook it on buying volume (0.42x vs 0.02x normal in 30 min).",
+  "Day trade buy order: 31 CMTV at about $43.10. Strongest buying on the list: 0.42x normal volume bought in the last 30 min, and rising.",
+  "Bought 31 CMTV at 43.10 (cost \u00a3999).",
+  "Added TMP to today's list at 12:40 New York: 1.5x normal volume in the last 30 min; no news found",
+  "Added ISBA to today's list at 12:40 New York: 0.5x normal volume in the last 30 min; no news found",
+  "Sold CMTV (about +\u00a30). No new high for 18 min, and BWMX overtook it on buying volume (0.25x vs 0.03x normal in 30 min).",
+  "Day trade buy order: 77 BWMX at about $17.30. Strongest buying on the list: 0.25x normal volume bought in the last 30 min, and rising.",
+  "Bought 77 BWMX at 17.30 (cost \u00a3996).",
+  "Added RES to today's list at 12:56 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Added CHMG to today's list at 12:56 New York: 0.4x normal volume in the last 30 min; news: Chemung Financial (CHMG) Q3 Earnings Signal Stronger Profit Engine",
+  "Added CYH to today's list at 12:56 New York: 0.6x normal volume in the last 30 min; no news found",
+  "Sold BWMX (about +\u00a31). No new high for 16 min, and FNWD overtook it on buying volume (0.20x vs 0.10x normal in 30 min).",
+  "Day trade buy order: 30 FNWD at about $44.00. Strongest buying on the list: 0.20x normal volume bought in the last 30 min, and rising.",
+  "Bought 30 FNWD at 44.00 (cost \u00a3987).",
+  "Added REF to today's list at 13:28 New York: 0.6x normal volume in the last 30 min; no news found",
+  "Sold FNWD (about +\u00a30). No new high for 16 min, and REF overtook it on buying volume (0.59x vs 0.00x normal in 30 min).",
+  "Day trade buy order: 84 REF at about $15.90. Strongest buying on the list: 0.59x normal volume bought in the last 30 min, and rising.",
+  "Bought 84 REF at 15.90 (cost \u00a3998).",
+  "Added AVBC to today's list at 13:44 New York: 0.6x normal volume in the last 30 min; no news found",
+  "Added ENGS to today's list at 14:00 New York: 0.3x normal volume in the last 30 min; no news found",
+  "Added WTI to today's list at 14:16 New York: 0.7x normal volume in the last 30 min; no news found",
+  "Sold REF (about -\u00a31). No new high for 16 min, and ENGS overtook it on buying volume (0.18x vs 0.08x normal in 30 min).",
+  "Day trade buy order: 306 ENGS at about $4.37. Strongest buying on the list: 0.18x normal volume bought in the last 30 min, and rising.",
+  "Bought 306 ENGS at 4.37 (cost \u00a31,000).",
+  "Added STAA to today's list at 14:32 New York: 0.5x normal volume in the last 30 min; no news found",
+  "Added NABL to today's list at 14:32 New York: 0.3x normal volume in the last 30 min; news: As AI Accelerates Cyberattacks, N-able and SentinelOne Expand Their Strategic Pa",
+  "Added CFFI to today's list at 14:32 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Sold ENGS (about +\u00a38). No new high for 16 min, and BWMX overtook it on buying volume (0.18x vs 0.02x normal in 30 min).",
+  "Day trade buy order: 78 BWMX at about $16.98. Strongest buying on the list: 0.18x normal volume bought in the last 30 min, and rising.",
+  "Bought 78 BWMX at 16.98 (cost \u00a3990).",
+  "Sold BWMX (about -\u00a38). No new high for 16 min, and EAF overtook it on buying volume (0.10x vs 0.07x normal in 30 min).",
+  "Day trade buy order: 131 EAF at about $10.20. Strongest buying on the list: 0.10x normal volume bought in the last 30 min, and rising.",
+  "Bought 131 EAF at 10.20 (cost \u00a3999).",
+  "Added OVBC to today's list at 15:04 New York: 0.6x normal volume in the last 30 min; no news found",
+  "Added CZWI to today's list at 15:20 New York: 0.6x normal volume in the last 30 min; no news found",
+  "Sold EAF (about +\u00a36). No new high for 16 min, and PEBK overtook it on buying volume (0.34x vs 0.08x normal in 30 min).",
+  "Day trading finished: 11 trade(s), total +\u00a361."
+ ]
+}
