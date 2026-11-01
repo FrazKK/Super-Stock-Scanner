@@ -1,0 +1,145 @@
+{
+ "date": "2026-10-19",
+ "generated": "2026-11-01T10:04+00:00",
+ "fx_gbpusd": 1.3335645198822021,
+ "result": "done",
+ "require_news": false,
+ "added_during_day": [
+  "Added IRLA to today's list at 10:48 New York: 0.7x normal volume in the last 30 min; no news found",
+  "Added CFFI to today's list at 11:20 New York: 0.7x normal volume in the last 30 min; news: C&F Financial's 2026 Outlook: Aggressive Market Expansion Drives New Retail Grow",
+  "Added SG to today's list at 11:36 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Added HZO to today's list at 11:52 New York: 0.5x normal volume in the last 30 min; no news found",
+  "Added RPAY to today's list at 11:52 New York: 0.3x normal volume in the last 30 min; no news found",
+  "Added FF to today's list at 11:52 New York: 0.6x normal volume in the last 30 min; no news found",
+  "Added MTUS to today's list at 12:24 New York: 0.6x normal volume in the last 30 min; no news found",
+  "Added CNNE to today's list at 12:40 New York: 0.3x normal volume in the last 30 min; no news found",
+  "Added ACCO to today's list at 13:28 New York: 0.6x normal volume in the last 30 min; no news found",
+  "Added EIG to today's list at 14:32 New York: 0.5x normal volume in the last 30 min; no news found",
+  "Added BWMN to today's list at 14:32 New York: 0.3x normal volume in the last 30 min; news: Bowman Acquires Dymaptic, Expanding AI-Powered Geospatial Data Collection and Da",
+  "Added VGZ to today's list at 14:32 New York: 0.8x normal volume in the last 30 min; no news found",
+  "Added BYRN to today's list at 14:32 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Added FET to today's list at 14:48 New York: 0.9x normal volume in the last 30 min; no news found",
+  "Added SSTI to today's list at 14:48 New York: 0.6x normal volume in the last 30 min; no news found",
+  "Added INFU to today's list at 15:04 New York: 0.6x normal volume in the last 30 min; no news found"
+ ],
+ "list": [],
+ "quiet": [
+  {
+   "ticker": "FUFU",
+   "vol_x": 167.55
+  },
+  {
+   "ticker": "DH",
+   "vol_x": 2.19
+  },
+  {
+   "ticker": "ATNM",
+   "vol_x": 1.49
+  },
+  {
+   "ticker": "KRSA",
+   "vol_x": 0.94
+  },
+  {
+   "ticker": "GTE",
+   "vol_x": 0.45
+  },
+  {
+   "ticker": "ENGS",
+   "vol_x": 0.42
+  },
+  {
+   "ticker": "AII",
+   "vol_x": 0.34
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "FUFU",
+   "bought_at": "2026-10-19T14:16+00:00",
+   "sold_at": "2026-10-19T14:20+00:00",
+   "entry": 1.23989999294281,
+   "exit": 1.18,
+   "cost_gbp": 999.4960667754262,
+   "pl_gbp": -48.28599700538575,
+   "pl_pct": -0.04831034219190678,
+   "reason": "Stop-loss order filled"
+  },
+  {
+   "ticker": "DH",
+   "bought_at": "2026-10-19T14:20+00:00",
+   "sold_at": "2026-10-19T14:48+00:00",
+   "entry": 1.059999942779541,
+   "exit": 1.0750000476837158,
+   "cost_gbp": 999.9365670994704,
+   "pl_gbp": 14.150145484613518,
+   "pl_pct": 0.01415104312632454,
+   "reason": "No new high for 16 min, and ENGS overtook it on buying volume (0.44x vs 0.26x normal in 30 min)."
+  },
+  {
+   "ticker": "ENGS",
+   "bought_at": "2026-10-19T14:48+00:00",
+   "sold_at": "2026-10-19T15:06+00:00",
+   "entry": 3.819999933242798,
+   "exit": 3.805000066757202,
+   "cost_gbp": 999.7116426129126,
+   "pl_gbp": -3.925534404541054,
+   "pl_pct": -0.003926666687887137,
+   "reason": "No new high for 16 min, and FUFU overtook it on buying volume (5.79x vs 0.27x normal in 30 min)."
+  },
+  {
+   "ticker": "FUFU",
+   "bought_at": "2026-10-19T15:06+00:00",
+   "sold_at": "2026-10-19T19:50+00:00",
+   "entry": 1.1710000038146973,
+   "exit": 1.2001999616622925,
+   "cost_gbp": 999.2752390104365,
+   "pl_gbp": 24.91784352023592,
+   "pl_pct": 0.02493591609946384,
+   "reason": "End of day: sold 10 minutes before the close."
+  }
+ ],
+ "total_gbp": -13.143542405077369,
+ "alerts": [
+  "10:16 Day trade: bought FUFU: 1,075 FUFU at $1.24 (about \u00a3999). Stop $1.18. Highest first-30-minute volume on today's list (167.6x a normal day).",
+  "10:20 Day trade update: FUFU: stop-loss order filled (-\u00a348)",
+  "10:20 Day trade: bought DH: 1,258 DH at $1.06 (about \u00a31,000). Stop $1.01. Strongest buying on the list: 2.05x normal volume bought in the last 30 min, and rising.",
+  "10:48 Day trade: sold DH (+\u00a314): No new high for 16 min, and ENGS overtook it on buying volume (0.44x vs 0.26x normal in 30 min). Result +\u00a314 (+1.4%).",
+  "10:48 Day trade: bought ENGS: 349 ENGS at $3.82 (about \u00a31,000). Stop $3.63. Strongest buying on the list: 0.44x normal volume bought in the last 30 min, and rising.",
+  "11:06 Day trade: sold ENGS (-\u00a34): No new high for 16 min, and FUFU overtook it on buying volume (5.79x vs 0.27x normal in 30 min). Result -\u00a34 (-0.4%).",
+  "11:06 Day trade: bought FUFU: 1,138 FUFU at $1.17 (about \u00a3999). Stop $1.11. Strongest buying on the list: 5.79x normal volume bought in the last 30 min, and rising.",
+  "15:50 Day trade: sold FUFU (+\u00a325): End of day: sold 10 minutes before the close. Result +\u00a325 (+2.5%).",
+  "15:50 Day trade summary: 4 trade(s) today: FUFU -\u00a348, DH +\u00a314, ENGS -\u00a34, FUFU +\u00a325. Total -\u00a313."
+ ],
+ "log": [
+  "Day trade buy order: 1075 FUFU at about $1.24. Highest first-30-minute volume on today's list (167.6x a normal day).",
+  "Bought 1,075 FUFU at 1.24 (cost \u00a3999).",
+  "FUFU: stop-loss order filled, P&L -\u00a348.",
+  "Day trade buy order: 1258 DH at about $1.06. Strongest buying on the list: 2.05x normal volume bought in the last 30 min, and rising.",
+  "Bought 1,258 DH at 1.06 (cost \u00a31,000).",
+  "Added IRLA to today's list at 10:48 New York: 0.7x normal volume in the last 30 min; no news found",
+  "Sold DH (about +\u00a314). No new high for 16 min, and ENGS overtook it on buying volume (0.44x vs 0.26x normal in 30 min).",
+  "Day trade buy order: 349 ENGS at about $3.82. Strongest buying on the list: 0.44x normal volume bought in the last 30 min, and rising.",
+  "Bought 349 ENGS at 3.82 (cost \u00a31,000).",
+  "Sold ENGS (about -\u00a34). No new high for 16 min, and FUFU overtook it on buying volume (5.79x vs 0.27x normal in 30 min).",
+  "Day trade buy order: 1138 FUFU at about $1.17. Strongest buying on the list: 5.79x normal volume bought in the last 30 min, and rising.",
+  "Bought 1,138 FUFU at 1.17 (cost \u00a3999).",
+  "Added CFFI to today's list at 11:20 New York: 0.7x normal volume in the last 30 min; news: C&F Financial's 2026 Outlook: Aggressive Market Expansion Drives New Retail Grow",
+  "Added SG to today's list at 11:36 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Added HZO to today's list at 11:52 New York: 0.5x normal volume in the last 30 min; no news found",
+  "Added RPAY to today's list at 11:52 New York: 0.3x normal volume in the last 30 min; no news found",
+  "Added FF to today's list at 11:52 New York: 0.6x normal volume in the last 30 min; no news found",
+  "Added MTUS to today's list at 12:24 New York: 0.6x normal volume in the last 30 min; no news found",
+  "Added CNNE to today's list at 12:40 New York: 0.3x normal volume in the last 30 min; no news found",
+  "Added ACCO to today's list at 13:28 New York: 0.6x normal volume in the last 30 min; no news found",
+  "Added EIG to today's list at 14:32 New York: 0.5x normal volume in the last 30 min; no news found",
+  "Added BWMN to today's list at 14:32 New York: 0.3x normal volume in the last 30 min; news: Bowman Acquires Dymaptic, Expanding AI-Powered Geospatial Data Collection and Da",
+  "Added VGZ to today's list at 14:32 New York: 0.8x normal volume in the last 30 min; no news found",
+  "Added BYRN to today's list at 14:32 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Added FET to today's list at 14:48 New York: 0.9x normal volume in the last 30 min; no news found",
+  "Added SSTI to today's list at 14:48 New York: 0.6x normal volume in the last 30 min; no news found",
+  "Added INFU to today's list at 15:04 New York: 0.6x normal volume in the last 30 min; no news found",
+  "Sold FUFU (about +\u00a325). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 4 trade(s), total -\u00a313."
+ ]
+}
