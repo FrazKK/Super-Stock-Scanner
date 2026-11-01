@@ -1,0 +1,129 @@
+{
+ "date": "2026-09-23",
+ "generated": "2026-11-01T15:41+00:00",
+ "fx_gbpusd": 1.3343117237091064,
+ "result": "done",
+ "require_news": true,
+ "strategy": "drift",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [],
+ "drift_list": [
+  {
+   "ticker": "LHSW",
+   "name": "Lianhe Sowell International Group Ltd",
+   "price": 0.7856000065803528,
+   "why": "News in the last 5 days (Lianhe Sowell International Group Ltd. Signs Strategic Cooperation Agreement wit); closed up yesterday (+105.3%) on 7.2x normal volume; above today's open at 10:00 New York."
+  },
+  {
+   "ticker": "MBRX",
+   "name": "Moleculin Biotech, Inc.",
+   "price": 0.6000000238418579,
+   "why": "News in the last 5 days (Moleculin Biotech Secures Mexican Patent Protecting Lung-Targeted Liposomal Anna); closed up yesterday (+8.7%) on 3.9x normal volume; above today's open at 10:00 New York."
+  },
+  {
+   "ticker": "MAZE",
+   "name": "Maze Therapeutics, Inc.",
+   "price": 28.969999313354492,
+   "why": "News in the last 5 days (Twin Moves: VRTX Rises On Kidney Disease Trial Results, MAZE Rallies Harder); closed up yesterday (+26.8%) on 3.6x normal volume; above today's open at 10:00 New York."
+  },
+  {
+   "ticker": "KRO",
+   "name": "Kronos Worldwide Inc",
+   "price": 8.5,
+   "why": "News in the last 5 days (NL Upgraded to Outperform on CompX Strength, Kronos Recovery); closed up yesterday (+6.3%) on 2.1x normal volume; above today's open at 10:00 New York."
+  },
+  {
+   "ticker": "CUE",
+   "name": "Cue Biopharma, Inc.",
+   "price": 33.71500015258789,
+   "why": "News in the last 5 days (Cue Biopharma Shares Jump 41.6% Premarket Following Phase 2 Trial Results); closed up yesterday (+9.3%) on 1.9x normal volume; above today's open at 10:00 New York."
+  }
+ ],
+ "list": [
+  {
+   "ticker": "TLSI",
+   "name": "TriSalus Life Sciences, Inc.",
+   "vol_x": 2.89,
+   "buy_pct30": 0.33050053174814564,
+   "change": 0.06085196778515134,
+   "score": 6.1,
+   "news": [
+    "TriSalus Life Sciences Shares Rise 15.6% After FDA Clearance for TriNav Advance",
+    "TriSalus Life Sciences Receives FDA Clearance for TriNav\u00ae Advance, Strengthening Comprehensive Pressure-Enabled Drug Delivery\u2122 (PEDD\u2122) Portfolio for Liver Embolization"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "WOR",
+   "name": "Worthington Enterprises, Inc.",
+   "vol_x": 1.2,
+   "buy_pct30": 0.2592443077806395,
+   "change": 0.026297982488506788,
+   "score": 1.94,
+   "news": [
+    "Worthington Enterprises Shares Jump 15% on Strong Earnings and Cash Flow Boost"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "IONQ",
+   "vol_x": 1.53
+  },
+  {
+   "ticker": "NNBR",
+   "vol_x": 1.08
+  },
+  {
+   "ticker": "QUBT",
+   "vol_x": 0.93
+  },
+  {
+   "ticker": "WCCB",
+   "vol_x": 0.59
+  },
+  {
+   "ticker": "TNMG",
+   "vol_x": 0.52
+  },
+  {
+   "ticker": "INFQ",
+   "vol_x": 0.45
+  },
+  {
+   "ticker": "PLTR",
+   "vol_x": 0.35
+  },
+  {
+   "ticker": "SBC",
+   "vol_x": 0.33
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "LHSW",
+   "bought_at": "2026-09-23T14:16+00:00",
+   "sold_at": "2026-09-23T14:46+00:00",
+   "entry": 0.7847839794754982,
+   "exit": 0.7447545000000001,
+   "cost_gbp": 1000.1876010167382,
+   "pl_gbp": -53.85982104455172,
+   "pl_pct": -0.05384971878255705,
+   "reason": "Stop-loss order filled"
+  }
+ ],
+ "total_gbp": -53.85982104455172,
+ "alerts": [
+  "10:16 Day trade: bought LHSW: 1,698 LHSW at $0.78 (about \u00a31,000). Stop $0.75. News in the last 5 days (Lianhe Sowell International Group Ltd. Signs Strategic Cooperation Agreement wit); closed up yesterday (+105.3%) on 7.2x normal volume; above today's open at 10:00 New York.",
+  "10:46 Day trade update: LHSW: stop-loss order filled (-\u00a354)",
+  "15:50 Day trade summary: LHSW: -\u00a354 today."
+ ],
+ "log": [
+  "Day trade buy order: 1698 LHSW at about $0.79. News in the last 5 days (Lianhe Sowell International Group Ltd. Signs Strategic Cooperation Agreement wit); closed up yesterday (+105.3%) on 7.2x normal volume; above today's open at 10:00 New York.",
+  "Bought 1,698 LHSW at 0.78 (cost \u00a31,000).",
+  "LHSW: stop-loss order filled, P&L -\u00a354.",
+  "Day trading finished: 1 trade(s), total -\u00a354."
+ ]
+}

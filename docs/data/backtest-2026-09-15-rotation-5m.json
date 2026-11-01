@@ -1,0 +1,121 @@
+{
+ "date": "2026-09-15",
+ "generated": "2026-11-01T15:28+00:00",
+ "fx_gbpusd": 1.3500925302505493,
+ "result": "done",
+ "require_news": true,
+ "strategy": "rotation",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [
+  "Added TEN to today's list at 14:16 New York: 0.9x normal volume in the last 30 min; news: Tsakos Energy Navigation Ltd (TEN) (Q2 2026) Earnings Call Highlights: Record Ne"
+ ],
+ "drift_list": [],
+ "list": [
+  {
+   "ticker": "RLGT",
+   "name": "Radiant Logistics, Inc.",
+   "vol_x": 4.08,
+   "buy_pct30": 0.511339704966154,
+   "change": 0.13885509598366053,
+   "score": 9.21,
+   "news": [
+    "Radiant Logistics sees double-digit growth in FQ4, shares up 16%",
+    "Radiant Logistics Inc (RLGT) (Q4 2026) Earnings Call Highlights: Record Quarterly Revenue and ..."
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "CANG",
+   "vol_x": 5.38
+  },
+  {
+   "ticker": "CHOW",
+   "vol_x": 3.97
+  },
+  {
+   "ticker": "PSIG",
+   "vol_x": 0.68
+  },
+  {
+   "ticker": "FLXS",
+   "vol_x": 0.54
+  },
+  {
+   "ticker": "FCBM",
+   "vol_x": 0.49
+  },
+  {
+   "ticker": "ECO",
+   "vol_x": 0.48
+  },
+  {
+   "ticker": "SFST",
+   "vol_x": 0.42
+  },
+  {
+   "ticker": "PNRG",
+   "vol_x": 0.4
+  },
+  {
+   "ticker": "AGPU",
+   "vol_x": 0.39
+  },
+  {
+   "ticker": "VNCE",
+   "vol_x": 0.36
+  },
+  {
+   "ticker": "WFG",
+   "vol_x": 0.35
+  },
+  {
+   "ticker": "FRO",
+   "vol_x": 0.34
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "RLGT",
+   "bought_at": "2026-09-15T14:16+00:00",
+   "sold_at": "2026-09-15T18:16+00:00",
+   "entry": 9.207898651123045,
+   "exit": 9.949999809265137,
+   "cost_gbp": 997.2425613070404,
+   "pl_gbp": 78.75774208188272,
+   "pl_pct": 0.07897551221506083,
+   "reason": "No new high for 66 min, and TEN overtook it on buying volume (0.69x vs 0.28x normal in 30 min)."
+  },
+  {
+   "ticker": "TEN",
+   "bought_at": "2026-09-15T18:16+00:00",
+   "sold_at": "2026-09-15T19:50+00:00",
+   "entry": 50.8608113746643,
+   "exit": 50.665000915527344,
+   "cost_gbp": 980.9436299444668,
+   "pl_gbp": -5.240117564282741,
+   "pl_pct": -0.005341915074752455,
+   "reason": "End of day: sold 10 minutes before the close."
+  }
+ ],
+ "total_gbp": 73.51762451759998,
+ "alerts": [
+  "10:16 Day trade: bought RLGT: 146 RLGT at $9.21 (about \u00a3997). Stop $8.75. Highest first-30-minute volume on today's list (4.1x a normal day).",
+  "14:16 Day trade: sold RLGT (+\u00a379): No new high for 66 min, and TEN overtook it on buying volume (0.69x vs 0.28x normal in 30 min). Result +\u00a379 (+7.9%).",
+  "14:16 Day trade: bought TEN: 26 TEN at $50.86 (about \u00a3981). Stop $48.32. Strongest buying on the list: 0.69x normal volume bought in the last 30 min, and rising.",
+  "15:50 Day trade: sold TEN (-\u00a35): End of day: sold 10 minutes before the close. Result -\u00a35 (-0.5%).",
+  "15:50 Day trade summary: 2 trade(s) today: RLGT +\u00a379, TEN -\u00a35. Total +\u00a374."
+ ],
+ "log": [
+  "Day trade buy order: 146 RLGT at about $9.20. Highest first-30-minute volume on today's list (4.1x a normal day).",
+  "Bought 146 RLGT at 9.21 (cost \u00a3997).",
+  "Added TEN to today's list at 14:16 New York: 0.9x normal volume in the last 30 min; news: Tsakos Energy Navigation Ltd (TEN) (Q2 2026) Earnings Call Highlights: Record Ne",
+  "Sold RLGT (about +\u00a379). No new high for 66 min, and TEN overtook it on buying volume (0.69x vs 0.28x normal in 30 min).",
+  "Day trade buy order: 26 TEN at about $50.81. Strongest buying on the list: 0.69x normal volume bought in the last 30 min, and rising.",
+  "Bought 26 TEN at 50.86 (cost \u00a3981).",
+  "Sold TEN (about -\u00a35). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 2 trade(s), total +\u00a374."
+ ]
+}

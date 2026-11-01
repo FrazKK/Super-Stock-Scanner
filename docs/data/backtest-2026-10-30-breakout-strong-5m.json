@@ -1,0 +1,196 @@
+{
+ "date": "2026-10-30",
+ "generated": "2026-11-01T16:57+00:00",
+ "fx_gbpusd": 1.3378641605377197,
+ "result": "done",
+ "require_news": true,
+ "strategy": "breakout-strong",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [
+  "Added TFX to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; news: FDA Device Breakthrough Might Change The Case For Investing In Teleflex Stock (T",
+  "Added BSIN to today's list at 10:16 New York: 0.6x normal volume in the last 30 min; news: Big Sky Industrial Inc. Common Stock (BSIN) Institutional Ownership 2026 - Marke",
+  "Added CZFS to today's list at 10:32 New York: 0.4x normal volume in the last 30 min; news: Citizens Financial Services (CZFS) Q3 Earnings and Revenues Beat Estimates",
+  "Added PROF to today's list at 10:32 New York: 0.4x normal volume in the last 30 min; news: Profound Medical and Cook Medical\u2019s iMRI Division Partner to Expand U.S. TULSA-P",
+  "Added COOK to today's list at 10:32 New York: 0.4x normal volume in the last 30 min; news: Traeger, Inc.'s (NYSE:COOK) Path To Profitability - Simply Wall St",
+  "Added TASK to today's list at 11:36 New York: 0.4x normal volume in the last 30 min; news: 3,512,150 Shares in TaskUs, Inc. $TASK Purchased by Brooklands Fund Management L",
+  "Added FNRN to today's list at 12:08 New York: 0.5x normal volume in the last 30 min; news: First Northern Profit Rises 11.1% to $16.8 Million - grafa.com",
+  "Added FISV to today's list at 12:40 New York: 0.4x normal volume in the last 30 min; news: Fiserv (FISV) Launches Commerce Hub Globally",
+  "Added NOMD to today's list at 12:40 New York: 0.4x normal volume in the last 30 min; news: Learn Why The Bull Case For Nomad Foods Stock Could Change Following Earnings Es",
+  "Added WBI to today's list at 13:44 New York: 0.5x normal volume in the last 30 min; news: Why WaterBridge (WBI) is Poised to Beat Earnings Estimates Again",
+  "Added FRAF to today's list at 14:16 New York: 1.0x normal volume in the last 30 min; news: FRAF Q3 Earnings Rise Y/Y as Margin & Deposit Growth Improve"
+ ],
+ "drift_list": [],
+ "list": [
+  {
+   "ticker": "REGN",
+   "name": "Regeneron Pharmaceuticals, Inc.",
+   "vol_x": 1.18,
+   "buy_pct30": 0.8229069258159629,
+   "change": 0.1308243447053119,
+   "score": 6.15,
+   "news": [
+    "REGN Q3 Earnings Beat on Dupixent Profits & Eylea HD Growth, Stock Up"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "CPRI",
+   "name": "Capri Holdings Limited",
+   "vol_x": 0.71,
+   "buy_pct30": 0.7192977192413313,
+   "change": 0.15691161529038067,
+   "score": 4.8,
+   "news": [
+    "Capri Soars 17% on Earnings Beat and Raised Outlook: \u201cTrends Improved Sequentially Each Month\u201d",
+    "Capri shares surge 16% as profit beat helps it escape Wall Street sell-off"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "MEOH",
+   "name": "Methanex Corporation",
+   "vol_x": 0.91,
+   "buy_pct30": 0.6753426765396584,
+   "change": 0.09448700252495756,
+   "score": 4.52,
+   "news": [
+    "Methanex Shares In Focus After Earnings Beat And 5% Buyback Plan",
+    "Methanex Soars 14% on Earnings Beat as Middle East Conflict\u2019s \u201cDramatic Impact\u201d Lifts Methanol Prices"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "CBK",
+   "name": "Commercial Bancgroup, Inc.",
+   "vol_x": 0.45,
+   "buy_pct30": 0.7150976596815964,
+   "change": 0.004849949659643249,
+   "score": 4.26,
+   "news": [
+    "Commercial Bancgroup (CBK) Q3 Earnings Beat Meets Questions Over Staying Power",
+    "Commercial Bancgroup (CBK) Q3 Earnings Beat Meets Questions Over Staying Power - Yahoo Finance"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "GCBC",
+   "name": "Greene County Bancorp, Inc.",
+   "vol_x": 0.45,
+   "buy_pct30": 0.6320738514383856,
+   "change": 0.003066646602372325,
+   "score": 3.93,
+   "news": [
+    "Greene County Bancorp (NASDAQ:GCBC) Sees Large Volume Increase - Here's What Happened - MarketBeat"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "EXC",
+   "name": "Exelon Corporation",
+   "vol_x": 0.72,
+   "buy_pct30": 0.6681921544182906,
+   "change": 0.00969287075371894,
+   "score": 3.61,
+   "news": [
+    "EXC Q3 Earnings Beat Estimates on Higher Utility Rates, Sales Up Y/Y",
+    "Exelon Shares Gain 2% as Q3 Earnings and Revenue Beat Expectations"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "CVCO",
+   "name": "Cavco Industries, Inc.",
+   "vol_x": 0.61,
+   "buy_pct30": 0.5419584670101433,
+   "change": 0.13443582882452043,
+   "score": 3.39,
+   "news": [
+    "Cavco Soars 12% on Earnings Beat as \u201cData Center Workforce Housing\u201d Orders Arrive",
+    "Rising Backlogs and Scale Support Cavco Industries\u2019 (CVCO) Long-Term Growth Thesis"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "AZN",
+   "name": "AstraZeneca PLC",
+   "vol_x": 0.37,
+   "buy_pct30": 0.6890650334854593,
+   "change": 0.07264854965379874,
+   "score": 3.0,
+   "news": [
+    "Learn Why The Bull Case For AstraZeneca Stock Could Change Following Earnings Beat"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "BTSG",
+   "name": "BrightSpring Health Services, Inc.",
+   "vol_x": 0.43,
+   "buy_pct30": 0.5572797539691625,
+   "change": 0.12952499608521606,
+   "score": 2.59,
+   "news": [
+    "BrightSpring Soars 12% on Q3 Beat and Raised 2026 Guidance as Adjusted EBITDA Jumps 42%"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "ACCO",
+   "vol_x": 1.36
+  },
+  {
+   "ticker": "OSPN",
+   "vol_x": 1.23
+  },
+  {
+   "ticker": "PARK",
+   "vol_x": 0.82
+  },
+  {
+   "ticker": "GDYN",
+   "vol_x": 0.74
+  },
+  {
+   "ticker": "CDNA",
+   "vol_x": 0.67
+  },
+  {
+   "ticker": "FBIZ",
+   "vol_x": 0.59
+  },
+  {
+   "ticker": "NCPL",
+   "vol_x": 0.46
+  },
+  {
+   "ticker": "RRBI",
+   "vol_x": 0.39
+  },
+  {
+   "ticker": "LLY",
+   "vol_x": 0.34
+  }
+ ],
+ "trades": [],
+ "total_gbp": 0,
+ "alerts": [
+  "15:50 Day trade summary: No trade today: nothing in play broke out."
+ ],
+ "log": [
+  "Added TFX to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; news: FDA Device Breakthrough Might Change The Case For Investing In Teleflex Stock (T",
+  "Added BSIN to today's list at 10:16 New York: 0.6x normal volume in the last 30 min; news: Big Sky Industrial Inc. Common Stock (BSIN) Institutional Ownership 2026 - Marke",
+  "Added CZFS to today's list at 10:32 New York: 0.4x normal volume in the last 30 min; news: Citizens Financial Services (CZFS) Q3 Earnings and Revenues Beat Estimates",
+  "Added PROF to today's list at 10:32 New York: 0.4x normal volume in the last 30 min; news: Profound Medical and Cook Medical\u2019s iMRI Division Partner to Expand U.S. TULSA-P",
+  "Added COOK to today's list at 10:32 New York: 0.4x normal volume in the last 30 min; news: Traeger, Inc.'s (NYSE:COOK) Path To Profitability - Simply Wall St",
+  "Added TASK to today's list at 11:36 New York: 0.4x normal volume in the last 30 min; news: 3,512,150 Shares in TaskUs, Inc. $TASK Purchased by Brooklands Fund Management L",
+  "Added FNRN to today's list at 12:08 New York: 0.5x normal volume in the last 30 min; news: First Northern Profit Rises 11.1% to $16.8 Million - grafa.com",
+  "Added FISV to today's list at 12:40 New York: 0.4x normal volume in the last 30 min; news: Fiserv (FISV) Launches Commerce Hub Globally",
+  "Added NOMD to today's list at 12:40 New York: 0.4x normal volume in the last 30 min; news: Learn Why The Bull Case For Nomad Foods Stock Could Change Following Earnings Es",
+  "Added WBI to today's list at 13:44 New York: 0.5x normal volume in the last 30 min; news: Why WaterBridge (WBI) is Poised to Beat Earnings Estimates Again",
+  "Added FRAF to today's list at 14:16 New York: 1.0x normal volume in the last 30 min; news: FRAF Q3 Earnings Rise Y/Y as Margin & Deposit Growth Improve",
+  "Day trading finished: 0 trade(s), total +\u00a30."
+ ]
+}

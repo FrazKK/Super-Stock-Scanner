@@ -1,0 +1,77 @@
+{
+ "date": "2026-10-09",
+ "generated": "2026-11-01T16:15+00:00",
+ "fx_gbpusd": 1.322908878326416,
+ "result": "done",
+ "require_news": true,
+ "strategy": "breakout-strong",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [],
+ "drift_list": [],
+ "list": [
+  {
+   "ticker": "VEEA",
+   "name": "Veea Inc.",
+   "vol_x": 2.46,
+   "buy_pct30": 0.6330394000396526,
+   "change": 0.44832046119395597,
+   "score": 4.95,
+   "news": [
+    "Veea Secures Landmark Smart Community Agreement with La Estadia Community for Agentic Real-time Aware and Secure Community"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "GFUZ",
+   "name": "General Fusion Group Ltd.",
+   "vol_x": 1.23,
+   "buy_pct30": 0.13057976275380923,
+   "change": 0.022962090515407763,
+   "score": 1.98,
+   "news": [
+    "General Fusion Achieves World-First 1 keV Electron Temperature Milestone on its Path to Commercial Fusion Power",
+    "General Fusion, UKAEA Announce Magnetized Target Fusion Milestone"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "HUM",
+   "vol_x": 0.99
+  },
+  {
+   "ticker": "TEVA",
+   "vol_x": 0.69
+  },
+  {
+   "ticker": "CLOV",
+   "vol_x": 0.64
+  },
+  {
+   "ticker": "IMMR",
+   "vol_x": 0.49
+  },
+  {
+   "ticker": "FSLY",
+   "vol_x": 0.44
+  },
+  {
+   "ticker": "SNOW",
+   "vol_x": 0.38
+  },
+  {
+   "ticker": "PLTR",
+   "vol_x": 0.34
+  }
+ ],
+ "trades": [],
+ "total_gbp": 0,
+ "alerts": [
+  "15:50 Day trade summary: No trade today: nothing in play broke out."
+ ],
+ "log": [
+  "Day trading finished: 0 trade(s), total +\u00a30."
+ ]
+}

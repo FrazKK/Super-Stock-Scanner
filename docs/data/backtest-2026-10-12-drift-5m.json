@@ -1,0 +1,107 @@
+{
+ "date": "2026-10-12",
+ "generated": "2026-11-01T16:20+00:00",
+ "fx_gbpusd": 1.3241524696350098,
+ "result": "done",
+ "require_news": true,
+ "strategy": "drift",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [],
+ "drift_list": [
+  {
+   "ticker": "LZM",
+   "name": "Lifezone Metals Limited",
+   "price": 3.4100000858306885,
+   "why": "News in the last 5 days (Lifezone Metals Announces US$8 Million Reduction in Cap on Consideration Payable); closed up yesterday (+2.1%) on 2.2x normal volume; above today's open at 10:00 New York."
+  },
+  {
+   "ticker": "ANGO",
+   "name": "AngioDynamics, Inc.",
+   "price": 11.598999977111816,
+   "why": "News in the last 5 days (ANGO Q1 Earnings Beat Estimates on Med Tech Growth, Revenues Up Y/Y); closed up yesterday (+2.6%) on 1.9x normal volume; above today's open at 10:00 New York."
+  },
+  {
+   "ticker": "AGBK",
+   "name": "AGI Inc",
+   "price": 6.769999980926514,
+   "why": "News in the last 5 days (AGI (AGBK) Rebounds Following A Sharp Rally But Is The Undervalued Case Still In); closed up yesterday (+3.8%) on 1.5x normal volume; above today's open at 10:00 New York."
+  },
+  {
+   "ticker": "AUGO",
+   "name": "Aura Minerals Inc.",
+   "price": 91.19000244140625,
+   "why": "News in the last 5 days (Aura Minerals (AUGO) Is Up 11.4% After Record Q3 Output And MSG Turnaround - Wha); closed up yesterday (+10.6%) on 1.4x normal volume; above today's open at 10:00 New York."
+  },
+  {
+   "ticker": "ERO",
+   "name": "Ero Copper Corp.",
+   "price": 37.72999954223633,
+   "why": "News in the last 5 days (Is Ero Copper (TSX:ERO) Fully Valued As Strong Production And Copper Demand Lift); closed up yesterday (+4.5%) on 1.2x normal volume; above today's open at 10:00 New York."
+  }
+ ],
+ "list": [],
+ "quiet": [
+  {
+   "ticker": "NCPL",
+   "vol_x": 1.44
+  },
+  {
+   "ticker": "ALLT",
+   "vol_x": 0.98
+  },
+  {
+   "ticker": "AI",
+   "vol_x": 0.86
+  },
+  {
+   "ticker": "MSGM",
+   "vol_x": 0.64
+  },
+  {
+   "ticker": "PEBK",
+   "vol_x": 0.5
+  },
+  {
+   "ticker": "ENGS",
+   "vol_x": 0.48
+  },
+  {
+   "ticker": "CBNA",
+   "vol_x": 0.43
+  },
+  {
+   "ticker": "SHOP",
+   "vol_x": 0.36
+  },
+  {
+   "ticker": "BORR",
+   "vol_x": 0.36
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "LZM",
+   "bought_at": "2026-10-12T14:16+00:00",
+   "sold_at": "2026-10-12T19:50+00:00",
+   "entry": 3.4234200763702387,
+   "exit": 3.4049999713897705,
+   "cost_gbp": 1004.6270732574922,
+   "pl_gbp": -6.902098834123194,
+   "pl_pct": -0.006870309409185257,
+   "reason": "End of day: sold 10 minutes before the close."
+  }
+ ],
+ "total_gbp": -6.902098834123194,
+ "alerts": [
+  "10:16 Day trade: bought LZM: 388 LZM at $3.42 (about \u00a31,005). Stop $3.25. News in the last 5 days (Lifezone Metals Announces US$8 Million Reduction in Cap on Consideration Payable); closed up yesterday (+2.1%) on 2.2x normal volume; above today's open at 10:00 New York.",
+  "15:50 Day trade: sold LZM (-\u00a37): End of day: sold 10 minutes before the close. Result -\u00a37 (-0.7%).",
+  "15:50 Day trade summary: LZM: -\u00a37 today."
+ ],
+ "log": [
+  "Day trade buy order: 388 LZM at about $3.41. News in the last 5 days (Lifezone Metals Announces US$8 Million Reduction in Cap on Consideration Payable); closed up yesterday (+2.1%) on 2.2x normal volume; above today's open at 10:00 New York.",
+  "Bought 388 LZM at 3.42 (cost \u00a31,005).",
+  "Sold LZM (about -\u00a37). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 1 trade(s), total -\u00a37."
+ ]
+}

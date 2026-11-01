@@ -1,0 +1,64 @@
+{
+ "date": "2026-10-12",
+ "generated": "2026-11-01T16:18+00:00",
+ "fx_gbpusd": 1.3241524696350098,
+ "result": "done",
+ "require_news": true,
+ "strategy": "breakout-strong",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [
+  "Added ZIM to today's list at 12:40 New York: 0.5x normal volume in the last 30 min; news: Zim lifts profit forecast 72% on strong demand",
+  "Added TOP to today's list at 12:40 New York: 1.0x normal volume in the last 30 min; news: TOP Financial Group (TOP) Faces A Valuation Test Following Its $1.47b Shelf Fili"
+ ],
+ "drift_list": [],
+ "list": [],
+ "quiet": [
+  {
+   "ticker": "NCPL",
+   "vol_x": 1.44
+  },
+  {
+   "ticker": "ALLT",
+   "vol_x": 0.98
+  },
+  {
+   "ticker": "AI",
+   "vol_x": 0.86
+  },
+  {
+   "ticker": "MSGM",
+   "vol_x": 0.64
+  },
+  {
+   "ticker": "PEBK",
+   "vol_x": 0.5
+  },
+  {
+   "ticker": "ENGS",
+   "vol_x": 0.48
+  },
+  {
+   "ticker": "CBNA",
+   "vol_x": 0.43
+  },
+  {
+   "ticker": "SHOP",
+   "vol_x": 0.36
+  },
+  {
+   "ticker": "BORR",
+   "vol_x": 0.36
+  }
+ ],
+ "trades": [],
+ "total_gbp": 0,
+ "alerts": [
+  "15:50 Day trade summary: No trade today: nothing in play broke out."
+ ],
+ "log": [
+  "Added ZIM to today's list at 12:40 New York: 0.5x normal volume in the last 30 min; news: Zim lifts profit forecast 72% on strong demand",
+  "Added TOP to today's list at 12:40 New York: 1.0x normal volume in the last 30 min; news: TOP Financial Group (TOP) Faces A Valuation Test Following Its $1.47b Shelf Fili",
+  "Day trading finished: 0 trade(s), total +\u00a30."
+ ]
+}

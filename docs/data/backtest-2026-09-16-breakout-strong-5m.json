@@ -1,0 +1,78 @@
+{
+ "date": "2026-09-16",
+ "generated": "2026-11-01T15:31+00:00",
+ "fx_gbpusd": 1.3473457098007202,
+ "result": "done",
+ "require_news": true,
+ "strategy": "breakout-strong",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [
+  "Added GLBS to today's list at 10:48 New York: 0.5x normal volume in the last 30 min; news: Globus Maritime Limited Announces the Delivery of a 2026-Built Ultramax Dry Bulk",
+  "Added PNTG to today's list at 11:52 New York: 2.4x normal volume in the last 30 min; news: Pennant Acquires\u00a0Real Estate of Mainplace Senior Living in Orange, California",
+  "Added FEAM to today's list at 14:16 New York: 2.1x normal volume in the last 30 min; news: SEARLES VALLEY MINERALS ANNOUNCES DEFINITIVE ASSET PURCHASE AGREEMENT WITH 5E AD"
+ ],
+ "drift_list": [],
+ "list": [],
+ "quiet": [
+  {
+   "ticker": "BBNX",
+   "vol_x": 1.28
+  },
+  {
+   "ticker": "ALVO",
+   "vol_x": 1.06
+  },
+  {
+   "ticker": "LIFE",
+   "vol_x": 0.8
+  },
+  {
+   "ticker": "AGPU",
+   "vol_x": 0.57
+  },
+  {
+   "ticker": "ADPT",
+   "vol_x": 0.49
+  },
+  {
+   "ticker": "EPM",
+   "vol_x": 0.4
+  },
+  {
+   "ticker": "CRON",
+   "vol_x": 0.38
+  },
+  {
+   "ticker": "TEM",
+   "vol_x": 0.37
+  },
+  {
+   "ticker": "SND",
+   "vol_x": 0.37
+  },
+  {
+   "ticker": "PACB",
+   "vol_x": 0.36
+  },
+  {
+   "ticker": "ILMN",
+   "vol_x": 0.34
+  },
+  {
+   "ticker": "ECO",
+   "vol_x": 0.34
+  }
+ ],
+ "trades": [],
+ "total_gbp": 0,
+ "alerts": [
+  "15:50 Day trade summary: No trade today: nothing in play broke out."
+ ],
+ "log": [
+  "Added GLBS to today's list at 10:48 New York: 0.5x normal volume in the last 30 min; news: Globus Maritime Limited Announces the Delivery of a 2026-Built Ultramax Dry Bulk",
+  "Added PNTG to today's list at 11:52 New York: 2.4x normal volume in the last 30 min; news: Pennant Acquires\u00a0Real Estate of Mainplace Senior Living in Orange, California",
+  "Added FEAM to today's list at 14:16 New York: 2.1x normal volume in the last 30 min; news: SEARLES VALLEY MINERALS ANNOUNCES DEFINITIVE ASSET PURCHASE AGREEMENT WITH 5E AD",
+  "Day trading finished: 0 trade(s), total +\u00a30."
+ ]
+}

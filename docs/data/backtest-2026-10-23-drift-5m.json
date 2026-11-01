@@ -1,0 +1,109 @@
+{
+ "date": "2026-10-23",
+ "generated": "2026-11-01T16:44+00:00",
+ "fx_gbpusd": 1.3403927087783813,
+ "result": "done",
+ "require_news": true,
+ "strategy": "drift",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [],
+ "drift_list": [
+  {
+   "ticker": "ATOM",
+   "name": "Atomera Incorporated",
+   "price": 3.0799999237060547,
+   "why": "News in the last 5 days (Atomera Has Signed a Joint Development Agreement With IQE to Bring High-Performa); closed up yesterday (+2.0%) on 4.0x normal volume; above today's open at 10:00 New York."
+  },
+  {
+   "ticker": "GAUZ",
+   "name": "Gauzy Ltd.",
+   "price": 4.690000057220459,
+   "why": "News in the last 5 days (Gauzy\u2019s $7 Million Financing Enables Restart of SPD-SmartGlass Production, Fulfi); closed up yesterday (+6.5%) on 2.9x normal volume; above today's open at 10:00 New York."
+  },
+  {
+   "ticker": "BMI",
+   "name": "Badger Meter, Inc.",
+   "price": 148.94000244140625,
+   "why": "News in the last 5 days (BMI Q3 deep dive: Strong margin management and software growth offset flat sales); closed up yesterday (+13.5%) on 2.6x normal volume; above today's open at 10:00 New York."
+  },
+  {
+   "ticker": "BDSX",
+   "name": "Biodesix, Inc.",
+   "price": 23.290000915527344,
+   "why": "News in the last 5 days (Biodesix Adds Digital Diagnostics to Lung Pipeline, Creating New Growth Platform); closed up yesterday (+0.0%) on 2.2x normal volume; above today's open at 10:00 New York."
+  },
+  {
+   "ticker": "ARHS",
+   "name": "Arhaus, Inc.",
+   "price": 11.649999618530273,
+   "why": "News in the last 5 days (Arhaus (ARHS) Stock Gets Fair Value Bump As Analysts Weigh Growth And Margins); closed up yesterday (+5.4%) on 1.7x normal volume; above today's open at 10:00 New York."
+  }
+ ],
+ "list": [
+  {
+   "ticker": "FCNCA",
+   "name": "First Citizens BancShares, Inc.",
+   "vol_x": 0.47,
+   "buy_pct30": 0.4917022533626585,
+   "change": 0.06266953206676784,
+   "score": 3.91,
+   "news": [
+    "First Citizens Soars 8% on Q3 Earnings Beat and New $1.2 Billion Buyback",
+    "First Citizens BancShares (NASDAQ:FCNCA) reports upbeat Q3 2026"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "BOLT",
+   "vol_x": 8.26
+  },
+  {
+   "ticker": "YMAT",
+   "vol_x": 1.62
+  },
+  {
+   "ticker": "EDHL",
+   "vol_x": 0.84
+  },
+  {
+   "ticker": "RNG",
+   "vol_x": 0.66
+  },
+  {
+   "ticker": "MWYN",
+   "vol_x": 0.46
+  },
+  {
+   "ticker": "BWLP",
+   "vol_x": 0.38
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "ATOM",
+   "bought_at": "2026-10-23T14:16+00:00",
+   "sold_at": "2026-10-23T19:50+00:00",
+   "entry": 3.0280250954627985,
+   "exit": 2.9649999141693115,
+   "cost_gbp": 984.1643380046288,
+   "pl_gbp": -21.927708234285774,
+   "pl_pct": -0.022280535259734887,
+   "reason": "End of day: sold 10 minutes before the close."
+  }
+ ],
+ "total_gbp": -21.927708234285774,
+ "alerts": [
+  "10:16 Day trade: bought ATOM: 435 ATOM at $3.03 (about \u00a3984). Stop $2.88. News in the last 5 days (Atomera Has Signed a Joint Development Agreement With IQE to Bring High-Performa); closed up yesterday (+2.0%) on 4.0x normal volume; above today's open at 10:00 New York.",
+  "15:50 Day trade: sold ATOM (-\u00a322): End of day: sold 10 minutes before the close. Result -\u00a322 (-2.2%).",
+  "15:50 Day trade summary: ATOM: -\u00a322 today."
+ ],
+ "log": [
+  "Day trade buy order: 435 ATOM at about $3.08. News in the last 5 days (Atomera Has Signed a Joint Development Agreement With IQE to Bring High-Performa); closed up yesterday (+2.0%) on 4.0x normal volume; above today's open at 10:00 New York.",
+  "Bought 435 ATOM at 3.03 (cost \u00a3984).",
+  "Sold ATOM (about -\u00a322). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 1 trade(s), total -\u00a322."
+ ]
+}

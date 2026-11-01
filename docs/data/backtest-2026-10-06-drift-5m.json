@@ -1,0 +1,184 @@
+{
+ "date": "2026-10-06",
+ "generated": "2026-11-01T16:09+00:00",
+ "fx_gbpusd": 1.32185959815979,
+ "result": "done",
+ "require_news": true,
+ "strategy": "drift",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [],
+ "drift_list": [
+  {
+   "ticker": "WORX",
+   "name": "SCWorx Corp.",
+   "price": 5.889999866485596,
+   "why": "News in the last 5 days (SCWorx Corp. Announces Nasdaq Hearings Panel Grants Request for Reconsideration ); closed up yesterday (+33.0%) on 8.1x normal volume; above today's open at 10:00 New York."
+  },
+  {
+   "ticker": "OPTX",
+   "name": "Syntec Optics Holdings, Inc.",
+   "price": 9.890000343322754,
+   "why": "News in the last 5 days (Syntec Optics (Nasdaq: OPTX) Lands Artemis III Production Orders, Expands Space ); closed up yesterday (+7.2%) on 2.1x normal volume; above today's open at 10:00 New York."
+  },
+  {
+   "ticker": "POM",
+   "name": "POMDOCTOR LIMITED",
+   "price": 0.8984000086784363,
+   "why": "News in the last 5 days (POMDOCTOR LIMITED Accelerates AI-Enabled Chronic Disease Management and RWD Comm); closed up yesterday (+8.1%) on 1.8x normal volume; above today's open at 10:00 New York."
+  },
+  {
+   "ticker": "ACHC",
+   "name": "Acadia Healthcare Company, Inc.",
+   "price": 28.920000076293945,
+   "why": "News in the last 5 days (Acadia Healthcare (ACHC) Upgraded to Buy: Here's What You Should Know); closed up yesterday (+2.9%) on 1.5x normal volume; above today's open at 10:00 New York."
+  },
+  {
+   "ticker": "AGRO",
+   "name": "Adecoagro S.A.",
+   "price": 10.704999923706055,
+   "why": "News in the last 5 days (The Bull Case For Adecoagro (AGRO) Could Change Following Early Redemption Of 20); closed up yesterday (+6.4%) on 1.4x normal volume; above today's open at 10:00 New York."
+  }
+ ],
+ "list": [
+  {
+   "ticker": "OSTX",
+   "name": "OS Therapies Incorporated",
+   "vol_x": 8.22,
+   "buy_pct30": 0.5038385748191209,
+   "change": 0.0750000018626451,
+   "score": 17.96,
+   "news": [
+    "OS Therapies Appoints Kerry Clem as Chief Commercial Officer and Frank Knuettel II as Chief Financial Officer"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "AIFA",
+   "name": "All In FutureTech Alliance, Inc.",
+   "vol_x": 3.0,
+   "buy_pct30": 0.5997959506563216,
+   "change": 0.261054390737552,
+   "score": 6.9,
+   "news": [
+    "All In FutureTech Alliance Inc. Launches New Digital Platform for Consumers and Businesses, Advancing Its AI-Enabled Global Services Strategy"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "CBNA",
+   "name": "Chain Bridge Bancorp, Inc.",
+   "vol_x": 0.36,
+   "buy_pct30": 0.7522633744855967,
+   "change": 0.05274139378911791,
+   "score": 3.23,
+   "news": [
+    "Raymond James upgrades Chain Bridge Bancorp to Outperform on rate tailwinds"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "DGII",
+   "name": "Digi International Inc.",
+   "vol_x": 0.86,
+   "buy_pct30": 0.048392013825879494,
+   "change": 0.0076448459427092,
+   "score": 0.91,
+   "news": [
+    "Digi International Acquires Disruptive Technologies to Expand SmartSense IoT Reach",
+    "Digi International Announces Intent to Acquire Disruptive Technologies to Advance SmartSense Physical-World Intelligence Platform and Enter Europe"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "QTEX",
+   "vol_x": 1.59
+  },
+  {
+   "ticker": "CEG",
+   "vol_x": 1.34
+  },
+  {
+   "ticker": "MRVL",
+   "vol_x": 1.01
+  },
+  {
+   "ticker": "DNA",
+   "vol_x": 0.99
+  },
+  {
+   "ticker": "VST",
+   "vol_x": 0.88
+  },
+  {
+   "ticker": "PRME",
+   "vol_x": 0.75
+  },
+  {
+   "ticker": "SOTK",
+   "vol_x": 0.64
+  },
+  {
+   "ticker": "FRSH",
+   "vol_x": 0.55
+  },
+  {
+   "ticker": "ALAB",
+   "vol_x": 0.5
+  },
+  {
+   "ticker": "FBIZ",
+   "vol_x": 0.48
+  },
+  {
+   "ticker": "OVBC",
+   "vol_x": 0.48
+  },
+  {
+   "ticker": "SLDE",
+   "vol_x": 0.47
+  },
+  {
+   "ticker": "PACB",
+   "vol_x": 0.46
+  },
+  {
+   "ticker": "FTRE",
+   "vol_x": 0.43
+  },
+  {
+   "ticker": "NKSH",
+   "vol_x": 0.43
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "WORX",
+   "bought_at": "2026-10-06T14:16+00:00",
+   "sold_at": "2026-10-06T17:30+00:00",
+   "entry": 5.5755701718330375,
+   "exit": 6.45354,
+   "cost_gbp": 946.2435434214217,
+   "pl_gbp": 145.72157342566652,
+   "pl_pct": 0.1540000715870328,
+   "reason": "Stop-loss order filled"
+  }
+ ],
+ "total_gbp": 145.72157342566652,
+ "alerts": [
+  "10:16 Day trade: bought WORX: 224 WORX at $5.58 (about \u00a3946). Stop $5.30. News in the last 5 days (SCWorx Corp. Announces Nasdaq Hearings Panel Grants Request for Reconsideration ); closed up yesterday (+33.0%) on 8.1x normal volume; above today's open at 10:00 New York.",
+  "13:30 Day trade update: WORX: stop-loss order filled (+\u00a3146)",
+  "15:50 Day trade summary: WORX: +\u00a3146 today."
+ ],
+ "log": [
+  "Day trade buy order: 224 WORX at about $5.89. News in the last 5 days (SCWorx Corp. Announces Nasdaq Hearings Panel Grants Request for Reconsideration ); closed up yesterday (+33.0%) on 8.1x normal volume; above today's open at 10:00 New York.",
+  "Bought 224 WORX at 5.58 (cost \u00a3946).",
+  "WORX: stop raised from 5.30 to 5.91.",
+  "WORX: stop raised from 5.91 to 6.22.",
+  "WORX: stop raised from 6.22 to 6.46.",
+  "WORX: stop-loss order filled, P&L +\u00a3146.",
+  "Day trading finished: 1 trade(s), total +\u00a3146."
+ ]
+}

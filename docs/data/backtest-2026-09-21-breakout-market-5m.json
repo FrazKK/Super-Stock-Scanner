@@ -1,0 +1,97 @@
+{
+ "date": "2026-09-21",
+ "generated": "2026-11-01T15:38+00:00",
+ "fx_gbpusd": 1.3388673067092896,
+ "result": "done",
+ "require_news": true,
+ "strategy": "breakout-market",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [],
+ "drift_list": [],
+ "list": [
+  {
+   "ticker": "OPTX",
+   "name": "Syntec Optics Holdings, Inc.",
+   "vol_x": 2.24,
+   "buy_pct30": 0.638515336214025,
+   "change": 0.2341679177497331,
+   "score": 6.03,
+   "news": [
+    "OPTX Stock Jumps On \u2018Most Critical Order\u2019 In 25-Year History \u2013 Everything To Know About The US Space Force Contract",
+    "Syntec Optics (NASDAQ: OPTX) Secures Landmark Order for U.S. Space Force and Reconnaissance"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "ABLV",
+   "vol_x": 49.75
+  },
+  {
+   "ticker": "CRML",
+   "vol_x": 3.75
+  },
+  {
+   "ticker": "NCPL",
+   "vol_x": 3.24
+  },
+  {
+   "ticker": "SUIG",
+   "vol_x": 1.59
+  },
+  {
+   "ticker": "NUAI",
+   "vol_x": 1.48
+  },
+  {
+   "ticker": "TAOX",
+   "vol_x": 1.17
+  },
+  {
+   "ticker": "USDE",
+   "vol_x": 1.09
+  },
+  {
+   "ticker": "GEF.B",
+   "vol_x": 0.88
+  },
+  {
+   "ticker": "HSDT",
+   "vol_x": 0.88
+  },
+  {
+   "ticker": "GRAL",
+   "vol_x": 0.57
+  },
+  {
+   "ticker": "BKKT",
+   "vol_x": 0.54
+  },
+  {
+   "ticker": "SBET",
+   "vol_x": 0.5
+  },
+  {
+   "ticker": "AMD",
+   "vol_x": 0.49
+  },
+  {
+   "ticker": "BTCS",
+   "vol_x": 0.49
+  },
+  {
+   "ticker": "COIN",
+   "vol_x": 0.44
+  }
+ ],
+ "trades": [],
+ "total_gbp": 0,
+ "alerts": [
+  "15:50 Day trade summary: No trade today: nothing in play broke out."
+ ],
+ "log": [
+  "Day trading finished: 0 trade(s), total +\u00a30."
+ ]
+}

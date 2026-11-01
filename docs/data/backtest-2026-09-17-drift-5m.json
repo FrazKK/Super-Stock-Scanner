@@ -1,0 +1,169 @@
+{
+ "date": "2026-09-17",
+ "generated": "2026-11-01T15:33+00:00",
+ "fx_gbpusd": 1.3382940292358398,
+ "result": "done",
+ "require_news": true,
+ "strategy": "drift",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [],
+ "drift_list": [
+  {
+   "ticker": "NRXS",
+   "name": "Neuraxis, Inc.",
+   "price": 7.789999961853027,
+   "why": "News in the last 5 days (NeurAxis Announces Medical Coverage Policy Milestone, Expanding Access to Over 1); closed up yesterday (+21.8%) on 6.3x normal volume; above today's open at 10:00 New York."
+  },
+  {
+   "ticker": "FEAM",
+   "name": "5E Advanced Materials, Inc.",
+   "price": 1.8898999691009521,
+   "why": "News in the last 5 days (SEARLES VALLEY MINERALS ANNOUNCES DEFINITIVE ASSET PURCHASE AGREEMENT WITH 5E AD); closed up yesterday (+39.7%) on 6.2x normal volume; above today's open at 10:00 New York."
+  },
+  {
+   "ticker": "CETX",
+   "name": "Cemtrex Inc.",
+   "price": 2.575000047683716,
+   "why": "News in the last 5 days (Cemtrex's Vicon Secures Approximately $2.8 Million in Orders from U.S. Federal G); closed up yesterday (+1.7%) on 3.0x normal volume; above today's open at 10:00 New York."
+  },
+  {
+   "ticker": "BLSM",
+   "name": "BlossomHill Therapeutics, Inc.",
+   "price": 27.165000915527344,
+   "why": "News in the last 5 days (BlossomHill Therapeutics Presents Updated Data from Ongoing Phase 1/2 SOLARA Tri); closed up yesterday (+18.4%) on 1.8x normal volume; above today's open at 10:00 New York."
+  },
+  {
+   "ticker": "RCKT",
+   "name": "Rocket Pharmaceuticals, Inc.",
+   "price": 3.614000082015991,
+   "why": "News in the last 5 days (Rocket Pharmaceuticals\u2019 FDA Decision Clears \u2018Meaningful Regulatory Overhang,\u2019 Sa); closed up yesterday (+2.1%) on 1.7x normal volume; above today's open at 10:00 New York."
+  }
+ ],
+ "list": [
+  {
+   "ticker": "FEAM",
+   "name": "5E Advanced Materials, Inc.",
+   "vol_x": 0.93,
+   "buy_pct30": 0.5580183451934525,
+   "change": 0.07380680644407489,
+   "score": 4.09,
+   "news": [
+    "SEARLES VALLEY MINERALS ANNOUNCES DEFINITIVE ASSET PURCHASE AGREEMENT WITH 5E ADVANCED MATERIALS",
+    "5E Advanced Materials Enters into Agreement to Acquire Certain Assets of Searles Valley Minerals"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "OSTX",
+   "name": "OS Therapies Incorporated",
+   "vol_x": 0.87,
+   "buy_pct30": 0.6185797903333349,
+   "change": 0.1114286014011927,
+   "score": 3.71,
+   "news": [
+    "OS Therapies Achieves Incremental Alignment With FDA and Accepts Project Orbis Invitation From MHRA on OST-HER2 Metastatic Osteosarcoma Program"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "TRT",
+   "name": "Trio-Tech International",
+   "vol_x": 0.37,
+   "buy_pct30": 0.5065261907261206,
+   "change": 0.08919718581960989,
+   "score": 2.27,
+   "news": [
+    "Trio-Tech International Secures Three-Year Automotive Semiconductor Burn-In Contract With $4.7 Million Minimum Commitment"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "DAIC",
+   "vol_x": 23.26
+  },
+  {
+   "ticker": "GLOO",
+   "vol_x": 2.66
+  },
+  {
+   "ticker": "ECOR",
+   "vol_x": 1.22
+  },
+  {
+   "ticker": "PSIX",
+   "vol_x": 0.96
+  },
+  {
+   "ticker": "SECZ",
+   "vol_x": 0.73
+  },
+  {
+   "ticker": "ABSI",
+   "vol_x": 0.66
+  },
+  {
+   "ticker": "MGNI",
+   "vol_x": 0.65
+  },
+  {
+   "ticker": "TEM",
+   "vol_x": 0.58
+  },
+  {
+   "ticker": "WDAY",
+   "vol_x": 0.56
+  },
+  {
+   "ticker": "GFL",
+   "vol_x": 0.55
+  },
+  {
+   "ticker": "PUBM",
+   "vol_x": 0.55
+  },
+  {
+   "ticker": "SDGR",
+   "vol_x": 0.52
+  },
+  {
+   "ticker": "COYA",
+   "vol_x": 0.51
+  },
+  {
+   "ticker": "CANG",
+   "vol_x": 0.51
+  },
+  {
+   "ticker": "SBC",
+   "vol_x": 0.48
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "NRXS",
+   "bought_at": "2026-09-17T14:16+00:00",
+   "sold_at": "2026-09-17T19:50+00:00",
+   "entry": 7.677670076370238,
+   "exit": 7.650000095367432,
+   "cost_gbp": 982.4828301630204,
+   "pl_gbp": -5.00703804969919,
+   "pl_pct": -0.005096310994939614,
+   "reason": "End of day: sold 10 minutes before the close."
+  }
+ ],
+ "total_gbp": -5.00703804969919,
+ "alerts": [
+  "10:16 Day trade: bought NRXS: 171 NRXS at $7.68 (about \u00a3982). Stop $7.29. News in the last 5 days (NeurAxis Announces Medical Coverage Policy Milestone, Expanding Access to Over 1); closed up yesterday (+21.8%) on 6.3x normal volume; above today's open at 10:00 New York.",
+  "15:50 Day trade: sold NRXS (-\u00a35): End of day: sold 10 minutes before the close. Result -\u00a35 (-0.5%).",
+  "15:50 Day trade summary: NRXS: -\u00a35 today."
+ ],
+ "log": [
+  "Day trade buy order: 171 NRXS at about $7.79. News in the last 5 days (NeurAxis Announces Medical Coverage Policy Milestone, Expanding Access to Over 1); closed up yesterday (+21.8%) on 6.3x normal volume; above today's open at 10:00 New York.",
+  "Bought 171 NRXS at 7.68 (cost \u00a3982).",
+  "Sold NRXS (about -\u00a35). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 1 trade(s), total -\u00a35."
+ ]
+}

@@ -1,0 +1,120 @@
+{
+ "date": "2026-10-07",
+ "generated": "2026-11-01T16:12+00:00",
+ "fx_gbpusd": 1.326682209968567,
+ "result": "done",
+ "require_news": true,
+ "strategy": "drift",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [],
+ "drift_list": [
+  {
+   "ticker": "WORX",
+   "name": "SCWorx Corp.",
+   "price": 5.599999904632568,
+   "why": "News in the last 5 days (SCWorx Announces Resumption of Nasdaq Trading and Highlights Improved Operating ); closed up yesterday (+31.3%) on 6.2x normal volume; above today's open at 10:00 New York."
+  },
+  {
+   "ticker": "BRUN",
+   "name": "Boost Run Inc.",
+   "price": 14.864999771118164,
+   "why": "News in the last 5 days (Boost Run Shares Rise 9.5% After Signing $525.6 Million AI Cloud Services Agreem); closed up yesterday (+5.9%) on 2.5x normal volume; above today's open at 10:00 New York."
+  },
+  {
+   "ticker": "EROC",
+   "name": "ERock, Inc.",
+   "price": 13.430000305175781,
+   "why": "News in the last 5 days (ERock, HD Construction Equipment Sign Multi-Year Engine Long Block Supply Agreem); closed up yesterday (+10.1%) on 2.0x normal volume; above today's open at 10:00 New York."
+  },
+  {
+   "ticker": "PTHS",
+   "name": "Pelthos Therapeutics Inc.",
+   "price": 21.860000610351562,
+   "why": "News in the last 5 days (Pelthos Therapeutics Announces Expanded Formulary Coverage for ZELSUVMI\u00ae (berdaz); closed up yesterday (+4.8%) on 1.6x normal volume; above today's open at 10:00 New York."
+  },
+  {
+   "ticker": "INTR",
+   "name": "Inter & Co. Inc.",
+   "price": 7.15500020980835,
+   "why": "News in the last 5 days (Inter's 2026 Outlook: Digital Fintech SuperApp Strategy Targets Sustained Growth); closed up yesterday (+7.2%) on 1.4x normal volume; above today's open at 10:00 New York."
+  }
+ ],
+ "list": [
+  {
+   "ticker": "BKH",
+   "name": "Black Hills Corporation",
+   "vol_x": 0.58,
+   "buy_pct30": 0.7697261115767031,
+   "change": 0.07471026041430173,
+   "score": 3.74,
+   "news": [
+    "Black Hills Corp. Executes Definitive Agreements to Serve Google\u2019s Planned Data Center in Cheyenne, Wyoming"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "ZIM",
+   "name": "ZIM Integrated Shipping Services Ltd.",
+   "vol_x": 0.43,
+   "buy_pct30": 0.4950436347742868,
+   "change": 0.03356162728187795,
+   "score": 3.34,
+   "news": [
+    "Zim lifts profit forecast 72% on strong demand"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "PENG",
+   "vol_x": 2.49
+  },
+  {
+   "ticker": "CANG",
+   "vol_x": 0.92
+  },
+  {
+   "ticker": "NWE",
+   "vol_x": 0.45
+  },
+  {
+   "ticker": "PNTG",
+   "vol_x": 0.45
+  },
+  {
+   "ticker": "BWLP",
+   "vol_x": 0.43
+  },
+  {
+   "ticker": "PG",
+   "vol_x": 0.34
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "WORX",
+   "bought_at": "2026-10-07T14:16+00:00",
+   "sold_at": "2026-10-07T14:30+00:00",
+   "entry": 5.610605019092559,
+   "exit": 5.309685057163239,
+   "cost_gbp": 999.5528158277045,
+   "pl_gbp": -56.44373093997274,
+   "pl_pct": -0.056468982975384954,
+   "reason": "Stop-loss order filled"
+  }
+ ],
+ "total_gbp": -56.44373093997274,
+ "alerts": [
+  "10:16 Day trade: bought WORX: 236 WORX at $5.61 (about \u00a31,000). Stop $5.33. News in the last 5 days (SCWorx Announces Resumption of Nasdaq Trading and Highlights Improved Operating ); closed up yesterday (+31.3%) on 6.2x normal volume; above today's open at 10:00 New York.",
+  "10:30 Day trade update: WORX: stop-loss order filled (-\u00a356)",
+  "15:50 Day trade summary: WORX: -\u00a356 today."
+ ],
+ "log": [
+  "Day trade buy order: 236 WORX at about $5.60. News in the last 5 days (SCWorx Announces Resumption of Nasdaq Trading and Highlights Improved Operating ); closed up yesterday (+31.3%) on 6.2x normal volume; above today's open at 10:00 New York.",
+  "Bought 236 WORX at 5.61 (cost \u00a31,000).",
+  "WORX: stop-loss order filled, P&L -\u00a356.",
+  "Day trading finished: 1 trade(s), total -\u00a356."
+ ]
+}

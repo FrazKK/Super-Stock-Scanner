@@ -1,0 +1,81 @@
+{
+ "date": "2026-10-12",
+ "generated": "2026-11-01T16:16+00:00",
+ "fx_gbpusd": 1.3241524696350098,
+ "result": "done",
+ "require_news": true,
+ "strategy": "breakout",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [
+  "Added ZIM to today's list at 12:40 New York: 0.5x normal volume in the last 30 min; news: Zim lifts profit forecast 72% on strong demand",
+  "Added TOP to today's list at 12:40 New York: 1.0x normal volume in the last 30 min; news: TOP Financial Group (TOP) Faces A Valuation Test Following Its $1.47b Shelf Fili"
+ ],
+ "drift_list": [],
+ "list": [],
+ "quiet": [
+  {
+   "ticker": "NCPL",
+   "vol_x": 1.44
+  },
+  {
+   "ticker": "ALLT",
+   "vol_x": 0.98
+  },
+  {
+   "ticker": "AI",
+   "vol_x": 0.86
+  },
+  {
+   "ticker": "MSGM",
+   "vol_x": 0.64
+  },
+  {
+   "ticker": "PEBK",
+   "vol_x": 0.5
+  },
+  {
+   "ticker": "ENGS",
+   "vol_x": 0.48
+  },
+  {
+   "ticker": "CBNA",
+   "vol_x": 0.43
+  },
+  {
+   "ticker": "SHOP",
+   "vol_x": 0.36
+  },
+  {
+   "ticker": "BORR",
+   "vol_x": 0.36
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "TOP",
+   "bought_at": "2026-10-12T16:40+00:00",
+   "sold_at": "2026-10-12T19:50+00:00",
+   "entry": 15.555539961814878,
+   "exit": 15.279999732971191,
+   "cost_gbp": 1000.0390879944518,
+   "pl_gbp": -19.185291255656807,
+   "pl_pct": -0.01918454137041016,
+   "reason": "End of day: sold 10 minutes before the close."
+  }
+ ],
+ "total_gbp": -19.185291255656807,
+ "alerts": [
+  "12:40 Day trade: bought TOP: 85 TOP at $15.56 (about \u00a31,000). Stop $14.78. Broke above its opening-range high ($15.18) at $15.54. In play: 1.0x normal volume, normally moves 5% a day. Stop $14.90.",
+  "15:50 Day trade: sold TOP (-\u00a319): End of day: sold 10 minutes before the close. Result -\u00a319 (-1.9%).",
+  "15:50 Day trade summary: 1 trade(s) today: TOP -\u00a319. Total -\u00a319."
+ ],
+ "log": [
+  "Added ZIM to today's list at 12:40 New York: 0.5x normal volume in the last 30 min; news: Zim lifts profit forecast 72% on strong demand",
+  "Added TOP to today's list at 12:40 New York: 1.0x normal volume in the last 30 min; news: TOP Financial Group (TOP) Faces A Valuation Test Following Its $1.47b Shelf Fili",
+  "Day trade buy order: 85 TOP at about $15.54. Broke above its opening-range high ($15.18) at $15.54. In play: 1.0x normal volume, normally moves 5% a day. Stop $14.90.",
+  "Bought 85 TOP at 15.56 (cost \u00a31,000).",
+  "Sold TOP (about -\u00a319). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 1 trade(s), total -\u00a319."
+ ]
+}

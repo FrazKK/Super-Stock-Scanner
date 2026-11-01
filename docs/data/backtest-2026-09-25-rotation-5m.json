@@ -1,0 +1,108 @@
+{
+ "date": "2026-09-25",
+ "generated": "2026-11-01T15:51+00:00",
+ "fx_gbpusd": 1.3210737705230713,
+ "result": "done",
+ "require_news": true,
+ "strategy": "rotation",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [
+  "Added VBNK to today's list at 10:32 New York: 0.3x normal volume in the last 30 min; news: VersaBank Significantly Expands Addressable Market for Structured Receivable Pro",
+  "Added FTK to today's list at 12:56 New York: 0.4x normal volume in the last 30 min; news: Flotek Secures $120 Million Senior Secured Term Loan to Support Continued Strate",
+  "Added HLF to today's list at 13:12 New York: 0.4x normal volume in the last 30 min; news: Herbalife (HLF) Approves $250 Million Buyback, Is The 28% Undervaluation Real?"
+ ],
+ "drift_list": [],
+ "list": [
+  {
+   "ticker": "DGNX",
+   "name": "Diginex Limited",
+   "vol_x": 0.75,
+   "buy_pct30": 0.7558359167178005,
+   "change": 0.017857126131349377,
+   "score": 4.02,
+   "news": [
+    "Diginex Consolidates Group-Wide Expertise and Launches Sustainability Science & Intelligence Initiative to Accelerate Product Innovation and Drive Measurable Client Outcomes"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "ENGN",
+   "vol_x": 2.09
+  },
+  {
+   "ticker": "GEF.B",
+   "vol_x": 0.57
+  },
+  {
+   "ticker": "TAYD",
+   "vol_x": 0.51
+  },
+  {
+   "ticker": "SUIG",
+   "vol_x": 0.47
+  },
+  {
+   "ticker": "PGEN",
+   "vol_x": 0.41
+  },
+  {
+   "ticker": "DGXX",
+   "vol_x": 0.41
+  },
+  {
+   "ticker": "MSFT",
+   "vol_x": 0.37
+  },
+  {
+   "ticker": "WTTR",
+   "vol_x": 0.35
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "DGNX",
+   "bought_at": "2026-09-25T14:16+00:00",
+   "sold_at": "2026-09-25T16:56+00:00",
+   "entry": 1.4202187963724135,
+   "exit": 1.3949999809265137,
+   "cost_gbp": 1002.3717558539819,
+   "pl_gbp": -19.273755408212764,
+   "pl_pct": -0.019228150928686405,
+   "reason": "No new high for 160 min, and FTK overtook it on buying volume (0.36x vs 0.03x normal in 30 min)."
+  },
+  {
+   "ticker": "FTK",
+   "bought_at": "2026-09-25T16:56+00:00",
+   "sold_at": "2026-09-25T19:50+00:00",
+   "entry": 30.34841807556152,
+   "exit": 29.719999313354492,
+   "cost_gbp": 989.3008849139017,
+   "pl_gbp": -21.936306955289638,
+   "pl_pct": -0.022173544257163728,
+   "reason": "End of day: sold 10 minutes before the close."
+  }
+ ],
+ "total_gbp": -41.2100623635024,
+ "alerts": [
+  "10:16 Day trade: bought DGNX: 931 DGNX at $1.42 (about \u00a31,002). Stop $1.35. Highest first-30-minute volume on today's list (0.8x a normal day).",
+  "12:56 Day trade: sold DGNX (-\u00a319): No new high for 160 min, and FTK overtook it on buying volume (0.36x vs 0.03x normal in 30 min). Result -\u00a319 (-1.9%).",
+  "12:56 Day trade: bought FTK: 43 FTK at $30.35 (about \u00a3989). Stop $28.83. Strongest buying on the list: 0.36x normal volume bought in the last 30 min, and rising.",
+  "15:50 Day trade: sold FTK (-\u00a322): End of day: sold 10 minutes before the close. Result -\u00a322 (-2.2%).",
+  "15:50 Day trade summary: 2 trade(s) today: DGNX -\u00a319, FTK -\u00a322. Total -\u00a341."
+ ],
+ "log": [
+  "Day trade buy order: 931 DGNX at about $1.42. Highest first-30-minute volume on today's list (0.8x a normal day).",
+  "Bought 931 DGNX at 1.42 (cost \u00a31,002).",
+  "Added VBNK to today's list at 10:32 New York: 0.3x normal volume in the last 30 min; news: VersaBank Significantly Expands Addressable Market for Structured Receivable Pro",
+  "Added FTK to today's list at 12:56 New York: 0.4x normal volume in the last 30 min; news: Flotek Secures $120 Million Senior Secured Term Loan to Support Continued Strate",
+  "Sold DGNX (about -\u00a319). No new high for 160 min, and FTK overtook it on buying volume (0.36x vs 0.03x normal in 30 min).",
+  "Day trade buy order: 43 FTK at about $30.32. Strongest buying on the list: 0.36x normal volume bought in the last 30 min, and rising.",
+  "Bought 43 FTK at 30.35 (cost \u00a3989).",
+  "Added HLF to today's list at 13:12 New York: 0.4x normal volume in the last 30 min; news: Herbalife (HLF) Approves $250 Million Buyback, Is The 28% Undervaluation Real?",
+  "Sold FTK (about -\u00a322). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 2 trade(s), total -\u00a341."
+ ]
+}

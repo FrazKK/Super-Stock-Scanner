@@ -1,0 +1,196 @@
+{
+ "date": "2026-10-28",
+ "generated": "2026-11-01T16:53+00:00",
+ "fx_gbpusd": 1.330629587173462,
+ "result": "done",
+ "require_news": true,
+ "strategy": "breakout",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [],
+ "drift_list": [],
+ "list": [
+  {
+   "ticker": "CLAR",
+   "name": "Clarus Corporation",
+   "vol_x": 0.8,
+   "buy_pct30": 0.7145737968574095,
+   "change": 0.08181580317577208,
+   "score": 4.46,
+   "news": [
+    "Synchrony and Clarus Technology Announce Strategic Partnership to Provide Real-Time Financial and Insurance Coverage Insights for Veterinary Practices - marketscreener.com",
+    "Synchrony and Clarus launch portal integrating pet insurance and financing for smoother vet payments. - Pluang"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "RDWR",
+   "name": "Radware Ltd.",
+   "vol_x": 0.47,
+   "buy_pct30": 0.6463087277739326,
+   "change": 0.05451266866334725,
+   "score": 4.03,
+   "news": [
+    "Radware Selected by Major Global Cloud Provider to Modernize DDoS Protection Infrastructure"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "AVPT",
+   "name": "AvePoint, Inc.",
+   "vol_x": 0.34,
+   "buy_pct30": 0.6760283273981471,
+   "change": 0.05042538743745495,
+   "score": 3.88,
+   "news": [
+    "Avepoint stock climbs following S&P Smallcap 600 inclusion news"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "CHE",
+   "name": "Chemed Corp",
+   "vol_x": 0.37,
+   "buy_pct30": 0.5648057258905939,
+   "change": 0.08588855883645108,
+   "score": 3.5,
+   "news": [
+    "LH Stock Hits Record Levels, CHE Stock Surges To Over 52-Week Highs \u2013 Here\u2019s What\u2019s Driving Investor Enthusiasm"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "PRME",
+   "name": "Prime Medicine, Inc.",
+   "vol_x": 0.36,
+   "buy_pct30": 0.8076969431290053,
+   "change": 0.12528737660742073,
+   "score": 3.45,
+   "news": [
+    "PRME, BEAM, EDIT, NTLA, CRSP Stocks Gain As FDA Signals Faster Route For Patient-Specific Gene Edits"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "BLCO",
+   "name": "Bausch + Lomb Corporation",
+   "vol_x": 0.56,
+   "buy_pct30": 0.35866522068473145,
+   "change": 0.07094210785828681,
+   "score": 2.55,
+   "news": [
+    "Bausch + Lomb Soars 16% on Big Q3 Profit Beat and Raised Full-Year Guidance",
+    "BAUSCH HEALTH ANNOUNCES THIRD QUARTER 2026 RESULTS, RAISES GUIDANCE"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "TLS",
+   "name": "Telos Corporation",
+   "vol_x": 0.45,
+   "buy_pct30": 0.5237953431759443,
+   "change": 0.010752678064499088,
+   "score": 2.5,
+   "news": [
+    "Why Telos (TLS) is Poised to Beat Earnings Estimates Again"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "STNG",
+   "name": "Scorpio Tankers Inc.",
+   "vol_x": 0.43,
+   "buy_pct30": 0.5287392402741683,
+   "change": 0.04740417300065247,
+   "score": 1.47,
+   "news": [
+    "Scorpio Tankers\u2019s (NYSE:STNG) Q3 2026: strong sales"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "GEHC",
+   "name": "GE HealthCare Technologies Inc.",
+   "vol_x": 0.5,
+   "buy_pct30": 0.4113207044489231,
+   "change": 0.07122770915387866,
+   "score": 1.15,
+   "news": [
+    "GE HealthCare (GEHC) Buys Into PET Supply After Strong Q3 And New Imaging Push"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "PPG",
+   "name": "PPG Industries, Inc.",
+   "vol_x": 0.47,
+   "buy_pct30": 0.28815042856406003,
+   "change": 0.042092681538425936,
+   "score": 0.59,
+   "news": [
+    "PPG reports record third quarter 2026 EPS and raises midpoint of full-year EPS guidance"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "WING",
+   "vol_x": 0.62
+  },
+  {
+   "ticker": "RCKY",
+   "vol_x": 0.56
+  },
+  {
+   "ticker": "MLAB",
+   "vol_x": 0.47
+  },
+  {
+   "ticker": "PDSB",
+   "vol_x": 0.45
+  },
+  {
+   "ticker": "ETSY",
+   "vol_x": 0.39
+  },
+  {
+   "ticker": "SDGR",
+   "vol_x": 0.36
+  },
+  {
+   "ticker": "EXTR",
+   "vol_x": 0.34
+  },
+  {
+   "ticker": "SMWB",
+   "vol_x": 0.33
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "TLS",
+   "bought_at": "2026-10-28T14:16+00:00",
+   "sold_at": "2026-10-28T19:50+00:00",
+   "entry": 5.6506449809074395,
+   "exit": 5.925000190734863,
+   "cost_gbp": 999.446754895923,
+   "pl_gbp": 46.95643517622261,
+   "pl_pct": 0.04698242797447714,
+   "reason": "End of day: sold 10 minutes before the close."
+  }
+ ],
+ "total_gbp": 46.95643517622261,
+ "alerts": [
+  "10:16 Day trade: bought TLS: 235 TLS at $5.65 (about \u00a3999). Stop $5.37. Broke above its opening-range high ($5.64) at $5.64. In play: 0.5x normal volume, normally moves 6% a day. Stop $5.48.",
+  "15:50 Day trade: sold TLS (+\u00a347): End of day: sold 10 minutes before the close. Result +\u00a347 (+4.7%).",
+  "15:50 Day trade summary: 1 trade(s) today: TLS +\u00a347. Total +\u00a347."
+ ],
+ "log": [
+  "Day trade buy order: 235 TLS at about $5.64. Broke above its opening-range high ($5.64) at $5.64. In play: 0.5x normal volume, normally moves 6% a day. Stop $5.48.",
+  "Bought 235 TLS at 5.65 (cost \u00a3999).",
+  "TLS: stop raised from 5.49 to 5.68.",
+  "Sold TLS (about +\u00a347). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 1 trade(s), total +\u00a347."
+ ]
+}

@@ -1,0 +1,116 @@
+{
+ "date": "2026-09-18",
+ "generated": "2026-11-01T15:35+00:00",
+ "fx_gbpusd": 1.335800051689148,
+ "result": "done",
+ "require_news": true,
+ "strategy": "rotation",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [
+  "Added FEAM to today's list at 14:32 New York: 0.5x normal volume in the last 30 min; news: SEARLES VALLEY MINERALS ANNOUNCES DEFINITIVE ASSET PURCHASE AGREEMENT WITH 5E AD"
+ ],
+ "drift_list": [],
+ "list": [
+  {
+   "ticker": "TNMG",
+   "name": "TNL Mediagene",
+   "vol_x": 271.05,
+   "buy_pct30": 0.7558197108623029,
+   "change": 0.6238660715124547,
+   "score": 542.62,
+   "news": [
+    "TNL Mediagene's The News Lens Launches TNL Daily, a Subscription Newsletter, with Crowdfunding Campaign Exceeding Its Funding Target"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "NCPL",
+   "vol_x": 3.09
+  },
+  {
+   "ticker": "TAOX",
+   "vol_x": 1.92
+  },
+  {
+   "ticker": "USDE",
+   "vol_x": 1.17
+  },
+  {
+   "ticker": "SECZ",
+   "vol_x": 0.87
+  },
+  {
+   "ticker": "HALO",
+   "vol_x": 0.6
+  },
+  {
+   "ticker": "GOOG",
+   "vol_x": 0.55
+  },
+  {
+   "ticker": "GOOGL",
+   "vol_x": 0.51
+  },
+  {
+   "ticker": "ALMR",
+   "vol_x": 0.45
+  },
+  {
+   "ticker": "GILD",
+   "vol_x": 0.42
+  },
+  {
+   "ticker": "GYRE",
+   "vol_x": 0.42
+  },
+  {
+   "ticker": "HSDT",
+   "vol_x": 0.41
+  },
+  {
+   "ticker": "BTCS",
+   "vol_x": 0.41
+  },
+  {
+   "ticker": "DHR",
+   "vol_x": 0.36
+  },
+  {
+   "ticker": "ISRG",
+   "vol_x": 0.35
+  },
+  {
+   "ticker": "ABTC",
+   "vol_x": 0.35
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "FEAM",
+   "bought_at": "2026-09-18T18:32+00:00",
+   "sold_at": "2026-09-18T19:50+00:00",
+   "entry": 2.432430066823959,
+   "exit": 2.4049999713897705,
+   "cost_gbp": 1001.2031450030286,
+   "pl_gbp": -12.773040794408871,
+   "pl_pct": -0.012757691441700608,
+   "reason": "End of day: sold 10 minutes before the close."
+  }
+ ],
+ "total_gbp": -12.773040794408871,
+ "alerts": [
+  "14:32 Day trade: bought FEAM: 549 FEAM at $2.43 (about \u00a31,001). Stop $2.31. Highest first-30-minute volume on today's list (0.5x a normal day).",
+  "15:50 Day trade: sold FEAM (-\u00a313): End of day: sold 10 minutes before the close. Result -\u00a313 (-1.3%).",
+  "15:50 Day trade summary: 1 trade(s) today: FEAM -\u00a313. Total -\u00a313."
+ ],
+ "log": [
+  "Added FEAM to today's list at 14:32 New York: 0.5x normal volume in the last 30 min; news: SEARLES VALLEY MINERALS ANNOUNCES DEFINITIVE ASSET PURCHASE AGREEMENT WITH 5E AD",
+  "Day trade buy order: 549 FEAM at about $2.43. Highest first-30-minute volume on today's list (0.5x a normal day).",
+  "Bought 549 FEAM at 2.43 (cost \u00a31,001).",
+  "Sold FEAM (about -\u00a313). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 1 trade(s), total -\u00a313."
+ ]
+}

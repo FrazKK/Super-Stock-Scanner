@@ -1,0 +1,113 @@
+{
+ "date": "2026-09-09",
+ "generated": "2026-11-01T15:16+00:00",
+ "fx_gbpusd": 1.3544628620147705,
+ "result": "done",
+ "require_news": true,
+ "strategy": "breakout",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [],
+ "drift_list": [],
+ "list": [
+  {
+   "ticker": "JILL",
+   "name": "J. Jill, Inc.",
+   "vol_x": 5.41,
+   "buy_pct30": 0.09268937280845957,
+   "change": 0.10584679260679364,
+   "score": 10.19,
+   "news": [
+    "J.Jill Inc (JILL) (Q2 2026) Earnings Call Highlights: Strategic Investments and Tariff Refunds ...",
+    "J.Jill shares rise 14.8% after Q2 earnings beat and higher annual outlook"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "PYXS",
+   "name": "Pyxis Oncology, Inc.",
+   "vol_x": 1.49,
+   "buy_pct30": 0.8641680527268415,
+   "change": 0.0128534578323658,
+   "score": 5.94,
+   "news": [
+    "Pyxis Oncology Announces Positive Updated Data from Phase 1 Monotherapy Study of Micvotabart Pelidotin (MICVO) in Second-Line and Beyond Recurrent/Metastatic Head and Neck Squamous Cell Carcinoma (2L+ R/M HNSCC)"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "SUNB",
+   "name": "Sunbelt Rentals Holdings, Inc.",
+   "vol_x": 0.37,
+   "buy_pct30": 0.6240012961716042,
+   "change": 0.09838430070468451,
+   "score": 2.74,
+   "news": [
+    "Sunbelt Rentals Holdings Inc (SUNB) (Q1 2027) Earnings Call Highlights: Record Revenue and ..."
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "PPIH",
+   "name": "Perma-Pipe International Holdings, Inc.",
+   "vol_x": 0.47,
+   "buy_pct30": 0.7198895134446871,
+   "change": 0.04036410898056508,
+   "score": 2.32,
+   "news": [
+    "Perma-Pipe International Holdings Inc (PPIH) (Q2 2026) Earnings Call Highlights: Record Sales ..."
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "IRD",
+   "vol_x": 10.18
+  },
+  {
+   "ticker": "LAC",
+   "vol_x": 1.14
+  },
+  {
+   "ticker": "AVO",
+   "vol_x": 0.72
+  },
+  {
+   "ticker": "CHYM",
+   "vol_x": 0.59
+  },
+  {
+   "ticker": "ASO",
+   "vol_x": 0.53
+  },
+  {
+   "ticker": "CZFS",
+   "vol_x": 0.5
+  },
+  {
+   "ticker": "INSM",
+   "vol_x": 0.42
+  },
+  {
+   "ticker": "PEPG",
+   "vol_x": 0.39
+  },
+  {
+   "ticker": "WRLD",
+   "vol_x": 0.36
+  },
+  {
+   "ticker": "FTK",
+   "vol_x": 0.35
+  }
+ ],
+ "trades": [],
+ "total_gbp": 0,
+ "alerts": [
+  "15:50 Day trade summary: No trade today: nothing in play broke out."
+ ],
+ "log": [
+  "Day trading finished: 0 trade(s), total +\u00a30."
+ ]
+}

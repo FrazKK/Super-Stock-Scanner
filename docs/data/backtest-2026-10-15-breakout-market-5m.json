@@ -1,0 +1,67 @@
+{
+ "date": "2026-10-15",
+ "generated": "2026-11-01T16:28+00:00",
+ "fx_gbpusd": 1.3230137825012207,
+ "result": "done",
+ "require_news": true,
+ "strategy": "breakout-market",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [
+  "Added NRXS to today's list at 12:08 New York: 0.5x normal volume in the last 30 min; news: NeurAxis Announces Medical Policy Coverage Milestone, Expanding Access to 26 Mil"
+ ],
+ "drift_list": [],
+ "list": [],
+ "quiet": [
+  {
+   "ticker": "OPK",
+   "vol_x": 17.51
+  },
+  {
+   "ticker": "NCPL",
+   "vol_x": 1.77
+  },
+  {
+   "ticker": "CANG",
+   "vol_x": 0.89
+  },
+  {
+   "ticker": "BCAL",
+   "vol_x": 0.6
+  },
+  {
+   "ticker": "WMT",
+   "vol_x": 0.43
+  },
+  {
+   "ticker": "NTWK",
+   "vol_x": 0.39
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "NRXS",
+   "bought_at": "2026-10-15T17:16+00:00",
+   "sold_at": "2026-10-15T19:50+00:00",
+   "entry": 7.707699809074401,
+   "exit": 7.675000190734863,
+   "cost_gbp": 997.7172647870979,
+   "pl_gbp": -5.720771648183245,
+   "pl_pct": -0.005733860533529002,
+   "reason": "End of day: sold 10 minutes before the close."
+  }
+ ],
+ "total_gbp": -5.720771648183245,
+ "alerts": [
+  "13:16 Day trade: bought NRXS: 171 NRXS at $7.71 (about \u00a3998). Stop $7.32. Broke above its opening-range high ($7.49) at $7.70. In play: 0.5x normal volume, normally moves 7% a day. Stop $7.31.",
+  "15:50 Day trade: sold NRXS (-\u00a36): End of day: sold 10 minutes before the close. Result -\u00a36 (-0.6%).",
+  "15:50 Day trade summary: 1 trade(s) today: NRXS -\u00a36. Total -\u00a36."
+ ],
+ "log": [
+  "Added NRXS to today's list at 12:08 New York: 0.5x normal volume in the last 30 min; news: NeurAxis Announces Medical Policy Coverage Milestone, Expanding Access to 26 Mil",
+  "Day trade buy order: 171 NRXS at about $7.70. Broke above its opening-range high ($7.49) at $7.70. In play: 0.5x normal volume, normally moves 7% a day. Stop $7.31.",
+  "Bought 171 NRXS at 7.71 (cost \u00a3998).",
+  "Sold NRXS (about -\u00a36). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 1 trade(s), total -\u00a36."
+ ]
+}

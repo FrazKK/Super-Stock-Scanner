@@ -1,0 +1,125 @@
+{
+ "date": "2026-09-28",
+ "generated": "2026-11-01T15:52+00:00",
+ "fx_gbpusd": 1.3229262828826904,
+ "result": "done",
+ "require_news": true,
+ "strategy": "breakout-market",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [],
+ "drift_list": [],
+ "list": [
+  {
+   "ticker": "NTWK",
+   "name": "NETSOL Technologies Inc.",
+   "vol_x": 1.71,
+   "buy_pct30": 0.6040978184042272,
+   "change": 0.024489772086439876,
+   "score": 5.34,
+   "news": [
+    "NETSOL Technologies Inc (NTWK) (Q4 2026) Earnings Call Highlights: Record Revenue and Strong ..."
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "CAAP",
+   "name": "Corporacion America Airports SA",
+   "vol_x": 0.53,
+   "buy_pct30": 0.7801380185818916,
+   "change": 0.05695145134619439,
+   "score": 3.68,
+   "news": [
+    "Corporacion America Airports Says Argentina Approves Changes to Aeropuertos Concession Deal"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "CANG",
+   "name": "Cango Inc.",
+   "vol_x": 0.53,
+   "buy_pct30": 0.5098654288303627,
+   "change": 0.14507851929077842,
+   "score": 1.6,
+   "news": [
+    "Cango stock surges over 20% following Buy initiation at Jones Trading"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "DPRO",
+   "vol_x": 0.83
+  },
+  {
+   "ticker": "NVDA",
+   "vol_x": 0.69
+  },
+  {
+   "ticker": "MEDS",
+   "vol_x": 0.57
+  },
+  {
+   "ticker": "JRSH",
+   "vol_x": 0.5
+  },
+  {
+   "ticker": "GIBO",
+   "vol_x": 0.47
+  },
+  {
+   "ticker": "PUSA",
+   "vol_x": 0.41
+  },
+  {
+   "ticker": "WCCB",
+   "vol_x": 0.4
+  },
+  {
+   "ticker": "QNBC",
+   "vol_x": 0.4
+  },
+  {
+   "ticker": "TONX",
+   "vol_x": 0.4
+  },
+  {
+   "ticker": "AGEN",
+   "vol_x": 0.39
+  },
+  {
+   "ticker": "AMC",
+   "vol_x": 0.37
+  },
+  {
+   "ticker": "IONQ",
+   "vol_x": 0.33
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "NTWK",
+   "bought_at": "2026-09-28T16:30+00:00",
+   "sold_at": "2026-09-28T19:50+00:00",
+   "entry": 5.420414961814879,
+   "exit": 5.260000228881836,
+   "cost_gbp": 1001.2387989394189,
+   "pl_gbp": -31.086438635170452,
+   "pl_pct": -0.031047976434891808,
+   "reason": "End of day: sold 10 minutes before the close."
+  }
+ ],
+ "total_gbp": -31.086438635170452,
+ "alerts": [
+  "12:30 Day trade: bought NTWK: 244 NTWK at $5.42 (about \u00a31,001). Stop $5.15. Broke above its opening-range high ($5.02) at $5.41. In play: 1.7x normal volume, normally moves 6% a day. Stop $5.14.",
+  "15:50 Day trade: sold NTWK (-\u00a331): End of day: sold 10 minutes before the close. Result -\u00a331 (-3.1%).",
+  "15:50 Day trade summary: 1 trade(s) today: NTWK -\u00a331. Total -\u00a331."
+ ],
+ "log": [
+  "Day trade buy order: 244 NTWK at about $5.41. Broke above its opening-range high ($5.02) at $5.41. In play: 1.7x normal volume, normally moves 6% a day. Stop $5.14.",
+  "Bought 244 NTWK at 5.42 (cost \u00a31,001).",
+  "Sold NTWK (about -\u00a331). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 1 trade(s), total -\u00a331."
+ ]
+}

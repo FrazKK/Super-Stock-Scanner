@@ -1,0 +1,123 @@
+{
+ "date": "2026-10-16",
+ "generated": "2026-11-01T16:32+00:00",
+ "fx_gbpusd": 1.327316164970398,
+ "result": "done",
+ "require_news": true,
+ "strategy": "drift",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [],
+ "drift_list": [
+  {
+   "ticker": "NRXS",
+   "name": "Neuraxis, Inc.",
+   "price": 7.809999942779541,
+   "why": "News in the last 5 days (NeurAxis Announces Medical Policy Coverage Milestone, Expanding Access to 26 Mil); closed up yesterday (+18.5%) on 6.2x normal volume; above today's open at 10:00 New York."
+  },
+  {
+   "ticker": "FMFC",
+   "name": "Kandal M Venture Limited",
+   "price": 6.190000057220459,
+   "why": "News in the last 5 days (Kandal M Venture Limited Reports Significant Gross Profit Growth of 45% in Finan); closed up yesterday (+7.8%) on 3.1x normal volume; above today's open at 10:00 New York."
+  },
+  {
+   "ticker": "CLNE",
+   "name": "Clean Energy Fuels Corp.",
+   "price": 1.590000033378601,
+   "why": "News in the last 5 days (Clean Energy Names Sean Wine as Chief Revenue Officer); closed up yesterday (+11.9%) on 2.8x normal volume; above today's open at 10:00 New York."
+  },
+  {
+   "ticker": "QNT",
+   "name": "Quantinuum Inc.",
+   "price": 36.32500076293945,
+   "why": "News in the last 5 days (Morgan Stanley Just Upgraded Quantinuum Stock. Here's Why.); closed up yesterday (+11.1%) on 2.5x normal volume; above today's open at 10:00 New York."
+  },
+  {
+   "ticker": "DFH",
+   "name": "Dream Finders Homes, Inc.",
+   "price": 8.8149995803833,
+   "why": "News in the last 5 days (Beazer Homes Stockholders Overwhelmingly Vote to Approve Dream Finders\u2019 Acquisit); closed up yesterday (+13.7%) on 2.1x normal volume; above today's open at 10:00 New York."
+  }
+ ],
+ "list": [],
+ "quiet": [
+  {
+   "ticker": "NCPL",
+   "vol_x": 0.93
+  },
+  {
+   "ticker": "PRAA",
+   "vol_x": 0.79
+  },
+  {
+   "ticker": "ENGS",
+   "vol_x": 0.75
+  },
+  {
+   "ticker": "RGC",
+   "vol_x": 0.62
+  },
+  {
+   "ticker": "TRI",
+   "vol_x": 0.57
+  },
+  {
+   "ticker": "OPK",
+   "vol_x": 0.52
+  },
+  {
+   "ticker": "TRV",
+   "vol_x": 0.48
+  },
+  {
+   "ticker": "CZWI",
+   "vol_x": 0.48
+  },
+  {
+   "ticker": "PMI",
+   "vol_x": 0.43
+  },
+  {
+   "ticker": "AIT",
+   "vol_x": 0.42
+  },
+  {
+   "ticker": "AAPL",
+   "vol_x": 0.4
+  },
+  {
+   "ticker": "JMSB",
+   "vol_x": 0.38
+  },
+  {
+   "ticker": "TALO",
+   "vol_x": 0.36
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "NRXS",
+   "bought_at": "2026-10-16T14:16+00:00",
+   "sold_at": "2026-10-16T19:50+00:00",
+   "entry": 7.817809942722319,
+   "exit": 7.699999809265137,
+   "cost_gbp": 996.8926244261195,
+   "pl_gbp": -16.493227425759756,
+   "pl_pct": -0.016544637829229002,
+   "reason": "End of day: sold 10 minutes before the close."
+  }
+ ],
+ "total_gbp": -16.493227425759756,
+ "alerts": [
+  "10:16 Day trade: bought NRXS: 169 NRXS at $7.82 (about \u00a3997). Stop $7.43. News in the last 5 days (NeurAxis Announces Medical Policy Coverage Milestone, Expanding Access to 26 Mil); closed up yesterday (+18.5%) on 6.2x normal volume; above today's open at 10:00 New York.",
+  "15:50 Day trade: sold NRXS (-\u00a316): End of day: sold 10 minutes before the close. Result -\u00a316 (-1.7%).",
+  "15:50 Day trade summary: NRXS: -\u00a316 today."
+ ],
+ "log": [
+  "Day trade buy order: 169 NRXS at about $7.81. News in the last 5 days (NeurAxis Announces Medical Policy Coverage Milestone, Expanding Access to 26 Mil); closed up yesterday (+18.5%) on 6.2x normal volume; above today's open at 10:00 New York.",
+  "Bought 169 NRXS at 7.82 (cost \u00a3997).",
+  "Sold NRXS (about -\u00a316). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 1 trade(s), total -\u00a316."
+ ]
+}

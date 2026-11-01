@@ -1,11 +1,12 @@
 {
  "date": "2026-09-07",
- "generated": "2026-11-01T14:54+00:00",
+ "generated": "2026-11-01T15:07+00:00",
  "fx_gbpusd": 1.3517167568206787,
  "result": "done",
  "require_news": true,
  "strategy": "breakout-strong",
  "bars": "5m",
+ "require_trend": true,
  "added_during_day": [],
  "drift_list": [],
  "list": [],

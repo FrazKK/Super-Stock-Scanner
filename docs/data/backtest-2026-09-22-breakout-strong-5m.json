@@ -1,0 +1,103 @@
+{
+ "date": "2026-09-22",
+ "generated": "2026-11-01T15:45+00:00",
+ "fx_gbpusd": 1.3370896577835083,
+ "result": "done",
+ "require_news": true,
+ "strategy": "breakout-strong",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [
+  "Added SPNT to today's list at 11:36 New York: 1.4x normal volume in the last 30 min; news: SiriusPoint to Deliver Further Book Value Growth, Buybacks, RBC Capital Markets ",
+  "Added BMM to today's list at 15:20 New York: 0.7x normal volume in the last 30 min; news: Blue Moon Announces Initial Results from Assay Campaign of Historical Drilling a",
+  "Added SBMT to today's list at 15:20 New York: 0.7x normal volume in the last 30 min; news: Silver Bow Mining Signs Term Sheet with Ocean Partners for Potential US$88 Milli"
+ ],
+ "drift_list": [],
+ "list": [
+  {
+   "ticker": "VFF",
+   "name": "Village Farms International, Inc.",
+   "vol_x": 0.7,
+   "buy_pct30": 0.6627087552634415,
+   "change": 0.05677077279736831,
+   "score": 2.55,
+   "news": [
+    "Village Farms Eyes Global Cannabis Growth With EU GMP Edge and Net Cash"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "TAOX",
+   "vol_x": 0.7
+  },
+  {
+   "ticker": "SHOP",
+   "vol_x": 0.64
+  },
+  {
+   "ticker": "SUIG",
+   "vol_x": 0.6
+  },
+  {
+   "ticker": "VLN",
+   "vol_x": 0.59
+  },
+  {
+   "ticker": "CFFI",
+   "vol_x": 0.56
+  },
+  {
+   "ticker": "ENGN",
+   "vol_x": 0.53
+  },
+  {
+   "ticker": "HSDT",
+   "vol_x": 0.51
+  },
+  {
+   "ticker": "FOSL",
+   "vol_x": 0.48
+  },
+  {
+   "ticker": "FRAF",
+   "vol_x": 0.47
+  },
+  {
+   "ticker": "GEF.B",
+   "vol_x": 0.45
+  },
+  {
+   "ticker": "GCT",
+   "vol_x": 0.45
+  },
+  {
+   "ticker": "OMER",
+   "vol_x": 0.45
+  },
+  {
+   "ticker": "USDE",
+   "vol_x": 0.45
+  },
+  {
+   "ticker": "ESP",
+   "vol_x": 0.45
+  },
+  {
+   "ticker": "TWLO",
+   "vol_x": 0.4
+  }
+ ],
+ "trades": [],
+ "total_gbp": 0,
+ "alerts": [
+  "15:50 Day trade summary: No trade today: nothing in play broke out."
+ ],
+ "log": [
+  "Added SPNT to today's list at 11:36 New York: 1.4x normal volume in the last 30 min; news: SiriusPoint to Deliver Further Book Value Growth, Buybacks, RBC Capital Markets ",
+  "Added BMM to today's list at 15:20 New York: 0.7x normal volume in the last 30 min; news: Blue Moon Announces Initial Results from Assay Campaign of Historical Drilling a",
+  "Added SBMT to today's list at 15:20 New York: 0.7x normal volume in the last 30 min; news: Silver Bow Mining Signs Term Sheet with Ocean Partners for Potential US$88 Milli",
+  "Day trading finished: 0 trade(s), total +\u00a30."
+ ]
+}

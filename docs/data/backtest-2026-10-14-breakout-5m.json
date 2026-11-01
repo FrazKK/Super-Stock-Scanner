@@ -1,0 +1,76 @@
+{
+ "date": "2026-10-14",
+ "generated": "2026-11-01T16:21+00:00",
+ "fx_gbpusd": 1.3257324695587158,
+ "result": "done",
+ "require_news": true,
+ "strategy": "breakout",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [
+  "Added HLP to today's list at 10:16 New York: 1.6x normal volume in the last 30 min; news: Hongli Group Provides Strategic Update on Proposed Advanced Battery Collaboratio"
+ ],
+ "drift_list": [],
+ "list": [],
+ "quiet": [
+  {
+   "ticker": "AEHL",
+   "vol_x": 10.74
+  },
+  {
+   "ticker": "VSTM",
+   "vol_x": 4.22
+  },
+  {
+   "ticker": "RGC",
+   "vol_x": 1.5
+  },
+  {
+   "ticker": "NCPL",
+   "vol_x": 1.32
+  },
+  {
+   "ticker": "CANG",
+   "vol_x": 0.62
+  },
+  {
+   "ticker": "JRSH",
+   "vol_x": 0.56
+  },
+  {
+   "ticker": "GFS",
+   "vol_x": 0.45
+  },
+  {
+   "ticker": "VAL",
+   "vol_x": 0.36
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "HLP",
+   "bought_at": "2026-10-14T14:16+00:00",
+   "sold_at": "2026-10-14T15:06+00:00",
+   "entry": 2.8628598949909208,
+   "exit": 2.857139895200729,
+   "cost_gbp": 1001.3275061594724,
+   "pl_gbp": -4.994144677885515,
+   "pl_pct": -0.004987523709440718,
+   "reason": "Stop-loss order filled"
+  }
+ ],
+ "total_gbp": -4.994144677885515,
+ "alerts": [
+  "10:16 Day trade: bought HLP: 463 HLP at $2.86 (about \u00a31,001). Stop $2.72. Broke above its opening-range high ($2.85) at $2.86. In play: 1.6x normal volume, normally moves 7% a day. Stop $2.84.",
+  "11:06 Day trade update: HLP: stop-loss order filled (-\u00a35)",
+  "15:50 Day trade summary: 1 trade(s) today: HLP -\u00a35. Total -\u00a35."
+ ],
+ "log": [
+  "Added HLP to today's list at 10:16 New York: 1.6x normal volume in the last 30 min; news: Hongli Group Provides Strategic Update on Proposed Advanced Battery Collaboratio",
+  "Day trade buy order: 463 HLP at about $2.86. Broke above its opening-range high ($2.85) at $2.86. In play: 1.6x normal volume, normally moves 7% a day. Stop $2.84.",
+  "Bought 463 HLP at 2.86 (cost \u00a31,001).",
+  "HLP: stop raised from 2.84 to 2.88.",
+  "HLP: stop-loss order filled, P&L -\u00a35.",
+  "Day trading finished: 1 trade(s), total -\u00a35."
+ ]
+}

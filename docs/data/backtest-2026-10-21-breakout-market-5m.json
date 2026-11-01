@@ -1,0 +1,121 @@
+{
+ "date": "2026-10-21",
+ "generated": "2026-11-01T16:36+00:00",
+ "fx_gbpusd": 1.337327480316162,
+ "result": "done",
+ "require_news": true,
+ "strategy": "breakout-market",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [],
+ "drift_list": [],
+ "list": [
+  {
+   "ticker": "NTWK",
+   "name": "NETSOL Technologies Inc.",
+   "vol_x": 0.34,
+   "buy_pct30": 0.8769120299739875,
+   "change": 0.03287464126023831,
+   "score": 2.69,
+   "news": [
+    "Mercedes-Benz USA approves NETSOL as a digital retail provider for its dealerships"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "SWBI",
+   "name": "Smith & Wesson Brands, Inc.",
+   "vol_x": 0.45,
+   "buy_pct30": 0.6903970371398483,
+   "change": 0.00947228321056337,
+   "score": 2.16,
+   "news": [
+    "Smith & Wesson Acquires Savage Arms"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "SPHL",
+   "vol_x": 65.9
+  },
+  {
+   "ticker": "SPCX",
+   "vol_x": 0.73
+  },
+  {
+   "ticker": "QGEN",
+   "vol_x": 0.68
+  },
+  {
+   "ticker": "TDY",
+   "vol_x": 0.63
+  },
+  {
+   "ticker": "CPIX",
+   "vol_x": 0.62
+  },
+  {
+   "ticker": "MCB",
+   "vol_x": 0.58
+  },
+  {
+   "ticker": "KIDS",
+   "vol_x": 0.58
+  },
+  {
+   "ticker": "DHR",
+   "vol_x": 0.56
+  },
+  {
+   "ticker": "CZFS",
+   "vol_x": 0.53
+  },
+  {
+   "ticker": "BRBS",
+   "vol_x": 0.39
+  },
+  {
+   "ticker": "LAW",
+   "vol_x": 0.37
+  },
+  {
+   "ticker": "TSLA",
+   "vol_x": 0.36
+  },
+  {
+   "ticker": "TMO",
+   "vol_x": 0.35
+  },
+  {
+   "ticker": "NNI",
+   "vol_x": 0.34
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "NTWK",
+   "bought_at": "2026-10-21T15:50+00:00",
+   "sold_at": "2026-10-21T19:50+00:00",
+   "entry": 6.871864770889282,
+   "exit": 6.900000095367432,
+   "cost_gbp": 998.3653950528288,
+   "pl_gbp": 2.5861581036342614,
+   "pl_pct": 0.0025903923718203535,
+   "reason": "End of day: sold 10 minutes before the close."
+  }
+ ],
+ "total_gbp": 2.5861581036342614,
+ "alerts": [
+  "11:50 Day trade: bought NTWK: 194 NTWK at $6.87 (about \u00a3998). Stop $6.53. Broke above its opening-range high ($6.85) at $6.86. In play: 0.3x normal volume, normally moves 6% a day. Stop $6.71.",
+  "15:50 Day trade: sold NTWK (+\u00a33): End of day: sold 10 minutes before the close. Result +\u00a33 (+0.3%).",
+  "15:50 Day trade summary: 1 trade(s) today: NTWK +\u00a33. Total +\u00a33."
+ ],
+ "log": [
+  "Day trade buy order: 194 NTWK at about $6.86. Broke above its opening-range high ($6.85) at $6.86. In play: 0.3x normal volume, normally moves 6% a day. Stop $6.71.",
+  "Bought 194 NTWK at 6.87 (cost \u00a3998).",
+  "Sold NTWK (about +\u00a33). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 1 trade(s), total +\u00a33."
+ ]
+}

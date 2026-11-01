@@ -1,0 +1,125 @@
+{
+ "date": "2026-10-02",
+ "generated": "2026-11-01T16:02+00:00",
+ "fx_gbpusd": 1.3199577331542969,
+ "result": "done",
+ "require_news": true,
+ "strategy": "drift",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [],
+ "drift_list": [
+  {
+   "ticker": "ETON",
+   "name": "Eton Pharmaceuticals, Inc.",
+   "price": 54.91999816894531,
+   "why": "News in the last 5 days (Eton Pharmaceuticals Announces U.S. Commercial Availability of IMPAVIDO\u00ae (miltef); closed up yesterday (+1.0%) on 1.7x normal volume; above today's open at 10:00 New York."
+  },
+  {
+   "ticker": "RCEL",
+   "name": "Avita Medical, Inc.",
+   "price": 12.1850004196167,
+   "why": "News in the last 5 days (AVITA Medical (RCEL) Stock Sees Fair Value Lift After PermeaDerm Data And Q2 Bea); closed up yesterday (+2.4%) on 1.5x normal volume; above today's open at 10:00 New York."
+  },
+  {
+   "ticker": "LYNX",
+   "name": "Lyntris Inc.",
+   "price": 12.680000305175781,
+   "why": "News in the last 5 days (Lyntris Selected by Raytheon to support Multi-Year LTAMDS Radar Production Under); closed up yesterday (+2.6%) on 1.4x normal volume; above today's open at 10:00 New York."
+  },
+  {
+   "ticker": "KULR",
+   "name": "KULR Technology Group, Inc.",
+   "price": 2.6500000953674316,
+   "why": "News in the last 5 days (KULR Secures Over $1 Million in Battery Purchase Orders Supporting Drone Dominan); closed up yesterday (+2.0%) on 1.3x normal volume; above today's open at 10:00 New York."
+  }
+ ],
+ "list": [],
+ "quiet": [
+  {
+   "ticker": "SYNA",
+   "vol_x": 4.74
+  },
+  {
+   "ticker": "NNBR",
+   "vol_x": 0.63
+  },
+  {
+   "ticker": "FEAM",
+   "vol_x": 0.48
+  },
+  {
+   "ticker": "OPY",
+   "vol_x": 0.46
+  },
+  {
+   "ticker": "WTBA",
+   "vol_x": 0.46
+  },
+  {
+   "ticker": "BIRD",
+   "vol_x": 0.45
+  },
+  {
+   "ticker": "CHPT",
+   "vol_x": 0.4
+  },
+  {
+   "ticker": "OCC",
+   "vol_x": 0.39
+  },
+  {
+   "ticker": "WK",
+   "vol_x": 0.38
+  },
+  {
+   "ticker": "FNRN",
+   "vol_x": 0.38
+  },
+  {
+   "ticker": "TSLA",
+   "vol_x": 0.36
+  },
+  {
+   "ticker": "WOLF",
+   "vol_x": 0.36
+  },
+  {
+   "ticker": "RKLB",
+   "vol_x": 0.35
+  },
+  {
+   "ticker": "IBRX",
+   "vol_x": 0.35
+  },
+  {
+   "ticker": "NVDA",
+   "vol_x": 0.34
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "ETON",
+   "bought_at": "2026-10-02T14:16+00:00",
+   "sold_at": "2026-10-02T19:50+00:00",
+   "entry": 55.2301742362976,
+   "exit": 54.810001373291016,
+   "cost_gbp": 1005.7234671986796,
+   "pl_gbp": -9.146076939763134,
+   "pl_pct": -0.009094027571255167,
+   "reason": "End of day: sold 10 minutes before the close."
+  }
+ ],
+ "total_gbp": -9.146076939763134,
+ "alerts": [
+  "10:16 Day trade: bought ETON: 24 ETON at $55.23 (about \u00a31,006). Stop $52.47. News in the last 5 days (Eton Pharmaceuticals Announces U.S. Commercial Availability of IMPAVIDO\u00ae (miltef); closed up yesterday (+1.0%) on 1.7x normal volume; above today's open at 10:00 New York.",
+  "15:50 Day trade: sold ETON (-\u00a39): End of day: sold 10 minutes before the close. Result -\u00a39 (-0.9%).",
+  "15:50 Day trade summary: ETON: -\u00a39 today."
+ ],
+ "log": [
+  "Day trade buy order: 24 ETON at about $54.92. News in the last 5 days (Eton Pharmaceuticals Announces U.S. Commercial Availability of IMPAVIDO\u00ae (miltef); closed up yesterday (+1.0%) on 1.7x normal volume; above today's open at 10:00 New York.",
+  "Bought 24 ETON at 55.23 (cost \u00a31,006).",
+  "Sold ETON (about -\u00a39). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 1 trade(s), total -\u00a39."
+ ]
+}

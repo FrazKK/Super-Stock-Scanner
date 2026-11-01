@@ -1,0 +1,86 @@
+{
+ "date": "2026-09-15",
+ "generated": "2026-11-01T15:26+00:00",
+ "fx_gbpusd": 1.3500925302505493,
+ "result": "done",
+ "require_news": true,
+ "strategy": "drift",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [],
+ "drift_list": [],
+ "list": [
+  {
+   "ticker": "RLGT",
+   "name": "Radiant Logistics, Inc.",
+   "vol_x": 4.08,
+   "buy_pct30": 0.511339704966154,
+   "change": 0.13885509598366053,
+   "score": 9.21,
+   "news": [
+    "Radiant Logistics sees double-digit growth in FQ4, shares up 16%",
+    "Radiant Logistics Inc (RLGT) (Q4 2026) Earnings Call Highlights: Record Quarterly Revenue and ..."
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "CANG",
+   "vol_x": 5.38
+  },
+  {
+   "ticker": "CHOW",
+   "vol_x": 3.97
+  },
+  {
+   "ticker": "PSIG",
+   "vol_x": 0.68
+  },
+  {
+   "ticker": "FLXS",
+   "vol_x": 0.54
+  },
+  {
+   "ticker": "FCBM",
+   "vol_x": 0.49
+  },
+  {
+   "ticker": "ECO",
+   "vol_x": 0.48
+  },
+  {
+   "ticker": "SFST",
+   "vol_x": 0.42
+  },
+  {
+   "ticker": "PNRG",
+   "vol_x": 0.4
+  },
+  {
+   "ticker": "AGPU",
+   "vol_x": 0.39
+  },
+  {
+   "ticker": "VNCE",
+   "vol_x": 0.36
+  },
+  {
+   "ticker": "WFG",
+   "vol_x": 0.35
+  },
+  {
+   "ticker": "FRO",
+   "vol_x": 0.34
+  }
+ ],
+ "trades": [],
+ "total_gbp": 0,
+ "alerts": [
+  "15:50 Day trade summary: No trade today: nothing met the drift rules."
+ ],
+ "log": [
+  "Drift: nothing had news in the last 5 days, closed up yesterday and is above today's open.",
+  "Day trading finished: 0 trade(s), total +\u00a30."
+ ]
+}

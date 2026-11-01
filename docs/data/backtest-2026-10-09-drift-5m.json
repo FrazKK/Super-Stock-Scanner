@@ -1,0 +1,113 @@
+{
+ "date": "2026-10-09",
+ "generated": "2026-11-01T16:18+00:00",
+ "fx_gbpusd": 1.322908878326416,
+ "result": "done",
+ "require_news": true,
+ "strategy": "drift",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [],
+ "drift_list": [
+  {
+   "ticker": "IMC",
+   "name": "IMC Rare Earths Ltd",
+   "price": 7.489999771118164,
+   "why": "News in the last 5 days (IMC Rare Earths Discovers New High-Grade, Near-Surface Terbium Zone Beyond Exist); closed up yesterday (+2.4%) on 5.0x normal volume; above today's open at 10:00 New York."
+  },
+  {
+   "ticker": "EDIT",
+   "name": "Editas Medicine, Inc.",
+   "price": 2.821700096130371,
+   "why": "News in the last 5 days (Editas Medicine Receives Approval to Initiate First-In-Human Clinical Trial of E); closed up yesterday (+3.3%) on 2.3x normal volume; above today's open at 10:00 New York."
+  },
+  {
+   "ticker": "TTAN",
+   "name": "ServiceTitan, Inc.",
+   "price": 74.67500305175781,
+   "why": "News in the last 5 days (What Does ServiceTitan (TTAN) Pantheon 2026 AI Expansion Mean For Contractors?); closed up yesterday (+1.7%) on 1.6x normal volume; above today's open at 10:00 New York."
+  }
+ ],
+ "list": [
+  {
+   "ticker": "VEEA",
+   "name": "Veea Inc.",
+   "vol_x": 2.46,
+   "buy_pct30": 0.6330394000396526,
+   "change": 0.44832046119395597,
+   "score": 4.95,
+   "news": [
+    "Veea Secures Landmark Smart Community Agreement with La Estadia Community for Agentic Real-time Aware and Secure Community"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "GFUZ",
+   "name": "General Fusion Group Ltd.",
+   "vol_x": 1.23,
+   "buy_pct30": 0.13057976275380923,
+   "change": 0.022962090515407763,
+   "score": 1.98,
+   "news": [
+    "General Fusion Achieves World-First 1 keV Electron Temperature Milestone on its Path to Commercial Fusion Power",
+    "General Fusion, UKAEA Announce Magnetized Target Fusion Milestone"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "HUM",
+   "vol_x": 0.99
+  },
+  {
+   "ticker": "TEVA",
+   "vol_x": 0.69
+  },
+  {
+   "ticker": "CLOV",
+   "vol_x": 0.64
+  },
+  {
+   "ticker": "IMMR",
+   "vol_x": 0.49
+  },
+  {
+   "ticker": "FSLY",
+   "vol_x": 0.44
+  },
+  {
+   "ticker": "SNOW",
+   "vol_x": 0.38
+  },
+  {
+   "ticker": "PLTR",
+   "vol_x": 0.34
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "IMC",
+   "bought_at": "2026-10-09T14:16+00:00",
+   "sold_at": "2026-10-09T15:36+00:00",
+   "entry": 7.497489770889281,
+   "exit": 7.1128800000000005,
+   "cost_gbp": 998.9633894118826,
+   "pl_gbp": -54.08419163876408,
+   "pl_pct": -0.0541403140615643,
+   "reason": "Stop-loss order filled"
+  }
+ ],
+ "total_gbp": -54.08419163876408,
+ "alerts": [
+  "10:16 Day trade: bought IMC: 176 IMC at $7.50 (about \u00a3999). Stop $7.12. News in the last 5 days (IMC Rare Earths Discovers New High-Grade, Near-Surface Terbium Zone Beyond Exist); closed up yesterday (+2.4%) on 5.0x normal volume; above today's open at 10:00 New York.",
+  "11:36 Day trade update: IMC: stop-loss order filled (-\u00a354)",
+  "15:50 Day trade summary: IMC: -\u00a354 today."
+ ],
+ "log": [
+  "Day trade buy order: 176 IMC at about $7.49. News in the last 5 days (IMC Rare Earths Discovers New High-Grade, Near-Surface Terbium Zone Beyond Exist); closed up yesterday (+2.4%) on 5.0x normal volume; above today's open at 10:00 New York.",
+  "Bought 176 IMC at 7.50 (cost \u00a3999).",
+  "IMC: stop-loss order filled, P&L -\u00a354.",
+  "Day trading finished: 1 trade(s), total -\u00a354."
+ ]
+}

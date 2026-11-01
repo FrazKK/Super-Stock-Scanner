@@ -1,0 +1,142 @@
+{
+ "date": "2026-10-01",
+ "generated": "2026-11-01T16:01+00:00",
+ "fx_gbpusd": 1.326435923576355,
+ "result": "done",
+ "require_news": true,
+ "strategy": "drift",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [],
+ "drift_list": [
+  {
+   "ticker": "CANG",
+   "name": "Cango Inc.",
+   "price": 2.6679999828338623,
+   "why": "News in the last 5 days (Cango stock surges over 20% following Buy initiation at Jones Trading); closed up yesterday (+5.1%) on 1.7x normal volume; above today's open at 10:00 New York."
+  },
+  {
+   "ticker": "CEVA",
+   "name": "CEVA, Inc.",
+   "price": 35.81999969482422,
+   "why": "News in the last 5 days (CEVA (CEVA) Following Its Leadership Reset Looks Undervalued To Some Investors); closed up yesterday (+2.5%) on 1.6x normal volume; above today's open at 10:00 New York."
+  }
+ ],
+ "list": [
+  {
+   "ticker": "VEEA",
+   "name": "Veea Inc.",
+   "vol_x": 21.57,
+   "buy_pct30": 0.6893598856083034,
+   "change": 0.5138248711221274,
+   "score": 43.4,
+   "news": [
+    "Veea Announces TROLLEE Agreement for Phased Deployment of VeeaONE to 1,000 Unattended Stores"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "AISP",
+   "name": "Airship AI Holdings, Inc",
+   "vol_x": 13.16,
+   "buy_pct30": 0.4881211602173837,
+   "change": 0.22043008788608676,
+   "score": 26.77,
+   "news": [
+    "Airship AI Announces $29.0M of Firm Fixed Price Brand Name Only Awards from Department of Homeland Security"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "RCEL",
+   "name": "Avita Medical, Inc.",
+   "vol_x": 0.37,
+   "buy_pct30": 0.6232638152984171,
+   "change": 0.048593407565458824,
+   "score": 2.73,
+   "news": [
+    "AVITA Medical (RCEL) Stock Sees Fair Value Lift After PermeaDerm Data And Q2 Beat"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "MEDS",
+   "vol_x": 4.18
+  },
+  {
+   "ticker": "ACN",
+   "vol_x": 1.46
+  },
+  {
+   "ticker": "ETSS",
+   "vol_x": 1.26
+  },
+  {
+   "ticker": "QSI",
+   "vol_x": 1.11
+  },
+  {
+   "ticker": "SNPS",
+   "vol_x": 0.84
+  },
+  {
+   "ticker": "EFXT",
+   "vol_x": 0.76
+  },
+  {
+   "ticker": "VUZI",
+   "vol_x": 0.53
+  },
+  {
+   "ticker": "TRNS",
+   "vol_x": 0.51
+  },
+  {
+   "ticker": "CTSH",
+   "vol_x": 0.47
+  },
+  {
+   "ticker": "CTVA",
+   "vol_x": 0.46
+  },
+  {
+   "ticker": "PAYS",
+   "vol_x": 0.37
+  },
+  {
+   "ticker": "VICR",
+   "vol_x": 0.35
+  },
+  {
+   "ticker": "DSGR",
+   "vol_x": 0.34
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "CANG",
+   "bought_at": "2026-10-01T14:16+00:00",
+   "sold_at": "2026-10-01T19:50+00:00",
+   "entry": 2.6176150095462796,
+   "exit": 2.5999999046325684,
+   "cost_gbp": 982.2608605330926,
+   "pl_gbp": -8.071357946085527,
+   "pl_pct": -0.008217122630443649,
+   "reason": "End of day: sold 10 minutes before the close."
+  }
+ ],
+ "total_gbp": -8.071357946085527,
+ "alerts": [
+  "10:16 Day trade: bought CANG: 497 CANG at $2.62 (about \u00a3982). Stop $2.49. News in the last 5 days (Cango stock surges over 20% following Buy initiation at Jones Trading); closed up yesterday (+5.1%) on 1.7x normal volume; above today's open at 10:00 New York.",
+  "15:50 Day trade: sold CANG (-\u00a38): End of day: sold 10 minutes before the close. Result -\u00a38 (-0.8%).",
+  "15:50 Day trade summary: CANG: -\u00a38 today."
+ ],
+ "log": [
+  "Day trade buy order: 497 CANG at about $2.67. News in the last 5 days (Cango stock surges over 20% following Buy initiation at Jones Trading); closed up yesterday (+5.1%) on 1.7x normal volume; above today's open at 10:00 New York.",
+  "Bought 497 CANG at 2.62 (cost \u00a3982).",
+  "Sold CANG (about -\u00a38). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 1 trade(s), total -\u00a38."
+ ]
+}

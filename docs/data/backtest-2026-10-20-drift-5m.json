@@ -1,0 +1,136 @@
+{
+ "date": "2026-10-20",
+ "generated": "2026-11-01T16:35+00:00",
+ "fx_gbpusd": 1.330849051475525,
+ "result": "done",
+ "require_news": true,
+ "strategy": "drift",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [],
+ "drift_list": [
+  {
+   "ticker": "MASK",
+   "name": "3 E Network Technology Group Ltd",
+   "price": 0.9021000266075134,
+   "why": "News in the last 5 days (3 E Network Signs 9 MVA Power Agreement for Finland AI Compute Center, Targeting); closed up yesterday (+15.8%) on 9.9x normal volume; above today's open at 10:00 New York."
+  },
+  {
+   "ticker": "EXYN",
+   "name": "Exyn Technologies, Inc.",
+   "price": 2.7249999046325684,
+   "why": "News in the last 5 days (Exyn Technologies Joins National Laboratory-Led Autonomous Mining Project Select); closed up yesterday (+38.8%) on 9.7x normal volume; above today's open at 10:00 New York."
+  },
+  {
+   "ticker": "PRLD",
+   "name": "Prelude Therapeutics Incorporated",
+   "price": 3.5199999809265137,
+   "why": "News in the last 5 days (Prelude Announces Clinical Trial Collaboration and Supply Agreement with Lilly t); closed up yesterday (+4.0%) on 2.9x normal volume; above today's open at 10:00 New York."
+  },
+  {
+   "ticker": "ARQT",
+   "name": "Arcutis Biotherapeutics, Inc.",
+   "price": 32.95000076293945,
+   "why": "News in the last 5 days (Arcutis Soars 12% as Guggenheim Lifts Target to $44 on \u201cGrowing Conviction\u201d in 2); closed up yesterday (+10.7%) on 2.3x normal volume; above today's open at 10:00 New York."
+  },
+  {
+   "ticker": "XERS",
+   "name": "Xeris Biopharma Holdings, Inc.",
+   "price": 11.14009952545166,
+   "why": "News in the last 5 days (Xeris Biopharma Reinforces Leadership in Endocrinology With Data Disclosures Spa); closed up yesterday (+6.2%) on 1.8x normal volume; above today's open at 10:00 New York."
+  }
+ ],
+ "list": [
+  {
+   "ticker": "MYGN",
+   "name": "Myriad Genetics, Inc.",
+   "vol_x": 6.61,
+   "buy_pct30": 0.48811705318602866,
+   "change": 0.33135391170697504,
+   "score": 13.67,
+   "news": [
+    "Myriad Genetics and Labcorp Announce Definitive Agreement for Myriad to Sell Prenatal Health Testing Business to Labcorp"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "BRZE",
+   "vol_x": 10.83
+  },
+  {
+   "ticker": "HAS",
+   "vol_x": 1.29
+  },
+  {
+   "ticker": "TMP",
+   "vol_x": 0.85
+  },
+  {
+   "ticker": "QNBC",
+   "vol_x": 0.78
+  },
+  {
+   "ticker": "HLT",
+   "vol_x": 0.56
+  },
+  {
+   "ticker": "EDHL",
+   "vol_x": 0.56
+  },
+  {
+   "ticker": "MMM",
+   "vol_x": 0.55
+  },
+  {
+   "ticker": "FBIZ",
+   "vol_x": 0.49
+  },
+  {
+   "ticker": "COSO",
+   "vol_x": 0.49
+  },
+  {
+   "ticker": "NPK",
+   "vol_x": 0.47
+  },
+  {
+   "ticker": "BRBS",
+   "vol_x": 0.36
+  },
+  {
+   "ticker": "BAP",
+   "vol_x": 0.34
+  },
+  {
+   "ticker": "PDS",
+   "vol_x": 0.34
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "MASK",
+   "bought_at": "2026-10-20T14:16+00:00",
+   "sold_at": "2026-10-20T16:06+00:00",
+   "entry": 0.923022107541561,
+   "exit": 0.8760231,
+   "cost_gbp": 1024.5337692693347,
+   "pl_gbp": -55.0805694787216,
+   "pl_pct": -0.05376159491356086,
+   "reason": "Stop-loss order filled"
+  }
+ ],
+ "total_gbp": -55.0805694787216,
+ "alerts": [
+  "10:16 Day trade: bought MASK: 1,475 MASK at $0.92 (about \u00a31,025). Stop $0.88. News in the last 5 days (3 E Network Signs 9 MVA Power Agreement for Finland AI Compute Center, Targeting); closed up yesterday (+15.8%) on 9.9x normal volume; above today's open at 10:00 New York.",
+  "12:06 Day trade update: MASK: stop-loss order filled (-\u00a355)",
+  "15:50 Day trade summary: MASK: -\u00a355 today."
+ ],
+ "log": [
+  "Day trade buy order: 1475 MASK at about $0.90. News in the last 5 days (3 E Network Signs 9 MVA Power Agreement for Finland AI Compute Center, Targeting); closed up yesterday (+15.8%) on 9.9x normal volume; above today's open at 10:00 New York.",
+  "Bought 1,475 MASK at 0.92 (cost \u00a31,025).",
+  "MASK: stop-loss order filled, P&L -\u00a355.",
+  "Day trading finished: 1 trade(s), total -\u00a355."
+ ]
+}

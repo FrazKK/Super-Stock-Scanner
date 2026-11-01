@@ -1,0 +1,193 @@
+{
+ "date": "2026-09-17",
+ "generated": "2026-11-01T15:33+00:00",
+ "fx_gbpusd": 1.3382940292358398,
+ "result": "done",
+ "require_news": true,
+ "strategy": "rotation",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [
+  "Added LFST to today's list at 11:04 New York: 0.4x normal volume in the last 30 min; news: LifeStance Health Group (NASDAQ:LFST): Strongest Q2 Results from the Outpatient ",
+  "Added CODA to today's list at 12:08 New York: 0.3x normal volume in the last 30 min; news: Coda Octopus (CODA) Just Posted A First-Ever Profit Milestone",
+  "Added GLBS to today's list at 14:32 New York: 1.0x normal volume in the last 30 min; news: Globus Maritime Limited Announces the Delivery of a 2026-Built Ultramax Dry Bulk"
+ ],
+ "drift_list": [],
+ "list": [
+  {
+   "ticker": "FEAM",
+   "name": "5E Advanced Materials, Inc.",
+   "vol_x": 0.93,
+   "buy_pct30": 0.5580183451934525,
+   "change": 0.07380680644407489,
+   "score": 4.09,
+   "news": [
+    "SEARLES VALLEY MINERALS ANNOUNCES DEFINITIVE ASSET PURCHASE AGREEMENT WITH 5E ADVANCED MATERIALS",
+    "5E Advanced Materials Enters into Agreement to Acquire Certain Assets of Searles Valley Minerals"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "OSTX",
+   "name": "OS Therapies Incorporated",
+   "vol_x": 0.87,
+   "buy_pct30": 0.6185797903333349,
+   "change": 0.1114286014011927,
+   "score": 3.71,
+   "news": [
+    "OS Therapies Achieves Incremental Alignment With FDA and Accepts Project Orbis Invitation From MHRA on OST-HER2 Metastatic Osteosarcoma Program"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "TRT",
+   "name": "Trio-Tech International",
+   "vol_x": 0.37,
+   "buy_pct30": 0.5065261907261206,
+   "change": 0.08919718581960989,
+   "score": 2.27,
+   "news": [
+    "Trio-Tech International Secures Three-Year Automotive Semiconductor Burn-In Contract With $4.7 Million Minimum Commitment"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "DAIC",
+   "vol_x": 23.26
+  },
+  {
+   "ticker": "GLOO",
+   "vol_x": 2.66
+  },
+  {
+   "ticker": "ECOR",
+   "vol_x": 1.22
+  },
+  {
+   "ticker": "PSIX",
+   "vol_x": 0.96
+  },
+  {
+   "ticker": "SECZ",
+   "vol_x": 0.73
+  },
+  {
+   "ticker": "ABSI",
+   "vol_x": 0.66
+  },
+  {
+   "ticker": "MGNI",
+   "vol_x": 0.65
+  },
+  {
+   "ticker": "TEM",
+   "vol_x": 0.58
+  },
+  {
+   "ticker": "WDAY",
+   "vol_x": 0.56
+  },
+  {
+   "ticker": "GFL",
+   "vol_x": 0.55
+  },
+  {
+   "ticker": "PUBM",
+   "vol_x": 0.55
+  },
+  {
+   "ticker": "SDGR",
+   "vol_x": 0.52
+  },
+  {
+   "ticker": "COYA",
+   "vol_x": 0.51
+  },
+  {
+   "ticker": "CANG",
+   "vol_x": 0.51
+  },
+  {
+   "ticker": "SBC",
+   "vol_x": 0.48
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "FEAM",
+   "bought_at": "2026-09-17T14:16+00:00",
+   "sold_at": "2026-09-17T15:04+00:00",
+   "entry": 1.8568550190925597,
+   "exit": 1.840000033378601,
+   "cost_gbp": 1001.8730026274388,
+   "pl_gbp": -10.581107808572256,
+   "pl_pct": -0.010561326416445015,
+   "reason": "No new high for 38 min, and LFST overtook it on buying volume (0.36x vs 0.13x normal in 30 min)."
+  },
+  {
+   "ticker": "LFST",
+   "bought_at": "2026-09-17T15:04+00:00",
+   "sold_at": "2026-09-17T16:20+00:00",
+   "entry": 13.043029732704161,
+   "exit": 12.899999618530273,
+   "cost_gbp": 995.5843687397411,
+   "pl_gbp": -12.392385255062436,
+   "pl_pct": -0.012447348154681574,
+   "reason": "No new high for 76 min, and FEAM overtook it on buying volume (1.00x vs 0.01x normal in 30 min)."
+  },
+  {
+   "ticker": "FEAM",
+   "bought_at": "2026-09-17T16:20+00:00",
+   "sold_at": "2026-09-17T18:32+00:00",
+   "entry": 1.9918898929357527,
+   "exit": 1.9970999956130981,
+   "cost_gbp": 1001.6915593880053,
+   "pl_gbp": 1.1158713664361812,
+   "pl_pct": 0.0011139869912829609,
+   "reason": "No new high for 122 min, and GLBS overtook it on buying volume (0.53x vs 0.19x normal in 30 min)."
+  },
+  {
+   "ticker": "GLBS",
+   "bought_at": "2026-09-17T18:32+00:00",
+   "sold_at": "2026-09-17T19:50+00:00",
+   "entry": 3.9939900095462795,
+   "exit": 3.926100015640259,
+   "cost_gbp": 1001.2699779755658,
+   "pl_gbp": -18.493789404743893,
+   "pl_pct": -0.01847033248928113,
+   "reason": "End of day: sold 10 minutes before the close."
+  }
+ ],
+ "total_gbp": -40.3514111019424,
+ "alerts": [
+  "10:16 Day trade: bought FEAM: 721 FEAM at $1.86 (about \u00a31,002). Stop $1.76. Highest first-30-minute volume on today's list (0.9x a normal day).",
+  "11:04 Day trade: sold FEAM (-\u00a311): No new high for 38 min, and LFST overtook it on buying volume (0.36x vs 0.13x normal in 30 min). Result -\u00a311 (-1.1%).",
+  "11:04 Day trade: bought LFST: 102 LFST at $13.04 (about \u00a3996). Stop $12.39. Strongest buying on the list: 0.36x normal volume bought in the last 30 min, and rising.",
+  "12:20 Day trade: sold LFST (-\u00a312): No new high for 76 min, and FEAM overtook it on buying volume (1.00x vs 0.01x normal in 30 min). Result -\u00a312 (-1.2%).",
+  "12:20 Day trade: bought FEAM: 672 FEAM at $1.99 (about \u00a31,002). Stop $1.89. Strongest buying on the list: 1.00x normal volume bought in the last 30 min, and rising.",
+  "14:32 Day trade: sold FEAM (+\u00a31): No new high for 122 min, and GLBS overtook it on buying volume (0.53x vs 0.19x normal in 30 min). Result +\u00a31 (+0.1%).",
+  "14:32 Day trade: bought GLBS: 335 GLBS at $3.99 (about \u00a31,001). Stop $3.79. Strongest buying on the list: 0.53x normal volume bought in the last 30 min, and rising.",
+  "15:50 Day trade: sold GLBS (-\u00a318): End of day: sold 10 minutes before the close. Result -\u00a318 (-1.8%).",
+  "15:50 Day trade summary: 4 trade(s) today: FEAM -\u00a311, LFST -\u00a312, FEAM +\u00a31, GLBS -\u00a318. Total -\u00a340."
+ ],
+ "log": [
+  "Day trade buy order: 721 FEAM at about $1.86. Highest first-30-minute volume on today's list (0.9x a normal day).",
+  "Bought 721 FEAM at 1.86 (cost \u00a31,002).",
+  "Added LFST to today's list at 11:04 New York: 0.4x normal volume in the last 30 min; news: LifeStance Health Group (NASDAQ:LFST): Strongest Q2 Results from the Outpatient ",
+  "Sold FEAM (about -\u00a311). No new high for 38 min, and LFST overtook it on buying volume (0.36x vs 0.13x normal in 30 min).",
+  "Day trade buy order: 102 LFST at about $13.03. Strongest buying on the list: 0.36x normal volume bought in the last 30 min, and rising.",
+  "Bought 102 LFST at 13.04 (cost \u00a3996).",
+  "Added CODA to today's list at 12:08 New York: 0.3x normal volume in the last 30 min; news: Coda Octopus (CODA) Just Posted A First-Ever Profit Milestone",
+  "Sold LFST (about -\u00a312). No new high for 76 min, and FEAM overtook it on buying volume (1.00x vs 0.01x normal in 30 min).",
+  "Day trade buy order: 672 FEAM at about $1.99. Strongest buying on the list: 1.00x normal volume bought in the last 30 min, and rising.",
+  "Bought 672 FEAM at 1.99 (cost \u00a31,002).",
+  "Added GLBS to today's list at 14:32 New York: 1.0x normal volume in the last 30 min; news: Globus Maritime Limited Announces the Delivery of a 2026-Built Ultramax Dry Bulk",
+  "Sold FEAM (about +\u00a31). No new high for 122 min, and GLBS overtook it on buying volume (0.53x vs 0.19x normal in 30 min).",
+  "Day trade buy order: 335 GLBS at about $3.99. Strongest buying on the list: 0.53x normal volume bought in the last 30 min, and rising.",
+  "Bought 335 GLBS at 3.99 (cost \u00a31,001).",
+  "Sold GLBS (about -\u00a318). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 4 trade(s), total -\u00a340."
+ ]
+}

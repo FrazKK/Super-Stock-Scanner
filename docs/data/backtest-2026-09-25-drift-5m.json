@@ -1,0 +1,116 @@
+{
+ "date": "2026-09-25",
+ "generated": "2026-11-01T15:50+00:00",
+ "fx_gbpusd": 1.3210737705230713,
+ "result": "done",
+ "require_news": true,
+ "strategy": "drift",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [],
+ "drift_list": [
+  {
+   "ticker": "SKYQ",
+   "name": "Sky Quarry Inc.",
+   "price": 2.740000009536743,
+   "why": "News in the last 5 days (Sky Quarry Restarts Eagle Springs Refinery After Receiving Nevada Air Permit); closed up yesterday (+14.6%) on 6.2x normal volume; above today's open at 10:00 New York."
+  },
+  {
+   "ticker": "LGCY",
+   "name": "Legacy Education Inc.",
+   "price": 9.569999694824219,
+   "why": "News in the last 5 days (Legacy Education Inc (LGCY) (Q4 2026) Earnings Call Highlights: Record Revenue o); closed up yesterday (+3.2%) on 3.5x normal volume; above today's open at 10:00 New York."
+  },
+  {
+   "ticker": "HCAT",
+   "name": "Health Catalyst, Inc",
+   "price": 1.7407000064849854,
+   "why": "News in the last 5 days (Health Catalyst (HCAT) Stock Fair Value Falls As Analysts Cut Targets On Growth ); closed up yesterday (+1.2%) on 1.5x normal volume; above today's open at 10:00 New York."
+  },
+  {
+   "ticker": "ROOT",
+   "name": "Root, Inc.",
+   "price": 48.34000015258789,
+   "why": "News in the last 5 days (Should Investors Buy ROOT as Profitability Improves but Growth Slows?); closed up yesterday (+2.2%) on 1.3x normal volume; above today's open at 10:00 New York."
+  },
+  {
+   "ticker": "LIFE",
+   "name": "Ethos Technologies Inc.",
+   "price": 35.650001525878906,
+   "why": "News in the last 5 days (Is Ethos Technologies (LIFE) Undervalued After Strong Revenue Growth And Ongoing); closed up yesterday (+4.1%) on 1.2x normal volume; above today's open at 10:00 New York."
+  }
+ ],
+ "list": [
+  {
+   "ticker": "DGNX",
+   "name": "Diginex Limited",
+   "vol_x": 0.75,
+   "buy_pct30": 0.7558359167178005,
+   "change": 0.017857126131349377,
+   "score": 4.02,
+   "news": [
+    "Diginex Consolidates Group-Wide Expertise and Launches Sustainability Science & Intelligence Initiative to Accelerate Product Innovation and Drive Measurable Client Outcomes"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "ENGN",
+   "vol_x": 2.09
+  },
+  {
+   "ticker": "GEF.B",
+   "vol_x": 0.57
+  },
+  {
+   "ticker": "TAYD",
+   "vol_x": 0.51
+  },
+  {
+   "ticker": "SUIG",
+   "vol_x": 0.47
+  },
+  {
+   "ticker": "PGEN",
+   "vol_x": 0.41
+  },
+  {
+   "ticker": "DGXX",
+   "vol_x": 0.41
+  },
+  {
+   "ticker": "MSFT",
+   "vol_x": 0.37
+  },
+  {
+   "ticker": "WTTR",
+   "vol_x": 0.35
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "LGCY",
+   "bought_at": "2026-09-25T14:16+00:00",
+   "sold_at": "2026-09-25T19:50+00:00",
+   "entry": 9.439430305480956,
+   "exit": 9.489999771118164,
+   "cost_gbp": 987.5264904495529,
+   "pl_gbp": 3.8034395177724036,
+   "pl_pct": 0.0038514810028447534,
+   "reason": "End of day: sold 10 minutes before the close."
+  }
+ ],
+ "total_gbp": 3.8034395177724036,
+ "alerts": [
+  "10:16 Day trade: bought LGCY: 138 LGCY at $9.44 (about \u00a3988). Stop $8.97. News in the last 5 days (Legacy Education Inc (LGCY) (Q4 2026) Earnings Call Highlights: Record Revenue o); closed up yesterday (+3.2%) on 3.5x normal volume; above today's open at 10:00 New York.",
+  "15:50 Day trade: sold LGCY (+\u00a34): End of day: sold 10 minutes before the close. Result +\u00a34 (+0.4%).",
+  "15:50 Day trade summary: LGCY: +\u00a34 today."
+ ],
+ "log": [
+  "Day trade buy order: 138 LGCY at about $9.57. News in the last 5 days (Legacy Education Inc (LGCY) (Q4 2026) Earnings Call Highlights: Record Revenue o); closed up yesterday (+3.2%) on 3.5x normal volume; above today's open at 10:00 New York.",
+  "Bought 138 LGCY at 9.44 (cost \u00a3988).",
+  "Sold LGCY (about +\u00a34). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 1 trade(s), total +\u00a34."
+ ]
+}

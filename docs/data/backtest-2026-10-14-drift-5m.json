@@ -1,0 +1,108 @@
+{
+ "date": "2026-10-14",
+ "generated": "2026-11-01T16:24+00:00",
+ "fx_gbpusd": 1.3257324695587158,
+ "result": "done",
+ "require_news": true,
+ "strategy": "drift",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [],
+ "drift_list": [
+  {
+   "ticker": "BKYI",
+   "name": "BIO-key International, Inc.",
+   "price": 2.7049999237060547,
+   "why": "News in the last 5 days (BIO-key Appoints Stephen Morrow President of PortalGuard to Advance IAM Platform); closed up yesterday (+71.5%) on 9.5x normal volume; above today's open at 10:00 New York."
+  },
+  {
+   "ticker": "RELL",
+   "name": "Richardson Electronics, Ltd.",
+   "price": 20.975000381469727,
+   "why": "News in the last 5 days (ComEd, Richardson Electronics, Ltd. Announce Expansion and Plans to Install Illi); closed up yesterday (+2.6%) on 1.5x normal volume; above today's open at 10:00 New York."
+  },
+  {
+   "ticker": "HLP",
+   "name": "Hongli Group Inc.",
+   "price": 2.8499999046325684,
+   "why": "News in the last 5 days (Hongli Group Provides Strategic Update on Proposed Advanced Battery Collaboratio); closed up yesterday (+6.8%) on 1.3x normal volume; above today's open at 10:00 New York."
+  },
+  {
+   "ticker": "DCH",
+   "name": "Dauch Corporation",
+   "price": 5.340000152587891,
+   "why": "News in the last 5 days (Dauch Corporation Announces Financial Leadership Succession Plan and Executive R); closed up yesterday (+2.0%) on 1.2x normal volume; above today's open at 10:00 New York."
+  },
+  {
+   "ticker": "OEC",
+   "name": "Orion S.A.",
+   "price": 5.715000152587891,
+   "why": "News in the last 5 days (Orion S.A. Launches PRINTEX\u00ae chroma 450 BEADS for Polymers Market); closed up yesterday (+1.9%) on 1.2x normal volume; above today's open at 10:00 New York."
+  }
+ ],
+ "list": [],
+ "quiet": [
+  {
+   "ticker": "AEHL",
+   "vol_x": 10.74
+  },
+  {
+   "ticker": "VSTM",
+   "vol_x": 4.22
+  },
+  {
+   "ticker": "RGC",
+   "vol_x": 1.5
+  },
+  {
+   "ticker": "NCPL",
+   "vol_x": 1.32
+  },
+  {
+   "ticker": "CANG",
+   "vol_x": 0.62
+  },
+  {
+   "ticker": "JRSH",
+   "vol_x": 0.56
+  },
+  {
+   "ticker": "GFS",
+   "vol_x": 0.45
+  },
+  {
+   "ticker": "VAL",
+   "vol_x": 0.36
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "BKYI",
+   "bought_at": "2026-10-14T14:16+00:00",
+   "sold_at": "2026-10-14T18:40+00:00",
+   "entry": 2.78277997136116,
+   "exit": 3.17682,
+   "cost_gbp": 1030.077757468274,
+   "pl_gbp": 142.33588781067715,
+   "pl_pct": 0.13817975077969882,
+   "reason": "Stop-loss order filled"
+  }
+ ],
+ "total_gbp": 142.33588781067715,
+ "alerts": [
+  "10:16 Day trade: bought BKYI: 490 BKYI at $2.78 (about \u00a31,030). Stop $2.64. News in the last 5 days (BIO-key Appoints Stephen Morrow President of PortalGuard to Advance IAM Platform); closed up yesterday (+71.5%) on 9.5x normal volume; above today's open at 10:00 New York.",
+  "14:40 Day trade update: BKYI: stop-loss order filled (+\u00a3142)",
+  "15:50 Day trade summary: BKYI: +\u00a3142 today."
+ ],
+ "log": [
+  "Day trade buy order: 490 BKYI at about $2.70. News in the last 5 days (BIO-key Appoints Stephen Morrow President of PortalGuard to Advance IAM Platform); closed up yesterday (+71.5%) on 9.5x normal volume; above today's open at 10:00 New York.",
+  "Bought 490 BKYI at 2.78 (cost \u00a31,030).",
+  "BKYI: stop raised from 2.64 to 2.80.",
+  "BKYI: stop raised from 2.80 to 2.92.",
+  "BKYI: stop raised from 2.92 to 2.96.",
+  "BKYI: stop raised from 2.96 to 3.11.",
+  "BKYI: stop raised from 3.11 to 3.18.",
+  "BKYI: stop-loss order filled, P&L +\u00a3142.",
+  "Day trading finished: 1 trade(s), total +\u00a3142."
+ ]
+}

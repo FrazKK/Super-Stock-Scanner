@@ -1,0 +1,58 @@
+{
+ "date": "2026-10-19",
+ "generated": "2026-11-01T16:33+00:00",
+ "fx_gbpusd": 1.3335645198822021,
+ "result": "done",
+ "require_news": true,
+ "strategy": "breakout-strong",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [
+  "Added CFFI to today's list at 11:20 New York: 0.7x normal volume in the last 30 min; news: C&F Financial's 2026 Outlook: Aggressive Market Expansion Drives New Retail Grow",
+  "Added BOX to today's list at 13:12 New York: 0.8x normal volume in the last 30 min; news: Why Box Stock Is An 'Underappreciated AI Winner' And BofA's Top Pick",
+  "Added BWMN to today's list at 14:32 New York: 0.3x normal volume in the last 30 min; news: Bowman Acquires Dymaptic, Expanding AI-Powered Geospatial Data Collection and Da"
+ ],
+ "drift_list": [],
+ "list": [],
+ "quiet": [
+  {
+   "ticker": "FUFU",
+   "vol_x": 167.54
+  },
+  {
+   "ticker": "DH",
+   "vol_x": 2.19
+  },
+  {
+   "ticker": "KRSA",
+   "vol_x": 0.94
+  },
+  {
+   "ticker": "CLF",
+   "vol_x": 0.87
+  },
+  {
+   "ticker": "ENGS",
+   "vol_x": 0.42
+  },
+  {
+   "ticker": "TALO",
+   "vol_x": 0.39
+  },
+  {
+   "ticker": "AII",
+   "vol_x": 0.34
+  }
+ ],
+ "trades": [],
+ "total_gbp": 0,
+ "alerts": [
+  "15:50 Day trade summary: No trade today: nothing in play broke out."
+ ],
+ "log": [
+  "Added CFFI to today's list at 11:20 New York: 0.7x normal volume in the last 30 min; news: C&F Financial's 2026 Outlook: Aggressive Market Expansion Drives New Retail Grow",
+  "Added BOX to today's list at 13:12 New York: 0.8x normal volume in the last 30 min; news: Why Box Stock Is An 'Underappreciated AI Winner' And BofA's Top Pick",
+  "Added BWMN to today's list at 14:32 New York: 0.3x normal volume in the last 30 min; news: Bowman Acquires Dymaptic, Expanding AI-Powered Geospatial Data Collection and Da",
+  "Day trading finished: 0 trade(s), total +\u00a30."
+ ]
+}

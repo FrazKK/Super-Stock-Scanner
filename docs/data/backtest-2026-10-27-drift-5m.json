@@ -1,0 +1,147 @@
+{
+ "date": "2026-10-27",
+ "generated": "2026-11-01T16:51+00:00",
+ "fx_gbpusd": 1.334507703781128,
+ "result": "done",
+ "require_news": true,
+ "strategy": "drift",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [],
+ "drift_list": [
+  {
+   "ticker": "WTTR",
+   "name": "Select Water Solutions, Inc.",
+   "price": 19.43000030517578,
+   "why": "News in the last 5 days (Select Water Solutions, Inc. (WTTR) to Report Q3 Results: Wall Street Expects Ea); closed up yesterday (+3.4%) on 2.7x normal volume; above today's open at 10:00 New York."
+  },
+  {
+   "ticker": "RPD",
+   "name": "Rapid7, Inc.",
+   "price": 17.520000457763672,
+   "why": "News in the last 5 days (Rapid7 Report: Human Operators Still Drive Most of Tracked Cyberattacks, but Exp); closed up yesterday (+20.3%) on 2.6x normal volume; above today's open at 10:00 New York."
+  },
+  {
+   "ticker": "ORKA",
+   "name": "Oruka Therapeutics, Inc.",
+   "price": 90.87999725341797,
+   "why": "News in the last 5 days (Oruka Therapeutics Announces Positive Week 16 Results for ORKA-001 from the Ongo); closed up yesterday (+12.7%) on 2.1x normal volume; above today's open at 10:00 New York."
+  },
+  {
+   "ticker": "CGNT",
+   "name": "Cognyte Software Ltd.",
+   "price": 10.09000015258789,
+   "why": "News in the last 5 days (Cognyte Expands Military Footprint With $20+ Million Framework Agreement With Ti); closed up yesterday (+2.2%) on 2.0x normal volume; above today's open at 10:00 New York."
+  },
+  {
+   "ticker": "RDWR",
+   "name": "Radware Ltd.",
+   "price": 33.14500045776367,
+   "why": "News in the last 5 days (Radware Selected by Major Global Cloud Provider to Modernize DDoS Protection Inf); closed up yesterday (+4.0%) on 1.9x normal volume; above today's open at 10:00 New York."
+  }
+ ],
+ "list": [
+  {
+   "ticker": "AEYE",
+   "name": "AudioEye, Inc.",
+   "vol_x": 2.0,
+   "buy_pct30": 0.724140580279027,
+   "change": 0.2749326065872417,
+   "score": 5.9,
+   "news": [
+    "AudioEye (AEYE) Q3 Earnings and Revenues Beat Estimates",
+    "AudioEye Reports Record Third Quarter 2026 Results"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "IQV",
+   "name": "IQVIA Holdings, Inc.",
+   "vol_x": 0.44,
+   "buy_pct30": 0.3393960452685072,
+   "change": 0.003654970678698133,
+   "score": 2.24,
+   "news": [
+    "IQVIA Holdings Q3 Earnings Beat Estimates, Revenues Increase 8% Y/Y",
+    "IQVIA\u2019s (NYSE:IQV) Q3 2026: beats on revenue"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "HWKN",
+   "name": "Hawkins, Inc.",
+   "vol_x": 0.58,
+   "buy_pct30": 0.29021541784266014,
+   "change": 0.1278056500780289,
+   "score": 1.82,
+   "news": [
+    "Hawkins (NASDAQ:HWKN) Shares Rise 8% After Q2 Earnings Exceed Estimates and Revenue Reaches $313.8 Million",
+    "Hawkins soars 12% on strong second quarter earnings beat"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "RCL",
+   "vol_x": 1.35
+  },
+  {
+   "ticker": "POM",
+   "vol_x": 1.35
+  },
+  {
+   "ticker": "KNSA",
+   "vol_x": 0.68
+  },
+  {
+   "ticker": "ESQ",
+   "vol_x": 0.57
+  },
+  {
+   "ticker": "QSI",
+   "vol_x": 0.43
+  },
+  {
+   "ticker": "LECO",
+   "vol_x": 0.39
+  },
+  {
+   "ticker": "NAUT",
+   "vol_x": 0.37
+  },
+  {
+   "ticker": "UPS",
+   "vol_x": 0.34
+  },
+  {
+   "ticker": "EAF",
+   "vol_x": 0.34
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "WTTR",
+   "bought_at": "2026-10-27T14:16+00:00",
+   "sold_at": "2026-10-27T19:50+00:00",
+   "entry": 19.479459083557128,
+   "exit": 19.649999618530273,
+   "cost_gbp": 994.0670396654234,
+   "pl_gbp": 7.201046141901543,
+   "pl_pct": 0.007244024652829475,
+   "reason": "End of day: sold 10 minutes before the close."
+  }
+ ],
+ "total_gbp": 7.201046141901543,
+ "alerts": [
+  "10:16 Day trade: bought WTTR: 68 WTTR at $19.48 (about \u00a3994). Stop $18.51. News in the last 5 days (Select Water Solutions, Inc. (WTTR) to Report Q3 Results: Wall Street Expects Ea); closed up yesterday (+3.4%) on 2.7x normal volume; above today's open at 10:00 New York.",
+  "15:50 Day trade: sold WTTR (+\u00a37): End of day: sold 10 minutes before the close. Result +\u00a37 (+0.7%).",
+  "15:50 Day trade summary: WTTR: +\u00a37 today."
+ ],
+ "log": [
+  "Day trade buy order: 68 WTTR at about $19.43. News in the last 5 days (Select Water Solutions, Inc. (WTTR) to Report Q3 Results: Wall Street Expects Ea); closed up yesterday (+3.4%) on 2.7x normal volume; above today's open at 10:00 New York.",
+  "Bought 68 WTTR at 19.48 (cost \u00a3994).",
+  "Sold WTTR (about +\u00a37). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 1 trade(s), total +\u00a37."
+ ]
+}

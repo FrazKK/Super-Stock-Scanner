@@ -1,0 +1,150 @@
+{
+ "date": "2026-09-29",
+ "generated": "2026-11-01T15:53+00:00",
+ "fx_gbpusd": 1.3254337310791016,
+ "result": "done",
+ "require_news": true,
+ "strategy": "drift",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [],
+ "drift_list": [
+  {
+   "ticker": "XERS",
+   "name": "Xeris Biopharma Holdings, Inc.",
+   "price": 9.920000076293945,
+   "why": "News in the last 5 days (Xeris Biopharma Reportedly Draws Takeover Interest \u2014 But Firm Says It\u2019s \u2018Not For); closed up yesterday (+8.0%) on 1.8x normal volume; above today's open at 10:00 New York."
+  },
+  {
+   "ticker": "WYY",
+   "name": "WidePoint Corporation",
+   "price": 6.045000076293945,
+   "why": "News in the last 5 days (WidePoint Corporation Statement Regarding GAO Protest Decision on DHS CWMS 3.0 A); closed up yesterday (+7.9%) on 1.6x normal volume; above today's open at 10:00 New York."
+  },
+  {
+   "ticker": "CRVO",
+   "name": "CervoMed Inc.",
+   "price": 2.7300000190734863,
+   "why": "News in the last 5 days (CervoMed Announces Pharmacokinetic Results with New Neflamapimod Oral Tablet For); closed up yesterday (+5.1%) on 1.3x normal volume; above today's open at 10:00 New York."
+  },
+  {
+   "ticker": "TRT",
+   "name": "Trio-Tech International",
+   "price": 6.71999979019165,
+   "why": "News in the last 5 days (Trio-Tech Stock Plunges Post Q4 Earnings Despite Strong Revenue Growth); closed up yesterday (+3.2%) on 1.2x normal volume; above today's open at 10:00 New York."
+  },
+  {
+   "ticker": "QURE",
+   "name": "uniQure N.V.",
+   "price": 24.729999542236328,
+   "why": "News in the last 5 days (QURE Stock Clocks Worst Day In Over 10 Months: Four-Year Huntington\u2019s Data Spook); closed up yesterday (+2.3%) on 1.2x normal volume; above today's open at 10:00 New York."
+  }
+ ],
+ "list": [
+  {
+   "ticker": "NTWK",
+   "name": "NETSOL Technologies Inc.",
+   "vol_x": 1.36,
+   "buy_pct30": 0.5936626380182837,
+   "change": 0.014134093005091719,
+   "score": 4.09,
+   "news": [
+    "NETSOL Q4 Earnings & Revenues Rise Y/Y as Margins Expand",
+    "NETSOL Technologies Inc (NTWK) (Q4 2026) Earnings Call Highlights: Record Revenue and Strong ..."
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "AGPU",
+   "name": "Axe Compute Inc.",
+   "vol_x": 0.44,
+   "buy_pct30": 0.5266210099341204,
+   "change": 0.09382719169670684,
+   "score": 3.49,
+   "news": [
+    "Axe Compute Receives More Than $184 Million in Customer Prepayments and Signs Over $266 Million in New AI Infrastructure Contracts Since Q2 Earnings Call"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "JELD",
+   "name": "JELD-WEN Holding, Inc.",
+   "vol_x": 1.17,
+   "buy_pct30": 0.41894373210236907,
+   "change": 0.14632772075338107,
+   "score": 2.52,
+   "news": [
+    "JELD-WEN Announces Comprehensive Agreement to Extend Debt Maturities and Raise $135 Million of Incremental Liquidity to Support Business Plan"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "QSI",
+   "vol_x": 1.14
+  },
+  {
+   "ticker": "KMX",
+   "vol_x": 0.98
+  },
+  {
+   "ticker": "IOVA",
+   "vol_x": 0.87
+  },
+  {
+   "ticker": "WW",
+   "vol_x": 0.72
+  },
+  {
+   "ticker": "CZFS",
+   "vol_x": 0.66
+  },
+  {
+   "ticker": "ABLV",
+   "vol_x": 0.57
+  },
+  {
+   "ticker": "ACFN",
+   "vol_x": 0.46
+  },
+  {
+   "ticker": "ABCL",
+   "vol_x": 0.36
+  },
+  {
+   "ticker": "AXTI",
+   "vol_x": 0.36
+  },
+  {
+   "ticker": "MF",
+   "vol_x": 0.35
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "XERS",
+   "bought_at": "2026-09-29T14:16+00:00",
+   "sold_at": "2026-09-29T16:56+00:00",
+   "entry": 9.894885229110717,
+   "exit": 9.94005,
+   "cost_gbp": 994.3867687763526,
+   "pl_gbp": 1.5465465394473767,
+   "pl_pct": 0.0015552766669959688,
+   "reason": "Stop-loss order filled"
+  }
+ ],
+ "total_gbp": 1.5465465394473767,
+ "alerts": [
+  "10:16 Day trade: bought XERS: 133 XERS at $9.89 (about \u00a3994). Stop $9.40. News in the last 5 days (Xeris Biopharma Reportedly Draws Takeover Interest \u2014 But Firm Says It\u2019s \u2018Not For); closed up yesterday (+8.0%) on 1.8x normal volume; above today's open at 10:00 New York.",
+  "12:56 Day trade update: XERS: stop-loss order filled (+\u00a32)",
+  "15:50 Day trade summary: XERS: +\u00a32 today."
+ ],
+ "log": [
+  "Day trade buy order: 133 XERS at about $9.92. News in the last 5 days (Xeris Biopharma Reportedly Draws Takeover Interest \u2014 But Firm Says It\u2019s \u2018Not For); closed up yesterday (+8.0%) on 1.8x normal volume; above today's open at 10:00 New York.",
+  "Bought 133 XERS at 9.89 (cost \u00a3994).",
+  "XERS: stop raised from 9.40 to 9.95.",
+  "XERS: stop-loss order filled, P&L +\u00a32.",
+  "Day trading finished: 1 trade(s), total +\u00a32."
+ ]
+}

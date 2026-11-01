@@ -1,0 +1,130 @@
+{
+ "date": "2026-10-22",
+ "generated": "2026-11-01T16:40+00:00",
+ "fx_gbpusd": 1.339566707611084,
+ "result": "done",
+ "require_news": true,
+ "strategy": "breakout",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [
+  "Added WCCB to today's list at 10:32 New York: 0.5x normal volume in the last 30 min; news: West Coast Community Bank Continues Expansion with New Full-Service Branch in Sa",
+  "Added PEBK to today's list at 11:04 New York: 0.7x normal volume in the last 30 min; news: Peoples Bancorp Stock Slips Post Q3 Earnings Despite NIM Expansion",
+  "Added CENTA to today's list at 12:40 New York: 0.4x normal volume in the last 30 min; news: Central Garden & Pet Acquires Burpee, an Iconic Brand in the Packet Seed and You",
+  "Added MET to today's list at 13:28 New York: 0.3x normal volume in the last 30 min; news: MetLife's ChatGPT Integration Opens a New Pet Insurance Growth Avenue"
+ ],
+ "drift_list": [],
+ "list": [
+  {
+   "ticker": "QCRH",
+   "name": "QCR Holdings, Inc.",
+   "vol_x": 0.36,
+   "buy_pct30": 0.598711741943675,
+   "change": 0.017090549184474613,
+   "score": 4.11,
+   "news": [
+    "Does Record Earnings Beat Change The Bull Case For QCR Holdings Stock (QCRH)?",
+    "QCR Holdings (QCRH) Stock Climbs As Q3 Earnings Extend Record Profitability"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "MKTX",
+   "name": "MarketAxess Holdings, Inc.",
+   "vol_x": 0.46,
+   "buy_pct30": 0.5201345991405667,
+   "change": 0.00383541278388555,
+   "score": 2.5,
+   "news": [
+    "Will MarketAxess (MKTX) Beat Estimates Again in Its Next Earnings Report?"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "CBZ",
+   "name": "CBIZ, Inc.",
+   "vol_x": 0.37,
+   "buy_pct30": 0.5159039895083872,
+   "change": 0.0005177834445333485,
+   "score": 2.3,
+   "news": [
+    "CBIZ (CBZ) Q3 Results Put Profit Momentum Ahead Of A Tepid Stock Reaction"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "QGEN",
+   "vol_x": 4.28
+  },
+  {
+   "ticker": "EDHL",
+   "vol_x": 1.01
+  },
+  {
+   "ticker": "RRBI",
+   "vol_x": 0.87
+  },
+  {
+   "ticker": "SPOT",
+   "vol_x": 0.8
+  },
+  {
+   "ticker": "ROKU",
+   "vol_x": 0.78
+  },
+  {
+   "ticker": "PG",
+   "vol_x": 0.6
+  },
+  {
+   "ticker": "HLP",
+   "vol_x": 0.54
+  },
+  {
+   "ticker": "FMAO",
+   "vol_x": 0.52
+  },
+  {
+   "ticker": "FBP",
+   "vol_x": 0.44
+  },
+  {
+   "ticker": "CSX",
+   "vol_x": 0.39
+  },
+  {
+   "ticker": "ULTA",
+   "vol_x": 0.39
+  },
+  {
+   "ticker": "BPRN",
+   "vol_x": 0.39
+  },
+  {
+   "ticker": "URI",
+   "vol_x": 0.38
+  },
+  {
+   "ticker": "TSLA",
+   "vol_x": 0.37
+  },
+  {
+   "ticker": "ALLE",
+   "vol_x": 0.35
+  }
+ ],
+ "trades": [],
+ "total_gbp": 0,
+ "alerts": [
+  "15:50 Day trade summary: No trade today: nothing in play broke out."
+ ],
+ "log": [
+  "Added WCCB to today's list at 10:32 New York: 0.5x normal volume in the last 30 min; news: West Coast Community Bank Continues Expansion with New Full-Service Branch in Sa",
+  "Added PEBK to today's list at 11:04 New York: 0.7x normal volume in the last 30 min; news: Peoples Bancorp Stock Slips Post Q3 Earnings Despite NIM Expansion",
+  "Added CENTA to today's list at 12:40 New York: 0.4x normal volume in the last 30 min; news: Central Garden & Pet Acquires Burpee, an Iconic Brand in the Packet Seed and You",
+  "Added MET to today's list at 13:28 New York: 0.3x normal volume in the last 30 min; news: MetLife's ChatGPT Integration Opens a New Pet Insurance Growth Avenue",
+  "Day trading finished: 0 trade(s), total +\u00a30."
+ ]
+}

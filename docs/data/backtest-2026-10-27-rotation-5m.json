@@ -1,0 +1,147 @@
+{
+ "date": "2026-10-27",
+ "generated": "2026-11-01T16:50+00:00",
+ "fx_gbpusd": 1.334507703781128,
+ "result": "done",
+ "require_news": true,
+ "strategy": "rotation",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [
+  "Added AEO to today's list at 10:16 New York: 0.4x normal volume in the last 30 min; news: American Eagle Outfitters (AEO) Surpasses Market Returns: Some Facts Worth Knowi",
+  "Added BOW to today's list at 10:16 New York: 1.3x normal volume in the last 30 min; news: Bowhead Specialty (NYSE:BOW) Sees Strong Trading Volume - What's Next? - MarketB",
+  "Added THFF to today's list at 10:16 New York: 0.5x normal volume in the last 30 min; news: First Financial Corp. (THFF) Q3 Earnings and Revenues Beat Estimates",
+  "Added AVBH to today's list at 10:16 New York: 0.4x normal volume in the last 30 min; news: Avidbank Holdings Inc. (AVBH) Q3 Earnings and Revenues Beat Estimates",
+  "Added TLS to today's list at 11:52 New York: 0.4x normal volume in the last 30 min; news: Why Telos (TLS) is Poised to Beat Earnings Estimates Again",
+  "Added INSG to today's list at 11:52 New York: 0.7x normal volume in the last 30 min; news: MarketBeat cites Hold consensus and USD 13.00 target for Inseego stock - ad-hoc-",
+  "Added DMRC to today's list at 14:16 New York: 0.3x normal volume in the last 30 min; news: Digimarc Returns from RGCA with Strong Market Interest in Its Next-Generation Gi"
+ ],
+ "drift_list": [],
+ "list": [
+  {
+   "ticker": "AEYE",
+   "name": "AudioEye, Inc.",
+   "vol_x": 2.0,
+   "buy_pct30": 0.724140580279027,
+   "change": 0.2749326065872417,
+   "score": 5.9,
+   "news": [
+    "AudioEye (AEYE) Q3 Earnings and Revenues Beat Estimates",
+    "AudioEye Reports Record Third Quarter 2026 Results"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "IQV",
+   "name": "IQVIA Holdings, Inc.",
+   "vol_x": 0.44,
+   "buy_pct30": 0.3393960452685072,
+   "change": 0.003654970678698133,
+   "score": 2.24,
+   "news": [
+    "IQVIA Holdings Q3 Earnings Beat Estimates, Revenues Increase 8% Y/Y",
+    "IQVIA\u2019s (NYSE:IQV) Q3 2026: beats on revenue"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "HWKN",
+   "name": "Hawkins, Inc.",
+   "vol_x": 0.58,
+   "buy_pct30": 0.29021541784266014,
+   "change": 0.1278056500780289,
+   "score": 1.82,
+   "news": [
+    "Hawkins (NASDAQ:HWKN) Shares Rise 8% After Q2 Earnings Exceed Estimates and Revenue Reaches $313.8 Million",
+    "Hawkins soars 12% on strong second quarter earnings beat"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "RCL",
+   "vol_x": 1.35
+  },
+  {
+   "ticker": "POM",
+   "vol_x": 1.35
+  },
+  {
+   "ticker": "KNSA",
+   "vol_x": 0.68
+  },
+  {
+   "ticker": "ESQ",
+   "vol_x": 0.57
+  },
+  {
+   "ticker": "QSI",
+   "vol_x": 0.43
+  },
+  {
+   "ticker": "LECO",
+   "vol_x": 0.39
+  },
+  {
+   "ticker": "NAUT",
+   "vol_x": 0.37
+  },
+  {
+   "ticker": "UPS",
+   "vol_x": 0.34
+  },
+  {
+   "ticker": "EAF",
+   "vol_x": 0.34
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "BOW",
+   "bought_at": "2026-10-27T14:16+00:00",
+   "sold_at": "2026-10-27T15:52+00:00",
+   "entry": 34.25422122192382,
+   "exit": 34.2400016784668,
+   "cost_gbp": 976.8492855823633,
+   "pl_gbp": -1.8679796706708203,
+   "pl_pct": -0.0019122496154124699,
+   "reason": "No new high for 46 min, and INSG overtook it on buying volume (0.36x vs 0.00x normal in 30 min)."
+  },
+  {
+   "ticker": "INSG",
+   "bought_at": "2026-10-27T15:52+00:00",
+   "sold_at": "2026-10-27T19:50+00:00",
+   "entry": 4.849844789981842,
+   "exit": 4.889999866485596,
+   "cost_gbp": 1000.8993387122049,
+   "pl_gbp": 6.775596002215252,
+   "pl_pct": 0.006769507921678709,
+   "reason": "End of day: sold 10 minutes before the close."
+  }
+ ],
+ "total_gbp": 4.907616331544432,
+ "alerts": [
+  "10:16 Day trade: bought BOW: 38 BOW at $34.25 (about \u00a3977). Stop $32.54. Highest first-30-minute volume on today's list (1.3x a normal day).",
+  "11:52 Day trade: sold BOW (-\u00a32): No new high for 46 min, and INSG overtook it on buying volume (0.36x vs 0.00x normal in 30 min). Result -\u00a32 (-0.2%).",
+  "11:52 Day trade: bought INSG: 275 INSG at $4.85 (about \u00a31,001). Stop $4.61. Strongest buying on the list: 0.36x normal volume bought in the last 30 min, and rising.",
+  "15:50 Day trade: sold INSG (+\u00a37): End of day: sold 10 minutes before the close. Result +\u00a37 (+0.7%).",
+  "15:50 Day trade summary: 2 trade(s) today: BOW -\u00a32, INSG +\u00a37. Total +\u00a35."
+ ],
+ "log": [
+  "Added AEO to today's list at 10:16 New York: 0.4x normal volume in the last 30 min; news: American Eagle Outfitters (AEO) Surpasses Market Returns: Some Facts Worth Knowi",
+  "Added BOW to today's list at 10:16 New York: 1.3x normal volume in the last 30 min; news: Bowhead Specialty (NYSE:BOW) Sees Strong Trading Volume - What's Next? - MarketB",
+  "Added THFF to today's list at 10:16 New York: 0.5x normal volume in the last 30 min; news: First Financial Corp. (THFF) Q3 Earnings and Revenues Beat Estimates",
+  "Added AVBH to today's list at 10:16 New York: 0.4x normal volume in the last 30 min; news: Avidbank Holdings Inc. (AVBH) Q3 Earnings and Revenues Beat Estimates",
+  "Day trade buy order: 38 BOW at about $34.22. Highest first-30-minute volume on today's list (1.3x a normal day).",
+  "Bought 38 BOW at 34.25 (cost \u00a3977).",
+  "Added TLS to today's list at 11:52 New York: 0.4x normal volume in the last 30 min; news: Why Telos (TLS) is Poised to Beat Earnings Estimates Again",
+  "Added INSG to today's list at 11:52 New York: 0.7x normal volume in the last 30 min; news: MarketBeat cites Hold consensus and USD 13.00 target for Inseego stock - ad-hoc-",
+  "Sold BOW (about -\u00a32). No new high for 46 min, and INSG overtook it on buying volume (0.36x vs 0.00x normal in 30 min).",
+  "Day trade buy order: 275 INSG at about $4.84. Strongest buying on the list: 0.36x normal volume bought in the last 30 min, and rising.",
+  "Bought 275 INSG at 4.85 (cost \u00a31,001).",
+  "Added DMRC to today's list at 14:16 New York: 0.3x normal volume in the last 30 min; news: Digimarc Returns from RGCA with Strong Market Interest in Its Next-Generation Gi",
+  "Sold INSG (about +\u00a37). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 2 trade(s), total +\u00a35."
+ ]
+}

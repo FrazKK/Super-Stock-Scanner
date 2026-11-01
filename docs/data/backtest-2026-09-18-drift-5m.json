@@ -1,0 +1,138 @@
+{
+ "date": "2026-09-18",
+ "generated": "2026-11-01T15:35+00:00",
+ "fx_gbpusd": 1.335800051689148,
+ "result": "done",
+ "require_news": true,
+ "strategy": "drift",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [],
+ "drift_list": [
+  {
+   "ticker": "NUWE",
+   "name": "Nuwellis, Inc.",
+   "price": 0.9437000155448914,
+   "why": "News in the last 5 days (Nuwellis Reports 31 Aquadex Console Sales in 2026, Expanding Recurring Revenue O); closed up yesterday (+32.9%) on 9.6x normal volume; above today's open at 10:00 New York."
+  },
+  {
+   "ticker": "FEAM",
+   "name": "5E Advanced Materials, Inc.",
+   "price": 2.0322000980377197,
+   "why": "News in the last 5 days (SEARLES VALLEY MINERALS ANNOUNCES DEFINITIVE ASSET PURCHASE AGREEMENT WITH 5E AD); closed up yesterday (+17.0%) on 4.8x normal volume; above today's open at 10:00 New York."
+  },
+  {
+   "ticker": "NRXS",
+   "name": "Neuraxis, Inc.",
+   "price": 7.735000133514404,
+   "why": "News in the last 5 days (NeurAxis Announces Medical Coverage Policy Milestone, Expanding Access to Over 1); closed up yesterday (+9.9%) on 2.4x normal volume; above today's open at 10:00 New York."
+  },
+  {
+   "ticker": "CSHR",
+   "name": "CoinShares PLC",
+   "price": 5.252600193023682,
+   "why": "News in the last 5 days (CoinShares Says Bitcoin Won't Hit $80,000. Is It Correct?); closed up yesterday (+4.0%) on 1.7x normal volume; above today's open at 10:00 New York."
+  }
+ ],
+ "list": [
+  {
+   "ticker": "TNMG",
+   "name": "TNL Mediagene",
+   "vol_x": 271.05,
+   "buy_pct30": 0.7558197108623029,
+   "change": 0.6238660715124547,
+   "score": 542.62,
+   "news": [
+    "TNL Mediagene's The News Lens Launches TNL Daily, a Subscription Newsletter, with Crowdfunding Campaign Exceeding Its Funding Target"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "NCPL",
+   "vol_x": 3.09
+  },
+  {
+   "ticker": "TAOX",
+   "vol_x": 1.92
+  },
+  {
+   "ticker": "USDE",
+   "vol_x": 1.17
+  },
+  {
+   "ticker": "SECZ",
+   "vol_x": 0.87
+  },
+  {
+   "ticker": "HALO",
+   "vol_x": 0.6
+  },
+  {
+   "ticker": "GOOG",
+   "vol_x": 0.55
+  },
+  {
+   "ticker": "GOOGL",
+   "vol_x": 0.51
+  },
+  {
+   "ticker": "ALMR",
+   "vol_x": 0.45
+  },
+  {
+   "ticker": "GILD",
+   "vol_x": 0.42
+  },
+  {
+   "ticker": "GYRE",
+   "vol_x": 0.42
+  },
+  {
+   "ticker": "HSDT",
+   "vol_x": 0.41
+  },
+  {
+   "ticker": "BTCS",
+   "vol_x": 0.41
+  },
+  {
+   "ticker": "DHR",
+   "vol_x": 0.36
+  },
+  {
+   "ticker": "ISRG",
+   "vol_x": 0.35
+  },
+  {
+   "ticker": "ABTC",
+   "vol_x": 0.35
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "NUWE",
+   "bought_at": "2026-09-18T14:16+00:00",
+   "sold_at": "2026-09-18T15:40+00:00",
+   "entry": 0.9581571907401084,
+   "exit": 0.9092898,
+   "cost_gbp": 1016.4890410189751,
+   "pl_gbp": -54.73200427163374,
+   "pl_pct": -0.05384416561615645,
+   "reason": "Stop-loss order filled"
+  }
+ ],
+ "total_gbp": -54.73200427163374,
+ "alerts": [
+  "10:16 Day trade: bought NUWE: 1,415 NUWE at $0.96 (about \u00a31,016). Stop $0.91. News in the last 5 days (Nuwellis Reports 31 Aquadex Console Sales in 2026, Expanding Recurring Revenue O); closed up yesterday (+32.9%) on 9.6x normal volume; above today's open at 10:00 New York.",
+  "11:40 Day trade update: NUWE: stop-loss order filled (-\u00a355)",
+  "15:50 Day trade summary: NUWE: -\u00a355 today."
+ ],
+ "log": [
+  "Day trade buy order: 1415 NUWE at about $0.94. News in the last 5 days (Nuwellis Reports 31 Aquadex Console Sales in 2026, Expanding Recurring Revenue O); closed up yesterday (+32.9%) on 9.6x normal volume; above today's open at 10:00 New York.",
+  "Bought 1,415 NUWE at 0.96 (cost \u00a31,016).",
+  "NUWE: stop-loss order filled, P&L -\u00a355.",
+  "Day trading finished: 1 trade(s), total -\u00a355."
+ ]
+}

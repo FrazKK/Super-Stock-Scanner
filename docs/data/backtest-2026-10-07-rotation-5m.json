@@ -1,0 +1,89 @@
+{
+ "date": "2026-10-07",
+ "generated": "2026-11-01T16:14+00:00",
+ "fx_gbpusd": 1.326682209968567,
+ "result": "done",
+ "require_news": true,
+ "strategy": "rotation",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [],
+ "drift_list": [],
+ "list": [
+  {
+   "ticker": "BKH",
+   "name": "Black Hills Corporation",
+   "vol_x": 0.58,
+   "buy_pct30": 0.7697261115767031,
+   "change": 0.07471026041430173,
+   "score": 3.74,
+   "news": [
+    "Black Hills Corp. Executes Definitive Agreements to Serve Google\u2019s Planned Data Center in Cheyenne, Wyoming"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "ZIM",
+   "name": "ZIM Integrated Shipping Services Ltd.",
+   "vol_x": 0.43,
+   "buy_pct30": 0.4950436347742868,
+   "change": 0.03356162728187795,
+   "score": 3.34,
+   "news": [
+    "Zim lifts profit forecast 72% on strong demand"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "PENG",
+   "vol_x": 2.49
+  },
+  {
+   "ticker": "CANG",
+   "vol_x": 0.92
+  },
+  {
+   "ticker": "NWE",
+   "vol_x": 0.45
+  },
+  {
+   "ticker": "PNTG",
+   "vol_x": 0.45
+  },
+  {
+   "ticker": "BWLP",
+   "vol_x": 0.43
+  },
+  {
+   "ticker": "PG",
+   "vol_x": 0.34
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "BKH",
+   "bought_at": "2026-10-07T14:16+00:00",
+   "sold_at": "2026-10-07T19:50+00:00",
+   "entry": 75.77569694519042,
+   "exit": 76.1500015258789,
+   "cost_gbp": 972.4402111119787,
+   "pl_gbp": 3.3398334328360306,
+   "pl_pct": 0.003434487174298309,
+   "reason": "End of day: sold 10 minutes before the close."
+  }
+ ],
+ "total_gbp": 3.3398334328360306,
+ "alerts": [
+  "10:16 Day trade: bought BKH: 17 BKH at $75.78 (about \u00a3972). Stop $71.99. Highest first-30-minute volume on today's list (0.6x a normal day).",
+  "15:50 Day trade: sold BKH (+\u00a33): End of day: sold 10 minutes before the close. Result +\u00a33 (+0.3%).",
+  "15:50 Day trade summary: 1 trade(s) today: BKH +\u00a33. Total +\u00a33."
+ ],
+ "log": [
+  "Day trade buy order: 17 BKH at about $75.70. Highest first-30-minute volume on today's list (0.6x a normal day).",
+  "Bought 17 BKH at 75.78 (cost \u00a3972).",
+  "Sold BKH (about +\u00a33). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 1 trade(s), total +\u00a33."
+ ]
+}

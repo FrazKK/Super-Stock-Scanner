@@ -1,0 +1,96 @@
+{
+ "date": "2026-09-30",
+ "generated": "2026-11-01T15:59+00:00",
+ "fx_gbpusd": 1.323276400566101,
+ "result": "done",
+ "require_news": true,
+ "strategy": "rotation",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [
+  "Added TRAK to today's list at 12:24 New York: 0.4x normal volume in the last 30 min; news: ReposiTrak Inc (TRAK) (Q4 2026) Earnings Call Highlights: Margin Expansion and N"
+ ],
+ "drift_list": [],
+ "list": [
+  {
+   "ticker": "FUNC",
+   "name": "First",
+   "vol_x": 0.5,
+   "buy_pct30": 0.6625053350405463,
+   "change": 0.018424760144968966,
+   "score": 3.15,
+   "news": [
+    "How to Play First United Stock After Its Dividend Increase"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "CANG",
+   "name": "Cango Inc.",
+   "vol_x": 0.36,
+   "buy_pct30": 0.431506634445938,
+   "change": 0.03375534429857652,
+   "score": 0.95,
+   "news": [
+    "Cango stock surges over 20% following Buy initiation at Jones Trading"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "FFR",
+   "vol_x": 16.85
+  },
+  {
+   "ticker": "CAPR",
+   "vol_x": 4.49
+  },
+  {
+   "ticker": "NAUT",
+   "vol_x": 1.87
+  },
+  {
+   "ticker": "QSI",
+   "vol_x": 0.87
+  },
+  {
+   "ticker": "PMVP",
+   "vol_x": 0.83
+  },
+  {
+   "ticker": "PACB",
+   "vol_x": 0.56
+  },
+  {
+   "ticker": "HPE",
+   "vol_x": 0.42
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "FUNC",
+   "bought_at": "2026-09-30T14:16+00:00",
+   "sold_at": "2026-09-30T19:50+00:00",
+   "entry": 44.264221221923826,
+   "exit": 43.060001373291016,
+   "cost_gbp": 971.5188062818675,
+   "pl_gbp": -27.84593545062978,
+   "pl_pct": -0.028662271147585815,
+   "reason": "End of day: sold 10 minutes before the close."
+  }
+ ],
+ "total_gbp": -27.84593545062978,
+ "alerts": [
+  "10:16 Day trade: bought FUNC: 29 FUNC at $44.26 (about \u00a3972). Stop $42.05. Highest first-30-minute volume on today's list (0.5x a normal day).",
+  "15:50 Day trade: sold FUNC (-\u00a328): End of day: sold 10 minutes before the close. Result -\u00a328 (-2.9%).",
+  "15:50 Day trade summary: 1 trade(s) today: FUNC -\u00a328. Total -\u00a328."
+ ],
+ "log": [
+  "Day trade buy order: 29 FUNC at about $44.22. Highest first-30-minute volume on today's list (0.5x a normal day).",
+  "Bought 29 FUNC at 44.26 (cost \u00a3972).",
+  "Added TRAK to today's list at 12:24 New York: 0.4x normal volume in the last 30 min; news: ReposiTrak Inc (TRAK) (Q4 2026) Earnings Call Highlights: Margin Expansion and N",
+  "Sold FUNC (about -\u00a328). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 1 trade(s), total -\u00a328."
+ ]
+}

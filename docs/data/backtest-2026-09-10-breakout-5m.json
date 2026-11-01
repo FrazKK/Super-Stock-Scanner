@@ -1,0 +1,108 @@
+{
+ "date": "2026-09-10",
+ "generated": "2026-11-01T15:18+00:00",
+ "fx_gbpusd": 1.3551971912384033,
+ "result": "done",
+ "require_news": true,
+ "strategy": "breakout",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [
+  "Added OPRT to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; news: Take the Zacks Approach to Beat the Markets: Oportun Financial, Uranium Royalty "
+ ],
+ "drift_list": [],
+ "list": [
+  {
+   "ticker": "TEN",
+   "name": "Tsakos Energy Navigation Ltd",
+   "vol_x": 0.46,
+   "buy_pct30": 0.306578064252506,
+   "change": 0.02459386642809891,
+   "score": 0.65,
+   "news": [
+    "Tsakos Energy Navigation Ltd (TEN) (Q2 2026) Earnings Call Highlights: Record Net Income Surges ..."
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "PSIG",
+   "vol_x": 1.31
+  },
+  {
+   "ticker": "VOYA",
+   "vol_x": 1.01
+  },
+  {
+   "ticker": "INDO",
+   "vol_x": 0.76
+  },
+  {
+   "ticker": "AMTX",
+   "vol_x": 0.72
+  },
+  {
+   "ticker": "PBAM",
+   "vol_x": 0.61
+  },
+  {
+   "ticker": "IMPP",
+   "vol_x": 0.59
+  },
+  {
+   "ticker": "OBIO",
+   "vol_x": 0.49
+  },
+  {
+   "ticker": "BSVN",
+   "vol_x": 0.47
+  },
+  {
+   "ticker": "KNTK",
+   "vol_x": 0.4
+  },
+  {
+   "ticker": "SPCX",
+   "vol_x": 0.39
+  },
+  {
+   "ticker": "VG",
+   "vol_x": 0.39
+  },
+  {
+   "ticker": "LXFR",
+   "vol_x": 0.36
+  },
+  {
+   "ticker": "ESP",
+   "vol_x": 0.34
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "OPRT",
+   "bought_at": "2026-09-10T14:16+00:00",
+   "sold_at": "2026-09-10T19:46+00:00",
+   "entry": 7.8318238816261285,
+   "exit": 7.65234,
+   "cost_gbp": 1001.2844614728048,
+   "pl_gbp": -25.877305734788024,
+   "pl_pct": -0.025844109971231048,
+   "reason": "Stop-loss order filled"
+  }
+ ],
+ "total_gbp": -25.877305734788024,
+ "alerts": [
+  "10:16 Day trade: bought OPRT: 173 OPRT at $7.83 (about \u00a31,001). Stop $7.44. Broke above its opening-range high ($7.73) at $7.82. In play: 0.3x normal volume, normally moves 4% a day. Stop $7.65.",
+  "15:46 Day trade update: OPRT: stop-loss order filled (-\u00a326)",
+  "15:50 Day trade summary: 1 trade(s) today: OPRT -\u00a326. Total -\u00a326."
+ ],
+ "log": [
+  "Added OPRT to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; news: Take the Zacks Approach to Beat the Markets: Oportun Financial, Uranium Royalty ",
+  "Day trade buy order: 173 OPRT at about $7.82. Broke above its opening-range high ($7.73) at $7.82. In play: 0.3x normal volume, normally moves 4% a day. Stop $7.65.",
+  "Bought 173 OPRT at 7.83 (cost \u00a31,001).",
+  "OPRT: stop-loss order filled, P&L -\u00a326.",
+  "Day trading finished: 1 trade(s), total -\u00a326."
+ ]
+}

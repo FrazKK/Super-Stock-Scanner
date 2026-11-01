@@ -1,0 +1,149 @@
+{
+ "date": "2026-10-26",
+ "generated": "2026-11-01T16:49+00:00",
+ "fx_gbpusd": 1.3377747535705566,
+ "result": "done",
+ "require_news": true,
+ "strategy": "rotation",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [
+  "Added RNG to today's list at 12:24 New York: 0.5x normal volume in the last 30 min; news: RingCentral (RNG) Stock Price Climbs As Q3 Earnings Recast The Profit Story"
+ ],
+ "drift_list": [],
+ "list": [
+  {
+   "ticker": "SGRY",
+   "name": "Surgery Partners, Inc.",
+   "vol_x": 6.4,
+   "buy_pct30": 0.214291553133515,
+   "change": 0.46222226581876247,
+   "score": 12.16,
+   "news": [
+    "Surgery Partners shares surge 46% as $5.7 billion takeover deal agreed"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "XNCR",
+   "name": "Xencor, Inc.",
+   "vol_x": 2.9,
+   "buy_pct30": 0.46491786061274953,
+   "change": 0.17633044004153442,
+   "score": 6.66,
+   "news": [
+    "Xencor Soars 31% on Kidney Cancer Trial Data Showing \u201cImpressive Antitumor Activity\u201d",
+    "Xencor stock surges on positive cancer drug trial data"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "FRBA",
+   "name": "First Bank",
+   "vol_x": 0.48,
+   "buy_pct30": 0.745664728518877,
+   "change": 0.018566303335922463,
+   "score": 4.44,
+   "news": [
+    "First Bank (FRBA) Q3 Earnings Put Buyback And Credit Cleanup In Focus"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "PEBK",
+   "name": "Peoples Bancorp of North Carolina, Inc.",
+   "vol_x": 0.41,
+   "buy_pct30": 0.6988183354952485,
+   "change": 0.011499540139467967,
+   "score": 4.12,
+   "news": [
+    "Peoples Bancorp Stock Slips Post Q3 Earnings Despite NIM Expansion"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "CHCO",
+   "name": "City Holding Company",
+   "vol_x": 0.44,
+   "buy_pct30": 0.45731087405551013,
+   "change": 0.02070278540335213,
+   "score": 2.21,
+   "news": [
+    "City Holding (CHCO) Expected to Beat Earnings Estimates: Can the Stock Move Higher?"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "RRC",
+   "vol_x": 2.2
+  },
+  {
+   "ticker": "BWMX",
+   "vol_x": 0.9
+  },
+  {
+   "ticker": "MED",
+   "vol_x": 0.77
+  },
+  {
+   "ticker": "FNWD",
+   "vol_x": 0.57
+  },
+  {
+   "ticker": "TSBK",
+   "vol_x": 0.55
+  },
+  {
+   "ticker": "HHH",
+   "vol_x": 0.5
+  },
+  {
+   "ticker": "EAF",
+   "vol_x": 0.49
+  },
+  {
+   "ticker": "GEF.B",
+   "vol_x": 0.4
+  },
+  {
+   "ticker": "TSLA",
+   "vol_x": 0.38
+  },
+  {
+   "ticker": "ARLP",
+   "vol_x": 0.34
+  },
+  {
+   "ticker": "SFST",
+   "vol_x": 0.34
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "FRBA",
+   "bought_at": "2026-10-26T14:16+00:00",
+   "sold_at": "2026-10-26T19:30+00:00",
+   "entry": 19.879860610961913,
+   "exit": 19.549999237060547,
+   "cost_gbp": 997.1399021886947,
+   "pl_gbp": -18.0139728145366,
+   "pl_pct": -0.01806564231859183,
+   "reason": "No new high for 234 min, and PEBK overtook it on buying volume (0.34x vs 0.08x normal in 30 min)."
+  }
+ ],
+ "total_gbp": -18.0139728145366,
+ "alerts": [
+  "10:16 Day trade: bought FRBA: 67 FRBA at $19.88 (about \u00a3997). Stop $18.89. Highest first-30-minute volume on today's list (0.5x a normal day).",
+  "15:30 Day trade: sold FRBA (-\u00a318): No new high for 234 min, and PEBK overtook it on buying volume (0.34x vs 0.08x normal in 30 min). Result -\u00a318 (-1.8%).",
+  "15:50 Day trade summary: 1 trade(s) today: FRBA -\u00a318. Total -\u00a318."
+ ],
+ "log": [
+  "Day trade buy order: 67 FRBA at about $19.86. Highest first-30-minute volume on today's list (0.5x a normal day).",
+  "Bought 67 FRBA at 19.88 (cost \u00a3997).",
+  "Added RNG to today's list at 12:24 New York: 0.5x normal volume in the last 30 min; news: RingCentral (RNG) Stock Price Climbs As Q3 Earnings Recast The Profit Story",
+  "Sold FRBA (about -\u00a318). No new high for 234 min, and PEBK overtook it on buying volume (0.34x vs 0.08x normal in 30 min).",
+  "Day trading finished: 1 trade(s), total -\u00a318."
+ ]
+}

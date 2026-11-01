@@ -1,0 +1,145 @@
+{
+ "date": "2026-09-17",
+ "generated": "2026-11-01T15:35+00:00",
+ "fx_gbpusd": 1.3382940292358398,
+ "result": "done",
+ "require_news": true,
+ "strategy": "breakout-strong",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [
+  "Added LFST to today's list at 11:04 New York: 0.4x normal volume in the last 30 min; news: LifeStance Health Group (NASDAQ:LFST): Strongest Q2 Results from the Outpatient ",
+  "Added CODA to today's list at 12:08 New York: 0.3x normal volume in the last 30 min; news: Coda Octopus (CODA) Just Posted A First-Ever Profit Milestone",
+  "Added GLBS to today's list at 14:32 New York: 1.0x normal volume in the last 30 min; news: Globus Maritime Limited Announces the Delivery of a 2026-Built Ultramax Dry Bulk"
+ ],
+ "drift_list": [],
+ "list": [
+  {
+   "ticker": "FEAM",
+   "name": "5E Advanced Materials, Inc.",
+   "vol_x": 0.93,
+   "buy_pct30": 0.5580183451934525,
+   "change": 0.07380680644407489,
+   "score": 4.09,
+   "news": [
+    "SEARLES VALLEY MINERALS ANNOUNCES DEFINITIVE ASSET PURCHASE AGREEMENT WITH 5E ADVANCED MATERIALS",
+    "5E Advanced Materials Enters into Agreement to Acquire Certain Assets of Searles Valley Minerals"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "OSTX",
+   "name": "OS Therapies Incorporated",
+   "vol_x": 0.87,
+   "buy_pct30": 0.6185797903333349,
+   "change": 0.1114286014011927,
+   "score": 3.71,
+   "news": [
+    "OS Therapies Achieves Incremental Alignment With FDA and Accepts Project Orbis Invitation From MHRA on OST-HER2 Metastatic Osteosarcoma Program"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "TRT",
+   "name": "Trio-Tech International",
+   "vol_x": 0.37,
+   "buy_pct30": 0.5065261907261206,
+   "change": 0.08919718581960989,
+   "score": 2.27,
+   "news": [
+    "Trio-Tech International Secures Three-Year Automotive Semiconductor Burn-In Contract With $4.7 Million Minimum Commitment"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "DAIC",
+   "vol_x": 23.26
+  },
+  {
+   "ticker": "GLOO",
+   "vol_x": 2.66
+  },
+  {
+   "ticker": "ECOR",
+   "vol_x": 1.22
+  },
+  {
+   "ticker": "PSIX",
+   "vol_x": 0.96
+  },
+  {
+   "ticker": "SECZ",
+   "vol_x": 0.73
+  },
+  {
+   "ticker": "ABSI",
+   "vol_x": 0.66
+  },
+  {
+   "ticker": "MGNI",
+   "vol_x": 0.65
+  },
+  {
+   "ticker": "TEM",
+   "vol_x": 0.58
+  },
+  {
+   "ticker": "WDAY",
+   "vol_x": 0.56
+  },
+  {
+   "ticker": "GFL",
+   "vol_x": 0.55
+  },
+  {
+   "ticker": "PUBM",
+   "vol_x": 0.55
+  },
+  {
+   "ticker": "SDGR",
+   "vol_x": 0.52
+  },
+  {
+   "ticker": "COYA",
+   "vol_x": 0.51
+  },
+  {
+   "ticker": "CANG",
+   "vol_x": 0.51
+  },
+  {
+   "ticker": "SBC",
+   "vol_x": 0.48
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "GLBS",
+   "bought_at": "2026-09-17T18:32+00:00",
+   "sold_at": "2026-09-17T19:50+00:00",
+   "entry": 3.9939900095462795,
+   "exit": 3.926100015640259,
+   "cost_gbp": 1001.2699779755658,
+   "pl_gbp": -18.493789404743893,
+   "pl_pct": -0.01847033248928113,
+   "reason": "End of day: sold 10 minutes before the close."
+  }
+ ],
+ "total_gbp": -18.493789404743893,
+ "alerts": [
+  "14:32 Day trade: bought GLBS: 335 GLBS at $3.99 (about \u00a31,001). Stop $3.79. Broke above its opening-range high ($3.90) at $3.99. In play: 1.0x normal volume, normally moves 6% a day. Stop $3.79.",
+  "15:50 Day trade: sold GLBS (-\u00a318): End of day: sold 10 minutes before the close. Result -\u00a318 (-1.8%).",
+  "15:50 Day trade summary: 1 trade(s) today: GLBS -\u00a318. Total -\u00a318."
+ ],
+ "log": [
+  "Added LFST to today's list at 11:04 New York: 0.4x normal volume in the last 30 min; news: LifeStance Health Group (NASDAQ:LFST): Strongest Q2 Results from the Outpatient ",
+  "Added CODA to today's list at 12:08 New York: 0.3x normal volume in the last 30 min; news: Coda Octopus (CODA) Just Posted A First-Ever Profit Milestone",
+  "Added GLBS to today's list at 14:32 New York: 1.0x normal volume in the last 30 min; news: Globus Maritime Limited Announces the Delivery of a 2026-Built Ultramax Dry Bulk",
+  "Day trade buy order: 335 GLBS at about $3.99. Broke above its opening-range high ($3.90) at $3.99. In play: 1.0x normal volume, normally moves 6% a day. Stop $3.79.",
+  "Bought 335 GLBS at 3.99 (cost \u00a31,001).",
+  "Sold GLBS (about -\u00a318). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 1 trade(s), total -\u00a318."
+ ]
+}

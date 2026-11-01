@@ -1,0 +1,156 @@
+{
+ "date": "2026-10-05",
+ "generated": "2026-11-01T16:08+00:00",
+ "fx_gbpusd": 1.3242928981781006,
+ "result": "done",
+ "require_news": true,
+ "strategy": "drift",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [],
+ "drift_list": [
+  {
+   "ticker": "CYCU",
+   "name": "Cycurion, Inc.",
+   "price": 3.7200000286102295,
+   "why": "News in the last 5 days (Cycurion Discusses Record Contract Win, Public Safety Expansion and Growth Strat); closed up yesterday (+42.0%) on 9.7x normal volume; above today's open at 10:00 New York."
+  },
+  {
+   "ticker": "CANG",
+   "name": "Cango Inc.",
+   "price": 2.7423999309539795,
+   "why": "News in the last 5 days (Cango stock surges over 20% following Buy initiation at Jones Trading); closed up yesterday (+4.7%) on 2.2x normal volume; above today's open at 10:00 New York."
+  },
+  {
+   "ticker": "CNDT",
+   "name": "Conduent Incorporated",
+   "price": 1.684000015258789,
+   "why": "News in the last 5 days (Conduent Outlines Three-Year Path to Consistent Growth and Profitable Performanc); closed up yesterday (+0.6%) on 1.6x normal volume; above today's open at 10:00 New York."
+  },
+  {
+   "ticker": "AIFA",
+   "name": "All In FutureTech Alliance, Inc.",
+   "price": 5.210000038146973,
+   "why": "News in the last 5 days (All In FutureTech Alliance Inc. Launches New Digital Platform for Consumers and ); closed up yesterday (+1.7%) on 1.4x normal volume; above today's open at 10:00 New York."
+  },
+  {
+   "ticker": "KROS",
+   "name": "Keros Therapeutics, Inc.",
+   "price": 11.28499984741211,
+   "why": "News in the last 5 days (Keros Therapeutics to Receive Additional Development Milestone Payment from Part); closed up yesterday (+0.9%) on 1.3x normal volume; above today's open at 10:00 New York."
+  }
+ ],
+ "list": [
+  {
+   "ticker": "VEEA",
+   "name": "Veea Inc.",
+   "vol_x": 4.05,
+   "buy_pct30": 0.3383687268783325,
+   "change": 0.678498481280776,
+   "score": 7.95,
+   "news": [
+    "Veea Announces TROLLEE Agreement for Phased Deployment of VeeaONE to 1,000 Unattended Stores"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "AIFA",
+   "name": "All In FutureTech Alliance, Inc.",
+   "vol_x": 0.98,
+   "buy_pct30": 0.28079746303737835,
+   "change": 0.16554816167532627,
+   "score": 1.58,
+   "news": [
+    "All In FutureTech Alliance Inc. Launches New Digital Platform for Consumers and Businesses, Advancing Its AI-Enabled Global Services Strategy"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "ALEC",
+   "vol_x": 61.26
+  },
+  {
+   "ticker": "PCVX",
+   "vol_x": 3.03
+  },
+  {
+   "ticker": "PMI",
+   "vol_x": 1.62
+  },
+  {
+   "ticker": "PAGS",
+   "vol_x": 1.51
+  },
+  {
+   "ticker": "STNE",
+   "vol_x": 1.49
+  },
+  {
+   "ticker": "XP",
+   "vol_x": 1.48
+  },
+  {
+   "ticker": "ACB",
+   "vol_x": 1.43
+  },
+  {
+   "ticker": "NAUT",
+   "vol_x": 1.26
+  },
+  {
+   "ticker": "INTR",
+   "vol_x": 1.25
+  },
+  {
+   "ticker": "ALVO",
+   "vol_x": 1.17
+  },
+  {
+   "ticker": "SOTK",
+   "vol_x": 0.87
+  },
+  {
+   "ticker": "NTWK",
+   "vol_x": 0.63
+  },
+  {
+   "ticker": "VST",
+   "vol_x": 0.54
+  },
+  {
+   "ticker": "NU",
+   "vol_x": 0.53
+  },
+  {
+   "ticker": "PXS",
+   "vol_x": 0.53
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "CYCU",
+   "bought_at": "2026-10-05T14:16+00:00",
+   "sold_at": "2026-10-05T17:56+00:00",
+   "entry": 3.7137100381851194,
+   "exit": 3.5264699999999998,
+   "cost_gbp": 997.0185719243216,
+   "pl_gbp": -53.10427136081569,
+   "pl_pct": -0.053263071377216586,
+   "reason": "Stop-loss order filled"
+  }
+ ],
+ "total_gbp": -53.10427136081569,
+ "alerts": [
+  "10:16 Day trade: bought CYCU: 355 CYCU at $3.71 (about \u00a3997). Stop $3.53. News in the last 5 days (Cycurion Discusses Record Contract Win, Public Safety Expansion and Growth Strat); closed up yesterday (+42.0%) on 9.7x normal volume; above today's open at 10:00 New York.",
+  "13:56 Day trade update: CYCU: stop-loss order filled (-\u00a353)",
+  "15:50 Day trade summary: CYCU: -\u00a353 today."
+ ],
+ "log": [
+  "Day trade buy order: 355 CYCU at about $3.72. News in the last 5 days (Cycurion Discusses Record Contract Win, Public Safety Expansion and Growth Strat); closed up yesterday (+42.0%) on 9.7x normal volume; above today's open at 10:00 New York.",
+  "Bought 355 CYCU at 3.71 (cost \u00a3997).",
+  "CYCU: stop-loss order filled, P&L -\u00a353.",
+  "Day trading finished: 1 trade(s), total -\u00a353."
+ ]
+}

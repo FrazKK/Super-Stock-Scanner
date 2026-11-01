@@ -1,0 +1,124 @@
+{
+ "date": "2026-09-10",
+ "generated": "2026-11-01T15:18+00:00",
+ "fx_gbpusd": 1.3551971912384033,
+ "result": "done",
+ "require_news": true,
+ "strategy": "drift",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [],
+ "drift_list": [
+  {
+   "ticker": "INNV",
+   "name": "InnovAge Holding Corp.",
+   "price": 11.050000190734863,
+   "why": "News in the last 5 days (InnovAge Holding Corp (INNV) (Q4 2026) Earnings Call Highlights: Strong EBITDA G); closed up yesterday (+4.8%) on 3.2x normal volume; above today's open at 10:00 New York."
+  },
+  {
+   "ticker": "PPIH",
+   "name": "Perma-Pipe International Holdings, Inc.",
+   "price": 29.670000076293945,
+   "why": "News in the last 5 days (Perma-Pipe International Holdings Inc (PPIH) (Q2 2026) Earnings Call Highlights:); closed up yesterday (+1.5%) on 2.4x normal volume; above today's open at 10:00 New York."
+  },
+  {
+   "ticker": "SUNB",
+   "name": "Sunbelt Rentals Holdings, Inc.",
+   "price": 73.09500122070312,
+   "why": "News in the last 5 days (Sunbelt Rentals Holdings Inc (SUNB) (Q1 2027) Earnings Call Highlights: Record R); closed up yesterday (+5.9%) on 1.3x normal volume; above today's open at 10:00 New York."
+  }
+ ],
+ "list": [
+  {
+   "ticker": "TEN",
+   "name": "Tsakos Energy Navigation Ltd",
+   "vol_x": 0.46,
+   "buy_pct30": 0.306578064252506,
+   "change": 0.02459386642809891,
+   "score": 0.65,
+   "news": [
+    "Tsakos Energy Navigation Ltd (TEN) (Q2 2026) Earnings Call Highlights: Record Net Income Surges ..."
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "PSIG",
+   "vol_x": 1.31
+  },
+  {
+   "ticker": "VOYA",
+   "vol_x": 1.01
+  },
+  {
+   "ticker": "INDO",
+   "vol_x": 0.76
+  },
+  {
+   "ticker": "AMTX",
+   "vol_x": 0.72
+  },
+  {
+   "ticker": "PBAM",
+   "vol_x": 0.61
+  },
+  {
+   "ticker": "IMPP",
+   "vol_x": 0.59
+  },
+  {
+   "ticker": "OBIO",
+   "vol_x": 0.49
+  },
+  {
+   "ticker": "BSVN",
+   "vol_x": 0.47
+  },
+  {
+   "ticker": "KNTK",
+   "vol_x": 0.4
+  },
+  {
+   "ticker": "SPCX",
+   "vol_x": 0.39
+  },
+  {
+   "ticker": "VG",
+   "vol_x": 0.39
+  },
+  {
+   "ticker": "LXFR",
+   "vol_x": 0.36
+  },
+  {
+   "ticker": "ESP",
+   "vol_x": 0.34
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "INNV",
+   "bought_at": "2026-09-10T14:16+00:00",
+   "sold_at": "2026-09-10T19:50+00:00",
+   "entry": 10.910899618148802,
+   "exit": 10.4399995803833,
+   "cost_gbp": 983.7139987178106,
+   "pl_gbp": -43.86557146210521,
+   "pl_pct": -0.04459179346769522,
+   "reason": "End of day: sold 10 minutes before the close."
+  }
+ ],
+ "total_gbp": -43.86557146210521,
+ "alerts": [
+  "10:16 Day trade: bought INNV: 122 INNV at $10.91 (about \u00a3984). Stop $10.37. News in the last 5 days (InnovAge Holding Corp (INNV) (Q4 2026) Earnings Call Highlights: Strong EBITDA G); closed up yesterday (+4.8%) on 3.2x normal volume; above today's open at 10:00 New York.",
+  "15:50 Day trade: sold INNV (-\u00a344): End of day: sold 10 minutes before the close. Result -\u00a344 (-4.5%).",
+  "15:50 Day trade summary: INNV: -\u00a344 today."
+ ],
+ "log": [
+  "Day trade buy order: 122 INNV at about $11.05. News in the last 5 days (InnovAge Holding Corp (INNV) (Q4 2026) Earnings Call Highlights: Strong EBITDA G); closed up yesterday (+4.8%) on 3.2x normal volume; above today's open at 10:00 New York.",
+  "Bought 122 INNV at 10.91 (cost \u00a3984).",
+  "Sold INNV (about -\u00a344). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 1 trade(s), total -\u00a344."
+ ]
+}

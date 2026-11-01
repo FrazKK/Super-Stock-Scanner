@@ -1,0 +1,95 @@
+{
+ "date": "2026-10-15",
+ "generated": "2026-11-01T16:30+00:00",
+ "fx_gbpusd": 1.3230137825012207,
+ "result": "done",
+ "require_news": true,
+ "strategy": "drift",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [],
+ "drift_list": [
+  {
+   "ticker": "DFNS",
+   "name": "T3 Defense Inc.",
+   "price": 6.059999942779541,
+   "why": "News in the last 5 days (T3 Defense Subsidiary Positech Commences Deliveries On $3.9 Million Defense Orde); closed up yesterday (+14.1%) on 6.9x normal volume; above today's open at 10:00 New York."
+  },
+  {
+   "ticker": "HLP",
+   "name": "Hongli Group Inc.",
+   "price": 3.0999999046325684,
+   "why": "News in the last 5 days (Hongli Group Provides Strategic Update on Proposed Advanced Battery Collaboratio); closed up yesterday (+5.7%) on 4.3x normal volume; above today's open at 10:00 New York."
+  },
+  {
+   "ticker": "CBLL",
+   "name": "CeriBell, Inc.",
+   "price": 26.94499969482422,
+   "why": "News in the last 5 days (Is CeriBell\u2019s (CBLL) Expanded EEG Software Deepening Its Moat in Critical Care M); closed up yesterday (+0.9%) on 2.2x normal volume; above today's open at 10:00 New York."
+  },
+  {
+   "ticker": "NRXS",
+   "name": "Neuraxis, Inc.",
+   "price": 7.050000190734863,
+   "why": "News in the last 5 days (NeurAxis Announces Medical Policy Coverage Milestone, Expanding Access to 26 Mil); closed up yesterday (+0.5%) on 2.1x normal volume; above today's open at 10:00 New York."
+  },
+  {
+   "ticker": "NRIX",
+   "name": "Nurix Therapeutics, Inc.",
+   "price": 24.299999237060547,
+   "why": "News in the last 5 days (Nurix Therapeutics falls 2% following Q3 earnings as operating expenses up); closed up yesterday (+7.0%) on 1.8x normal volume; above today's open at 10:00 New York."
+  }
+ ],
+ "list": [],
+ "quiet": [
+  {
+   "ticker": "OPK",
+   "vol_x": 17.51
+  },
+  {
+   "ticker": "NCPL",
+   "vol_x": 1.77
+  },
+  {
+   "ticker": "CANG",
+   "vol_x": 0.89
+  },
+  {
+   "ticker": "BCAL",
+   "vol_x": 0.6
+  },
+  {
+   "ticker": "WMT",
+   "vol_x": 0.43
+  },
+  {
+   "ticker": "NTWK",
+   "vol_x": 0.39
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "DFNS",
+   "bought_at": "2026-10-15T14:16+00:00",
+   "sold_at": "2026-10-15T19:50+00:00",
+   "entry": 6.156150095462799,
+   "exit": 6.210000038146973,
+   "cost_gbp": 1015.903084056395,
+   "pl_gbp": 7.351568481429922,
+   "pl_pct": 0.007236486035730768,
+   "reason": "End of day: sold 10 minutes before the close."
+  }
+ ],
+ "total_gbp": 7.351568481429922,
+ "alerts": [
+  "10:16 Day trade: bought DFNS: 218 DFNS at $6.16 (about \u00a31,016). Stop $5.85. News in the last 5 days (T3 Defense Subsidiary Positech Commences Deliveries On $3.9 Million Defense Orde); closed up yesterday (+14.1%) on 6.9x normal volume; above today's open at 10:00 New York.",
+  "15:50 Day trade: sold DFNS (+\u00a37): End of day: sold 10 minutes before the close. Result +\u00a37 (+0.7%).",
+  "15:50 Day trade summary: DFNS: +\u00a37 today."
+ ],
+ "log": [
+  "Day trade buy order: 218 DFNS at about $6.06. News in the last 5 days (T3 Defense Subsidiary Positech Commences Deliveries On $3.9 Million Defense Orde); closed up yesterday (+14.1%) on 6.9x normal volume; above today's open at 10:00 New York.",
+  "Bought 218 DFNS at 6.16 (cost \u00a31,016).",
+  "Sold DFNS (about +\u00a37). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 1 trade(s), total +\u00a37."
+ ]
+}

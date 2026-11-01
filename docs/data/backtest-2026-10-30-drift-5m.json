@@ -1,0 +1,222 @@
+{
+ "date": "2026-10-30",
+ "generated": "2026-11-01T16:56+00:00",
+ "fx_gbpusd": 1.3378641605377197,
+ "result": "done",
+ "require_news": true,
+ "strategy": "drift",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [],
+ "drift_list": [
+  {
+   "ticker": "DAIC",
+   "name": "CID HoldCo, Inc.",
+   "price": 1.159999966621399,
+   "why": "News in the last 5 days (CID HoldCo Names Avi Cohen to Board Following Envoy Technologies Acquisition - K); closed up yesterday (+12.3%) on 5.3x normal volume; above today's open at 10:00 New York."
+  },
+  {
+   "ticker": "TOYO",
+   "name": "TOYO Co., Ltd",
+   "price": 4.675000190734863,
+   "why": "News in the last 5 days (TOYO Confirms U.S. Customs and Border Protection Release of Ethiopia-Produced So); closed up yesterday (+23.0%) on 3.8x normal volume; above today's open at 10:00 New York."
+  },
+  {
+   "ticker": "TDOC",
+   "name": "Teladoc Health, Inc.",
+   "price": 8.892499923706055,
+   "why": "News in the last 5 days (Teladoc Soars 11% on Q3 Beat and Raised Outlook as \u201cInsurance Revenue Exceeded O); closed up yesterday (+26.9%) on 3.7x normal volume; above today's open at 10:00 New York."
+  },
+  {
+   "ticker": "MAX",
+   "name": "MediaAlpha, Inc.",
+   "price": 14.3100004196167,
+   "why": "News in the last 5 days (MediaAlpha (NYSE:MAX) beats expectations in strong Q3 2026, stock jumps 18%); closed up yesterday (+20.6%) on 3.0x normal volume; above today's open at 10:00 New York."
+  },
+  {
+   "ticker": "CLMB",
+   "name": "Climb Global Solutions, Inc.",
+   "price": 41.74959945678711,
+   "why": "News in the last 5 days (Climb Global Solutions Reports Record Third Quarter 2026 Results); closed up yesterday (+26.3%) on 2.9x normal volume; above today's open at 10:00 New York."
+  }
+ ],
+ "list": [
+  {
+   "ticker": "REGN",
+   "name": "Regeneron Pharmaceuticals, Inc.",
+   "vol_x": 1.18,
+   "buy_pct30": 0.8229069258159629,
+   "change": 0.1308243447053119,
+   "score": 6.15,
+   "news": [
+    "REGN Q3 Earnings Beat on Dupixent Profits & Eylea HD Growth, Stock Up"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "CPRI",
+   "name": "Capri Holdings Limited",
+   "vol_x": 0.71,
+   "buy_pct30": 0.7192977192413313,
+   "change": 0.15691161529038067,
+   "score": 4.8,
+   "news": [
+    "Capri Soars 17% on Earnings Beat and Raised Outlook: \u201cTrends Improved Sequentially Each Month\u201d",
+    "Capri shares surge 16% as profit beat helps it escape Wall Street sell-off"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "MEOH",
+   "name": "Methanex Corporation",
+   "vol_x": 0.91,
+   "buy_pct30": 0.6753426765396584,
+   "change": 0.09448700252495756,
+   "score": 4.52,
+   "news": [
+    "Methanex Shares In Focus After Earnings Beat And 5% Buyback Plan",
+    "Methanex Soars 14% on Earnings Beat as Middle East Conflict\u2019s \u201cDramatic Impact\u201d Lifts Methanol Prices"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "CBK",
+   "name": "Commercial Bancgroup, Inc.",
+   "vol_x": 0.45,
+   "buy_pct30": 0.7150976596815964,
+   "change": 0.004849949659643249,
+   "score": 4.26,
+   "news": [
+    "Commercial Bancgroup (CBK) Q3 Earnings Beat Meets Questions Over Staying Power",
+    "Commercial Bancgroup (CBK) Q3 Earnings Beat Meets Questions Over Staying Power - Yahoo Finance"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "GCBC",
+   "name": "Greene County Bancorp, Inc.",
+   "vol_x": 0.45,
+   "buy_pct30": 0.6320738514383856,
+   "change": 0.003066646602372325,
+   "score": 3.93,
+   "news": [
+    "Greene County Bancorp (NASDAQ:GCBC) Sees Large Volume Increase - Here's What Happened - MarketBeat"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "EXC",
+   "name": "Exelon Corporation",
+   "vol_x": 0.72,
+   "buy_pct30": 0.6681921544182906,
+   "change": 0.00969287075371894,
+   "score": 3.61,
+   "news": [
+    "EXC Q3 Earnings Beat Estimates on Higher Utility Rates, Sales Up Y/Y",
+    "Exelon Shares Gain 2% as Q3 Earnings and Revenue Beat Expectations"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "CVCO",
+   "name": "Cavco Industries, Inc.",
+   "vol_x": 0.61,
+   "buy_pct30": 0.5419584670101433,
+   "change": 0.13443582882452043,
+   "score": 3.39,
+   "news": [
+    "Cavco Soars 12% on Earnings Beat as \u201cData Center Workforce Housing\u201d Orders Arrive",
+    "Rising Backlogs and Scale Support Cavco Industries\u2019 (CVCO) Long-Term Growth Thesis"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "AZN",
+   "name": "AstraZeneca PLC",
+   "vol_x": 0.37,
+   "buy_pct30": 0.6890650334854593,
+   "change": 0.07264854965379874,
+   "score": 3.0,
+   "news": [
+    "Learn Why The Bull Case For AstraZeneca Stock Could Change Following Earnings Beat"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "BTSG",
+   "name": "BrightSpring Health Services, Inc.",
+   "vol_x": 0.43,
+   "buy_pct30": 0.5572797539691625,
+   "change": 0.12952499608521606,
+   "score": 2.59,
+   "news": [
+    "BrightSpring Soars 12% on Q3 Beat and Raised 2026 Guidance as Adjusted EBITDA Jumps 42%"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "ACCO",
+   "vol_x": 1.36
+  },
+  {
+   "ticker": "OSPN",
+   "vol_x": 1.23
+  },
+  {
+   "ticker": "PARK",
+   "vol_x": 0.82
+  },
+  {
+   "ticker": "GDYN",
+   "vol_x": 0.74
+  },
+  {
+   "ticker": "CDNA",
+   "vol_x": 0.67
+  },
+  {
+   "ticker": "FBIZ",
+   "vol_x": 0.59
+  },
+  {
+   "ticker": "NCPL",
+   "vol_x": 0.46
+  },
+  {
+   "ticker": "RRBI",
+   "vol_x": 0.39
+  },
+  {
+   "ticker": "LLY",
+   "vol_x": 0.34
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "DAIC",
+   "bought_at": "2026-10-30T14:16+00:00",
+   "sold_at": "2026-10-30T17:36+00:00",
+   "entry": 1.111610478043556,
+   "exit": 1.11888,
+   "cost_gbp": 959.446743075981,
+   "pl_gbp": 3.3816030561617936,
+   "pl_pct": 0.0035245344054432794,
+   "reason": "Stop-loss order filled"
+  }
+ ],
+ "total_gbp": 3.3816030561617936,
+ "alerts": [
+  "10:16 Day trade: bought DAIC: 1,153 DAIC at $1.11 (about \u00a3959). Stop $1.06. News in the last 5 days (CID HoldCo Names Avi Cohen to Board Following Envoy Technologies Acquisition - K); closed up yesterday (+12.3%) on 5.3x normal volume; above today's open at 10:00 New York.",
+  "13:36 Day trade update: DAIC: stop-loss order filled (+\u00a33)",
+  "15:50 Day trade summary: DAIC: +\u00a33 today."
+ ],
+ "log": [
+  "Day trade buy order: 1153 DAIC at about $1.16. News in the last 5 days (CID HoldCo Names Avi Cohen to Board Following Envoy Technologies Acquisition - K); closed up yesterday (+12.3%) on 5.3x normal volume; above today's open at 10:00 New York.",
+  "Bought 1,153 DAIC at 1.11 (cost \u00a3959).",
+  "DAIC: stop raised from 1.06 to 1.12.",
+  "DAIC: stop-loss order filled, P&L +\u00a33.",
+  "Day trading finished: 1 trade(s), total +\u00a33."
+ ]
+}

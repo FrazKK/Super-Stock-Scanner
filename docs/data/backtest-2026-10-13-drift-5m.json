@@ -1,0 +1,130 @@
+{
+ "date": "2026-10-13",
+ "generated": "2026-11-01T16:24+00:00",
+ "fx_gbpusd": 1.3209795951843262,
+ "result": "done",
+ "require_news": true,
+ "strategy": "drift",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [],
+ "drift_list": [
+  {
+   "ticker": "YMAT",
+   "name": "J-Star Holding Co., Ltd.",
+   "price": 2.659899950027466,
+   "why": "News in the last 5 days (J-Star Holding Co., Ltd. Highlights Capital Initiatives to Fund Planned U.S. Exp); closed up yesterday (+125.6%) on 7.3x normal volume; above today's open at 10:00 New York."
+  },
+  {
+   "ticker": "MEDS",
+   "name": "DataMeds AI, Inc.",
+   "price": 3.0799999237060547,
+   "why": "News in the last 5 days (DataMeds AI Announces Workforce Reductions as It Prioritises ChemoFx Cancer Diag); closed up yesterday (+3.7%) on 2.8x normal volume; above today's open at 10:00 New York."
+  },
+  {
+   "ticker": "HLP",
+   "name": "Hongli Group Inc.",
+   "price": 2.75,
+   "why": "News in the last 5 days (Hongli Group Provides Strategic Update on Proposed Advanced Battery Collaboratio); closed up yesterday (+3.9%) on 2.0x normal volume; above today's open at 10:00 New York."
+  },
+  {
+   "ticker": "ENVX",
+   "name": "Enovix Corporation",
+   "price": 2.549999952316284,
+   "why": "News in the last 5 days (Enovix Receives 100,000-Battery Drone Order); closed up yesterday (+5.3%) on 1.8x normal volume; above today's open at 10:00 New York."
+  },
+  {
+   "ticker": "RSKD",
+   "name": "Riskified Ltd.",
+   "price": 8.550000190734863,
+   "why": "News in the last 5 days (Riskified Launches Agent Identity Risk Intelligence: Know Who Is Behind AI Perso); closed up yesterday (+0.5%) on 1.4x normal volume; above today's open at 10:00 New York."
+  }
+ ],
+ "list": [
+  {
+   "ticker": "EFXT",
+   "name": "Enerflex Ltd",
+   "vol_x": 0.36,
+   "buy_pct30": 0.627294917193255,
+   "change": 0.13621265353146628,
+   "score": 3.23,
+   "news": [
+    "Enerflex Soars 13% on Gigawatt Data Center Power Award, Backlog Now \u201cOver 1.75 Gigawatts\u201d",
+    "Enerflex shares jump 13% on more than 1GW data centre power contract"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "RELL",
+   "name": "Richardson Electronics, Ltd.",
+   "vol_x": 0.53,
+   "buy_pct30": 0.7043843048701774,
+   "change": 0.0067502117258166905,
+   "score": 2.88,
+   "news": [
+    "ComEd, Richardson Electronics, Ltd. Announce Expansion and Plans to Install Illinois\u2019 Largest Commercial Battery Energy Storage System",
+    "RELL Q3 Deep Dive: Demand for Engineered Power Solutions and Energy Storage Drives Growth"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "BMBL",
+   "vol_x": 9.54
+  },
+  {
+   "ticker": "PFAI",
+   "vol_x": 6.85
+  },
+  {
+   "ticker": "ENGS",
+   "vol_x": 0.64
+  },
+  {
+   "ticker": "JRSH",
+   "vol_x": 0.48
+  },
+  {
+   "ticker": "META",
+   "vol_x": 0.38
+  },
+  {
+   "ticker": "FIGS",
+   "vol_x": 0.37
+  },
+  {
+   "ticker": "VFC",
+   "vol_x": 0.36
+  },
+  {
+   "ticker": "CANG",
+   "vol_x": 0.34
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "HLP",
+   "bought_at": "2026-10-13T14:16+00:00",
+   "sold_at": "2026-10-13T19:50+00:00",
+   "entry": 2.7477448854446407,
+   "exit": 2.7950000762939453,
+   "cost_gbp": 999.9366577245528,
+   "pl_gbp": 15.673304391395163,
+   "pl_pct": 0.015674297237048194,
+   "reason": "End of day: sold 10 minutes before the close."
+  }
+ ],
+ "total_gbp": 15.673304391395163,
+ "alerts": [
+  "10:16 Day trade: bought HLP: 480 HLP at $2.75 (about \u00a31,000). Stop $2.61. News in the last 5 days (Hongli Group Provides Strategic Update on Proposed Advanced Battery Collaboratio); closed up yesterday (+3.9%) on 2.0x normal volume; above today's open at 10:00 New York.",
+  "15:50 Day trade: sold HLP (+\u00a316): End of day: sold 10 minutes before the close. Result +\u00a316 (+1.6%).",
+  "15:50 Day trade summary: HLP: +\u00a316 today."
+ ],
+ "log": [
+  "Day trade buy order: 480 HLP at about $2.75. News in the last 5 days (Hongli Group Provides Strategic Update on Proposed Advanced Battery Collaboratio); closed up yesterday (+3.9%) on 2.0x normal volume; above today's open at 10:00 New York.",
+  "Bought 480 HLP at 2.75 (cost \u00a31,000).",
+  "Sold HLP (about +\u00a316). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 1 trade(s), total +\u00a316."
+ ]
+}

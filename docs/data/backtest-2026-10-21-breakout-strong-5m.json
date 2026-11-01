@@ -1,0 +1,111 @@
+{
+ "date": "2026-10-21",
+ "generated": "2026-11-01T16:37+00:00",
+ "fx_gbpusd": 1.337327480316162,
+ "result": "done",
+ "require_news": true,
+ "strategy": "breakout-strong",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [
+  "Added SLE to today's list at 11:52 New York: 0.3x normal volume in the last 30 min; news: Super League Shareholders Approve Metaplanet Investment Involving 2,100 Bitcoin ",
+  "Added NABL to today's list at 14:00 New York: 0.5x normal volume in the last 30 min; news: As AI Accelerates Cyberattacks, N-able and SentinelOne Expand Their Strategic Pa",
+  "Added MAT to today's list at 15:20 New York: 0.3x normal volume in the last 30 min; news: Mattel Enters into Cooperation Agreement with EdgePoint Investment Group Inc."
+ ],
+ "drift_list": [],
+ "list": [
+  {
+   "ticker": "NTWK",
+   "name": "NETSOL Technologies Inc.",
+   "vol_x": 0.34,
+   "buy_pct30": 0.8769120299739875,
+   "change": 0.03287464126023831,
+   "score": 2.69,
+   "news": [
+    "Mercedes-Benz USA approves NETSOL as a digital retail provider for its dealerships"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "SWBI",
+   "name": "Smith & Wesson Brands, Inc.",
+   "vol_x": 0.45,
+   "buy_pct30": 0.6903970371398483,
+   "change": 0.00947228321056337,
+   "score": 2.16,
+   "news": [
+    "Smith & Wesson Acquires Savage Arms"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "SPHL",
+   "vol_x": 65.9
+  },
+  {
+   "ticker": "SPCX",
+   "vol_x": 0.73
+  },
+  {
+   "ticker": "QGEN",
+   "vol_x": 0.68
+  },
+  {
+   "ticker": "TDY",
+   "vol_x": 0.63
+  },
+  {
+   "ticker": "CPIX",
+   "vol_x": 0.62
+  },
+  {
+   "ticker": "MCB",
+   "vol_x": 0.58
+  },
+  {
+   "ticker": "KIDS",
+   "vol_x": 0.58
+  },
+  {
+   "ticker": "DHR",
+   "vol_x": 0.56
+  },
+  {
+   "ticker": "CZFS",
+   "vol_x": 0.53
+  },
+  {
+   "ticker": "BRBS",
+   "vol_x": 0.39
+  },
+  {
+   "ticker": "LAW",
+   "vol_x": 0.37
+  },
+  {
+   "ticker": "TSLA",
+   "vol_x": 0.36
+  },
+  {
+   "ticker": "TMO",
+   "vol_x": 0.35
+  },
+  {
+   "ticker": "NNI",
+   "vol_x": 0.34
+  }
+ ],
+ "trades": [],
+ "total_gbp": 0,
+ "alerts": [
+  "15:50 Day trade summary: No trade today: nothing in play broke out."
+ ],
+ "log": [
+  "Added SLE to today's list at 11:52 New York: 0.3x normal volume in the last 30 min; news: Super League Shareholders Approve Metaplanet Investment Involving 2,100 Bitcoin ",
+  "Added NABL to today's list at 14:00 New York: 0.5x normal volume in the last 30 min; news: As AI Accelerates Cyberattacks, N-able and SentinelOne Expand Their Strategic Pa",
+  "Added MAT to today's list at 15:20 New York: 0.3x normal volume in the last 30 min; news: Mattel Enters into Cooperation Agreement with EdgePoint Investment Group Inc.",
+  "Day trading finished: 0 trade(s), total +\u00a30."
+ ]
+}

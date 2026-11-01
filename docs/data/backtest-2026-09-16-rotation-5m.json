@@ -1,0 +1,111 @@
+{
+ "date": "2026-09-16",
+ "generated": "2026-11-01T15:31+00:00",
+ "fx_gbpusd": 1.3473457098007202,
+ "result": "done",
+ "require_news": true,
+ "strategy": "rotation",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [
+  "Added GLBS to today's list at 10:48 New York: 0.5x normal volume in the last 30 min; news: Globus Maritime Limited Announces the Delivery of a 2026-Built Ultramax Dry Bulk",
+  "Added PNTG to today's list at 11:52 New York: 2.4x normal volume in the last 30 min; news: Pennant Acquires\u00a0Real Estate of Mainplace Senior Living in Orange, California",
+  "Added FEAM to today's list at 14:16 New York: 2.1x normal volume in the last 30 min; news: SEARLES VALLEY MINERALS ANNOUNCES DEFINITIVE ASSET PURCHASE AGREEMENT WITH 5E AD"
+ ],
+ "drift_list": [],
+ "list": [],
+ "quiet": [
+  {
+   "ticker": "BBNX",
+   "vol_x": 1.28
+  },
+  {
+   "ticker": "ALVO",
+   "vol_x": 1.06
+  },
+  {
+   "ticker": "LIFE",
+   "vol_x": 0.8
+  },
+  {
+   "ticker": "AGPU",
+   "vol_x": 0.57
+  },
+  {
+   "ticker": "ADPT",
+   "vol_x": 0.49
+  },
+  {
+   "ticker": "EPM",
+   "vol_x": 0.4
+  },
+  {
+   "ticker": "CRON",
+   "vol_x": 0.38
+  },
+  {
+   "ticker": "TEM",
+   "vol_x": 0.37
+  },
+  {
+   "ticker": "SND",
+   "vol_x": 0.37
+  },
+  {
+   "ticker": "PACB",
+   "vol_x": 0.36
+  },
+  {
+   "ticker": "ILMN",
+   "vol_x": 0.34
+  },
+  {
+   "ticker": "ECO",
+   "vol_x": 0.34
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "GLBS",
+   "bought_at": "2026-09-16T14:48+00:00",
+   "sold_at": "2026-09-16T15:52+00:00",
+   "entry": 3.8738698854446407,
+   "exit": 3.9000000953674316,
+   "cost_gbp": 1002.0656691107353,
+   "pl_gbp": 5.248209810958542,
+   "pl_pct": 0.0052373910939549195,
+   "reason": "No new high for 32 min, and PNTG overtook it on buying volume (0.82x vs 0.06x normal in 30 min)."
+  },
+  {
+   "ticker": "PNTG",
+   "bought_at": "2026-09-16T15:52+00:00",
+   "sold_at": "2026-09-16T19:50+00:00",
+   "entry": 41.3513113746643,
+   "exit": 41.73500061035156,
+   "cost_gbp": 983.5833649043568,
+   "pl_gbp": 7.639607653132316,
+   "pl_pct": 0.0077671175883247965,
+   "reason": "End of day: sold 10 minutes before the close."
+  }
+ ],
+ "total_gbp": 12.887817464090858,
+ "alerts": [
+  "10:48 Day trade: bought GLBS: 348 GLBS at $3.87 (about \u00a31,002). Stop $3.68. Highest first-30-minute volume on today's list (0.5x a normal day).",
+  "11:52 Day trade: sold GLBS (+\u00a35): No new high for 32 min, and PNTG overtook it on buying volume (0.82x vs 0.06x normal in 30 min). Result +\u00a35 (+0.5%).",
+  "11:52 Day trade: bought PNTG: 32 PNTG at $41.35 (about \u00a3984). Stop $39.28. Strongest buying on the list: 0.82x normal volume bought in the last 30 min, and rising.",
+  "15:50 Day trade: sold PNTG (+\u00a38): End of day: sold 10 minutes before the close. Result +\u00a38 (+0.8%).",
+  "15:50 Day trade summary: 2 trade(s) today: GLBS +\u00a35, PNTG +\u00a38. Total +\u00a313."
+ ],
+ "log": [
+  "Added GLBS to today's list at 10:48 New York: 0.5x normal volume in the last 30 min; news: Globus Maritime Limited Announces the Delivery of a 2026-Built Ultramax Dry Bulk",
+  "Day trade buy order: 348 GLBS at about $3.87. Highest first-30-minute volume on today's list (0.5x a normal day).",
+  "Bought 348 GLBS at 3.87 (cost \u00a31,002).",
+  "Added PNTG to today's list at 11:52 New York: 2.4x normal volume in the last 30 min; news: Pennant Acquires\u00a0Real Estate of Mainplace Senior Living in Orange, California",
+  "Sold GLBS (about +\u00a35). No new high for 32 min, and PNTG overtook it on buying volume (0.82x vs 0.06x normal in 30 min).",
+  "Day trade buy order: 32 PNTG at about $41.31. Strongest buying on the list: 0.82x normal volume bought in the last 30 min, and rising.",
+  "Bought 32 PNTG at 41.35 (cost \u00a3984).",
+  "Added FEAM to today's list at 14:16 New York: 2.1x normal volume in the last 30 min; news: SEARLES VALLEY MINERALS ANNOUNCES DEFINITIVE ASSET PURCHASE AGREEMENT WITH 5E AD",
+  "Sold PNTG (about +\u00a38). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 2 trade(s), total +\u00a313."
+ ]
+}

@@ -1,0 +1,156 @@
+{
+ "date": "2026-09-28",
+ "generated": "2026-11-01T15:52+00:00",
+ "fx_gbpusd": 1.3229262828826904,
+ "result": "done",
+ "require_news": true,
+ "strategy": "drift",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [],
+ "drift_list": [
+  {
+   "ticker": "PARK",
+   "name": "Park Dental Partners, Inc.",
+   "price": 19.985000610351562,
+   "why": "News in the last 5 days (Park Dental Partners Expands Arizona Presence with Addition of Sapphire Dental C); closed up yesterday (+1.5%) on 2.5x normal volume; above today's open at 10:00 New York."
+  },
+  {
+   "ticker": "WTTR",
+   "name": "Select Water Solutions, Inc.",
+   "price": 20.06999969482422,
+   "why": "News in the last 5 days (Select Water Solutions Buys Pilot Water for $700M, Expanding Delaware Basin Netw); closed up yesterday (+1.6%) on 2.2x normal volume; above today's open at 10:00 New York."
+  },
+  {
+   "ticker": "NTWK",
+   "name": "NETSOL Technologies Inc.",
+   "price": 5.019999980926514,
+   "why": "News in the last 5 days (NETSOL Technologies Inc (NTWK) (Q4 2026) Earnings Call Highlights: Record Revenu); closed up yesterday (+3.2%) on 2.0x normal volume; above today's open at 10:00 New York."
+  },
+  {
+   "ticker": "APYX",
+   "name": "Apyx Medical Corporation",
+   "price": 2.944999933242798,
+   "why": "News in the last 5 days (Cold Plasma Market Forecasts Growth from $3.32B (2025) to $8.45B by 2032, Profil); closed up yesterday (+4.6%) on 1.4x normal volume; above today's open at 10:00 New York."
+  },
+  {
+   "ticker": "GOSS",
+   "name": "Gossamer Bio, Inc.",
+   "price": 10.582099914550781,
+   "why": "News in the last 5 days (Gossamer Bio Submits New Drug Application to U.S. FDA for Seralutinib for the Tr); closed up yesterday (+0.1%) on 1.3x normal volume; above today's open at 10:00 New York."
+  }
+ ],
+ "list": [
+  {
+   "ticker": "NTWK",
+   "name": "NETSOL Technologies Inc.",
+   "vol_x": 1.71,
+   "buy_pct30": 0.6040978184042272,
+   "change": 0.024489772086439876,
+   "score": 5.34,
+   "news": [
+    "NETSOL Technologies Inc (NTWK) (Q4 2026) Earnings Call Highlights: Record Revenue and Strong ..."
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "CAAP",
+   "name": "Corporacion America Airports SA",
+   "vol_x": 0.53,
+   "buy_pct30": 0.7801380185818916,
+   "change": 0.05695145134619439,
+   "score": 3.68,
+   "news": [
+    "Corporacion America Airports Says Argentina Approves Changes to Aeropuertos Concession Deal"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "CANG",
+   "name": "Cango Inc.",
+   "vol_x": 0.53,
+   "buy_pct30": 0.5098654288303627,
+   "change": 0.14507851929077842,
+   "score": 1.6,
+   "news": [
+    "Cango stock surges over 20% following Buy initiation at Jones Trading"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "DPRO",
+   "vol_x": 0.83
+  },
+  {
+   "ticker": "NVDA",
+   "vol_x": 0.69
+  },
+  {
+   "ticker": "MEDS",
+   "vol_x": 0.57
+  },
+  {
+   "ticker": "JRSH",
+   "vol_x": 0.5
+  },
+  {
+   "ticker": "GIBO",
+   "vol_x": 0.47
+  },
+  {
+   "ticker": "PUSA",
+   "vol_x": 0.41
+  },
+  {
+   "ticker": "WCCB",
+   "vol_x": 0.4
+  },
+  {
+   "ticker": "QNBC",
+   "vol_x": 0.4
+  },
+  {
+   "ticker": "TONX",
+   "vol_x": 0.4
+  },
+  {
+   "ticker": "AGEN",
+   "vol_x": 0.39
+  },
+  {
+   "ticker": "AMC",
+   "vol_x": 0.37
+  },
+  {
+   "ticker": "IONQ",
+   "vol_x": 0.33
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "PARK",
+   "bought_at": "2026-09-28T14:16+00:00",
+   "sold_at": "2026-09-28T19:50+00:00",
+   "entry": 20.370350381851193,
+   "exit": 20.0049991607666,
+   "cost_gbp": 1017.7889783518485,
+   "pl_gbp": -19.751550496410687,
+   "pl_pct": -0.019406331682226764,
+   "reason": "End of day: sold 10 minutes before the close."
+  }
+ ],
+ "total_gbp": -19.751550496410687,
+ "alerts": [
+  "10:16 Day trade: bought PARK: 66 PARK at $20.37 (about \u00a31,018). Stop $19.35. News in the last 5 days (Park Dental Partners Expands Arizona Presence with Addition of Sapphire Dental C); closed up yesterday (+1.5%) on 2.5x normal volume; above today's open at 10:00 New York.",
+  "15:50 Day trade: sold PARK (-\u00a320): End of day: sold 10 minutes before the close. Result -\u00a320 (-1.9%).",
+  "15:50 Day trade summary: PARK: -\u00a320 today."
+ ],
+ "log": [
+  "Day trade buy order: 66 PARK at about $19.99. News in the last 5 days (Park Dental Partners Expands Arizona Presence with Addition of Sapphire Dental C); closed up yesterday (+1.5%) on 2.5x normal volume; above today's open at 10:00 New York.",
+  "Bought 66 PARK at 20.37 (cost \u00a31,018).",
+  "Sold PARK (about -\u00a320). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 1 trade(s), total -\u00a320."
+ ]
+}

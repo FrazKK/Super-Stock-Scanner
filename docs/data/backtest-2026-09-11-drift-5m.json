@@ -1,0 +1,205 @@
+{
+ "date": "2026-09-11",
+ "generated": "2026-11-01T15:22+00:00",
+ "fx_gbpusd": 1.3509314060211182,
+ "result": "done",
+ "require_news": true,
+ "strategy": "drift",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [],
+ "drift_list": [
+  {
+   "ticker": "IMPP",
+   "name": "Imperial Petroleum Inc.",
+   "price": 5.789999961853027,
+   "why": "News in the last 5 days (Imperial Petroleum Inc (IMPP) (Q2 2026) Earnings Call Highlights: Record Revenue); closed up yesterday (+4.6%) on 2.7x normal volume; above today's open at 10:00 New York."
+  },
+  {
+   "ticker": "CCG",
+   "name": "Cheche Group Inc.",
+   "price": 14.0,
+   "why": "News in the last 5 days (Cheche Group Announces Proposed Strategic Investment in Global Residential Energ); closed up yesterday (+1.5%) on 2.3x normal volume; above today's open at 10:00 New York."
+  },
+  {
+   "ticker": "DFNS",
+   "name": "T3 Defense Inc.",
+   "price": 9.795000076293945,
+   "why": "News in the last 5 days (T3 Defense wins $1.3 Million Power-Generation Order for European Air-Defense Pro); closed up yesterday (+1.5%) on 2.1x normal volume; above today's open at 10:00 New York."
+  },
+  {
+   "ticker": "ERAS",
+   "name": "Erasca, Inc.",
+   "price": 16.15999984741211,
+   "why": "News in the last 5 days (FDA Fast Track Puts Erasca\u2019s (ERAS) Pancreatic Bet Center Stage); closed up yesterday (+2.1%) on 1.8x normal volume; above today's open at 10:00 New York."
+  },
+  {
+   "ticker": "JILL",
+   "name": "J. Jill, Inc.",
+   "price": 23.05500030517578,
+   "why": "News in the last 5 days (J.Jill Inc (JILL) (Q2 2026) Earnings Call Highlights: Strategic Investments and ); closed up yesterday (+4.7%) on 1.7x normal volume; above today's open at 10:00 New York."
+  }
+ ],
+ "list": [
+  {
+   "ticker": "FEIM",
+   "name": "Frequency Electronics, Inc.",
+   "vol_x": 2.52,
+   "buy_pct30": 0.5304327818523458,
+   "change": 0.33467611985426937,
+   "score": 5.16,
+   "news": [
+    "Frequency Electronics Q1 Revenue Rises 70% to Record $23.5 Million",
+    "Frequency Electronics Inc (FEIM) (Q1 2027) Earnings Call Highlights: Record Revenue, Surging ..."
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "UNTY",
+   "name": "Unity Bancorp, Inc.",
+   "vol_x": 0.44,
+   "buy_pct30": 0.9106812590296679,
+   "change": 0.029615840167219076,
+   "score": 5.02,
+   "news": [
+    "Unity Bancorp (UNTY) Upgraded to Buy: Here's What You Should Know"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "TEN",
+   "name": "Tsakos Energy Navigation Ltd",
+   "vol_x": 0.81,
+   "buy_pct30": 0.7263443698500024,
+   "change": 0.0650861084097567,
+   "score": 4.03,
+   "news": [
+    "Tsakos Energy Navigation Ltd (TEN) (Q2 2026) Earnings Call Highlights: Record Net Income Surges ..."
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "NMAX",
+   "name": "Newsmax, Inc.",
+   "vol_x": 0.41,
+   "buy_pct30": 0.6335773166444062,
+   "change": 0.05919859738648059,
+   "score": 3.85,
+   "news": [
+    "AngelAi Launches Powerful National Newsmax Campaign to Combat Systemic Lending Bias and Protect U.S. Veterans Through AI-Driven Oversight"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "IBEX",
+   "name": "IBEX Limited",
+   "vol_x": 0.38,
+   "buy_pct30": 0.7842211108081674,
+   "change": 0.02388629212125748,
+   "score": 3.4,
+   "news": [
+    "IBEX Ltd (IBEX) (Q4 2026) Earnings Call Highlights: Record Revenue and AI-Driven Growth Momentum"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "IMPP",
+   "name": "Imperial Petroleum Inc.",
+   "vol_x": 0.72,
+   "buy_pct30": 0.5777840474381968,
+   "change": 0.03300623410347847,
+   "score": 3.25,
+   "news": [
+    "Imperial Petroleum Inc (IMPP) (Q2 2026) Earnings Call Highlights: Record Revenue, Debt-Free ..."
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "ORCL",
+   "vol_x": 0.87
+  },
+  {
+   "ticker": "PSIG",
+   "vol_x": 0.79
+  },
+  {
+   "ticker": "RCBC",
+   "vol_x": 0.56
+  },
+  {
+   "ticker": "USPH",
+   "vol_x": 0.46
+  },
+  {
+   "ticker": "KR",
+   "vol_x": 0.45
+  },
+  {
+   "ticker": "ATEC",
+   "vol_x": 0.43
+  },
+  {
+   "ticker": "FUNC",
+   "vol_x": 0.43
+  },
+  {
+   "ticker": "GRDN",
+   "vol_x": 0.42
+  },
+  {
+   "ticker": "IBRX",
+   "vol_x": 0.4
+  },
+  {
+   "ticker": "PFIS",
+   "vol_x": 0.39
+  },
+  {
+   "ticker": "GSBC",
+   "vol_x": 0.38
+  },
+  {
+   "ticker": "NKSH",
+   "vol_x": 0.38
+  },
+  {
+   "ticker": "OBIO",
+   "vol_x": 0.36
+  },
+  {
+   "ticker": "NAKA",
+   "vol_x": 0.35
+  },
+  {
+   "ticker": "AEHR",
+   "vol_x": 0.34
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "IMPP",
+   "bought_at": "2026-09-11T14:16+00:00",
+   "sold_at": "2026-09-11T19:50+00:00",
+   "entry": 5.775769980907439,
+   "exit": 5.760000228881836,
+   "cost_gbp": 997.6620805118004,
+   "pl_gbp": -4.214117611685538,
+   "pl_pct": -0.004223992967161483,
+   "reason": "End of day: sold 10 minutes before the close."
+  }
+ ],
+ "total_gbp": -4.214117611685538,
+ "alerts": [
+  "10:16 Day trade: bought IMPP: 233 IMPP at $5.78 (about \u00a3998). Stop $5.49. News in the last 5 days (Imperial Petroleum Inc (IMPP) (Q2 2026) Earnings Call Highlights: Record Revenue); closed up yesterday (+4.6%) on 2.7x normal volume; above today's open at 10:00 New York.",
+  "15:50 Day trade: sold IMPP (-\u00a34): End of day: sold 10 minutes before the close. Result -\u00a34 (-0.4%).",
+  "15:50 Day trade summary: IMPP: -\u00a34 today."
+ ],
+ "log": [
+  "Day trade buy order: 233 IMPP at about $5.79. News in the last 5 days (Imperial Petroleum Inc (IMPP) (Q2 2026) Earnings Call Highlights: Record Revenue); closed up yesterday (+4.6%) on 2.7x normal volume; above today's open at 10:00 New York.",
+  "Bought 233 IMPP at 5.78 (cost \u00a3998).",
+  "Sold IMPP (about -\u00a34). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 1 trade(s), total -\u00a34."
+ ]
+}

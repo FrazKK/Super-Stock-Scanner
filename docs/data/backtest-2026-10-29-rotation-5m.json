@@ -1,0 +1,343 @@
+{
+ "date": "2026-10-29",
+ "generated": "2026-11-01T16:58+00:00",
+ "fx_gbpusd": 1.3378641605377197,
+ "result": "done",
+ "require_news": true,
+ "strategy": "rotation",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [
+  "Added HII to today's list at 10:16 New York: 0.5x normal volume in the last 30 min; news: What Defense Slump? L3Harris, Huntington Post Strong Earnings, Like Peers.",
+  "Added COOK to today's list at 10:16 New York: 0.7x normal volume in the last 30 min; news: Traeger, Inc.'s (NYSE:COOK) Path To Profitability - Simply Wall St",
+  "Added QNBC to today's list at 10:48 New York: 0.4x normal volume in the last 30 min; news: QNB (QNBC) Q3 Earnings Contrast A Sharp Swing To Loss",
+  "Added FCN to today's list at 11:20 New York: 0.4x normal volume in the last 30 min; news: FTI Consulting (FCN) Beats Q3 Earnings and Revenue Estimates",
+  "Added HNI to today's list at 11:20 New York: 0.3x normal volume in the last 30 min; news: India's HNI term insurance bookings double since 2023; younger buyers drive grow",
+  "Added GCBC to today's list at 11:20 New York: 0.6x normal volume in the last 30 min; news: Greene County Bancorp (NASDAQ:GCBC) Sees Large Volume Increase - Here's What Hap",
+  "Added BCBP to today's list at 11:20 New York: 0.5x normal volume in the last 30 min; news: BCB Bancorp (BCBP) Reports Q3 Loss, Beats Revenue Estimates",
+  "Added NDLS to today's list at 11:20 New York: 0.4x normal volume in the last 30 min; news: Noodles & Company Q3 2026 Earnings Date and Estimates - MarketBeat",
+  "Added MO to today's list at 11:52 New York: 0.6x normal volume in the last 30 min; news: Altria Group (MO) Stock Still Appears Undervalued Following Its 153% Run",
+  "Added CLAR to today's list at 12:08 New York: 0.5x normal volume in the last 30 min; news: Synchrony and Clarus Technology Announce Strategic Partnership to Provide Real-T",
+  "Added CTS to today's list at 12:24 New York: 0.3x normal volume in the last 30 min; news: Earnings Beat Might Change CTS Stock Narrative",
+  "Added AMWL to today's list at 12:24 New York: 0.5x normal volume in the last 30 min; news: Teladoc Soars 26% as Revenue and Profit Beat Estimates; Hims & Hers Health and A",
+  "Added OSW to today's list at 12:56 New York: 0.3x normal volume in the last 30 min; news: OneSpaWorld Holdings (OSW) Falls Despite Strong Results and Higher Guidance, Ari",
+  "Added AEYE to today's list at 13:12 New York: 0.3x normal volume in the last 30 min; news: AudioEye (AEYE) Q3 Earnings and Revenues Beat Estimates",
+  "Added DFIN to today's list at 14:00 New York: 0.3x normal volume in the last 30 min; news: Donnelley Financial Solutions (DFIN) Q3 Earnings and Revenues Beat Estimates",
+  "Added EVRG to today's list at 14:16 New York: 0.6x normal volume in the last 30 min; news: Evergy Inc (EVRG) Reports Next Week: Wall Street Expects Earnings Growth",
+  "Added HLI to today's list at 14:16 New York: 1.7x normal volume in the last 30 min; news: Earnings Beat Might Change The Case For Investing In Houlihan Lokey Stock (HLI)",
+  "Added CLF to today's list at 14:16 New York: 0.3x normal volume in the last 30 min; news: CLF Q3 Earnings Beat Estimates, Revenues Up Y/Y on Higher Steel Prices",
+  "Added GVA to today's list at 14:16 New York: 0.4x normal volume in the last 30 min; news: Granite Construction (NYSE:GVA) delivers impressive Q3 2026, full-year outlook s",
+  "Added GNK to today's list at 15:04 New York: 0.4x normal volume in the last 30 min; news: Clarksons Securities predicts more dividend records for Genco - TradeWinds News",
+  "Added PEBK to today's list at 15:20 New York: 0.4x normal volume in the last 30 min; news: Peoples Bancorp of North Carolina (NASDAQ:PEBK) Director Sells 1,000 Shares of C"
+ ],
+ "drift_list": [],
+ "list": [
+  {
+   "ticker": "NUWE",
+   "name": "Nuwellis, Inc.",
+   "vol_x": 3.91,
+   "buy_pct30": 0.3016920006200654,
+   "change": 0.09922265431495525,
+   "score": 9.03,
+   "news": [
+    "NUWE Stock Rockets As Nuwellis Targets Pediatric Growth - Timothy Sykes",
+    "Can Approvals Lift Glaukos (NYSE:GKOS), SS Innovations (NASDAQ:SSII), Nuwellis (NASDAQ:NUWE) and Baird Medical (NASDAQ:BDMD) on Oct 29? - Kalkine"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "BHC",
+   "name": "Bausch Health Companies Inc.",
+   "vol_x": 1.72,
+   "buy_pct30": 0.6637027842079775,
+   "change": 0.19364163841245752,
+   "score": 6.09,
+   "news": [
+    "BHC Q3 Earnings Beat on Salix Growth, Stock Gains 9% as Outlook Rises",
+    "Bausch Health soars on earnings beat and raised outlook"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "VTRS",
+   "name": "Viatris Inc.",
+   "vol_x": 0.43,
+   "buy_pct30": 0.747393228822386,
+   "change": 0.015450133250197284,
+   "score": 4.85,
+   "news": [
+    "RYZUMVI Approval Could Be A Key Test For Viatris Stock (VTRS)",
+    "Viatris (VTRS) Expected to Beat Earnings Estimates: Should You Buy?"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "BLCO",
+   "name": "Bausch + Lomb Corporation",
+   "vol_x": 0.52,
+   "buy_pct30": 0.6567586430132697,
+   "change": 0.04215689345260487,
+   "score": 4.67,
+   "news": [
+    "Bausch + Lomb Soars 16% on Big Q3 Profit Beat and Raised Full-Year Guidance",
+    "BAUSCH HEALTH ANNOUNCES THIRD QUARTER 2026 RESULTS, RAISES GUIDANCE"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "FRAF",
+   "name": "Franklin Financial Services Corporation",
+   "vol_x": 0.34,
+   "buy_pct30": 0.5587512926577043,
+   "change": 0.007156146849077727,
+   "score": 3.92,
+   "news": [
+    "FRAF Q3 Earnings Rise Y/Y as Margin & Deposit Growth Improve",
+    "Franklin Financial Services (NASDAQ:FRAF) Issues Quarterly Earnings Results - MarketBeat"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "CROX",
+   "name": "Crocs, Inc.",
+   "vol_x": 0.88,
+   "buy_pct30": 0.6576717421569951,
+   "change": 0.22888297864203033,
+   "score": 3.89,
+   "news": [
+    "Crocs Lifts Full-Year Guidance Following Third-Quarter Beat; Shares Surge"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "GKOS",
+   "name": "Glaukos Corporation",
+   "vol_x": 1.24,
+   "buy_pct30": 0.7121840193527005,
+   "change": 0.2725018157816743,
+   "score": 3.83,
+   "news": [
+    "Why Glaukos Stock Is Surging 30% and Headed for Record Close After Earnings"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "NCLH",
+   "name": "Norwegian Cruise Line Holdings Ltd.",
+   "vol_x": 0.95,
+   "buy_pct30": 0.5423892959605106,
+   "change": 0.10273970569110813,
+   "score": 3.57,
+   "news": [
+    "Stock Market Today, Oct. 29: Norwegian Cruise Line Holdings Beats Q3 Estimates, Raises Full-Year Guidance",
+    "Norwegian Cruise Line Soars After Beat-And-Raise Quarter"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "RCL",
+   "name": "Royal Caribbean Cruises Ltd.",
+   "vol_x": 0.34,
+   "buy_pct30": 0.6509073190850354,
+   "change": 0.03709353970569307,
+   "score": 3.28,
+   "news": [
+    "Norwegian Surges 11% as Earnings Beat Lifts Full-Year Outlook; Royal Caribbean Rises 3%, Carnival Edges Higher",
+    "Royal Caribbean Q3 Earnings Call Highlights Demand & Resort Expansion"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "TDOC",
+   "name": "Teladoc Health, Inc.",
+   "vol_x": 1.27,
+   "buy_pct30": 0.5455770249034562,
+   "change": 0.27056682491468576,
+   "score": 3.22,
+   "news": [
+    "Teladoc Soars 11% on Q3 Beat and Raised Outlook as \u201cInsurance Revenue Exceeded Our Expectations\u201d"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "OPCH",
+   "name": "Option Care Health, Inc.",
+   "vol_x": 2.14,
+   "buy_pct30": 0.08655980465973397,
+   "change": 0.012304196556994995,
+   "score": 3.13,
+   "news": [
+    "Option Care Health (NASDAQ:OPCH) Sees Large Volume Increase - Here's Why - MarketBeat"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "PRME",
+   "name": "Prime Medicine, Inc.",
+   "vol_x": 0.35,
+   "buy_pct30": 0.479939595675955,
+   "change": 0.06529848804370886,
+   "score": 3.12,
+   "news": [
+    "PRME, BEAM, EDIT, NTLA, CRSP Stocks Gain As FDA Signals Faster Route For Patient-Specific Gene Edits"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "MAX",
+   "name": "MediaAlpha, Inc.",
+   "vol_x": 0.54,
+   "buy_pct30": 0.6205062779794436,
+   "change": 0.21245731351415875,
+   "score": 3.06,
+   "news": [
+    "MediaAlpha (NYSE:MAX) beats expectations in strong Q3 2026, stock jumps 18%"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "BAND",
+   "name": "Bandwidth Inc.",
+   "vol_x": 0.36,
+   "buy_pct30": 0.6317762064366325,
+   "change": 0.09907119012332766,
+   "score": 2.75,
+   "news": [
+    "Bandwidth (BAND) Q3 Earnings and Revenues Beat Estimates"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "WST",
+   "name": "West Pharmaceutical Services, Inc.",
+   "vol_x": 0.38,
+   "buy_pct30": 0.6208477533613792,
+   "change": 0.04984638387428375,
+   "score": 2.74,
+   "news": [
+    "West Pharmaceutical Services (NYSE:WST) beats expectations in strong Q3 2026, full-year outlook slightly exceeds expectations"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "TTEC",
+   "vol_x": 1.58
+  },
+  {
+   "ticker": "NCPL",
+   "vol_x": 1.42
+  },
+  {
+   "ticker": "PRCH",
+   "vol_x": 1.03
+  },
+  {
+   "ticker": "LLY",
+   "vol_x": 0.53
+  },
+  {
+   "ticker": "TMP",
+   "vol_x": 0.43
+  },
+  {
+   "ticker": "EG",
+   "vol_x": 0.42
+  },
+  {
+   "ticker": "EDHL",
+   "vol_x": 0.4
+  },
+  {
+   "ticker": "BIO",
+   "vol_x": 0.39
+  },
+  {
+   "ticker": "PDSB",
+   "vol_x": 0.36
+  },
+  {
+   "ticker": "PTLE",
+   "vol_x": 0.35
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "NUWE",
+   "bought_at": "2026-10-29T14:16+00:00",
+   "sold_at": "2026-10-29T15:02+00:00",
+   "entry": 6.573566912174224,
+   "exit": 6.40500020980835,
+   "cost_gbp": 998.9323084631992,
+   "pl_gbp": -27.073519699093822,
+   "pl_pct": -0.02710245676280598,
+   "reason": "No new high for 36 min, and QNBC overtook it on buying volume (0.36x vs 0.04x normal in 30 min)."
+  },
+  {
+   "ticker": "QNBC",
+   "bought_at": "2026-10-29T15:02+00:00",
+   "sold_at": "2026-10-29T16:06+00:00",
+   "entry": 47.68763938903808,
+   "exit": 47.599998474121094,
+   "cost_gbp": 999.5460101195405,
+   "pl_gbp": -3.331299696543283,
+   "pl_pct": -0.003332812759809703,
+   "reason": "No new high for 36 min, and MO overtook it on buying volume (0.45x vs 0.01x normal in 30 min)."
+  },
+  {
+   "ticker": "MO",
+   "bought_at": "2026-10-29T16:06+00:00",
+   "sold_at": "2026-10-29T19:50+00:00",
+   "entry": 75.6856106109619,
+   "exit": 76.43000030517578,
+   "cost_gbp": 963.1660683241702,
+   "pl_gbp": 8.016241145697336,
+   "pl_pct": 0.008322802691383156,
+   "reason": "End of day: sold 10 minutes before the close."
+  }
+ ],
+ "total_gbp": -22.38857824993977,
+ "alerts": [
+  "10:16 Day trade: bought NUWE: 203 NUWE at $6.57 (about \u00a3999). Stop $6.24. Highest first-30-minute volume on today's list (3.9x a normal day).",
+  "11:02 Day trade: sold NUWE (-\u00a327): No new high for 36 min, and QNBC overtook it on buying volume (0.36x vs 0.04x normal in 30 min). Result -\u00a327 (-2.7%).",
+  "11:02 Day trade: bought QNBC: 28 QNBC at $47.69 (about \u00a31,000). Stop $45.30. Strongest buying on the list: 0.36x normal volume bought in the last 30 min, and rising.",
+  "12:06 Day trade: sold QNBC (-\u00a33): No new high for 36 min, and MO overtook it on buying volume (0.45x vs 0.01x normal in 30 min). Result -\u00a33 (-0.3%).",
+  "12:06 Day trade: bought MO: 17 MO at $75.69 (about \u00a3963). Stop $71.90. Strongest buying on the list: 0.45x normal volume bought in the last 30 min, and rising.",
+  "15:50 Day trade: sold MO (+\u00a38): End of day: sold 10 minutes before the close. Result +\u00a38 (+0.8%).",
+  "15:50 Day trade summary: 3 trade(s) today: NUWE -\u00a327, QNBC -\u00a33, MO +\u00a38. Total -\u00a322."
+ ],
+ "log": [
+  "Added HII to today's list at 10:16 New York: 0.5x normal volume in the last 30 min; news: What Defense Slump? L3Harris, Huntington Post Strong Earnings, Like Peers.",
+  "Added COOK to today's list at 10:16 New York: 0.7x normal volume in the last 30 min; news: Traeger, Inc.'s (NYSE:COOK) Path To Profitability - Simply Wall St",
+  "Day trade buy order: 203 NUWE at about $6.57. Highest first-30-minute volume on today's list (3.9x a normal day).",
+  "Bought 203 NUWE at 6.57 (cost \u00a3999).",
+  "Added QNBC to today's list at 10:48 New York: 0.4x normal volume in the last 30 min; news: QNB (QNBC) Q3 Earnings Contrast A Sharp Swing To Loss",
+  "Sold NUWE (about -\u00a327). No new high for 36 min, and QNBC overtook it on buying volume (0.36x vs 0.04x normal in 30 min).",
+  "Day trade buy order: 28 QNBC at about $47.64. Strongest buying on the list: 0.36x normal volume bought in the last 30 min, and rising.",
+  "Bought 28 QNBC at 47.69 (cost \u00a31,000).",
+  "Added FCN to today's list at 11:20 New York: 0.4x normal volume in the last 30 min; news: FTI Consulting (FCN) Beats Q3 Earnings and Revenue Estimates",
+  "Added HNI to today's list at 11:20 New York: 0.3x normal volume in the last 30 min; news: India's HNI term insurance bookings double since 2023; younger buyers drive grow",
+  "Added GCBC to today's list at 11:20 New York: 0.6x normal volume in the last 30 min; news: Greene County Bancorp (NASDAQ:GCBC) Sees Large Volume Increase - Here's What Hap",
+  "Added BCBP to today's list at 11:20 New York: 0.5x normal volume in the last 30 min; news: BCB Bancorp (BCBP) Reports Q3 Loss, Beats Revenue Estimates",
+  "Added NDLS to today's list at 11:20 New York: 0.4x normal volume in the last 30 min; news: Noodles & Company Q3 2026 Earnings Date and Estimates - MarketBeat",
+  "Added MO to today's list at 11:52 New York: 0.6x normal volume in the last 30 min; news: Altria Group (MO) Stock Still Appears Undervalued Following Its 153% Run",
+  "Sold QNBC (about -\u00a33). No new high for 36 min, and MO overtook it on buying volume (0.45x vs 0.01x normal in 30 min).",
+  "Day trade buy order: 17 MO at about $75.61. Strongest buying on the list: 0.45x normal volume bought in the last 30 min, and rising.",
+  "Bought 17 MO at 75.69 (cost \u00a3963).",
+  "Added CLAR to today's list at 12:08 New York: 0.5x normal volume in the last 30 min; news: Synchrony and Clarus Technology Announce Strategic Partnership to Provide Real-T",
+  "Added CTS to today's list at 12:24 New York: 0.3x normal volume in the last 30 min; news: Earnings Beat Might Change CTS Stock Narrative",
+  "Added AMWL to today's list at 12:24 New York: 0.5x normal volume in the last 30 min; news: Teladoc Soars 26% as Revenue and Profit Beat Estimates; Hims & Hers Health and A",
+  "Added OSW to today's list at 12:56 New York: 0.3x normal volume in the last 30 min; news: OneSpaWorld Holdings (OSW) Falls Despite Strong Results and Higher Guidance, Ari",
+  "Added AEYE to today's list at 13:12 New York: 0.3x normal volume in the last 30 min; news: AudioEye (AEYE) Q3 Earnings and Revenues Beat Estimates",
+  "Added DFIN to today's list at 14:00 New York: 0.3x normal volume in the last 30 min; news: Donnelley Financial Solutions (DFIN) Q3 Earnings and Revenues Beat Estimates",
+  "Added EVRG to today's list at 14:16 New York: 0.6x normal volume in the last 30 min; news: Evergy Inc (EVRG) Reports Next Week: Wall Street Expects Earnings Growth",
+  "Added HLI to today's list at 14:16 New York: 1.7x normal volume in the last 30 min; news: Earnings Beat Might Change The Case For Investing In Houlihan Lokey Stock (HLI)",
+  "Added CLF to today's list at 14:16 New York: 0.3x normal volume in the last 30 min; news: CLF Q3 Earnings Beat Estimates, Revenues Up Y/Y on Higher Steel Prices",
+  "Added GVA to today's list at 14:16 New York: 0.4x normal volume in the last 30 min; news: Granite Construction (NYSE:GVA) delivers impressive Q3 2026, full-year outlook s",
+  "Added GNK to today's list at 15:04 New York: 0.4x normal volume in the last 30 min; news: Clarksons Securities predicts more dividend records for Genco - TradeWinds News",
+  "Added PEBK to today's list at 15:20 New York: 0.4x normal volume in the last 30 min; news: Peoples Bancorp of North Carolina (NASDAQ:PEBK) Director Sells 1,000 Shares of C",
+  "Sold MO (about +\u00a38). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 3 trade(s), total -\u00a322."
+ ]
+}

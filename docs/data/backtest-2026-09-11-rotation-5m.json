@@ -1,0 +1,177 @@
+{
+ "date": "2026-09-11",
+ "generated": "2026-11-01T15:21+00:00",
+ "fx_gbpusd": 1.3509314060211182,
+ "result": "done",
+ "require_news": true,
+ "strategy": "rotation",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [
+  "Added ITRG to today's list at 14:00 New York: 0.4x normal volume in the last 30 min; news: Integra Resources (ITRG) Hits Record Output, But At A Cost"
+ ],
+ "drift_list": [],
+ "list": [
+  {
+   "ticker": "FEIM",
+   "name": "Frequency Electronics, Inc.",
+   "vol_x": 2.52,
+   "buy_pct30": 0.5304327818523458,
+   "change": 0.33467611985426937,
+   "score": 5.16,
+   "news": [
+    "Frequency Electronics Q1 Revenue Rises 70% to Record $23.5 Million",
+    "Frequency Electronics Inc (FEIM) (Q1 2027) Earnings Call Highlights: Record Revenue, Surging ..."
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "UNTY",
+   "name": "Unity Bancorp, Inc.",
+   "vol_x": 0.44,
+   "buy_pct30": 0.9106812590296679,
+   "change": 0.029615840167219076,
+   "score": 5.02,
+   "news": [
+    "Unity Bancorp (UNTY) Upgraded to Buy: Here's What You Should Know"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "TEN",
+   "name": "Tsakos Energy Navigation Ltd",
+   "vol_x": 0.81,
+   "buy_pct30": 0.7263443698500024,
+   "change": 0.0650861084097567,
+   "score": 4.03,
+   "news": [
+    "Tsakos Energy Navigation Ltd (TEN) (Q2 2026) Earnings Call Highlights: Record Net Income Surges ..."
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "NMAX",
+   "name": "Newsmax, Inc.",
+   "vol_x": 0.41,
+   "buy_pct30": 0.6335773166444062,
+   "change": 0.05919859738648059,
+   "score": 3.85,
+   "news": [
+    "AngelAi Launches Powerful National Newsmax Campaign to Combat Systemic Lending Bias and Protect U.S. Veterans Through AI-Driven Oversight"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "IBEX",
+   "name": "IBEX Limited",
+   "vol_x": 0.38,
+   "buy_pct30": 0.7842211108081674,
+   "change": 0.02388629212125748,
+   "score": 3.4,
+   "news": [
+    "IBEX Ltd (IBEX) (Q4 2026) Earnings Call Highlights: Record Revenue and AI-Driven Growth Momentum"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "IMPP",
+   "name": "Imperial Petroleum Inc.",
+   "vol_x": 0.72,
+   "buy_pct30": 0.5777840474381968,
+   "change": 0.03300623410347847,
+   "score": 3.25,
+   "news": [
+    "Imperial Petroleum Inc (IMPP) (Q2 2026) Earnings Call Highlights: Record Revenue, Debt-Free ..."
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "ORCL",
+   "vol_x": 0.87
+  },
+  {
+   "ticker": "PSIG",
+   "vol_x": 0.79
+  },
+  {
+   "ticker": "RCBC",
+   "vol_x": 0.56
+  },
+  {
+   "ticker": "USPH",
+   "vol_x": 0.46
+  },
+  {
+   "ticker": "KR",
+   "vol_x": 0.45
+  },
+  {
+   "ticker": "ATEC",
+   "vol_x": 0.43
+  },
+  {
+   "ticker": "FUNC",
+   "vol_x": 0.43
+  },
+  {
+   "ticker": "GRDN",
+   "vol_x": 0.42
+  },
+  {
+   "ticker": "IBRX",
+   "vol_x": 0.4
+  },
+  {
+   "ticker": "PFIS",
+   "vol_x": 0.39
+  },
+  {
+   "ticker": "GSBC",
+   "vol_x": 0.38
+  },
+  {
+   "ticker": "NKSH",
+   "vol_x": 0.38
+  },
+  {
+   "ticker": "OBIO",
+   "vol_x": 0.36
+  },
+  {
+   "ticker": "NAKA",
+   "vol_x": 0.35
+  },
+  {
+   "ticker": "AEHR",
+   "vol_x": 0.34
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "TEN",
+   "bought_at": "2026-09-11T14:16+00:00",
+   "sold_at": "2026-09-11T19:50+00:00",
+   "entry": 47.717668167114255,
+   "exit": 47.720001220703125,
+   "cost_gbp": 990.5009571753938,
+   "pl_gbp": -1.435170249125349,
+   "pl_pct": -0.0014489337327023048,
+   "reason": "End of day: sold 10 minutes before the close."
+  }
+ ],
+ "total_gbp": -1.435170249125349,
+ "alerts": [
+  "10:16 Day trade: bought TEN: 28 TEN at $47.72 (about \u00a3991). Stop $45.33. Highest first-30-minute volume on today's list (0.8x a normal day).",
+  "15:50 Day trade: sold TEN (-\u00a31): End of day: sold 10 minutes before the close. Result -\u00a31 (-0.1%).",
+  "15:50 Day trade summary: 1 trade(s) today: TEN -\u00a31. Total -\u00a31."
+ ],
+ "log": [
+  "Day trade buy order: 28 TEN at about $47.67. Highest first-30-minute volume on today's list (0.8x a normal day).",
+  "Bought 28 TEN at 47.72 (cost \u00a3991).",
+  "Added ITRG to today's list at 14:00 New York: 0.4x normal volume in the last 30 min; news: Integra Resources (ITRG) Hits Record Output, But At A Cost",
+  "Sold TEN (about -\u00a31). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 1 trade(s), total -\u00a31."
+ ]
+}

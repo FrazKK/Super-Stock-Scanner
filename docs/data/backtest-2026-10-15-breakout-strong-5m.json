@@ -1,0 +1,56 @@
+{
+ "date": "2026-10-15",
+ "generated": "2026-11-01T16:31+00:00",
+ "fx_gbpusd": 1.3230137825012207,
+ "result": "done",
+ "require_news": true,
+ "strategy": "breakout-strong",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [
+  "Added NRXS to today's list at 12:08 New York: 0.5x normal volume in the last 30 min; news: NeurAxis Announces Medical Policy Coverage Milestone, Expanding Access to 26 Mil",
+  "Added ANDG to today's list at 12:24 New York: 0.3x normal volume in the last 30 min; news: Andersen Group Closes Four Consulting Acquisitions, Accelerating Global Expansio",
+  "Added VSTM to today's list at 13:44 New York: 0.3x normal volume in the last 30 min; news: Verastem\u2019s KRAS inhibitor posts wins in mPDAC, mCRC and NSCLC",
+  "Added GXO to today's list at 15:04 New York: 0.5x normal volume in the last 30 min; news: GXO and Action Expand Partnership in France"
+ ],
+ "drift_list": [],
+ "list": [],
+ "quiet": [
+  {
+   "ticker": "OPK",
+   "vol_x": 17.51
+  },
+  {
+   "ticker": "NCPL",
+   "vol_x": 1.77
+  },
+  {
+   "ticker": "CANG",
+   "vol_x": 0.89
+  },
+  {
+   "ticker": "BCAL",
+   "vol_x": 0.6
+  },
+  {
+   "ticker": "WMT",
+   "vol_x": 0.43
+  },
+  {
+   "ticker": "NTWK",
+   "vol_x": 0.39
+  }
+ ],
+ "trades": [],
+ "total_gbp": 0,
+ "alerts": [
+  "15:50 Day trade summary: No trade today: nothing in play broke out."
+ ],
+ "log": [
+  "Added NRXS to today's list at 12:08 New York: 0.5x normal volume in the last 30 min; news: NeurAxis Announces Medical Policy Coverage Milestone, Expanding Access to 26 Mil",
+  "Added ANDG to today's list at 12:24 New York: 0.3x normal volume in the last 30 min; news: Andersen Group Closes Four Consulting Acquisitions, Accelerating Global Expansio",
+  "Added VSTM to today's list at 13:44 New York: 0.3x normal volume in the last 30 min; news: Verastem\u2019s KRAS inhibitor posts wins in mPDAC, mCRC and NSCLC",
+  "Added GXO to today's list at 15:04 New York: 0.5x normal volume in the last 30 min; news: GXO and Action Expand Partnership in France",
+  "Day trading finished: 0 trade(s), total +\u00a30."
+ ]
+}

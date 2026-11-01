@@ -1,0 +1,75 @@
+{
+ "date": "2026-10-19",
+ "generated": "2026-11-01T16:33+00:00",
+ "fx_gbpusd": 1.3335645198822021,
+ "result": "done",
+ "require_news": true,
+ "strategy": "rotation",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [
+  "Added CFFI to today's list at 11:20 New York: 0.7x normal volume in the last 30 min; news: C&F Financial's 2026 Outlook: Aggressive Market Expansion Drives New Retail Grow",
+  "Added BOX to today's list at 13:12 New York: 0.8x normal volume in the last 30 min; news: Why Box Stock Is An 'Underappreciated AI Winner' And BofA's Top Pick",
+  "Added BWMN to today's list at 14:32 New York: 0.3x normal volume in the last 30 min; news: Bowman Acquires Dymaptic, Expanding AI-Powered Geospatial Data Collection and Da"
+ ],
+ "drift_list": [],
+ "list": [],
+ "quiet": [
+  {
+   "ticker": "FUFU",
+   "vol_x": 167.54
+  },
+  {
+   "ticker": "DH",
+   "vol_x": 2.19
+  },
+  {
+   "ticker": "KRSA",
+   "vol_x": 0.94
+  },
+  {
+   "ticker": "CLF",
+   "vol_x": 0.87
+  },
+  {
+   "ticker": "ENGS",
+   "vol_x": 0.42
+  },
+  {
+   "ticker": "TALO",
+   "vol_x": 0.39
+  },
+  {
+   "ticker": "AII",
+   "vol_x": 0.34
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "CFFI",
+   "bought_at": "2026-10-19T15:20+00:00",
+   "sold_at": "2026-10-19T19:50+00:00",
+   "entry": 103.25315152740477,
+   "exit": 101.26499938964844,
+   "cost_gbp": 930.5109400825712,
+   "pl_gbp": -19.283943144228942,
+   "pl_pct": -0.02072403699253416,
+   "reason": "End of day: sold 10 minutes before the close."
+  }
+ ],
+ "total_gbp": -19.283943144228942,
+ "alerts": [
+  "11:20 Day trade: bought CFFI: 12 CFFI at $103.25 (about \u00a3931). Stop $98.09. Highest first-30-minute volume on today's list (0.7x a normal day).",
+  "15:50 Day trade: sold CFFI (-\u00a319): End of day: sold 10 minutes before the close. Result -\u00a319 (-2.1%).",
+  "15:50 Day trade summary: 1 trade(s) today: CFFI -\u00a319. Total -\u00a319."
+ ],
+ "log": [
+  "Added CFFI to today's list at 11:20 New York: 0.7x normal volume in the last 30 min; news: C&F Financial's 2026 Outlook: Aggressive Market Expansion Drives New Retail Grow",
+  "Day trade buy order: 12 CFFI at about $103.15. Highest first-30-minute volume on today's list (0.7x a normal day).",
+  "Bought 12 CFFI at 103.25 (cost \u00a3931).",
+  "Added BOX to today's list at 13:12 New York: 0.8x normal volume in the last 30 min; news: Why Box Stock Is An 'Underappreciated AI Winner' And BofA's Top Pick",
+  "Added BWMN to today's list at 14:32 New York: 0.3x normal volume in the last 30 min; news: Bowman Acquires Dymaptic, Expanding AI-Powered Geospatial Data Collection and Da",
+  "Sold CFFI (about -\u00a319). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 1 trade(s), total -\u00a319."
+ ]
+}

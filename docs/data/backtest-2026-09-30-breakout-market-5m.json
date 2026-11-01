@@ -1,0 +1,93 @@
+{
+ "date": "2026-09-30",
+ "generated": "2026-11-01T15:58+00:00",
+ "fx_gbpusd": 1.323276400566101,
+ "result": "done",
+ "require_news": true,
+ "strategy": "breakout-market",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [],
+ "drift_list": [],
+ "list": [
+  {
+   "ticker": "FUNC",
+   "name": "First",
+   "vol_x": 0.5,
+   "buy_pct30": 0.6631702252276237,
+   "change": 0.018424760144968966,
+   "score": 3.15,
+   "news": [
+    "How to Play First United Stock After Its Dividend Increase"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "CANG",
+   "name": "Cango Inc.",
+   "vol_x": 0.36,
+   "buy_pct30": 0.5652086357572891,
+   "change": 0.03375534429857652,
+   "score": 1.48,
+   "news": [
+    "Cango stock surges over 20% following Buy initiation at Jones Trading"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "FFR",
+   "vol_x": 16.85
+  },
+  {
+   "ticker": "CAPR",
+   "vol_x": 4.49
+  },
+  {
+   "ticker": "NAUT",
+   "vol_x": 1.87
+  },
+  {
+   "ticker": "QSI",
+   "vol_x": 0.87
+  },
+  {
+   "ticker": "PMVP",
+   "vol_x": 0.83
+  },
+  {
+   "ticker": "PACB",
+   "vol_x": 0.56
+  },
+  {
+   "ticker": "HPE",
+   "vol_x": 0.42
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "CANG",
+   "bought_at": "2026-09-30T14:56+00:00",
+   "sold_at": "2026-09-30T19:50+00:00",
+   "entry": 2.52251998090744,
+   "exit": 2.4700000286102295,
+   "cost_gbp": 1002.2920939978768,
+   "pl_gbp": -22.338084037737417,
+   "pl_pct": -0.022287000138489305,
+   "reason": "End of day: sold 10 minutes before the close."
+  }
+ ],
+ "total_gbp": -22.338084037737417,
+ "alerts": [
+  "10:56 Day trade: bought CANG: 525 CANG at $2.52 (about \u00a31,002). Stop $2.40. Broke above its opening-range high ($2.50) at $2.52. In play: 0.4x normal volume, normally moves 14% a day. Stop $2.40.",
+  "15:50 Day trade: sold CANG (-\u00a322): End of day: sold 10 minutes before the close. Result -\u00a322 (-2.2%).",
+  "15:50 Day trade summary: 1 trade(s) today: CANG -\u00a322. Total -\u00a322."
+ ],
+ "log": [
+  "Day trade buy order: 525 CANG at about $2.52. Broke above its opening-range high ($2.50) at $2.52. In play: 0.4x normal volume, normally moves 14% a day. Stop $2.40.",
+  "Bought 525 CANG at 2.52 (cost \u00a31,002).",
+  "Sold CANG (about -\u00a322). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 1 trade(s), total -\u00a322."
+ ]
+}

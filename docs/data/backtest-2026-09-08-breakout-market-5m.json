@@ -1,23 +1,22 @@
 {
  "date": "2026-09-08",
- "generated": "2026-11-01T14:57+00:00",
+ "generated": "2026-11-01T15:11+00:00",
  "fx_gbpusd": 1.3546831607818604,
  "result": "done",
  "require_news": true,
  "strategy": "breakout-market",
  "bars": "5m",
- "added_during_day": [
-  "Added HP to today's list at 15:04 New York: 0.3x normal volume in the last 30 min; news: Where Does Helmerich & Payne (HP) Valuation Sit On Strong Results And Outlook?"
- ],
+ "require_trend": true,
+ "added_during_day": [],
  "drift_list": [],
  "list": [
   {
    "ticker": "OESX",
    "name": "Orion Energy Systems, Inc.",
    "vol_x": 0.47,
-   "buy_pct30": 0.7101005408325501,
+   "buy_pct30": 0.708746370204508,
    "change": 0.12040000915527349,
-   "score": 3.28,
+   "score": 3.27,
    "news": [
     "Orion Announces Additional Multimillion-Dollar Data Center Engagement With Major Global Hyperscaler; Order Quickly Follows Inaugural Multimillion-Dollar Initiative"
    ],
@@ -27,7 +26,7 @@
    "ticker": "CURV",
    "name": "Torrid Holdings Inc.",
    "vol_x": 0.41,
-   "buy_pct30": 0.5395582296043367,
+   "buy_pct30": 0.5395350064373857,
    "change": 0.0573769931157615,
    "score": 2.48,
    "news": [
@@ -104,7 +103,6 @@
   "15:50 Day trade summary: No trade today: nothing in play broke out."
  ],
  "log": [
-  "Added HP to today's list at 15:04 New York: 0.3x normal volume in the last 30 min; news: Where Does Helmerich & Payne (HP) Valuation Sit On Strong Results And Outlook?",
   "Day trading finished: 0 trade(s), total +\u00a30."
  ]
 }

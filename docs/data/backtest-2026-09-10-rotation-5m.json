@@ -1,0 +1,126 @@
+{
+ "date": "2026-09-10",
+ "generated": "2026-11-01T15:19+00:00",
+ "fx_gbpusd": 1.3551971912384033,
+ "result": "done",
+ "require_news": true,
+ "strategy": "rotation",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [
+  "Added OPRT to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; news: Take the Zacks Approach to Beat the Markets: Oportun Financial, Uranium Royalty ",
+  "Added ACFN to today's list at 14:16 New York: 0.4x normal volume in the last 30 min; news: Acorn\u2019s OmniMetrix Subsidiary Expands Remote Monitoring Customer Base and Dealer"
+ ],
+ "drift_list": [],
+ "list": [
+  {
+   "ticker": "TEN",
+   "name": "Tsakos Energy Navigation Ltd",
+   "vol_x": 0.46,
+   "buy_pct30": 0.306578064252506,
+   "change": 0.02459386642809891,
+   "score": 0.65,
+   "news": [
+    "Tsakos Energy Navigation Ltd (TEN) (Q2 2026) Earnings Call Highlights: Record Net Income Surges ..."
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "PSIG",
+   "vol_x": 1.31
+  },
+  {
+   "ticker": "VOYA",
+   "vol_x": 1.01
+  },
+  {
+   "ticker": "INDO",
+   "vol_x": 0.76
+  },
+  {
+   "ticker": "AMTX",
+   "vol_x": 0.72
+  },
+  {
+   "ticker": "PBAM",
+   "vol_x": 0.61
+  },
+  {
+   "ticker": "IMPP",
+   "vol_x": 0.59
+  },
+  {
+   "ticker": "OBIO",
+   "vol_x": 0.49
+  },
+  {
+   "ticker": "BSVN",
+   "vol_x": 0.47
+  },
+  {
+   "ticker": "KNTK",
+   "vol_x": 0.4
+  },
+  {
+   "ticker": "SPCX",
+   "vol_x": 0.39
+  },
+  {
+   "ticker": "VG",
+   "vol_x": 0.39
+  },
+  {
+   "ticker": "LXFR",
+   "vol_x": 0.36
+  },
+  {
+   "ticker": "ESP",
+   "vol_x": 0.34
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "TEN",
+   "bought_at": "2026-09-10T14:16+00:00",
+   "sold_at": "2026-09-10T18:30+00:00",
+   "entry": 45.77572954177856,
+   "exit": 44.47999954223633,
+   "cost_gbp": 981.0287458843806,
+   "pl_gbp": -29.196794737771597,
+   "pl_pct": -0.029761405932556224,
+   "reason": "No new high for 254 min, and ACFN overtook it on buying volume (0.34x vs 0.02x normal in 30 min)."
+  },
+  {
+   "ticker": "ACFN",
+   "bought_at": "2026-09-10T18:30+00:00",
+   "sold_at": "2026-09-10T19:50+00:00",
+   "entry": 20.775754159927367,
+   "exit": 20.799999237060547,
+   "cost_gbp": 997.9725940768658,
+   "pl_gbp": -0.3318380674367063,
+   "pl_pct": -0.00033251220464992795,
+   "reason": "End of day: sold 10 minutes before the close."
+  }
+ ],
+ "total_gbp": -29.528632805208304,
+ "alerts": [
+  "10:16 Day trade: bought TEN: 29 TEN at $45.78 (about \u00a3981). Stop $43.49. Highest first-30-minute volume on today's list (0.5x a normal day).",
+  "14:30 Day trade: sold TEN (-\u00a329): No new high for 254 min, and ACFN overtook it on buying volume (0.34x vs 0.02x normal in 30 min). Result -\u00a329 (-3.0%).",
+  "14:30 Day trade: bought ACFN: 65 ACFN at $20.78 (about \u00a3998). Stop $19.74. Strongest buying on the list: 0.34x normal volume bought in the last 30 min, and rising.",
+  "15:50 Day trade: sold ACFN (-\u00a30): End of day: sold 10 minutes before the close. Result -\u00a30 (-0.0%).",
+  "15:50 Day trade summary: 2 trade(s) today: TEN -\u00a329, ACFN -\u00a30. Total -\u00a330."
+ ],
+ "log": [
+  "Added OPRT to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; news: Take the Zacks Approach to Beat the Markets: Oportun Financial, Uranium Royalty ",
+  "Day trade buy order: 29 TEN at about $45.73. Highest first-30-minute volume on today's list (0.5x a normal day).",
+  "Bought 29 TEN at 45.78 (cost \u00a3981).",
+  "Added ACFN to today's list at 14:16 New York: 0.4x normal volume in the last 30 min; news: Acorn\u2019s OmniMetrix Subsidiary Expands Remote Monitoring Customer Base and Dealer",
+  "Sold TEN (about -\u00a329). No new high for 254 min, and ACFN overtook it on buying volume (0.34x vs 0.02x normal in 30 min).",
+  "Day trade buy order: 65 ACFN at about $20.75. Strongest buying on the list: 0.34x normal volume bought in the last 30 min, and rising.",
+  "Bought 65 ACFN at 20.78 (cost \u00a3998).",
+  "Sold ACFN (about -\u00a30). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 2 trade(s), total -\u00a330."
+ ]
+}

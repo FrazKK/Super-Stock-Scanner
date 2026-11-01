@@ -1,0 +1,102 @@
+{
+ "date": "2026-10-08",
+ "generated": "2026-11-01T16:14+00:00",
+ "fx_gbpusd": 1.3214927911758423,
+ "result": "done",
+ "require_news": true,
+ "strategy": "breakout-market",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [],
+ "drift_list": [],
+ "list": [
+  {
+   "ticker": "GFUZ",
+   "name": "General Fusion Group Ltd.",
+   "vol_x": 1.95,
+   "buy_pct30": 0.578486840868069,
+   "change": 0.12434212941046918,
+   "score": 6.21,
+   "news": [
+    "General Fusion Achieves World-First 1 keV Electron Temperature Milestone on its Path to Commercial Fusion Power",
+    "General Fusion, UKAEA Announce Magnetized Target Fusion Milestone"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "WOLF",
+   "vol_x": 2.22
+  },
+  {
+   "ticker": "HAE",
+   "vol_x": 1.59
+  },
+  {
+   "ticker": "HELE",
+   "vol_x": 1.42
+  },
+  {
+   "ticker": "MANE",
+   "vol_x": 1.1
+  },
+  {
+   "ticker": "RCMT",
+   "vol_x": 0.89
+  },
+  {
+   "ticker": "PLTR",
+   "vol_x": 0.88
+  },
+  {
+   "ticker": "ASC",
+   "vol_x": 0.8
+  },
+  {
+   "ticker": "GFS",
+   "vol_x": 0.73
+  },
+  {
+   "ticker": "ADCT",
+   "vol_x": 0.62
+  },
+  {
+   "ticker": "FEAM",
+   "vol_x": 0.43
+  },
+  {
+   "ticker": "OPY",
+   "vol_x": 0.39
+  },
+  {
+   "ticker": "BORR",
+   "vol_x": 0.34
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "GFUZ",
+   "bought_at": "2026-10-08T14:36+00:00",
+   "sold_at": "2026-10-08T19:50+00:00",
+   "entry": 8.813805305480956,
+   "exit": 8.670000076293945,
+   "cost_gbp": 1001.9380437465388,
+   "pl_gbp": -17.823699628983263,
+   "pl_pct": -0.01778922333594126,
+   "reason": "End of day: sold 10 minutes before the close."
+  }
+ ],
+ "total_gbp": -17.823699628983263,
+ "alerts": [
+  "10:36 Day trade: bought GFUZ: 150 GFUZ at $8.81 (about \u00a31,002). Stop $8.37. Broke above its opening-range high ($8.78) at $8.81. In play: 1.9x normal volume, normally moves 6% a day. Stop $8.36.",
+  "15:50 Day trade: sold GFUZ (-\u00a318): End of day: sold 10 minutes before the close. Result -\u00a318 (-1.8%).",
+  "15:50 Day trade summary: 1 trade(s) today: GFUZ -\u00a318. Total -\u00a318."
+ ],
+ "log": [
+  "Day trade buy order: 150 GFUZ at about $8.81. Broke above its opening-range high ($8.78) at $8.81. In play: 1.9x normal volume, normally moves 6% a day. Stop $8.36.",
+  "Bought 150 GFUZ at 8.81 (cost \u00a31,002).",
+  "Sold GFUZ (about -\u00a318). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 1 trade(s), total -\u00a318."
+ ]
+}

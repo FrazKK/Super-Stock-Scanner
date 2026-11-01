@@ -1,0 +1,78 @@
+{
+ "date": "2026-10-16",
+ "generated": "2026-11-01T16:28+00:00",
+ "fx_gbpusd": 1.327316164970398,
+ "result": "done",
+ "require_news": true,
+ "strategy": "breakout-market",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [
+  "Added HLP to today's list at 12:08 New York: 0.8x normal volume in the last 30 min; news: Hongli Group Provides Strategic Update on Proposed Advanced Battery Collaboratio"
+ ],
+ "drift_list": [],
+ "list": [],
+ "quiet": [
+  {
+   "ticker": "NCPL",
+   "vol_x": 0.93
+  },
+  {
+   "ticker": "PRAA",
+   "vol_x": 0.79
+  },
+  {
+   "ticker": "ENGS",
+   "vol_x": 0.75
+  },
+  {
+   "ticker": "RGC",
+   "vol_x": 0.62
+  },
+  {
+   "ticker": "TRI",
+   "vol_x": 0.57
+  },
+  {
+   "ticker": "OPK",
+   "vol_x": 0.52
+  },
+  {
+   "ticker": "TRV",
+   "vol_x": 0.48
+  },
+  {
+   "ticker": "CZWI",
+   "vol_x": 0.48
+  },
+  {
+   "ticker": "PMI",
+   "vol_x": 0.43
+  },
+  {
+   "ticker": "AIT",
+   "vol_x": 0.42
+  },
+  {
+   "ticker": "AAPL",
+   "vol_x": 0.4
+  },
+  {
+   "ticker": "JMSB",
+   "vol_x": 0.38
+  },
+  {
+   "ticker": "TALO",
+   "vol_x": 0.36
+  }
+ ],
+ "trades": [],
+ "total_gbp": 0,
+ "alerts": [
+  "15:50 Day trade summary: No trade today: nothing in play broke out."
+ ],
+ "log": [
+  "Added HLP to today's list at 12:08 New York: 0.8x normal volume in the last 30 min; news: Hongli Group Provides Strategic Update on Proposed Advanced Battery Collaboratio",
+  "Day trading finished: 0 trade(s), total +\u00a30."
+ ]
+}

@@ -1,0 +1,98 @@
+{
+ "date": "2026-09-23",
+ "generated": "2026-11-01T15:43+00:00",
+ "fx_gbpusd": 1.3343117237091064,
+ "result": "done",
+ "require_news": true,
+ "strategy": "rotation",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [],
+ "drift_list": [],
+ "list": [
+  {
+   "ticker": "TLSI",
+   "name": "TriSalus Life Sciences, Inc.",
+   "vol_x": 2.89,
+   "buy_pct30": 0.33050053174814564,
+   "change": 0.06085196778515134,
+   "score": 6.1,
+   "news": [
+    "TriSalus Life Sciences Shares Rise 15.6% After FDA Clearance for TriNav Advance",
+    "TriSalus Life Sciences Receives FDA Clearance for TriNav\u00ae Advance, Strengthening Comprehensive Pressure-Enabled Drug Delivery\u2122 (PEDD\u2122) Portfolio for Liver Embolization"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "WOR",
+   "name": "Worthington Enterprises, Inc.",
+   "vol_x": 1.2,
+   "buy_pct30": 0.2592443077806395,
+   "change": 0.026297982488506788,
+   "score": 1.94,
+   "news": [
+    "Worthington Enterprises Shares Jump 15% on Strong Earnings and Cash Flow Boost"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "IONQ",
+   "vol_x": 1.53
+  },
+  {
+   "ticker": "NNBR",
+   "vol_x": 1.08
+  },
+  {
+   "ticker": "QUBT",
+   "vol_x": 0.93
+  },
+  {
+   "ticker": "WCCB",
+   "vol_x": 0.59
+  },
+  {
+   "ticker": "TNMG",
+   "vol_x": 0.52
+  },
+  {
+   "ticker": "INFQ",
+   "vol_x": 0.45
+  },
+  {
+   "ticker": "PLTR",
+   "vol_x": 0.35
+  },
+  {
+   "ticker": "SBC",
+   "vol_x": 0.33
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "TLSI",
+   "bought_at": "2026-09-23T14:16+00:00",
+   "sold_at": "2026-09-23T19:50+00:00",
+   "entry": 5.1452401022911065,
+   "exit": 5.010000228881836,
+   "cost_gbp": 1000.2281240272581,
+   "pl_gbp": -27.749177598332494,
+   "pl_pct": -0.027742848787939377,
+   "reason": "End of day: sold 10 minutes before the close."
+  }
+ ],
+ "total_gbp": -27.749177598332494,
+ "alerts": [
+  "10:16 Day trade: bought TLSI: 259 TLSI at $5.15 (about \u00a31,000). Stop $4.89. Highest first-30-minute volume on today's list (2.9x a normal day).",
+  "15:50 Day trade: sold TLSI (-\u00a328): End of day: sold 10 minutes before the close. Result -\u00a328 (-2.8%).",
+  "15:50 Day trade summary: 1 trade(s) today: TLSI -\u00a328. Total -\u00a328."
+ ],
+ "log": [
+  "Day trade buy order: 259 TLSI at about $5.14. Highest first-30-minute volume on today's list (2.9x a normal day).",
+  "Bought 259 TLSI at 5.15 (cost \u00a31,000).",
+  "Sold TLSI (about -\u00a328). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 1 trade(s), total -\u00a328."
+ ]
+}

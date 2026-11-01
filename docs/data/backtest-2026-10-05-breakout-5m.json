@@ -1,0 +1,130 @@
+{
+ "date": "2026-10-05",
+ "generated": "2026-11-01T16:06+00:00",
+ "fx_gbpusd": 1.3242928981781006,
+ "result": "done",
+ "require_news": true,
+ "strategy": "breakout",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [
+  "Added PAYO to today's list at 12:56 New York: 0.6x normal volume in the last 30 min; news: Payoneer Renews Partnership with Etsy Through 2029",
+  "Added FATE to today's list at 15:04 New York: 0.9x normal volume in the last 30 min; news: Fate Therapeutics Reports New Employee Inducement Awards Under Nasdaq Listing Ru"
+ ],
+ "drift_list": [],
+ "list": [
+  {
+   "ticker": "VEEA",
+   "name": "Veea Inc.",
+   "vol_x": 4.05,
+   "buy_pct30": 0.3383687268783325,
+   "change": 0.678498481280776,
+   "score": 7.95,
+   "news": [
+    "Veea Announces TROLLEE Agreement for Phased Deployment of VeeaONE to 1,000 Unattended Stores"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "AIFA",
+   "name": "All In FutureTech Alliance, Inc.",
+   "vol_x": 0.98,
+   "buy_pct30": 0.28079746303737835,
+   "change": 0.16554816167532627,
+   "score": 1.58,
+   "news": [
+    "All In FutureTech Alliance Inc. Launches New Digital Platform for Consumers and Businesses, Advancing Its AI-Enabled Global Services Strategy"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "ALEC",
+   "vol_x": 61.26
+  },
+  {
+   "ticker": "PCVX",
+   "vol_x": 3.03
+  },
+  {
+   "ticker": "PMI",
+   "vol_x": 1.62
+  },
+  {
+   "ticker": "PAGS",
+   "vol_x": 1.51
+  },
+  {
+   "ticker": "STNE",
+   "vol_x": 1.49
+  },
+  {
+   "ticker": "XP",
+   "vol_x": 1.48
+  },
+  {
+   "ticker": "ACB",
+   "vol_x": 1.43
+  },
+  {
+   "ticker": "NAUT",
+   "vol_x": 1.26
+  },
+  {
+   "ticker": "INTR",
+   "vol_x": 1.25
+  },
+  {
+   "ticker": "ALVO",
+   "vol_x": 1.17
+  },
+  {
+   "ticker": "SOTK",
+   "vol_x": 0.87
+  },
+  {
+   "ticker": "NTWK",
+   "vol_x": 0.63
+  },
+  {
+   "ticker": "VST",
+   "vol_x": 0.54
+  },
+  {
+   "ticker": "NU",
+   "vol_x": 0.53
+  },
+  {
+   "ticker": "PXS",
+   "vol_x": 0.53
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "FATE",
+   "bought_at": "2026-10-05T19:04+00:00",
+   "sold_at": "2026-10-05T19:50+00:00",
+   "entry": 2.567565057277679,
+   "exit": 2.4649999141693115,
+   "cost_gbp": 1001.9315717354024,
+   "pl_gbp": -41.46432354488536,
+   "pl_pct": -0.04138438663337737,
+   "reason": "End of day: sold 10 minutes before the close."
+  }
+ ],
+ "total_gbp": -41.46432354488536,
+ "alerts": [
+  "15:04 Day trade: bought FATE: 516 FATE at $2.57 (about \u00a31,002). Stop $2.44. Broke above its opening-range high ($2.35) at $2.57. In play: 0.9x normal volume, normally moves 6% a day. Stop $2.44.",
+  "15:50 Day trade: sold FATE (-\u00a341): End of day: sold 10 minutes before the close. Result -\u00a341 (-4.1%).",
+  "15:50 Day trade summary: 1 trade(s) today: FATE -\u00a341. Total -\u00a341."
+ ],
+ "log": [
+  "Added PAYO to today's list at 12:56 New York: 0.6x normal volume in the last 30 min; news: Payoneer Renews Partnership with Etsy Through 2029",
+  "Added FATE to today's list at 15:04 New York: 0.9x normal volume in the last 30 min; news: Fate Therapeutics Reports New Employee Inducement Awards Under Nasdaq Listing Ru",
+  "Day trade buy order: 516 FATE at about $2.57. Broke above its opening-range high ($2.35) at $2.57. In play: 0.9x normal volume, normally moves 6% a day. Stop $2.44.",
+  "Bought 516 FATE at 2.57 (cost \u00a31,002).",
+  "Sold FATE (about -\u00a341). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 1 trade(s), total -\u00a341."
+ ]
+}

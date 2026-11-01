@@ -1,0 +1,174 @@
+{
+ "date": "2026-09-11",
+ "generated": "2026-11-01T15:22+00:00",
+ "fx_gbpusd": 1.3509314060211182,
+ "result": "done",
+ "require_news": true,
+ "strategy": "breakout-market",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [],
+ "drift_list": [],
+ "list": [
+  {
+   "ticker": "FEIM",
+   "name": "Frequency Electronics, Inc.",
+   "vol_x": 2.52,
+   "buy_pct30": 0.5303041859618496,
+   "change": 0.33467611985426937,
+   "score": 5.16,
+   "news": [
+    "Frequency Electronics Q1 Revenue Rises 70% to Record $23.5 Million",
+    "Frequency Electronics Inc (FEIM) (Q1 2027) Earnings Call Highlights: Record Revenue, Surging ..."
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "UNTY",
+   "name": "Unity Bancorp, Inc.",
+   "vol_x": 0.44,
+   "buy_pct30": 0.9106812590296679,
+   "change": 0.029615840167219076,
+   "score": 5.02,
+   "news": [
+    "Unity Bancorp (UNTY) Upgraded to Buy: Here's What You Should Know"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "TEN",
+   "name": "Tsakos Energy Navigation Ltd",
+   "vol_x": 0.81,
+   "buy_pct30": 0.726346789902874,
+   "change": 0.0650861084097567,
+   "score": 4.03,
+   "news": [
+    "Tsakos Energy Navigation Ltd (TEN) (Q2 2026) Earnings Call Highlights: Record Net Income Surges ..."
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "NMAX",
+   "name": "Newsmax, Inc.",
+   "vol_x": 0.41,
+   "buy_pct30": 0.6335773166444062,
+   "change": 0.05919859738648059,
+   "score": 3.85,
+   "news": [
+    "AngelAi Launches Powerful National Newsmax Campaign to Combat Systemic Lending Bias and Protect U.S. Veterans Through AI-Driven Oversight"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "IBEX",
+   "name": "IBEX Limited",
+   "vol_x": 0.38,
+   "buy_pct30": 0.7842211108081674,
+   "change": 0.02388629212125748,
+   "score": 3.4,
+   "news": [
+    "IBEX Ltd (IBEX) (Q4 2026) Earnings Call Highlights: Record Revenue and AI-Driven Growth Momentum"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "IMPP",
+   "name": "Imperial Petroleum Inc.",
+   "vol_x": 0.72,
+   "buy_pct30": 0.5777840474381968,
+   "change": 0.03300623410347847,
+   "score": 3.25,
+   "news": [
+    "Imperial Petroleum Inc (IMPP) (Q2 2026) Earnings Call Highlights: Record Revenue, Debt-Free ..."
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "ORCL",
+   "vol_x": 0.87
+  },
+  {
+   "ticker": "PSIG",
+   "vol_x": 0.79
+  },
+  {
+   "ticker": "RCBC",
+   "vol_x": 0.56
+  },
+  {
+   "ticker": "USPH",
+   "vol_x": 0.46
+  },
+  {
+   "ticker": "KR",
+   "vol_x": 0.45
+  },
+  {
+   "ticker": "ATEC",
+   "vol_x": 0.43
+  },
+  {
+   "ticker": "FUNC",
+   "vol_x": 0.43
+  },
+  {
+   "ticker": "GRDN",
+   "vol_x": 0.42
+  },
+  {
+   "ticker": "IBRX",
+   "vol_x": 0.4
+  },
+  {
+   "ticker": "PFIS",
+   "vol_x": 0.39
+  },
+  {
+   "ticker": "GSBC",
+   "vol_x": 0.38
+  },
+  {
+   "ticker": "NKSH",
+   "vol_x": 0.38
+  },
+  {
+   "ticker": "OBIO",
+   "vol_x": 0.36
+  },
+  {
+   "ticker": "NAKA",
+   "vol_x": 0.35
+  },
+  {
+   "ticker": "AEHR",
+   "vol_x": 0.34
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "NMAX",
+   "bought_at": "2026-09-11T14:16+00:00",
+   "sold_at": "2026-09-11T19:50+00:00",
+   "entry": 11.76175,
+   "exit": 11.5,
+   "cost_gbp": 994.0184625695259,
+   "pl_gbp": -23.57688858815527,
+   "pl_pct": -0.023718763258389883,
+   "reason": "End of day: sold 10 minutes before the close."
+  }
+ ],
+ "total_gbp": -23.57688858815527,
+ "alerts": [
+  "10:16 Day trade: bought NMAX: 114 NMAX at $11.76 (about \u00a3994). Stop $11.17. Broke above its opening-range high ($11.64) at $11.75. In play: 0.4x normal volume, normally moves 5% a day. Stop $11.16.",
+  "15:50 Day trade: sold NMAX (-\u00a324): End of day: sold 10 minutes before the close. Result -\u00a324 (-2.4%).",
+  "15:50 Day trade summary: 1 trade(s) today: NMAX -\u00a324. Total -\u00a324."
+ ],
+ "log": [
+  "Day trade buy order: 114 NMAX at about $11.75. Broke above its opening-range high ($11.64) at $11.75. In play: 0.4x normal volume, normally moves 5% a day. Stop $11.16.",
+  "Bought 114 NMAX at 11.76 (cost \u00a3994).",
+  "Sold NMAX (about -\u00a324). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 1 trade(s), total -\u00a324."
+ ]
+}

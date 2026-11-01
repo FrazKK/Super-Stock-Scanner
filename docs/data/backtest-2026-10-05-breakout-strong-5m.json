@@ -1,0 +1,115 @@
+{
+ "date": "2026-10-05",
+ "generated": "2026-11-01T16:05+00:00",
+ "fx_gbpusd": 1.3242928981781006,
+ "result": "done",
+ "require_news": true,
+ "strategy": "breakout-strong",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [
+  "Added PAYO to today's list at 12:56 New York: 0.6x normal volume in the last 30 min; news: Payoneer Renews Partnership with Etsy Through 2029",
+  "Added SFL to today's list at 14:16 New York: 0.5x normal volume in the last 30 min; news: SFL - Newbuild order for two Very Large Ammonia Carriers in combination with lon",
+  "Added FATE to today's list at 15:04 New York: 0.9x normal volume in the last 30 min; news: Fate Therapeutics Reports New Employee Inducement Awards Under Nasdaq Listing Ru"
+ ],
+ "drift_list": [],
+ "list": [
+  {
+   "ticker": "VEEA",
+   "name": "Veea Inc.",
+   "vol_x": 4.05,
+   "buy_pct30": 0.3383687268783325,
+   "change": 0.678498481280776,
+   "score": 7.95,
+   "news": [
+    "Veea Announces TROLLEE Agreement for Phased Deployment of VeeaONE to 1,000 Unattended Stores"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "AIFA",
+   "name": "All In FutureTech Alliance, Inc.",
+   "vol_x": 0.98,
+   "buy_pct30": 0.2807867540119536,
+   "change": 0.16554816167532627,
+   "score": 1.58,
+   "news": [
+    "All In FutureTech Alliance Inc. Launches New Digital Platform for Consumers and Businesses, Advancing Its AI-Enabled Global Services Strategy"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "ALEC",
+   "vol_x": 61.26
+  },
+  {
+   "ticker": "PCVX",
+   "vol_x": 3.03
+  },
+  {
+   "ticker": "PMI",
+   "vol_x": 1.62
+  },
+  {
+   "ticker": "PAGS",
+   "vol_x": 1.51
+  },
+  {
+   "ticker": "STNE",
+   "vol_x": 1.49
+  },
+  {
+   "ticker": "XP",
+   "vol_x": 1.48
+  },
+  {
+   "ticker": "ACB",
+   "vol_x": 1.43
+  },
+  {
+   "ticker": "NAUT",
+   "vol_x": 1.26
+  },
+  {
+   "ticker": "INTR",
+   "vol_x": 1.25
+  },
+  {
+   "ticker": "ALVO",
+   "vol_x": 1.17
+  },
+  {
+   "ticker": "SOTK",
+   "vol_x": 0.87
+  },
+  {
+   "ticker": "NTWK",
+   "vol_x": 0.63
+  },
+  {
+   "ticker": "VST",
+   "vol_x": 0.54
+  },
+  {
+   "ticker": "NU",
+   "vol_x": 0.53
+  },
+  {
+   "ticker": "PXS",
+   "vol_x": 0.53
+  }
+ ],
+ "trades": [],
+ "total_gbp": 0,
+ "alerts": [
+  "15:50 Day trade summary: No trade today: nothing in play broke out."
+ ],
+ "log": [
+  "Added PAYO to today's list at 12:56 New York: 0.6x normal volume in the last 30 min; news: Payoneer Renews Partnership with Etsy Through 2029",
+  "Added SFL to today's list at 14:16 New York: 0.5x normal volume in the last 30 min; news: SFL - Newbuild order for two Very Large Ammonia Carriers in combination with lon",
+  "Added FATE to today's list at 15:04 New York: 0.9x normal volume in the last 30 min; news: Fate Therapeutics Reports New Employee Inducement Awards Under Nasdaq Listing Ru",
+  "Day trading finished: 0 trade(s), total +\u00a30."
+ ]
+}

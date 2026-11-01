@@ -1,11 +1,12 @@
 {
  "date": "2026-09-04",
- "generated": "2026-11-01T14:58+00:00",
+ "generated": "2026-11-01T15:11+00:00",
  "fx_gbpusd": 1.353179931640625,
  "result": "done",
  "require_news": true,
  "strategy": "breakout",
  "bars": "5m",
+ "require_trend": true,
  "added_during_day": [
   "Added FXNC to today's list at 12:40 New York: 0.3x normal volume in the last 30 min; news: All You Need to Know About FIRST NAT CP (FXNC) Rating Upgrade to Buy",
   "Added TARS to today's list at 15:20 New York: 0.4x normal volume in the last 30 min; news: Tarsus Pharmaceuticals Completes Acquisition of Alkeus Pharmaceuticals, Expandin"

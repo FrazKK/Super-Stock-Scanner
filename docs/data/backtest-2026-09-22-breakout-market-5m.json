@@ -1,0 +1,120 @@
+{
+ "date": "2026-09-22",
+ "generated": "2026-11-01T15:41+00:00",
+ "fx_gbpusd": 1.3370896577835083,
+ "result": "done",
+ "require_news": true,
+ "strategy": "breakout-market",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [
+  "Added SPNT to today's list at 11:36 New York: 1.4x normal volume in the last 30 min; news: SiriusPoint to Deliver Further Book Value Growth, Buybacks, RBC Capital Markets ",
+  "Added BMM to today's list at 15:20 New York: 0.7x normal volume in the last 30 min; news: Blue Moon Announces Initial Results from Assay Campaign of Historical Drilling a",
+  "Added SBMT to today's list at 15:20 New York: 0.7x normal volume in the last 30 min; news: Silver Bow Mining Signs Term Sheet with Ocean Partners for Potential US$88 Milli"
+ ],
+ "drift_list": [],
+ "list": [
+  {
+   "ticker": "VFF",
+   "name": "Village Farms International, Inc.",
+   "vol_x": 0.7,
+   "buy_pct30": 0.6627087552634415,
+   "change": 0.05677077279736831,
+   "score": 2.55,
+   "news": [
+    "Village Farms Eyes Global Cannabis Growth With EU GMP Edge and Net Cash"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "TAOX",
+   "vol_x": 0.7
+  },
+  {
+   "ticker": "SHOP",
+   "vol_x": 0.64
+  },
+  {
+   "ticker": "SUIG",
+   "vol_x": 0.6
+  },
+  {
+   "ticker": "VLN",
+   "vol_x": 0.59
+  },
+  {
+   "ticker": "CFFI",
+   "vol_x": 0.56
+  },
+  {
+   "ticker": "ENGN",
+   "vol_x": 0.53
+  },
+  {
+   "ticker": "HSDT",
+   "vol_x": 0.51
+  },
+  {
+   "ticker": "FOSL",
+   "vol_x": 0.48
+  },
+  {
+   "ticker": "FRAF",
+   "vol_x": 0.47
+  },
+  {
+   "ticker": "GEF.B",
+   "vol_x": 0.45
+  },
+  {
+   "ticker": "GCT",
+   "vol_x": 0.45
+  },
+  {
+   "ticker": "OMER",
+   "vol_x": 0.45
+  },
+  {
+   "ticker": "USDE",
+   "vol_x": 0.45
+  },
+  {
+   "ticker": "ESP",
+   "vol_x": 0.45
+  },
+  {
+   "ticker": "TWLO",
+   "vol_x": 0.4
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "BMM",
+   "bought_at": "2026-09-22T19:20+00:00",
+   "sold_at": "2026-09-22T19:50+00:00",
+   "entry": 5.780775095462799,
+   "exit": 5.84499979019165,
+   "cost_gbp": 1000.2037468747069,
+   "pl_gbp": 9.597610629237579,
+   "pl_pct": 0.009595655544409642,
+   "reason": "End of day: sold 10 minutes before the close."
+  }
+ ],
+ "total_gbp": 9.597610629237579,
+ "alerts": [
+  "15:20 Day trade: bought BMM: 231 BMM at $5.78 (about \u00a31,000). Stop $5.49. Broke above its opening-range high ($5.59) at $5.78. In play: 0.7x normal volume, normally moves 8% a day. Stop $5.49.",
+  "15:50 Day trade: sold BMM (+\u00a310): End of day: sold 10 minutes before the close. Result +\u00a310 (+1.0%).",
+  "15:50 Day trade summary: 1 trade(s) today: BMM +\u00a310. Total +\u00a310."
+ ],
+ "log": [
+  "Added SPNT to today's list at 11:36 New York: 1.4x normal volume in the last 30 min; news: SiriusPoint to Deliver Further Book Value Growth, Buybacks, RBC Capital Markets ",
+  "Added BMM to today's list at 15:20 New York: 0.7x normal volume in the last 30 min; news: Blue Moon Announces Initial Results from Assay Campaign of Historical Drilling a",
+  "Added SBMT to today's list at 15:20 New York: 0.7x normal volume in the last 30 min; news: Silver Bow Mining Signs Term Sheet with Ocean Partners for Potential US$88 Milli",
+  "Day trade buy order: 231 BMM at about $5.78. Broke above its opening-range high ($5.59) at $5.78. In play: 0.7x normal volume, normally moves 8% a day. Stop $5.49.",
+  "Bought 231 BMM at 5.78 (cost \u00a31,000).",
+  "Sold BMM (about +\u00a310). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 1 trade(s), total +\u00a310."
+ ]
+}

@@ -1,0 +1,261 @@
+{
+ "date": "2026-10-30",
+ "generated": "2026-11-01T16:58+00:00",
+ "fx_gbpusd": 1.3378641605377197,
+ "result": "done",
+ "require_news": true,
+ "strategy": "rotation",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [
+  "Added TFX to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; news: FDA Device Breakthrough Might Change The Case For Investing In Teleflex Stock (T",
+  "Added BSIN to today's list at 10:16 New York: 0.6x normal volume in the last 30 min; news: Big Sky Industrial Inc. Common Stock (BSIN) Institutional Ownership 2026 - Marke",
+  "Added CZFS to today's list at 10:32 New York: 0.4x normal volume in the last 30 min; news: Citizens Financial Services (CZFS) Q3 Earnings and Revenues Beat Estimates",
+  "Added PROF to today's list at 10:32 New York: 0.4x normal volume in the last 30 min; news: Profound Medical and Cook Medical\u2019s iMRI Division Partner to Expand U.S. TULSA-P",
+  "Added COOK to today's list at 10:32 New York: 0.4x normal volume in the last 30 min; news: Traeger, Inc.'s (NYSE:COOK) Path To Profitability - Simply Wall St",
+  "Added TASK to today's list at 11:36 New York: 0.4x normal volume in the last 30 min; news: 3,512,150 Shares in TaskUs, Inc. $TASK Purchased by Brooklands Fund Management L",
+  "Added FNRN to today's list at 12:08 New York: 0.5x normal volume in the last 30 min; news: First Northern Profit Rises 11.1% to $16.8 Million - grafa.com",
+  "Added FISV to today's list at 12:40 New York: 0.4x normal volume in the last 30 min; news: Fiserv (FISV) Launches Commerce Hub Globally",
+  "Added NOMD to today's list at 12:40 New York: 0.4x normal volume in the last 30 min; news: Learn Why The Bull Case For Nomad Foods Stock Could Change Following Earnings Es",
+  "Added WBI to today's list at 13:44 New York: 0.5x normal volume in the last 30 min; news: Why WaterBridge (WBI) is Poised to Beat Earnings Estimates Again",
+  "Added FRAF to today's list at 14:16 New York: 1.0x normal volume in the last 30 min; news: FRAF Q3 Earnings Rise Y/Y as Margin & Deposit Growth Improve"
+ ],
+ "drift_list": [],
+ "list": [
+  {
+   "ticker": "REGN",
+   "name": "Regeneron Pharmaceuticals, Inc.",
+   "vol_x": 1.18,
+   "buy_pct30": 0.8229069258159629,
+   "change": 0.1308243447053119,
+   "score": 6.15,
+   "news": [
+    "REGN Q3 Earnings Beat on Dupixent Profits & Eylea HD Growth, Stock Up"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "CPRI",
+   "name": "Capri Holdings Limited",
+   "vol_x": 0.71,
+   "buy_pct30": 0.7192977192413313,
+   "change": 0.15691161529038067,
+   "score": 4.8,
+   "news": [
+    "Capri Soars 17% on Earnings Beat and Raised Outlook: \u201cTrends Improved Sequentially Each Month\u201d",
+    "Capri shares surge 16% as profit beat helps it escape Wall Street sell-off"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "MEOH",
+   "name": "Methanex Corporation",
+   "vol_x": 0.91,
+   "buy_pct30": 0.6753426765396584,
+   "change": 0.09448700252495756,
+   "score": 4.52,
+   "news": [
+    "Methanex Shares In Focus After Earnings Beat And 5% Buyback Plan",
+    "Methanex Soars 14% on Earnings Beat as Middle East Conflict\u2019s \u201cDramatic Impact\u201d Lifts Methanol Prices"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "CBK",
+   "name": "Commercial Bancgroup, Inc.",
+   "vol_x": 0.45,
+   "buy_pct30": 0.7150976596815964,
+   "change": 0.004849949659643249,
+   "score": 4.26,
+   "news": [
+    "Commercial Bancgroup (CBK) Q3 Earnings Beat Meets Questions Over Staying Power",
+    "Commercial Bancgroup (CBK) Q3 Earnings Beat Meets Questions Over Staying Power - Yahoo Finance"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "GCBC",
+   "name": "Greene County Bancorp, Inc.",
+   "vol_x": 0.45,
+   "buy_pct30": 0.6320738514383856,
+   "change": 0.003066646602372325,
+   "score": 3.93,
+   "news": [
+    "Greene County Bancorp (NASDAQ:GCBC) Sees Large Volume Increase - Here's What Happened - MarketBeat"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "EXC",
+   "name": "Exelon Corporation",
+   "vol_x": 0.72,
+   "buy_pct30": 0.6681921544182906,
+   "change": 0.00969287075371894,
+   "score": 3.61,
+   "news": [
+    "EXC Q3 Earnings Beat Estimates on Higher Utility Rates, Sales Up Y/Y",
+    "Exelon Shares Gain 2% as Q3 Earnings and Revenue Beat Expectations"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "CVCO",
+   "name": "Cavco Industries, Inc.",
+   "vol_x": 0.61,
+   "buy_pct30": 0.5419584670101433,
+   "change": 0.13443582882452043,
+   "score": 3.39,
+   "news": [
+    "Cavco Soars 12% on Earnings Beat as \u201cData Center Workforce Housing\u201d Orders Arrive",
+    "Rising Backlogs and Scale Support Cavco Industries\u2019 (CVCO) Long-Term Growth Thesis"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "AZN",
+   "name": "AstraZeneca PLC",
+   "vol_x": 0.37,
+   "buy_pct30": 0.6890650334854593,
+   "change": 0.07264854965379874,
+   "score": 3.0,
+   "news": [
+    "Learn Why The Bull Case For AstraZeneca Stock Could Change Following Earnings Beat"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "BTSG",
+   "name": "BrightSpring Health Services, Inc.",
+   "vol_x": 0.43,
+   "buy_pct30": 0.5572797539691625,
+   "change": 0.12952499608521606,
+   "score": 2.59,
+   "news": [
+    "BrightSpring Soars 12% on Q3 Beat and Raised 2026 Guidance as Adjusted EBITDA Jumps 42%"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "ACCO",
+   "vol_x": 1.36
+  },
+  {
+   "ticker": "OSPN",
+   "vol_x": 1.23
+  },
+  {
+   "ticker": "PARK",
+   "vol_x": 0.82
+  },
+  {
+   "ticker": "GDYN",
+   "vol_x": 0.74
+  },
+  {
+   "ticker": "CDNA",
+   "vol_x": 0.67
+  },
+  {
+   "ticker": "FBIZ",
+   "vol_x": 0.59
+  },
+  {
+   "ticker": "NCPL",
+   "vol_x": 0.46
+  },
+  {
+   "ticker": "RRBI",
+   "vol_x": 0.39
+  },
+  {
+   "ticker": "LLY",
+   "vol_x": 0.34
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "REGN",
+   "bought_at": "2026-10-30T14:16+00:00",
+   "sold_at": "2026-10-30T15:16+00:00",
+   "entry": 917.0661744384764,
+   "exit": 914.5700073242188,
+   "cost_gbp": 686.4985256283347,
+   "pl_gbp": -2.8939906532509667,
+   "pl_pct": -0.0042155817459362645,
+   "reason": "No new high for 50 min, and PROF overtook it on buying volume (0.34x vs 0.13x normal in 30 min)."
+  },
+  {
+   "ticker": "PROF",
+   "bought_at": "2026-10-30T15:16+00:00",
+   "sold_at": "2026-10-30T16:02+00:00",
+   "entry": 6.4764697899818415,
+   "exit": 6.389999866485596,
+   "cost_gbp": 998.7217277457611,
+   "pl_gbp": -14.810198217259426,
+   "pl_pct": -0.014829153913260586,
+   "reason": "No new high for 46 min, and MEOH overtook it on buying volume (0.41x vs 0.15x normal in 30 min)."
+  },
+  {
+   "ticker": "MEOH",
+   "bought_at": "2026-10-30T16:02+00:00",
+   "sold_at": "2026-10-30T18:16+00:00",
+   "entry": 70.54047122192382,
+   "exit": 70.33000183105469,
+   "cost_gbp": 950.4949098916895,
+   "pl_gbp": -4.255321225099692,
+   "pl_pct": -0.004476953196503275,
+   "reason": "No new high for 76 min, and FRAF overtook it on buying volume (0.61x vs 0.07x normal in 30 min)."
+  },
+  {
+   "ticker": "FRAF",
+   "bought_at": "2026-10-30T18:16+00:00",
+   "sold_at": "2026-10-30T19:50+00:00",
+   "entry": 71.52144694519042,
+   "exit": 71.55000305175781,
+   "cost_gbp": 963.7130301500417,
+   "pl_gbp": -1.0592025641359442,
+   "pl_pct": -0.001099085029462594,
+   "reason": "End of day: sold 10 minutes before the close."
+  }
+ ],
+ "total_gbp": -23.01871265974603,
+ "alerts": [
+  "10:16 Day trade: bought REGN: 1 REGN at $917.07 (about \u00a3686). Stop $871.21. Highest first-30-minute volume on today's list (1.2x a normal day).",
+  "11:16 Day trade: sold REGN (-\u00a33): No new high for 50 min, and PROF overtook it on buying volume (0.34x vs 0.13x normal in 30 min). Result -\u00a33 (-0.4%).",
+  "11:16 Day trade: bought PROF: 206 PROF at $6.48 (about \u00a3999). Stop $6.15. Strongest buying on the list: 0.34x normal volume bought in the last 30 min, and rising.",
+  "12:02 Day trade: sold PROF (-\u00a315): No new high for 46 min, and MEOH overtook it on buying volume (0.41x vs 0.15x normal in 30 min). Result -\u00a315 (-1.5%).",
+  "12:02 Day trade: bought MEOH: 18 MEOH at $70.54 (about \u00a3950). Stop $67.01. Strongest buying on the list: 0.41x normal volume bought in the last 30 min, and rising.",
+  "14:16 Day trade: sold MEOH (-\u00a34): No new high for 76 min, and FRAF overtook it on buying volume (0.61x vs 0.07x normal in 30 min). Result -\u00a34 (-0.4%).",
+  "14:16 Day trade: bought FRAF: 18 FRAF at $71.52 (about \u00a3964). Stop $67.95. Strongest buying on the list: 0.61x normal volume bought in the last 30 min, and rising.",
+  "15:50 Day trade: sold FRAF (-\u00a31): End of day: sold 10 minutes before the close. Result -\u00a31 (-0.1%).",
+  "15:50 Day trade summary: 4 trade(s) today: REGN -\u00a33, PROF -\u00a315, MEOH -\u00a34, FRAF -\u00a31. Total -\u00a323."
+ ],
+ "log": [
+  "Added TFX to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; news: FDA Device Breakthrough Might Change The Case For Investing In Teleflex Stock (T",
+  "Added BSIN to today's list at 10:16 New York: 0.6x normal volume in the last 30 min; news: Big Sky Industrial Inc. Common Stock (BSIN) Institutional Ownership 2026 - Marke",
+  "Day trade buy order: 1 REGN at about $916.15. Highest first-30-minute volume on today's list (1.2x a normal day).",
+  "Bought 1 REGN at 917.07 (cost \u00a3686).",
+  "Added CZFS to today's list at 10:32 New York: 0.4x normal volume in the last 30 min; news: Citizens Financial Services (CZFS) Q3 Earnings and Revenues Beat Estimates",
+  "Added PROF to today's list at 10:32 New York: 0.4x normal volume in the last 30 min; news: Profound Medical and Cook Medical\u2019s iMRI Division Partner to Expand U.S. TULSA-P",
+  "Added COOK to today's list at 10:32 New York: 0.4x normal volume in the last 30 min; news: Traeger, Inc.'s (NYSE:COOK) Path To Profitability - Simply Wall St",
+  "Sold REGN (about -\u00a33). No new high for 50 min, and PROF overtook it on buying volume (0.34x vs 0.13x normal in 30 min).",
+  "Day trade buy order: 206 PROF at about $6.47. Strongest buying on the list: 0.34x normal volume bought in the last 30 min, and rising.",
+  "Bought 206 PROF at 6.48 (cost \u00a3999).",
+  "Added TASK to today's list at 11:36 New York: 0.4x normal volume in the last 30 min; news: 3,512,150 Shares in TaskUs, Inc. $TASK Purchased by Brooklands Fund Management L",
+  "Sold PROF (about -\u00a315). No new high for 46 min, and MEOH overtook it on buying volume (0.41x vs 0.15x normal in 30 min).",
+  "Day trade buy order: 18 MEOH at about $70.47. Strongest buying on the list: 0.41x normal volume bought in the last 30 min, and rising.",
+  "Bought 18 MEOH at 70.54 (cost \u00a3950).",
+  "Added FNRN to today's list at 12:08 New York: 0.5x normal volume in the last 30 min; news: First Northern Profit Rises 11.1% to $16.8 Million - grafa.com",
+  "Added FISV to today's list at 12:40 New York: 0.4x normal volume in the last 30 min; news: Fiserv (FISV) Launches Commerce Hub Globally",
+  "Added NOMD to today's list at 12:40 New York: 0.4x normal volume in the last 30 min; news: Learn Why The Bull Case For Nomad Foods Stock Could Change Following Earnings Es",
+  "Added WBI to today's list at 13:44 New York: 0.5x normal volume in the last 30 min; news: Why WaterBridge (WBI) is Poised to Beat Earnings Estimates Again",
+  "Added FRAF to today's list at 14:16 New York: 1.0x normal volume in the last 30 min; news: FRAF Q3 Earnings Rise Y/Y as Margin & Deposit Growth Improve",
+  "Sold MEOH (about -\u00a34). No new high for 76 min, and FRAF overtook it on buying volume (0.61x vs 0.07x normal in 30 min).",
+  "Day trade buy order: 18 FRAF at about $71.45. Strongest buying on the list: 0.61x normal volume bought in the last 30 min, and rising.",
+  "Bought 18 FRAF at 71.52 (cost \u00a3964).",
+  "Sold FRAF (about -\u00a31). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 4 trade(s), total -\u00a323."
+ ]
+}

@@ -1,0 +1,93 @@
+{
+ "date": "2026-09-24",
+ "generated": "2026-11-01T15:47+00:00",
+ "fx_gbpusd": 1.3241524696350098,
+ "result": "done",
+ "require_news": true,
+ "strategy": "breakout-strong",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [
+  "Added BSIN to today's list at 11:52 New York: 0.4x normal volume in the last 30 min; news: Big Sky Industrial Inc. to Participate in the Noble Capital Markets\u2019 Emerging Gr",
+  "Added VFF to today's list at 14:00 New York: 0.6x normal volume in the last 30 min; news: Village Farms Eyes Global Cannabis Growth With EU GMP Edge and Net Cash"
+ ],
+ "drift_list": [],
+ "list": [
+  {
+   "ticker": "TH",
+   "name": "Target Hospitality Corp.",
+   "vol_x": 0.43,
+   "buy_pct30": 0.7238039777458799,
+   "change": 0.008490490157991415,
+   "score": 4.26,
+   "news": [
+    "Is Target Hospitality\u2019s (TH) Big Buyback a Sign of Undervaluation or Insider Hesitation?"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "DGNX",
+   "name": "Diginex Limited",
+   "vol_x": 1.17,
+   "buy_pct30": 0.06357273195878561,
+   "change": 0.013605428936910968,
+   "score": 1.09,
+   "news": [
+    "Diginex Consolidates Group-Wide Expertise and Launches Sustainability Science & Intelligence Initiative to Accelerate Product Innovation and Drive Measurable Client Outcomes"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "NCPL",
+   "vol_x": 0.98
+  },
+  {
+   "ticker": "RSKD",
+   "vol_x": 0.69
+  },
+  {
+   "ticker": "BDSX",
+   "vol_x": 0.65
+  },
+  {
+   "ticker": "GFUZ",
+   "vol_x": 0.58
+  },
+  {
+   "ticker": "SECZ",
+   "vol_x": 0.48
+  },
+  {
+   "ticker": "QMCO",
+   "vol_x": 0.45
+  },
+  {
+   "ticker": "NBIS",
+   "vol_x": 0.38
+  },
+  {
+   "ticker": "GRAL",
+   "vol_x": 0.37
+  },
+  {
+   "ticker": "META",
+   "vol_x": 0.34
+  },
+  {
+   "ticker": "P",
+   "vol_x": 0.34
+  }
+ ],
+ "trades": [],
+ "total_gbp": 0,
+ "alerts": [
+  "15:50 Day trade summary: No trade today: nothing in play broke out."
+ ],
+ "log": [
+  "Added BSIN to today's list at 11:52 New York: 0.4x normal volume in the last 30 min; news: Big Sky Industrial Inc. to Participate in the Noble Capital Markets\u2019 Emerging Gr",
+  "Added VFF to today's list at 14:00 New York: 0.6x normal volume in the last 30 min; news: Village Farms Eyes Global Cannabis Growth With EU GMP Edge and Net Cash",
+  "Day trading finished: 0 trade(s), total +\u00a30."
+ ]
+}

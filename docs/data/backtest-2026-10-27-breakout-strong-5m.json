@@ -1,0 +1,114 @@
+{
+ "date": "2026-10-27",
+ "generated": "2026-11-01T16:51+00:00",
+ "fx_gbpusd": 1.334507703781128,
+ "result": "done",
+ "require_news": true,
+ "strategy": "breakout-strong",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [
+  "Added AEO to today's list at 10:16 New York: 0.4x normal volume in the last 30 min; news: American Eagle Outfitters (AEO) Surpasses Market Returns: Some Facts Worth Knowi",
+  "Added BOW to today's list at 10:16 New York: 1.3x normal volume in the last 30 min; news: Bowhead Specialty (NYSE:BOW) Sees Strong Trading Volume - What's Next? - MarketB",
+  "Added THFF to today's list at 10:16 New York: 0.5x normal volume in the last 30 min; news: First Financial Corp. (THFF) Q3 Earnings and Revenues Beat Estimates",
+  "Added AVBH to today's list at 10:16 New York: 0.4x normal volume in the last 30 min; news: Avidbank Holdings Inc. (AVBH) Q3 Earnings and Revenues Beat Estimates",
+  "Added TLS to today's list at 11:52 New York: 0.4x normal volume in the last 30 min; news: Why Telos (TLS) is Poised to Beat Earnings Estimates Again",
+  "Added INSG to today's list at 11:52 New York: 0.7x normal volume in the last 30 min; news: MarketBeat cites Hold consensus and USD 13.00 target for Inseego stock - ad-hoc-",
+  "Added DMRC to today's list at 14:16 New York: 0.3x normal volume in the last 30 min; news: Digimarc Returns from RGCA with Strong Market Interest in Its Next-Generation Gi"
+ ],
+ "drift_list": [],
+ "list": [
+  {
+   "ticker": "AEYE",
+   "name": "AudioEye, Inc.",
+   "vol_x": 2.0,
+   "buy_pct30": 0.724140580279027,
+   "change": 0.2749326065872417,
+   "score": 5.9,
+   "news": [
+    "AudioEye (AEYE) Q3 Earnings and Revenues Beat Estimates",
+    "AudioEye Reports Record Third Quarter 2026 Results"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "IQV",
+   "name": "IQVIA Holdings, Inc.",
+   "vol_x": 0.44,
+   "buy_pct30": 0.3393960452685072,
+   "change": 0.003654970678698133,
+   "score": 2.24,
+   "news": [
+    "IQVIA Holdings Q3 Earnings Beat Estimates, Revenues Increase 8% Y/Y",
+    "IQVIA\u2019s (NYSE:IQV) Q3 2026: beats on revenue"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "HWKN",
+   "name": "Hawkins, Inc.",
+   "vol_x": 0.58,
+   "buy_pct30": 0.29022875348750526,
+   "change": 0.1278056500780289,
+   "score": 1.82,
+   "news": [
+    "Hawkins (NASDAQ:HWKN) Shares Rise 8% After Q2 Earnings Exceed Estimates and Revenue Reaches $313.8 Million",
+    "Hawkins soars 12% on strong second quarter earnings beat"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "RCL",
+   "vol_x": 1.35
+  },
+  {
+   "ticker": "POM",
+   "vol_x": 1.35
+  },
+  {
+   "ticker": "KNSA",
+   "vol_x": 0.68
+  },
+  {
+   "ticker": "ESQ",
+   "vol_x": 0.57
+  },
+  {
+   "ticker": "QSI",
+   "vol_x": 0.43
+  },
+  {
+   "ticker": "LECO",
+   "vol_x": 0.39
+  },
+  {
+   "ticker": "NAUT",
+   "vol_x": 0.37
+  },
+  {
+   "ticker": "UPS",
+   "vol_x": 0.34
+  },
+  {
+   "ticker": "EAF",
+   "vol_x": 0.34
+  }
+ ],
+ "trades": [],
+ "total_gbp": 0,
+ "alerts": [
+  "15:50 Day trade summary: No trade today: nothing in play broke out."
+ ],
+ "log": [
+  "Added AEO to today's list at 10:16 New York: 0.4x normal volume in the last 30 min; news: American Eagle Outfitters (AEO) Surpasses Market Returns: Some Facts Worth Knowi",
+  "Added BOW to today's list at 10:16 New York: 1.3x normal volume in the last 30 min; news: Bowhead Specialty (NYSE:BOW) Sees Strong Trading Volume - What's Next? - MarketB",
+  "Added THFF to today's list at 10:16 New York: 0.5x normal volume in the last 30 min; news: First Financial Corp. (THFF) Q3 Earnings and Revenues Beat Estimates",
+  "Added AVBH to today's list at 10:16 New York: 0.4x normal volume in the last 30 min; news: Avidbank Holdings Inc. (AVBH) Q3 Earnings and Revenues Beat Estimates",
+  "Added TLS to today's list at 11:52 New York: 0.4x normal volume in the last 30 min; news: Why Telos (TLS) is Poised to Beat Earnings Estimates Again",
+  "Added INSG to today's list at 11:52 New York: 0.7x normal volume in the last 30 min; news: MarketBeat cites Hold consensus and USD 13.00 target for Inseego stock - ad-hoc-",
+  "Added DMRC to today's list at 14:16 New York: 0.3x normal volume in the last 30 min; news: Digimarc Returns from RGCA with Strong Market Interest in Its Next-Generation Gi",
+  "Day trading finished: 0 trade(s), total +\u00a30."
+ ]
+}

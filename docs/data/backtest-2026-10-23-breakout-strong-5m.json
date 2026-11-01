@@ -1,0 +1,64 @@
+{
+ "date": "2026-10-23",
+ "generated": "2026-11-01T16:44+00:00",
+ "fx_gbpusd": 1.3403927087783813,
+ "result": "done",
+ "require_news": true,
+ "strategy": "breakout-strong",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [
+  "Added CUBI to today's list at 14:32 New York: 0.3x normal volume in the last 30 min; news: Is Customers Bancorp (CUBI) Undervalued As Earnings Beat And 2026 Guidance Rise?"
+ ],
+ "drift_list": [],
+ "list": [
+  {
+   "ticker": "FCNCA",
+   "name": "First Citizens BancShares, Inc.",
+   "vol_x": 0.47,
+   "buy_pct30": 0.49157639673724524,
+   "change": 0.06266953206676784,
+   "score": 3.91,
+   "news": [
+    "First Citizens Soars 8% on Q3 Earnings Beat and New $1.2 Billion Buyback",
+    "First Citizens BancShares (NASDAQ:FCNCA) reports upbeat Q3 2026"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "BOLT",
+   "vol_x": 8.26
+  },
+  {
+   "ticker": "YMAT",
+   "vol_x": 1.62
+  },
+  {
+   "ticker": "EDHL",
+   "vol_x": 0.84
+  },
+  {
+   "ticker": "RNG",
+   "vol_x": 0.66
+  },
+  {
+   "ticker": "MWYN",
+   "vol_x": 0.46
+  },
+  {
+   "ticker": "BWLP",
+   "vol_x": 0.38
+  }
+ ],
+ "trades": [],
+ "total_gbp": 0,
+ "alerts": [
+  "15:50 Day trade summary: No trade today: nothing in play broke out."
+ ],
+ "log": [
+  "Added CUBI to today's list at 14:32 New York: 0.3x normal volume in the last 30 min; news: Is Customers Bancorp (CUBI) Undervalued As Earnings Beat And 2026 Guidance Rise?",
+  "Day trading finished: 0 trade(s), total +\u00a30."
+ ]
+}

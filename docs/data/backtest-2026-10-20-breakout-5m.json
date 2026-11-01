@@ -1,0 +1,95 @@
+{
+ "date": "2026-10-20",
+ "generated": "2026-11-01T16:36+00:00",
+ "fx_gbpusd": 1.330849051475525,
+ "result": "done",
+ "require_news": true,
+ "strategy": "breakout",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [
+  "Added WCCB to today's list at 11:04 New York: 0.6x normal volume in the last 30 min; news: West Coast Community Bank Continues Expansion with New Full-Service Branch in Sa",
+  "Added LION to today's list at 12:40 New York: 0.5x normal volume in the last 30 min; news: Lionsgate shares spike as Legendary Entertainment revives takeover talks",
+  "Added NWFL to today's list at 12:56 New York: 0.4x normal volume in the last 30 min; news: Norwood Financial Corp. (NWFL) Reports Next Week: Wall Street Expects Earnings G"
+ ],
+ "drift_list": [],
+ "list": [
+  {
+   "ticker": "MYGN",
+   "name": "Myriad Genetics, Inc.",
+   "vol_x": 6.61,
+   "buy_pct30": 0.48811705318602866,
+   "change": 0.33135391170697504,
+   "score": 13.67,
+   "news": [
+    "Myriad Genetics and Labcorp Announce Definitive Agreement for Myriad to Sell Prenatal Health Testing Business to Labcorp"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "BRZE",
+   "vol_x": 10.83
+  },
+  {
+   "ticker": "HAS",
+   "vol_x": 1.29
+  },
+  {
+   "ticker": "TMP",
+   "vol_x": 0.85
+  },
+  {
+   "ticker": "QNBC",
+   "vol_x": 0.78
+  },
+  {
+   "ticker": "HLT",
+   "vol_x": 0.56
+  },
+  {
+   "ticker": "EDHL",
+   "vol_x": 0.56
+  },
+  {
+   "ticker": "MMM",
+   "vol_x": 0.55
+  },
+  {
+   "ticker": "FBIZ",
+   "vol_x": 0.49
+  },
+  {
+   "ticker": "COSO",
+   "vol_x": 0.49
+  },
+  {
+   "ticker": "NPK",
+   "vol_x": 0.47
+  },
+  {
+   "ticker": "BRBS",
+   "vol_x": 0.36
+  },
+  {
+   "ticker": "BAP",
+   "vol_x": 0.34
+  },
+  {
+   "ticker": "PDS",
+   "vol_x": 0.34
+  }
+ ],
+ "trades": [],
+ "total_gbp": 0,
+ "alerts": [
+  "15:50 Day trade summary: No trade today: nothing in play broke out."
+ ],
+ "log": [
+  "Added WCCB to today's list at 11:04 New York: 0.6x normal volume in the last 30 min; news: West Coast Community Bank Continues Expansion with New Full-Service Branch in Sa",
+  "Added LION to today's list at 12:40 New York: 0.5x normal volume in the last 30 min; news: Lionsgate shares spike as Legendary Entertainment revives takeover talks",
+  "Added NWFL to today's list at 12:56 New York: 0.4x normal volume in the last 30 min; news: Norwood Financial Corp. (NWFL) Reports Next Week: Wall Street Expects Earnings G",
+  "Day trading finished: 0 trade(s), total +\u00a30."
+ ]
+}

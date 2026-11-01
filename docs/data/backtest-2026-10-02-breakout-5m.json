@@ -1,0 +1,88 @@
+{
+ "date": "2026-10-02",
+ "generated": "2026-11-01T16:01+00:00",
+ "fx_gbpusd": 1.3199577331542969,
+ "result": "done",
+ "require_news": true,
+ "strategy": "breakout",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [
+  "Added UTZ to today's list at 10:16 New York: 0.9x normal volume in the last 30 min; news: All You Need to Know About Utz Brands (UTZ) Rating Upgrade to Buy",
+  "Added BOW to today's list at 15:04 New York: 0.6x normal volume in the last 30 min; news: Bowhead Specialty Holdings Inc. (BOW) Upgraded to Buy: What Does It Mean for the"
+ ],
+ "drift_list": [],
+ "list": [],
+ "quiet": [
+  {
+   "ticker": "SYNA",
+   "vol_x": 4.74
+  },
+  {
+   "ticker": "NNBR",
+   "vol_x": 0.63
+  },
+  {
+   "ticker": "FEAM",
+   "vol_x": 0.48
+  },
+  {
+   "ticker": "OPY",
+   "vol_x": 0.46
+  },
+  {
+   "ticker": "WTBA",
+   "vol_x": 0.46
+  },
+  {
+   "ticker": "BIRD",
+   "vol_x": 0.45
+  },
+  {
+   "ticker": "CHPT",
+   "vol_x": 0.4
+  },
+  {
+   "ticker": "OCC",
+   "vol_x": 0.39
+  },
+  {
+   "ticker": "WK",
+   "vol_x": 0.38
+  },
+  {
+   "ticker": "FNRN",
+   "vol_x": 0.38
+  },
+  {
+   "ticker": "TSLA",
+   "vol_x": 0.36
+  },
+  {
+   "ticker": "WOLF",
+   "vol_x": 0.36
+  },
+  {
+   "ticker": "RKLB",
+   "vol_x": 0.35
+  },
+  {
+   "ticker": "IBRX",
+   "vol_x": 0.35
+  },
+  {
+   "ticker": "NVDA",
+   "vol_x": 0.34
+  }
+ ],
+ "trades": [],
+ "total_gbp": 0,
+ "alerts": [
+  "15:50 Day trade summary: No trade today: nothing in play broke out."
+ ],
+ "log": [
+  "Added UTZ to today's list at 10:16 New York: 0.9x normal volume in the last 30 min; news: All You Need to Know About Utz Brands (UTZ) Rating Upgrade to Buy",
+  "Added BOW to today's list at 15:04 New York: 0.6x normal volume in the last 30 min; news: Bowhead Specialty Holdings Inc. (BOW) Upgraded to Buy: What Does It Mean for the",
+  "Day trading finished: 0 trade(s), total +\u00a30."
+ ]
+}

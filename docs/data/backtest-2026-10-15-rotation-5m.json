@@ -1,0 +1,73 @@
+{
+ "date": "2026-10-15",
+ "generated": "2026-11-01T16:27+00:00",
+ "fx_gbpusd": 1.3230137825012207,
+ "result": "done",
+ "require_news": true,
+ "strategy": "rotation",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [
+  "Added NRXS to today's list at 12:08 New York: 0.5x normal volume in the last 30 min; news: NeurAxis Announces Medical Policy Coverage Milestone, Expanding Access to 26 Mil",
+  "Added ANDG to today's list at 12:24 New York: 0.3x normal volume in the last 30 min; news: Andersen Group Closes Four Consulting Acquisitions, Accelerating Global Expansio",
+  "Added VSTM to today's list at 13:44 New York: 0.3x normal volume in the last 30 min; news: Verastem\u2019s KRAS inhibitor posts wins in mPDAC, mCRC and NSCLC",
+  "Added GXO to today's list at 15:04 New York: 0.5x normal volume in the last 30 min; news: GXO and Action Expand Partnership in France"
+ ],
+ "drift_list": [],
+ "list": [],
+ "quiet": [
+  {
+   "ticker": "OPK",
+   "vol_x": 17.51
+  },
+  {
+   "ticker": "NCPL",
+   "vol_x": 1.77
+  },
+  {
+   "ticker": "CANG",
+   "vol_x": 0.89
+  },
+  {
+   "ticker": "BCAL",
+   "vol_x": 0.6
+  },
+  {
+   "ticker": "WMT",
+   "vol_x": 0.43
+  },
+  {
+   "ticker": "NTWK",
+   "vol_x": 0.39
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "NRXS",
+   "bought_at": "2026-10-15T16:08+00:00",
+   "sold_at": "2026-10-15T19:50+00:00",
+   "entry": 7.334527135848998,
+   "exit": 7.675000190734863,
+   "cost_gbp": 999.3812795206304,
+   "pl_gbp": 44.825555362437626,
+   "pl_pct": 0.04485330702205963,
+   "reason": "End of day: sold 10 minutes before the close."
+  }
+ ],
+ "total_gbp": 44.825555362437626,
+ "alerts": [
+  "12:08 Day trade: bought NRXS: 180 NRXS at $7.33 (about \u00a3999). Stop $6.97. Highest first-30-minute volume on today's list (0.5x a normal day).",
+  "15:50 Day trade: sold NRXS (+\u00a345): End of day: sold 10 minutes before the close. Result +\u00a345 (+4.5%).",
+  "15:50 Day trade summary: 1 trade(s) today: NRXS +\u00a345. Total +\u00a345."
+ ],
+ "log": [
+  "Added NRXS to today's list at 12:08 New York: 0.5x normal volume in the last 30 min; news: NeurAxis Announces Medical Policy Coverage Milestone, Expanding Access to 26 Mil",
+  "Day trade buy order: 180 NRXS at about $7.33. Highest first-30-minute volume on today's list (0.5x a normal day).",
+  "Bought 180 NRXS at 7.33 (cost \u00a3999).",
+  "Added ANDG to today's list at 12:24 New York: 0.3x normal volume in the last 30 min; news: Andersen Group Closes Four Consulting Acquisitions, Accelerating Global Expansio",
+  "Added VSTM to today's list at 13:44 New York: 0.3x normal volume in the last 30 min; news: Verastem\u2019s KRAS inhibitor posts wins in mPDAC, mCRC and NSCLC",
+  "Added GXO to today's list at 15:04 New York: 0.5x normal volume in the last 30 min; news: GXO and Action Expand Partnership in France",
+  "Sold NRXS (about +\u00a345). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 1 trade(s), total +\u00a345."
+ ]
+}

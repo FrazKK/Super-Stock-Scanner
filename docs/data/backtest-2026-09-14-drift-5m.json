@@ -1,0 +1,168 @@
+{
+ "date": "2026-09-14",
+ "generated": "2026-11-01T15:25+00:00",
+ "fx_gbpusd": 1.3525760173797607,
+ "result": "done",
+ "require_news": true,
+ "strategy": "drift",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [],
+ "drift_list": [
+  {
+   "ticker": "IBEX",
+   "name": "IBEX Limited",
+   "price": 40.61000061035156,
+   "why": "News in the last 5 days (IBEX Ltd (IBEX) (Q4 2026) Earnings Call Highlights: Record Revenue and AI-Driven); closed up yesterday (+6.8%) on 2.5x normal volume; above today's open at 10:00 New York."
+  },
+  {
+   "ticker": "JILL",
+   "name": "J. Jill, Inc.",
+   "price": 24.149999618530273,
+   "why": "News in the last 5 days (J.Jill Inc (JILL) (Q2 2026) Earnings Call Highlights: Strategic Investments and ); closed up yesterday (+5.8%) on 2.2x normal volume; above today's open at 10:00 New York."
+  },
+  {
+   "ticker": "GLOO",
+   "name": "Gloo Holdings, Inc.",
+   "price": 3.6050000190734863,
+   "why": "News in the last 5 days (Gloo Holdings Inc (GLOO) Q2 2026 Earnings Call Highlights: Revenue Surges 188% a); closed up yesterday (+10.8%) on 2.2x normal volume; above today's open at 10:00 New York."
+  },
+  {
+   "ticker": "NMAX",
+   "name": "Newsmax, Inc.",
+   "price": 11.449999809265137,
+   "why": "News in the last 5 days (AngelAi Launches Powerful National Newsmax Campaign to Combat Systemic Lending B); closed up yesterday (+3.7%) on 2.1x normal volume; above today's open at 10:00 New York."
+  },
+  {
+   "ticker": "RFIL",
+   "name": "RF Industries, Ltd.",
+   "price": 9.829999923706055,
+   "why": "News in the last 5 days (RF Industries Ltd (RFIL) (Q3 2026) Earnings Call Highlights: Record Revenue and ); closed up yesterday (+1.3%) on 1.9x normal volume; above today's open at 10:00 New York."
+  }
+ ],
+ "list": [
+  {
+   "ticker": "SBC",
+   "name": "SBC Medical Group Holdings Incorporated",
+   "vol_x": 0.52,
+   "buy_pct30": 0.957834502973044,
+   "change": 0.03139010432469913,
+   "score": 4.37,
+   "news": [
+    "SBC Medical to Attend the ArcStone-Kingswood Growth Summit 2026 in Toronto"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "GLOO",
+   "name": "Gloo Holdings, Inc.",
+   "vol_x": 0.39,
+   "buy_pct30": 0.652148900984188,
+   "change": 0.082582613113509,
+   "score": 2.89,
+   "news": [
+    "Gloo Holdings Inc (GLOO) Q2 2026 Earnings Call Highlights: Revenue Surges 188% as Profitability ..."
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "IMPP",
+   "name": "Imperial Petroleum Inc.",
+   "vol_x": 0.64,
+   "buy_pct30": 0.6122291362559115,
+   "change": 0.012089839744830355,
+   "score": 2.23,
+   "news": [
+    "Imperial Petroleum Inc (IMPP) (Q2 2026) Earnings Call Highlights: Record Revenue, Debt-Free ..."
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "ELMT",
+   "vol_x": 23.86
+  },
+  {
+   "ticker": "BWIN",
+   "vol_x": 11.29
+  },
+  {
+   "ticker": "DV",
+   "vol_x": 5.33
+  },
+  {
+   "ticker": "VNCE",
+   "vol_x": 4.08
+  },
+  {
+   "ticker": "BMM",
+   "vol_x": 3.23
+  },
+  {
+   "ticker": "ALLT",
+   "vol_x": 2.33
+  },
+  {
+   "ticker": "SFST",
+   "vol_x": 0.98
+  },
+  {
+   "ticker": "CRVL",
+   "vol_x": 0.82
+  },
+  {
+   "ticker": "CODA",
+   "vol_x": 0.8
+  },
+  {
+   "ticker": "STIM",
+   "vol_x": 0.78
+  },
+  {
+   "ticker": "KMDA",
+   "vol_x": 0.72
+  },
+  {
+   "ticker": "USCB",
+   "vol_x": 0.57
+  },
+  {
+   "ticker": "CRWD",
+   "vol_x": 0.48
+  },
+  {
+   "ticker": "PMI",
+   "vol_x": 0.47
+  },
+  {
+   "ticker": "PSIG",
+   "vol_x": 0.44
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "IBEX",
+   "bought_at": "2026-09-14T14:16+00:00",
+   "sold_at": "2026-09-14T19:50+00:00",
+   "entry": 41.31627652740478,
+   "exit": 40.41999816894531,
+   "cost_gbp": 1009.5419876937534,
+   "pl_gbp": -23.379345124371298,
+   "pl_pct": -0.023158368259432384,
+   "reason": "End of day: sold 10 minutes before the close."
+  }
+ ],
+ "total_gbp": -23.379345124371298,
+ "alerts": [
+  "10:16 Day trade: bought IBEX: 33 IBEX at $41.32 (about \u00a31,010). Stop $39.25. News in the last 5 days (IBEX Ltd (IBEX) (Q4 2026) Earnings Call Highlights: Record Revenue and AI-Driven); closed up yesterday (+6.8%) on 2.5x normal volume; above today's open at 10:00 New York.",
+  "15:50 Day trade: sold IBEX (-\u00a323): End of day: sold 10 minutes before the close. Result -\u00a323 (-2.3%).",
+  "15:50 Day trade summary: IBEX: -\u00a323 today."
+ ],
+ "log": [
+  "Day trade buy order: 33 IBEX at about $40.61. News in the last 5 days (IBEX Ltd (IBEX) (Q4 2026) Earnings Call Highlights: Record Revenue and AI-Driven); closed up yesterday (+6.8%) on 2.5x normal volume; above today's open at 10:00 New York.",
+  "Bought 33 IBEX at 41.32 (cost \u00a31,010).",
+  "Sold IBEX (about -\u00a323). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 1 trade(s), total -\u00a323."
+ ]
+}

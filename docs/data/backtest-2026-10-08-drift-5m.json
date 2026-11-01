@@ -1,0 +1,121 @@
+{
+ "date": "2026-10-08",
+ "generated": "2026-11-01T16:15+00:00",
+ "fx_gbpusd": 1.3214927911758423,
+ "result": "done",
+ "require_news": true,
+ "strategy": "drift",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [],
+ "drift_list": [
+  {
+   "ticker": "INTR",
+   "name": "Inter & Co. Inc.",
+   "price": 7.239999771118164,
+   "why": "News in the last 5 days (Inter & Co (INTR) Is Up 34.5% After Highlighting Its AI SuperApp Momentum And Ma); closed up yesterday (+2.1%) on 1.7x normal volume; above today's open at 10:00 New York."
+  },
+  {
+   "ticker": "RPD",
+   "name": "Rapid7, Inc.",
+   "price": 12.75,
+   "why": "News in the last 5 days (Rapid7 Launches Rapid7 Intelligence to Harness Threat Data Against Attackers); closed up yesterday (+1.8%) on 1.7x normal volume; above today's open at 10:00 New York."
+  },
+  {
+   "ticker": "RSKD",
+   "name": "Riskified Ltd.",
+   "price": 8.177499771118164,
+   "why": "News in the last 5 days (Riskified Launches Agent Identity Risk Intelligence: Know Who Is Behind AI Perso); closed up yesterday (+3.3%) on 1.3x normal volume; above today's open at 10:00 New York."
+  }
+ ],
+ "list": [
+  {
+   "ticker": "GFUZ",
+   "name": "General Fusion Group Ltd.",
+   "vol_x": 1.95,
+   "buy_pct30": 0.578486840868069,
+   "change": 0.12434212941046918,
+   "score": 6.21,
+   "news": [
+    "General Fusion Achieves World-First 1 keV Electron Temperature Milestone on its Path to Commercial Fusion Power",
+    "General Fusion, UKAEA Announce Magnetized Target Fusion Milestone"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "WOLF",
+   "vol_x": 2.22
+  },
+  {
+   "ticker": "HAE",
+   "vol_x": 1.59
+  },
+  {
+   "ticker": "HELE",
+   "vol_x": 1.42
+  },
+  {
+   "ticker": "MANE",
+   "vol_x": 1.1
+  },
+  {
+   "ticker": "RCMT",
+   "vol_x": 0.89
+  },
+  {
+   "ticker": "PLTR",
+   "vol_x": 0.88
+  },
+  {
+   "ticker": "ASC",
+   "vol_x": 0.8
+  },
+  {
+   "ticker": "GFS",
+   "vol_x": 0.73
+  },
+  {
+   "ticker": "ADCT",
+   "vol_x": 0.62
+  },
+  {
+   "ticker": "FEAM",
+   "vol_x": 0.43
+  },
+  {
+   "ticker": "OPY",
+   "vol_x": 0.39
+  },
+  {
+   "ticker": "BORR",
+   "vol_x": 0.34
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "INTR",
+   "bought_at": "2026-10-08T14:16+00:00",
+   "sold_at": "2026-10-08T19:50+00:00",
+   "entry": 7.268461151123046,
+   "exit": 7.28000020980835,
+   "cost_gbp": 1002.5360927015172,
+   "pl_gbp": 0.08764238991091133,
+   "pl_pct": 8.742068295490774e-05,
+   "reason": "End of day: sold 10 minutes before the close."
+  }
+ ],
+ "total_gbp": 0.08764238991091133,
+ "alerts": [
+  "10:16 Day trade: bought INTR: 182 INTR at $7.27 (about \u00a31,003). Stop $6.91. News in the last 5 days (Inter & Co (INTR) Is Up 34.5% After Highlighting Its AI SuperApp Momentum And Ma); closed up yesterday (+2.1%) on 1.7x normal volume; above today's open at 10:00 New York.",
+  "15:50 Day trade: sold INTR (+\u00a30): End of day: sold 10 minutes before the close. Result +\u00a30 (+0.0%).",
+  "15:50 Day trade summary: INTR: +\u00a30 today."
+ ],
+ "log": [
+  "Day trade buy order: 182 INTR at about $7.24. News in the last 5 days (Inter & Co (INTR) Is Up 34.5% After Highlighting Its AI SuperApp Momentum And Ma); closed up yesterday (+2.1%) on 1.7x normal volume; above today's open at 10:00 New York.",
+  "Bought 182 INTR at 7.27 (cost \u00a31,003).",
+  "Sold INTR (about +\u00a30). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 1 trade(s), total +\u00a30."
+ ]
+}

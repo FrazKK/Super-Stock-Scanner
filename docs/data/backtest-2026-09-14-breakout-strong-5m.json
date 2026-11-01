@@ -1,0 +1,123 @@
+{
+ "date": "2026-09-14",
+ "generated": "2026-11-01T15:24+00:00",
+ "fx_gbpusd": 1.3525760173797607,
+ "result": "done",
+ "require_news": true,
+ "strategy": "breakout-strong",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [
+  "Added GRO to today's list at 12:40 New York: 0.5x normal volume in the last 30 min; news: Brazil Potash Reduces Upfront Capex with 28-Year Construction & Backup Power Con"
+ ],
+ "drift_list": [],
+ "list": [
+  {
+   "ticker": "SBC",
+   "name": "SBC Medical Group Holdings Incorporated",
+   "vol_x": 0.52,
+   "buy_pct30": 0.9579809332912462,
+   "change": 0.03139010432469913,
+   "score": 4.37,
+   "news": [
+    "SBC Medical to Attend the ArcStone-Kingswood Growth Summit 2026 in Toronto"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "GLOO",
+   "name": "Gloo Holdings, Inc.",
+   "vol_x": 0.39,
+   "buy_pct30": 0.652148900984188,
+   "change": 0.082582613113509,
+   "score": 2.89,
+   "news": [
+    "Gloo Holdings Inc (GLOO) Q2 2026 Earnings Call Highlights: Revenue Surges 188% as Profitability ..."
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "IMPP",
+   "name": "Imperial Petroleum Inc.",
+   "vol_x": 0.64,
+   "buy_pct30": 0.6122291362559115,
+   "change": 0.012089839744830355,
+   "score": 2.23,
+   "news": [
+    "Imperial Petroleum Inc (IMPP) (Q2 2026) Earnings Call Highlights: Record Revenue, Debt-Free ..."
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "ELMT",
+   "vol_x": 23.86
+  },
+  {
+   "ticker": "BWIN",
+   "vol_x": 11.29
+  },
+  {
+   "ticker": "DV",
+   "vol_x": 5.33
+  },
+  {
+   "ticker": "VNCE",
+   "vol_x": 4.08
+  },
+  {
+   "ticker": "BMM",
+   "vol_x": 3.23
+  },
+  {
+   "ticker": "ALLT",
+   "vol_x": 2.33
+  },
+  {
+   "ticker": "SFST",
+   "vol_x": 0.98
+  },
+  {
+   "ticker": "CRVL",
+   "vol_x": 0.82
+  },
+  {
+   "ticker": "CODA",
+   "vol_x": 0.8
+  },
+  {
+   "ticker": "STIM",
+   "vol_x": 0.78
+  },
+  {
+   "ticker": "KMDA",
+   "vol_x": 0.72
+  },
+  {
+   "ticker": "USCB",
+   "vol_x": 0.57
+  },
+  {
+   "ticker": "CRWD",
+   "vol_x": 0.48
+  },
+  {
+   "ticker": "PMI",
+   "vol_x": 0.47
+  },
+  {
+   "ticker": "PSIG",
+   "vol_x": 0.44
+  }
+ ],
+ "trades": [],
+ "total_gbp": 0,
+ "alerts": [
+  "15:50 Day trade summary: No trade today: nothing in play broke out."
+ ],
+ "log": [
+  "Added GRO to today's list at 12:40 New York: 0.5x normal volume in the last 30 min; news: Brazil Potash Reduces Upfront Capex with 28-Year Construction & Backup Power Con",
+  "Day trading finished: 0 trade(s), total +\u00a30."
+ ]
+}

@@ -1,0 +1,179 @@
+{
+ "date": "2026-10-22",
+ "generated": "2026-11-01T16:42+00:00",
+ "fx_gbpusd": 1.339566707611084,
+ "result": "done",
+ "require_news": true,
+ "strategy": "rotation",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [
+  "Added WCCB to today's list at 10:32 New York: 0.5x normal volume in the last 30 min; news: West Coast Community Bank Continues Expansion with New Full-Service Branch in Sa",
+  "Added PEBK to today's list at 11:04 New York: 0.7x normal volume in the last 30 min; news: Peoples Bancorp Stock Slips Post Q3 Earnings Despite NIM Expansion",
+  "Added CENTA to today's list at 12:40 New York: 0.4x normal volume in the last 30 min; news: Central Garden & Pet Acquires Burpee, an Iconic Brand in the Packet Seed and You",
+  "Added MET to today's list at 13:28 New York: 0.3x normal volume in the last 30 min; news: MetLife's ChatGPT Integration Opens a New Pet Insurance Growth Avenue"
+ ],
+ "drift_list": [],
+ "list": [
+  {
+   "ticker": "QCRH",
+   "name": "QCR Holdings, Inc.",
+   "vol_x": 0.36,
+   "buy_pct30": 0.598711741943675,
+   "change": 0.017090549184474613,
+   "score": 4.11,
+   "news": [
+    "Does Record Earnings Beat Change The Bull Case For QCR Holdings Stock (QCRH)?",
+    "QCR Holdings (QCRH) Stock Climbs As Q3 Earnings Extend Record Profitability"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "MKTX",
+   "name": "MarketAxess Holdings, Inc.",
+   "vol_x": 0.46,
+   "buy_pct30": 0.5201345991405667,
+   "change": 0.00383541278388555,
+   "score": 2.5,
+   "news": [
+    "Will MarketAxess (MKTX) Beat Estimates Again in Its Next Earnings Report?"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "CBZ",
+   "name": "CBIZ, Inc.",
+   "vol_x": 0.37,
+   "buy_pct30": 0.5159039895083872,
+   "change": 0.0005177834445333485,
+   "score": 2.3,
+   "news": [
+    "CBIZ (CBZ) Q3 Results Put Profit Momentum Ahead Of A Tepid Stock Reaction"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "QGEN",
+   "vol_x": 4.28
+  },
+  {
+   "ticker": "EDHL",
+   "vol_x": 1.01
+  },
+  {
+   "ticker": "RRBI",
+   "vol_x": 0.87
+  },
+  {
+   "ticker": "SPOT",
+   "vol_x": 0.8
+  },
+  {
+   "ticker": "ROKU",
+   "vol_x": 0.78
+  },
+  {
+   "ticker": "PG",
+   "vol_x": 0.6
+  },
+  {
+   "ticker": "HLP",
+   "vol_x": 0.54
+  },
+  {
+   "ticker": "FMAO",
+   "vol_x": 0.52
+  },
+  {
+   "ticker": "FBP",
+   "vol_x": 0.44
+  },
+  {
+   "ticker": "CSX",
+   "vol_x": 0.39
+  },
+  {
+   "ticker": "ULTA",
+   "vol_x": 0.39
+  },
+  {
+   "ticker": "BPRN",
+   "vol_x": 0.39
+  },
+  {
+   "ticker": "URI",
+   "vol_x": 0.38
+  },
+  {
+   "ticker": "TSLA",
+   "vol_x": 0.37
+  },
+  {
+   "ticker": "ALLE",
+   "vol_x": 0.35
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "MKTX",
+   "bought_at": "2026-10-22T14:16+00:00",
+   "sold_at": "2026-10-22T15:04+00:00",
+   "entry": 164.9748075561523,
+   "exit": 164.85499572753906,
+   "cost_gbp": 986.7206691759944,
+   "pl_gbp": -2.1933900737349177,
+   "pl_pct": -0.0022229088152846813,
+   "reason": "No new high for 48 min, and PEBK overtook it on buying volume (0.59x vs 0.06x normal in 30 min)."
+  },
+  {
+   "ticker": "PEBK",
+   "bought_at": "2026-10-22T15:04+00:00",
+   "sold_at": "2026-10-22T16:40+00:00",
+   "entry": 44.28424168014526,
+   "exit": 44.25,
+   "cost_gbp": 993.2465727315268,
+   "pl_gbp": -2.2544911446404967,
+   "pl_pct": -0.0022698202103435625,
+   "reason": "No new high for 94 min, and CENTA overtook it on buying volume (0.40x vs 0.04x normal in 30 min)."
+  },
+  {
+   "ticker": "CENTA",
+   "bought_at": "2026-10-22T16:40+00:00",
+   "sold_at": "2026-10-22T19:50+00:00",
+   "entry": 38.46843030548095,
+   "exit": 38.7599983215332,
+   "cost_gbp": 977.8449351491583,
+   "pl_gbp": 5.935816824215522,
+   "pl_pct": 0.006070304821193439,
+   "reason": "End of day: sold 10 minutes before the close."
+  }
+ ],
+ "total_gbp": 1.4879356058401072,
+ "alerts": [
+  "10:16 Day trade: bought MKTX: 8 MKTX at $164.97 (about \u00a3987). Stop $156.73. Highest first-30-minute volume on today's list (0.5x a normal day).",
+  "11:04 Day trade: sold MKTX (-\u00a32): No new high for 48 min, and PEBK overtook it on buying volume (0.59x vs 0.06x normal in 30 min). Result -\u00a32 (-0.2%).",
+  "11:04 Day trade: bought PEBK: 30 PEBK at $44.28 (about \u00a3993). Stop $42.07. Strongest buying on the list: 0.59x normal volume bought in the last 30 min, and rising.",
+  "12:40 Day trade: sold PEBK (-\u00a32): No new high for 94 min, and CENTA overtook it on buying volume (0.40x vs 0.04x normal in 30 min). Result -\u00a32 (-0.2%).",
+  "12:40 Day trade: bought CENTA: 34 CENTA at $38.47 (about \u00a3978). Stop $36.55. Strongest buying on the list: 0.40x normal volume bought in the last 30 min, and rising.",
+  "15:50 Day trade: sold CENTA (+\u00a36): End of day: sold 10 minutes before the close. Result +\u00a36 (+0.6%).",
+  "15:50 Day trade summary: 3 trade(s) today: MKTX -\u00a32, PEBK -\u00a32, CENTA +\u00a36. Total +\u00a31."
+ ],
+ "log": [
+  "Day trade buy order: 8 MKTX at about $164.81. Highest first-30-minute volume on today's list (0.5x a normal day).",
+  "Bought 8 MKTX at 164.97 (cost \u00a3987).",
+  "Added WCCB to today's list at 10:32 New York: 0.5x normal volume in the last 30 min; news: West Coast Community Bank Continues Expansion with New Full-Service Branch in Sa",
+  "Added PEBK to today's list at 11:04 New York: 0.7x normal volume in the last 30 min; news: Peoples Bancorp Stock Slips Post Q3 Earnings Despite NIM Expansion",
+  "Sold MKTX (about -\u00a32). No new high for 48 min, and PEBK overtook it on buying volume (0.59x vs 0.06x normal in 30 min).",
+  "Day trade buy order: 30 PEBK at about $44.24. Strongest buying on the list: 0.59x normal volume bought in the last 30 min, and rising.",
+  "Bought 30 PEBK at 44.28 (cost \u00a3993).",
+  "Added CENTA to today's list at 12:40 New York: 0.4x normal volume in the last 30 min; news: Central Garden & Pet Acquires Burpee, an Iconic Brand in the Packet Seed and You",
+  "Sold PEBK (about -\u00a32). No new high for 94 min, and CENTA overtook it on buying volume (0.40x vs 0.04x normal in 30 min).",
+  "Day trade buy order: 34 CENTA at about $38.43. Strongest buying on the list: 0.40x normal volume bought in the last 30 min, and rising.",
+  "Bought 34 CENTA at 38.47 (cost \u00a3978).",
+  "Added MET to today's list at 13:28 New York: 0.3x normal volume in the last 30 min; news: MetLife's ChatGPT Integration Opens a New Pet Insurance Growth Avenue",
+  "Sold CENTA (about +\u00a36). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 3 trade(s), total +\u00a31."
+ ]
+}

@@ -1,0 +1,185 @@
+{
+ "date": "2026-10-06",
+ "generated": "2026-11-01T16:10+00:00",
+ "fx_gbpusd": 1.32185959815979,
+ "result": "done",
+ "require_news": true,
+ "strategy": "rotation",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [
+  "Added CPA to today's list at 15:04 New York: 0.7x normal volume in the last 30 min; news: Copa Holdings (CPA) Exceeds Market Returns: Some Facts to Consider"
+ ],
+ "drift_list": [],
+ "list": [
+  {
+   "ticker": "OSTX",
+   "name": "OS Therapies Incorporated",
+   "vol_x": 8.22,
+   "buy_pct30": 0.5038385748191209,
+   "change": 0.0750000018626451,
+   "score": 17.96,
+   "news": [
+    "OS Therapies Appoints Kerry Clem as Chief Commercial Officer and Frank Knuettel II as Chief Financial Officer"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "AIFA",
+   "name": "All In FutureTech Alliance, Inc.",
+   "vol_x": 3.0,
+   "buy_pct30": 0.6161431125616754,
+   "change": 0.261054390737552,
+   "score": 6.96,
+   "news": [
+    "All In FutureTech Alliance Inc. Launches New Digital Platform for Consumers and Businesses, Advancing Its AI-Enabled Global Services Strategy"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "CBNA",
+   "name": "Chain Bridge Bancorp, Inc.",
+   "vol_x": 0.36,
+   "buy_pct30": 0.7522633744855967,
+   "change": 0.05274139378911791,
+   "score": 3.23,
+   "news": [
+    "Raymond James upgrades Chain Bridge Bancorp to Outperform on rate tailwinds"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "DGII",
+   "name": "Digi International Inc.",
+   "vol_x": 0.86,
+   "buy_pct30": 0.048391864620701386,
+   "change": 0.0076448459427092,
+   "score": 0.91,
+   "news": [
+    "Digi International Acquires Disruptive Technologies to Expand SmartSense IoT Reach",
+    "Digi International Announces Intent to Acquire Disruptive Technologies to Advance SmartSense Physical-World Intelligence Platform and Enter Europe"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "QTEX",
+   "vol_x": 1.59
+  },
+  {
+   "ticker": "CEG",
+   "vol_x": 1.34
+  },
+  {
+   "ticker": "MRVL",
+   "vol_x": 1.01
+  },
+  {
+   "ticker": "DNA",
+   "vol_x": 0.99
+  },
+  {
+   "ticker": "VST",
+   "vol_x": 0.88
+  },
+  {
+   "ticker": "PRME",
+   "vol_x": 0.75
+  },
+  {
+   "ticker": "SOTK",
+   "vol_x": 0.64
+  },
+  {
+   "ticker": "FRSH",
+   "vol_x": 0.55
+  },
+  {
+   "ticker": "ALAB",
+   "vol_x": 0.5
+  },
+  {
+   "ticker": "FBIZ",
+   "vol_x": 0.48
+  },
+  {
+   "ticker": "OVBC",
+   "vol_x": 0.48
+  },
+  {
+   "ticker": "SLDE",
+   "vol_x": 0.47
+  },
+  {
+   "ticker": "PACB",
+   "vol_x": 0.46
+  },
+  {
+   "ticker": "FTRE",
+   "vol_x": 0.43
+  },
+  {
+   "ticker": "NKSH",
+   "vol_x": 0.43
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "OSTX",
+   "bought_at": "2026-10-06T14:16+00:00",
+   "sold_at": "2026-10-06T16:46+00:00",
+   "entry": 1.7017000477313993,
+   "exit": 1.6183800000000002,
+   "cost_gbp": 1001.7737665455562,
+   "pl_gbp": -51.903568638032084,
+   "pl_pct": -0.05181166683672759,
+   "reason": "Stop-loss order filled"
+  },
+  {
+   "ticker": "CBNA",
+   "bought_at": "2026-10-06T16:46+00:00",
+   "sold_at": "2026-10-06T19:04+00:00",
+   "entry": 50.33027877807616,
+   "exit": 49.88999938964844,
+   "cost_gbp": 991.4442736027268,
+   "pl_gbp": -10.144908725657956,
+   "pl_pct": -0.01023245480937947,
+   "reason": "No new high for 134 min, and CPA overtook it on buying volume (0.36x vs 0.01x normal in 30 min)."
+  },
+  {
+   "ticker": "CPA",
+   "bought_at": "2026-10-06T19:04+00:00",
+   "sold_at": "2026-10-06T19:50+00:00",
+   "entry": 138.66351889038086,
+   "exit": 138.8699951171875,
+   "cost_gbp": 945.5191983009404,
+   "pl_gbp": -0.010342599001774033,
+   "pl_pct": -1.0938539397570418e-05,
+   "reason": "End of day: sold 10 minutes before the close."
+  }
+ ],
+ "total_gbp": -62.058819962691814,
+ "alerts": [
+  "10:16 Day trade: bought OSTX: 777 OSTX at $1.70 (about \u00a31,002). Stop $1.62. Highest first-30-minute volume on today's list (8.2x a normal day).",
+  "12:46 Day trade update: OSTX: stop-loss order filled (-\u00a352)",
+  "12:46 Day trade: bought CBNA: 26 CBNA at $50.33 (about \u00a3991). Stop $47.81. Strongest buying on the list: 0.05x normal volume bought in the last 30 min, and rising.",
+  "15:04 Day trade: sold CBNA (-\u00a310): No new high for 134 min, and CPA overtook it on buying volume (0.36x vs 0.01x normal in 30 min). Result -\u00a310 (-1.0%).",
+  "15:04 Day trade: bought CPA: 9 CPA at $138.66 (about \u00a3946). Stop $131.73. Strongest buying on the list: 0.36x normal volume bought in the last 30 min, and rising.",
+  "15:50 Day trade: sold CPA (-\u00a30): End of day: sold 10 minutes before the close. Result -\u00a30 (-0.0%).",
+  "15:50 Day trade summary: 3 trade(s) today: OSTX -\u00a352, CBNA -\u00a310, CPA -\u00a30. Total -\u00a362."
+ ],
+ "log": [
+  "Day trade buy order: 777 OSTX at about $1.70. Highest first-30-minute volume on today's list (8.2x a normal day).",
+  "Bought 777 OSTX at 1.70 (cost \u00a31,002).",
+  "OSTX: stop-loss order filled, P&L -\u00a352.",
+  "Day trade buy order: 26 CBNA at about $50.28. Strongest buying on the list: 0.05x normal volume bought in the last 30 min, and rising.",
+  "Bought 26 CBNA at 50.33 (cost \u00a3991).",
+  "Added CPA to today's list at 15:04 New York: 0.7x normal volume in the last 30 min; news: Copa Holdings (CPA) Exceeds Market Returns: Some Facts to Consider",
+  "Sold CBNA (about -\u00a310). No new high for 134 min, and CPA overtook it on buying volume (0.36x vs 0.01x normal in 30 min).",
+  "Day trade buy order: 9 CPA at about $138.52. Strongest buying on the list: 0.36x normal volume bought in the last 30 min, and rising.",
+  "Bought 9 CPA at 138.66 (cost \u00a3946).",
+  "Sold CPA (about -\u00a30). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 3 trade(s), total -\u00a362."
+ ]
+}

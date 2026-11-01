@@ -1,0 +1,136 @@
+{
+ "date": "2026-10-06",
+ "generated": "2026-11-01T16:06+00:00",
+ "fx_gbpusd": 1.32185959815979,
+ "result": "done",
+ "require_news": true,
+ "strategy": "breakout",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [
+  "Added CPA to today's list at 15:04 New York: 0.7x normal volume in the last 30 min; news: Copa Holdings (CPA) Exceeds Market Returns: Some Facts to Consider"
+ ],
+ "drift_list": [],
+ "list": [
+  {
+   "ticker": "OSTX",
+   "name": "OS Therapies Incorporated",
+   "vol_x": 8.22,
+   "buy_pct30": 0.5038385748191209,
+   "change": 0.0750000018626451,
+   "score": 17.96,
+   "news": [
+    "OS Therapies Appoints Kerry Clem as Chief Commercial Officer and Frank Knuettel II as Chief Financial Officer"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "AIFA",
+   "name": "All In FutureTech Alliance, Inc.",
+   "vol_x": 3.0,
+   "buy_pct30": 0.6161431125616754,
+   "change": 0.261054390737552,
+   "score": 6.96,
+   "news": [
+    "All In FutureTech Alliance Inc. Launches New Digital Platform for Consumers and Businesses, Advancing Its AI-Enabled Global Services Strategy"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "CBNA",
+   "name": "Chain Bridge Bancorp, Inc.",
+   "vol_x": 0.36,
+   "buy_pct30": 0.7522633744855967,
+   "change": 0.05274139378911791,
+   "score": 3.23,
+   "news": [
+    "Raymond James upgrades Chain Bridge Bancorp to Outperform on rate tailwinds"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "DGII",
+   "name": "Digi International Inc.",
+   "vol_x": 0.86,
+   "buy_pct30": 0.048391864620701386,
+   "change": 0.0076448459427092,
+   "score": 0.91,
+   "news": [
+    "Digi International Acquires Disruptive Technologies to Expand SmartSense IoT Reach",
+    "Digi International Announces Intent to Acquire Disruptive Technologies to Advance SmartSense Physical-World Intelligence Platform and Enter Europe"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "QTEX",
+   "vol_x": 1.59
+  },
+  {
+   "ticker": "CEG",
+   "vol_x": 1.34
+  },
+  {
+   "ticker": "MRVL",
+   "vol_x": 1.01
+  },
+  {
+   "ticker": "DNA",
+   "vol_x": 0.99
+  },
+  {
+   "ticker": "VST",
+   "vol_x": 0.88
+  },
+  {
+   "ticker": "PRME",
+   "vol_x": 0.75
+  },
+  {
+   "ticker": "SOTK",
+   "vol_x": 0.64
+  },
+  {
+   "ticker": "FRSH",
+   "vol_x": 0.55
+  },
+  {
+   "ticker": "ALAB",
+   "vol_x": 0.5
+  },
+  {
+   "ticker": "FBIZ",
+   "vol_x": 0.48
+  },
+  {
+   "ticker": "OVBC",
+   "vol_x": 0.48
+  },
+  {
+   "ticker": "SLDE",
+   "vol_x": 0.47
+  },
+  {
+   "ticker": "PACB",
+   "vol_x": 0.46
+  },
+  {
+   "ticker": "FTRE",
+   "vol_x": 0.43
+  },
+  {
+   "ticker": "NKSH",
+   "vol_x": 0.43
+  }
+ ],
+ "trades": [],
+ "total_gbp": 0,
+ "alerts": [
+  "15:50 Day trade summary: No trade today: nothing in play broke out."
+ ],
+ "log": [
+  "Added CPA to today's list at 15:04 New York: 0.7x normal volume in the last 30 min; news: Copa Holdings (CPA) Exceeds Market Returns: Some Facts to Consider",
+  "Day trading finished: 0 trade(s), total +\u00a30."
+ ]
+}

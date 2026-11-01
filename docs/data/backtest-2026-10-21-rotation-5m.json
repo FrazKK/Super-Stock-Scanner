@@ -1,0 +1,148 @@
+{
+ "date": "2026-10-21",
+ "generated": "2026-11-01T16:42+00:00",
+ "fx_gbpusd": 1.337327480316162,
+ "result": "done",
+ "require_news": true,
+ "strategy": "rotation",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [
+  "Added GIB to today's list at 11:36 New York: 0.3x normal volume in the last 30 min; news: CGI selected to join PCI Security Standards Council Global Executive Assessor Ro",
+  "Added SLE to today's list at 11:52 New York: 0.3x normal volume in the last 30 min; news: Super League Shareholders Approve Metaplanet Investment Involving 2,100 Bitcoin ",
+  "Added MFC to today's list at 14:00 New York: 0.5x normal volume in the last 30 min; news: Manulife and UpLink announce winners of the 'Shaping Canada's Longevity Advantag",
+  "Added NABL to today's list at 14:00 New York: 0.5x normal volume in the last 30 min; news: As AI Accelerates Cyberattacks, N-able and SentinelOne Expand Their Strategic Pa",
+  "Added MAT to today's list at 15:20 New York: 0.3x normal volume in the last 30 min; news: Mattel Enters into Cooperation Agreement with EdgePoint Investment Group Inc."
+ ],
+ "drift_list": [],
+ "list": [
+  {
+   "ticker": "NTWK",
+   "name": "NETSOL Technologies Inc.",
+   "vol_x": 0.34,
+   "buy_pct30": 0.8769120299739875,
+   "change": 0.03287464126023831,
+   "score": 2.69,
+   "news": [
+    "Mercedes-Benz USA approves NETSOL as a digital retail provider for its dealerships"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "SWBI",
+   "name": "Smith & Wesson Brands, Inc.",
+   "vol_x": 0.45,
+   "buy_pct30": 0.6903970371398483,
+   "change": 0.00947228321056337,
+   "score": 2.16,
+   "news": [
+    "Smith & Wesson Acquires Savage Arms"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "SPHL",
+   "vol_x": 65.9
+  },
+  {
+   "ticker": "SPCX",
+   "vol_x": 0.73
+  },
+  {
+   "ticker": "QGEN",
+   "vol_x": 0.68
+  },
+  {
+   "ticker": "TDY",
+   "vol_x": 0.63
+  },
+  {
+   "ticker": "CPIX",
+   "vol_x": 0.62
+  },
+  {
+   "ticker": "MCB",
+   "vol_x": 0.58
+  },
+  {
+   "ticker": "KIDS",
+   "vol_x": 0.58
+  },
+  {
+   "ticker": "DHR",
+   "vol_x": 0.56
+  },
+  {
+   "ticker": "CZFS",
+   "vol_x": 0.53
+  },
+  {
+   "ticker": "BRBS",
+   "vol_x": 0.39
+  },
+  {
+   "ticker": "LAW",
+   "vol_x": 0.37
+  },
+  {
+   "ticker": "TSLA",
+   "vol_x": 0.36
+  },
+  {
+   "ticker": "TMO",
+   "vol_x": 0.35
+  },
+  {
+   "ticker": "NNI",
+   "vol_x": 0.34
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "SWBI",
+   "bought_at": "2026-10-21T14:16+00:00",
+   "sold_at": "2026-10-21T18:00+00:00",
+   "entry": 14.994880260467527,
+   "exit": 14.880000114440918,
+   "cost_gbp": 999.4157596914146,
+   "pl_gbp": -9.142225588791689,
+   "pl_pct": -0.009147569967892538,
+   "reason": "No new high for 180 min, and MFC overtook it on buying volume (0.45x vs 0.02x normal in 30 min)."
+  },
+  {
+   "ticker": "MFC",
+   "bought_at": "2026-10-21T18:00+00:00",
+   "sold_at": "2026-10-21T19:50+00:00",
+   "entry": 45.45540984725952,
+   "exit": 45.40999984741211,
+   "cost_gbp": 987.1809376015908,
+   "pl_gbp": -2.463271242397468,
+   "pl_pct": -0.0024952581118331944,
+   "reason": "End of day: sold 10 minutes before the close."
+  }
+ ],
+ "total_gbp": -11.605496831189157,
+ "alerts": [
+  "10:16 Day trade: bought SWBI: 89 SWBI at $14.99 (about \u00a3999). Stop $14.25. Highest first-30-minute volume on today's list (0.5x a normal day).",
+  "14:00 Day trade: sold SWBI (-\u00a39): No new high for 180 min, and MFC overtook it on buying volume (0.45x vs 0.02x normal in 30 min). Result -\u00a39 (-0.9%).",
+  "14:00 Day trade: bought MFC: 29 MFC at $45.46 (about \u00a3987). Stop $43.18. Strongest buying on the list: 0.45x normal volume bought in the last 30 min, and rising.",
+  "15:50 Day trade: sold MFC (-\u00a32): End of day: sold 10 minutes before the close. Result -\u00a32 (-0.2%).",
+  "15:50 Day trade summary: 2 trade(s) today: SWBI -\u00a39, MFC -\u00a32. Total -\u00a312."
+ ],
+ "log": [
+  "Day trade buy order: 89 SWBI at about $14.98. Highest first-30-minute volume on today's list (0.5x a normal day).",
+  "Bought 89 SWBI at 14.99 (cost \u00a3999).",
+  "Added GIB to today's list at 11:36 New York: 0.3x normal volume in the last 30 min; news: CGI selected to join PCI Security Standards Council Global Executive Assessor Ro",
+  "Added SLE to today's list at 11:52 New York: 0.3x normal volume in the last 30 min; news: Super League Shareholders Approve Metaplanet Investment Involving 2,100 Bitcoin ",
+  "Added MFC to today's list at 14:00 New York: 0.5x normal volume in the last 30 min; news: Manulife and UpLink announce winners of the 'Shaping Canada's Longevity Advantag",
+  "Added NABL to today's list at 14:00 New York: 0.5x normal volume in the last 30 min; news: As AI Accelerates Cyberattacks, N-able and SentinelOne Expand Their Strategic Pa",
+  "Sold SWBI (about -\u00a39). No new high for 180 min, and MFC overtook it on buying volume (0.45x vs 0.02x normal in 30 min).",
+  "Day trade buy order: 29 MFC at about $45.41. Strongest buying on the list: 0.45x normal volume bought in the last 30 min, and rising.",
+  "Bought 29 MFC at 45.46 (cost \u00a3987).",
+  "Added MAT to today's list at 15:20 New York: 0.3x normal volume in the last 30 min; news: Mattel Enters into Cooperation Agreement with EdgePoint Investment Group Inc.",
+  "Sold MFC (about -\u00a32). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 2 trade(s), total -\u00a312."
+ ]
+}

@@ -1,0 +1,108 @@
+{
+ "date": "2026-09-24",
+ "generated": "2026-11-01T15:44+00:00",
+ "fx_gbpusd": 1.3241524696350098,
+ "result": "done",
+ "require_news": true,
+ "strategy": "breakout-market",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [
+  "Added BSIN to today's list at 11:52 New York: 0.4x normal volume in the last 30 min; news: Big Sky Industrial Inc. to Participate in the Noble Capital Markets\u2019 Emerging Gr"
+ ],
+ "drift_list": [],
+ "list": [
+  {
+   "ticker": "TH",
+   "name": "Target Hospitality Corp.",
+   "vol_x": 0.43,
+   "buy_pct30": 0.7238039777458799,
+   "change": 0.008490490157991415,
+   "score": 4.26,
+   "news": [
+    "Is Target Hospitality\u2019s (TH) Big Buyback a Sign of Undervaluation or Insider Hesitation?"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "DGNX",
+   "name": "Diginex Limited",
+   "vol_x": 1.17,
+   "buy_pct30": 0.06357273195878561,
+   "change": 0.013605428936910968,
+   "score": 1.09,
+   "news": [
+    "Diginex Consolidates Group-Wide Expertise and Launches Sustainability Science & Intelligence Initiative to Accelerate Product Innovation and Drive Measurable Client Outcomes"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "NCPL",
+   "vol_x": 0.98
+  },
+  {
+   "ticker": "RSKD",
+   "vol_x": 0.69
+  },
+  {
+   "ticker": "BDSX",
+   "vol_x": 0.65
+  },
+  {
+   "ticker": "GFUZ",
+   "vol_x": 0.58
+  },
+  {
+   "ticker": "SECZ",
+   "vol_x": 0.48
+  },
+  {
+   "ticker": "QMCO",
+   "vol_x": 0.45
+  },
+  {
+   "ticker": "NBIS",
+   "vol_x": 0.38
+  },
+  {
+   "ticker": "GRAL",
+   "vol_x": 0.37
+  },
+  {
+   "ticker": "META",
+   "vol_x": 0.34
+  },
+  {
+   "ticker": "P",
+   "vol_x": 0.34
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "BSIN",
+   "bought_at": "2026-09-24T15:56+00:00",
+   "sold_at": "2026-09-24T19:50+00:00",
+   "entry": 1.6016000238656996,
+   "exit": 1.5700000524520874,
+   "cost_gbp": 1001.7804104780918,
+   "pl_gbp": -21.236195856217137,
+   "pl_pct": -0.021198453906762192,
+   "reason": "End of day: sold 10 minutes before the close."
+  }
+ ],
+ "total_gbp": -21.236195856217137,
+ "alerts": [
+  "11:56 Day trade: bought BSIN: 827 BSIN at $1.60 (about \u00a31,002). Stop $1.52. Broke above its opening-range high ($1.54) at $1.60. In play: 0.4x normal volume, normally moves 5% a day. Stop $1.52.",
+  "15:50 Day trade: sold BSIN (-\u00a321): End of day: sold 10 minutes before the close. Result -\u00a321 (-2.1%).",
+  "15:50 Day trade summary: 1 trade(s) today: BSIN -\u00a321. Total -\u00a321."
+ ],
+ "log": [
+  "Added BSIN to today's list at 11:52 New York: 0.4x normal volume in the last 30 min; news: Big Sky Industrial Inc. to Participate in the Noble Capital Markets\u2019 Emerging Gr",
+  "Day trade buy order: 827 BSIN at about $1.60. Broke above its opening-range high ($1.54) at $1.60. In play: 0.4x normal volume, normally moves 5% a day. Stop $1.52.",
+  "Bought 827 BSIN at 1.60 (cost \u00a31,002).",
+  "Sold BSIN (about -\u00a321). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 1 trade(s), total -\u00a321."
+ ]
+}

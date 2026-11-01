@@ -1,0 +1,129 @@
+{
+ "date": "2026-10-01",
+ "generated": "2026-11-01T16:03+00:00",
+ "fx_gbpusd": 1.326435923576355,
+ "result": "done",
+ "require_news": true,
+ "strategy": "rotation",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [],
+ "drift_list": [],
+ "list": [
+  {
+   "ticker": "VEEA",
+   "name": "Veea Inc.",
+   "vol_x": 21.57,
+   "buy_pct30": 0.6893598856083034,
+   "change": 0.5138248711221274,
+   "score": 43.4,
+   "news": [
+    "Veea Announces TROLLEE Agreement for Phased Deployment of VeeaONE to 1,000 Unattended Stores"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "AISP",
+   "name": "Airship AI Holdings, Inc",
+   "vol_x": 13.16,
+   "buy_pct30": 0.4881211602173837,
+   "change": 0.22043008788608676,
+   "score": 26.77,
+   "news": [
+    "Airship AI Announces $29.0M of Firm Fixed Price Brand Name Only Awards from Department of Homeland Security"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "RCEL",
+   "name": "Avita Medical, Inc.",
+   "vol_x": 0.37,
+   "buy_pct30": 0.6232638152984171,
+   "change": 0.048593407565458824,
+   "score": 2.73,
+   "news": [
+    "AVITA Medical (RCEL) Stock Sees Fair Value Lift After PermeaDerm Data And Q2 Beat"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "MEDS",
+   "vol_x": 4.18
+  },
+  {
+   "ticker": "ACN",
+   "vol_x": 1.46
+  },
+  {
+   "ticker": "ETSS",
+   "vol_x": 1.26
+  },
+  {
+   "ticker": "QSI",
+   "vol_x": 1.11
+  },
+  {
+   "ticker": "SNPS",
+   "vol_x": 0.84
+  },
+  {
+   "ticker": "EFXT",
+   "vol_x": 0.76
+  },
+  {
+   "ticker": "VUZI",
+   "vol_x": 0.53
+  },
+  {
+   "ticker": "TRNS",
+   "vol_x": 0.51
+  },
+  {
+   "ticker": "CTSH",
+   "vol_x": 0.47
+  },
+  {
+   "ticker": "CTVA",
+   "vol_x": 0.46
+  },
+  {
+   "ticker": "PAYS",
+   "vol_x": 0.37
+  },
+  {
+   "ticker": "VICR",
+   "vol_x": 0.35
+  },
+  {
+   "ticker": "DSGR",
+   "vol_x": 0.34
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "RCEL",
+   "bought_at": "2026-10-01T14:16+00:00",
+   "sold_at": "2026-10-01T19:50+00:00",
+   "entry": 12.267255114555358,
+   "exit": 12.020000457763672,
+   "cost_gbp": 1000.3128112838372,
+   "pl_gbp": -21.629991884344918,
+   "pl_pct": -0.021623227894666485,
+   "reason": "End of day: sold 10 minutes before the close."
+  }
+ ],
+ "total_gbp": -21.629991884344918,
+ "alerts": [
+  "10:16 Day trade: bought RCEL: 108 RCEL at $12.27 (about \u00a31,000). Stop $11.65. Highest first-30-minute volume on today's list (0.4x a normal day).",
+  "15:50 Day trade: sold RCEL (-\u00a322): End of day: sold 10 minutes before the close. Result -\u00a322 (-2.2%).",
+  "15:50 Day trade summary: 1 trade(s) today: RCEL -\u00a322. Total -\u00a322."
+ ],
+ "log": [
+  "Day trade buy order: 108 RCEL at about $12.26. Highest first-30-minute volume on today's list (0.4x a normal day).",
+  "Bought 108 RCEL at 12.27 (cost \u00a31,000).",
+  "Sold RCEL (about -\u00a322). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 1 trade(s), total -\u00a322."
+ ]
+}

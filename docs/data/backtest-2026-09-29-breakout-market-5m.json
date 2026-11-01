@@ -1,0 +1,104 @@
+{
+ "date": "2026-09-29",
+ "generated": "2026-11-01T15:53+00:00",
+ "fx_gbpusd": 1.3254337310791016,
+ "result": "done",
+ "require_news": true,
+ "strategy": "breakout-market",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [
+  "Added XERS to today's list at 12:40 New York: 3.2x normal volume in the last 30 min; news: Xeris Biopharma Reportedly Draws Takeover Interest \u2014 But Firm Says It\u2019s \u2018Not For"
+ ],
+ "drift_list": [],
+ "list": [
+  {
+   "ticker": "NTWK",
+   "name": "NETSOL Technologies Inc.",
+   "vol_x": 1.36,
+   "buy_pct30": 0.5936626380182837,
+   "change": 0.014134093005091719,
+   "score": 4.09,
+   "news": [
+    "NETSOL Q4 Earnings & Revenues Rise Y/Y as Margins Expand",
+    "NETSOL Technologies Inc (NTWK) (Q4 2026) Earnings Call Highlights: Record Revenue and Strong ..."
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "AGPU",
+   "name": "Axe Compute Inc.",
+   "vol_x": 0.44,
+   "buy_pct30": 0.5266210099341204,
+   "change": 0.09382719169670684,
+   "score": 3.49,
+   "news": [
+    "Axe Compute Receives More Than $184 Million in Customer Prepayments and Signs Over $266 Million in New AI Infrastructure Contracts Since Q2 Earnings Call"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "JELD",
+   "name": "JELD-WEN Holding, Inc.",
+   "vol_x": 1.17,
+   "buy_pct30": 0.41894373210236907,
+   "change": 0.14632772075338107,
+   "score": 2.52,
+   "news": [
+    "JELD-WEN Announces Comprehensive Agreement to Extend Debt Maturities and Raise $135 Million of Incremental Liquidity to Support Business Plan"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "QSI",
+   "vol_x": 1.14
+  },
+  {
+   "ticker": "KMX",
+   "vol_x": 0.98
+  },
+  {
+   "ticker": "IOVA",
+   "vol_x": 0.87
+  },
+  {
+   "ticker": "WW",
+   "vol_x": 0.72
+  },
+  {
+   "ticker": "CZFS",
+   "vol_x": 0.66
+  },
+  {
+   "ticker": "ABLV",
+   "vol_x": 0.57
+  },
+  {
+   "ticker": "ACFN",
+   "vol_x": 0.46
+  },
+  {
+   "ticker": "ABCL",
+   "vol_x": 0.36
+  },
+  {
+   "ticker": "AXTI",
+   "vol_x": 0.36
+  },
+  {
+   "ticker": "MF",
+   "vol_x": 0.35
+  }
+ ],
+ "trades": [],
+ "total_gbp": 0,
+ "alerts": [
+  "15:50 Day trade summary: No trade today: nothing in play broke out."
+ ],
+ "log": [
+  "Added XERS to today's list at 12:40 New York: 3.2x normal volume in the last 30 min; news: Xeris Biopharma Reportedly Draws Takeover Interest \u2014 But Firm Says It\u2019s \u2018Not For",
+  "Day trading finished: 0 trade(s), total +\u00a30."
+ ]
+}

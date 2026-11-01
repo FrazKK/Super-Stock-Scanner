@@ -1,0 +1,118 @@
+{
+ "date": "2026-09-30",
+ "generated": "2026-11-01T15:56+00:00",
+ "fx_gbpusd": 1.323276400566101,
+ "result": "done",
+ "require_news": true,
+ "strategy": "drift",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [],
+ "drift_list": [
+  {
+   "ticker": "ULBI",
+   "name": "Ultralife Corporation",
+   "price": 6.5,
+   "why": "News in the last 5 days (Ultralife Upgraded to Neutral on Backlog & Product Commercialization); closed up yesterday (+5.5%) on 1.9x normal volume; above today's open at 10:00 New York."
+  },
+  {
+   "ticker": "LWLG",
+   "name": "Lightwave Logic, Inc.",
+   "price": 5.159999847412109,
+   "why": "News in the last 5 days (Lightwave Logic Appoints Edward H. Kennedy to Board as Commercial Strategy Advan); closed up yesterday (+3.4%) on 1.8x normal volume; above today's open at 10:00 New York."
+  },
+  {
+   "ticker": "WYY",
+   "name": "WidePoint Corporation",
+   "price": 7.583099842071533,
+   "why": "News in the last 5 days (WidePoint Corporation Statement Regarding GAO Protest Decision on DHS CWMS 3.0 A); closed up yesterday (+24.6%) on 1.8x normal volume; above today's open at 10:00 New York."
+  },
+  {
+   "ticker": "LGCY",
+   "name": "Legacy Education Inc.",
+   "price": 9.520000457763672,
+   "why": "News in the last 5 days (Legacy Education Inc (LGCY) (Q4 2026) Earnings Call Highlights: Record Revenue o); closed up yesterday (+4.7%) on 1.2x normal volume; above today's open at 10:00 New York."
+  }
+ ],
+ "list": [
+  {
+   "ticker": "FUNC",
+   "name": "First",
+   "vol_x": 0.5,
+   "buy_pct30": 0.6631702252276237,
+   "change": 0.018424760144968966,
+   "score": 3.15,
+   "news": [
+    "How to Play First United Stock After Its Dividend Increase"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "CANG",
+   "name": "Cango Inc.",
+   "vol_x": 0.36,
+   "buy_pct30": 0.5652086357572891,
+   "change": 0.03375534429857652,
+   "score": 1.48,
+   "news": [
+    "Cango stock surges over 20% following Buy initiation at Jones Trading"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "FFR",
+   "vol_x": 16.85
+  },
+  {
+   "ticker": "CAPR",
+   "vol_x": 4.49
+  },
+  {
+   "ticker": "NAUT",
+   "vol_x": 1.87
+  },
+  {
+   "ticker": "QSI",
+   "vol_x": 0.87
+  },
+  {
+   "ticker": "PMVP",
+   "vol_x": 0.83
+  },
+  {
+   "ticker": "PACB",
+   "vol_x": 0.56
+  },
+  {
+   "ticker": "HPE",
+   "vol_x": 0.42
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "ULBI",
+   "bought_at": "2026-09-30T14:16+00:00",
+   "sold_at": "2026-09-30T19:50+00:00",
+   "entry": 6.561554828166961,
+   "exit": 6.505000114440918,
+   "cost_gbp": 1008.0990056139324,
+   "pl_gbp": -10.185778515960578,
+   "pl_pct": -0.010103946595758657,
+   "reason": "End of day: sold 10 minutes before the close."
+  }
+ ],
+ "total_gbp": -10.185778515960578,
+ "alerts": [
+  "10:16 Day trade: bought ULBI: 203 ULBI at $6.56 (about \u00a31,008). Stop $6.23. News in the last 5 days (Ultralife Upgraded to Neutral on Backlog & Product Commercialization); closed up yesterday (+5.5%) on 1.9x normal volume; above today's open at 10:00 New York.",
+  "15:50 Day trade: sold ULBI (-\u00a310): End of day: sold 10 minutes before the close. Result -\u00a310 (-1.0%).",
+  "15:50 Day trade summary: ULBI: -\u00a310 today."
+ ],
+ "log": [
+  "Day trade buy order: 203 ULBI at about $6.50. News in the last 5 days (Ultralife Upgraded to Neutral on Backlog & Product Commercialization); closed up yesterday (+5.5%) on 1.9x normal volume; above today's open at 10:00 New York.",
+  "Bought 203 ULBI at 6.56 (cost \u00a31,008).",
+  "Sold ULBI (about -\u00a310). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 1 trade(s), total -\u00a310."
+ ]
+}

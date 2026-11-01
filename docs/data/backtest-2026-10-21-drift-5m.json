@@ -1,0 +1,152 @@
+{
+ "date": "2026-10-21",
+ "generated": "2026-11-01T16:38+00:00",
+ "fx_gbpusd": 1.337327480316162,
+ "result": "done",
+ "require_news": true,
+ "strategy": "drift",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [],
+ "drift_list": [
+  {
+   "ticker": "HOST",
+   "name": "Host Digital Inc.",
+   "price": 2.799999952316284,
+   "why": "News in the last 5 days (Host Digital Authorizes $15 Million Share Buyback Program); closed up yesterday (+47.4%) on 8.1x normal volume; above today's open at 10:00 New York."
+  },
+  {
+   "ticker": "MYGN",
+   "name": "Myriad Genetics, Inc.",
+   "price": 5.639900207519531,
+   "why": "News in the last 5 days (Myriad Genetics and Labcorp Announce Definitive Agreement for Myriad to Sell Pre); closed up yesterday (+31.6%) on 6.4x normal volume; above today's open at 10:00 New York."
+  },
+  {
+   "ticker": "TSHA",
+   "name": "Taysha Gene Therapies, Inc.",
+   "price": 4.175000190734863,
+   "why": "News in the last 5 days (Does Early Rett Trial Success Change The Bull Case For Taysha Gene Therapies (TS); closed up yesterday (+4.3%) on 2.1x normal volume; above today's open at 10:00 New York."
+  },
+  {
+   "ticker": "ZYME",
+   "name": "Zymeworks Inc.",
+   "price": 27.399999618530273,
+   "why": "News in the last 5 days (Zymeworks Appoints Suzanne Monahan as Senior Vice President, Commercial and Gene); closed up yesterday (+5.4%) on 2.0x normal volume; above today's open at 10:00 New York."
+  },
+  {
+   "ticker": "VERX",
+   "name": "Vertex, Inc.",
+   "price": 14.479999542236328,
+   "why": "News in the last 5 days (Vertex (VERX) Could Be 17% Undervalued As Oracle Win Fuels Interest); closed up yesterday (+5.8%) on 1.9x normal volume; above today's open at 10:00 New York."
+  }
+ ],
+ "list": [
+  {
+   "ticker": "NTWK",
+   "name": "NETSOL Technologies Inc.",
+   "vol_x": 0.34,
+   "buy_pct30": 0.8769120299739875,
+   "change": 0.03287464126023831,
+   "score": 2.69,
+   "news": [
+    "Mercedes-Benz USA approves NETSOL as a digital retail provider for its dealerships"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "SWBI",
+   "name": "Smith & Wesson Brands, Inc.",
+   "vol_x": 0.45,
+   "buy_pct30": 0.6903970371398483,
+   "change": 0.00947228321056337,
+   "score": 2.16,
+   "news": [
+    "Smith & Wesson Acquires Savage Arms"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "SPHL",
+   "vol_x": 65.9
+  },
+  {
+   "ticker": "SPCX",
+   "vol_x": 0.73
+  },
+  {
+   "ticker": "QGEN",
+   "vol_x": 0.68
+  },
+  {
+   "ticker": "TDY",
+   "vol_x": 0.63
+  },
+  {
+   "ticker": "CPIX",
+   "vol_x": 0.62
+  },
+  {
+   "ticker": "MCB",
+   "vol_x": 0.58
+  },
+  {
+   "ticker": "KIDS",
+   "vol_x": 0.58
+  },
+  {
+   "ticker": "DHR",
+   "vol_x": 0.56
+  },
+  {
+   "ticker": "CZFS",
+   "vol_x": 0.53
+  },
+  {
+   "ticker": "BRBS",
+   "vol_x": 0.39
+  },
+  {
+   "ticker": "LAW",
+   "vol_x": 0.37
+  },
+  {
+   "ticker": "TSLA",
+   "vol_x": 0.36
+  },
+  {
+   "ticker": "TMO",
+   "vol_x": 0.35
+  },
+  {
+   "ticker": "NNI",
+   "vol_x": 0.34
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "HOST",
+   "bought_at": "2026-10-21T14:16+00:00",
+   "sold_at": "2026-10-21T15:20+00:00",
+   "entry": 2.8228199331760404,
+   "exit": 2.6773200000000004,
+   "cost_gbp": 1008.3579793547308,
+   "pl_gbp": -54.83983491449703,
+   "pl_pct": -0.05438528383500291,
+   "reason": "Stop-loss order filled"
+  }
+ ],
+ "total_gbp": -54.83983491449703,
+ "alerts": [
+  "10:16 Day trade: bought HOST: 477 HOST at $2.82 (about \u00a31,008). Stop $2.68. News in the last 5 days (Host Digital Authorizes $15 Million Share Buyback Program); closed up yesterday (+47.4%) on 8.1x normal volume; above today's open at 10:00 New York.",
+  "11:20 Day trade update: HOST: stop-loss order filled (-\u00a355)",
+  "15:50 Day trade summary: HOST: -\u00a355 today."
+ ],
+ "log": [
+  "Day trade buy order: 477 HOST at about $2.80. News in the last 5 days (Host Digital Authorizes $15 Million Share Buyback Program); closed up yesterday (+47.4%) on 8.1x normal volume; above today's open at 10:00 New York.",
+  "Bought 477 HOST at 2.82 (cost \u00a31,008).",
+  "HOST: stop-loss order filled, P&L -\u00a355.",
+  "Day trading finished: 1 trade(s), total -\u00a355."
+ ]
+}

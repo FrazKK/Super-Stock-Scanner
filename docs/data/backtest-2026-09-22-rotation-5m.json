@@ -1,0 +1,136 @@
+{
+ "date": "2026-09-22",
+ "generated": "2026-11-01T15:43+00:00",
+ "fx_gbpusd": 1.3370896577835083,
+ "result": "done",
+ "require_news": true,
+ "strategy": "rotation",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [
+  "Added SPNT to today's list at 11:36 New York: 1.4x normal volume in the last 30 min; news: SiriusPoint to Deliver Further Book Value Growth, Buybacks, RBC Capital Markets ",
+  "Added BMM to today's list at 15:20 New York: 0.7x normal volume in the last 30 min; news: Blue Moon Announces Initial Results from Assay Campaign of Historical Drilling a",
+  "Added SBMT to today's list at 15:20 New York: 1.5x normal volume in the last 30 min; news: Silver Bow Mining Signs Term Sheet with Ocean Partners for Potential US$88 Milli"
+ ],
+ "drift_list": [],
+ "list": [
+  {
+   "ticker": "VFF",
+   "name": "Village Farms International, Inc.",
+   "vol_x": 0.7,
+   "buy_pct30": 0.6627116494561801,
+   "change": 0.05677077279736831,
+   "score": 2.55,
+   "news": [
+    "Village Farms Eyes Global Cannabis Growth With EU GMP Edge and Net Cash"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "TAOX",
+   "vol_x": 0.7
+  },
+  {
+   "ticker": "SHOP",
+   "vol_x": 0.64
+  },
+  {
+   "ticker": "SUIG",
+   "vol_x": 0.6
+  },
+  {
+   "ticker": "VLN",
+   "vol_x": 0.59
+  },
+  {
+   "ticker": "CFFI",
+   "vol_x": 0.56
+  },
+  {
+   "ticker": "ENGN",
+   "vol_x": 0.53
+  },
+  {
+   "ticker": "HSDT",
+   "vol_x": 0.51
+  },
+  {
+   "ticker": "FOSL",
+   "vol_x": 0.48
+  },
+  {
+   "ticker": "FRAF",
+   "vol_x": 0.47
+  },
+  {
+   "ticker": "GEF.B",
+   "vol_x": 0.45
+  },
+  {
+   "ticker": "GCT",
+   "vol_x": 0.45
+  },
+  {
+   "ticker": "OMER",
+   "vol_x": 0.45
+  },
+  {
+   "ticker": "USDE",
+   "vol_x": 0.45
+  },
+  {
+   "ticker": "ESP",
+   "vol_x": 0.45
+  },
+  {
+   "ticker": "TWLO",
+   "vol_x": 0.4
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "VFF",
+   "bought_at": "2026-09-22T14:16+00:00",
+   "sold_at": "2026-09-22T19:20+00:00",
+   "entry": 3.048045076370239,
+   "exit": 3.015000104904175,
+   "cost_gbp": 1002.2506108010776,
+   "pl_gbp": -12.350615428263382,
+   "pl_pct": -0.012322881418243085,
+   "reason": "No new high for 194 min, and BMM overtook it on buying volume (0.52x vs 0.07x normal in 30 min)."
+  },
+  {
+   "ticker": "BMM",
+   "bought_at": "2026-09-22T19:20+00:00",
+   "sold_at": "2026-09-22T19:50+00:00",
+   "entry": 5.780775095462799,
+   "exit": 5.84499979019165,
+   "cost_gbp": 1000.2037468747069,
+   "pl_gbp": 9.597610629237579,
+   "pl_pct": 0.009595655544409642,
+   "reason": "End of day: sold 10 minutes before the close."
+  }
+ ],
+ "total_gbp": -2.7530047990258026,
+ "alerts": [
+  "10:16 Day trade: bought VFF: 439 VFF at $3.05 (about \u00a31,002). Stop $2.90. Highest first-30-minute volume on today's list (0.7x a normal day).",
+  "15:20 Day trade: sold VFF (-\u00a312): No new high for 194 min, and BMM overtook it on buying volume (0.52x vs 0.07x normal in 30 min). Result -\u00a312 (-1.2%).",
+  "15:20 Day trade: bought BMM: 231 BMM at $5.78 (about \u00a31,000). Stop $5.49. Strongest buying on the list: 0.52x normal volume bought in the last 30 min, and rising.",
+  "15:50 Day trade: sold BMM (+\u00a310): End of day: sold 10 minutes before the close. Result +\u00a310 (+1.0%).",
+  "15:50 Day trade summary: 2 trade(s) today: VFF -\u00a312, BMM +\u00a310. Total -\u00a33."
+ ],
+ "log": [
+  "Day trade buy order: 439 VFF at about $3.05. Highest first-30-minute volume on today's list (0.7x a normal day).",
+  "Bought 439 VFF at 3.05 (cost \u00a31,002).",
+  "Added SPNT to today's list at 11:36 New York: 1.4x normal volume in the last 30 min; news: SiriusPoint to Deliver Further Book Value Growth, Buybacks, RBC Capital Markets ",
+  "Added BMM to today's list at 15:20 New York: 0.7x normal volume in the last 30 min; news: Blue Moon Announces Initial Results from Assay Campaign of Historical Drilling a",
+  "Added SBMT to today's list at 15:20 New York: 1.5x normal volume in the last 30 min; news: Silver Bow Mining Signs Term Sheet with Ocean Partners for Potential US$88 Milli",
+  "Sold VFF (about -\u00a312). No new high for 194 min, and BMM overtook it on buying volume (0.52x vs 0.07x normal in 30 min).",
+  "Day trade buy order: 231 BMM at about $5.78. Strongest buying on the list: 0.52x normal volume bought in the last 30 min, and rising.",
+  "Bought 231 BMM at 5.78 (cost \u00a31,000).",
+  "Sold BMM (about +\u00a310). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 2 trade(s), total -\u00a33."
+ ]
+}

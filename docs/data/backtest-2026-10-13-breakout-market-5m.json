@@ -1,0 +1,99 @@
+{
+ "date": "2026-10-13",
+ "generated": "2026-11-01T16:20+00:00",
+ "fx_gbpusd": 1.3209795951843262,
+ "result": "done",
+ "require_news": true,
+ "strategy": "breakout-market",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [],
+ "drift_list": [],
+ "list": [
+  {
+   "ticker": "EFXT",
+   "name": "Enerflex Ltd",
+   "vol_x": 0.36,
+   "buy_pct30": 0.627294917193255,
+   "change": 0.13621265353146628,
+   "score": 3.23,
+   "news": [
+    "Enerflex Soars 13% on Gigawatt Data Center Power Award, Backlog Now \u201cOver 1.75 Gigawatts\u201d",
+    "Enerflex shares jump 13% on more than 1GW data centre power contract"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "RELL",
+   "name": "Richardson Electronics, Ltd.",
+   "vol_x": 0.53,
+   "buy_pct30": 0.7043843048701774,
+   "change": 0.0067502117258166905,
+   "score": 2.88,
+   "news": [
+    "ComEd, Richardson Electronics, Ltd. Announce Expansion and Plans to Install Illinois\u2019 Largest Commercial Battery Energy Storage System",
+    "RELL Q3 Deep Dive: Demand for Engineered Power Solutions and Energy Storage Drives Growth"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "BMBL",
+   "vol_x": 9.54
+  },
+  {
+   "ticker": "PFAI",
+   "vol_x": 6.85
+  },
+  {
+   "ticker": "ENGS",
+   "vol_x": 0.64
+  },
+  {
+   "ticker": "JRSH",
+   "vol_x": 0.48
+  },
+  {
+   "ticker": "META",
+   "vol_x": 0.38
+  },
+  {
+   "ticker": "FIGS",
+   "vol_x": 0.37
+  },
+  {
+   "ticker": "VFC",
+   "vol_x": 0.36
+  },
+  {
+   "ticker": "CANG",
+   "vol_x": 0.34
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "EFXT",
+   "bought_at": "2026-10-13T14:16+00:00",
+   "sold_at": "2026-10-13T19:50+00:00",
+   "entry": 27.537510229110715,
+   "exit": 27.510000228881836,
+   "cost_gbp": 1002.1223617379895,
+   "pl_gbp": -2.5005539521761193,
+   "pl_pct": -0.0024952581118331566,
+   "reason": "End of day: sold 10 minutes before the close."
+  }
+ ],
+ "total_gbp": -2.5005539521761193,
+ "alerts": [
+  "10:16 Day trade: bought EFXT: 48 EFXT at $27.54 (about \u00a31,002). Stop $26.16. Broke above its opening-range high ($27.39) at $27.51. In play: 0.4x normal volume, normally moves 4% a day. Stop $26.13.",
+  "15:50 Day trade: sold EFXT (-\u00a33): End of day: sold 10 minutes before the close. Result -\u00a33 (-0.2%).",
+  "15:50 Day trade summary: 1 trade(s) today: EFXT -\u00a33. Total -\u00a33."
+ ],
+ "log": [
+  "Day trade buy order: 48 EFXT at about $27.51. Broke above its opening-range high ($27.39) at $27.51. In play: 0.4x normal volume, normally moves 4% a day. Stop $26.13.",
+  "Bought 48 EFXT at 27.54 (cost \u00a31,002).",
+  "Sold EFXT (about -\u00a33). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 1 trade(s), total -\u00a33."
+ ]
+}
