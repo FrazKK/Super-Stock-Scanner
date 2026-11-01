@@ -1,0 +1,208 @@
+{
+ "date": "2026-10-20",
+ "generated": "2026-11-01T10:09+00:00",
+ "fx_gbpusd": 1.330849051475525,
+ "result": "done",
+ "require_news": true,
+ "added_during_day": [
+  "Added CFFI to today's list at 10:32 New York: 0.4x normal volume in the last 30 min; news: C&F Financial's 2026 Outlook: Aggressive Market Expansion Drives New Retail Grow",
+  "Added WCCB to today's list at 11:04 New York: 0.6x normal volume in the last 30 min; news: West Coast Community Bank Continues Expansion with New Full-Service Branch in Sa",
+  "Added GORO to today's list at 11:52 New York: 0.3x normal volume in the last 30 min; news: Goldgroup Completes Strategic Investment in Luca Mining",
+  "Added NWFL to today's list at 12:24 New York: 0.3x normal volume in the last 30 min; news: Norwood Financial Corp. (NWFL) Reports Next Week: Wall Street Expects Earnings G",
+  "Added EPC to today's list at 15:20 New York: 0.3x normal volume in the last 30 min; news: Edgewell Personal Care Set for Stronger Fiscal 2027 as It Laps Tariff Cost Headw"
+ ],
+ "list": [
+  {
+   "ticker": "MYGN",
+   "name": "Myriad Genetics, Inc.",
+   "vol_x": 6.61,
+   "buy_pct30": 0.48489399087969315,
+   "change": 0.33135391170697504,
+   "score": 13.66,
+   "news": [
+    "Myriad Genetics and Labcorp Announce Definitive Agreement for Myriad to Sell Prenatal Health Testing Business to Labcorp"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "QNBC",
+   "vol_x": 1.1
+  },
+  {
+   "ticker": "TMP",
+   "vol_x": 0.85
+  },
+  {
+   "ticker": "EDHL",
+   "vol_x": 0.56
+  },
+  {
+   "ticker": "NPK",
+   "vol_x": 0.51
+  },
+  {
+   "ticker": "FBIZ",
+   "vol_x": 0.49
+  },
+  {
+   "ticker": "COSO",
+   "vol_x": 0.49
+  },
+  {
+   "ticker": "SFST",
+   "vol_x": 0.48
+  },
+  {
+   "ticker": "BRBS",
+   "vol_x": 0.48
+  },
+  {
+   "ticker": "PDS",
+   "vol_x": 0.34
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "MYGN",
+   "bought_at": "2026-10-20T14:16+00:00",
+   "sold_at": "2026-10-20T16:42+00:00",
+   "entry": 5.547999858856201,
+   "exit": 5.679900169372559,
+   "cost_gbp": 996.3353580907725,
+   "pl_gbp": 23.68726504216113,
+   "pl_pct": 0.02377438966690076,
+   "reason": "No new high for 50 min, and NWFL overtook it on buying volume (0.36x vs 0.27x normal in 30 min)."
+  },
+  {
+   "ticker": "NWFL",
+   "bought_at": "2026-10-20T16:42+00:00",
+   "sold_at": "2026-10-20T17:26+00:00",
+   "entry": 33.95000076293945,
+   "exit": 33.849998474121094,
+   "cost_gbp": 994.8912149628479,
+   "pl_gbp": -2.9305271394919146,
+   "pl_pct": -0.0029455754512832328,
+   "reason": "No new high for 22 min, and WCCB overtook it on buying volume (0.05x vs 0.05x normal in 30 min)."
+  },
+  {
+   "ticker": "WCCB",
+   "bought_at": "2026-10-20T17:26+00:00",
+   "sold_at": "2026-10-20T17:52+00:00",
+   "entry": 60.92499923706055,
+   "exit": 60.93000030517578,
+   "cost_gbp": 961.3599548046121,
+   "pl_gbp": 0.07891385601055845,
+   "pl_pct": 8.208564920576183e-05,
+   "reason": "No new high for 16 min, and GORO overtook it on buying volume (0.39x vs 0.08x normal in 30 min)."
+  },
+  {
+   "ticker": "GORO",
+   "bought_at": "2026-10-20T17:52+00:00",
+   "sold_at": "2026-10-20T18:08+00:00",
+   "entry": 3.4649999141693115,
+   "exit": 3.4600000381469727,
+   "cost_gbp": 999.7827819509743,
+   "pl_gbp": -1.442652260562113,
+   "pl_pct": -0.001442965698756008,
+   "reason": "No new high for 16 min, and MYGN overtook it on buying volume (0.09x vs 0.04x normal in 30 min)."
+  },
+  {
+   "ticker": "MYGN",
+   "bought_at": "2026-10-20T18:08+00:00",
+   "sold_at": "2026-10-20T18:32+00:00",
+   "entry": 5.81790018081665,
+   "exit": 5.755000114440918,
+   "cost_gbp": 996.7180273040839,
+   "pl_gbp": -10.775989296281864,
+   "pl_pct": -0.010811472253018926,
+   "reason": "No new high for 24 min, and NWFL overtook it on buying volume (0.12x vs 0.11x normal in 30 min)."
+  },
+  {
+   "ticker": "NWFL",
+   "bought_at": "2026-10-20T18:32+00:00",
+   "sold_at": "2026-10-20T18:54+00:00",
+   "entry": 34.0099983215332,
+   "exit": 34.0099983215332,
+   "cost_gbp": 996.649419458363,
+   "pl_gbp": 0.0,
+   "pl_pct": 0.0,
+   "reason": "No new high for 22 min, and GORO overtook it on buying volume (0.89x vs 0.04x normal in 30 min)."
+  },
+  {
+   "ticker": "GORO",
+   "bought_at": "2026-10-20T18:54+00:00",
+   "sold_at": "2026-10-20T19:22+00:00",
+   "entry": 3.4649999141693115,
+   "exit": 3.434999942779541,
+   "cost_gbp": 999.7827819509743,
+   "pl_gbp": -8.65611994155131,
+   "pl_pct": -0.008658000615553484,
+   "reason": "No new high for 28 min, and CFFI overtook it on buying volume (0.06x vs 0.01x normal in 30 min)."
+  },
+  {
+   "ticker": "CFFI",
+   "bought_at": "2026-10-20T19:22+00:00",
+   "sold_at": "2026-10-20T19:46+00:00",
+   "entry": 103.94000244140625,
+   "exit": 104.06999969482422,
+   "cost_gbp": 937.206235308207,
+   "pl_gbp": 1.1721592612520908,
+   "pl_pct": 0.0012506951160718832,
+   "reason": "No new high for 16 min, and MYGN overtook it on buying volume (0.30x vs 0.00x normal in 30 min)."
+  }
+ ],
+ "total_gbp": 1.1330495215365772,
+ "alerts": [
+  "10:16 Day trade: bought MYGN: 239 MYGN at $5.55 (about \u00a3996). Stop $5.27. Highest first-30-minute volume on today's list (6.6x a normal day).",
+  "12:42 Day trade: sold MYGN (+\u00a324): No new high for 50 min, and NWFL overtook it on buying volume (0.36x vs 0.27x normal in 30 min). Result +\u00a324 (+2.4%).",
+  "12:42 Day trade: bought NWFL: 39 NWFL at $33.95 (about \u00a3995). Stop $32.25. Strongest buying on the list: 0.36x normal volume bought in the last 30 min, and rising.",
+  "13:26 Day trade: sold NWFL (-\u00a33): No new high for 22 min, and WCCB overtook it on buying volume (0.05x vs 0.05x normal in 30 min). Result -\u00a33 (-0.3%).",
+  "13:26 Day trade: bought WCCB: 21 WCCB at $60.92 (about \u00a3961). Stop $57.88. Strongest buying on the list: 0.05x normal volume bought in the last 30 min, and rising.",
+  "13:52 Day trade: sold WCCB (+\u00a30): No new high for 16 min, and GORO overtook it on buying volume (0.39x vs 0.08x normal in 30 min). Result +\u00a30 (+0.0%).",
+  "13:52 Day trade: bought GORO: 384 GORO at $3.46 (about \u00a31,000). Stop $3.29. Strongest buying on the list: 0.39x normal volume bought in the last 30 min, and rising.",
+  "14:08 Day trade: sold GORO (-\u00a31): No new high for 16 min, and MYGN overtook it on buying volume (0.09x vs 0.04x normal in 30 min). Result -\u00a31 (-0.1%).",
+  "14:08 Day trade: bought MYGN: 228 MYGN at $5.82 (about \u00a3997). Stop $5.53. Strongest buying on the list: 0.09x normal volume bought in the last 30 min, and rising.",
+  "14:32 Day trade: sold MYGN (-\u00a311): No new high for 24 min, and NWFL overtook it on buying volume (0.12x vs 0.11x normal in 30 min). Result -\u00a311 (-1.1%).",
+  "14:32 Day trade: bought NWFL: 39 NWFL at $34.01 (about \u00a3997). Stop $32.31. Strongest buying on the list: 0.12x normal volume bought in the last 30 min, and rising.",
+  "14:54 Day trade: sold NWFL (+\u00a30): No new high for 22 min, and GORO overtook it on buying volume (0.89x vs 0.04x normal in 30 min). Result +\u00a30 (+0.0%).",
+  "14:54 Day trade: bought GORO: 384 GORO at $3.46 (about \u00a31,000). Stop $3.29. Strongest buying on the list: 0.89x normal volume bought in the last 30 min, and rising.",
+  "15:22 Day trade: sold GORO (-\u00a39): No new high for 28 min, and CFFI overtook it on buying volume (0.06x vs 0.01x normal in 30 min). Result -\u00a39 (-0.9%).",
+  "15:22 Day trade: bought CFFI: 12 CFFI at $103.94 (about \u00a3937). Stop $98.74. Strongest buying on the list: 0.06x normal volume bought in the last 30 min, and rising.",
+  "15:46 Day trade: sold CFFI (+\u00a31): No new high for 16 min, and MYGN overtook it on buying volume (0.30x vs 0.00x normal in 30 min). Result +\u00a31 (+0.1%).",
+  "15:50 Day trade summary: 8 trade(s) today: MYGN +\u00a324, NWFL -\u00a33, WCCB +\u00a30, GORO -\u00a31, MYGN -\u00a311, NWFL +\u00a30, GORO -\u00a39, CFFI +\u00a31. Total +\u00a31."
+ ],
+ "log": [
+  "Day trade buy order: 239 MYGN at about $5.55. Highest first-30-minute volume on today's list (6.6x a normal day).",
+  "Bought 239 MYGN at 5.55 (cost \u00a3996).",
+  "Added CFFI to today's list at 10:32 New York: 0.4x normal volume in the last 30 min; news: C&F Financial's 2026 Outlook: Aggressive Market Expansion Drives New Retail Grow",
+  "Added WCCB to today's list at 11:04 New York: 0.6x normal volume in the last 30 min; news: West Coast Community Bank Continues Expansion with New Full-Service Branch in Sa",
+  "Added GORO to today's list at 11:52 New York: 0.3x normal volume in the last 30 min; news: Goldgroup Completes Strategic Investment in Luca Mining",
+  "Added NWFL to today's list at 12:24 New York: 0.3x normal volume in the last 30 min; news: Norwood Financial Corp. (NWFL) Reports Next Week: Wall Street Expects Earnings G",
+  "Sold MYGN (about +\u00a324). No new high for 50 min, and NWFL overtook it on buying volume (0.36x vs 0.27x normal in 30 min).",
+  "Day trade buy order: 39 NWFL at about $33.95. Strongest buying on the list: 0.36x normal volume bought in the last 30 min, and rising.",
+  "Bought 39 NWFL at 33.95 (cost \u00a3995).",
+  "Sold NWFL (about -\u00a33). No new high for 22 min, and WCCB overtook it on buying volume (0.05x vs 0.05x normal in 30 min).",
+  "Day trade buy order: 21 WCCB at about $60.92. Strongest buying on the list: 0.05x normal volume bought in the last 30 min, and rising.",
+  "Bought 21 WCCB at 60.92 (cost \u00a3961).",
+  "Sold WCCB (about +\u00a30). No new high for 16 min, and GORO overtook it on buying volume (0.39x vs 0.08x normal in 30 min).",
+  "Day trade buy order: 384 GORO at about $3.46. Strongest buying on the list: 0.39x normal volume bought in the last 30 min, and rising.",
+  "Bought 384 GORO at 3.46 (cost \u00a31,000).",
+  "Sold GORO (about -\u00a31). No new high for 16 min, and MYGN overtook it on buying volume (0.09x vs 0.04x normal in 30 min).",
+  "Day trade buy order: 228 MYGN at about $5.82. Strongest buying on the list: 0.09x normal volume bought in the last 30 min, and rising.",
+  "Bought 228 MYGN at 5.82 (cost \u00a3997).",
+  "Sold MYGN (about -\u00a311). No new high for 24 min, and NWFL overtook it on buying volume (0.12x vs 0.11x normal in 30 min).",
+  "Day trade buy order: 39 NWFL at about $34.01. Strongest buying on the list: 0.12x normal volume bought in the last 30 min, and rising.",
+  "Bought 39 NWFL at 34.01 (cost \u00a3997).",
+  "Sold NWFL (about +\u00a30). No new high for 22 min, and GORO overtook it on buying volume (0.89x vs 0.04x normal in 30 min).",
+  "Day trade buy order: 384 GORO at about $3.46. Strongest buying on the list: 0.89x normal volume bought in the last 30 min, and rising.",
+  "Bought 384 GORO at 3.46 (cost \u00a31,000).",
+  "Added EPC to today's list at 15:20 New York: 0.3x normal volume in the last 30 min; news: Edgewell Personal Care Set for Stronger Fiscal 2027 as It Laps Tariff Cost Headw",
+  "Sold GORO (about -\u00a39). No new high for 28 min, and CFFI overtook it on buying volume (0.06x vs 0.01x normal in 30 min).",
+  "Day trade buy order: 12 CFFI at about $103.94. Strongest buying on the list: 0.06x normal volume bought in the last 30 min, and rising.",
+  "Bought 12 CFFI at 103.94 (cost \u00a3937).",
+  "Sold CFFI (about +\u00a31). No new high for 16 min, and MYGN overtook it on buying volume (0.30x vs 0.00x normal in 30 min).",
+  "Day trading finished: 8 trade(s), total +\u00a31."
+ ]
+}
