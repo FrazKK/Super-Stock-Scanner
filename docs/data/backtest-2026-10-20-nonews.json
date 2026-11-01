@@ -1,0 +1,276 @@
+{
+ "date": "2026-10-20",
+ "generated": "2026-11-01T10:14+00:00",
+ "fx_gbpusd": 1.330849051475525,
+ "result": "done",
+ "require_news": false,
+ "added_during_day": [
+  "Added VGZ to today's list at 10:32 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Added CFFI to today's list at 10:32 New York: 0.4x normal volume in the last 30 min; news: C&F Financial's 2026 Outlook: Aggressive Market Expansion Drives New Retail Grow",
+  "Added BVFL to today's list at 10:32 New York: 0.6x normal volume in the last 30 min; no news found",
+  "Added IRLA to today's list at 10:32 New York: 0.7x normal volume in the last 30 min; no news found",
+  "Added WCCB to today's list at 11:04 New York: 0.6x normal volume in the last 30 min; news: West Coast Community Bank Continues Expansion with New Full-Service Branch in Sa",
+  "Added ANGI to today's list at 11:04 New York: 0.3x normal volume in the last 30 min; no news found",
+  "Added FNKO to today's list at 11:20 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Added FF to today's list at 11:20 New York: 0.5x normal volume in the last 30 min; no news found",
+  "Added FORR to today's list at 11:20 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Added MWYN to today's list at 11:20 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Added AGBK to today's list at 11:36 New York: 0.5x normal volume in the last 30 min; no news found",
+  "Added MED to today's list at 11:36 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Added HIPO to today's list at 11:52 New York: 0.5x normal volume in the last 30 min; no news found",
+  "Added GORO to today's list at 11:52 New York: 0.3x normal volume in the last 30 min; news: Goldgroup Completes Strategic Investment in Luca Mining",
+  "Added TG to today's list at 11:52 New York: 0.7x normal volume in the last 30 min; no news found",
+  "Added IBTA to today's list at 12:08 New York: 0.3x normal volume in the last 30 min; no news found",
+  "Added ATNM to today's list at 12:08 New York: 2.4x normal volume in the last 30 min; no news found",
+  "Added IIIN to today's list at 12:24 New York: 0.5x normal volume in the last 30 min; no news found",
+  "Added NWFL to today's list at 12:24 New York: 0.3x normal volume in the last 30 min; news: Norwood Financial Corp. (NWFL) Reports Next Week: Wall Street Expects Earnings G",
+  "Added SG to today's list at 12:40 New York: 0.5x normal volume in the last 30 min; no news found",
+  "Added YEXT to today's list at 12:40 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Added CMRC to today's list at 13:12 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Added TLYS to today's list at 13:12 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Added CRCT to today's list at 13:44 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Added OM to today's list at 14:00 New York: 1.3x normal volume in the last 30 min; no news found",
+  "Added ACU to today's list at 14:16 New York: 0.3x normal volume in the last 30 min; no news found",
+  "Added HRTG to today's list at 14:32 New York: 0.6x normal volume in the last 30 min; no news found",
+  "Added FOSL to today's list at 14:32 New York: 1.2x normal volume in the last 30 min; no news found",
+  "Added WTI to today's list at 14:48 New York: 0.9x normal volume in the last 30 min; no news found",
+  "Added RSKD to today's list at 15:04 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Added EPC to today's list at 15:20 New York: 0.3x normal volume in the last 30 min; news: Edgewell Personal Care Set for Stronger Fiscal 2027 as It Laps Tariff Cost Headw"
+ ],
+ "list": [
+  {
+   "ticker": "MYGN",
+   "name": "Myriad Genetics, Inc.",
+   "vol_x": 6.61,
+   "buy_pct30": 0.48489399087969315,
+   "change": 0.33135391170697504,
+   "score": 13.66,
+   "news": [
+    "Myriad Genetics and Labcorp Announce Definitive Agreement for Myriad to Sell Prenatal Health Testing Business to Labcorp"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "QNBC",
+   "vol_x": 1.1
+  },
+  {
+   "ticker": "TMP",
+   "vol_x": 0.85
+  },
+  {
+   "ticker": "EDHL",
+   "vol_x": 0.56
+  },
+  {
+   "ticker": "NPK",
+   "vol_x": 0.51
+  },
+  {
+   "ticker": "FBIZ",
+   "vol_x": 0.49
+  },
+  {
+   "ticker": "COSO",
+   "vol_x": 0.49
+  },
+  {
+   "ticker": "SFST",
+   "vol_x": 0.48
+  },
+  {
+   "ticker": "BRBS",
+   "vol_x": 0.48
+  },
+  {
+   "ticker": "PDS",
+   "vol_x": 0.34
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "MYGN",
+   "bought_at": "2026-10-20T14:16+00:00",
+   "sold_at": "2026-10-20T16:08+00:00",
+   "entry": 5.547999858856201,
+   "exit": 5.71999979019165,
+   "cost_gbp": 996.3353580907725,
+   "pl_gbp": 30.888539570731723,
+   "pl_pct": 0.03100215135385929,
+   "reason": "No new high for 16 min, and ATNM overtook it on buying volume (2.32x vs 0.41x normal in 30 min)."
+  },
+  {
+   "ticker": "ATNM",
+   "bought_at": "2026-10-20T16:08+00:00",
+   "sold_at": "2026-10-20T16:54+00:00",
+   "entry": 1.440000057220459,
+   "exit": 1.409999966621399,
+   "cost_gbp": 999.7828464441551,
+   "pl_gbp": -20.828871375606468,
+   "pl_pct": -0.02083339542150257,
+   "reason": "No new high for 16 min, and NWFL overtook it on buying volume (0.36x vs 0.25x normal in 30 min)."
+  },
+  {
+   "ticker": "NWFL",
+   "bought_at": "2026-10-20T16:54+00:00",
+   "sold_at": "2026-10-20T17:20+00:00",
+   "entry": 34.09000015258789,
+   "exit": 34.06999969482422,
+   "cost_gbp": 998.9938411699565,
+   "pl_gbp": -0.5861054278983602,
+   "pl_pct": -0.0005866957369946862,
+   "reason": "No new high for 16 min, and IRLA overtook it on buying volume (0.88x vs 0.05x normal in 30 min)."
+  },
+  {
+   "ticker": "IRLA",
+   "bought_at": "2026-10-20T17:20+00:00",
+   "sold_at": "2026-10-20T17:38+00:00",
+   "entry": 37.875,
+   "exit": 36.0099983215332,
+   "cost_gbp": 996.0746476321015,
+   "pl_gbp": -49.04768025642488,
+   "pl_pct": -0.049240968408364276,
+   "reason": "No new high for 16 min, and HIPO overtook it on buying volume (1.45x vs 0.05x normal in 30 min)."
+  },
+  {
+   "ticker": "HIPO",
+   "bought_at": "2026-10-20T17:38+00:00",
+   "sold_at": "2026-10-20T17:58+00:00",
+   "entry": 36.67499923706055,
+   "exit": 36.5525016784668,
+   "cost_gbp": 992.0734219033711,
+   "pl_gbp": -3.313608034273784,
+   "pl_pct": -0.003340083466722015,
+   "reason": "No new high for 16 min, and BRBS overtook it on buying volume (1.18x vs 0.06x normal in 30 min)."
+  },
+  {
+   "ticker": "BRBS",
+   "bought_at": "2026-10-20T17:58+00:00",
+   "sold_at": "2026-10-20T18:14+00:00",
+   "entry": 3.9749999046325684,
+   "exit": 3.9649999141693115,
+   "cost_gbp": 997.5962087325379,
+   "pl_gbp": -2.5096736636094192,
+   "pl_pct": -0.00251572093161621,
+   "reason": "No new high for 16 min, and OM overtook it on buying volume (1.11x vs 0.00x normal in 30 min)."
+  },
+  {
+   "ticker": "OM",
+   "bought_at": "2026-10-20T18:14+00:00",
+   "sold_at": "2026-10-20T18:32+00:00",
+   "entry": 4.295100212097168,
+   "exit": 4.269999980926514,
+   "cost_gbp": 997.2475571640234,
+   "pl_gbp": -5.827837066219558,
+   "pl_pct": -0.005843922127814266,
+   "reason": "No new high for 16 min, and FOSL overtook it on buying volume (1.23x vs 0.37x normal in 30 min)."
+  },
+  {
+   "ticker": "FOSL",
+   "bought_at": "2026-10-20T18:32+00:00",
+   "sold_at": "2026-10-20T19:22+00:00",
+   "entry": 6.755000114440918,
+   "exit": 6.760000228881836,
+   "cost_gbp": 999.9143186595522,
+   "pl_gbp": 0.7401459570254474,
+   "pl_pct": 0.0007402093791572656,
+   "reason": "No new high for 16 min, and HIPO overtook it on buying volume (0.22x vs 0.03x normal in 30 min)."
+  },
+  {
+   "ticker": "HIPO",
+   "bought_at": "2026-10-20T19:22+00:00",
+   "sold_at": "2026-10-20T19:50+00:00",
+   "entry": 36.790000915527344,
+   "exit": 36.900001525878906,
+   "cost_gbp": 995.1842633772517,
+   "pl_gbp": 2.9755605778625522,
+   "pl_pct": 0.0029899594350142823,
+   "reason": "End of day: sold 10 minutes before the close."
+  }
+ ],
+ "total_gbp": -47.50952971841275,
+ "alerts": [
+  "10:16 Day trade: bought MYGN: 239 MYGN at $5.55 (about \u00a3996). Stop $5.27. Highest first-30-minute volume on today's list (6.6x a normal day).",
+  "12:08 Day trade: sold MYGN (+\u00a331): No new high for 16 min, and ATNM overtook it on buying volume (2.32x vs 0.41x normal in 30 min). Result +\u00a331 (+3.1%).",
+  "12:08 Day trade: bought ATNM: 924 ATNM at $1.44 (about \u00a31,000). Stop $1.37. Strongest buying on the list: 2.32x normal volume bought in the last 30 min, and rising.",
+  "12:54 Day trade: sold ATNM (-\u00a321): No new high for 16 min, and NWFL overtook it on buying volume (0.36x vs 0.25x normal in 30 min). Result -\u00a321 (-2.1%).",
+  "12:54 Day trade: bought NWFL: 39 NWFL at $34.09 (about \u00a3999). Stop $32.39. Strongest buying on the list: 0.36x normal volume bought in the last 30 min, and rising.",
+  "13:20 Day trade: sold NWFL (-\u00a31): No new high for 16 min, and IRLA overtook it on buying volume (0.88x vs 0.05x normal in 30 min). Result -\u00a31 (-0.1%).",
+  "13:20 Day trade: bought IRLA: 35 IRLA at $37.88 (about \u00a3996). Stop $35.98. Strongest buying on the list: 0.88x normal volume bought in the last 30 min, and rising.",
+  "13:38 Day trade: sold IRLA (-\u00a349): No new high for 16 min, and HIPO overtook it on buying volume (1.45x vs 0.05x normal in 30 min). Result -\u00a349 (-4.9%).",
+  "13:38 Day trade: bought HIPO: 36 HIPO at $36.67 (about \u00a3992). Stop $34.84. Strongest buying on the list: 1.45x normal volume bought in the last 30 min, and rising.",
+  "13:58 Day trade: sold HIPO (-\u00a33): No new high for 16 min, and BRBS overtook it on buying volume (1.18x vs 0.06x normal in 30 min). Result -\u00a33 (-0.3%).",
+  "13:58 Day trade: bought BRBS: 334 BRBS at $3.97 (about \u00a3998). Stop $3.78. Strongest buying on the list: 1.18x normal volume bought in the last 30 min, and rising.",
+  "14:14 Day trade: sold BRBS (-\u00a33): No new high for 16 min, and OM overtook it on buying volume (1.11x vs 0.00x normal in 30 min). Result -\u00a33 (-0.3%).",
+  "14:14 Day trade: bought OM: 309 OM at $4.30 (about \u00a3997). Stop $4.08. Strongest buying on the list: 1.11x normal volume bought in the last 30 min, and rising.",
+  "14:32 Day trade: sold OM (-\u00a36): No new high for 16 min, and FOSL overtook it on buying volume (1.23x vs 0.37x normal in 30 min). Result -\u00a36 (-0.6%).",
+  "14:32 Day trade: bought FOSL: 197 FOSL at $6.76 (about \u00a31,000). Stop $6.42. Strongest buying on the list: 1.23x normal volume bought in the last 30 min, and rising.",
+  "15:22 Day trade: sold FOSL (+\u00a31): No new high for 16 min, and HIPO overtook it on buying volume (0.22x vs 0.03x normal in 30 min). Result +\u00a31 (+0.1%).",
+  "15:22 Day trade: bought HIPO: 36 HIPO at $36.79 (about \u00a3995). Stop $34.95. Strongest buying on the list: 0.22x normal volume bought in the last 30 min, and rising.",
+  "15:50 Day trade: sold HIPO (+\u00a33): End of day: sold 10 minutes before the close. Result +\u00a33 (+0.3%).",
+  "15:50 Day trade summary: 9 trade(s) today: MYGN +\u00a331, ATNM -\u00a321, NWFL -\u00a31, IRLA -\u00a349, HIPO -\u00a33, BRBS -\u00a33, OM -\u00a36, FOSL +\u00a31, HIPO +\u00a33. Total -\u00a348."
+ ],
+ "log": [
+  "Day trade buy order: 239 MYGN at about $5.55. Highest first-30-minute volume on today's list (6.6x a normal day).",
+  "Bought 239 MYGN at 5.55 (cost \u00a3996).",
+  "Added VGZ to today's list at 10:32 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Added CFFI to today's list at 10:32 New York: 0.4x normal volume in the last 30 min; news: C&F Financial's 2026 Outlook: Aggressive Market Expansion Drives New Retail Grow",
+  "Added BVFL to today's list at 10:32 New York: 0.6x normal volume in the last 30 min; no news found",
+  "Added IRLA to today's list at 10:32 New York: 0.7x normal volume in the last 30 min; no news found",
+  "Added WCCB to today's list at 11:04 New York: 0.6x normal volume in the last 30 min; news: West Coast Community Bank Continues Expansion with New Full-Service Branch in Sa",
+  "Added ANGI to today's list at 11:04 New York: 0.3x normal volume in the last 30 min; no news found",
+  "Added FNKO to today's list at 11:20 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Added FF to today's list at 11:20 New York: 0.5x normal volume in the last 30 min; no news found",
+  "Added FORR to today's list at 11:20 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Added MWYN to today's list at 11:20 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Added AGBK to today's list at 11:36 New York: 0.5x normal volume in the last 30 min; no news found",
+  "Added MED to today's list at 11:36 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Added HIPO to today's list at 11:52 New York: 0.5x normal volume in the last 30 min; no news found",
+  "Added GORO to today's list at 11:52 New York: 0.3x normal volume in the last 30 min; news: Goldgroup Completes Strategic Investment in Luca Mining",
+  "Added TG to today's list at 11:52 New York: 0.7x normal volume in the last 30 min; no news found",
+  "Added IBTA to today's list at 12:08 New York: 0.3x normal volume in the last 30 min; no news found",
+  "Added ATNM to today's list at 12:08 New York: 2.4x normal volume in the last 30 min; no news found",
+  "Sold MYGN (about +\u00a331). No new high for 16 min, and ATNM overtook it on buying volume (2.32x vs 0.41x normal in 30 min).",
+  "Day trade buy order: 924 ATNM at about $1.44. Strongest buying on the list: 2.32x normal volume bought in the last 30 min, and rising.",
+  "Bought 924 ATNM at 1.44 (cost \u00a31,000).",
+  "Added IIIN to today's list at 12:24 New York: 0.5x normal volume in the last 30 min; no news found",
+  "Added NWFL to today's list at 12:24 New York: 0.3x normal volume in the last 30 min; news: Norwood Financial Corp. (NWFL) Reports Next Week: Wall Street Expects Earnings G",
+  "Added SG to today's list at 12:40 New York: 0.5x normal volume in the last 30 min; no news found",
+  "Added YEXT to today's list at 12:40 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Sold ATNM (about -\u00a321). No new high for 16 min, and NWFL overtook it on buying volume (0.36x vs 0.25x normal in 30 min).",
+  "Day trade buy order: 39 NWFL at about $34.09. Strongest buying on the list: 0.36x normal volume bought in the last 30 min, and rising.",
+  "Bought 39 NWFL at 34.09 (cost \u00a3999).",
+  "Added CMRC to today's list at 13:12 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Added TLYS to today's list at 13:12 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Sold NWFL (about -\u00a31). No new high for 16 min, and IRLA overtook it on buying volume (0.88x vs 0.05x normal in 30 min).",
+  "Day trade buy order: 35 IRLA at about $37.88. Strongest buying on the list: 0.88x normal volume bought in the last 30 min, and rising.",
+  "Bought 35 IRLA at 37.88 (cost \u00a3996).",
+  "Sold IRLA (about -\u00a349). No new high for 16 min, and HIPO overtook it on buying volume (1.45x vs 0.05x normal in 30 min).",
+  "Day trade buy order: 36 HIPO at about $36.67. Strongest buying on the list: 1.45x normal volume bought in the last 30 min, and rising.",
+  "Bought 36 HIPO at 36.67 (cost \u00a3992).",
+  "Added CRCT to today's list at 13:44 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Sold HIPO (about -\u00a33). No new high for 16 min, and BRBS overtook it on buying volume (1.18x vs 0.06x normal in 30 min).",
+  "Day trade buy order: 334 BRBS at about $3.97. Strongest buying on the list: 1.18x normal volume bought in the last 30 min, and rising.",
+  "Bought 334 BRBS at 3.97 (cost \u00a3998).",
+  "Added OM to today's list at 14:00 New York: 1.3x normal volume in the last 30 min; no news found",
+  "Sold BRBS (about -\u00a33). No new high for 16 min, and OM overtook it on buying volume (1.11x vs 0.00x normal in 30 min).",
+  "Day trade buy order: 309 OM at about $4.30. Strongest buying on the list: 1.11x normal volume bought in the last 30 min, and rising.",
+  "Bought 309 OM at 4.30 (cost \u00a3997).",
+  "Added ACU to today's list at 14:16 New York: 0.3x normal volume in the last 30 min; no news found",
+  "Added HRTG to today's list at 14:32 New York: 0.6x normal volume in the last 30 min; no news found",
+  "Added FOSL to today's list at 14:32 New York: 1.2x normal volume in the last 30 min; no news found",
+  "Sold OM (about -\u00a36). No new high for 16 min, and FOSL overtook it on buying volume (1.23x vs 0.37x normal in 30 min).",
+  "Day trade buy order: 197 FOSL at about $6.76. Strongest buying on the list: 1.23x normal volume bought in the last 30 min, and rising.",
+  "Bought 197 FOSL at 6.76 (cost \u00a31,000).",
+  "Added WTI to today's list at 14:48 New York: 0.9x normal volume in the last 30 min; no news found",
+  "Added RSKD to today's list at 15:04 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Added EPC to today's list at 15:20 New York: 0.3x normal volume in the last 30 min; news: Edgewell Personal Care Set for Stronger Fiscal 2027 as It Laps Tariff Cost Headw",
+  "Sold FOSL (about +\u00a31). No new high for 16 min, and HIPO overtook it on buying volume (0.22x vs 0.03x normal in 30 min).",
+  "Day trade buy order: 36 HIPO at about $36.79. Strongest buying on the list: 0.22x normal volume bought in the last 30 min, and rising.",
+  "Bought 36 HIPO at 36.79 (cost \u00a3995).",
+  "Sold HIPO (about +\u00a33). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 9 trade(s), total -\u00a348."
+ ]
+}
