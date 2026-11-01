@@ -5,7 +5,7 @@ name: Day trader (practice account)
 
 on:
   schedule:
-    - cron: "*/15 14-20 * * 1-5"
+    - cron: "*/10 13-20 * * 1-5"     # backup only: starts the trader if it isn't running (from 10:00 New York)
   workflow_dispatch:
 
 permissions:
