@@ -52,7 +52,7 @@ skipped = text and not days
 news = os.getenv("NEWS", "required")
 modes = ["required", "not required"] if news == "both" else [news]
 strat = os.getenv("STRATEGY", "all")
-strategies = ["breakout", "breakout-market", "rotation"] if strat == "all" else [strat]
+strategies = ["breakout", "breakout-market", "breakout-strong", "drift", "rotation"] if strat == "all" else [strat]
 jobs = [{"day": d.isoformat(), "news": m, "strategy": s, "bars": bars} for d in days for m in modes for s in strategies]
 print(f"{len(days)} weekday(s): {', '.join(d.isoformat() for d in days)}; news: {', '.join(modes)}; "
       f"strategies: {', '.join(strategies)}; {bars} bars; {len(jobs)} job(s)")

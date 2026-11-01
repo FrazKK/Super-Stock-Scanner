@@ -95,7 +95,13 @@ The bot day-trades a Trading 212 **practice** account, one US stock at a time.
 - **Protecting profit:** once the stock is up by the amount risked, the stop moves to break-even plus fees. Once it's up twice that, the stop trails one risk-amount under the highest price.
 - **Close:** it sells 10 minutes before the close.
 
-The earlier **rotation** rules below are kept so the replays can compare the two. Set the `PRACTICE_STRATEGY` setting to `rotation` to switch back. It only ever talks to the practice server (`demo.trading212.com`); the real-money address isn't in the code at all.
+**Also being tested: drift (one trade a day).**
+- **What it looks for:** US stocks with positive news in the last 5 days that closed up yesterday and normally move 4%+ a day.
+- **When it buys:** at 10:00 New York, the one with the most interest (yesterday's volume vs normal), if it's above today's opening price.
+- **Stop:** 5%, with the same break-even and trailing stop as breakout.
+- **Close:** sold before the close.
+
+The earlier **rotation** rules below are kept so the replays can compare them all. Set the `PRACTICE_STRATEGY` setting to `rotation` to switch back. It only ever talks to the practice server (`demo.trading212.com`); the real-money address isn't in the code at all.
 
 **Rules**
 - **List:** the US opening-surge list. These are stocks with positive news that traded at least a third of a normal day's volume in the first 30 minutes and are trending up, limited to ones Trading 212 offers. There's no company size limit, but takeover targets and stocks with bad news (placings, warnings) are always left out.
@@ -121,7 +127,7 @@ It checks every 2 minutes. The opening check starts it (about 45 minutes after t
 The settings are at the top of `practice.py` (the `DT_` lines).
 
 **Replaying past days:** Actions, then **Replay days (day trader)**, then Run workflow. Enter a date or a range (e.g. `2026-10-05 to 2026-10-30`). Then choose:
-- **Strategy:** breakout, breakout-market (only on days the US market is up), rotation, or all three.
+- **Strategy:** breakout, breakout-market (only on days the US market is up), breakout-strong (only stocks that traded a full day's volume early), drift, rotation, or all of them.
 - **Price detail:** 1-minute covers the last ~30 days, 5-minute the last ~60.
 - **News:** whether stocks must have positive news. It rebuilds that day's list from 1-minute prices and runs the same trading code against a pretend account, including a 0.1% spread and Trading 212's 0.15% currency fee on every buy and sell. The result goes to `docs/data/backtest-<date>.json` (or `-nonews.json`) and to your phone. Yahoo keeps 1-minute prices for about the last 30 days.
 

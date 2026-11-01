@@ -7,6 +7,9 @@ Strategy (PRACTICE_STRATEGY, default "breakout"), agreed 1 Nov 2026:
              Stop at the opening-range low (never more than 5% away); at +1x the risk the stop moves to break-even
              plus fees; from +2x it trails 1x the risk under the high. Sold 10 minutes before the close.
              PRACTICE_MARKET_FILTER=yes also requires the US market (SPY) to be above its opening price.
+  drift    - one trade a day. At 10:00 New York, buy the best US stock that had positive news in the last 5 days,
+             closed up yesterday, normally moves 4%+ a day and is above today's opening price (ranked by
+             yesterday's volume vs normal). 5% stop, then the same break-even and trailing stop. Sold before the close.
   rotation - the earlier rules below.
 
 Rotation rules: US day trading, one stock at a time (agreed 31 Oct 2026)
@@ -71,6 +74,7 @@ DT_STRATEGY = os.getenv("PRACTICE_STRATEGY", "breakout").strip().lower()
 # Breakout (opening-range breakout on "stocks in play"):
 DT_OR_MIN = 30               # opening range = the first 30 minutes' high and low
 DT_TOP_N = 5                 # only the 5 stocks with the most unusual volume count as "in play"
+DT_BO_MIN_VOLX = 0.0         # minimum volume vs a normal day (first 30 min, or last 30 min for later movers)
 DT_MIN_RANGE = 0.04          # the stock must normally move at least 4% a day (14-day average high-low range)
 DT_BO_BUYS = 1               # buys per day
 DT_BO_MAX_RISK = 0.05        # stop at the opening-range low, but never more than 5% below the buy price
@@ -78,6 +82,10 @@ DT_BE_AT_R = 1.0             # once up 1x the risk, move the stop to break-even 
 DT_TRAIL_AT_R = 2.0          # once up 2x the risk, trail the stop...
 DT_TRAIL_R = 1.0             # ...1x the risk below the highest price since buying
 DT_MARKET_FILTER = os.getenv("PRACTICE_MARKET_FILTER", "no").lower() in ("yes", "true", "1")
+# Drift (news in the last few days, closed up yesterday, still rising this morning):
+DT_DRIFT_NEWS_DAYS = 5       # positive news within the last 5 days
+DT_DRIFT_AT = 30             # decide 30 minutes after the open (buy if above today's opening price)
+DT_DRIFT_CHECKS = 40         # how many candidates to check for news (best first)
                              # only buy when the US market (SPY) is above where it opened today
 DT_WINDOW = 30               # minutes of buying volume compared between stocks
 DT_POLL = 120                # seconds between checks
@@ -925,6 +933,7 @@ def live_daily_stats(ysyms):
             if len(d) >= 10:
                 rng = ((d["High"] - d["Low"]) / d["Close"]).iloc[-14:].mean()
                 out[s] = {"avg": float(d["Volume"].iloc[-10:].mean()), "prev": float(d["Close"].iloc[-1]),
+                          "prev2": float(d["Close"].iloc[-2]), "yvol": float(d["Volume"].iloc[-1]),
                           "range": float(rng)}
         except Exception:
             continue
@@ -964,6 +973,30 @@ def day_setup(st, when):
     day.setdefault("skip", {})
     st["day"] = day
     return day
+
+
+def manage_hold(api, st, day, hold, positions, active, when):
+    """Stop, break-even and trailing stop for a one-trade-a-day position. True if it was sold."""
+    p = positions.get(hold["t212"]) or {}
+    price = S.num(p.get("currentPrice"))
+    if not price:
+        return False
+    if price > hold.get("high", 0):
+        hold["high"], hold["high_time"] = price, when.isoformat()
+    entry = hold.get("entry_local") or hold["ref_price"]
+    risk = hold.get("risk") or entry * DT_STOP
+    stop_now = hold.get("stop_local") or hold["initial_stop"]
+    new_stop = stop_now
+    if hold["high"] >= entry + DT_BE_AT_R * risk:
+        new_stop = max(new_stop, entry * 1.006)             # break-even plus the round-trip fees
+    if hold["high"] >= entry + DT_TRAIL_AT_R * risk:
+        new_stop = max(new_stop, hold["high"] - DT_TRAIL_R * risk)
+    hold["last_check"] = f"${price:,.2f} ({S.pct(price / entry - 1)}), high ${hold['high']:,.2f}, stop ${stop_now:,.2f}"
+    if price <= stop_now:
+        return dt_sell(api, st, day, hold, positions, active, f"Hit the stop (${stop_now:,.2f}) at ${price:,.2f}.", when)
+    if new_stop > stop_now * 1.002:
+        raise_stop(api, st, hold, p, active, new_stop)
+    return False
 
 
 def cmd_breakout(api, st, fetch_bars, fetch_stats, clock, pause, discover):
@@ -1037,29 +1070,11 @@ def cmd_breakout(api, st, fetch_bars, fetch_stats, clock, pause, discover):
                     log(st, f"Added {x['ticker']} to today's list at {ny(when):%H:%M} New York: {x.get('why', '')}")
         traded = False
         if hold and hold["status"] == "open":
-            p = positions.get(hold["t212"]) or {}
-            price = S.num(p.get("currentPrice"))
-            if price:
-                if price > hold.get("high", 0):
-                    hold["high"], hold["high_time"] = price, when.isoformat()
-                entry = hold.get("entry_local") or hold["ref_price"]
-                risk = hold.get("risk") or entry * DT_STOP
-                stop_now = hold.get("stop_local") or hold["initial_stop"]
-                new_stop = stop_now
-                if hold["high"] >= entry + DT_BE_AT_R * risk:
-                    new_stop = max(new_stop, entry * 1.006)             # break-even plus the round-trip fees
-                if hold["high"] >= entry + DT_TRAIL_AT_R * risk:
-                    new_stop = max(new_stop, hold["high"] - DT_TRAIL_R * risk)
-                hold["last_check"] = (f"${price:,.2f} ({S.pct(price / entry - 1)}), high ${hold['high']:,.2f}, "
-                                      f"stop ${stop_now:,.2f}")
-                if price <= stop_now:
-                    if dt_sell(api, st, day, hold, positions, active,
-                               f"Hit the stop (${stop_now:,.2f}) at ${price:,.2f}.", when):
-                        hold, traded = None, True
-                elif new_stop > stop_now * 1.002:
-                    raise_stop(api, st, hold, p, active, new_stop)
+            if manage_hold(api, st, day, hold, positions, active, when):
+                hold, traded = None, True
         elif can_buy and mins >= DT_OR_MIN and market_ok(fetch_bars, when):
-            ok = [c for c in cands if (stats.get(c["ysym"]) or {}).get("range", 0) >= DT_MIN_RANGE]
+            ok = [c for c in cands if (stats.get(c["ysym"]) or {}).get("range", 0) >= DT_MIN_RANGE
+                  and (c.get("vol_x") or 0) >= DT_BO_MIN_VOLX]
             ok = sorted(ok, key=lambda c: c.get("vol_x") or 0, reverse=True)[:DT_TOP_N]
             bars = fetch_bars([c["ysym"] for c in ok]) if ok else {}
             for c in ok:
@@ -1095,7 +1110,142 @@ def cmd_breakout(api, st, fetch_bars, fetch_stats, clock, pause, discover):
     return "done"
 
 
-def cmd_daytrade(api, st, fetch_bars=None, fetch_avg=None, clock=None, pause=None, discover=None, fetch_stats=None):
+def live_find_drift(when):
+    """Live: US stocks above today's open that closed up yesterday, normally move 4%+ a day and had positive news
+    in the last 5 days, strongest interest (yesterday's volume vs normal) first."""
+    from tradingview_screener import Query, col
+
+    cfg = S.MARKETS["america"]
+    q = (Query().set_markets("america")
+         .select("name", "description", "exchange", "close", "open", "change", "volume", "average_volume_10d_calc",
+                 "type", "typespecs", "sector", "industry", "currency")
+         .where(col("type") == "stock", col("close") > col("open"), col("close") >= 1,
+                col("average_volume_10d_calc") > 50000)
+         .order_by("change", ascending=False).limit(600))
+    _, df = q.get_scanner_data()
+    for c in ("typespecs", "sector", "industry", "currency"):
+        if c not in df.columns:
+            df[c] = None
+    df = df[df["exchange"].astype(str).str.upper().isin(cfg["exchanges"])]
+    df = df[~df.apply(S.is_excluded, axis=1)]
+    df = df[df["average_volume_10d_calc"] * df["close"] >= cfg["min_avg_value"]]
+    rows = df.to_dict("records")
+    for r in rows:
+        r["ysym"] = S.yahoo_symbol(r["exchange"], r["name"])
+    stats = live_daily_stats([r["ysym"] for r in rows])
+    return drift_rank(rows, stats, when, lambda r: float(r["close"]), lambda r: float(r["open"]))
+
+
+def drift_rank(rows, stats, when, price_of, open_of, news_fn=None, news_day=None):
+    """Shared by live and replay: apply the drift rules and return up to 5 candidates, best first."""
+    keep = []
+    for r in rows:
+        stt = stats.get(r["ysym"]) or {}
+        if not stt or stt.get("range", 0) < DT_MIN_RANGE or not stt.get("prev2"):
+            continue
+        if stt["prev"] <= stt["prev2"]:                         # must have closed up yesterday
+            continue
+        price, opn = price_of(r), open_of(r)
+        if not price or not opn or price <= opn or price / stt["prev"] - 1 > DT_MAX_UP:
+            continue
+        r["_score"] = stt.get("yvol", 0) / max(stt.get("avg") or 1, 1)
+        r["_stats"] = stt
+        keep.append(r)
+    keep.sort(key=lambda r: r["_score"], reverse=True)
+    since = when - dt.timedelta(days=DT_DRIFT_NEWS_DAYS + 2)
+    news_fn = news_fn or (lambda r: S.live_news("america", str(r["name"]), r["ysym"], since, str(r.get("description") or "")))
+    out = []
+    for r in keep[:DT_DRIFT_CHECKS]:
+        news = news_fn(r)
+        if news_day:
+            news = [n for n in news if n["date"] <= news_day]
+        if not news_ok(news, True):
+            continue
+        top = next((n["title"] for n in news if n.get("tone") == "pos"), "")
+        out.append({"ticker": str(r["name"]), "name": str(r.get("description") or r["name"]),
+                    "exchange": str(r["exchange"]).upper(), "ysym": r["ysym"], "price": price_of(r),
+                    "why": f"News in the last {DT_DRIFT_NEWS_DAYS} days ({top[:80]}); closed up yesterday "
+                           f"({S.pct(r['_stats']['prev'] / r['_stats']['prev2'] - 1)}) on "
+                           f"{r['_score']:.1f}x normal volume; above today's open at 10:00 New York."})
+        if len(out) >= 5:
+            break
+    return out
+
+
+def cmd_drift(api, st, fetch_bars, clock, pause, find_drift):
+    """One trade a day: at 10:00 New York, buy the best stock with positive news in the last 5 days that closed up
+    yesterday and is above today's opening price. 5% stop, break-even/trailing stop, sold before the close."""
+    started = time.time()
+    when = clock()
+    day = day_setup(st, when)
+    if day.get("finished"):
+        print("Day trading already finished for today.")
+        return "done"
+    insts = api.instruments()
+    save_tickers(api, insts)
+    fx = fx_rates()
+    last_save = 0.0
+    while True:
+        when = clock()
+        left, _ = S.minutes_to_close("america", when)
+        mins, _ = S.minutes_since_open("america", when)
+        if left is None or mins is None or mins < 0:
+            save_state(st)
+            return "wait"
+        if time.time() - started > DT_RUN_LIMIT:
+            save_state(st)
+            git_save("Day trade (handing over)")
+            return "resume"
+        positions, active, events = reconcile(api, st, when)
+        for e in events:
+            S.push("Day trade update", e, 3, "memo")
+        hold = dt_holding(st)
+        if left <= DT_EXIT:
+            if hold and hold["status"] == "open":
+                dt_sell(api, st, day, hold, positions, active, "End of day: sold 10 minutes before the close.", when)
+            break
+        traded = False
+        if hold and hold["status"] == "open":
+            if manage_hold(api, st, day, hold, positions, active, when):
+                hold, traded = None, True
+        elif not hold and not day.get("drift_checked") and mins >= DT_DRIFT_AT and left > DT_LAST_BUY:
+            day["drift_checked"] = True
+            try:
+                cands = find_drift(when)
+            except Exception as e:
+                print(f"  drift search failed: {e}")
+                cands = []
+            day["list"] = [c["ticker"] for c in cands]
+            if not cands:
+                log(st, "Drift: nothing had news in the last 5 days, closed up yesterday and is above today's open.")
+            for c in cands:
+                inst = find_instrument(insts, "america", c["ticker"], c["name"])
+                if not inst:
+                    continue
+                c["t212"] = inst["ticker"]
+                stop = c["price"] * (1 - DT_STOP)
+                if dt_buy(api, st, day, c, c["price"], c["why"], fx, when, positions, stop=stop):
+                    traded = True
+                    break
+        if traded or time.time() - last_save > 600:
+            save_state(st)
+            git_save(f"Day trade {when.strftime('%H:%M')}")
+            last_save = time.time()
+        pause(DT_POLL)
+    day["finished"] = True
+    done = [c for c in st["closed"] if c.get("source") == "daytrade" and c.get("sold") == when.date().isoformat()]
+    tot = sum(c["pl_gbp"] for c in done if c.get("pl_gbp") is not None)
+    S.push("Day trade summary", (f"{done[0]['ticker']}: {gbp_txt(tot)} today." if done else
+                                 "No trade today: nothing met the drift rules."), 3, "bar_chart")
+    log(st, f"Day trading finished: {len(done)} trade(s), total {gbp_txt(tot)}.")
+    return "done"
+
+
+def cmd_daytrade(api, st, fetch_bars=None, fetch_avg=None, clock=None, pause=None, discover=None, fetch_stats=None,
+                 find_drift=None):
+    if DT_STRATEGY == "drift":
+        return cmd_drift(api, st, fetch_bars or S.live_intraday, clock or now_utc, pause or time.sleep,
+                         find_drift or live_find_drift)
     if DT_STRATEGY == "breakout":
         return cmd_breakout(api, st, fetch_bars or S.live_intraday, fetch_stats or live_daily_stats,
                             clock or now_utc, pause or time.sleep, discover or live_discover)

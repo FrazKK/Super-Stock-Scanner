@@ -44,6 +44,51 @@ def last_weekday(before):
 
 
 SPY_BARS = None
+DAILY = {}
+
+
+def replay_drift(day, meta, mins):
+    """Drift candidates as the bot would have found them at 10:00 New York on that day."""
+    stats, rows, opens = {}, [], {}
+    for ys, d in DAILY.items():
+        idx = [x.date() for x in d.index]
+        prior = d[[x < day for x in idx]]
+        today = d[[x == day for x in idx]]
+        if len(prior) < 15 or today.empty:
+            continue
+        st = {"avg": float(prior["Volume"].iloc[-10:].mean()), "prev": float(prior["Close"].iloc[-1]),
+              "prev2": float(prior["Close"].iloc[-2]), "yvol": float(prior["Volume"].iloc[-1]),
+              "range": float(((prior["High"] - prior["Low"]) / prior["Close"]).iloc[-14:].mean())}
+        if st["prev"] <= st["prev2"] or st["range"] < P.DT_MIN_RANGE:
+            continue
+        stats[ys] = st
+        opens[ys] = float(today["Open"].iloc[0])
+        m = meta[ys]
+        rows.append({"name": m["ticker"], "description": m.get("description"), "exchange": m["exchange"], "ysym": ys})
+    need = [r["ysym"] for r in rows if r["ysym"] not in mins]
+    print(f"  drift: {len(rows)} closed up yesterday and normally move 4%+; fetching minute prices for {len(need)}")
+    got = download(need, start=day.isoformat(), end=(day + dt.timedelta(days=1)).isoformat(),
+                   interval=BAR["interval"], prepost=False) if need else {}
+    for ys, b in got.items():
+        b = b.copy()
+        b.index = b.index.tz_convert(NY) if b.index.tz is not None else b.index.tz_localize("UTC").tz_convert(NY)
+        mins[ys] = b[[x.date() == day for x in b.index]]
+    at = dt.datetime.combine(day, dt.time(9, 30), NY) + dt.timedelta(minutes=P.DT_DRIFT_AT)
+
+    def price_at(r):
+        b = mins.get(r["ysym"])
+        if b is None or not len(b):
+            return None
+        b = b[b.index <= at - dt.timedelta(minutes=BAR["minutes"])]
+        return float(b["Close"].iloc[-1]) if len(b) else None
+
+    def open_of(r):
+        b = mins.get(r["ysym"])
+        return float(b["Open"].iloc[0]) if b is not None and len(b) else opens.get(r["ysym"])
+
+    since = dt.datetime.combine(day - dt.timedelta(days=P.DT_DRIFT_NEWS_DAYS + 2), dt.time(0), dt.timezone.utc)
+    news_fn = lambda r: S.live_news("america", r["name"], r["ysym"], since, str(r.get("description") or ""))
+    return P.drift_rank(rows, stats, at.astimezone(dt.timezone.utc), price_at, open_of, news_fn, day.isoformat())
 
 
 def result_suffix(a):
@@ -94,12 +139,13 @@ def download(syms, **kw):
 
 
 def build_list(day):
-    global SPY_BARS
+    global SPY_BARS, DAILY
     """Rebuild that day's US opening-surge list (as the 10:15 check would have seen it, with data to 10:00)."""
     uni = S.prepare_universe(S.live_tv("america", any_size=S.OPEN_ANY_SIZE), "america")
     meta = {r["ysym"]: r for r in uni.to_dict("records")}
     daily = download(list(meta), start=(day - dt.timedelta(days=150)).isoformat(),
                      end=(day + dt.timedelta(days=1)).isoformat(), interval="1d")
+    DAILY = daily
     pre, info = [], {}
     for ys, d in daily.items():
         idx = [ix.date() for ix in d.index]
@@ -260,12 +306,14 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--date", default="")
     ap.add_argument("--no-news", action="store_true", help="also trade heavy buying + uptrend without news")
-    ap.add_argument("--strategy", default="breakout", choices=["breakout", "breakout-market", "rotation"])
+    ap.add_argument("--strategy", default="breakout", choices=["breakout", "breakout-market", "breakout-strong", "drift", "rotation"])
     ap.add_argument("--bars", default="1m", choices=["1m", "5m"])
     a = ap.parse_args()
     P.DT_REQUIRE_NEWS = not a.no_news
-    P.DT_STRATEGY = "rotation" if a.strategy == "rotation" else "breakout"
+    P.DT_STRATEGY = a.strategy if a.strategy in ("rotation", "drift") else "breakout"
     P.DT_MARKET_FILTER = a.strategy == "breakout-market"
+    if a.strategy == "breakout-strong":        # only heavily traded "in play" stocks: a full normal day's volume
+        P.DT_BO_MIN_VOLX, P.DT_TOP_N = 1.0, 3   # in the first 30 minutes, top 3 only
     BAR.update(interval=a.bars, minutes=5 if a.bars == "5m" else 1)
     day = parse_day(a.date) if a.date.strip() else last_weekday(dt.datetime.now(NY).date())
     print(f"Replaying {day} (US)")
@@ -287,6 +335,9 @@ def main():
         fxr = float(g["Close"].iloc[-1]) if g is not None and len(g) else fxr
     except Exception:
         pass
+    drift_list = replay_drift(day, meta, mins) if P.DT_STRATEGY == "drift" else []
+    if P.DT_STRATEGY == "drift":
+        print(f"  drift candidates: {[c['ticker'] for c in drift_list]}")
     acct = ReplayAccount(mins, clock, fx=fxr)
     acct.names = {meta[ys]["ticker"]: str(meta[ys].get("description") or meta[ys]["ticker"]) for ys in mins
                   if not t212 or meta[ys]["ticker"] in t212}
@@ -344,7 +395,8 @@ def main():
     res = P.cmd_daytrade(acct, st, fetch_bars=fetch_bars,
                          fetch_avg=lambda ys: {y: info[y]["avg"] for y in ys if y in info},
                          clock=clock, pause=pause, discover=discover,
-                         fetch_stats=lambda ys: {y: {k: info[y][k] for k in ("avg", "prev", "range")} for y in ys if y in info})
+                         fetch_stats=lambda ys: {y: {k: info[y][k] for k in ("avg", "prev", "range")} for y in ys if y in info},
+                         find_drift=lambda when: drift_list)
     S.push = real_push
     trades = [c for c in st["closed"]]
     total = sum(c["pl_gbp"] for c in trades if c.get("pl_gbp") is not None)
@@ -352,6 +404,7 @@ def main():
            "fx_gbpusd": fxr, "result": res, "require_news": P.DT_REQUIRE_NEWS, "strategy": a.strategy,
            "bars": a.bars,
            "added_during_day": [x["text"] for x in st["log"] if x["text"].startswith("Added ")],
+           "drift_list": [{k: c.get(k) for k in ("ticker", "name", "price", "why")} for c in drift_list],
            "list": [{k: p.get(k) for k in ("ticker", "name", "vol_x", "buy_pct30", "change", "score")}
                     | {"news": [n["title"] for n in p["news"] if n["tone"] == "pos"][:2],
                        "on_t212": (not t212) or p["ticker"] in t212} for p in picks],
