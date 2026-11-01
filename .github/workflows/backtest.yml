@@ -33,6 +33,14 @@ on:
           - "1-minute"
           - "5-minute"
         default: "1-minute"
+      trend:
+        description: "Must stocks be in an uptrend (above their 20/50-day averages)?"
+        type: choice
+        options:
+          - "required"
+          - "not required"
+          - "both"
+        default: "required"
       news:
         description: "Must stocks have positive news?"
         type: choice
@@ -65,6 +73,7 @@ jobs:
           NEWS: ${{ inputs.news }}
           STRATEGY: ${{ inputs.strategy }}
           BARS: ${{ inputs.bars }}
+          TREND: ${{ inputs.trend }}
         run: python backtest_plan.py
 
   replay:
@@ -76,7 +85,7 @@ jobs:
       fail-fast: false
       max-parallel: 15
       matrix: ${{ fromJSON(needs.plan.outputs.matrix) }}
-    name: ${{ matrix.day }} ${{ matrix.strategy }} (news ${{ matrix.news }}, ${{ matrix.bars }})
+    name: ${{ matrix.day }} ${{ matrix.strategy }} (news ${{ matrix.news }}, trend ${{ matrix.trend }}, ${{ matrix.bars }})
     steps:
       - uses: actions/checkout@v5
         with:
@@ -92,11 +101,13 @@ jobs:
           NEWS: ${{ matrix.news }}
           STRAT: ${{ matrix.strategy }}
           BARS: ${{ matrix.bars }}
+          TREND: ${{ matrix.trend }}
           REPLAY_BATCH: "1"
         run: |
           extra=""
           suffix="-$STRAT"
           if [ "$NEWS" = "not required" ]; then extra="--no-news"; suffix="$suffix-nonews"; fi
+          if [ "$TREND" = "not required" ]; then extra="$extra --no-trend"; suffix="$suffix-notrend"; fi
           if [ "$BARS" = "5m" ]; then suffix="$suffix-5m"; fi
           python backtest.py --date "$DAY" --strategy "$STRAT" --bars "$BARS" $extra
           mkdir -p out
