@@ -1,0 +1,173 @@
+{
+ "date": "2026-09-04",
+ "generated": "2026-11-01T14:59+00:00",
+ "fx_gbpusd": 1.353179931640625,
+ "result": "done",
+ "require_news": true,
+ "strategy": "rotation",
+ "bars": "5m",
+ "added_during_day": [
+  "Added FXNC to today's list at 12:40 New York: 0.3x normal volume in the last 30 min; news: All You Need to Know About FIRST NAT CP (FXNC) Rating Upgrade to Buy",
+  "Added TARS to today's list at 15:20 New York: 0.4x normal volume in the last 30 min; news: Tarsus Pharmaceuticals Completes Acquisition of Alkeus Pharmaceuticals, Expandin"
+ ],
+ "drift_list": [],
+ "list": [
+  {
+   "ticker": "CURV",
+   "name": "Torrid Holdings Inc.",
+   "vol_x": 5.77,
+   "buy_pct30": 0.5058966351285042,
+   "change": 0.19730944101214343,
+   "score": 13.06,
+   "news": [
+    "Torrid Holdings Inc (CURV) (Q2 2026) Earnings Call Highlights: Sub-Brand Growth and Tariff ..."
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "HURC",
+   "name": "Hurco Companies, Inc.",
+   "vol_x": 1.32,
+   "buy_pct30": 0.2620458255244544,
+   "change": 0.00899122502481653,
+   "score": 2.19,
+   "news": [
+    "Hurco Reports Profit in Third Quarter Results for Fiscal Year 2026"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "TLYS",
+   "name": "Tilly's, Inc.",
+   "vol_x": 0.44,
+   "buy_pct30": 0.6251462351561103,
+   "change": 0.020454471318191336,
+   "score": 1.88,
+   "news": [
+    "Tilly's (NYSE:TLYS) Surprises With Strong Q2 CY2026, Stock Jumps 31.4%"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "IOT",
+   "vol_x": 1.11
+  },
+  {
+   "ticker": "VBNK",
+   "vol_x": 1.09
+  },
+  {
+   "ticker": "BSVN",
+   "vol_x": 1.04
+  },
+  {
+   "ticker": "AMC",
+   "vol_x": 0.93
+  },
+  {
+   "ticker": "HBCP",
+   "vol_x": 0.92
+  },
+  {
+   "ticker": "BNC",
+   "vol_x": 0.88
+  },
+  {
+   "ticker": "CHPT",
+   "vol_x": 0.79
+  },
+  {
+   "ticker": "SFNC",
+   "vol_x": 0.73
+  },
+  {
+   "ticker": "PDEX",
+   "vol_x": 0.71
+  },
+  {
+   "ticker": "OSTX",
+   "vol_x": 0.58
+  },
+  {
+   "ticker": "HSHP",
+   "vol_x": 0.53
+  },
+  {
+   "ticker": "CD",
+   "vol_x": 0.43
+  },
+  {
+   "ticker": "MU",
+   "vol_x": 0.39
+  },
+  {
+   "ticker": "ITGR",
+   "vol_x": 0.39
+  },
+  {
+   "ticker": "CAC",
+   "vol_x": 0.39
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "CURV",
+   "bought_at": "2026-09-04T14:16+00:00",
+   "sold_at": "2026-09-04T14:20+00:00",
+   "entry": 2.635933366060257,
+   "exit": 2.4800000190734863,
+   "cost_gbp": 1000.7997723349016,
+   "pl_gbp": -60.614376411828175,
+   "pl_pct": -0.06056593745061779,
+   "reason": "Fell 5% below the buy price ($2.48 vs $2.64)."
+  },
+  {
+   "ticker": "HURC",
+   "bought_at": "2026-09-04T14:40+00:00",
+   "sold_at": "2026-09-04T16:40+00:00",
+   "entry": 22.22980723953247,
+   "exit": 23.0,
+   "cost_gbp": 987.1481876057429,
+   "pl_gbp": 32.671843516694594,
+   "pl_pct": 0.03309720255470235,
+   "reason": "No new high for 50 min, and FXNC overtook it on buying volume (0.35x vs 0.00x normal in 30 min)."
+  },
+  {
+   "ticker": "FXNC",
+   "bought_at": "2026-09-04T16:40+00:00",
+   "sold_at": "2026-09-04T19:50+00:00",
+   "entry": 31.491459083557125,
+   "exit": 31.260000228881836,
+   "cost_gbp": 1002.205182026017,
+   "pl_gbp": -8.856124438231518,
+   "pl_pct": -0.00883663804284901,
+   "reason": "End of day: sold 10 minutes before the close."
+  }
+ ],
+ "total_gbp": -36.7986573333651,
+ "alerts": [
+  "10:16 Day trade: bought CURV: 513 CURV at $2.64 (about \u00a31,001). Stop $2.50. Highest first-30-minute volume on today's list (5.8x a normal day).",
+  "10:20 Day trade: sold CURV (-\u00a361): Fell 5% below the buy price ($2.48 vs $2.64). Result -\u00a361 (-6.1%).",
+  "10:40 Day trade: bought HURC: 60 HURC at $22.23 (about \u00a3987). Stop $21.12. Strongest buying on the list: 0.05x normal volume bought in the last 30 min, and rising.",
+  "12:40 Day trade: sold HURC (+\u00a333): No new high for 50 min, and FXNC overtook it on buying volume (0.35x vs 0.00x normal in 30 min). Result +\u00a333 (+3.3%).",
+  "12:40 Day trade: bought FXNC: 43 FXNC at $31.49 (about \u00a31,002). Stop $29.92. Strongest buying on the list: 0.35x normal volume bought in the last 30 min, and rising.",
+  "15:50 Day trade: sold FXNC (-\u00a39): End of day: sold 10 minutes before the close. Result -\u00a39 (-0.9%).",
+  "15:50 Day trade summary: 3 trade(s) today: CURV -\u00a361, HURC +\u00a333, FXNC -\u00a39. Total -\u00a337."
+ ],
+ "log": [
+  "Day trade buy order: 513 CURV at about $2.63. Highest first-30-minute volume on today's list (5.8x a normal day).",
+  "Bought 513 CURV at 2.64 (cost \u00a31,001).",
+  "Sold CURV (about -\u00a361). Fell 5% below the buy price ($2.48 vs $2.64).",
+  "Day trade buy order: 60 HURC at about $22.21. Strongest buying on the list: 0.05x normal volume bought in the last 30 min, and rising.",
+  "Bought 60 HURC at 22.23 (cost \u00a3987).",
+  "Added FXNC to today's list at 12:40 New York: 0.3x normal volume in the last 30 min; news: All You Need to Know About FIRST NAT CP (FXNC) Rating Upgrade to Buy",
+  "Sold HURC (about +\u00a333). No new high for 50 min, and FXNC overtook it on buying volume (0.35x vs 0.00x normal in 30 min).",
+  "Day trade buy order: 43 FXNC at about $31.46. Strongest buying on the list: 0.35x normal volume bought in the last 30 min, and rising.",
+  "Bought 43 FXNC at 31.49 (cost \u00a31,002).",
+  "Added TARS to today's list at 15:20 New York: 0.4x normal volume in the last 30 min; news: Tarsus Pharmaceuticals Completes Acquisition of Alkeus Pharmaceuticals, Expandin",
+  "Sold FXNC (about -\u00a39). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 3 trade(s), total -\u00a337."
+ ]
+}

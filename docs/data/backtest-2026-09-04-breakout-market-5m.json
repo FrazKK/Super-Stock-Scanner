@@ -1,0 +1,124 @@
+{
+ "date": "2026-09-04",
+ "generated": "2026-11-01T15:00+00:00",
+ "fx_gbpusd": 1.353179931640625,
+ "result": "done",
+ "require_news": true,
+ "strategy": "breakout-market",
+ "bars": "5m",
+ "added_during_day": [
+  "Added FXNC to today's list at 12:40 New York: 0.3x normal volume in the last 30 min; news: All You Need to Know About FIRST NAT CP (FXNC) Rating Upgrade to Buy",
+  "Added TARS to today's list at 15:20 New York: 0.4x normal volume in the last 30 min; news: Tarsus Pharmaceuticals Completes Acquisition of Alkeus Pharmaceuticals, Expandin"
+ ],
+ "drift_list": [],
+ "list": [
+  {
+   "ticker": "CURV",
+   "name": "Torrid Holdings Inc.",
+   "vol_x": 5.77,
+   "buy_pct30": 0.5058966351285042,
+   "change": 0.19730944101214343,
+   "score": 13.06,
+   "news": [
+    "Torrid Holdings Inc (CURV) (Q2 2026) Earnings Call Highlights: Sub-Brand Growth and Tariff ..."
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "HURC",
+   "name": "Hurco Companies, Inc.",
+   "vol_x": 1.32,
+   "buy_pct30": 0.2620458255244544,
+   "change": 0.00899122502481653,
+   "score": 2.19,
+   "news": [
+    "Hurco Reports Profit in Third Quarter Results for Fiscal Year 2026"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "TLYS",
+   "name": "Tilly's, Inc.",
+   "vol_x": 0.44,
+   "buy_pct30": 0.6251462351561103,
+   "change": 0.020454471318191336,
+   "score": 1.88,
+   "news": [
+    "Tilly's (NYSE:TLYS) Surprises With Strong Q2 CY2026, Stock Jumps 31.4%"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "IOT",
+   "vol_x": 1.11
+  },
+  {
+   "ticker": "VBNK",
+   "vol_x": 1.09
+  },
+  {
+   "ticker": "BSVN",
+   "vol_x": 1.04
+  },
+  {
+   "ticker": "AMC",
+   "vol_x": 0.93
+  },
+  {
+   "ticker": "HBCP",
+   "vol_x": 0.92
+  },
+  {
+   "ticker": "BNC",
+   "vol_x": 0.88
+  },
+  {
+   "ticker": "CHPT",
+   "vol_x": 0.79
+  },
+  {
+   "ticker": "SFNC",
+   "vol_x": 0.73
+  },
+  {
+   "ticker": "PDEX",
+   "vol_x": 0.71
+  },
+  {
+   "ticker": "OSTX",
+   "vol_x": 0.58
+  },
+  {
+   "ticker": "HSHP",
+   "vol_x": 0.53
+  },
+  {
+   "ticker": "CD",
+   "vol_x": 0.43
+  },
+  {
+   "ticker": "MU",
+   "vol_x": 0.39
+  },
+  {
+   "ticker": "ITGR",
+   "vol_x": 0.39
+  },
+  {
+   "ticker": "CAC",
+   "vol_x": 0.39
+  }
+ ],
+ "trades": [],
+ "total_gbp": 0,
+ "alerts": [
+  "15:50 Day trade summary: No trade today: nothing in play broke out."
+ ],
+ "log": [
+  "Added FXNC to today's list at 12:40 New York: 0.3x normal volume in the last 30 min; news: All You Need to Know About FIRST NAT CP (FXNC) Rating Upgrade to Buy",
+  "Added TARS to today's list at 15:20 New York: 0.4x normal volume in the last 30 min; news: Tarsus Pharmaceuticals Completes Acquisition of Alkeus Pharmaceuticals, Expandin",
+  "Day trading finished: 0 trade(s), total +\u00a30."
+ ]
+}

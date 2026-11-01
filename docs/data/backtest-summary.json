@@ -1,5 +1,144 @@
 {
  "by_day": {
+  "breakout, 5-min bars": {
+   "2026-09-04": {
+    "total": 0,
+    "trades": 0,
+    "wins": 0,
+    "list": [
+     "CURV",
+     "HURC",
+     "TLYS"
+    ],
+    "added": 2
+   },
+   "2026-09-07": {
+    "total": 0,
+    "trades": 0,
+    "wins": 0,
+    "list": [],
+    "added": 0
+   },
+   "2026-09-08": {
+    "total": 47.99,
+    "trades": 1,
+    "wins": 1,
+    "list": [
+     "OESX",
+     "CURV"
+    ],
+    "added": 0
+   }
+  },
+  "breakout-market, 5-min bars": {
+   "2026-09-04": {
+    "total": 0,
+    "trades": 0,
+    "wins": 0,
+    "list": [
+     "CURV",
+     "HURC",
+     "TLYS"
+    ],
+    "added": 2
+   },
+   "2026-09-07": {
+    "total": 0,
+    "trades": 0,
+    "wins": 0,
+    "list": [],
+    "added": 0
+   },
+   "2026-09-08": {
+    "total": 0,
+    "trades": 0,
+    "wins": 0,
+    "list": [
+     "OESX",
+     "CURV"
+    ],
+    "added": 1
+   }
+  },
+  "drift, 5-min bars": {
+   "2026-09-04": {
+    "total": -53.85,
+    "trades": 1,
+    "wins": 0,
+    "list": [
+     "CURV",
+     "HURC",
+     "TLYS"
+    ],
+    "added": 0
+   },
+   "2026-09-07": {
+    "total": 0,
+    "trades": 0,
+    "wins": 0,
+    "list": [],
+    "added": 0
+   },
+   "2026-09-08": {
+    "total": -55.33,
+    "trades": 1,
+    "wins": 0,
+    "list": [
+     "OESX",
+     "CURV"
+    ],
+    "added": 0
+   }
+  },
+  "rotation, 5-min bars": {
+   "2026-09-04": {
+    "total": -36.8,
+    "trades": 3,
+    "wins": 1,
+    "list": [
+     "CURV",
+     "HURC",
+     "TLYS"
+    ],
+    "added": 2
+   },
+   "2026-09-07": {
+    "total": 0,
+    "trades": 0,
+    "wins": 0,
+    "list": [],
+    "added": 0
+   },
+   "2026-09-08": {
+    "total": 47.99,
+    "trades": 1,
+    "wins": 1,
+    "list": [
+     "OESX",
+     "CURV"
+    ],
+    "added": 0
+   }
+  },
+  "breakout-strong, 5-min bars": {
+   "2026-09-07": {
+    "total": 0,
+    "trades": 0,
+    "wins": 0,
+    "list": [],
+    "added": 0
+   },
+   "2026-09-08": {
+    "total": 0,
+    "trades": 0,
+    "wins": 0,
+    "list": [
+     "OESX",
+     "CURV"
+    ],
+    "added": 1
+   }
+  },
   "breakout-market": {
    "2026-10-05": {
     "total": -18.45,
@@ -1126,6 +1265,51 @@
   }
  },
  "totals": {
+  "breakout, 5-min bars": {
+   "days": 3,
+   "days_traded": 1,
+   "trades": 1,
+   "wins": 1,
+   "total_gbp": 47.99,
+   "best_day": "2026-09-08",
+   "worst_day": "2026-09-04"
+  },
+  "breakout-market, 5-min bars": {
+   "days": 3,
+   "days_traded": 0,
+   "trades": 0,
+   "wins": 0,
+   "total_gbp": 0,
+   "best_day": "2026-09-04",
+   "worst_day": "2026-09-04"
+  },
+  "drift, 5-min bars": {
+   "days": 3,
+   "days_traded": 2,
+   "trades": 2,
+   "wins": 0,
+   "total_gbp": -109.18,
+   "best_day": "2026-09-07",
+   "worst_day": "2026-09-08"
+  },
+  "rotation, 5-min bars": {
+   "days": 3,
+   "days_traded": 2,
+   "trades": 4,
+   "wins": 2,
+   "total_gbp": 11.19,
+   "best_day": "2026-09-08",
+   "worst_day": "2026-09-04"
+  },
+  "breakout-strong, 5-min bars": {
+   "days": 2,
+   "days_traded": 0,
+   "trades": 0,
+   "wins": 0,
+   "total_gbp": 0,
+   "best_day": "2026-09-07",
+   "worst_day": "2026-09-07"
+  },
   "breakout-market": {
    "days": 20,
    "days_traded": 14,

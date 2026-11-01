@@ -1,0 +1,143 @@
+{
+ "date": "2026-09-04",
+ "generated": "2026-11-01T14:57+00:00",
+ "fx_gbpusd": 1.353179931640625,
+ "result": "done",
+ "require_news": true,
+ "strategy": "drift",
+ "bars": "5m",
+ "added_during_day": [],
+ "drift_list": [
+  {
+   "ticker": "TLYS",
+   "name": "Tilly's, Inc.",
+   "price": 4.489999771118164,
+   "why": "News in the last 5 days (Tilly's (NYSE:TLYS) Surprises With Strong Q2 CY2026, Stock Jumps 31.4%); closed up yesterday (+15.5%) on 7.1x normal volume; above today's open at 10:00 New York."
+  }
+ ],
+ "list": [
+  {
+   "ticker": "CURV",
+   "name": "Torrid Holdings Inc.",
+   "vol_x": 5.77,
+   "buy_pct30": 0.5058966351285042,
+   "change": 0.19730944101214343,
+   "score": 13.06,
+   "news": [
+    "Torrid Holdings Inc (CURV) (Q2 2026) Earnings Call Highlights: Sub-Brand Growth and Tariff ..."
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "HURC",
+   "name": "Hurco Companies, Inc.",
+   "vol_x": 1.32,
+   "buy_pct30": 0.2620458255244544,
+   "change": 0.00899122502481653,
+   "score": 2.19,
+   "news": [
+    "Hurco Reports Profit in Third Quarter Results for Fiscal Year 2026"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "TLYS",
+   "name": "Tilly's, Inc.",
+   "vol_x": 0.44,
+   "buy_pct30": 0.6251462351561103,
+   "change": 0.020454471318191336,
+   "score": 1.88,
+   "news": [
+    "Tilly's (NYSE:TLYS) Surprises With Strong Q2 CY2026, Stock Jumps 31.4%"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "IOT",
+   "vol_x": 1.11
+  },
+  {
+   "ticker": "VBNK",
+   "vol_x": 1.09
+  },
+  {
+   "ticker": "BSVN",
+   "vol_x": 1.04
+  },
+  {
+   "ticker": "AMC",
+   "vol_x": 0.93
+  },
+  {
+   "ticker": "HBCP",
+   "vol_x": 0.92
+  },
+  {
+   "ticker": "BNC",
+   "vol_x": 0.88
+  },
+  {
+   "ticker": "CHPT",
+   "vol_x": 0.79
+  },
+  {
+   "ticker": "SFNC",
+   "vol_x": 0.73
+  },
+  {
+   "ticker": "PDEX",
+   "vol_x": 0.71
+  },
+  {
+   "ticker": "OSTX",
+   "vol_x": 0.58
+  },
+  {
+   "ticker": "HSHP",
+   "vol_x": 0.53
+  },
+  {
+   "ticker": "CD",
+   "vol_x": 0.43
+  },
+  {
+   "ticker": "MU",
+   "vol_x": 0.39
+  },
+  {
+   "ticker": "ITGR",
+   "vol_x": 0.39
+  },
+  {
+   "ticker": "CAC",
+   "vol_x": 0.39
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "TLYS",
+   "bought_at": "2026-09-04T14:16+00:00",
+   "sold_at": "2026-09-04T14:50+00:00",
+   "entry": 4.534530210018158,
+   "exit": 4.305689999999999,
+   "cost_gbp": 1010.1693807622313,
+   "pl_gbp": -53.85260373462438,
+   "pl_pct": -0.053310469273964205,
+   "reason": "Stop-loss order filled"
+  }
+ ],
+ "total_gbp": -53.85260373462438,
+ "alerts": [
+  "10:16 Day trade: bought TLYS: 301 TLYS at $4.53 (about \u00a31,010). Stop $4.31. News in the last 5 days (Tilly's (NYSE:TLYS) Surprises With Strong Q2 CY2026, Stock Jumps 31.4%); closed up yesterday (+15.5%) on 7.1x normal volume; above today's open at 10:00 New York.",
+  "10:50 Day trade update: TLYS: stop-loss order filled (-\u00a354)",
+  "15:50 Day trade summary: TLYS: -\u00a354 today."
+ ],
+ "log": [
+  "Day trade buy order: 301 TLYS at about $4.49. News in the last 5 days (Tilly's (NYSE:TLYS) Surprises With Strong Q2 CY2026, Stock Jumps 31.4%); closed up yesterday (+15.5%) on 7.1x normal volume; above today's open at 10:00 New York.",
+  "Bought 301 TLYS at 4.53 (cost \u00a31,010).",
+  "TLYS: stop-loss order filled, P&L -\u00a354.",
+  "Day trading finished: 1 trade(s), total -\u00a354."
+ ]
+}

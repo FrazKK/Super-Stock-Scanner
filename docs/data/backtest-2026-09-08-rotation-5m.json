@@ -1,0 +1,124 @@
+{
+ "date": "2026-09-08",
+ "generated": "2026-11-01T15:00+00:00",
+ "fx_gbpusd": 1.3546831607818604,
+ "result": "done",
+ "require_news": true,
+ "strategy": "rotation",
+ "bars": "5m",
+ "added_during_day": [],
+ "drift_list": [],
+ "list": [
+  {
+   "ticker": "OESX",
+   "name": "Orion Energy Systems, Inc.",
+   "vol_x": 0.47,
+   "buy_pct30": 0.708746370204508,
+   "change": 0.12040000915527349,
+   "score": 3.27,
+   "news": [
+    "Orion Announces Additional Multimillion-Dollar Data Center Engagement With Major Global Hyperscaler; Order Quickly Follows Inaugural Multimillion-Dollar Initiative"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "CURV",
+   "name": "Torrid Holdings Inc.",
+   "vol_x": 0.41,
+   "buy_pct30": 0.5395350064373857,
+   "change": 0.0573769931157615,
+   "score": 2.48,
+   "news": [
+    "Torrid Holdings Inc (CURV) (Q2 2026) Earnings Call Highlights: Sub-Brand Growth and Tariff ..."
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "BNC",
+   "vol_x": 116.82
+  },
+  {
+   "ticker": "PHVS",
+   "vol_x": 3.86
+  },
+  {
+   "ticker": "HYNE",
+   "vol_x": 2.97
+  },
+  {
+   "ticker": "JMSB",
+   "vol_x": 2.78
+  },
+  {
+   "ticker": "SLE",
+   "vol_x": 2.08
+  },
+  {
+   "ticker": "ZIM",
+   "vol_x": 1.76
+  },
+  {
+   "ticker": "PBAM",
+   "vol_x": 1.21
+  },
+  {
+   "ticker": "EAF",
+   "vol_x": 1.04
+  },
+  {
+   "ticker": "GYRE",
+   "vol_x": 0.97
+  },
+  {
+   "ticker": "QCOM",
+   "vol_x": 0.92
+  },
+  {
+   "ticker": "OSTX",
+   "vol_x": 0.9
+  },
+  {
+   "ticker": "HYPD",
+   "vol_x": 0.84
+  },
+  {
+   "ticker": "SLDP",
+   "vol_x": 0.82
+  },
+  {
+   "ticker": "MNKD",
+   "vol_x": 0.77
+  },
+  {
+   "ticker": "MNTK",
+   "vol_x": 0.75
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "OESX",
+   "bought_at": "2026-09-08T14:16+00:00",
+   "sold_at": "2026-09-08T19:50+00:00",
+   "entry": 28.638610610961912,
+   "exit": 30.064800262451172,
+   "cost_gbp": 995.0915164437861,
+   "pl_gbp": 47.99047737066462,
+   "pl_pct": 0.04822719978778521,
+   "reason": "End of day: sold 10 minutes before the close."
+  }
+ ],
+ "total_gbp": 47.99047737066462,
+ "alerts": [
+  "10:16 Day trade: bought OESX: 47 OESX at $28.64 (about \u00a3995). Stop $27.21. Highest first-30-minute volume on today's list (0.5x a normal day).",
+  "15:50 Day trade: sold OESX (+\u00a348): End of day: sold 10 minutes before the close. Result +\u00a348 (+4.8%).",
+  "15:50 Day trade summary: 1 trade(s) today: OESX +\u00a348. Total +\u00a348."
+ ],
+ "log": [
+  "Day trade buy order: 47 OESX at about $28.61. Highest first-30-minute volume on today's list (0.5x a normal day).",
+  "Bought 47 OESX at 28.64 (cost \u00a3995).",
+  "Sold OESX (about +\u00a348). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 1 trade(s), total +\u00a348."
+ ]
+}

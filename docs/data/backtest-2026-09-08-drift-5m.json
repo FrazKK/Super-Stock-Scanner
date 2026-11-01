@@ -1,0 +1,143 @@
+{
+ "date": "2026-09-08",
+ "generated": "2026-11-01T14:56+00:00",
+ "fx_gbpusd": 1.3546831607818604,
+ "result": "done",
+ "require_news": true,
+ "strategy": "drift",
+ "bars": "5m",
+ "added_during_day": [],
+ "drift_list": [
+  {
+   "ticker": "CURV",
+   "name": "Torrid Holdings Inc.",
+   "price": 2.5799999237060547,
+   "why": "News in the last 5 days (Torrid Holdings Inc (CURV) (Q2 2026) Earnings Call Highlights: Sub-Brand Growth ); closed up yesterday (+9.4%) on 6.6x normal volume; above today's open at 10:00 New York."
+  },
+  {
+   "ticker": "TARS",
+   "name": "Tarsus Pharmaceuticals, Inc.",
+   "price": 90.43499755859375,
+   "why": "News in the last 5 days (Tarsus Pharmaceuticals Completes Acquisition of Alkeus Pharmaceuticals, Expandin); closed up yesterday (+9.1%) on 1.9x normal volume; above today's open at 10:00 New York."
+  },
+  {
+   "ticker": "VELO",
+   "name": "Velo3D, Inc.",
+   "price": 11.930000305175781,
+   "why": "News in the last 5 days (Velo3D to Participate in the Lake Street Capital Markets 10th Annual Best Ideas ); closed up yesterday (+0.3%) on 1.4x normal volume; above today's open at 10:00 New York."
+  }
+ ],
+ "list": [
+  {
+   "ticker": "OESX",
+   "name": "Orion Energy Systems, Inc.",
+   "vol_x": 0.47,
+   "buy_pct30": 0.708746370204508,
+   "change": 0.12040000915527349,
+   "score": 3.27,
+   "news": [
+    "Orion Announces Additional Multimillion-Dollar Data Center Engagement With Major Global Hyperscaler; Order Quickly Follows Inaugural Multimillion-Dollar Initiative"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "CURV",
+   "name": "Torrid Holdings Inc.",
+   "vol_x": 0.41,
+   "buy_pct30": 0.5395350064373857,
+   "change": 0.0573769931157615,
+   "score": 2.48,
+   "news": [
+    "Torrid Holdings Inc (CURV) (Q2 2026) Earnings Call Highlights: Sub-Brand Growth and Tariff ..."
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "BNC",
+   "vol_x": 116.82
+  },
+  {
+   "ticker": "PHVS",
+   "vol_x": 3.86
+  },
+  {
+   "ticker": "HYNE",
+   "vol_x": 2.97
+  },
+  {
+   "ticker": "JMSB",
+   "vol_x": 2.78
+  },
+  {
+   "ticker": "SLE",
+   "vol_x": 2.08
+  },
+  {
+   "ticker": "ZIM",
+   "vol_x": 1.76
+  },
+  {
+   "ticker": "PBAM",
+   "vol_x": 1.21
+  },
+  {
+   "ticker": "EAF",
+   "vol_x": 1.04
+  },
+  {
+   "ticker": "GYRE",
+   "vol_x": 0.97
+  },
+  {
+   "ticker": "QCOM",
+   "vol_x": 0.92
+  },
+  {
+   "ticker": "OSTX",
+   "vol_x": 0.9
+  },
+  {
+   "ticker": "HYPD",
+   "vol_x": 0.84
+  },
+  {
+   "ticker": "SLDP",
+   "vol_x": 0.82
+  },
+  {
+   "ticker": "MNKD",
+   "vol_x": 0.77
+  },
+  {
+   "ticker": "MNTK",
+   "vol_x": 0.75
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "CURV",
+   "bought_at": "2026-09-08T14:16+00:00",
+   "sold_at": "2026-09-08T18:00+00:00",
+   "entry": 2.622619885444641,
+   "exit": 2.4875100000000003,
+   "cost_gbp": 1017.9064691572333,
+   "pl_gbp": -55.33169623217452,
+   "pl_pct": -0.054358330464277245,
+   "reason": "Stop-loss order filled"
+  }
+ ],
+ "total_gbp": -55.33169623217452,
+ "alerts": [
+  "10:16 Day trade: bought CURV: 525 CURV at $2.62 (about \u00a31,018). Stop $2.49. News in the last 5 days (Torrid Holdings Inc (CURV) (Q2 2026) Earnings Call Highlights: Sub-Brand Growth ); closed up yesterday (+9.4%) on 6.6x normal volume; above today's open at 10:00 New York.",
+  "14:00 Day trade update: CURV: stop-loss order filled (-\u00a355)",
+  "15:50 Day trade summary: CURV: -\u00a355 today."
+ ],
+ "log": [
+  "Day trade buy order: 525 CURV at about $2.58. News in the last 5 days (Torrid Holdings Inc (CURV) (Q2 2026) Earnings Call Highlights: Sub-Brand Growth ); closed up yesterday (+9.4%) on 6.6x normal volume; above today's open at 10:00 New York.",
+  "Bought 525 CURV at 2.62 (cost \u00a31,018).",
+  "CURV: stop-loss order filled, P&L -\u00a355.",
+  "Day trading finished: 1 trade(s), total -\u00a355."
+ ]
+}
