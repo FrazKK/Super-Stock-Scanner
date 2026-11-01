@@ -1,0 +1,47 @@
+name: Why didn't the bot pick these?
+
+# Checks each day-trader rule for the given stocks and days, and reports which rule each one failed.
+# Saves docs/data/explain-<date>.json and sends a phone alert. Yahoo keeps 1-minute prices for ~30 days.
+
+on:
+  workflow_dispatch:
+    inputs:
+      items:
+        description: "Days and tickers, e.g. 2026-10-29:STRL,BURU; 2026-10-30:RIVN"
+        required: true
+        default: "2026-10-13:NTWK; 2026-10-16:NTWK; 2026-10-19:IRON; 2026-10-20:RAPP; 2026-10-21:SHMD,OLOX; 2026-10-22:SEIC,NTWK; 2026-10-23:NFGC; 2026-10-28:SHMD,NTWK,CLRO,AXGN,BOOM,BSRR,PDSB; 2026-10-29:STRL,BURU; 2026-10-30:RIVN"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: backtest
+  cancel-in-progress: false
+
+jobs:
+  explain:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: main
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Check the rules
+        env:
+          ITEMS: ${{ inputs.items }}
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+          SITE_URL: ${{ secrets.SITE_URL }}
+        run: python explain.py
+      - name: Save
+        run: |
+          git config user.name "scanner-bot"
+          git config user.email "scanner-bot@users.noreply.github.com"
+          git add docs/data/explain-*.json
+          git commit -m "Explain picks $(date -u +%F)" || echo "No changes"
+          git pull --rebase -X theirs
+          git push
