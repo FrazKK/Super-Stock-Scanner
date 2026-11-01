@@ -3,7 +3,9 @@ name: Replay days (day trader)
 # Replays past US trading days with the day-trader rules and saves each result to docs/data/backtest-*.json,
 # totals to backtest-summary.json, plus one phone alert at the end. It never touches Trading 212.
 # Strategies: breakout (one trade a day on an opening-range breakout), breakout-market (the same, but only when
-# the US market is up on the day) and rotation (the earlier swap-to-the-strongest rules).
+# the US market is up on the day), breakout-strong (only stocks that traded a full normal day's volume in the
+# first 30 minutes, top 3), drift (news in the last 5 days, closed up yesterday, above today's open at 10:00)
+# and rotation (the earlier swap-to-the-strongest rules).
 # 1-minute bars cover about the last 30 days; 5-minute bars about the last 60 days.
 
 on:
@@ -20,6 +22,8 @@ on:
           - "all"
           - "breakout"
           - "breakout-market"
+          - "breakout-strong"
+          - "drift"
           - "rotation"
         default: "all"
       bars:
