@@ -77,7 +77,7 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: replay-${{ matrix.day }}-${{ matrix.news == 'required' && 'news' || 'nonews' }}
-          path: docs/data/backtest-${{ matrix.day }}${{ matrix.news == 'required' && '' || '-nonews' }}.json
+          path: docs/data/backtest-${{ matrix.day }}${{ matrix.news != 'required' && '-nonews' || '' }}.json
           if-no-files-found: warn
           retention-days: 3
 
