@@ -1,0 +1,218 @@
+{
+ "date": "2026-09-17",
+ "generated": "2026-11-01T19:31+00:00",
+ "fx_gbpusd": 1.3382940292358398,
+ "result": "done",
+ "require_news": true,
+ "strategy": "catalyst",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [
+  "Added DNA to today's list at 10:32 New York: 0.4x normal volume in the last 30 min; news: Ginkgo Datapoints Announces Partnership with TuneLab to Close the Gap between AI"
+ ],
+ "drift_list": [],
+ "list": [
+  {
+   "ticker": "NUWE",
+   "name": "Nuwellis, Inc.",
+   "vol_x": 45.49,
+   "buy_pct30": 0.6467653277336822,
+   "change": 0.1062195484773667,
+   "score": 93.57,
+   "news": [
+    "Nuwellis Reports 31 Aquadex Console Sales in 2026, Expanding Recurring Revenue Opportunity",
+    "Nuwellis Reports Strong Aquadex Console Adoption, with 31 Aquadex SmartFlow Consoles Sold Year-to-Date, Meaningfully Expanding Recurring Revenue Opportunity"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "CETX",
+   "name": "Cemtrex Inc.",
+   "vol_x": 7.31,
+   "buy_pct30": 0.5743524864893482,
+   "change": 0.051020407170268234,
+   "score": 15.42,
+   "news": [
+    "Cemtrex's Vicon Secures Approximately $2.8 Million in Orders from U.S. Federal Government Agency"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "FEAM",
+   "name": "5E Advanced Materials, Inc.",
+   "vol_x": 0.93,
+   "buy_pct30": 0.5580183451934525,
+   "change": 0.07380680644407489,
+   "score": 4.09,
+   "news": [
+    "SEARLES VALLEY MINERALS ANNOUNCES DEFINITIVE ASSET PURCHASE AGREEMENT WITH 5E ADVANCED MATERIALS",
+    "5E Advanced Materials Enters into Agreement to Acquire Certain Assets of Searles Valley Minerals"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "OSTX",
+   "name": "OS Therapies Incorporated",
+   "vol_x": 0.87,
+   "buy_pct30": 0.6185797903333349,
+   "change": 0.1114286014011927,
+   "score": 3.71,
+   "news": [
+    "OS Therapies Achieves Incremental Alignment With FDA and Accepts Project Orbis Invitation From MHRA on OST-HER2 Metastatic Osteosarcoma Program"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "NRXS",
+   "name": "Neuraxis, Inc.",
+   "vol_x": 0.73,
+   "buy_pct30": 0.5055559862081322,
+   "change": 0.12247837141560525,
+   "score": 2.98,
+   "news": [
+    "NeurAxis Announces Medical Coverage Policy Milestone, Expanding Access to Over 18 million additional Covered Lives"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "TRT",
+   "name": "Trio-Tech International",
+   "vol_x": 0.37,
+   "buy_pct30": 0.5065261907261206,
+   "change": 0.08919718581960989,
+   "score": 2.27,
+   "news": [
+    "Trio-Tech International Secures Three-Year Automotive Semiconductor Burn-In Contract With $4.7 Million Minimum Commitment"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "YETI",
+   "name": "YETI Holdings, Inc.",
+   "vol_x": 0.26,
+   "buy_pct30": 0.5210540755556401,
+   "change": 0.026547471250775834,
+   "score": 1.1,
+   "news": [
+    "YETI investor day 2026: international growth and new products"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "GCTS",
+   "name": "GCT Semiconductor Holding, Inc.",
+   "vol_x": 0.3,
+   "buy_pct30": 0.22103305804895787,
+   "change": 0.026178048376628515,
+   "score": -0.02,
+   "news": [
+    "Strong Demand, Weak Margins: GCT Semiconductor Could Be a Big Second Half Story"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "AEMD",
+   "vol_x": 390.74
+  },
+  {
+   "ticker": "DAIC",
+   "vol_x": 23.26
+  },
+  {
+   "ticker": "KXIN",
+   "vol_x": 14.71
+  },
+  {
+   "ticker": "BCBP",
+   "vol_x": 4.56
+  },
+  {
+   "ticker": "GLOO",
+   "vol_x": 2.66
+  },
+  {
+   "ticker": "GNRC",
+   "vol_x": 2.48
+  },
+  {
+   "ticker": "AKAN",
+   "vol_x": 2.12
+  },
+  {
+   "ticker": "ECOR",
+   "vol_x": 1.22
+  },
+  {
+   "ticker": "GHRS",
+   "vol_x": 1.14
+  },
+  {
+   "ticker": "PSIX",
+   "vol_x": 0.96
+  },
+  {
+   "ticker": "AYI",
+   "vol_x": 0.79
+  },
+  {
+   "ticker": "BIAF",
+   "vol_x": 0.74
+  },
+  {
+   "ticker": "SECZ",
+   "vol_x": 0.73
+  },
+  {
+   "ticker": "NBIS",
+   "vol_x": 0.71
+  },
+  {
+   "ticker": "SPCB",
+   "vol_x": 0.68
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "NUWE",
+   "bought_at": "2026-09-17T14:20+00:00",
+   "sold_at": "2026-09-17T14:26+00:00",
+   "entry": 0.9809800190925597,
+   "exit": 0.9309681,
+   "cost_gbp": 1002.0565386637553,
+   "pl_gbp": -53.93507088752483,
+   "pl_pct": -0.05382437897111811,
+   "reason": "Stop-loss order filled"
+  },
+  {
+   "ticker": "NRXS",
+   "bought_at": "2026-09-17T14:36+00:00",
+   "sold_at": "2026-09-17T19:50+00:00",
+   "entry": 7.967960038185119,
+   "exit": 7.650000095367432,
+   "cost_gbp": 1001.7419065302219,
+   "pl_gbp": -41.4148125241519,
+   "pl_pct": -0.04134279723566945,
+   "reason": "End of day: sold 10 minutes before the close."
+  }
+ ],
+ "total_gbp": -95.34988341167673,
+ "alerts": [
+  "10:20 Day trade: bought NUWE: 1,365 NUWE at $0.98 (about \u00a31,002). Stop $0.93. Broke above its opening-range high ($0.94) at $0.98. In play: 45.5x normal volume, normally moves 8% a day. Stop $0.93.",
+  "10:26 Day trade update: NUWE: stop-loss order filled (-\u00a354)",
+  "10:36 Day trade: bought NRXS: 168 NRXS at $7.97 (about \u00a31,002). Stop $7.57. Broke above its opening-range high ($7.93) at $7.96. In play: 0.7x normal volume, normally moves 5% a day. Stop $7.56.",
+  "15:50 Day trade: sold NRXS (-\u00a341): End of day: sold 10 minutes before the close. Result -\u00a341 (-4.1%).",
+  "15:50 Day trade summary: 2 trade(s) today: NUWE -\u00a354, NRXS -\u00a341. Total -\u00a395."
+ ],
+ "log": [
+  "Day trade buy order: 1365 NUWE at about $0.98. Broke above its opening-range high ($0.94) at $0.98. In play: 45.5x normal volume, normally moves 8% a day. Stop $0.93.",
+  "Bought 1,365 NUWE at 0.98 (cost \u00a31,002).",
+  "NUWE: stop-loss order filled, P&L -\u00a354.",
+  "Added DNA to today's list at 10:32 New York: 0.4x normal volume in the last 30 min; news: Ginkgo Datapoints Announces Partnership with TuneLab to Close the Gap between AI",
+  "Day trade buy order: 168 NRXS at about $7.96. Broke above its opening-range high ($7.93) at $7.96. In play: 0.7x normal volume, normally moves 5% a day. Stop $7.56.",
+  "Bought 168 NRXS at 7.97 (cost \u00a31,002).",
+  "Sold NRXS (about -\u00a341). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 2 trade(s), total -\u00a395."
+ ]
+}

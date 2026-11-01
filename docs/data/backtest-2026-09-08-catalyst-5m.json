@@ -1,0 +1,186 @@
+{
+ "date": "2026-09-08",
+ "generated": "2026-11-01T19:30+00:00",
+ "fx_gbpusd": 1.3546831607818604,
+ "result": "done",
+ "require_news": true,
+ "strategy": "catalyst",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [],
+ "drift_list": [],
+ "list": [
+  {
+   "ticker": "LCTX",
+   "name": "Lineage Cell Therapeutics, Inc.",
+   "vol_x": 0.87,
+   "buy_pct30": 0.9614434120289344,
+   "change": 0.05092587533556592,
+   "score": 5.09,
+   "news": [
+    "Lineage Cell Therapeutics Announces Issuance of Patent Underlying Its AlloSCOPE\u2122 5D Manufacturing Platform"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "OESX",
+   "name": "Orion Energy Systems, Inc.",
+   "vol_x": 0.47,
+   "buy_pct30": 0.708746370204508,
+   "change": 0.12040000915527349,
+   "score": 3.27,
+   "news": [
+    "Orion Announces Additional Multimillion-Dollar Data Center Engagement With Major Global Hyperscaler; Order Quickly Follows Inaugural Multimillion-Dollar Initiative"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "NRGV",
+   "name": "Energy Vault Holdings, Inc.",
+   "vol_x": 0.27,
+   "buy_pct30": 0.6944974443613139,
+   "change": 0.07421877401066057,
+   "score": 2.82,
+   "news": [
+    "Energy Vault acquires land for BESS project"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "LILA",
+   "name": "Liberty Latin America Ltd.",
+   "vol_x": 0.28,
+   "buy_pct30": 0.6817938330959752,
+   "change": 0.019835641180281582,
+   "score": 2.79,
+   "news": [
+    "Liberty Latin America Director De Angoitia Buys $10 Million Shares. What Does This Large Purchase Mean for Investors?"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "LTBR",
+   "name": "Lightbridge Corporation",
+   "vol_x": 0.28,
+   "buy_pct30": 0.6666470103480775,
+   "change": 0.04155673619933853,
+   "score": 2.73,
+   "news": [
+    "Lightbridge Letter to Shareholders Outlines Expedited Pathway to Bring Lightbridge Fuel\u2122 to Commercial Reactors"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "CURV",
+   "name": "Torrid Holdings Inc.",
+   "vol_x": 0.41,
+   "buy_pct30": 0.5395350064373857,
+   "change": 0.0573769931157615,
+   "score": 2.48,
+   "news": [
+    "Torrid Holdings Inc (CURV) (Q2 2026) Earnings Call Highlights: Sub-Brand Growth and Tariff ..."
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "QNC",
+   "name": "Quantum eMotion Corp.",
+   "vol_x": 0.33,
+   "buy_pct30": 0.34062767825906387,
+   "change": 0.02616276531170536,
+   "score": 1.02,
+   "news": [
+    "Quantum eMotion Corp., to Present at the Moody Capital Solutions 2026 Disruptive Growth & Life Sciences Conference",
+    "Quantum eMotion Corp. to Present at the Moody Capital Solutions 2026 Disruptive Growth & Life Sciences Conference"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "PDSB",
+   "vol_x": 285.68
+  },
+  {
+   "ticker": "BNC",
+   "vol_x": 116.82
+  },
+  {
+   "ticker": "PHVS",
+   "vol_x": 3.86
+  },
+  {
+   "ticker": "HYNE",
+   "vol_x": 2.97
+  },
+  {
+   "ticker": "JMSB",
+   "vol_x": 2.78
+  },
+  {
+   "ticker": "INDP",
+   "vol_x": 2.42
+  },
+  {
+   "ticker": "SLE",
+   "vol_x": 2.08
+  },
+  {
+   "ticker": "MSGM",
+   "vol_x": 1.85
+  },
+  {
+   "ticker": "ZIM",
+   "vol_x": 1.76
+  },
+  {
+   "ticker": "PBAM",
+   "vol_x": 1.21
+  },
+  {
+   "ticker": "RGTI",
+   "vol_x": 1.17
+  },
+  {
+   "ticker": "EAF",
+   "vol_x": 1.04
+  },
+  {
+   "ticker": "GYRE",
+   "vol_x": 0.97
+  },
+  {
+   "ticker": "QCOM",
+   "vol_x": 0.92
+  },
+  {
+   "ticker": "OSTX",
+   "vol_x": 0.9
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "OESX",
+   "bought_at": "2026-09-08T14:16+00:00",
+   "sold_at": "2026-09-08T19:50+00:00",
+   "entry": 28.638610610961912,
+   "exit": 30.064800262451172,
+   "cost_gbp": 995.0915164437861,
+   "pl_gbp": 47.99047737066462,
+   "pl_pct": 0.04822719978778521,
+   "reason": "End of day: sold 10 minutes before the close."
+  }
+ ],
+ "total_gbp": 47.99047737066462,
+ "alerts": [
+  "10:16 Day trade: bought OESX: 47 OESX at $28.64 (about \u00a3995). Stop $27.21. Broke above its opening-range high ($28.39) at $28.61. In play: 0.5x normal volume, normally moves 9% a day. Stop $27.18.",
+  "15:50 Day trade: sold OESX (+\u00a348): End of day: sold 10 minutes before the close. Result +\u00a348 (+4.8%).",
+  "15:50 Day trade summary: 1 trade(s) today: OESX +\u00a348. Total +\u00a348."
+ ],
+ "log": [
+  "Day trade buy order: 47 OESX at about $28.61. Broke above its opening-range high ($28.39) at $28.61. In play: 0.5x normal volume, normally moves 9% a day. Stop $27.18.",
+  "Bought 47 OESX at 28.64 (cost \u00a3995).",
+  "Sold OESX (about +\u00a348). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 1 trade(s), total +\u00a348."
+ ]
+}

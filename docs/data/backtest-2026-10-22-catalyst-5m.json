@@ -1,0 +1,293 @@
+{
+ "date": "2026-10-22",
+ "generated": "2026-11-01T19:45+00:00",
+ "fx_gbpusd": 1.339566707611084,
+ "result": "done",
+ "require_news": true,
+ "strategy": "catalyst",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [
+  "Added QS to today's list at 10:16 New York: 0.2x normal volume in the last 30 min; news: EV Next-Generation Solid-State Battery Market Forecasts Growth from $346.7 Milli",
+  "Added AEBI to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; news: Aebi Schmidt Group Strengthens Leadership in North America and Expands Group Exe",
+  "Added PEBK to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; news: Peoples Bancorp Stock Slips Post Q3 Earnings Despite NIM Expansion"
+ ],
+ "drift_list": [],
+ "list": [
+  {
+   "ticker": "SKYQ",
+   "name": "Sky Quarry Inc.",
+   "vol_x": 9.38,
+   "buy_pct30": 0.40962136331611976,
+   "change": 0.09749994950162244,
+   "score": 18.9,
+   "news": [
+    "Sky Quarry Confirms Production at Nevada Refinery Amid Strong Diesel Demand"
+   ],
+   "on_t212": false
+  },
+  {
+   "ticker": "ATOM",
+   "name": "Atomera Incorporated",
+   "vol_x": 3.74,
+   "buy_pct30": 0.13023659672468588,
+   "change": 0.050463582035491505,
+   "score": 6.5,
+   "news": [
+    "Atomera Has Signed a Joint Development Agreement With IQE to Bring High-Performance, Cost-Effective RF GaN-on-Silicon to Volume Markets"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "BKYI",
+   "name": "BIO-key International, Inc.",
+   "vol_x": 1.83,
+   "buy_pct30": 0.7625672321104919,
+   "change": 0.25238106375108726,
+   "score": 4.21,
+   "news": [
+    "BIO-key Secures Another Middle East Government Contract for its Passwordless, Biometric, Identity and Access Management Solutions"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "QCRH",
+   "name": "QCR Holdings, Inc.",
+   "vol_x": 0.36,
+   "buy_pct30": 0.598711741943675,
+   "change": 0.017090549184474613,
+   "score": 4.11,
+   "news": [
+    "Does Record Earnings Beat Change The Bull Case For QCR Holdings Stock (QCRH)?",
+    "QCR Holdings (QCRH) Stock Climbs As Q3 Earnings Extend Record Profitability"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "ROIV",
+   "name": "Roivant Sciences Ltd.",
+   "vol_x": 0.32,
+   "buy_pct30": 0.7423615698481794,
+   "change": 0.04388591608557313,
+   "score": 4.11,
+   "news": [
+    "Roivant Sciences\u2019 Brepocitinib Delivers Positive Phase III Uveitis Results",
+    "Roivant Sciences stock surges on positive uveitis trial data"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "WCN",
+   "name": "Waste Connections, Inc.",
+   "vol_x": 0.24,
+   "buy_pct30": 0.5813472347703413,
+   "change": 0.06697173968512926,
+   "score": 3.81,
+   "news": [
+    "Waste Connections Soars 10% on Raised 2026 Outlook After \u201cAnother Top to Bottom Beat\u201d",
+    "Waste Connections\u2019s (NYSE:WCN) Q3 2026: beats on revenue"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "ZGN",
+   "name": "Ermenegildo Zegna N.V.",
+   "vol_x": 0.27,
+   "buy_pct30": 0.7618701723135011,
+   "change": 0.06153251328168641,
+   "score": 3.09,
+   "news": [
+    "Ermenegildo Zegna Group Q3 2026 Revenues1 up 9% With Solid Growth Across All Regions and Continued Strength in the DTC Channel (+13% YoY)"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "HTZ",
+   "name": "Hertz Global Holdings, Inc",
+   "vol_x": 0.26,
+   "buy_pct30": 0.6288501053287069,
+   "change": 0.04835750901642655,
+   "score": 3.04,
+   "news": [
+    "Hertz shares jump 5% as subsidiary Oro Mobility secures $80M strategic investment",
+    "Hertz-Backed Oro Mobility Secures $80 Million Strategic Equity Investment to Accelerate Independent Growth"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "MKTX",
+   "name": "MarketAxess Holdings, Inc.",
+   "vol_x": 0.46,
+   "buy_pct30": 0.5201345991405667,
+   "change": 0.00383541278388555,
+   "score": 2.5,
+   "news": [
+    "Will MarketAxess (MKTX) Beat Estimates Again in Its Next Earnings Report?"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "KNX",
+   "name": "Knight-Swift Transportation Holdings Inc.",
+   "vol_x": 0.26,
+   "buy_pct30": 0.620712849746373,
+   "change": 0.02579115582971747,
+   "score": 2.5,
+   "news": [
+    "Knight-Swift reports breakout Q3 profits"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "PLBC",
+   "name": "Plumas Bancorp",
+   "vol_x": 0.28,
+   "buy_pct30": 0.35353337255671047,
+   "change": 0.003013520122210789,
+   "score": 2.47,
+   "news": [
+    "Plumas Bancorp Reports Record Third Quarter 2026 Earnings"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "AVAV",
+   "name": "AeroVironment, Inc.",
+   "vol_x": 0.24,
+   "buy_pct30": 0.7176168893953062,
+   "change": 0.007786579005135019,
+   "score": 2.35,
+   "news": [
+    "AeroVironment stock: Oppenheimer bullish amid counter-drone growth",
+    "AeroVironment Expands Australian Defense Manufacturing Through NIOA"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "CBZ",
+   "name": "CBIZ, Inc.",
+   "vol_x": 0.37,
+   "buy_pct30": 0.5159039895083872,
+   "change": 0.0005177834445333485,
+   "score": 2.3,
+   "news": [
+    "CBIZ (CBZ) Q3 Results Put Profit Momentum Ahead Of A Tepid Stock Reaction"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "TCX",
+   "name": "Tucows Inc.",
+   "vol_x": 0.29,
+   "buy_pct30": 0.7940114170855989,
+   "change": 0.2265543334097746,
+   "score": 2.26,
+   "news": [
+    "Tucows Announces Agreement for Ting Fiber to Exit Colorado Springs"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "EVER",
+   "name": "EverQuote, Inc.",
+   "vol_x": 0.23,
+   "buy_pct30": 0.7797535631497567,
+   "change": 0.05178645494378542,
+   "score": 2.08,
+   "news": [
+    "EverQuote stock rises on $50M share buyback program"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "STAK",
+   "vol_x": 17.81
+  },
+  {
+   "ticker": "BHVN",
+   "vol_x": 9.52
+  },
+  {
+   "ticker": "QGEN",
+   "vol_x": 4.28
+  },
+  {
+   "ticker": "AKAN",
+   "vol_x": 4.15
+  },
+  {
+   "ticker": "NANO",
+   "vol_x": 3.52
+  },
+  {
+   "ticker": "HTCO",
+   "vol_x": 3.3
+  },
+  {
+   "ticker": "TPET",
+   "vol_x": 2.32
+  },
+  {
+   "ticker": "TRON",
+   "vol_x": 1.18
+  },
+  {
+   "ticker": "EDHL",
+   "vol_x": 1.01
+  },
+  {
+   "ticker": "RRBI",
+   "vol_x": 0.87
+  },
+  {
+   "ticker": "TROO",
+   "vol_x": 0.87
+  },
+  {
+   "ticker": "WINA",
+   "vol_x": 0.81
+  },
+  {
+   "ticker": "SPOT",
+   "vol_x": 0.8
+  },
+  {
+   "ticker": "ROKU",
+   "vol_x": 0.78
+  },
+  {
+   "ticker": "SFST",
+   "vol_x": 0.76
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "QCRH",
+   "bought_at": "2026-10-22T14:20+00:00",
+   "sold_at": "2026-10-22T19:50+00:00",
+   "entry": 101.89179091644286,
+   "exit": 102.66000366210938,
+   "cost_gbp": 990.3054206254383,
+   "pl_gbp": 5.971987602663262,
+   "pl_pct": 0.006030450281582411,
+   "reason": "End of day: sold 10 minutes before the close."
+  }
+ ],
+ "total_gbp": 5.971987602663262,
+ "alerts": [
+  "10:20 Day trade: bought QCRH: 13 QCRH at $101.89 (about \u00a3990). Stop $96.80. Broke above its opening-range high ($101.77) at $101.79. In play: 0.4x normal volume, normally moves 2% a day. Stop $99.27.",
+  "15:50 Day trade: sold QCRH (+\u00a36): End of day: sold 10 minutes before the close. Result +\u00a36 (+0.6%).",
+  "15:50 Day trade summary: 1 trade(s) today: QCRH +\u00a36. Total +\u00a36."
+ ],
+ "log": [
+  "Added QS to today's list at 10:16 New York: 0.2x normal volume in the last 30 min; news: EV Next-Generation Solid-State Battery Market Forecasts Growth from $346.7 Milli",
+  "Added AEBI to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; news: Aebi Schmidt Group Strengthens Leadership in North America and Expands Group Exe",
+  "Added PEBK to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; news: Peoples Bancorp Stock Slips Post Q3 Earnings Despite NIM Expansion",
+  "Day trade buy order: 13 QCRH at about $101.79. Broke above its opening-range high ($101.77) at $101.79. In play: 0.4x normal volume, normally moves 2% a day. Stop $99.27.",
+  "Bought 13 QCRH at 101.89 (cost \u00a3990).",
+  "Sold QCRH (about +\u00a36). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 1 trade(s), total +\u00a36."
+ ]
+}

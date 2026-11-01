@@ -1,0 +1,167 @@
+{
+ "date": "2026-09-16",
+ "generated": "2026-11-01T19:35+00:00",
+ "fx_gbpusd": 1.3473457098007202,
+ "result": "done",
+ "require_news": true,
+ "strategy": "catalyst",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [
+  "Added HITI to today's list at 10:32 New York: 0.2x normal volume in the last 30 min; news: HITI: High Tide Strong Growth Profile Supports Price Target of US$5.00",
+  "Added GLBS to today's list at 10:48 New York: 0.5x normal volume in the last 30 min; news: Globus Maritime Limited Announces the Delivery of a 2026-Built Ultramax Dry Bulk"
+ ],
+ "drift_list": [],
+ "list": [
+  {
+   "ticker": "NRXS",
+   "name": "Neuraxis, Inc.",
+   "vol_x": 3.45,
+   "buy_pct30": 0.6556333466096136,
+   "change": 0.2210526791305769,
+   "score": 8.02,
+   "news": [
+    "NeurAxis Announces Medical Coverage Policy Milestone, Expanding Access to Over 18 million additional Covered Lives"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "NFGC",
+   "name": "New Found Gold Corp",
+   "vol_x": 0.27,
+   "buy_pct30": 0.6679383420512023,
+   "change": 0.06621952521701724,
+   "score": 2.71,
+   "news": [
+    "New Found Gold Declares Commercial Production at Hammerdown Gold Mine"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "DSX",
+   "name": "Diana Shipping inc.",
+   "vol_x": 0.23,
+   "buy_pct30": 0.6399067119689628,
+   "change": 0.013377913620550297,
+   "score": 2.52,
+   "news": [
+    "Diana Shipping Inc. Announces Time Charter  Contract for m/v Astarte With Aquavita"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "RCKT",
+   "name": "Rocket Pharmaceuticals, Inc.",
+   "vol_x": 0.41,
+   "buy_pct30": 0.43915279850416145,
+   "change": 0.014662742245680649,
+   "score": 1.58,
+   "news": [
+    "Rocket Pharmaceuticals\u2019 FDA Decision Clears \u2018Meaningful Regulatory Overhang,\u2019 Says Needham \u2014 Sees 150% Upside Potential In RCKT Stock",
+    "Rocket Pharmaceuticals Shares Rise 8% After FDA Alignment on Danon Disease Trial"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "BXC",
+   "name": "Bluelinx Holdings Inc.",
+   "vol_x": 0.23,
+   "buy_pct30": 0.4771475728430872,
+   "change": 0.017169611628277348,
+   "score": 0.87,
+   "news": [
+    "BlueLinx Expands RDI\u00ae Railing Distribution to 21 Locations Across Key U.S. Markets"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "MGN",
+   "vol_x": 144.06
+  },
+  {
+   "ticker": "MEDS",
+   "vol_x": 14.23
+  },
+  {
+   "ticker": "BBNX",
+   "vol_x": 1.28
+  },
+  {
+   "ticker": "ALVO",
+   "vol_x": 1.06
+  },
+  {
+   "ticker": "LIFE",
+   "vol_x": 0.8
+  },
+  {
+   "ticker": "IPSC",
+   "vol_x": 0.71
+  },
+  {
+   "ticker": "VRA",
+   "vol_x": 0.62
+  },
+  {
+   "ticker": "APEI",
+   "vol_x": 0.58
+  },
+  {
+   "ticker": "AXON",
+   "vol_x": 0.57
+  },
+  {
+   "ticker": "AGPU",
+   "vol_x": 0.57
+  },
+  {
+   "ticker": "GRAL",
+   "vol_x": 0.53
+  },
+  {
+   "ticker": "ALMU",
+   "vol_x": 0.53
+  },
+  {
+   "ticker": "DKS",
+   "vol_x": 0.52
+  },
+  {
+   "ticker": "CIFR",
+   "vol_x": 0.52
+  },
+  {
+   "ticker": "ADPT",
+   "vol_x": 0.49
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "GLBS",
+   "bought_at": "2026-09-16T14:48+00:00",
+   "sold_at": "2026-09-16T19:50+00:00",
+   "entry": 3.8738698854446407,
+   "exit": 3.759999990463257,
+   "cost_gbp": 1002.0656691107353,
+   "pl_gbp": -30.911801797241765,
+   "pl_pct": -0.03084807987152566,
+   "reason": "End of day: sold 10 minutes before the close."
+  }
+ ],
+ "total_gbp": -30.911801797241765,
+ "alerts": [
+  "10:48 Day trade: bought GLBS: 348 GLBS at $3.87 (about \u00a31,002). Stop $3.68. Broke above its opening-range high ($3.71) at $3.87. In play: 0.5x normal volume, normally moves 6% a day. Stop $3.68.",
+  "15:50 Day trade: sold GLBS (-\u00a331): End of day: sold 10 minutes before the close. Result -\u00a331 (-3.1%).",
+  "15:50 Day trade summary: 1 trade(s) today: GLBS -\u00a331. Total -\u00a331."
+ ],
+ "log": [
+  "Added HITI to today's list at 10:32 New York: 0.2x normal volume in the last 30 min; news: HITI: High Tide Strong Growth Profile Supports Price Target of US$5.00",
+  "Added GLBS to today's list at 10:48 New York: 0.5x normal volume in the last 30 min; news: Globus Maritime Limited Announces the Delivery of a 2026-Built Ultramax Dry Bulk",
+  "Day trade buy order: 348 GLBS at about $3.87. Broke above its opening-range high ($3.71) at $3.87. In play: 0.5x normal volume, normally moves 6% a day. Stop $3.68.",
+  "Bought 348 GLBS at 3.87 (cost \u00a31,002).",
+  "Sold GLBS (about -\u00a331). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 1 trade(s), total -\u00a331."
+ ]
+}

@@ -1,0 +1,202 @@
+{
+ "date": "2026-09-09",
+ "generated": "2026-11-01T19:29+00:00",
+ "fx_gbpusd": 1.3544628620147705,
+ "result": "done",
+ "require_news": true,
+ "strategy": "catalyst",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [],
+ "drift_list": [],
+ "list": [
+  {
+   "ticker": "JILL",
+   "name": "J. Jill, Inc.",
+   "vol_x": 5.41,
+   "buy_pct30": 0.09268937280845957,
+   "change": 0.10584679260679364,
+   "score": 10.19,
+   "news": [
+    "J.Jill Inc (JILL) (Q2 2026) Earnings Call Highlights: Strategic Investments and Tariff Refunds ...",
+    "J.Jill shares rise 14.8% after Q2 earnings beat and higher annual outlook"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "PYXS",
+   "name": "Pyxis Oncology, Inc.",
+   "vol_x": 1.49,
+   "buy_pct30": 0.8641680527268415,
+   "change": 0.0128534578323658,
+   "score": 5.94,
+   "news": [
+    "Pyxis Oncology Announces Positive Updated Data from Phase 1 Monotherapy Study of Micvotabart Pelidotin (MICVO) in Second-Line and Beyond Recurrent/Metastatic Head and Neck Squamous Cell Carcinoma (2L+ R/M HNSCC)"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "INNV",
+   "name": "InnovAge Holding Corp.",
+   "vol_x": 1.0,
+   "buy_pct30": 0.3569884144563021,
+   "change": 0.1121672338550741,
+   "score": 2.93,
+   "news": [
+    "InnovAge Holding Corp (INNV) (Q4 2026) Earnings Call Highlights: Strong EBITDA Growth and ..."
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "SUNB",
+   "name": "Sunbelt Rentals Holdings, Inc.",
+   "vol_x": 0.37,
+   "buy_pct30": 0.6240010599501518,
+   "change": 0.09838430070468451,
+   "score": 2.74,
+   "news": [
+    "Sunbelt Rentals Holdings Inc (SUNB) (Q1 2027) Earnings Call Highlights: Record Revenue and ..."
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "INBX",
+   "name": "Inhibrx Biosciences, Inc.",
+   "vol_x": 0.29,
+   "buy_pct30": 0.6575464517988117,
+   "change": 0.11352111048329827,
+   "score": 2.71,
+   "news": [
+    "Inhibrx Shares Rise After Positive Phase 2 Head and Neck Cancer Data"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "PPIH",
+   "name": "Perma-Pipe International Holdings, Inc.",
+   "vol_x": 0.47,
+   "buy_pct30": 0.7198895134446871,
+   "change": 0.04036410898056508,
+   "score": 2.32,
+   "news": [
+    "Perma-Pipe International Holdings Inc (PPIH) (Q2 2026) Earnings Call Highlights: Record Sales ..."
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "GILT",
+   "name": "Gilat Satellite Networks Ltd.",
+   "vol_x": 0.33,
+   "buy_pct30": 0.5402177752520505,
+   "change": 0.0241449431513181,
+   "score": 1.32,
+   "news": [
+    "Gilat Awarded Over $32 Million for Multi-Band DKET Systems Supporting U.S. Defense Network Resilience"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "YMAT",
+   "vol_x": 807.8
+  },
+  {
+   "ticker": "FGL",
+   "vol_x": 11.97
+  },
+  {
+   "ticker": "IRD",
+   "vol_x": 10.18
+  },
+  {
+   "ticker": "ODD",
+   "vol_x": 6.09
+  },
+  {
+   "ticker": "INDP",
+   "vol_x": 1.93
+  },
+  {
+   "ticker": "PARK",
+   "vol_x": 1.75
+  },
+  {
+   "ticker": "SIG",
+   "vol_x": 1.57
+  },
+  {
+   "ticker": "LAC",
+   "vol_x": 1.14
+  },
+  {
+   "ticker": "BLDP",
+   "vol_x": 0.82
+  },
+  {
+   "ticker": "AVO",
+   "vol_x": 0.72
+  },
+  {
+   "ticker": "SPTX",
+   "vol_x": 0.62
+  },
+  {
+   "ticker": "CHYM",
+   "vol_x": 0.59
+  },
+  {
+   "ticker": "META",
+   "vol_x": 0.53
+  },
+  {
+   "ticker": "ASO",
+   "vol_x": 0.53
+  },
+  {
+   "ticker": "UTMD",
+   "vol_x": 0.52
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "INNV",
+   "bought_at": "2026-09-09T14:56+00:00",
+   "sold_at": "2026-09-09T16:10+00:00",
+   "entry": 12.082069694519042,
+   "exit": 11.46852,
+   "cost_gbp": 1000.5601714903521,
+   "pl_gbp": -53.65526578315246,
+   "pl_pct": -0.05362522646012582,
+   "reason": "Stop-loss order filled"
+  },
+  {
+   "ticker": "SUNB",
+   "bought_at": "2026-09-09T16:10+00:00",
+   "sold_at": "2026-09-09T19:50+00:00",
+   "entry": 76.89681969451904,
+   "exit": 73.93000030517578,
+   "cost_gbp": 966.587449848261,
+   "pl_gbp": -38.68455901633604,
+   "pl_pct": -0.04002178905013603,
+   "reason": "End of day: sold 10 minutes before the close."
+  }
+ ],
+ "total_gbp": -92.3398247994885,
+ "alerts": [
+  "10:56 Day trade: bought INNV: 112 INNV at $12.08 (about \u00a31,001). Stop $11.48. Broke above its opening-range high ($11.77) at $12.07. In play: 1.0x normal volume, normally moves 4% a day. Stop $11.47.",
+  "12:10 Day trade update: INNV: stop-loss order filled (-\u00a354)",
+  "12:10 Day trade: bought SUNB: 17 SUNB at $76.90 (about \u00a3967). Stop $73.05. Broke above its opening-range high ($76.78) at $76.82. In play: 0.4x normal volume, normally moves 4% a day. Stop $72.98.",
+  "15:50 Day trade: sold SUNB (-\u00a339): End of day: sold 10 minutes before the close. Result -\u00a339 (-4.0%).",
+  "15:50 Day trade summary: 2 trade(s) today: INNV -\u00a354, SUNB -\u00a339. Total -\u00a392."
+ ],
+ "log": [
+  "Day trade buy order: 112 INNV at about $12.07. Broke above its opening-range high ($11.77) at $12.07. In play: 1.0x normal volume, normally moves 4% a day. Stop $11.47.",
+  "Bought 112 INNV at 12.08 (cost \u00a31,001).",
+  "INNV: stop-loss order filled, P&L -\u00a354.",
+  "Day trade buy order: 17 SUNB at about $76.82. Broke above its opening-range high ($76.78) at $76.82. In play: 0.4x normal volume, normally moves 4% a day. Stop $72.98.",
+  "Bought 17 SUNB at 76.90 (cost \u00a3967).",
+  "Sold SUNB (about -\u00a339). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 2 trade(s), total -\u00a392."
+ ]
+}

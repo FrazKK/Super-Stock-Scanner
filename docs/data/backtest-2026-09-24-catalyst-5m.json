@@ -1,0 +1,178 @@
+{
+ "date": "2026-09-24",
+ "generated": "2026-11-01T19:31+00:00",
+ "fx_gbpusd": 1.3241524696350098,
+ "result": "done",
+ "require_news": true,
+ "strategy": "catalyst",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [
+  "Added BSIN to today's list at 11:52 New York: 0.4x normal volume in the last 30 min; news: Big Sky Industrial Inc. to Participate in the Noble Capital Markets\u2019 Emerging Gr"
+ ],
+ "drift_list": [],
+ "list": [
+  {
+   "ticker": "ATYR",
+   "name": "aTyr Pharma, Inc.",
+   "vol_x": 92.41,
+   "buy_pct30": 0.16596669640998418,
+   "change": 0.022399981816609627,
+   "score": 184.98,
+   "news": [
+    "aTyr Pharma FDA Alignment Sets Protocol for Phase 3 Efzofitimod Study in Pulmonary Sarcoidosis",
+    "aTyr Pharma Announces Alignment with FDA on Phase 3 Study of Efzofitimod in Pulmonary Sarcoidosis"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "SKYQ",
+   "name": "Sky Quarry Inc.",
+   "vol_x": 3.06,
+   "buy_pct30": 0.10468941822875732,
+   "change": 0.09448819415007148,
+   "score": 5.04,
+   "news": [
+    "Sky Quarry Restarts Eagle Springs Refinery After Receiving Nevada Air Permit"
+   ],
+   "on_t212": false
+  },
+  {
+   "ticker": "TH",
+   "name": "Target Hospitality Corp.",
+   "vol_x": 0.43,
+   "buy_pct30": 0.7238039777458799,
+   "change": 0.008490490157991415,
+   "score": 4.26,
+   "news": [
+    "Is Target Hospitality\u2019s (TH) Big Buyback a Sign of Undervaluation or Insider Hesitation?"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "KYTX",
+   "name": "Kyverna Therapeutics, Inc.",
+   "vol_x": 1.39,
+   "buy_pct30": 0.47865873210026183,
+   "change": 0.004243243598697433,
+   "score": 3.69,
+   "news": [
+    "Kyverna stock jumps on positive one-year therapy data",
+    "Kyverna Therapeutics Reports Positive One-Year Data Demonstrating Durable Clinical Responses and Favorable Safety Profile for Miv-cel in Stiff Person Syndrome and Generalized Myasthenia Gravis"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "GTE",
+   "name": "Gran Tierra Energy Inc.",
+   "vol_x": 0.23,
+   "buy_pct30": 0.770841262640312,
+   "change": 0.06619857870964707,
+   "score": 3.04,
+   "news": [
+    "Gran Tierra Energy Inc. Announces Filing of Definitive Proxy Statement for Special Meeting of Stockholders to Consider Approval of Sale of Colombian and Ecuadorian Businesses"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "DGNX",
+   "name": "Diginex Limited",
+   "vol_x": 1.17,
+   "buy_pct30": 0.0642686229874136,
+   "change": 0.013605428936910968,
+   "score": 1.1,
+   "news": [
+    "Diginex Consolidates Group-Wide Expertise and Launches Sustainability Science & Intelligence Initiative to Accelerate Product Innovation and Drive Measurable Client Outcomes"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "SPHL",
+   "vol_x": 669.15
+  },
+  {
+   "ticker": "SRZN",
+   "vol_x": 40.62
+  },
+  {
+   "ticker": "YMAT",
+   "vol_x": 38.17
+  },
+  {
+   "ticker": "NCPL",
+   "vol_x": 0.98
+  },
+  {
+   "ticker": "TSSI",
+   "vol_x": 0.87
+  },
+  {
+   "ticker": "FRVO",
+   "vol_x": 0.8
+  },
+  {
+   "ticker": "RSKD",
+   "vol_x": 0.69
+  },
+  {
+   "ticker": "BDSX",
+   "vol_x": 0.65
+  },
+  {
+   "ticker": "NKSH",
+   "vol_x": 0.6
+  },
+  {
+   "ticker": "GFUZ",
+   "vol_x": 0.58
+  },
+  {
+   "ticker": "CYCU",
+   "vol_x": 0.51
+  },
+  {
+   "ticker": "SECZ",
+   "vol_x": 0.48
+  },
+  {
+   "ticker": "ITIC",
+   "vol_x": 0.48
+  },
+  {
+   "ticker": "QMCO",
+   "vol_x": 0.45
+  },
+  {
+   "ticker": "PLBC",
+   "vol_x": 0.43
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "BSIN",
+   "bought_at": "2026-09-24T15:52+00:00",
+   "sold_at": "2026-09-24T19:50+00:00",
+   "entry": 1.6016000238656996,
+   "exit": 1.5700000524520874,
+   "cost_gbp": 1001.7804104780918,
+   "pl_gbp": -21.236195856217137,
+   "pl_pct": -0.021198453906762192,
+   "reason": "End of day: sold 10 minutes before the close."
+  }
+ ],
+ "total_gbp": -21.236195856217137,
+ "alerts": [
+  "11:52 Day trade: bought BSIN: 827 BSIN at $1.60 (about \u00a31,002). Stop $1.52. Broke above its opening-range high ($1.54) at $1.60. In play: 0.4x normal volume, normally moves 5% a day. Stop $1.52.",
+  "15:50 Day trade: sold BSIN (-\u00a321): End of day: sold 10 minutes before the close. Result -\u00a321 (-2.1%).",
+  "15:50 Day trade summary: 1 trade(s) today: BSIN -\u00a321. Total -\u00a321."
+ ],
+ "log": [
+  "Added BSIN to today's list at 11:52 New York: 0.4x normal volume in the last 30 min; news: Big Sky Industrial Inc. to Participate in the Noble Capital Markets\u2019 Emerging Gr",
+  "Day trade buy order: 827 BSIN at about $1.60. Broke above its opening-range high ($1.54) at $1.60. In play: 0.4x normal volume, normally moves 5% a day. Stop $1.52.",
+  "Bought 827 BSIN at 1.60 (cost \u00a31,002).",
+  "Sold BSIN (about -\u00a321). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 1 trade(s), total -\u00a321."
+ ]
+}

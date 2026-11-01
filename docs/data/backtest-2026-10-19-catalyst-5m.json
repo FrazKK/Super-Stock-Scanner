@@ -1,0 +1,236 @@
+{
+ "date": "2026-10-19",
+ "generated": "2026-11-01T19:46+00:00",
+ "fx_gbpusd": 1.3335645198822021,
+ "result": "done",
+ "require_news": true,
+ "strategy": "catalyst",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [
+  "Added WORX to today's list at 10:32 New York: 5.5x normal volume in the last 30 min; news: SCWorx Announces New Agreement with Healthcare System",
+  "Added ESEA to today's list at 10:48 New York: 0.3x normal volume in the last 30 min; news: Euroseas Ltd. Announces a New Time Charter Contract for its 2001-built 2,556 teu",
+  "Added ARQT to today's list at 11:20 New York: 0.3x normal volume in the last 30 min; news: Arcutis Soars 12% as Guggenheim Lifts Target to $44 on \u201cGrowing Conviction\u201d in 2",
+  "Added SGP to today's list at 11:20 New York: 0.3x normal volume in the last 30 min; news: SpyGlass Pharma Announces Positive 4-Year Data From First-in-Human Trial of Its ",
+  "Added XERS to today's list at 11:36 New York: 0.3x normal volume in the last 30 min; news: Xeris Biopharma Reinforces Leadership in Endocrinology With Data Disclosures Spa"
+ ],
+ "drift_list": [],
+ "list": [
+  {
+   "ticker": "EXYN",
+   "name": "Exyn Technologies, Inc.",
+   "vol_x": 2.63,
+   "buy_pct30": 0.4172229060289068,
+   "change": 0.06903057061349971,
+   "score": 5.43,
+   "news": [
+    "Exyn Technologies Joins National Laboratory-Led Autonomous Mining Project Selected Under DOE\u2019s $29.5 Million Mine of the Future Initiative"
+   ],
+   "on_t212": false
+  },
+  {
+   "ticker": "SLE",
+   "name": "Super League Enterprise, Inc.",
+   "vol_x": 2.42,
+   "buy_pct30": 0.12214326509602184,
+   "change": 0.046859713863706576,
+   "score": 3.83,
+   "news": [
+    "Super League Shareholders Approve Metaplanet Investment Involving 2,100 Bitcoin and $2.5 Million in Cash"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "MANE",
+   "name": "Veradermics, Incorporated",
+   "vol_x": 0.44,
+   "buy_pct30": 0.6570498521242226,
+   "change": 0.0534138946544811,
+   "score": 3.01,
+   "news": [
+    "Veradermics\u2019 stock up on male hair loss trial success",
+    "Veradermics Phase III Hair Loss Trial Meets All Endpoints, Posts Strong Growth Results"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "UAMY",
+   "name": "United States Antimony Corporation",
+   "vol_x": 0.27,
+   "buy_pct30": 0.5698154551071337,
+   "change": 0.09298249606023745,
+   "score": 2.32,
+   "news": [
+    "Alcoa Gains 8%, United States Antimony Jumps 10% After Alcoa\u2019s Q3 Beat and Data Center Site Sale; Cleveland-Cliffs Rises 2%"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "MEDS",
+   "name": "DataMeds AI, Inc.",
+   "vol_x": 0.79,
+   "buy_pct30": 0.19165987728535347,
+   "change": 0.1216348986766409,
+   "score": 1.35,
+   "news": [
+    "DataMeds AI Plans Peptide Compounding Expansion Through Corexa Health Following FDA Policy Proposal",
+    "DataMeds Applauds FDA's Proposed Interim Access Policy for Compounding Using Certain Peptides and Provides Corexa Health's Peptides Roadmap"
+   ],
+   "on_t212": false
+  },
+  {
+   "ticker": "NRXP",
+   "name": "NRX Pharmaceuticals, Inc.",
+   "vol_x": 0.41,
+   "buy_pct30": 0.37640357550932,
+   "change": 0.023076993614966845,
+   "score": 0.83,
+   "news": [
+    "NRx Pharmaceuticals Announces Receipt of FDA Labeling Review Letter for Preservative-Free Ketamine"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "EOSE",
+   "name": "Eos Energy Enterprises, Inc.",
+   "vol_x": 0.28,
+   "buy_pct30": 0.1971863720359834,
+   "change": 0.01923075033665156,
+   "score": 0.35,
+   "news": [
+    "Eos Energy gains as preliminary Q3 revenue beats Wall Street estimates",
+    "Eos Energy Enterprises Announces Preliminary Third Quarter 2026 Revenue Growth and Continued Gross Margin Improvement and Sets Conference Call Date"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "QNT",
+   "name": "Quantinuum Inc.",
+   "vol_x": 0.24,
+   "buy_pct30": 0.19837441683477358,
+   "change": 0.014500755268326726,
+   "score": 0.27,
+   "news": [
+    "Quantinuum Breaks Error-Correction World Record by 10x, Validating Its Leading Path to Fault-Tolerant Quantum Computing by 2029",
+    "Morgan Stanley Just Upgraded Quantinuum Stock. Here's Why."
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "DRTS",
+   "name": "Alpha Tau Medical Ltd.",
+   "vol_x": 0.37,
+   "buy_pct30": 0.14540389087722952,
+   "change": 0.010577714796129012,
+   "score": -0.18,
+   "news": [
+    "Alpha Tau Announces FDA Approval to Expand Alpha DaRT\u00ae U.S. Recurrent Glioblastoma REGAIN Trial; New Trial Data to be Presented at SNO 2026 Annual Meeting"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "CFFI",
+   "name": "C&F Financial Corporation",
+   "vol_x": 0.23,
+   "buy_pct30": 0.1722489016102571,
+   "change": 0.008818357313424396,
+   "score": -0.35,
+   "news": [
+    "C&F Financial's 2026 Outlook: Aggressive Market Expansion Drives New Retail Growth"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "AAME",
+   "vol_x": 555.88
+  },
+  {
+   "ticker": "FUFU",
+   "vol_x": 167.54
+  },
+  {
+   "ticker": "YMAT",
+   "vol_x": 4.41
+  },
+  {
+   "ticker": "RPGL",
+   "vol_x": 2.62
+  },
+  {
+   "ticker": "DH",
+   "vol_x": 2.19
+  },
+  {
+   "ticker": "AIBZ",
+   "vol_x": 1.05
+  },
+  {
+   "ticker": "KRSA",
+   "vol_x": 0.94
+  },
+  {
+   "ticker": "CTSO",
+   "vol_x": 0.88
+  },
+  {
+   "ticker": "CLF",
+   "vol_x": 0.87
+  },
+  {
+   "ticker": "IMC",
+   "vol_x": 0.76
+  },
+  {
+   "ticker": "TCRT",
+   "vol_x": 0.64
+  },
+  {
+   "ticker": "KNOP",
+   "vol_x": 0.61
+  },
+  {
+   "ticker": "MPTI",
+   "vol_x": 0.59
+  },
+  {
+   "ticker": "NVEC",
+   "vol_x": 0.54
+  },
+  {
+   "ticker": "ZNTL",
+   "vol_x": 0.51
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "MANE",
+   "bought_at": "2026-10-19T16:20+00:00",
+   "sold_at": "2026-10-19T19:50+00:00",
+   "entry": 120.20008183288573,
+   "exit": 123.32499694824219,
+   "cost_gbp": 992.9659808502965,
+   "pl_gbp": 24.288862245329938,
+   "pl_pct": 0.024460920830873683,
+   "reason": "End of day: sold 10 minutes before the close."
+  }
+ ],
+ "total_gbp": 24.288862245329938,
+ "alerts": [
+  "12:20 Day trade: bought MANE: 11 MANE at $120.20 (about \u00a3993). Stop $114.19. Broke above its opening-range high ($119.38) at $120.08. In play: 0.4x normal volume, normally moves 7% a day. Stop $114.08.",
+  "15:50 Day trade: sold MANE (+\u00a324): End of day: sold 10 minutes before the close. Result +\u00a324 (+2.4%).",
+  "15:50 Day trade summary: 1 trade(s) today: MANE +\u00a324. Total +\u00a324."
+ ],
+ "log": [
+  "Added WORX to today's list at 10:32 New York: 5.5x normal volume in the last 30 min; news: SCWorx Announces New Agreement with Healthcare System",
+  "Added ESEA to today's list at 10:48 New York: 0.3x normal volume in the last 30 min; news: Euroseas Ltd. Announces a New Time Charter Contract for its 2001-built 2,556 teu",
+  "Added ARQT to today's list at 11:20 New York: 0.3x normal volume in the last 30 min; news: Arcutis Soars 12% as Guggenheim Lifts Target to $44 on \u201cGrowing Conviction\u201d in 2",
+  "Added SGP to today's list at 11:20 New York: 0.3x normal volume in the last 30 min; news: SpyGlass Pharma Announces Positive 4-Year Data From First-in-Human Trial of Its ",
+  "Added XERS to today's list at 11:36 New York: 0.3x normal volume in the last 30 min; news: Xeris Biopharma Reinforces Leadership in Endocrinology With Data Disclosures Spa",
+  "Day trade buy order: 11 MANE at about $120.08. Broke above its opening-range high ($119.38) at $120.08. In play: 0.4x normal volume, normally moves 7% a day. Stop $114.08.",
+  "Bought 11 MANE at 120.20 (cost \u00a3993).",
+  "Sold MANE (about +\u00a324). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 1 trade(s), total +\u00a324."
+ ]
+}

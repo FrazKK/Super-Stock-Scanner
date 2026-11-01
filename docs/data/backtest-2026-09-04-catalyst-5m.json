@@ -1,0 +1,153 @@
+{
+ "date": "2026-09-04",
+ "generated": "2026-11-01T19:33+00:00",
+ "fx_gbpusd": 1.353179931640625,
+ "result": "done",
+ "require_news": true,
+ "strategy": "catalyst",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [
+  "Added VVV to today's list at 11:52 New York: 0.3x normal volume in the last 30 min; news: Valvoline Instant Oil Change\u2120 Named a Top Franchise Brand for Multi-Unit Growth "
+ ],
+ "drift_list": [],
+ "list": [
+  {
+   "ticker": "CURV",
+   "name": "Torrid Holdings Inc.",
+   "vol_x": 5.77,
+   "buy_pct30": 0.5058966351285042,
+   "change": 0.19730944101214343,
+   "score": 13.06,
+   "news": [
+    "Torrid Holdings Inc (CURV) (Q2 2026) Earnings Call Highlights: Sub-Brand Growth and Tariff ..."
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "HURC",
+   "name": "Hurco Companies, Inc.",
+   "vol_x": 1.32,
+   "buy_pct30": 0.2620458255244544,
+   "change": 0.00899122502481653,
+   "score": 2.19,
+   "news": [
+    "Hurco Reports Profit in Third Quarter Results for Fiscal Year 2026"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "TLYS",
+   "name": "Tilly's, Inc.",
+   "vol_x": 0.44,
+   "buy_pct30": 0.6251462351561103,
+   "change": 0.020454471318191336,
+   "score": 1.88,
+   "news": [
+    "Tilly's (NYSE:TLYS) Surprises With Strong Q2 CY2026, Stock Jumps 31.4%"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "SWBI",
+   "name": "Smith & Wesson Brands, Inc.",
+   "vol_x": 0.86,
+   "buy_pct30": 0.1742003027314216,
+   "change": 0.004889931842212647,
+   "score": 1.42,
+   "news": [
+    "Smith & Wesson Brands Inc (SWBI) (Q1 2027) Earnings Call Highlights: Strong Sales Growth ...",
+    "Smith & Wesson (NASDAQ:SWBI) Delivers Strong Q2 CY2026 Numbers, Stock Soars"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "AKAN",
+   "vol_x": 33.4
+  },
+  {
+   "ticker": "AOUT",
+   "vol_x": 23.16
+  },
+  {
+   "ticker": "SUNB",
+   "vol_x": 1.88
+  },
+  {
+   "ticker": "IOT",
+   "vol_x": 1.11
+  },
+  {
+   "ticker": "VBNK",
+   "vol_x": 1.09
+  },
+  {
+   "ticker": "BSVN",
+   "vol_x": 1.04
+  },
+  {
+   "ticker": "PL",
+   "vol_x": 1.0
+  },
+  {
+   "ticker": "BBCP",
+   "vol_x": 0.98
+  },
+  {
+   "ticker": "AMC",
+   "vol_x": 0.93
+  },
+  {
+   "ticker": "HBCP",
+   "vol_x": 0.92
+  },
+  {
+   "ticker": "BNC",
+   "vol_x": 0.88
+  },
+  {
+   "ticker": "NC",
+   "vol_x": 0.83
+  },
+  {
+   "ticker": "WINA",
+   "vol_x": 0.82
+  },
+  {
+   "ticker": "CHPT",
+   "vol_x": 0.79
+  },
+  {
+   "ticker": "SFNC",
+   "vol_x": 0.73
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "VVV",
+   "bought_at": "2026-09-04T15:52+00:00",
+   "sold_at": "2026-09-04T19:50+00:00",
+   "entry": 31.94691591644287,
+   "exit": 32.0099983215332,
+   "cost_gbp": 993.0557590845324,
+   "pl_gbp": 0.4705991392333999,
+   "pl_pct": 0.00047388994518014863,
+   "reason": "End of day: sold 10 minutes before the close."
+  }
+ ],
+ "total_gbp": 0.4705991392333999,
+ "alerts": [
+  "11:52 Day trade: bought VVV: 42 VVV at $31.95 (about \u00a3993). Stop $30.35. Broke above its opening-range high ($31.88) at $31.92. In play: 0.3x normal volume, normally moves 2% a day. Stop $31.50.",
+  "15:50 Day trade: sold VVV (+\u00a30): End of day: sold 10 minutes before the close. Result +\u00a30 (+0.0%).",
+  "15:50 Day trade summary: 1 trade(s) today: VVV +\u00a30. Total +\u00a30."
+ ],
+ "log": [
+  "Added VVV to today's list at 11:52 New York: 0.3x normal volume in the last 30 min; news: Valvoline Instant Oil Change\u2120 Named a Top Franchise Brand for Multi-Unit Growth ",
+  "Day trade buy order: 42 VVV at about $31.92. Broke above its opening-range high ($31.88) at $31.92. In play: 0.3x normal volume, normally moves 2% a day. Stop $31.50.",
+  "Bought 42 VVV at 31.95 (cost \u00a3993).",
+  "Sold VVV (about +\u00a30). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 1 trade(s), total +\u00a30."
+ ]
+}

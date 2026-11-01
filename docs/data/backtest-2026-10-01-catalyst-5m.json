@@ -1,0 +1,210 @@
+{
+ "date": "2026-10-01",
+ "generated": "2026-11-01T19:38+00:00",
+ "fx_gbpusd": 1.326435923576355,
+ "result": "done",
+ "require_news": true,
+ "strategy": "catalyst",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [],
+ "drift_list": [],
+ "list": [
+  {
+   "ticker": "VEEA",
+   "name": "Veea Inc.",
+   "vol_x": 21.57,
+   "buy_pct30": 0.6893598856083034,
+   "change": 0.5138248711221274,
+   "score": 43.4,
+   "news": [
+    "Veea Announces TROLLEE Agreement for Phased Deployment of VeeaONE to 1,000 Unattended Stores"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "AISP",
+   "name": "Airship AI Holdings, Inc",
+   "vol_x": 13.16,
+   "buy_pct30": 0.4881211602173837,
+   "change": 0.22043008788608676,
+   "score": 26.77,
+   "news": [
+    "Airship AI Announces $29.0M of Firm Fixed Price Brand Name Only Awards from Department of Homeland Security"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "ABAT",
+   "name": "American Battery Technology Company",
+   "vol_x": 5.25,
+   "buy_pct30": 0.7125293236043628,
+   "change": 0.06787323726682981,
+   "score": 13.35,
+   "news": [
+    "American Battery Technology Shares Rise 10% After Receiving Export Approval",
+    "American Battery Technology Company Receives Approval for Sale of $100 Million of Exported Recycled Black Mass Critical Minerals with License from U.S. Department of Commerce"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "CRAI",
+   "name": "CRA International,Inc.",
+   "vol_x": 0.55,
+   "buy_pct30": 0.68516236963677,
+   "change": 0.03643016270898691,
+   "score": 3.34,
+   "news": [
+    "Charles River Associates (CRA) Names Patrick Hillan Vice President, Expanding Life Sciences Commercial Strategy Expertise"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "RCEL",
+   "name": "Avita Medical, Inc.",
+   "vol_x": 0.37,
+   "buy_pct30": 0.6232638152984171,
+   "change": 0.048593407565458824,
+   "score": 2.73,
+   "news": [
+    "AVITA Medical (RCEL) Stock Sees Fair Value Lift After PermeaDerm Data And Q2 Beat"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "BSET",
+   "name": "Bassett Furniture Industries, Incorporated",
+   "vol_x": 0.79,
+   "buy_pct30": 0.6318280234807804,
+   "change": 0.05781340976411875,
+   "score": 2.61,
+   "news": [
+    "Bassett Furniture (BSET) Beats Q3 Earnings Estimates"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "CNDT",
+   "name": "Conduent Incorporated",
+   "vol_x": 0.31,
+   "buy_pct30": 0.47744856811767916,
+   "change": 0.015384647126735151,
+   "score": 2.03,
+   "news": [
+    "Conduent Outlines Three-Year Path to Consistent Growth and Profitable Performance at Investor Day"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "KULR",
+   "name": "KULR Technology Group, Inc.",
+   "vol_x": 0.27,
+   "buy_pct30": 0.689892123167411,
+   "change": 0.004743116228870248,
+   "score": 1.8,
+   "news": [
+    "KULR Secures Over $1 Million in Battery Purchase Orders Supporting Drone Dominance Program"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "CERT",
+   "name": "Certara, Inc.",
+   "vol_x": 0.22,
+   "buy_pct30": 0.41891252365930437,
+   "change": 0.013043466092057088,
+   "score": 0.62,
+   "news": [
+    "In-Silico Drug Discovery Market Report Now Available: Capitalize on AI-led R&D disruption as revenue surges from $3.3B to $6B by 2030; benchmark Certara, Insilico Medicine, Isomorphic Labs, Exscientia and BenevolentAI to secure share."
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "RPGL",
+   "vol_x": 9.57
+  },
+  {
+   "ticker": "MEDS",
+   "vol_x": 4.18
+  },
+  {
+   "ticker": "SDOT",
+   "vol_x": 4.14
+  },
+  {
+   "ticker": "ACN",
+   "vol_x": 1.46
+  },
+  {
+   "ticker": "ETSS",
+   "vol_x": 1.26
+  },
+  {
+   "ticker": "QSI",
+   "vol_x": 1.11
+  },
+  {
+   "ticker": "INSG",
+   "vol_x": 0.91
+  },
+  {
+   "ticker": "SNPS",
+   "vol_x": 0.84
+  },
+  {
+   "ticker": "EFXT",
+   "vol_x": 0.76
+  },
+  {
+   "ticker": "FICO",
+   "vol_x": 0.55
+  },
+  {
+   "ticker": "VUZI",
+   "vol_x": 0.53
+  },
+  {
+   "ticker": "QTEX",
+   "vol_x": 0.53
+  },
+  {
+   "ticker": "TRNS",
+   "vol_x": 0.51
+  },
+  {
+   "ticker": "JLHL",
+   "vol_x": 0.51
+  },
+  {
+   "ticker": "TDAY",
+   "vol_x": 0.49
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "CRAI",
+   "bought_at": "2026-10-01T14:30+00:00",
+   "sold_at": "2026-10-01T19:50+00:00",
+   "entry": 172.3721969451904,
+   "exit": 175.0749969482422,
+   "cost_gbp": 911.0242456538055,
+   "pl_gbp": 12.898996211823373,
+   "pl_pct": 0.014158784767101652,
+   "reason": "End of day: sold 10 minutes before the close."
+  }
+ ],
+ "total_gbp": 12.898996211823373,
+ "alerts": [
+  "10:30 Day trade: bought CRAI: 7 CRAI at $172.37 (about \u00a3911). Stop $163.75. Broke above its opening-range high ($171.93) at $172.20. In play: 0.6x normal volume, normally moves 3% a day. Stop $165.68.",
+  "15:50 Day trade: sold CRAI (+\u00a313): End of day: sold 10 minutes before the close. Result +\u00a313 (+1.4%).",
+  "15:50 Day trade summary: 1 trade(s) today: CRAI +\u00a313. Total +\u00a313."
+ ],
+ "log": [
+  "Day trade buy order: 7 CRAI at about $172.20. Broke above its opening-range high ($171.93) at $172.20. In play: 0.6x normal volume, normally moves 3% a day. Stop $165.68.",
+  "Bought 7 CRAI at 172.37 (cost \u00a3911).",
+  "Sold CRAI (about +\u00a313). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 1 trade(s), total +\u00a313."
+ ]
+}

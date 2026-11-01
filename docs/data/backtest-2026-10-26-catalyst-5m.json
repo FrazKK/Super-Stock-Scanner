@@ -1,0 +1,237 @@
+{
+ "date": "2026-10-26",
+ "generated": "2026-11-01T19:49+00:00",
+ "fx_gbpusd": 1.3377747535705566,
+ "result": "done",
+ "require_news": true,
+ "strategy": "catalyst",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [],
+ "drift_list": [],
+ "list": [
+  {
+   "ticker": "BRAI",
+   "name": "Braiin Limited",
+   "vol_x": 8.72,
+   "buy_pct30": 0.488505734236076,
+   "change": 0.35211274794609104,
+   "score": 17.89,
+   "news": [
+    "Braiin Targets USD 56.9 Billion CX Software Market with Agentic AI Expansion and Major Upgrade to RADIUS CX Platform"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "SGRY",
+   "name": "Surgery Partners, Inc.",
+   "vol_x": 6.4,
+   "buy_pct30": 0.214291553133515,
+   "change": 0.46222226581876247,
+   "score": 12.16,
+   "news": [
+    "Surgery Partners shares surge 46% as $5.7 billion takeover deal agreed"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "XNCR",
+   "name": "Xencor, Inc.",
+   "vol_x": 2.9,
+   "buy_pct30": 0.46491786061274953,
+   "change": 0.17633044004153442,
+   "score": 6.66,
+   "news": [
+    "Xencor Soars 31% on Kidney Cancer Trial Data Showing \u201cImpressive Antitumor Activity\u201d",
+    "Xencor stock surges on positive cancer drug trial data"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "FRBA",
+   "name": "First Bank",
+   "vol_x": 0.48,
+   "buy_pct30": 0.745664728518877,
+   "change": 0.018566303335922463,
+   "score": 4.44,
+   "news": [
+    "First Bank (FRBA) Q3 Earnings Put Buyback And Credit Cleanup In Focus"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "WINA",
+   "name": "Winmark Corporation",
+   "vol_x": 0.44,
+   "buy_pct30": 0.9529618431528339,
+   "change": 0.015337344664038799,
+   "score": 4.19,
+   "news": [
+    "Winmark (WINA) Stock May Be 4% Undervalued After Special Dividend News"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "KFRC",
+   "name": "Kforce, Inc.",
+   "vol_x": 0.31,
+   "buy_pct30": 0.6435511424640475,
+   "change": 0.009743584526909821,
+   "score": 4.19,
+   "news": [
+    "Kforce\u2019s (NYSE:KFRC) Q3 2026 sales beat estimates, guides for strong sales next quarter",
+    "Kforce Reports Third Quarter 2026 Revenue of $357.8 Million, Exceeding High-End of Guidance, and Improving 7.5% Year Over Year"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "NWBI",
+   "name": "Northwest Bancshares, Inc.",
+   "vol_x": 0.22,
+   "buy_pct30": 0.8107429642559426,
+   "change": 0.017441890552192252,
+   "score": 4.18,
+   "news": [
+    "Northwest Bancshares\u2019s (NASDAQ:NWBI) Q3 2026 sales beat estimates"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "PEBK",
+   "name": "Peoples Bancorp of North Carolina, Inc.",
+   "vol_x": 0.41,
+   "buy_pct30": 0.6988183354952485,
+   "change": 0.011499540139467967,
+   "score": 4.12,
+   "news": [
+    "Peoples Bancorp Stock Slips Post Q3 Earnings Despite NIM Expansion"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "DOW",
+   "name": "Dow Inc.",
+   "vol_x": 0.26,
+   "buy_pct30": 0.7817669446547522,
+   "change": 0.04538483638563706,
+   "score": 3.65,
+   "news": [
+    "Will Earnings Beat Change Dow (DOW) Narrative",
+    "Dow (DOW) Beats On Earnings, Is The Stock Still Cheap?"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "ORKA",
+   "name": "Oruka Therapeutics, Inc.",
+   "vol_x": 0.25,
+   "buy_pct30": 0.8586027596601816,
+   "change": 0.12476606125542222,
+   "score": 3.43,
+   "news": [
+    "Oruka Therapeutics Announces Positive Week 16 Results for ORKA-001 from the Ongoing EVERLAST-B Trial in Moderate-to-Severe Psoriasis"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "CORT",
+   "name": "Corcept Therapeutics Incorporated",
+   "vol_x": 0.29,
+   "buy_pct30": 0.6033297640945224,
+   "change": 0.05835082809941716,
+   "score": 2.99,
+   "news": [
+    "What Corcept Therapeutics Stock Positive Trial Results Mean For Shareholders",
+    "Corcept Reports Positive Results from Phase 2 BELLA Trial of Lifyorli\u00ae Combined with Nab-Paclitaxel and Bevacizumab in Patients with Platinum-Resistant Ovarian Cancer"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "RENT",
+   "vol_x": 22.76
+  },
+  {
+   "ticker": "CLRO",
+   "vol_x": 9.35
+  },
+  {
+   "ticker": "RRC",
+   "vol_x": 2.2
+  },
+  {
+   "ticker": "FRMM",
+   "vol_x": 1.09
+  },
+  {
+   "ticker": "BWMX",
+   "vol_x": 0.9
+  },
+  {
+   "ticker": "MED",
+   "vol_x": 0.77
+  },
+  {
+   "ticker": "TRST",
+   "vol_x": 0.64
+  },
+  {
+   "ticker": "FNWD",
+   "vol_x": 0.57
+  },
+  {
+   "ticker": "TSBK",
+   "vol_x": 0.55
+  },
+  {
+   "ticker": "TTRX",
+   "vol_x": 0.54
+  },
+  {
+   "ticker": "HHH",
+   "vol_x": 0.5
+  },
+  {
+   "ticker": "EAF",
+   "vol_x": 0.49
+  },
+  {
+   "ticker": "WTTR",
+   "vol_x": 0.46
+  },
+  {
+   "ticker": "CHCO",
+   "vol_x": 0.44
+  },
+  {
+   "ticker": "GEF.B",
+   "vol_x": 0.4
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "WINA",
+   "bought_at": "2026-10-26T14:20+00:00",
+   "sold_at": "2026-10-26T19:50+00:00",
+   "entry": 286.488808807373,
+   "exit": 281.6300048828125,
+   "cost_gbp": 857.897912200214,
+   "pl_gbp": -15.812937487888235,
+   "pl_pct": -0.018432190197704843,
+   "reason": "End of day: sold 10 minutes before the close."
+  }
+ ],
+ "total_gbp": -15.812937487888235,
+ "alerts": [
+  "10:20 Day trade: bought WINA: 4 WINA at $286.49 (about \u00a3858). Stop $272.16. Broke above its opening-range high ($284.11) at $286.20. In play: 0.4x normal volume, normally moves 4% a day. Stop $278.79.",
+  "15:50 Day trade: sold WINA (-\u00a316): End of day: sold 10 minutes before the close. Result -\u00a316 (-1.8%).",
+  "15:50 Day trade summary: 1 trade(s) today: WINA -\u00a316. Total -\u00a316."
+ ],
+ "log": [
+  "Day trade buy order: 4 WINA at about $286.20. Broke above its opening-range high ($284.11) at $286.20. In play: 0.4x normal volume, normally moves 4% a day. Stop $278.79.",
+  "Bought 4 WINA at 286.49 (cost \u00a3858).",
+  "Sold WINA (about -\u00a316). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 1 trade(s), total -\u00a316."
+ ]
+}

@@ -1,0 +1,201 @@
+{
+ "date": "2026-10-15",
+ "generated": "2026-11-01T19:45+00:00",
+ "fx_gbpusd": 1.3230137825012207,
+ "result": "done",
+ "require_news": true,
+ "strategy": "catalyst",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [
+  "Added NRXP to today's list at 10:16 New York: 0.2x normal volume in the last 30 min; news: NRx Pharmaceuticals Announces Receipt of FDA Labeling Review Letter for Preserva"
+ ],
+ "drift_list": [],
+ "list": [
+  {
+   "ticker": "SNES",
+   "name": "SenesTech, Inc.",
+   "vol_x": 86.39,
+   "buy_pct30": 0.2358124102446131,
+   "change": 0.12890631621121584,
+   "score": 173.22,
+   "news": [
+    "SenesTech Reports Record Preliminary Third Quarter Revenue Exceeding $1 Million, the Highest in Company History, with 40% Sequential Growth"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "NRXS",
+   "name": "Neuraxis, Inc.",
+   "vol_x": 3.22,
+   "buy_pct30": 0.40428679249304855,
+   "change": 0.07963246006415914,
+   "score": 6.56,
+   "news": [
+    "NeurAxis Announces Medical Policy Coverage Milestone, Expanding Access to 26 Million Additional Covered Lives"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "FMFC",
+   "name": "Kandal M Venture Limited",
+   "vol_x": 1.26,
+   "buy_pct30": 0.684436129867258,
+   "change": 0.36413047750490457,
+   "score": 3.76,
+   "news": [
+    "Kandal M Venture Limited Reports Significant Gross Profit Growth of 45% in Financial Results for the Six Months Ended September 30, 2026"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "DFH",
+   "name": "Dream Finders Homes, Inc.",
+   "vol_x": 0.29,
+   "buy_pct30": 0.8030369837327264,
+   "change": 0.12264148760853177,
+   "score": 3.29,
+   "news": [
+    "Beazer Homes Stockholders Overwhelmingly Vote to Approve Dream Finders\u2019 Acquisition of Beazer Homes"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "CLNE",
+   "name": "Clean Energy Fuels Corp.",
+   "vol_x": 0.28,
+   "buy_pct30": 0.6655607880593016,
+   "change": 0.037037001061669184,
+   "score": 2.72,
+   "news": [
+    "Clean Energy Names Sean Wine as Chief Revenue Officer"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "QNT",
+   "name": "Quantinuum Inc.",
+   "vol_x": 0.57,
+   "buy_pct30": 0.5835441182571103,
+   "change": 0.02936727994404653,
+   "score": 1.97,
+   "news": [
+    "Morgan Stanley Just Upgraded Quantinuum Stock. Here's Why."
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "IBRX",
+   "name": "ImmunityBio, Inc.",
+   "vol_x": 0.25,
+   "buy_pct30": 0.3468109545549035,
+   "change": 0.034308794936730225,
+   "score": 1.89,
+   "news": [
+    "IBRX Stock Eyes Weekly Slump Despite Anktiva FDA Win \u2014 Retail Stays Cautious Ahead Of Founder\u2019s Trial Talk",
+    "IBRX Stock Rallies After FDA Clears Broader Anktiva Use In Bladder Cancer Months Ahead Of Deadline"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "VISN",
+   "name": "Vistance Networks, Inc.",
+   "vol_x": 0.24,
+   "buy_pct30": 0.4099404868513034,
+   "change": 0.022881313536024628,
+   "score": 0.62,
+   "news": [
+    "Vistance Networks Board Approves Special Distribution"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "OPK",
+   "vol_x": 17.51
+  },
+  {
+   "ticker": "PAG",
+   "vol_x": 2.43
+  },
+  {
+   "ticker": "NCPL",
+   "vol_x": 1.77
+  },
+  {
+   "ticker": "TNDM",
+   "vol_x": 1.41
+  },
+  {
+   "ticker": "STRT",
+   "vol_x": 1.23
+  },
+  {
+   "ticker": "CANG",
+   "vol_x": 0.89
+  },
+  {
+   "ticker": "BRBR",
+   "vol_x": 0.8
+  },
+  {
+   "ticker": "KEN",
+   "vol_x": 0.69
+  },
+  {
+   "ticker": "PLBL",
+   "vol_x": 0.64
+  },
+  {
+   "ticker": "BCAL",
+   "vol_x": 0.6
+  },
+  {
+   "ticker": "TNXP",
+   "vol_x": 0.59
+  },
+  {
+   "ticker": "PEGA",
+   "vol_x": 0.54
+  },
+  {
+   "ticker": "MPTI",
+   "vol_x": 0.54
+  },
+  {
+   "ticker": "CNTN",
+   "vol_x": 0.54
+  },
+  {
+   "ticker": "ITIC",
+   "vol_x": 0.48
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "QNT",
+   "bought_at": "2026-10-15T14:20+00:00",
+   "sold_at": "2026-10-15T19:50+00:00",
+   "entry": 35.68565152740478,
+   "exit": 36.650001525878906,
+   "cost_gbp": 999.4980231224673,
+   "pl_gbp": 25.472445358852724,
+   "pl_pct": 0.025485238359227464,
+   "reason": "End of day: sold 10 minutes before the close."
+  }
+ ],
+ "total_gbp": 25.472445358852724,
+ "alerts": [
+  "10:20 Day trade: bought QNT: 37 QNT at $35.69 (about \u00a3999). Stop $33.90. Broke above its opening-range high ($35.25) at $35.65. In play: 0.6x normal volume, normally moves 5% a day. Stop $33.87.",
+  "15:50 Day trade: sold QNT (+\u00a325): End of day: sold 10 minutes before the close. Result +\u00a325 (+2.5%).",
+  "15:50 Day trade summary: 1 trade(s) today: QNT +\u00a325. Total +\u00a325."
+ ],
+ "log": [
+  "Added NRXP to today's list at 10:16 New York: 0.2x normal volume in the last 30 min; news: NRx Pharmaceuticals Announces Receipt of FDA Labeling Review Letter for Preserva",
+  "Day trade buy order: 37 QNT at about $35.65. Broke above its opening-range high ($35.25) at $35.65. In play: 0.6x normal volume, normally moves 5% a day. Stop $33.87.",
+  "Bought 37 QNT at 35.69 (cost \u00a3999).",
+  "Sold QNT (about +\u00a325). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 1 trade(s), total +\u00a325."
+ ]
+}

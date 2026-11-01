@@ -1277,6 +1277,674 @@
     "added": 11
    }
   },
+  "catalyst, 5-min bars": {
+   "2026-09-04": {
+    "total": 0.47,
+    "trades": 1,
+    "wins": 1,
+    "list": [
+     "CURV",
+     "HURC",
+     "TLYS",
+     "SWBI"
+    ],
+    "added": 1
+   },
+   "2026-09-07": {
+    "total": 0,
+    "trades": 0,
+    "wins": 0,
+    "list": [],
+    "added": 0
+   },
+   "2026-09-08": {
+    "total": 47.99,
+    "trades": 1,
+    "wins": 1,
+    "list": [
+     "LCTX",
+     "OESX",
+     "NRGV",
+     "LILA",
+     "LTBR",
+     "CURV",
+     "QNC"
+    ],
+    "added": 0
+   },
+   "2026-09-09": {
+    "total": -92.34,
+    "trades": 2,
+    "wins": 0,
+    "list": [
+     "JILL",
+     "PYXS",
+     "INNV",
+     "SUNB",
+     "INBX",
+     "PPIH",
+     "GILT"
+    ],
+    "added": 0
+   },
+   "2026-09-10": {
+    "total": -25.88,
+    "trades": 1,
+    "wins": 0,
+    "list": [
+     "OCC",
+     "WLTH",
+     "TEN"
+    ],
+    "added": 1
+   },
+   "2026-09-11": {
+    "total": -9.12,
+    "trades": 1,
+    "wins": 0,
+    "list": [
+     "FEIM",
+     "UNTY",
+     "TEN",
+     "NMAX",
+     "IBEX",
+     "IMPP",
+     "CCG",
+     "BW",
+     "MAKO",
+     "RXT",
+     "HYPD",
+     "MLR",
+     "IA",
+     "BNAI"
+    ],
+    "added": 1
+   },
+   "2026-09-14": {
+    "total": -26.08,
+    "trades": 1,
+    "wins": 0,
+    "list": [
+     "CRBP",
+     "SBC",
+     "FLWS",
+     "GLOO",
+     "THRY",
+     "BNAI",
+     "IMPP",
+     "IBEX",
+     "TEN"
+    ],
+    "added": 1
+   },
+   "2026-09-15": {
+    "total": -51.3,
+    "trades": 2,
+    "wins": 1,
+    "list": [
+     "VEEA",
+     "RLGT",
+     "RENT",
+     "BWIN",
+     "NFE"
+    ],
+    "added": 0
+   },
+   "2026-09-16": {
+    "total": -30.91,
+    "trades": 1,
+    "wins": 0,
+    "list": [
+     "NRXS",
+     "NFGC",
+     "DSX",
+     "RCKT",
+     "BXC"
+    ],
+    "added": 2
+   },
+   "2026-09-17": {
+    "total": -95.35,
+    "trades": 2,
+    "wins": 0,
+    "list": [
+     "NUWE",
+     "CETX",
+     "FEAM",
+     "OSTX",
+     "NRXS",
+     "TRT",
+     "YETI",
+     "GCTS"
+    ],
+    "added": 1
+   },
+   "2026-09-18": {
+    "total": 55.98,
+    "trades": 1,
+    "wins": 1,
+    "list": [
+     "TNMG",
+     "CODA",
+     "CSHR",
+     "STUB"
+    ],
+    "added": 0
+   },
+   "2026-09-21": {
+    "total": -2.32,
+    "trades": 1,
+    "wins": 0,
+    "list": [
+     "MX",
+     "OPTX",
+     "HIVE",
+     "MAAS",
+     "GCTS",
+     "BLSH",
+     "AREC"
+    ],
+    "added": 0
+   },
+   "2026-09-22": {
+    "total": 9.6,
+    "trades": 1,
+    "wins": 1,
+    "list": [
+     "TECH",
+     "MAZE",
+     "MAAS",
+     "VFF",
+     "LXEO",
+     "CUE"
+    ],
+    "added": 4
+   },
+   "2026-09-23": {
+    "total": 12.84,
+    "trades": 1,
+    "wins": 1,
+    "list": [
+     "TLSI",
+     "CUE",
+     "SPIR",
+     "MAZE",
+     "WOR",
+     "MAAS"
+    ],
+    "added": 2
+   },
+   "2026-09-24": {
+    "total": -21.24,
+    "trades": 1,
+    "wins": 0,
+    "list": [
+     "ATYR",
+     "SKYQ",
+     "TH",
+     "KYTX",
+     "GTE",
+     "DGNX"
+    ],
+    "added": 1
+   },
+   "2026-09-25": {
+    "total": -21.94,
+    "trades": 1,
+    "wins": 0,
+    "list": [
+     "PARK",
+     "DGNX",
+     "CPK"
+    ],
+    "added": 1
+   },
+   "2026-09-28": {
+    "total": 12.92,
+    "trades": 1,
+    "wins": 1,
+    "list": [
+     "NTWK",
+     "LNTH",
+     "CAAP",
+     "TRT",
+     "CANG",
+     "BUR"
+    ],
+    "added": 1
+   },
+   "2026-09-29": {
+    "total": -6.89,
+    "trades": 1,
+    "wins": 0,
+    "list": [
+     "BKYI",
+     "NTWK",
+     "CRK",
+     "PCB",
+     "AGPU",
+     "JELD",
+     "ACET",
+     "TOYO"
+    ],
+    "added": 0
+   },
+   "2026-09-30": {
+    "total": -22.34,
+    "trades": 1,
+    "wins": 0,
+    "list": [
+     "FUNC",
+     "QURE",
+     "NRXP",
+     "DPRO",
+     "CRVO",
+     "CANG",
+     "NYAX"
+    ],
+    "added": 2
+   },
+   "2026-10-01": {
+    "total": 12.9,
+    "trades": 1,
+    "wins": 1,
+    "list": [
+     "VEEA",
+     "AISP",
+     "ABAT",
+     "CRAI",
+     "RCEL",
+     "BSET",
+     "CNDT",
+     "KULR",
+     "CERT"
+    ],
+    "added": 0
+   },
+   "2026-10-02": {
+    "total": 306.48,
+    "trades": 1,
+    "wins": 1,
+    "list": [
+     "CYCU",
+     "TNON",
+     "SBET",
+     "CHRN"
+    ],
+    "added": 4
+   },
+   "2026-10-05": {
+    "total": 21.04,
+    "trades": 1,
+    "wins": 1,
+    "list": [
+     "VEEA",
+     "INTT",
+     "AISP",
+     "INTG",
+     "AIFA",
+     "RZLV"
+    ],
+    "added": 0
+   },
+   "2026-10-06": {
+    "total": -66.76,
+    "trades": 2,
+    "wins": 0,
+    "list": [
+     "AIFA",
+     "PUSA",
+     "MBOT",
+     "CBNA",
+     "BRUN",
+     "APOG",
+     "GRAL",
+     "VELO",
+     "TSSI",
+     "AIBZ",
+     "QUBT",
+     "RZLV",
+     "UEC",
+     "INTR",
+     "DIOD"
+    ],
+    "added": 2
+   },
+   "2026-10-07": {
+    "total": -30.56,
+    "trades": 1,
+    "wins": 0,
+    "list": [
+     "SRXH",
+     "BKV",
+     "ENTX",
+     "BKH",
+     "ZIM",
+     "MBOT"
+    ],
+    "added": 0
+   },
+   "2026-10-08": {
+    "total": 30.64,
+    "trades": 1,
+    "wins": 1,
+    "list": [
+     "PROF",
+     "GFUZ",
+     "UNTY",
+     "ECO",
+     "AG",
+     "HESM",
+     "HNRG",
+     "PTHS",
+     "RCKT"
+    ],
+    "added": 1
+   },
+   "2026-10-09": {
+    "total": -30.04,
+    "trades": 2,
+    "wins": 0,
+    "list": [
+     "CRGY",
+     "GFUZ",
+     "CF",
+     "KOPN"
+    ],
+    "added": 3
+   },
+   "2026-10-12": {
+    "total": -12.51,
+    "trades": 1,
+    "wins": 0,
+    "list": [
+     "YMAT",
+     "TRAX",
+     "TRMD",
+     "GLP",
+     "RELL",
+     "LEVI",
+     "ENVX"
+    ],
+    "added": 2
+   },
+   "2026-10-13": {
+    "total": -2.5,
+    "trades": 1,
+    "wins": 0,
+    "list": [
+     "BKYI",
+     "EFXT",
+     "RELL",
+     "AGBK",
+     "CTNM",
+     "NB",
+     "DNUT",
+     "ENLT"
+    ],
+    "added": 0
+   },
+   "2026-10-14": {
+    "total": 50.7,
+    "trades": 2,
+    "wins": 1,
+    "list": [
+     "GENB",
+     "AMPG",
+     "ARWR",
+     "ENVX"
+    ],
+    "added": 2
+   },
+   "2026-10-15": {
+    "total": 25.47,
+    "trades": 1,
+    "wins": 1,
+    "list": [
+     "SNES",
+     "NRXS",
+     "FMFC",
+     "DFH",
+     "CLNE",
+     "QNT",
+     "IBRX",
+     "VISN"
+    ],
+    "added": 1
+   },
+   "2026-10-16": {
+    "total": -52.49,
+    "trades": 1,
+    "wins": 0,
+    "list": [
+     "NBBK",
+     "PLBC",
+     "WES",
+     "CLNE",
+     "AA",
+     "CARL",
+     "FFR",
+     "UAMY"
+    ],
+    "added": 3
+   },
+   "2026-10-19": {
+    "total": 24.29,
+    "trades": 1,
+    "wins": 1,
+    "list": [
+     "EXYN",
+     "SLE",
+     "MANE",
+     "UAMY",
+     "MEDS",
+     "NRXP",
+     "EOSE",
+     "QNT",
+     "DRTS",
+     "CFFI"
+    ],
+    "added": 5
+   },
+   "2026-10-20": {
+    "total": 9.95,
+    "trades": 1,
+    "wins": 1,
+    "list": [
+     "MYGN",
+     "HOST",
+     "WORX",
+     "HTZ",
+     "SGP",
+     "PRK",
+     "WINA",
+     "DNTH",
+     "AMPG",
+     "HIFS",
+     "FISN",
+     "ALVO"
+    ],
+    "added": 3
+   },
+   "2026-10-21": {
+    "total": -56.0,
+    "trades": 2,
+    "wins": 0,
+    "list": [
+     "TNMG",
+     "SHMD",
+     "RAIL",
+     "LENZ",
+     "AMPG",
+     "NTWK",
+     "WCCB",
+     "ONT",
+     "WGO",
+     "ROIV",
+     "FISN",
+     "SWBI",
+     "VIVO",
+     "UNCY",
+     "NVA"
+    ],
+    "added": 14
+   },
+   "2026-10-22": {
+    "total": 5.97,
+    "trades": 1,
+    "wins": 1,
+    "list": [
+     "SKYQ",
+     "ATOM",
+     "BKYI",
+     "QCRH",
+     "ROIV",
+     "WCN",
+     "ZGN",
+     "HTZ",
+     "MKTX",
+     "KNX",
+     "PLBC",
+     "AVAV",
+     "CBZ",
+     "TCX",
+     "EVER"
+    ],
+    "added": 3
+   },
+   "2026-10-23": {
+    "total": -14.42,
+    "trades": 1,
+    "wins": 0,
+    "list": [
+     "BKYI",
+     "GRC",
+     "FCNCA",
+     "NFGC",
+     "OMC",
+     "UWMC",
+     "DOV",
+     "TTMI",
+     "SKYQ",
+     "GSIT",
+     "RHI",
+     "COLB",
+     "KN"
+    ],
+    "added": 4
+   },
+   "2026-10-26": {
+    "total": -15.81,
+    "trades": 1,
+    "wins": 0,
+    "list": [
+     "BRAI",
+     "SGRY",
+     "XNCR",
+     "FRBA",
+     "WINA",
+     "KFRC",
+     "NWBI",
+     "PEBK",
+     "DOW",
+     "ORKA",
+     "CORT"
+    ],
+    "added": 0
+   },
+   "2026-10-27": {
+    "total": 100.05,
+    "trades": 2,
+    "wins": 2,
+    "list": [
+     "BRAI",
+     "AEYE",
+     "TEVA",
+     "AMKR",
+     "MGNX",
+     "ESLT",
+     "NVA",
+     "WSC",
+     "INIO",
+     "OPY",
+     "CSHR",
+     "IQV",
+     "IMSR",
+     "HWKN",
+     "HTH"
+    ],
+    "added": 10
+   },
+   "2026-10-28": {
+    "total": 0,
+    "trades": 0,
+    "wins": 0,
+    "list": [
+     "ELPW",
+     "BRAI",
+     "OSS",
+     "UCTT",
+     "ELVA",
+     "RDWR",
+     "AVPT",
+     "AXGN",
+     "STLA",
+     "EAT",
+     "CHE",
+     "PRME",
+     "BKYI",
+     "CLW",
+     "KDK"
+    ],
+    "added": 26
+   },
+   "2026-10-29": {
+    "total": -73.98,
+    "trades": 2,
+    "wins": 0,
+    "list": [
+     "CETX",
+     "DAIC",
+     "NUWE",
+     "BHC",
+     "TOYO",
+     "KDK",
+     "VTRS",
+     "BLCO",
+     "CROX",
+     "GKOS",
+     "BOOM",
+     "INSM",
+     "NCLH",
+     "EMAT",
+     "AIRS"
+    ],
+    "added": 40
+   },
+   "2026-10-30": {
+    "total": 24.64,
+    "trades": 1,
+    "wins": 1,
+    "list": [
+     "WKHS",
+     "REGN",
+     "CPRI",
+     "NFE",
+     "MEOH",
+     "CHE",
+     "SMP",
+     "NWL",
+     "GILD",
+     "EXC",
+     "MPWR",
+     "DXCM",
+     "CVCO",
+     "FDXF",
+     "SKY"
+    ],
+    "added": 10
+   }
+  },
   "drift, 5-min bars": {
    "2026-09-04": {
     "total": -53.85,
@@ -3280,6 +3948,15 @@
    "wins": 1,
    "total_gbp": -35.27,
    "best_day": "2026-09-28",
+   "worst_day": "2026-09-17"
+  },
+  "catalyst, 5-min bars": {
+   "days": 41,
+   "days_traded": 39,
+   "trades": 48,
+   "wins": 19,
+   "total_gbp": -8.85,
+   "best_day": "2026-10-02",
    "worst_day": "2026-09-17"
   },
   "drift, 5-min bars": {

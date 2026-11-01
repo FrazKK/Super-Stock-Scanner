@@ -1,0 +1,175 @@
+{
+ "date": "2026-10-07",
+ "generated": "2026-11-01T19:39+00:00",
+ "fx_gbpusd": 1.326682209968567,
+ "result": "done",
+ "require_news": true,
+ "strategy": "catalyst",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [],
+ "drift_list": [],
+ "list": [
+  {
+   "ticker": "SRXH",
+   "name": "SRX Global Inc.",
+   "vol_x": 1.1,
+   "buy_pct30": 0.7076913523343535,
+   "change": 0.0777027081450552,
+   "score": 5.03,
+   "news": [
+    "SRX Global and CERO 1236, a Wholly-Owned SPV, Enter into Definitive Agreement to Acquire CERo Therapeutics, an Innovative Cellular Immunotherapy Company Developing CER 1236 for Hematologic Malignancies",
+    "SRX Global Commits $1.5 Million to Launch Family of AI-Powered ETFs through its EMJX Platform, Partnering with Kupa AI Co-Founder Andy Kim"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "BKV",
+   "name": "BKV Corporation",
+   "vol_x": 1.25,
+   "buy_pct30": 0.6278366947107255,
+   "change": 0.08684811708785478,
+   "score": 5.01,
+   "news": [
+    "Update: BKV Shares Rise After Signing Equipment Supply Contract for Potential Power Project in Texas",
+    "BKV Announces Power Generation Equipment Supply Contract Backed by Agreement with a Leading Investment-Grade Hyperscaler"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "ENTX",
+   "name": "Entera Bio Ltd.",
+   "vol_x": 0.56,
+   "buy_pct30": 0.8256227123446663,
+   "change": 0.003952565445193956,
+   "score": 3.92,
+   "news": [
+    "Entera Appoints Global BioPharma Executive Laura Hamill to Its Board of Directors, Expanding Commercial Expertise"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "BKH",
+   "name": "Black Hills Corporation",
+   "vol_x": 0.58,
+   "buy_pct30": 0.7697261115767031,
+   "change": 0.07471026041430173,
+   "score": 3.74,
+   "news": [
+    "Black Hills Corp. Executes Definitive Agreements to Serve Google\u2019s Planned Data Center in Cheyenne, Wyoming"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "ZIM",
+   "name": "ZIM Integrated Shipping Services Ltd.",
+   "vol_x": 0.43,
+   "buy_pct30": 0.4950436347742868,
+   "change": 0.03356162728187795,
+   "score": 3.34,
+   "news": [
+    "Zim lifts profit forecast 72% on strong demand"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "MBOT",
+   "name": "Microbot Medical Inc.",
+   "vol_x": 0.27,
+   "buy_pct30": 0.5635059355843512,
+   "change": 0.05626165702464103,
+   "score": 2.29,
+   "news": [
+    "Microbot Medical\u00ae and Medtechnica Ltd. Enter into Three-Year Exclusive Distribution Agreement in Israel"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "PENG",
+   "vol_x": 2.49
+  },
+  {
+   "ticker": "CANG",
+   "vol_x": 0.92
+  },
+  {
+   "ticker": "STZ",
+   "vol_x": 0.84
+  },
+  {
+   "ticker": "PSQL",
+   "vol_x": 0.82
+  },
+  {
+   "ticker": "NWE",
+   "vol_x": 0.45
+  },
+  {
+   "ticker": "PNTG",
+   "vol_x": 0.45
+  },
+  {
+   "ticker": "BWLP",
+   "vol_x": 0.43
+  },
+  {
+   "ticker": "HTZ",
+   "vol_x": 0.39
+  },
+  {
+   "ticker": "WRAP",
+   "vol_x": 0.35
+  },
+  {
+   "ticker": "PG",
+   "vol_x": 0.34
+  },
+  {
+   "ticker": "BSP",
+   "vol_x": 0.33
+  },
+  {
+   "ticker": "AVBP",
+   "vol_x": 0.32
+  },
+  {
+   "ticker": "GNK",
+   "vol_x": 0.31
+  },
+  {
+   "ticker": "CMTV",
+   "vol_x": 0.29
+  },
+  {
+   "ticker": "VST",
+   "vol_x": 0.27
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "BKV",
+   "bought_at": "2026-10-07T14:20+00:00",
+   "sold_at": "2026-10-07T19:50+00:00",
+   "entry": 24.36423896217346,
+   "exit": 23.649999618530273,
+   "cost_gbp": 993.1861582319113,
+   "pl_gbp": -30.559260995614522,
+   "pl_pct": -0.030768915517325263,
+   "reason": "End of day: sold 10 minutes before the close."
+  }
+ ],
+ "total_gbp": -30.559260995614522,
+ "alerts": [
+  "10:20 Day trade: bought BKV: 54 BKV at $24.36 (about \u00a3993). Stop $23.15. Broke above its opening-range high ($24.20) at $24.34. In play: 1.2x normal volume, normally moves 3% a day. Stop $23.12.",
+  "15:50 Day trade: sold BKV (-\u00a331): End of day: sold 10 minutes before the close. Result -\u00a331 (-3.1%).",
+  "15:50 Day trade summary: 1 trade(s) today: BKV -\u00a331. Total -\u00a331."
+ ],
+ "log": [
+  "Day trade buy order: 54 BKV at about $24.34. Broke above its opening-range high ($24.20) at $24.34. In play: 1.2x normal volume, normally moves 3% a day. Stop $23.12.",
+  "Bought 54 BKV at 24.36 (cost \u00a3993).",
+  "Sold BKV (about -\u00a331). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 1 trade(s), total -\u00a331."
+ ]
+}

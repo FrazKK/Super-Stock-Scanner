@@ -1,0 +1,192 @@
+{
+ "date": "2026-10-12",
+ "generated": "2026-11-01T19:42+00:00",
+ "fx_gbpusd": 1.3241524696350098,
+ "result": "done",
+ "require_news": true,
+ "strategy": "catalyst",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [
+  "Added TOP to today's list at 11:20 New York: 0.4x normal volume in the last 30 min; news: TOP Financial Group (TOP) Faces A Valuation Test Following Its $1.47b Shelf Fili",
+  "Added GOGO to today's list at 11:20 New York: 0.2x normal volume in the last 30 min; news: Gogo Secures Satellite Connectivity Contract Worth Over $15 Million With Oversea"
+ ],
+ "drift_list": [],
+ "list": [
+  {
+   "ticker": "YMAT",
+   "name": "J-Star Holding Co., Ltd.",
+   "vol_x": 13.17,
+   "buy_pct30": 0.23303748871128788,
+   "change": 0.5891472968507308,
+   "score": 24.77,
+   "news": [
+    "J-Star Holding Co., Ltd. Highlights Capital Initiatives to Fund Planned U.S. Expansion for Drone Frame Manufacturing in Houston, Texas"
+   ],
+   "on_t212": false
+  },
+  {
+   "ticker": "TRAX",
+   "name": "First Tracks Biotherapeutics, Inc.",
+   "vol_x": 3.11,
+   "buy_pct30": 0.3216519754863388,
+   "change": 0.1422292192272956,
+   "score": 6.01,
+   "news": [
+    "First Tracks Biotherapeutics Shares Jump 20% After Positive Phase 1b Celiac Disease Trial Results"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "TRMD",
+   "name": "TORM plc",
+   "vol_x": 0.23,
+   "buy_pct30": 0.6273932120543092,
+   "change": 0.03580371443026298,
+   "score": 2.47,
+   "news": [
+    "TORM plc Upgrades Full-Year Guidance"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "GLP",
+   "name": "Global Partners LP",
+   "vol_x": 0.25,
+   "buy_pct30": 0.45347017086517777,
+   "change": 0.012760807813353203,
+   "score": 2.31,
+   "news": [
+    "Could Zacks\u2019 Spotlight on GLP\u2019s Expansion Reveal a Shift in Global Partners\u2019 Valuation Story?",
+    "Global Partners (GLP) Gains Attention As Expansion Narrative Meets A Fully Valued View"
+   ],
+   "on_t212": false
+  },
+  {
+   "ticker": "RELL",
+   "name": "Richardson Electronics, Ltd.",
+   "vol_x": 0.23,
+   "buy_pct30": 0.4454302144796934,
+   "change": 0.016353931229763585,
+   "score": 2.24,
+   "news": [
+    "ComEd, Richardson Electronics, Ltd. Announce Expansion and Plans to Install Illinois\u2019 Largest Commercial Battery Energy Storage System",
+    "RELL Q3 Deep Dive: Demand for Engineered Power Solutions and Energy Storage Drives Growth"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "LEVI",
+   "name": "Levi Strauss & Co",
+   "vol_x": 0.27,
+   "buy_pct30": 0.38408846905277627,
+   "change": 0.010695125531074101,
+   "score": 0.58,
+   "news": [
+    "Levi Strauss CEO Sounds Alarm on Growing Competition in Denim Market"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "ENVX",
+   "name": "Enovix Corporation",
+   "vol_x": 0.49,
+   "buy_pct30": 0.2118283279318925,
+   "change": 0.05487804405277452,
+   "score": 0.33,
+   "news": [
+    "Enovix Q3 Revenue Rises 38% to $11 Million, Exceeding Guidance as Defence Demand Grows"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "MEDS",
+   "vol_x": 1.78
+  },
+  {
+   "ticker": "NCPL",
+   "vol_x": 1.44
+  },
+  {
+   "ticker": "ALLT",
+   "vol_x": 0.98
+  },
+  {
+   "ticker": "AI",
+   "vol_x": 0.86
+  },
+  {
+   "ticker": "PFIS",
+   "vol_x": 0.79
+  },
+  {
+   "ticker": "MSGM",
+   "vol_x": 0.64
+  },
+  {
+   "ticker": "FBIZ",
+   "vol_x": 0.6
+  },
+  {
+   "ticker": "HELP",
+   "vol_x": 0.53
+  },
+  {
+   "ticker": "GRML",
+   "vol_x": 0.51
+  },
+  {
+   "ticker": "PEBK",
+   "vol_x": 0.5
+  },
+  {
+   "ticker": "ENGS",
+   "vol_x": 0.48
+  },
+  {
+   "ticker": "OZ",
+   "vol_x": 0.48
+  },
+  {
+   "ticker": "NGNE",
+   "vol_x": 0.45
+  },
+  {
+   "ticker": "CCC",
+   "vol_x": 0.44
+  },
+  {
+   "ticker": "SFST",
+   "vol_x": 0.44
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "GOGO",
+   "bought_at": "2026-10-12T15:20+00:00",
+   "sold_at": "2026-10-12T19:50+00:00",
+   "entry": 2.5076051118373868,
+   "exit": 2.4800000190734863,
+   "cost_gbp": 1001.3964046483375,
+   "pl_gbp": -12.507254721565346,
+   "pl_pct": -0.012489813887396116,
+   "reason": "End of day: sold 10 minutes before the close."
+  }
+ ],
+ "total_gbp": -12.507254721565346,
+ "alerts": [
+  "11:20 Day trade: bought GOGO: 528 GOGO at $2.51 (about \u00a31,001). Stop $2.38. Broke above its opening-range high ($2.31) at $2.51. In play: 0.2x normal volume, normally moves 5% a day. Stop $2.38.",
+  "15:50 Day trade: sold GOGO (-\u00a313): End of day: sold 10 minutes before the close. Result -\u00a313 (-1.2%).",
+  "15:50 Day trade summary: 1 trade(s) today: GOGO -\u00a313. Total -\u00a313."
+ ],
+ "log": [
+  "Added TOP to today's list at 11:20 New York: 0.4x normal volume in the last 30 min; news: TOP Financial Group (TOP) Faces A Valuation Test Following Its $1.47b Shelf Fili",
+  "Added GOGO to today's list at 11:20 New York: 0.2x normal volume in the last 30 min; news: Gogo Secures Satellite Connectivity Contract Worth Over $15 Million With Oversea",
+  "Day trade buy order: 528 GOGO at about $2.51. Broke above its opening-range high ($2.31) at $2.51. In play: 0.2x normal volume, normally moves 5% a day. Stop $2.38.",
+  "Bought 528 GOGO at 2.51 (cost \u00a31,001).",
+  "Sold GOGO (about -\u00a313). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 1 trade(s), total -\u00a313."
+ ]
+}

@@ -1,0 +1,174 @@
+{
+ "date": "2026-10-09",
+ "generated": "2026-11-01T19:40+00:00",
+ "fx_gbpusd": 1.322908878326416,
+ "result": "done",
+ "require_news": true,
+ "strategy": "catalyst",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [
+  "Added BNED to today's list at 12:10 New York: 0.3x normal volume in the last 30 min; news: Barnes & Noble Education Highlights Continued Business Transformation and Milest",
+  "Added LZM to today's list at 12:58 New York: 1.5x normal volume in the last 30 min; news: Lifezone Metals Announces US$8 Million Reduction in Cap on Consideration Payable",
+  "Added BKV to today's list at 13:46 New York: 0.3x normal volume in the last 30 min; news: Update: BKV Shares Rise After Signing Equipment Supply Contract for Potential Po"
+ ],
+ "drift_list": [],
+ "list": [
+  {
+   "ticker": "CRGY",
+   "name": "Crescent Energy Company",
+   "vol_x": 2.14,
+   "buy_pct30": 0.24975989530962722,
+   "change": 0.0015372408714457997,
+   "score": 4.78,
+   "news": [
+    "Moody\u2019s revises Crescent Energy outlook to positive following Eagle Ford deal"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "GFUZ",
+   "name": "General Fusion Group Ltd.",
+   "vol_x": 1.23,
+   "buy_pct30": 0.13057976275380923,
+   "change": 0.022962090515407763,
+   "score": 1.98,
+   "news": [
+    "General Fusion Achieves World-First 1 keV Electron Temperature Milestone on its Path to Commercial Fusion Power",
+    "General Fusion, UKAEA Announce Magnetized Target Fusion Milestone"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "CF",
+   "name": "CF Industries Holdings, Inc.",
+   "vol_x": 0.29,
+   "buy_pct30": 0.4509369663448165,
+   "change": 0.026369035648039718,
+   "score": 1.88,
+   "news": [
+    "Can CF Industries' Strong Cash Flow Drive More Growth and Returns?"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "KOPN",
+   "name": "Kopin Corporation",
+   "vol_x": 0.38,
+   "buy_pct30": 0.33284109540778256,
+   "change": 0.04047621047956418,
+   "score": 1.09,
+   "news": [
+    "Kopin Secures Additional $18.6 Million U.S. Army IBAS Award for Color MicroLED Technology",
+    "Kopin to Introduce Expanded First\u2011Person Viewer Evaluation Kit Lineup at AUSA 2026"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "BDAI",
+   "vol_x": 4.14
+  },
+  {
+   "ticker": "VEEA",
+   "vol_x": 2.46
+  },
+  {
+   "ticker": "HUM",
+   "vol_x": 0.99
+  },
+  {
+   "ticker": "TEVA",
+   "vol_x": 0.69
+  },
+  {
+   "ticker": "CLOV",
+   "vol_x": 0.64
+  },
+  {
+   "ticker": "AAOI",
+   "vol_x": 0.54
+  },
+  {
+   "ticker": "IMMR",
+   "vol_x": 0.49
+  },
+  {
+   "ticker": "PCG",
+   "vol_x": 0.47
+  },
+  {
+   "ticker": "FSLY",
+   "vol_x": 0.44
+  },
+  {
+   "ticker": "PYPL",
+   "vol_x": 0.42
+  },
+  {
+   "ticker": "COHR",
+   "vol_x": 0.42
+  },
+  {
+   "ticker": "ATEX",
+   "vol_x": 0.4
+  },
+  {
+   "ticker": "SNOW",
+   "vol_x": 0.38
+  },
+  {
+   "ticker": "NN",
+   "vol_x": 0.38
+  },
+  {
+   "ticker": "TATT",
+   "vol_x": 0.38
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "CRGY",
+   "bought_at": "2026-10-09T14:16+00:00",
+   "sold_at": "2026-10-09T16:10+00:00",
+   "entry": 13.163149618148802,
+   "exit": 12.85713,
+   "cost_gbp": 996.5081162092907,
+   "pl_gbp": -26.08267608064898,
+   "pl_pct": -0.026174072901550747,
+   "reason": "Stop-loss order filled"
+  },
+  {
+   "ticker": "LZM",
+   "bought_at": "2026-10-09T17:56+00:00",
+   "sold_at": "2026-10-09T19:50+00:00",
+   "entry": 3.4134100859165186,
+   "exit": 3.4049999713897705,
+   "cost_gbp": 1000.0471003552642,
+   "pl_gbp": -3.958094894147507,
+   "pl_pct": -0.00395790847525222,
+   "reason": "End of day: sold 10 minutes before the close."
+  }
+ ],
+ "total_gbp": -30.040770974796487,
+ "alerts": [
+  "10:16 Day trade: bought CRGY: 100 CRGY at $13.16 (about \u00a3997). Stop $12.50. Broke above its opening-range high ($13.07) at $13.15. In play: 2.1x normal volume, normally moves 3% a day. Stop $12.86.",
+  "12:10 Day trade update: CRGY: stop-loss order filled (-\u00a326)",
+  "13:56 Day trade: bought LZM: 387 LZM at $3.41 (about \u00a31,000). Stop $3.24. Broke above its opening-range high ($3.39) at $3.41. In play: 1.5x normal volume, normally moves 5% a day. Stop $3.24.",
+  "15:50 Day trade: sold LZM (-\u00a34): End of day: sold 10 minutes before the close. Result -\u00a34 (-0.4%).",
+  "15:50 Day trade summary: 2 trade(s) today: CRGY -\u00a326, LZM -\u00a34. Total -\u00a330."
+ ],
+ "log": [
+  "Day trade buy order: 100 CRGY at about $13.15. Broke above its opening-range high ($13.07) at $13.15. In play: 2.1x normal volume, normally moves 3% a day. Stop $12.86.",
+  "Bought 100 CRGY at 13.16 (cost \u00a3997).",
+  "CRGY: stop-loss order filled, P&L -\u00a326.",
+  "Added BNED to today's list at 12:10 New York: 0.3x normal volume in the last 30 min; news: Barnes & Noble Education Highlights Continued Business Transformation and Milest",
+  "Added LZM to today's list at 12:58 New York: 1.5x normal volume in the last 30 min; news: Lifezone Metals Announces US$8 Million Reduction in Cap on Consideration Payable",
+  "Added BKV to today's list at 13:46 New York: 0.3x normal volume in the last 30 min; news: Update: BKV Shares Rise After Signing Equipment Supply Contract for Potential Po",
+  "Day trade buy order: 387 LZM at about $3.41. Broke above its opening-range high ($3.39) at $3.41. In play: 1.5x normal volume, normally moves 5% a day. Stop $3.24.",
+  "Bought 387 LZM at 3.41 (cost \u00a31,000).",
+  "Sold LZM (about -\u00a34). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 2 trade(s), total -\u00a330."
+ ]
+}

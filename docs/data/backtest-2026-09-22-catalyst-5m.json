@@ -1,0 +1,183 @@
+{
+ "date": "2026-09-22",
+ "generated": "2026-11-01T19:33+00:00",
+ "fx_gbpusd": 1.3370896577835083,
+ "result": "done",
+ "require_news": true,
+ "strategy": "catalyst",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [
+  "Added SPNT to today's list at 11:36 New York: 1.4x normal volume in the last 30 min; news: SiriusPoint to Deliver Further Book Value Growth, Buybacks, RBC Capital Markets ",
+  "Added XIFR to today's list at 11:52 New York: 0.3x normal volume in the last 30 min; news: XPLR Infrastructure LP (XIFR) Was a Top Contributor for Gabelli Focused Growth a",
+  "Added BMM to today's list at 15:20 New York: 0.7x normal volume in the last 30 min; news: Blue Moon Announces Initial Results from Assay Campaign of Historical Drilling a",
+  "Added SBMT to today's list at 15:20 New York: 0.7x normal volume in the last 30 min; news: Silver Bow Mining Signs Term Sheet with Ocean Partners for Potential US$88 Milli"
+ ],
+ "drift_list": [],
+ "list": [
+  {
+   "ticker": "TECH",
+   "name": "Bio-Techne Corp",
+   "vol_x": 0.25,
+   "buy_pct30": 0.619175832323138,
+   "change": 0.00041394754783441456,
+   "score": 3.48,
+   "news": [
+    "Bio-Techne Opens New Customer Experience Center in D\u00fcsseldorf to Accelerate Scientific Discovery and Customer Collaboration"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "MAZE",
+   "name": "Maze Therapeutics, Inc.",
+   "vol_x": 1.04,
+   "buy_pct30": 0.6159985536352571,
+   "change": 0.21661015326257993,
+   "score": 3.04,
+   "news": [
+    "Twin Moves: VRTX Rises On Kidney Disease Trial Results, MAZE Rallies Harder"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "MAAS",
+   "name": "Maase Inc.",
+   "vol_x": 0.77,
+   "buy_pct30": 0.7077001334091958,
+   "change": 0.015132454602004852,
+   "score": 2.87,
+   "news": [
+    "Maase (MAAS) Stock Looks Fully Priced Following A New AI Services Deal"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "VFF",
+   "name": "Village Farms International, Inc.",
+   "vol_x": 0.7,
+   "buy_pct30": 0.6627087552634415,
+   "change": 0.05677077279736831,
+   "score": 2.55,
+   "news": [
+    "Village Farms Eyes Global Cannabis Growth With EU GMP Edge and Net Cash"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "LXEO",
+   "name": "Lexeo Therapeutics, Inc.",
+   "vol_x": 0.74,
+   "buy_pct30": 0.6329426253298552,
+   "change": 0.03921564960882984,
+   "score": 2.51,
+   "news": [
+    "Lexeo Therapeutics Enters Into Agreement to Acquire Mantle Therapeutics and Announces Multiple New Strategic Collaborations to Expand Leadership in Friedreich Ataxia"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "CUE",
+   "name": "Cue Biopharma, Inc.",
+   "vol_x": 0.51,
+   "buy_pct30": 0.604018889751927,
+   "change": 0.004598484565319527,
+   "score": 2.44,
+   "news": [
+    "Cue Biopharma Shares Jump 41.6% Premarket Following Phase 2 Trial Results",
+    "Cue Biopharma Announces Positive Topline Results from CUE-221 Phase 2 Study in Chronic Spontaneous Urticaria"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "SPRO",
+   "vol_x": 7.41
+  },
+  {
+   "ticker": "VKTX",
+   "vol_x": 6.76
+  },
+  {
+   "ticker": "AKAN",
+   "vol_x": 2.37
+  },
+  {
+   "ticker": "COOK",
+   "vol_x": 1.82
+  },
+  {
+   "ticker": "ONON",
+   "vol_x": 1.45
+  },
+  {
+   "ticker": "GRML",
+   "vol_x": 1.41
+  },
+  {
+   "ticker": "BB",
+   "vol_x": 0.82
+  },
+  {
+   "ticker": "JELD",
+   "vol_x": 0.81
+  },
+  {
+   "ticker": "GRAB",
+   "vol_x": 0.76
+  },
+  {
+   "ticker": "SOFI",
+   "vol_x": 0.75
+  },
+  {
+   "ticker": "TAOX",
+   "vol_x": 0.7
+  },
+  {
+   "ticker": "SHOP",
+   "vol_x": 0.64
+  },
+  {
+   "ticker": "SUIG",
+   "vol_x": 0.6
+  },
+  {
+   "ticker": "VLN",
+   "vol_x": 0.59
+  },
+  {
+   "ticker": "CFFI",
+   "vol_x": 0.56
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "BMM",
+   "bought_at": "2026-09-22T19:20+00:00",
+   "sold_at": "2026-09-22T19:50+00:00",
+   "entry": 5.780775095462799,
+   "exit": 5.84499979019165,
+   "cost_gbp": 1000.2037468747069,
+   "pl_gbp": 9.597610629237579,
+   "pl_pct": 0.009595655544409642,
+   "reason": "End of day: sold 10 minutes before the close."
+  }
+ ],
+ "total_gbp": 9.597610629237579,
+ "alerts": [
+  "15:20 Day trade: bought BMM: 231 BMM at $5.78 (about \u00a31,000). Stop $5.49. Broke above its opening-range high ($5.59) at $5.78. In play: 0.7x normal volume, normally moves 8% a day. Stop $5.49.",
+  "15:50 Day trade: sold BMM (+\u00a310): End of day: sold 10 minutes before the close. Result +\u00a310 (+1.0%).",
+  "15:50 Day trade summary: 1 trade(s) today: BMM +\u00a310. Total +\u00a310."
+ ],
+ "log": [
+  "Added SPNT to today's list at 11:36 New York: 1.4x normal volume in the last 30 min; news: SiriusPoint to Deliver Further Book Value Growth, Buybacks, RBC Capital Markets ",
+  "Added XIFR to today's list at 11:52 New York: 0.3x normal volume in the last 30 min; news: XPLR Infrastructure LP (XIFR) Was a Top Contributor for Gabelli Focused Growth a",
+  "Added BMM to today's list at 15:20 New York: 0.7x normal volume in the last 30 min; news: Blue Moon Announces Initial Results from Assay Campaign of Historical Drilling a",
+  "Added SBMT to today's list at 15:20 New York: 0.7x normal volume in the last 30 min; news: Silver Bow Mining Signs Term Sheet with Ocean Partners for Potential US$88 Milli",
+  "Day trade buy order: 231 BMM at about $5.78. Broke above its opening-range high ($5.59) at $5.78. In play: 0.7x normal volume, normally moves 8% a day. Stop $5.49.",
+  "Bought 231 BMM at 5.78 (cost \u00a31,000).",
+  "Sold BMM (about +\u00a310). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 1 trade(s), total +\u00a310."
+ ]
+}

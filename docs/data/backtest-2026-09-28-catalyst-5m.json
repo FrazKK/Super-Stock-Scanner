@@ -1,0 +1,178 @@
+{
+ "date": "2026-09-28",
+ "generated": "2026-11-01T19:37+00:00",
+ "fx_gbpusd": 1.3229262828826904,
+ "result": "done",
+ "require_news": true,
+ "strategy": "catalyst",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [
+  "Added FUNC to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; news: How to Play First United Stock After Its Dividend Increase"
+ ],
+ "drift_list": [],
+ "list": [
+  {
+   "ticker": "NTWK",
+   "name": "NETSOL Technologies Inc.",
+   "vol_x": 1.71,
+   "buy_pct30": 0.6040978184042272,
+   "change": 0.024489772086439876,
+   "score": 5.34,
+   "news": [
+    "NETSOL Technologies Inc (NTWK) (Q4 2026) Earnings Call Highlights: Record Revenue and Strong ..."
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "LNTH",
+   "name": "Lantheus Holdings, Inc.",
+   "vol_x": 0.36,
+   "buy_pct30": 0.8070811920649411,
+   "change": 0.0013034377942344744,
+   "score": 3.95,
+   "news": [
+    "Lantheus Holdings (LNTH) Could Be 7% Undervalued On BRAVNETSA Approval",
+    "Lantheus Holdings (LNTH) Stock May Be 14% Undervalued On FDA Approval"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "CAAP",
+   "name": "Corporacion America Airports SA",
+   "vol_x": 0.53,
+   "buy_pct30": 0.7807057574765267,
+   "change": 0.05695145134619439,
+   "score": 3.68,
+   "news": [
+    "Corporacion America Airports Says Argentina Approves Changes to Aeropuertos Concession Deal"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "TRT",
+   "name": "Trio-Tech International",
+   "vol_x": 0.26,
+   "buy_pct30": 0.6186595071871479,
+   "change": 0.045016112420113386,
+   "score": 2.49,
+   "news": [
+    "Trio-Tech Reports 72% Fiscal 2026 Revenue Growth, Driven by Continued AI and Automotive Semiconductor Momentum"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "CANG",
+   "name": "Cango Inc.",
+   "vol_x": 0.53,
+   "buy_pct30": 0.5098654288303627,
+   "change": 0.14507851929077842,
+   "score": 1.6,
+   "news": [
+    "Cango stock surges over 20% following Buy initiation at Jones Trading"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "BUR",
+   "name": "Burford Capital Limited",
+   "vol_x": 0.27,
+   "buy_pct30": 0.36954123482292317,
+   "change": 0.05906590878380524,
+   "score": 0.52,
+   "news": [
+    "Burford Capital shares gain on $5.7B Apple patent verdict"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "CLRO",
+   "vol_x": 137.92
+  },
+  {
+   "ticker": "KOD",
+   "vol_x": 12.38
+  },
+  {
+   "ticker": "MX",
+   "vol_x": 1.64
+  },
+  {
+   "ticker": "AMPX",
+   "vol_x": 1.29
+  },
+  {
+   "ticker": "SHMD",
+   "vol_x": 1.18
+  },
+  {
+   "ticker": "DPRO",
+   "vol_x": 0.83
+  },
+  {
+   "ticker": "IMUX",
+   "vol_x": 0.66
+  },
+  {
+   "ticker": "ODC",
+   "vol_x": 0.62
+  },
+  {
+   "ticker": "MEDS",
+   "vol_x": 0.57
+  },
+  {
+   "ticker": "LXRX",
+   "vol_x": 0.5
+  },
+  {
+   "ticker": "JRSH",
+   "vol_x": 0.5
+  },
+  {
+   "ticker": "GIBO",
+   "vol_x": 0.47
+  },
+  {
+   "ticker": "CHE",
+   "vol_x": 0.45
+  },
+  {
+   "ticker": "NAUT",
+   "vol_x": 0.43
+  },
+  {
+   "ticker": "PUSA",
+   "vol_x": 0.41
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "NTWK",
+   "bought_at": "2026-09-28T14:16+00:00",
+   "sold_at": "2026-09-28T19:50+00:00",
+   "entry": 5.185179828166961,
+   "exit": 5.260000228881836,
+   "cost_gbp": 1000.9659680971595,
+   "pl_gbp": 12.922769106050964,
+   "pl_pct": 0.01291029816989403,
+   "reason": "End of day: sold 10 minutes before the close."
+  }
+ ],
+ "total_gbp": 12.922769106050964,
+ "alerts": [
+  "10:16 Day trade: bought NTWK: 255 NTWK at $5.19 (about \u00a31,001). Stop $4.93. Broke above its opening-range high ($5.02) at $5.18. In play: 1.7x normal volume, normally moves 6% a day. Stop $4.92.",
+  "15:50 Day trade: sold NTWK (+\u00a313): End of day: sold 10 minutes before the close. Result +\u00a313 (+1.3%).",
+  "15:50 Day trade summary: 1 trade(s) today: NTWK +\u00a313. Total +\u00a313."
+ ],
+ "log": [
+  "Added FUNC to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; news: How to Play First United Stock After Its Dividend Increase",
+  "Day trade buy order: 255 NTWK at about $5.18. Broke above its opening-range high ($5.02) at $5.18. In play: 1.7x normal volume, normally moves 6% a day. Stop $4.92.",
+  "Bought 255 NTWK at 5.19 (cost \u00a31,001).",
+  "NTWK: stop raised from 4.93 to 5.22.",
+  "Sold NTWK (about +\u00a313). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 1 trade(s), total +\u00a313."
+ ]
+}

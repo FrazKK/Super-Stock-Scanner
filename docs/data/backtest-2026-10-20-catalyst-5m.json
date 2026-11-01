@@ -1,0 +1,254 @@
+{
+ "date": "2026-10-20",
+ "generated": "2026-11-01T19:46+00:00",
+ "fx_gbpusd": 1.330849051475525,
+ "result": "done",
+ "require_news": true,
+ "strategy": "catalyst",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [
+  "Added BHRB to today's list at 10:32 New York: 0.2x normal volume in the last 30 min; news: Call for Entries: Burke & Herbert Bank Launches Teen Video Contest",
+  "Added SLI to today's list at 10:32 New York: 0.3x normal volume in the last 30 min; news: Standard Lithium Files Positive Preliminary Economic Assessment for the High-Gra",
+  "Added AIBZ to today's list at 10:32 New York: 0.2x normal volume in the last 30 min; news: Bitzero Taps Top General Contractor Skanska for the Delivery of its Flagship Dat"
+ ],
+ "drift_list": [],
+ "list": [
+  {
+   "ticker": "MYGN",
+   "name": "Myriad Genetics, Inc.",
+   "vol_x": 6.61,
+   "buy_pct30": 0.48811705318602866,
+   "change": 0.33135391170697504,
+   "score": 13.67,
+   "news": [
+    "Myriad Genetics and Labcorp Announce Definitive Agreement for Myriad to Sell Prenatal Health Testing Business to Labcorp"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "HOST",
+   "name": "Host Digital Inc.",
+   "vol_x": 4.85,
+   "buy_pct30": 0.3326346455359881,
+   "change": 0.0572916753978161,
+   "score": 9.53,
+   "news": [
+    "Host Digital Authorizes $15 Million Share Buyback Program"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "WORX",
+   "name": "SCWorx Corp.",
+   "vol_x": 3.19,
+   "buy_pct30": 0.7221958873717674,
+   "change": 0.40858209005016133,
+   "score": 6.77,
+   "news": [
+    "SCWorx Announces New Agreement with Healthcare System"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "HTZ",
+   "name": "Hertz Global Holdings, Inc",
+   "vol_x": 0.81,
+   "buy_pct30": 0.5129832280482953,
+   "change": 0.16195650688022223,
+   "score": 3.67,
+   "news": [
+    "Hertz shares jump 5% as subsidiary Oro Mobility secures $80M strategic investment",
+    "Hertz-Backed Oro Mobility Secures $80 Million Strategic Equity Investment to Accelerate Independent Growth"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "SGP",
+   "name": "SpyGlass Pharma, Inc.",
+   "vol_x": 0.4,
+   "buy_pct30": 0.7500624263370151,
+   "change": 0.03048780440527743,
+   "score": 3.3,
+   "news": [
+    "SpyGlass Pharma Announces Positive 4-Year Data From First-in-Human Trial of Its Innovative BIM-IOL System"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "PRK",
+   "name": "Park National Corporation",
+   "vol_x": 0.85,
+   "buy_pct30": 0.4719839325311468,
+   "change": 0.023520102673138643,
+   "score": 3.09,
+   "news": [
+    "Park National (PRK) to Report Q3 Results: Wall Street Expects Earnings Growth"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "WINA",
+   "name": "Winmark Corporation",
+   "vol_x": 0.29,
+   "buy_pct30": 0.6074552171450318,
+   "change": 0.02854920531661076,
+   "score": 2.51,
+   "news": [
+    "Winmark (WINA) Stock Price Jumps After Q3 Results Stir Debt Questions"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "DNTH",
+   "name": "Dianthus Therapeutics, Inc.",
+   "vol_x": 0.23,
+   "buy_pct30": 0.6356133684707143,
+   "change": 0.025087238041507698,
+   "score": 2.5,
+   "news": [
+    "Dianthus Therapeutics (DNTH) Stock May Be Above Fair Value Following Its 5x Run"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "AMPG",
+   "name": "Amplitech Group, Inc.",
+   "vol_x": 1.01,
+   "buy_pct30": 0.44694505941843987,
+   "change": 0.0762712181179539,
+   "score": 2.31,
+   "news": [
+    "AmpliTech Group Receives Record $21.7 Million Purchase Order"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "HIFS",
+   "name": "Hingham Institution for Savings",
+   "vol_x": 0.28,
+   "buy_pct30": 0.5493740263286665,
+   "change": 0.021742091794537455,
+   "score": 2.26,
+   "news": [
+    "Hingham Institution for Savings (HIFS) Q3 Results Leave Profit Pressure In Focus"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "FISN",
+   "name": "Deep Fission, Inc.",
+   "vol_x": 0.67,
+   "buy_pct30": 0.35510524846410746,
+   "change": 0.04234971796581011,
+   "score": 1.26,
+   "news": [
+    "Deep Fission Signs Binding 25-Year Master Energy Purchase Agreement for Planned Commercial Project"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "ALVO",
+   "name": "Alvotech",
+   "vol_x": 0.48,
+   "buy_pct30": 0.18115637968261397,
+   "change": 0.049701787191282376,
+   "score": 1.18,
+   "news": [
+    "Alvotech's Manufacturing Progress, Simponi Launch Potential Support Recovery, UBS Says",
+    "Alvotech shares jump premarket after FDA approves new Simlandi process"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "BRZE",
+   "vol_x": 10.83
+  },
+  {
+   "ticker": "FNWD",
+   "vol_x": 1.45
+  },
+  {
+   "ticker": "MF",
+   "vol_x": 1.39
+  },
+  {
+   "ticker": "HAS",
+   "vol_x": 1.29
+  },
+  {
+   "ticker": "PEW",
+   "vol_x": 1.15
+  },
+  {
+   "ticker": "RCUS",
+   "vol_x": 1.13
+  },
+  {
+   "ticker": "TMP",
+   "vol_x": 0.85
+  },
+  {
+   "ticker": "CZFS",
+   "vol_x": 0.8
+  },
+  {
+   "ticker": "QNBC",
+   "vol_x": 0.78
+  },
+  {
+   "ticker": "MLR",
+   "vol_x": 0.62
+  },
+  {
+   "ticker": "ACFN",
+   "vol_x": 0.61
+  },
+  {
+   "ticker": "HAL",
+   "vol_x": 0.6
+  },
+  {
+   "ticker": "HLT",
+   "vol_x": 0.56
+  },
+  {
+   "ticker": "EDHL",
+   "vol_x": 0.56
+  },
+  {
+   "ticker": "MMM",
+   "vol_x": 0.55
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "AMPG",
+   "bought_at": "2026-10-20T14:40+00:00",
+   "sold_at": "2026-10-20T19:50+00:00",
+   "entry": 2.652650095462799,
+   "exit": 2.683000087738037,
+   "cost_gbp": 1002.0879467627097,
+   "pl_gbp": 9.947221727068609,
+   "pl_pct": 0.009926495732439011,
+   "reason": "End of day: sold 10 minutes before the close."
+  }
+ ],
+ "total_gbp": 9.947221727068609,
+ "alerts": [
+  "10:40 Day trade: bought AMPG: 502 AMPG at $2.65 (about \u00a31,002). Stop $2.52. Broke above its opening-range high ($2.63) at $2.65. In play: 1.0x normal volume, normally moves 5% a day. Stop $2.52.",
+  "15:50 Day trade: sold AMPG (+\u00a310): End of day: sold 10 minutes before the close. Result +\u00a310 (+1.0%).",
+  "15:50 Day trade summary: 1 trade(s) today: AMPG +\u00a310. Total +\u00a310."
+ ],
+ "log": [
+  "Added BHRB to today's list at 10:32 New York: 0.2x normal volume in the last 30 min; news: Call for Entries: Burke & Herbert Bank Launches Teen Video Contest",
+  "Added SLI to today's list at 10:32 New York: 0.3x normal volume in the last 30 min; news: Standard Lithium Files Positive Preliminary Economic Assessment for the High-Gra",
+  "Added AIBZ to today's list at 10:32 New York: 0.2x normal volume in the last 30 min; news: Bitzero Taps Top General Contractor Skanska for the Delivery of its Flagship Dat",
+  "Day trade buy order: 502 AMPG at about $2.65. Broke above its opening-range high ($2.63) at $2.65. In play: 1.0x normal volume, normally moves 5% a day. Stop $2.52.",
+  "Bought 502 AMPG at 2.65 (cost \u00a31,002).",
+  "Sold AMPG (about +\u00a310). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 1 trade(s), total +\u00a310."
+ ]
+}

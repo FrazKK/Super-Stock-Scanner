@@ -1,0 +1,331 @@
+{
+ "date": "2026-10-21",
+ "generated": "2026-11-01T19:48+00:00",
+ "fx_gbpusd": 1.337327480316162,
+ "result": "done",
+ "require_news": true,
+ "strategy": "catalyst",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [
+  "Added ASYS to today's list at 10:32 New York: 0.3x normal volume in the last 30 min; news: Amtech Systems Sees AI Chip Packaging as Its Next Growth Engine",
+  "Added GDRX to today's list at 10:48 New York: 0.3x normal volume in the last 30 min; news: GoodRx Holdings And 2 Penny Stocks With Strong Balance Sheets",
+  "Added SGP to today's list at 11:20 New York: 0.2x normal volume in the last 30 min; news: SpyGlass Pharma Announces Positive 4-Year Data From First-in-Human Trial of Its ",
+  "Added CWCO to today's list at 11:20 New York: 0.2x normal volume in the last 30 min; news: Consolidated Water Advances Permitting for Kalaeloa Seawater Desalination Projec",
+  "Added WAT to today's list at 11:36 New York: 0.3x normal volume in the last 30 min; news: Waters Launches AI Link to Advance AI-Enabled LC-MS Workflows",
+  "Added GIB to today's list at 11:36 New York: 0.3x normal volume in the last 30 min; news: CGI selected to join PCI Security Standards Council Global Executive Assessor Ro",
+  "Added DLO to today's list at 11:52 New York: 0.2x normal volume in the last 30 min; news: DLocal (DLO) Stock May Be 37% Undervalued Following Mobile Wallet Remittance Exp",
+  "Added INSE to today's list at 11:52 New York: 0.3x normal volume in the last 30 min; news: Inspired Virtual Sports Expands the Massachusetts Lottery\u2019s Digital Offering",
+  "Added SLE to today's list at 11:52 New York: 0.3x normal volume in the last 30 min; news: Super League Shareholders Approve Metaplanet Investment Involving 2,100 Bitcoin ",
+  "Added BTG to today's list at 12:08 New York: 0.3x normal volume in the last 30 min; news: Galiano Gold Secures Lease Extensions to Support Asanko Mine Growth",
+  "Added VMI to today's list at 12:24 New York: 0.3x normal volume in the last 30 min; news: VMI Q3 Deep Dive: Utility and Aftermarket Growth Offset Telecom and Global Ag We",
+  "Added ESE to today's list at 13:44 New York: 0.2x normal volume in the last 30 min; news: Will Esco Technologies (ESE) Beat Estimates Again in Its Next Earnings Report?",
+  "Added MFC to today's list at 14:00 New York: 0.5x normal volume in the last 30 min; news: Manulife and UpLink announce winners of the 'Shaping Canada's Longevity Advantag",
+  "Added NABL to today's list at 14:00 New York: 0.5x normal volume in the last 30 min; news: As AI Accelerates Cyberattacks, N-able and SentinelOne Expand Their Strategic Pa"
+ ],
+ "drift_list": [],
+ "list": [
+  {
+   "ticker": "TNMG",
+   "name": "TNL Mediagene",
+   "vol_x": 1.93,
+   "buy_pct30": 0.9503481819944986,
+   "change": 0.12166666984558105,
+   "score": 7.16,
+   "news": [
+    "TNL Mediagene Announces $6.25 Million Strategic Investment from Vector Advisory Partners and Anticipated Change of Control Transaction"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "SHMD",
+   "name": "SCHMID Group N.V.",
+   "vol_x": 2.04,
+   "buy_pct30": 0.14177989930960272,
+   "change": 0.03278693266050836,
+   "score": 3.65,
+   "news": [
+    "SCHMID Group N.V. Provides Third Quarter 2026 Business Update and Increases Order Intake Guidance",
+    "SCHMID Group Reaches Agreement on Significant Equipment Order to Support HDI Capacity Expansion in Malaysia"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "RAIL",
+   "name": "Freightcar America, Inc.",
+   "vol_x": 0.58,
+   "buy_pct30": 0.679071631196342,
+   "change": 0.04778608183498334,
+   "score": 3.38,
+   "news": [
+    "FreightCar America Advances Aftermarket Growth Strategy with Third Acquisition in Less Than a Year"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "LENZ",
+   "name": "LENZ Therapeutics, Inc.",
+   "vol_x": 0.24,
+   "buy_pct30": 0.7068490823031132,
+   "change": 0.047021897886595054,
+   "score": 2.81,
+   "news": [
+    "LENZ Therapeutics (LENZ) Stock Fair Value Falls After Analysts Cut VIZZ Launch Expectations"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "AMPG",
+   "name": "Amplitech Group, Inc.",
+   "vol_x": 0.62,
+   "buy_pct30": 0.6192006883973776,
+   "change": 0.056603717566302336,
+   "score": 2.72,
+   "news": [
+    "AmpliTech Group Receives $1.03 Million Follow-On Order for Low-Noise Amplifiers from Fortune 1000 Satellite Communications Customer",
+    "AmpliTech Group Receives Record $21.7 Million Purchase Order"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "NTWK",
+   "name": "NETSOL Technologies Inc.",
+   "vol_x": 0.34,
+   "buy_pct30": 0.8769120299739875,
+   "change": 0.03287464126023831,
+   "score": 2.69,
+   "news": [
+    "Mercedes-Benz USA approves NETSOL as a digital retail provider for its dealerships"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "WCCB",
+   "name": "West Coast Community Bancorp",
+   "vol_x": 0.25,
+   "buy_pct30": 0.639572758806606,
+   "change": 0.010865983358148146,
+   "score": 2.56,
+   "news": [
+    "West Coast Community Bank Continues Expansion with New Full-Service Branch in San Mateo"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "ONT",
+   "name": "Onterris, Inc.",
+   "vol_x": 0.29,
+   "buy_pct30": 0.5834697669517941,
+   "change": 0.024946570786256617,
+   "score": 2.41,
+   "news": [
+    "Onterris Receives Defense Innovation Unit Success Memo for PFAS Treatment Prototype"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "WGO",
+   "name": "Winnebago Industries, Inc.",
+   "vol_x": 0.27,
+   "buy_pct30": 0.5687568547124102,
+   "change": 0.06171775142283509,
+   "score": 2.32,
+   "news": [
+    "Winnebago (WGO) shares skyrocket, what you need to know",
+    "Winnebago: 3 Key Takeaways for Long-Term Investors"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "ROIV",
+   "name": "Roivant Sciences Ltd.",
+   "vol_x": 0.8,
+   "buy_pct30": 0.3020786936335264,
+   "change": 0.05140326683175167,
+   "score": 2.31,
+   "news": [
+    "Roivant Sciences\u2019 Brepocitinib Delivers Positive Phase III Uveitis Results",
+    "Roivant Sciences stock surges on positive uveitis trial data"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "FISN",
+   "name": "Deep Fission, Inc.",
+   "vol_x": 0.33,
+   "buy_pct30": 0.5128004643430603,
+   "change": 0.037153081869887306,
+   "score": 2.21,
+   "news": [
+    "Deep Fission Signs Binding 25-Year Master Energy Purchase Agreement for Planned Commercial Project"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "SWBI",
+   "name": "Smith & Wesson Brands, Inc.",
+   "vol_x": 0.45,
+   "buy_pct30": 0.6903970371398483,
+   "change": 0.00947228321056337,
+   "score": 2.16,
+   "news": [
+    "Smith & Wesson Acquires Savage Arms"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "VIVO",
+   "name": "VivoPower PLC",
+   "vol_x": 0.25,
+   "buy_pct30": 0.5054195040280784,
+   "change": 0.061363630698732186,
+   "score": 2.02,
+   "news": [
+    "VivoPower Signs Definitive Heads of Agreement with Open Innovation AI to Develop Secure Sovereign AI Data Centers Across the Nordics, Mainland Europe, the GCC and selective countries in Asia"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "UNCY",
+   "name": "Unicycive Therapeutics, Inc.",
+   "vol_x": 0.43,
+   "buy_pct30": 0.3549970596778559,
+   "change": 0.056342138194311664,
+   "score": 1.28,
+   "news": [
+    "Unicycive Therapeutics Announces FDA Acceptance of Oxylanthanum Carbonate NDA Resubmission, PDUFA Date of March 25, 2027",
+    "Unicycive Therapeutics Announces FDA Acceptance of Oxylanthanum Carbonate New Drug Application Resubmission and PDUFA Date of March 25, 2027"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "NVA",
+   "name": "Nova Minerals Corp",
+   "vol_x": 0.31,
+   "buy_pct30": 0.5204487742851918,
+   "change": 0.06070281528913535,
+   "score": 1.2,
+   "news": [
+    "Small Cap Watch: Nova and Aruma advance key milestones, while Pantoro and Orthocell deliver quarterlies"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "SPHL",
+   "vol_x": 65.9
+  },
+  {
+   "ticker": "CCG",
+   "vol_x": 2.32
+  },
+  {
+   "ticker": "SMCI",
+   "vol_x": 0.77
+  },
+  {
+   "ticker": "SPCX",
+   "vol_x": 0.73
+  },
+  {
+   "ticker": "MLR",
+   "vol_x": 0.71
+  },
+  {
+   "ticker": "UIS",
+   "vol_x": 0.7
+  },
+  {
+   "ticker": "QGEN",
+   "vol_x": 0.68
+  },
+  {
+   "ticker": "TDY",
+   "vol_x": 0.63
+  },
+  {
+   "ticker": "CPIX",
+   "vol_x": 0.62
+  },
+  {
+   "ticker": "MCB",
+   "vol_x": 0.58
+  },
+  {
+   "ticker": "KIDS",
+   "vol_x": 0.58
+  },
+  {
+   "ticker": "ALK",
+   "vol_x": 0.57
+  },
+  {
+   "ticker": "DHR",
+   "vol_x": 0.56
+  },
+  {
+   "ticker": "ACFN",
+   "vol_x": 0.55
+  },
+  {
+   "ticker": "CZFS",
+   "vol_x": 0.53
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "TNMG",
+   "bought_at": "2026-10-21T14:16+00:00",
+   "sold_at": "2026-10-21T14:30+00:00",
+   "entry": 3.493390012264251,
+   "exit": 3.31668,
+   "cost_gbp": 1001.9799540367375,
+   "pl_gbp": -53.53387332048885,
+   "pl_pct": -0.05342808816165801,
+   "reason": "Stop-loss order filled"
+  },
+  {
+   "ticker": "MFC",
+   "bought_at": "2026-10-21T18:00+00:00",
+   "sold_at": "2026-10-21T19:50+00:00",
+   "entry": 45.45540984725952,
+   "exit": 45.40999984741211,
+   "cost_gbp": 987.1809376015908,
+   "pl_gbp": -2.463271242397468,
+   "pl_pct": -0.0024952581118331944,
+   "reason": "End of day: sold 10 minutes before the close."
+  }
+ ],
+ "total_gbp": -55.99714456288632,
+ "alerts": [
+  "10:16 Day trade: bought TNMG: 383 TNMG at $3.49 (about \u00a31,002). Stop $3.32. Broke above its opening-range high ($3.42) at $3.49. In play: 1.9x normal volume, normally moves 9% a day. Stop $3.32.",
+  "10:30 Day trade update: TNMG: stop-loss order filled (-\u00a354)",
+  "14:00 Day trade: bought MFC: 29 MFC at $45.46 (about \u00a3987). Stop $43.18. Broke above its opening-range high ($45.05) at $45.41. In play: 0.5x normal volume, normally moves 2% a day. Stop $44.65.",
+  "15:50 Day trade: sold MFC (-\u00a32): End of day: sold 10 minutes before the close. Result -\u00a32 (-0.2%).",
+  "15:50 Day trade summary: 2 trade(s) today: TNMG -\u00a354, MFC -\u00a32. Total -\u00a356."
+ ],
+ "log": [
+  "Day trade buy order: 383 TNMG at about $3.49. Broke above its opening-range high ($3.42) at $3.49. In play: 1.9x normal volume, normally moves 9% a day. Stop $3.32.",
+  "Bought 383 TNMG at 3.49 (cost \u00a31,002).",
+  "TNMG: stop-loss order filled, P&L -\u00a354.",
+  "Added ASYS to today's list at 10:32 New York: 0.3x normal volume in the last 30 min; news: Amtech Systems Sees AI Chip Packaging as Its Next Growth Engine",
+  "Added GDRX to today's list at 10:48 New York: 0.3x normal volume in the last 30 min; news: GoodRx Holdings And 2 Penny Stocks With Strong Balance Sheets",
+  "Added SGP to today's list at 11:20 New York: 0.2x normal volume in the last 30 min; news: SpyGlass Pharma Announces Positive 4-Year Data From First-in-Human Trial of Its ",
+  "Added CWCO to today's list at 11:20 New York: 0.2x normal volume in the last 30 min; news: Consolidated Water Advances Permitting for Kalaeloa Seawater Desalination Projec",
+  "Added WAT to today's list at 11:36 New York: 0.3x normal volume in the last 30 min; news: Waters Launches AI Link to Advance AI-Enabled LC-MS Workflows",
+  "Added GIB to today's list at 11:36 New York: 0.3x normal volume in the last 30 min; news: CGI selected to join PCI Security Standards Council Global Executive Assessor Ro",
+  "Added DLO to today's list at 11:52 New York: 0.2x normal volume in the last 30 min; news: DLocal (DLO) Stock May Be 37% Undervalued Following Mobile Wallet Remittance Exp",
+  "Added INSE to today's list at 11:52 New York: 0.3x normal volume in the last 30 min; news: Inspired Virtual Sports Expands the Massachusetts Lottery\u2019s Digital Offering",
+  "Added SLE to today's list at 11:52 New York: 0.3x normal volume in the last 30 min; news: Super League Shareholders Approve Metaplanet Investment Involving 2,100 Bitcoin ",
+  "Added BTG to today's list at 12:08 New York: 0.3x normal volume in the last 30 min; news: Galiano Gold Secures Lease Extensions to Support Asanko Mine Growth",
+  "Added VMI to today's list at 12:24 New York: 0.3x normal volume in the last 30 min; news: VMI Q3 Deep Dive: Utility and Aftermarket Growth Offset Telecom and Global Ag We",
+  "Added ESE to today's list at 13:44 New York: 0.2x normal volume in the last 30 min; news: Will Esco Technologies (ESE) Beat Estimates Again in Its Next Earnings Report?",
+  "Added MFC to today's list at 14:00 New York: 0.5x normal volume in the last 30 min; news: Manulife and UpLink announce winners of the 'Shaping Canada's Longevity Advantag",
+  "Added NABL to today's list at 14:00 New York: 0.5x normal volume in the last 30 min; news: As AI Accelerates Cyberattacks, N-able and SentinelOne Expand Their Strategic Pa",
+  "Day trade buy order: 29 MFC at about $45.41. Broke above its opening-range high ($45.05) at $45.41. In play: 0.5x normal volume, normally moves 2% a day. Stop $44.65.",
+  "Bought 29 MFC at 45.46 (cost \u00a3987).",
+  "Sold MFC (about -\u00a32). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 2 trade(s), total -\u00a356."
+ ]
+}

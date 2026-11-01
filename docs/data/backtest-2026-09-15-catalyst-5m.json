@@ -1,0 +1,179 @@
+{
+ "date": "2026-09-15",
+ "generated": "2026-11-01T19:31+00:00",
+ "fx_gbpusd": 1.3500925302505493,
+ "result": "done",
+ "require_news": true,
+ "strategy": "catalyst",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [],
+ "drift_list": [],
+ "list": [
+  {
+   "ticker": "VEEA",
+   "name": "Veea Inc.",
+   "vol_x": 27.83,
+   "buy_pct30": 0.5841347434842128,
+   "change": 1.7205240711149536,
+   "score": 56.5,
+   "news": [
+    "Veea Inc. and NovaGen announce potential merger to launch an Edge AI-Powered Global Health Platform"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "RLGT",
+   "name": "Radiant Logistics, Inc.",
+   "vol_x": 4.08,
+   "buy_pct30": 0.511339704966154,
+   "change": 0.13885509598366053,
+   "score": 9.21,
+   "news": [
+    "Radiant Logistics sees double-digit growth in FQ4, shares up 16%",
+    "Radiant Logistics Inc (RLGT) (Q4 2026) Earnings Call Highlights: Record Quarterly Revenue and ..."
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "RENT",
+   "name": "Rent the Runway, Inc.",
+   "vol_x": 0.66,
+   "buy_pct30": 0.8407777324196258,
+   "change": 0.005181404116229027,
+   "score": 4.68,
+   "news": [
+    "Rent the Runway Inc (RENT) (Q2 2026) Earnings Call Highlights: Record Revenue and New CEO Amid ...",
+    "Rent the Runway forges ahead with discovery upgrades as it names new CEO"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "BWIN",
+   "name": "The Baldwin Insurance Group, Inc.",
+   "vol_x": 0.26,
+   "buy_pct30": 0.7702535085907378,
+   "change": 0.004843711853027344,
+   "score": 4.1,
+   "news": [
+    "Stocks making big moves yesterday: Corning, Baldwin Insurance Group, Gartner, Jabil, and Accenture"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "NFE",
+   "name": "New Fortress Energy Inc.",
+   "vol_x": 0.42,
+   "buy_pct30": 0.5367144077682497,
+   "change": 0.007860255107877467,
+   "score": 1.49,
+   "news": [
+    "New Fortress Energy Inc. Successfully Completes Restructuring and Recapitalization Transaction & Capital Raise Participation"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "VRA",
+   "vol_x": 37.07
+  },
+  {
+   "ticker": "CANG",
+   "vol_x": 5.38
+  },
+  {
+   "ticker": "CHOW",
+   "vol_x": 3.97
+  },
+  {
+   "ticker": "FPS",
+   "vol_x": 1.42
+  },
+  {
+   "ticker": "PDSB",
+   "vol_x": 1.02
+  },
+  {
+   "ticker": "PSIG",
+   "vol_x": 0.68
+  },
+  {
+   "ticker": "MLAB",
+   "vol_x": 0.67
+  },
+  {
+   "ticker": "PBF",
+   "vol_x": 0.59
+  },
+  {
+   "ticker": "OSUR",
+   "vol_x": 0.59
+  },
+  {
+   "ticker": "FLXS",
+   "vol_x": 0.54
+  },
+  {
+   "ticker": "FCBM",
+   "vol_x": 0.49
+  },
+  {
+   "ticker": "PTLE",
+   "vol_x": 0.49
+  },
+  {
+   "ticker": "ECO",
+   "vol_x": 0.48
+  },
+  {
+   "ticker": "MCB",
+   "vol_x": 0.47
+  },
+  {
+   "ticker": "MPTI",
+   "vol_x": 0.43
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "RENT",
+   "bought_at": "2026-09-15T14:16+00:00",
+   "sold_at": "2026-09-15T14:40+00:00",
+   "entry": 2.0620599427223203,
+   "exit": 1.95804,
+   "cost_gbp": 1001.9129845313757,
+   "pl_gbp": -53.39101510580713,
+   "pl_pct": -0.05328907393168448,
+   "reason": "Stop-loss order filled"
+  },
+  {
+   "ticker": "BWIN",
+   "bought_at": "2026-09-15T14:40+00:00",
+   "sold_at": "2026-09-15T19:50+00:00",
+   "entry": 32.41238106918335,
+   "exit": 32.529998779296875,
+   "cost_gbp": 985.7850150650669,
+   "pl_gbp": 2.095385772095824,
+   "pl_pct": 0.0021256011605710174,
+   "reason": "End of day: sold 10 minutes before the close."
+  }
+ ],
+ "total_gbp": -51.295629333711304,
+ "alerts": [
+  "10:16 Day trade: bought RENT: 655 RENT at $2.06 (about \u00a31,002). Stop $1.96. Broke above its opening-range high ($2.01) at $2.06. In play: 0.7x normal volume, normally moves 12% a day. Stop $1.96.",
+  "10:40 Day trade update: RENT: stop-loss order filled (-\u00a353)",
+  "10:40 Day trade: bought BWIN: 41 BWIN at $32.41 (about \u00a3986). Stop $30.79. Broke above its opening-range high ($32.19) at $32.38. In play: 0.3x normal volume, normally moves 3% a day. Stop $31.95.",
+  "15:50 Day trade: sold BWIN (+\u00a32): End of day: sold 10 minutes before the close. Result +\u00a32 (+0.2%).",
+  "15:50 Day trade summary: 2 trade(s) today: RENT -\u00a353, BWIN +\u00a32. Total -\u00a351."
+ ],
+ "log": [
+  "Day trade buy order: 655 RENT at about $2.06. Broke above its opening-range high ($2.01) at $2.06. In play: 0.7x normal volume, normally moves 12% a day. Stop $1.96.",
+  "Bought 655 RENT at 2.06 (cost \u00a31,002).",
+  "RENT: stop-loss order filled, P&L -\u00a353.",
+  "Day trade buy order: 41 BWIN at about $32.38. Broke above its opening-range high ($32.19) at $32.38. In play: 0.3x normal volume, normally moves 3% a day. Stop $31.95.",
+  "Bought 41 BWIN at 32.41 (cost \u00a3986).",
+  "Sold BWIN (about +\u00a32). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 2 trade(s), total -\u00a351."
+ ]
+}
