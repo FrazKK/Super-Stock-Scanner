@@ -69,7 +69,7 @@ DT_OVERTAKE = 1.5            # to swap, the new stock's buying must be at least 
 DT_OVERTAKE_MIN = 1 / 3      # ...and at least a third of a normal day's volume bought in the last 30 minutes
 DT_MAX_UP = 0.20             # don't buy a stock already up more than 20% on the day
 
-# Which day-trading strategy to run: "breakout" (default) or "rotation" (the earlier swap-to-the-strongest rules)
+# Which day-trading strategy to run: "breakout" (default), "catalyst", "drift" or "rotation"
 DT_STRATEGY = os.getenv("PRACTICE_STRATEGY", "breakout").strip().lower()
 # Breakout (opening-range breakout on "stocks in play"):
 DT_OR_MIN = 30               # opening range = the first 30 minutes' high and low
@@ -812,6 +812,7 @@ def dt_buy(api, st, day, c, price, why, fx, when, positions, stop=None):
         day["skip"][c["ticker"]] = when.isoformat()
         return None
     day["buys"] += 1
+    day.setdefault("bought_list", []).append(c["ticker"])
     pos = {"id": f"america-{c['ticker']}-{when.date().isoformat()}-{day['buys']}", "status": "pending",
            "ticker": c["ticker"], "t212": c["t212"], "name": c["name"], "market": "america",
            "exchange": c["exchange"], "ysym": c["ysym"], "source": "daytrade", "methods": [{"method": "daytrade"}],
@@ -1075,9 +1076,12 @@ def cmd_breakout(api, st, fetch_bars, fetch_stats, clock, pause, discover):
         elif can_buy and mins >= DT_OR_MIN and market_ok(fetch_bars, when):
             ok = [c for c in cands if (stats.get(c["ysym"]) or {}).get("range", 0) >= DT_MIN_RANGE
                   and (c.get("vol_x") or 0) >= DT_BO_MIN_VOLX]
+            ok = [c for c in ok if c["ticker"] not in day.get("bought_list", [])]
             ok = sorted(ok, key=lambda c: c.get("vol_x") or 0, reverse=True)[:DT_TOP_N]
             bars = fetch_bars([c["ysym"] for c in ok]) if ok else {}
             for c in ok:
+                if c["ticker"] in day.get("bought_list", []):
+                    continue                           # each stock at most once a day
                 b = bars.get(c["ysym"])
                 rng = opening_range(b, when)
                 prev = (stats.get(c["ysym"]) or {}).get("prev")
@@ -1239,6 +1243,27 @@ def cmd_drift(api, st, fetch_bars, clock, pause, find_drift):
                                  "No trade today: nothing met the drift rules."), 3, "bar_chart")
     log(st, f"Day trading finished: {len(done)} trade(s), total {gbp_txt(tot)}.")
     return "done"
+
+
+def apply_catalyst():
+    """Fraz's catalyst rules (1 Nov 2026). Up to 5 trades a day, one at a time: each is held until its sell rule
+    fires, then it looks for the next stock that still matches (never the same stock twice in a day).
+    Rules: positive news in the last 24-48 hours, relative volume above 1.5x
+    (about 0.22x a normal day's volume in the first 30 minutes, given the morning is the busiest part of the day),
+    green on the day and breaking above short-term resistance (the opening-range high). No uptrend or
+    daily-range requirement. Trades exactly like breakout: one trade a day, stop at the opening-range low
+    (max 5%), break-even then trailing stop, sold before the close."""
+    global DT_STRATEGY, DT_MIN_RANGE, DT_BO_BUYS
+    S.OPEN_VOL_MULT = 0.22
+    S.OPEN_NEWS_DAYS = 2
+    S.OPEN_REQUIRE_TREND = False
+    DT_MIN_RANGE = 0.0
+    DT_BO_BUYS = 5             # one at a time: hold until the sell rule fires, then look for the next that matches
+    DT_STRATEGY = "breakout"
+
+
+if DT_STRATEGY == "catalyst":
+    apply_catalyst()
 
 
 def cmd_daytrade(api, st, fetch_bars=None, fetch_avg=None, clock=None, pause=None, discover=None, fetch_stats=None,
