@@ -1,9 +1,10 @@
 name: Replay days (day trader)
 
-# Replays past US trading days with the day-trader rules, using 1-minute prices. Several days run side by side.
-# Results are saved to docs/data/backtest-<date>.json (and -nonews.json), totals to backtest-summary.json,
-# and one phone alert is sent at the end. It never touches Trading 212.
-# Yahoo keeps 1-minute prices for about the last 30 days.
+# Replays past US trading days with the day-trader rules and saves each result to docs/data/backtest-*.json,
+# totals to backtest-summary.json, plus one phone alert at the end. It never touches Trading 212.
+# Strategies: breakout (one trade a day on an opening-range breakout), breakout-market (the same, but only when
+# the US market is up on the day) and rotation (the earlier swap-to-the-strongest rules).
+# 1-minute bars cover about the last 30 days; 5-minute bars about the last 60 days.
 
 on:
   workflow_dispatch:
@@ -12,14 +13,30 @@ on:
         description: "Days: one date, a list (2026-10-27, 2026-10-28) or a range (2026-10-05 to 2026-10-30). Blank = last 10 weekdays"
         required: false
         default: ""
+      strategy:
+        description: "Which strategy to replay"
+        type: choice
+        options:
+          - "all"
+          - "breakout"
+          - "breakout-market"
+          - "rotation"
+        default: "all"
+      bars:
+        description: "Price detail (5-minute lets you go back ~60 days)"
+        type: choice
+        options:
+          - "1-minute"
+          - "5-minute"
+        default: "1-minute"
       news:
         description: "Must stocks have positive news?"
         type: choice
         options:
-          - "both"
           - "required"
           - "not required"
-        default: "both"
+          - "both"
+        default: "required"
 
 permissions:
   contents: write
@@ -42,6 +59,8 @@ jobs:
         env:
           DATES: ${{ inputs.dates }}
           NEWS: ${{ inputs.news }}
+          STRATEGY: ${{ inputs.strategy }}
+          BARS: ${{ inputs.bars }}
         run: python backtest_plan.py
 
   replay:
@@ -51,9 +70,9 @@ jobs:
     timeout-minutes: 60
     strategy:
       fail-fast: false
-      max-parallel: 5
+      max-parallel: 15
       matrix: ${{ fromJSON(needs.plan.outputs.matrix) }}
-    name: ${{ matrix.day }} (news ${{ matrix.news }})
+    name: ${{ matrix.day }} ${{ matrix.strategy }} (news ${{ matrix.news }}, ${{ matrix.bars }})
     steps:
       - uses: actions/checkout@v5
         with:
@@ -67,17 +86,21 @@ jobs:
         env:
           DAY: ${{ matrix.day }}
           NEWS: ${{ matrix.news }}
+          STRAT: ${{ matrix.strategy }}
+          BARS: ${{ matrix.bars }}
           REPLAY_BATCH: "1"
         run: |
-          if [ "$NEWS" = "not required" ]; then
-            python backtest.py --date "$DAY" --no-news
-          else
-            python backtest.py --date "$DAY"
-          fi
+          extra=""
+          suffix="-$STRAT"
+          if [ "$NEWS" = "not required" ]; then extra="--no-news"; suffix="$suffix-nonews"; fi
+          if [ "$BARS" = "5m" ]; then suffix="$suffix-5m"; fi
+          python backtest.py --date "$DAY" --strategy "$STRAT" --bars "$BARS" $extra
+          mkdir -p out
+          cp "docs/data/backtest-$DAY$suffix.json" out/ || echo "no result file"
       - uses: actions/upload-artifact@v4
         with:
-          name: replay-${{ matrix.day }}-${{ matrix.news == 'required' && 'news' || 'nonews' }}
-          path: docs/data/backtest-${{ matrix.day }}${{ matrix.news != 'required' && '-nonews' || '' }}.json
+          name: replay-${{ strategy.job-index }}
+          path: out/*.json
           if-no-files-found: warn
           retention-days: 3
 
