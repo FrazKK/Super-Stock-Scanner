@@ -86,7 +86,16 @@ The workflow still runs on GitHub's own timer as a backup. It only acts once per
 
 ## Practice trading on Trading 212 (no real money)
 
-The bot day-trades a Trading 212 **practice** account, one US stock at a time. It only ever talks to the practice server (`demo.trading212.com`); the real-money address isn't in the code at all.
+The bot day-trades a Trading 212 **practice** account, one US stock at a time.
+
+**Current strategy: breakout (one trade a day).**
+- **What it watches:** the 5 US stocks most "in play". They need positive news, the most unusual volume, and a normal daily move of at least 4%.
+- **When it buys:** the first of them to break above its opening-range high (the highest price in the first 30 minutes).
+- **Stop:** the opening-range low, never more than 5% below the buy price.
+- **Protecting profit:** once the stock is up by the amount risked, the stop moves to break-even plus fees. Once it's up twice that, the stop trails one risk-amount under the highest price.
+- **Close:** it sells 10 minutes before the close.
+
+The earlier **rotation** rules below are kept so the replays can compare the two. Set the `PRACTICE_STRATEGY` setting to `rotation` to switch back. It only ever talks to the practice server (`demo.trading212.com`); the real-money address isn't in the code at all.
 
 **Rules**
 - **List:** the US opening-surge list. These are stocks with positive news that traded at least a third of a normal day's volume in the first 30 minutes and are trending up, limited to ones Trading 212 offers. There's no company size limit, but takeover targets and stocks with bad news (placings, warnings) are always left out.
@@ -111,7 +120,10 @@ It checks every 2 minutes. The opening check starts it (about 45 minutes after t
 
 The settings are at the top of `practice.py` (the `DT_` lines).
 
-**Replaying past days:** Actions, then **Replay a day (day trader)**, then Run workflow. Enter a date (e.g. `2026-10-29`) and choose whether news is required. It rebuilds that day's list from 1-minute prices and runs the same trading code against a pretend account, including a 0.1% spread and Trading 212's 0.15% currency fee on every buy and sell. The result goes to `docs/data/backtest-<date>.json` (or `-nonews.json`) and to your phone. Yahoo keeps 1-minute prices for about the last 30 days.
+**Replaying past days:** Actions, then **Replay days (day trader)**, then Run workflow. Enter a date or a range (e.g. `2026-10-05 to 2026-10-30`). Then choose:
+- **Strategy:** breakout, breakout-market (only on days the US market is up), rotation, or all three.
+- **Price detail:** 1-minute covers the last ~30 days, 5-minute the last ~60.
+- **News:** whether stocks must have positive news. It rebuilds that day's list from 1-minute prices and runs the same trading code against a pretend account, including a 0.1% spread and Trading 212's 0.15% currency fee on every buy and sell. The result goes to `docs/data/backtest-<date>.json` (or `-nonews.json`) and to your phone. Yahoo keeps 1-minute prices for about the last 30 days.
 
 ## Pre-close check (hold or sell?)
 

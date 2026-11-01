@@ -32,6 +32,7 @@ import screener as S
 NY = ZoneInfo("America/New_York")
 SPREAD = 0.001                 # 0.1% each way (half the bid/offer spread on a liquid small cap)
 FX_FEE = 0.0015                # Trading 212's currency conversion fee, charged on buys and sells
+BAR = {"interval": "1m", "minutes": 1}   # 1-minute bars (last ~30 days) or 5-minute bars (last ~60 days)
 ROOT = Path(__file__).resolve().parent
 
 
@@ -40,6 +41,14 @@ def last_weekday(before):
     while d.weekday() >= 5:
         d -= dt.timedelta(days=1)
     return d
+
+
+SPY_BARS = None
+
+
+def result_suffix(a):
+    """File name ending for a replay: strategy, then -nonews and -5m when used."""
+    return f"-{a.strategy}" + ("" if not a.no_news else "-nonews") + ("-5m" if a.bars == "5m" else "")
 
 
 def parse_day(text):
@@ -85,6 +94,7 @@ def download(syms, **kw):
 
 
 def build_list(day):
+    global SPY_BARS
     """Rebuild that day's US opening-surge list (as the 10:15 check would have seen it, with data to 10:00)."""
     uni = S.prepare_universe(S.live_tv("america", any_size=S.OPEN_ANY_SIZE), "america")
     meta = {r["ysym"]: r for r in uni.to_dict("records")}
@@ -101,17 +111,19 @@ def build_list(day):
         prev = float(prior["Close"].iloc[-1])
         if avg <= 0 or float(today["Volume"].iloc[0]) < S.OPEN_VOL_MULT * avg or float(today["High"].iloc[0]) <= prev:
             continue
-        info[ys] = {"avg": avg, "prev": prev, "closes": prior["Close"].astype(float).tolist()}
+        rng = float(((prior["High"] - prior["Low"]) / prior["Close"]).iloc[-14:].mean())
+        info[ys] = {"avg": avg, "prev": prev, "closes": prior["Close"].astype(float).tolist(), "range": rng}
         pre.append(ys)
     print(f"  {len(pre)} stocks had enough volume and traded above the previous close that day")
-    mins = download(pre, start=day.isoformat(), end=(day + dt.timedelta(days=1)).isoformat(), interval="1m",
-                    prepost=False)
+    mins = download(pre + ["SPY"], start=day.isoformat(), end=(day + dt.timedelta(days=1)).isoformat(),
+                    interval=BAR["interval"], prepost=False)
     open_t = dt.datetime.combine(day, dt.time(9, 30), NY)
     t30 = open_t + dt.timedelta(minutes=30)
     for ys in list(mins):
         b = mins[ys].copy()
         b.index = b.index.tz_convert(NY) if b.index.tz is not None else b.index.tz_localize("UTC").tz_convert(NY)
         mins[ys] = b[[x.date() == day for x in b.index]]
+    SPY_BARS = mins.pop("SPY", None)
     cands = []
     for ys, b in mins.items():
         first = b[(b.index >= open_t) & (b.index < t30)]
@@ -171,7 +183,7 @@ class ReplayAccount:
 
     def _bars_to_now(self, t):
         b = self.bars[self.sym[t]]
-        return b[b.index <= self.clock() - dt.timedelta(minutes=1)]
+        return b[b.index <= self.clock() - dt.timedelta(minutes=BAR["minutes"])]
 
     def px(self, t):
         b = self._bars_to_now(t)
@@ -248,8 +260,13 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--date", default="")
     ap.add_argument("--no-news", action="store_true", help="also trade heavy buying + uptrend without news")
+    ap.add_argument("--strategy", default="breakout", choices=["breakout", "breakout-market", "rotation"])
+    ap.add_argument("--bars", default="1m", choices=["1m", "5m"])
     a = ap.parse_args()
     P.DT_REQUIRE_NEWS = not a.no_news
+    P.DT_STRATEGY = "rotation" if a.strategy == "rotation" else "breakout"
+    P.DT_MARKET_FILTER = a.strategy == "breakout-market"
+    BAR.update(interval=a.bars, minutes=5 if a.bars == "5m" else 1)
     day = parse_day(a.date) if a.date.strip() else last_weekday(dt.datetime.now(NY).date())
     print(f"Replaying {day} (US)")
     picks, quiet, mins, info, meta, since = build_list(day)
@@ -278,7 +295,7 @@ def main():
 
     def discover(when, known):
         """Replay version of the bot's search for new movers, from the day's 1-minute bars."""
-        cut = when - dt.timedelta(minutes=1)
+        cut = when - dt.timedelta(minutes=BAR["minutes"])
         found, rejected = [], []
         for ys, b in mins.items():
             tick = meta[ys]["ticker"]
@@ -317,18 +334,23 @@ def main():
         clock_t["now"] += dt.timedelta(seconds=sec)
 
     def fetch_bars(ysyms):
-        cut = clock() - dt.timedelta(minutes=1)
-        return {y: mins[y][mins[y].index <= cut] for y in ysyms if y in mins}
+        cut = clock() - dt.timedelta(minutes=BAR["minutes"])
+        out = {y: mins[y][mins[y].index <= cut] for y in ysyms if y in mins}
+        if "SPY" in ysyms and SPY_BARS is not None:
+            out["SPY"] = SPY_BARS[SPY_BARS.index <= cut]
+        return out
 
     st = P.load_state()
     res = P.cmd_daytrade(acct, st, fetch_bars=fetch_bars,
                          fetch_avg=lambda ys: {y: info[y]["avg"] for y in ys if y in info},
-                         clock=clock, pause=pause, discover=discover)
+                         clock=clock, pause=pause, discover=discover,
+                         fetch_stats=lambda ys: {y: {k: info[y][k] for k in ("avg", "prev", "range")} for y in ys if y in info})
     S.push = real_push
     trades = [c for c in st["closed"]]
     total = sum(c["pl_gbp"] for c in trades if c.get("pl_gbp") is not None)
     out = {"date": day.isoformat(), "generated": dt.datetime.now(dt.timezone.utc).isoformat(timespec="minutes"),
-           "fx_gbpusd": fxr, "result": res, "require_news": P.DT_REQUIRE_NEWS,
+           "fx_gbpusd": fxr, "result": res, "require_news": P.DT_REQUIRE_NEWS, "strategy": a.strategy,
+           "bars": a.bars,
            "added_during_day": [x["text"] for x in st["log"] if x["text"].startswith("Added ")],
            "list": [{k: p.get(k) for k in ("ticker", "name", "vol_x", "buy_pct30", "change", "score")}
                     | {"news": [n["title"] for n in p["news"] if n["tone"] == "pos"][:2],
@@ -337,13 +359,13 @@ def main():
            "trades": [{k: c.get(k) for k in ("ticker", "bought_at", "sold_at", "entry", "exit", "cost_gbp", "pl_gbp",
                                             "pl_pct", "reason")} for c in trades],
            "total_gbp": total, "alerts": alerts, "log": [x["text"] for x in st["log"]]}
-    f = ROOT / "docs" / "data" / f"backtest-{day.isoformat()}{'' if P.DT_REQUIRE_NEWS else '-nonews'}.json"
+    f = ROOT / "docs" / "data" / f"backtest-{day.isoformat()}{result_suffix(a)}.json"
     f.write_text(json.dumps(out, indent=1, default=S.jdefault), encoding="utf-8")
     print(json.dumps({k: out[k] for k in ("list", "trades", "total_gbp")}, indent=1, default=S.jdefault))
     lines = [f"{c['ticker']}: {P.gbp_txt(c['pl_gbp'])} ({c['reason'][:80]})" for c in trades if c.get("pl_gbp") is not None]
     if os.getenv("REPLAY_BATCH"):
         return                                  # batch runs send one summary alert at the end instead
-    S.push(f"Replay of {day:%a %d %b}{'' if P.DT_REQUIRE_NEWS else ' (no news needed)'}: {P.gbp_txt(total)}",
+    S.push(f"Replay of {day:%a %d %b} ({a.strategy}{'' if P.DT_REQUIRE_NEWS else ', no news'}): {P.gbp_txt(total)}",
            ("\n".join(lines) if lines else "No trades: nothing on the list qualified.")
            + f"\nList: {', '.join(p['ticker'] for p in picks) or 'empty'}", 3, "rewind")
 

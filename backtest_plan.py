@@ -2,7 +2,7 @@
 
 Accepts one date, a list ("2026-10-27, 2026-10-28") or a range ("2026-10-05 to 2026-10-30"), in either
 2026-10-29 or 29-10-2026 style. Weekends are skipped, and so are days older than Yahoo's ~30-day limit
-for 1-minute prices. Blank means the last 10 weekdays.
+for 1-minute prices. Blank means the last 10 weekdays. With 5-minute bars, days back to ~60 days ago can be replayed.
 """
 import datetime as dt
 import json
@@ -11,7 +11,8 @@ import re
 from zoneinfo import ZoneInfo
 
 today = dt.datetime.now(ZoneInfo("America/New_York")).date()
-oldest = today - dt.timedelta(days=29)
+bars = "5m" if os.getenv("BARS", "").startswith("5") else "1m"
+oldest = today - dt.timedelta(days=58 if bars == "5m" else 29)
 
 
 def parse(t):
@@ -50,8 +51,13 @@ days = sorted({d for d in days if d.weekday() < 5 and oldest <= d < today})
 skipped = text and not days
 news = os.getenv("NEWS", "required")
 modes = ["required", "not required"] if news == "both" else [news]
-jobs = [{"day": d.isoformat(), "news": m} for d in days for m in modes]
-print(f"{len(days)} weekday(s): {', '.join(d.isoformat() for d in days)}; news: {', '.join(modes)}; {len(jobs)} job(s)")
+strat = os.getenv("STRATEGY", "all")
+strategies = ["breakout", "breakout-market", "rotation"] if strat == "all" else [strat]
+jobs = [{"day": d.isoformat(), "news": m, "strategy": s, "bars": bars} for d in days for m in modes for s in strategies]
+print(f"{len(days)} weekday(s): {', '.join(d.isoformat() for d in days)}; news: {', '.join(modes)}; "
+      f"strategies: {', '.join(strategies)}; {bars} bars; {len(jobs)} job(s)")
+if len(jobs) > 256:
+    raise SystemExit("That's more than GitHub's 256 jobs per run. Use fewer days or one strategy at a time.")
 if skipped:
     print(f"No usable weekdays. Only the last ~30 days can be replayed (from {oldest}).")
 if os.getenv("GITHUB_OUTPUT"):

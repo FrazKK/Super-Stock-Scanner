@@ -1,7 +1,15 @@
 """
 Practice-account trading on Trading 212. It only ever uses the PRACTICE (demo) account.
 
-Current rules: US day trading, one stock at a time (agreed 31 Oct 2026)
+Strategy (PRACTICE_STRATEGY, default "breakout"), agreed 1 Nov 2026:
+  breakout - one trade a day. Watch the 5 US stocks "in play" (positive news, the most unusual volume, and
+             normally moving 4%+ a day). Buy the first to break above its opening-range high (first 30 minutes).
+             Stop at the opening-range low (never more than 5% away); at +1x the risk the stop moves to break-even
+             plus fees; from +2x it trails 1x the risk under the high. Sold 10 minutes before the close.
+             PRACTICE_MARKET_FILTER=yes also requires the US market (SPY) to be above its opening price.
+  rotation - the earlier rules below.
+
+Rotation rules: US day trading, one stock at a time (agreed 31 Oct 2026)
   List   - The US opening-surge list: stocks with positive news that traded at least a third of a normal
            day's volume in the first 30 minutes, trending up. Only stocks Trading 212 offers.
            Every 15 minutes it also looks for NEW movers: a third of a normal day's volume in the last 30 minutes,
@@ -57,6 +65,20 @@ DT_MIN_HOLD = 45             # minutes a stock is held before it can be swapped 
 DT_OVERTAKE = 1.5            # to swap, the new stock's buying must be at least 1.5x the current one's...
 DT_OVERTAKE_MIN = 1 / 3      # ...and at least a third of a normal day's volume bought in the last 30 minutes
 DT_MAX_UP = 0.20             # don't buy a stock already up more than 20% on the day
+
+# Which day-trading strategy to run: "breakout" (default) or "rotation" (the earlier swap-to-the-strongest rules)
+DT_STRATEGY = os.getenv("PRACTICE_STRATEGY", "breakout").strip().lower()
+# Breakout (opening-range breakout on "stocks in play"):
+DT_OR_MIN = 30               # opening range = the first 30 minutes' high and low
+DT_TOP_N = 5                 # only the 5 stocks with the most unusual volume count as "in play"
+DT_MIN_RANGE = 0.04          # the stock must normally move at least 4% a day (14-day average high-low range)
+DT_BO_BUYS = 1               # buys per day
+DT_BO_MAX_RISK = 0.05        # stop at the opening-range low, but never more than 5% below the buy price
+DT_BE_AT_R = 1.0             # once up 1x the risk, move the stop to break-even (plus fees)
+DT_TRAIL_AT_R = 2.0          # once up 2x the risk, trail the stop...
+DT_TRAIL_R = 1.0             # ...1x the risk below the highest price since buying
+DT_MARKET_FILTER = os.getenv("PRACTICE_MARKET_FILTER", "no").lower() in ("yes", "true", "1")
+                             # only buy when the US market (SPY) is above where it opened today
 DT_WINDOW = 30               # minutes of buying volume compared between stocks
 DT_POLL = 120                # seconds between checks
 DT_LAST_BUY = 30             # no new buys in the last 30 minutes before the close
@@ -764,7 +786,7 @@ def dt_holding(st):
     return next((p for p in st["open"] if p.get("source") == "daytrade"), None)
 
 
-def dt_buy(api, st, day, c, price, why, fx, when, positions):
+def dt_buy(api, st, day, c, price, why, fx, when, positions, stop=None):
     pg = to_gbp(price, "USD", "america", fx)
     qty = math.floor(TRADE_GBP / pg) if pg else 0
     if qty < 1:
@@ -786,7 +808,7 @@ def dt_buy(api, st, day, c, price, why, fx, when, positions):
            "ticker": c["ticker"], "t212": c["t212"], "name": c["name"], "market": "america",
            "exchange": c["exchange"], "ysym": c["ysym"], "source": "daytrade", "methods": [{"method": "daytrade"}],
            "bought": when.date().isoformat(), "bought_at": when.isoformat(timespec="minutes"), "ref_price": price,
-           "qty": qty, "why": why, "initial_stop": price * (1 - DT_STOP),
+           "qty": qty, "why": why, "initial_stop": stop or price * (1 - DT_STOP), "risk": price - (stop or price * (1 - DT_STOP)),
            "high": price, "high_time": when.isoformat()}
     pos["order_id"] = (o or {}).get("id")
     st["open"].append(pos)
@@ -882,7 +904,201 @@ def live_discover(when, known):
     return found, rejected
 
 
-def cmd_daytrade(api, st, fetch_bars=None, fetch_avg=None, clock=None, pause=None, discover=None):
+def live_daily_stats(ysyms):
+    """Average daily volume (10 days), previous close and normal daily range (14 days) for each symbol."""
+    import pandas as pd
+    import yfinance as yf
+
+    out = {}
+    try:
+        data = yf.download(list(ysyms), period="2mo", interval="1d", group_by="ticker", auto_adjust=False,
+                           progress=False, threads=True)
+    except Exception as e:
+        print(f"  daily stats download failed: {e}")
+        return out
+    today = dt.date.today()
+    for s in ysyms:
+        try:
+            d = data[s] if isinstance(data.columns, pd.MultiIndex) else data
+            d = d.dropna(subset=["Close"])
+            d = d[[ix.date() < today for ix in d.index]]
+            if len(d) >= 10:
+                rng = ((d["High"] - d["Low"]) / d["Close"]).iloc[-14:].mean()
+                out[s] = {"avg": float(d["Volume"].iloc[-10:].mean()), "prev": float(d["Close"].iloc[-1]),
+                          "range": float(rng)}
+        except Exception:
+            continue
+    return out
+
+
+def opening_range(bars, when):
+    """High and low of the first DT_OR_MIN minutes of today's session."""
+    if bars is None or not len(bars):
+        return None
+    idx = bars.index.tz_convert(ny(when).tzinfo) if bars.index.tz is not None else bars.index.tz_localize("UTC").tz_convert(ny(when).tzinfo)
+    o = ny(when).replace(hour=9, minute=30, second=0, microsecond=0)
+    first = bars[(idx >= o) & (idx < o + dt.timedelta(minutes=DT_OR_MIN))]
+    if first.empty:
+        return None
+    return float(first["High"].max()), float(first["Low"].min())
+
+
+def market_ok(fetch_bars, when):
+    """True when SPY is trading above today's opening price (used only if DT_MARKET_FILTER is on)."""
+    if not DT_MARKET_FILTER:
+        return True
+    b = (fetch_bars(["SPY"]) or {}).get("SPY")
+    if b is None or not len(b):
+        return True
+    o = ny(when).replace(hour=9, minute=30, second=0, microsecond=0)
+    idx = b.index.tz_convert(o.tzinfo) if b.index.tz is not None else b.index.tz_localize("UTC").tz_convert(o.tzinfo)
+    today = b[idx >= o]
+    return not len(today) or float(today["Close"].iloc[-1]) >= float(today["Open"].iloc[0])
+
+
+def day_setup(st, when):
+    today = ny(when).date().isoformat()
+    day = st.get("day") or {}
+    if day.get("date") != today:
+        day = {"date": today, "buys": 0, "sold": {}, "skip": {}, "finished": False}
+    day.setdefault("skip", {})
+    st["day"] = day
+    return day
+
+
+def cmd_breakout(api, st, fetch_bars, fetch_stats, clock, pause, discover):
+    """One trade a day: the first "in play" stock (news + the most unusual volume + a stock that normally moves
+    a lot) to break above its opening-range high. Stop at the opening-range low (max 5%), moved to break-even at
+    +1R and trailed 1R under the high from +2R. Sold 10 minutes before the close."""
+    started = time.time()
+    when = clock()
+    day = day_setup(st, when)
+    if day.get("finished"):
+        print("Day trading already finished for today.")
+        return "done"
+    op = S.load_json(DOCS / "data" / "opening.json", {}) or {}
+    data = (op.get("markets") or {}).get("america") or {}
+    if data.get("date") != day["date"]:
+        print("No US opening list for today yet.")
+        return "wait"
+    insts = api.instruments()
+    save_tickers(api, insts)
+    cands = []
+    for x in data.get("picks") or []:
+        if not news_ok(x.get("news") or [], True):
+            continue
+        inst = find_instrument(insts, "america", x["ticker"], x["name"])
+        if inst:
+            cands.append({**{k: x.get(k) for k in ("ticker", "name", "exchange", "ysym", "vol_x")}, "t212": inst["ticker"]})
+    stats = fetch_stats([c["ysym"] for c in cands]) if cands else {}
+    fx = fx_rates()
+    checked, last_scan, last_save = {}, None, 0.0
+    day["list"] = [c["ticker"] for c in cands]
+    print(f"  breakout watch list: {', '.join(day['list']) or 'empty so far'}")
+    while True:
+        when = clock()
+        left, _ = S.minutes_to_close("america", when)
+        mins, _ = S.minutes_since_open("america", when)
+        if left is None or mins is None or mins < 0:
+            save_state(st)
+            return "wait"
+        if time.time() - started > DT_RUN_LIMIT:
+            save_state(st)
+            git_save("Day trade (handing over)")
+            return "resume"
+        positions, active, events = reconcile(api, st, when)
+        for e in events:
+            S.push("Day trade update", e, 3, "memo")
+        hold = dt_holding(st)
+        if left <= DT_EXIT:
+            if hold and hold["status"] == "open":
+                dt_sell(api, st, day, hold, positions, active, "End of day: sold 10 minutes before the close.", when)
+            break
+        can_buy = not hold and day["buys"] < DT_BO_BUYS and left > DT_LAST_BUY
+        if can_buy and (last_scan is None or (when - last_scan).total_seconds() >= DT_RESCAN * 60):
+            last_scan = when
+            known = {c["ticker"] for c in cands} | {t for t, x in checked.items()
+                                                     if (when - dt.datetime.fromisoformat(x)).total_seconds() < DT_RECHECK * 60}
+            try:
+                found, rejected = discover(when, known)
+            except Exception as e:
+                print(f"  search for new movers failed: {e}")
+                found, rejected = [], []
+            for t in rejected:
+                checked[t] = when.isoformat()
+            for x in found:
+                checked[x["ticker"]] = when.isoformat()
+                inst = find_instrument(insts, "america", x["ticker"], x["name"])
+                if inst:
+                    cands.append({**{k: x.get(k) for k in ("ticker", "name", "exchange", "ysym", "vol_x")},
+                                  "t212": inst["ticker"]})
+                    stats.update(fetch_stats([x["ysym"]]))
+                    day["list"].append(x["ticker"])
+                    log(st, f"Added {x['ticker']} to today's list at {ny(when):%H:%M} New York: {x.get('why', '')}")
+        traded = False
+        if hold and hold["status"] == "open":
+            p = positions.get(hold["t212"]) or {}
+            price = S.num(p.get("currentPrice"))
+            if price:
+                if price > hold.get("high", 0):
+                    hold["high"], hold["high_time"] = price, when.isoformat()
+                entry = hold.get("entry_local") or hold["ref_price"]
+                risk = hold.get("risk") or entry * DT_STOP
+                stop_now = hold.get("stop_local") or hold["initial_stop"]
+                new_stop = stop_now
+                if hold["high"] >= entry + DT_BE_AT_R * risk:
+                    new_stop = max(new_stop, entry * 1.006)             # break-even plus the round-trip fees
+                if hold["high"] >= entry + DT_TRAIL_AT_R * risk:
+                    new_stop = max(new_stop, hold["high"] - DT_TRAIL_R * risk)
+                hold["last_check"] = (f"${price:,.2f} ({S.pct(price / entry - 1)}), high ${hold['high']:,.2f}, "
+                                      f"stop ${stop_now:,.2f}")
+                if price <= stop_now:
+                    if dt_sell(api, st, day, hold, positions, active,
+                               f"Hit the stop (${stop_now:,.2f}) at ${price:,.2f}.", when):
+                        hold, traded = None, True
+                elif new_stop > stop_now * 1.002:
+                    raise_stop(api, st, hold, p, active, new_stop)
+        elif can_buy and mins >= DT_OR_MIN and market_ok(fetch_bars, when):
+            ok = [c for c in cands if (stats.get(c["ysym"]) or {}).get("range", 0) >= DT_MIN_RANGE]
+            ok = sorted(ok, key=lambda c: c.get("vol_x") or 0, reverse=True)[:DT_TOP_N]
+            bars = fetch_bars([c["ysym"] for c in ok]) if ok else {}
+            for c in ok:
+                b = bars.get(c["ysym"])
+                rng = opening_range(b, when)
+                prev = (stats.get(c["ysym"]) or {}).get("prev")
+                if not rng or b is None or not len(b):
+                    continue
+                last = float(b["Close"].iloc[-1])
+                if last <= rng[0] or (prev and last / prev - 1 > DT_MAX_UP):
+                    continue
+                stop = max(rng[1], last * (1 - DT_BO_MAX_RISK))
+                if stop >= last * 0.995:
+                    stop = last * 0.99
+                why = (f"Broke above its opening-range high (${rng[0]:,.2f}) at ${last:,.2f}. In play: "
+                       f"{c.get('vol_x') or 0:.1f}x normal volume, normally moves "
+                       f"{(stats.get(c['ysym']) or {}).get('range', 0) * 100:.0f}% a day. Stop ${stop:,.2f}.")
+                if dt_buy(api, st, day, c, last, why, fx, when, positions, stop=stop):
+                    traded = True
+                    break
+        if traded or time.time() - last_save > 600:
+            save_state(st)
+            git_save(f"Day trade {when.strftime('%H:%M')}")
+            last_save = time.time()
+        pause(DT_POLL)
+    day["finished"] = True
+    done = [c for c in st["closed"] if c.get("source") == "daytrade" and c.get("sold") == when.date().isoformat()]
+    tot = sum(c["pl_gbp"] for c in done if c.get("pl_gbp") is not None)
+    S.push("Day trade summary", (f"{len(done)} trade(s) today: " + ", ".join(
+        f"{c['ticker']} {gbp_txt(c['pl_gbp'])}" for c in done if c.get("pl_gbp") is not None) + f". Total {gbp_txt(tot)}.")
+           if done else "No trade today: nothing in play broke out.", 3, "bar_chart")
+    log(st, f"Day trading finished: {len(done)} trade(s), total {gbp_txt(tot)}.")
+    return "done"
+
+
+def cmd_daytrade(api, st, fetch_bars=None, fetch_avg=None, clock=None, pause=None, discover=None, fetch_stats=None):
+    if DT_STRATEGY == "breakout":
+        return cmd_breakout(api, st, fetch_bars or S.live_intraday, fetch_stats or live_daily_stats,
+                            clock or now_utc, pause or time.sleep, discover or live_discover)
     fetch_bars = fetch_bars or S.live_intraday
     fetch_avg = fetch_avg or live_avg_volume
     clock = clock or now_utc
