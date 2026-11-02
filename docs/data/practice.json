@@ -32,8 +32,8 @@
    "cost_gbp": 1003.28,
    "stop_local": 1.2255,
    "price_t212": 1.28,
-   "value_gbp": 995.63,
-   "pl_gbp": -7.65,
+   "value_gbp": 995.62,
+   "pl_gbp": -7.66,
    "stop_order_id": 57451013058,
    "stop_t212": 1.23,
    "stop_breached": false,
@@ -117,7 +117,7 @@
   "max_open": 10
  },
  "start_value": 5000.0,
- "updated": "2026-11-02T17:19:06+00:00",
+ "updated": "2026-11-02T17:29:12+00:00",
  "day": {
   "date": "2026-11-02",
   "buys": 1,
