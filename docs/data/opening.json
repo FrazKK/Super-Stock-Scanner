@@ -345,297 +345,1601 @@
    ]
   },
   "uk": {
-   "date": "2026-10-27",
-   "time": "Tue 27 Oct 14:54",
+   "date": "2026-11-02",
+   "time": "Mon 02 Nov 08:45",
    "picks": [
+    {
+     "ticker": "1SN",
+     "name": "First Tin Plc",
+     "exchange": "LSE",
+     "ysym": "1SN.L",
+     "market": "uk",
+     "price": 13.2,
+     "low": 12.755,
+     "currency": "GBX",
+     "change": 0.007633587786259515,
+     "vol_x": 3.69,
+     "vol_basis": "first30",
+     "vol_day_x": 3.69,
+     "buy_pct30": null,
+     "buy_pct": null,
+     "rvol_time": 4.098383699300147,
+     "value": 187269.324,
+     "mcap": 71526613.0,
+     "sector": "Non-Energy Minerals",
+     "holding": false,
+     "extended": false,
+     "near_high": false,
+     "longterm_down": true,
+     "chart_url": "https://www.tradingview.com/chart/?symbol=LSE:1SN&interval=D",
+     "lists": [
+      "Stage 2"
+     ],
+     "owned": false,
+     "news": [
+      {
+       "title": "Form 8.5 (EPT/RI) First Tin plc",
+       "date": "2026-10-30",
+       "url": "https://www.investegate.co.uk/announcement/rns/first-tin--1sn/form-8-5-ept-ri-first-tin-plc/9850490",
+       "source": "RNS",
+       "tone": "neutral"
+      },
+      {
+       "title": "Taronga Development Approval Update",
+       "date": "2026-10-30",
+       "url": "https://www.investegate.co.uk/announcement/rns/first-tin--1sn/taronga-development-approval-update/9849389",
+       "source": "RNS",
+       "tone": "pos"
+      },
+      {
+       "title": "Final Results",
+       "date": "2026-10-30",
+       "url": "https://www.investegate.co.uk/announcement/rns/first-tin--1sn/final-results/9849204",
+       "source": "RNS",
+       "tone": "neutral"
+      },
+      {
+       "title": "Form 8.5 (EPT/RI) First Tin plc",
+       "date": "2026-10-29",
+       "url": "https://www.investegate.co.uk/announcement/rns/first-tin--1sn/form-8-5-ept-ri-first-tin-plc/9848074",
+       "source": "RNS",
+       "tone": "neutral"
+      },
+      {
+       "title": "Form 8.3 - First Tin Plc",
+       "date": "2026-10-28",
+       "url": "https://www.investegate.co.uk/announcement/rns/first-tin--1sn/form-8-3-first-tin-plc/9846244",
+       "source": "RNS",
+       "tone": "neutral"
+      },
+      {
+       "title": "Form 8.5 (EPT/RI) First Tin plc",
+       "date": "2026-10-28",
+       "url": "https://www.investegate.co.uk/announcement/rns/first-tin--1sn/form-8-5-ept-ri-first-tin-plc/9845712",
+       "source": "RNS",
+       "tone": "neutral"
+      }
+     ],
+     "buyers": false,
+     "sellers": false,
+     "score": 7.89
+    },
+    {
+     "ticker": "KMR",
+     "name": "Kenmare Resources Plc",
+     "exchange": "LSE",
+     "ysym": "KMR.L",
+     "market": "uk",
+     "price": 238.0,
+     "low": 232.0,
+     "currency": "GBX",
+     "change": 0.02586206896551724,
+     "vol_x": 2.94,
+     "vol_basis": "first30",
+     "vol_day_x": 2.94,
+     "buy_pct30": 0.466,
+     "buy_pct": 0.466,
+     "rvol_time": 3.3617499567698426,
+     "value": 529573.8,
+     "mcap": 210471618.0,
+     "sector": "Non-Energy Minerals",
+     "holding": false,
+     "extended": false,
+     "near_high": false,
+     "longterm_down": true,
+     "chart_url": "https://www.tradingview.com/chart/?symbol=LSE:KMR&interval=D",
+     "lists": [],
+     "owned": false,
+     "news": [
+      {
+       "title": "Form 38.5A - Kenmare Resources PLC",
+       "date": "2026-10-30",
+       "url": "https://www.investegate.co.uk/announcement/rns/kenmare-resources-cdi---kmr/form-38-5a-kenmare-resources-plc-/9850914",
+       "source": "RNS",
+       "tone": "neutral"
+      },
+      {
+       "title": "Form 38.5a (EPT/RI) Kenmare Resources plc",
+       "date": "2026-10-30",
+       "url": "https://www.investegate.co.uk/announcement/rns/kenmare-resources-cdi---kmr/form-38-5a-ept-ri-kenmare-resources-plc/9850668",
+       "source": "RNS",
+       "tone": "neutral"
+      },
+      {
+       "title": "Update on Implementation Agreement",
+       "date": "2026-10-30",
+       "url": "https://www.investegate.co.uk/announcement/gnw/kenmare-resources-cdi---kmr/update-on-implementation-agreement/9849186",
+       "source": "RNS",
+       "tone": "pos"
+      },
+      {
+       "title": "Form 38.5A - Kenmare Resources PLC",
+       "date": "2026-10-29",
+       "url": "https://www.investegate.co.uk/announcement/rns/kenmare-resources-cdi---kmr/form-38-5a-kenmare-resources-plc-/9848547",
+       "source": "RNS",
+       "tone": "neutral"
+      },
+      {
+       "title": "Form 38.5a Kenmare Resources plc",
+       "date": "2026-10-29",
+       "url": "https://www.investegate.co.uk/announcement/rns/kenmare-resources-cdi---kmr/form-38-5a-kenmare-resources-plc/9848090",
+       "source": "RNS",
+       "tone": "neutral"
+      },
+      {
+       "title": "Form 38.5A - Kenmare Resources PLC",
+       "date": "2026-10-28",
+       "url": "https://www.investegate.co.uk/announcement/rns/kenmare-resources-cdi---kmr/form-38-5a-kenmare-resources-plc/9846046",
+       "source": "RNS",
+       "tone": "neutral"
+      },
+      {
+       "title": "Form 38.5a Kenmare Resources plc",
+       "date": "2026-10-28",
+       "url": "https://www.investegate.co.uk/announcement/rns/kenmare-resources-cdi---kmr/form-38-5a-kenmare-resources-plc/9845740",
+       "source": "RNS",
+       "tone": "neutral"
+      }
+     ],
+     "buyers": false,
+     "sellers": false,
+     "score": 6.25
+    },
+    {
+     "ticker": "GSK",
+     "name": "GSK plc",
+     "exchange": "LSE",
+     "ysym": "GSK.L",
+     "market": "uk",
+     "price": 1855.0,
+     "low": 1828.5,
+     "currency": "GBX",
+     "change": 0.022601984564498346,
+     "vol_x": 1.74,
+     "vol_basis": "first30",
+     "vol_day_x": 1.74,
+     "buy_pct30": null,
+     "buy_pct": null,
+     "rvol_time": 1.1035993102896455,
+     "value": 249639444.6,
+     "mcap": 74365656231.0,
+     "sector": "Health Technology",
+     "holding": true,
+     "extended": false,
+     "near_high": false,
+     "longterm_down": true,
+     "chart_url": "https://www.tradingview.com/chart/?symbol=LSE:GSK&interval=D",
+     "lists": [],
+     "owned": false,
+     "news": [
+      {
+       "title": "3rd Quarter Results",
+       "date": "2026-10-28",
+       "url": "https://www.investegate.co.uk/announcement/rns/gsk--gsk/3rd-quarter-results/9844531",
+       "source": "RNS",
+       "tone": "neutral"
+      },
+      {
+       "title": "GSK (LSE:GSK) Wins FDA Nod For Jemperli As ESMO Data Builds Oncology Case",
+       "date": "2026-11-01",
+       "url": "https://finance.yahoo.com/healthcare/articles/gsk-lse-gsk-wins-fda-111514143.html?.tsrc=rss",
+       "source": "Yahoo Finance",
+       "tone": "pos"
+      },
+      {
+       "title": "GSK vs. Moderna: Which Large-Cap Biotech Stock Offers More Growth?",
+       "date": "2026-10-29",
+       "url": "https://finance.yahoo.com/healthcare/articles/gsk-vs-moderna-large-cap-152300531.html?.tsrc=rss",
+       "source": "Yahoo Finance",
+       "tone": "pos"
+      },
+      {
+       "title": "GSK (LSE:GSK) Shares Dropped, So What Is Behind The Latest Attention?",
+       "date": "2026-10-29",
+       "url": "https://finance.yahoo.com/markets/stocks/articles/gsk-lse-gsk-shares-dropped-082319209.html?.tsrc=rss",
+       "source": "Yahoo Finance",
+       "tone": "neutral"
+      },
+      {
+       "title": "What GSK (GSK) Said on Its Q3 Earnings Call",
+       "date": "2026-10-28",
+       "url": "https://www.marketbeat.com/instant-alerts/transcript-what-gsk-gsk-said-on-its-q3-earnings-call-2026-10-28/?utm_source=yahoofinance&utm_medium=yahoofinance&.tsrc=rss",
+       "source": "Yahoo Finance",
+       "tone": "neutral"
+      },
+      {
+       "title": "GSK Fumbles On Vaccines, HIV \u2014 Reversing An 11% Pre-Earnings Run",
+       "date": "2026-10-28",
+       "url": "https://finance.yahoo.com/m/38c5c34e-484d-3bcd-bdd4-b91403ddf6ef/gsk-fumbles-on-vaccines%2C-hiv.html?.tsrc=rss",
+       "source": "Yahoo Finance",
+       "tone": "neutral"
+      },
+      {
+       "title": "GSK Q3 Earnings Top Mark, Stock Down on Soft Vaccines Sales",
+       "date": "2026-10-28",
+       "url": "https://finance.yahoo.com/healthcare/articles/gsk-q3-earnings-top-mark-144500498.html?.tsrc=rss",
+       "source": "Yahoo Finance",
+       "tone": "neutral"
+      },
+      {
+       "title": "What GSK Needs to Do After Weak Vaccine Sales Spoil an Earnings Beat",
+       "date": "2026-10-28",
+       "url": "https://finance.yahoo.com/m/82daf02d-36a2-320b-9fae-8d497e877193/what-gsk-needs-to-do-after.html?.tsrc=rss",
+       "source": "Yahoo Finance",
+       "tone": "pos"
+      }
+     ],
+     "buyers": false,
+     "sellers": false,
+     "score": 5.98
+    },
+    {
+     "ticker": "MKS",
+     "name": "Marks and Spencer Group plc",
+     "exchange": "LSE",
+     "ysym": "MKS.L",
+     "market": "uk",
+     "price": 412.0,
+     "low": 404.7,
+     "currency": "GBX",
+     "change": 0.019801980198019802,
+     "vol_x": 0.96,
+     "vol_basis": "first30",
+     "vol_day_x": 0.96,
+     "buy_pct30": 0.668,
+     "buy_pct": 0.668,
+     "rvol_time": 0.7472377259682624,
+     "value": 23130755.32,
+     "mcap": 8524282781.0,
+     "sector": "Retail Trade",
+     "holding": true,
+     "extended": false,
+     "near_high": true,
+     "longterm_down": false,
+     "chart_url": "https://www.tradingview.com/chart/?symbol=LSE:MKS&interval=D",
+     "lists": [],
+     "owned": false,
+     "news": [
+      {
+       "title": "Director/PDMR Shareholding",
+       "date": "2026-10-28",
+       "url": "https://www.investegate.co.uk/announcement/rns/marks-spencer-group--mks/director-pdmr-shareholding/9846299",
+       "source": "RNS",
+       "tone": "neutral"
+      },
+      {
+       "title": "Marks and Spencer's \u00a314 winter top shoppers love so much some buy all 5 colours - Manchester Evening News",
+       "date": "2026-11-02",
+       "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxObDlIWnFjV1lpaVpwZS1xNy1NWXRVUU9kektVVDhvU2xJQVhNZUhiU1RXU0JWb0xWOHZGRmNfRmtCNEhrbHpFMTY5NTNQQUNVTFp5REhJLXdqSHZNMzNTX3NyX0lILUQ0MWhaTGMxUXBqZDgxZ0wzUlJqQlcwNjBFNE40S3NKcU02TDNSZXJ3RmFKTTFSai1xRTRPRdIBoAFBVV95cUxPRWxNQ2dtN0VwQXN1ZWE3aUZoZ0RNbllQbW43bnlMYTJzZ3hrY09zamNmQ04xQlM2a2tZTDlKTUl4bWJSdGFxdGJJelZHWTE5cmMyWmE3R0NtanZqRFF2bTBzMjNMWW13QVAwbHl6MW91Rzg0ZzdtWHNHV19GUHpoWFBsWDF4TGZCYnhBMXJYbVJHX0kyak9sMnJtejUybWJP?oc=5",
+       "source": "Manchester Evening News",
+       "tone": "pos"
+      },
+      {
+       "title": "Marks & Spencer to open its biggest food hall outside UK in Dubai - The Times",
+       "date": "2026-11-02",
+       "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOaWFCRkg3YTVzbldIdV9wTWljU0trQWl0YVBLRTdBNU9JME5VNjNLUDd3MmM2ajJfeW42ZGFnYUhFN2k1QWh4Si1QM1JlSTBaelZVaWtDYTI2N1NlV0p4TEgyV3BnSjIyRzJ4dExwQlZxdVFIb0M1bDhoc2NLa2ctR1Zob3A3UDRucEJpcVVQY3JndjU2eEVwcF9zSmN1LWtfNk9idG13NmRRQnc?oc=5",
+       "source": "The Times",
+       "tone": "neutral"
+      },
+      {
+       "title": "Silver and Beyond \u2013 Foods Sustainable Factory Programme - Marks & Spencer",
+       "date": "2026-10-29",
+       "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPUU1McGlhOHFzV21TMWpBLXZxX3FzZGxNVlBnR2FyenMzUGJVbXpDX1FTRVU2OWduTi1TeGdmT2xiUWl5UnNEYml0RGZDV2hKVFJJekdJUl94RGNhRklkY09VcDNuMmJxcElFZ2lsdUIzRjFacEM2NXpIcV9HWjhoUWJ4ZnA1WHNXbmM2akt6M1l1ajN4bEVWT3VocktOMWxGQ0pxVkdOenE?oc=5",
+       "source": "Marks & Spencer",
+       "tone": "neutral"
+      },
+      {
+       "title": "M&S Celebrates 25 Years of Partnership with Breast Cancer Now - Marks & Spencer",
+       "date": "2026-10-29",
+       "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOY2lGcDJYelBvNDZrMk5iVURiUUlCdUxLcGhRd1hqd0gwRklpcE96ZkFLbzlQQ1U4WXJ6ZnBpWTJXOEZvM2xlVDFzcnV3Wm1KS3FvNERMaURsWVBGR2VfaTExVnY3ZlN6NS1IaXBPbkZSbEM4bEtTRXprN2p2T3VPUmVNVUNFUUN5TlBEcmhIYUVqWWhzZTBLNkU1WERyakdmUXB1Ni1nckFWVGZwYkFEWDQxQ18?oc=5",
+       "source": "Marks & Spencer",
+       "tone": "pos"
+      },
+      {
+       "title": "M&S Starts First Recruitment Drive For New Lichfield Fashion Hub - Marks & Spencer",
+       "date": "2026-10-28",
+       "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNZ3RRdzAzY3VpbURhYjA5STNTTUZVenptVVVXbUtHNGFrTDYxbW94VHljZEtGWE9yWm5BeElHc1A4Tkg1OEtaYlJQSVdjMkZkRnlKRkZvUGo5dWdPanE1TkxfcVZUN3M4Z3Q0YTQ0OUJrRGxwTG50WFVaMWlUVDdraGd5M0ZxdVBrRFFnMS04WjBwTU9XQlc2NkpyTTc5WWxBLUEtLU1MMExxeDVrR0RCNmFzNl9hblJBS0s1TUpR?oc=5",
+       "source": "Marks & Spencer",
+       "tone": "neutral"
+      },
+      {
+       "title": "Marks and Spencer's 'luxury' \u00a330 stretchy trousers shoppers 'will wear for years to come' - Manchester Evening News",
+       "date": "2026-11-01",
+       "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQemxMUkZNal9PNVNqV09TaFBRa2lMdml0bWdVWTZ6dG9HaHlTdWxVQ0lHdy1GZ3NiTll2Z3hZU09CVkhJZUh5RDdFNW9mM1JJRUZZcFRMOWJtRDV6NGZWbTcwdHN3WEd0eEpvREo0ZnRETU1FNzhsdGpBaWx3UEVGb0hjZGRoU2ZRZktVUERTMGM2NnpvcmJUSTd0amlJMHRPTkHSAacBQVVfeXFMUEdUcW1lX0dJOFZnSHNYNjloaG5mSjlhWnJ2b0xralVqNmdDTWg0MjhNenhfa3kyTE1TLVlLYnp5RS1SRi1zQ2EwOF9nZkRLT09LZ28wek9aV09zcmZBVDZHTFlLRTg1SFVJeTF5aXR5ejdnOU4waHlaUjFKUmY2ZGNqRHZaVTJLVHpnWEtaVHhXSmRITExUcWxkbGdPU216RExhXzZsZ3c?oc=5",
+       "source": "Manchester Evening News",
+       "tone": "neutral"
+      },
+      {
+       "title": "Marks and Spencer's 'simply divine' \u00a322 cashmere top 'feels luxury and looks gorgeous' - Manchester Evening News",
+       "date": "2026-10-31",
+       "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOdDBTSjJzVWhUa25JU185djNJblBGeUFFSkIzWHdyMUNlM2xiWWZZSzg2YzRNYTlzcXdBakRkdTI2UnZzbnJzM2dBWmI3aG81QVc1R2haWDJ6MEpma1NxMk5rY252S0RGcGJVdVYwLUUtbFhRS3htMkF5aThJS2hjdjRLa3ZNc1NDclBCY1NnRXVSWjFfV3ZYbHVaNTBRem_SAaQBQVVfeXFMTVlmcjVwVVA3dFVXcDdxNnlJYXpiOFdKazgxLVZBR2hHem5mT010TFRVREhJNmI4b2NxN2ZTbTl6d3FLamJtNk9BLVR6UFVTbVBUcUZMOU02SEdxMUkxR0hrOUtyaHFnOWYzR05YQnJSY01pQ0VtdF9oTlJPd0g3VkhJTVNLeXVFVTE1WGJwbjFDM2JaenZBMzlsZW1QcmJ4aS16WXE?oc=5",
+       "source": "Manchester Evening News",
+       "tone": "neutral"
+      }
+     ],
+     "buyers": true,
+     "sellers": false,
+     "score": 5.59
+    },
+    {
+     "ticker": "COA",
+     "name": "Coats Group plc",
+     "exchange": "LSE",
+     "ysym": "COA.L",
+     "market": "uk",
+     "price": 84.3,
+     "low": 83.15,
+     "currency": "GBX",
+     "change": 0.0017825311942957988,
+     "vol_x": 0.82,
+     "vol_basis": "first30",
+     "vol_day_x": 0.82,
+     "buy_pct30": 0.944,
+     "buy_pct": 0.944,
+     "rvol_time": 0.6313073498210545,
+     "value": 1425353.6729999997,
+     "mcap": 1614899341.0,
+     "sector": "Process Industries",
+     "holding": true,
+     "extended": false,
+     "near_high": false,
+     "longterm_down": true,
+     "chart_url": "https://www.tradingview.com/chart/?symbol=LSE:COA&interval=D",
+     "lists": [],
+     "owned": false,
+     "news": [
+      {
+       "title": "The best men's winter coats for every circle of hellish weather - British GQ",
+       "date": "2026-10-29",
+       "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE13UjBlanhlY1RqRDV1bE40WENaRUNJVTBRZHdES2pCZXc1OVpJVGpMVW1ObEpUMWw1VHUwTnFoMk9hYmVSWlBUOWhldnYxUkVjcVRoOWpBdHctUmMxaGJQNTB3bVpuQQ?oc=5",
+       "source": "British GQ",
+       "tone": "pos"
+      },
+      {
+       "title": "Our hikers logged over 300 miles while wearing these coats, testing their comfort and how well they insulated. There are Wirecutter's picks for the best down jackets. - Facebook",
+       "date": "2026-11-01",
+       "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPd1ZvWE1jeTJlT0UwNDFLbVk1dXl5YnFHQnJ4a3NrUEt1OFl4X1VvQW9IQ1lDMWVwaUJNRl9nbThpTlpESmFyRnJ1RW9pZmRUV0YzMERybWhVWjlEczVQOXVMaGFZYzhxbXM1cVZLYUVURG1FNnRfbEtXOUFEWHdSdENUWmZOSGhTT00teUNRUmVDbjJNYkFCTTBVeTZFNnZlUm1MTkY2X2RiTnpYdFhiNTJEbUlsbW9YS2Z6UzJSaVdVQlU4R1RfeHF6NGNFUEZLT2d3?oc=5",
+       "source": "Facebook",
+       "tone": "neutral"
+      },
+      {
+       "title": "Statement Coats With Power Shoulders Are the Instant Outfit Upgrade Your Fall Wardrobe Needs - AOL.co.uk",
+       "date": "2026-10-30",
+       "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPbFdzR3RYbUNRYlZlVENYajJKaER0eTlTaTktUFRkZTNVcHpiWmstZ3FlX2JlZ2c5a1F0TWtzaElOOTdJeG82ak5OcmZyMXhZZ3NBTDBoSXV5WFJGeXozSEFWUEN1V01OaVQwMEJmT043bEdWSF8wV2VxaTV5bTQydTNYQkZGSThLa3lQRWpR?oc=5",
+       "source": "AOL.co.uk",
+       "tone": "pos"
+      },
+      {
+       "title": "9 plush teddy coats to stay cosy this autumn - Stylist",
+       "date": "2026-10-29",
+       "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBnNkhmR3FTUUthdDdjOVFLZHZudFhuUDdNZVBSM0lLN1ZmRXNNd3FSbFhnN0tsclFLUkJQdEg3cm5Fb09wUjNhbVBqeFJBYXJzVUN0LUhYeU1WazBLSFdObDhIZV94SUVVa3FmRE1FNThzanIxT3c?oc=5",
+       "source": "Stylist",
+       "tone": "neutral"
+      },
+      {
+       "title": "I'm a size 2XL and tested Walmart's plus-size coats and jackets \u2014 these are the ones I'd actually recommend - Yahoo Lifestyle Canada",
+       "date": "2026-10-31",
+       "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPYlRUSlg4dVNPT1Q2WWtvUnZBQmM2NUpabzhXYzZ5ZnpHX3JPeEdFODVFeWFiZ19zeE1vb1RUWk5ITFQ0bTZPQlBCb0JCYWx4OGFZbkRJNWk4N2ZHdDBxZ3d1U0N6M1Q3ZnhRb2REZXFFSnQ0eHFVSHVKaXVXVlQ1bWN1S1NwT3ZQeTFmOW5QdzBuWGNYWnpuaU5zWVo2SS1fT1d4X3k1RXpna0d3NGNtcWdjTUc5SmVSdFJ5WTYyVHBJbklpWXhTaEtDWGNrX0lpRXVfbkhRU1Y5dTRTVlE?oc=5",
+       "source": "Yahoo Lifestyle Canada",
+       "tone": "neutral"
+      },
+      {
+       "title": "Nanoparticle properties shape protein coats that guide cell entry and immune evasion - Phys.org",
+       "date": "2026-10-29",
+       "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNd0QxNTRRV0RpQlNYSWJNbjlKeWVNVGlPMXd6b015akdmU1JMcFZ0aEctOF96VjBxbGZyMVlEVFl1bWdzaE5pWnc4bExhcHdIbHNudXpmd2tXWFRLUnhYMHU4bXJrTG9xb3hfV3Q5X3MteFFvakt2MGJ0bHMzUE85U2I1cw?oc=5",
+       "source": "Phys.org",
+       "tone": "neutral"
+      },
+      {
+       "title": "Maya Jama\u2019s tweed jacket is a standout in her autumn-ready Celebrity Traitors wardrobe \u2013 shop lookalike coats from \u00a335 - Country Living Magazine",
+       "date": "2026-10-31",
+       "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNVVgyeXJQb3lTRGktNVpHUlRPWHZ3TTA2bDg4WUJWUklTNWpkQmNTNUZWNG1lNGlPaV95cjZxMFZfS3NMY2VNd3U3dkdXR0plR0gzb2puWkZSbkc0anB1NzJBWnRud1BKUmJHZzlSTXd2SXFDZ2Y3ZFNyOW54c1MtaDUwWW1Tb0FvMmN6U0tRekFmQ3F0R20xU0lMZVNtRzd5Q1ZuR2dGbTA?oc=5",
+       "source": "Country Living Magazine",
+       "tone": "neutral"
+      },
+      {
+       "title": "These 16 Statement Coats Can Make Even the Simplest Outfit Look Incredible - Oprah Daily",
+       "date": "2026-10-30",
+       "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE93N2RBUWNkeGlsVmc4TXpJRVh6Ty1wYW9CNHZ0RHBsa2dwN1k0MlVPSktUVTRhYS00djBxcDhlaFJ5VEpNaEsxWVlQMzlUdkRhQ2tjaTE0YzZiMG1XUmptWWUxdVNwMk05ME12UlM1VnhWdw?oc=5",
+       "source": "Oprah Daily",
+       "tone": "neutral"
+      }
+     ],
+     "buyers": true,
+     "sellers": false,
+     "score": 5.41
+    },
     {
      "ticker": "ATG",
      "name": "Auction Technology Group PLC",
      "exchange": "LSE",
      "ysym": "ATG.L",
      "market": "uk",
-     "price": 482.8,
+     "price": 483.6,
+     "low": 477.8,
      "currency": "GBX",
-     "change": 0.017706576728499228,
-     "vol_x": 1.15,
-     "rvol_time": 1.9045582892800044,
-     "value": 1681659.992,
-     "mcap": 574449852.0,
+     "change": 0.0054054054054054525,
+     "vol_x": 1.08,
+     "vol_basis": "first30",
+     "vol_day_x": 1.08,
+     "buy_pct30": 0.909,
+     "buy_pct": 0.909,
+     "rvol_time": 1.124578819645272,
+     "value": 1699728.264,
+     "mcap": 585590111.0,
      "sector": "Technology Services",
-     "holding": true,
+     "holding": false,
      "extended": false,
      "near_high": true,
+     "longterm_down": false,
      "chart_url": "https://www.tradingview.com/chart/?symbol=LSE:ATG&interval=D",
      "lists": [],
      "owned": false,
      "news": [
       {
-       "title": "Requisition notice from FitzWalter Capital Limited",
-       "date": "2026-10-26",
-       "url": "https://www.investegate.co.uk/announcement/rns/auction-technology-group--atg/requisition-notice-from-fitzwalter-capital-limited/9841771",
-       "source": "RNS",
+       "title": "Is Auction Technology Group (LSE:ATG) Turning the Corner as It Lifts Revenue Guidance Ahead of Its Pre-Close Update? - Kalkine Media",
+       "date": "2026-10-29",
+       "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxPTExILUZMMlF0MU5RaFhNWWZEQ1BkVnlHYnBhSF9paDRsdGpQSlJUdGpVM3IwREZJUzFXdnl3YjFhNFlGRHVDLWp0UXlHME9CSlFIb3lQOU9vN2JwbTlZTmJfYllsTlpBZEtQR0d3VUNyOW9DSW12dTJQU1ZDNXBXSWlSNmlFb01adGp4N2pvdGNLMllrbWRHSFBiU2lyUFI1MXBFS0ZXZ2VtckpSYU5xUDJvOEYya3EtQmtGWEYxT0gxaE9GLW9TOVdGMTFvRlJLem1vdmxEYUZsb3g0TE9QdTFBS1Nwbk1IWC1ZOGtiaw?oc=5",
+       "source": "Kalkine Media",
        "tone": "neutral"
       },
       {
-       "title": "2.8 Announcement",
-       "date": "2026-10-26",
-       "url": "https://www.investegate.co.uk/announcement/prn/auction-technology-group--atg/2-8-announcement/9840286",
-       "source": "RNS",
-       "tone": "neutral"
-      },
-      {
-       "title": "Members' Statement",
-       "date": "2026-10-26",
-       "url": "https://www.investegate.co.uk/announcement/prn/auction-technology-group--atg/members-statement/9840285",
-       "source": "RNS",
-       "tone": "neutral"
-      },
-      {
-       "title": "Strategic partnership with Jeff Martin",
-       "date": "2026-10-22",
-       "url": "https://www.investegate.co.uk/announcement/rns/auction-technology-group--atg/strategic-partnership-with-jeff-martin-/9836868",
-       "source": "RNS",
+       "title": "Is A Shareholder Requisition Overshadowing Auction Technology Group (LSE:ATG) This Week? - Kalkine Media",
+       "date": "2026-10-29",
+       "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOVWRrenlaQmNHRHJIcW5aa1ZzSWJFaXl2N0VfZGxuSlppWVRjVm5YSFh5LWNJN3NiWHRyN09aLWdSUzZ0aFNxU1M3ZE8tNkhWcDZOcDhTb1JWRG1IdUc0MHFhWEs1VEtMUlJmZ0ZaSU95bHFNSV9VaXZweTNfWkhyZHZtbU1OWmxhMEVrV05jQ19WTGU0eFJQMEtGeTAyWmNHUlhEdWZ3dTYxemRHaloxWnRJY2l1Q0pKMVVCcEVCeFdWaUJrYi1kTEJn?oc=5",
+       "source": "Kalkine Media",
        "tone": "pos"
       },
       {
-       "title": "Trading Statement",
-       "date": "2026-10-22",
-       "url": "https://www.investegate.co.uk/announcement/rns/auction-technology-group--atg/trading-statement/9835229",
-       "source": "RNS",
+       "title": "ATG shareholders denounce activist\u2019s attempt to oust chairman - The Times",
+       "date": "2026-11-01",
+       "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQQjVDX1RrNHpzc0I3a0JnT3Y0UFJWdlFJZGJHdW43Z3pTVGZQbUthMThCaERrZlc5U0lST3dyQmlpMktQdWpubFo0X3h3VjNzbnN2R3dzSHZFNmlFZ2Q4YVdZSG9qLS1aOWU5MWN1Vl8xNTdzN055SjM4d2ZHQjF5R1JLNlJzdlBfZkRSYzV0dWJ3aHpVVExmcWctWExCUFViMVg0cnBxNWFoaTdrT2Z6NTVKVFNDaU1ZdUE?oc=5",
+       "source": "The Times",
        "tone": "neutral"
       }
      ],
-     "score": 3.65
-    }
-   ],
-   "quiet": [
+     "buyers": true,
+     "sellers": false,
+     "score": 5.3
+    },
     {
-     "ticker": "0NCA",
-     "name": "IVU Traffic Technologies AG",
+     "ticker": "TPX",
+     "name": "TPXimpact Holdings PLC",
      "exchange": "LSE",
-     "ysym": "0NCA.L",
+     "ysym": "TPX.L",
      "market": "uk",
-     "price": 27.1639,
-     "currency": "EUR",
-     "change": 0.017374531835206083,
-     "vol_x": 6.81,
-     "rvol_time": 23.7746308039152,
-     "value": 57017.0261,
-     "mcap": 389694921.68736,
+     "price": 104.0,
+     "low": 99.0,
+     "currency": "GBX",
+     "change": 0.0297029702970297,
+     "vol_x": 1.52,
+     "vol_basis": "first30",
+     "vol_day_x": 1.52,
+     "buy_pct30": 0.343,
+     "buy_pct": 0.343,
+     "rvol_time": 1.572992013962466,
+     "value": 567544.64,
+     "mcap": 96263402.0,
      "sector": "Technology Services",
      "holding": true,
      "extended": false,
      "near_high": true,
-     "chart_url": "https://www.tradingview.com/chart/?symbol=LSE:0NCA&interval=D",
-     "lists": [],
-     "owned": false,
-     "news": []
-    },
-    {
-     "ticker": "AEO",
-     "name": "Aeorema Communications plc",
-     "exchange": "LSE",
-     "ysym": "AEO.L",
-     "market": "uk",
-     "price": 95.5,
-     "currency": "GBX",
-     "change": 0.12352941176470589,
-     "vol_x": 5.86,
-     "rvol_time": 12.139227041720837,
-     "value": 49044.025,
-     "mcap": 7947925.0,
-     "sector": "Commercial Services",
-     "holding": true,
-     "extended": false,
-     "near_high": true,
-     "chart_url": "https://www.tradingview.com/chart/?symbol=LSE:AEO&interval=D",
-     "lists": [],
-     "owned": false,
-     "news": []
-    },
-    {
-     "ticker": "0NFS",
-     "name": "Esprinet S.p.A.",
-     "exchange": "LSE",
-     "ysym": "0NFS.L",
-     "market": "uk",
-     "price": 8.135,
-     "currency": "EUR",
-     "change": 0.014339152119700776,
-     "vol_x": 4.02,
-     "rvol_time": 0.5509641873278237,
-     "value": 59971.22,
-     "mcap": 319082379.67776,
-     "sector": "Distribution Services",
-     "holding": true,
-     "extended": false,
-     "near_high": true,
-     "chart_url": "https://www.tradingview.com/chart/?symbol=LSE:0NFS&interval=D",
-     "lists": [],
-     "owned": false,
-     "news": []
-    },
-    {
-     "ticker": "0O6D",
-     "name": "Miquel y Costas & Miquel, S.A.",
-     "exchange": "LSE",
-     "ysym": "0O6D.L",
-     "market": "uk",
-     "price": 10.15,
-     "currency": "EUR",
-     "change": 0.025252525252525252,
-     "vol_x": 4.0,
-     "rvol_time": 6.665580182529335,
-     "value": 41513.5,
-     "mcap": 322494340.4669,
-     "sector": "Consumer Non-Durables",
-     "holding": true,
-     "extended": false,
-     "near_high": false,
-     "chart_url": "https://www.tradingview.com/chart/?symbol=LSE:0O6D&interval=D",
-     "lists": [],
-     "owned": false,
-     "news": []
-    },
-    {
-     "ticker": "0RD0",
-     "name": "SJF Bank A/S",
-     "exchange": "LSE",
-     "ysym": "0RD0.L",
-     "market": "uk",
-     "price": 482.0,
-     "currency": "DKK",
-     "change": 0.008368200836820083,
-     "vol_x": 3.19,
-     "rvol_time": 5.421686746987952,
-     "value": 737460.0,
-     "mcap": 846221456.401572,
-     "sector": "Finance",
-     "holding": true,
-     "extended": false,
-     "near_high": true,
-     "chart_url": "https://www.tradingview.com/chart/?symbol=LSE:0RD0&interval=D",
-     "lists": [],
-     "owned": false,
-     "news": []
-    },
-    {
-     "ticker": "0MDX",
-     "name": "PARKEN Sport & Entertainment A/S",
-     "exchange": "LSE",
-     "ysym": "0MDX.L",
-     "market": "uk",
-     "price": 239.0,
-     "currency": "DKK",
-     "change": 0.01702127659574468,
-     "vol_x": 2.88,
-     "rvol_time": 1.0087719298245614,
-     "value": 32504.0,
-     "mcap": 268454918.438658,
-     "sector": "Consumer Services",
-     "holding": true,
-     "extended": false,
-     "near_high": true,
-     "chart_url": "https://www.tradingview.com/chart/?symbol=LSE:0MDX&interval=D",
-     "lists": [],
-     "owned": false,
-     "news": []
-    },
-    {
-     "ticker": "PXEN",
-     "name": "Prospex Energy Plc",
-     "exchange": "LSE",
-     "ysym": "PXEN.L",
-     "market": "uk",
-     "price": 6.17,
-     "currency": "GBX",
-     "change": 0.045762711864406704,
-     "vol_x": 2.5,
-     "rvol_time": 4.3476709349136105,
-     "value": 144061.6641,
-     "mcap": 25593845.0,
-     "sector": "Energy Minerals",
-     "holding": true,
-     "extended": false,
-     "near_high": false,
-     "chart_url": "https://www.tradingview.com/chart/?symbol=LSE:PXEN&interval=D",
-     "lists": [],
-     "owned": false,
-     "news": []
-    },
-    {
-     "ticker": "0P49",
-     "name": "Bulten AB",
-     "exchange": "LSE",
-     "ysym": "0P49.L",
-     "market": "uk",
-     "price": 80.1,
-     "currency": "SEK",
-     "change": 0.005018820577164259,
-     "vol_x": 2.36,
-     "rvol_time": 3.5511607910576095,
-     "value": 330813.0,
-     "mcap": 125546041.48863,
-     "sector": "Producer Manufacturing",
-     "holding": true,
-     "extended": false,
-     "near_high": true,
-     "chart_url": "https://www.tradingview.com/chart/?symbol=LSE:0P49&interval=D",
-     "lists": [],
-     "owned": false,
-     "news": []
-    },
-    {
-     "ticker": "TMG",
-     "name": "Mission Group Public Limited Company",
-     "exchange": "LSE",
-     "ysym": "TMG.L",
-     "market": "uk",
-     "price": 27.39999,
-     "currency": "GBX",
-     "change": 0.03396188679245279,
-     "vol_x": 2.06,
-     "rvol_time": 4.336013150626584,
-     "value": 35703.5569695,
-     "mcap": 24008499.0,
-     "sector": "Commercial Services",
-     "holding": true,
-     "extended": false,
-     "near_high": false,
-     "chart_url": "https://www.tradingview.com/chart/?symbol=LSE:TMG&interval=D",
+     "longterm_down": false,
+     "chart_url": "https://www.tradingview.com/chart/?symbol=LSE:TPX&interval=D",
      "lists": [],
      "owned": false,
      "news": [
       {
-       "title": "Holding(s) in Company",
-       "date": "2026-10-26",
-       "url": "https://www.investegate.co.uk/announcement/rns/the-mission-group--tmg/holding-s-in-company/9841825",
-       "source": "RNS",
-       "tone": "neutral"
+       "title": "REG - TPXimpact Holdings - TPXimpact announces \u00a322m NHS England contract - TradingView",
+       "date": "2026-11-02",
+       "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPVl9QZVJaR2Ftcy15Q3VuUE9HelBFMXJnQzVXWkpGc09tYXdZWGhrY24xOGpfRy1ha2gySVN3N3dfeldYNWxYTGFTQndOQkYzd0FBOWtJdnpuVy1VNnRhNFVNZG5ZcDBRa0JFWWhHcGRycnlOQ0N0SGVZTzlLM1pVYnJJNmhwZ1RDTUVoVGt5blVpUVd5alppZzZVZnZCa0Q5OV8xX1pMUTVsdGlGcmI2QTBfMEJSbWMwUm1nOXlXSE96XzI4eXM0WUF0TWsxcUpEWFgyNVlFSGhlRjg?oc=5",
+       "source": "TradingView",
+       "tone": "pos"
       }
-     ]
+     ],
+     "buyers": false,
+     "sellers": true,
+     "score": 4.91
     },
     {
-     "ticker": "0JGO",
-     "name": "Endur ASA",
+     "ticker": "BT.A",
+     "name": "BT Group plc",
      "exchange": "LSE",
-     "ysym": "0JGO.L",
+     "ysym": "BT-A.L",
      "market": "uk",
-     "price": 121.4,
-     "currency": "NOK",
-     "change": 0.03938356164383569,
-     "vol_x": 1.96,
-     "rvol_time": 3.5182294998081107,
-     "value": 1669371.4000000001,
-     "mcap": 497223803.6268,
-     "sector": "Producer Manufacturing",
+     "price": 227.3,
+     "low": 221.5,
+     "currency": "GBX",
+     "change": 0.06713615023474184,
+     "vol_x": 1.55,
+     "vol_basis": "first30",
+     "vol_day_x": 1.55,
+     "buy_pct30": 0.417,
+     "buy_pct": 0.417,
+     "rvol_time": 1.7133854677022957,
+     "value": 53722377.73,
+     "mcap": 22140817997.0,
+     "sector": "Communications",
+     "holding": true,
+     "extended": false,
+     "near_high": false,
+     "longterm_down": true,
+     "chart_url": "https://www.tradingview.com/chart/?symbol=LSE:BT.A&interval=D",
+     "lists": [],
+     "owned": false,
+     "news": [
+      {
+       "title": "BT Group (LSE:BT.A) Stock May Look Fully Valued After Earnings Beat",
+       "date": "2026-10-31",
+       "url": "https://finance.yahoo.com/markets/stocks/articles/bt-group-lse-bt-stock-161337538.html?.tsrc=rss",
+       "source": "Yahoo Finance",
+       "tone": "pos"
+      },
+      {
+       "title": "BT Group (LON: BT.A) shares price forecast for 2026-2028: Analysts see 224p target - Beinsure",
+       "date": "2026-10-29",
+       "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9HLTk4b09Qem9QQkg4VHpqcGg5UDFuanI4dXBxNElzaEI2ZlZQTEdTWUNWQTlkRUZTMmdJSUVrNGMyaHgzbFBoUElLTlRVWFVpeDMxcjFyYk9YZ082Y1RYNUEyMFlxSllpTW9jMTFrV2E4TmZadVZieVU5Yw?oc=5",
+       "source": "Beinsure",
+       "tone": "neutral"
+      },
+      {
+       "title": "BT Group (LSE:BT.A) Stock May Look Fully Valued After Earnings Beat - Yahoo Finance",
+       "date": "2026-10-31",
+       "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNMVZEN3c3Z1JHd2h2dUUzSlFTOEROVm1NUGFtM0g5RW1tbC1HUUFCUXlrdEZQZGxscGtqdldveHpNMUlTVWtyMzlXTUhVY20xMDZqWS16c0ktbjNSc0xBbDdvazdMaDMxdHdLSHNqbEtQcFZEZkRzazN0TW03S056S3hHbE5KenJOeUNEMkptYw?oc=5",
+       "source": "Yahoo Finance",
+       "tone": "pos"
+      },
+      {
+       "title": "Key facts: BT Group (BT.A) Openreach talks with VMO2; Bharti Enterprises top shareholder - TradingView",
+       "date": "2026-10-30",
+       "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNU2NGamJwaVRHZDVHVk9POHRuOU5lYlprUjJFMGJuemVHVWdUYXNZNVVFRnhDYTVIQm5fQXNTMjYtLUpOYV85TkFqT3JRN3h1bUJIV3NKdjJ2ZmsxdnA4T3hDM1ZwSGpnR1ZMUkJ1T2lHUGxVTTBsMlVuNkQ1bWE4akJYZkQyaFBhUUt3bEVINTNOTnpiMHhDenlyVzB2Ry1fWFBWaExYbjhYa3hBRVpoVk5lRXBvM3BjYmlSclJBN1RIeTFOamRLbkdqcVlPMlkxc2hSQ1JmUWNPcXNvRkg4?oc=5",
+       "source": "TradingView",
+       "tone": "neutral"
+      },
+      {
+       "title": "BT Group (LSE:BT.A) Stock Forecast & Analyst Predictions - Simply Wall St",
+       "date": "2026-10-29",
+       "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9PeWhyZUxFanJCNU5qZGJKRmxhX2ljcFo1MFp4d0hzcUdpUzlUWXVzUUVDZEJxMkZmYXdSMUdYZmJkU1RXczlqSURXRXJiWmt0OHV3RnRXUUxwM2pIVkhROGw3cThlbWlNeDN4WVF6eHRsQVF4RzE0NF9SNA?oc=5",
+       "source": "Simply Wall St",
+       "tone": "neutral"
+      }
+     ],
+     "buyers": false,
+     "sellers": true,
+     "score": 4.76
+    },
+    {
+     "ticker": "CCEP",
+     "name": "Coca-Cola Europacific Partners plc",
+     "exchange": "LSE",
+     "ysym": "CCEP.L",
+     "market": "uk",
+     "price": 8510.0,
+     "low": 8345.0,
+     "currency": "GBX",
+     "change": 0.032766990291262135,
+     "vol_x": 1.13,
+     "vol_basis": "first30",
+     "vol_day_x": 1.13,
+     "buy_pct30": 0.319,
+     "buy_pct": 0.319,
+     "rvol_time": 1.0401258816276477,
+     "value": 11367572.9,
+     "mcap": 37473750708.68494,
+     "sector": "Consumer Non-Durables",
      "holding": true,
      "extended": false,
      "near_high": true,
-     "chart_url": "https://www.tradingview.com/chart/?symbol=LSE:0JGO&interval=D",
+     "longterm_down": false,
+     "chart_url": "https://www.tradingview.com/chart/?symbol=LSE:CCEP&interval=D",
      "lists": [],
      "owned": false,
-     "news": []
+     "news": [
+      {
+       "title": "Coca-Cola Europacific Partners PLC (CCEP) Seasonal returns chart - Yahoo Finance UK",
+       "date": "2026-10-30",
+       "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5fdERkc2oybVVaaUxRZGZfanVqZS1KQUdFb01TczRHQUp0aUhub1QzUmttdUpOc04wOGtTMUQtUmtJOXFla2JjVFVMSDhHa0NsWFpxZWdLMjVwbk1JeVBkb1hB?oc=5",
+       "source": "Yahoo Finance UK",
+       "tone": "neutral"
+      },
+      {
+       "title": "Me and My Brand: Elaine Maher of Coca-Cola Europacific Partners - Asian Trader",
+       "date": "2026-11-01",
+       "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5ZdEhTdzZyZFFrMHBTc09vX1F6X0JEU2VaTkVEU0Z2UzQ3RDk5RTFnUHJrTDlKSVBnSU04d1FGWEtOS2pkUDRJNWFBdThRVEZsOElDcnIyMlA0a3RHX09EcDc1TEVoUDVRLTJCeXdsXzBrM2ZE?oc=5",
+       "source": "Asian Trader",
+       "tone": "neutral"
+      },
+      {
+       "title": "Coca-Cola Europacific Partners plc News \u2014 MUN:CK0 - TradingView",
+       "date": "2026-10-31",
+       "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5GblNkNDU1WjRhaVRvbE9RaTdESFdaakRkZWFaaW1vWmZNdFF3Q3ZaTnpjV3dFek13ci01NWlOeDZqUVlYcHktcjB2dmp3T2dEM24zWkJvZGRRYjkwbkRMOExoNXVBS1JHV1pUU3RneEFZbEho?oc=5",
+       "source": "TradingView",
+       "tone": "neutral"
+      },
+      {
+       "title": "Coca-Cola expands beverage portfolio reach through FooDee Global Concepts partnership - marketech apac",
+       "date": "2026-11-02",
+       "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQX2xWQUVPYVl4dlhEazF5cWZqLWFXLXotWWp1M25TM2lZUmctVVM1OFRzWThsVkNGOWc5bFlLcXBzR0dfeEFSZG9zWTEwcFBMT1ZacV9uMDlCbExaeXRUQzBiNkE1RmsySi1fYUU5a1NTMVQ2dmhIbFZlRzE2dkJoalJMYjljZ2w5WGoxc2VfeDk1dVhtTk5fLWNueUl4X01wWVcyOWJCdWxUT29QRXZwZUk5bw?oc=5",
+       "source": "marketech apac",
+       "tone": "pos"
+      },
+      {
+       "title": "Laure Bekkers, Coca-Cola Europacific Partners: \"It's difficult to find an electric vehicle for our technicians\" - Flottes Automobiles",
+       "date": "2026-10-30",
+       "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9RUlJIaG5nRndhM0w2Q2VLaVowLWZoREExS3dsUENtbG1BTGJFVE80azhPdnBTY1VDWGtqU3NVclFuSDh6T3llTmFwd1NyenUwTzMyRWk5S0FTVGltbU0zWjVyU19UeFExOGM5bndObFU5dkxHVHQtZ1NyT1B5UQ?oc=5",
+       "source": "Flottes Automobiles",
+       "tone": "neutral"
+      },
+      {
+       "title": "Why Halloween matters: helping our customers win one of retail's biggest seasonal moments - Coca-Cola Europacific Partners",
+       "date": "2026-10-28",
+       "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOS2lUYXBrR1llallDWnhxejdIRkRuUHp1MExOcmU2eklFd2hBbE0ya3BfYXQwUTE3VG1IbUVNZzQ0QldNWllqblNaemdDeVJhYk8zRzlOTEtxRjdTeEpucnB4LThNRHZGRG5iUmp2eklLUy1vdkpHSmdKQ1NXM2tWZUp6MXJpOEsxQWdLRUFZTlp6VmNoQ00zSzZXWEk3cnE2Z2Fua2tyN0tsdkd4QzFoS3MzVXdfN1R4bEM0NXU2SUIybEsyZFM3WHNGalg?oc=5",
+       "source": "Coca-Cola Europacific Partners",
+       "tone": "pos"
+      },
+      {
+       "title": "Coca-Cola Europacific Partners (ASX:CCL): Can Pricing Power Hold Volumes? - Kalkine Media",
+       "date": "2026-11-02",
+       "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNYXVpQ3MwZjh3QUxaT3BzUzJzZnlXS0Q2VHNjS096N012VWI0aDEtS1diUzhoYXUzOS1rOUZrY0RxYV9EV0ZqTV84bEdNTE8zTGEwNXlKOEdRWE9jM2RqWFZEcFY2cGJTbXd3LUxzREp2NGlzcXMtMXZQdjRqbzlwUktEelhvYUtlV29CUVpab2ZqdUg3RXVJUk5BZ2FQdTBTZWdSMGNMVjJoSEplZVZYdW5XaDA?oc=5",
+       "source": "Kalkine Media",
+       "tone": "neutral"
+      },
+      {
+       "title": "Coca-Cola Europacific Partners PLC (CK0.F) Seasonal returns chart - Yahoo Finance Australia",
+       "date": "2026-10-30",
+       "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBnTkJDbFdPblBJT0ViQUtock1RaGJ5dXBqbUw4aEljOVF3OGplbmIzWnBjRVNfR3lCOUFKaVpSUlE5R200YllBYjQ0U1Q2NjZYc3NQRGdOY19XNnVBQlVBa2VwTQ?oc=5",
+       "source": "Yahoo Finance Australia",
+       "tone": "neutral"
+      }
+     ],
+     "buyers": false,
+     "sellers": true,
+     "score": 4.53
+    },
+    {
+     "ticker": "QQ.",
+     "name": "QinetiQ Group plc",
+     "exchange": "LSE",
+     "ysym": "QQ.L",
+     "market": "uk",
+     "price": 540.5,
+     "low": 532.5,
+     "currency": "GBX",
+     "change": 0.003714020427112349,
+     "vol_x": 1.32,
+     "vol_basis": "first30",
+     "vol_day_x": 1.32,
+     "buy_pct30": 0.537,
+     "buy_pct": 0.537,
+     "rvol_time": 1.7958682401561958,
+     "value": 9024188.0,
+     "mcap": 2747691316.0,
+     "sector": "Electronic Technology",
+     "holding": true,
+     "extended": false,
+     "near_high": false,
+     "longterm_down": false,
+     "chart_url": "https://www.tradingview.com/chart/?symbol=LSE:QQ.&interval=D",
+     "lists": [],
+     "owned": false,
+     "news": [
+      {
+       "title": "MoD and QinetiQ launch Project Safari - UKAuthority",
+       "date": "2026-10-28",
+       "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1pZUF2MERrWDBXXzdwME9vU0l6N2RIV09CTnMyVHFnNGJyb0FzdWJ5My1waDNTZi01V3JUWk05b3BPdlBRd1ozMng5dlRWeDdQUHZpR01Jdy1uVWhDNG1GT3E0V3JMX2RPeldUZUlram1SQUVMVWVZR0hWVkkyZTA?oc=5",
+       "source": "UKAuthority",
+       "tone": "pos"
+      },
+      {
+       "title": "QinetiQ Group plc (QQ.L) Seasonal returns chart - Yahoo Finance UK",
+       "date": "2026-10-31",
+       "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1HZjhQcVdCZlk0NTRrR0RqRDcwdERJa3JqdHBETGJaNlM1N0NxVk44ZUZ4LTcxSFFGeF8ySk5SRzRWX1FaZTQ4S192dXRYRTFzeHB2UXQ5eGFPUklzRGdiQ3d3?oc=5",
+       "source": "Yahoo Finance UK",
+       "tone": "neutral"
+      },
+      {
+       "title": "QinetiQ Group plc (QQ.L) Seasonal returns chart - Yahoo Finance Australia",
+       "date": "2026-10-31",
+       "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE41MERINGZBN0Rqb0dFMHhUVnFlNnFjV0ZOeTViS1QwRVRjZy1uT1kwd242cTRhbFlpZWhPS2N1emhGZHEweEFBNjhlNmpQR1V2QlBsOHRndkJJTUlMbnJ4MHFn?oc=5",
+       "source": "Yahoo Finance Australia",
+       "tone": "neutral"
+      },
+      {
+       "title": "QinetiQ Group plc (QQ.L) Seasonal Returns Chart - Yahoo Finance - Yahoo! Finance Canada",
+       "date": "2026-10-31",
+       "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1PVURhTE5DclZiVi1Sb3B6VHphcjhZWTVTc1BzNG5pb2p3NW42WUhLSElWLUJqMHg1YldKRFBxWmppZFpINUhzOTVFQ1AwQ3l4OWV4UTdGeTE1c0NiYnF5OEVn?oc=5",
+       "source": "Yahoo! Finance Canada",
+       "tone": "neutral"
+      },
+      {
+       "title": "QinetiQ Group PLC (QY6.SG) Seasonal returns chart - Yahoo Finance Australia",
+       "date": "2026-10-30",
+       "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBURkU5UDhoejJRR3R4ckdtZU12dGYzZkNzUWJpZXVpUTVHNkJLRVJNSU8wQmJ0VVFCSjh6aTA4eDRlaHNoU3dLd3Y0LWFibzdZNmhxS0dnQ0F4MVNjN3pOaVhUN28?oc=5",
+       "source": "Yahoo Finance Australia",
+       "tone": "neutral"
+      }
+     ],
+     "buyers": false,
+     "sellers": false,
+     "score": 4.28
+    },
+    {
+     "ticker": "BTRW",
+     "name": "Barratt Redrow plc",
+     "exchange": "LSE",
+     "ysym": "BTRW.L",
+     "market": "uk",
+     "price": 323.4,
+     "low": 318.1,
+     "currency": "GBX",
+     "change": 0.011573350015639628,
+     "vol_x": 1.09,
+     "vol_basis": "first30",
+     "vol_day_x": 1.09,
+     "buy_pct30": 0.473,
+     "buy_pct": 0.473,
+     "rvol_time": 1.3473473340501434,
+     "value": 20949066.138,
+     "mcap": 4398140473.0,
+     "sector": "Consumer Durables",
+     "holding": true,
+     "extended": false,
+     "near_high": false,
+     "longterm_down": false,
+     "chart_url": "https://www.tradingview.com/chart/?symbol=LSE:BTRW&interval=D",
+     "lists": [],
+     "owned": false,
+     "news": [
+      {
+       "title": "Transaction in Own Shares",
+       "date": "2026-11-02",
+       "url": "https://www.investegate.co.uk/announcement/rns/barratt-redrow--btrw/transaction-in-own-shares/9851696",
+       "source": "RNS",
+       "tone": "neutral"
+      },
+      {
+       "title": "Week Ahead: AB Foods, BT, M&S, Diageo, IAG, Barratt Redrow - Interactive Investor",
+       "date": "2026-10-30",
+       "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNVWpoZDlIVkpKZDRlN1RrbTRRSmlSbUppd20wZU4tc1RRUC1HLU9Ccll3Zm93SGxMUjJ5a1NaVlNOaVpHNHg5R2E4Wm5YMGpPajYxZ2FXdEE1UDBmTTZvQkFfUXJVQXBVOFZKNV95Tk4wQmlucFBnME1NSVNBdVBHdXVQdWpLMGFRUFBialliaEdQcUZJYmdwN2lLQVQzQ3pZcnk4?oc=5",
+       "source": "Interactive Investor",
+       "tone": "neutral"
+      },
+      {
+       "title": "Learn Why The Bull Case For Barratt Redrow Stock Could Change Following Trading Updates - Simply Wall St",
+       "date": "2026-11-01",
+       "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNUXEtR3JrVVg3ME1MajJqM1lMTEprVUJDU05ZOW1rU3JWdHFkeW5Eenpmby12d2Z1NUpBQkhLc1RYZTZtOGVmZnRwaVZqVkVvYWoyVWtldzlHX0Q3ektnandNeU94RE16STNvZll6RHpIaEp6S0lJUUFHcldWNHIxNDlOYzNlWlJJcl9EN1NRLV93YndXanEzc1lMZWtNbDFSNEprOW5NeFBTeHRVSWcxV1dwU0ZnUERYTTNKOGJmeDVLbENFUnRRRGQ3NkN6OEFpMEgtbGFUazl4ZjZHNWVF0gHkAUFVX3lxTE5PUTNDdkctVktSa3JJQmVOMHdqajdKVnFWRDdHbi1WQ1NhYkstTnlVTEs4Q1dlclpEa2ZuZXhVNEdMb0g4Zzh0UHNjQXQ5N0ZCaUd5WjAxZVZuS203cTI2NnlkbXk3WUVnV3ZZQW83TjdmbXNFTGFsLXltUWRnQWViRjZBdG10d2ZkZk1RbWVwY0hGNWFUYmExd1VNZnRWMzZObWhxazBJcWNKXzRYVFl2MWNhY29rU1lkWkJYX09PaVNoMzB0dFJTV0lwcDdxVVczR1M0QVRCUkVjWjAwZldpREl1TQ?oc=5",
+       "source": "Simply Wall St",
+       "tone": "pos"
+      },
+      {
+       "title": "Barratt Redrow plc (BTDPF) Seasonal returns chart - Yahoo Finance UK",
+       "date": "2026-10-30",
+       "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1pY0ZJeGJxc3NSODR4OUtJenFhdVp3cnZzMlFRU2xMbkhQVDVHX19mQ05sb2dvU3QyNEx0dUNmcVFqMUdYOS14cXg4UUlBWTJiUTFpZXNhdklBaUl1dE95a1VJOA?oc=5",
+       "source": "Yahoo Finance UK",
+       "tone": "neutral"
+      },
+      {
+       "title": "Barratt Redrow slides Wednesday, underperforms market - MarketWatch",
+       "date": "2026-10-28",
+       "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNd3dlVEhEcmpVcG5qcUsyb3hDQXBpU2h6Y0hOLS1jbngzRmZlQ3ZmaVh0TXZ5QllxTjg3U0dQR2lfQTVrOTBSZ1VULWczVmJnNDdDQzg5U0pQTUtFZWpTbGpOZW1WeFhuaWFoTmh4ckVTY043RE9WSlRPU3Nuemo4NWhKSXpjeGU2aUFBT2kxTUVGQm1XRmJsLVdPNWVkZkJVVWxoM2FvUWVRODQ4eFpJbTF3?oc=5",
+       "source": "MarketWatch",
+       "tone": "neutral"
+      },
+      {
+       "title": "Barratt Redrow plc (BTRW.L) Seasonal returns chart - Yahoo Finance UK",
+       "date": "2026-10-30",
+       "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFB0d3hjMmtybU5vQkZhMkdMUmNCTjMwUEE3X2JLVW1qNmxrVE82MHhsblZBdW9ZTk5YRjk5Y0twelJ0Mmt3UUJQMWVhZjhwVzZybWVnaElZUDF3R05TaHpwcDI1OXc?oc=5",
+       "source": "Yahoo Finance UK",
+       "tone": "neutral"
+      },
+      {
+       "title": "FTSE 100 Builder Barratt Redrow Swaps Dividend for Buybacks - Kalkine Media",
+       "date": "2026-10-28",
+       "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxORkhaa05XdkNQaWM5X2JUeTl2dF8zX19LdERDOGx4dUgxbWphUTJKQWJJTHhaZFFYRnJSQ212ZEEwbjY3bUJRakxweDJJUG1NSGpsWFJyVV93bDBiS3FLeWNiU0NOZ1FzdVNTLW5yRDdxYWxnLXdoRjRZVmUwYzJDMk1jWHFqMlJMR3NBNi1aTWIxR0FTNGZPVnBvTU81Tk5JeEFReF9B?oc=5",
+       "source": "Kalkine Media",
+       "tone": "pos"
+      }
+     ],
+     "buyers": false,
+     "sellers": false,
+     "score": 4.08
+    },
+    {
+     "ticker": "AV.",
+     "name": "Aviva plc",
+     "exchange": "LSE",
+     "ysym": "AV.L",
+     "market": "uk",
+     "price": 733.8,
+     "low": 729.8,
+     "currency": "GBX",
+     "change": 0.004105090311986864,
+     "vol_x": 1.36,
+     "vol_basis": "first30",
+     "vol_day_x": 1.36,
+     "buy_pct30": 0.203,
+     "buy_pct": 0.203,
+     "rvol_time": 1.1088320961594882,
+     "value": 38954404.067999996,
+     "mcap": 21948326514.0,
+     "sector": "Finance",
+     "holding": true,
+     "extended": false,
+     "near_high": true,
+     "longterm_down": false,
+     "chart_url": "https://www.tradingview.com/chart/?symbol=LSE:AV.&interval=D",
+     "lists": [],
+     "owned": false,
+     "news": [
+      {
+       "title": "Morgan Stanley backs Aviva on UK insurance earnings upside",
+       "date": "2026-10-29",
+       "url": "https://finance.yahoo.com/markets/stocks/articles/morgan-stanley-backs-aviva-uk-131435647.html?.tsrc=rss",
+       "source": "Yahoo Finance",
+       "tone": "neutral"
+      },
+      {
+       "title": "Deutsche Bank appointed as Successor Depositary Bank for the American Depositary Receipt Program of Aviva plc",
+       "date": "2026-10-28",
+       "url": "https://finance.yahoo.com/markets/stocks/articles/deutsche-bank-appointed-successor-depositary-213000603.html?.tsrc=rss",
+       "source": "Yahoo Finance",
+       "tone": "pos"
+      }
+     ],
+     "buyers": false,
+     "sellers": true,
+     "score": 4.03
+    },
+    {
+     "ticker": "DGE",
+     "name": "Diageo plc",
+     "exchange": "LSE",
+     "ysym": "DGE.L",
+     "market": "uk",
+     "price": 1757.0,
+     "low": 1722.5,
+     "currency": "GBX",
+     "change": 0.03261827799000882,
+     "vol_x": 0.98,
+     "vol_basis": "first30",
+     "vol_day_x": 0.98,
+     "buy_pct30": 0.484,
+     "buy_pct": 0.484,
+     "rvol_time": 0.6575442454155874,
+     "value": 73485699.21,
+     "mcap": 39103445583.0,
+     "sector": "Consumer Non-Durables",
+     "holding": true,
+     "extended": false,
+     "near_high": false,
+     "longterm_down": false,
+     "chart_url": "https://www.tradingview.com/chart/?symbol=LSE:DGE&interval=D",
+     "lists": [],
+     "owned": false,
+     "news": [
+      {
+       "title": "Diageo (LSE:DGE) Unveils Marvel Tie In Release, Is It A Bargain?",
+       "date": "2026-10-31",
+       "url": "https://finance.yahoo.com/markets/stocks/articles/diageo-lse-dge-unveils-marvel-011408623.html?.tsrc=rss",
+       "source": "Yahoo Finance",
+       "tone": "neutral"
+      },
+      {
+       "title": "What Is Diageo (LSE:DGE) Telling Investors With Its New Premium Drinks Launches?",
+       "date": "2026-10-30",
+       "url": "https://finance.yahoo.com/markets/stocks/articles/diageo-lse-dge-telling-investors-140950368.html?.tsrc=rss",
+       "source": "Yahoo Finance",
+       "tone": "pos"
+      },
+      {
+       "title": "All You Need to Know About Diageo (DEO) Rating Upgrade to Strong Buy",
+       "date": "2026-10-28",
+       "url": "https://finance.yahoo.com/markets/stocks/articles/know-diageo-deo-rating-upgrade-150001521.html?.tsrc=rss",
+       "source": "Yahoo Finance",
+       "tone": "pos"
+      }
+     ],
+     "buyers": false,
+     "sellers": false,
+     "score": 3.9
+    },
+    {
+     "ticker": "SBRY",
+     "name": "J Sainsbury plc",
+     "exchange": "LSE",
+     "ysym": "SBRY.L",
+     "market": "uk",
+     "price": 345.4,
+     "low": 340.5,
+     "currency": "GBX",
+     "change": 0.0212891780011827,
+     "vol_x": 1.08,
+     "vol_basis": "first30",
+     "vol_day_x": 1.08,
+     "buy_pct30": 0.537,
+     "buy_pct": 0.537,
+     "rvol_time": 0.7661551168829045,
+     "value": 33326741.051999997,
+     "mcap": 7519268606.0,
+     "sector": "Retail Trade",
+     "holding": true,
+     "extended": false,
+     "near_high": false,
+     "longterm_down": false,
+     "chart_url": "https://www.tradingview.com/chart/?symbol=LSE:SBRY&interval=D",
+     "lists": [],
+     "owned": false,
+     "news": [
+      {
+       "title": "Transaction in Own Shares",
+       "date": "2026-10-30",
+       "url": "https://www.investegate.co.uk/announcement/rns/sainsbury-j---sbry/transaction-in-own-shares/9849206",
+       "source": "RNS",
+       "tone": "neutral"
+      },
+      {
+       "title": "J Sainsbury plc (JSNSF) Seasonal returns chart - Yahoo Finance UK",
+       "date": "2026-11-01",
+       "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE83cGR0ZTAxZHhkSEp2WHFONG42THAzSU5vSHBVZUVfcU14dFo0YXJhZmRtdS10TGVtSXdHVmdhMEVkakotSGt1aVdoS3F6VGJyN216LVRzRXhtWjQwcTF0Rl9ZUQ?oc=5",
+       "source": "Yahoo Finance UK",
+       "tone": "neutral"
+      },
+      {
+       "title": "Sainsbury\u2019s cuts the ribbon on new Burnham-on-Crouch store - J Sainsbury plc",
+       "date": "2026-10-30",
+       "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOT1htZHF5SHpXd3BsdGpWdkE2ek5qR1NRUFFCTzdEa1ByLXFsUVVSOUFKeXYtTDhWOEhNblRsN29BejNSUEM4N0c1dlplbzY3Wm90eC1Pajd0OURPZ3V1Y25ZVlM1U29PNXQtQUMyVmM3M3pCOS1hVjdMSXpzTGtJU0NoNlVIRXVDZnhfRl9DOU1SaURCMHpPVG9JZXlZMmxoNmdKc09TTVFoYnMtNE9ycENNNFM?oc=5",
+       "source": "J Sainsbury plc",
+       "tone": "neutral"
+      },
+      {
+       "title": "J Sainsbury advances Friday, outperforms market - MarketWatch",
+       "date": "2026-10-30",
+       "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQd2ZLQ3ZFSm5BQWVnVzlZS0lBYnlmNVBVMG51ZkZReGsyUWpnbVNnT3hfYUpaQkpnUTM3Wnh5aUswYkg2bDV4VU8yQ1ZYVXE5ZzZQY2VKRXFKcG9rNnFuX2FkLWlxTXZtbUROS3VmWVFmRXNBeENxTHRJN1llSUdWWUtudnRrSnBsUDVHTnhoRW1IUG1WdUV3NlVCSjA2VUR1dXFfYVRNcmhBZw?oc=5",
+       "source": "MarketWatch",
+       "tone": "neutral"
+      },
+      {
+       "title": "Should Half Year Loss Require Action From Sainsbury's (LSE:SBRY) Investors? - Simply Wall St",
+       "date": "2026-10-31",
+       "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPV0lfS1k3QWs5Vkd4QlFXcU5IZkR4MkFFMHpya3pDeUlxVlBfekZoZ1hnb0JVNjNHbFVMU0s0ZFRuVzE5S2NpZnAxbzJVY2lFQWZiMkFkdktPLW1yR2N0ZEw3UW5KYUpkaWVLNl84UlhzaUxYYW5hdWlpbThEeTVkemR6bEhqd3dhcEdhZVhaLXVFSDJSRkNsRnUzalVvTUk4bmFZU3JiUGlyWUpFbWFfV2xkcEZESl9ndExPYzBhWEVVMWFkQkVncEZmUmsxQUhKRWJiQVpEVGFiRGhr0gHiAUFVX3lxTE5ONGtyWHdaYmJfUXZKTDR2b0g3c21OX0NYQ3ZEczhoTXZJbFo2Y2kyYTR0Z1hPMElYeVJaQ1hRZHJ2bUF5dXVhamZoWWRTemxxT3J5ZFU2WWFSM2FkR01OWk9zVHdjWGFVamdwVWIyM0J4Y0hrcWpWWG1kZFM1YV9qVVZpNWFqRHZ6RktDZGQ0ZnFsVkNPbHN3X2tESDZVMHRIOVVScGRjR0pwWGJFazVhcHhPRlhtTnlPeGx4Zl9QVUU0c2V5WUhzMVV5Q2QyeHdGN0pLaXEzRVh1OTl5TmpQQ2c?oc=5",
+       "source": "Simply Wall St",
+       "tone": "neutral"
+      },
+      {
+       "title": "J Sainsbury: A Hard Day's Night For UK Grocers (OTCMKTS:JSAIY) - Seeking Alpha",
+       "date": "2026-10-28",
+       "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPcnAtS2ttRmhtUGtLU2hmMENqZEIyZ2M3d0dkNy1vUE14MWdTbVkzdnZVbndFeFd0cFJvZldFMWZka0NPSF9NQnhzYWVEZXEtbmpjeVN1Uy1GeUpwdlBNeE54X2JncF9HaHNldkZETlZBLTY0b3JLVnFvcDluRDdkQ1ZBc3ZEYTJqY19CNW1R?oc=5",
+       "source": "Seeking Alpha",
+       "tone": "neutral"
+      },
+      {
+       "title": "J Sainsbury plc (SBRY.L) Seasonal Returns Chart - Yahoo Finance - Yahoo! Finance Canada",
+       "date": "2026-10-31",
+       "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1xMmgwT2YwRDNuOGJhVmNULWRkVVhqRGhmUmQ0MTNpQV9JeWhTbEtCaWtOY1YydmxjZlBENklDdEhEQUVhRVJfZFVxdktJY2F5V0lpVW5PeU81RUJHV2dFU2c0a1A?oc=5",
+       "source": "Yahoo! Finance Canada",
+       "tone": "neutral"
+      },
+      {
+       "title": "J Sainsbury (LON:SBRY) Stock Breaks Above 50-Day Moving Average - What's Next? - MarketBeat",
+       "date": "2026-10-31",
+       "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPeGxncjFVbFhTd2FkT0xObVd2NXZFOEtzeDkwc1RQZXFXOEZwSThtTDB1VWFDdFYwbFBOeFo0YWl6ZlRWeDlpUlk3YUg4WFFKQm1sWW9WZUlCejRyYW4wWVp4ZVItOUplMWZkcWxnVGh2cE8wQVNCS0M1dnhRSng1WFhiWVJJb1g1MzdHZm1iN0s0MHl0bGZjU3F0dmRYV1dOUVpQWFQxQk1ydHRNdnZvY3N1cnM5YlRCRTU4VVpic0tkODIyTFppNUJMQ0w?oc=5",
+       "source": "MarketBeat",
+       "tone": "pos"
+      }
+     ],
+     "buyers": false,
+     "sellers": false,
+     "score": 3.81
+    },
+    {
+     "ticker": "CPG",
+     "name": "Compass Group PLC",
+     "exchange": "LSE",
+     "ysym": "CPG.L",
+     "market": "uk",
+     "price": 33.71,
+     "low": 33.54,
+     "currency": "USD",
+     "change": 0.0038713519952353354,
+     "vol_x": 1.16,
+     "vol_basis": "first30",
+     "vol_day_x": 1.16,
+     "buy_pct30": 0.744,
+     "buy_pct": 0.744,
+     "rvol_time": 1.680323143108388,
+     "value": 75938348.45,
+     "mcap": 42803219870.72071,
+     "sector": "Consumer Services",
+     "holding": false,
+     "extended": false,
+     "near_high": false,
+     "longterm_down": false,
+     "chart_url": "https://www.tradingview.com/chart/?symbol=LSE:CPG&interval=D",
+     "lists": [],
+     "owned": false,
+     "news": [
+      {
+       "title": "Total Voting Rights",
+       "date": "2026-11-02",
+       "url": "https://www.investegate.co.uk/announcement/rns/compass-group--cpg/total-voting-rights/9851593",
+       "source": "RNS",
+       "tone": "neutral"
+      },
+      {
+       "title": "Wheaton\u2019s Way: Better safe than sorry - Cayman Compass",
+       "date": "2026-11-02",
+       "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQSGlUcmMzWGdVaHNfcTgwLUVrVU5TRmMwQ3J2SWxaTTlMSFNOd0I5dFE4UGZqWTY1NUNoMXRGcDNCQXJ4UFg0X2MzRDR6Y1pxUE41TTlNRjgtWURLYmNObEN0V3d3S2d1TnNJaVJWXzdTYUtYTGd0N19Oa0dudERfOVB4dw?oc=5",
+       "source": "Cayman Compass",
+       "tone": "neutral"
+      },
+      {
+       "title": "Compass V (2026) by Greg Lucas - For Sale - Artsy",
+       "date": "2026-11-01",
+       "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE02WTRqU2Y3aVI1VTdmMmRPRkFQb0pGRW5fQmpXanFpWkRZaXlKZzYzcDFCaHlzV1hzWkxKcDM2dlZnWnFVT2JYVDdJTnRickZtN0lrVTZINHRKSkZMd2Q4?oc=5",
+       "source": "Artsy",
+       "tone": "neutral"
+      },
+      {
+       "title": "Japan\u2019s Economic Diplomacy: A Compass in a Divided World - The Diplomat \u2013 Asia-Pacific Current Affairs Magazine",
+       "date": "2026-11-01",
+       "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNOW5ELWFaODhqVWlFMkdabWFOc1oyYzBzSC1OQVFYVTItb2VSUEcwQ1IyVjZGLUdkX3pibWtEQVRaeTlESXRDZVZiTEgwU09Bb0xwUk9haGpiN0lITGE5VUxZQnlPa3pTQms4OGFwLUx4eFFJZGlTYXp0dGd5NVhKSGQtM1Z3QUtJZWlRS0NKZjk?oc=5",
+       "source": "The Diplomat \u2013 Asia-Pacific Current Affairs Magazine",
+       "tone": "neutral"
+      },
+      {
+       "title": "Keychron Q19 HE 8K pairs magnetic switches with a Golden Compass finish - Mezha.net",
+       "date": "2026-11-02",
+       "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE93WDZQYjFaWHctNkllaE56OHJYbkw4LUtabnZQUmlaeWQ3eTNLbDV5eEZ0ZlZqcktYc015QVRWaFJDSkJkMTNOVDlyYS1uQmhGWlJqMlV2Q1JwQUZMNHBPNVJ6OHZaTWJBTHpCMjRiUG01elRNZHgtdGx2QjBxbWs?oc=5",
+       "source": "Mezha.net",
+       "tone": "neutral"
+      },
+      {
+       "title": "1 Reason Compass Pathways Is Worth a Second Look This Month - The Motley Fool",
+       "date": "2026-11-02",
+       "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQZXF0R2Y4OXFWWlZyUVFRSmp4TTJWY1JqR25ZbmJmNXZhWGtzNTNmWmhBRzFrVjZvazBKT3R6Z09WWkpJeU8zQzJBSjk2OFJmTVF2RnoyRjhhWmk1NGJlVG0zTks3VWtQZ0d4d2x1NnFGQm5KczVhMVpRVmhwMlY0eVhNWTYyTm5wcEhYZ0l6blJBWm1yTkE?oc=5",
+       "source": "The Motley Fool",
+       "tone": "neutral"
+      },
+      {
+       "title": "Compass, Inc. (COMP) Seasonal returns chart - Yahoo Finance UK",
+       "date": "2026-10-30",
+       "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1xZmdEZkg0YzI4RmxkNXpVcXdQb19UNjQ2bFpudk1GRzhRaC04Vk1scjkwTVBUa0FUbnlBcHV2a3VCbnNaeEYxVW90bk1xWk5XTVJJM05zREt3U1N3QVNyeUhn?oc=5",
+       "source": "Yahoo Finance UK",
+       "tone": "neutral"
+      },
+      {
+       "title": "Column: Using Claude won\u2019t save your moral compass - The Daily Tar Heel",
+       "date": "2026-11-02",
+       "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNWjQ3eXRROHVWYmFtUHhIdVJlVkdNMS0tRXBxNHBDN0FYalV0SzhpbWxMajNERTlTQm9HQ0w4dW04MkRDOXRQLXhsSE52RjJNb05wVlg3X3lSVDNWUnI4ejB3UEFkd3VZSWdsc2V5MG01UHZncEl4YkVTT19MdjlocVoxV1BKUlVpZUFYNUQ5eWVTRFk?oc=5",
+       "source": "The Daily Tar Heel",
+       "tone": "pos"
+      }
+     ],
+     "buyers": true,
+     "sellers": false,
+     "score": 3.8
+    }
+   ],
+   "quiet": [
+    {
+     "ticker": "MCG",
+     "name": "Mobico Group PLC",
+     "exchange": "LSE",
+     "ysym": "MCG.L",
+     "market": "uk",
+     "price": 43.96,
+     "low": 43.22,
+     "currency": "GBX",
+     "change": 0.11630269172168609,
+     "vol_x": 5.15,
+     "vol_basis": "first30",
+     "vol_day_x": 5.15,
+     "buy_pct30": 0.472,
+     "buy_pct": 0.472,
+     "rvol_time": 9.086673290261695,
+     "value": 36505502.3424,
+     "mcap": 268307000.00000003,
+     "sector": "Transportation",
+     "holding": false,
+     "extended": false,
+     "near_high": true,
+     "longterm_down": false,
+     "chart_url": "https://www.tradingview.com/chart/?symbol=LSE:MCG&interval=D",
+     "lists": [
+      "Episodic"
+     ],
+     "owned": false,
+     "news": [
+      {
+       "title": "Form 8.3 - Mobico Group plc",
+       "date": "2026-10-30",
+       "url": "https://www.investegate.co.uk/announcement/rns/mobico-group--mcg/form-8-3-mobico-group-plc/9851274",
+       "source": "RNS",
+       "tone": "neutral"
+      },
+      {
+       "title": "Form 8.3 - Mobico Group plc",
+       "date": "2026-10-30",
+       "url": "https://www.investegate.co.uk/announcement/rns/mobico-group--mcg/form-8-3-mobico-group-plc/9851239",
+       "source": "RNS",
+       "tone": "neutral"
+      },
+      {
+       "title": "Form 8.3 Mobico Group Plc",
+       "date": "2026-10-30",
+       "url": "https://www.investegate.co.uk/announcement/rns/mobico-group--mcg/form-8-3-mobico-group-plc/9851100",
+       "source": "RNS",
+       "tone": "neutral"
+      },
+      {
+       "title": "Form 8.3 MOBICO GROUP PLC",
+       "date": "2026-10-30",
+       "url": "https://www.investegate.co.uk/announcement/rns/mobico-group--mcg/form-8-3-mobico-group-plc/9850852",
+       "source": "RNS",
+       "tone": "neutral"
+      },
+      {
+       "title": "20261029_MOBICO GROUP_8.5 EPT RI_UK_MLI",
+       "date": "2026-10-30",
+       "url": "https://www.investegate.co.uk/announcement/rns/mobico-group--mcg/20261029_mobico-group_8-5-ept-ri_uk_mli/9850800",
+       "source": "RNS",
+       "tone": "neutral"
+      },
+      {
+       "title": "FORM 8.3 - Mobico Group plc",
+       "date": "2026-10-30",
+       "url": "https://www.investegate.co.uk/announcement/prn/mobico-group--mcg/form-8-3-mobico-group-plc/9850657",
+       "source": "RNS",
+       "tone": "neutral"
+      },
+      {
+       "title": "New Accounting Ref Date",
+       "date": "2026-10-30",
+       "url": "https://www.investegate.co.uk/announcement/rns/mobico-group--mcg/new-accounting-ref-date/9849262",
+       "source": "RNS",
+       "tone": "neutral"
+      },
+      {
+       "title": "Recommended Cash Acquisition for Mobico Group PLC",
+       "date": "2026-10-30",
+       "url": "https://www.investegate.co.uk/announcement/rns/mobico-group--mcg/recommended-cash-acquisition-for-mobico-group-plc/9849217",
+       "source": "RNS",
+       "tone": "neutral"
+      }
+     ],
+     "buyers": false,
+     "sellers": false
+    },
+    {
+     "ticker": "FRAS",
+     "name": "Frasers Group PLC",
+     "exchange": "LSE",
+     "ysym": "FRAS.L",
+     "market": "uk",
+     "price": 900.5,
+     "low": 887.5,
+     "currency": "GBX",
+     "change": 0.014076576576576577,
+     "vol_x": 5.13,
+     "vol_basis": "first30",
+     "vol_day_x": 5.13,
+     "buy_pct30": 0.324,
+     "buy_pct": 0.324,
+     "rvol_time": 0.8914393343544315,
+     "value": 9871163.935,
+     "mcap": 3850839571.0,
+     "sector": "Retail Trade",
+     "holding": true,
+     "extended": false,
+     "near_high": true,
+     "longterm_down": false,
+     "chart_url": "https://www.tradingview.com/chart/?symbol=LSE:FRAS&interval=D",
+     "lists": [],
+     "owned": false,
+     "news": [
+      {
+       "title": "Total Voting Rights",
+       "date": "2026-11-02",
+       "url": "https://www.investegate.co.uk/announcement/rns/frasers-group--fras/total-voting-rights/9851684",
+       "source": "RNS",
+       "tone": "neutral"
+      },
+      {
+       "title": "Frasers calls on Accent investors to reject chairman re-election \u2013 report",
+       "date": "2026-10-28",
+       "url": "https://www.retail-insight-network.com/news/frasers-accent-investors-reject-chairman-re-election/?.tsrc=rss",
+       "source": "Yahoo Finance",
+       "tone": "neutral"
+      }
+     ],
+     "buyers": false,
+     "sellers": true
+    },
+    {
+     "ticker": "QED",
+     "name": "Quadrise PLC",
+     "exchange": "LSE",
+     "ysym": "QED.L",
+     "market": "uk",
+     "price": 1.45,
+     "low": 1.05,
+     "currency": "GBX",
+     "change": 0.34259259259259245,
+     "vol_x": 3.4,
+     "vol_basis": "first30",
+     "vol_day_x": 3.4,
+     "buy_pct30": 0.939,
+     "buy_pct": 0.939,
+     "rvol_time": 4.76473938214232,
+     "value": 208146.949,
+     "mcap": 31414532.0,
+     "sector": "Process Industries",
+     "holding": true,
+     "extended": true,
+     "near_high": false,
+     "longterm_down": true,
+     "chart_url": "https://www.tradingview.com/chart/?symbol=LSE:QED&interval=D",
+     "lists": [
+      "Episodic"
+     ],
+     "owned": false,
+     "news": [
+      {
+       "title": "Valkor update",
+       "date": "2026-11-02",
+       "url": "https://www.investegate.co.uk/announcement/rns/quadrise--qed/valkor-update/9851915",
+       "source": "RNS",
+       "tone": "neutral"
+      },
+      {
+       "title": "Posting of Annual Report and Financial Statements",
+       "date": "2026-10-30",
+       "url": "https://www.investegate.co.uk/announcement/rns/quadrise--qed/posting-of-annual-report-and-financial-statements-/9851444",
+       "source": "RNS",
+       "tone": "neutral"
+      }
+     ],
+     "buyers": true,
+     "sellers": false
+    },
+    {
+     "ticker": "GEMD",
+     "name": "Gem Diamonds Limited",
+     "exchange": "LSE",
+     "ysym": "GEMD.L",
+     "market": "uk",
+     "price": 14.0,
+     "low": 10.7,
+     "currency": "GBX",
+     "change": 0.08949416342412456,
+     "vol_x": 3.11,
+     "vol_basis": "first30",
+     "vol_day_x": 3.11,
+     "buy_pct30": 0.602,
+     "buy_pct": 0.602,
+     "rvol_time": 4.192617685454673,
+     "value": 396830.14,
+     "mcap": 19600677.0,
+     "sector": "Non-Energy Minerals",
+     "holding": true,
+     "extended": false,
+     "near_high": false,
+     "longterm_down": false,
+     "chart_url": "https://www.tradingview.com/chart/?symbol=LSE:GEMD&interval=D",
+     "lists": [],
+     "owned": false,
+     "news": [
+      {
+       "title": "Gem Diamonds Limited (GEMD.L) Seasonal returns chart - Yahoo Finance UK",
+       "date": "2026-11-01",
+       "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1xNmlJZ0xjRm5iN2Vzd1pEd2JNblRWbDVIRGxZdF90ZFNBTUdYN2Q1bmIyREU0azIxRlFCYkQxYlE2bGlqWC1KTFZFdnpHZUJBWW5JMmFyUVJnaFVyU19aQ0RKVi0?oc=5",
+       "source": "Yahoo Finance UK",
+       "tone": "neutral"
+      }
+     ],
+     "buyers": true,
+     "sellers": false
+    },
+    {
+     "ticker": "KOO",
+     "name": "Kooth PLC",
+     "exchange": "LSE",
+     "ysym": "KOO.L",
+     "market": "uk",
+     "price": 190.0,
+     "low": 187.1,
+     "currency": "GBX",
+     "change": 0.002638522427440633,
+     "vol_x": 2.65,
+     "vol_basis": "first30",
+     "vol_day_x": 2.65,
+     "buy_pct30": 0.798,
+     "buy_pct": 0.798,
+     "rvol_time": 2.1209129248325476,
+     "value": 277629.9,
+     "mcap": 69140940.0,
+     "sector": "Health Services",
+     "holding": false,
+     "extended": false,
+     "near_high": false,
+     "longterm_down": false,
+     "chart_url": "https://www.tradingview.com/chart/?symbol=LSE:KOO&interval=D",
+     "lists": [
+      "Magic"
+     ],
+     "owned": false,
+     "news": [
+      {
+       "title": "Transfer of Treasury Shares & Exercise of Options",
+       "date": "2026-10-30",
+       "url": "https://www.investegate.co.uk/announcement/rns/kooth--koo/transfer-of-treasury-shares-exercise-of-options/9851187",
+       "source": "RNS",
+       "tone": "neutral"
+      },
+      {
+       "title": "Kooth plc (KOO.L) Seasonal Returns Chart - Yahoo! Finance Canada",
+       "date": "2026-10-30",
+       "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBMZXdaNTcyVmExUTFmc2R5d2NfZ2pzd2xQcm1VSndSV0k2M1dTLURaYUhsaWdvTEN6d0lTb3dyZGpyTV9nZUZVV18yMGExaFFwbDdONzdiOHA0b0dMY2ppNGF0Yw?oc=5",
+       "source": "Yahoo! Finance Canada",
+       "tone": "neutral"
+      },
+      {
+       "title": "Kooth (LSE:KOO) Shifts to Efficiency, Far From the FTSE 100 - Kalkine Media",
+       "date": "2026-10-29",
+       "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOdk9WLUtlY0FmZ3dyUllwUlZ6OEZNVUZ5Y2lRTkZFYTlvZWtiV1RMSkVqT0ZuaUdSeFV4UWdXUDZpUVUyd0J5THM5U003ZDJqRktNTUlVbE1jdjhMX2tEOThkcGlLMXlDVUZIbzd3dkIza2dsTjRmeWhON2hmZERxMzh1cVVlV2tyRENTYllwN3gwNVI4dnNkbVdrUFJHaElaYTQw?oc=5",
+       "source": "Kalkine Media",
+       "tone": "neutral"
+      }
+     ],
+     "buyers": true,
+     "sellers": false
+    },
+    {
+     "ticker": "SNWS",
+     "name": "Smiths News PLC",
+     "exchange": "LSE",
+     "ysym": "SNWS.L",
+     "market": "uk",
+     "price": 83.8,
+     "low": 81.356,
+     "currency": "GBX",
+     "change": 0.02195121951219509,
+     "vol_x": 2.58,
+     "vol_basis": "first30",
+     "vol_day_x": 2.58,
+     "buy_pct30": 0.722,
+     "buy_pct": 0.722,
+     "rvol_time": 3.0839233190147826,
+     "value": 1325391.694,
+     "mcap": 200732711.0,
+     "sector": "Distribution Services",
+     "holding": true,
+     "extended": false,
+     "near_high": true,
+     "longterm_down": false,
+     "chart_url": "https://www.tradingview.com/chart/?symbol=LSE:SNWS&interval=D",
+     "lists": [
+      "Magic"
+     ],
+     "owned": false,
+     "news": [
+      {
+       "title": "Holding(s) in Company",
+       "date": "2026-10-29",
+       "url": "https://www.investegate.co.uk/announcement/rns/smiths-news--snws/holding-s-in-company/9848562",
+       "source": "RNS",
+       "tone": "neutral"
+      },
+      {
+       "title": "The Fed welcomes Smiths News\u2019 confirmation on carriage charges - Convenience Store",
+       "date": "2026-10-30",
+       "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPLVZXMXBqUE51Q3BjVHBjSnE5Z3hpbmRYcEV5X3ZWaGVwTmo1Q2xqc09MeGNZUHlyeGZIVVRFNmRidTRINm9zMzBzSG5mc2dmWUFZdzA4VVdCVnNqT2RxTTdGU3EtMnlxZU05c09WWmt6VDU0Z1dmenA1NDVfbEN0SU96S1h2elNodENBOGZfcjN3dU9MZEtDeU1WbVM4TmdOaEhaLVZOT1EyM09DdEIyLVQzeTFFZmc?oc=5",
+       "source": "Convenience Store",
+       "tone": "neutral"
+      },
+      {
+       "title": "Fed welcomes Smiths News confirmation on carriage charges - Talking Retail",
+       "date": "2026-10-30",
+       "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNTEhTWUdNYlEzVDE3OEFYOFVzLU9KMGJTNFl1ZXNUVXVQTzFzclFfUEo1NzdNcDRSbmtEU1Y3Nk1KUlJPUHhBNE54aURPVk1qaTQ0WmZiRmd6ck5SeTRlaEtzdU50NHFVcDZzdGEzRGRVd2s4cThSMDREVXh5M3FXdVZ1a0h3T1U2MTZUN0o0bk1zcklkYmRsUUtENTVvcEhuQjNQakthZmpVbDZHeUdnZTN1RWw5dUJWSHc?oc=5",
+       "source": "Talking Retail",
+       "tone": "neutral"
+      },
+      {
+       "title": "Smiths News pledges no dual carriage charges when it starts delivering to InPost stores - Better Retailing",
+       "date": "2026-10-30",
+       "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9qem9pZm1wMGJLenR5SDRGQmVmalBQV0xsdHFFc1pvZXZWQUNEbERlN0doU2RwOVd4aTRRNHFRY1hkTjJWZHkzaGgtRE1ScDFNRGdXS0JyeWJlMmVQWWRYNkFOV3JoQQ?oc=5",
+       "source": "Better Retailing",
+       "tone": "neutral"
+      },
+      {
+       "title": "Smiths News plc (SNWS.L) Seasonal returns chart - Yahoo Finance UK",
+       "date": "2026-10-30",
+       "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5mZE5ZTmpJWmFFWGZwTy02RUhPS1F5QlRHMHpLU0tLaGVib2c3dUVGQXJzQzJaMVFXSFpaeTFrSV95Smkyb0FSekczMnJyODAwRy0zd09vMDc2ZzM2dC11Z3JfR3U?oc=5",
+       "source": "Yahoo Finance UK",
+       "tone": "neutral"
+      },
+      {
+       "title": "Smiths News Regulatory News. Live SNWS RNS. Regulatory News Articles for Smiths News Plc Ord 5p - London South East",
+       "date": "2026-10-29",
+       "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE96X0M1eHRidEdKT3NBLU8tTjNuMVJQVWNDMXV2WC1GZVllSDJjX2FPM2czZFRreXhuVDFnVXhRNlBpY1d6QzV5M2RIOVBBSmgzWC02QzExcHFsQjZoeUlEY0Q1OVc3Skpuc1JiSFdxbUt5Z3MyMjVubTZMUQ?oc=5",
+       "source": "London South East",
+       "tone": "neutral"
+      }
+     ],
+     "buyers": true,
+     "sellers": false
+    },
+    {
+     "ticker": "FSTA",
+     "name": "Fuller, Smith & Turner P.L.C. Class A",
+     "exchange": "LSE",
+     "ysym": "FSTA.L",
+     "market": "uk",
+     "price": 810.0,
+     "low": 802.0,
+     "currency": "GBX",
+     "change": 0.0024752475247524753,
+     "vol_x": 2.38,
+     "vol_basis": "first30",
+     "vol_day_x": 2.38,
+     "buy_pct30": 0.105,
+     "buy_pct": 0.105,
+     "rvol_time": 0.2650617303027025,
+     "value": 958262.4,
+     "mcap": 422037877.0,
+     "sector": "Consumer Services",
+     "holding": true,
+     "extended": false,
+     "near_high": true,
+     "longterm_down": false,
+     "chart_url": "https://www.tradingview.com/chart/?symbol=LSE:FSTA&interval=D",
+     "lists": [
+      "Stage 2"
+     ],
+     "owned": false,
+     "news": [
+      {
+       "title": "The Red Lion, Barnes, is Fuller\u2019s Pub of the Year - British Guild of Beer Writers",
+       "date": "2026-10-30",
+       "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOSmhlSWM5OVJuSTZsbWVGaFJvdHFOelY0MWs0NW5mR3lyVE9HVUZsNFpyc2xfZm9qSU9EV1gtc2wtY1ZpRlBLbFRUSF9XQXFmVWo1RWZiYkROQllydHVoWS1RSHVDb1JtdDBIUVlkVEhCdHUtbHRWRUU4T2NFSm4wak54RWttd00?oc=5",
+       "source": "British Guild of Beer Writers",
+       "tone": "neutral"
+      }
+     ],
+     "buyers": false,
+     "sellers": true
+    },
+    {
+     "ticker": "EDEN",
+     "name": "Eden Biosolutions PLC",
+     "exchange": "LSE",
+     "ysym": "EDEN.L",
+     "market": "uk",
+     "price": 3.15,
+     "low": 2.9,
+     "currency": "GBX",
+     "change": 0.08620689655172414,
+     "vol_x": 2.28,
+     "vol_basis": "first30",
+     "vol_day_x": 2.28,
+     "buy_pct30": 0.91,
+     "buy_pct": 0.91,
+     "rvol_time": 2.162779998915923,
+     "value": 57042.3105,
+     "mcap": 25305934.0,
+     "sector": "Process Industries",
+     "holding": true,
+     "extended": false,
+     "near_high": false,
+     "longterm_down": true,
+     "chart_url": "https://www.tradingview.com/chart/?symbol=LSE:EDEN&interval=D",
+     "lists": [],
+     "owned": false,
+     "news": [],
+     "buyers": true,
+     "sellers": false
+    },
+    {
+     "ticker": "OPT",
+     "name": "Optima Health PLC",
+     "exchange": "LSE",
+     "ysym": "OPT.L",
+     "market": "uk",
+     "price": 247.5,
+     "low": 242.0,
+     "currency": "GBX",
+     "change": 0.01642710472279261,
+     "vol_x": 2.18,
+     "vol_basis": "first30",
+     "vol_day_x": 2.18,
+     "buy_pct30": 1.0,
+     "buy_pct": 1.0,
+     "rvol_time": 2.0694660384650563,
+     "value": 347222.7,
+     "mcap": 269219044.0,
+     "sector": "Commercial Services",
+     "holding": true,
+     "extended": false,
+     "near_high": false,
+     "longterm_down": false,
+     "chart_url": "https://www.tradingview.com/chart/?symbol=LSE:OPT&interval=D",
+     "lists": [],
+     "owned": false,
+     "news": [],
+     "buyers": true,
+     "sellers": false
+    },
+    {
+     "ticker": "MAB",
+     "name": "Mitchells & Butlers plc",
+     "exchange": "LSE",
+     "ysym": "MAB.L",
+     "market": "uk",
+     "price": 322.0,
+     "low": 317.5,
+     "currency": "GBX",
+     "change": 0.014173228346456693,
+     "vol_x": 2.0,
+     "vol_basis": "first30",
+     "vol_day_x": 2.0,
+     "buy_pct30": 0.189,
+     "buy_pct": 0.189,
+     "rvol_time": 2.9556491152915507,
+     "value": 5067249.6,
+     "mcap": 1912837637.0,
+     "sector": "Consumer Services",
+     "holding": true,
+     "extended": false,
+     "near_high": true,
+     "longterm_down": false,
+     "chart_url": "https://www.tradingview.com/chart/?symbol=LSE:MAB&interval=D",
+     "lists": [],
+     "owned": false,
+     "news": [
+      {
+       "title": "Total Voting Rights",
+       "date": "2026-10-30",
+       "url": "https://www.investegate.co.uk/announcement/rns/mitchells-butlers--mab/total-voting-rights/9850748",
+       "source": "RNS",
+       "tone": "neutral"
+      },
+      {
+       "title": "J.P. Morgan Maintains MITCHELLS & BUTLERS PLC(MBPFF.US) With Hold Rating, Cuts Target Price to $4.3 - Moomoo",
+       "date": "2026-11-01",
+       "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOb2hfQWltVUtjczczTE9wdEFfQ21Td2lCVHpGTDY0eWY1bFlFeGpKN0V4M1hYeTBCWVQ5MjRzcW5Hbmo1QVBzcWRyQXgwMzdjZnJIRGxDQWFGbEF5UFdRR3dpSElCeUxncFpyNWx2d2R5NmkwRDREVHpTdmViTUJDbTJFREJrRGFOSG5KTmZzWWVLMDU4ZnRYVEo3bVJLa2JEd1ZMUE1Xb1d2dExo?oc=5",
+       "source": "Moomoo",
+       "tone": "neutral"
+      },
+      {
+       "title": "Is Mitchells & Butlers (LSE:MAB) Pub Trade Finally Recovering After Its Latest Update? - Kalkine Media",
+       "date": "2026-10-29",
+       "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPYWs1bVdWNXVqWFhLUEEwSUcteWlsc19fXzNTSGwwU3pFanpBbm5LSG14Y1EwaFo2TjR6bE5POXZkNVVYelM1SWozLVB5Z2lxWVMzcmZRdTZsVGhOcmphci1jLXhpQzRFdDdkTUd2UTRmTWZtbUptSUczMkRpWngwejlyOW5TZEU0bjRKWTB2SHpxenQ4THNkRm5hdTVPaThad0FtZTF6alhzcUN5TWg3MXAyUWlLZHgwY2FuMEZIQV9oUQ?oc=5",
+       "source": "Kalkine Media",
+       "tone": "neutral"
+      }
+     ],
+     "buyers": false,
+     "sellers": true
     }
    ]
   }
