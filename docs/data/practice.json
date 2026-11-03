@@ -199,7 +199,7 @@
   "max_open": 10
  },
  "start_value": 5000.0,
- "updated": "2026-11-03T20:38:21+00:00",
+ "updated": "2026-11-03T20:39:09+00:00",
  "day": {
   "date": "2026-11-03",
   "buys": 1,
@@ -208,16 +208,19 @@
   "finished": false,
   "list": [
    "DTST",
-   "IBTA",
-   "RACE",
-   "CVGI",
-   "WMB",
+   "RVTY",
    "GTN.A",
-   "VFF",
-   "DD",
+   "RACE",
+   "ULH",
+   "CVGI",
+   "CIX",
+   "IBTA",
+   "MKTW",
+   "TCI",
+   "NBIX",
+   "SUJA",
    "TBBB",
-   "RRX",
-   "WAT"
+   "DD"
   ],
   "bought_list": [
    "VFF"
