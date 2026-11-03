@@ -104,6 +104,7 @@ jobs:
           BARS: ${{ matrix.bars }}
           TREND: ${{ matrix.trend }}
           REPLAY_BATCH: "1"
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: |
           extra=""
           suffix="-$STRAT"

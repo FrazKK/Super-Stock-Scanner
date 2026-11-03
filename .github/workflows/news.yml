@@ -1,0 +1,47 @@
+name: Collect news releases
+
+# Pulls US company news (PR Newswire, GlobeNewswire, Business Wire, ACCESS Newswire, Newsfile, SEC EDGAR 8-K/6-K)
+# every ~10 minutes and keeps the last 4 days in news.json on the "news-data" branch (one commit, force-pushed,
+# so main's history and the GitHub Pages site are untouched). The morning "strong risers" routine reads that file.
+
+on:
+  schedule:
+    - cron: "*/10 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: news
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 9
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: main
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install requests
+      - name: Load previous news.json
+        run: |
+          git fetch --depth 1 origin news-data && git show origin/news-data:news.json > prev.json || echo "{}" > prev.json
+      - name: Collect
+        env:
+          SEC_CONTACT: ${{ secrets.SEC_CONTACT }}
+        run: python news_collect.py --prev prev.json --out out/news.json
+      - name: Save to news-data branch
+        run: |
+          cd out
+          git init -q -b news-data
+          git config user.name "scanner-bot"
+          git config user.email "scanner-bot@users.noreply.github.com"
+          git add news.json
+          git commit -qm "News $(date -u +%FT%TZ)"
+          git push -qf "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" news-data
