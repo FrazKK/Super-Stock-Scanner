@@ -834,28 +834,65 @@ def claude_check(st, day, c, when):
     prompt = (f"Stock: {c.get('name')} ({c['ticker']}), US-listed. Today is {ny(when):%A %d %B %Y}, "
               f"{ny(when):%H:%M} New York. It is up on the day and breaking out on heavy volume.\n"
               f"Headlines:\n" + "\n".join(lines))
-    try:
-        import requests
+    import requests
 
-        r = requests.post("https://api.anthropic.com/v1/messages", timeout=45,
-                          headers={"x-api-key": key, "anthropic-version": "2023-06-01", "content-type": "application/json"},
-                          json={"model": CLAUDE_MODEL, "max_tokens": 200, "system": CLAUDE_SYSTEM,
-                                "messages": [{"role": "user", "content": prompt}]})
+    v, raw = None, ""
+    for attempt, max_tokens in enumerate((600, 1200)):
+        try:
+            r = requests.post("https://api.anthropic.com/v1/messages", timeout=60,
+                              headers={"x-api-key": key, "anthropic-version": "2023-06-01",
+                                       "content-type": "application/json"},
+                              json={"model": CLAUDE_MODEL, "max_tokens": max_tokens, "temperature": 0,
+                                    "system": CLAUDE_SYSTEM,
+                                    "messages": [{"role": "user", "content": prompt + "\n\nAnswer with the JSON object only, "
+                                                  "no other text."}]})
+        except Exception as e:
+            print(f"  Claude check error: {e}")
+            time.sleep(3)
+            continue
+        if r.status_code == 429 or r.status_code >= 500:
+            print(f"  Claude busy ({r.status_code}), retrying")
+            time.sleep(5)
+            continue
         if r.status_code != 200:
             print(f"  Claude check failed ({r.status_code}): {r.text[:200]}")
             return True, f"Claude unavailable ({r.status_code}), keyword check used"
-        text = "".join(b.get("text", "") for b in r.json().get("content", []) if b.get("type") == "text")
-        m = re.search(r"\{.*\}", text, re.S)
-        v = json.loads(m.group(0)) if m else {}
-        ok = bool(v.get("catalyst")) and int(v.get("strength") or 0) >= CLAUDE_MIN_STRENGTH
-        reason = f"Claude: {'catalyst' if v.get('catalyst') else 'no catalyst'} (strength {v.get('strength')}/5): " \
-                 f"{str(v.get('reason') or '')[:160]}"
-    except Exception as e:
-        print(f"  Claude check error: {e}")
-        return True, "Claude unavailable, keyword check used"
+        raw = "".join(b.get("text", "") for b in r.json().get("content", []) if b.get("type") == "text")
+        v = parse_verdict(raw)
+        if v is not None:
+            break
+        print(f"  Claude reply unreadable (attempt {attempt + 1}): {raw[:200]!r}")
+    if v is None:
+        # couldn't get a readable answer: don't throw the stock out, fall back to the keyword check
+        return True, "Claude reply unreadable, keyword check used"
+    ok = bool(v.get("catalyst")) and int(v.get("strength") or 0) >= CLAUDE_MIN_STRENGTH
+    reason = f"Claude: {'catalyst' if v.get('catalyst') else 'no catalyst'} (strength {v.get('strength')}/5): " \
+             f"{str(v.get('reason') or '')[:160]}"
     cache[c["ticker"]] = {"ok": ok, "reason": reason}
     log(st, f"{c['ticker']}: {reason}")
     return ok, reason
+
+
+def parse_verdict(text):
+    """Pull {"catalyst":..., "strength":..., "reason":...} out of Claude's reply (allowing code fences or extra text)."""
+    text = (text or "").replace("```json", "").replace("```", "")
+    for m in re.finditer(r"\{[^{}]*\}", text, re.S):
+        try:
+            v = json.loads(m.group(0))
+        except ValueError:
+            continue
+        if "catalyst" in v:
+            try:
+                v["strength"] = int(v.get("strength") or 0)
+            except (TypeError, ValueError):
+                v["strength"] = 0
+            return v
+    m = re.search(r'"catalyst"\s*:\s*(true|false)', text, re.I)
+    if m:                                   # reply was cut off after the verdict: use what's there
+        st = re.search(r'"strength"\s*:\s*(\d)', text)
+        return {"catalyst": m.group(1).lower() == "true", "strength": int(st.group(1)) if st else 0,
+                "reason": "(reply cut short)"}
+    return None
 
 
 def has_analyst(c):
