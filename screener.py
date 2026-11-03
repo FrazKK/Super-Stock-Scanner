@@ -2268,8 +2268,93 @@ def _rss_items(url, since, source_default):
     return out
 
 
+NEWS_OFFICIAL_ONLY = True      # only company announcements count as positive news (RNS, press-release wires, SEC)
+OFFICIAL_SOURCES = re.compile(
+    r"pr ?newswire|business ?wire|globe ?newswire|access ?newswire|accesswire|newsfile|eqs|cision|"
+    r"\brns\b|investegate|\bsec\b|edgar|newswire|press release|marketwired|news direct|issuer direct", re.I)
+# Analyst upgrades and price-target raises from an established broker (named in the headline) are a bonus for a
+# stock that already has official good news; they never qualify a stock on their own. Quant scores (e.g. Zacks
+# Rank) and anonymous "analysts say" pieces don't count at all. Downgrades / target cuts count against it.
+ANALYST_FIRMS = re.compile(
+    r"goldman|morgan stanley|j\.?p\.? ?morgan|jpmorgan|bank of america|bofa|citi(group)?\b|wells fargo|\bubs\b|barclays|"
+    r"deutsche bank|jefferies|evercore|piper sandler|raymond james|\brbc\b|\bbmo\b|td cowen|\bcowen\b|stifel|keybanc|"
+    r"needham|oppenheimer|truist|mizuho|bernstein|wedbush|canaccord|h\.?c\.? wainwright|cantor fitzgerald|craig-hallum|"
+    r"b\. ?riley|roth (capital|mkm)?|lake street|benchmark|ladenburg|maxim group|leerink|guggenheim|william blair|baird|"
+    r"citizens jmp|\bjmp\b|btig|loop capital|northland|alliance global|chardan|ladenburg|berenberg|peel hunt|"
+    r"panmure|liberum|cavendish|shore capital|canaccord|singer capital|zeus capital|stifel|numis|investec", re.I)
+ANALYST_UP = re.compile(
+    r"\bupgrade[sd]?\b|raises? (its |the )?(price )?target|price target (raised|increased|hiked|lifted)|"
+    r"(boosts?|lifts?|hikes?) (its |the )?price target|initiat\w* (coverage )?(at|with) (a )?(buy|outperform|overweight|strong buy)", re.I)
+ANALYST_DOWN = re.compile(r"\bdowngrade|cuts? (its |the )?(price )?target|lowers? (its |the )?(price )?target|"
+                          r"price target (cut|lowered|reduced|slashed)", re.I)
+NAME_SUFFIX = r"(,?\s*(inc|corp|corporation|ltd|limited|plc|holdings|group|n\.?v\.?|s\.?a\.?|co|company|ag|se)\b|\s*\()"
+
+
+def _clean_name(name):
+    return re.sub(r"\b(plc|inc|corp|corporation|ltd|limited|holdings|group|co|company|class [a-z]|n\.?v|s\.?a)\b\.?", "",
+                  name or "", flags=re.I).strip(" ,.")
+
+
+_WIRE = {"data": None}
+
+
+def wire_news(ticker, since):
+    """Company releases for this ticker from the news collector's file (news-data branch: newswires + SEC 8-K/6-K).
+    Returns [] when the collector isn't set up yet or the file can't be read."""
+    import requests
+
+    if _WIRE["data"] is None:
+        _WIRE["data"] = {}
+        try:
+            r = requests.get(f"https://raw.githubusercontent.com/{REPO}/news-data/news.json", timeout=20)
+            if r.status_code == 200:
+                _WIRE["data"] = r.json()
+                print(f"  news collector file: {len(_wire_items())} releases (updated {_WIRE['data'].get('updated')})")
+        except Exception as e:
+            print(f"  news collector file not available: {e}")
+    tick = str(ticker).upper().rstrip(".")
+    out = []
+    for it in _wire_items():
+        ticks = it.get("tickers") or []
+        ticks = [ticks] if isinstance(ticks, str) else ticks
+        names = {str(t).upper().split(":")[-1].strip() for t in ticks}
+        t2 = it.get("t212")
+        if isinstance(t2, str):
+            names.add(t2.upper().split("_")[0])
+        elif isinstance(t2, list):
+            names |= {str(x).upper().split("_")[0] for x in t2}
+        if tick not in names:
+            continue
+        when = _news_time(it.get("time") or it.get("published") or it.get("date"))
+        if not when or when < since:
+            continue
+        flags = it.get("flags") or []
+        flags = {k for k, v in flags.items() if v} if isinstance(flags, dict) else {str(f).lower() for f in flags}
+        if "routine" in flags:
+            continue
+        out.append({"title": str(it.get("title") or "").strip(), "date": when.date().isoformat(),
+                    "url": str(it.get("url") or ""), "source": str(it.get("source") or "newswire"),
+                    "official": True, "_flags": flags})
+    return out
+
+
+def _wire_items():
+    d = _WIRE["data"] or {}
+    if isinstance(d, list):
+        return d
+    for k in ("items", "releases", "news"):
+        if isinstance(d.get(k), list):
+            return d[k]
+    return []
+
+
 def live_news(market, ticker, ysym, since, name=""):
-    """Recent headlines: RNS (UK), then Yahoo Finance RSS, Google News RSS and Yahoo's news API."""
+    """Recent headlines: RNS (UK), Google News, Yahoo's news API and Yahoo Finance RSS.
+
+    Each item is marked "official" when it's a company announcement (RNS, a press-release wire, SEC, or the
+    company's own site). With NEWS_OFFICIAL_ONLY, only official items can count as positive news; other
+    headlines (commentary, analyst pieces, gossip) are kept only for sentiment: a takeover or bad-news
+    headline from anywhere still rules a stock out."""
     import requests
     from urllib.parse import quote
 
@@ -2288,32 +2373,36 @@ def live_news(market, ticker, ysym, since, name=""):
                         items.append({"title": title, "date": d.isoformat(), "url": url, "source": "RNS"})
         except Exception as e:
             print(f"  news {ticker}: {e}")
-    key_words = [w for w in re.findall(r"[A-Za-z][A-Za-z'&-]{2,}", re.sub(
-        r"\b(plc|inc|corp|corporation|ltd|limited|holdings|group|company|class|the|and|resources|energy|"
-        r"technologies|technology|international|global)\b", "", name or "", flags=re.I))][:2]
-    tick_re = re.compile(rf"\b{re.escape(str(ticker).rstrip('.'))}\b") if len(str(ticker).rstrip(".")) >= 3 else None
+    tick = str(ticker).rstrip(".")
+    clean = _clean_name(name)
+    words = [w for w in re.findall(r"[A-Za-z0-9][A-Za-z0-9'&.-]*", clean)]
+    phrase = " ".join(words[:2]) if len(words) >= 2 else (words[0] if words else "")
+    tick_re = re.compile(rf"(\(|\b(nasdaq|nyse|nyse american|amex|otc|tsx|tsxv|cse|lse|aim)\s*:\s*){re.escape(tick)}\b|"
+                         rf"\b{re.escape(tick)}\b", re.I if len(tick) >= 4 else 0) if len(tick) >= 2 else None
 
     def relevant(title):
-        if tick_re and tick_re.search(title):
+        """The headline must really be about this company: its ticker, or its name at the start of the headline
+        or followed by Inc/Corp/plc/( etc. (so "Archival Data Storage demand" doesn't match Data Storage Corp)."""
+        if tick_re and len(tick) >= 3 and tick_re.search(title):
             return True
-        return bool(key_words) and all(re.search(rf"\b{re.escape(w)}", title, re.I) for w in key_words[:1])
+        if not phrase:
+            return False
+        p = re.escape(phrase)
+        return bool(re.search(rf"^\W*{p}\b", title, re.I) or re.search(rf"\b{p}{NAME_SUFFIX}", title, re.I)
+                    or (len(words) >= 3 and re.search(rf"\b{re.escape(' '.join(words[:3]))}\b", title, re.I)))
 
     def add(new):
         for n in new:
-            if not relevant(n["title"]):
-                continue
-            if not any(n["title"].lower() == i["title"].lower() for i in items):
+            if relevant(n["title"]) and not any(n["title"].lower() == i["title"].lower() for i in items):
                 items.append(n)
 
-    try:
-        add(_rss_items(f"https://feeds.finance.yahoo.com/rss/2.0/headline?s={quote(ysym)}&region=US&lang=en-US",
-                       since, "Yahoo Finance"))
-    except Exception as e:
-        print(f"  yahoo rss {ysym}: {e}")
-    if len(items) < 2 and name:
+    if market == "america":
+        for n in wire_news(ticker, since):        # already matched by ticker, so no headline check needed
+            if n["title"] and not any(n["title"].lower() == i["title"].lower() for i in items):
+                items.append(n)
+
+    if clean:
         try:
-            clean = re.sub(r"\b(plc|inc|corp|corporation|ltd|limited|holdings|group|co|class [a-z])\b\.?", "",
-                           name, flags=re.I).strip(" ,.")
             q = quote(f'"{clean}" when:{OPEN_NEWS_DAYS + 2}d')
             gl = {"uk": "GB", "canada": "CA"}.get(market, "US")
             add(_rss_items(f"https://news.google.com/rss/search?q={q}&hl=en-{gl}&gl={gl}&ceid={gl}:en", since,
@@ -2322,20 +2411,46 @@ def live_news(market, ticker, ysym, since, name=""):
             print(f"  google news {ticker}: {e}")
     try:
         import yfinance as yf
+        new = []
         for n in (yf.Ticker(ysym).news or [])[:15]:
             c = n.get("content") or n
             when = _news_time(c.get("pubDate") or c.get("providerPublishTime") or n.get("providerPublishTime"))
             title = c.get("title") or ""
             url = ((c.get("canonicalUrl") or {}).get("url") or (c.get("clickThroughUrl") or {}).get("url")
                    or c.get("link") or "")
-            if when and when >= since and title and relevant(title) and not any(title == i["title"] for i in items):
-                items.append({"title": title, "date": when.date().isoformat(), "url": url,
-                              "source": (c.get("provider") or {}).get("displayName") or c.get("publisher") or "Yahoo"})
+            if when and when >= since and title:
+                new.append({"title": title, "date": when.date().isoformat(), "url": url,
+                            "source": (c.get("provider") or {}).get("displayName") or c.get("publisher") or "Yahoo"})
+        add(new)
     except Exception as e:
         print(f"  yahoo news {ysym}: {e}")
+    try:
+        add(_rss_items(f"https://feeds.finance.yahoo.com/rss/2.0/headline?s={quote(ysym)}&region=US&lang=en-US",
+                       since, "Yahoo Finance (source unknown)"))
+    except Exception as e:
+        print(f"  yahoo rss {ysym}: {e}")
+    own = re.compile(rf"\b{re.escape(words[0])}\b", re.I) if words and len(words[0]) >= 4 else None
     for i in items:
-        i["tone"] = classify_headline(i["title"], name, ticker)
-    return items[:8]
+        src = str(i.get("source") or "")
+        i["official"] = bool(i.get("official") or OFFICIAL_SOURCES.search(src) or (own and own.search(src)))
+        tone = classify_headline(i["title"], name, ticker)
+        flags = i.pop("_flags", set())
+        if "takeover" in flags:
+            tone = "deal"
+        elif "financing" in flags and tone != "deal":
+            tone = "neg"
+        firm = ANALYST_FIRMS.search(i["title"])
+        if firm and ANALYST_DOWN.search(i["title"]):
+            tone = "neg"
+        elif firm and ANALYST_UP.search(i["title"]) and tone != "deal":
+            # upgrade / higher price target from an established broker: a bonus for a stock that already has
+            # official good news, never enough on its own
+            tone, i["analyst"] = "analyst", firm.group(0)
+        elif tone == "pos" and NEWS_OFFICIAL_ONLY and not i["official"]:
+            tone = "chatter"                 # positive-sounding, but not from the company: doesn't count
+        i["tone"] = tone
+    items.sort(key=lambda i: (i["official"], i["date"]), reverse=True)     # company news first, newest first
+    return items[:10]
 
 
 def live_intraday(ysyms):
@@ -3218,7 +3333,7 @@ footer{margin-top:20px;color:var(--mute);font-size:12px}
 .ophead{display:flex;justify-content:space-between;gap:10px}.flags{margin:6px 0}.flag{display:inline-block;font-size:11px;font-weight:600;border-radius:99px;padding:2px 8px;margin:2px 4px 2px 0;border:1px solid currentColor}
 .flag.fg{color:var(--good)}.flag.fb{color:var(--bad)}.flag.fn{color:var(--acc)}
 .news{list-style:none;padding:0;margin:6px 0;font-size:14px}.news li{padding:4px 0;border-top:1px dashed var(--line)}.news a{color:var(--ink);text-decoration:none}
-.news li.pos a::before{content:"▲ ";color:var(--good)}.news li.neutral a::before{content:"• ";color:var(--mute)}.news small{color:var(--mute)}
+.news li.pos a::before{content:"▲ ";color:var(--good)}.news li.neutral a::before{content:"• ";color:var(--mute)}.news li.chatter a::before{content:"• ";color:var(--mute)}.news li.chatter{opacity:.75}.news li.analyst a::before{content:"★ ";color:var(--acc)}.news small{color:var(--mute)}
 .pcl{margin:6px 0 8px;padding:8px 10px;border-radius:8px;background:var(--bg);font-size:14px}.pcl small{color:var(--mute)}.warnc{color:var(--warn)}
 .h-sell{border-left-color:var(--bad)}.h-sell .hst{color:var(--bad)}.h-warn{border-left-color:var(--warn)}.h-warn .hst{color:var(--warn)}
 .h-watch .hst{color:var(--acc)}.h-watch{border-left-color:var(--acc)}.h-ok{border-left-color:var(--good)}.h-ok .hst{color:var(--good)}.h-err .hst{color:var(--mute)}

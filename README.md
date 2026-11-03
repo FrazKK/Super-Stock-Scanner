@@ -88,6 +88,18 @@ The workflow still runs on GitHub's own timer as a backup. It only acts once per
 
 The bot day-trades a Trading 212 **practice** account, one US stock at a time.
 
+**What counts as news (all strategies and the opening alert):**
+- **Official company news only:** RNS, press-release wires (PR Newswire, Business Wire, GlobeNewswire, ACCESS Newswire, Newsfile and so on), SEC filings and the company's own site.
+- **Not counted:** commentary, previews ("What will X reveal…?"), analyst write-ups, market-research reports and gossip. These are kept only as background on sentiment. A takeover or bad-news headline from any source still rules a stock out.
+- **The headline must really be about the company:** its ticker, or its name at the start or followed by Inc/Corp/plc. For example, "Archival Data Storage demand" doesn't count for Data Storage Corp.
+- **Broker upgrades are a bonus, not a qualifier.** An upgrade or raised price target from an established broker (Goldman, Needham, H.C. Wainwright and so on) moves a stock up the queue, but only if it already has official good news. Downgrades and target cuts count against it.
+
+**Claude news check (optional, recommended):** before every buy, Claude reads the stock's headlines and decides whether there's a genuine, price-moving company catalyst, rated 1–5. It buys only at strength 3+.
+1. At platform.claude.com, buy a few pounds of API credit and create an API key.
+2. Add the key as a repo secret named `ANTHROPIC_API_KEY`.
+
+It uses Claude Haiku and costs pennies a day. Without the key, or if the credit runs out, the bot falls back to the keyword check, so trading carries on.
+
 **Current strategy: breakout (one trade a day).**
 - **What it watches:** the 5 US stocks most "in play". They need positive news, the most unusual volume, and a normal daily move of at least 4%.
 - **When it buys:** the first of them to break above its opening-range high (the highest price in the first 30 minutes).

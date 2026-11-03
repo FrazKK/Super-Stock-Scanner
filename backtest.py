@@ -375,7 +375,7 @@ def main():
                 continue
             top = next((n["title"] for n in news if n.get("tone") == "pos"), "")
             found.append({"ticker": tick, "name": name, "exchange": str(meta[ys]["exchange"]).upper(), "ysym": ys,
-                          "vol_x": sc["vol_x"], "avg": i["avg"], "prev": i["prev"],
+                          "vol_x": sc["vol_x"], "avg": i["avg"], "prev": i["prev"], "news": news,
                           "why": f"{sc['vol_x']:.1f}x normal volume in the last 30 min"
                                  + (f"; news: {top[:80]}" if top else "; no news found")})
         return found, rejected

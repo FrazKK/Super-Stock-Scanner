@@ -87,6 +87,10 @@ DT_BE_AT_R = 1.0             # once up 1x the risk, move the stop to break-even 
 DT_TRAIL_AT_R = 2.0          # once up 2x the risk, trail the stop...
 DT_TRAIL_R = 1.0             # ...1x the risk below the highest price since buying
 DT_MARKET_FILTER = os.getenv("PRACTICE_MARKET_FILTER", "no").lower() in ("yes", "true", "1")
+# Claude news check (optional): before each buy, Claude reads the stock's headlines and decides whether there's a
+# genuine, price-moving company catalyst. Needs the ANTHROPIC_API_KEY secret; without it the keyword check is used.
+CLAUDE_MODEL = os.getenv("CLAUDE_MODEL", "claude-haiku-5-5")
+CLAUDE_MIN_STRENGTH = 3      # 1-5: how strong the catalyst must be to buy
 # Drift (news in the last few days, closed up yesterday, still rising this morning):
 DT_DRIFT_NEWS_DAYS = 5       # positive news within the last 5 days
 DT_DRIFT_AT = 30             # decide 30 minutes after the open (buy if above today's opening price)
@@ -795,6 +799,69 @@ def dt_metrics(bars, avg, when):
             "rising": p15 is None or last >= p15, "p15": p15}
 
 
+CLAUDE_SYSTEM = (
+    "You screen US small-cap stocks for a day-trading bot. You are given a stock's recent headlines, each marked as "
+    "OFFICIAL (a company announcement: press-release wire, RNS, SEC, the company's own site), ANALYST (a broker "
+    "upgrade or price-target change) or OTHER (commentary, previews, gossip, market reports). Decide whether there is a "
+    "genuine, specific, price-moving company catalyst in an OFFICIAL headline from the last 48 hours: e.g. FDA or "
+    "regulatory approval, clearly positive trial data, earnings or guidance well ahead of expectations, a large contract "
+    "or order relative to the company's size, a major partnership with money attached, an oil/gas discovery or strong "
+    "drill results, a resource upgrade, a product launch that matters to revenue. Routine items (conference "
+    "attendance, presentations, earnings dates, AGMs, appointments, minor updates, loans/refinancing) are NOT "
+    "catalysts. Takeover targets, share offerings, placings, warnings and misses rule a stock out. ANALYST upgrades "
+    "from established brokers add strength only when there is already an official catalyst. Use OTHER headlines only "
+    "as sentiment: clearly negative sentiment lowers strength. Reply with JSON only: "
+    '{"catalyst": true or false, "strength": 1-5, "reason": "one short sentence"}')
+
+
+def claude_check(st, day, c, when):
+    """Ask Claude whether the stock has a real company catalyst. Returns (ok, reason). Falls back to the keyword
+    check (ok) when there's no API key or the call fails, so trading never stops because of it."""
+    key = os.getenv("ANTHROPIC_API_KEY", "").strip()
+    cache = day.setdefault("claude", {})
+    if c["ticker"] in cache:
+        v = cache[c["ticker"]]
+        return v["ok"], v["reason"]
+    if not key:
+        return True, "keyword check only (no Claude key)"
+    news = c.get("news") or []
+    if not news:
+        return True, "no headlines to check"
+    lines = []
+    for n in news[:10]:
+        kind = "OFFICIAL" if n.get("official") else "ANALYST" if n.get("tone") == "analyst" else "OTHER"
+        lines.append(f"- [{kind}] {n.get('date', '')} {n.get('source', '')}: {n.get('title', '')}")
+    prompt = (f"Stock: {c.get('name')} ({c['ticker']}), US-listed. Today is {ny(when):%A %d %B %Y}, "
+              f"{ny(when):%H:%M} New York. It is up on the day and breaking out on heavy volume.\n"
+              f"Headlines:\n" + "\n".join(lines))
+    try:
+        import requests
+
+        r = requests.post("https://api.anthropic.com/v1/messages", timeout=45,
+                          headers={"x-api-key": key, "anthropic-version": "2023-06-01", "content-type": "application/json"},
+                          json={"model": CLAUDE_MODEL, "max_tokens": 200, "system": CLAUDE_SYSTEM,
+                                "messages": [{"role": "user", "content": prompt}]})
+        if r.status_code != 200:
+            print(f"  Claude check failed ({r.status_code}): {r.text[:200]}")
+            return True, f"Claude unavailable ({r.status_code}), keyword check used"
+        text = "".join(b.get("text", "") for b in r.json().get("content", []) if b.get("type") == "text")
+        m = re.search(r"\{.*\}", text, re.S)
+        v = json.loads(m.group(0)) if m else {}
+        ok = bool(v.get("catalyst")) and int(v.get("strength") or 0) >= CLAUDE_MIN_STRENGTH
+        reason = f"Claude: {'catalyst' if v.get('catalyst') else 'no catalyst'} (strength {v.get('strength')}/5): " \
+                 f"{str(v.get('reason') or '')[:160]}"
+    except Exception as e:
+        print(f"  Claude check error: {e}")
+        return True, "Claude unavailable, keyword check used"
+    cache[c["ticker"]] = {"ok": ok, "reason": reason}
+    log(st, f"{c['ticker']}: {reason}")
+    return ok, reason
+
+
+def has_analyst(c):
+    return any(n.get("tone") == "analyst" for n in c.get("news") or [])
+
+
 def dt_holding(st):
     return next((p for p in st["open"] if p.get("source") == "daytrade"), None)
 
@@ -911,7 +978,7 @@ def live_discover(when, known):
         top = next((n["title"] for n in news if n.get("tone") == "pos"), "")
         chg = S.num(r.get("change"))
         found.append({"ticker": tick, "name": str(r.get("description") or tick), "exchange": str(r["exchange"]).upper(),
-                      "ysym": r["ysym"], "vol_x": sc["vol_x"], "avg": S.num(r.get("average_volume_10d_calc")),
+                      "ysym": r["ysym"], "vol_x": sc["vol_x"], "avg": S.num(r.get("average_volume_10d_calc")), "news": news,
                       "prev": (S.num(r.get("close")) / (1 + chg / 100)) if chg is not None and S.num(r.get("close")) else None,
                       "why": f"{sc['vol_x']:.1f}x normal volume in the last 30 min" + (f"; news: {top[:80]}" if top else
                                                                                          "; no news found")})
@@ -1029,7 +1096,8 @@ def cmd_breakout(api, st, fetch_bars, fetch_stats, clock, pause, discover):
             continue
         inst = find_instrument(insts, "america", x["ticker"], x["name"])
         if inst:
-            cands.append({**{k: x.get(k) for k in ("ticker", "name", "exchange", "ysym", "vol_x")}, "t212": inst["ticker"]})
+            cands.append({**{k: x.get(k) for k in ("ticker", "name", "exchange", "ysym", "vol_x", "news")},
+                          "t212": inst["ticker"]})
     stats = fetch_stats([c["ysym"] for c in cands]) if cands else {}
     fx = fx_rates()
     checked, last_scan, last_save = {}, None, 0.0
@@ -1071,7 +1139,7 @@ def cmd_breakout(api, st, fetch_bars, fetch_stats, clock, pause, discover):
                 checked[x["ticker"]] = when.isoformat()
                 inst = find_instrument(insts, "america", x["ticker"], x["name"])
                 if inst:
-                    cands.append({**{k: x.get(k) for k in ("ticker", "name", "exchange", "ysym", "vol_x")},
+                    cands.append({**{k: x.get(k) for k in ("ticker", "name", "exchange", "ysym", "vol_x", "news")},
                                   "t212": inst["ticker"]})
                     stats.update(fetch_stats([x["ysym"]]))
                     day["list"].append(x["ticker"])
@@ -1083,8 +1151,10 @@ def cmd_breakout(api, st, fetch_bars, fetch_stats, clock, pause, discover):
         elif can_buy and mins >= DT_OR_MIN and market_ok(fetch_bars, when):
             ok = [c for c in cands if (stats.get(c["ysym"]) or {}).get("range", 0) >= DT_MIN_RANGE
                   and (c.get("vol_x") or 0) >= DT_BO_MIN_VOLX]
-            ok = [c for c in ok if c["ticker"] not in day.get("bought_list", [])]
-            ok = sorted(ok, key=lambda c: c.get("vol_x") or 0, reverse=True)[:DT_TOP_N]
+            ok = [c for c in ok if c["ticker"] not in day.get("bought_list", [])
+                  and (day.get("claude", {}).get(c["ticker"]) or {}).get("ok", True)]
+            # broker upgrades on top of official news move a stock up the queue; then the most unusual volume
+            ok = sorted(ok, key=lambda c: (has_analyst(c), c.get("vol_x") or 0), reverse=True)[:DT_TOP_N]
             bars = fetch_bars([c["ysym"] for c in ok]) if ok else {}
             for c in ok:
                 if c["ticker"] in day.get("bought_list", []):
@@ -1100,9 +1170,16 @@ def cmd_breakout(api, st, fetch_bars, fetch_stats, clock, pause, discover):
                 stop = max(rng[1], last * (1 - DT_BO_MAX_RISK))
                 if stop >= last * 0.995:
                     stop = last * 0.99
+                verdict, vwhy = claude_check(st, day, c, when)
+                if not verdict:
+                    continue
+                top = next((n for n in c.get("news") or [] if n.get("tone") == "pos"), None)
                 why = (f"Broke above its opening-range high (${rng[0]:,.2f}) at ${last:,.2f}. In play: "
                        f"{c.get('vol_x') or 0:.1f}x normal volume, normally moves "
-                       f"{(stats.get(c['ysym']) or {}).get('range', 0) * 100:.0f}% a day. Stop ${stop:,.2f}.")
+                       f"{(stats.get(c['ysym']) or {}).get('range', 0) * 100:.0f}% a day. Stop ${stop:,.2f}."
+                       + (f" News ({top.get('source')}): {top['title'][:90]}." if top else "")
+                       + (" Analyst upgrade too." if has_analyst(c) else "")
+                       + (f" {vwhy}" if vwhy.startswith("Claude") else ""))
                 if dt_buy(api, st, day, c, last, why, fx, when, positions, stop=stop):
                     traded = True
                     break
@@ -1174,7 +1251,7 @@ def drift_rank(rows, stats, when, price_of, open_of, news_fn=None, news_day=None
             continue
         top = next((n["title"] for n in news if n.get("tone") == "pos"), "")
         out.append({"ticker": str(r["name"]), "name": str(r.get("description") or r["name"]),
-                    "exchange": str(r["exchange"]).upper(), "ysym": r["ysym"], "price": price_of(r),
+                    "exchange": str(r["exchange"]).upper(), "ysym": r["ysym"], "price": price_of(r), "news": news,
                     "why": f"News in the last {DT_DRIFT_NEWS_DAYS} days ({top[:80]}); closed up yesterday "
                            f"({S.pct(r['_stats']['prev'] / r['_stats']['prev2'] - 1)}) on "
                            f"{r['_score']:.1f}x normal volume; above today's open at 10:00 New York."})
@@ -1234,6 +1311,9 @@ def cmd_drift(api, st, fetch_bars, clock, pause, find_drift):
                 if not inst:
                     continue
                 c["t212"] = inst["ticker"]
+                verdict, vwhy = claude_check(st, day, c, when)
+                if not verdict:
+                    continue
                 stop = c["price"] * (1 - DT_STOP)
                 if dt_buy(api, st, day, c, c["price"], c["why"], fx, when, positions, stop=stop):
                     traded = True
