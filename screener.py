@@ -2403,7 +2403,12 @@ def live_news(market, ticker, ysym, since, name=""):
 
     if clean:
         try:
-            q = quote(f'"{clean}" when:{OPEN_NEWS_DAYS + 2}d')
+            if dt.datetime.now(dt.timezone.utc) - since > dt.timedelta(days=OPEN_NEWS_DAYS + 3):
+                # replaying an older day: ask for that day's window, not the last few days from today
+                until = (since + dt.timedelta(days=OPEN_NEWS_DAYS + 3)).date()
+                q = quote(f'"{clean}" after:{since.date().isoformat()} before:{until.isoformat()}')
+            else:
+                q = quote(f'"{clean}" when:{OPEN_NEWS_DAYS + 2}d')
             gl = {"uk": "GB", "canada": "CA"}.get(market, "US")
             add(_rss_items(f"https://news.google.com/rss/search?q={q}&hl=en-{gl}&gl={gl}&ceid={gl}:en", since,
                            "Google News"))
