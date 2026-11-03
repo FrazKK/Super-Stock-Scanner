@@ -1,6 +1,6 @@
 {
  "date": "2026-10-29",
- "generated": "2026-11-03T21:37+00:00",
+ "generated": "2026-11-03T22:15+00:00",
  "fx_gbpusd": 1.332800269126892,
  "result": "done",
  "require_news": true,
@@ -14,23 +14,11 @@
    "ticker": "LENZ",
    "name": "LENZ Therapeutics, Inc.",
    "vol_x": 1.91,
-   "buy_pct30": 0.6263052559633895,
+   "buy_pct30": 0.6264196137945577,
    "change": 0.017445480876156383,
    "score": 5.83,
    "news": [
     "LENZ Therapeutics Reports Third Quarter 2026 Financial Results, Announces Strategic Consumer Marketing Focused Reorganization and CEO Succession - LENZ Therapeutics"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "BHC",
-   "name": "Bausch Health Companies Inc.",
-   "vol_x": 1.72,
-   "buy_pct30": 0.6637027842079775,
-   "change": 0.19364163841245752,
-   "score": 5.59,
-   "news": [
-    "BAUSCH HEALTH ANNOUNCES THIRD QUARTER 2026 RESULTS, RAISES GUIDANCE - PR Newswire"
    ],
    "on_t212": true
   },
@@ -50,23 +38,11 @@
    "ticker": "ORLY",
    "name": "O'Reilly Automotive, Inc.",
    "vol_x": 0.29,
-   "buy_pct30": 0.7177812463804665,
+   "buy_pct30": 0.7176672348560702,
    "change": 0.016309137929056527,
    "score": 2.95,
    "news": [
     "O'Reilly Automotive's Strong Q3 Results Masked Weaker Details, UBS Says"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "CROX",
-   "name": "Crocs, Inc.",
-   "vol_x": 0.88,
-   "buy_pct30": 0.6576717421569951,
-   "change": 0.22888297864203033,
-   "score": 2.89,
-   "news": [
-    "Crocs, Inc. Reports Strong Third Quarter 2026 Results; Raises Full-Year 2026 Outlook - PR Newswire"
    ],
    "on_t212": true
   },
@@ -107,10 +83,22 @@
    "on_t212": true
   },
   {
+   "ticker": "CHDN",
+   "name": "Churchill Downs, Incorporated",
+   "vol_x": 0.39,
+   "buy_pct30": 0.5179697661892103,
+   "change": 0.08712629231893576,
+   "score": 1.35,
+   "news": [
+    "Thoroughbred Championship Series Expands to Include Oaks Division for Three-Year-Old Fillies - Churchill Downs Incorporated"
+   ],
+   "on_t212": true
+  },
+  {
    "ticker": "FCN",
    "name": "FTI Consulting, Inc.",
    "vol_x": 0.23,
-   "buy_pct30": 0.2916062874604686,
+   "buy_pct30": 0.29353595002509947,
    "change": 0.08084060256198344,
    "score": 0.13,
    "news": [
@@ -135,6 +123,10 @@
   {
    "ticker": "OPCH",
    "vol_x": 2.14
+  },
+  {
+   "ticker": "BHC",
+   "vol_x": 1.72
   },
   {
    "ticker": "TTEC",
@@ -169,26 +161,37 @@
    "vol_x": 0.95
   },
   {
+   "ticker": "CROX",
+   "vol_x": 0.88
+  },
+  {
    "ticker": "BOOM",
    "vol_x": 0.85
-  },
-  {
-   "ticker": "INSM",
-   "vol_x": 0.81
-  },
-  {
-   "ticker": "HYPD",
-   "vol_x": 0.64
   }
  ],
- "trades": [],
- "total_gbp": 0,
+ "trades": [
+  {
+   "ticker": "KDK",
+   "bought_at": "2026-10-29T14:16+00:00",
+   "sold_at": "2026-10-29T16:16+00:00",
+   "entry": 1.3974961442947387,
+   "exit": 1.3236750476360322,
+   "cost_gbp": 1001.8088753195958,
+   "pl_gbp": -55.761785099837084,
+   "pl_pct": -0.05566110110778169,
+   "reason": "Stop-loss order filled"
+  }
+ ],
+ "total_gbp": -55.761785099837084,
  "alerts": [
-  "15:50 Day trade summary: No trade today: nothing in play broke out."
+  "10:16 Day trade: bought KDK: 954 KDK at $1.40 (about \u00a31,002). Stop $1.33. Broke above its opening-range high ($1.35) at $1.40. In play: 1.9x normal volume, normally moves 10% a day. Stop $1.33. News (GlobeNewswire): Kodiak AI and DTL Transport Reach Historic Agreement To - GlobeNewswire. Claude unavailable (400), keyword check used",
+  "12:16 Day trade update: KDK: stop-loss order filled (-\u00a356)",
+  "15:50 Day trade summary: 1 trade(s) today: KDK -\u00a356. Total -\u00a356."
  ],
  "log": [
-  "KDK: Claude: no catalyst (strength None/5): ",
-  "LENZ: Claude: no catalyst (strength None/5): ",
-  "Day trading finished: 0 trade(s), total +\u00a30."
+  "Day trade buy order: 954 KDK at about $1.40. Broke above its opening-range high ($1.35) at $1.40. In play: 1.9x normal volume, normally moves 10% a day. Stop $1.33. News (GlobeNewswire): Kodiak AI and DTL Transport Reach Historic Agreement To - GlobeNewswire. Claude unavailable (400), keyword check used",
+  "Bought 954 KDK at 1.40 (cost \u00a31,002).",
+  "KDK: stop-loss order filled, P&L -\u00a356.",
+  "Day trading finished: 1 trade(s), total -\u00a356."
  ]
 }

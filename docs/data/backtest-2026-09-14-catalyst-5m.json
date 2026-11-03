@@ -1,15 +1,13 @@
 {
  "date": "2026-09-14",
- "generated": "2026-11-03T21:16+00:00",
+ "generated": "2026-11-03T22:01+00:00",
  "fx_gbpusd": 1.3525760173797607,
  "result": "done",
  "require_news": true,
  "strategy": "catalyst",
  "bars": "5m",
  "require_trend": true,
- "added_during_day": [
-  "Added BSP to today's list at 10:32 New York: 0.2x normal volume in the last 30 min; news: Bending Spoons enters into a definitive agreement to acquire Miro for $1.355 bil"
- ],
+ "added_during_day": [],
  "drift_list": [],
  "list": [
   {
@@ -28,7 +26,7 @@
    "ticker": "BBNX",
    "name": "Beta Bionics, Inc.",
    "vol_x": 0.69,
-   "buy_pct30": 0.6798010786916395,
+   "buy_pct30": 0.6798190960803254,
    "change": 0.001207028251781983,
    "score": 3.6,
    "news": [
@@ -53,7 +51,7 @@
    "ticker": "THRY",
    "name": "Thryv Holdings, Inc.",
    "vol_x": 1.01,
-   "buy_pct30": 0.5664927809227837,
+   "buy_pct30": 0.5664987868618886,
    "change": 0.12849163350561632,
    "score": 2.79,
    "news": [
@@ -65,7 +63,7 @@
    "ticker": "VG",
    "name": "Venture Global, Inc.",
    "vol_x": 0.26,
-   "buy_pct30": 0.6277221883634765,
+   "buy_pct30": 0.6277554930473225,
    "change": 0.027531671795281598,
    "score": 2.53,
    "news": [
@@ -86,24 +84,12 @@
    "on_t212": true
   },
   {
-   "ticker": "HITI",
-   "name": "High Tide Inc.",
-   "vol_x": 0.38,
-   "buy_pct30": 0.4915111868833934,
-   "change": 0.017786591621669512,
-   "score": 2.23,
-   "news": [
-    "High Tide Reports Record-Breaking Third Quarter 2026 Financial Results - PR Newswire Canada"
-   ],
-   "on_t212": true
-  },
-  {
    "ticker": "TEN",
    "name": "Tsakos Energy Navigation Ltd",
    "vol_x": 0.28,
-   "buy_pct30": 0.26789425208925677,
+   "buy_pct30": 0.24956996703060252,
    "change": 0.01565761954297229,
-   "score": 1.13,
+   "score": 1.06,
    "news": [
     "TEN, Ltd. Reports Profits for the First Half and Second Quarter of 2026 - GlobeNewswire"
    ],
@@ -172,16 +158,29 @@
    "vol_x": 0.72
   }
  ],
- "trades": [],
- "total_gbp": 0,
+ "trades": [
+  {
+   "ticker": "BBNX",
+   "bought_at": "2026-09-14T14:16+00:00",
+   "sold_at": "2026-09-14T19:50+00:00",
+   "entry": 17.37736061096191,
+   "exit": 17.18000030517578,
+   "cost_gbp": 990.7493811627932,
+   "pl_gbp": -12.719306327363256,
+   "pl_pct": -0.012838066386107898,
+   "reason": "End of day: sold 10 minutes before the close."
+  }
+ ],
+ "total_gbp": -12.719306327363256,
  "alerts": [
-  "15:50 Day trade summary: No trade today: nothing in play broke out."
+  "10:16 Day trade: bought BBNX: 77 BBNX at $17.38 (about \u00a3991). Stop $16.51. Broke above its opening-range high ($17.32) at $17.36. In play: 0.7x normal volume, normally moves 6% a day. Stop $16.49. News (PR Newswire): Beta Bionics (NASDAQ: BBNX) Faces Securities Class Action Amid iLet FDA Compliance -- HBSS. Claude unavailable (400), keyword check used",
+  "15:50 Day trade: sold BBNX (-\u00a313): End of day: sold 10 minutes before the close. Result -\u00a313 (-1.3%).",
+  "15:50 Day trade summary: 1 trade(s) today: BBNX -\u00a313. Total -\u00a313."
  ],
  "log": [
-  "BBNX: Claude: no catalyst (strength 1/5): All OFFICIAL headlines are securities class-action notices tied to iLet FDA compliance concerns, which are negative and not a price-moving positive catalyst.",
-  "TEN: Claude: no catalyst (strength None/5): ",
-  "Added BSP to today's list at 10:32 New York: 0.2x normal volume in the last 30 min; news: Bending Spoons enters into a definitive agreement to acquire Miro for $1.355 bil",
-  "BSP: Claude: no catalyst (strength None/5): ",
-  "Day trading finished: 0 trade(s), total +\u00a30."
+  "Day trade buy order: 77 BBNX at about $17.36. Broke above its opening-range high ($17.32) at $17.36. In play: 0.7x normal volume, normally moves 6% a day. Stop $16.49. News (PR Newswire): Beta Bionics (NASDAQ: BBNX) Faces Securities Class Action Amid iLet FDA Compliance -- HBSS. Claude unavailable (400), keyword check used",
+  "Bought 77 BBNX at 17.38 (cost \u00a3991).",
+  "Sold BBNX (about -\u00a313). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 1 trade(s), total -\u00a313."
  ]
 }

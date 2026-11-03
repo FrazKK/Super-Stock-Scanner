@@ -1,6 +1,6 @@
 {
  "date": "2026-11-02",
- "generated": "2026-11-03T21:38+00:00",
+ "generated": "2026-11-03T22:17+00:00",
  "fx_gbpusd": 1.3385626077651978,
  "result": "done",
  "require_news": true,
@@ -14,9 +14,9 @@
    "ticker": "TATT",
    "name": "TAT Technologies Ltd.",
    "vol_x": 2.83,
-   "buy_pct30": 0.8440001612586084,
+   "buy_pct30": 0.7970457745005151,
    "change": 0.1462264665861901,
-   "score": 9.04,
+   "score": 8.85,
    "news": [
     "YYForce Highlights US$21.9 Million in Reported Net Assets and Outlines Commercial Robotics and AI Platform Priorities YYForce Inc. (Nasdaq: YFOR) (\"YYForce\" or the \"Company\"), a technology-enabled provider of workforce solutions and integrated facility management...",
     "TAT Technologies Reports Record Third Quarter 2026 Results TAT Technologies Ltd. (NASDAQ: TATT) (TASE: TAT Tech), a leading supplier of products and services for the commercial and military aerospace and..."
@@ -39,7 +39,7 @@
    "ticker": "TRLV",
    "name": "Trulieve Cannabis Corp. Subordinate Voting Shares",
    "vol_x": 0.29,
-   "buy_pct30": 0.6685670284259172,
+   "buy_pct30": 0.6686104949511308,
    "change": 0.04085603961125339,
    "score": 2.75,
    "news": [
@@ -63,7 +63,7 @@
    "ticker": "FOXA",
    "name": "Fox Corporation",
    "vol_x": 0.27,
-   "buy_pct30": 0.5975694049598114,
+   "buy_pct30": 0.5976289363980323,
    "change": 0.030360561870388825,
    "score": 1.43,
    "news": [
@@ -75,7 +75,7 @@
    "ticker": "CHH",
    "name": "Choice Hotels International, Inc.",
    "vol_x": 0.42,
-   "buy_pct30": 0.42838510139409364,
+   "buy_pct30": 0.42855891669548585,
    "change": 0.017002512840800454,
    "score": 1.05,
    "news": [
@@ -146,14 +146,29 @@
    "vol_x": 0.47
   }
  ],
- "trades": [],
- "total_gbp": 0,
+ "trades": [
+  {
+   "ticker": "ZIM",
+   "bought_at": "2026-11-02T15:16+00:00",
+   "sold_at": "2026-11-02T20:06+00:00",
+   "entry": 28.763735610961913,
+   "exit": 28.31166,
+   "cost_gbp": 989.9548427351916,
+   "pl_gbp": -18.477791220164477,
+   "pl_pct": -0.01866528696310161,
+   "reason": "Stop-loss order filled"
+  }
+ ],
+ "total_gbp": -18.477791220164477,
  "alerts": [
-  "15:50 Day trade summary: No trade today: nothing in play broke out."
+  "10:16 Day trade: bought ZIM: 46 ZIM at $28.76 (about \u00a3990). Stop $27.33. Broke above its opening-range high ($28.62) at $28.74. In play: 0.7x normal volume, normally moves 2% a day. Stop $28.31. News (prnewswire): IRIS Expands Accountancy Portfolio with Launch of AI-Powered Document Management Solution . Claude unavailable (400), keyword check used",
+  "15:06 Day trade update: ZIM: stop-loss order filled (-\u00a318)",
+  "15:50 Day trade summary: 1 trade(s) today: ZIM -\u00a318. Total -\u00a318."
  ],
  "log": [
-  "ZIM: Claude: no catalyst (strength 1/5): The only ZIM-specific official headline is the announcement of the Q3 results date, which is routine; the IRIS launch concerns an unrelated company, and the res",
-  "TRLV: Claude: no catalyst (strength None/5): ",
-  "Day trading finished: 0 trade(s), total +\u00a30."
+  "Day trade buy order: 46 ZIM at about $28.74. Broke above its opening-range high ($28.62) at $28.74. In play: 0.7x normal volume, normally moves 2% a day. Stop $28.31. News (prnewswire): IRIS Expands Accountancy Portfolio with Launch of AI-Powered Document Management Solution . Claude unavailable (400), keyword check used",
+  "Bought 46 ZIM at 28.76 (cost \u00a3990).",
+  "ZIM: stop-loss order filled, P&L -\u00a318.",
+  "Day trading finished: 1 trade(s), total -\u00a318."
  ]
 }

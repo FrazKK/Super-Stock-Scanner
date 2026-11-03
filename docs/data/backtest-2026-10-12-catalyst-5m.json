@@ -1,6 +1,6 @@
 {
  "date": "2026-10-12",
- "generated": "2026-11-03T21:26+00:00",
+ "generated": "2026-11-03T22:09+00:00",
  "fx_gbpusd": 1.3241524696350098,
  "result": "done",
  "require_news": true,
@@ -23,6 +23,18 @@
    "on_t212": true
   },
   {
+   "ticker": "FRO",
+   "name": "Frontline Plc",
+   "vol_x": 0.24,
+   "buy_pct30": 0.6828777949668733,
+   "change": 0.05686279016349349,
+   "score": 3.71,
+   "news": [
+    "Frontline Education and AI for Education Win Two Tech & Learning Best for Back to School Awards - GlobeNewswire"
+   ],
+   "on_t212": true
+  },
+  {
    "ticker": "LEVI",
    "name": "Levi Strauss & Co",
    "vol_x": 0.27,
@@ -36,6 +48,10 @@
   }
  ],
  "quiet": [
+  {
+   "ticker": "SKYA",
+   "vol_x": 73.9
+  },
   {
    "ticker": "YMAT",
    "vol_x": 13.17
@@ -59,10 +75,6 @@
   {
    "ticker": "HELP",
    "vol_x": 0.53
-  },
-  {
-   "ticker": "GRML",
-   "vol_x": 0.51
   },
   {
    "ticker": "PEBK",

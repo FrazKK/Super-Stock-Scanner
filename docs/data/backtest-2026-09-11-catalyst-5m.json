@@ -1,6 +1,6 @@
 {
  "date": "2026-09-11",
- "generated": "2026-11-03T21:17+00:00",
+ "generated": "2026-11-03T22:01+00:00",
  "fx_gbpusd": 1.3509314060211182,
  "result": "done",
  "require_news": true,
@@ -14,7 +14,7 @@
    "ticker": "TEN",
    "name": "Tsakos Energy Navigation Ltd",
    "vol_x": 0.81,
-   "buy_pct30": 0.726346789902874,
+   "buy_pct30": 0.7263443698500024,
    "change": 0.0650861084097567,
    "score": 4.03,
    "news": [
@@ -47,6 +47,19 @@
    "on_t212": true
   },
   {
+   "ticker": "ADBE",
+   "name": "Adobe Inc.",
+   "vol_x": 0.55,
+   "buy_pct30": 0.5132422094977354,
+   "change": 0.00040184400591081193,
+   "score": 3.15,
+   "news": [
+    "Adobe Reports Record Q3 Results - Adobe Newsroom",
+    "Adobe Reports Record Q3 Results - Business Wire"
+   ],
+   "on_t212": true
+  },
+  {
    "ticker": "HOFT",
    "name": "Hooker Furnishings Corporation",
    "vol_x": 1.55,
@@ -59,22 +72,10 @@
    "on_t212": true
   },
   {
-   "ticker": "ADBE",
-   "name": "Adobe Inc.",
-   "vol_x": 0.55,
-   "buy_pct30": 0.5132422094977354,
-   "change": 0.00040184400591081193,
-   "score": 2.65,
-   "news": [
-    "Adobe Reports Record Q3 Results - Adobe Newsroom"
-   ],
-   "on_t212": true
-  },
-  {
    "ticker": "ORCL",
    "name": "Oracle Corporation",
    "vol_x": 0.87,
-   "buy_pct30": 0.30983338613815875,
+   "buy_pct30": 0.30983482667226364,
    "change": 0.02219827526001006,
    "score": 1.48,
    "news": [
@@ -129,10 +130,6 @@
    "vol_x": 0.72
   },
   {
-   "ticker": "CCG",
-   "vol_x": 0.65
-  },
-  {
    "ticker": "CRMT",
    "vol_x": 0.65
   },
@@ -155,18 +152,35 @@
   {
    "ticker": "USPH",
    "vol_x": 0.46
+  },
+  {
+   "ticker": "KR",
+   "vol_x": 0.45
   }
  ],
- "trades": [],
- "total_gbp": 0,
+ "trades": [
+  {
+   "ticker": "IBEX",
+   "bought_at": "2026-09-11T14:16+00:00",
+   "sold_at": "2026-09-11T19:50+00:00",
+   "entry": 38.28825,
+   "exit": 39.36000061035156,
+   "cost_gbp": 993.4619012802933,
+   "pl_gbp": 26.279008748390766,
+   "pl_pct": 0.026451954236518284,
+   "reason": "End of day: sold 10 minutes before the close."
+  }
+ ],
+ "total_gbp": 26.279008748390766,
  "alerts": [
-  "15:50 Day trade summary: No trade today: nothing in play broke out."
+  "10:16 Day trade: bought IBEX: 35 IBEX at $38.29 (about \u00a3993). Stop $36.37. Broke above its opening-range high ($38.24) at $38.25. In play: 0.4x normal volume, normally moves 3% a day. Stop $36.34. News (Business Wire): Ibex Celebrates a Decade of Clinical AI Leadership Following Its Latest Record-Setting Qua. Claude unavailable (400), keyword check used",
+  "15:50 Day trade: sold IBEX (+\u00a326): End of day: sold 10 minutes before the close. Result +\u00a326 (+2.6%).",
+  "15:50 Day trade summary: 1 trade(s) today: IBEX +\u00a326. Total +\u00a326."
  ],
  "log": [
-  "IBEX: Claude: no catalyst (strength None/5): ",
-  "TEN: Claude: no catalyst (strength None/5): ",
-  "MTN: Claude: no catalyst (strength 1/5): The only OFFICIAL headline is a routine board-nominations governance update, which is not a price-moving catalyst; the other items are neutral commentary.",
-  "ADBE: Claude: no catalyst (strength None/5): ",
-  "Day trading finished: 0 trade(s), total +\u00a30."
+  "Day trade buy order: 35 IBEX at about $38.25. Broke above its opening-range high ($38.24) at $38.25. In play: 0.4x normal volume, normally moves 3% a day. Stop $36.34. News (Business Wire): Ibex Celebrates a Decade of Clinical AI Leadership Following Its Latest Record-Setting Qua. Claude unavailable (400), keyword check used",
+  "Bought 35 IBEX at 38.29 (cost \u00a3993).",
+  "Sold IBEX (about +\u00a326). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 1 trade(s), total +\u00a326."
  ]
 }

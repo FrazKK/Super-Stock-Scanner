@@ -1,6 +1,6 @@
 {
  "date": "2026-09-16",
- "generated": "2026-11-03T21:16+00:00",
+ "generated": "2026-11-03T22:00+00:00",
  "fx_gbpusd": 1.3473457098007202,
  "result": "done",
  "require_news": true,
@@ -21,18 +21,6 @@
    "score": 8.02,
    "news": [
     "NeurAxis Announces Medical Coverage Policy Milestone, - GlobeNewswire"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "BBNX",
-   "name": "Beta Bionics, Inc.",
-   "vol_x": 1.28,
-   "buy_pct30": 0.7861854652189564,
-   "change": 0.06396253622028358,
-   "score": 5.2,
-   "news": [
-    "Beta Bionics (NASDAQ: BBNX) Faces Securities Class Action Amid iLet FDA Compliance -- HBSS - GlobeNewswire"
    ],
    "on_t212": true
   },
@@ -76,7 +64,7 @@
    "ticker": "ALMU",
    "name": "Aeluma, Inc.",
    "vol_x": 0.53,
-   "buy_pct30": 0.29861615060576047,
+   "buy_pct30": 0.29840673335950774,
    "change": 0.025514092553474255,
    "score": 0.75,
    "news": [
@@ -160,7 +148,7 @@
   },
   {
    "ticker": "GEF.B",
-   "vol_x": 0.41
+   "vol_x": 0.4
   },
   {
    "ticker": "EPM",

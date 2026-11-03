@@ -1,6 +1,6 @@
 {
  "date": "2026-09-30",
- "generated": "2026-11-03T21:24+00:00",
+ "generated": "2026-11-03T22:09+00:00",
  "fx_gbpusd": 1.323276400566101,
  "result": "done",
  "require_news": true,
@@ -26,7 +26,7 @@
    "ticker": "CELC",
    "name": "Celcuity Inc.",
    "vol_x": 1.23,
-   "buy_pct30": 0.3040685084666565,
+   "buy_pct30": 0.3039970924486786,
    "change": 0.025071110238641836,
    "score": 2.18,
    "news": [
@@ -50,7 +50,7 @@
    "ticker": "HPE",
    "name": "Hewlett Packard Enterprise Company",
    "vol_x": 0.42,
-   "buy_pct30": 0.33223612098567146,
+   "buy_pct30": 0.3322324461880886,
    "change": 0.04000648914169935,
    "score": 0.67,
    "news": [

@@ -1,15 +1,13 @@
 {
  "date": "2026-10-22",
- "generated": "2026-11-03T21:31+00:00",
+ "generated": "2026-11-03T22:16+00:00",
  "fx_gbpusd": 1.339566707611084,
  "result": "done",
  "require_news": true,
  "strategy": "catalyst",
  "bars": "5m",
  "require_trend": true,
- "added_during_day": [
-  "Added TSCO to today's list at 10:48 New York: 0.3x normal volume in the last 30 min; news: Tractor Supply Hits $5 Million Milestone for FFA Future Leaders - Business Wire"
- ],
+ "added_during_day": [],
  "drift_list": [],
  "list": [
   {
@@ -23,18 +21,6 @@
     "Sky Quarry Confirms Production at Nevada Refinery Amid Strong Diesel Demand - GlobeNewswire"
    ],
    "on_t212": false
-  },
-  {
-   "ticker": "TSLA",
-   "name": "Tesla, Inc.",
-   "vol_x": 0.37,
-   "buy_pct30": 0.6818469673991376,
-   "change": 0.0006339304898534959,
-   "score": 2.97,
-   "news": [
-    "Tesla Launches iPad and iPhone Duo App - Not a Tesla App"
-   ],
-   "on_t212": true
   },
   {
    "ticker": "CRL",
@@ -117,8 +103,6 @@
   "15:50 Day trade summary: No trade today: nothing in play broke out."
  ],
  "log": [
-  "Added TSCO to today's list at 10:48 New York: 0.3x normal volume in the last 30 min; news: Tractor Supply Hits $5 Million Milestone for FFA Future Leaders - Business Wire",
-  "TSCO: Claude: no catalyst (strength 1/5): The only official headlines are an executive appointment and a charitable milestone, which are routine items and not price-moving company catalysts.",
   "Day trading finished: 0 trade(s), total +\u00a30."
  ]
 }

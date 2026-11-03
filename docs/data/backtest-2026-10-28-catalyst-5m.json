@@ -1,16 +1,13 @@
 {
  "date": "2026-10-28",
- "generated": "2026-11-03T21:33+00:00",
+ "generated": "2026-11-03T22:18+00:00",
  "fx_gbpusd": 1.330629587173462,
  "result": "done",
  "require_news": true,
  "strategy": "catalyst",
  "bars": "5m",
  "require_trend": true,
- "added_during_day": [
-  "Added WING to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; news: Wingstop Inc. Reports Fiscal Third Quarter Financial Results - PR Newswire",
-  "Added KIDS to today's list at 10:32 New York: 0.7x normal volume in the last 30 min; news: OrthoPediatrics Announces FDA 510(k) Clearance of PNP | - GlobeNewswire"
- ],
+ "added_during_day": [],
  "drift_list": [],
  "list": [
   {
@@ -159,6 +156,18 @@
    "on_t212": true
   },
   {
+   "ticker": "ORN",
+   "name": "Orion Group Holdings, Inc.",
+   "vol_x": 0.29,
+   "buy_pct30": 0.29293832909624357,
+   "change": 0.03606556693595375,
+   "score": 0.25,
+   "news": [
+    "Orion Group Interim report January\u2013September 2026: Strong - GlobeNewswire"
+   ],
+   "on_t212": true
+  },
+  {
    "ticker": "JMSB",
    "name": "John Marshall Bancorp, Inc.",
    "vol_x": 0.23,
@@ -201,20 +210,12 @@
    "vol_x": 1.7
   },
   {
-   "ticker": "POM",
-   "vol_x": 1.68
-  },
-  {
    "ticker": "AXGN",
    "vol_x": 1.55
   },
   {
    "ticker": "OSS",
    "vol_x": 1.53
-  },
-  {
-   "ticker": "BKYI",
-   "vol_x": 1.42
   },
   {
    "ticker": "LCII",
@@ -231,19 +232,39 @@
   {
    "ticker": "STLA",
    "vol_x": 0.89
+  },
+  {
+   "ticker": "INSE",
+   "vol_x": 0.89
+  },
+  {
+   "ticker": "MBOT",
+   "vol_x": 0.81
   }
  ],
- "trades": [],
- "total_gbp": 0,
+ "trades": [
+  {
+   "ticker": "KDK",
+   "bought_at": "2026-10-28T14:30+00:00",
+   "sold_at": "2026-10-28T19:50+00:00",
+   "entry": 1.3363350381851196,
+   "exit": 1.3049999475479126,
+   "cost_gbp": 1001.7710378821289,
+   "pl_gbp": -24.955280674499136,
+   "pl_pct": -0.02491116206279807,
+   "reason": "End of day: sold 10 minutes before the close."
+  }
+ ],
+ "total_gbp": -24.955280674499136,
  "alerts": [
-  "15:50 Day trade summary: No trade today: nothing in play broke out."
+  "10:30 Day trade: bought KDK: 996 KDK at $1.34 (about \u00a31,002). Stop $1.27. Broke above its opening-range high ($1.30) at $1.34. In play: 0.7x normal volume, normally moves 10% a day. Stop $1.27. News (GlobeNewswire): Kodiak AI and DTL Transport Reach Historic Agreement To - GlobeNewswire. Claude unavailable (400), keyword check used",
+  "15:50 Day trade: sold KDK (-\u00a325): End of day: sold 10 minutes before the close. Result -\u00a325 (-2.5%).",
+  "15:50 Day trade summary: 1 trade(s) today: KDK -\u00a325. Total -\u00a325."
  ],
  "log": [
-  "Added WING to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; news: Wingstop Inc. Reports Fiscal Third Quarter Financial Results - PR Newswire",
-  "KDK: Claude: no catalyst (strength None/5): ",
-  "Added KIDS to today's list at 10:32 New York: 0.7x normal volume in the last 30 min; news: OrthoPediatrics Announces FDA 510(k) Clearance of PNP | - GlobeNewswire",
-  "KIDS: Claude: no catalyst (strength None/5): ",
-  "FLXS: Claude: no catalyst (strength None/5): ",
-  "Day trading finished: 0 trade(s), total +\u00a30."
+  "Day trade buy order: 996 KDK at about $1.34. Broke above its opening-range high ($1.30) at $1.34. In play: 0.7x normal volume, normally moves 10% a day. Stop $1.27. News (GlobeNewswire): Kodiak AI and DTL Transport Reach Historic Agreement To - GlobeNewswire. Claude unavailable (400), keyword check used",
+  "Bought 996 KDK at 1.34 (cost \u00a31,002).",
+  "Sold KDK (about -\u00a325). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 1 trade(s), total -\u00a325."
  ]
 }

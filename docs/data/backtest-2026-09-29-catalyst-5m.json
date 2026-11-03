@@ -1,6 +1,6 @@
 {
  "date": "2026-09-29",
- "generated": "2026-11-03T21:22+00:00",
+ "generated": "2026-11-03T22:08+00:00",
  "fx_gbpusd": 1.3254337310791016,
  "result": "done",
  "require_news": true,
@@ -136,13 +136,12 @@
  ],
  "total_gbp": -6.892014311501498,
  "alerts": [
-  "10:16 Day trade: bought NTWK: 238 NTWK at $5.56 (about \u00a3999). Stop $5.28. Broke above its opening-range high ($5.50) at $5.55. In play: 1.4x normal volume, normally moves 7% a day. Stop $5.42. News (GlobeNewswire): NETSOL Technologies reports record fiscal 2026 revenue and full-year profitability, exceed. Claude: catalyst (strength 4/5): An official GlobeNewswire release on 2026-09-28 reports record fiscal 2026 revenue and full-year profitability exceeding guidance, a specific earnings beat, and",
+  "10:16 Day trade: bought NTWK: 238 NTWK at $5.56 (about \u00a3999). Stop $5.28. Broke above its opening-range high ($5.50) at $5.55. In play: 1.4x normal volume, normally moves 7% a day. Stop $5.42. News (GlobeNewswire): NETSOL Technologies reports record fiscal 2026 revenue and full-year profitability, exceed. Claude unavailable (400), keyword check used",
   "15:50 Day trade: sold NTWK (-\u00a37): End of day: sold 10 minutes before the close. Result -\u00a37 (-0.7%).",
   "15:50 Day trade summary: 1 trade(s) today: NTWK -\u00a37. Total -\u00a37."
  ],
  "log": [
-  "NTWK: Claude: catalyst (strength 4/5): An official GlobeNewswire release on 2026-09-28 reports record fiscal 2026 revenue and full-year profitability exceeding guidance, a specific earnings beat, and",
-  "Day trade buy order: 238 NTWK at about $5.55. Broke above its opening-range high ($5.50) at $5.55. In play: 1.4x normal volume, normally moves 7% a day. Stop $5.42. News (GlobeNewswire): NETSOL Technologies reports record fiscal 2026 revenue and full-year profitability, exceed. Claude: catalyst (strength 4/5): An official GlobeNewswire release on 2026-09-28 reports record fiscal 2026 revenue and full-year profitability exceeding guidance, a specific earnings beat, and",
+  "Day trade buy order: 238 NTWK at about $5.55. Broke above its opening-range high ($5.50) at $5.55. In play: 1.4x normal volume, normally moves 7% a day. Stop $5.42. News (GlobeNewswire): NETSOL Technologies reports record fiscal 2026 revenue and full-year profitability, exceed. Claude unavailable (400), keyword check used",
   "Bought 238 NTWK at 5.56 (cost \u00a3999).",
   "Sold NTWK (about -\u00a37). End of day: sold 10 minutes before the close.",
   "Day trading finished: 1 trade(s), total -\u00a37."

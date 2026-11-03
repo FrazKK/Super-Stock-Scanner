@@ -1,6 +1,6 @@
 {
  "date": "2026-10-20",
- "generated": "2026-11-03T21:32+00:00",
+ "generated": "2026-11-03T22:16+00:00",
  "fx_gbpusd": 1.330849051475525,
  "result": "done",
  "require_news": true,
@@ -34,6 +34,18 @@
    "news": [
     "Equifax Delivers Strong 10% Revenue Growth in Third Quarter 2026 Driven by 8% Diversified Markets Revenue Growth Despite Challenging U.S. Mortgage Market; Returns $158 Million Cash to Shareholders - Equifax",
     "Equifax expands access to cash flow data solutions for confident decisioning - PR Newswire"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "MMM",
+   "name": "3M Company",
+   "vol_x": 0.55,
+   "buy_pct30": 0.6463462290721296,
+   "change": 0.05240420826510084,
+   "score": 3.19,
+   "news": [
+    "3M announces collaboration with GSEO to advance Expanded Beam Optical manufacturing and development - PR Newswire"
    ],
    "on_t212": true
   },
@@ -138,37 +150,33 @@
    "reason": "Stop-loss order filled"
   },
   {
-   "ticker": "EFX",
-   "bought_at": "2026-10-20T15:00+00:00",
+   "ticker": "MMM",
+   "bought_at": "2026-10-20T14:46+00:00",
    "sold_at": "2026-10-20T19:50+00:00",
-   "entry": 176.49131744384763,
-   "exit": 176.73500061035156,
-   "cost_gbp": 929.7015161624048,
-   "pl_gbp": -0.11073883057542844,
-   "pl_pct": -0.00011911224048825154,
+   "entry": 171.53136061096188,
+   "exit": 170.80999755859375,
+   "cost_gbp": 903.5740020477172,
+   "pl_gbp": -5.147556475617421,
+   "pl_pct": -0.005696884221936237,
    "reason": "End of day: sold 10 minutes before the close."
   }
  ],
- "total_gbp": -54.09307543190175,
+ "total_gbp": -59.129893076943745,
  "alerts": [
-  "10:26 Day trade: bought RAPP: 43 RAPP at $30.94 (about \u00a31,001). Stop $29.39. Broke above its opening-range high ($30.32) at $30.91. In play: 3.9x normal volume, normally moves 6% a day. Stop $29.36. News (GlobeNewswire): Rapport Therapeutics Announces Positive Topline Results - GlobeNewswire. Claude: catalyst (strength 4/5): An official GlobeNewswire release announces positive topline trial results, and the stock is up on heavy volume today, which supports a real market reaction, th",
+  "10:26 Day trade: bought RAPP: 43 RAPP at $30.94 (about \u00a31,001). Stop $29.39. Broke above its opening-range high ($30.32) at $30.91. In play: 3.9x normal volume, normally moves 6% a day. Stop $29.36. News (GlobeNewswire): Rapport Therapeutics Announces Positive Topline Results - GlobeNewswire. Claude unavailable (400), keyword check used",
   "10:46 Day trade update: RAPP: stop-loss order filled (-\u00a354)",
-  "11:00 Day trade: bought EFX: 7 EFX at $176.49 (about \u00a3930). Stop $167.67. Broke above its opening-range high ($175.99) at $176.32. In play: 0.4x normal volume, normally moves 3% a day. Stop $167.50. News (Equifax): Equifax Delivers Strong 10% Revenue Growth in Third Quarter 2026 Driven by 8% Diversified . Claude: catalyst (strength 4/5): Official Q3 2026 release reports 10% revenue growth and $158M returned to shareholders, and third-party coverage says it beat estimates, though weak U.S. mortga",
-  "15:50 Day trade: sold EFX (-\u00a30): End of day: sold 10 minutes before the close. Result -\u00a30 (-0.0%).",
-  "15:50 Day trade summary: 2 trade(s) today: RAPP -\u00a354, EFX -\u00a30. Total -\u00a354."
+  "10:46 Day trade: bought MMM: 7 MMM at $171.53 (about \u00a3904). Stop $162.95. Broke above its opening-range high ($170.80) at $171.36. In play: 0.6x normal volume, normally moves 2% a day. Stop $162.79. News (PR Newswire): 3M announces collaboration with GSEO to advance Expanded Beam Optical manufacturing and de. Claude unavailable (400), keyword check used",
+  "15:50 Day trade: sold MMM (-\u00a35): End of day: sold 10 minutes before the close. Result -\u00a35 (-0.6%).",
+  "15:50 Day trade summary: 2 trade(s) today: RAPP -\u00a354, MMM -\u00a35. Total -\u00a359."
  ],
  "log": [
   "Added RAPP to today's list at 10:16 New York: 3.9x normal volume in the last 30 min; news: Rapport Therapeutics Announces Positive Topline Results - GlobeNewswire",
-  "RAPP: Claude: catalyst (strength 4/5): An official GlobeNewswire release announces positive topline trial results, and the stock is up on heavy volume today, which supports a real market reaction, th",
-  "Day trade buy order: 43 RAPP at about $30.91. Broke above its opening-range high ($30.32) at $30.91. In play: 3.9x normal volume, normally moves 6% a day. Stop $29.36. News (GlobeNewswire): Rapport Therapeutics Announces Positive Topline Results - GlobeNewswire. Claude: catalyst (strength 4/5): An official GlobeNewswire release announces positive topline trial results, and the stock is up on heavy volume today, which supports a real market reaction, th",
+  "Day trade buy order: 43 RAPP at about $30.91. Broke above its opening-range high ($30.32) at $30.91. In play: 3.9x normal volume, normally moves 6% a day. Stop $29.36. News (GlobeNewswire): Rapport Therapeutics Announces Positive Topline Results - GlobeNewswire. Claude unavailable (400), keyword check used",
   "Bought 43 RAPP at 30.94 (cost \u00a31,001).",
   "RAPP: stop-loss order filled, P&L -\u00a354.",
-  "KLAR: Claude: no catalyst (strength None/5): ",
-  "HOST: Claude: no catalyst (strength None/5): ",
-  "EFX: Claude: catalyst (strength 4/5): Official Q3 2026 release reports 10% revenue growth and $158M returned to shareholders, and third-party coverage says it beat estimates, though weak U.S. mortga",
-  "Day trade buy order: 7 EFX at about $176.32. Broke above its opening-range high ($175.99) at $176.32. In play: 0.4x normal volume, normally moves 3% a day. Stop $167.50. News (Equifax): Equifax Delivers Strong 10% Revenue Growth in Third Quarter 2026 Driven by 8% Diversified . Claude: catalyst (strength 4/5): Official Q3 2026 release reports 10% revenue growth and $158M returned to shareholders, and third-party coverage says it beat estimates, though weak U.S. mortga",
-  "Bought 7 EFX at 176.49 (cost \u00a3930).",
-  "Sold EFX (about -\u00a30). End of day: sold 10 minutes before the close.",
-  "Day trading finished: 2 trade(s), total -\u00a354."
+  "Day trade buy order: 7 MMM at about $171.36. Broke above its opening-range high ($170.80) at $171.36. In play: 0.6x normal volume, normally moves 2% a day. Stop $162.79. News (PR Newswire): 3M announces collaboration with GSEO to advance Expanded Beam Optical manufacturing and de. Claude unavailable (400), keyword check used",
+  "Bought 7 MMM at 171.53 (cost \u00a3904).",
+  "Sold MMM (about -\u00a35). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 2 trade(s), total -\u00a359."
  ]
 }

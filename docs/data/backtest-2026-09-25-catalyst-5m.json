@@ -1,6 +1,6 @@
 {
  "date": "2026-09-25",
- "generated": "2026-11-03T21:15+00:00",
+ "generated": "2026-11-03T22:01+00:00",
  "fx_gbpusd": 1.3210737705230713,
  "result": "done",
  "require_news": true,
@@ -26,7 +26,7 @@
    "ticker": "DGNX",
    "name": "Diginex Limited",
    "vol_x": 0.75,
-   "buy_pct30": 0.7558359167178005,
+   "buy_pct30": 0.7558375231195247,
    "change": 0.017857126131349377,
    "score": 4.52,
    "news": [

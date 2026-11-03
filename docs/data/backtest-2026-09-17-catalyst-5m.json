@@ -1,6 +1,6 @@
 {
  "date": "2026-09-17",
- "generated": "2026-11-03T21:17+00:00",
+ "generated": "2026-11-03T22:03+00:00",
  "fx_gbpusd": 1.3382940292358398,
  "result": "done",
  "require_news": true,
@@ -35,6 +35,18 @@
    "on_t212": true
   },
   {
+   "ticker": "QMCO",
+   "name": "Quantum Corporation",
+   "vol_x": 0.31,
+   "buy_pct30": 0.7544739566610352,
+   "change": 0.07427614198197618,
+   "score": 3.14,
+   "news": [
+    "Quantum X Labs Launches QuantumQ Security Program for Quantum Cybersecurity - The Quantum Insider"
+   ],
+   "on_t212": true
+  },
+  {
    "ticker": "MNTS",
    "name": "Momentus Inc.",
    "vol_x": 0.54,
@@ -50,7 +62,7 @@
    "ticker": "NRXS",
    "name": "Neuraxis, Inc.",
    "vol_x": 0.73,
-   "buy_pct30": 0.5055559862081322,
+   "buy_pct30": 0.5054465737804161,
    "change": 0.12247837141560525,
    "score": 2.98,
    "news": [
@@ -62,7 +74,7 @@
    "ticker": "TWST",
    "name": "Twist Bioscience Corporation",
    "vol_x": 0.29,
-   "buy_pct30": 0.6618828835760708,
+   "buy_pct30": 0.6618690540253028,
    "change": 0.09722504851627023,
    "score": 2.73,
    "news": [
@@ -98,7 +110,7 @@
    "ticker": "CRML",
    "name": "Critical Metals Corp.",
    "vol_x": 0.41,
-   "buy_pct30": 0.37418138629161146,
+   "buy_pct30": 0.37418710876172967,
    "change": 0.03549382999945916,
    "score": 0.82,
    "news": [
@@ -110,7 +122,7 @@
    "ticker": "COHR",
    "name": "Coherent Corp.",
    "vol_x": 0.26,
-   "buy_pct30": 0.44229976848968655,
+   "buy_pct30": 0.4422999112051724,
    "change": 0.05125380693455228,
    "score": 0.79,
    "news": [
@@ -165,10 +177,6 @@
    "vol_x": 0.87
   },
   {
-   "ticker": "AYI",
-   "vol_x": 0.79
-  },
-  {
    "ticker": "BIAF",
    "vol_x": 0.74
   },
@@ -179,17 +187,35 @@
   {
    "ticker": "NBIS",
    "vol_x": 0.71
+  },
+  {
+   "ticker": "SPCB",
+   "vol_x": 0.68
   }
  ],
- "trades": [],
- "total_gbp": 0,
+ "trades": [
+  {
+   "ticker": "NRXS",
+   "bought_at": "2026-09-17T14:36+00:00",
+   "sold_at": "2026-09-17T19:50+00:00",
+   "entry": 7.967960038185119,
+   "exit": 7.650000095367432,
+   "cost_gbp": 1001.7419065302219,
+   "pl_gbp": -41.4148125241519,
+   "pl_pct": -0.04134279723566945,
+   "reason": "End of day: sold 10 minutes before the close."
+  }
+ ],
+ "total_gbp": -41.4148125241519,
  "alerts": [
-  "15:50 Day trade summary: No trade today: nothing in play broke out."
+  "10:36 Day trade: bought NRXS: 168 NRXS at $7.97 (about \u00a31,002). Stop $7.57. Broke above its opening-range high ($7.93) at $7.96. In play: 0.7x normal volume, normally moves 5% a day. Stop $7.56. News (GlobeNewswire): NeurAxis Announces Medical Coverage Policy Milestone, - GlobeNewswire. Claude unavailable (400), keyword check used",
+  "15:50 Day trade: sold NRXS (-\u00a341): End of day: sold 10 minutes before the close. Result -\u00a341 (-4.1%).",
+  "15:50 Day trade summary: 1 trade(s) today: NRXS -\u00a341. Total -\u00a341."
  ],
  "log": [
-  "NRXS: Claude: no catalyst (strength None/5): ",
-  "BSVN: Claude: no catalyst (strength None/5): ",
-  "TWST: Claude: no catalyst (strength None/5): ",
-  "Day trading finished: 0 trade(s), total +\u00a30."
+  "Day trade buy order: 168 NRXS at about $7.96. Broke above its opening-range high ($7.93) at $7.96. In play: 0.7x normal volume, normally moves 5% a day. Stop $7.56. News (GlobeNewswire): NeurAxis Announces Medical Coverage Policy Milestone, - GlobeNewswire. Claude unavailable (400), keyword check used",
+  "Bought 168 NRXS at 7.97 (cost \u00a31,002).",
+  "Sold NRXS (about -\u00a341). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 1 trade(s), total -\u00a341."
  ]
 }
