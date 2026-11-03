@@ -1555,6 +1555,16 @@ def main():
                    3, "white_check_mark")
             log(st, "Connection check OK.")
             save_tickers(api)
+            if os.getenv("ANTHROPIC_API_KEY", "").strip():
+                ok, why = claude_check(st, {}, {"ticker": "TEST", "name": "Example Therapeutics", "news": [
+                    {"title": "Example Therapeutics Announces FDA Approval of Its Lead Drug", "official": True,
+                     "tone": "pos", "date": when.date().isoformat(), "source": "Business Wire"}]}, when)
+                works = why.startswith("Claude:")
+                S.push("Claude news check " + ("working" if works else "NOT working"),
+                       why if works else f"{why}. Check the ANTHROPIC_API_KEY secret and that the account has credit.",
+                       3, "white_check_mark" if works else "warning")
+            else:
+                print("No ANTHROPIC_API_KEY secret: Claude news check off (keyword check used).")
         elif a.opening:
             bought, events = cmd_opening(api, st, when)
             update_account(api, st)
