@@ -1,45 +1,6 @@
 {
  "started": "2026-10-31",
- "open": [
-  {
-   "id": "america-VFF-2026-11-03-1",
-   "status": "open",
-   "ticker": "VFF",
-   "t212": "VFF_US_EQ",
-   "name": "Village Farms International, Inc.",
-   "market": "america",
-   "exchange": "NASDAQ",
-   "ysym": "VFF",
-   "source": "daytrade",
-   "methods": [
-    {
-     "method": "daytrade"
-    }
-   ],
-   "bought": "2026-11-03",
-   "bought_at": "2026-11-03T15:17+00:00",
-   "ref_price": 2.9149999618530273,
-   "qty": 460.0,
-   "why": "Broke above its opening-range high ($2.81) at $2.91. In play: 0.5x normal volume, normally moves 4% a day. Stop $2.77.",
-   "initial_stop": 2.769249963760376,
-   "risk": 0.14574999809265154,
-   "high": 2.93,
-   "high_time": "2026-11-03T15:22:17.181242+00:00",
-   "order_id": 57451471108,
-   "entry_t212": 2.92,
-   "unit": 1.0,
-   "entry_local": 2.92,
-   "cost_gbp": 1001.1,
-   "stop_local": 2.774,
-   "price_t212": 2.84,
-   "value_gbp": 973.64,
-   "pl_gbp": -27.46,
-   "stop_order_id": 57451471117,
-   "stop_t212": 2.77,
-   "stop_breached": false,
-   "last_check": "$2.84 (-2.7%), high $2.93, stop $2.77"
-  }
- ],
+ "open": [],
  "closed": [
   {
    "ticker": "PLBY",
@@ -61,6 +22,27 @@
    "reason": "End of day: sold 10 minutes before the close.",
    "bought_at": "2026-11-02T15:07+00:00",
    "sold_at": "2026-11-02T20:51+00:00"
+  },
+  {
+   "ticker": "VFF",
+   "name": "Village Farms International, Inc.",
+   "market": "america",
+   "source": "daytrade",
+   "methods": [
+    "daytrade"
+   ],
+   "bought": "2026-11-03",
+   "sold": "2026-11-03",
+   "days": 0,
+   "entry": 2.92,
+   "exit": 2.85,
+   "cost_gbp": 1001.1,
+   "proceeds_gbp": 977.15,
+   "pl_gbp": -23.950000000000045,
+   "pl_pct": -0.02392368394765762,
+   "reason": "End of day: sold 10 minutes before the close.",
+   "bought_at": "2026-11-03T15:17+00:00",
+   "sold_at": "2026-11-03T20:51+00:00"
   }
  ],
  "log": [
@@ -183,29 +165,39 @@
   {
    "time": "2026-11-03T15:18+00:00",
    "text": "Bought 460 VFF at 2.92 (cost \u00a31,001)."
+  },
+  {
+   "time": "2026-11-03T20:51+00:00",
+   "text": "Sold VFF (about -\u00a324). End of day: sold 10 minutes before the close."
+  },
+  {
+   "time": "2026-11-03T20:51+00:00",
+   "text": "Day trading finished: 1 trade(s), total -\u00a324."
   }
  ],
  "done": {},
  "account": {
   "currency": "GBP",
-  "value": 4960.12,
-  "cash": 3979.58,
-  "realised": -14.84,
-  "unrealised": -20.56,
-  "time": "2026-11-03T20:38+00:00"
+  "value": 4951.84,
+  "cash": 4951.84,
+  "realised": -42.22,
+  "unrealised": 0.0,
+  "time": "2026-11-03T20:51+00:00"
  },
  "rules": {
   "trade_gbp": 1000.0,
   "max_open": 10
  },
  "start_value": 5000.0,
- "updated": "2026-11-03T20:49:25+00:00",
+ "updated": "2026-11-03T20:51:40+00:00",
  "day": {
   "date": "2026-11-03",
   "buys": 1,
-  "sold": {},
+  "sold": {
+   "VFF": "2026-11-03T20:51:34.705983+00:00"
+  },
   "skip": {},
-  "finished": false,
+  "finished": true,
   "list": [
    "DTST",
    "RVTY",
