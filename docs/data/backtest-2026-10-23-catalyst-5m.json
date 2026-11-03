@@ -1,6 +1,6 @@
 {
  "date": "2026-10-23",
- "generated": "2026-11-01T19:46+00:00",
+ "generated": "2026-11-03T21:29+00:00",
  "fx_gbpusd": 1.3403927087783813,
  "result": "done",
  "require_news": true,
@@ -8,113 +8,10 @@
  "bars": "5m",
  "require_trend": true,
  "added_during_day": [
-  "Added ZM to today's list at 13:12 New York: 0.2x normal volume in the last 30 min; news: Zoom Communications' New AI Services Impressive, Oppenheimer Says in Upgrade",
-  "Added LAD to today's list at 14:00 New York: 0.4x normal volume in the last 30 min; news: Lithia & Driveway posts Q3 earnings and revenue beat, raises dividend",
-  "Added TCX to today's list at 14:16 New York: 0.3x normal volume in the last 30 min; news: Tucows Announces Agreement for Ting Fiber to Exit Colorado Springs",
-  "Added IMAX to today's list at 15:04 New York: 0.8x normal volume in the last 30 min; news: Will Imax (IMAX) Beat Estimates Again in Its Next Earnings Report?"
+  "Added NVDA to today's list at 10:32 New York: 0.2x normal volume in the last 30 min; news: NVIDIA and Supply Chain Partners Expand Capacity to Accelerate AI Infrastructure"
  ],
  "drift_list": [],
  "list": [
-  {
-   "ticker": "BKYI",
-   "name": "BIO-key International, Inc.",
-   "vol_x": 1.65,
-   "buy_pct30": 0.7123410603337469,
-   "change": 0.3175182053032819,
-   "score": 4.65,
-   "news": [
-    "BIO-key Secures Another Middle East Government Contract for its Passwordless, Biometric, Identity and Access Management Solutions"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "GRC",
-   "name": "Gorman-Rupp Company (The)",
-   "vol_x": 0.63,
-   "buy_pct30": 0.7321916234500775,
-   "change": 0.05988884560282837,
-   "score": 4.19,
-   "news": [
-    "Gorman-Rupp stock rises 6% on strong third quarter earnings beat",
-    "Gorman-Rupp (NYSE:GRC) reports upbeat Q3 2026, stock soars"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "FCNCA",
-   "name": "First Citizens BancShares, Inc.",
-   "vol_x": 0.47,
-   "buy_pct30": 0.4917022533626585,
-   "change": 0.06266953206676784,
-   "score": 3.91,
-   "news": [
-    "First Citizens Soars 8% on Q3 Earnings Beat and New $1.2 Billion Buyback",
-    "First Citizens BancShares (NASDAQ:FCNCA) reports upbeat Q3 2026"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "NFGC",
-   "name": "New Found Gold Corp",
-   "vol_x": 0.46,
-   "buy_pct30": 0.7627743276615991,
-   "change": 0.04777065348328402,
-   "score": 3.47,
-   "news": [
-    "New Found Gold Announces Queensway Gold Project Revised PEA and Updated MRE: After-Tax NPV Increases to $1.7 B with 126% IRR; Measured and Indicated Mineral Resource Increases by 38%"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "OMC",
-   "name": "Omnicom Group Inc.",
-   "vol_x": 0.5,
-   "buy_pct30": 0.6571841915509407,
-   "change": 0.012596910686549334,
-   "score": 3.13,
-   "news": [
-    "OMC Q3 deep dive: Integration synergies and media growth drive margin expansion",
-    "Omnicom-IPG deal \u2018substantially completed\u2019 as group wins Coke\u2019s NA media"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "UWMC",
-   "name": "UWM Holdings Corporation",
-   "vol_x": 0.25,
-   "buy_pct30": 0.5638210030430233,
-   "change": 0.08695654427396815,
-   "score": 2.26,
-   "news": [
-    "UWM Soars 19% on $1.8 Billion Debt-Paydown Plan and Preliminary Q3 Profit"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "DOV",
-   "name": "Dover Corporation",
-   "vol_x": 0.23,
-   "buy_pct30": 0.6467726043881404,
-   "change": 0.0026088009233482534,
-   "score": 2.05,
-   "news": [
-    "Dover (DOV) Stock May Be 19% Undervalued As AI Led Growth Builds",
-    "DOV Q3 deep dive: secular markets and capacity investments drive growth amid cautious outlook"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "TTMI",
-   "name": "TTM Technologies, Inc.",
-   "vol_x": 0.25,
-   "buy_pct30": 0.4777589551666517,
-   "change": 0.03945054729470909,
-   "score": 1.91,
-   "news": [
-    "TTM Technologies Sinks 28% Despite \u201cQuarterly Records\u201d as Q4 Outlook Only Matches Estimates"
-   ],
-   "on_t212": true
-  },
   {
    "ticker": "SKYQ",
    "name": "Sky Quarry Inc.",
@@ -123,59 +20,9 @@
    "change": 0.07733334029666983,
    "score": 1.56,
    "news": [
-    "Sky Quarry Confirms Production at Nevada Refinery Amid Strong Diesel Demand"
+    "Sky Quarry Confirms Production at Nevada Refinery Amid Strong Diesel Demand - GlobeNewswire"
    ],
    "on_t212": false
-  },
-  {
-   "ticker": "GSIT",
-   "name": "GSI Technology, Inc.",
-   "vol_x": 0.24,
-   "buy_pct30": 0.3650494158324285,
-   "change": 0.0010363178831296338,
-   "score": 1.44,
-   "news": [
-    "GSI Technology Achieves Key Milestone in Taiwan Smart City Project, Begins Live AI Monitoring"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "RHI",
-   "name": "Robert Half Inc.",
-   "vol_x": 0.38,
-   "buy_pct30": 0.5175310804245387,
-   "change": 0.11916130115192103,
-   "score": 1.33,
-   "news": [
-    "Robert Half Soars 22% on Q3 Beat as Talent Solutions Grows for the \u201cFirst Time\u201d Since 2022"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "COLB",
-   "name": "Columbia Banking System, Inc.",
-   "vol_x": 0.3,
-   "buy_pct30": 0.41115892963018236,
-   "change": 0.022415526596697877,
-   "score": 1.24,
-   "news": [
-    "COLB Q3 deep dive: disciplined execution and balance sheet optimization drive steady growth",
-    "Columbia Banking System (COLB) Reports Strong Q3 Earnings And A $1.2b Buyback, Is The Stock Still Cheap?"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "KN",
-   "name": "Knowles Corporation",
-   "vol_x": 0.23,
-   "buy_pct30": 0.18901008845850323,
-   "change": 0.00014970800653268945,
-   "score": 0.22,
-   "news": [
-    "Knowles surges on earnings beat and strong guidance",
-    "Knowles (KN) Beats Q3 Earnings and Revenue Estimates"
-   ],
-   "on_t212": true
   }
  ],
  "quiet": [
@@ -189,7 +36,11 @@
   },
   {
    "ticker": "TGEN",
-   "vol_x": 4.81
+   "vol_x": 4.8
+  },
+  {
+   "ticker": "BKYI",
+   "vol_x": 1.65
   },
   {
    "ticker": "YMAT",
@@ -220,125 +71,30 @@
    "vol_x": 0.66
   },
   {
-   "ticker": "MWYN",
+   "ticker": "GRC",
+   "vol_x": 0.63
+  },
+  {
+   "ticker": "FCNCA",
+   "vol_x": 0.47
+  },
+  {
+   "ticker": "NFGC",
    "vol_x": 0.46
   },
   {
-   "ticker": "TTRX",
-   "vol_x": 0.42
-  },
-  {
-   "ticker": "BWLP",
-   "vol_x": 0.38
-  },
-  {
-   "ticker": "NVEC",
-   "vol_x": 0.34
-  },
-  {
-   "ticker": "QGEN",
-   "vol_x": 0.31
+   "ticker": "MWYN",
+   "vol_x": 0.46
   }
  ],
- "trades": [
-  {
-   "ticker": "IMAX",
-   "bought_at": "2026-10-23T19:06+00:00",
-   "sold_at": "2026-10-23T19:50+00:00",
-   "entry": 54.08402877807617,
-   "exit": 53.36000061035156,
-   "cost_gbp": 969.8379491295584,
-   "pl_gbp": -14.41644745964993,
-   "pl_pct": -0.014864800323176537,
-   "reason": "End of day: sold 10 minutes before the close."
-  }
- ],
- "total_gbp": -14.41644745964993,
+ "trades": [],
+ "total_gbp": 0,
  "alerts": [
-  "15:06 Day trade: bought IMAX: 24 IMAX at $54.08 (about \u00a3970). Stop $51.38. Broke above its opening-range high ($53.94) at $54.03. In play: 0.8x normal volume, normally moves 3% a day. Stop $52.26.",
-  "15:50 Day trade: sold IMAX (-\u00a314): End of day: sold 10 minutes before the close. Result -\u00a314 (-1.5%).",
-  "15:50 Day trade summary: 1 trade(s) today: IMAX -\u00a314. Total -\u00a314."
+  "15:50 Day trade summary: No trade today: nothing in play broke out."
  ],
  "log": [
-  "FCNCA: one share costs more than \u00a31,000, skipped.",
-  "FCNCA: one share costs more than \u00a31,000, skipped.",
-  "FCNCA: one share costs more than \u00a31,000, skipped.",
-  "FCNCA: one share costs more than \u00a31,000, skipped.",
-  "FCNCA: one share costs more than \u00a31,000, skipped.",
-  "FCNCA: one share costs more than \u00a31,000, skipped.",
-  "FCNCA: one share costs more than \u00a31,000, skipped.",
-  "FCNCA: one share costs more than \u00a31,000, skipped.",
-  "FCNCA: one share costs more than \u00a31,000, skipped.",
-  "FCNCA: one share costs more than \u00a31,000, skipped.",
-  "FCNCA: one share costs more than \u00a31,000, skipped.",
-  "FCNCA: one share costs more than \u00a31,000, skipped.",
-  "FCNCA: one share costs more than \u00a31,000, skipped.",
-  "FCNCA: one share costs more than \u00a31,000, skipped.",
-  "FCNCA: one share costs more than \u00a31,000, skipped.",
-  "FCNCA: one share costs more than \u00a31,000, skipped.",
-  "FCNCA: one share costs more than \u00a31,000, skipped.",
-  "FCNCA: one share costs more than \u00a31,000, skipped.",
-  "FCNCA: one share costs more than \u00a31,000, skipped.",
-  "FCNCA: one share costs more than \u00a31,000, skipped.",
-  "FCNCA: one share costs more than \u00a31,000, skipped.",
-  "FCNCA: one share costs more than \u00a31,000, skipped.",
-  "FCNCA: one share costs more than \u00a31,000, skipped.",
-  "FCNCA: one share costs more than \u00a31,000, skipped.",
-  "Added ZM to today's list at 13:12 New York: 0.2x normal volume in the last 30 min; news: Zoom Communications' New AI Services Impressive, Oppenheimer Says in Upgrade",
-  "FCNCA: one share costs more than \u00a31,000, skipped.",
-  "FCNCA: one share costs more than \u00a31,000, skipped.",
-  "FCNCA: one share costs more than \u00a31,000, skipped.",
-  "FCNCA: one share costs more than \u00a31,000, skipped.",
-  "FCNCA: one share costs more than \u00a31,000, skipped.",
-  "FCNCA: one share costs more than \u00a31,000, skipped.",
-  "FCNCA: one share costs more than \u00a31,000, skipped.",
-  "FCNCA: one share costs more than \u00a31,000, skipped.",
-  "FCNCA: one share costs more than \u00a31,000, skipped.",
-  "FCNCA: one share costs more than \u00a31,000, skipped.",
-  "FCNCA: one share costs more than \u00a31,000, skipped.",
-  "FCNCA: one share costs more than \u00a31,000, skipped.",
-  "FCNCA: one share costs more than \u00a31,000, skipped.",
-  "FCNCA: one share costs more than \u00a31,000, skipped.",
-  "FCNCA: one share costs more than \u00a31,000, skipped.",
-  "Added LAD to today's list at 14:00 New York: 0.4x normal volume in the last 30 min; news: Lithia & Driveway posts Q3 earnings and revenue beat, raises dividend",
-  "FCNCA: one share costs more than \u00a31,000, skipped.",
-  "FCNCA: one share costs more than \u00a31,000, skipped.",
-  "FCNCA: one share costs more than \u00a31,000, skipped.",
-  "FCNCA: one share costs more than \u00a31,000, skipped.",
-  "FCNCA: one share costs more than \u00a31,000, skipped.",
-  "FCNCA: one share costs more than \u00a31,000, skipped.",
-  "FCNCA: one share costs more than \u00a31,000, skipped.",
-  "FCNCA: one share costs more than \u00a31,000, skipped.",
-  "Added TCX to today's list at 14:16 New York: 0.3x normal volume in the last 30 min; news: Tucows Announces Agreement for Ting Fiber to Exit Colorado Springs",
-  "FCNCA: one share costs more than \u00a31,000, skipped.",
-  "FCNCA: one share costs more than \u00a31,000, skipped.",
-  "FCNCA: one share costs more than \u00a31,000, skipped.",
-  "FCNCA: one share costs more than \u00a31,000, skipped.",
-  "FCNCA: one share costs more than \u00a31,000, skipped.",
-  "FCNCA: one share costs more than \u00a31,000, skipped.",
-  "FCNCA: one share costs more than \u00a31,000, skipped.",
-  "FCNCA: one share costs more than \u00a31,000, skipped.",
-  "FCNCA: one share costs more than \u00a31,000, skipped.",
-  "FCNCA: one share costs more than \u00a31,000, skipped.",
-  "FCNCA: one share costs more than \u00a31,000, skipped.",
-  "FCNCA: one share costs more than \u00a31,000, skipped.",
-  "FCNCA: one share costs more than \u00a31,000, skipped.",
-  "FCNCA: one share costs more than \u00a31,000, skipped.",
-  "FCNCA: one share costs more than \u00a31,000, skipped.",
-  "FCNCA: one share costs more than \u00a31,000, skipped.",
-  "FCNCA: one share costs more than \u00a31,000, skipped.",
-  "FCNCA: one share costs more than \u00a31,000, skipped.",
-  "FCNCA: one share costs more than \u00a31,000, skipped.",
-  "FCNCA: one share costs more than \u00a31,000, skipped.",
-  "FCNCA: one share costs more than \u00a31,000, skipped.",
-  "FCNCA: one share costs more than \u00a31,000, skipped.",
-  "FCNCA: one share costs more than \u00a31,000, skipped.",
-  "FCNCA: one share costs more than \u00a31,000, skipped.",
-  "Added IMAX to today's list at 15:04 New York: 0.8x normal volume in the last 30 min; news: Will Imax (IMAX) Beat Estimates Again in Its Next Earnings Report?",
-  "FCNCA: one share costs more than \u00a31,000, skipped.",
-  "Day trade buy order: 24 IMAX at about $54.03. Broke above its opening-range high ($53.94) at $54.03. In play: 0.8x normal volume, normally moves 3% a day. Stop $52.26.",
-  "Bought 24 IMAX at 54.08 (cost \u00a3970).",
-  "Sold IMAX (about -\u00a314). End of day: sold 10 minutes before the close.",
-  "Day trading finished: 1 trade(s), total -\u00a314."
+  "Added NVDA to today's list at 10:32 New York: 0.2x normal volume in the last 30 min; news: NVIDIA and Supply Chain Partners Expand Capacity to Accelerate AI Infrastructure",
+  "NVDA: Claude: no catalyst (strength None/5): ",
+  "Day trading finished: 0 trade(s), total +\u00a30."
  ]
 }

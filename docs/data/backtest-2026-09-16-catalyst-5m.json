@@ -1,6 +1,6 @@
 {
  "date": "2026-09-16",
- "generated": "2026-11-01T19:35+00:00",
+ "generated": "2026-11-03T21:16+00:00",
  "fx_gbpusd": 1.3473457098007202,
  "result": "done",
  "require_news": true,
@@ -8,8 +8,7 @@
  "bars": "5m",
  "require_trend": true,
  "added_during_day": [
-  "Added HITI to today's list at 10:32 New York: 0.2x normal volume in the last 30 min; news: HITI: High Tide Strong Growth Profile Supports Price Target of US$5.00",
-  "Added GLBS to today's list at 10:48 New York: 0.5x normal volume in the last 30 min; news: Globus Maritime Limited Announces the Delivery of a 2026-Built Ultramax Dry Bulk"
+  "Added HITI to today's list at 10:32 New York: 0.2x normal volume in the last 30 min; news: High Tide Reports Record-Breaking Third Quarter 2026 Financial Results - PR News"
  ],
  "drift_list": [],
  "list": [
@@ -21,31 +20,31 @@
    "change": 0.2210526791305769,
    "score": 8.02,
    "news": [
-    "NeurAxis Announces Medical Coverage Policy Milestone, Expanding Access to Over 18 million additional Covered Lives"
+    "NeurAxis Announces Medical Coverage Policy Milestone, - GlobeNewswire"
    ],
    "on_t212": true
   },
   {
-   "ticker": "NFGC",
-   "name": "New Found Gold Corp",
-   "vol_x": 0.27,
-   "buy_pct30": 0.6679383420512023,
-   "change": 0.06621952521701724,
-   "score": 2.71,
+   "ticker": "BBNX",
+   "name": "Beta Bionics, Inc.",
+   "vol_x": 1.28,
+   "buy_pct30": 0.7861854652189564,
+   "change": 0.06396253622028358,
+   "score": 5.2,
    "news": [
-    "New Found Gold Declares Commercial Production at Hammerdown Gold Mine"
+    "Beta Bionics (NASDAQ: BBNX) Faces Securities Class Action Amid iLet FDA Compliance -- HBSS - GlobeNewswire"
    ],
    "on_t212": true
   },
   {
-   "ticker": "DSX",
-   "name": "Diana Shipping inc.",
-   "vol_x": 0.23,
-   "buy_pct30": 0.6399067119689628,
-   "change": 0.013377913620550297,
-   "score": 2.52,
+   "ticker": "ORN",
+   "name": "Orion Group Holdings, Inc.",
+   "vol_x": 0.28,
+   "buy_pct30": 0.5415844918438685,
+   "change": 0.01655624851909443,
+   "score": 1.23,
    "news": [
-    "Diana Shipping Inc. Announces Time Charter  Contract for m/v Astarte With Aquavita"
+    "Orion Expands Anthropic Collaboration as Launch Partner for Claude for Financial Advisors - Business Wire"
    ],
    "on_t212": true
   },
@@ -55,10 +54,9 @@
    "vol_x": 0.41,
    "buy_pct30": 0.43915279850416145,
    "change": 0.014662742245680649,
-   "score": 1.58,
+   "score": 1.08,
    "news": [
-    "Rocket Pharmaceuticals\u2019 FDA Decision Clears \u2018Meaningful Regulatory Overhang,\u2019 Says Needham \u2014 Sees 150% Upside Potential In RCKT Stock",
-    "Rocket Pharmaceuticals Shares Rise 8% After FDA Alignment on Danon Disease Trial"
+    "Rocket Pharmaceuticals Announces FDA Alignment on Path to Complete Pivotal Phase 2 Trial of RP-A501 in Danon Disease - Business Wire"
    ],
    "on_t212": true
   },
@@ -70,7 +68,43 @@
    "change": 0.017169611628277348,
    "score": 0.87,
    "news": [
-    "BlueLinx Expands RDI\u00ae Railing Distribution to 21 Locations Across Key U.S. Markets"
+    "BlueLinx Expands RDI\u00ae Railing Distribution to 21 Locations Across Key U.S. Markets - Business Wire"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "ALMU",
+   "name": "Aeluma, Inc.",
+   "vol_x": 0.53,
+   "buy_pct30": 0.29861615060576047,
+   "change": 0.025514092553474255,
+   "score": 0.75,
+   "news": [
+    "Aeluma Executes Strategic Agreement with Sumitomo Chemical - GlobeNewswire"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "CRML",
+   "name": "Critical Metals Corp.",
+   "vol_x": 0.49,
+   "buy_pct30": 0.27330895099602925,
+   "change": 0.040944918549078446,
+   "score": 0.57,
+   "news": [
+    "Critical Metals Corp (Nasdaq: CRML) Achieves Breakthrough Tanbreez Heavy Rare Earth Results: >99% Dissolution of Eudialyte Concentrate Into 19 Ultra-High-Purity Rare Earth Products; Refinery Study Projects US$1.8\u20132.2b in Annual Refinery Revenue - Critical Metals Corp"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "OSS",
+   "name": "One Stop Systems, Inc.",
+   "vol_x": 0.28,
+   "buy_pct30": 0.1761674522967894,
+   "change": 0.00348440044620002,
+   "score": -0.24,
+   "news": [
+    "OSS Receives Award Supporting U.S. Missile Defense Agency - GlobeNewswire"
    ],
    "on_t212": true
   }
@@ -83,10 +117,6 @@
   {
    "ticker": "MEDS",
    "vol_x": 14.23
-  },
-  {
-   "ticker": "BBNX",
-   "vol_x": 1.28
   },
   {
    "ticker": "ALVO",
@@ -109,10 +139,6 @@
    "vol_x": 0.58
   },
   {
-   "ticker": "AXON",
-   "vol_x": 0.57
-  },
-  {
    "ticker": "AGPU",
    "vol_x": 0.57
   },
@@ -121,47 +147,37 @@
    "vol_x": 0.53
   },
   {
-   "ticker": "ALMU",
-   "vol_x": 0.53
-  },
-  {
-   "ticker": "DKS",
-   "vol_x": 0.52
-  },
-  {
    "ticker": "CIFR",
    "vol_x": 0.52
   },
   {
    "ticker": "ADPT",
    "vol_x": 0.49
-  }
- ],
- "trades": [
+  },
   {
-   "ticker": "GLBS",
-   "bought_at": "2026-09-16T14:48+00:00",
-   "sold_at": "2026-09-16T19:50+00:00",
-   "entry": 3.8738698854446407,
-   "exit": 3.759999990463257,
-   "cost_gbp": 1002.0656691107353,
-   "pl_gbp": -30.911801797241765,
-   "pl_pct": -0.03084807987152566,
-   "reason": "End of day: sold 10 minutes before the close."
+   "ticker": "AUR",
+   "vol_x": 0.42
+  },
+  {
+   "ticker": "GEF.B",
+   "vol_x": 0.41
+  },
+  {
+   "ticker": "EPM",
+   "vol_x": 0.4
+  },
+  {
+   "ticker": "CSW",
+   "vol_x": 0.39
   }
  ],
- "total_gbp": -30.911801797241765,
+ "trades": [],
+ "total_gbp": 0,
  "alerts": [
-  "10:48 Day trade: bought GLBS: 348 GLBS at $3.87 (about \u00a31,002). Stop $3.68. Broke above its opening-range high ($3.71) at $3.87. In play: 0.5x normal volume, normally moves 6% a day. Stop $3.68.",
-  "15:50 Day trade: sold GLBS (-\u00a331): End of day: sold 10 minutes before the close. Result -\u00a331 (-3.1%).",
-  "15:50 Day trade summary: 1 trade(s) today: GLBS -\u00a331. Total -\u00a331."
+  "15:50 Day trade summary: No trade today: nothing in play broke out."
  ],
  "log": [
-  "Added HITI to today's list at 10:32 New York: 0.2x normal volume in the last 30 min; news: HITI: High Tide Strong Growth Profile Supports Price Target of US$5.00",
-  "Added GLBS to today's list at 10:48 New York: 0.5x normal volume in the last 30 min; news: Globus Maritime Limited Announces the Delivery of a 2026-Built Ultramax Dry Bulk",
-  "Day trade buy order: 348 GLBS at about $3.87. Broke above its opening-range high ($3.71) at $3.87. In play: 0.5x normal volume, normally moves 6% a day. Stop $3.68.",
-  "Bought 348 GLBS at 3.87 (cost \u00a31,002).",
-  "Sold GLBS (about -\u00a331). End of day: sold 10 minutes before the close.",
-  "Day trading finished: 1 trade(s), total -\u00a331."
+  "Added HITI to today's list at 10:32 New York: 0.2x normal volume in the last 30 min; news: High Tide Reports Record-Breaking Third Quarter 2026 Financial Results - PR News",
+  "Day trading finished: 0 trade(s), total +\u00a30."
  ]
 }

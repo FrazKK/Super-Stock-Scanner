@@ -1,38 +1,36 @@
 {
  "date": "2026-09-10",
- "generated": "2026-11-01T19:30+00:00",
+ "generated": "2026-11-03T21:16+00:00",
  "fx_gbpusd": 1.3551971912384033,
  "result": "done",
  "require_news": true,
  "strategy": "catalyst",
  "bars": "5m",
  "require_trend": true,
- "added_during_day": [
-  "Added OPRT to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; news: Take the Zacks Approach to Beat the Markets: Oportun Financial, Uranium Royalty "
- ],
+ "added_during_day": [],
  "drift_list": [],
  "list": [
   {
-   "ticker": "OCC",
-   "name": "Optical Cable Corporation",
-   "vol_x": 0.28,
-   "buy_pct30": 0.9335766048794417,
-   "change": 0.0036496490095605516,
-   "score": 3.79,
+   "ticker": "XFOR",
+   "name": "X4 Pharmaceuticals, Inc.",
+   "vol_x": 0.48,
+   "buy_pct30": 0.6527434636553453,
+   "change": 0.011111167036458314,
+   "score": 3.07,
    "news": [
-    "Optical Cable Corp (OCC) (Q3 2026) Earnings Call Highlights: Record Sales and Margin Expansion ..."
+    "X4 Pharmaceuticals Announces Positive Outcome from FDA Type C Meeting - GlobeNewswire"
    ],
    "on_t212": true
   },
   {
-   "ticker": "WLTH",
-   "name": "Wealthfront Corporation",
-   "vol_x": 0.31,
-   "buy_pct30": 0.8074770779249978,
-   "change": 0.0687103188064675,
-   "score": 3.35,
+   "ticker": "IRD",
+   "name": "Opus Genetics, Inc.",
+   "vol_x": 0.25,
+   "buy_pct30": 0.46508207846033456,
+   "change": 0.041710269249886966,
+   "score": 1.86,
    "news": [
-    "Wealthfront Stock Surges on Earnings Beat, $100 Billion-Asset Milestone"
+    "Opus Genetics Announces Positive Low Dose Cohort 1 Data - GlobeNewswire"
    ],
    "on_t212": true
   },
@@ -44,7 +42,7 @@
    "change": 0.02459386642809891,
    "score": 0.65,
    "news": [
-    "Tsakos Energy Navigation Ltd (TEN) (Q2 2026) Earnings Call Highlights: Record Net Income Surges ..."
+    "TEN, Ltd. Reports Profits for the First Half and Second Quarter of 2026 - GlobeNewswire"
    ],
    "on_t212": true
   }
@@ -87,6 +85,10 @@
    "vol_x": 1.01
   },
   {
+   "ticker": "PRTS",
+   "vol_x": 0.79
+  },
+  {
    "ticker": "INDO",
    "vol_x": 0.76
   },
@@ -105,36 +107,14 @@
   {
    "ticker": "EGAN",
    "vol_x": 0.67
-  },
-  {
-   "ticker": "PBAM",
-   "vol_x": 0.61
   }
  ],
- "trades": [
-  {
-   "ticker": "OPRT",
-   "bought_at": "2026-09-10T14:16+00:00",
-   "sold_at": "2026-09-10T19:46+00:00",
-   "entry": 7.8318238816261285,
-   "exit": 7.65234,
-   "cost_gbp": 1001.2844614728048,
-   "pl_gbp": -25.877305734788024,
-   "pl_pct": -0.025844109971231048,
-   "reason": "Stop-loss order filled"
-  }
- ],
- "total_gbp": -25.877305734788024,
+ "trades": [],
+ "total_gbp": 0,
  "alerts": [
-  "10:16 Day trade: bought OPRT: 173 OPRT at $7.83 (about \u00a31,001). Stop $7.44. Broke above its opening-range high ($7.73) at $7.82. In play: 0.3x normal volume, normally moves 4% a day. Stop $7.65.",
-  "15:46 Day trade update: OPRT: stop-loss order filled (-\u00a326)",
-  "15:50 Day trade summary: 1 trade(s) today: OPRT -\u00a326. Total -\u00a326."
+  "15:50 Day trade summary: No trade today: nothing in play broke out."
  ],
  "log": [
-  "Added OPRT to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; news: Take the Zacks Approach to Beat the Markets: Oportun Financial, Uranium Royalty ",
-  "Day trade buy order: 173 OPRT at about $7.82. Broke above its opening-range high ($7.73) at $7.82. In play: 0.3x normal volume, normally moves 4% a day. Stop $7.65.",
-  "Bought 173 OPRT at 7.83 (cost \u00a31,001).",
-  "OPRT: stop-loss order filled, P&L -\u00a326.",
-  "Day trading finished: 1 trade(s), total -\u00a326."
+  "Day trading finished: 0 trade(s), total +\u00a30."
  ]
 }

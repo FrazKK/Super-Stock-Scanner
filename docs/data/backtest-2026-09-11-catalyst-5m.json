@@ -1,63 +1,24 @@
 {
  "date": "2026-09-11",
- "generated": "2026-11-01T19:31+00:00",
+ "generated": "2026-11-03T21:17+00:00",
  "fx_gbpusd": 1.3509314060211182,
  "result": "done",
  "require_news": true,
  "strategy": "catalyst",
  "bars": "5m",
  "require_trend": true,
- "added_during_day": [
-  "Added JILL to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; news: J.Jill Inc (JILL) (Q2 2026) Earnings Call Highlights: Strategic Investments and "
- ],
+ "added_during_day": [],
  "drift_list": [],
  "list": [
-  {
-   "ticker": "FEIM",
-   "name": "Frequency Electronics, Inc.",
-   "vol_x": 2.52,
-   "buy_pct30": 0.5304327818523458,
-   "change": 0.33467611985426937,
-   "score": 5.16,
-   "news": [
-    "Frequency Electronics Q1 Revenue Rises 70% to Record $23.5 Million",
-    "Frequency Electronics Inc (FEIM) (Q1 2027) Earnings Call Highlights: Record Revenue, Surging ..."
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "UNTY",
-   "name": "Unity Bancorp, Inc.",
-   "vol_x": 0.44,
-   "buy_pct30": 0.9106812590296679,
-   "change": 0.029615840167219076,
-   "score": 5.02,
-   "news": [
-    "Unity Bancorp (UNTY) Upgraded to Buy: Here's What You Should Know"
-   ],
-   "on_t212": true
-  },
   {
    "ticker": "TEN",
    "name": "Tsakos Energy Navigation Ltd",
    "vol_x": 0.81,
-   "buy_pct30": 0.7263443698500024,
+   "buy_pct30": 0.726346789902874,
    "change": 0.0650861084097567,
    "score": 4.03,
    "news": [
-    "Tsakos Energy Navigation Ltd (TEN) (Q2 2026) Earnings Call Highlights: Record Net Income Surges ..."
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "NMAX",
-   "name": "Newsmax, Inc.",
-   "vol_x": 0.41,
-   "buy_pct30": 0.6335773166444062,
-   "change": 0.05919859738648059,
-   "score": 3.85,
-   "news": [
-    "AngelAi Launches Powerful National Newsmax Campaign to Combat Systemic Lending Bias and Protect U.S. Veterans Through AI-Driven Oversight"
+    "TEN, Ltd. Reports Profits for the First Half and Second Quarter of 2026 - GlobeNewswire"
    ],
    "on_t212": true
   },
@@ -69,104 +30,55 @@
    "change": 0.02388629212125748,
    "score": 3.4,
    "news": [
-    "IBEX Ltd (IBEX) (Q4 2026) Earnings Call Highlights: Record Revenue and AI-Driven Growth Momentum"
+    "Ibex Celebrates a Decade of Clinical AI Leadership Following Its Latest Record-Setting Quarter Building Towards Another Year of Doubling Revenue - Business Wire"
    ],
    "on_t212": true
   },
   {
-   "ticker": "IMPP",
-   "name": "Imperial Petroleum Inc.",
-   "vol_x": 0.72,
-   "buy_pct30": 0.5777840474381968,
-   "change": 0.03300623410347847,
-   "score": 3.25,
+   "ticker": "MTN",
+   "name": "Vail Resorts, Inc.",
+   "vol_x": 0.25,
+   "buy_pct30": 0.8203517972781451,
+   "change": 0.035025861432618655,
+   "score": 3.28,
    "news": [
-    "Imperial Petroleum Inc (IMPP) (Q2 2026) Earnings Call Highlights: Record Revenue, Debt-Free ..."
+    "Vail Resorts Provides Update Following Close of Nominations Window, Reiterates Active Search Underway in its Ongoing Commitment to Board Refreshment - PR Newswire"
    ],
    "on_t212": true
   },
   {
-   "ticker": "CCG",
-   "name": "Cheche Group Inc.",
-   "vol_x": 0.65,
-   "buy_pct30": 0.595731868827478,
-   "change": 0.06060607593140577,
-   "score": 3.18,
+   "ticker": "HOFT",
+   "name": "Hooker Furnishings Corporation",
+   "vol_x": 1.55,
+   "buy_pct30": 0.36969157327305985,
+   "change": 0.03420845788507343,
+   "score": 3.08,
    "news": [
-    "Cheche Group Announces Proposed Strategic Investment in Global Residential Energy Storage Business, Advancing Green Mobility to Green Energy Strategy"
+    "Hooker Furnishings Reports Profitable Quarter and First Half - GlobeNewswire"
    ],
    "on_t212": true
   },
   {
-   "ticker": "BW",
-   "name": "Babcock & Wilcox Enterprises, Inc.",
-   "vol_x": 0.35,
-   "buy_pct30": 0.642821220475034,
-   "change": 0.09483958453318508,
-   "score": 2.77,
+   "ticker": "ADBE",
+   "name": "Adobe Inc.",
+   "vol_x": 0.55,
+   "buy_pct30": 0.5132422094977354,
+   "change": 0.00040184400591081193,
+   "score": 2.65,
    "news": [
-    "Babcock & Wilcox Receives Award to Begin Work on Approximately $130 Million Air Quality Control Project"
+    "Adobe Reports Record Q3 Results - Adobe Newsroom"
    ],
    "on_t212": true
   },
   {
-   "ticker": "MAKO",
-   "name": "Mako Mining Corp",
-   "vol_x": 0.24,
-   "buy_pct30": 0.5324028055810531,
-   "change": 0.03207744845691218,
-   "score": 2.61,
+   "ticker": "ORCL",
+   "name": "Oracle Corporation",
+   "vol_x": 0.87,
+   "buy_pct30": 0.30983338613815875,
+   "change": 0.02219827526001006,
+   "score": 1.48,
    "news": [
-    "Mako Mining signs mineral agreement for Guyana gold project",
-    "Mako Mining Secures Mineral Agreement with the Government of Guyana for the Eagle Mountain Gold Project"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "RXT",
-   "name": "Rackspace Technology, Inc.",
-   "vol_x": 0.37,
-   "buy_pct30": 0.45421840140813224,
-   "change": 0.07667724036522383,
-   "score": 2.06,
-   "news": [
-    "Dear Rackspace Stock Fans, Here\u2019s What the Nvidia Partnership Means for RXT"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "HYPD",
-   "name": "Hyperion DeFi, Inc.",
-   "vol_x": 0.26,
-   "buy_pct30": 0.6306521663381472,
-   "change": 0.050139295560081454,
-   "score": 1.54,
-   "news": [
-    "Trump's White House Endorsement 'Extremely Positive,' Says Hyperion DeFi CEO: Executive Explains Why HYPE Ownership Is 'Beneficial'"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "MLR",
-   "name": "Miller Industries, Inc.",
-   "vol_x": 0.3,
-   "buy_pct30": 0.4589355493055498,
-   "change": 0.007613298996624662,
-   "score": 0.94,
-   "news": [
-    "Miller Industries (MLR) Posts Growth, But Profits Tell A Different Story"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "IA",
-   "name": "Innovative Solutions and Support, Inc.",
-   "vol_x": 0.27,
-   "buy_pct30": 0.46246342490544623,
-   "change": 0.03510637628702917,
-   "score": 0.89,
-   "news": [
-    "Innovative Solutions and Support (IA) Moves to Strong Buy: Rationale Behind the Upgrade"
+    "Oracle Announces Q1 Results Driven by Triple Digit Growth in Cloud Infrastructure Revenues - PR Newswire"
    ],
    "on_t212": true
   },
@@ -178,27 +90,19 @@
    "change": 0.015776713355815764,
    "score": 0.01,
    "news": [
-    "Accelevate Solutions and Brand Engagement Network Launch AI-Powered Passenger Engagement Platform for LAX Off-Airport Shuttle Providers"
+    "Accelevate Solutions and Brand Engagement Network Launch AI-Powered Passenger Engagement Platform for LAX Off-Airport Shuttle Providers - PR Newswire"
    ],
    "on_t212": true
   }
  ],
  "quiet": [
   {
-   "ticker": "FTFT",
-   "vol_x": 2.66
-  },
-  {
-   "ticker": "HOFT",
-   "vol_x": 1.55
+   "ticker": "FEIM",
+   "vol_x": 2.52
   },
   {
    "ticker": "AIRT",
    "vol_x": 1.33
-  },
-  {
-   "ticker": "AXG",
-   "vol_x": 1.07
   },
   {
    "ticker": "STVN",
@@ -213,20 +117,24 @@
    "vol_x": 0.89
   },
   {
-   "ticker": "ORCL",
-   "vol_x": 0.87
-  },
-  {
    "ticker": "PSIG",
    "vol_x": 0.79
   },
   {
-   "ticker": "LFMD",
-   "vol_x": 0.64
+   "ticker": "PRTS",
+   "vol_x": 0.76
   },
   {
-   "ticker": "AARD",
-   "vol_x": 0.6
+   "ticker": "IMPP",
+   "vol_x": 0.72
+  },
+  {
+   "ticker": "CCG",
+   "vol_x": 0.65
+  },
+  {
+   "ticker": "CRMT",
+   "vol_x": 0.65
   },
   {
    "ticker": "KINS",
@@ -237,38 +145,28 @@
    "vol_x": 0.56
   },
   {
-   "ticker": "ADBE",
-   "vol_x": 0.55
-  },
-  {
    "ticker": "VERA",
    "vol_x": 0.49
-  }
- ],
- "trades": [
+  },
   {
-   "ticker": "TEN",
-   "bought_at": "2026-09-11T14:26+00:00",
-   "sold_at": "2026-09-11T19:50+00:00",
-   "entry": 48.088040916442864,
-   "exit": 47.720001220703125,
-   "cost_gbp": 998.1889808532669,
-   "pl_gbp": -9.12319392699851,
-   "pl_pct": -0.009139746182330993,
-   "reason": "End of day: sold 10 minutes before the close."
+   "ticker": "SVCO",
+   "vol_x": 0.49
+  },
+  {
+   "ticker": "USPH",
+   "vol_x": 0.46
   }
  ],
- "total_gbp": -9.12319392699851,
+ "trades": [],
+ "total_gbp": 0,
  "alerts": [
-  "10:26 Day trade: bought TEN: 28 TEN at $48.09 (about \u00a3998). Stop $45.68. Broke above its opening-range high ($47.75) at $48.04. In play: 0.8x normal volume, normally moves 3% a day. Stop $45.64.",
-  "15:50 Day trade: sold TEN (-\u00a39): End of day: sold 10 minutes before the close. Result -\u00a39 (-0.9%).",
-  "15:50 Day trade summary: 1 trade(s) today: TEN -\u00a39. Total -\u00a39."
+  "15:50 Day trade summary: No trade today: nothing in play broke out."
  ],
  "log": [
-  "Added JILL to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; news: J.Jill Inc (JILL) (Q2 2026) Earnings Call Highlights: Strategic Investments and ",
-  "Day trade buy order: 28 TEN at about $48.04. Broke above its opening-range high ($47.75) at $48.04. In play: 0.8x normal volume, normally moves 3% a day. Stop $45.64.",
-  "Bought 28 TEN at 48.09 (cost \u00a3998).",
-  "Sold TEN (about -\u00a39). End of day: sold 10 minutes before the close.",
-  "Day trading finished: 1 trade(s), total -\u00a39."
+  "IBEX: Claude: no catalyst (strength None/5): ",
+  "TEN: Claude: no catalyst (strength None/5): ",
+  "MTN: Claude: no catalyst (strength 1/5): The only OFFICIAL headline is a routine board-nominations governance update, which is not a price-moving catalyst; the other items are neutral commentary.",
+  "ADBE: Claude: no catalyst (strength None/5): ",
+  "Day trading finished: 0 trade(s), total +\u00a30."
  ]
 }

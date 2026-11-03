@@ -1,15 +1,13 @@
 {
  "date": "2026-09-28",
- "generated": "2026-11-01T19:37+00:00",
+ "generated": "2026-11-03T21:22+00:00",
  "fx_gbpusd": 1.3229262828826904,
  "result": "done",
  "require_news": true,
  "strategy": "catalyst",
  "bars": "5m",
  "require_trend": true,
- "added_during_day": [
-  "Added FUNC to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; news: How to Play First United Stock After Its Dividend Increase"
- ],
+ "added_during_day": [],
  "drift_list": [],
  "list": [
   {
@@ -20,20 +18,31 @@
    "change": 0.024489772086439876,
    "score": 5.34,
    "news": [
-    "NETSOL Technologies Inc (NTWK) (Q4 2026) Earnings Call Highlights: Record Revenue and Strong ..."
+    "NETSOL Technologies reports record fiscal 2026 revenue and full-year profitability, exceeding guidance - GlobeNewswire"
    ],
    "on_t212": true
   },
   {
-   "ticker": "LNTH",
-   "name": "Lantheus Holdings, Inc.",
-   "vol_x": 0.36,
-   "buy_pct30": 0.8070811920649411,
-   "change": 0.0013034377942344744,
-   "score": 3.95,
+   "ticker": "DPRO",
+   "name": "Draganfly Inc.",
+   "vol_x": 0.83,
+   "buy_pct30": 0.7174343164036042,
+   "change": 0.06915885834665136,
+   "score": 4.03,
    "news": [
-    "Lantheus Holdings (LNTH) Could Be 7% Undervalued On BRAVNETSA Approval",
-    "Lantheus Holdings (LNTH) Stock May Be 14% Undervalued On FDA Approval"
+    "Draganfly Announces Strategic Investment from Unusual Machines and a Leading U.S. Investment Fund - Draganfly"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "NVDA",
+   "name": "NVIDIA Corporation",
+   "vol_x": 0.37,
+   "buy_pct30": 0.675883051002886,
+   "change": 0.03065710077729178,
+   "score": 3.94,
+   "news": [
+    "NVIDIA Launches Open Agent Safety Platform to Secure Agents From Testing to Deployment - NVIDIA Newsroom"
    ],
    "on_t212": true
   },
@@ -50,40 +59,28 @@
    "on_t212": true
   },
   {
-   "ticker": "TRT",
-   "name": "Trio-Tech International",
-   "vol_x": 0.26,
-   "buy_pct30": 0.6186595071871479,
-   "change": 0.045016112420113386,
-   "score": 2.49,
+   "ticker": "KDK",
+   "name": "Kodiak AI, Inc.",
+   "vol_x": 0.33,
+   "buy_pct30": 0.49066977918798327,
+   "change": 0.008189236451275894,
+   "score": 2.12,
    "news": [
-    "Trio-Tech Reports 72% Fiscal 2026 Revenue Growth, Driven by Continued AI and Automotive Semiconductor Momentum"
+    "Kodiak AI and DTL Transport Complete First Autonomous Trucking Deliveries Under New California DMV Permit - GlobeNewswire"
    ],
    "on_t212": true
   },
   {
-   "ticker": "CANG",
-   "name": "Cango Inc.",
-   "vol_x": 0.53,
-   "buy_pct30": 0.5098654288303627,
-   "change": 0.14507851929077842,
-   "score": 1.6,
+   "ticker": "MEDS",
+   "name": "DataMeds AI, Inc.",
+   "vol_x": 0.57,
+   "buy_pct30": 0.18316933152408602,
+   "change": 0.25401936556890625,
+   "score": -0.63,
    "news": [
-    "Cango stock surges over 20% following Buy initiation at Jones Trading"
+    "DataMeds AI and Tollo Health Announce Launch of 'Health Lives Here' Mobile Application - ACCESS Newswire"
    ],
-   "on_t212": true
-  },
-  {
-   "ticker": "BUR",
-   "name": "Burford Capital Limited",
-   "vol_x": 0.27,
-   "buy_pct30": 0.36954123482292317,
-   "change": 0.05906590878380524,
-   "score": 0.52,
-   "news": [
-    "Burford Capital shares gain on $5.7B Apple patent verdict"
-   ],
-   "on_t212": true
+   "on_t212": false
   }
  ],
  "quiet": [
@@ -94,6 +91,14 @@
   {
    "ticker": "KOD",
    "vol_x": 12.38
+  },
+  {
+   "ticker": "ELAB",
+   "vol_x": 2.18
+  },
+  {
+   "ticker": "GBLI",
+   "vol_x": 1.76
   },
   {
    "ticker": "MX",
@@ -108,8 +113,8 @@
    "vol_x": 1.18
   },
   {
-   "ticker": "DPRO",
-   "vol_x": 0.83
+   "ticker": "RDNW",
+   "vol_x": 0.72
   },
   {
    "ticker": "IMUX",
@@ -120,8 +125,8 @@
    "vol_x": 0.62
   },
   {
-   "ticker": "MEDS",
-   "vol_x": 0.57
+   "ticker": "CANG",
+   "vol_x": 0.53
   },
   {
    "ticker": "LXRX",
@@ -138,14 +143,6 @@
   {
    "ticker": "CHE",
    "vol_x": 0.45
-  },
-  {
-   "ticker": "NAUT",
-   "vol_x": 0.43
-  },
-  {
-   "ticker": "PUSA",
-   "vol_x": 0.41
   }
  ],
  "trades": [
@@ -163,13 +160,13 @@
  ],
  "total_gbp": 12.922769106050964,
  "alerts": [
-  "10:16 Day trade: bought NTWK: 255 NTWK at $5.19 (about \u00a31,001). Stop $4.93. Broke above its opening-range high ($5.02) at $5.18. In play: 1.7x normal volume, normally moves 6% a day. Stop $4.92.",
+  "10:16 Day trade: bought NTWK: 255 NTWK at $5.19 (about \u00a31,001). Stop $4.93. Broke above its opening-range high ($5.02) at $5.18. In play: 1.7x normal volume, normally moves 6% a day. Stop $4.92. News (GlobeNewswire): NETSOL Technologies reports record fiscal 2026 revenue and full-year profitability, exceed. Claude: catalyst (strength 4/5): Official release reports record fiscal 2026 revenue and full-year profitability exceeding guidance, a specific earnings beat that fits the price-moving catalyst",
   "15:50 Day trade: sold NTWK (+\u00a313): End of day: sold 10 minutes before the close. Result +\u00a313 (+1.3%).",
   "15:50 Day trade summary: 1 trade(s) today: NTWK +\u00a313. Total +\u00a313."
  ],
  "log": [
-  "Added FUNC to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; news: How to Play First United Stock After Its Dividend Increase",
-  "Day trade buy order: 255 NTWK at about $5.18. Broke above its opening-range high ($5.02) at $5.18. In play: 1.7x normal volume, normally moves 6% a day. Stop $4.92.",
+  "NTWK: Claude: catalyst (strength 4/5): Official release reports record fiscal 2026 revenue and full-year profitability exceeding guidance, a specific earnings beat that fits the price-moving catalyst",
+  "Day trade buy order: 255 NTWK at about $5.18. Broke above its opening-range high ($5.02) at $5.18. In play: 1.7x normal volume, normally moves 6% a day. Stop $4.92. News (GlobeNewswire): NETSOL Technologies reports record fiscal 2026 revenue and full-year profitability, exceed. Claude: catalyst (strength 4/5): Official release reports record fiscal 2026 revenue and full-year profitability exceeding guidance, a specific earnings beat that fits the price-moving catalyst",
   "Bought 255 NTWK at 5.19 (cost \u00a31,001).",
   "NTWK: stop raised from 4.93 to 5.22.",
   "Sold NTWK (about +\u00a313). End of day: sold 10 minutes before the close.",

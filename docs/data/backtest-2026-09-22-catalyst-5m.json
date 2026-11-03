@@ -1,65 +1,36 @@
 {
  "date": "2026-09-22",
- "generated": "2026-11-01T19:33+00:00",
+ "generated": "2026-11-03T21:16+00:00",
  "fx_gbpusd": 1.3370896577835083,
  "result": "done",
  "require_news": true,
  "strategy": "catalyst",
  "bars": "5m",
  "require_trend": true,
- "added_during_day": [
-  "Added SPNT to today's list at 11:36 New York: 1.4x normal volume in the last 30 min; news: SiriusPoint to Deliver Further Book Value Growth, Buybacks, RBC Capital Markets ",
-  "Added XIFR to today's list at 11:52 New York: 0.3x normal volume in the last 30 min; news: XPLR Infrastructure LP (XIFR) Was a Top Contributor for Gabelli Focused Growth a",
-  "Added BMM to today's list at 15:20 New York: 0.7x normal volume in the last 30 min; news: Blue Moon Announces Initial Results from Assay Campaign of Historical Drilling a",
-  "Added SBMT to today's list at 15:20 New York: 0.7x normal volume in the last 30 min; news: Silver Bow Mining Signs Term Sheet with Ocean Partners for Potential US$88 Milli"
- ],
+ "added_during_day": [],
  "drift_list": [],
  "list": [
   {
-   "ticker": "TECH",
-   "name": "Bio-Techne Corp",
-   "vol_x": 0.25,
-   "buy_pct30": 0.619175832323138,
-   "change": 0.00041394754783441456,
-   "score": 3.48,
+   "ticker": "VKTX",
+   "name": "Viking Therapeutics, Inc.",
+   "vol_x": 6.76,
+   "buy_pct30": 0.5633702910106423,
+   "change": 0.3151776044968577,
+   "score": 14.27,
    "news": [
-    "Bio-Techne Opens New Customer Experience Center in D\u00fcsseldorf to Accelerate Scientific Discovery and Customer Collaboration"
+    "Viking Therapeutics Announces Positive Topline Results from Maintenance Study of GLP-1/GIP Agonist VK2735 Demonstrating the Promise of Multiple Maintenance Dosing Regimens - PR Newswire"
    ],
    "on_t212": true
   },
   {
-   "ticker": "MAZE",
-   "name": "Maze Therapeutics, Inc.",
-   "vol_x": 1.04,
-   "buy_pct30": 0.6159985536352571,
-   "change": 0.21661015326257993,
-   "score": 3.04,
+   "ticker": "GRAB",
+   "name": "Grab Holdings Limited",
+   "vol_x": 0.76,
+   "buy_pct30": 0.6746261545358018,
+   "change": 0.07388312983775647,
+   "score": 3.72,
    "news": [
-    "Twin Moves: VRTX Rises On Kidney Disease Trial Results, MAZE Rallies Harder"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "MAAS",
-   "name": "Maase Inc.",
-   "vol_x": 0.77,
-   "buy_pct30": 0.7077001334091958,
-   "change": 0.015132454602004852,
-   "score": 2.87,
-   "news": [
-    "Maase (MAAS) Stock Looks Fully Priced Following A New AI Services Deal"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "VFF",
-   "name": "Village Farms International, Inc.",
-   "vol_x": 0.7,
-   "buy_pct30": 0.6627087552634415,
-   "change": 0.05677077279736831,
-   "score": 2.55,
-   "news": [
-    "Village Farms Eyes Global Cannabis Growth With EU GMP Edge and Net Cash"
+    "{:TH}\u0e41\u0e01\u0e23\u0e47\u0e1a \u0e22\u0e01\u0e40\u0e04\u0e23\u0e37\u0e48\u0e2d\u0e07\u0e08\u0e38\u0e14\u0e43\u0e2b\u0e49\u0e1a\u0e23\u0e34\u0e01\u0e32\u0e23\u0e1c\u0e39\u0e49\u0e42\u0e14\u0e22\u0e2a\u0e32\u0e23\u0e2a\u0e19\u0e32\u0e21\u0e1a\u0e34\u0e19\u0e2a\u0e38\u0e27\u0e23\u0e23\u0e13\u0e20\u0e39\u0e21\u0e34\u0e02\u0e22\u0e32\u0e22\u0e1e\u0e37\u0e49\u0e19\u0e17\u0e35\u0e48 12 \u0e40\u0e25\u0e19 - \u0e1c\u0e38\u0e14 2 \u0e1f\u0e35\u0e40\u0e08\u0e2d\u0e23\u0e4c\u0e43\u0e2b\u0e21\u0e48\u0e40\u0e15\u0e23\u0e35\u0e22\u0e21\u0e23\u0e31\u0e1a\u0e44\u0e2e\u0e0b\u0e35\u0e0b\u0e31\u0e19{:}{:EN}Grab Elevates Transport Experience at Suvarnabhumi Airport With 12-Lane Pick-Up Point Expansion and Two New Features{:} | Grab TH - Grab"
    ],
    "on_t212": true
   },
@@ -71,7 +42,19 @@
    "change": 0.03921564960882984,
    "score": 2.51,
    "news": [
-    "Lexeo Therapeutics Enters Into Agreement to Acquire Mantle Therapeutics and Announces Multiple New Strategic Collaborations to Expand Leadership in Friedreich Ataxia"
+    "Lexeo Therapeutics Enters Into Agreement to Acquire Mantle - GlobeNewswire"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "FSLY",
+   "name": "Fastly, Inc.",
+   "vol_x": 0.29,
+   "buy_pct30": 0.5366094924566518,
+   "change": 0.022611263220579714,
+   "score": 2.23,
+   "news": [
+    "Fastly Launches AI Firewall and AI Runtime Control to Secure and Scale AI - Business Wire"
    ],
    "on_t212": true
   },
@@ -81,10 +64,21 @@
    "vol_x": 0.51,
    "buy_pct30": 0.604018889751927,
    "change": 0.004598484565319527,
-   "score": 2.44,
+   "score": 1.94,
    "news": [
-    "Cue Biopharma Shares Jump 41.6% Premarket Following Phase 2 Trial Results",
-    "Cue Biopharma Announces Positive Topline Results from CUE-221 Phase 2 Study in Chronic Spontaneous Urticaria"
+    "Cue Biopharma Announces Positive Topline Results from CUE-221 Phase 2 Study in Chronic Spontaneous Urticaria - GlobeNewswire"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "GRRR",
+   "name": "Gorilla Technology Group Inc.",
+   "vol_x": 0.25,
+   "buy_pct30": 0.44627144038726485,
+   "change": 0.008124051476156025,
+   "score": 0.79,
+   "news": [
+    "Gorilla Technology Wins Major National AI Intelligence Infrastructure Expansion in Taiwan - TMX Newsfile"
    ],
    "on_t212": true
   }
@@ -93,10 +87,6 @@
   {
    "ticker": "SPRO",
    "vol_x": 7.41
-  },
-  {
-   "ticker": "VKTX",
-   "vol_x": 6.76
   },
   {
    "ticker": "AKAN",
@@ -115,6 +105,10 @@
    "vol_x": 1.41
   },
   {
+   "ticker": "MAZE",
+   "vol_x": 1.04
+  },
+  {
    "ticker": "BB",
    "vol_x": 0.82
   },
@@ -123,15 +117,15 @@
    "vol_x": 0.81
   },
   {
-   "ticker": "GRAB",
-   "vol_x": 0.76
+   "ticker": "MAAS",
+   "vol_x": 0.77
   },
   {
    "ticker": "SOFI",
    "vol_x": 0.75
   },
   {
-   "ticker": "TAOX",
+   "ticker": "VFF",
    "vol_x": 0.7
   },
   {
@@ -151,33 +145,12 @@
    "vol_x": 0.56
   }
  ],
- "trades": [
-  {
-   "ticker": "BMM",
-   "bought_at": "2026-09-22T19:20+00:00",
-   "sold_at": "2026-09-22T19:50+00:00",
-   "entry": 5.780775095462799,
-   "exit": 5.84499979019165,
-   "cost_gbp": 1000.2037468747069,
-   "pl_gbp": 9.597610629237579,
-   "pl_pct": 0.009595655544409642,
-   "reason": "End of day: sold 10 minutes before the close."
-  }
- ],
- "total_gbp": 9.597610629237579,
+ "trades": [],
+ "total_gbp": 0,
  "alerts": [
-  "15:20 Day trade: bought BMM: 231 BMM at $5.78 (about \u00a31,000). Stop $5.49. Broke above its opening-range high ($5.59) at $5.78. In play: 0.7x normal volume, normally moves 8% a day. Stop $5.49.",
-  "15:50 Day trade: sold BMM (+\u00a310): End of day: sold 10 minutes before the close. Result +\u00a310 (+1.0%).",
-  "15:50 Day trade summary: 1 trade(s) today: BMM +\u00a310. Total +\u00a310."
+  "15:50 Day trade summary: No trade today: nothing in play broke out."
  ],
  "log": [
-  "Added SPNT to today's list at 11:36 New York: 1.4x normal volume in the last 30 min; news: SiriusPoint to Deliver Further Book Value Growth, Buybacks, RBC Capital Markets ",
-  "Added XIFR to today's list at 11:52 New York: 0.3x normal volume in the last 30 min; news: XPLR Infrastructure LP (XIFR) Was a Top Contributor for Gabelli Focused Growth a",
-  "Added BMM to today's list at 15:20 New York: 0.7x normal volume in the last 30 min; news: Blue Moon Announces Initial Results from Assay Campaign of Historical Drilling a",
-  "Added SBMT to today's list at 15:20 New York: 0.7x normal volume in the last 30 min; news: Silver Bow Mining Signs Term Sheet with Ocean Partners for Potential US$88 Milli",
-  "Day trade buy order: 231 BMM at about $5.78. Broke above its opening-range high ($5.59) at $5.78. In play: 0.7x normal volume, normally moves 8% a day. Stop $5.49.",
-  "Bought 231 BMM at 5.78 (cost \u00a31,000).",
-  "Sold BMM (about +\u00a310). End of day: sold 10 minutes before the close.",
-  "Day trading finished: 1 trade(s), total +\u00a310."
+  "Day trading finished: 0 trade(s), total +\u00a30."
  ]
 }

@@ -1,48 +1,36 @@
 {
  "date": "2026-10-27",
- "generated": "2026-11-01T19:51+00:00",
+ "generated": "2026-11-03T21:32+00:00",
  "fx_gbpusd": 1.334507703781128,
  "result": "done",
  "require_news": true,
  "strategy": "catalyst",
  "bars": "5m",
  "require_trend": true,
- "added_during_day": [
-  "Added AEO to today's list at 10:16 New York: 0.4x normal volume in the last 30 min; news: American Eagle Outfitters (AEO) Surpasses Market Returns: Some Facts Worth Knowi",
-  "Added THFF to today's list at 10:16 New York: 0.5x normal volume in the last 30 min; news: First Financial Corp. (THFF) Q3 Earnings and Revenues Beat Estimates",
-  "Added AVBH to today's list at 10:16 New York: 0.4x normal volume in the last 30 min; news: Avidbank Holdings Inc. (AVBH) Q3 Earnings and Revenues Beat Estimates",
-  "Added RDNT to today's list at 10:32 New York: 0.3x normal volume in the last 30 min; news: RadNet acquires ONRAD in $355m deal to broaden radiology provision",
-  "Added CBK to today's list at 10:32 New York: 0.4x normal volume in the last 30 min; news: Commercial Bancgroup (CBK) Q3 Earnings Beat Meets Questions Over Staying Power",
-  "Added CPIX to today's list at 10:32 New York: 0.6x normal volume in the last 30 min; news: Cumberland Pharmaceuticals Begins Rolling FDA NDA for Dyscorban in Duchenne Card",
-  "Added TLS to today's list at 14:06 New York: 0.3x normal volume in the last 30 min; news: Why Telos (TLS) is Poised to Beat Earnings Estimates Again",
-  "Added MPTI to today's list at 14:06 New York: 0.3x normal volume in the last 30 min; news: M-tron Industries, Inc. (MPTI) Surpasses Market Returns: Some Facts Worth Knowin",
-  "Added DMRC to today's list at 14:22 New York: 0.3x normal volume in the last 30 min; news: Digimarc Returns from RGCA with Strong Market Interest in Its Next-Generation Gi",
-  "Added OSS to today's list at 14:22 New York: 0.4x normal volume in the last 30 min; news: One Stop Systems Expands Enterprise AI Market Opportunity with Qualification for"
- ],
+ "added_during_day": [],
  "drift_list": [],
  "list": [
   {
-   "ticker": "BRAI",
-   "name": "Braiin Limited",
-   "vol_x": 12.91,
-   "buy_pct30": 0.11626573555920865,
-   "change": 0.44344351121309633,
-   "score": 23.79,
+   "ticker": "SOFI",
+   "name": "SoFi Technologies, Inc.",
+   "vol_x": 1.07,
+   "buy_pct30": 0.5542852000741769,
+   "change": 0.11346475352300556,
+   "score": 3.86,
    "news": [
-    "Braiin Targets USD 56.9 Billion CX Software Market with Agentic AI Expansion and Major Upgrade to RADIUS CX Platform"
+    "SoFi Reports Third Quarter 2026 with Record Net Revenue of $1.4 Billion, Net Income of $241 Million and Raises Full-Year Guidance - SoFi Investor Relations"
    ],
    "on_t212": true
   },
   {
-   "ticker": "AEYE",
-   "name": "AudioEye, Inc.",
-   "vol_x": 2.0,
-   "buy_pct30": 0.724140580279027,
-   "change": 0.2749326065872417,
-   "score": 5.9,
+   "ticker": "TSLA",
+   "name": "Tesla, Inc.",
+   "vol_x": 0.28,
+   "buy_pct30": 0.7577761807907178,
+   "change": 0.02767988476851624,
+   "score": 3.09,
    "news": [
-    "AudioEye (AEYE) Q3 Earnings and Revenues Beat Estimates",
-    "AudioEye Reports Record Third Quarter 2026 Results"
+    "Tesla expands the rollout of 2026.38.5.11 update: FSD v14.3.13 (HW4) and FSD v14.3 Lite (HW3) - Tesla Oracle"
    ],
    "on_t212": true
   },
@@ -52,49 +40,21 @@
    "vol_x": 0.28,
    "buy_pct30": 0.705487694157191,
    "change": 0.021276557143638852,
-   "score": 4.38,
-   "news": [
-    "Teva Acquires Worldwide Rights to BXCL501, Further Expanding Innovative Neuroscience Pipeline",
-    "Teva Pharmaceutical Industries (TEVA) Secured WELTRUZA Approval, Is It Still 16% Below Fair Value?"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "AMKR",
-   "name": "Amkor Technology, Inc.",
-   "vol_x": 0.37,
-   "buy_pct30": 0.622511250247559,
-   "change": 0.052295549178037026,
-   "score": 3.73,
-   "news": [
-    "AMKR Q3 deep dive: advanced packaging drives margin gains, guidance reflects communication headwinds",
-    "Amkor Q3 Earnings Call Highlights AI Growth and Capacity Expansion"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "MGNX",
-   "name": "MacroGenics, Inc.",
-   "vol_x": 0.35,
-   "buy_pct30": 0.7516126113998236,
-   "change": 0.07077624079448475,
-   "score": 3.71,
-   "news": [
-    "MacroGenics Announces Positive Interim Phase 2 LINNET Results for Lorigerlimab in Advanced Clear Cell Gynecologic Cancer",
-    "MacroGenics Announces Positive Interim Phase 1 Results for MGC026 and Highlights Plans to Initiate Front-Line Combination Study in SCCHN"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "ESLT",
-   "name": "Elbit Systems Ltd.",
-   "vol_x": 0.25,
-   "buy_pct30": 0.5943733590474058,
-   "change": 0.005193040661780612,
    "score": 2.88,
    "news": [
-    "Elbit Systems Secures $200 Million in Airborne Defence Contracts in Asia-Pacific",
-    "ESLT Stock In Focus After Elbit Systems Secures $200M In Asia-Pacific Contracts"
+    "Teva Acquires Worldwide Rights to BXCL501, Further Expanding Innovative Neuroscience Pipeline - GlobeNewswire"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "HRI",
+   "name": "Herc Holdings Inc.",
+   "vol_x": 0.49,
+   "buy_pct30": 0.5081780197324322,
+   "change": 0.1117753432822528,
+   "score": 2.51,
+   "news": [
+    "Herc Holdings Inc. Announces CEO Succession Plan - Business Wire"
    ],
    "on_t212": true
   },
@@ -104,22 +64,22 @@
    "vol_x": 0.55,
    "buy_pct30": 0.6872307371887648,
    "change": 0.0369127162388494,
-   "score": 2.85,
+   "score": 2.35,
    "news": [
-    "Small Cap watch: Nova Minerals clears antimony permits and gold explorers gear up",
-    "Nova Minerals Secures Final Permits for Alaska Antimony Project, Clearing Path to 2027 Production"
+    "Nova Minerals Secures Final Permits for Alaska Antimony Project, Clearing Path to 2027 Production - GlobeNewswire"
    ],
    "on_t212": true
   },
   {
-   "ticker": "WSC",
-   "name": "WillScot Holdings Corporation",
-   "vol_x": 0.27,
-   "buy_pct30": 0.6663312692867022,
-   "change": 0.03157258527278972,
-   "score": 2.71,
+   "ticker": "PII",
+   "name": "Polaris Inc.",
+   "vol_x": 0.33,
+   "buy_pct30": 0.3195964389591428,
+   "change": 0.08268354365237851,
+   "score": 1.94,
    "news": [
-    "WillScot Holdings Corporation (WSC) Was Sold by Madison Small Cap Fund Amid Weak Commercial Construction Outlook"
+    "POLARIS SIGNS OFF-ROAD CHAMPION KYLE CHANEY TO MULTI-YEAR RACING AGREEMENT WITH RZR FACTORY RACING - PR Newswire",
+    "Polaris Expands Call of Duty\u00ae Collaboration as Polaris DAGOR Joins Modern Warfare\u00ae 4 - PR Newswire"
    ],
    "on_t212": true
   },
@@ -129,104 +89,73 @@
    "vol_x": 0.39,
    "buy_pct30": 0.5544346882332397,
    "change": 0.004810578938259313,
-   "score": 2.5,
+   "score": 1.5,
    "news": [
-    "Innio (INIO) Stock Still Looks Undervalued Following Its 50% Slump",
-    "Is Innio (INIO) Undervalued Following Record Revenue And A 620 MW Data Center Order?"
+    "INNIO Reports Record Third Quarter 2026 Financial Results - GlobeNewswire"
    ],
    "on_t212": true
   },
   {
-   "ticker": "OPY",
-   "name": "Oppenheimer Holdings, Inc.",
-   "vol_x": 0.22,
-   "buy_pct30": 0.8606744144065805,
-   "change": 0.00853627814602076,
-   "score": 2.38,
+   "ticker": "ESLT",
+   "name": "Elbit Systems Ltd.",
+   "vol_x": 0.25,
+   "buy_pct30": 0.5943733590474058,
+   "change": 0.005193040661780612,
+   "score": 1.38,
    "news": [
-    "Comfort Systems Rebounds 9% as UBS, KeyBanc, Oppenheimer Back Record $7.4 Billion Bookings Quarter"
+    "Elbit Systems Awarded Approximately $200 Million in Contracts for Airborne ISTAR and Training Solutions in Asia-Pacific - PR Newswire"
    ],
    "on_t212": true
   },
   {
-   "ticker": "CSHR",
-   "name": "CoinShares PLC",
-   "vol_x": 0.79,
-   "buy_pct30": 0.5687336890003518,
-   "change": 0.05540898159911811,
-   "score": 2.35,
-   "news": [
-    "CoinShares stock jumps on $40M buyback program"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "IQV",
-   "name": "IQVIA Holdings, Inc.",
-   "vol_x": 0.44,
-   "buy_pct30": 0.3393960452685072,
-   "change": 0.003654970678698133,
-   "score": 2.24,
-   "news": [
-    "IQVIA Holdings Q3 Earnings Beat Estimates, Revenues Increase 8% Y/Y",
-    "IQVIA\u2019s (NYSE:IQV) Q3 2026: beats on revenue"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "IMSR",
-   "name": "Terrestrial Energy Inc.",
-   "vol_x": 0.69,
-   "buy_pct30": 0.5353387552973672,
-   "change": 0.07653057831750121,
-   "score": 2.02,
-   "news": [
-    "Terrestrial Energy stock surges on $25M buyback program"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "HWKN",
-   "name": "Hawkins, Inc.",
-   "vol_x": 0.58,
-   "buy_pct30": 0.29022875348750526,
-   "change": 0.1278056500780289,
-   "score": 1.82,
-   "news": [
-    "Hawkins (NASDAQ:HWKN) Shares Rise 8% After Q2 Earnings Exceed Estimates and Revenue Reaches $313.8 Million",
-    "Hawkins soars 12% on strong second quarter earnings beat"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "HTH",
-   "name": "Hilltop Holdings Inc.",
+   "ticker": "GDYN",
+   "name": "Grid Dynamics Holdings, Inc.",
    "vol_x": 0.28,
-   "buy_pct30": 0.6874824848201775,
-   "change": 0.0016407266555025224,
-   "score": 1.81,
+   "buy_pct30": 0.5518118062939672,
+   "change": 0.005807223313428089,
+   "score": 1.27,
    "news": [
-    "HTH Q3 deep dive: interest rate headwinds weigh on mortgage and trading, loan growth supports banking"
+    "Grid Dynamics Launches Business Process Consulting Practice to Bridge the Gap Between AI Investment and Business Results - Business Wire"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "VNDA",
+   "name": "Vanda Pharmaceuticals Inc.",
+   "vol_x": 0.35,
+   "buy_pct30": 0.35952966394091734,
+   "change": 0.01269034304318195,
+   "score": 0.64,
+   "news": [
+    "Vanda Pharmaceuticals Announces Positive Results from Study 3601 of NEREUS\u2122 (tradipitant) for Prevention of GLP-1-Induced Vomiting - PR Newswire"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "FER",
+   "name": "Ferrovial N.V.",
+   "vol_x": 0.48,
+   "buy_pct30": 0.16272544038992656,
+   "change": 0.061469738123108186,
+   "score": 0.11,
+   "news": [
+    "Ferrovial delivers strong performance in first nine months of 2026 - PR Newswire"
    ],
    "on_t212": true
   }
  ],
  "quiet": [
   {
-   "ticker": "IPST",
-   "vol_x": 22.37
+   "ticker": "BRAI",
+   "vol_x": 12.91
   },
   {
    "ticker": "TDIC",
    "vol_x": 2.65
   },
   {
-   "ticker": "CLRO",
-   "vol_x": 1.54
-  },
-  {
-   "ticker": "CENN",
-   "vol_x": 1.37
+   "ticker": "AEYE",
+   "vol_x": 2.0
   },
   {
    "ticker": "RCL",
@@ -237,16 +166,16 @@
    "vol_x": 1.35
   },
   {
-   "ticker": "SOFI",
-   "vol_x": 1.07
-  },
-  {
    "ticker": "CLS",
    "vol_x": 0.87
   },
   {
-   "ticker": "PEBK",
-   "vol_x": 0.71
+   "ticker": "CSHR",
+   "vol_x": 0.79
+  },
+  {
+   "ticker": "IMSR",
+   "vol_x": 0.69
   },
   {
    "ticker": "KNSA",
@@ -261,69 +190,46 @@
    "vol_x": 0.61
   },
   {
+   "ticker": "MBOT",
+   "vol_x": 0.59
+  },
+  {
+   "ticker": "HWKN",
+   "vol_x": 0.58
+  },
+  {
    "ticker": "ESQ",
    "vol_x": 0.57
   },
   {
    "ticker": "CLYM",
    "vol_x": 0.57
-  },
-  {
-   "ticker": "QTEX",
-   "vol_x": 0.55
   }
  ],
  "trades": [
   {
-   "ticker": "CPIX",
-   "bought_at": "2026-10-27T14:32+00:00",
-   "sold_at": "2026-10-27T18:06+00:00",
-   "entry": 4.62461988544464,
-   "exit": 4.995,
-   "cost_gbp": 999.5359030294057,
-   "pl_gbp": 76.8176885835685,
-   "pl_pct": 0.07685335599326497,
-   "reason": "Stop-loss order filled"
-  },
-  {
-   "ticker": "CSHR",
-   "bought_at": "2026-10-27T19:06+00:00",
+   "ticker": "SOFI",
+   "bought_at": "2026-10-27T14:26+00:00",
    "sold_at": "2026-10-27T19:50+00:00",
-   "entry": 4.08407992362976,
-   "exit": 4.184999942779541,
-   "cost_gbp": 1002.2402811462784,
-   "pl_gbp": 23.227745311331546,
-   "pl_pct": 0.02317582494765187,
+   "entry": 16.311295076370236,
+   "exit": 16.354999542236328,
+   "cost_gbp": 991.5242300877605,
+   "pl_gbp": 1.167651096325244,
+   "pl_pct": 0.00117763243791016,
    "reason": "End of day: sold 10 minutes before the close."
   }
  ],
- "total_gbp": 100.04543389490004,
+ "total_gbp": 1.167651096325244,
  "alerts": [
-  "10:32 Day trade: bought CPIX: 288 CPIX at $4.62 (about \u00a31,000). Stop $4.39. Broke above its opening-range high ($4.43) at $4.62. In play: 0.6x normal volume, normally moves 14% a day. Stop $4.39.",
-  "14:06 Day trade update: CPIX: stop-loss order filled (+\u00a377)",
-  "15:06 Day trade: bought CSHR: 327 CSHR at $4.08 (about \u00a31,002). Stop $3.88. Broke above its opening-range high ($4.07) at $4.08. In play: 0.8x normal volume, normally moves 6% a day. Stop $3.95.",
-  "15:50 Day trade: sold CSHR (+\u00a323): End of day: sold 10 minutes before the close. Result +\u00a323 (+2.3%).",
-  "15:50 Day trade summary: 2 trade(s) today: CPIX +\u00a377, CSHR +\u00a323. Total +\u00a3100."
+  "10:26 Day trade: bought SOFI: 81 SOFI at $16.31 (about \u00a3992). Stop $15.50. Broke above its opening-range high ($16.28) at $16.30. In play: 1.1x normal volume, normally moves 4% a day. Stop $15.67. News (SoFi Investor Relations): SoFi Reports Third Quarter 2026 with Record Net Revenue of $1.4 Billion, Net Income of $24. Claude: catalyst (strength 4/5): OFFICIAL Q3 2026 release reports record revenue and profit and raises full-year guidance, a strong earnings catalyst consistent with the heavy-volume breakout.",
+  "15:50 Day trade: sold SOFI (+\u00a31): End of day: sold 10 minutes before the close. Result +\u00a31 (+0.1%).",
+  "15:50 Day trade summary: 1 trade(s) today: SOFI +\u00a31. Total +\u00a31."
  ],
  "log": [
-  "Added AEO to today's list at 10:16 New York: 0.4x normal volume in the last 30 min; news: American Eagle Outfitters (AEO) Surpasses Market Returns: Some Facts Worth Knowi",
-  "Added THFF to today's list at 10:16 New York: 0.5x normal volume in the last 30 min; news: First Financial Corp. (THFF) Q3 Earnings and Revenues Beat Estimates",
-  "Added AVBH to today's list at 10:16 New York: 0.4x normal volume in the last 30 min; news: Avidbank Holdings Inc. (AVBH) Q3 Earnings and Revenues Beat Estimates",
-  "Added RDNT to today's list at 10:32 New York: 0.3x normal volume in the last 30 min; news: RadNet acquires ONRAD in $355m deal to broaden radiology provision",
-  "Added CBK to today's list at 10:32 New York: 0.4x normal volume in the last 30 min; news: Commercial Bancgroup (CBK) Q3 Earnings Beat Meets Questions Over Staying Power",
-  "Added CPIX to today's list at 10:32 New York: 0.6x normal volume in the last 30 min; news: Cumberland Pharmaceuticals Begins Rolling FDA NDA for Dyscorban in Duchenne Card",
-  "Day trade buy order: 288 CPIX at about $4.62. Broke above its opening-range high ($4.43) at $4.62. In play: 0.6x normal volume, normally moves 14% a day. Stop $4.39.",
-  "Bought 288 CPIX at 4.62 (cost \u00a31,000).",
-  "CPIX: stop raised from 4.39 to 4.65.",
-  "CPIX: stop raised from 4.65 to 5.00.",
-  "CPIX: stop-loss order filled, P&L +\u00a377.",
-  "Added TLS to today's list at 14:06 New York: 0.3x normal volume in the last 30 min; news: Why Telos (TLS) is Poised to Beat Earnings Estimates Again",
-  "Added MPTI to today's list at 14:06 New York: 0.3x normal volume in the last 30 min; news: M-tron Industries, Inc. (MPTI) Surpasses Market Returns: Some Facts Worth Knowin",
-  "Added DMRC to today's list at 14:22 New York: 0.3x normal volume in the last 30 min; news: Digimarc Returns from RGCA with Strong Market Interest in Its Next-Generation Gi",
-  "Added OSS to today's list at 14:22 New York: 0.4x normal volume in the last 30 min; news: One Stop Systems Expands Enterprise AI Market Opportunity with Qualification for",
-  "Day trade buy order: 327 CSHR at about $4.08. Broke above its opening-range high ($4.07) at $4.08. In play: 0.8x normal volume, normally moves 6% a day. Stop $3.95.",
-  "Bought 327 CSHR at 4.08 (cost \u00a31,002).",
-  "Sold CSHR (about +\u00a323). End of day: sold 10 minutes before the close.",
-  "Day trading finished: 2 trade(s), total +\u00a3100."
+  "SOFI: Claude: catalyst (strength 4/5): OFFICIAL Q3 2026 release reports record revenue and profit and raises full-year guidance, a strong earnings catalyst consistent with the heavy-volume breakout.",
+  "Day trade buy order: 81 SOFI at about $16.30. Broke above its opening-range high ($16.28) at $16.30. In play: 1.1x normal volume, normally moves 4% a day. Stop $15.67. News (SoFi Investor Relations): SoFi Reports Third Quarter 2026 with Record Net Revenue of $1.4 Billion, Net Income of $24. Claude: catalyst (strength 4/5): OFFICIAL Q3 2026 release reports record revenue and profit and raises full-year guidance, a strong earnings catalyst consistent with the heavy-volume breakout.",
+  "Bought 81 SOFI at 16.31 (cost \u00a3992).",
+  "Sold SOFI (about +\u00a31). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 1 trade(s), total +\u00a31."
  ]
 }

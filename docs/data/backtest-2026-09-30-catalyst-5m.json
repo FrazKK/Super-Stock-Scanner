@@ -1,39 +1,36 @@
 {
  "date": "2026-09-30",
- "generated": "2026-11-01T19:39+00:00",
+ "generated": "2026-11-03T21:24+00:00",
  "fx_gbpusd": 1.323276400566101,
  "result": "done",
  "require_news": true,
  "strategy": "catalyst",
  "bars": "5m",
  "require_trend": true,
- "added_during_day": [
-  "Added TMP to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; news: Tompkins (TMP) Upgraded to Buy: Here's What You Should Know",
-  "Added TNON to today's list at 10:48 New York: 6.9x normal volume in the last 30 min; news: Tenon(R) Medical Announces Full Commercial Launch of the SImmetry(R)+ SI Joint F"
- ],
+ "added_during_day": [],
  "drift_list": [],
  "list": [
   {
-   "ticker": "FUNC",
-   "name": "First",
-   "vol_x": 0.5,
-   "buy_pct30": 0.6625053350405463,
-   "change": 0.018424760144968966,
-   "score": 3.15,
+   "ticker": "MDB",
+   "name": "MongoDB, Inc.",
+   "vol_x": 0.54,
+   "buy_pct30": 0.619097419503657,
+   "change": 0.05892429407001987,
+   "score": 3.06,
    "news": [
-    "How to Play First United Stock After Its Dividend Increase"
+    "MongoDB Launches Atlas Agent Engine to Put AI Agents in Production Without a New Stack - PR Newswire"
    ],
    "on_t212": true
   },
   {
-   "ticker": "QURE",
-   "name": "uniQure N.V.",
-   "vol_x": 0.26,
-   "buy_pct30": 0.6182768012073819,
-   "change": 0.04120767929213165,
-   "score": 1.49,
+   "ticker": "CELC",
+   "name": "Celcuity Inc.",
+   "vol_x": 1.23,
+   "buy_pct30": 0.3040685084666565,
+   "change": 0.025071110238641836,
+   "score": 2.18,
    "news": [
-    "QURE Stock Clocks Worst Day In Over 10 Months: Four-Year Huntington\u2019s Data Spooks Investors Despite Stronger Three-Year Filing Data"
+    "Celcuity Announces That REVTORPYK\u2122 (gedatolisib) Is Now Commercially Available In The United States - GlobeNewswire"
    ],
    "on_t212": true
   },
@@ -45,68 +42,24 @@
    "change": 0.03424654178759057,
    "score": 1.25,
    "news": [
-    "NRx Defense Systems, an NRx Company (Nasdaq:NRXP) Awarded $11 Million Dollar DARPA Prime Contract to Evaluate Robotic Magnetic Stimulation in conjunction with NRX-101 for Treatment of Resistant Depression"
+    "NRx Defense Systems, an NRx Company (Nasdaq:NRXP) Awarded - GlobeNewswire"
    ],
    "on_t212": true
   },
   {
-   "ticker": "DPRO",
-   "name": "Draganfly Inc.",
-   "vol_x": 0.25,
-   "buy_pct30": 0.5223320806153837,
-   "change": 0.0022581316504364235,
-   "score": 1.09,
+   "ticker": "HPE",
+   "name": "Hewlett Packard Enterprise Company",
+   "vol_x": 0.42,
+   "buy_pct30": 0.33223612098567146,
+   "change": 0.04000648914169935,
+   "score": 0.67,
    "news": [
-    "Can Draganfly Expand Through Mission-Critical Drone Applications?"
+    "HPE Secures Its First AMD Helios Order in $1.2 Billion Deal With Vultr - Business Wire"
    ],
    "on_t212": true
-  },
-  {
-   "ticker": "CRVO",
-   "name": "CervoMed Inc.",
-   "vol_x": 0.52,
-   "buy_pct30": 0.36093921691765213,
-   "change": 0.006944437545759019,
-   "score": 0.98,
-   "news": [
-    "CervoMed Announces Pharmacokinetic Results with New Neflamapimod Oral Tablet Formulation and Secures FDA Removal of Drug Exposure Limit"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "CANG",
-   "name": "Cango Inc.",
-   "vol_x": 0.36,
-   "buy_pct30": 0.431506634445938,
-   "change": 0.03375534429857652,
-   "score": 0.95,
-   "news": [
-    "Cango stock surges over 20% following Buy initiation at Jones Trading"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "NYAX",
-   "name": "Nayax Ltd.",
-   "vol_x": 0.24,
-   "buy_pct30": 0.2847506442322268,
-   "change": 0.04779001756113055,
-   "score": 0.12,
-   "news": [
-    "Getnet and Nayax Announce Global Strategic Partnership to Accelerate Integrated Payments and Commerce Solutions Across Latin America and Iberia"
-   ],
-   "on_t212": false
   }
  ],
  "quiet": [
-  {
-   "ticker": "FFR",
-   "vol_x": 16.85
-  },
-  {
-   "ticker": "CAPR",
-   "vol_x": 4.49
-  },
   {
    "ticker": "SOTK",
    "vol_x": 2.64
@@ -124,20 +77,12 @@
    "vol_x": 1.87
   },
   {
-   "ticker": "CELC",
-   "vol_x": 1.23
-  },
-  {
    "ticker": "QSI",
    "vol_x": 0.87
   },
   {
    "ticker": "PMVP",
    "vol_x": 0.83
-  },
-  {
-   "ticker": "SGMT",
-   "vol_x": 0.69
   },
   {
    "ticker": "LLYVA",
@@ -152,39 +97,36 @@
    "vol_x": 0.55
   },
   {
-   "ticker": "MDB",
-   "vol_x": 0.54
+   "ticker": "CRVO",
+   "vol_x": 0.52
+  },
+  {
+   "ticker": "FUNC",
+   "vol_x": 0.5
   },
   {
    "ticker": "OPTX",
    "vol_x": 0.46
-  }
- ],
- "trades": [
+  },
   {
-   "ticker": "CANG",
-   "bought_at": "2026-09-30T14:56+00:00",
-   "sold_at": "2026-09-30T19:50+00:00",
-   "entry": 2.52251998090744,
-   "exit": 2.4700000286102295,
-   "cost_gbp": 1002.2920939978768,
-   "pl_gbp": -22.338084037737417,
-   "pl_pct": -0.022287000138489305,
-   "reason": "End of day: sold 10 minutes before the close."
+   "ticker": "HBCP",
+   "vol_x": 0.43
+  },
+  {
+   "ticker": "EPD",
+   "vol_x": 0.42
+  },
+  {
+   "ticker": "EXC",
+   "vol_x": 0.42
   }
  ],
- "total_gbp": -22.338084037737417,
+ "trades": [],
+ "total_gbp": 0,
  "alerts": [
-  "10:56 Day trade: bought CANG: 525 CANG at $2.52 (about \u00a31,002). Stop $2.40. Broke above its opening-range high ($2.50) at $2.52. In play: 0.4x normal volume, normally moves 14% a day. Stop $2.40.",
-  "15:50 Day trade: sold CANG (-\u00a322): End of day: sold 10 minutes before the close. Result -\u00a322 (-2.2%).",
-  "15:50 Day trade summary: 1 trade(s) today: CANG -\u00a322. Total -\u00a322."
+  "15:50 Day trade summary: No trade today: nothing in play broke out."
  ],
  "log": [
-  "Added TMP to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; news: Tompkins (TMP) Upgraded to Buy: Here's What You Should Know",
-  "Added TNON to today's list at 10:48 New York: 6.9x normal volume in the last 30 min; news: Tenon(R) Medical Announces Full Commercial Launch of the SImmetry(R)+ SI Joint F",
-  "Day trade buy order: 525 CANG at about $2.52. Broke above its opening-range high ($2.50) at $2.52. In play: 0.4x normal volume, normally moves 14% a day. Stop $2.40.",
-  "Bought 525 CANG at 2.52 (cost \u00a31,002).",
-  "Sold CANG (about -\u00a322). End of day: sold 10 minutes before the close.",
-  "Day trading finished: 1 trade(s), total -\u00a322."
+  "Day trading finished: 0 trade(s), total +\u00a30."
  ]
 }

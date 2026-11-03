@@ -1,6 +1,6 @@
 {
  "date": "2026-09-14",
- "generated": "2026-11-01T19:32+00:00",
+ "generated": "2026-11-03T21:16+00:00",
  "fx_gbpusd": 1.3525760173797607,
  "result": "done",
  "require_news": true,
@@ -8,56 +8,44 @@
  "bars": "5m",
  "require_trend": true,
  "added_during_day": [
-  "Added MLTX to today's list at 11:20 New York: 0.2x normal volume in the last 30 min; news: MLTX Stock On Track For Worst Week Since Last Fall As FDA Filing Date For Skin D"
+  "Added BSP to today's list at 10:32 New York: 0.2x normal volume in the last 30 min; news: Bending Spoons enters into a definitive agreement to acquire Miro for $1.355 bil"
  ],
  "drift_list": [],
  "list": [
   {
-   "ticker": "CRBP",
-   "name": "Corbus Pharmaceuticals Holdings, Inc.",
-   "vol_x": 6.86,
-   "buy_pct30": 0.30952679693988466,
-   "change": 0.039408829967266135,
-   "score": 14.46,
+   "ticker": "RUM",
+   "name": "RUM Group Inc.",
+   "vol_x": 3.05,
+   "buy_pct30": 0.6980030406292702,
+   "change": 0.15495119235890087,
+   "score": 8.39,
    "news": [
-    "Corbus Pharmaceuticals Announces Positive Topline Data from CANYON-1 Study of Daily Oral CRB-913 for the Treatment of Obesity"
+    "RUM Group to Acquire Additional Shares of Northern Data to Reach Approx. 98% Ownership - GlobeNewswire"
    ],
    "on_t212": true
   },
   {
-   "ticker": "SBC",
-   "name": "SBC Medical Group Holdings Incorporated",
-   "vol_x": 0.52,
-   "buy_pct30": 0.957834502973044,
-   "change": 0.03139010432469913,
-   "score": 4.37,
+   "ticker": "BBNX",
+   "name": "Beta Bionics, Inc.",
+   "vol_x": 0.69,
+   "buy_pct30": 0.6798010786916395,
+   "change": 0.001207028251781983,
+   "score": 3.6,
    "news": [
-    "SBC Medical to Attend the ArcStone-Kingswood Growth Summit 2026 in Toronto"
+    "Beta Bionics (NASDAQ: BBNX) Faces Securities Class Action Amid iLet FDA Compliance -- HBSS - PR Newswire"
    ],
    "on_t212": true
   },
   {
-   "ticker": "FLWS",
-   "name": "1-800-FLOWERS.COM, Inc.",
-   "vol_x": 0.5,
-   "buy_pct30": 0.5892245866822138,
-   "change": 0.08278145747646715,
-   "score": 3.36,
+   "ticker": "DFTX",
+   "name": "Definium Therapeutics, Inc.",
+   "vol_x": 1.23,
+   "buy_pct30": 0.3662580581814315,
+   "change": 0.05644123757452335,
+   "score": 2.93,
    "news": [
-    "FLWS Q2 Deep Dive: Strategic Restructuring Amid Revenue Headwinds and Margin Pressure",
-    "1-800-Flowers.com posts wider fourth-quarter loss, issues weak profit forecast for fiscal 2027"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "GLOO",
-   "name": "Gloo Holdings, Inc.",
-   "vol_x": 0.39,
-   "buy_pct30": 0.652148900984188,
-   "change": 0.082582613113509,
-   "score": 2.89,
-   "news": [
-    "Gloo Holdings Inc (GLOO) Q2 2026 Earnings Call Highlights: Revenue Surges 188% as Profitability ..."
+    "Definium Therapeutics Announces Positive Topline Results from Phase 3 Panorama Study of DT120 ODT in Generalized Anxiety Disorder - Business Wire",
+    "Definium Therapeutics to Present Topline Data from Phase 3 Emerge and Voyage Trials Across Major Depressive Disorder and Generalized Anxiety Disorder at Psych Congress 2026 - Business Wire"
    ],
    "on_t212": true
   },
@@ -65,11 +53,23 @@
    "ticker": "THRY",
    "name": "Thryv Holdings, Inc.",
    "vol_x": 1.01,
-   "buy_pct30": 0.5664987868618886,
+   "buy_pct30": 0.5664927809227837,
    "change": 0.12849163350561632,
    "score": 2.79,
    "news": [
-    "Thryv Enters Definitive Agreement to Sell Print Business for $142 Million"
+    "Thryv Enters Definitive Agreement to Sell Print Business for $142 Million - Business Wire"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "VG",
+   "name": "Venture Global, Inc.",
+   "vol_x": 0.26,
+   "buy_pct30": 0.6277221883634765,
+   "change": 0.027531671795281598,
+   "score": 2.53,
+   "news": [
+    "Venture Global and China Gas Announce New Long-Term LNG Agreement - Business Wire"
    ],
    "on_t212": true
   },
@@ -81,31 +81,19 @@
    "change": 0.0024907171144166185,
    "score": 2.52,
    "news": [
-    "Accelevate Solutions and Brand Engagement Network Launch AI-Powered Passenger Engagement Platform for LAX Off-Airport Shuttle Providers"
+    "Accelevate Solutions and Brand Engagement Network Launch AI-Powered Passenger Engagement Platform for LAX Off-Airport Shuttle Providers - PR Newswire"
    ],
    "on_t212": true
   },
   {
-   "ticker": "IMPP",
-   "name": "Imperial Petroleum Inc.",
-   "vol_x": 0.64,
-   "buy_pct30": 0.6122291362559115,
-   "change": 0.012089839744830355,
+   "ticker": "HITI",
+   "name": "High Tide Inc.",
+   "vol_x": 0.38,
+   "buy_pct30": 0.4915111868833934,
+   "change": 0.017786591621669512,
    "score": 2.23,
    "news": [
-    "Imperial Petroleum Inc (IMPP) (Q2 2026) Earnings Call Highlights: Record Revenue, Debt-Free ..."
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "IBEX",
-   "name": "IBEX Limited",
-   "vol_x": 0.26,
-   "buy_pct30": 0.7896225602689246,
-   "change": 0.0203517936888995,
-   "score": 2.18,
-   "news": [
-    "IBEX Ltd (IBEX) (Q4 2026) Earnings Call Highlights: Record Revenue and AI-Driven Growth Momentum"
+    "High Tide Reports Record-Breaking Third Quarter 2026 Financial Results - PR Newswire Canada"
    ],
    "on_t212": true
   },
@@ -113,11 +101,11 @@
    "ticker": "TEN",
    "name": "Tsakos Energy Navigation Ltd",
    "vol_x": 0.28,
-   "buy_pct30": 0.24956996703060252,
+   "buy_pct30": 0.26789425208925677,
    "change": 0.01565761954297229,
-   "score": 1.06,
+   "score": 1.13,
    "news": [
-    "Tsakos Energy Navigation Ltd (TEN) (Q2 2026) Earnings Call Highlights: Record Net Income Surges ..."
+    "TEN, Ltd. Reports Profits for the First Half and Second Quarter of 2026 - GlobeNewswire"
    ],
    "on_t212": true
   }
@@ -132,8 +120,8 @@
    "vol_x": 23.86
   },
   {
-   "ticker": "BWIN",
-   "vol_x": 11.29
+   "ticker": "CRBP",
+   "vol_x": 6.86
   },
   {
    "ticker": "DV",
@@ -148,16 +136,8 @@
    "vol_x": 3.23
   },
   {
-   "ticker": "RUM",
-   "vol_x": 3.05
-  },
-  {
    "ticker": "ALLT",
    "vol_x": 2.33
-  },
-  {
-   "ticker": "QNC",
-   "vol_x": 2.31
   },
   {
    "ticker": "FTFT",
@@ -168,46 +148,40 @@
    "vol_x": 1.39
   },
   {
-   "ticker": "DFTX",
-   "vol_x": 1.23
-  },
-  {
    "ticker": "SFST",
-   "vol_x": 0.98
-  },
-  {
-   "ticker": "GTBP",
    "vol_x": 0.98
   },
   {
    "ticker": "SKYQ",
    "vol_x": 0.84
-  }
- ],
- "trades": [
+  },
   {
-   "ticker": "SBC",
-   "bought_at": "2026-09-14T15:30+00:00",
-   "sold_at": "2026-09-14T19:50+00:00",
-   "entry": 4.654650095462799,
-   "exit": 4.539999961853027,
-   "cost_gbp": 999.4804603253397,
-   "pl_gbp": -26.078616717374757,
-   "pl_pct": -0.02609217263625738,
-   "reason": "End of day: sold 10 minutes before the close."
+   "ticker": "CRVL",
+   "vol_x": 0.82
+  },
+  {
+   "ticker": "CODA",
+   "vol_x": 0.8
+  },
+  {
+   "ticker": "STIM",
+   "vol_x": 0.78
+  },
+  {
+   "ticker": "KMDA",
+   "vol_x": 0.72
   }
  ],
- "total_gbp": -26.078616717374757,
+ "trades": [],
+ "total_gbp": 0,
  "alerts": [
-  "11:30 Day trade: bought SBC: 290 SBC at $4.65 (about \u00a3999). Stop $4.42. Broke above its opening-range high ($4.62) at $4.65. In play: 0.5x normal volume, normally moves 4% a day. Stop $4.46.",
-  "15:50 Day trade: sold SBC (-\u00a326): End of day: sold 10 minutes before the close. Result -\u00a326 (-2.6%).",
-  "15:50 Day trade summary: 1 trade(s) today: SBC -\u00a326. Total -\u00a326."
+  "15:50 Day trade summary: No trade today: nothing in play broke out."
  ],
  "log": [
-  "Added MLTX to today's list at 11:20 New York: 0.2x normal volume in the last 30 min; news: MLTX Stock On Track For Worst Week Since Last Fall As FDA Filing Date For Skin D",
-  "Day trade buy order: 290 SBC at about $4.65. Broke above its opening-range high ($4.62) at $4.65. In play: 0.5x normal volume, normally moves 4% a day. Stop $4.46.",
-  "Bought 290 SBC at 4.65 (cost \u00a3999).",
-  "Sold SBC (about -\u00a326). End of day: sold 10 minutes before the close.",
-  "Day trading finished: 1 trade(s), total -\u00a326."
+  "BBNX: Claude: no catalyst (strength 1/5): All OFFICIAL headlines are securities class-action notices tied to iLet FDA compliance concerns, which are negative and not a price-moving positive catalyst.",
+  "TEN: Claude: no catalyst (strength None/5): ",
+  "Added BSP to today's list at 10:32 New York: 0.2x normal volume in the last 30 min; news: Bending Spoons enters into a definitive agreement to acquire Miro for $1.355 bil",
+  "BSP: Claude: no catalyst (strength None/5): ",
+  "Day trading finished: 0 trade(s), total +\u00a30."
  ]
 }

@@ -1,18 +1,13 @@
 {
  "date": "2026-10-02",
- "generated": "2026-11-01T19:39+00:00",
+ "generated": "2026-11-03T21:26+00:00",
  "fx_gbpusd": 1.3199577331542969,
  "result": "done",
  "require_news": true,
  "strategy": "catalyst",
  "bars": "5m",
  "require_trend": true,
- "added_during_day": [
-  "Added UTZ to today's list at 10:16 New York: 0.9x normal volume in the last 30 min; news: All You Need to Know About Utz Brands (UTZ) Rating Upgrade to Buy",
-  "Added XRAY to today's list at 10:46 New York: 0.2x normal volume in the last 30 min; news: Dental Implants and Prosthetics Market Forecasts Growth from $12.79B (2026) to $",
-  "Added NAGE to today's list at 13:26 New York: 0.3x normal volume in the last 30 min; news: Niagen Bioscience (NAGE): Can Its NAD+ Business Drive the Next Leg of Growth?",
-  "Added BOW to today's list at 15:02 New York: 0.6x normal volume in the last 30 min; news: Bowhead Specialty Holdings Inc. (BOW) Upgraded to Buy: What Does It Mean for the"
- ],
+ "added_during_day": [],
  "drift_list": [],
  "list": [
   {
@@ -23,44 +18,56 @@
    "change": 0.042750932003909003,
    "score": 63.76,
    "news": [
-    "Cycurion Discusses Record Contract Win, Public Safety Expansion and Growth Strategy in New Interview"
+    "Cycurion Discusses Record Contract Win, Public Safety Expansion and Growth Strategy in New Interview - GlobeNewswire"
    ],
    "on_t212": true
   },
   {
-   "ticker": "TNON",
-   "name": "Tenon Medical, Inc.",
-   "vol_x": 0.79,
-   "buy_pct30": 0.31773963446712017,
-   "change": 0.032203032542720056,
-   "score": 1.35,
+   "ticker": "NVDA",
+   "name": "NVIDIA Corporation",
+   "vol_x": 0.34,
+   "buy_pct30": 0.7374890032110927,
+   "change": 0.028372186755786233,
+   "score": 4.13,
    "news": [
-    "Tenon(R) Medical Announces Full Commercial Launch of the SImmetry(R)+ SI Joint Fusion 3D Printed Lateral Screw Following Successful Alpha Launch"
+    "NVIDIA Opens Applications for 2027\u20132028 Graduate Fellowships With Awards Up to $60,000 - NVIDIA Blog"
    ],
    "on_t212": true
   },
   {
-   "ticker": "SBET",
-   "name": "Sharplink, Inc.",
-   "vol_x": 0.25,
-   "buy_pct30": 0.5693969005183996,
-   "change": 0.022964537451029665,
-   "score": 1.28,
+   "ticker": "LQDA",
+   "name": "Liquidia Corporation",
+   "vol_x": 0.23,
+   "buy_pct30": 0.6000519836110028,
+   "change": 0.0009860426917642773,
+   "score": 2.36,
    "news": [
-    "Is Sharplink (SBET) Fully Valued Following Its AI Agent Push?"
+    "Liquidia Provides Update on Hatch-Waxman Litigation Tied to \u2018327 Patent - GlobeNewswire"
    ],
    "on_t212": true
   },
   {
-   "ticker": "CHRN",
-   "name": "ChronoScale Holdings Corporation",
-   "vol_x": 0.38,
-   "buy_pct30": 0.3607603714637946,
-   "change": 0.02684556158416873,
-   "score": 1.2,
+   "ticker": "BULL",
+   "name": "Webull Corporation",
+   "vol_x": 0.26,
+   "buy_pct30": 0.5657520564552311,
+   "change": 0.047297293172567034,
+   "score": 2.28,
    "news": [
-    "ChronoScale Expands AI Pipeline With $1 Billion Revenue Run Rate In Sight",
-    "ChronoScale Announces Agreements Bringing Total Company Contracted Run-Rate Revenue to $1 Billion and Sale of Ekso Bionics Business Unit"
+    "Webull Powers Launch of MOUM, Meritz Securities' Next-Generation AI Investment Platform - PR Newswire"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "TEVA",
+   "name": "Teva Pharmaceutical Industries Limited",
+   "vol_x": 0.23,
+   "buy_pct30": 0.4472998252360787,
+   "change": 0.001653488283853033,
+   "score": 1.25,
+   "news": [
+    "Samsung Bioepis and Teva Expand Strategic Partnership to Advance Up to Six Potential Biosimilar Candidates - Business Wire",
+    "TAPI (Technology & API Services) Names Serge Rogasik CEO to lead next chapter of growth and competitiveness - Teva Pharmaceuticals"
    ],
    "on_t212": true
   }
@@ -73,10 +80,6 @@
   {
    "ticker": "QTEX",
    "vol_x": 13.39
-  },
-  {
-   "ticker": "SYNA",
-   "vol_x": 4.74
   },
   {
    "ticker": "MGY",
@@ -99,15 +102,7 @@
    "vol_x": 0.62
   },
   {
-   "ticker": "PUSA",
-   "vol_x": 0.51
-  },
-  {
    "ticker": "ON",
-   "vol_x": 0.5
-  },
-  {
-   "ticker": "BETR",
    "vol_x": 0.5
   },
   {
@@ -123,39 +118,31 @@
    "vol_x": 0.46
   },
   {
-   "ticker": "WTBA",
-   "vol_x": 0.46
-  }
- ],
- "trades": [
+   "ticker": "BIRD",
+   "vol_x": 0.45
+  },
   {
-   "ticker": "CYCU",
-   "bought_at": "2026-10-02T14:26+00:00",
-   "sold_at": "2026-10-02T14:46+00:00",
-   "entry": 3.202799581289291,
-   "exit": 4.1958,
-   "cost_gbp": 1001.19323857012,
-   "pl_gbp": 306.48241819140594,
-   "pl_pct": 0.3061171474041482,
-   "reason": "Stop-loss order filled"
+   "ticker": "HOOD",
+   "vol_x": 0.43
+  },
+  {
+   "ticker": "APLD",
+   "vol_x": 0.4
+  },
+  {
+   "ticker": "NVTS",
+   "vol_x": 0.4
   }
  ],
- "total_gbp": 306.48241819140594,
+ "trades": [],
+ "total_gbp": 0,
  "alerts": [
-  "10:26 Day trade: bought CYCU: 412 CYCU at $3.20 (about \u00a31,001). Stop $3.04. Broke above its opening-range high ($3.02) at $3.20. In play: 32.4x normal volume, normally moves 8% a day. Stop $3.04.",
-  "10:46 Day trade update: CYCU: stop-loss order filled (+\u00a3306)",
-  "15:50 Day trade summary: 1 trade(s) today: CYCU +\u00a3306. Total +\u00a3306."
+  "15:50 Day trade summary: No trade today: nothing in play broke out."
  ],
  "log": [
-  "Added UTZ to today's list at 10:16 New York: 0.9x normal volume in the last 30 min; news: All You Need to Know About Utz Brands (UTZ) Rating Upgrade to Buy",
-  "Day trade buy order: 412 CYCU at about $3.20. Broke above its opening-range high ($3.02) at $3.20. In play: 32.4x normal volume, normally moves 8% a day. Stop $3.04.",
-  "Bought 412 CYCU at 3.20 (cost \u00a31,001).",
-  "CYCU: stop raised from 3.04 to 3.59.",
-  "CYCU: stop raised from 3.59 to 4.20.",
-  "CYCU: stop-loss order filled, P&L +\u00a3306.",
-  "Added XRAY to today's list at 10:46 New York: 0.2x normal volume in the last 30 min; news: Dental Implants and Prosthetics Market Forecasts Growth from $12.79B (2026) to $",
-  "Added NAGE to today's list at 13:26 New York: 0.3x normal volume in the last 30 min; news: Niagen Bioscience (NAGE): Can Its NAD+ Business Drive the Next Leg of Growth?",
-  "Added BOW to today's list at 15:02 New York: 0.6x normal volume in the last 30 min; news: Bowhead Specialty Holdings Inc. (BOW) Upgraded to Buy: What Does It Mean for the",
-  "Day trading finished: 1 trade(s), total +\u00a3306."
+  "BULL: Claude: no catalyst (strength None/5): ",
+  "CYCU: Claude: no catalyst (strength None/5): ",
+  "NVDA: Claude: no catalyst (strength None/5): ",
+  "Day trading finished: 0 trade(s), total +\u00a30."
  ]
 }

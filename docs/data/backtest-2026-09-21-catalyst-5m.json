@@ -1,6 +1,6 @@
 {
  "date": "2026-09-21",
- "generated": "2026-11-01T19:34+00:00",
+ "generated": "2026-11-03T21:16+00:00",
  "fx_gbpusd": 1.3388673067092896,
  "result": "done",
  "require_news": true,
@@ -11,87 +11,38 @@
  "drift_list": [],
  "list": [
   {
-   "ticker": "MX",
-   "name": "Magnachip Semiconductor Corporation",
-   "vol_x": 6.25,
-   "buy_pct30": 0.3686970449777218,
-   "change": 0.1381818597966975,
-   "score": 12.47,
-   "news": [
-    "Magnachip Announces Strategic Investment by Navitas Semiconductor"
-   ],
-   "on_t212": true
-  },
-  {
    "ticker": "OPTX",
    "name": "Syntec Optics Holdings, Inc.",
    "vol_x": 2.24,
    "buy_pct30": 0.638515336214025,
    "change": 0.2341679177497331,
-   "score": 6.03,
+   "score": 5.53,
    "news": [
-    "OPTX Stock Jumps On \u2018Most Critical Order\u2019 In 25-Year History \u2013 Everything To Know About The US Space Force Contract",
-    "Syntec Optics (NASDAQ: OPTX) Secures Landmark Order for U.S. Space Force and Reconnaissance"
+    "Syntec Optics (NASDAQ: OPTX) Secures Landmark Order for U.S. Space Force and Reconnaissance - GlobeNewswire"
    ],
    "on_t212": true
   },
   {
-   "ticker": "HIVE",
-   "name": "HIVE Digital Technologies Ltd",
-   "vol_x": 0.29,
-   "buy_pct30": 0.3534324695210101,
-   "change": 0.023460387593088994,
-   "score": 0.49,
+   "ticker": "TSLA",
+   "name": "Tesla, Inc.",
+   "vol_x": 0.24,
+   "buy_pct30": 0.514463000733191,
+   "change": 0.032736757543041284,
+   "score": 2.04,
    "news": [
-    "HIVE Digital strengthens BuzzHPC board for AI growth - ICYMI"
+    "Tesla FSD Supervised Approved in Czechia: What Owners Need to Know - BASENOR - Tesla Accessories"
    ],
    "on_t212": true
   },
   {
-   "ticker": "MAAS",
-   "name": "Maase Inc.",
-   "vol_x": 0.47,
-   "buy_pct30": 0.25855967208740793,
-   "change": 0.0005945439395527163,
-   "score": 0.47,
+   "ticker": "HELP",
+   "name": "Helus Pharma Inc.",
+   "vol_x": 0.26,
+   "buy_pct30": 0.4958005256681248,
+   "change": 0.06507682397924275,
+   "score": 2.0,
    "news": [
-    "Maase (MAAS) Stock Looks Fully Priced Following A New AI Services Deal"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "GCTS",
-   "name": "GCT Semiconductor Holding, Inc.",
-   "vol_x": 0.28,
-   "buy_pct30": 0.3046548056453731,
-   "change": 0.024154567115350467,
-   "score": 0.28,
-   "news": [
-    "Strong Demand, Weak Margins: GCT Semiconductor Could Be a Big Second Half Story"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "BLSH",
-   "name": "Bullish",
-   "vol_x": 0.28,
-   "buy_pct30": 0.2110268698304168,
-   "change": 0.02190923706950465,
-   "score": -0.1,
-   "news": [
-    "Is Bullish (BLSH) Fully Valued Following Its Sharp Rebound?"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "AREC",
-   "name": "American Resources Corporation",
-   "vol_x": 0.28,
-   "buy_pct30": 0.16664105072600566,
-   "change": 0.002525250092658027,
-   "score": -0.27,
-   "news": [
-    "American Resources Corporation's Electrified Materials Signs Binding LOI to Acquire Blackion, Expanding Critical Materials and Battery Supply Chain Platform"
+    "Helus Pharma Presents New Analyses on HLP003 in Major Depressive Disorder at Psych Congress 2026 - Mon, 09/21/2026 - 07:30 - Helus Pharma"
    ],
    "on_t212": true
   }
@@ -108,6 +59,10 @@
   {
    "ticker": "ABLV",
    "vol_x": 49.75
+  },
+  {
+   "ticker": "MX",
+   "vol_x": 6.25
   },
   {
    "ticker": "CRML",
@@ -130,10 +85,6 @@
    "vol_x": 1.26
   },
   {
-   "ticker": "TAOX",
-   "vol_x": 1.17
-  },
-  {
    "ticker": "USDE",
    "vol_x": 1.09
   },
@@ -154,33 +105,17 @@
    "vol_x": 0.54
   },
   {
-   "ticker": "SRXH",
-   "vol_x": 0.53
+   "ticker": "SBET",
+   "vol_x": 0.5
   }
  ],
- "trades": [
-  {
-   "ticker": "GCTS",
-   "bought_at": "2026-09-21T16:40+00:00",
-   "sold_at": "2026-09-21T19:50+00:00",
-   "entry": 2.1920898213386533,
-   "exit": 2.1902999877929688,
-   "cost_gbp": 1001.8736916177678,
-   "pl_gbp": -2.3173608035108373,
-   "pl_pct": -0.0023130269043884133,
-   "reason": "End of day: sold 10 minutes before the close."
-  }
- ],
- "total_gbp": -2.3173608035108373,
+ "trades": [],
+ "total_gbp": 0,
  "alerts": [
-  "12:40 Day trade: bought GCTS: 611 GCTS at $2.19 (about \u00a31,002). Stop $2.08. Broke above its opening-range high ($2.17) at $2.19. In play: 0.3x normal volume, normally moves 5% a day. Stop $2.09.",
-  "15:50 Day trade: sold GCTS (-\u00a32): End of day: sold 10 minutes before the close. Result -\u00a32 (-0.2%).",
-  "15:50 Day trade summary: 1 trade(s) today: GCTS -\u00a32. Total -\u00a32."
+  "15:50 Day trade summary: No trade today: nothing in play broke out."
  ],
  "log": [
-  "Day trade buy order: 611 GCTS at about $2.19. Broke above its opening-range high ($2.17) at $2.19. In play: 0.3x normal volume, normally moves 5% a day. Stop $2.09.",
-  "Bought 611 GCTS at 2.19 (cost \u00a31,002).",
-  "Sold GCTS (about -\u00a32). End of day: sold 10 minutes before the close.",
-  "Day trading finished: 1 trade(s), total -\u00a32."
+  "HELP: Claude: no catalyst (strength None/5): ",
+  "Day trading finished: 0 trade(s), total +\u00a30."
  ]
 }

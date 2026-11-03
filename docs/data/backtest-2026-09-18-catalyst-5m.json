@@ -1,6 +1,6 @@
 {
  "date": "2026-09-18",
- "generated": "2026-11-01T19:30+00:00",
+ "generated": "2026-11-03T21:16+00:00",
  "fx_gbpusd": 1.335800051689148,
  "result": "done",
  "require_news": true,
@@ -11,67 +11,46 @@
  "drift_list": [],
  "list": [
   {
-   "ticker": "TNMG",
-   "name": "TNL Mediagene",
-   "vol_x": 271.05,
-   "buy_pct30": 0.7558197108623029,
-   "change": 0.6238660715124547,
-   "score": 542.62,
-   "news": [
-    "TNL Mediagene's The News Lens Launches TNL Daily, a Subscription Newsletter, with Crowdfunding Campaign Exceeding Its Funding Target"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "CODA",
-   "name": "Coda Octopus Group, Inc.",
+   "ticker": "DASH",
+   "name": "DoorDash, Inc.",
    "vol_x": 0.27,
-   "buy_pct30": 0.81623566944117,
-   "change": 0.02875699696620093,
-   "score": 3.3,
+   "buy_pct30": 0.5618148587303214,
+   "change": 0.0025185315548561515,
+   "score": 2.29,
    "news": [
-    "Coda Octopus (CODA) Just Posted A First-Ever Profit Milestone"
+    "DoorDash and Costco Expand Global Partnership with Nationwide U.S. Launch - DoorDash"
    ],
    "on_t212": true
   },
   {
-   "ticker": "CSHR",
-   "name": "CoinShares PLC",
-   "vol_x": 0.24,
-   "buy_pct30": 0.34234702267437384,
-   "change": 0.017945803943776095,
-   "score": 1.35,
+   "ticker": "IDXX",
+   "name": "IDEXX Laboratories, Inc.",
+   "vol_x": 0.23,
+   "buy_pct30": 0.20345052635747105,
+   "change": 0.006248969275569616,
+   "score": 0.77,
    "news": [
-    "CoinShares Says Bitcoin Won't Hit $80,000. Is It Correct?"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "STUB",
-   "name": "StubHub Holdings, Inc.",
-   "vol_x": 0.26,
-   "buy_pct30": 0.13926785897134594,
-   "change": 0.044612771705863974,
-   "score": 0.58,
-   "news": [
-    "StubHub (STUB) Stock Fair Value Falls As Analysts Weigh Regulatory And Growth Risks",
-    "StubHub Stock Rises After Citi Upgrade on \u2018Robust\u2019 Downloads"
+    "IDEXX Laboratories Acquires CoVetAI to Advance Veterinary Workflow Intelligence - Business Wire"
    ],
    "on_t212": true
   }
  ],
  "quiet": [
   {
+   "ticker": "TNMG",
+   "vol_x": 271.05
+  },
+  {
    "ticker": "NCPL",
    "vol_x": 3.09
   },
   {
-   "ticker": "AKAN",
-   "vol_x": 2.33
+   "ticker": "FTCI",
+   "vol_x": 2.69
   },
   {
-   "ticker": "TAOX",
-   "vol_x": 1.92
+   "ticker": "AKAN",
+   "vol_x": 2.33
   },
   {
    "ticker": "USDE",
@@ -88,10 +67,6 @@
   {
    "ticker": "BIAF",
    "vol_x": 0.63
-  },
-  {
-   "ticker": "HALO",
-   "vol_x": 0.6
   },
   {
    "ticker": "CRWV",
@@ -122,29 +97,13 @@
    "vol_x": 0.44
   }
  ],
- "trades": [
-  {
-   "ticker": "CSHR",
-   "bought_at": "2026-09-18T14:16+00:00",
-   "sold_at": "2026-09-18T19:50+00:00",
-   "entry": 5.305300190925598,
-   "exit": 5.610000133514404,
-   "cost_gbp": 1002.3513997415263,
-   "pl_gbp": 55.98067013521188,
-   "pl_pct": 0.05584934599746902,
-   "reason": "End of day: sold 10 minutes before the close."
-  }
- ],
- "total_gbp": 55.98067013521188,
+ "trades": [],
+ "total_gbp": 0,
  "alerts": [
-  "10:16 Day trade: bought CSHR: 252 CSHR at $5.31 (about \u00a31,002). Stop $5.04. Broke above its opening-range high ($5.29) at $5.30. In play: 0.2x normal volume, normally moves 7% a day. Stop $5.08.",
-  "15:50 Day trade: sold CSHR (+\u00a356): End of day: sold 10 minutes before the close. Result +\u00a356 (+5.6%).",
-  "15:50 Day trade summary: 1 trade(s) today: CSHR +\u00a356. Total +\u00a356."
+  "15:50 Day trade summary: No trade today: nothing in play broke out."
  ],
  "log": [
-  "Day trade buy order: 252 CSHR at about $5.30. Broke above its opening-range high ($5.29) at $5.30. In play: 0.2x normal volume, normally moves 7% a day. Stop $5.08.",
-  "Bought 252 CSHR at 5.31 (cost \u00a31,002).",
-  "Sold CSHR (about +\u00a356). End of day: sold 10 minutes before the close.",
-  "Day trading finished: 1 trade(s), total +\u00a356."
+  "IDXX: Claude: no catalyst (strength None/5): ",
+  "Day trading finished: 0 trade(s), total +\u00a30."
  ]
 }

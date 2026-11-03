@@ -1,28 +1,36 @@
 {
  "date": "2026-10-09",
- "generated": "2026-11-01T19:40+00:00",
+ "generated": "2026-11-03T21:25+00:00",
  "fx_gbpusd": 1.322908878326416,
  "result": "done",
  "require_news": true,
  "strategy": "catalyst",
  "bars": "5m",
  "require_trend": true,
- "added_during_day": [
-  "Added BNED to today's list at 12:10 New York: 0.3x normal volume in the last 30 min; news: Barnes & Noble Education Highlights Continued Business Transformation and Milest",
-  "Added LZM to today's list at 12:58 New York: 1.5x normal volume in the last 30 min; news: Lifezone Metals Announces US$8 Million Reduction in Cap on Consideration Payable",
-  "Added BKV to today's list at 13:46 New York: 0.3x normal volume in the last 30 min; news: Update: BKV Shares Rise After Signing Equipment Supply Contract for Potential Po"
- ],
+ "added_during_day": [],
  "drift_list": [],
  "list": [
   {
-   "ticker": "CRGY",
-   "name": "Crescent Energy Company",
-   "vol_x": 2.14,
-   "buy_pct30": 0.24975989530962722,
-   "change": 0.0015372408714457997,
-   "score": 4.78,
+   "ticker": "DELL",
+   "name": "Dell Technologies Inc.",
+   "vol_x": 0.23,
+   "buy_pct30": 0.5523584905227599,
+   "change": 0.005848029628316986,
+   "score": 2.17,
    "news": [
-    "Moody\u2019s revises Crescent Energy outlook to positive following Eagle Ford deal"
+    "Dell Technologies Drives the Agentic AI Era with New Windows PCs and Workstations - Dell"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "ETR",
+   "name": "Entergy Corporation",
+   "vol_x": 0.22,
+   "buy_pct30": 0.5037688956203702,
+   "change": 0.0010732814191076745,
+   "score": 1.96,
+   "news": [
+    "Entergy honored with Chartwell\u2019s Award for Excellence in Customer Value and Strategic Growth - Entergy"
    ],
    "on_t212": true
   },
@@ -32,35 +40,33 @@
    "vol_x": 1.23,
    "buy_pct30": 0.13057976275380923,
    "change": 0.022962090515407763,
-   "score": 1.98,
+   "score": 1.48,
    "news": [
-    "General Fusion Achieves World-First 1 keV Electron Temperature Milestone on its Path to Commercial Fusion Power",
-    "General Fusion, UKAEA Announce Magnetized Target Fusion Milestone"
+    "General Fusion Achieves World-First 1 keV Electron Temperature Milestone on its Path to Commercial Fusion Power - GlobeNewswire"
    ],
    "on_t212": true
   },
   {
-   "ticker": "CF",
-   "name": "CF Industries Holdings, Inc.",
-   "vol_x": 0.29,
-   "buy_pct30": 0.4509369663448165,
-   "change": 0.026369035648039718,
-   "score": 1.88,
+   "ticker": "COHR",
+   "name": "Coherent Corp.",
+   "vol_x": 0.42,
+   "buy_pct30": 0.48207127150470513,
+   "change": 0.006912506352571679,
+   "score": 1.27,
    "news": [
-    "Can CF Industries' Strong Cash Flow Drive More Growth and Returns?"
+    "Coherent Solutions Expands Several AI, Cloud, and Data Partnerships in 2026 - Business Wire"
    ],
    "on_t212": true
   },
   {
-   "ticker": "KOPN",
-   "name": "Kopin Corporation",
-   "vol_x": 0.38,
-   "buy_pct30": 0.33284109540778256,
-   "change": 0.04047621047956418,
-   "score": 1.09,
+   "ticker": "SECZ",
+   "name": "Securitize Corp.",
+   "vol_x": 0.24,
+   "buy_pct30": 0.37505898141184246,
+   "change": 0.010284390807001387,
+   "score": 0.48,
    "news": [
-    "Kopin Secures Additional $18.6 Million U.S. Army IBAS Award for Color MicroLED Technology",
-    "Kopin to Introduce Expanded First\u2011Person Viewer Evaluation Kit Lineup at AUSA 2026"
+    "Securitize Launches Global Onchain Trading of U.S. Stocks with Security Entitlements - PR Newswire"
    ],
    "on_t212": true
   }
@@ -75,20 +81,16 @@
    "vol_x": 2.46
   },
   {
+   "ticker": "CRGY",
+   "vol_x": 2.14
+  },
+  {
    "ticker": "HUM",
    "vol_x": 0.99
   },
   {
-   "ticker": "TEVA",
-   "vol_x": 0.69
-  },
-  {
    "ticker": "CLOV",
    "vol_x": 0.64
-  },
-  {
-   "ticker": "AAOI",
-   "vol_x": 0.54
   },
   {
    "ticker": "IMMR",
@@ -107,10 +109,6 @@
    "vol_x": 0.42
   },
   {
-   "ticker": "COHR",
-   "vol_x": 0.42
-  },
-  {
    "ticker": "ATEX",
    "vol_x": 0.4
   },
@@ -123,52 +121,25 @@
    "vol_x": 0.38
   },
   {
-   "ticker": "TATT",
+   "ticker": "KOPN",
    "vol_x": 0.38
-  }
- ],
- "trades": [
-  {
-   "ticker": "CRGY",
-   "bought_at": "2026-10-09T14:16+00:00",
-   "sold_at": "2026-10-09T16:10+00:00",
-   "entry": 13.163149618148802,
-   "exit": 12.85713,
-   "cost_gbp": 996.5081162092907,
-   "pl_gbp": -26.08267608064898,
-   "pl_pct": -0.026174072901550747,
-   "reason": "Stop-loss order filled"
   },
   {
-   "ticker": "LZM",
-   "bought_at": "2026-10-09T17:56+00:00",
-   "sold_at": "2026-10-09T19:50+00:00",
-   "entry": 3.4134100859165186,
-   "exit": 3.4049999713897705,
-   "cost_gbp": 1000.0471003552642,
-   "pl_gbp": -3.958094894147507,
-   "pl_pct": -0.00395790847525222,
-   "reason": "End of day: sold 10 minutes before the close."
+   "ticker": "TATT",
+   "vol_x": 0.38
+  },
+  {
+   "ticker": "ACHR",
+   "vol_x": 0.36
   }
  ],
- "total_gbp": -30.040770974796487,
+ "trades": [],
+ "total_gbp": 0,
  "alerts": [
-  "10:16 Day trade: bought CRGY: 100 CRGY at $13.16 (about \u00a3997). Stop $12.50. Broke above its opening-range high ($13.07) at $13.15. In play: 2.1x normal volume, normally moves 3% a day. Stop $12.86.",
-  "12:10 Day trade update: CRGY: stop-loss order filled (-\u00a326)",
-  "13:56 Day trade: bought LZM: 387 LZM at $3.41 (about \u00a31,000). Stop $3.24. Broke above its opening-range high ($3.39) at $3.41. In play: 1.5x normal volume, normally moves 5% a day. Stop $3.24.",
-  "15:50 Day trade: sold LZM (-\u00a34): End of day: sold 10 minutes before the close. Result -\u00a34 (-0.4%).",
-  "15:50 Day trade summary: 2 trade(s) today: CRGY -\u00a326, LZM -\u00a34. Total -\u00a330."
+  "15:50 Day trade summary: No trade today: nothing in play broke out."
  ],
  "log": [
-  "Day trade buy order: 100 CRGY at about $13.15. Broke above its opening-range high ($13.07) at $13.15. In play: 2.1x normal volume, normally moves 3% a day. Stop $12.86.",
-  "Bought 100 CRGY at 13.16 (cost \u00a3997).",
-  "CRGY: stop-loss order filled, P&L -\u00a326.",
-  "Added BNED to today's list at 12:10 New York: 0.3x normal volume in the last 30 min; news: Barnes & Noble Education Highlights Continued Business Transformation and Milest",
-  "Added LZM to today's list at 12:58 New York: 1.5x normal volume in the last 30 min; news: Lifezone Metals Announces US$8 Million Reduction in Cap on Consideration Payable",
-  "Added BKV to today's list at 13:46 New York: 0.3x normal volume in the last 30 min; news: Update: BKV Shares Rise After Signing Equipment Supply Contract for Potential Po",
-  "Day trade buy order: 387 LZM at about $3.41. Broke above its opening-range high ($3.39) at $3.41. In play: 1.5x normal volume, normally moves 5% a day. Stop $3.24.",
-  "Bought 387 LZM at 3.41 (cost \u00a31,000).",
-  "Sold LZM (about -\u00a34). End of day: sold 10 minutes before the close.",
-  "Day trading finished: 2 trade(s), total -\u00a330."
+  "SECZ: Claude: no catalyst (strength None/5): ",
+  "Day trading finished: 0 trade(s), total +\u00a30."
  ]
 }

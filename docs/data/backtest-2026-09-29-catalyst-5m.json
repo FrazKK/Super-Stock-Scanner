@@ -1,6 +1,6 @@
 {
  "date": "2026-09-29",
- "generated": "2026-11-01T19:36+00:00",
+ "generated": "2026-11-03T21:22+00:00",
  "fx_gbpusd": 1.3254337310791016,
  "result": "done",
  "require_news": true,
@@ -11,65 +11,14 @@
  "drift_list": [],
  "list": [
   {
-   "ticker": "BKYI",
-   "name": "BIO-key International, Inc.",
-   "vol_x": 816.44,
-   "buy_pct30": 0.3830359655809127,
-   "change": 1.404761957135602,
-   "score": 1633.41,
-   "news": [
-    "BIO-key Partners With Al Majlis Group to Expand Identity Security in UAE and Saudi Arabia",
-    "BIO-key Partners with Al Majlis Group to Expand Identity Security Across Arabian Gulf"
-   ],
-   "on_t212": true
-  },
-  {
    "ticker": "NTWK",
    "name": "NETSOL Technologies Inc.",
    "vol_x": 1.36,
    "buy_pct30": 0.5936626380182837,
    "change": 0.014134093005091719,
-   "score": 4.09,
+   "score": 3.59,
    "news": [
-    "NETSOL Q4 Earnings & Revenues Rise Y/Y as Margins Expand",
-    "NETSOL Technologies Inc (NTWK) (Q4 2026) Earnings Call Highlights: Record Revenue and Strong ..."
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "CRK",
-   "name": "Comstock Resources, Inc.",
-   "vol_x": 0.33,
-   "buy_pct30": 0.7149952918666471,
-   "change": 0.0023641203812081457,
-   "score": 4.02,
-   "news": [
-    "CRK Advances $1.65B SOCAR Partnership by Signing Framework Agreement",
-    "Comstock and SOCAR formalise $1.6bn Haynesville Shale partnership"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "PCB",
-   "name": "PCB Bancorp",
-   "vol_x": 0.26,
-   "buy_pct30": 0.9430241051862673,
-   "change": 0.03642621077232344,
-   "score": 3.79,
-   "news": [
-    "PCB Bancorp stock rises on share buyback program approval"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "AGPU",
-   "name": "Axe Compute Inc.",
-   "vol_x": 0.44,
-   "buy_pct30": 0.5266210099341204,
-   "change": 0.09382719169670684,
-   "score": 3.49,
-   "news": [
-    "Axe Compute Receives More Than $184 Million in Customer Prepayments and Signs Over $266 Million in New AI Infrastructure Contracts Since Q2 Earnings Call"
+    "NETSOL Technologies reports record fiscal 2026 revenue and full-year profitability, exceeding guidance - GlobeNewswire"
    ],
    "on_t212": true
   },
@@ -81,37 +30,40 @@
    "change": 0.14632772075338107,
    "score": 2.52,
    "news": [
-    "JELD-WEN Announces Comprehensive Agreement to Extend Debt Maturities and Raise $135 Million of Incremental Liquidity to Support Business Plan"
+    "JELD-WEN Announces Comprehensive Agreement to Extend Debt Maturities and Raise $135 Million of Incremental Liquidity to Support Business Plan - PR Newswire"
    ],
    "on_t212": true
   },
   {
-   "ticker": "ACET",
-   "name": "Adicet Bio, Inc.",
-   "vol_x": 0.36,
-   "buy_pct30": 0.42402599729133245,
-   "change": 0.046456705625889994,
-   "score": 2.42,
+   "ticker": "KMX",
+   "name": "CarMax Inc",
+   "vol_x": 0.98,
+   "buy_pct30": 0.3101960493942904,
+   "change": 0.08328910960242619,
+   "score": 1.7,
    "news": [
-    "Adicet Bio Reports Positive Prula-cel Phase 1 Lupus Data as Pivotal Study Plans Advance",
-    "Adicet Bio Announces Positive Safety and Efficacy Data from Prula-cel (formerly ADI-001) Study in Patients with Systemic Lupus Erythematosus with or without Lupus Nephritis"
+    "CarMax Announces Leadership Appointments to Further Unify End-to-End Customer Experience, Advance Strategy for Growth - Business Wire"
    ],
    "on_t212": true
   },
   {
-   "ticker": "TOYO",
-   "name": "TOYO Co., Ltd",
-   "vol_x": 0.26,
-   "buy_pct30": 0.5932667441092728,
-   "change": 0.009501178501326812,
-   "score": 1.39,
+   "ticker": "DPRO",
+   "name": "Draganfly Inc.",
+   "vol_x": 0.23,
+   "buy_pct30": 0.4623106039260636,
+   "change": 0.008042909380056251,
+   "score": 0.81,
    "news": [
-    "TOYO Announces Approximately $240 Million in Binding U.S. Solar Module Supply Agreements Through First Half of 2027"
+    "Draganfly Announces Strategic Investment from Unusual Machines and a Leading U.S. Investment Fund - Draganfly"
    ],
    "on_t212": true
   }
  ],
  "quiet": [
+  {
+   "ticker": "BKYI",
+   "vol_x": 816.44
+  },
   {
    "ticker": "NAUT",
    "vol_x": 3.95
@@ -135,10 +87,6 @@
   {
    "ticker": "MX",
    "vol_x": 1.05
-  },
-  {
-   "ticker": "KMX",
-   "vol_x": 0.98
   },
   {
    "ticker": "CCL",
@@ -188,12 +136,13 @@
  ],
  "total_gbp": -6.892014311501498,
  "alerts": [
-  "10:16 Day trade: bought NTWK: 238 NTWK at $5.56 (about \u00a3999). Stop $5.28. Broke above its opening-range high ($5.50) at $5.55. In play: 1.4x normal volume, normally moves 7% a day. Stop $5.42.",
+  "10:16 Day trade: bought NTWK: 238 NTWK at $5.56 (about \u00a3999). Stop $5.28. Broke above its opening-range high ($5.50) at $5.55. In play: 1.4x normal volume, normally moves 7% a day. Stop $5.42. News (GlobeNewswire): NETSOL Technologies reports record fiscal 2026 revenue and full-year profitability, exceed. Claude: catalyst (strength 4/5): An official GlobeNewswire release on 2026-09-28 reports record fiscal 2026 revenue and full-year profitability exceeding guidance, a specific earnings beat, and",
   "15:50 Day trade: sold NTWK (-\u00a37): End of day: sold 10 minutes before the close. Result -\u00a37 (-0.7%).",
   "15:50 Day trade summary: 1 trade(s) today: NTWK -\u00a37. Total -\u00a37."
  ],
  "log": [
-  "Day trade buy order: 238 NTWK at about $5.55. Broke above its opening-range high ($5.50) at $5.55. In play: 1.4x normal volume, normally moves 7% a day. Stop $5.42.",
+  "NTWK: Claude: catalyst (strength 4/5): An official GlobeNewswire release on 2026-09-28 reports record fiscal 2026 revenue and full-year profitability exceeding guidance, a specific earnings beat, and",
+  "Day trade buy order: 238 NTWK at about $5.55. Broke above its opening-range high ($5.50) at $5.55. In play: 1.4x normal volume, normally moves 7% a day. Stop $5.42. News (GlobeNewswire): NETSOL Technologies reports record fiscal 2026 revenue and full-year profitability, exceed. Claude: catalyst (strength 4/5): An official GlobeNewswire release on 2026-09-28 reports record fiscal 2026 revenue and full-year profitability exceeding guidance, a specific earnings beat, and",
   "Bought 238 NTWK at 5.56 (cost \u00a3999).",
   "Sold NTWK (about -\u00a37). End of day: sold 10 minutes before the close.",
   "Day trading finished: 1 trade(s), total -\u00a37."

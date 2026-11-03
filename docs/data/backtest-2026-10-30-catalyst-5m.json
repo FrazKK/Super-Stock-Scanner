@@ -1,6 +1,6 @@
 {
  "date": "2026-10-30",
- "generated": "2026-11-01T19:48+00:00",
+ "generated": "2026-11-03T21:34+00:00",
  "fx_gbpusd": 1.3378641605377197,
  "result": "done",
  "require_news": true,
@@ -8,155 +8,19 @@
  "bars": "5m",
  "require_trend": true,
  "added_during_day": [
-  "Added TFX to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; news: FDA Device Breakthrough Might Change The Case For Investing In Teleflex Stock (T",
-  "Added ULH to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; news: Universal Logistics (ULH) Beats Q3 Earnings and Revenue Estimates",
-  "Added BTSG to today's list at 10:32 New York: 0.3x normal volume in the last 30 min; news: BrightSpring Soars 12% on Q3 Beat and Raised 2026 Guidance as Adjusted EBITDA Ju",
-  "Added MICC to today's list at 10:32 New York: 0.3x normal volume in the last 30 min; news: Magnum Ice Cream Co NV (MICC) Reports Strong Q3 Revenue Growth, Raises Full-Year",
-  "Added CHDN to today's list at 10:32 New York: 0.3x normal volume in the last 30 min; news: Churchill Downs (CHDN) Reports Q3 Results And Buyback, Is It Still A Bargain?",
-  "Added MIAX to today's list at 10:32 New York: 0.2x normal volume in the last 30 min; news: Miami International Holdings, Inc. (MIAX) Beats Q3 Earnings and Revenue Estimate",
-  "Added DFIN to today's list at 10:32 New York: 0.3x normal volume in the last 30 min; news: Why Donnelley Financial Solutions Stock Is In Focus After An Earnings Beat",
-  "Added CZFS to today's list at 10:32 New York: 0.4x normal volume in the last 30 min; news: Citizens Financial Services (CZFS) Q3 Earnings and Revenues Beat Estimates",
-  "Added PROF to today's list at 10:32 New York: 0.4x normal volume in the last 30 min; news: Profound Medical and Cook Medical\u2019s iMRI Division Partner to Expand U.S. TULSA-P",
-  "Added COOK to today's list at 10:32 New York: 0.4x normal volume in the last 30 min; news: Traeger, Inc.'s (NYSE:COOK) Path To Profitability - Simply Wall St"
+  "Added CHDN to today's list at 10:32 New York: 0.3x normal volume in the last 30 min; news: Thoroughbred Championship Series Expands to Include Oaks Division for Three-Year"
  ],
  "drift_list": [],
  "list": [
   {
-   "ticker": "WKHS",
-   "name": "Workhorse Group, Inc.",
-   "vol_x": 4.73,
-   "buy_pct30": 0.7087408510834057,
-   "change": 0.1549019562011038,
-   "score": 11.29,
+   "ticker": "FBIZ",
+   "name": "First Business Financial Services, Inc.",
+   "vol_x": 0.59,
+   "buy_pct30": 0.6882351987876517,
+   "change": 0.011523840150535758,
+   "score": 4.43,
    "news": [
-    "Workhorse Enters Modular AI Infrastructure Market Through Foundational TerraPod\u2122 Partnership with UK-Based RHAELM",
-    "Workhorse Group Inc. stock outperforms competitors on strong trading day - MarketWatch"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "REGN",
-   "name": "Regeneron Pharmaceuticals, Inc.",
-   "vol_x": 1.18,
-   "buy_pct30": 0.8229069258159629,
-   "change": 0.1308243447053119,
-   "score": 6.15,
-   "news": [
-    "REGN Q3 Earnings Beat on Dupixent Profits & Eylea HD Growth, Stock Up"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "CPRI",
-   "name": "Capri Holdings Limited",
-   "vol_x": 0.71,
-   "buy_pct30": 0.7192977192413313,
-   "change": 0.15691161529038067,
-   "score": 4.8,
-   "news": [
-    "Capri Soars 17% on Earnings Beat and Raised Outlook: \u201cTrends Improved Sequentially Each Month\u201d",
-    "Capri shares surge 16% as profit beat helps it escape Wall Street sell-off"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "NFE",
-   "name": "New Fortress Energy Inc.",
-   "vol_x": 1.37,
-   "buy_pct30": 0.8387488638718834,
-   "change": 0.23087071472480702,
-   "score": 4.59,
-   "news": [
-    "New Fortress Energy Inc. Enters Lease Agreement With US-Based Investment-Grade Company For Ten Mobile Turbines - www.marketscreener.com"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "MEOH",
-   "name": "Methanex Corporation",
-   "vol_x": 0.91,
-   "buy_pct30": 0.6753426765396584,
-   "change": 0.09448700252495756,
-   "score": 4.52,
-   "news": [
-    "Methanex Shares In Focus After Earnings Beat And 5% Buyback Plan",
-    "Methanex Soars 14% on Earnings Beat as Middle East Conflict\u2019s \u201cDramatic Impact\u201d Lifts Methanol Prices"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "CHE",
-   "name": "Chemed Corp",
-   "vol_x": 0.27,
-   "buy_pct30": 0.6122244773021371,
-   "change": 0.008303808942114799,
-   "score": 4.49,
-   "news": [
-    "CHE Q3 deep dive: VITAS and Roto-Rooter drive revenue growth, margin headwinds persist",
-    "Chemed (CHE) Looks Repriced As Raised Guidance And Margin Gains Lift The Narrative"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "SMP",
-   "name": "Standard Motor Products, Inc.",
-   "vol_x": 0.31,
-   "buy_pct30": 0.953154907505011,
-   "change": 0.13751629598779624,
-   "score": 3.93,
-   "news": [
-    "Standard Motor Products Expands Climate Control Portfolio with New Line of OE-Engineered A/C Condensers"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "NWL",
-   "name": "Newell Brands Inc.",
-   "vol_x": 0.46,
-   "buy_pct30": 0.592715378276503,
-   "change": 0.04527559498577571,
-   "score": 3.79,
-   "news": [
-    "Newell Brands Sinks 11% Despite Raised Sales Outlook as Inflation \u201cExceeded Our Expectations\u201d",
-    "Newell Brands Earnings Show More Growth. The Turnaround Is Gaining Steam."
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "GILD",
-   "name": "Gilead Sciences, Inc.",
-   "vol_x": 0.25,
-   "buy_pct30": 0.5472014625809717,
-   "change": 0.04042625469932659,
-   "score": 3.69,
-   "news": [
-    "How Gilead, Which Just Hit A Record, Notched Its Best Sales Growth In A Decade",
-    "Gilead's HIV Franchise Supports Growth Outlook, RBC Says"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "EXC",
-   "name": "Exelon Corporation",
-   "vol_x": 0.72,
-   "buy_pct30": 0.6681921544182906,
-   "change": 0.00969287075371894,
-   "score": 3.61,
-   "news": [
-    "EXC Q3 Earnings Beat Estimates on Higher Utility Rates, Sales Up Y/Y",
-    "Exelon Shares Gain 2% as Q3 Earnings and Revenue Beat Expectations"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "MPWR",
-   "name": "Monolithic Power Systems, Inc.",
-   "vol_x": 0.41,
-   "buy_pct30": 0.7985054640917824,
-   "change": 0.0510257363767701,
-   "score": 3.51,
-   "news": [
-    "MPWR Q3 Earnings Call Highlights AI Demand and Capacity Expansion"
+    "First Business Bank Reports Record Third Quarter Earnings - Business Wire"
    ],
    "on_t212": true
   },
@@ -169,45 +33,19 @@
    "score": 3.49,
    "news": [
     "DexCom Q3 Results, Higher Revenue Guidance Point to Stronger 2027, RBC Says",
-    "DexCom Stock Up on Q3 Earnings & Revenue Beat, Margins Rise"
+    "Dexcom G7 15 Day Continuous Glucose Monitoring System to Launch in Canada in November - DexCom, Inc. - Investor Relations"
    ],
    "on_t212": true
   },
   {
-   "ticker": "CVCO",
-   "name": "Cavco Industries, Inc.",
-   "vol_x": 0.61,
-   "buy_pct30": 0.5419584670101433,
-   "change": 0.13443582882452043,
-   "score": 3.39,
+   "ticker": "ALNY",
+   "name": "Alnylam Pharmaceuticals, Inc.",
+   "vol_x": 0.23,
+   "buy_pct30": 0.7474871380508012,
+   "change": 0.025747101882408474,
+   "score": 2.95,
    "news": [
-    "Cavco Soars 12% on Earnings Beat as \u201cData Center Workforce Housing\u201d Orders Arrive",
-    "Rising Backlogs and Scale Support Cavco Industries\u2019 (CVCO) Long-Term Growth Thesis"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "FDXF",
-   "name": "FedEx Freight Holding Company, Inc.",
-   "vol_x": 0.28,
-   "buy_pct30": 0.5652980339956939,
-   "change": 0.11660133677505802,
-   "score": 3.32,
-   "news": [
-    "FedEx Freight Q3 shipments dip slightly following spinoff",
-    "FDXF Four-Month Transition Period Earnings Beat Estimates on Higher Yields"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "SKY",
-   "name": "Champion Homes, Inc.",
-   "vol_x": 0.49,
-   "buy_pct30": 0.6996826859810791,
-   "change": 0.04614432724180406,
-   "score": 3.28,
-   "news": [
-    "Champion Homes (NYSE:SKY) Stock Price Up 5.4% - Still a Buy? - MarketBeat"
+    "Alnylam Pharmaceuticals' Fundamentals Remain Strong Despite Lower-End Guidance Expectations, UBS Says"
    ],
    "on_t212": true
   }
@@ -218,6 +56,10 @@
    "vol_x": 263.27
   },
   {
+   "ticker": "WKHS",
+   "vol_x": 4.73
+  },
+  {
    "ticker": "ASUR",
    "vol_x": 2.27
   },
@@ -226,12 +68,28 @@
    "vol_x": 2.19
   },
   {
+   "ticker": "NFE",
+   "vol_x": 1.37
+  },
+  {
    "ticker": "ACCO",
    "vol_x": 1.36
   },
   {
    "ticker": "OSPN",
    "vol_x": 1.23
+  },
+  {
+   "ticker": "REGN",
+   "vol_x": 1.18
+  },
+  {
+   "ticker": "MEOH",
+   "vol_x": 0.91
+  },
+  {
+   "ticker": "INO",
+   "vol_x": 0.89
   },
   {
    "ticker": "PARK",
@@ -246,67 +104,22 @@
    "vol_x": 0.74
   },
   {
-   "ticker": "CDNA",
-   "vol_x": 0.67
+   "ticker": "EXC",
+   "vol_x": 0.72
   },
   {
-   "ticker": "HTO",
-   "vol_x": 0.65
-  },
-  {
-   "ticker": "FBIZ",
-   "vol_x": 0.59
-  },
-  {
-   "ticker": "RIVN",
-   "vol_x": 0.46
-  },
-  {
-   "ticker": "NCPL",
-   "vol_x": 0.46
-  },
-  {
-   "ticker": "GCBC",
-   "vol_x": 0.45
-  },
-  {
-   "ticker": "CBK",
-   "vol_x": 0.45
+   "ticker": "CPRI",
+   "vol_x": 0.71
   }
  ],
- "trades": [
-  {
-   "ticker": "MEOH",
-   "bought_at": "2026-10-30T14:36+00:00",
-   "sold_at": "2026-10-30T19:50+00:00",
-   "entry": 69.13906969451904,
-   "exit": 70.97750091552734,
-   "cost_gbp": 983.367987937863,
-   "pl_gbp": 24.636080915432217,
-   "pl_pct": 0.025052758700325844,
-   "reason": "End of day: sold 10 minutes before the close."
-  }
- ],
- "total_gbp": 24.636080915432217,
+ "trades": [],
+ "total_gbp": 0,
  "alerts": [
-  "10:36 Day trade: bought MEOH: 19 MEOH at $69.14 (about \u00a3983). Stop $65.68. Broke above its opening-range high ($69.03) at $69.07. In play: 0.9x normal volume, normally moves 3% a day. Stop $66.00.",
-  "15:50 Day trade: sold MEOH (+\u00a325): End of day: sold 10 minutes before the close. Result +\u00a325 (+2.5%).",
-  "15:50 Day trade summary: 1 trade(s) today: MEOH +\u00a325. Total +\u00a325."
+  "15:50 Day trade summary: No trade today: nothing in play broke out."
  ],
  "log": [
-  "Added TFX to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; news: FDA Device Breakthrough Might Change The Case For Investing In Teleflex Stock (T",
-  "Added ULH to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; news: Universal Logistics (ULH) Beats Q3 Earnings and Revenue Estimates",
-  "Added BTSG to today's list at 10:32 New York: 0.3x normal volume in the last 30 min; news: BrightSpring Soars 12% on Q3 Beat and Raised 2026 Guidance as Adjusted EBITDA Ju",
-  "Added MICC to today's list at 10:32 New York: 0.3x normal volume in the last 30 min; news: Magnum Ice Cream Co NV (MICC) Reports Strong Q3 Revenue Growth, Raises Full-Year",
-  "Added CHDN to today's list at 10:32 New York: 0.3x normal volume in the last 30 min; news: Churchill Downs (CHDN) Reports Q3 Results And Buyback, Is It Still A Bargain?",
-  "Added MIAX to today's list at 10:32 New York: 0.2x normal volume in the last 30 min; news: Miami International Holdings, Inc. (MIAX) Beats Q3 Earnings and Revenue Estimate",
-  "Added DFIN to today's list at 10:32 New York: 0.3x normal volume in the last 30 min; news: Why Donnelley Financial Solutions Stock Is In Focus After An Earnings Beat",
-  "Added CZFS to today's list at 10:32 New York: 0.4x normal volume in the last 30 min; news: Citizens Financial Services (CZFS) Q3 Earnings and Revenues Beat Estimates",
-  "Added PROF to today's list at 10:32 New York: 0.4x normal volume in the last 30 min; news: Profound Medical and Cook Medical\u2019s iMRI Division Partner to Expand U.S. TULSA-P",
-  "Added COOK to today's list at 10:32 New York: 0.4x normal volume in the last 30 min; news: Traeger, Inc.'s (NYSE:COOK) Path To Profitability - Simply Wall St",
-  "Day trade buy order: 19 MEOH at about $69.07. Broke above its opening-range high ($69.03) at $69.07. In play: 0.9x normal volume, normally moves 3% a day. Stop $66.00.",
-  "Bought 19 MEOH at 69.14 (cost \u00a3983).",
-  "Sold MEOH (about +\u00a325). End of day: sold 10 minutes before the close.",
-  "Day trading finished: 1 trade(s), total +\u00a325."
+  "Added CHDN to today's list at 10:32 New York: 0.3x normal volume in the last 30 min; news: Thoroughbred Championship Series Expands to Include Oaks Division for Three-Year",
+  "CHDN: Claude: no catalyst (strength None/5): ",
+  "Day trading finished: 0 trade(s), total +\u00a30."
  ]
 }

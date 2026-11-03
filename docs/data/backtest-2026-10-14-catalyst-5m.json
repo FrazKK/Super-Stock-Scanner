@@ -1,6 +1,6 @@
 {
  "date": "2026-10-14",
- "generated": "2026-11-01T19:41+00:00",
+ "generated": "2026-11-03T21:25+00:00",
  "fx_gbpusd": 1.3257324695587158,
  "result": "done",
  "require_news": true,
@@ -8,58 +8,19 @@
  "bars": "5m",
  "require_trend": true,
  "added_during_day": [
-  "Added HLP to today's list at 10:16 New York: 1.6x normal volume in the last 30 min; news: Hongli Group Provides Strategic Update on Proposed Advanced Battery Collaboratio",
-  "Added DFNS to today's list at 11:06 New York: 0.3x normal volume in the last 30 min; news: T3 Defense Subsidiary Positech Commences Deliveries On $3.9 Million Defense Orde"
+  "Added DFNS to today's list at 10:48 New York: 0.2x normal volume in the last 30 min; news: T3 Defense Subsidiary Positech Commences Deliveries On $3.9 Million Defense Orde"
  ],
  "drift_list": [],
  "list": [
   {
-   "ticker": "GENB",
-   "name": "Generate Biomedicines, Inc.",
-   "vol_x": 0.55,
-   "buy_pct30": 0.3343088952241789,
-   "change": 0.04119087316582992,
-   "score": 3.44,
+   "ticker": "GFS",
+   "name": "GlobalFoundries Inc.",
+   "vol_x": 0.45,
+   "buy_pct30": 0.5369752031912177,
+   "change": 0.0460384941339842,
+   "score": 2.55,
    "news": [
-    "Zealand Pharma pens $1.2bn AI obesity drug discovery pact with Generate",
-    "Generate Biomedicines Lands Major AI Drug Partnership to Target Booming Obesity Market"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "AMPG",
-   "name": "Amplitech Group, Inc.",
-   "vol_x": 0.25,
-   "buy_pct30": 0.7042952381803469,
-   "change": 0.0149812586929019,
-   "score": 2.82,
-   "news": [
-    "AmpliTech Group Reports More Than $17 Million in Purchase Orders During Third Quarter of 2026"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "ARWR",
-   "name": "Arrowhead Pharmaceuticals, Inc.",
-   "vol_x": 0.38,
-   "buy_pct30": 0.6328762774313897,
-   "change": 0.025979708803353763,
-   "score": 2.79,
-   "news": [
-    "Arrowhead jumps as breakthrough Alzheimer\u2019s drug clears brain barrier"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "ENVX",
-   "name": "Enovix Corporation",
-   "vol_x": 0.57,
-   "buy_pct30": 0.527210387093825,
-   "change": 0.020318772290593756,
-   "score": 2.75,
-   "news": [
-    "Enovix stock surges on 100,000-unit drone battery order",
-    "Enovix Receives 100,000-Battery Drone Order"
+    "GlobalFoundries selected to operate two new semiconductor fabs in New York under landmark U.S.-Japan initiative - GlobalFoundries"
    ],
    "on_t212": true
   }
@@ -70,20 +31,12 @@
    "vol_x": 18.11
   },
   {
-   "ticker": "AEHL",
-   "vol_x": 10.74
-  },
-  {
    "ticker": "VEEE",
    "vol_x": 6.36
   },
   {
    "ticker": "GRML",
    "vol_x": 4.23
-  },
-  {
-   "ticker": "VSTM",
-   "vol_x": 4.22
   },
   {
    "ticker": "BSP",
@@ -94,28 +47,24 @@
    "vol_x": 1.5
   },
   {
-   "ticker": "NCPL",
-   "vol_x": 1.32
-  },
-  {
-   "ticker": "BMGL",
-   "vol_x": 0.86
-  },
-  {
    "ticker": "GEF.B",
    "vol_x": 0.85
-  },
-  {
-   "ticker": "LQDA",
-   "vol_x": 0.83
   },
   {
    "ticker": "CANG",
    "vol_x": 0.62
   },
   {
+   "ticker": "ENVX",
+   "vol_x": 0.57
+  },
+  {
    "ticker": "JRSH",
    "vol_x": 0.56
+  },
+  {
+   "ticker": "GENB",
+   "vol_x": 0.55
   },
   {
    "ticker": "ESLT",
@@ -124,51 +73,28 @@
   {
    "ticker": "PDEX",
    "vol_x": 0.46
-  }
- ],
- "trades": [
-  {
-   "ticker": "HLP",
-   "bought_at": "2026-10-14T14:16+00:00",
-   "sold_at": "2026-10-14T15:06+00:00",
-   "entry": 2.8628598949909208,
-   "exit": 2.857139895200729,
-   "cost_gbp": 1001.3275061594724,
-   "pl_gbp": -4.994144677885515,
-   "pl_pct": -0.004987523709440718,
-   "reason": "Stop-loss order filled"
   },
   {
-   "ticker": "DFNS",
-   "bought_at": "2026-10-14T15:06+00:00",
-   "sold_at": "2026-10-14T15:46+00:00",
-   "entry": 5.9059000954627985,
-   "exit": 6.25374,
-   "cost_gbp": 999.3765968911899,
-   "pl_gbp": 55.69034570665133,
-   "pl_pct": 0.05572508489781533,
-   "reason": "Stop-loss order filled"
+   "ticker": "IKT",
+   "vol_x": 0.41
+  },
+  {
+   "ticker": "ARWR",
+   "vol_x": 0.38
+  },
+  {
+   "ticker": "VAL",
+   "vol_x": 0.36
   }
  ],
- "total_gbp": 50.69620102876581,
+ "trades": [],
+ "total_gbp": 0,
  "alerts": [
-  "10:16 Day trade: bought HLP: 463 HLP at $2.86 (about \u00a31,001). Stop $2.72. Broke above its opening-range high ($2.85) at $2.86. In play: 1.6x normal volume, normally moves 7% a day. Stop $2.84.",
-  "11:06 Day trade update: HLP: stop-loss order filled (-\u00a35)",
-  "11:06 Day trade: bought DFNS: 224 DFNS at $5.91 (about \u00a3999). Stop $5.61. Broke above its opening-range high ($5.66) at $5.90. In play: 0.3x normal volume, normally moves 7% a day. Stop $5.61.",
-  "11:46 Day trade update: DFNS: stop-loss order filled (+\u00a356)",
-  "15:50 Day trade summary: 2 trade(s) today: HLP -\u00a35, DFNS +\u00a356. Total +\u00a351."
+  "15:50 Day trade summary: No trade today: nothing in play broke out."
  ],
  "log": [
-  "Added HLP to today's list at 10:16 New York: 1.6x normal volume in the last 30 min; news: Hongli Group Provides Strategic Update on Proposed Advanced Battery Collaboratio",
-  "Day trade buy order: 463 HLP at about $2.86. Broke above its opening-range high ($2.85) at $2.86. In play: 1.6x normal volume, normally moves 7% a day. Stop $2.84.",
-  "Bought 463 HLP at 2.86 (cost \u00a31,001).",
-  "HLP: stop raised from 2.84 to 2.88.",
-  "HLP: stop-loss order filled, P&L -\u00a35.",
-  "Added DFNS to today's list at 11:06 New York: 0.3x normal volume in the last 30 min; news: T3 Defense Subsidiary Positech Commences Deliveries On $3.9 Million Defense Orde",
-  "Day trade buy order: 224 DFNS at about $5.90. Broke above its opening-range high ($5.66) at $5.90. In play: 0.3x normal volume, normally moves 7% a day. Stop $5.61.",
-  "Bought 224 DFNS at 5.91 (cost \u00a3999).",
-  "DFNS: stop raised from 5.61 to 6.26.",
-  "DFNS: stop-loss order filled, P&L +\u00a356.",
-  "Day trading finished: 2 trade(s), total +\u00a351."
+  "Added DFNS to today's list at 10:48 New York: 0.2x normal volume in the last 30 min; news: T3 Defense Subsidiary Positech Commences Deliveries On $3.9 Million Defense Orde",
+  "DFNS: Claude: no catalyst (strength None/5): ",
+  "Day trading finished: 0 trade(s), total +\u00a30."
  ]
 }

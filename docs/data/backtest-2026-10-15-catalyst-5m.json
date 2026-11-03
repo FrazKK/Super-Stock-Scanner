@@ -1,6 +1,6 @@
 {
  "date": "2026-10-15",
- "generated": "2026-11-01T19:45+00:00",
+ "generated": "2026-11-03T21:27+00:00",
  "fx_gbpusd": 1.3230137825012207,
  "result": "done",
  "require_news": true,
@@ -13,18 +13,6 @@
  "drift_list": [],
  "list": [
   {
-   "ticker": "SNES",
-   "name": "SenesTech, Inc.",
-   "vol_x": 86.39,
-   "buy_pct30": 0.2358124102446131,
-   "change": 0.12890631621121584,
-   "score": 173.22,
-   "news": [
-    "SenesTech Reports Record Preliminary Third Quarter Revenue Exceeding $1 Million, the Highest in Company History, with 40% Sequential Growth"
-   ],
-   "on_t212": true
-  },
-  {
    "ticker": "NRXS",
    "name": "Neuraxis, Inc.",
    "vol_x": 3.22,
@@ -32,31 +20,19 @@
    "change": 0.07963246006415914,
    "score": 6.56,
    "news": [
-    "NeurAxis Announces Medical Policy Coverage Milestone, Expanding Access to 26 Million Additional Covered Lives"
+    "NeurAxis Announces Medical Policy Coverage Milestone, Expanding Access to 26 Million Additional Covered Lives - GlobeNewswire"
    ],
    "on_t212": true
   },
   {
-   "ticker": "FMFC",
-   "name": "Kandal M Venture Limited",
-   "vol_x": 1.26,
-   "buy_pct30": 0.684436129867258,
-   "change": 0.36413047750490457,
-   "score": 3.76,
+   "ticker": "ADBE",
+   "name": "Adobe Inc.",
+   "vol_x": 0.22,
+   "buy_pct30": 0.7108828229487077,
+   "change": 0.0464725492677327,
+   "score": 2.78,
    "news": [
-    "Kandal M Venture Limited Reports Significant Gross Profit Growth of 45% in Financial Results for the Six Months Ended September 30, 2026"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "DFH",
-   "name": "Dream Finders Homes, Inc.",
-   "vol_x": 0.29,
-   "buy_pct30": 0.8030369837327264,
-   "change": 0.12264148760853177,
-   "score": 3.29,
-   "news": [
-    "Beazer Homes Stockholders Overwhelmingly Vote to Approve Dream Finders\u2019 Acquisition of Beazer Homes"
+    "Adobe and NVIDIA Expand Collaboration to Speed Agentic Creation - Adobe Newsroom"
    ],
    "on_t212": true
   },
@@ -68,32 +44,31 @@
    "change": 0.037037001061669184,
    "score": 2.72,
    "news": [
-    "Clean Energy Names Sean Wine as Chief Revenue Officer"
+    "Clean Energy Names Sean Wine as Chief Revenue Officer - Business Wire"
    ],
    "on_t212": true
   },
   {
-   "ticker": "QNT",
-   "name": "Quantinuum Inc.",
-   "vol_x": 0.57,
-   "buy_pct30": 0.5835441182571103,
-   "change": 0.02936727994404653,
-   "score": 1.97,
+   "ticker": "NOW",
+   "name": "ServiceNow, Inc.",
+   "vol_x": 0.27,
+   "buy_pct30": 0.5860406115464513,
+   "change": 0.01782404952228256,
+   "score": 2.38,
    "news": [
-    "Morgan Stanley Just Upgraded Quantinuum Stock. Here's Why."
+    "ServiceNow advances its operational harness for enterprise AI with AI Passport and expanded governance capabilities - ServiceNow Newsroom"
    ],
    "on_t212": true
   },
   {
-   "ticker": "IBRX",
-   "name": "ImmunityBio, Inc.",
-   "vol_x": 0.25,
-   "buy_pct30": 0.3468109545549035,
-   "change": 0.034308794936730225,
-   "score": 1.89,
+   "ticker": "KMB",
+   "name": "Kimberly-Clark Corporation",
+   "vol_x": 0.29,
+   "buy_pct30": 0.5092627536981487,
+   "change": 0.048184217982868205,
+   "score": 2.12,
    "news": [
-    "IBRX Stock Eyes Weekly Slump Despite Anktiva FDA Win \u2014 Retail Stays Cautious Ahead Of Founder\u2019s Trial Talk",
-    "IBRX Stock Rallies After FDA Clears Broader Anktiva Use In Bladder Cancer Months Ahead Of Deadline"
+    "Kimberly-Clark Announces Successful Consent Solicitations for Kenvue Notes and Amendment to Terms of Exchange Offers - PR Newswire"
    ],
    "on_t212": true
   },
@@ -105,27 +80,27 @@
    "change": 0.022881313536024628,
    "score": 0.62,
    "news": [
-    "Vistance Networks Board Approves Special Distribution"
+    "Vistance Networks Board Approves Special Distribution - Business Wire"
    ],
    "on_t212": true
   }
  ],
  "quiet": [
   {
+   "ticker": "SNES",
+   "vol_x": 86.39
+  },
+  {
    "ticker": "OPK",
    "vol_x": 17.51
   },
   {
-   "ticker": "PAG",
-   "vol_x": 2.43
-  },
-  {
-   "ticker": "NCPL",
-   "vol_x": 1.77
-  },
-  {
    "ticker": "TNDM",
    "vol_x": 1.41
+  },
+  {
+   "ticker": "FMFC",
+   "vol_x": 1.26
   },
   {
    "ticker": "STRT",
@@ -134,10 +109,6 @@
   {
    "ticker": "CANG",
    "vol_x": 0.89
-  },
-  {
-   "ticker": "BRBR",
-   "vol_x": 0.8
   },
   {
    "ticker": "KEN",
@@ -156,6 +127,10 @@
    "vol_x": 0.59
   },
   {
+   "ticker": "QNT",
+   "vol_x": 0.57
+  },
+  {
    "ticker": "PEGA",
    "vol_x": 0.54
   },
@@ -172,30 +147,17 @@
    "vol_x": 0.48
   }
  ],
- "trades": [
-  {
-   "ticker": "QNT",
-   "bought_at": "2026-10-15T14:20+00:00",
-   "sold_at": "2026-10-15T19:50+00:00",
-   "entry": 35.68565152740478,
-   "exit": 36.650001525878906,
-   "cost_gbp": 999.4980231224673,
-   "pl_gbp": 25.472445358852724,
-   "pl_pct": 0.025485238359227464,
-   "reason": "End of day: sold 10 minutes before the close."
-  }
- ],
- "total_gbp": 25.472445358852724,
+ "trades": [],
+ "total_gbp": 0,
  "alerts": [
-  "10:20 Day trade: bought QNT: 37 QNT at $35.69 (about \u00a3999). Stop $33.90. Broke above its opening-range high ($35.25) at $35.65. In play: 0.6x normal volume, normally moves 5% a day. Stop $33.87.",
-  "15:50 Day trade: sold QNT (+\u00a325): End of day: sold 10 minutes before the close. Result +\u00a325 (+2.5%).",
-  "15:50 Day trade summary: 1 trade(s) today: QNT +\u00a325. Total +\u00a325."
+  "15:50 Day trade summary: No trade today: nothing in play broke out."
  ],
  "log": [
   "Added NRXP to today's list at 10:16 New York: 0.2x normal volume in the last 30 min; news: NRx Pharmaceuticals Announces Receipt of FDA Labeling Review Letter for Preserva",
-  "Day trade buy order: 37 QNT at about $35.65. Broke above its opening-range high ($35.25) at $35.65. In play: 0.6x normal volume, normally moves 5% a day. Stop $33.87.",
-  "Bought 37 QNT at 35.69 (cost \u00a3999).",
-  "Sold QNT (about +\u00a325). End of day: sold 10 minutes before the close.",
-  "Day trading finished: 1 trade(s), total +\u00a325."
+  "CLNE: Claude: no catalyst (strength 1/5): The only official headline is a chief revenue officer appointment, and the other items are routine (earnings date, syndicated copies of the same appointment), s",
+  "NOW: Claude: no catalyst (strength None/5): ",
+  "ADBE: Claude: no catalyst (strength None/5): ",
+  "NRXP: Claude: no catalyst (strength None/5): ",
+  "Day trading finished: 0 trade(s), total +\u00a30."
  ]
 }

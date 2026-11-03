@@ -1,55 +1,15 @@
 {
  "date": "2026-10-16",
- "generated": "2026-11-01T19:44+00:00",
+ "generated": "2026-11-03T21:28+00:00",
  "fx_gbpusd": 1.327316164970398,
  "result": "done",
  "require_news": true,
  "strategy": "catalyst",
  "bars": "5m",
  "require_trend": true,
- "added_during_day": [
-  "Added COTY to today's list at 14:38 New York: 0.6x normal volume in the last 30 min; news: Coty Launches Global Fragrance Club, a New Community for the Voices Shaping the ",
-  "Added OGN to today's list at 15:10 New York: 0.2x normal volume in the last 30 min; news: Organon Announces Positive Interim Phase 3 Study Results for MIUDELLA\u00ae, a Hormon",
-  "Added VTOL to today's list at 15:26 New York: 0.8x normal volume in the last 30 min; news: Bristow Group Names Paul Armstrong as Incoming Chief Operating Officer, Governme"
- ],
+ "added_during_day": [],
  "drift_list": [],
  "list": [
-  {
-   "ticker": "NBBK",
-   "name": "NB Bancorp, Inc.",
-   "vol_x": 0.23,
-   "buy_pct30": 0.9827485249050756,
-   "change": 0.0031291771210597563,
-   "score": 4.89,
-   "news": [
-    "NB Bancorp, Inc. (NBBK) Q3 Earnings Beat Estimates"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "PLBC",
-   "name": "Plumas Bancorp",
-   "vol_x": 0.24,
-   "buy_pct30": 0.6168371101144958,
-   "change": 0.015793707563029447,
-   "score": 3.45,
-   "news": [
-    "Plumas Bancorp (PLBC) Moves to Buy: Rationale Behind the Upgrade"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "WES",
-   "name": "Western Midstream Partners, LP",
-   "vol_x": 0.34,
-   "buy_pct30": 0.7804373086260545,
-   "change": 0.007023139501078468,
-   "score": 3.3,
-   "news": [
-    "Western Midstream (WES) Upgraded to Strong Buy: Here's What You Should Know"
-   ],
-   "on_t212": false
-  },
   {
    "ticker": "CLNE",
    "name": "Clean Energy Fuels Corp.",
@@ -58,71 +18,31 @@
    "change": 0.05298016120569704,
    "score": 2.97,
    "news": [
-    "Clean Energy Names Sean Wine as Chief Revenue Officer"
+    "Clean Energy Names Sean Wine as Chief Revenue Officer - Business Wire"
    ],
    "on_t212": true
   },
   {
-   "ticker": "AA",
-   "name": "Alcoa Corporation",
-   "vol_x": 0.53,
-   "buy_pct30": 0.6007074988359604,
-   "change": 0.06853044490961557,
-   "score": 2.96,
+   "ticker": "NI",
+   "name": "NiSource Inc",
+   "vol_x": 0.26,
+   "buy_pct30": 0.692958586272871,
+   "change": 0.02084849964488633,
+   "score": 2.79,
    "news": [
-    "What Alcoa (AA) Earnings Beat Means For Shareholders"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "CARL",
-   "name": "Carlsmed, Inc.",
-   "vol_x": 0.29,
-   "buy_pct30": 0.5004654626698939,
-   "change": 0.003942674260056345,
-   "score": 1.08,
-   "news": [
-    "Carlsmed Launches aprevo\u00ae Lumbar Bi-lateral Posterior System"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "FFR",
-   "name": "FF EAI Robotics Ecosystem Inc.",
-   "vol_x": 0.23,
-   "buy_pct30": 0.45868782526253765,
-   "change": 0.11792453466763764,
-   "score": 0.79,
-   "news": [
-    "FF EAI Robotics (FFR) and FF Jointly Launch FF Nova, First Embodied AI Humanoid Robot Priced Below $2,500 in U.S., FF Nova Mini, Physical AI Spark Program Curriculum, Nova Reinforcement Learning Developer Program and Developer Community Recruitment"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "UAMY",
-   "name": "United States Antimony Corporation",
-   "vol_x": 0.37,
-   "buy_pct30": 0.3643185403759296,
-   "change": 0.061151107209889366,
-   "score": 0.7,
-   "news": [
-    "Alcoa Gains 8%, United States Antimony Jumps 10% After Alcoa\u2019s Q3 Beat and Data Center Site Sale; Cleveland-Cliffs Rises 2%"
+    "NiSource announces long-term agreement with Microsoft expected to increase customer savings and support Indiana\u2019s economic growth - NiSource"
    ],
    "on_t212": true
   }
  ],
  "quiet": [
   {
-   "ticker": "SMX",
-   "vol_x": 1.97
+   "ticker": "VRNS",
+   "vol_x": 8.73
   },
   {
    "ticker": "WORX",
    "vol_x": 1.89
-  },
-  {
-   "ticker": "NCPL",
-   "vol_x": 0.93
   },
   {
    "ticker": "PRAA",
@@ -157,6 +77,10 @@
    "vol_x": 0.53
   },
   {
+   "ticker": "AA",
+   "vol_x": 0.53
+  },
+  {
    "ticker": "OPK",
    "vol_x": 0.52
   },
@@ -173,32 +97,13 @@
    "vol_x": 0.49
   }
  ],
- "trades": [
-  {
-   "ticker": "AA",
-   "bought_at": "2026-10-16T14:20+00:00",
-   "sold_at": "2026-10-16T18:06+00:00",
-   "entry": 43.58333853530883,
-   "exit": 41.38857,
-   "cost_gbp": 986.5482247950757,
-   "pl_gbp": -52.48696111894901,
-   "pl_pct": -0.053202630950809855,
-   "reason": "Stop-loss order filled"
-  }
- ],
- "total_gbp": -52.48696111894901,
+ "trades": [],
+ "total_gbp": 0,
  "alerts": [
-  "10:20 Day trade: bought AA: 30 AA at $43.58 (about \u00a3987). Stop $41.40. Broke above its opening-range high ($43.37) at $43.54. In play: 0.5x normal volume, normally moves 3% a day. Stop $41.39.",
-  "14:06 Day trade update: AA: stop-loss order filled (-\u00a352)",
-  "15:50 Day trade summary: 1 trade(s) today: AA -\u00a352. Total -\u00a352."
+  "15:50 Day trade summary: No trade today: nothing in play broke out."
  ],
  "log": [
-  "Day trade buy order: 30 AA at about $43.54. Broke above its opening-range high ($43.37) at $43.54. In play: 0.5x normal volume, normally moves 3% a day. Stop $41.39.",
-  "Bought 30 AA at 43.58 (cost \u00a3987).",
-  "AA: stop-loss order filled, P&L -\u00a352.",
-  "Added COTY to today's list at 14:38 New York: 0.6x normal volume in the last 30 min; news: Coty Launches Global Fragrance Club, a New Community for the Voices Shaping the ",
-  "Added OGN to today's list at 15:10 New York: 0.2x normal volume in the last 30 min; news: Organon Announces Positive Interim Phase 3 Study Results for MIUDELLA\u00ae, a Hormon",
-  "Added VTOL to today's list at 15:26 New York: 0.8x normal volume in the last 30 min; news: Bristow Group Names Paul Armstrong as Incoming Chief Operating Officer, Governme",
-  "Day trading finished: 1 trade(s), total -\u00a352."
+  "NI: Claude: no catalyst (strength None/5): ",
+  "Day trading finished: 0 trade(s), total +\u00a30."
  ]
 }

@@ -1,6 +1,6 @@
 {
  "date": "2026-09-23",
- "generated": "2026-11-01T19:30+00:00",
+ "generated": "2026-11-03T21:15+00:00",
  "fx_gbpusd": 1.3343117237091064,
  "result": "done",
  "require_news": true,
@@ -8,81 +8,20 @@
  "bars": "5m",
  "require_trend": true,
  "added_during_day": [
-  "Added WLDN to today's list at 10:32 New York: 0.7x normal volume in the last 30 min; news: Willdan to Acquire Mantis Innovation, Strengthening Its Position in Energy Manag",
-  "Added AMBA to today's list at 13:44 New York: 0.6x normal volume in the last 30 min; news: Ambarella (AMBA) Could Be 23% Undervalued After Its Edge AI Partnerships"
+  "Added WLDN to today's list at 10:32 New York: 0.7x normal volume in the last 30 min; news: Willdan to Acquire Mantis Innovation, Strengthening Its Position in Energy Manag"
  ],
  "drift_list": [],
  "list": [
   {
-   "ticker": "TLSI",
-   "name": "TriSalus Life Sciences, Inc.",
-   "vol_x": 2.89,
-   "buy_pct30": 0.33050053174814564,
-   "change": 0.06085196778515134,
-   "score": 6.1,
+   "ticker": "IONQ",
+   "name": "IonQ, Inc.",
+   "vol_x": 1.53,
+   "buy_pct30": 0.32584207362879364,
+   "change": 0.051055422942135165,
+   "score": 3.36,
    "news": [
-    "TriSalus Life Sciences Shares Rise 15.6% After FDA Clearance for TriNav Advance",
-    "TriSalus Life Sciences Receives FDA Clearance for TriNav\u00ae Advance, Strengthening Comprehensive Pressure-Enabled Drug Delivery\u2122 (PEDD\u2122) Portfolio for Liver Embolization"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "CUE",
-   "name": "Cue Biopharma, Inc.",
-   "vol_x": 0.26,
-   "buy_pct30": 0.643587236372295,
-   "change": 0.09110034203267436,
-   "score": 2.59,
-   "news": [
-    "Cue Biopharma Shares Jump 41.6% Premarket Following Phase 2 Trial Results"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "SPIR",
-   "name": "Spire Global, Inc.",
-   "vol_x": 0.3,
-   "buy_pct30": 0.5942630724572914,
-   "change": 0.03931200169833704,
-   "score": 2.48,
-   "news": [
-    "Spire Global Awarded $33.2 Million NOAA Contract for Satellite Weather Data to Enhance Weather Forecasting"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "MAZE",
-   "name": "Maze Therapeutics, Inc.",
-   "vol_x": 0.31,
-   "buy_pct30": 0.5434994953940256,
-   "change": 0.02078929422251452,
-   "score": 2.29,
-   "news": [
-    "Twin Moves: VRTX Rises On Kidney Disease Trial Results, MAZE Rallies Harder"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "WOR",
-   "name": "Worthington Enterprises, Inc.",
-   "vol_x": 1.2,
-   "buy_pct30": 0.2592443077806395,
-   "change": 0.026297982488506788,
-   "score": 1.94,
-   "news": [
-    "Worthington Enterprises Shares Jump 15% on Strong Earnings and Cash Flow Boost"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "MAAS",
-   "name": "Maase Inc.",
-   "vol_x": 0.51,
-   "buy_pct30": 0.6049491421209056,
-   "change": 0.02815438669075121,
-   "score": 1.94,
-   "news": [
-    "Maase Inc. Announces $50 Million PIPE Financing to Accelerate Deployment of Star Distributed Intelligent Computing Centers and Commercialization of Lingyanmiaoyu Large Language Model"
+    "IonQ Breakthrough: CPU-Powered Quantum Error Correction - IonQ",
+    "IonQ and SDT Announce the First Strategic Partnership to Bring Both Advanced Quantum Computing and Quantum Networking to the Asia-Pacific Region - IonQ"
    ],
    "on_t212": true
   }
@@ -93,8 +32,12 @@
    "vol_x": 10.27
   },
   {
-   "ticker": "IONQ",
-   "vol_x": 1.53
+   "ticker": "TLSI",
+   "vol_x": 2.89
+  },
+  {
+   "ticker": "WOR",
+   "vol_x": 1.2
   },
   {
    "ticker": "NNBR",
@@ -121,20 +64,16 @@
    "vol_x": 0.59
   },
   {
-   "ticker": "SRXH",
-   "vol_x": 0.57
-  },
-  {
-   "ticker": "SMX",
-   "vol_x": 0.56
-  },
-  {
    "ticker": "WDFC",
    "vol_x": 0.52
   },
   {
    "ticker": "TNMG",
    "vol_x": 0.52
+  },
+  {
+   "ticker": "MAAS",
+   "vol_x": 0.51
   },
   {
    "ticker": "IRMD",
@@ -149,32 +88,13 @@
    "vol_x": 0.45
   }
  ],
- "trades": [
-  {
-   "ticker": "AMBA",
-   "bought_at": "2026-09-23T17:44+00:00",
-   "sold_at": "2026-09-23T19:50+00:00",
-   "entry": 67.27720908355712,
-   "exit": 68.27999877929688,
-   "cost_gbp": 959.4342538547312,
-   "pl_gbp": 12.842279248315776,
-   "pl_pct": 0.013385262405130095,
-   "reason": "End of day: sold 10 minutes before the close."
-  }
- ],
- "total_gbp": 12.842279248315776,
+ "trades": [],
+ "total_gbp": 0,
  "alerts": [
-  "13:44 Day trade: bought AMBA: 19 AMBA at $67.28 (about \u00a3959). Stop $63.91. Broke above its opening-range high ($67.05) at $67.21. In play: 0.6x normal volume, normally moves 6% a day. Stop $65.73.",
-  "15:50 Day trade: sold AMBA (+\u00a313): End of day: sold 10 minutes before the close. Result +\u00a313 (+1.3%).",
-  "15:50 Day trade summary: 1 trade(s) today: AMBA +\u00a313. Total +\u00a313."
+  "15:50 Day trade summary: No trade today: nothing in play broke out."
  ],
  "log": [
   "Added WLDN to today's list at 10:32 New York: 0.7x normal volume in the last 30 min; news: Willdan to Acquire Mantis Innovation, Strengthening Its Position in Energy Manag",
-  "Added AMBA to today's list at 13:44 New York: 0.6x normal volume in the last 30 min; news: Ambarella (AMBA) Could Be 23% Undervalued After Its Edge AI Partnerships",
-  "Day trade buy order: 19 AMBA at about $67.21. Broke above its opening-range high ($67.05) at $67.21. In play: 0.6x normal volume, normally moves 6% a day. Stop $65.73.",
-  "Bought 19 AMBA at 67.28 (cost \u00a3959).",
-  "AMBA: stop raised from 65.80 to 67.68.",
-  "Sold AMBA (about +\u00a313). End of day: sold 10 minutes before the close.",
-  "Day trading finished: 1 trade(s), total +\u00a313."
+  "Day trading finished: 0 trade(s), total +\u00a30."
  ]
 }
