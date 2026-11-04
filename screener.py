@@ -2135,20 +2135,110 @@ OPEN_ALERT_MAX = 8
 OPEN_REQUIRE_TREND = True      # price above its 20- and 50-day averages; False lets news gaps from a downtrend in
 OPEN_ANY_SIZE = True           # opening list and day trader: no company size limit (liquidity rules still apply)
 
-POS_NEWS = re.compile(
-    r"ahead of (market |board )?expectations|upgrad|raise[sd]? (guidance|outlook)|record|contract|order|award|"
-    r"approv|FDA|positive|success|discover|intercept|high[- ]grade|resource (upgrade|increase|update)|offtake|"
-    r"partnership|strategic (investment|alliance)|agreement|recommended (cash )?offer|offer for|takeover|acquir|"
-    r"beat|exceed|strong|profit|growth|licen[cs]|permit|first (oil|gas|gold|production|revenue)|flow test|"
-    r"commercial|milestone|director.{0,25}(purchase|buy|dealing)|insider (purchase|buy)|buyback|dividend increase|"
-    r"breakthrough|patent|launch|win|wins|won|selected|expan", re.I)
+# Good news: specific phrases only (whole words), not vague words like "strong", "growth" or "win" that turn up in
+# almost every release or in gossip ("twins"). Sector lists below; the Claude check uses the same guide.
+POS_NEWS = re.compile("|".join([
+    # results and guidance
+    r"\bahead of (market |board |consensus |analyst )?expectations",
+    r"\braise[sd]? (its |the )?(full[- ]year |fy|annual )?(guidance|outlook|forecast|targets?)\b",
+    r"\b(beats?|beat|exceed(s|ed)?|tops?|topped) (estimates|expectations|consensus|guidance|forecasts?)\b",
+    r"\brecord (revenue|sales|quarter|results|orders|production|profit|earnings|backlog|bookings|ebitda)\b",
+    r"\breturns? to profit|first (ever )?(profit|positive ebitda|revenue)\b",
+    # approvals and trials
+    r"\b(fda|ema|mhra|nmpa|pmda|ce mark)\b.{0,30}\b(approv\w*|clear\w*|grant\w*|accept\w*|authori[sz]\w*)",
+    r"\breceives? (fda |regulatory |marketing |conditional )?(approval|clearance|authori[sz]ation)",
+    r"\b(positive|statistically significant|successful) (topline|top-line|phase|interim|pivotal|trial|data|results)\b",
+    r"\b(met|meets|achieved) (its |the )?(primary|co-primary) endpoint", r"\bbreakthrough therapy\b",
+    # contracts, orders, partnerships
+    r"\b(award(s|ed)?|wins?|won|secures?|secured|selected|lands?) .{0,50}\b(contract|order|award|tender|deal|programme|program)\b",
+    r"\b(contract|order|purchase order|agreement) (worth|valued at|for \$|of \$)",
+    r"\$\d+(\.\d+)? ?(m|mn|million|bn|billion)\b.{0,25}\b(contract|order|award|deal|agreement)",
+    r"\b(strategic|exclusive|definitive|commercial) (partnership|collaboration|investment|alliance|supply|licen[cs]e)\b",
+    r"\b(licen[cs]e|offtake|supply|distribution|gas sales|sales and purchase) agreement\b",
+    r"\b(share )?(buyback|repurchase programme|repurchase program)\b", r"\b(raises|increases) (its )?dividend\b",
+    r"\b(director|insider|ceo|cfo|chairman|chief executive)\b.{0,30}\b(purchase|buys|bought|acquires shares)\b",
+    # mining
+    r"\bhigh[- ]grade\b", r"\b(intersect(s|ed)?|intercept(s|ed)?)\b", r"\bbonanza\b",
+    r"\b\d+(\.\d+)? ?(g/t|%) ?(au|cu|ag|li|ni|zn|u3o8|gold|copper|silver|lithium|nickel|zinc|uranium)\b",
+    r"\b(maiden )?(jorc|ni 43-101|mineral) (resource|reserve)", r"\bresource (upgrade|increase|estimate|update)\b",
+    r"\b(pre-)?feasibility study\b|\b(pfs|dfs|bfs)\b", r"\bfirst (gold|pour|concentrate|production|shipment)\b",
+    # oil and gas
+    r"\bcommercial(ity)? (discovery|flow|flows|rates?|production)\b|\bdeclares? commerciality\b",
+    r"\b(oil|gas|hydrocarbon|significant|major|new) discover(y|ies)\b|\bdiscover(s|ed) (oil|gas|hydrocarbons)\b",
+    r"\b(flow (test|rate)s?|flowed|bopd|boepd|bbl/d|mmscf/?d|mmcf/?d|barrels of oil (equivalent )?per day)\b",
+    r"\bnet pay\b", r"\bhydrocarbons? (encountered|bearing|column|zone|pay)\b|\bencountered (oil|gas|hydrocarbons)\b",
+    r"\b(oil|gas) (column|pay)\b", r"\bfarm[- ]?(in|out)\b|\bfarmout\b|\bcarried interest\b|\bfree carry\b",
+    r"\bfully funded\b", r"\bstrategic review\b|\bformal sale process\b|\bfsp\b",
+    r"\bspud(s|ded|ding)?\b", r"\b(2c|2p|1p|3p|contingent|prospective) (resources?|reserves?)\b|\breserves? (upgrade|increase)\b",
+    r"\bcompetent person'?s? report\b|\bcpr\b", r"\bhigh[- ]impact (well|prospect|exploration)\b",
+    r"\bfirst (oil|gas)\b", r"\b(licen[cs]e|permit|block|concession) (award(ed)?|granted|approved|extension)\b",
+    r"\baward(ed)? (of )?(the )?(licen[cs]e|permit|block)\b",
+    # products
+    r"\b(launches|launched|commercial launch of|first sales? of)\b",
+    # biotech and pharma (on top of approvals and trials above)
+    r"\b(pdufa|bla|nda|maa)\b.{0,30}\b(accept\w*|approv\w*|priority review)\b", r"\bpriority review\b",
+    r"\b(orphan drug|fast track|rare pediatric disease) designation\b", r"\bcomplete response\b.{0,20}\b(rate|in)\b",
+    r"\b(overall survival|progression-free survival)\b.{0,40}\b(improv\w*|significant\w*|benefit)\b",
+    # medical devices and diagnostics
+    r"\b510\(k\)|\bde novo\b.{0,20}\b(grant|clear|authori)\w*|\bpma approval\b|\b(cms|medicare) (coverage|reimbursement)\b",
+    # tech, software, AI, semiconductors
+    r"\b(annual recurring revenue|arr)\b.{0,30}\b(up|grew|growth|increase\w*|record)\b",
+    r"\bdesign win\b|\btape[- ]?out\b|\b(volume|mass|full[- ]scale) production\b|\bproduction order\b",
+    r"\bmulti[- ]year (agreement|contract|deal|order)\b", r"\b(nvidia|microsoft|amazon|aws|google|apple|meta|oracle|openai)\b.{0,40}\b(partner\w*|agreement|contract|order|selects?|selected|collaborat\w*)\b",
+    # defence, government, aerospace and space
+    r"\btask order\b", r"\b(department of (defense|war|energy)|dod|pentagon|army|navy|air force|nasa|darpa|nato|mod)\b.{0,50}\b(contract|award\w*|order)\b",
+    r"\b(successful|completes?|completed) (launch|flight test|test flight|deployment|first flight)\b",
+    # energy transition, power and utilities
+    r"\b(power purchase|ppa|interconnection|capacity) agreement\b|\bppa\b", r"\b(grant|loan) from the (doe|department of energy)\b|\bdoe (grant|loan|award)\b",
+    r"\breaches? (commercial operation|cod|final investment decision|fid)\b|\b(takes?|took) (fid|final investment decision)\b",
+    # consumer, retail, restaurants
+    r"\b(same[- ]store|comparable|comp|like[- ]for[- ]like) sales\b.{0,25}\b(up|rose|grew|increase\w*|growth|\+)",
+    r"\b(nationwide|national) (rollout|distribution|launch)\b", r"\b(walmart|costco|target|kroger|amazon|home depot|cvs|walgreens)\b.{0,40}\b(distribution|stores|launch\w*|agreement|order)\b",
+    # banks and financials
+    r"\bnet interest (margin|income)\b.{0,25}\b(expan\w*|record|up|rose|increase\w*)\b", r"\b(credit )?rating upgrade\b|\bupgraded to investment grade\b",
+    # shipping
+    r"\b(time charter|newbuild|fixture)\b.{0,30}\b(at|for|secur\w*|agreement)\b",
+    # crypto and bitcoin miners
+    r"\b(hashrate|exahash|eh/s)\b.{0,30}\b(record|increase\w*|grow\w*|reach\w*)\b", r"\b(hpc|ai) (hosting|colocation|data cent(er|re)) (agreement|contract|lease)\b",
+    # cannabis
+    r"\b(rescheduling|schedule iii)\b",
+    # listing compliance regained
+    r"\bregains? compliance\b|\buplist\w*\b",
+]), re.I)
+
+# Wording that sounds like news but usually isn't: a headline with any of these never counts as good news on its own.
+WEAK_NEWS = re.compile(
+    r"\bnon[- ]binding\b|\bletter of intent\b|\bLOI\b|\bmemorandum of understanding\b|\bMOU\b|\bteaming agreement\b|"
+    r"\bexplor(es|ing) (a |potential )?(partnership|opportunit)|\bin talks\b|\bpotential (contract|partnership|deal)\b|"
+    r"\bup to \$|\bceiling (value )?of\b|\bIDIQ\b|\beligible to (compete|bid)\b|\bpre-?qualif|\bshortlist|"
+    r"\bmet (the |its )?(primary )?safety endpoint|\btrend(ed|ing)? toward|\bnumerical(ly)? (improvement|trend)|"
+    r"\bwell[- ]tolerated\b|\bPDUFA date\b.{0,20}\bset\b|\bsubmit(s|ted)? (an? )?(IND|NDA|BLA|510)|"
+    r"\bAI[- ](powered|driven|enabled|native)\b.{0,30}\b(platform|solution|launch)|\bbitcoin treasury\b|\bcrypto treasury\b|"
+    r"\bwebinar\b|\bto (present|host|participate|attend)\b|\bfireside chat\b|\bconference call\b", re.I)
+
+
 NEG_NEWS = re.compile(
     r"placing|fundrais|fund rais|subscription (for|to raise|of new)|share issue|"
     r"(public|private|registered|underwritten|secondary|follow-on|direct|stock|share|equity|common|unit) offering|"
     r"offering of (common|shares|units|stock|\$)|\bpriced? (an? |its |the )?(offering|placing|public|private|underwritten)|"
     r"dilut|warning|below (market )?expectations|delay|suspen|default|going concern|downgrad|loss widen|"
     r"\bmiss(es|ed)?\b|\bresign|investigat|lawsuit|recall|\bhalt|impairment|withdraw|terminat|cancel|restat|delist|"
-    r"reverse (stock )?split|convertible|at-the-market|ATM program", re.I)
+    r"reverse (stock )?split|convertible|at-the-market|ATM program|"
+    # oil and gas traps: wording that dresses up poor results
+    r"oil shows|gas shows|traces of (oil|gas|hydrocarbons)|tight (formation|reservoir)|"
+    r"working with (all )?(its )?stakeholders|dry (hole|well)|plugged and abandoned|\bP&A\b|non[- ]commercial|"
+    r"sub[- ]commercial|water[- ]bearing|wet (well|reservoir)|below (pre-drill |pre-drilling )?(estimates|expectations)|"
+    r"standstill|creditors|administration|restructuring (support )?agreement|"
+    # biotech traps
+    r"complete response letter|\bCRL\b|clinical hold|refus(e|al) to file|did not (meet|achieve|reach)|failed to (meet|achieve)|"
+    r"not statistically significant|discontinu(e|es|ed|ing) (the |its )?(program|trial|development|study)|"
+    r"(strategic )?reprioriti[sz]|workforce reduction|reduc(e|es|ing) (its )?workforce|layoffs?|"
+    # listing and cash trouble, any sector
+    r"going concern|delist|deficiency (notice|letter)|notice of non-?compliance|minimum bid price|"
+    r"default|chapter 11|bankruptcy|cease trad|suspension of trading|"
+    # other sectors
+    r"recall|warning letter|form 483|guidance (cut|lowered)|(lower|cut|reduce)(s|ed)? (its |the )?(full[- ]year |fy ?(20)?\d* ?|annual |\d{4} )?(guidance|outlook|forecast)|"
+    r"(same[- ]store|comparable) sales (fell|declin\w*|down)|contract (terminat\w*|cancel\w*)|loses? (contract|customer)", re.I)
 
 
 # Takeover / buyout news: the price jumps to the offer price before we can act, then sits there, so these
@@ -2157,7 +2247,7 @@ TAKEOVER_NEWS = re.compile(
     r"to be acquired|acquired by|agree[sd]? to be (acquired|bought|purchased)|take[- ]private|taken private|go(ing)?[- ]private|"
     r"tender offer|per share in cash|all[- ]cash (deal|transaction|offer|acquisition)|merger agreement|"
     r"definitive agreement to be|recommended (cash |final |share )?offer|rule 2\.7|firm offer|possible offer|"
-    r"offer for |bid for |buyout|takeover (offer|bid|approach)|approach regarding|strategic alternatives.{0,40}sale", re.I)
+    r"offer for |bid for |buyout|takeover (offer|bid|approach)|approach regarding", re.I)
 TAKEOVER_VERB = r"(to acquire|acquires?|acquisition of|to buy|buys|to purchase|purchase of|take over|takeover of|merge with|merger with|combination with|combine with)"
 NAME_SKIP = {"inc", "corp", "corporation", "plc", "ltd", "limited", "holdings", "group", "company", "the", "and", "class",
              "resources", "energy", "technologies", "technology", "international", "global", "co"}
@@ -2178,6 +2268,8 @@ def classify_headline(t, name="", ticker=""):
         return "deal"
     if NEG_NEWS.search(t or ""):
         return "neg"
+    if WEAK_NEWS.search(t or ""):
+        return "neutral"
     if POS_NEWS.search(t or ""):
         return "pos"
     return "neutral"
