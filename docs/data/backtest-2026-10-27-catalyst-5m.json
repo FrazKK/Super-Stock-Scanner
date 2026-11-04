@@ -1,6 +1,6 @@
 {
  "date": "2026-10-27",
- "generated": "2026-11-04T17:32+00:00",
+ "generated": "2026-11-04T20:44+00:00",
  "fx_gbpusd": 1.334507703781128,
  "result": "done",
  "require_news": true,
@@ -12,6 +12,7 @@
   "Added WHR to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
   "Added ESQ to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
   "Added THFF to today's list at 10:16 New York: 0.5x normal volume in the last 30 min; no news found",
+  "Added CLYM to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
   "Added AVBH to today's list at 10:16 New York: 0.4x normal volume in the last 30 min; no news found",
   "Added ISBA to today's list at 10:16 New York: 0.5x normal volume in the last 30 min; no news found",
   "Added AEYE to today's list at 10:16 New York: 2.4x normal volume in the last 30 min; no news found"
@@ -144,7 +145,7 @@
  ],
  "total_gbp": 1.167651096325244,
  "alerts": [
-  "10:26 Day trade: bought SOFI: 81 SOFI at $16.31 (about \u00a3992). Stop $15.50. Broke above its opening-range high ($16.28) at $16.30. In play: 1.1x normal volume, normally moves 4% a day. Stop $15.67. News (SoFi Investor Relations): SoFi Reports Third Quarter 2026 with Record Net Revenue of $1.4 Billion, Net Income of $24. Claude: catalyst (strength 4/5): Official Q3 2026 results show record net revenue and net income with raised full-year guidance, a beat-and-raise that should realistically drive a 10%+ move for",
+  "10:26 Day trade: bought SOFI: 81 SOFI at $16.31 (about \u00a3992). Stop $15.50. Broke above its opening-range high ($16.28) at $16.30. In play: 1.1x normal volume, normally moves 4% a day. Stop $15.67. News (SoFi Investor Relations): SoFi Reports Third Quarter 2026 with Record Net Revenue of $1.4 Billion, Net Income of $24. Claude: catalyst (strength 4/5): Official Q3 2026 release reports record net revenue of $1.4B, net income of $241M and a raised full-year guidance, a beat-and-raise that the stock is already re",
   "15:50 Day trade: sold SOFI (+\u00a31): End of day: sold 10 minutes before the close. Result +\u00a31 (+0.1%).",
   "15:50 Day trade summary: 1 trade(s) today: SOFI +\u00a31. Total +\u00a31."
  ],
@@ -153,11 +154,12 @@
   "Added WHR to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
   "Added ESQ to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
   "Added THFF to today's list at 10:16 New York: 0.5x normal volume in the last 30 min; no news found",
+  "Added CLYM to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
   "Added AVBH to today's list at 10:16 New York: 0.4x normal volume in the last 30 min; no news found",
   "Added ISBA to today's list at 10:16 New York: 0.5x normal volume in the last 30 min; no news found",
   "Added AEYE to today's list at 10:16 New York: 2.4x normal volume in the last 30 min; no news found",
-  "SOFI: Claude: catalyst (strength 4/5): Official Q3 2026 results show record net revenue and net income with raised full-year guidance, a beat-and-raise that should realistically drive a 10%+ move for",
-  "Day trade buy order: 81 SOFI at about $16.30. Broke above its opening-range high ($16.28) at $16.30. In play: 1.1x normal volume, normally moves 4% a day. Stop $15.67. News (SoFi Investor Relations): SoFi Reports Third Quarter 2026 with Record Net Revenue of $1.4 Billion, Net Income of $24. Claude: catalyst (strength 4/5): Official Q3 2026 results show record net revenue and net income with raised full-year guidance, a beat-and-raise that should realistically drive a 10%+ move for",
+  "SOFI: Claude: catalyst (strength 4/5): Official Q3 2026 release reports record net revenue of $1.4B, net income of $241M and a raised full-year guidance, a beat-and-raise that the stock is already re",
+  "Day trade buy order: 81 SOFI at about $16.30. Broke above its opening-range high ($16.28) at $16.30. In play: 1.1x normal volume, normally moves 4% a day. Stop $15.67. News (SoFi Investor Relations): SoFi Reports Third Quarter 2026 with Record Net Revenue of $1.4 Billion, Net Income of $24. Claude: catalyst (strength 4/5): Official Q3 2026 release reports record net revenue of $1.4B, net income of $241M and a raised full-year guidance, a beat-and-raise that the stock is already re",
   "Bought 81 SOFI at 16.31 (cost \u00a3992).",
   "Sold SOFI (about +\u00a31). End of day: sold 10 minutes before the close.",
   "Day trading finished: 1 trade(s), total +\u00a31."

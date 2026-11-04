@@ -1,6 +1,6 @@
 {
  "date": "2026-10-22",
- "generated": "2026-11-04T17:31+00:00",
+ "generated": "2026-11-04T20:44+00:00",
  "fx_gbpusd": 1.339566707611084,
  "result": "done",
  "require_news": true,
@@ -11,6 +11,7 @@
   "Added SPOT to today's list at 10:16 New York: 0.2x normal volume in the last 30 min; no news found",
   "Added QS to today's list at 10:16 New York: 0.2x normal volume in the last 30 min; no news found",
   "Added PLBC to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
+  "Added AVBH to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
   "Added FRAF to today's list at 10:16 New York: 0.2x normal volume in the last 30 min; no news found",
   "Added PEBK to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
   "Added FIBK to today's list at 10:32 New York: 0.3x normal volume in the last 30 min; no news found",
@@ -22,9 +23,9 @@
    "ticker": "TSLA",
    "name": "Tesla, Inc.",
    "vol_x": 0.37,
-   "buy_pct30": 0.6803802805513,
-   "change": 0.0004916356788524645,
-   "score": 2.96,
+   "buy_pct30": 0.6818469673991376,
+   "change": 0.0006339304898534959,
+   "score": 2.97,
    "news": [
     "Tesla Launches iPad and iPhone Duo App - Not a Tesla App"
    ],
@@ -102,15 +103,17 @@
   "Added SPOT to today's list at 10:16 New York: 0.2x normal volume in the last 30 min; no news found",
   "Added QS to today's list at 10:16 New York: 0.2x normal volume in the last 30 min; no news found",
   "Added PLBC to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
+  "Added AVBH to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
   "Added FRAF to today's list at 10:16 New York: 0.2x normal volume in the last 30 min; no news found",
   "Added PEBK to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
-  "PEBK: Claude: no catalyst (strength 1/5): No OFFICIAL headline from the last 48 hours; the only items are OTHER commentary, and the Q3 earnings coverage says the stock slipped despite NIM expansion, so ",
-  "FRAF: Claude: no catalyst (strength 1/5): Only OTHER previews of an upcoming earnings date and estimates exist, with no official company announcement in the last 48 hours to explain the move.",
+  "AVBH: Claude: no catalyst (strength 1/5): The only headline is an OTHER earnings preview with no official company announcement, so there is no genuine price-moving catalyst in the last 48 hours.",
+  "PEBK: Claude: no catalyst (strength 1/5): No OFFICIAL headline in the last 48 hours; the only coverage is OTHER commentary saying the stock slipped after Q3 earnings, and no release text was available t",
+  "FRAF: Claude: no catalyst (strength 1/5): Only OTHER headlines about an upcoming earnings date and consensus estimate; no official company announcement in the last 48 hours, so no confirmed catalyst des",
   "Added FIBK to today's list at 10:32 New York: 0.3x normal volume in the last 30 min; no news found",
-  "FIBK: Claude: no catalyst (strength 2/5): The only OFFICIAL item is a third-quarter earnings release with no text, so beats, guidance or size cannot be verified and it reads as routine.",
+  "FIBK: Claude: no catalyst (strength 2/5): The only OFFICIAL item is a bare third-quarter earnings headline with no release text, so there is no evidence of results well ahead of expectations; the upward",
   "Added TSCO to today's list at 10:48 New York: 0.3x normal volume in the last 30 min; no news found",
-  "TSCO: Claude: no catalyst (strength 1/5): Q3 results with only a reaffirmed FY outlook look in line rather than clearly beating expectations, and the release text was unavailable to confirm a beat; TSCO",
-  "PLBC: Claude: no catalyst (strength 1/5): The only official headlines are a CFO transition and a routine quarterly dividend, which are routine items; the strong Q3 earnings are older news already priced",
+  "TSCO: Claude: no catalyst (strength 1/5): Q3 results only reaffirm the FY2026 outlook, which is in line rather than a beat or raise, and TSCO is a large-cap with no release text to show a clear surprise",
+  "PLBC: Claude: no catalyst (strength 1/5): The only official items are a CFO transition and a routine quarterly dividend, neither a material price-moving catalyst; the rise appears tied to earlier Q3 ear",
   "Day trading finished: 0 trade(s), total +\u00a30."
  ]
 }

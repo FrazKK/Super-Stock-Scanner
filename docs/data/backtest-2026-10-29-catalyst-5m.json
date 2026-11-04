@@ -1,6 +1,6 @@
 {
  "date": "2026-10-29",
- "generated": "2026-11-04T17:37+00:00",
+ "generated": "2026-11-04T20:44+00:00",
  "fx_gbpusd": 1.332800269126892,
  "result": "done",
  "require_news": true,
@@ -10,8 +10,6 @@
  "added_during_day": [
   "Added INSM to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
   "Added ARXS to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
-  "Added MUSA to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
-  "Added GATX to today's list at 10:16 New York: 0.4x normal volume in the last 30 min; no news found",
   "Added VKTX to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
   "Added OPFI to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
   "Added PHAT to today's list at 10:16 New York: 0.2x normal volume in the last 30 min; no news found",
@@ -28,9 +26,10 @@
    "vol_x": 1.72,
    "buy_pct30": 0.6637027842079775,
    "change": 0.19364163841245752,
-   "score": 5.59,
+   "score": 6.09,
    "news": [
-    "Bausch Health Announces US$50 Million Share Repurchase Program - PR Newswire"
+    "Bausch Health Announces US$50 Million Share Repurchase Program - PR Newswire",
+    "BAUSCH HEALTH ANNOUNCES THIRD QUARTER 2026 RESULTS, RAISES GUIDANCE - PR Newswire"
    ],
    "on_t212": true
   },
@@ -60,10 +59,6 @@
   }
  ],
  "quiet": [
-  {
-   "ticker": "CETX",
-   "vol_x": 1095.97
-  },
   {
    "ticker": "NUWE",
    "vol_x": 3.91
@@ -119,12 +114,16 @@
   {
    "ticker": "NCLH",
    "vol_x": 0.95
+  },
+  {
+   "ticker": "CROX",
+   "vol_x": 0.88
   }
  ],
  "trades": [
   {
    "ticker": "ARXS",
-   "bought_at": "2026-10-29T14:24+00:00",
+   "bought_at": "2026-10-29T14:20+00:00",
    "sold_at": "2026-10-29T19:50+00:00",
    "entry": 53.81876438903808,
    "exit": 54.349998474121094,
@@ -136,15 +135,13 @@
  ],
  "total_gbp": 8.112350195629801,
  "alerts": [
-  "10:24 Day trade: bought ARXS: 24 ARXS at $53.82 (about \u00a3971). Stop $51.13. Broke above its opening-range high ($51.93) at $53.76. In play: 0.3x normal volume, normally moves 5% a day. Stop $51.08. Claude: catalyst (strength 4/5): Official Q3 2026 results raised full-year 2026 guidance and introduced 2027 guidance, with the call reporting 36% revenue growth, though beat magnitude vs. cons",
+  "10:20 Day trade: bought ARXS: 24 ARXS at $53.82 (about \u00a3971). Stop $51.13. Broke above its opening-range high ($51.93) at $53.76. In play: 0.3x normal volume, normally moves 5% a day. Stop $51.08. Claude: catalyst (strength 4/5): Official Q3 2026 release raised full-year guidance and introduced 2027 guidance, and the call reports revenue up 36%, though the headlines don't show size again",
   "15:50 Day trade: sold ARXS (+\u00a38): End of day: sold 10 minutes before the close. Result +\u00a38 (+0.8%).",
   "15:50 Day trade summary: 1 trade(s) today: ARXS +\u00a38. Total +\u00a38."
  ],
  "log": [
   "Added INSM to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
   "Added ARXS to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
-  "Added MUSA to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
-  "Added GATX to today's list at 10:16 New York: 0.4x normal volume in the last 30 min; no news found",
   "Added VKTX to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
   "Added OPFI to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
   "Added PHAT to today's list at 10:16 New York: 0.2x normal volume in the last 30 min; no news found",
@@ -152,12 +149,12 @@
   "Added SPOK to today's list at 10:16 New York: 0.5x normal volume in the last 30 min; no news found",
   "Added LUNG to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
   "Added LENZ to today's list at 10:16 New York: 1.2x normal volume in the last 30 min; no news found",
-  "RCKY: Claude: no catalyst (strength 2/5): The Q3 2026 earnings release (13.3% net sales growth) is labelled OTHER rather than OFFICIAL, so no qualifying company announcement is in the window; the Baird ",
-  "SPOK: Claude: no catalyst (strength 2/5): The only official item is the Q3 results release, and the OTHER headlines describe mixed results (adjusted EBITDA up 30% while revenue declined), with no releas",
-  "OPFI: Claude: no catalyst (strength 1/5): The only official item is a bare Q3 results headline, and the commentary reports a cut to the top end of 2026 guidance, a 3.8% revenue dip and rising credit los",
-  "INSM: Claude: no catalyst (strength 2/5): Headlines describe a Q3 beat and raised 2026 revenue guidance, but all come from third-party sources (OTHER), with no OFFICIAL company release or release text t",
-  "ARXS: Claude: catalyst (strength 4/5): Official Q3 2026 results raised full-year 2026 guidance and introduced 2027 guidance, with the call reporting 36% revenue growth, though beat magnitude vs. cons",
-  "Day trade buy order: 24 ARXS at about $53.76. Broke above its opening-range high ($51.93) at $53.76. In play: 0.3x normal volume, normally moves 5% a day. Stop $51.08. Claude: catalyst (strength 4/5): Official Q3 2026 results raised full-year 2026 guidance and introduced 2027 guidance, with the call reporting 36% revenue growth, though beat magnitude vs. cons",
+  "RCKY: Claude: no catalyst (strength 2/5): The Q3 results (13.3% net sales growth, double-digit sales growth) are strong, but every headline is tagged OTHER rather than OFFICIAL, so there is no official ",
+  "SPOK: Claude: no catalyst (strength 2/5): The only official item is a Q3 2026 earnings release with no readable text, so a beat or raised guidance cannot be confirmed; the other headlines are commentary",
+  "INSM: Claude: no catalyst (strength 2/5): The only earnings and raised-guidance headlines are OTHER-sourced (TradingView, Seeking Alpha, MarketScreener), with no OFFICIAL release text to verify, and Ins",
+  "OPFI: Claude: no catalyst (strength 1/5): The only official item is the Q3 2026 results release, and the OTHER headlines report a cut to the top end of 2026 guidance, rising credit losses and a 3.8% rev",
+  "ARXS: Claude: catalyst (strength 4/5): Official Q3 2026 release raised full-year guidance and introduced 2027 guidance, and the call reports revenue up 36%, though the headlines don't show size again",
+  "Day trade buy order: 24 ARXS at about $53.76. Broke above its opening-range high ($51.93) at $53.76. In play: 0.3x normal volume, normally moves 5% a day. Stop $51.08. Claude: catalyst (strength 4/5): Official Q3 2026 release raised full-year guidance and introduced 2027 guidance, and the call reports revenue up 36%, though the headlines don't show size again",
   "Bought 24 ARXS at 53.82 (cost \u00a3971).",
   "Sold ARXS (about +\u00a38). End of day: sold 10 minutes before the close.",
   "Day trading finished: 1 trade(s), total +\u00a38."

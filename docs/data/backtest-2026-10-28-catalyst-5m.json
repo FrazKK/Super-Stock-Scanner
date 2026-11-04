@@ -1,6 +1,6 @@
 {
  "date": "2026-10-28",
- "generated": "2026-11-04T17:31+00:00",
+ "generated": "2026-11-04T20:46+00:00",
  "fx_gbpusd": 1.330629587173462,
  "result": "done",
  "require_news": true,
@@ -18,7 +18,10 @@
   "Added LUNG to today's list at 10:16 New York: 4.3x normal volume in the last 30 min; no news found",
   "Added AXGN to today's list at 10:32 New York: 0.6x normal volume in the last 30 min; no news found",
   "Added KIDS to today's list at 10:32 New York: 0.7x normal volume in the last 30 min; news: OrthoPediatrics Announces FDA 510(k) Clearance of PNP | - GlobeNewswire",
-  "Added RBBN to today's list at 10:32 New York: 0.2x normal volume in the last 30 min; no news found"
+  "Added RBBN to today's list at 10:32 New York: 0.2x normal volume in the last 30 min; no news found",
+  "Added TIPT to today's list at 10:48 New York: 0.2x normal volume in the last 30 min; no news found",
+  "Added PDLB to today's list at 10:48 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Added FRAF to today's list at 10:48 New York: 0.2x normal volume in the last 30 min; no news found"
  ],
  "drift_list": [],
  "list": [
@@ -28,9 +31,10 @@
    "vol_x": 0.27,
    "buy_pct30": 0.8119285337604916,
    "change": 0.06259904667328997,
-   "score": 3.29,
+   "score": 3.79,
    "news": [
-    "Bausch Health Announces US$50 Million Share Repurchase Program - PR Newswire"
+    "Bausch Health Announces US$50 Million Share Repurchase Program - PR Newswire",
+    "BAUSCH HEALTH ANNOUNCES THIRD QUARTER 2026 RESULTS, RAISES GUIDANCE - PR Newswire"
    ],
    "on_t212": true
   },
@@ -101,10 +105,6 @@
    "vol_x": 3.1
   },
   {
-   "ticker": "LCII",
-   "vol_x": 2.42
-  },
-  {
    "ticker": "SIND",
    "vol_x": 1.7
   },
@@ -131,26 +131,16 @@
   {
    "ticker": "STLA",
    "vol_x": 0.89
-  }
- ],
- "trades": [
+  },
   {
-   "ticker": "KIDS",
-   "bought_at": "2026-10-28T14:32+00:00",
-   "sold_at": "2026-10-28T19:50+00:00",
-   "entry": 27.269742805480956,
-   "exit": 30.799999237060547,
-   "cost_gbp": 985.1810667533197,
-   "pl_gbp": 125.87190969472374,
-   "pl_pct": 0.12776525447198928,
-   "reason": "End of day: sold 10 minutes before the close."
+   "ticker": "INSE",
+   "vol_x": 0.89
   }
  ],
- "total_gbp": 125.87190969472374,
+ "trades": [],
+ "total_gbp": 0,
  "alerts": [
-  "10:32 Day trade: bought KIDS: 48 KIDS at $27.27 (about \u00a3985). Stop $25.91. Broke above its opening-range high ($26.42) at $27.24. In play: 0.7x normal volume, normally moves 3% a day. Stop $25.88. News (GlobeNewswire): OrthoPediatrics Announces FDA 510(k) Clearance of PNP | - GlobeNewswire. Claude: catalyst (strength 4/5): Q3 2026 results came with raised 2026 financial guidance, and an FDA 510(k) clearance was also announced, both official company news that fits the stock's break",
-  "15:50 Day trade: sold KIDS (+\u00a3126): End of day: sold 10 minutes before the close. Result +\u00a3126 (+12.8%).",
-  "15:50 Day trade summary: 1 trade(s) today: KIDS +\u00a3126. Total +\u00a3126."
+  "15:50 Day trade summary: No trade today: nothing in play broke out."
  ],
  "log": [
   "Added ICLR to today's list at 10:16 New York: 0.2x normal volume in the last 30 min; no news found",
@@ -161,22 +151,16 @@
   "Added BOOM to today's list at 10:16 New York: 4.3x normal volume in the last 30 min; no news found",
   "Added ANTX to today's list at 10:16 New York: 0.5x normal volume in the last 30 min; no news found",
   "Added LUNG to today's list at 10:16 New York: 4.3x normal volume in the last 30 min; no news found",
-  "ANTX: Claude: no catalyst (strength 1/5): The only earnings headline is OTHER-sourced from an unrelated domain rather than an official company release, and the inducement grants notice is routine, so th",
-  "SDGR: Claude: no catalyst (strength 1/5): No OFFICIAL headline in the last 48 hours; the only items are OTHER earnings previews forecasting a decline and unrelated coverage, so the breakout has no ident",
+  "ANTX: Claude: no catalyst (strength 1/5): The only earnings-beat headline is tagged OTHER and comes from an unofficial source, not an OFFICIAL company release, and the other item is a routine inducement",
+  "SDGR: Claude: no catalyst (strength 1/5): No OFFICIAL company announcement in the last 48 hours; the headlines are only earnings previews, an unrelated game item and chart pages, and the previews point ",
   "Added AXGN to today's list at 10:32 New York: 0.6x normal volume in the last 30 min; no news found",
   "Added KIDS to today's list at 10:32 New York: 0.7x normal volume in the last 30 min; news: OrthoPediatrics Announces FDA 510(k) Clearance of PNP | - GlobeNewswire",
   "Added RBBN to today's list at 10:32 New York: 0.2x normal volume in the last 30 min; no news found",
-  "KIDS: Claude: catalyst (strength 4/5): Q3 2026 results came with raised 2026 financial guidance, and an FDA 510(k) clearance was also announced, both official company news that fits the stock's break",
-  "Day trade buy order: 48 KIDS at about $27.24. Broke above its opening-range high ($26.42) at $27.24. In play: 0.7x normal volume, normally moves 3% a day. Stop $25.88. News (GlobeNewswire): OrthoPediatrics Announces FDA 510(k) Clearance of PNP | - GlobeNewswire. Claude: catalyst (strength 4/5): Q3 2026 results came with raised 2026 financial guidance, and an FDA 510(k) clearance was also announced, both official company news that fits the stock's break",
-  "Bought 48 KIDS at 27.27 (cost \u00a3985).",
-  "KIDS: stop raised from 25.91 to 27.43.",
-  "KIDS: stop raised from 27.43 to 28.94.",
-  "KIDS: stop raised from 28.94 to 29.15.",
-  "KIDS: stop raised from 29.15 to 29.30.",
-  "KIDS: stop raised from 29.30 to 29.58.",
-  "KIDS: stop raised from 29.58 to 29.75.",
-  "KIDS: stop raised from 29.75 to 29.98.",
-  "Sold KIDS (about +\u00a3126). End of day: sold 10 minutes before the close.",
-  "Day trading finished: 1 trade(s), total +\u00a3126."
+  "KIDS: Claude: catalyst (strength 3/5): Q3 results with raised 2026 guidance plus an FDA 510(k) clearance are official positives, but without release text the size of the beat is unverified and the st",
+  "Added TIPT to today's list at 10:48 New York: 0.2x normal volume in the last 30 min; no news found",
+  "Added PDLB to today's list at 10:48 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Added FRAF to today's list at 10:48 New York: 0.2x normal volume in the last 30 min; no news found",
+  "PDLB: Claude: no catalyst (strength 1/5): The Q3 results headlines are all tagged OTHER, so there is no OFFICIAL catalyst, and the beat is largely a one-off tax benefit (net income more than doubled on ",
+  "Day trading finished: 0 trade(s), total +\u00a30."
  ]
 }

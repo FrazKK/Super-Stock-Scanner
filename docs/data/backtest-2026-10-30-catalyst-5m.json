@@ -1,6 +1,6 @@
 {
  "date": "2026-10-30",
- "generated": "2026-11-04T17:31+00:00",
+ "generated": "2026-11-04T20:46+00:00",
  "fx_gbpusd": 1.3378641605377197,
  "result": "done",
  "require_news": true,
@@ -14,6 +14,7 @@
   "Added RRBI to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
   "Added OVBC to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
   "Added CHDN to today's list at 10:32 New York: 0.3x normal volume in the last 30 min; no news found",
+  "Added CDNA to today's list at 10:32 New York: 0.2x normal volume in the last 30 min; no news found",
   "Added DFIN to today's list at 10:32 New York: 0.3x normal volume in the last 30 min; no news found",
   "Added FBIZ to today's list at 10:32 New York: 0.2x normal volume in the last 30 min; no news found",
   "Added CZFS to today's list at 10:32 New York: 0.4x normal volume in the last 30 min; no news found",
@@ -94,13 +95,14 @@
   "Added CPRI to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
   "Added RRBI to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
   "Added OVBC to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
-  "ERIE: Claude: no catalyst (strength 2/5): The Q3 2026 earnings release is an official headline, but without its text I cannot confirm a beat, and the other headlines point to a shrinking book and mixed ",
+  "ERIE: Claude: no catalyst (strength 2/5): The only official item is a Q3 2026 earnings release with no text to confirm a beat, and OTHER coverage points to a shrinking book and slowing premium growth, s",
   "Added CHDN to today's list at 10:32 New York: 0.3x normal volume in the last 30 min; no news found",
+  "Added CDNA to today's list at 10:32 New York: 0.2x normal volume in the last 30 min; no news found",
   "Added DFIN to today's list at 10:32 New York: 0.3x normal volume in the last 30 min; no news found",
   "Added FBIZ to today's list at 10:32 New York: 0.2x normal volume in the last 30 min; no news found",
   "Added CZFS to today's list at 10:32 New York: 0.4x normal volume in the last 30 min; no news found",
   "Added CVEO to today's list at 10:32 New York: 0.3x normal volume in the last 30 min; no news found",
-  "DFIN: Claude: no catalyst (strength 1/5): No OFFICIAL headline is present; the earnings beat and Needham target raise appear only in OTHER and ANALYST items, and no release text was available to judge.",
+  "DFIN: Claude: no catalyst (strength 1/5): The earnings beat and analyst target raise appear only in OTHER and ANALYST headlines, with no OFFICIAL company release in the last 48 hours to qualify as a cat",
   "Day trading finished: 0 trade(s), total +\u00a30."
  ]
 }

@@ -1,6 +1,6 @@
 {
  "date": "2026-10-21",
- "generated": "2026-11-04T17:31+00:00",
+ "generated": "2026-11-04T20:47+00:00",
  "fx_gbpusd": 1.337327480316162,
  "result": "done",
  "require_news": true,
@@ -27,6 +27,10 @@
   }
  ],
  "quiet": [
+  {
+   "ticker": "SPHL",
+   "vol_x": 65.9
+  },
   {
    "ticker": "POM",
    "vol_x": 46.27
@@ -82,10 +86,6 @@
   {
    "ticker": "DHR",
    "vol_x": 0.56
-  },
-  {
-   "ticker": "ACFN",
-   "vol_x": 0.55
   }
  ],
  "trades": [],
@@ -96,7 +96,7 @@
  "log": [
   "Added MCB to today's list at 10:48 New York: 0.2x normal volume in the last 30 min; no news found",
   "Added OVID to today's list at 10:48 New York: 0.3x normal volume in the last 30 min; no news found",
-  "OVID: Claude: no catalyst (strength 1/5): The only headline is an OTHER-sourced report from an unreliable site about a narrower-than-expected Q2 loss, with no OFFICIAL company announcement or release te",
+  "OVID: Claude: no catalyst (strength 1/5): The only headline is OTHER commentary from a non-financial site about a narrower-than-expected Q2 loss, with no OFFICIAL company announcement or release text to",
   "Day trading finished: 0 trade(s), total +\u00a30."
  ]
 }

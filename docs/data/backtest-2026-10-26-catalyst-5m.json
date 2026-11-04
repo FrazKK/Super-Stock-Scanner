@@ -1,6 +1,6 @@
 {
  "date": "2026-10-26",
- "generated": "2026-11-04T17:30+00:00",
+ "generated": "2026-11-04T20:43+00:00",
  "fx_gbpusd": 1.3377747535705566,
  "result": "done",
  "require_news": true,
@@ -103,13 +103,13 @@
   "Added KFRC to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
   "Added EAF to today's list at 10:16 New York: 0.2x normal volume in the last 30 min; no news found",
   "Added FRMM to today's list at 10:16 New York: 0.4x normal volume in the last 30 min; no news found",
-  "FRMM: Claude: no catalyst (strength 1/5): The only contract headline ($94.4M AI compute deal) is classed OTHER, not an OFFICIAL company announcement, and no release text was available to verify it.",
-  "KFRC: Claude: no catalyst (strength 1/5): The only headlines are OTHER-sourced earnings write-ups (revenue up 7.5%, EPS $0.90, Q4 guidance) with no OFFICIAL company release, and 7.5% growth with no stat",
+  "FRMM: Claude: no catalyst (strength 1/5): The only news is a $94.4M AI compute contract reported by TradingView and Stock Titan, both OTHER sources, with no OFFICIAL company announcement or release text",
+  "KFRC: Claude: no catalyst (strength 2/5): Only an OTHER-sourced Yahoo Finance headline on Q3 revenue rising and Q4 guidance is available, with no release text, so a beat or raise versus expectations can",
   "Added HBT to today's list at 10:32 New York: 0.2x normal volume in the last 30 min; no news found",
   "Added BWMX to today's list at 10:32 New York: 0.7x normal volume in the last 30 min; no news found",
-  "BWMX: Claude: no catalyst (strength 1/5): No OFFICIAL headline in the last 48 hours; the only items are OTHER commentary, and Zacks reports BWMX lagged Q3 earnings estimates, which is negative sentiment",
+  "BWMX: Claude: no catalyst (strength 1/5): No OFFICIAL headline in the last 48 hours; the only items are OTHER earnings commentary, and Zacks reports BWMX lagged Q3 estimates, which is negative sentiment",
   "Added AGYS to today's list at 10:48 New York: 0.6x normal volume in the last 30 min; news: Agilysys Announces Record Revenue of $93.4M in Fiscal 2027 Second Quarter - Busi",
-  "AGYS: Claude: catalyst (strength 3/5): Official record quarterly revenue of $93.4M is a clear positive, but the headline gives no beat-versus-consensus, profit, or guidance detail, and the stock is a",
+  "AGYS: Claude: catalyst (strength 3/5): Official fiscal Q2 release reports record revenue of $93.4M, a clearly positive result, but without release text or consensus comparison it's unclear whether it",
   "Day trading finished: 0 trade(s), total +\u00a30."
  ]
 }
