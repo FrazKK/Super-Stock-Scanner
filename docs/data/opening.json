@@ -3159,355 +3159,43 @@
    ]
   },
   "uk": {
-   "date": "2026-11-03",
-   "time": "Tue 03 Nov 08:45",
-   "picks": [
-    {
-     "ticker": "NBS",
-     "name": "Nationwide Building Society",
-     "exchange": "LSE",
-     "ysym": "NBS.L",
-     "market": "uk",
-     "price": 127.0,
-     "low": 125.0,
-     "currency": "GBP",
-     "change": 0.016,
-     "vol_x": 1.14,
-     "vol_basis": "first30",
-     "vol_day_x": 1.14,
-     "buy_pct30": null,
-     "buy_pct": null,
-     "rvol_time": null,
-     "value": 31750.0,
-     "mcap": 1319437504.0,
-     "sector": "Finance",
-     "holding": true,
-     "extended": false,
-     "near_high": false,
-     "longterm_down": true,
-     "chart_url": "https://www.tradingview.com/chart/?symbol=LSE:NBS&interval=D",
-     "lists": [],
-     "owned": false,
-     "news": [
-      {
-       "title": "Free dementia clinic at Lancaster Nationwide building society - Lancaster Guardian",
-       "date": "2026-10-30",
-       "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPNnJkQ0sydVJRS1g5MVc4Wnh4MVBqYXczTGpPd011UEhkcl96d3M1RW5tckVEMGxDblM2eEltUndYeEEzbzdTZDBOUDQwdmk1dHdZVEFjdmhUbmFSS2pvcFNGdGh1T1ROX1Q1Z2M4bnFSRTI1VUdFY1BQaGhnR3ZBaGEycVZCNXRqWlREd09VcENTS0Y0VVFpQzktT2JCckZrNzJVYTl6ZTgzajh2aUwwN3o4dVprR2ZuRWk4?oc=5",
-       "source": "Lancaster Guardian",
-       "tone": "neutral"
-      },
-      {
-       "title": "Nationwide Building Society says UK house prices rose 0.5% in October - \u0634\u0628\u0643\u0629 \u062a\u0648\u0627\u0635\u0644 \u0627\u0644\u0625\u062e\u0628\u0627\u0631\u064a\u0629",
-       "date": "2026-11-01",
-       "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9xUTZmQ0thQ2V2S192V0xHWUJxNGVFbHBOVUd2V0ltQlg4clFqRW0zdHpweXBHd1ItelZCanFPMXNDTlRRNDZFZ0Y2OHo3THU2M0Fz?oc=5",
-       "source": "\u0634\u0628\u0643\u0629 \u062a\u0648\u0627\u0635\u0644 \u0627\u0644\u0625\u062e\u0628\u0627\u0631\u064a\u0629",
-       "tone": "neutral"
-      },
-      {
-       "title": "Nationwide customers dealt \u00a3685 blow on Friday - AOL.co.uk",
-       "date": "2026-10-30",
-       "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQV0xRbDFjb3dncmdOZWl6Y3pNeFJCZGRIb1o2MkQzY29hUmxOWDljZ3A4QUlzU0FPdHM3bkgzcjl2QnFPc1BOdms1ekpmczFyaEs5SEpHd3VreENFY011ckZmX2R2R0hGdmpQRlZ0OWN4X244RFRFZVNXVUtCVGhFRW5ucjdpd1du?oc=5",
-       "source": "AOL.co.uk",
-       "tone": "neutral"
-      },
-      {
-       "title": "Nationwide boosts savings rates in major shake-up - all the details - Swindon Advertiser",
-       "date": "2026-10-29",
-       "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNSXpVMjM5dnVyOUlNSmgyX09Vb3JMVnctS1F0YlBfbjRTd282YlluMUNBT2VmclBvZXJZbXppajFTczJOeE41a3d4a1BZc0tQXy1CTGhTUHpwblRDQUppQVVYQXpJSkxSNDh6N3RnN0dJOHRqTVZCTDdOUHNRWmtUeTZhaUpHd19SUHdIZWgzaHNPWEp2OXQzZTR5dWJsVFVXUEhXTXBTcVBIejRjN3JjQUFR?oc=5",
-       "source": "Swindon Advertiser",
-       "tone": "pos"
-      },
-      {
-       "title": "Annual house price growth slows again in October - Nationwide",
-       "date": "2026-10-30",
-       "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOOURuMW44MlNNLTJLYW9CVTNEWEpJZzExckUwMjQzTEdlRm0wXzR0aUcxQTlOYnlhS1UtWjQxanRtbjM4NUpBaVNYYXdsS1NXbEVwWVB2RkFfa2NIMDVyUFI2Z2w4cE9VQlBzOW9zMFZpTlNsTHVKcUVUS3Nhd2NfWWJPZmVWMmkwVnd1WUloSTBEZkhGVWJ3RzBYbw?oc=5",
-       "source": "Nationwide",
-       "tone": "pos"
-      },
-      {
-       "title": "Nationwide seeks approval for lifesaving defibrillator and bleed kit in Oswestry - Border Counties Advertizer",
-       "date": "2026-10-29",
-       "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxObDhmdFY3S2NHOEpyT3FhUlItOHk0U3RGMV9IMEI4Tm1Ya1ZsbnNURVY4VUctZTQwREV4bEpBdU45VlBxcGJZVllyVGVGaEFpMHhsWVBCNXJIVG1QUlpBVTB0M05TbHZsWDRfMWdDZ1Z2TGpWcXA4d2VxSXIxZW55RnJlVm42Q2N2YWV0RVc5NVdLa3JfYmMxTkxMVDdPUlNCWHRndGhGX0tzdFFPWU9wbWd3SDc?oc=5",
-       "source": "Border Counties Advertizer",
-       "tone": "pos"
-      },
-      {
-       "title": "Nationwide Building Society rating affirmed in UK retail banking - Traders Union",
-       "date": "2026-10-29",
-       "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNeG5UOW51Q3ZKdE9xdDJYZWRqZ2w2cUVkNzFoU0RlcjR0YlBFTWlUcnpjcEFnZnZFcnFraG5KZzQyUHczUWsySXJtbTF3aWV2T0ZQdFJ1OWJNX1Q0ZFdISnZvbUJuYy0zMGZsMFRkVFl6S2g2UU56aXA0d095Vk9GaDhveFpWaF93bEMwcFlOaWRDN1FGS0lBZmZR?oc=5",
-       "source": "Traders Union",
-       "tone": "neutral"
-      },
-      {
-       "title": "Nationwide sets dates in ongoing changes to branch services - all the key facts - The Mirror",
-       "date": "2026-10-30",
-       "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPYkc5aVcwcUdLSVEzZWd5TFJpMWdUQXdWTGdvbGxTSWt5SUE0ZWZqOUR3QjV5ZTFUa2czeUJ2VHRMeVhvVVREeUNXMUNDcThoVFR5a2l5ckExNzNfSDQyd0tEXzJTNGZvaWRoRGdVMnpxb09uQXlZQ2N0WUJXZUpRZm5ZYw?oc=5",
-       "source": "The Mirror",
-       "tone": "neutral"
-      }
-     ],
-     "buyers": false,
-     "sellers": false,
-     "score": 4.78
-    },
-    {
-     "ticker": "LIKE",
-     "name": "Likewise Group Plc",
-     "exchange": "LSE",
-     "ysym": "LIKE.L",
-     "market": "uk",
-     "price": 43.5,
-     "low": 42.35,
-     "currency": "GBX",
-     "change": 0.03571428571428571,
-     "vol_x": 1.65,
-     "vol_basis": "first30",
-     "vol_day_x": 1.65,
-     "buy_pct30": 0.372,
-     "buy_pct": 0.372,
-     "rvol_time": 47.07609105177352,
-     "value": 489076.155,
-     "mcap": 147338192.0,
-     "sector": "Distribution Services",
-     "holding": false,
-     "extended": false,
-     "near_high": true,
-     "longterm_down": false,
-     "chart_url": "https://www.tradingview.com/chart/?symbol=LSE:LIKE&interval=D",
-     "lists": [],
-     "owned": false,
-     "news": [
-      {
-       "title": "Trading Update",
-       "date": "2026-11-03",
-       "url": "https://www.investegate.co.uk/announcement/rns/likewise-group--like/trading-update/9854484",
-       "source": "RNS",
-       "tone": "neutral"
-      },
-      {
-       "title": "Sales surge at Likewise as the listed company integrates assets bought from Headlam - Insider Media Ltd",
-       "date": "2026-11-03",
-       "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQZHF3OGkyMWNSenc4Tzdtc05memNvX2gtYnFBemwtYXpOWmF1U3RtR1dhYUY2dGJmU2ZQOW5Ba1dKV3hyOS1mbzEyMFVYLXU1d2Jwb1ZyUjVNOTZtdzZ4eGxEZU5iQWlDVWlVZGl4MTlPLUR6LXVkRTJlUUtXOExUTS00WUxYQllGaTRUTmRnaDZBRFZ5dGZOc0hEQzJtcl9leDB3SGo1LXNtNWM1VGlBZy1EcV9xU0ZGXzE2MnZHaHlRdDZI?oc=5",
-       "source": "Insider Media Ltd",
-       "tone": "neutral"
-      },
-      {
-       "title": "Headlam rescue pays off as Likewise sales surge 36.7% - TheBusinessDesk.com",
-       "date": "2026-11-03",
-       "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNQkZNNzh3TlJad20taFprOVZZRzFoeWpLckVVR0kyeGVBYTAzNEtTM2tDa25ZVzRvYWZiOU44SUFJZ2pQVDloNVNTM1VVakRKNEJpOGVicDk4d0dyU3J0UVFiNm05NDJmc1kweTc3cElvX05uU0NoUWR2RS1ZZ0REQkdfbWtja0tXMUljWDllZG5tUnZPdERERnFBeTFHWEVyVkw1NkRScHdjUmRSb05ualhMbmFLQTZ0blhB?oc=5",
-       "source": "TheBusinessDesk.com",
-       "tone": "neutral"
-      },
-      {
-       "title": "Likewise Group Says Performance Ahead Of FY26 Market Expectations - TradingView",
-       "date": "2026-11-03",
-       "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNcTBUR1B6eWJGUm92UGJhWkt0SlQ3c0c3S2FLNVdWQVhLN2xVUnY1Zlp1ZV9kU3AySWFyWXRjc1RvbmFFcklROXFTWmlzOE5wVlFQaVBBRjJSMjBnSUx6eTNtTnp4Qmg3VTJTNnBIZHI3aEo0MjM1RENaV3J4RnZ1cEJlSGtrN0lCX1dQajkxX2s2NWt6YzdDNXNiekNKM3o4cF9jdDZ4WEdCOWx5YTdIeEpidF9MUGJ4UGRvUEdKMll4bkxXcjlteG9VbmpnVGNN?oc=5",
-       "source": "TradingView",
-       "tone": "neutral"
-      },
-      {
-       "title": "Likewise Raises FY26 Profit Expectations After October Revenue Grows 36.7% - DirectorsTalk Interviews",
-       "date": "2026-11-03",
-       "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQQ2NVZXROOEVUaExOT0NBejR5V1B5VmJVcktmWXZ5WUR5bkQ4aTNnTVlGYllYWkpwajVPaHU0aFlzVnZXRTRMSFJQenJTemlVOVRpZE9LWnoxVnVZOVk0eUZmMkx3SUNDVDBON0N2MEhLdUtmUUp2dzhLSTNEcVBncEpUaEpVdWNpSzl3eW4zOWJjOUROSnFZRGRPUDl3TmdqWXF2REZsR3gwSXVuR2kxVGYtOHVCY0s0aHpSTlI0bTB3dw?oc=5",
-       "source": "DirectorsTalk Interviews",
-       "tone": "pos"
-      },
-      {
-       "title": "Likewise Group Plc (LIKE.L) Seasonal returns chart - Yahoo Finance UK",
-       "date": "2026-10-30",
-       "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBmVFk2NXlLekFYY1FVdS1QRWRqWWRSQXJrX2p3eTBBZVdWcC1FXy1jZVVzLUlvdjdsX19xQTR6WTNnWXlJOTRBblFScERQTkNYdVl5MnFycnJac2FHY2M1RnJwMlU?oc=5",
-       "source": "Yahoo Finance UK",
-       "tone": "neutral"
-      },
-      {
-       "title": "Why Is Likewise Group (LSE:LIKE) Stock Jumping After The Headlam Asset Deal? - Kalkine Media",
-       "date": "2026-10-29",
-       "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOYnQ3MGU2Ui1qVUozb3B2bG5ZY2lvY1d4VEh6UVd1OWticUhrN2JlbTk3RE5YRlZOQVJSU3FUXzhmb3pfQm9NTk1TTVRQYlkzb2J1SFRzVW5EWEF6dDZYVUhGQi1JOHM0VGxuUUZTQThEVWNwVGVPSzN4VHRLcDhvVUlUZ1o2cGpmV2hoaVBKSUJoZzJPeGNjSUZ2OE5FQmMwZXRrLUlGVzBTZGdvTFZRMGc5cw?oc=5",
-       "source": "Kalkine Media",
-       "tone": "neutral"
-      },
-      {
-       "title": "Likewise sales surge 36.7 per cent in October - Express and Star",
-       "date": "2026-11-03",
-       "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOQ2FDVjRQS3V0STg2LTBkQkZuMW8wUHFnSWI2clJrNHo0bl83WmVTU3NuYjZGcFFGbUdfU0ZmTFBvdWhXNlNGMV9hY0xqRFZNQVlqazRqc2VjLWlBS21SNHVXTGNHZ0swSXpVTEgwa1VTYU5HcVNxalBYZ1lRSU1ORjg4S0Y4UTIzX1dzX1hLcDRjaElpRDZn?oc=5",
-       "source": "Express and Star",
-       "tone": "neutral"
-      }
-     ],
-     "buyers": false,
-     "sellers": true,
-     "score": 4.29
-    },
-    {
-     "ticker": "DRX",
-     "name": "Drax Group plc",
-     "exchange": "LSE",
-     "ysym": "DRX.L",
-     "market": "uk",
-     "price": 877.5,
-     "low": 834.0,
-     "currency": "GBX",
-     "change": 0.084672435105068,
-     "vol_x": 0.63,
-     "vol_basis": "first30",
-     "vol_day_x": 0.63,
-     "buy_pct30": 0.563,
-     "buy_pct": 0.563,
-     "rvol_time": 31.636243294768818,
-     "value": 2604709.575,
-     "mcap": 2721310587.0,
-     "sector": "Utilities",
-     "holding": true,
-     "extended": false,
-     "near_high": false,
-     "longterm_down": true,
-     "chart_url": "https://www.tradingview.com/chart/?symbol=LSE:DRX&interval=D",
-     "lists": [
-      "Magic"
-     ],
-     "owned": false,
-     "news": [
-      {
-       "title": "Strategic partnership for GW-scale data centre",
-       "date": "2026-11-03",
-       "url": "https://www.investegate.co.uk/announcement/rns/drax-group--drx/strategic-partnership-for-gw-scale-data-centre/9854654",
-       "source": "RNS",
-       "tone": "pos"
-      },
-      {
-       "title": "Total Voting Rights",
-       "date": "2026-11-02",
-       "url": "https://www.investegate.co.uk/announcement/rns/drax-group--drx/total-voting-rights/9853413",
-       "source": "RNS",
-       "tone": "neutral"
-      },
-      {
-       "title": "Issue of Equity",
-       "date": "2026-11-02",
-       "url": "https://www.investegate.co.uk/announcement/rns/drax-group--drx/issue-of-equity/9853405",
-       "source": "RNS",
-       "tone": "neutral"
-      },
-      {
-       "title": "Rule19.6(b): Bluefield Solar Income Fund Ltd",
-       "date": "2026-10-30",
-       "url": "https://www.investegate.co.uk/announcement/rns/drax-group--drx/rule19-6-b-bluefield-solar-income-fund-ltd/9850955",
-       "source": "RNS",
-       "tone": "neutral"
-      }
-     ],
-     "buyers": false,
-     "sellers": false,
-     "score": 3.0
-    },
-    {
-     "ticker": "NET",
-     "name": "Netcall plc",
-     "exchange": "LSE",
-     "ysym": "NET.L",
-     "market": "uk",
-     "price": 128.351,
-     "low": 127.0,
-     "currency": "GBX",
-     "change": 0.002742187499999993,
-     "vol_x": 0.46,
-     "vol_basis": "first30",
-     "vol_day_x": 0.46,
-     "buy_pct30": 0.5,
-     "buy_pct": 0.5,
-     "rvol_time": 5.812835921374227,
-     "value": 55871.1903,
-     "mcap": 219216590.0,
-     "sector": "Technology Services",
-     "holding": true,
-     "extended": false,
-     "near_high": false,
-     "longterm_down": false,
-     "chart_url": "https://www.tradingview.com/chart/?symbol=LSE:NET&interval=D",
-     "lists": [],
-     "owned": false,
-     "news": [
-      {
-       "title": "Appointment of Independent Non-Executive Director",
-       "date": "2026-11-02",
-       "url": "https://www.investegate.co.uk/announcement/rns/netcall--net/appointment-of-independent-non-executive-director/9851740",
-       "source": "RNS",
-       "tone": "neutral"
-      },
-      {
-       "title": "REG - Netcall PLC - Appointment of Independent Non-Executive Director - TradingView",
-       "date": "2026-11-02",
-       "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOeGNXN0tBOGM3OEJnclFoVnpSMUc2LWNjZVV5SW1XU3VHTUFPLTJVdjRSeWRKaE0zX1R0NzJwc1h2NWtKOHdmT0RQWWNfUVpVdGdwWjFLSlFKS1pLQXFQVUFTYnJCYk03YnJOdGJxdFlSSVR3RjVWWWUxOXI5eXo0Y3NNX3FhelhOZGl3T0dQMGk4MFVxMlJkZTZvOU05bFZ4Wm9NU2NIZktRY0l3a0hJX0F0MXR3b2p5blZxa3VVaXFYR21BYkFvNGkwRmNic3hJUW16WjR6LWI?oc=5",
-       "source": "TradingView",
-       "tone": "neutral"
-      },
-      {
-       "title": "Netcall plc (NET.L) Seasonal returns chart - Yahoo Finance UK",
-       "date": "2026-10-30",
-       "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1uRU5TRUJhMDZXWFd5NVExSWZvaTdzTURrU01feGVxUk1lZEVnWkNGMWtMN1FPTHJvWVRRVTVWRlhJZEY2QjZfQW1adDNhNm5iakJoY0dnX0lNa3d0cVFtanVQYw?oc=5",
-       "source": "Yahoo Finance UK",
-       "tone": "neutral"
-      },
-      {
-       "title": "Netcall (LSE:NET) Sees AI Sales Soar in a Record Year - Kalkine Media",
-       "date": "2026-11-02",
-       "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPSWNYY002LVAwaHZzR2VMRnY1OE94bEdOTVFKcS1kMkI5UlFFMGtmTEY3X3RXUncwampGTWlBZk9mZkdiUFJVWGc2UXNWWkJ2Qm1fUVd4b2VhQWFhVVU4SUs3NXdYUk1PUVRjNjBvMWY2U09XWUxlQUdRNjk3Q3ZFa2JEcHYyVUtpbEZuZ09PTk01Q3puQlhJeGNNSmxxNDFMVGJNUDBseDN6OGZSSkE?oc=5",
-       "source": "Kalkine Media",
-       "tone": "pos"
-      },
-      {
-       "title": "Netcall (LSE:NET) Rounds Off a Strong Financial Year - Kalkine Media",
-       "date": "2026-10-29",
-       "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPS3JXM1pWYUNfV2M1ZjlkYTJYZVpNZXRLb00wb1BIRjJkZjVtMmx5aHVEZlJMSjhPUE1SdVh5TXhFX0txRU9Za1hCNW4wcFNHclJ2eWFWZzlFMFlmamRBTHZ3blE2QW1leEpXamlvUjdQb05fR0ZFSi04Q2FTU081a3V6YVZRMmpSRkVoLUVJVlp1QQ?oc=5",
-       "source": "Kalkine Media",
-       "tone": "pos"
-      }
-     ],
-     "buyers": false,
-     "sellers": false,
-     "score": 2.92
-    }
-   ],
+   "date": "2026-11-04",
+   "time": "Wed 04 Nov 08:45",
+   "picks": [],
    "quiet": [
     {
-     "ticker": "PPH",
-     "name": "PPHE Hotel Group Limited",
+     "ticker": "DAR",
+     "name": "Dar Global Plc",
      "exchange": "LSE",
-     "ysym": "PPH.L",
+     "ysym": "DAR.L",
      "market": "uk",
-     "price": 1552.0,
-     "low": 1550.0,
-     "currency": "GBX",
-     "change": 0.01437908496732026,
-     "vol_x": 0.89,
+     "price": 7.65,
+     "low": 7.25,
+     "currency": "USD",
+     "change": 0.0032786885245902103,
+     "vol_x": 3.98,
      "vol_basis": "first30",
-     "vol_day_x": 0.89,
+     "vol_day_x": 3.98,
      "buy_pct30": null,
      "buy_pct": null,
-     "rvol_time": 1.1736949266388195,
-     "value": 390188.32,
-     "mcap": 640935617.0,
-     "sector": "Consumer Services",
+     "rvol_time": 6.050963179712266,
+     "value": 113900.85,
+     "mcap": 1023307843.73201,
+     "sector": "Finance",
      "holding": false,
      "extended": false,
      "near_high": false,
      "longterm_down": true,
-     "chart_url": "https://www.tradingview.com/chart/?symbol=LSE:PPH&interval=D",
+     "chart_url": "https://www.tradingview.com/chart/?symbol=LSE:DAR&interval=D",
      "lists": [],
      "owned": false,
      "news": [
       {
-       "title": "Publication of Arena Q3 Interim Financial Report",
-       "date": "2026-10-29",
-       "url": "https://www.investegate.co.uk/announcement/rns/pphe-hotel-group-ltd--pph/publication-of-arena-q3-interim-financial-report-/9847176",
-       "source": "RNS",
-       "tone": "neutral"
-      },
-      {
-       "title": "Q3 Trading Update",
-       "date": "2026-10-29",
-       "url": "https://www.investegate.co.uk/announcement/rns/pphe-hotel-group-ltd--pph/q3-trading-update/9846867",
-       "source": "RNS",
+       "title": "DAR Forecast \u2014 Price Target \u2014 Prediction for 2027 - TradingView",
+       "date": "2026-11-02",
+       "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBINS1YYkVLVERRbFVhR2tPbVllNWxaUFFEX2RscHB6UWdCQWxXS2d1UVJ4a01qSC1nM20tM0VOc2FGclM4TWJWbHlqY1loR2ExdGZzM0t3dTM3VzVXSlR4cU1SaUdoTUNZa0I0SEUzNkNNSVEz?oc=5",
+       "source": "TradingView",
+       "official": false,
        "tone": "neutral"
       }
      ],
@@ -3515,89 +3203,110 @@
      "sellers": false
     },
     {
-     "ticker": "TRU",
-     "name": "TruFin Plc",
+     "ticker": "KLSO",
+     "name": "Kelso Group Holdings PLC",
      "exchange": "LSE",
-     "ysym": "TRU.L",
+     "ysym": "KLSO.L",
      "market": "uk",
-     "price": 105.0,
-     "low": 104.5,
+     "price": 3.85,
+     "low": 3.7,
      "currency": "GBX",
-     "change": 0.034482758620689655,
-     "vol_x": 0.75,
+     "change": 0.040540540540540515,
+     "vol_x": 2.37,
      "vol_basis": "first30",
-     "vol_day_x": 0.75,
-     "buy_pct30": 0.01,
-     "buy_pct": 0.01,
-     "rvol_time": 10.155620159773287,
-     "value": 43648.5,
-     "mcap": 54695518.0,
-     "sector": "Technology Services",
-     "holding": false,
-     "extended": false,
-     "near_high": false,
-     "longterm_down": true,
-     "chart_url": "https://www.tradingview.com/chart/?symbol=LSE:TRU&interval=D",
-     "lists": [],
-     "owned": false,
-     "news": [
-      {
-       "title": "Further Special Dividend and Cost Restructuring",
-       "date": "2026-11-03",
-       "url": "https://www.investegate.co.uk/announcement/rns/trufin--tru/further-special-dividend-and-cost-restructuring/9854500",
-       "source": "RNS",
-       "tone": "neutral"
-      },
-      {
-       "title": "TruFin to pay further \u00a317.5m special dividend to shareholders as it cuts costs - UK Investor Magazine",
-       "date": "2026-11-03",
-       "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPdHVnNmhxSnJKdkJQb0J3WFRaNXBsZ2Q1dlhFSFIyYXBmTW5CLWdqUHgzWVdtaFNJRnI0VG5YcjRSMWVGcnQ5QU9hNjh4RWwzVldBcUlaQ0l0eU1ZSjlCeG1YbnlmTjhNMHh0Um9Da2cwUjlQYmFySG1ITnN5WHhzbFpRVmZWckt2LWdRd2lGRzNKdF95d2JqZXVibXJ0OGZvVXJUZFlVdEhuVlVVYWFWOA?oc=5",
-       "source": "UK Investor Magazine",
-       "tone": "neutral"
-      },
-      {
-       "title": "REG - TruFin PLC - Further Special Dividend and Cost Restructuring - TradingView",
-       "date": "2026-11-03",
-       "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxObEoxNHVOeDVvSEl1S0JhRF9IakhhVFVGcm5mZFB1eXE0bFBPYW1mWUE3bnJLZE1WU3FGUFNKdnBoSG5nWnF6OE1YQ3dzX1FaQ0dVSHhQemdMX0NlZThkc3k2aWZZQ2E0WnBEOU9ZNFdfSE9zNFF4QTMwdnlWUEduaEd1MVdqNzhlSS1qX18wMzhOS0k5bHFneFVTdktxTTNxekUyZDloZzNIU01PeWZ4MmE5OUNQUTF1ZkdzMjVycy1JVERuWGt0azFIendWd1Rfd1pRRw?oc=5",
-       "source": "TradingView",
-       "tone": "neutral"
-      }
-     ],
-     "buyers": false,
-     "sellers": true
-    },
-    {
-     "ticker": "EST",
-     "name": "East Star Resources PLC",
-     "exchange": "LSE",
-     "ysym": "EST.L",
-     "market": "uk",
-     "price": 11.97,
-     "low": 11.3658,
-     "currency": "GBX",
-     "change": 0.050000000000000024,
-     "vol_x": 0.48,
-     "vol_basis": "first30",
-     "vol_day_x": 0.48,
-     "buy_pct30": 0.488,
-     "buy_pct": 0.488,
-     "rvol_time": 3.6763859817201285,
-     "value": 213473.81790000002,
-     "mcap": 55551309.0,
+     "vol_day_x": 2.37,
+     "buy_pct30": null,
+     "buy_pct": null,
+     "rvol_time": 2.6867068155425415,
+     "value": 70647.5,
+     "mcap": 20748103.0,
      "sector": "Commercial Services",
      "holding": true,
      "extended": false,
      "near_high": true,
      "longterm_down": false,
-     "chart_url": "https://www.tradingview.com/chart/?symbol=LSE:EST&interval=D",
+     "chart_url": "https://www.tradingview.com/chart/?symbol=LSE:KLSO&interval=D",
      "lists": [],
      "owned": false,
      "news": [
       {
-       "title": "East Star Resources Plc (EST.L) Seasonal returns chart - Yahoo Finance UK",
-       "date": "2026-10-31",
-       "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE0zMUpyNEdxOFFnQlpUWXlubmR5QjhweUY1OGRfU21TUWU3UThUQkViRGtadG5zMDg2MkEySThnVktVNUtnY2VLNXE1azIwMS1wTi1wS1AzcVpBcUx3OGN6YWdsQQ?oc=5",
-       "source": "Yahoo Finance UK",
+       "title": "Attendance at Mello London 2026",
+       "date": "2026-11-04",
+       "url": "https://www.investegate.co.uk/announcement/rns/kelso-group-holdings--klso/attendance-at-mello-london-2026/9856985",
+       "source": "RNS",
+       "official": true,
+       "tone": "neutral"
+      },
+      {
+       "title": "Transaction in Own Shares",
+       "date": "2026-11-02",
+       "url": "https://www.investegate.co.uk/announcement/rns/kelso-group-holdings--klso/transaction-in-own-shares/9854189",
+       "source": "RNS",
+       "official": true,
+       "tone": "neutral"
+      },
+      {
+       "title": "Kelso Industries buys Florida's Randall in latest roll-up move - Dealroom",
+       "date": "2026-11-04",
+       "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPNnZOeWRJZlVCSG16Q3NCdG9CU3pqTGg1cUhXNm9XVnRnUUJzOThfSHBJX2VkSm5CMGZ3V3Z6c3dOSEdjZHM3MkIybG56ZTZaaWZPMHN2bXVqYmhZVHVGTno3aHhqVXhJYURLZEVvN0pnckdkTlMyVXJmZ1p0V2R6RUZaaWlSRk15TlhpYW5xQmcxcGZaZWlpMERrYlE?oc=5",
+       "source": "Dealroom",
+       "official": false,
+       "tone": "neutral"
+      },
+      {
+       "title": "Kelso soccer - Longview Daily News",
+       "date": "2026-11-04",
+       "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE8yWk9OZXJrTFRueEVRM1BvU2pkT3UzRmtRS0NjUUZ6aVVqcV83Mm9LZGswRUR2Ymw4eUVZWE5hdzBZckR0WXdmM1BDdUhXYTdvR1hxTGxTLTJWU1JNMHFOUzRBNmE2aHI1Ykw2VU1MeV8?oc=5",
+       "source": "Longview Daily News",
+       "official": false,
+       "tone": "neutral"
+      },
+      {
+       "title": "Kelso Police Seeking Help Catching Suspect Masturbating\u2014Classic Hits 100.7 KLOG News - Classic Hits 100.7 KLOG",
+       "date": "2026-11-03",
+       "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQNnpIUWZKWXRiVFVsUVlKM2Qzekk0VzJaM1R1THo2TDRrNXp0NXZUaTQ1N0Vkd2pfMVNsRzRhUlA0R2dUNkZFWGRFZUVBemVPUkpJTDZ0NlRTX0h1NjlsdEhjRkRCWHc3Z1BLTUg0QVFPWW5QSDY3M2MwdWRfY0g0aE94Y3U0ZFpJcTZMNWlrcEZ4anY0UTJkZUc4RUdfU1pjeW1CVWNTdWV2QQ?oc=5",
+       "source": "Classic Hits 100.7 KLOG",
+       "official": false,
+       "tone": "neutral"
+      },
+      {
+       "title": "Kelso Boys Varsity Soccer @ Shelton - MaxPreps",
+       "date": "2026-11-03",
+       "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNVGNoTTBuaW96RHRuNjJsZVl4RHRNdnNSOXZTUl9QTDFfQmptTUN2eDZTWFVFWjdCV1BiclBSUW1VTHlYVF8xUWJwQWhmQ2hRNExnb1NxMEtOZWdreXAtbUZpajJCWXNaUC11Vll2Z1VBQVZQQm9hUDNDNUJiaU9henRxMVFSTjRvcTRLWTlFc1NZQWRSUlNKelRaNXRWQmFmN1BRa1NSZWZvM00?oc=5",
+       "source": "MaxPreps",
+       "official": false,
+       "tone": "neutral"
+      },
+      {
+       "title": "Kelso: Man who behaved in erratic manner while in possession of imitation grenade avoids prison - Rayo",
+       "date": "2026-11-02",
+       "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxORjFpd09UY2R1TDdWanZfZnd0VkZfNzBJXzVkZWIyS1Qxb0QzUjlfdlRUdnQxbWFqOUR5dWJoRHlHMU9ZWnFwMmxVa2dRVy1OSGdfRnVXd3lXTlZsUnpkLVY0bUQyVHlsMDBIRHVJTVZzMmdaaWd1Tk1KUmphMjRjQ3REYkVwaUhXX0VWYlI0YVlid1VrVng5UXlUSm5MbC1CQmc?oc=5",
+       "source": "Rayo",
+       "official": false,
+       "tone": "neutral"
+      },
+      {
+       "title": "Kelso teen unhurt after reported grab attempt; father says quick response helped escape - KATU",
+       "date": "2026-11-02",
+       "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNdlUtcGtaWkQ5NkF0Y2xFd0dzRWZpMnhONWdqeER5R3AzYmtNWmlrNE9scVgzVGs2QWw1Ymdkb1phek5Tc3hMTzlSbTYzakllMUhjck5veWI4MnVoSUxGNnVVZGRVLTVxU0ppLW10Z05uWFJ3bnJfU2Z5al9JYnJXNnBiQkdmTmxhamJPQ0RLM0tuTks4SmhENFZTMVBFM2Y5Z1RJekZDUFZDVE1vZl8wWDlkYUU?oc=5",
+       "source": "KATU",
+       "official": false,
+       "tone": "neutral"
+      },
+      {
+       "title": "Kelso Technologies Inc. (TSX:KLS) in Focus: What Could Drive the Next Move in Canadian Industrials Stocks? - kalkine.ca",
+       "date": "2026-11-02",
+       "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNdkk4eXRndUcwT0lHQ0pnY0JvNTFkcm9OOFVndVZFLW53WUp6cUJvQzN6bmQ4dXZ0Qjl3amltYko0cTRxTGV0aV9oc0pZZjdjM3UzLWd2Q1BXblV4UlhtVTlLUGJEU1Q5R0JOdEgtQ1ZYbW04clhSTWR1aExyQnM3dC10dDROQmlFTUZTa2tqZUtyUGJpdWZkN3dsUXZYZllDY21nclVCdUhXMWlhTU1oOHJvem5yY1JoODJ6cVA0S2pHbnZpdHYyenNwN3lLV3hRMFE?oc=5",
+       "source": "kalkine.ca",
+       "official": false,
+       "tone": "neutral"
+      },
+      {
+       "title": "Kelso Girl Unharmed in Attempted Kidnapping - FM News 101 KXL",
+       "date": "2026-11-02",
+       "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1seEhaV1JSWHhEQ0t6WExRcjNWWTFuSkNITjFEUDZVOUxSc0NNM29fNXF3Y1I0S0c1T1VkYlVTZFdzSG5PdUNhRzZGZnZydDhwNEFqQXlCbHdpRlNaV0l1ZUpzVEhxR19nWGZzYUo0Q1BjQQ?oc=5",
+       "source": "FM News 101 KXL",
+       "official": false,
        "tone": "neutral"
       }
      ],
@@ -3605,44 +3314,409 @@
      "sellers": false
     },
     {
-     "ticker": "MICC",
-     "name": "Magnum Ice Cream Co. N.V.",
+     "ticker": "80M",
+     "name": "80 Mile PLC",
      "exchange": "LSE",
-     "ysym": "MICC.L",
+     "ysym": "80M.L",
      "market": "uk",
-     "price": 1504.2535,
-     "low": 1497.828,
+     "price": 1.145,
+     "low": 1.11,
      "currency": "GBX",
-     "change": 0.00016855053191491414,
-     "vol_x": 0.39,
+     "change": 0.10628019323671507,
+     "vol_x": 1.13,
      "vol_basis": "first30",
-     "vol_day_x": 0.39,
-     "buy_pct30": 0.225,
-     "buy_pct": 0.225,
-     "rvol_time": 2.2358664723918364,
-     "value": 792711.5094300001,
-     "mcap": 9042256884.728495,
-     "sector": "Consumer Non-Durables",
+     "vol_day_x": 1.13,
+     "buy_pct30": 0.617,
+     "buy_pct": 0.617,
+     "rvol_time": 11.474229175793813,
+     "value": 699822.17945,
+     "mcap": 53160973.0,
+     "sector": "Non-Energy Minerals",
      "holding": false,
      "extended": false,
-     "near_high": true,
+     "near_high": false,
      "longterm_down": false,
-     "chart_url": "https://www.tradingview.com/chart/?symbol=LSE:MICC&interval=D",
+     "chart_url": "https://www.tradingview.com/chart/?symbol=LSE:80M&interval=D",
      "lists": [],
      "owned": false,
      "news": [
       {
-       "title": "Q3 2026 Trading Update",
-       "date": "2026-10-29",
-       "url": "https://www.investegate.co.uk/announcement/gnw/the-magnum-ice-cream-company--micc/q3-2026-trading-update/9846824",
+       "title": "Rule 2.9 Announcement",
+       "date": "2026-11-04",
+       "url": "https://www.investegate.co.uk/announcement/rns/80-mile--80m/rule-2-9-announcement/9856833",
        "source": "RNS",
+       "official": true,
        "tone": "neutral"
       },
       {
-       "title": "What Magnum Ice Cream (MICC) Said on Its Q3 Earnings Call",
-       "date": "2026-10-29",
-       "url": "https://www.marketbeat.com/instant-alerts/transcript-what-magnum-ice-cream-micc-said-on-its-q3-earnings-call-2026-10-29/?utm_source=yahoofinance&utm_medium=yahoofinance&.tsrc=rss",
-       "source": "Yahoo Finance",
+       "title": "Extension of PUSU and Amendment to Proposed Terms",
+       "date": "2026-11-03",
+       "url": "https://www.investegate.co.uk/announcement/rns/80-mile--80m/extension-of-pusu-and-amendment-to-proposed-terms/9856638",
+       "source": "RNS",
+       "official": true,
+       "tone": "neutral"
+      },
+      {
+       "title": "Form 8.3 - 80 Mile plc",
+       "date": "2026-11-03",
+       "url": "https://www.investegate.co.uk/announcement/rns/80-mile--80m/form-8-3-80-mile-plc/9856480",
+       "source": "RNS",
+       "official": true,
+       "tone": "neutral"
+      },
+      {
+       "title": "Form 8.3 - Greenland Energy Company",
+       "date": "2026-11-03",
+       "url": "https://www.investegate.co.uk/announcement/rns/80-mile--80m/form-8-3-greenland-energy-company/9856481",
+       "source": "RNS",
+       "official": true,
+       "tone": "neutral"
+      },
+      {
+       "title": "Form 8.3 - 80 Mile PLC",
+       "date": "2026-11-03",
+       "url": "https://www.investegate.co.uk/announcement/rns/80-mile--80m/form-8-3-80-mile-plc/9856129",
+       "source": "RNS",
+       "official": true,
+       "tone": "neutral"
+      },
+      {
+       "title": "Form 8.5 (EPT/RI)",
+       "date": "2026-11-03",
+       "url": "https://www.investegate.co.uk/announcement/rns/80-mile--80m/form-8-5-ept-ri-/9855484",
+       "source": "RNS",
+       "official": true,
+       "tone": "neutral"
+      },
+      {
+       "title": "Form 8.3 - Greenland Energy Company",
+       "date": "2026-11-02",
+       "url": "https://www.investegate.co.uk/announcement/rns/80-mile--80m/form-8-3-greenland-energy-company/9854008",
+       "source": "RNS",
+       "official": true,
+       "tone": "neutral"
+      },
+      {
+       "title": "Disko-Nuussuaq Project Update",
+       "date": "2026-11-02",
+       "url": "https://www.investegate.co.uk/announcement/rns/80-mile--80m/disko-nuussuaq-project-update-/9853598",
+       "source": "RNS",
+       "official": true,
+       "tone": "neutral"
+      },
+      {
+       "title": "Form 8.5 (EPT/RI)",
+       "date": "2026-11-02",
+       "url": "https://www.investegate.co.uk/announcement/rns/80-mile--80m/form-8-5-ept-ri-/9853061",
+       "source": "RNS",
+       "official": true,
+       "tone": "neutral"
+      },
+      {
+       "title": "80 Mile Got More Time For Greenland Energy\u2019s Bid - Finimize",
+       "date": "2026-11-04",
+       "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNY0Y2SjlmV01VUmhVdThiZmpfRHpkY2JOVWxWemp0czFZMmpJSWktU2RkdDhZWEtiVUlITWVlS1doV0N2WmZOM1lJZWRFQzBvMG01S1luWlRPbV9JUDJiM1RkRW1pUlU3QzYwU2syamhEcklXUkZ6OVpjay12R1BuZ193?oc=5",
+       "source": "Finimize",
+       "official": false,
+       "tone": "neutral"
+      }
+     ],
+     "buyers": true,
+     "sellers": false
+    },
+    {
+     "ticker": "WIL",
+     "name": "Wilmington plc",
+     "exchange": "LSE",
+     "ysym": "WIL.L",
+     "market": "uk",
+     "price": 279.0,
+     "low": 274.0,
+     "currency": "GBX",
+     "change": 0.010869565217391304,
+     "vol_x": 1.02,
+     "vol_basis": "first30",
+     "vol_day_x": 1.02,
+     "buy_pct30": null,
+     "buy_pct": null,
+     "rvol_time": 0.7002089403916417,
+     "value": 308225.25,
+     "mcap": 248137817.0,
+     "sector": "Consumer Services",
+     "holding": true,
+     "extended": false,
+     "near_high": false,
+     "longterm_down": false,
+     "chart_url": "https://www.tradingview.com/chart/?symbol=LSE:WIL&interval=D",
+     "lists": [],
+     "owned": false,
+     "news": [
+      {
+       "title": "Wilmington voters reject four rezoning ordinances - Wilmington News Journal",
+       "date": "2026-11-04",
+       "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPOGctRXlxbVNfX3pvWTB3djBwYWJFQ3hDNVNLRWxNaUxkeHFLLVV3VHVwY25lNkE1d254RWZlMGkwS1FvT1JiYllEYUVWZ0ZsYVgySDRmOWxPcEY4cTZNMkFlVTh2ZjUxV2FYazJ4MjRrWTNvemM1czhyMWVneHRpVXBSMjZzNmQxdWxLMA?oc=5",
+       "source": "Wilmington News Journal",
+       "official": true,
+       "tone": "neutral"
+      },
+      {
+       "title": "Director/PDMR Shareholding",
+       "date": "2026-11-03",
+       "url": "https://www.investegate.co.uk/announcement/rns/wilmington--wil/director-pdmr-shareholding/9856604",
+       "source": "RNS",
+       "official": true,
+       "tone": "neutral"
+      },
+      {
+       "title": "Wilmington voter talks about why she voted - Wilmington Star-News",
+       "date": "2026-11-03",
+       "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPU2tCX0hvRktQajl1bDFnYllESWgxYmlveTktT0NzcFJlUkRKd3FMdXRUV2dFRmd3Ym1HSF9XQXNsaEFVWXB5WGtsWXV2OTJ5RXlsSkNBaFM2WHRVUzVpNVJfMHZvTTV6MGFvanFTcVNYOG5wTUR6NnBRQWpLSElBb2hYRnk5ZTZyVWhINFNkVmZlUWZTc19RaU9EVGxNcEF4OEZBYlZZX2NabmNyNVpmLTJXWExBUFNKV3pObUQ2dngxMGlLdnpN?oc=5",
+       "source": "Wilmington Star-News",
+       "official": true,
+       "tone": "neutral"
+      },
+      {
+       "title": "Total Voting Rights",
+       "date": "2026-11-02",
+       "url": "https://www.investegate.co.uk/announcement/rns/wilmington--wil/total-voting-rights/9851595",
+       "source": "RNS",
+       "official": true,
+       "tone": "neutral"
+      },
+      {
+       "title": "Wilmington-area restaurants open on Thanksgiving or offering takeout - Wilmington Star-News",
+       "date": "2026-11-02",
+       "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNcHM1MVI0aWxoT1o4WUZpbjN6eWdOSUwzSlNpSUlfR0l5VGs4QzlHeXNraGlfR212cm5FbWdCSnNZdHF4RktlQk82MUpUUVA0bGpjaDBtTXJ0dlhNM2RacHJ0X2x3VGFIQmJlWEdFT0cwQWNWQUFWclhYZk5JQ2U4X0pjd3hQaFdKN1d0ODVlaW9GM3hPaU9iYzQwY2dMbEktR2F4aXduMk5tbHpHS1JZSThROW9FV3RjQUhXbUJUSXBwczFUazZRUmlaNkd2T0E?oc=5",
+       "source": "Wilmington Star-News",
+       "official": true,
+       "tone": "neutral"
+      },
+      {
+       "title": "Wilmington shooting leaves 1 dead, 2 injured - Delawareonline.com",
+       "date": "2026-11-04",
+       "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPZ0VlSXdJSWUyV00wLXNUNFZseHRBeURLNk1UZWE3LUt3WlJMRmFsTi1PRkhqMGZyUjhpS2J6dW0xamFTWHRJYUhETTlLTkxzanVtQmFQbzVSTnpXNVV0OE41LWRTYTVETjR0bTR1REdHVGdaUjJTeF9zbHlfLWQ3eV9GQ0RVS3RHSTNZZXp1S1gtZmxmX25MWV94eHFlN2JZOG56Uk1oeGhwNWs3U0lXVm9QeHVZaE4zdjZwRmpTVnQ1QQ?oc=5",
+       "source": "Delawareonline.com",
+       "official": false,
+       "tone": "neutral"
+      },
+      {
+       "title": "Wilmington 2026 Election Results: Polls Close, Votes Being Counted - Patch",
+       "date": "2026-11-04",
+       "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOY0FJeFFKU1BCQXlOREZfcDN4azV5ZHZydG4tVm1YTDk3NXlWc2lOYkJkWDlSMkMzdDlPRzdDdnB6Nm00dmxPNWxnTFQ3dVJRSjNqZHo1cldJb2x5MFlDRk8td2w4bGprTmlYbnZ6WWhncUNBUXNOTENEWGRzdjNFSk54S0poa3pST2wyYV9uS0Y4a3pjZWFIRXlfa3VrQWw3RWwzRFJDMUtYUEHSAbwBQVVfeXFMT3UyTU1rLVRSbWczcDQxckQ4bmswNVdRM1FFaVE4elBYSmVJZWFMV0RoZV9Nd3V6anpxOUZiZ3BwdFg5U1VtbGlZSEM0MXlnLXdJRzcxVXRKZGJOME8xeGQ0aUhCZUJYZGZjanh2RGhYckxfM25SSFVJX2JFMUJxSHVTTWlzaW1qQTdQVXMySjNsUUlaMjFIYklmcW5FazlFMUlyTDlsQ1NyWkVWQXpjV2ZabFVFamRtRC1SQV8?oc=5",
+       "source": "Patch",
+       "official": false,
+       "tone": "neutral"
+      },
+      {
+       "title": "Wilmington vs. Mercyhurst Prep soccer (District 10 Class 1A championship) - sharonherald.com",
+       "date": "2026-11-04",
+       "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxQaHozaV9BWHNteEYxcUNxM2swUjVRTHFXUVZuaW1yZjdKUzhMN08wVWtnOFhOSjk0UmRmLW1NSjFVeWJEek9wSDlqT052UWI5cDRGd1VnWW5XWnBrYmFaOXJyRTdNZEZaVFdwdER0OG5tZjRGZGgzcGZYTUYybTZlSTdKOTJlc2NWVjRwSnpGelJzeXd0U0VQaWJmSll2NmdGTERUMm1kWlA0TzlBd0tIT0RramtYN3JHNFBLZUU0T1Mxc3FlX2lYeFZETGl6dXA5S1pXaG9DTHYtMnBTUFZOblNLQTJyVkp5UEtOalN1TURYQ0RNZTVVUm5zSQ?oc=5",
+       "source": "sharonherald.com",
+       "official": false,
+       "tone": "neutral"
+      },
+      {
+       "title": "Wilmington fire Nov 3 2026 - WDEL",
+       "date": "2026-11-03",
+       "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOT3FFT0puUzUxbkZoUFNTa0pON0pqbV9lTHBOdzBJTnRTVVJSMk5NRXp2aFc3TFRZZGxSZmJydVRpN0UtbHc2QWU1b2tZTUJkNVlJc0JVLWFLLVNwQlJfQjFCaWp1Wll2NkRzT01kR1drYXFMSWFQUENMNFdNT01qNUQ4MmpMS2FsUG10b1l1TGZwc2FrQnFoTzdLaw?oc=5",
+       "source": "WDEL",
+       "official": false,
+       "tone": "neutral"
+      },
+      {
+       "title": "Wilmington police searching for missing 16-year-old girl - WWAYTV3",
+       "date": "2026-11-03",
+       "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPbFhTUmVJVHVoT1Y4Z0t6cGMwVmJVRFp6eTFMeC1KUHdEZEkyMmFlNVJWcllPalhmakotbUNqR2s4SGw2VEs3ZUx4SzViVzhlS1Z0eno0ckdFRlZENk5neGV2ZXpjdW51UmhYek40cnl4N0M4Q283WE9iM0dLQTEtSm9Wa2h4TlFU?oc=5",
+       "source": "WWAYTV3",
+       "official": false,
+       "tone": "neutral"
+      }
+     ],
+     "buyers": false,
+     "sellers": false
+    },
+    {
+     "ticker": "SRAD",
+     "name": "Stelrad Group Plc",
+     "exchange": "LSE",
+     "ysym": "SRAD.L",
+     "market": "uk",
+     "price": 155.0,
+     "low": 151.0,
+     "currency": "GBX",
+     "change": 0.03333333333333333,
+     "vol_x": 0.98,
+     "vol_basis": "first30",
+     "vol_day_x": 0.98,
+     "buy_pct30": null,
+     "buy_pct": null,
+     "rvol_time": 1.9792492713786305,
+     "value": 120314.1,
+     "mcap": 191028831.0,
+     "sector": "Producer Manufacturing",
+     "holding": false,
+     "extended": false,
+     "near_high": false,
+     "longterm_down": false,
+     "chart_url": "https://www.tradingview.com/chart/?symbol=LSE:SRAD&interval=D",
+     "lists": [],
+     "owned": false,
+     "news": [],
+     "buyers": false,
+     "sellers": false
+    },
+    {
+     "ticker": "MKS",
+     "name": "Marks and Spencer Group plc",
+     "exchange": "LSE",
+     "ysym": "MKS.L",
+     "market": "uk",
+     "price": 420.0,
+     "low": 402.0,
+     "currency": "GBX",
+     "change": 0.014002897151134746,
+     "vol_x": 0.59,
+     "vol_basis": "first30",
+     "vol_day_x": 0.59,
+     "buy_pct30": 0.551,
+     "buy_pct": 0.551,
+     "rvol_time": 11.262014349003133,
+     "value": 13100627.4,
+     "mcap": 8613465738.0,
+     "sector": "Retail Trade",
+     "holding": true,
+     "extended": false,
+     "near_high": true,
+     "longterm_down": false,
+     "chart_url": "https://www.tradingview.com/chart/?symbol=LSE:MKS&interval=D",
+     "lists": [],
+     "owned": false,
+     "news": [
+      {
+       "title": "Half-year Financial Report",
+       "date": "2026-11-04",
+       "url": "https://www.investegate.co.uk/announcement/rns/marks-spencer-group--mks/half-year-financial-report-/9856982",
+       "source": "RNS",
+       "official": true,
+       "tone": "neutral"
+      },
+      {
+       "title": "Total Voting Rights",
+       "date": "2026-11-02",
+       "url": "https://www.investegate.co.uk/announcement/rns/marks-spencer-group--mks/total-voting-rights/9852938",
+       "source": "RNS",
+       "official": true,
+       "tone": "neutral"
+      },
+      {
+       "title": "Admission to Trading",
+       "date": "2026-11-02",
+       "url": "https://www.investegate.co.uk/announcement/rns/marks-spencer-group--mks/admission-to-trading/9852940",
+       "source": "RNS",
+       "official": true,
+       "tone": "neutral"
+      },
+      {
+       "title": "Marks and Spencer taps Vusion EdgeSense platform amid retailer's store modernisation push - Retail Technology Innovation Hub",
+       "date": "2026-11-04",
+       "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNQ2ZGSWNWc1dhcHVLVFI0MzZTNmJETnM1Q3F1bDR2TnJ2cnZIQ1FzVWFpcmlRTjhvalY1M191UnhYaTJNZG1hNGZ3OGFLUFR1U29idEFUWHFIN09xLVlqR1FGNWtsTUFZYUtuUkxUaFV3UnpKMXBnNXFKMnM0X2pZbG5TY0h4bm45dllvLVVYM3VhUVZaZi1TUU1zWjR3WnFaTjB3LTdBbENFLW4wcUswSWJEWE9tZHM2LWhQcVhzNXM3Nk8zcmpnR3BqQnRwOHRWeDduWEhpREEwQ28?oc=5",
+       "source": "Retail Technology Innovation Hub",
+       "official": false,
+       "tone": "neutral"
+      },
+      {
+       "title": "Marks and Spencer's 'easy to wear' \u00a318 jumper in nine gorgeous colours is 'my winter go-to' - Manchester Evening News",
+       "date": "2026-11-04",
+       "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPdzFTUkRrSnd5ZDZFRWpzYTQyRmpEeklRSWZPRDFKMFh5akhmZzVtRGJ2QUhsZUpPR0N2Q1JfcUt1cUxEbTIwc2tXaEFJMVEzckx5VkpSY0FWTEFXaVFObmhQLVc5MWktakhSNDQ4TE85TkszdmlPZ0hldzJ2LU1YdUFjM2NVaDQzNHNuNHFaTGJjWWRPem5sSVR30gGfAUFVX3lxTE9yQTl1MUV6YTRkLW16VThINDJwdF85Tk1OUEMzMzVTYlNJdUJwRTlNZjlJMlVWUEhvTE10YlRTeVJUUjM3S3BhbUFhWkE1dVhCRm55UDhsZkRmVS1sVVctajdOSzEyQWRQUE56aGtuODdBTDF1bGVPUkx5bURUeF9fMDN3QTBDSENVbU5tTXFkbXZEWmF3YmVuUDRFUDd0NA?oc=5",
+       "source": "Manchester Evening News",
+       "official": false,
+       "tone": "chatter"
+      },
+      {
+       "title": "REG - Marks and Spencer Gp - Half-year Financial Report - TradingView",
+       "date": "2026-11-04",
+       "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOdU13b05PcVhFMERwZzdDeGN3b0lXcGJRMmhzYWdXVlFjUEI3b2ZvaHFBZU9MMEU2OE9XTjgzWWtWdEtwakQ0YWtVaU5LMEVWT2ZCXzVxUnNhMEpRZElkdHlMclE5elBzTWJxV041TzZSZEZQMmpjbHhiV0Y5dWI0WElWaG8xY3hMUVpiaWpQeVJlRE1aNDJSUHkySVJUUjlZbFdJZkc0dmNpa1BjMV96RlRFY0tXNUJNZzQzSTd2aE5qZzRRSnc?oc=5",
+       "source": "TradingView",
+       "official": false,
+       "tone": "neutral"
+      },
+      {
+       "title": "Marks and Spencer's H1 Attributable Profit, Revenue Soar - www.marketscreener.com",
+       "date": "2026-11-04",
+       "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQNU81cURNZTY3bTAtd2hQSmlrbzZlRUpjbC16YnpJdjFRWFdBcng0NXVVS3ZCdXZqZlJya2Y1RVJrbW5DekdjVnpuMDZTRlVvM0I4aUpjeE1WU083Y0thSExVenl2azh5U0hxcU4wWTBXYkRTSzNvQ2ZkWEJoRU00TVAxcVp3YlliQXlZZ1dEZXpRaWRKNTJUNVFWcENpQjN2aEpGQ1lMc0VZYkRQ?oc=5",
+       "source": "www.marketscreener.com",
+       "official": false,
+       "tone": "chatter"
+      },
+      {
+       "title": "Marks And Spencer Reports HY Food Sales Up 13.9% - TradingView",
+       "date": "2026-11-04",
+       "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPRnlPOHo2RzYtSnpRWGNnUDRRZDFXSkRNUnUtRWlWSnFieVJjUWV2azFWV29odnpZS3hEVG1MWXgyTUk1ME9HNm5kSk1sS1FhX0tSUi1hbVZJVDlJRzNMUXNjMFJiS0MtbHZGaHFNT0hyUC1MZDNvYXJOT2NURVlER3pHU2UxMnBza014QjZ6YTNtTzI3a1ljLVA5d05MWVc0WnUtVDlPWXZqVzJfajBfclZ5RnA1Z3Jq?oc=5",
+       "source": "TradingView",
+       "official": false,
+       "tone": "neutral"
+      },
+      {
+       "title": "Vusiongroup : Marks and Spencer to Deploy Vusion\u2019s Connected Store Platform Across New Stores - www.marketscreener.com",
+       "date": "2026-11-04",
+       "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNT1ptLTd1N2ZkSUpaeUxQYjlKWkZZRks3N2xydnRJUTZxSnZFektjMnMwQzd3TkotN1pEMmJQN1hmdmlXNThVa0tDQzd5SHd3b1ExVHhaTmtvRGo1aUtrUFBUNjVnZ1AtYU1yeHNnbGItaTNvZF9hLU4yeEoyNXhNcjJiUDBhSlZBQjdSbGpOeFE4ay1XSEVXYl9ic0FLbWtGc3kweTRNTFg2VF9GZ3BZbHhoc3hRblV3c3VTN0ZjaWsza3lab2JqWnY0cl9XellfWWFDaWhqTEhQUl92?oc=5",
+       "source": "www.marketscreener.com",
+       "official": false,
+       "tone": "neutral"
+      },
+      {
+       "title": "Why Has Attention Returned to Marks and Spencer Group (LSE:MKS)? - Kalkine Media",
+       "date": "2026-11-04",
+       "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQclN2SFdjVVAwZE9fc2pEMXNsMGdZMkc1bmtyZkZTbkx6UTBBdlpqMkZIYjdlTU9JTlR6QVpjUmZTcWpIMjQxTGpDQjljLUVSNFBtUU9yNFR2N3Vkc29GVXNwR0YzdUh6dFlxVmpPVjNpbGIxTlFwQlN2eHAzNGhzR0RjSWhaMHZTUXZBMmFfc3Y0NUliejVxMkszSXE4ZHNYa1Vtdg?oc=5",
+       "source": "Kalkine Media",
+       "official": false,
+       "tone": "neutral"
+      }
+     ],
+     "buyers": false,
+     "sellers": false
+    },
+    {
+     "ticker": "PGH",
+     "name": "Personal Group Holdings Plc",
+     "exchange": "LSE",
+     "ysym": "PGH.L",
+     "market": "uk",
+     "price": 438.0,
+     "low": 427.5,
+     "currency": "GBX",
+     "change": 0.02456140350877193,
+     "vol_x": 0.38,
+     "vol_basis": "first30",
+     "vol_day_x": 0.38,
+     "buy_pct30": 0.419,
+     "buy_pct": 0.419,
+     "rvol_time": 19.39325842696629,
+     "value": 45359.28,
+     "mcap": 134922849.0,
+     "sector": "Finance",
+     "holding": true,
+     "extended": false,
+     "near_high": true,
+     "longterm_down": false,
+     "chart_url": "https://www.tradingview.com/chart/?symbol=LSE:PGH&interval=D",
+     "lists": [],
+     "owned": false,
+     "news": [
+      {
+       "title": "Personal Stories Offer New Insights Into Stuttering Therapy, Binghamton Researchers Find | Newswise - Newswise",
+       "date": "2026-11-03",
+       "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPd0V2cy1tWEtTYjFRNFV3Qm5odkl0SE1zb2x4QjVSSVdnRnZfcHlmR2ljQl9rTU9XVnd6dmtCTlgtRC1KQnhsdmNMM0ZKQldlcTdkYWplZ0Y3RnQzRTRIcWhHZ1RlMWY5SDBFTFpOdGFRRGlRUFU2b0Y1Y296SEVjRDdTZ0RPNUd0dGdDNEI0UkxxUElKS0ROZnMyZk5uYWdiN1BPY0hvME1oRmxEV2NUdk5aQ195MTNmNkxGTHZn0gG-AUFVX3lxTE93RXZzLW1YS1NiMVE0VXdCbmh2SXRITXNvbHhCNVJJV2dGdl9weWZHaWNCX2tNT1dWd3p2a0JOWC1ELUpCeGx2Y0wzRkpCV2VxN2RhamVnRjdGdDNFNEhxaEdnVGUxZjlIMEVMWk50YVFEaVFQVTZvRjVjb3pIRWNEN1NnRE81R3R0Z0M0QjRSTHFQSUpLRE5mczJmTm5hZ2I3UE9jSG8wTWhGbERXY1R2TlpDX3kxM2Y2TEZMdmc?oc=5",
+       "source": "Newswise",
+       "official": false,
+       "tone": "neutral"
+      },
+      {
+       "title": "Cathie Wood\u2019s ARK sells Personal, Inc. stock, buys Coinbase By Investing.com - Investing.com UK",
+       "date": "2026-11-03",
+       "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQOFh4UnBPVWJCNUt3aEJpNmJfN0taelFkWHVjOWV3VTR6dHhicmpCNkEzTVRkR3kydXNlLXY5QVNxNFpXQzkwaFVnRW9EVFE3b3lyTFdNem1lTkV2dkUwcVNfOUhzTVNiQmlKSThFRURuVjg0akI3UHdzUFJ3Vk1xTkE5N1dHbk8tRS1JWVJLNzlqOFR6VV9rNDdld3hLUS10UkFvS3U1MWpnUjA5V2JkM0ZOYzh5bWs?oc=5",
+       "source": "Investing.com UK",
+       "official": false,
        "tone": "neutral"
       }
      ],
@@ -3650,84 +3724,34 @@
      "sellers": true
     },
     {
-     "ticker": "GLE",
-     "name": "MJ Gleeson PLC",
+     "ticker": "IMM",
+     "name": "ImmuPharma plc",
      "exchange": "LSE",
-     "ysym": "GLE.L",
+     "ysym": "IMM.L",
      "market": "uk",
-     "price": 280.0,
-     "low": 277.5,
+     "price": 3.985,
+     "low": 3.32,
      "currency": "GBX",
-     "change": 0.0035842293906810036,
-     "vol_x": 0.36,
+     "change": 0.13210227272727268,
+     "vol_x": 0.38,
      "vol_basis": "first30",
-     "vol_day_x": 0.36,
-     "buy_pct30": null,
-     "buy_pct": null,
-     "rvol_time": 0.3549738656749331,
-     "value": 68496.4,
-     "mcap": 162757668.0,
-     "sector": "Consumer Durables",
-     "holding": false,
+     "vol_day_x": 0.38,
+     "buy_pct30": 0.343,
+     "buy_pct": 0.343,
+     "rvol_time": 2.4483536274924993,
+     "value": 27346.62415,
+     "mcap": 20682661.0,
+     "sector": "Health Technology",
+     "holding": true,
      "extended": false,
      "near_high": false,
      "longterm_down": true,
-     "chart_url": "https://www.tradingview.com/chart/?symbol=LSE:GLE&interval=D",
+     "chart_url": "https://www.tradingview.com/chart/?symbol=LSE:IMM&interval=D",
      "lists": [],
      "owned": false,
-     "news": [
-      {
-       "title": "What MJ Gleeson Bears Spotted Before The Slide",
-       "date": "2026-10-30",
-       "url": "https://finance.yahoo.com/markets/stocks/articles/mj-gleeson-bears-spotted-slide-031647195.html?.tsrc=rss",
-       "source": "Yahoo Finance",
-       "tone": "neutral"
-      },
-      {
-       "title": "MJ Gleeson plc (GLE.L) Seasonal returns chart - Yahoo Finance UK",
-       "date": "2026-10-31",
-       "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1UR1FEVUYxbVgyVGlaTzAzVE9rLU5SOERYU0M2OWxrUkdfM2Y5Mm8xNkNFVEJLS2pTNEJVaC1kTGYyc1FHeDVRQlBUZG9CaWp0TU51MmxjUTVFeFpJdHNwUkRmZw?oc=5",
-       "source": "Yahoo Finance UK",
-       "tone": "neutral"
-      },
-      {
-       "title": "Persimmon and MJ Gleeson stand to gain from new government housing scheme, says Panmure Liberum - Proactive financial news",
-       "date": "2026-10-29",
-       "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxNSmFCX1pQSmgxYmkwVkpYakdwa3k3S3dRT05WYm5md2cyU21zaEJJVjNCLVNjZnlwSkdMR1NfSUpEUUI2NWEzbTVaVlVpdk1PLWRXb3VWd1RoZHltdjNleV9FSGR0Q2VuSkhMdHZ1cmEzNkIyTzB2aGxBLWRRaHc0WHFXeEdVOXR4dGYycEJwZndDeW1KWTNnLXU0anZTaURlYV9LNURxRExBaGhPc1BsUmdYX3V3RDFhQUJ0V2Z1RnpmMkdqaHMwcFJKek5uNmVRTzlwSVZublVZTmU3c1dnZWl2OHVONkFVOVQ1eElKU3Jkai1jbHA5cA?oc=5",
-       "source": "Proactive financial news",
-       "tone": "neutral"
-      },
-      {
-       "title": "Caught Out By MJ Gleeson's Slide? Here's What Bears Saw - Simply Wall St",
-       "date": "2026-11-01",
-       "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPcklLaWFEX1RPTWp2RklsTjREWjR1YmFHLVo3OFhFaTA2R3lNcHZpTVdULWhYVkpQbG5OX2Yxb0JPRG9vbVBLenh3X2NEcHpVRlJkSkFBSWNkdHZmMnBZTDZiclM4QzNOVXMzczRoV1E0b1ZTaWZwUHRYNWZkMnlyZjRMYUI0TllPUFBaUnNuN1E1RnBmOXhlQ1ZBcTFQRXBObkhhZk1xZjdPeXJfSy1QMFNBUFVJd2pJS3V1N3ZsNlpqamxqMmV1YV9OMmFMZ9IB0wFBVV95cUxPQl9mOWthcGI3OExnUVhOU0s0WEZQTnEwM3ZQN0h5T0kyZGhHd1Q2Wk16cm5INVJkMWNzc1R3ZmNjaDBpNHpZWHdWQ29RWnJtN0xwMFVFamlJd2I2a2dKa2NsVy1VODhaVlJ5dzV3Ylg1bHNmVFlBZTRiZTEzdHVPMnE0Z192aGpyQm5JOW1paW02Um5MYXI4TlNKMURVbFhDa0pwUkYwdmNFRlRZOF8td1pOMUZhdEVmWUxyY3dSa1lnX3ZVTDJ0ZkkyUXlOZzYwd2Iw?oc=5",
-       "source": "Simply Wall St",
-       "tone": "neutral"
-      },
-      {
-       "title": "MJ Gleeson plc (GLEL.XC) Seasonal returns chart - Yahoo Finance UK",
-       "date": "2026-10-30",
-       "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1tSEFEN1NuMUd1MkRHSVFYOGlQRW9EbFVaTG9hbmZpdHhLZzdSSWVpZmhNbTBCUmY4VWI5cGRhaWdRSHp5eWVOMmFXUzZiRlRQTWgtYkc0UTRoVjM4ODNsOHZMTVgxUQ?oc=5",
-       "source": "Yahoo Finance UK",
-       "tone": "neutral"
-      },
-      {
-       "title": "What MJ Gleeson Bears Spotted Before The Slide - Yahoo Finance",
-       "date": "2026-10-30",
-       "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPQTMxcnhQN0FSODNwaGZiUTZDSTNaeFpveVh6MUZYQ0FtclE5VFRURHp3WURFd1hlT1lPaDlXajZ4YlJqaXlTV2xaTUxyeUVRVG8ycVQxV3lCTmxKaThNVDBDYWx5SF9keDFCUWhpYjl3aHJNSS1FNGRCNTJLQ19IanppMWZIRS1ZYUY2ei1rOVE4aVVDbnFKMDluMA?oc=5",
-       "source": "Yahoo Finance",
-       "tone": "neutral"
-      },
-      {
-       "title": "MJ Gleeson plc (GLEL.XC) Seasonal Returns Chart - Yahoo Finance - Yahoo! Finance Canada",
-       "date": "2026-10-30",
-       "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE8zd1E2LXExd0JEWDl0Q3NSYWpUekV6LTVQR3M3a3hHd01qTTJCYjMzQm5KdnJsby1jN0d2ajNFeXJjTTdqdEFreWhXTW1hSXhfaURadTZtZTZxV19TNGxRVFpsbmcxZw?oc=5",
-       "source": "Yahoo! Finance Canada",
-       "tone": "neutral"
-      }
-     ],
+     "news": [],
      "buyers": false,
-     "sellers": false
+     "sellers": true
     }
    ]
   }
