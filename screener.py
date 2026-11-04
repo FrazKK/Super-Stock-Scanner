@@ -2206,6 +2206,13 @@ POS_NEWS = re.compile("|".join([
     r"\bregains? compliance\b|\buplist\w*\b",
 ]), re.I)
 
+# A company release whose headline doesn't say whether it's good ("Cricut Reports Third Quarter Results", an SEC 8-K
+# for results or a material agreement). The day trader reads the release itself (Claude check) before counting it.
+REVIEW_NEWS = re.compile(
+    r"\b(reports?|reported|announces?|posts?|delivers?|releases?)\b.{0,70}\b(results|earnings|highlights)\b|"
+    r"\b(first|second|third|fourth|q[1-4]|full[- ]year|fiscal( year)?( 20\d\d)?) (quarter )?.{0,20}\b(results|earnings|highlights)\b|"
+    r"^8-K .*\b(2\.02 results|1\.01 material agreement)", re.I)
+
 # Wording that sounds like news but usually isn't: a headline with any of these never counts as good news on its own.
 WEAK_NEWS = re.compile(
     r"\bnon[- ]binding\b|\bletter of intent\b|\bLOI\b|\bmemorandum of understanding\b|\bMOU\b|\bteaming agreement\b|"
@@ -2214,7 +2221,8 @@ WEAK_NEWS = re.compile(
     r"\bmet (the |its )?(primary )?safety endpoint|\btrend(ed|ing)? toward|\bnumerical(ly)? (improvement|trend)|"
     r"\bwell[- ]tolerated\b|\bPDUFA date\b.{0,20}\bset\b|\bsubmit(s|ted)? (an? )?(IND|NDA|BLA|510)|"
     r"\bAI[- ](powered|driven|enabled|native)\b.{0,30}\b(platform|solution|launch)|\bbitcoin treasury\b|\bcrypto treasury\b|"
-    r"\bwebinar\b|\bto (present|host|participate|attend)\b|\bfireside chat\b|\bconference call\b", re.I)
+    r"\bto (report|announce|release|host)\b.{0,70}\b(results|earnings)\b|\b(results|earnings) (date|call|webcast)\b|"
+    r"\bwill (report|announce|release)\b|\bwebinar\b|\bto (present|host|participate|attend)\b|\bfireside chat\b|\bconference call\b", re.I)
 
 
 NEG_NEWS = re.compile(
@@ -2223,7 +2231,7 @@ NEG_NEWS = re.compile(
     r"offering of (common|shares|units|stock|\$)|\bpriced? (an? |its |the )?(offering|placing|public|private|underwritten)|"
     r"dilut|warning|below (market )?expectations|delay|suspen|default|going concern|downgrad|loss widen|"
     r"\bmiss(es|ed)?\b|\bresign|investigat|lawsuit|recall|\bhalt|impairment|withdraw|terminat|cancel|restat|delist|"
-    r"reverse (stock )?split|convertible|at-the-market|ATM program|"
+    r"reverse (stock )?split|convertible|at-the-market|ATM program|\bprice[sd]?\b.{0,30}\b(offering|placing|raise)\b|"
     # oil and gas traps: wording that dresses up poor results
     r"oil shows|gas shows|traces of (oil|gas|hydrocarbons)|tight (formation|reservoir)|"
     r"working with (all )?(its )?stakeholders|dry (hole|well)|plugged and abandoned|\bP&A\b|non[- ]commercial|"
@@ -2272,6 +2280,8 @@ def classify_headline(t, name="", ticker=""):
         return "neutral"
     if POS_NEWS.search(t or ""):
         return "pos"
+    if REVIEW_NEWS.search(t or ""):
+        return "review"
     return "neutral"
 
 
@@ -2426,7 +2436,7 @@ def wire_news(ticker, since):
             continue
         out.append({"title": str(it.get("title") or "").strip(), "date": when.date().isoformat(),
                     "url": str(it.get("url") or ""), "source": str(it.get("source") or "newswire"),
-                    "official": True, "_flags": flags})
+                    "official": True, "_flags": flags, "items": it.get("items") or []})
     return out
 
 
@@ -2489,8 +2499,13 @@ def live_news(market, ticker, ysym, since, name=""):
                 items.append(n)
 
     if market == "america":
-        for n in wire_news(ticker, since):        # already matched by ticker, so no headline check needed
-            if n["title"] and not any(n["title"].lower() == i["title"].lower() for i in items):
+        # matched by ticker in the collector; SEC filings are filed by the company itself, but a newswire release must
+        # also name the company (guards against a neighbouring release's ticker being attached to the wrong story)
+        first = re.compile(rf"\b{re.escape(words[0])}", re.I) if words and len(words[0]) >= 3 else None
+        for n in wire_news(ticker, since):
+            ok = (n["source"].lower().startswith("sec") or relevant(n["title"])
+                  or bool(first and first.search(n["title"][:160])))
+            if ok and n["title"] and not any(n["title"].lower() == i["title"].lower() for i in items):
                 items.append(n)
 
     if clean:

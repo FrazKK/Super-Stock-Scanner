@@ -223,7 +223,12 @@ def parse_prn_list(page_html, today_ny):
         if not title or len(title) < 15 or not when:
             continue
         seen.add(href)
-        teaser = re.search(r"<p[^>]*>(.*?)</p>", page_html[m.end(): m.end() + 2500], re.S)
+        # the summary is usually inside the link itself; only look after the link up to the NEXT release, or a
+        # neighbouring release's "(NASDAQ: XYZ)" gets attached to this one
+        after = page_html[m.end(): m.end() + 2500]
+        nxt = re.search(r'href="/news-releases/[^"]+-\d{6,}\.html"', after)
+        after = after[: nxt.start()] if nxt else after
+        teaser = re.search(r"<p[^>]*>(.*?)</p>", inner, re.S) or re.search(r"<p[^>]*>(.*?)</p>", after, re.S)
         text = html.unescape(re.sub(r"<[^>]+>", " ", teaser.group(1))) if teaser else ""
         items.append({"source": "prnewswire", "title": title, "url": "https://www.prnewswire.com" + href,
                       "time": when, "text": text[:1500]})

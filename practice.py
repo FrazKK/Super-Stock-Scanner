@@ -90,7 +90,7 @@ DT_MARKET_FILTER = os.getenv("PRACTICE_MARKET_FILTER", "no").lower() in ("yes", 
 # Claude news check (optional): before each buy, Claude reads the stock's headlines and decides whether there's a
 # genuine, price-moving company catalyst. Needs the ANTHROPIC_API_KEY secret; without it the keyword check is used.
 CLAUDE_MODEL = os.getenv("CLAUDE_MODEL", "claude-haiku-5-5")
-CLAUDE_MIN_STRENGTH = 3      # 1-5: how strong the catalyst must be to buy
+CLAUDE_MIN_STRENGTH = int(os.getenv("CLAUDE_MIN_STRENGTH", "4"))   # 1-5; 4 = expect a 10%+ rise from the news
 # Drift (news in the last few days, closed up yesterday, still rising this morning):
 DT_DRIFT_NEWS_DAYS = 5       # positive news within the last 5 days
 DT_DRIFT_AT = 30             # decide 30 minutes after the open (buy if above today's opening price)
@@ -826,7 +826,14 @@ CLAUDE_SYSTEM = (
     "attendance, presentations, earnings dates, AGMs, appointments, minor updates, loans/refinancing) are NOT "
     "catalysts. Takeover targets, share offerings, placings, warnings and misses rule a stock out. ANALYST upgrades "
     "from established brokers add strength only when there is already an official catalyst. Use OTHER headlines only "
-    "as sentiment: clearly negative sentiment lowers strength. Reply with JSON only: "
+    "as sentiment: clearly negative sentiment lowers strength. When release text is given, judge the release itself, "
+    "the same way as Fraz's US news risers check: size relative to the company's market cap; whether results beat "
+    "expectations or prior periods clearly (revenue and profit growth, margins, raised guidance, special dividends, "
+    "buybacks large for the company) or are only in line; whether the news was already known; and any dilution or "
+    "caveats. Exclude anything mixed, in line, modestly positive, paired with an offering or financing, a takeover "
+    "target, a paid promotion or a mega cap. Strength scale: 5 = would expect a 20%+ rise from this news; 4 = would "
+    "realistically expect 10%+; 3 = clearly positive but probably under 10%; 2 = mildly positive; 1 = nothing or "
+    "negative. Reply with JSON only: "
     '{"catalyst": true or false, "strength": 1-5, "reason": "one short sentence"}')
 
 
@@ -838,18 +845,34 @@ def claude_check(st, day, c, when):
     if c["ticker"] in cache:
         v = cache[c["ticker"]]
         return v["ok"], v["reason"]
-    if not key:
-        return True, "keyword check only (no Claude key)"
     news = c.get("news") or []
+    # if Claude can't answer, only clear good-news headlines count (a plain "Reports Q3 results" needs reading)
+    kw_ok = any(n.get("tone") == "pos" for n in news) or not news
+    if not key:
+        return kw_ok, "keyword check only (no Claude key)"
     if not news:
         return True, "no headlines to check"
     lines = []
     for n in news[:10]:
         kind = "OFFICIAL" if n.get("official") else "ANALYST" if n.get("tone") == "analyst" else "OTHER"
         lines.append(f"- [{kind}] {n.get('date', '')} {n.get('source', '')}: {n.get('title', '')}")
-    prompt = (f"Stock: {c.get('name')} ({c['ticker']}), US-listed. Today is {ny(when):%A %d %B %Y}, "
+    # read the releases themselves (up to two), so a plain "Reports Q3 results" headline is judged on its numbers
+    bodies, seen = [], set()
+    for n in sorted((n for n in news if n.get("official")),
+                    key=lambda n: (n.get("tone") not in ("pos", "review"), "news.google.com" in str(n.get("url")))):
+        if len(bodies) >= 2:
+            break
+        t = release_text(n)
+        if t and t[:200] not in seen:
+            seen.add(t[:200])
+            bodies.append(f"--- {n.get('source', '')} {n.get('date', '')}: {n.get('title', '')[:120]}\n{t}")
+    mcap = c.get("mcap")
+    prompt = (f"Stock: {c.get('name')} ({c['ticker']}), US-listed"
+              + (f", market cap about ${mcap / 1e6:,.0f}m" if mcap else "") + f". Today is {ny(when):%A %d %B %Y}, "
               f"{ny(when):%H:%M} New York. It is up on the day and breaking out on heavy volume.\n"
-              f"Headlines:\n" + "\n".join(lines))
+              f"Headlines:\n" + "\n".join(lines)
+              + ("\n\nRelease text (opening part):\n" + "\n\n".join(bodies) if bodies else
+                 "\n\n(No release text could be read; judge from the headlines only.)"))
     import requests
 
     v, raw = None, ""
@@ -873,7 +896,7 @@ def claude_check(st, day, c, when):
         if r.status_code != 200:
             why = f"Claude unavailable ({r.status_code}: {r.text[:120]}), keyword check used"
             log(st, f"{c['ticker']}: {why}")
-            return True, why
+            return kw_ok, why
         raw = "".join(b.get("text", "") for b in r.json().get("content", []) if b.get("type") == "text")
         v = parse_verdict(raw)
         if v is not None:
@@ -883,7 +906,7 @@ def claude_check(st, day, c, when):
         # couldn't get a readable answer: don't throw the stock out, fall back to the keyword check
         why = f"Claude reply unreadable or busy ({raw[:80]!r}), keyword check used"
         log(st, f"{c['ticker']}: {why}")
-        return True, why
+        return kw_ok, why
     ok = bool(v.get("catalyst")) and int(v.get("strength") or 0) >= CLAUDE_MIN_STRENGTH
     reason = f"Claude: {'catalyst' if v.get('catalyst') else 'no catalyst'} (strength {v.get('strength')}/5): " \
              f"{str(v.get('reason') or '')[:160]}"
@@ -994,10 +1017,73 @@ def surge_check(bars, avg, when, prev_close=None):
 
 
 def news_ok(news, require):
+    """Good official news, or an official release that has to be read first ("Reports Q3 results", a results 8-K):
+    those go through to the Claude check, which reads the release. Without a Claude key only clear good news counts."""
     tones = {n.get("tone") for n in news}
     if "neg" in tones or "deal" in tones:
         return False
-    return "pos" in tones or not require
+    if "pos" in tones or not require:
+        return True
+    return "review" in tones and bool(os.getenv("ANTHROPIC_API_KEY", "").strip())
+
+
+_RELEASE_CACHE = {}
+
+
+def _html_text(h):
+    import html as H
+    h = re.sub(r"(?is)<(script|style|head|nav|footer|header)\b.*?</\1>", " ", h)
+    h = re.sub(r"(?i)<br\s*/?>|</(p|div|li|tr|h[1-6])>", "\n", h)
+    t = H.unescape(re.sub(r"<[^>]+>", " ", h))
+    t = re.sub(r"[ \t\xa0]+", " ", t)
+    return re.sub(r"\n\s*\n+", "\n", t).strip()
+
+
+def release_text(n, limit=3500):
+    """The opening part of an official release, for the Claude check. SEC 8-K/6-K: the attached press release
+    (EX-99.1). Newswires: the release page. Google News links (GlobeNewswire etc.) can't be opened, so those
+    rely on the company's SEC filing instead. Returns "" when nothing can be read."""
+    import requests
+
+    url = str(n.get("url") or "")
+    if not url or "news.google.com" in url:
+        return ""
+    if url in _RELEASE_CACHE:
+        return _RELEASE_CACHE[url]
+    text = ""
+    try:
+        if "sec.gov" in url:
+            ua = {"User-Agent": os.getenv("SEC_CONTACT", "").strip() or "Practice bot research@example.com"}
+            idx = requests.get(url, headers=ua, timeout=20)
+            doc = None
+            if idx.status_code == 200:
+                for m in re.finditer(r"<tr.*?</tr>", idx.text, re.S | re.I):
+                    row = m.group(0)
+                    if re.search(r">\s*EX-99(\.0?1)?\s*<", row, re.I):
+                        a = re.search(r'href="([^"]+\.(?:htm|html|txt))"', row, re.I)
+                        if a:
+                            doc = a.group(1)
+                            break
+            if doc:
+                doc = doc.replace("/ix?doc=", "")
+                doc = doc if doc.startswith("http") else "https://www.sec.gov" + doc
+                r = requests.get(doc, headers=ua, timeout=20)
+                if r.status_code == 200:
+                    text = _html_text(r.text)
+        else:
+            ua = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) "
+                                "Chrome/124.0 Safari/537.36"}
+            r = requests.get(url, headers=ua, timeout=20)
+            if r.status_code == 200:
+                h = r.text
+                m = re.search(r"(?is)<(article|section|div)[^>]*(release-body|article-body|bw-release-story|"
+                              r"main-content|news-release)[^>]*>(.*)", h)
+                text = _html_text(m.group(3) if m else h)
+    except Exception as e:
+        print(f"  couldn't read release {url[:80]}: {e}")
+    text = text[:limit]
+    _RELEASE_CACHE[url] = text
+    return text
 
 
 def live_discover(when, known):
@@ -1034,6 +1120,7 @@ def live_discover(when, known):
         top = next((n["title"] for n in news if n.get("tone") == "pos"), "")
         chg = S.num(r.get("change"))
         found.append({"ticker": tick, "name": str(r.get("description") or tick), "exchange": str(r["exchange"]).upper(),
+                      "mcap": S.num(r.get("market_cap_basic")),
                       "ysym": r["ysym"], "vol_x": sc["vol_x"], "avg": S.num(r.get("average_volume_10d_calc")), "news": news,
                       "prev": (S.num(r.get("close")) / (1 + chg / 100)) if chg is not None and S.num(r.get("close")) else None,
                       "why": f"{sc['vol_x']:.1f}x normal volume in the last 30 min" + (f"; news: {top[:80]}" if top else
@@ -1152,7 +1239,7 @@ def cmd_breakout(api, st, fetch_bars, fetch_stats, clock, pause, discover):
             continue
         inst = find_instrument(insts, "america", x["ticker"], x["name"])
         if inst:
-            cands.append({**{k: x.get(k) for k in ("ticker", "name", "exchange", "ysym", "vol_x", "news")},
+            cands.append({**{k: x.get(k) for k in ("ticker", "name", "exchange", "ysym", "vol_x", "news", "mcap")},
                           "t212": inst["ticker"]})
     stats = fetch_stats([c["ysym"] for c in cands]) if cands else {}
     fx = fx_rates()
@@ -1195,7 +1282,7 @@ def cmd_breakout(api, st, fetch_bars, fetch_stats, clock, pause, discover):
                 checked[x["ticker"]] = when.isoformat()
                 inst = find_instrument(insts, "america", x["ticker"], x["name"])
                 if inst:
-                    cands.append({**{k: x.get(k) for k in ("ticker", "name", "exchange", "ysym", "vol_x", "news")},
+                    cands.append({**{k: x.get(k) for k in ("ticker", "name", "exchange", "ysym", "vol_x", "news", "mcap")},
                                   "t212": inst["ticker"]})
                     stats.update(fetch_stats([x["ysym"]]))
                     day["list"].append(x["ticker"])
