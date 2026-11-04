@@ -1,109 +1,52 @@
 {
  "date": "2026-09-11",
- "generated": "2026-11-04T09:30+00:00",
+ "generated": "2026-11-04T17:20+00:00",
  "fx_gbpusd": 1.3509314060211182,
  "result": "done",
  "require_news": true,
  "strategy": "catalyst",
  "bars": "5m",
  "require_trend": true,
- "added_during_day": [],
+ "added_during_day": [
+  "Added ORCL to today's list at 10:16 New York: 0.2x normal volume in the last 30 min; no news found",
+  "Added JILL to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
+  "Added CRMT to today's list at 10:16 New York: 0.5x normal volume in the last 30 min; no news found"
+ ],
  "drift_list": [],
  "list": [
   {
-   "ticker": "TEN",
-   "name": "Tsakos Energy Navigation Ltd",
-   "vol_x": 0.81,
-   "buy_pct30": 0.7263443698500024,
-   "change": 0.0650861084097567,
-   "score": 4.03,
+   "ticker": "BOC",
+   "name": "Boston Omaha Corporation",
+   "vol_x": 0.34,
+   "buy_pct30": 0.46434458928701117,
+   "change": 0.028497425785291908,
+   "score": 1.04,
    "news": [
-    "TEN, Ltd. Reports Profits for the First Half and Second Quarter of 2026 - GlobeNewswire"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "IBEX",
-   "name": "IBEX Limited",
-   "vol_x": 0.38,
-   "buy_pct30": 0.7842211108081674,
-   "change": 0.02388629212125748,
-   "score": 3.4,
-   "news": [
-    "Ibex Celebrates a Decade of Clinical AI Leadership Following Its Latest Record-Setting Quarter Building Towards Another Year of Doubling Revenue - Business Wire"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "MTN",
-   "name": "Vail Resorts, Inc.",
-   "vol_x": 0.25,
-   "buy_pct30": 0.8203517972781451,
-   "change": 0.035025861432618655,
-   "score": 3.28,
-   "news": [
-    "Vail Resorts Provides Update Following Close of Nominations Window, Reiterates Active Search Underway in its Ongoing Commitment to Board Refreshment - PR Newswire"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "ADBE",
-   "name": "Adobe Inc.",
-   "vol_x": 0.55,
-   "buy_pct30": 0.5132422094977354,
-   "change": 0.00040184400591081193,
-   "score": 3.15,
-   "news": [
-    "Adobe Reports Record Q3 Results - Adobe Newsroom",
-    "Adobe Reports Record Q3 Results - Business Wire"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "HOFT",
-   "name": "Hooker Furnishings Corporation",
-   "vol_x": 1.55,
-   "buy_pct30": 0.36969157327305985,
-   "change": 0.03420845788507343,
-   "score": 3.08,
-   "news": [
-    "Hooker Furnishings Reports Profitable Quarter and First Half - GlobeNewswire"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "ORCL",
-   "name": "Oracle Corporation",
-   "vol_x": 0.87,
-   "buy_pct30": 0.30983482667226364,
-   "change": 0.02219827526001006,
-   "score": 1.48,
-   "news": [
-    "Oracle Announces Q1 Results Driven by Triple Digit Growth in Cloud Infrastructure Revenues - PR Newswire"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "BNAI",
-   "name": "Brand Engagement Network Inc.",
-   "vol_x": 0.37,
-   "buy_pct30": 0.19279698212952745,
-   "change": 0.015776713355815764,
-   "score": 0.01,
-   "news": [
-    "Accelevate Solutions and Brand Engagement Network Launch AI-Powered Passenger Engagement Platform for LAX Off-Airport Shuttle Providers - PR Newswire"
+    "Boston Omaha Corporation Authorizes New $30 Million Share Repurchase Program - Business Wire"
    ],
    "on_t212": true
   }
  ],
  "quiet": [
   {
+   "ticker": "LBGJ",
+   "vol_x": 33.09
+  },
+  {
    "ticker": "FEIM",
    "vol_x": 2.52
   },
   {
+   "ticker": "HOFT",
+   "vol_x": 1.55
+  },
+  {
    "ticker": "AIRT",
    "vol_x": 1.33
+  },
+  {
+   "ticker": "ASTI",
+   "vol_x": 1.27
   },
   {
    "ticker": "STVN",
@@ -116,6 +59,14 @@
   {
    "ticker": "MAAS",
    "vol_x": 0.89
+  },
+  {
+   "ticker": "ORCL",
+   "vol_x": 0.87
+  },
+  {
+   "ticker": "TEN",
+   "vol_x": 0.81
   },
   {
    "ticker": "PSIG",
@@ -136,55 +87,18 @@
   {
    "ticker": "KINS",
    "vol_x": 0.59
-  },
-  {
-   "ticker": "RCBC",
-   "vol_x": 0.56
-  },
-  {
-   "ticker": "VERA",
-   "vol_x": 0.49
-  },
-  {
-   "ticker": "SVCO",
-   "vol_x": 0.49
-  },
-  {
-   "ticker": "USPH",
-   "vol_x": 0.46
-  },
-  {
-   "ticker": "KR",
-   "vol_x": 0.45
   }
  ],
- "trades": [
-  {
-   "ticker": "ADBE",
-   "bought_at": "2026-09-11T14:50+00:00",
-   "sold_at": "2026-09-11T19:50+00:00",
-   "entry": 250.85060610961912,
-   "exit": 254.9250030517578,
-   "cost_gbp": 929.8284165245631,
-   "pl_gbp": 13.687301281514578,
-   "pl_pct": 0.014720244120602228,
-   "reason": "End of day: sold 10 minutes before the close."
-  }
- ],
- "total_gbp": 13.687301281514578,
+ "trades": [],
+ "total_gbp": 0,
  "alerts": [
-  "10:50 Day trade: bought ADBE: 5 ADBE at $250.85 (about \u00a3930). Stop $238.31. Broke above its opening-range high ($249.77) at $250.60. In play: 0.6x normal volume, normally moves 3% a day. Stop $241.52. News (Adobe Newsroom): Adobe Reports Record Q3 Results - Adobe Newsroom. Claude: catalyst (strength 4/5): Official record Q3 results released 10 September fall within the 48-hour window, and the stock is breaking out on heavy volume, though the headline does not con",
-  "15:50 Day trade: sold ADBE (+\u00a314): End of day: sold 10 minutes before the close. Result +\u00a314 (+1.5%).",
-  "15:50 Day trade summary: 1 trade(s) today: ADBE +\u00a314. Total +\u00a314."
+  "15:50 Day trade summary: No trade today: nothing in play broke out."
  ],
  "log": [
-  "IBEX: Claude: no catalyst (strength 1/5): The only official headline is a promotional anniversary release that refers back to an earlier record quarter, adds no new specific result, and is dated 2026-09",
-  "TEN: Claude: no catalyst (strength 2/5): The only official item is a routine H1/Q2 2026 earnings release reporting profits, with no evidence it beat expectations or guidance, so it doesn't clearly qual",
-  "MTN: Claude: no catalyst (strength 1/5): The only OFFICIAL headline is a routine board-nominations update with no financial or operational impact, so the intraday move lacks a specific price-moving cat",
-  "ADBE: Claude: catalyst (strength 4/5): Official record Q3 results released 10 September fall within the 48-hour window, and the stock is breaking out on heavy volume, though the headline does not con",
-  "Day trade buy order: 5 ADBE at about $250.60. Broke above its opening-range high ($249.77) at $250.60. In play: 0.6x normal volume, normally moves 3% a day. Stop $241.52. News (Adobe Newsroom): Adobe Reports Record Q3 Results - Adobe Newsroom. Claude: catalyst (strength 4/5): Official record Q3 results released 10 September fall within the 48-hour window, and the stock is breaking out on heavy volume, though the headline does not con",
-  "Bought 5 ADBE at 250.85 (cost \u00a3930).",
-  "Sold ADBE (about +\u00a314). End of day: sold 10 minutes before the close.",
-  "Day trading finished: 1 trade(s), total +\u00a314."
+  "Added ORCL to today's list at 10:16 New York: 0.2x normal volume in the last 30 min; no news found",
+  "Added JILL to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
+  "Added CRMT to today's list at 10:16 New York: 0.5x normal volume in the last 30 min; no news found",
+  "JILL: Claude: no catalyst (strength 1/5): No headline is marked OFFICIAL; the Q2 results release and raised outlook appear only as OTHER items, which can only serve as sentiment.",
+  "Day trading finished: 0 trade(s), total +\u00a30."
  ]
 }

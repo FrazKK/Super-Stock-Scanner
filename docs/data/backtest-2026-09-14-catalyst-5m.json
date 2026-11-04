@@ -1,6 +1,6 @@
 {
  "date": "2026-09-14",
- "generated": "2026-11-04T09:27+00:00",
+ "generated": "2026-11-04T17:17+00:00",
  "fx_gbpusd": 1.3525760173797607,
  "result": "done",
  "require_news": true,
@@ -8,92 +8,20 @@
  "bars": "5m",
  "require_trend": true,
  "added_during_day": [
-  "Added BSP to today's list at 10:32 New York: 0.2x normal volume in the last 30 min; news: Bending Spoons enters into a definitive agreement to acquire Miro for $1.355 bil"
+  "Added NOC to today's list at 10:16 New York: 0.2x normal volume in the last 30 min; no news found",
+  "Added CODA to today's list at 10:16 New York: 0.4x normal volume in the last 30 min; no news found"
  ],
  "drift_list": [],
  "list": [
-  {
-   "ticker": "RUM",
-   "name": "RUM Group Inc.",
-   "vol_x": 3.05,
-   "buy_pct30": 0.6980030406292702,
-   "change": 0.15495119235890087,
-   "score": 8.39,
-   "news": [
-    "RUM Group to Acquire Additional Shares of Northern Data to Reach Approx. 98% Ownership - GlobeNewswire"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "BBNX",
-   "name": "Beta Bionics, Inc.",
-   "vol_x": 0.69,
-   "buy_pct30": 0.6798190960803254,
-   "change": 0.001207028251781983,
-   "score": 3.6,
-   "news": [
-    "Beta Bionics (NASDAQ: BBNX) Faces Securities Class Action Amid iLet FDA Compliance -- HBSS - GlobeNewswire"
-   ],
-   "on_t212": true
-  },
   {
    "ticker": "DFTX",
    "name": "Definium Therapeutics, Inc.",
    "vol_x": 1.23,
    "buy_pct30": 0.3662580581814315,
    "change": 0.05644123757452335,
-   "score": 2.93,
+   "score": 2.43,
    "news": [
-    "Definium Therapeutics Announces Positive Topline Results from Phase 3 Panorama Study of DT120 ODT in Generalized Anxiety Disorder - Business Wire",
-    "Definium Therapeutics to Present Topline Data from Phase 3 Emerge and Voyage Trials Across Major Depressive Disorder and Generalized Anxiety Disorder at Psych Congress 2026 - Business Wire"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "THRY",
-   "name": "Thryv Holdings, Inc.",
-   "vol_x": 1.01,
-   "buy_pct30": 0.5664987868618886,
-   "change": 0.12849163350561632,
-   "score": 2.79,
-   "news": [
-    "Thryv Enters Definitive Agreement to Sell Print Business for $142 Million - Business Wire"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "VG",
-   "name": "Venture Global, Inc.",
-   "vol_x": 0.26,
-   "buy_pct30": 0.6277554930473225,
-   "change": 0.027531671795281598,
-   "score": 2.53,
-   "news": [
-    "Venture Global and China Gas Announce New Long-Term LNG Agreement - Business Wire"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "BNAI",
-   "name": "Brand Engagement Network Inc.",
-   "vol_x": 0.25,
-   "buy_pct30": 0.8792248811424971,
-   "change": 0.0024907171144166185,
-   "score": 2.52,
-   "news": [
-    "Accelevate Solutions and Brand Engagement Network Launch AI-Powered Passenger Engagement Platform for LAX Off-Airport Shuttle Providers - PR Newswire"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "TEN",
-   "name": "Tsakos Energy Navigation Ltd",
-   "vol_x": 0.28,
-   "buy_pct30": 0.24956996703060252,
-   "change": 0.01565761954297229,
-   "score": 1.06,
-   "news": [
-    "TEN, Ltd. Reports Profits for the First Half and Second Quarter of 2026 - GlobeNewswire"
+    "Definium Therapeutics Announces Positive Topline Results from Phase 3 Panorama Study of DT120 ODT in Generalized Anxiety Disorder - Business Wire"
    ],
    "on_t212": true
   }
@@ -124,6 +52,10 @@
    "vol_x": 3.23
   },
   {
+   "ticker": "RUM",
+   "vol_x": 3.05
+  },
+  {
    "ticker": "ALLT",
    "vol_x": 2.33
   },
@@ -134,6 +66,10 @@
   {
    "ticker": "BHC",
    "vol_x": 1.39
+  },
+  {
+   "ticker": "THRY",
+   "vol_x": 1.01
   },
   {
    "ticker": "SFST",
@@ -150,14 +86,6 @@
   {
    "ticker": "CODA",
    "vol_x": 0.8
-  },
-  {
-   "ticker": "STIM",
-   "vol_x": 0.78
-  },
-  {
-   "ticker": "KMDA",
-   "vol_x": 0.72
   }
  ],
  "trades": [],
@@ -166,10 +94,10 @@
   "15:50 Day trade summary: No trade today: nothing in play broke out."
  ],
  "log": [
-  "BBNX: Claude: no catalyst (strength 1/5): Both OFFICIAL headlines are shareholder class-action law-firm notices about iLet FDA compliance, which are negative and not a company catalyst, so the intraday ",
-  "TEN: Claude: no catalyst (strength 1/5): The only official item is the H1/Q2 profit release dated 10 September, outside the 48-hour window, and its headline gives no beat versus expectations.",
-  "Added BSP to today's list at 10:32 New York: 0.2x normal volume in the last 30 min; news: Bending Spoons enters into a definitive agreement to acquire Miro for $1.355 bil",
-  "BSP: Claude: no catalyst (strength 1/5): The only OFFICIAL headline (the Miro acquisition) is dated 10 Sept, more than 48 hours before today, so no qualifying in-window catalyst exists.",
+  "Added NOC to today's list at 10:16 New York: 0.2x normal volume in the last 30 min; no news found",
+  "Added CODA to today's list at 10:16 New York: 0.4x normal volume in the last 30 min; no news found",
+  "CODA: Claude: no catalyst (strength 1/5): The only official item is a routine quarterly results headline with no release text, so beat versus expectations cannot be judged, and the other items are earni",
+  "NOC: Claude: no catalyst (strength 1/5): The only OFFICIAL headline is a vague defence collaboration from 10 September, outside the 48-hour window and not a specific, quantified catalyst; the rest is O",
   "Day trading finished: 0 trade(s), total +\u00a30."
  ]
 }

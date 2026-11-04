@@ -1,13 +1,16 @@
 {
  "date": "2026-10-21",
- "generated": "2026-11-04T09:43+00:00",
+ "generated": "2026-11-04T17:31+00:00",
  "fx_gbpusd": 1.337327480316162,
  "result": "done",
  "require_news": true,
  "strategy": "catalyst",
  "bars": "5m",
  "require_trend": true,
- "added_during_day": [],
+ "added_during_day": [
+  "Added MCB to today's list at 10:48 New York: 0.2x normal volume in the last 30 min; no news found",
+  "Added OVID to today's list at 10:48 New York: 0.3x normal volume in the last 30 min; no news found"
+ ],
  "drift_list": [],
  "list": [
   {
@@ -21,37 +24,9 @@
     "Tesla Launches iPad and iPhone Duo App - Not a Tesla App"
    ],
    "on_t212": true
-  },
-  {
-   "ticker": "WGO",
-   "name": "Winnebago Industries, Inc.",
-   "vol_x": 0.27,
-   "buy_pct30": 0.5687568547124102,
-   "change": 0.06171775142283509,
-   "score": 1.32,
-   "news": [
-    "Winnebago Industries Reports Fourth Quarter and Full Year Fiscal 2026 Results - GlobeNewswire"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "IMSR",
-   "name": "Terrestrial Energy Inc.",
-   "vol_x": 0.22,
-   "buy_pct30": 0.5393843952922341,
-   "change": 0.05535713358193006,
-   "score": 1.1,
-   "news": [
-    "Terrestrial Energy Appoints Nuclear Power Veteran David Williams as Chief Commercial Officer - Business Wire"
-   ],
-   "on_t212": true
   }
  ],
  "quiet": [
-  {
-   "ticker": "SPHL",
-   "vol_x": 65.9
-  },
   {
    "ticker": "POM",
    "vol_x": 46.27
@@ -107,6 +82,10 @@
   {
    "ticker": "DHR",
    "vol_x": 0.56
+  },
+  {
+   "ticker": "ACFN",
+   "vol_x": 0.55
   }
  ],
  "trades": [],
@@ -115,6 +94,9 @@
   "15:50 Day trade summary: No trade today: nothing in play broke out."
  ],
  "log": [
+  "Added MCB to today's list at 10:48 New York: 0.2x normal volume in the last 30 min; no news found",
+  "Added OVID to today's list at 10:48 New York: 0.3x normal volume in the last 30 min; no news found",
+  "OVID: Claude: no catalyst (strength 1/5): The only headline is an OTHER-sourced report from an unreliable site about a narrower-than-expected Q2 loss, with no OFFICIAL company announcement or release te",
   "Day trading finished: 0 trade(s), total +\u00a30."
  ]
 }

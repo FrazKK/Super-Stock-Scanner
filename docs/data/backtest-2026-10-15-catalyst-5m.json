@@ -1,6 +1,6 @@
 {
  "date": "2026-10-15",
- "generated": "2026-11-04T09:39+00:00",
+ "generated": "2026-11-04T17:27+00:00",
  "fx_gbpusd": 1.3230137825012207,
  "result": "done",
  "require_news": true,
@@ -8,27 +8,19 @@
  "bars": "5m",
  "require_trend": true,
  "added_during_day": [
-  "Added NRXP to today's list at 10:16 New York: 0.2x normal volume in the last 30 min; news: NRx Pharmaceuticals Announces Receipt of FDA Labeling Review Letter for Preserva"
+  "Added INDP to today's list at 10:16 New York: 0.5x normal volume in the last 30 min; no news found",
+  "Added ACFN to today's list at 10:16 New York: 0.6x normal volume in the last 30 min; no news found",
+  "Added NFGC to today's list at 10:32 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Added BHRB to today's list at 10:48 New York: 0.2x normal volume in the last 30 min; no news found",
+  "Added AMTB to today's list at 10:48 New York: 0.2x normal volume in the last 30 min; no news found"
  ],
  "drift_list": [],
  "list": [
   {
-   "ticker": "NRXS",
-   "name": "Neuraxis, Inc.",
-   "vol_x": 3.22,
-   "buy_pct30": 0.4042169210564918,
-   "change": 0.07963246006415914,
-   "score": 6.56,
-   "news": [
-    "NeurAxis Announces Medical Policy Coverage Milestone, Expanding Access to 26 Million Additional Covered Lives - GlobeNewswire"
-   ],
-   "on_t212": true
-  },
-  {
    "ticker": "ADBE",
    "name": "Adobe Inc.",
    "vol_x": 0.22,
-   "buy_pct30": 0.710894545050553,
+   "buy_pct30": 0.7108828229487077,
    "change": 0.0464725492677327,
    "score": 2.78,
    "news": [
@@ -37,62 +29,26 @@
    "on_t212": true
   },
   {
-   "ticker": "CLNE",
-   "name": "Clean Energy Fuels Corp.",
-   "vol_x": 0.28,
-   "buy_pct30": 0.6656862717205463,
-   "change": 0.037037001061669184,
-   "score": 2.72,
-   "news": [
-    "Clean Energy Names Sean Wine as Chief Revenue Officer - Business Wire"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "NOW",
-   "name": "ServiceNow, Inc.",
-   "vol_x": 0.27,
-   "buy_pct30": 0.586042980729412,
-   "change": 0.01782404952228256,
-   "score": 2.38,
-   "news": [
-    "ServiceNow advances its operational harness for enterprise AI with AI Passport and expanded governance capabilities - ServiceNow"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "KMB",
-   "name": "Kimberly-Clark Corporation",
+   "ticker": "AZN",
+   "name": "AstraZeneca PLC",
    "vol_x": 0.29,
-   "buy_pct30": 0.5092627536981487,
-   "change": 0.048184217982868205,
-   "score": 2.12,
+   "buy_pct30": 0.6288598631783795,
+   "change": 0.04320187652124097,
+   "score": 2.6,
    "news": [
-    "Kimberly-Clark Announces Successful Consent Solicitations for Kenvue Notes and Amendment to Terms of Exchange Offers - PR Newswire"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "VISN",
-   "name": "Vistance Networks, Inc.",
-   "vol_x": 0.24,
-   "buy_pct30": 0.4099404868513034,
-   "change": 0.022881313536024628,
-   "score": 0.62,
-   "news": [
-    "Vistance Networks Board Approves Special Distribution - Business Wire"
+    "AstraZeneca announces new strategic collaboration with insitro to use advanced AI systems to develop transformative therapeutics for difficult to treat cardiometabolic diseases - AstraZeneca"
    ],
    "on_t212": true
   }
  ],
  "quiet": [
   {
-   "ticker": "SNES",
-   "vol_x": 86.39
-  },
-  {
    "ticker": "OPK",
    "vol_x": 17.51
+  },
+  {
+   "ticker": "NRXS",
+   "vol_x": 3.22
   },
   {
    "ticker": "TNDM",
@@ -153,11 +109,16 @@
   "15:50 Day trade summary: No trade today: nothing in play broke out."
  ],
  "log": [
-  "Added NRXP to today's list at 10:16 New York: 0.2x normal volume in the last 30 min; news: NRx Pharmaceuticals Announces Receipt of FDA Labeling Review Letter for Preserva",
-  "CLNE: Claude: no catalyst (strength 1/5): The only official headline in the window is a routine executive appointment (Chief Revenue Officer), and the other items are repeat coverage of it or an earning",
-  "NOW: Claude: no catalyst (strength 1/5): Both OFFICIAL headlines describe generic AI platform and governance product updates with no quantified revenue, contract, or earnings impact, so they read as ro",
-  "ADBE: Claude: no catalyst (strength 2/5): The official Adobe-NVIDIA expanded collaboration is a partnership announcement with no disclosed money, contract size or revenue impact, so it does not meet the",
-  "NRXP: Claude: catalyst (strength 2/5): The official release reports an FDA labeling review letter for preservative-free ketamine ahead of a Nov 10 goal date, a regulatory milestone short of approval ",
+  "Added INDP to today's list at 10:16 New York: 0.5x normal volume in the last 30 min; no news found",
+  "Added ACFN to today's list at 10:16 New York: 0.6x normal volume in the last 30 min; no news found",
+  "ACFN: Claude: no catalyst (strength 1/5): The only headline is an OTHER-sourced auto-generated earnings item with no consensus comparison and no official company announcement or release text, so there i",
+  "ADBE: Claude: no catalyst (strength 1/5): Adobe is a mega cap, and an expanded NVIDIA collaboration on agentic creation is a product-partnership headline with no disclosed money, contract value or reven",
+  "Added NFGC to today's list at 10:32 New York: 0.4x normal volume in the last 30 min; no news found",
+  "NFGC: Claude: no catalyst (strength 1/5): All headlines are labeled OTHER (commentary on the Q3 production results), with no OFFICIAL company announcement in the set and no release text to judge, so no ",
+  "Added BHRB to today's list at 10:48 New York: 0.2x normal volume in the last 30 min; no news found",
+  "Added AMTB to today's list at 10:48 New York: 0.2x normal volume in the last 30 min; no news found",
+  "BHRB: Claude: no catalyst (strength 1/5): The only headline is an OTHER-category MarketBeat preview of expected quarterly earnings, with no official company announcement or results in the last 48 hours.",
+  "AMTB: Claude: no catalyst (strength 1/5): Only OTHER earnings-preview headlines appear with no OFFICIAL company announcement in the last 48 hours, so there is no specific price-moving catalyst.",
   "Day trading finished: 0 trade(s), total +\u00a30."
  ]
 }

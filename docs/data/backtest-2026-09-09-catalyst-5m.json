@@ -1,72 +1,52 @@
 {
  "date": "2026-09-09",
- "generated": "2026-11-04T09:29+00:00",
+ "generated": "2026-11-04T17:18+00:00",
  "fx_gbpusd": 1.3544628620147705,
  "result": "done",
  "require_news": true,
  "strategy": "catalyst",
  "bars": "5m",
  "require_trend": true,
- "added_during_day": [],
+ "added_during_day": [
+  "Added JILL to today's list at 10:16 New York: 0.6x normal volume in the last 30 min; no news found",
+  "Added ODD to today's list at 10:32 New York: 0.9x normal volume in the last 30 min; no news found",
+  "Added PPIH to today's list at 10:32 New York: 0.4x normal volume in the last 30 min; no news found"
+ ],
  "drift_list": [],
  "list": [
   {
-   "ticker": "IRD",
-   "name": "Opus Genetics, Inc.",
-   "vol_x": 10.18,
-   "buy_pct30": 0.7027557193008966,
-   "change": 0.564539138001503,
-   "score": 22.67,
-   "news": [
-    "Opus Genetics Announces Positive Low Dose Cohort 1 Data - GlobeNewswire"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "SUNB",
-   "name": "Sunbelt Rentals Holdings, Inc.",
-   "vol_x": 0.37,
-   "buy_pct30": 0.6240012961716042,
-   "change": 0.09838430070468451,
-   "score": 2.74,
-   "news": [
-    "Sunbelt Rentals Reports Record First Quarter Results and Raises Full-Year Fiscal 2027 Guidance - Business Wire"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "KDK",
-   "name": "Kodiak AI, Inc.",
-   "vol_x": 0.26,
-   "buy_pct30": 0.5025697096774466,
-   "change": 0.0372749970688,
-   "score": 2.03,
-   "news": [
-    "Kodiak AI On Track For Year-End Driverless Long-Haul Launch as Safety Case Readiness Reaches 93% - GlobeNewswire"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "BKKT",
-   "name": "Bakkt, Inc.",
-   "vol_x": 0.26,
-   "buy_pct30": 0.6088694070358798,
-   "change": 0.05690064168655806,
-   "score": 1.46,
-   "news": [
-    "Bakkt Expands Global Commercial Team as Growth Accelerates; - GlobeNewswire"
-   ],
-   "on_t212": true
-  },
-  {
    "ticker": "SPTX",
    "name": "Seaport Therapeutics, Inc.",
-   "vol_x": 0.68,
-   "buy_pct30": 0.36130647994226744,
+   "vol_x": 0.62,
+   "buy_pct30": 0.32738895431237036,
    "change": 0.013611858032692714,
-   "score": 1.31,
+   "score": 1.05,
    "news": [
     "Seaport Therapeutics Reports Positive Topline Results from Phase 1 Driving Simulation Trial of GlyphAllo\u2122 in Healthy Volunteers - Business Wire"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "BIAF",
+   "name": "bioAffinity Technologies, Inc.",
+   "vol_x": 0.51,
+   "buy_pct30": 0.5558187426926368,
+   "change": 0.24132135042841663,
+   "score": 0.74,
+   "news": [
+    "bioAffinity Technologies Regains Compliance with Nasdaq Listing Requirements - Business Wire"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "PDYN",
+   "name": "Palladyne AI Corp.",
+   "vol_x": 0.31,
+   "buy_pct30": 0.2845938841736996,
+   "change": 0.015570877592358423,
+   "score": 0.26,
+   "news": [
+    "Palladyne AI and FANUC America Announce Strategic Collaboration to Advance Intelligent Robotic Automation - Business Wire"
    ],
    "on_t212": true
   }
@@ -75,6 +55,14 @@
   {
    "ticker": "YMAT",
    "vol_x": 807.8
+  },
+  {
+   "ticker": "FGL",
+   "vol_x": 11.97
+  },
+  {
+   "ticker": "IRD",
+   "vol_x": 10.18
   },
   {
    "ticker": "ODD",
@@ -123,14 +111,6 @@
   {
    "ticker": "META",
    "vol_x": 0.53
-  },
-  {
-   "ticker": "ASO",
-   "vol_x": 0.53
-  },
-  {
-   "ticker": "UTMD",
-   "vol_x": 0.52
   }
  ],
  "trades": [],
@@ -139,6 +119,9 @@
   "15:50 Day trade summary: No trade today: nothing in play broke out."
  ],
  "log": [
+  "Added JILL to today's list at 10:16 New York: 0.6x normal volume in the last 30 min; no news found",
+  "Added ODD to today's list at 10:32 New York: 0.9x normal volume in the last 30 min; no news found",
+  "Added PPIH to today's list at 10:32 New York: 0.4x normal volume in the last 30 min; no news found",
   "Day trading finished: 0 trade(s), total +\u00a30."
  ]
 }

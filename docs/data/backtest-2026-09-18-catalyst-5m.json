@@ -1,6 +1,6 @@
 {
  "date": "2026-09-18",
- "generated": "2026-11-04T09:28+00:00",
+ "generated": "2026-11-04T17:19+00:00",
  "fx_gbpusd": 1.335800051689148,
  "result": "done",
  "require_news": true,
@@ -8,47 +8,11 @@
  "bars": "5m",
  "require_trend": true,
  "added_during_day": [
+  "Added FTCI to today's list at 10:32 New York: 0.9x normal volume in the last 30 min; no news found",
   "Added TSLA to today's list at 10:48 New York: 0.5x normal volume in the last 30 min; news: Tesla Launches Model Y L Accessories in the U.S. - BASENOR - Tesla Accessories"
  ],
  "drift_list": [],
- "list": [
-  {
-   "ticker": "MAR",
-   "name": "Marriott International",
-   "vol_x": 0.26,
-   "buy_pct30": 0.9469094522833499,
-   "change": 0.005119734895443484,
-   "score": 3.81,
-   "news": [
-    "MARRIOTT INTERNATIONAL AND \u00d6ZAK GYO SIGN AGREEMENT TO OPEN A RITZ-CARLTON RESORT WITHIN T\u00dcRK\u0130YE'S PREMIERE SEAFRONT DESTINATION OF KEMER, ANTALYA - PR Newswire"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "DASH",
-   "name": "DoorDash, Inc.",
-   "vol_x": 0.27,
-   "buy_pct30": 0.5618148587303214,
-   "change": 0.0025185315548561515,
-   "score": 2.29,
-   "news": [
-    "DoorDash and Costco Expand Global Partnership with Nationwide U.S. Launch - DoorDash - Investor Relations"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "IDXX",
-   "name": "IDEXX Laboratories, Inc.",
-   "vol_x": 0.23,
-   "buy_pct30": 0.20345052635747105,
-   "change": 0.006248969275569616,
-   "score": 0.77,
-   "news": [
-    "IDEXX Laboratories Acquires CoVetAI to Advance Veterinary Workflow Intelligence - Business Wire"
-   ],
-   "on_t212": true
-  }
- ],
+ "list": [],
  "quiet": [
   {
    "ticker": "TNMG",
@@ -117,7 +81,7 @@
   "15:50 Day trade summary: No trade today: nothing in play broke out."
  ],
  "log": [
-  "IDXX: Claude: no catalyst (strength 1/5): The only official headline is IDEXX's acquisition of CoVetAI, a small AI workflow startup with no disclosed size or financials, so it is unlikely to move the st",
+  "Added FTCI to today's list at 10:32 New York: 0.9x normal volume in the last 30 min; no news found",
   "Added TSLA to today's list at 10:48 New York: 0.5x normal volume in the last 30 min; news: Tesla Launches Model Y L Accessories in the U.S. - BASENOR - Tesla Accessories",
   "Day trading finished: 0 trade(s), total +\u00a30."
  ]

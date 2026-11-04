@@ -1,48 +1,25 @@
 {
  "date": "2026-10-01",
- "generated": "2026-11-04T09:37+00:00",
+ "generated": "2026-11-04T17:23+00:00",
  "fx_gbpusd": 1.326435923576355,
  "result": "done",
  "require_news": true,
  "strategy": "catalyst",
  "bars": "5m",
  "require_trend": true,
- "added_during_day": [],
+ "added_during_day": [
+  "Added CTVA to today's list at 10:16 New York: 0.4x normal volume in the last 30 min; no news found"
+ ],
  "drift_list": [],
  "list": [
-  {
-   "ticker": "VEEA",
-   "name": "Veea Inc.",
-   "vol_x": 21.57,
-   "buy_pct30": 0.6893598856083034,
-   "change": 0.5138248711221274,
-   "score": 43.4,
-   "news": [
-    "Veea Announces TROLLEE Agreement for Phased Deployment of VeeaONE to 1,000 Unattended Stores - GlobeNewswire"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "AISP",
-   "name": "Airship AI Holdings, Inc",
-   "vol_x": 13.16,
-   "buy_pct30": 0.4881211602173837,
-   "change": 0.22043008788608676,
-   "score": 26.77,
-   "news": [
-    "Airship AI Announces $29.0M of Firm Fixed Price Brand Name Only Awards from Department of Homeland Security - GlobeNewswire"
-   ],
-   "on_t212": true
-  },
   {
    "ticker": "ABAT",
    "name": "American Battery Technology Company",
    "vol_x": 5.25,
    "buy_pct30": 0.7125293236043628,
    "change": 0.06787323726682981,
-   "score": 13.35,
+   "score": 12.85,
    "news": [
-    "ABAT reports record breaking profits - American Recycler",
     "American Battery Technology Company Receives Approval for Sale of $100 Million of Exported Recycled Black Mass Critical Minerals with License from U.S. Department of Commerce - GlobeNewswire"
    ],
    "on_t212": true
@@ -53,9 +30,8 @@
    "vol_x": 0.84,
    "buy_pct30": 0.6435423427360268,
    "change": 0.12290197791008417,
-   "score": 4.25,
+   "score": 3.75,
    "news": [
-    "Synopsys Details Growth Strategy and Long-term Financial Model at 2026 Investor Day - Sep 30, 2026 - Synopsys",
     "Synopsys and Amazon Announce Strategic, Multi-year IP Agreement for Custom Silicon; Collaboration Also Extends to Cloud and AI-Powered Engineering - PR Newswire"
    ],
    "on_t212": true
@@ -75,16 +51,20 @@
  ],
  "quiet": [
   {
+   "ticker": "VEEA",
+   "vol_x": 21.57
+  },
+  {
+   "ticker": "AISP",
+   "vol_x": 13.16
+  },
+  {
    "ticker": "RPGL",
    "vol_x": 9.57
   },
   {
    "ticker": "MEDS",
    "vol_x": 4.18
-  },
-  {
-   "ticker": "SDOT",
-   "vol_x": 4.14
   },
   {
    "ticker": "ACN",
@@ -129,10 +109,6 @@
   {
    "ticker": "TDAY",
    "vol_x": 0.49
-  },
-  {
-   "ticker": "CTSH",
-   "vol_x": 0.47
   }
  ],
  "trades": [],
@@ -141,6 +117,7 @@
   "15:50 Day trade summary: No trade today: nothing in play broke out."
  ],
  "log": [
+  "Added CTVA to today's list at 10:16 New York: 0.4x normal volume in the last 30 min; no news found",
   "Day trading finished: 0 trade(s), total +\u00a30."
  ]
 }

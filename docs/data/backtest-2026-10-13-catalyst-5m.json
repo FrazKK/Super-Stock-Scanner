@@ -1,72 +1,26 @@
 {
  "date": "2026-10-13",
- "generated": "2026-11-04T09:36+00:00",
+ "generated": "2026-11-04T17:23+00:00",
  "fx_gbpusd": 1.3209795951843262,
  "result": "done",
  "require_news": true,
  "strategy": "catalyst",
  "bars": "5m",
  "require_trend": true,
- "added_during_day": [],
+ "added_during_day": [
+  "Added GOSS to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found"
+ ],
  "drift_list": [],
  "list": [
   {
    "ticker": "MSFT",
    "name": "Microsoft Corporation",
    "vol_x": 0.26,
-   "buy_pct30": 0.5361479772957071,
+   "buy_pct30": 0.5361435604380828,
    "change": 0.016113776789655754,
    "score": 3.16,
    "news": [
-    "Microsoft to expand Azure Maia system to multi-gigawatt deployments - The Official Microsoft Blog"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "EFXT",
-   "name": "Enerflex Ltd",
-   "vol_x": 0.36,
-   "buy_pct30": 0.627294917193255,
-   "change": 0.13621265353146628,
-   "score": 2.73,
-   "news": [
-    "Enerflex Announces Major Project Award and Increases - GlobeNewswire"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "AMC",
-   "name": "AMC Entertainment Holdings, Inc.",
-   "vol_x": 0.29,
-   "buy_pct30": 0.6289418385524175,
-   "change": 0.05166665712992358,
-   "score": 2.6,
-   "news": [
-    "AMC Theatres and Hoyt Games Launch AMC Movie Trivia Game Show App for Mobile Devices - Business Wire"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "DNUT",
-   "name": "Krispy Kreme, Inc.",
-   "vol_x": 0.22,
-   "buy_pct30": 0.45078086132389794,
-   "change": 0.009966998304552721,
-   "score": 0.74,
-   "news": [
-    "Krispy Kreme Announces Development Deal to Expand Across the New York Metro Area - Business Wire"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "NB",
-   "name": "NioCorp Developments Ltd.",
-   "vol_x": 0.38,
-   "buy_pct30": 0.2571573529692656,
-   "change": 0.006097555213709249,
-   "score": 0.29,
-   "news": [
-    "NioCorp Places 100% of Its Planned Critical Minerals Production Under Commercial Sales Agreements - NioCorp Developments Ltd."
+    "Microsoft Azure Enclave: Secure collaboration for sensitive workloads | The Microsoft Cloud Blog - Microsoft"
    ],
    "on_t212": true
   }
@@ -133,30 +87,14 @@
    "vol_x": 0.46
   }
  ],
- "trades": [
-  {
-   "ticker": "EFXT",
-   "bought_at": "2026-10-13T14:16+00:00",
-   "sold_at": "2026-10-13T19:50+00:00",
-   "entry": 27.537510229110715,
-   "exit": 27.510000228881836,
-   "cost_gbp": 1002.1223617379895,
-   "pl_gbp": -2.5005539521761193,
-   "pl_pct": -0.0024952581118331566,
-   "reason": "End of day: sold 10 minutes before the close."
-  }
- ],
- "total_gbp": -2.5005539521761193,
+ "trades": [],
+ "total_gbp": 0,
  "alerts": [
-  "10:16 Day trade: bought EFXT: 48 EFXT at $27.54 (about \u00a31,002). Stop $26.16. Broke above its opening-range high ($27.39) at $27.51. In play: 0.4x normal volume, normally moves 4% a day. Stop $26.13. News (GlobeNewswire): Enerflex Announces Major Project Award and Increases - GlobeNewswire. Claude: catalyst (strength 4/5): An official GlobeNewswire release announces a major project award, which is a specific contract catalyst, though the headline is truncated and its size relative",
-  "15:50 Day trade: sold EFXT (-\u00a33): End of day: sold 10 minutes before the close. Result -\u00a33 (-0.2%).",
-  "15:50 Day trade summary: 1 trade(s) today: EFXT -\u00a33. Total -\u00a33."
+  "15:50 Day trade summary: No trade today: nothing in play broke out."
  ],
  "log": [
-  "EFXT: Claude: catalyst (strength 4/5): An official GlobeNewswire release announces a major project award, which is a specific contract catalyst, though the headline is truncated and its size relative",
-  "Day trade buy order: 48 EFXT at about $27.51. Broke above its opening-range high ($27.39) at $27.51. In play: 0.4x normal volume, normally moves 4% a day. Stop $26.13. News (GlobeNewswire): Enerflex Announces Major Project Award and Increases - GlobeNewswire. Claude: catalyst (strength 4/5): An official GlobeNewswire release announces a major project award, which is a specific contract catalyst, though the headline is truncated and its size relative",
-  "Bought 48 EFXT at 27.54 (cost \u00a31,002).",
-  "Sold EFXT (about -\u00a33). End of day: sold 10 minutes before the close.",
-  "Day trading finished: 1 trade(s), total -\u00a33."
+  "Added GOSS to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
+  "GOSS: Claude: no catalyst (strength 1/5): The only headline is an OTHER auto-generated earnings recap from a dubious domain, with no OFFICIAL company announcement in the last 48 hours, and it reports sh",
+  "Day trading finished: 0 trade(s), total +\u00a30."
  ]
 }

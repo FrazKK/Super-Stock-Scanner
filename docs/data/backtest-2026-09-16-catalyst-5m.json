@@ -1,6 +1,6 @@
 {
  "date": "2026-09-16",
- "generated": "2026-11-04T09:28+00:00",
+ "generated": "2026-11-04T17:16+00:00",
  "fx_gbpusd": 1.3473457098007202,
  "result": "done",
  "require_news": true,
@@ -8,95 +8,10 @@
  "bars": "5m",
  "require_trend": true,
  "added_during_day": [
-  "Added HITI to today's list at 10:32 New York: 0.2x normal volume in the last 30 min; news: High Tide Reports Record-Breaking Third Quarter 2026 Financial Results - PR News"
+  "Added VRA to today's list at 10:32 New York: 0.2x normal volume in the last 30 min; no news found"
  ],
  "drift_list": [],
- "list": [
-  {
-   "ticker": "NRXS",
-   "name": "Neuraxis, Inc.",
-   "vol_x": 3.45,
-   "buy_pct30": 0.6556333466096136,
-   "change": 0.2210526791305769,
-   "score": 8.02,
-   "news": [
-    "NeurAxis Announces Medical Coverage Policy Milestone, - GlobeNewswire"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "ORN",
-   "name": "Orion Group Holdings, Inc.",
-   "vol_x": 0.28,
-   "buy_pct30": 0.5415844918438685,
-   "change": 0.01655624851909443,
-   "score": 1.23,
-   "news": [
-    "Orion Expands Anthropic Collaboration as Launch Partner for Claude for Financial Advisors - Business Wire"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "RCKT",
-   "name": "Rocket Pharmaceuticals, Inc.",
-   "vol_x": 0.41,
-   "buy_pct30": 0.43915279850416145,
-   "change": 0.014662742245680649,
-   "score": 1.08,
-   "news": [
-    "Rocket Pharmaceuticals Announces FDA Alignment on Path to Complete Pivotal Phase 2 Trial of RP-A501 in Danon Disease - Business Wire"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "BXC",
-   "name": "Bluelinx Holdings Inc.",
-   "vol_x": 0.23,
-   "buy_pct30": 0.4771475728430872,
-   "change": 0.017169611628277348,
-   "score": 0.87,
-   "news": [
-    "BlueLinx Expands RDI\u00ae Railing Distribution to 21 Locations Across Key U.S. Markets - Business Wire"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "ALMU",
-   "name": "Aeluma, Inc.",
-   "vol_x": 0.53,
-   "buy_pct30": 0.29840673335950774,
-   "change": 0.025514092553474255,
-   "score": 0.75,
-   "news": [
-    "Aeluma Executes Strategic Agreement with Sumitomo Chemical - GlobeNewswire"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "CRML",
-   "name": "Critical Metals Corp.",
-   "vol_x": 0.49,
-   "buy_pct30": 0.27330895099602925,
-   "change": 0.040944918549078446,
-   "score": 0.57,
-   "news": [
-    "Critical Metals Corp (Nasdaq: CRML) Achieves Breakthrough Tanbreez Heavy Rare Earth Results: >99% Dissolution of Eudialyte Concentrate Into 19 Ultra-High-Purity Rare Earth Products; Refinery Study Projects US$1.8\u20132.2b in Annual Refinery Revenue - Critical Metals Corp"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "OSS",
-   "name": "One Stop Systems, Inc.",
-   "vol_x": 0.28,
-   "buy_pct30": 0.1761674522967894,
-   "change": 0.00348440044620002,
-   "score": -0.24,
-   "news": [
-    "OSS Receives Award Supporting U.S. Missile Defense Agency - GlobeNewswire"
-   ],
-   "on_t212": true
-  }
- ],
+ "list": [],
  "quiet": [
   {
    "ticker": "MGN",
@@ -105,6 +20,14 @@
   {
    "ticker": "MEDS",
    "vol_x": 14.23
+  },
+  {
+   "ticker": "NRXS",
+   "vol_x": 3.45
+  },
+  {
+   "ticker": "BBNX",
+   "vol_x": 1.28
   },
   {
    "ticker": "ALVO",
@@ -135,6 +58,10 @@
    "vol_x": 0.53
   },
   {
+   "ticker": "ALMU",
+   "vol_x": 0.53
+  },
+  {
    "ticker": "CIFR",
    "vol_x": 0.52
   },
@@ -143,20 +70,8 @@
    "vol_x": 0.49
   },
   {
-   "ticker": "AUR",
-   "vol_x": 0.42
-  },
-  {
-   "ticker": "GEF.B",
-   "vol_x": 0.4
-  },
-  {
-   "ticker": "EPM",
-   "vol_x": 0.4
-  },
-  {
-   "ticker": "CSW",
-   "vol_x": 0.39
+   "ticker": "CRML",
+   "vol_x": 0.49
   }
  ],
  "trades": [],
@@ -165,7 +80,7 @@
   "15:50 Day trade summary: No trade today: nothing in play broke out."
  ],
  "log": [
-  "Added HITI to today's list at 10:32 New York: 0.2x normal volume in the last 30 min; news: High Tide Reports Record-Breaking Third Quarter 2026 Financial Results - PR News",
+  "Added VRA to today's list at 10:32 New York: 0.2x normal volume in the last 30 min; no news found",
   "Day trading finished: 0 trade(s), total +\u00a30."
  ]
 }

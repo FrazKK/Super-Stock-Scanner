@@ -1,60 +1,27 @@
 {
  "date": "2026-10-09",
- "generated": "2026-11-04T09:37+00:00",
+ "generated": "2026-11-04T17:23+00:00",
  "fx_gbpusd": 1.322908878326416,
  "result": "done",
  "require_news": true,
  "strategy": "catalyst",
  "bars": "5m",
  "require_trend": true,
- "added_during_day": [],
+ "added_during_day": [
+  "Added ATEX to today's list at 10:16 New York: 0.2x normal volume in the last 30 min; no news found",
+  "Added HOVR to today's list at 10:16 New York: 0.4x normal volume in the last 30 min; no news found"
+ ],
  "drift_list": [],
  "list": [
   {
-   "ticker": "DELL",
-   "name": "Dell Technologies Inc.",
-   "vol_x": 0.23,
-   "buy_pct30": 0.5523584905227599,
-   "change": 0.005848029628316986,
-   "score": 2.17,
+   "ticker": "SECZ",
+   "name": "Securitize Corp.",
+   "vol_x": 0.24,
+   "buy_pct30": 0.3751119510350676,
+   "change": 0.010284390807001387,
+   "score": 0.48,
    "news": [
-    "Dell Technologies Drives the Agentic AI Era with New Windows PCs and Workstations - Dell"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "ETR",
-   "name": "Entergy Corporation",
-   "vol_x": 0.22,
-   "buy_pct30": 0.5037688956203702,
-   "change": 0.0010732814191076745,
-   "score": 1.96,
-   "news": [
-    "Entergy honored with Chartwell\u2019s Award for Excellence in Customer Value and Strategic Growth - Entergy"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "GFUZ",
-   "name": "General Fusion Group Ltd.",
-   "vol_x": 1.23,
-   "buy_pct30": 0.13057976275380923,
-   "change": 0.022962090515407763,
-   "score": 1.48,
-   "news": [
-    "General Fusion Achieves World-First 1 keV Electron Temperature Milestone on its Path to Commercial Fusion Power - GlobeNewswire"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "COHR",
-   "name": "Coherent Corp.",
-   "vol_x": 0.42,
-   "buy_pct30": 0.48207127150470513,
-   "change": 0.006912506352571679,
-   "score": 1.27,
-   "news": [
-    "Coherent Solutions Expands Several AI, Cloud, and Data Partnerships in 2026 - Business Wire"
+    "Securitize Launches Global Onchain Trading of U.S. Stocks with Security Entitlements - PR Newswire"
    ],
    "on_t212": true
   }
@@ -71,6 +38,10 @@
   {
    "ticker": "CRGY",
    "vol_x": 2.14
+  },
+  {
+   "ticker": "GFUZ",
+   "vol_x": 1.23
   },
   {
    "ticker": "HUM",
@@ -93,6 +64,10 @@
    "vol_x": 0.42
   },
   {
+   "ticker": "COHR",
+   "vol_x": 0.42
+  },
+  {
    "ticker": "ATEX",
    "vol_x": 0.4
   },
@@ -111,14 +86,6 @@
   {
    "ticker": "TATT",
    "vol_x": 0.38
-  },
-  {
-   "ticker": "ACHR",
-   "vol_x": 0.36
-  },
-  {
-   "ticker": "MNR",
-   "vol_x": 0.36
   }
  ],
  "trades": [],
@@ -127,6 +94,10 @@
   "15:50 Day trade summary: No trade today: nothing in play broke out."
  ],
  "log": [
+  "Added ATEX to today's list at 10:16 New York: 0.2x normal volume in the last 30 min; no news found",
+  "Added HOVR to today's list at 10:16 New York: 0.4x normal volume in the last 30 min; no news found",
+  "ATEX: Claude: no catalyst (strength 1/5): All headlines are OTHER commentary or market reports on a SpaceX spectrum deal, with no OFFICIAL company announcement in the last 48 hours to act as the catalys",
+  "SECZ: Claude: no catalyst (strength 2/5): An OFFICIAL product launch of onchain trading of US stocks is a fairly routine product announcement with no stated revenue size, contract value or financial imp",
   "Day trading finished: 0 trade(s), total +\u00a30."
  ]
 }

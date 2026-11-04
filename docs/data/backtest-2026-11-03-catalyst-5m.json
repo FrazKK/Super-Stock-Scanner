@@ -1,6 +1,6 @@
 {
  "date": "2026-11-03",
- "generated": "2026-11-04T09:48+00:00",
+ "generated": "2026-11-04T17:38+00:00",
  "fx_gbpusd": 1.340985894203186,
  "result": "done",
  "require_news": true,
@@ -8,83 +8,46 @@
  "bars": "5m",
  "require_trend": true,
  "added_during_day": [
-  "Added DD to today's list at 10:16 New York: 0.2x normal volume in the last 30 min; news: Vantive Announces Agreement to Divest Majority of Hemodialysis Assets and Associ"
+  "Added WAT to today's list at 10:16 New York: 0.2x normal volume in the last 30 min; no news found",
+  "Added DD to today's list at 10:16 New York: 0.2x normal volume in the last 30 min; no news found",
+  "Added EQH to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
+  "Added RRX to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
+  "Added IBTA to today's list at 10:16 New York: 0.5x normal volume in the last 30 min; no news found",
+  "Added UPWK to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
+  "Added EBS to today's list at 10:16 New York: 0.2x normal volume in the last 30 min; no news found",
+  "Added CVGI to today's list at 10:16 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Added TLN to today's list at 10:32 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Added SIBN to today's list at 10:32 New York: 0.3x normal volume in the last 30 min; no news found",
+  "Added BLZE to today's list at 10:32 New York: 0.3x normal volume in the last 30 min; no news found",
+  "Added SOC to today's list at 10:32 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Added CCJ to today's list at 10:48 New York: 0.3x normal volume in the last 30 min; no news found",
+  "Added MDGL to today's list at 10:48 New York: 0.3x normal volume in the last 30 min; no news found",
+  "Added TPC to today's list at 10:48 New York: 0.3x normal volume in the last 30 min; no news found"
  ],
  "drift_list": [],
  "list": [
+  {
+   "ticker": "XMAX",
+   "name": "XMAX, Inc.",
+   "vol_x": 0.42,
+   "buy_pct30": 0.7451565919178522,
+   "change": 0.10496255461033721,
+   "score": 3.82,
+   "news": [
+    "XMax Announces $30 Million Share Repurchase Program XMax Inc. (NASDAQ: XMAX) (\"XMax\" or the \"Company\"), a distributor of contemporary furniture and artificial intelligence software and platform-based...",
+    "XMax Announces $30 Million Share Repurchase Program - GlobeNewswire"
+   ],
+   "on_t212": true
+  },
   {
    "ticker": "NBIX",
    "name": "Neurocrine Biosciences, Inc.",
    "vol_x": 0.72,
    "buy_pct30": 0.5510379517947063,
    "change": 0.14035082930753973,
-   "score": 5.14,
+   "score": 3.14,
    "news": [
-    "The Andersons, Inc. Reports Third Quarter Results The Andersons, Inc. (Nasdaq: ANDE) announces financial results for the third quarter ended September 30, 2026. Financial Highlights: Record third...",
-    "Neurocrine Biosciences to Spotlight Its Scientific Journey and Growing Neuropsychiatry Pipeline at 2026 NEI Fall Congress Neurocrine Biosciences, Inc. (Nasdaq: NBIX) today announced its participation in the 2026 Neuroscience Education Institute (NEI) Fall Congress,..."
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "TEVA",
-   "name": "Teva Pharmaceutical Industries Limited",
-   "vol_x": 0.3,
-   "buy_pct30": 0.6692722042303504,
-   "change": 0.045454507111598375,
-   "score": 4.28,
-   "news": [
-    "Teva, Samsung Bioepis Sign US Biosimilar Commercialization Deal",
-    "Teva to Discontinue Phase 2 TOPAS-MSA Study of emrusolmin (TEV-\u2018286) Following Interim Futility Analysis - GlobeNewswire"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "WAT",
-   "name": "Waters Corporation",
-   "vol_x": 0.36,
-   "buy_pct30": 0.6163697554633579,
-   "change": 0.04885100330280667,
-   "score": 4.19,
-   "news": [
-    "Assured Data Protection Launches CleanRoom SCAN to Strengthen Cyber Recovery Assured Data Protection (Assured), the global managed services provider specializing in data protection, disaster recovery and cyber resilience,...",
-    "Waters Acquires MOBILion Systems, Bringing Advanced Ion-Mobility Separation to its Mass Spectrometry Portfolio with the Speed and Resolution AI Workflows Require for Proteomics Biomarker Discovery Waters Corporation (NYSE: WAT), a global life sciences and diagnostics leader, today announced that it has acquired MOBILion Systems, Inc., the..."
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "ZIM",
-   "name": "ZIM Integrated Shipping Services Ltd.",
-   "vol_x": 0.59,
-   "buy_pct30": 0.8026093703063004,
-   "change": 0.026807767853809006,
-   "score": 3.89,
-   "news": [
-    "IRIS Expands Accountancy Portfolio with Launch of AI-Powered Document Management Solution IRIS Software Group (IRIS), a leading global software provider of accountancy, payroll, HR, and education solutions, today announced the launch of..."
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "AEHR",
-   "name": "Aehr Test Systems",
-   "vol_x": 1.11,
-   "buy_pct30": 0.7538779030717918,
-   "change": 0.21556240806038773,
-   "score": 3.74,
-   "news": [
-    "Aehr Test Systems Reports Record First Quarter Fiscal 2027 Revenue of $33.0 Million; Raises Full-Year Revenue Outlook to $150 Million, Triple Fiscal 2026 Revenue - Aehr Test Systems"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "RRGB",
-   "name": "Red Robin Gourmet Burgers, Inc.",
-   "vol_x": 0.25,
-   "buy_pct30": 0.7976340857808294,
-   "change": 0.0005798214417072067,
-   "score": 3.69,
-   "news": [
-    "Kenmore Floor Care Expands Nationwide Retail Presence with Launch in More Than 1,500 Walmart Stores Kenmore Floor Care is expanding its nationwide retail footprint with the introduction of five cleaning products at select Walmart stores with...",
-    "Red Robin Debuts Spiked Dirty Sodas and Limited-Time Festive Drinks Just in Time for The Holidays Red Robin Gourmet Burgers, Inc. (NASDAQ: RRGB) just gave the viral dirty soda trend a spirited upgrade by adding Spiked Dirty Sodas* to its menu,..."
+    "Neurocrine Biosciences Launches Interactive Educational Resources to Support Clinical Learning in Classic Congenital Adrenal Hyperplasia - PR Newswire"
    ],
    "on_t212": true
   },
@@ -94,109 +57,9 @@
    "vol_x": 0.36,
    "buy_pct30": 0.704787305793346,
    "change": 0.07670830981782628,
-   "score": 3.54,
+   "score": 3.04,
    "news": [
-    "Benzinga Expands Support for AI-Powered Financial Innovation Through Growing Data Ecosystem Benzinga, a leading provider of real-time financial news and market intelligence, today highlighted its continued commitment to supporting the...",
-    "Trading Technologies Expands Institutional Digital Asset Access Through Bitstamp by Robinhood Trading Technologies International, Inc. (TT), a global capital markets technology provider, and Bitstamp by Robinhood, one of the world's..."
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "HCTI",
-   "name": "Healthcare Triangle, Inc.",
-   "vol_x": 1.36,
-   "buy_pct30": 0.18938338386661382,
-   "change": 0.09638554562953372,
-   "score": 3.48,
-   "news": [
-    "PERFECT GAME ANNOUNCES MEDIA RIGHTS PARTNERSHIP WITH MINORITY PROSPECTS Perfect Game, the world's largest youth baseball and softball platform and scouting service, today announced a media rights partnership with Minority ...",
-    "Healthcare Triangle Expands into Indonesia; Identifying USD 45 Million Opportunity Healthcare Triangle, Inc. (Nasdaq: HCTI) (\"HCTI\" or the \"Company\"), a provider of digital transformation, AI and cloud solutions for healthcare and..."
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "TATT",
-   "name": "TAT Technologies Ltd.",
-   "vol_x": 0.35,
-   "buy_pct30": 0.6695333877699053,
-   "change": 0.006949968526962946,
-   "score": 3.38,
-   "news": [
-    "YYForce Highlights US$21.9 Million in Reported Net Assets and Outlines Commercial Robotics and AI Platform Priorities YYForce Inc. (Nasdaq: YFOR) (\"YYForce\" or the \"Company\"), a technology-enabled provider of workforce solutions and integrated facility management...",
-    "TAT Technologies Reports Record Third Quarter 2026 Results TAT Technologies Ltd. (NASDAQ: TATT) (TASE: TAT Tech), a leading supplier of products and services for the commercial and military aerospace and..."
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "XMAX",
-   "name": "XMAX, Inc.",
-   "vol_x": 0.42,
-   "buy_pct30": 0.7451565919178522,
-   "change": 0.10496255461033721,
-   "score": 3.32,
-   "news": [
-    "Synova Global partners with Eventus to leverage Validus trade surveillance platform for its markets Eventus, a leading provider of comprehensive, at-scale trade surveillance and financial risk solutions, and Synova Global, the newly launched..."
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "RRX",
-   "name": "Regal Rexnord Corporation",
-   "vol_x": 0.28,
-   "buy_pct30": 0.566046700531277,
-   "change": 0.06052324573696355,
-   "score": 2.82,
-   "news": [
-    "oneworld's Seoul Incheon Lounge Named \"Asia's Leading Airline Lounge - Business Class\" at World Travel Awards for Second Consecutive Year The oneworld\u00c2\u00ae alliance's branded lounge at Seoul Incheon International Airport has again been named \"Asia's Leading Airline Lounge - Business Class\"...",
-    "REGAL REXNORD REPORTS THIRD QUARTER 2026 FINANCIAL RESULTS Regal Rexnord Corporation (NYSE: RRX) 3Q Highlights Daily Orders Up 6% Versus PY Sales Of $1,588 Million, Up 6% Versus PY Data Center Sales Up 307%,..."
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "QMLS",
-   "name": "QumulusAI, Inc.",
-   "vol_x": 0.39,
-   "buy_pct30": 0.6101340273358324,
-   "change": 0.0675157166948559,
-   "score": 2.72,
-   "news": [
-    "QumulusAI Contracts 0.5 MW of Data Center Capacity in Columbia, South Carolina"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "HNGE",
-   "name": "Hinge Health, Inc.",
-   "vol_x": 0.26,
-   "buy_pct30": 0.3978662998837023,
-   "change": 0.007273954914032155,
-   "score": 2.61,
-   "news": [
-    "Hinge Health reports record third quarter 2026 financial results - Business Wire"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "DDOG",
-   "name": "Datadog, Inc.",
-   "vol_x": 0.23,
-   "buy_pct30": 0.6138310663134121,
-   "change": 0.009393793252946425,
-   "score": 2.42,
-   "news": [
-    "Datadog Likely to Deliver Another Beat-and-Raise Quarter, Wedbush Says"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "TLRY",
-   "name": "Tilray Brands, Inc.",
-   "vol_x": 0.29,
-   "buy_pct30": 0.5782078138043832,
-   "change": 0.052941173720662205,
-   "score": 2.39,
-   "news": [
-    "Tilray Brands Announces Strategy to Strengthen Canadian Cannabis Operations and Drive Profitable Growth - GlobeNewswire"
+    "PTC Therapeutics Board of Directors Authorizes $500 Million Share Repurchase Program PTC Therapeutics, Inc., (NASDAQ: PTCT) today announced that its Board of Directors has authorized a share repurchase program under which PTC may..."
    ],
    "on_t212": true
   }
@@ -223,8 +86,16 @@
    "vol_x": 1.61
   },
   {
+   "ticker": "HCTI",
+   "vol_x": 1.36
+  },
+  {
    "ticker": "SNDL",
    "vol_x": 1.2
+  },
+  {
+   "ticker": "AEHR",
+   "vol_x": 1.11
   },
   {
    "ticker": "LSCC",
@@ -247,49 +118,39 @@
    "vol_x": 0.94
   },
   {
+   "ticker": "DOCN",
+   "vol_x": 0.91
+  },
+  {
    "ticker": "PEW",
    "vol_x": 0.82
-  },
-  {
-   "ticker": "MDGL",
-   "vol_x": 0.78
-  },
-  {
-   "ticker": "RACE",
-   "vol_x": 0.74
-  },
-  {
-   "ticker": "CVGI",
-   "vol_x": 0.73
   }
  ],
- "trades": [
-  {
-   "ticker": "QMLS",
-   "bought_at": "2026-11-03T15:18+00:00",
-   "sold_at": "2026-11-03T18:00+00:00",
-   "entry": 3.5285250954627987,
-   "exit": 3.5464499999999997,
-   "cost_gbp": 1001.3906942534989,
-   "pl_gbp": 2.072152982171133,
-   "pl_pct": 0.002069275252967923,
-   "reason": "Stop-loss order filled"
-  }
- ],
- "total_gbp": 2.072152982171133,
+ "trades": [],
+ "total_gbp": 0,
  "alerts": [
-  "10:18 Day trade: bought QMLS: 380 QMLS at $3.53 (about \u00a31,001). Stop $3.35. Broke above its opening-range high ($3.50) at $3.53. In play: 0.4x normal volume, normally moves 10% a day. Stop $3.35. News (businesswire): QumulusAI Contracts 0.5 MW of Data Center Capacity in Columbia, South Carolina. Claude: catalyst (strength 3/5): An OFFICIAL businesswire release announces a five-year colocation contract for 0.5 MW of data center capacity in South Carolina, a concrete deal, but the capaci",
-  "13:00 Day trade update: QMLS: stop-loss order filled (+\u00a32)",
-  "15:50 Day trade summary: 1 trade(s) today: QMLS +\u00a32. Total +\u00a32."
+  "15:50 Day trade summary: No trade today: nothing in play broke out."
  ],
  "log": [
-  "Added DD to today's list at 10:16 New York: 0.2x normal volume in the last 30 min; news: Vantive Announces Agreement to Divest Majority of Hemodialysis Assets and Associ",
-  "HCTI: Claude: no catalyst (strength 2/5): The only company-specific OFFICIAL item is an Indonesia expansion that identifies a USD 45M opportunity, which is a pipeline rather than a signed contract or or",
-  "QMLS: Claude: catalyst (strength 3/5): An OFFICIAL businesswire release announces a five-year colocation contract for 0.5 MW of data center capacity in South Carolina, a concrete deal, but the capaci",
-  "Day trade buy order: 380 QMLS at about $3.53. Broke above its opening-range high ($3.50) at $3.53. In play: 0.4x normal volume, normally moves 10% a day. Stop $3.35. News (businesswire): QumulusAI Contracts 0.5 MW of Data Center Capacity in Columbia, South Carolina. Claude: catalyst (strength 3/5): An OFFICIAL businesswire release announces a five-year colocation contract for 0.5 MW of data center capacity in South Carolina, a concrete deal, but the capaci",
-  "Bought 380 QMLS at 3.53 (cost \u00a31,001).",
-  "QMLS: stop raised from 3.35 to 3.55.",
-  "QMLS: stop-loss order filled, P&L +\u00a32.",
-  "Day trading finished: 1 trade(s), total +\u00a32."
+  "Added WAT to today's list at 10:16 New York: 0.2x normal volume in the last 30 min; no news found",
+  "Added DD to today's list at 10:16 New York: 0.2x normal volume in the last 30 min; no news found",
+  "Added EQH to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
+  "Added RRX to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
+  "Added IBTA to today's list at 10:16 New York: 0.5x normal volume in the last 30 min; no news found",
+  "Added UPWK to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
+  "Added EBS to today's list at 10:16 New York: 0.2x normal volume in the last 30 min; no news found",
+  "Added CVGI to today's list at 10:16 New York: 0.4x normal volume in the last 30 min; no news found",
+  "PTCT: Claude: catalyst (strength 3/5): An official $500M buyback authorization is large relative to PTCT's market cap, but it is an 'up to' amount subject to market conditions, so the move is likely ",
+  "RRX: Claude: catalyst (strength 3/5): Official Q3 release shows sales up 6%, adjusted EBITDA ahead of expectations excluding tariff refunds, and a raised adjusted EPS guidance midpoint, but it is mi",
+  "Added TLN to today's list at 10:32 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Added SIBN to today's list at 10:32 New York: 0.3x normal volume in the last 30 min; no news found",
+  "Added BLZE to today's list at 10:32 New York: 0.3x normal volume in the last 30 min; no news found",
+  "Added SOC to today's list at 10:32 New York: 0.4x normal volume in the last 30 min; no news found",
+  "TLN: Claude: no catalyst (strength 2/5): The official Q3 release reaffirms 2026 guidance, which is in line rather than a beat, and the 2027 guidance is unquantified in the headlines; one OTHER headline",
+  "SOC: Claude: no catalyst (strength 1/5): All headlines are OTHER-category commentary, short-interest data, and earnings-date previews with no official company announcement in the last 48 hours.",
+  "Added CCJ to today's list at 10:48 New York: 0.3x normal volume in the last 30 min; no news found",
+  "Added MDGL to today's list at 10:48 New York: 0.3x normal volume in the last 30 min; no news found",
+  "Added TPC to today's list at 10:48 New York: 0.3x normal volume in the last 30 min; no news found",
+  "Day trading finished: 0 trade(s), total +\u00a30."
  ]
 }

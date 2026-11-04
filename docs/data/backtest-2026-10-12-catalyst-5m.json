@@ -1,6 +1,6 @@
 {
  "date": "2026-10-12",
- "generated": "2026-11-04T09:36+00:00",
+ "generated": "2026-11-04T17:25+00:00",
  "fx_gbpusd": 1.3241524696350098,
  "result": "done",
  "require_news": true,
@@ -19,18 +19,6 @@
    "score": 6.01,
    "news": [
     "First Tracks Biotherapeutics Announces Positive Top-Line - GlobeNewswire"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "LEVI",
-   "name": "Levi Strauss & Co",
-   "vol_x": 0.27,
-   "buy_pct30": 0.38408846905277627,
-   "change": 0.010695125531074101,
-   "score": 0.58,
-   "news": [
-    "Discovering Levi\u2019s\u00ae Link to Canada\u2019s First Black Cowboy - Levi Strauss & Co"
    ],
    "on_t212": true
   }

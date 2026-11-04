@@ -1,6 +1,6 @@
 {
  "date": "2026-09-21",
- "generated": "2026-11-04T09:31+00:00",
+ "generated": "2026-11-04T17:16+00:00",
  "fx_gbpusd": 1.3388673067092896,
  "result": "done",
  "require_news": true,
@@ -23,6 +23,18 @@
    "on_t212": true
   },
   {
+   "ticker": "NUAI",
+   "name": "New Era Energy & Digital, Inc.",
+   "vol_x": 1.48,
+   "buy_pct30": 0.6532848941104221,
+   "change": 0.29180887358127716,
+   "score": 4.07,
+   "news": [
+    "New Era Energy & Digital Secures 20-Year, 207 MW PPA with Vistra - GlobeNewswire"
+   ],
+   "on_t212": true
+  },
+  {
    "ticker": "TSLA",
    "name": "Tesla, Inc.",
    "vol_x": 0.24,
@@ -30,28 +42,12 @@
    "change": 0.032736757543041284,
    "score": 2.04,
    "news": [
-    "Tesla FSD Supervised Approved in Czechia: What Owners Need to Know - BASENOR - Tesla Accessories"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "HELP",
-   "name": "Helus Pharma Inc.",
-   "vol_x": 0.26,
-   "buy_pct30": 0.4958005256681248,
-   "change": 0.06507682397924275,
-   "score": 2.0,
-   "news": [
-    "Helus Pharma Presents New Analyses on HLP003 in Major Depressive Disorder at Psych Congress 2026 - Mon, 09/21/2026 - 07:30 - Helus Pharma"
+    "Tesla Launches Model Y L Accessories in the U.S. - BASENOR - Tesla Accessories"
    ],
    "on_t212": true
   }
  ],
  "quiet": [
-  {
-   "ticker": "VEEE",
-   "vol_x": 197.02
-  },
   {
    "ticker": "GRML",
    "vol_x": 84.42
@@ -75,10 +71,6 @@
   {
    "ticker": "SUIG",
    "vol_x": 1.59
-  },
-  {
-   "ticker": "NUAI",
-   "vol_x": 1.48
   },
   {
    "ticker": "AIBZ",
@@ -107,6 +99,14 @@
   {
    "ticker": "SBET",
    "vol_x": 0.5
+  },
+  {
+   "ticker": "AMD",
+   "vol_x": 0.49
+  },
+  {
+   "ticker": "BTCS",
+   "vol_x": 0.49
   }
  ],
  "trades": [],
@@ -115,7 +115,6 @@
   "15:50 Day trade summary: No trade today: nothing in play broke out."
  ],
  "log": [
-  "HELP: Claude: no catalyst (strength 2/5): The official headlines are a conference presentation of new HLP003 analyses, with no stated positive results, and a conference participation notice, both of whi",
   "Day trading finished: 0 trade(s), total +\u00a30."
  ]
 }

@@ -1,13 +1,15 @@
 {
  "date": "2026-10-05",
- "generated": "2026-11-04T09:36+00:00",
+ "generated": "2026-11-04T17:25+00:00",
  "fx_gbpusd": 1.3242928981781006,
  "result": "done",
  "require_news": true,
  "strategy": "catalyst",
  "bars": "5m",
  "require_trend": true,
- "added_during_day": [],
+ "added_during_day": [
+  "Added TXRH to today's list at 10:16 New York: 0.2x normal volume in the last 30 min; no news found"
+ ],
  "drift_list": [],
  "list": [
   {
@@ -19,18 +21,6 @@
    "score": 121.08,
    "news": [
     "Alector Enters Global License Agreement with Genentech for - GlobeNewswire"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "VEEA",
-   "name": "Veea Inc.",
-   "vol_x": 4.05,
-   "buy_pct30": 0.3383687268783325,
-   "change": 0.678498481280776,
-   "score": 7.95,
-   "news": [
-    "Veea Announces TROLLEE Agreement for Phased Deployment of VeeaONE to 1,000 Unattended Stores - GlobeNewswire"
    ],
    "on_t212": true
   },
@@ -59,42 +49,6 @@
    "on_t212": true
   },
   {
-   "ticker": "ZETA",
-   "name": "Zeta Global Holdings Corp.",
-   "vol_x": 0.35,
-   "buy_pct30": 0.5933443519987754,
-   "change": 0.04673606071903591,
-   "score": 3.57,
-   "news": [
-    "Zeta Global to Acquire Senso, Adding AI Engineering and Frontier-Model Connectivity to Its Intelligent AI Infrastructure - Business Wire"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "AISP",
-   "name": "Airship AI Holdings, Inc",
-   "vol_x": 0.22,
-   "buy_pct30": 0.7024655445170619,
-   "change": 0.16235856266877668,
-   "score": 2.75,
-   "news": [
-    "Airship AI Announces $29.0M of Firm Fixed Price Brand Name Only Awards from Department of Homeland Security - GlobeNewswire"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "ARCO",
-   "name": "Arcos Dorados Holdings Inc.",
-   "vol_x": 0.9,
-   "buy_pct30": 0.5085910416648504,
-   "change": 0.092826981015242,
-   "score": 2.33,
-   "news": [
-    "Arcos Dorados to Host 2026 Investor Day, Outlining Long-Term Growth Strategy and Financial Framework - Business Wire"
-   ],
-   "on_t212": true
-  },
-  {
    "ticker": "AIFA",
    "name": "All In FutureTech Alliance, Inc.",
    "vol_x": 0.98,
@@ -105,28 +59,20 @@
     "All In FutureTech Alliance Inc. Launches New Digital - GlobeNewswire"
    ],
    "on_t212": true
-  },
-  {
-   "ticker": "CRML",
-   "name": "Critical Metals Corp.",
-   "vol_x": 0.36,
-   "buy_pct30": 0.21221820089037655,
-   "change": 0.024182019115675413,
-   "score": 0.07,
-   "news": [
-    "Core Critical Metals Corp. Announces Shareholder Approval of Plan of Arrangement - ACCESS Newswire"
-   ],
-   "on_t212": true
   }
  ],
  "quiet": [
+  {
+   "ticker": "VEEA",
+   "vol_x": 4.05
+  },
   {
    "ticker": "QTEX",
    "vol_x": 3.37
   },
   {
-   "ticker": "SXTP",
-   "vol_x": 2.22
+   "ticker": "RETO",
+   "vol_x": 2.0
   },
   {
    "ticker": "RXO",
@@ -149,6 +95,10 @@
    "vol_x": 1.48
   },
   {
+   "ticker": "ACB",
+   "vol_x": 1.43
+  },
+  {
    "ticker": "NAUT",
    "vol_x": 1.26
   },
@@ -161,24 +111,16 @@
    "vol_x": 1.17
   },
   {
+   "ticker": "AGBK",
+   "vol_x": 0.95
+  },
+  {
    "ticker": "MNSB",
    "vol_x": 0.92
   },
   {
-   "ticker": "SOTK",
-   "vol_x": 0.87
-  },
-  {
-   "ticker": "PICS",
-   "vol_x": 0.82
-  },
-  {
-   "ticker": "AMOD",
-   "vol_x": 0.79
-  },
-  {
-   "ticker": "RELL",
-   "vol_x": 0.78
+   "ticker": "ARCO",
+   "vol_x": 0.9
   }
  ],
  "trades": [
@@ -196,13 +138,14 @@
  ],
  "total_gbp": 21.04231614029095,
  "alerts": [
-  "10:46 Day trade: bought INTT: 89 INTT at $14.76 (about \u00a3994). Stop $14.03. Broke above its opening-range high ($14.68) at $14.75. In play: 1.1x normal volume, normally moves 4% a day. Stop $14.01. News (Business Wire): InTest Expects Record Orders for Q3 2026 and Revenue at High End of Guidance Range for Q3 . Claude: catalyst (strength 4/5): An official Business Wire pre-announcement reports record Q3 2026 orders (about $48\u201350M against roughly $35M revenue) and revenue at the high end of guidance, w",
+  "10:46 Day trade: bought INTT: 89 INTT at $14.76 (about \u00a3994). Stop $14.03. Broke above its opening-range high ($14.68) at $14.75. In play: 1.1x normal volume, normally moves 4% a day. Stop $14.01. News (Business Wire): InTest Expects Record Orders for Q3 2026 and Revenue at High End of Guidance Range for Q3 . Claude: catalyst (strength 4/5): Official pre-announcement of record Q3 2026 orders of about $48-50M, well above the roughly $35M revenue run-rate, plus revenue at the high end of guidance, tho",
   "15:50 Day trade: sold INTT (+\u00a321): End of day: sold 10 minutes before the close. Result +\u00a321 (+2.1%).",
   "15:50 Day trade summary: 1 trade(s) today: INTT +\u00a321. Total +\u00a321."
  ],
  "log": [
-  "INTT: Claude: catalyst (strength 4/5): An official Business Wire pre-announcement reports record Q3 2026 orders (about $48\u201350M against roughly $35M revenue) and revenue at the high end of guidance, w",
-  "Day trade buy order: 89 INTT at about $14.75. Broke above its opening-range high ($14.68) at $14.75. In play: 1.1x normal volume, normally moves 4% a day. Stop $14.01. News (Business Wire): InTest Expects Record Orders for Q3 2026 and Revenue at High End of Guidance Range for Q3 . Claude: catalyst (strength 4/5): An official Business Wire pre-announcement reports record Q3 2026 orders (about $48\u201350M against roughly $35M revenue) and revenue at the high end of guidance, w",
+  "Added TXRH to today's list at 10:16 New York: 0.2x normal volume in the last 30 min; no news found",
+  "INTT: Claude: catalyst (strength 4/5): Official pre-announcement of record Q3 2026 orders of about $48-50M, well above the roughly $35M revenue run-rate, plus revenue at the high end of guidance, tho",
+  "Day trade buy order: 89 INTT at about $14.75. Broke above its opening-range high ($14.68) at $14.75. In play: 1.1x normal volume, normally moves 4% a day. Stop $14.01. News (Business Wire): InTest Expects Record Orders for Q3 2026 and Revenue at High End of Guidance Range for Q3 . Claude: catalyst (strength 4/5): Official pre-announcement of record Q3 2026 orders of about $48-50M, well above the roughly $35M revenue run-rate, plus revenue at the high end of guidance, tho",
   "Bought 89 INTT at 14.76 (cost \u00a3994).",
   "Sold INTT (about +\u00a321). End of day: sold 10 minutes before the close.",
   "Day trading finished: 1 trade(s), total +\u00a321."

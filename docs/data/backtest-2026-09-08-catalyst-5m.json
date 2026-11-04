@@ -1,51 +1,24 @@
 {
  "date": "2026-09-08",
- "generated": "2026-11-04T09:32+00:00",
+ "generated": "2026-11-04T17:16+00:00",
  "fx_gbpusd": 1.3546831607818604,
  "result": "done",
  "require_news": true,
  "strategy": "catalyst",
  "bars": "5m",
  "require_trend": true,
- "added_during_day": [
-  "Added KDK to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; news: Kodiak AI On Track For Year-End Driverless Long-Haul Launch as Safety Case Readi"
- ],
+ "added_during_day": [],
  "drift_list": [],
  "list": [
   {
    "ticker": "PHVS",
    "name": "Pharvaris N.V.",
    "vol_x": 3.86,
-   "buy_pct30": 0.5060914651017796,
+   "buy_pct30": 0.5060969588867107,
    "change": 0.1703546402302194,
    "score": 10.24,
    "news": [
     "Pharvaris Announces Positive Topline Data from CHAPTER-3 - GlobeNewswire"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "LCTX",
-   "name": "Lineage Cell Therapeutics, Inc.",
-   "vol_x": 0.87,
-   "buy_pct30": 0.9614434120289344,
-   "change": 0.05092587533556592,
-   "score": 5.09,
-   "news": [
-    "Lineage Cell Therapeutics Announces Issuance of Patent Underlying Its AlloSCOPE\u2122 5D Manufacturing Platform - Business Wire"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "NRGV",
-   "name": "Energy Vault Holdings, Inc.",
-   "vol_x": 0.27,
-   "buy_pct30": 0.6944974443613139,
-   "change": 0.07421877401066057,
-   "score": 3.32,
-   "news": [
-    "Energy Vault acquires land for BESS project - Energy Global",
-    "Energy Vault acquires land for BESS project"
    ],
    "on_t212": true
   },
@@ -62,10 +35,22 @@
    "on_t212": true
   },
   {
+   "ticker": "PDYN",
+   "name": "Palladyne AI Corp.",
+   "vol_x": 0.29,
+   "buy_pct30": 0.40824575227309334,
+   "change": 0.03064801918839466,
+   "score": 1.71,
+   "news": [
+    "Palladyne AI and FANUC America Announce Strategic Collaboration to Advance Intelligent Robotic Automation - Business Wire"
+   ],
+   "on_t212": true
+  },
+  {
    "ticker": "QNT",
    "name": "Quantinuum Inc.",
    "vol_x": 0.69,
-   "buy_pct30": 0.33817949152226795,
+   "buy_pct30": 0.3380870794806336,
    "change": 0.0365558624557738,
    "score": 1.23,
    "news": [
@@ -90,10 +75,6 @@
   {
    "ticker": "JMSB",
    "vol_x": 2.78
-  },
-  {
-   "ticker": "SLE",
-   "vol_x": 2.08
   },
   {
    "ticker": "ZIM",
@@ -128,6 +109,10 @@
    "vol_x": 0.88
   },
   {
+   "ticker": "LCTX",
+   "vol_x": 0.87
+  },
+  {
    "ticker": "HYPD",
    "vol_x": 0.84
   },
@@ -142,10 +127,6 @@
   "15:50 Day trade summary: No trade today: nothing in play broke out."
  ],
  "log": [
-  "Added KDK to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; news: Kodiak AI On Track For Year-End Driverless Long-Haul Launch as Safety Case Readi",
-  "NRGV: Claude: no catalyst (strength 1/5): The only official headlines are land-ownership news for a Stoney Creek BESS project dated 4 September, which is outside the 48-hour window and is a routine proj",
-  "KDK: Claude: no catalyst (strength 2/5): The official headline is a timeline reaffirmation and progress update (safety case 93% ready) with no new contract, approval, financial result or other concrete",
-  "LCTX: Claude: no catalyst (strength 1/5): The only official item is a patent issuance for a manufacturing platform, which is not an approval, trial result, earnings or guidance change, contract, partner",
   "Day trading finished: 0 trade(s), total +\u00a30."
  ]
 }

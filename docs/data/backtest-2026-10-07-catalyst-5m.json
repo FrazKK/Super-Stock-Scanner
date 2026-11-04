@@ -1,39 +1,19 @@
 {
  "date": "2026-10-07",
- "generated": "2026-11-04T09:35+00:00",
+ "generated": "2026-11-04T17:24+00:00",
  "fx_gbpusd": 1.326682209968567,
  "result": "done",
  "require_news": true,
  "strategy": "catalyst",
  "bars": "5m",
  "require_trend": true,
- "added_during_day": [],
+ "added_during_day": [
+  "Added PENG to today's list at 10:16 New York: 0.9x normal volume in the last 30 min; no news found",
+  "Added VTVT to today's list at 10:32 New York: 0.3x normal volume in the last 30 min; news: vTv Therapeutics Announces FDA Orphan Drug Designation for HPPD in Sickle Cell D",
+  "Added PSIX to today's list at 10:48 New York: 0.3x normal volume in the last 30 min; no news found"
+ ],
  "drift_list": [],
  "list": [
-  {
-   "ticker": "PENG",
-   "name": "Penguin Solutions, Inc.",
-   "vol_x": 2.49,
-   "buy_pct30": 0.648683400546291,
-   "change": 0.16500547222815998,
-   "score": 7.07,
-   "news": [
-    "Penguin Solutions Appoints Stephen Cumming as Senior Vice President and Chief Financial Officer to Support Accelerated Growth - Business Wire"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "BKV",
-   "name": "BKV Corporation",
-   "vol_x": 1.25,
-   "buy_pct30": 0.6278366947107255,
-   "change": 0.08684811708785478,
-   "score": 4.51,
-   "news": [
-    "Update: BKV Shares Rise After Signing Equipment Supply Contract for Potential Power Project in Texas"
-   ],
-   "on_t212": true
-  },
   {
    "ticker": "MBOT",
    "name": "Microbot Medical Inc.",
@@ -45,12 +25,32 @@
     "Microbot Medical\u00ae and Medtechnica Ltd. Enter into Three-Year Exclusive Distribution Agreement in Israel - GlobeNewswire"
    ],
    "on_t212": true
+  },
+  {
+   "ticker": "PXS",
+   "name": "Pyxis Tankers Inc.",
+   "vol_x": 0.25,
+   "buy_pct30": 0.3967390383420653,
+   "change": 0.014276461337263013,
+   "score": 1.59,
+   "news": [
+    "Pyxis Tankers Announces Two-Year Time Charter for Pyxis Lamda at $31,000 per Day - GlobeNewswire"
+   ],
+   "on_t212": true
   }
  ],
  "quiet": [
   {
    "ticker": "ICU",
    "vol_x": 3.66
+  },
+  {
+   "ticker": "PENG",
+   "vol_x": 2.49
+  },
+  {
+   "ticker": "BKV",
+   "vol_x": 1.25
   },
   {
    "ticker": "CANG",
@@ -81,10 +81,6 @@
    "vol_x": 0.43
   },
   {
-   "ticker": "HTZ",
-   "vol_x": 0.39
-  },
-  {
    "ticker": "WRAP",
    "vol_x": 0.35
   },
@@ -103,36 +99,18 @@
   {
    "ticker": "CMTV",
    "vol_x": 0.29
-  },
-  {
-   "ticker": "VST",
-   "vol_x": 0.27
   }
  ],
- "trades": [
-  {
-   "ticker": "BKV",
-   "bought_at": "2026-10-07T14:20+00:00",
-   "sold_at": "2026-10-07T19:50+00:00",
-   "entry": 24.36423896217346,
-   "exit": 23.649999618530273,
-   "cost_gbp": 993.1861582319113,
-   "pl_gbp": -30.559260995614522,
-   "pl_pct": -0.030768915517325263,
-   "reason": "End of day: sold 10 minutes before the close."
-  }
- ],
- "total_gbp": -30.559260995614522,
+ "trades": [],
+ "total_gbp": 0,
  "alerts": [
-  "10:20 Day trade: bought BKV: 54 BKV at $24.36 (about \u00a3993). Stop $23.15. Broke above its opening-range high ($24.20) at $24.34. In play: 1.2x normal volume, normally moves 3% a day. Stop $23.12. News (MT Newswires): Update: BKV Shares Rise After Signing Equipment Supply Contract for Potential Power Projec. Claude: catalyst (strength 3/5): An OFFICIAL headline reports a signed equipment supply contract for a potential Texas power project, a specific business win, though its size relative to BKV an",
-  "15:50 Day trade: sold BKV (-\u00a331): End of day: sold 10 minutes before the close. Result -\u00a331 (-3.1%).",
-  "15:50 Day trade summary: 1 trade(s) today: BKV -\u00a331. Total -\u00a331."
+  "15:50 Day trade summary: No trade today: nothing in play broke out."
  ],
  "log": [
-  "BKV: Claude: catalyst (strength 3/5): An OFFICIAL headline reports a signed equipment supply contract for a potential Texas power project, a specific business win, though its size relative to BKV an",
-  "Day trade buy order: 54 BKV at about $24.34. Broke above its opening-range high ($24.20) at $24.34. In play: 1.2x normal volume, normally moves 3% a day. Stop $23.12. News (MT Newswires): Update: BKV Shares Rise After Signing Equipment Supply Contract for Potential Power Projec. Claude: catalyst (strength 3/5): An OFFICIAL headline reports a signed equipment supply contract for a potential Texas power project, a specific business win, though its size relative to BKV an",
-  "Bought 54 BKV at 24.36 (cost \u00a3993).",
-  "Sold BKV (about -\u00a331). End of day: sold 10 minutes before the close.",
-  "Day trading finished: 1 trade(s), total -\u00a331."
+  "Added PENG to today's list at 10:16 New York: 0.9x normal volume in the last 30 min; no news found",
+  "PXS: Claude: catalyst (strength 3/5): An official two-year time charter for Pyxis Lamda at $31,000 per day locks in meaningful revenue for a small tanker fleet, and rates are rising, though one vess",
+  "Added VTVT to today's list at 10:32 New York: 0.3x normal volume in the last 30 min; news: vTv Therapeutics Announces FDA Orphan Drug Designation for HPPD in Sickle Cell D",
+  "Added PSIX to today's list at 10:48 New York: 0.3x normal volume in the last 30 min; no news found",
+  "Day trading finished: 0 trade(s), total +\u00a30."
  ]
 }

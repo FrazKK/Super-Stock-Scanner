@@ -1,27 +1,23 @@
 {
  "date": "2026-10-27",
- "generated": "2026-11-04T09:44+00:00",
+ "generated": "2026-11-04T17:32+00:00",
  "fx_gbpusd": 1.334507703781128,
  "result": "done",
  "require_news": true,
  "strategy": "catalyst",
  "bars": "5m",
  "require_trend": true,
- "added_during_day": [],
+ "added_during_day": [
+  "Added KNSA to today's list at 10:16 New York: 0.2x normal volume in the last 30 min; no news found",
+  "Added WHR to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
+  "Added ESQ to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
+  "Added THFF to today's list at 10:16 New York: 0.5x normal volume in the last 30 min; no news found",
+  "Added AVBH to today's list at 10:16 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Added ISBA to today's list at 10:16 New York: 0.5x normal volume in the last 30 min; no news found",
+  "Added AEYE to today's list at 10:16 New York: 2.4x normal volume in the last 30 min; no news found"
+ ],
  "drift_list": [],
  "list": [
-  {
-   "ticker": "AEYE",
-   "name": "AudioEye, Inc.",
-   "vol_x": 2.0,
-   "buy_pct30": 0.724140580279027,
-   "change": 0.2749326065872417,
-   "score": 5.4,
-   "news": [
-    "AudioEye Reports Record Third Quarter 2026 Results - PR Newswire"
-   ],
-   "on_t212": true
-  },
   {
    "ticker": "SOFI",
    "name": "SoFi Technologies, Inc.",
@@ -31,80 +27,6 @@
    "score": 3.86,
    "news": [
     "SoFi Reports Third Quarter 2026 with Record Net Revenue of $1.4 Billion, Net Income of $241 Million and Raises Full-Year Guidance - SoFi Investor Relations"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "TSLA",
-   "name": "Tesla, Inc.",
-   "vol_x": 0.28,
-   "buy_pct30": 0.7577761807907178,
-   "change": 0.02767988476851624,
-   "score": 3.59,
-   "news": [
-    "Tesla expands the rollout of 2026.38.5.11 update: FSD v14.3.13 (HW4) and FSD v14.3 Lite (HW3) - Tesla Oracle",
-    "Tesla to Launch Unsupervised FSD, Let Owners Join Robotaxi Network in Q2 2027 - Not a Tesla App"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "TEVA",
-   "name": "Teva Pharmaceutical Industries Limited",
-   "vol_x": 0.28,
-   "buy_pct30": 0.705487694157191,
-   "change": 0.021276557143638852,
-   "score": 2.88,
-   "news": [
-    "Teva Acquires Worldwide Rights to BXCL501, Further Expanding Innovative Neuroscience Pipeline - GlobeNewswire"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "HRI",
-   "name": "Herc Holdings Inc.",
-   "vol_x": 0.49,
-   "buy_pct30": 0.5081969644158615,
-   "change": 0.1117753432822528,
-   "score": 2.51,
-   "news": [
-    "Herc Holdings Inc. Announces CEO Succession Plan - Business Wire"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "NVA",
-   "name": "Nova Minerals Corp",
-   "vol_x": 0.55,
-   "buy_pct30": 0.6872445398203969,
-   "change": 0.0369127162388494,
-   "score": 2.35,
-   "news": [
-    "Nova Minerals Secures Final Permits for Alaska Antimony Project, Clearing Path to 2027 Production - GlobeNewswire"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "PII",
-   "name": "Polaris Inc.",
-   "vol_x": 0.33,
-   "buy_pct30": 0.31939525656728035,
-   "change": 0.08268354365237851,
-   "score": 1.94,
-   "news": [
-    "POLARIS SIGNS OFF-ROAD CHAMPION KYLE CHANEY TO MULTI-YEAR RACING AGREEMENT WITH RZR FACTORY RACING - PR Newswire",
-    "Polaris Expands Call of Duty\u00ae Collaboration as Polaris DAGOR Joins Modern Warfare\u00ae 4 - PR Newswire"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "INIO",
-   "name": "INNIO N.V.",
-   "vol_x": 0.39,
-   "buy_pct30": 0.5544346882332397,
-   "change": 0.004810578938259313,
-   "score": 1.5,
-   "news": [
-    "INNIO Reports Record Third Quarter 2026 Financial Results with Revenue Up 57%, Net Income Up 176% and Adjusted EBITDA Up 70%; Raises 2026 Full-Year Guidance - GlobeNewswire"
    ],
    "on_t212": true
   },
@@ -133,18 +55,6 @@
    "on_t212": true
   },
   {
-   "ticker": "STLA",
-   "name": "Stellantis N.V.",
-   "vol_x": 0.43,
-   "buy_pct30": 0.4522345518367399,
-   "change": 0.00980391240220757,
-   "score": 1.17,
-   "news": [
-    "STELLANTIS INDIA CONTINUES NETWORK EXPANSION WITH NEW JEEP\u00ae AND CITRO\u00cbN BRAND HOUSE IN PATNA - Media Stellantis"
-   ],
-   "on_t212": true
-  },
-  {
    "ticker": "VNDA",
    "name": "Vanda Pharmaceuticals Inc.",
    "vol_x": 0.35,
@@ -153,18 +63,6 @@
    "score": 0.64,
    "news": [
     "Vanda Pharmaceuticals Announces Positive Results from Study 3601 of NEREUS\u2122 (tradipitant) for Prevention of GLP-1-Induced Vomiting - PR Newswire"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "FER",
-   "name": "Ferrovial N.V.",
-   "vol_x": 0.48,
-   "buy_pct30": 0.1627731588961644,
-   "change": 0.061469738123108186,
-   "score": 0.11,
-   "news": [
-    "Ferrovial delivers strong performance in first nine months of 2026 - PR Newswire"
    ],
    "on_t212": true
   }
@@ -177,6 +75,10 @@
   {
    "ticker": "TDIC",
    "vol_x": 2.65
+  },
+  {
+   "ticker": "AEYE",
+   "vol_x": 2.0
   },
   {
    "ticker": "RCL",
@@ -225,10 +127,6 @@
   {
    "ticker": "CLYM",
    "vol_x": 0.57
-  },
-  {
-   "ticker": "QTEX",
-   "vol_x": 0.55
   }
  ],
  "trades": [
@@ -246,13 +144,20 @@
  ],
  "total_gbp": 1.167651096325244,
  "alerts": [
-  "10:26 Day trade: bought SOFI: 81 SOFI at $16.31 (about \u00a3992). Stop $15.50. Broke above its opening-range high ($16.28) at $16.30. In play: 1.1x normal volume, normally moves 4% a day. Stop $15.67. News (SoFi Investor Relations): SoFi Reports Third Quarter 2026 with Record Net Revenue of $1.4 Billion, Net Income of $24. Claude: catalyst (strength 4/5): Official Q3 2026 results show record revenue and net income with raised full-year guidance, a strong earnings catalyst consistent with the heavy-volume breakout",
+  "10:26 Day trade: bought SOFI: 81 SOFI at $16.31 (about \u00a3992). Stop $15.50. Broke above its opening-range high ($16.28) at $16.30. In play: 1.1x normal volume, normally moves 4% a day. Stop $15.67. News (SoFi Investor Relations): SoFi Reports Third Quarter 2026 with Record Net Revenue of $1.4 Billion, Net Income of $24. Claude: catalyst (strength 4/5): Official Q3 2026 results show record net revenue and net income with raised full-year guidance, a beat-and-raise that should realistically drive a 10%+ move for",
   "15:50 Day trade: sold SOFI (+\u00a31): End of day: sold 10 minutes before the close. Result +\u00a31 (+0.1%).",
   "15:50 Day trade summary: 1 trade(s) today: SOFI +\u00a31. Total +\u00a31."
  ],
  "log": [
-  "SOFI: Claude: catalyst (strength 4/5): Official Q3 2026 results show record revenue and net income with raised full-year guidance, a strong earnings catalyst consistent with the heavy-volume breakout",
-  "Day trade buy order: 81 SOFI at about $16.30. Broke above its opening-range high ($16.28) at $16.30. In play: 1.1x normal volume, normally moves 4% a day. Stop $15.67. News (SoFi Investor Relations): SoFi Reports Third Quarter 2026 with Record Net Revenue of $1.4 Billion, Net Income of $24. Claude: catalyst (strength 4/5): Official Q3 2026 results show record revenue and net income with raised full-year guidance, a strong earnings catalyst consistent with the heavy-volume breakout",
+  "Added KNSA to today's list at 10:16 New York: 0.2x normal volume in the last 30 min; no news found",
+  "Added WHR to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
+  "Added ESQ to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
+  "Added THFF to today's list at 10:16 New York: 0.5x normal volume in the last 30 min; no news found",
+  "Added AVBH to today's list at 10:16 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Added ISBA to today's list at 10:16 New York: 0.5x normal volume in the last 30 min; no news found",
+  "Added AEYE to today's list at 10:16 New York: 2.4x normal volume in the last 30 min; no news found",
+  "SOFI: Claude: catalyst (strength 4/5): Official Q3 2026 results show record net revenue and net income with raised full-year guidance, a beat-and-raise that should realistically drive a 10%+ move for",
+  "Day trade buy order: 81 SOFI at about $16.30. Broke above its opening-range high ($16.28) at $16.30. In play: 1.1x normal volume, normally moves 4% a day. Stop $15.67. News (SoFi Investor Relations): SoFi Reports Third Quarter 2026 with Record Net Revenue of $1.4 Billion, Net Income of $24. Claude: catalyst (strength 4/5): Official Q3 2026 results show record net revenue and net income with raised full-year guidance, a beat-and-raise that should realistically drive a 10%+ move for",
   "Bought 81 SOFI at 16.31 (cost \u00a3992).",
   "Sold SOFI (about +\u00a31). End of day: sold 10 minutes before the close.",
   "Day trading finished: 1 trade(s), total +\u00a31."

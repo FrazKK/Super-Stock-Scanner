@@ -1,34 +1,24 @@
 {
  "date": "2026-09-24",
- "generated": "2026-11-04T09:30+00:00",
+ "generated": "2026-11-04T17:15+00:00",
  "fx_gbpusd": 1.3241524696350098,
  "result": "done",
  "require_news": true,
  "strategy": "catalyst",
  "bars": "5m",
  "require_trend": true,
- "added_during_day": [],
+ "added_during_day": [
+  "Added RZLT to today's list at 10:16 New York: 0.5x normal volume in the last 30 min; no news found"
+ ],
  "drift_list": [],
  "list": [
-  {
-   "ticker": "P",
-   "name": "Everpure, Inc.",
-   "vol_x": 0.34,
-   "buy_pct30": 0.7757188802777915,
-   "change": 0.18741445632824005,
-   "score": 3.28,
-   "news": [
-    "Everpure's Expanding Business Model Fuels New Long-Term Outlook - PR Newswire"
-   ],
-   "on_t212": true
-  },
   {
    "ticker": "DGNX",
    "name": "Diginex Limited",
    "vol_x": 1.17,
-   "buy_pct30": 0.06357273195878561,
+   "buy_pct30": 0.0642686229874136,
    "change": 0.013605428936910968,
-   "score": 1.09,
+   "score": 1.1,
    "news": [
     "Diginex Consolidates Group-Wide Expertise and Launches Sustainability Science & Intelligence Initiative to Accelerate Product Innovation and Drive Measurable Client Outcomes - GlobeNewswire"
    ],
@@ -36,10 +26,6 @@
   }
  ],
  "quiet": [
-  {
-   "ticker": "SPHL",
-   "vol_x": 669.15
-  },
   {
    "ticker": "SRZN",
    "vol_x": 40.62
@@ -95,6 +81,10 @@
   {
    "ticker": "ITIC",
    "vol_x": 0.48
+  },
+  {
+   "ticker": "QMCO",
+   "vol_x": 0.45
   }
  ],
  "trades": [],
@@ -103,6 +93,8 @@
   "15:50 Day trade summary: No trade today: nothing in play broke out."
  ],
  "log": [
+  "Added RZLT to today's list at 10:16 New York: 0.5x normal volume in the last 30 min; no news found",
+  "RZLT: Claude: no catalyst (strength 1/5): The only headline is an OTHER-tagged earnings-release title with no readable content, so no specific beat, approval or contract can be verified; the price move ",
   "Day trading finished: 0 trade(s), total +\u00a30."
  ]
 }

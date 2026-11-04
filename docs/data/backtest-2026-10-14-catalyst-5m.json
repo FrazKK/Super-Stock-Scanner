@@ -1,6 +1,6 @@
 {
  "date": "2026-10-14",
- "generated": "2026-11-04T09:36+00:00",
+ "generated": "2026-11-04T17:25+00:00",
  "fx_gbpusd": 1.3257324695587158,
  "result": "done",
  "require_news": true,
@@ -8,31 +8,15 @@
  "bars": "5m",
  "require_trend": true,
  "added_during_day": [
+  "Added MXCT to today's list at 10:32 New York: 3.8x normal volume in the last 30 min; no news found",
   "Added DFNS to today's list at 10:48 New York: 0.2x normal volume in the last 30 min; news: T3 Defense Subsidiary Positech Commences Deliveries On $3.9 Million Defense Orde"
  ],
  "drift_list": [],
- "list": [
-  {
-   "ticker": "GFS",
-   "name": "GlobalFoundries Inc.",
-   "vol_x": 0.45,
-   "buy_pct30": 0.5369752031912177,
-   "change": 0.0460384941339842,
-   "score": 2.55,
-   "news": [
-    "GlobalFoundries selected to operate two new semiconductor fabs in New York under landmark U.S.-Japan initiative - GlobalFoundries"
-   ],
-   "on_t212": true
-  }
- ],
+ "list": [],
  "quiet": [
   {
    "ticker": "MXCT",
    "vol_x": 18.11
-  },
-  {
-   "ticker": "VEEE",
-   "vol_x": 6.36
   },
   {
    "ticker": "GRML",
@@ -75,6 +59,10 @@
    "vol_x": 0.46
   },
   {
+   "ticker": "GFS",
+   "vol_x": 0.45
+  },
+  {
    "ticker": "IKT",
    "vol_x": 0.41
   },
@@ -87,32 +75,15 @@
    "vol_x": 0.36
   }
  ],
- "trades": [
-  {
-   "ticker": "DFNS",
-   "bought_at": "2026-10-14T14:48+00:00",
-   "sold_at": "2026-10-14T15:46+00:00",
-   "entry": 5.781976017475127,
-   "exit": 6.26373,
-   "cost_gbp": 1000.2460128363604,
-   "pl_gbp": 80.09456237919369,
-   "pl_pct": 0.08007486293504187,
-   "reason": "Stop-loss order filled"
-  }
- ],
- "total_gbp": 80.09456237919369,
+ "trades": [],
+ "total_gbp": 0,
  "alerts": [
-  "10:48 Day trade: bought DFNS: 229 DFNS at $5.78 (about \u00a31,000). Stop $5.49. Broke above its opening-range high ($5.66) at $5.78. In play: 0.2x normal volume, normally moves 7% a day. Stop $5.50. News (GlobeNewswire): T3 Defense Subsidiary Positech Commences Deliveries On $3.9 Million Defense Order - GlobeN. Claude: catalyst (strength 3/5): An official GlobeNewswire release reports a subsidiary starting deliveries on a $3.9M defense order, a specific contract that may be material for a small-cap, t",
-  "11:46 Day trade update: DFNS: stop-loss order filled (+\u00a380)",
-  "15:50 Day trade summary: 1 trade(s) today: DFNS +\u00a380. Total +\u00a380."
+  "15:50 Day trade summary: No trade today: nothing in play broke out."
  ],
  "log": [
+  "Added MXCT to today's list at 10:32 New York: 3.8x normal volume in the last 30 min; no news found",
   "Added DFNS to today's list at 10:48 New York: 0.2x normal volume in the last 30 min; news: T3 Defense Subsidiary Positech Commences Deliveries On $3.9 Million Defense Orde",
-  "DFNS: Claude: catalyst (strength 3/5): An official GlobeNewswire release reports a subsidiary starting deliveries on a $3.9M defense order, a specific contract that may be material for a small-cap, t",
-  "Day trade buy order: 229 DFNS at about $5.78. Broke above its opening-range high ($5.66) at $5.78. In play: 0.2x normal volume, normally moves 7% a day. Stop $5.50. News (GlobeNewswire): T3 Defense Subsidiary Positech Commences Deliveries On $3.9 Million Defense Order - GlobeN. Claude: catalyst (strength 3/5): An official GlobeNewswire release reports a subsidiary starting deliveries on a $3.9M defense order, a specific contract that may be material for a small-cap, t",
-  "Bought 229 DFNS at 5.78 (cost \u00a31,000).",
-  "DFNS: stop raised from 5.51 to 6.27.",
-  "DFNS: stop-loss order filled, P&L +\u00a380.",
-  "Day trading finished: 1 trade(s), total +\u00a380."
+  "DFNS: Claude: catalyst (strength 3/5): An official release reports a firm $3.9M defense order with deliveries starting, a contract that could matter for a small-cap, though the order size relative to",
+  "Day trading finished: 0 trade(s), total +\u00a30."
  ]
 }

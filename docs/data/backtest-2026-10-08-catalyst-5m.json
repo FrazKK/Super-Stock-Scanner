@@ -1,39 +1,18 @@
 {
  "date": "2026-10-08",
- "generated": "2026-11-04T09:37+00:00",
+ "generated": "2026-11-04T17:23+00:00",
  "fx_gbpusd": 1.3214927911758423,
  "result": "done",
  "require_news": true,
  "strategy": "catalyst",
  "bars": "5m",
  "require_trend": true,
- "added_during_day": [],
+ "added_during_day": [
+  "Added BYRN to today's list at 10:16 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Added IMC to today's list at 10:32 New York: 3.2x normal volume in the last 30 min; news: IMC Rare Earths Discovers New High-Grade, Near-Surface Terbium Zone Beyond Exist"
+ ],
  "drift_list": [],
  "list": [
-  {
-   "ticker": "GFUZ",
-   "name": "General Fusion Group Ltd.",
-   "vol_x": 1.95,
-   "buy_pct30": 0.578486840868069,
-   "change": 0.12434212941046918,
-   "score": 5.71,
-   "news": [
-    "General Fusion Achieves World-First 1 keV Electron Temperature Milestone on its Path to Commercial Fusion Power - GlobeNewswire"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "FCN",
-   "name": "FTI Consulting, Inc.",
-   "vol_x": 0.29,
-   "buy_pct30": 0.807082146674172,
-   "change": 0.031002718397726392,
-   "score": 3.31,
-   "news": [
-    "FTI Consulting Expands Technology Transformation Capabilities in EMEA With Appointment of Anita Fuller - GlobeNewswire"
-   ],
-   "on_t212": true
-  },
   {
    "ticker": "FRO",
    "name": "Frontline Plc",
@@ -42,31 +21,7 @@
    "change": 0.04636258991336839,
    "score": 2.59,
    "news": [
-    "Frontline Managed Services Acquires KL Software Technologies, Launches Intelligent Applications Business for Law Firms - PR Newswire Canada"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "GFS",
-   "name": "GlobalFoundries Inc.",
-   "vol_x": 0.73,
-   "buy_pct30": 0.3893029004022481,
-   "change": 0.04312044301594553,
-   "score": 2.52,
-   "news": [
-    "GlobalFoundries reaches agreement to establish U.S.-based supply of silicon interposers for advanced AI packaging - GlobalFoundries"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "PENG",
-   "name": "Penguin Solutions, Inc.",
-   "vol_x": 0.28,
-   "buy_pct30": 0.4393848791283036,
-   "change": 0.02231101408847902,
-   "score": 1.82,
-   "news": [
-    "Penguin Solutions Appoints Stephen Cumming as Senior Vice President and Chief Financial Officer to Support Accelerated Growth - Business Wire"
+    "Frontline Managed Services Acquires KL Software Technologies, Launches Intelligent Applications Business for Law Firms - PR Newswire"
    ],
    "on_t212": true
   },
@@ -93,18 +48,6 @@
     "Securitize Launches Global Onchain Trading of U.S. Stocks with Security Entitlements - PR Newswire"
    ],
    "on_t212": true
-  },
-  {
-   "ticker": "RCKT",
-   "name": "Rocket Pharmaceuticals, Inc.",
-   "vol_x": 0.26,
-   "buy_pct30": 0.22922372307533165,
-   "change": 0.007889538559900933,
-   "score": -0.06,
-   "news": [
-    "Rocket Pharmaceuticals Highlights FDA-Aligned Pivotal Phase 2 Trial and Updated Clinical Findings for RP-A501 Following Danon Disease Investor Webinar - Business Wire"
-   ],
-   "on_t212": true
   }
  ],
  "quiet": [
@@ -115,6 +58,10 @@
   {
    "ticker": "WOLF",
    "vol_x": 2.22
+  },
+  {
+   "ticker": "GFUZ",
+   "vol_x": 1.95
   },
   {
    "ticker": "HAE",
@@ -149,6 +96,10 @@
    "vol_x": 0.8
   },
   {
+   "ticker": "GFS",
+   "vol_x": 0.73
+  },
+  {
    "ticker": "ADCT",
    "vol_x": 0.62
   },
@@ -159,40 +110,19 @@
   {
    "ticker": "GAU",
    "vol_x": 0.5
-  },
-  {
-   "ticker": "HNRG",
-   "vol_x": 0.47
-  },
-  {
-   "ticker": "PEP",
-   "vol_x": 0.46
   }
  ],
- "trades": [
-  {
-   "ticker": "GFS",
-   "bought_at": "2026-10-08T14:16+00:00",
-   "sold_at": "2026-10-08T17:06+00:00",
-   "entry": 51.04599393081664,
-   "exit": 48.60135,
-   "cost_gbp": 967.1366212339467,
-   "pl_gbp": -49.075465338041454,
-   "pl_pct": -0.05074305352580614,
-   "reason": "Stop-loss order filled"
-  }
- ],
- "total_gbp": -49.075465338041454,
+ "trades": [],
+ "total_gbp": 0,
  "alerts": [
-  "10:16 Day trade: bought GFS: 25 GFS at $51.05 (about \u00a3967). Stop $48.49. Broke above its opening-range high ($50.23) at $50.99. In play: 0.7x normal volume, normally moves 3% a day. Stop $48.60. News (GlobalFoundries): GlobalFoundries reaches agreement to establish U.S.-based supply of silicon interposers fo. Claude: catalyst (strength 3/5): An official announcement of an agreement to establish U.S.-based silicon interposer supply for AI packaging is a specific, business-relevant development, though",
-  "13:06 Day trade update: GFS: stop-loss order filled (-\u00a349)",
-  "15:50 Day trade summary: 1 trade(s) today: GFS -\u00a349. Total -\u00a349."
+  "15:50 Day trade summary: No trade today: nothing in play broke out."
  ],
  "log": [
-  "GFS: Claude: catalyst (strength 3/5): An official announcement of an agreement to establish U.S.-based silicon interposer supply for AI packaging is a specific, business-relevant development, though",
-  "Day trade buy order: 25 GFS at about $50.99. Broke above its opening-range high ($50.23) at $50.99. In play: 0.7x normal volume, normally moves 3% a day. Stop $48.60. News (GlobalFoundries): GlobalFoundries reaches agreement to establish U.S.-based supply of silicon interposers fo. Claude: catalyst (strength 3/5): An official announcement of an agreement to establish U.S.-based silicon interposer supply for AI packaging is a specific, business-relevant development, though",
-  "Bought 25 GFS at 51.05 (cost \u00a3967).",
-  "GFS: stop-loss order filled, P&L -\u00a349.",
-  "Day trading finished: 1 trade(s), total -\u00a349."
+  "Added BYRN to today's list at 10:16 New York: 0.4x normal volume in the last 30 min; no news found",
+  "BYRN: Claude: no catalyst (strength 2/5): The only OFFICIAL item is a fiscal Q3 earnings release headline with no visible text, so a beat, raised guidance or other specific positive cannot be confirmed.",
+  "SECZ: Claude: catalyst (strength 3/5): An official launch of onchain trading of US stocks is a product that could matter to revenue, but the headline gives no size, volume or financial figures, and t",
+  "Added IMC to today's list at 10:32 New York: 3.2x normal volume in the last 30 min; news: IMC Rare Earths Discovers New High-Grade, Near-Surface Terbium Zone Beyond Exist",
+  "IMC: Claude: catalyst (strength 3/5): An official release reports a new high-grade, near-surface terbium zone beyond the existing 1.1 Bt resource, a meaningful mining discovery, but the headline giv",
+  "Day trading finished: 0 trade(s), total +\u00a30."
  ]
 }

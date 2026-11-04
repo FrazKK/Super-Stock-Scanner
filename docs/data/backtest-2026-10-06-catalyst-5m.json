@@ -1,36 +1,27 @@
 {
  "date": "2026-10-06",
- "generated": "2026-11-04T09:36+00:00",
+ "generated": "2026-11-04T17:24+00:00",
  "fx_gbpusd": 1.32185959815979,
  "result": "done",
  "require_news": true,
  "strategy": "catalyst",
  "bars": "5m",
  "require_trend": true,
- "added_during_day": [],
+ "added_during_day": [
+  "Added OSTX to today's list at 10:16 New York: 0.6x normal volume in the last 30 min; no news found",
+  "Added CMTV to today's list at 10:48 New York: 0.4x normal volume in the last 30 min; no news found"
+ ],
  "drift_list": [],
  "list": [
   {
    "ticker": "AIFA",
    "name": "All In FutureTech Alliance, Inc.",
    "vol_x": 3.0,
-   "buy_pct30": 0.5997959506563216,
+   "buy_pct30": 0.6161431125616754,
    "change": 0.261054390737552,
-   "score": 6.9,
+   "score": 6.96,
    "news": [
     "All In FutureTech Alliance Inc. Launches New Digital - GlobeNewswire"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "CRWD",
-   "name": "CrowdStrike Holdings, Inc.",
-   "vol_x": 0.27,
-   "buy_pct30": 0.6106668886150047,
-   "change": 0.047077002179443106,
-   "score": 3.48,
-   "news": [
-    "CrowdStrike, AWS, and NVIDIA Expand Global Cybersecurity Startup Accelerator, Defining the Next Generation of Innovation for the Agentic Era - Business Wire"
    ],
    "on_t212": true
   },
@@ -47,6 +38,18 @@
    "on_t212": true
   },
   {
+   "ticker": "HTB",
+   "name": "HomeTrust Bancshares, Inc.",
+   "vol_x": 0.22,
+   "buy_pct30": 0.7350491629114032,
+   "change": 0.023425750723915284,
+   "score": 2.88,
+   "news": [
+    "HomeTrust Bancshares, Inc. Announces Completion of Previous Stock Repurchase Program and Authorization of New Stock Repurchase Program - Business Wire"
+   ],
+   "on_t212": true
+  },
+  {
    "ticker": "PUSA",
    "name": "Powerus Corporation",
    "vol_x": 0.66,
@@ -55,54 +58,6 @@
    "score": 2.73,
    "news": [
     "Powerus (Nasdaq: PUSA) Awarded $82 Million Order for Counter-Unmanned Aerial Systems - Business Wire"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "BRUN",
-   "name": "Boost Run Inc.",
-   "vol_x": 0.82,
-   "buy_pct30": 0.5981525176094467,
-   "change": 0.08722958874075992,
-   "score": 2.53,
-   "news": [
-    "Boost Run Announces Five-Year, $525.6 Million AI Cloud Services Compute Agreement - Business Wire"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "VELO",
-   "name": "Velo3D, Inc.",
-   "vol_x": 0.36,
-   "buy_pct30": 0.6103364276750446,
-   "change": 0.02403349041223435,
-   "score": 1.66,
-   "news": [
-    "VELO3D AND MEARS EXPAND CAPABILITIES WITH DEDICATED U.S. CU-NI PRODUCTION - PR Newswire"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "AIBZ",
-   "name": "Bitzero Holdings Inc.",
-   "vol_x": 0.39,
-   "buy_pct30": 0.5435190021915451,
-   "change": 0.006265628293007142,
-   "score": 1.45,
-   "news": [
-    "Bitzero Engages and Renews Investor Relations Providers to Expand Capital Markets Program - TMX Newsfile"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "RZLV",
-   "name": "Rezolve AI PLC",
-   "vol_x": 0.5,
-   "buy_pct30": 0.33858507959773193,
-   "change": 0.00013449801342790835,
-   "score": 0.85,
-   "news": [
-    "Rezolve Ai Receives Court Approval for Capital Reduction, - GlobeNewswire"
    ],
    "on_t212": true
   }
@@ -141,6 +96,10 @@
    "vol_x": 0.86
   },
   {
+   "ticker": "BRUN",
+   "vol_x": 0.82
+  },
+  {
    "ticker": "PRME",
    "vol_x": 0.75
   },
@@ -163,10 +122,6 @@
   {
    "ticker": "GRRR",
    "vol_x": 0.56
-  },
-  {
-   "ticker": "FRSH",
-   "vol_x": 0.55
   }
  ],
  "trades": [],
@@ -175,6 +130,8 @@
   "15:50 Day trade summary: No trade today: nothing in play broke out."
  ],
  "log": [
+  "Added OSTX to today's list at 10:16 New York: 0.6x normal volume in the last 30 min; no news found",
+  "Added CMTV to today's list at 10:48 New York: 0.4x normal volume in the last 30 min; no news found",
   "Day trading finished: 0 trade(s), total +\u00a30."
  ]
 }

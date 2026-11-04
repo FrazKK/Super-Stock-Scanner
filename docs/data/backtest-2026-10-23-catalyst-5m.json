@@ -1,28 +1,23 @@
 {
  "date": "2026-10-23",
- "generated": "2026-11-04T09:42+00:00",
+ "generated": "2026-11-04T17:29+00:00",
  "fx_gbpusd": 1.3403927087783813,
  "result": "done",
  "require_news": true,
  "strategy": "catalyst",
  "bars": "5m",
  "require_trend": true,
- "added_during_day": [],
- "drift_list": [],
- "list": [
-  {
-   "ticker": "SKYQ",
-   "name": "Sky Quarry Inc.",
-   "vol_x": 0.25,
-   "buy_pct30": 0.3896379775463798,
-   "change": 0.07733334029666983,
-   "score": 1.56,
-   "news": [
-    "Sky Quarry Confirms Production at Nevada Refinery Amid Strong Diesel Demand - GlobeNewswire"
-   ],
-   "on_t212": false
-  }
+ "added_during_day": [
+  "Added FCNCA to today's list at 10:16 New York: 0.5x normal volume in the last 30 min; no news found",
+  "Added NOVT to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
+  "Added OII to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
+  "Added BFC to today's list at 10:16 New York: 0.2x normal volume in the last 30 min; no news found",
+  "Added GRC to today's list at 10:32 New York: 0.3x normal volume in the last 30 min; no news found",
+  "Added EAF to today's list at 10:32 New York: 0.3x normal volume in the last 30 min; no news found",
+  "Added NAUT to today's list at 10:48 New York: 0.3x normal volume in the last 30 min; no news found"
  ],
+ "drift_list": [],
+ "list": [],
  "quiet": [
   {
    "ticker": "BOLT",
@@ -91,6 +86,18 @@
   "15:50 Day trade summary: No trade today: nothing in play broke out."
  ],
  "log": [
+  "Added FCNCA to today's list at 10:16 New York: 0.5x normal volume in the last 30 min; no news found",
+  "Added NOVT to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
+  "Added OII to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
+  "Added BFC to today's list at 10:16 New York: 0.2x normal volume in the last 30 min; no news found",
+  "OII: Claude: no catalyst (strength 1/5): No OFFICIAL headline in the last 48 hours; all items are OTHER commentary, and the Q3 earnings coverage describes a miss and margin pressure, which is negative ",
+  "BFC: Claude: no catalyst (strength 1/5): No OFFICIAL headline in the last 48 hours; the only news is OTHER commentary on Q3 earnings with a margin squeeze, and the stock fell over 6% on Oct 21 with a H",
+  "NOVT: Claude: no catalyst (strength 1/5): All headlines are OTHER commentary or valuation pieces with no official company announcement in the last 48 hours; the intraday move lacks a specific catalyst.",
+  "Added GRC to today's list at 10:32 New York: 0.3x normal volume in the last 30 min; no news found",
+  "Added EAF to today's list at 10:32 New York: 0.3x normal volume in the last 30 min; no news found",
+  "EAF: Claude: no catalyst (strength 1/5): All headlines are OTHER-labelled earnings commentary; the only results item reports a Q3 loss with a revenue beat, which is mixed and not a clear official catal",
+  "Added NAUT to today's list at 10:48 New York: 0.3x normal volume in the last 30 min; no news found",
+  "FCNCA: Claude: catalyst (strength 2/5): Q3 2026 earnings release plus an additional share repurchase plan is an official, potentially positive item, but the headline alone does not show a beat versus ",
   "Day trading finished: 0 trade(s), total +\u00a30."
  ]
 }

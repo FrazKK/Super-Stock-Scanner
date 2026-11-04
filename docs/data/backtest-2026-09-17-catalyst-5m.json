@@ -1,51 +1,17 @@
 {
  "date": "2026-09-17",
- "generated": "2026-11-04T09:32+00:00",
+ "generated": "2026-11-04T17:19+00:00",
  "fx_gbpusd": 1.3382940292358398,
  "result": "done",
  "require_news": true,
  "strategy": "catalyst",
  "bars": "5m",
  "require_trend": true,
- "added_during_day": [],
+ "added_during_day": [
+  "Added DRTS to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found"
+ ],
  "drift_list": [],
  "list": [
-  {
-   "ticker": "BSVN",
-   "name": "Bank7 Corp.",
-   "vol_x": 0.29,
-   "buy_pct30": 0.9346070701932858,
-   "change": 0.009564106455384191,
-   "score": 3.82,
-   "news": [
-    "Bank7 Corp. to Acquire Century Financial Services Corporation and Expand Southwest Franchise into New Mexico - PR Newswire"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "FEAM",
-   "name": "5E Advanced Materials, Inc.",
-   "vol_x": 0.93,
-   "buy_pct30": 0.5580183451934525,
-   "change": 0.07380680644407489,
-   "score": 3.59,
-   "news": [
-    "SEARLES VALLEY MINERALS ANNOUNCES DEFINITIVE ASSET PURCHASE AGREEMENT WITH 5E ADVANCED MATERIALS - PR Newswire"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "QMCO",
-   "name": "Quantum Corporation",
-   "vol_x": 0.31,
-   "buy_pct30": 0.7544823305813225,
-   "change": 0.07427614198197618,
-   "score": 3.14,
-   "news": [
-    "Quantum X Labs Launches QuantumQ Security Program for Quantum Cybersecurity - The Quantum Insider"
-   ],
-   "on_t212": true
-  },
   {
    "ticker": "MNTS",
    "name": "Momentus Inc.",
@@ -55,78 +21,6 @@
    "score": 3.05,
    "news": [
     "Momentus Technologies Launches MomentusMAX, an AI Platform Built for Venues, and Brings MAX for Sales to General Availability - PR Newswire"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "NRXS",
-   "name": "Neuraxis, Inc.",
-   "vol_x": 0.73,
-   "buy_pct30": 0.5055559862081322,
-   "change": 0.12247837141560525,
-   "score": 2.98,
-   "news": [
-    "NeurAxis Announces Medical Coverage Policy Milestone, - GlobeNewswire"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "TWST",
-   "name": "Twist Bioscience Corporation",
-   "vol_x": 0.29,
-   "buy_pct30": 0.6618828835760708,
-   "change": 0.09722504851627023,
-   "score": 2.73,
-   "news": [
-    "Twist Bioscience Joins Lilly TuneLab to Advance Antibody Drug Discovery - Business Wire"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "OSS",
-   "name": "One Stop Systems, Inc.",
-   "vol_x": 0.29,
-   "buy_pct30": 0.5565852350849194,
-   "change": 0.06279340594689775,
-   "score": 2.31,
-   "news": [
-    "OSS Receives Award Supporting U.S. Missile Defense Agency - GlobeNewswire"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "VICR",
-   "name": "Vicor Corporation",
-   "vol_x": 0.38,
-   "buy_pct30": 0.49419773327643773,
-   "change": 0.1434396666778952,
-   "score": 1.24,
-   "news": [
-    "Vicor licenses VPD to a leading AI OEM - GlobeNewswire"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "CRML",
-   "name": "Critical Metals Corp.",
-   "vol_x": 0.41,
-   "buy_pct30": 0.37418138629161146,
-   "change": 0.03549382999945916,
-   "score": 0.82,
-   "news": [
-    "Critical Metals Corp (Nasdaq: CRML) Achieves Breakthrough Tanbreez Heavy Rare Earth Results: >99% Dissolution of Eudialyte Concentrate Into 19 Ultra-High-Purity Rare Earth Products; Refinery Study Projects US$1.8\u20132.2b in Annual Refinery Revenue - Critical Metals Corp"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "COHR",
-   "name": "Coherent Corp.",
-   "vol_x": 0.26,
-   "buy_pct30": 0.44229976848968655,
-   "change": 0.05125380693455228,
-   "score": 0.79,
-   "news": [
-    "Coherent Solutions Named the Twin Cities' Largest IT Consulting Firm, Signals a Market Shift From Hours to Outcomes - Business Wire"
    ],
    "on_t212": true
   }
@@ -173,12 +67,12 @@
    "vol_x": 0.96
   },
   {
-   "ticker": "OSTX",
-   "vol_x": 0.87
+   "ticker": "FEAM",
+   "vol_x": 0.93
   },
   {
-   "ticker": "AYI",
-   "vol_x": 0.79
+   "ticker": "OSTX",
+   "vol_x": 0.87
   },
   {
    "ticker": "BIAF",
@@ -189,34 +83,18 @@
    "vol_x": 0.73
   },
   {
-   "ticker": "NBIS",
-   "vol_x": 0.71
-  }
- ],
- "trades": [
-  {
    "ticker": "NRXS",
-   "bought_at": "2026-09-17T14:36+00:00",
-   "sold_at": "2026-09-17T19:50+00:00",
-   "entry": 7.967960038185119,
-   "exit": 7.650000095367432,
-   "cost_gbp": 1001.7419065302219,
-   "pl_gbp": -41.4148125241519,
-   "pl_pct": -0.04134279723566945,
-   "reason": "End of day: sold 10 minutes before the close."
+   "vol_x": 0.73
   }
  ],
- "total_gbp": -41.4148125241519,
+ "trades": [],
+ "total_gbp": 0,
  "alerts": [
-  "10:36 Day trade: bought NRXS: 168 NRXS at $7.97 (about \u00a31,002). Stop $7.57. Broke above its opening-range high ($7.93) at $7.96. In play: 0.7x normal volume, normally moves 5% a day. Stop $7.56. News (GlobeNewswire): NeurAxis Announces Medical Coverage Policy Milestone, - GlobeNewswire. Claude: catalyst (strength 4/5): An OFFICIAL company release announces a medical coverage policy milestone adding about 18 million covered lives for its IB-Stim device, a specific commercial wi",
-  "15:50 Day trade: sold NRXS (-\u00a341): End of day: sold 10 minutes before the close. Result -\u00a341 (-4.1%).",
-  "15:50 Day trade summary: 1 trade(s) today: NRXS -\u00a341. Total -\u00a341."
+  "15:50 Day trade summary: No trade today: nothing in play broke out."
  ],
  "log": [
-  "NRXS: Claude: catalyst (strength 4/5): An OFFICIAL company release announces a medical coverage policy milestone adding about 18 million covered lives for its IB-Stim device, a specific commercial wi",
-  "Day trade buy order: 168 NRXS at about $7.96. Broke above its opening-range high ($7.93) at $7.96. In play: 0.7x normal volume, normally moves 5% a day. Stop $7.56. News (GlobeNewswire): NeurAxis Announces Medical Coverage Policy Milestone, - GlobeNewswire. Claude: catalyst (strength 4/5): An OFFICIAL company release announces a medical coverage policy milestone adding about 18 million covered lives for its IB-Stim device, a specific commercial wi",
-  "Bought 168 NRXS at 7.97 (cost \u00a31,002).",
-  "Sold NRXS (about -\u00a341). End of day: sold 10 minutes before the close.",
-  "Day trading finished: 1 trade(s), total -\u00a341."
+  "Added DRTS to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
+  "DRTS: Claude: no catalyst (strength 1/5): The only headline is an OTHER-sourced commentary piece on a wider-than-expected quarterly loss, which is negative sentiment and not an official company catalyst",
+  "Day trading finished: 0 trade(s), total +\u00a30."
  ]
 }

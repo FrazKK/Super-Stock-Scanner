@@ -1,6 +1,6 @@
 {
  "date": "2026-10-19",
- "generated": "2026-11-04T09:38+00:00",
+ "generated": "2026-11-04T17:28+00:00",
  "fx_gbpusd": 1.3335645198822021,
  "result": "done",
  "require_news": true,
@@ -8,32 +8,19 @@
  "bars": "5m",
  "require_trend": true,
  "added_during_day": [
-  "Added KLAR to today's list at 10:48 New York: 0.2x normal volume in the last 30 min; news: Klarna Expands Fiserv Partnership to Enterprise Merchants After Going Live at 10",
   "Added ESEA to today's list at 10:48 New York: 0.3x normal volume in the last 30 min; news: Euroseas Ltd. Announces a New Time Charter Contract for its - GlobeNewswire"
  ],
  "drift_list": [],
  "list": [
   {
-   "ticker": "FUFU",
-   "name": "BitFuFu Inc.",
-   "vol_x": 167.54,
-   "buy_pct30": 0.5870860870570966,
-   "change": 0.6001111030608046,
-   "score": 335.93,
+   "ticker": "XE",
+   "name": "X-Energy, Inc.",
+   "vol_x": 0.28,
+   "buy_pct30": 0.38632446482190297,
+   "change": 0.020270274624152318,
+   "score": 0.61,
    "news": [
-    "BitFuFu Launches BTC-Denominated Hashrate Token (HASH) with Finloop - GlobeNewswire"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "TSLA",
-   "name": "Tesla, Inc.",
-   "vol_x": 0.24,
-   "buy_pct30": 0.6212137758940773,
-   "change": 0.020311757294404043,
-   "score": 2.46,
-   "news": [
-    "Tesla Model Y L Launch Series Waits Stretch to Early 2027 - BASENOR - Tesla Accessories"
+    "X-energy, AEP & Amazon Partner on Indiana SMR Project - X-energy"
    ],
    "on_t212": true
   },
@@ -48,18 +35,6 @@
     "Alpha Tau Announces FDA Approval to Expand Alpha DaRT\u00ae U.S. Recurrent Glioblastoma REGAIN Trial; New Trial Data to be Presented at SNO 2026 Annual Meeting - Alpha Tau Medical"
    ],
    "on_t212": true
-  },
-  {
-   "ticker": "QNT",
-   "name": "Quantinuum Inc.",
-   "vol_x": 0.24,
-   "buy_pct30": 0.19837441683477358,
-   "change": 0.014500755268326726,
-   "score": -0.23,
-   "news": [
-    "Quantinuum Breaks Error-Correction World Record by 10x, Validating Its Leading Path to Fault-Tolerant Quantum Computing by 2029 - PR Newswire"
-   ],
-   "on_t212": true
   }
  ],
  "quiet": [
@@ -72,16 +47,8 @@
    "vol_x": 4.25
   },
   {
-   "ticker": "EXYN",
-   "vol_x": 2.63
-  },
-  {
    "ticker": "RPGL",
    "vol_x": 2.62
-  },
-  {
-   "ticker": "SLE",
-   "vol_x": 2.42
   },
   {
    "ticker": "DH",
@@ -122,6 +89,14 @@
   {
    "ticker": "MPTI",
    "vol_x": 0.59
+  },
+  {
+   "ticker": "NVEC",
+   "vol_x": 0.54
+  },
+  {
+   "ticker": "ZNTL",
+   "vol_x": 0.51
   }
  ],
  "trades": [],
@@ -130,10 +105,8 @@
   "15:50 Day trade summary: No trade today: nothing in play broke out."
  ],
  "log": [
-  "TSLA: Claude: no catalyst (strength 1/5): The only OFFICIAL-tagged items are a third-party accessories site noting longer Model Y L delivery waits and a fan-app event video, neither a material company a",
-  "Added KLAR to today's list at 10:48 New York: 0.2x normal volume in the last 30 min; news: Klarna Expands Fiserv Partnership to Enterprise Merchants After Going Live at 10",
   "Added ESEA to today's list at 10:48 New York: 0.3x normal volume in the last 30 min; news: Euroseas Ltd. Announces a New Time Charter Contract for its - GlobeNewswire",
-  "ESEA: Claude: catalyst (strength 2/5): An official release announces a new time charter for M/V EM Corfu and a roughly $26M sale of a sister vessel, a real but modest item for a fleet operator, with ",
+  "ESEA: Claude: no catalyst (strength 2/5): The official release announces a time charter for a 2001-built feeder and the sale of a sister vessel for about $26M, but the headlines give no charter rate or ",
   "Day trading finished: 0 trade(s), total +\u00a30."
  ]
 }

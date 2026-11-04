@@ -1,60 +1,36 @@
 {
  "date": "2026-10-28",
- "generated": "2026-11-04T09:44+00:00",
+ "generated": "2026-11-04T17:31+00:00",
  "fx_gbpusd": 1.330629587173462,
  "result": "done",
  "require_news": true,
  "strategy": "catalyst",
  "bars": "5m",
  "require_trend": true,
- "added_during_day": [],
+ "added_during_day": [
+  "Added ICLR to today's list at 10:16 New York: 0.2x normal volume in the last 30 min; no news found",
+  "Added UHS to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
+  "Added WING to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
+  "Added SDGR to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
+  "Added SCL to today's list at 10:16 New York: 0.5x normal volume in the last 30 min; no news found",
+  "Added BOOM to today's list at 10:16 New York: 4.3x normal volume in the last 30 min; no news found",
+  "Added ANTX to today's list at 10:16 New York: 0.5x normal volume in the last 30 min; no news found",
+  "Added LUNG to today's list at 10:16 New York: 4.3x normal volume in the last 30 min; no news found",
+  "Added AXGN to today's list at 10:32 New York: 0.6x normal volume in the last 30 min; no news found",
+  "Added KIDS to today's list at 10:32 New York: 0.7x normal volume in the last 30 min; news: OrthoPediatrics Announces FDA 510(k) Clearance of PNP | - GlobeNewswire",
+  "Added RBBN to today's list at 10:32 New York: 0.2x normal volume in the last 30 min; no news found"
+ ],
  "drift_list": [],
  "list": [
   {
-   "ticker": "LH",
-   "name": "Labcorp Holdings Inc.",
+   "ticker": "BHC",
+   "name": "Bausch Health Companies Inc.",
    "vol_x": 0.27,
-   "buy_pct30": 0.6204599978793396,
-   "change": 0.08403534572534155,
-   "score": 3.52,
+   "buy_pct30": 0.8119285337604916,
+   "change": 0.06259904667328997,
+   "score": 3.29,
    "news": [
-    "Labcorp Reports Strong 2026 Third Quarter Results; Raises Full Year 2026 Guidance - PR Newswire"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "FLXS",
-   "name": "Flexsteel Industries, Inc.",
-   "vol_x": 0.38,
-   "buy_pct30": 0.7838781987470433,
-   "change": 0.09051785916855337,
-   "score": 3.4,
-   "news": [
-    "Flexsteel Industries, Inc. Reports Fiscal First Quarter 2027 Results; Continued Sales and Order Growth Driven by Strategic Initiatives - Business Wire"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "FWRD",
-   "name": "Forward Air Corporation",
-   "vol_x": 0.27,
-   "buy_pct30": 0.8236886068698563,
-   "change": 0.14365919031792562,
-   "score": 3.33,
-   "news": [
-    "Forward Air Announces Two-Year Definitive Agreement to Retain Significant Portion of Previously Disclosed Customer Relationship - Business Wire"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "NVA",
-   "name": "Nova Minerals Corp",
-   "vol_x": 0.24,
-   "buy_pct30": 0.7585749677951015,
-   "change": 0.05974836943812756,
-   "score": 3.01,
-   "news": [
-    "Nova Minerals Secures Final Permits for Alaska Antimony Project, Clearing Path to 2027 Production - GlobeNewswire"
+    "Bausch Health Announces US$50 Million Share Repurchase Program - PR Newswire"
    ],
    "on_t212": true
   },
@@ -67,42 +43,6 @@
    "score": 2.51,
    "news": [
     "SoFi Reports Third Quarter 2026 with Record Net Revenue of $1.4 Billion, Net Income of $241 Million and Raises Full-Year Guidance - SoFi Investor Relations"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "WING",
-   "name": "Wingstop Inc.",
-   "vol_x": 0.62,
-   "buy_pct30": 0.5518223311479499,
-   "change": 0.08166695110127464,
-   "score": 1.95,
-   "news": [
-    "Wingstop Inc. Reports Fiscal Third Quarter Financial Results - PR Newswire"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "ELDN",
-   "name": "Eledon Pharmaceuticals, Inc.",
-   "vol_x": 0.24,
-   "buy_pct30": 0.45913963976217775,
-   "change": 0.018672131233495648,
-   "score": 1.82,
-   "news": [
-    "Eledon Pharmaceuticals Presents Phase 2 BESTOW Trial Data Showing Sustained Improvements in Quality of Life and Symptom Burden with Tegoprubart Compared to Tacrolimus at American Society of Nephrology Kidney Week 2026 Annual Meeting - GlobeNewswire"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "KDK",
-   "name": "Kodiak AI, Inc.",
-   "vol_x": 0.65,
-   "buy_pct30": 0.49048729779925965,
-   "change": 0.14491070532411032,
-   "score": 1.76,
-   "news": [
-    "Kodiak AI and DTL Transport Reach Historic Agreement To - GlobeNewswire"
    ],
    "on_t212": true
   },
@@ -129,67 +69,6 @@
     "NRC Health Launches nQuire Pro, Extending the Reach of Patient-Experience Teams - Business Wire"
    ],
    "on_t212": true
-  },
-  {
-   "ticker": "MGM",
-   "name": "MGM Resorts International",
-   "vol_x": 0.3,
-   "buy_pct30": 0.37814354330648686,
-   "change": 0.01591283464377513,
-   "score": 0.61,
-   "news": [
-    "MGM Resorts International and People Incorporated Enter into Amended Voting Agreement - PR Newswire"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "ULCC",
-   "name": "Frontier Group Holdings, Inc.",
-   "vol_x": 0.34,
-   "buy_pct30": 0.3234264949073983,
-   "change": 0.06504515595980465,
-   "score": 0.47,
-   "news": [
-    "Frontier Airlines Delivers Record Third Quarter 2026 Revenue of $1.4 billion, up 53 percent Year-over-Year, and Adjusted EPS Significantly Above Guidance Overcoming High Fuel Prices - PR Newswire"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "DB",
-   "name": "Deutsche Bank AG",
-   "vol_x": 0.37,
-   "buy_pct30": 0.15545263846503451,
-   "change": 0.03704864511140937,
-   "score": 0.36,
-   "news": [
-    "Deutsche Bank reports record third-quarter post-tax profit of \u20ac 1.9 billion - Deutsche Bank AG",
-    "Deutsche Bank and DWS extend strategic partnerships with Zurich until 2042 - Deutsche Bank AG"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "ORN",
-   "name": "Orion Group Holdings, Inc.",
-   "vol_x": 0.29,
-   "buy_pct30": 0.29293832909624357,
-   "change": 0.03606556693595375,
-   "score": 0.25,
-   "news": [
-    "Orion Group Interim report January\u2013September 2026: Strong - GlobeNewswire"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "JMSB",
-   "name": "John Marshall Bancorp, Inc.",
-   "vol_x": 0.23,
-   "buy_pct30": 0.008883773858169968,
-   "change": 0.0008569176363717457,
-   "score": -0.0,
-   "news": [
-    "John Marshall Bancorp, Inc. Reports 3rd Quarter Net Income Increases 39.5% Versus Year Ago Quarter - Funding, Asset Quality, and Capital Position Company for Anticipated Growth - Business Wire"
-   ],
-   "on_t212": true
   }
  ],
  "quiet": [
@@ -206,6 +85,10 @@
    "vol_x": 13.59
   },
   {
+   "ticker": "AXNX",
+   "vol_x": 7.24
+  },
+  {
    "ticker": "LUNG",
    "vol_x": 3.91
   },
@@ -216,6 +99,10 @@
   {
    "ticker": "MGN",
    "vol_x": 3.1
+  },
+  {
+   "ticker": "LCII",
+   "vol_x": 2.42
   },
   {
    "ticker": "SIND",
@@ -244,40 +131,52 @@
   {
    "ticker": "STLA",
    "vol_x": 0.89
-  },
-  {
-   "ticker": "INSE",
-   "vol_x": 0.89
-  },
-  {
-   "ticker": "MBOT",
-   "vol_x": 0.81
   }
  ],
  "trades": [
   {
-   "ticker": "KDK",
-   "bought_at": "2026-10-28T14:30+00:00",
+   "ticker": "KIDS",
+   "bought_at": "2026-10-28T14:32+00:00",
    "sold_at": "2026-10-28T19:50+00:00",
-   "entry": 1.3363350381851196,
-   "exit": 1.3049999475479126,
-   "cost_gbp": 1001.7710378821289,
-   "pl_gbp": -24.955280674499136,
-   "pl_pct": -0.02491116206279807,
+   "entry": 27.269742805480956,
+   "exit": 30.799999237060547,
+   "cost_gbp": 985.1810667533197,
+   "pl_gbp": 125.87190969472374,
+   "pl_pct": 0.12776525447198928,
    "reason": "End of day: sold 10 minutes before the close."
   }
  ],
- "total_gbp": -24.955280674499136,
+ "total_gbp": 125.87190969472374,
  "alerts": [
-  "10:30 Day trade: bought KDK: 996 KDK at $1.34 (about \u00a31,002). Stop $1.27. Broke above its opening-range high ($1.30) at $1.34. In play: 0.7x normal volume, normally moves 10% a day. Stop $1.27. News (GlobeNewswire): Kodiak AI and DTL Transport Reach Historic Agreement To - GlobeNewswire. Claude: catalyst (strength 3/5): An official GlobeNewswire release dated today announces a 'historic agreement' with DTL Transport, and the heavy-volume breakout supports it, but the truncated ",
-  "15:50 Day trade: sold KDK (-\u00a325): End of day: sold 10 minutes before the close. Result -\u00a325 (-2.5%).",
-  "15:50 Day trade summary: 1 trade(s) today: KDK -\u00a325. Total -\u00a325."
+  "10:32 Day trade: bought KIDS: 48 KIDS at $27.27 (about \u00a3985). Stop $25.91. Broke above its opening-range high ($26.42) at $27.24. In play: 0.7x normal volume, normally moves 3% a day. Stop $25.88. News (GlobeNewswire): OrthoPediatrics Announces FDA 510(k) Clearance of PNP | - GlobeNewswire. Claude: catalyst (strength 4/5): Q3 2026 results came with raised 2026 financial guidance, and an FDA 510(k) clearance was also announced, both official company news that fits the stock's break",
+  "15:50 Day trade: sold KIDS (+\u00a3126): End of day: sold 10 minutes before the close. Result +\u00a3126 (+12.8%).",
+  "15:50 Day trade summary: 1 trade(s) today: KIDS +\u00a3126. Total +\u00a3126."
  ],
  "log": [
-  "KDK: Claude: catalyst (strength 3/5): An official GlobeNewswire release dated today announces a 'historic agreement' with DTL Transport, and the heavy-volume breakout supports it, but the truncated ",
-  "Day trade buy order: 996 KDK at about $1.34. Broke above its opening-range high ($1.30) at $1.34. In play: 0.7x normal volume, normally moves 10% a day. Stop $1.27. News (GlobeNewswire): Kodiak AI and DTL Transport Reach Historic Agreement To - GlobeNewswire. Claude: catalyst (strength 3/5): An official GlobeNewswire release dated today announces a 'historic agreement' with DTL Transport, and the heavy-volume breakout supports it, but the truncated ",
-  "Bought 996 KDK at 1.34 (cost \u00a31,002).",
-  "Sold KDK (about -\u00a325). End of day: sold 10 minutes before the close.",
-  "Day trading finished: 1 trade(s), total -\u00a325."
+  "Added ICLR to today's list at 10:16 New York: 0.2x normal volume in the last 30 min; no news found",
+  "Added UHS to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
+  "Added WING to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
+  "Added SDGR to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
+  "Added SCL to today's list at 10:16 New York: 0.5x normal volume in the last 30 min; no news found",
+  "Added BOOM to today's list at 10:16 New York: 4.3x normal volume in the last 30 min; no news found",
+  "Added ANTX to today's list at 10:16 New York: 0.5x normal volume in the last 30 min; no news found",
+  "Added LUNG to today's list at 10:16 New York: 4.3x normal volume in the last 30 min; no news found",
+  "ANTX: Claude: no catalyst (strength 1/5): The only earnings headline is OTHER-sourced from an unrelated domain rather than an official company release, and the inducement grants notice is routine, so th",
+  "SDGR: Claude: no catalyst (strength 1/5): No OFFICIAL headline in the last 48 hours; the only items are OTHER earnings previews forecasting a decline and unrelated coverage, so the breakout has no ident",
+  "Added AXGN to today's list at 10:32 New York: 0.6x normal volume in the last 30 min; no news found",
+  "Added KIDS to today's list at 10:32 New York: 0.7x normal volume in the last 30 min; news: OrthoPediatrics Announces FDA 510(k) Clearance of PNP | - GlobeNewswire",
+  "Added RBBN to today's list at 10:32 New York: 0.2x normal volume in the last 30 min; no news found",
+  "KIDS: Claude: catalyst (strength 4/5): Q3 2026 results came with raised 2026 financial guidance, and an FDA 510(k) clearance was also announced, both official company news that fits the stock's break",
+  "Day trade buy order: 48 KIDS at about $27.24. Broke above its opening-range high ($26.42) at $27.24. In play: 0.7x normal volume, normally moves 3% a day. Stop $25.88. News (GlobeNewswire): OrthoPediatrics Announces FDA 510(k) Clearance of PNP | - GlobeNewswire. Claude: catalyst (strength 4/5): Q3 2026 results came with raised 2026 financial guidance, and an FDA 510(k) clearance was also announced, both official company news that fits the stock's break",
+  "Bought 48 KIDS at 27.27 (cost \u00a3985).",
+  "KIDS: stop raised from 25.91 to 27.43.",
+  "KIDS: stop raised from 27.43 to 28.94.",
+  "KIDS: stop raised from 28.94 to 29.15.",
+  "KIDS: stop raised from 29.15 to 29.30.",
+  "KIDS: stop raised from 29.30 to 29.58.",
+  "KIDS: stop raised from 29.58 to 29.75.",
+  "KIDS: stop raised from 29.75 to 29.98.",
+  "Sold KIDS (about +\u00a3126). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 1 trade(s), total +\u00a3126."
  ]
 }

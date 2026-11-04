@@ -1,36 +1,36 @@
 {
  "date": "2026-10-29",
- "generated": "2026-11-04T09:46+00:00",
+ "generated": "2026-11-04T17:37+00:00",
  "fx_gbpusd": 1.332800269126892,
  "result": "done",
  "require_news": true,
  "strategy": "catalyst",
  "bars": "5m",
  "require_trend": true,
- "added_during_day": [],
+ "added_during_day": [
+  "Added INSM to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
+  "Added ARXS to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
+  "Added MUSA to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
+  "Added GATX to today's list at 10:16 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Added VKTX to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
+  "Added OPFI to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
+  "Added PHAT to today's list at 10:16 New York: 0.2x normal volume in the last 30 min; no news found",
+  "Added RCKY to today's list at 10:16 New York: 0.5x normal volume in the last 30 min; no news found",
+  "Added SPOK to today's list at 10:16 New York: 0.5x normal volume in the last 30 min; no news found",
+  "Added LUNG to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
+  "Added LENZ to today's list at 10:16 New York: 1.2x normal volume in the last 30 min; no news found"
+ ],
  "drift_list": [],
  "list": [
   {
-   "ticker": "LENZ",
-   "name": "LENZ Therapeutics, Inc.",
-   "vol_x": 1.91,
-   "buy_pct30": 0.6263052559633895,
-   "change": 0.017445480876156383,
-   "score": 5.83,
+   "ticker": "BHC",
+   "name": "Bausch Health Companies Inc.",
+   "vol_x": 1.72,
+   "buy_pct30": 0.6637027842079775,
+   "change": 0.19364163841245752,
+   "score": 5.59,
    "news": [
-    "LENZ Therapeutics Reports Third Quarter 2026 Financial Results, Announces Strategic Consumer Marketing Focused Reorganization and CEO Succession - LENZ Therapeutics"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "KDK",
-   "name": "Kodiak AI, Inc.",
-   "vol_x": 1.9,
-   "buy_pct30": 0.3601887861157581,
-   "change": 0.017022905292492396,
-   "score": 3.74,
-   "news": [
-    "Kodiak AI and DTL Transport Reach Historic Agreement To - GlobeNewswire"
+    "Bausch Health Announces US$50 Million Share Repurchase Program - PR Newswire"
    ],
    "on_t212": true
   },
@@ -47,54 +47,6 @@
    "on_t212": true
   },
   {
-   "ticker": "ORLY",
-   "name": "O'Reilly Automotive, Inc.",
-   "vol_x": 0.29,
-   "buy_pct30": 0.7177812463804665,
-   "change": 0.016309137929056527,
-   "score": 2.95,
-   "news": [
-    "O'Reilly Automotive's Strong Q3 Results Masked Weaker Details, UBS Says"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "MGM",
-   "name": "MGM Resorts International",
-   "vol_x": 0.34,
-   "buy_pct30": 0.5363173483605406,
-   "change": 0.02530247946924935,
-   "score": 2.33,
-   "news": [
-    "MGM Resorts International and People Incorporated Enter into Amended Voting Agreement - PR Newswire"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "TXT",
-   "name": "Textron Inc.",
-   "vol_x": 0.31,
-   "buy_pct30": 0.520615985581867,
-   "change": 0.11146582470569788,
-   "score": 2.2,
-   "news": [
-    "HALO-Flight Strengthens its Texas-based Air Med Fleet with additional Bell 407GXi Purchase Order - Textron Inc. - Investor Relations"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "FTAI",
-   "name": "FTAI Aviation Ltd.",
-   "vol_x": 0.23,
-   "buy_pct30": 0.4828156116429689,
-   "change": 0.11143352918519578,
-   "score": 1.89,
-   "news": [
-    "FTAI Aviation Ltd. Reports Strong Third Quarter 2026 - GlobeNewswire"
-   ],
-   "on_t212": true
-  },
-  {
    "ticker": "VNDA",
    "name": "Vanda Pharmaceuticals Inc.",
    "vol_x": 0.43,
@@ -103,30 +55,6 @@
    "score": 1.42,
    "news": [
     "Vanda Pharmaceuticals Announces Positive Results from Study 3601 of NEREUS\u2122 (tradipitant) for Prevention of GLP-1-Induced Vomiting - PR Newswire"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "CHDN",
-   "name": "Churchill Downs, Incorporated",
-   "vol_x": 0.39,
-   "buy_pct30": 0.5179697661892103,
-   "change": 0.08712629231893576,
-   "score": 1.35,
-   "news": [
-    "Thoroughbred Championship Series Expands to Include Oaks Division for Three-Year-Old Fillies - Churchill Downs Incorporated"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "FCN",
-   "name": "FTI Consulting, Inc.",
-   "vol_x": 0.23,
-   "buy_pct30": 0.2916062874604686,
-   "change": 0.08084060256198344,
-   "score": 0.13,
-   "news": [
-    "FTI Consulting Reports Record Third Quarter 2026 Revenues - GlobeNewswire"
    ],
    "on_t212": true
   }
@@ -149,12 +77,20 @@
    "vol_x": 2.14
   },
   {
-   "ticker": "BHC",
-   "vol_x": 1.72
+   "ticker": "LENZ",
+   "vol_x": 1.91
+  },
+  {
+   "ticker": "KDK",
+   "vol_x": 1.9
   },
   {
    "ticker": "TTEC",
    "vol_x": 1.58
+  },
+  {
+   "ticker": "NCPL",
+   "vol_x": 1.42
   },
   {
    "ticker": "TDOC",
@@ -183,40 +119,47 @@
   {
    "ticker": "NCLH",
    "vol_x": 0.95
-  },
-  {
-   "ticker": "CROX",
-   "vol_x": 0.88
-  },
-  {
-   "ticker": "BOOM",
-   "vol_x": 0.85
   }
  ],
  "trades": [
   {
-   "ticker": "KDK",
-   "bought_at": "2026-10-29T14:16+00:00",
-   "sold_at": "2026-10-29T16:16+00:00",
-   "entry": 1.3974961442947387,
-   "exit": 1.32867,
-   "cost_gbp": 1001.8088753195958,
-   "pl_gbp": -52.19183025468283,
-   "pl_pct": -0.05209759220593115,
-   "reason": "Stop-loss order filled"
+   "ticker": "ARXS",
+   "bought_at": "2026-10-29T14:24+00:00",
+   "sold_at": "2026-10-29T19:50+00:00",
+   "entry": 53.81876438903808,
+   "exit": 54.349998474121094,
+   "cost_gbp": 970.5789012950451,
+   "pl_gbp": 8.112350195629801,
+   "pl_pct": 0.008358259369542733,
+   "reason": "End of day: sold 10 minutes before the close."
   }
  ],
- "total_gbp": -52.19183025468283,
+ "total_gbp": 8.112350195629801,
  "alerts": [
-  "10:16 Day trade: bought KDK: 954 KDK at $1.40 (about \u00a31,002). Stop $1.33. Broke above its opening-range high ($1.35) at $1.40. In play: 1.9x normal volume, normally moves 10% a day. Stop $1.33. News (GlobeNewswire): Kodiak AI and DTL Transport Reach Historic Agreement To - GlobeNewswire. Claude: catalyst (strength 3/5): An OFFICIAL 28 Oct GlobeNewswire release announces a 'historic agreement' between Kodiak AI and DTL Transport, a specific commercial partnership, though the tru",
-  "12:16 Day trade update: KDK: stop-loss order filled (-\u00a352)",
-  "15:50 Day trade summary: 1 trade(s) today: KDK -\u00a352. Total -\u00a352."
+  "10:24 Day trade: bought ARXS: 24 ARXS at $53.82 (about \u00a3971). Stop $51.13. Broke above its opening-range high ($51.93) at $53.76. In play: 0.3x normal volume, normally moves 5% a day. Stop $51.08. Claude: catalyst (strength 4/5): Official Q3 2026 results raised full-year 2026 guidance and introduced 2027 guidance, with the call reporting 36% revenue growth, though beat magnitude vs. cons",
+  "15:50 Day trade: sold ARXS (+\u00a38): End of day: sold 10 minutes before the close. Result +\u00a38 (+0.8%).",
+  "15:50 Day trade summary: 1 trade(s) today: ARXS +\u00a38. Total +\u00a38."
  ],
  "log": [
-  "KDK: Claude: catalyst (strength 3/5): An OFFICIAL 28 Oct GlobeNewswire release announces a 'historic agreement' between Kodiak AI and DTL Transport, a specific commercial partnership, though the tru",
-  "Day trade buy order: 954 KDK at about $1.40. Broke above its opening-range high ($1.35) at $1.40. In play: 1.9x normal volume, normally moves 10% a day. Stop $1.33. News (GlobeNewswire): Kodiak AI and DTL Transport Reach Historic Agreement To - GlobeNewswire. Claude: catalyst (strength 3/5): An OFFICIAL 28 Oct GlobeNewswire release announces a 'historic agreement' between Kodiak AI and DTL Transport, a specific commercial partnership, though the tru",
-  "Bought 954 KDK at 1.40 (cost \u00a31,002).",
-  "KDK: stop-loss order filled, P&L -\u00a352.",
-  "Day trading finished: 1 trade(s), total -\u00a352."
+  "Added INSM to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
+  "Added ARXS to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
+  "Added MUSA to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
+  "Added GATX to today's list at 10:16 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Added VKTX to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
+  "Added OPFI to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
+  "Added PHAT to today's list at 10:16 New York: 0.2x normal volume in the last 30 min; no news found",
+  "Added RCKY to today's list at 10:16 New York: 0.5x normal volume in the last 30 min; no news found",
+  "Added SPOK to today's list at 10:16 New York: 0.5x normal volume in the last 30 min; no news found",
+  "Added LUNG to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
+  "Added LENZ to today's list at 10:16 New York: 1.2x normal volume in the last 30 min; no news found",
+  "RCKY: Claude: no catalyst (strength 2/5): The Q3 2026 earnings release (13.3% net sales growth) is labelled OTHER rather than OFFICIAL, so no qualifying company announcement is in the window; the Baird ",
+  "SPOK: Claude: no catalyst (strength 2/5): The only official item is the Q3 results release, and the OTHER headlines describe mixed results (adjusted EBITDA up 30% while revenue declined), with no releas",
+  "OPFI: Claude: no catalyst (strength 1/5): The only official item is a bare Q3 results headline, and the commentary reports a cut to the top end of 2026 guidance, a 3.8% revenue dip and rising credit los",
+  "INSM: Claude: no catalyst (strength 2/5): Headlines describe a Q3 beat and raised 2026 revenue guidance, but all come from third-party sources (OTHER), with no OFFICIAL company release or release text t",
+  "ARXS: Claude: catalyst (strength 4/5): Official Q3 2026 results raised full-year 2026 guidance and introduced 2027 guidance, with the call reporting 36% revenue growth, though beat magnitude vs. cons",
+  "Day trade buy order: 24 ARXS at about $53.76. Broke above its opening-range high ($51.93) at $53.76. In play: 0.3x normal volume, normally moves 5% a day. Stop $51.08. Claude: catalyst (strength 4/5): Official Q3 2026 results raised full-year 2026 guidance and introduced 2027 guidance, with the call reporting 36% revenue growth, though beat magnitude vs. cons",
+  "Bought 24 ARXS at 53.82 (cost \u00a3971).",
+  "Sold ARXS (about +\u00a38). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 1 trade(s), total +\u00a38."
  ]
 }

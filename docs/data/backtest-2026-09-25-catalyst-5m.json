@@ -1,6 +1,6 @@
 {
  "date": "2026-09-25",
- "generated": "2026-11-04T09:27+00:00",
+ "generated": "2026-11-04T17:15+00:00",
  "fx_gbpusd": 1.3210737705230713,
  "result": "done",
  "require_news": true,
@@ -11,26 +11,13 @@
  "drift_list": [],
  "list": [
   {
-   "ticker": "PARK",
-   "name": "Park Dental Partners, Inc.",
-   "vol_x": 2.12,
-   "buy_pct30": 0.6329869673330765,
-   "change": 0.04028045902420008,
-   "score": 5.27,
-   "news": [
-    "Park Dental Partners Expands Arizona Presence with Addition of Sapphire Dental Care - GlobeNewswire"
-   ],
-   "on_t212": true
-  },
-  {
    "ticker": "DGNX",
    "name": "Diginex Limited",
    "vol_x": 0.75,
-   "buy_pct30": 0.7558375231195247,
+   "buy_pct30": 0.7558359167178005,
    "change": 0.017857126131349377,
-   "score": 4.52,
+   "score": 4.02,
    "news": [
-    "Diginex Limited Announces Extraordinary General Meeting to Approve Proposed Acquisition of Resulticks - GlobeNewswire",
     "Diginex Consolidates Group-Wide Expertise and Launches Sustainability Science & Intelligence Initiative to Accelerate Product Innovation and Drive Measurable Client Outcomes - GlobeNewswire"
    ],
    "on_t212": true
@@ -40,6 +27,10 @@
   {
    "ticker": "AKAM",
    "vol_x": 2.53
+  },
+  {
+   "ticker": "PARK",
+   "vol_x": 2.12
   },
   {
    "ticker": "ENGN",
@@ -92,10 +83,6 @@
   {
    "ticker": "DGXX",
    "vol_x": 0.41
-  },
-  {
-   "ticker": "ZSQR",
-   "vol_x": 0.4
   }
  ],
  "trades": [],

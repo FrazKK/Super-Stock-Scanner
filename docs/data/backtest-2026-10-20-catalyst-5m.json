@@ -1,6 +1,6 @@
 {
  "date": "2026-10-20",
- "generated": "2026-11-04T09:41+00:00",
+ "generated": "2026-11-04T17:34+00:00",
  "fx_gbpusd": 1.330849051475525,
  "result": "done",
  "require_news": true,
@@ -8,7 +8,12 @@
  "bars": "5m",
  "require_trend": true,
  "added_during_day": [
-  "Added RAPP to today's list at 10:16 New York: 3.9x normal volume in the last 30 min; news: Rapport Therapeutics Announces Positive Topline Results - GlobeNewswire"
+  "Added MMM to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
+  "Added AUB to today's list at 10:16 New York: 0.5x normal volume in the last 30 min; no news found",
+  "Added TMP to today's list at 10:16 New York: 0.9x normal volume in the last 30 min; no news found",
+  "Added RAPP to today's list at 10:16 New York: 3.9x normal volume in the last 30 min; news: Rapport Therapeutics Announces Positive Topline Results - GlobeNewswire",
+  "Added HAS to today's list at 10:46 New York: 0.3x normal volume in the last 30 min; no news found",
+  "Added AVBH to today's list at 10:46 New York: 0.4x normal volume in the last 30 min; no news found"
  ],
  "drift_list": [],
  "list": [
@@ -25,40 +30,14 @@
    "on_t212": true
   },
   {
-   "ticker": "EFX",
-   "name": "Equifax, Inc.",
-   "vol_x": 0.37,
-   "buy_pct30": 0.8165172732333745,
-   "change": 0.10891081677483272,
-   "score": 4.01,
-   "news": [
-    "Equifax Delivers Strong 10% Revenue Growth in Third Quarter 2026 Driven by 8% Diversified Markets Revenue Growth Despite Challenging U.S. Mortgage Market; Returns $158 Million Cash to Shareholders - Equifax",
-    "Equifax expands access to cash flow data solutions for confident decisioning - PR Newswire"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "KLAR",
-   "name": "Klarna Group plc",
-   "vol_x": 0.23,
-   "buy_pct30": 0.5980321810922448,
-   "change": 0.012996947804704506,
-   "score": 2.35,
-   "news": [
-    "Klarna Expands Fiserv Partnership to Enterprise Merchants After Going Live at 100,000 U.S. Locations via Clover - Business Wire"
-   ],
-   "on_t212": true
-  },
-  {
    "ticker": "ALVO",
    "name": "Alvotech",
    "vol_x": 0.48,
    "buy_pct30": 0.18115637968261397,
    "change": 0.049701787191282376,
-   "score": 0.68,
+   "score": 0.18,
    "news": [
-    "Alvotech receives FDA approval for new SIMLANDI\u00ae manufacturing process that more than doubles output per batch - GlobeNewswire",
-    "Alvotech's Manufacturing Progress, Simponi Launch Potential Support Recovery, UBS Says"
+    "Alvotech receives FDA approval for new SIMLANDI\u00ae manufacturing process that more than doubles output per batch - GlobeNewswire"
    ],
    "on_t212": true
   }
@@ -136,37 +115,29 @@
    "pl_gbp": -53.982336601326324,
    "pl_pct": -0.053917281703646056,
    "reason": "Stop-loss order filled"
-  },
-  {
-   "ticker": "KLAR",
-   "bought_at": "2026-10-20T14:46+00:00",
-   "sold_at": "2026-10-20T19:50+00:00",
-   "entry": 13.348335038185118,
-   "exit": 13.164999961853027,
-   "cost_gbp": 994.453424350535,
-   "pl_gbp": -15.127485936685616,
-   "pl_pct": -0.015211859667098222,
-   "reason": "End of day: sold 10 minutes before the close."
   }
  ],
- "total_gbp": -69.10982253801194,
+ "total_gbp": -53.982336601326324,
  "alerts": [
-  "10:26 Day trade: bought RAPP: 43 RAPP at $30.94 (about \u00a31,001). Stop $29.39. Broke above its opening-range high ($30.32) at $30.91. In play: 3.9x normal volume, normally moves 6% a day. Stop $29.36. News (GlobeNewswire): Rapport Therapeutics Announces Positive Topline Results - GlobeNewswire. Claude: catalyst (strength 4/5): An official GlobeNewswire release today announces positive topline trial results, a clinical catalyst that fits the stock's heavy-volume breakout, though the he",
+  "10:26 Day trade: bought RAPP: 43 RAPP at $30.94 (about \u00a31,001). Stop $29.39. Broke above its opening-range high ($30.32) at $30.91. In play: 3.9x normal volume, normally moves 6% a day. Stop $29.36. News (GlobeNewswire): Rapport Therapeutics Announces Positive Topline Results - GlobeNewswire. Claude: catalyst (strength 4/5): OFFICIAL headline announces positive topline trial results, which likely means a met primary endpoint, though the release text was not available to confirm stat",
   "10:46 Day trade update: RAPP: stop-loss order filled (-\u00a354)",
-  "10:46 Day trade: bought KLAR: 99 KLAR at $13.35 (about \u00a3994). Stop $12.68. Broke above its opening-range high ($13.25) at $13.34. In play: 0.2x normal volume, normally moves 4% a day. Stop $12.76. News (Business Wire): Klarna Expands Fiserv Partnership to Enterprise Merchants After Going Live at 100,000 U.S.. Claude: catalyst (strength 3/5): An official Business Wire release reports an expanded Fiserv partnership with Klarna going live at 100,000 U.S. locations, a meaningful distribution deal, thoug",
-  "15:50 Day trade: sold KLAR (-\u00a315): End of day: sold 10 minutes before the close. Result -\u00a315 (-1.5%).",
-  "15:50 Day trade summary: 2 trade(s) today: RAPP -\u00a354, KLAR -\u00a315. Total -\u00a369."
+  "15:50 Day trade summary: 1 trade(s) today: RAPP -\u00a354. Total -\u00a354."
  ],
  "log": [
+  "Added MMM to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
+  "Added AUB to today's list at 10:16 New York: 0.5x normal volume in the last 30 min; no news found",
+  "Added TMP to today's list at 10:16 New York: 0.9x normal volume in the last 30 min; no news found",
   "Added RAPP to today's list at 10:16 New York: 3.9x normal volume in the last 30 min; news: Rapport Therapeutics Announces Positive Topline Results - GlobeNewswire",
-  "RAPP: Claude: catalyst (strength 4/5): An official GlobeNewswire release today announces positive topline trial results, a clinical catalyst that fits the stock's heavy-volume breakout, though the he",
-  "Day trade buy order: 43 RAPP at about $30.91. Broke above its opening-range high ($30.32) at $30.91. In play: 3.9x normal volume, normally moves 6% a day. Stop $29.36. News (GlobeNewswire): Rapport Therapeutics Announces Positive Topline Results - GlobeNewswire. Claude: catalyst (strength 4/5): An official GlobeNewswire release today announces positive topline trial results, a clinical catalyst that fits the stock's heavy-volume breakout, though the he",
+  "RAPP: Claude: catalyst (strength 4/5): OFFICIAL headline announces positive topline trial results, which likely means a met primary endpoint, though the release text was not available to confirm stat",
+  "Day trade buy order: 43 RAPP at about $30.91. Broke above its opening-range high ($30.32) at $30.91. In play: 3.9x normal volume, normally moves 6% a day. Stop $29.36. News (GlobeNewswire): Rapport Therapeutics Announces Positive Topline Results - GlobeNewswire. Claude: catalyst (strength 4/5): OFFICIAL headline announces positive topline trial results, which likely means a met primary endpoint, though the release text was not available to confirm stat",
   "Bought 43 RAPP at 30.94 (cost \u00a31,001).",
   "RAPP: stop-loss order filled, P&L -\u00a354.",
-  "KLAR: Claude: catalyst (strength 3/5): An official Business Wire release reports an expanded Fiserv partnership with Klarna going live at 100,000 U.S. locations, a meaningful distribution deal, thoug",
-  "Day trade buy order: 99 KLAR at about $13.34. Broke above its opening-range high ($13.25) at $13.34. In play: 0.2x normal volume, normally moves 4% a day. Stop $12.76. News (Business Wire): Klarna Expands Fiserv Partnership to Enterprise Merchants After Going Live at 100,000 U.S.. Claude: catalyst (strength 3/5): An official Business Wire release reports an expanded Fiserv partnership with Klarna going live at 100,000 U.S. locations, a meaningful distribution deal, thoug",
-  "Bought 99 KLAR at 13.35 (cost \u00a3994).",
-  "Sold KLAR (about -\u00a315). End of day: sold 10 minutes before the close.",
-  "Day trading finished: 2 trade(s), total -\u00a369."
+  "Added HAS to today's list at 10:46 New York: 0.3x normal volume in the last 30 min; no news found",
+  "Added AVBH to today's list at 10:46 New York: 0.4x normal volume in the last 30 min; no news found",
+  "TMP: Claude: no catalyst (strength 1/5): Only OTHER headlines are present: a Form 4 insider filing, a volume alert, and an earnings date preview, with no official company announcement in the last 48 ho",
+  "AUB: Claude: no catalyst (strength 2/5): The only official item is a Q3 earnings release headline with no readable text, so there is no evidence of results well ahead of expectations, and the OTHER cal",
+  "MMM: Claude: catalyst (strength 3/5): Official Q3 2026 results with a raised full-year EPS guidance is a clear positive, though the headline gives no size of beat and 3M is a large cap, so the move ",
+  "HOST: Claude: catalyst (strength 3/5): An official $15M share buyback authorization is a material capital-return signal for a small cap, and the stock is breaking out on heavy volume, though the comp",
+  "Day trading finished: 1 trade(s), total -\u00a354."
  ]
 }

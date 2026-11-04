@@ -1,105 +1,40 @@
 {
  "date": "2026-11-02",
- "generated": "2026-11-04T09:46+00:00",
+ "generated": "2026-11-04T17:33+00:00",
  "fx_gbpusd": 1.3385626077651978,
  "result": "done",
  "require_news": true,
  "strategy": "catalyst",
  "bars": "5m",
  "require_trend": true,
- "added_during_day": [],
- "drift_list": [],
- "list": [
-  {
-   "ticker": "TATT",
-   "name": "TAT Technologies Ltd.",
-   "vol_x": 2.83,
-   "buy_pct30": 0.7970457745005151,
-   "change": 0.1462264665861901,
-   "score": 8.85,
-   "news": [
-    "YYForce Highlights US$21.9 Million in Reported Net Assets and Outlines Commercial Robotics and AI Platform Priorities YYForce Inc. (Nasdaq: YFOR) (\"YYForce\" or the \"Company\"), a technology-enabled provider of workforce solutions and integrated facility management...",
-    "TAT Technologies Reports Record Third Quarter 2026 Results TAT Technologies Ltd. (NASDAQ: TATT) (TASE: TAT Tech), a leading supplier of products and services for the commercial and military aerospace and..."
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "ZIM",
-   "name": "ZIM Integrated Shipping Services Ltd.",
-   "vol_x": 0.7,
-   "buy_pct30": 0.6743078291654213,
-   "change": 0.0075757631763822,
-   "score": 3.6,
-   "news": [
-    "IRIS Expands Accountancy Portfolio with Launch of AI-Powered Document Management Solution IRIS Software Group (IRIS), a leading global software provider of accountancy, payroll, HR, and education solutions, today announced the launch of..."
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "TRLV",
-   "name": "Trulieve Cannabis Corp. Subordinate Voting Shares",
-   "vol_x": 0.29,
-   "buy_pct30": 0.6686104949511308,
-   "change": 0.04085603961125339,
-   "score": 2.75,
-   "news": [
-    "Trulieve Receives DEA Registrations for State-Licensed Medical Marijuana Operations Trulieve Cannabis Corp. (NYSE: TRLV) (\"Trulieve\" or \"the Company\"), a leading and top-performing medical cannabis company in the U.S., today..."
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "LTBR",
-   "name": "Lightbridge Corporation",
-   "vol_x": 0.24,
-   "buy_pct30": 0.4782878166147192,
-   "change": 0.001968549022052013,
-   "score": 1.89,
-   "news": [
-    "Lightbridge Receives Notice of Allowance for a Korean Patent Covering Its Mixed-Grid Nuclear Fuel Assembly Design - GlobeNewswire"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "TFII",
-   "name": "TFI International Inc.",
-   "vol_x": 0.22,
-   "buy_pct30": 0.484006548901873,
-   "change": 0.009001328440121581,
-   "score": 1.88,
-   "news": [
-    "TFI International Faces LTL Headwinds Despite Stronger Freight Trends, RBC Says"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "FOXA",
-   "name": "Fox Corporation",
-   "vol_x": 0.27,
-   "buy_pct30": 0.5976289363980323,
-   "change": 0.030360561870388825,
-   "score": 1.43,
-   "news": [
-    "Premialab and BlackRock's Aladdin\u00c2\u00ae Join Forces to Accelerate QIS Adoption Among Institutional Investors Premialab, the leading independent platform for quantitative investment strategies (QIS), today announced a partnership with Aladdin, BlackRock's..."
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "CHH",
-   "name": "Choice Hotels International, Inc.",
-   "vol_x": 0.42,
-   "buy_pct30": 0.42855891669548585,
-   "change": 0.017002512840800454,
-   "score": 1.05,
-   "news": [
-    "Atrium Therapeutics to Present Nonclinical Data Showing ATR 1072 Reversed and Improved Features of PRKAG2 Syndrome During HCMS at AHA Scientific Sessions 2026 Atrium Therapeutics, Inc. (Nasdaq: RNA) (the \"Company\"), a biopharmaceutical company advancing precision cardiology by developing RNA therapeutics..."
-   ],
-   "on_t212": true
-  }
+ "added_during_day": [
+  "Added RIVN to today's list at 10:16 New York: 0.2x normal volume in the last 30 min; no news found",
+  "Added TEM to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
+  "Added SBET to today's list at 10:16 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Added CVLG to today's list at 10:16 New York: 0.2x normal volume in the last 30 min; no news found",
+  "Added PFIS to today's list at 10:16 New York: 0.6x normal volume in the last 30 min; no news found",
+  "Added TATT to today's list at 10:16 New York: 0.5x normal volume in the last 30 min; no news found",
+  "Added STRT to today's list at 10:16 New York: 0.2x normal volume in the last 30 min; no news found",
+  "Added RRBI to today's list at 10:32 New York: 0.5x normal volume in the last 30 min; no news found",
+  "Added ACCO to today's list at 10:32 New York: 0.8x normal volume in the last 30 min; no news found",
+  "Added RMNI to today's list at 10:32 New York: 0.2x normal volume in the last 30 min; no news found",
+  "Added ISBA to today's list at 10:32 New York: 0.5x normal volume in the last 30 min; no news found",
+  "Added IDXX to today's list at 10:48 New York: 0.3x normal volume in the last 30 min; no news found",
+  "Added DKNG to today's list at 10:48 New York: 0.2x normal volume in the last 30 min; news: DraftKings DFS Fantasy Golf Cheat Sheet: 2026 PGA TOUR World Wide Technology Cha",
+  "Added USLM to today's list at 10:48 New York: 0.3x normal volume in the last 30 min; no news found",
+  "Added RBBN to today's list at 10:48 New York: 0.6x normal volume in the last 30 min; no news found",
+  "Added PDEX to today's list at 10:48 New York: 0.3x normal volume in the last 30 min; no news found"
  ],
+ "drift_list": [],
+ "list": [],
  "quiet": [
   {
    "ticker": "INO",
    "vol_x": 6.23
+  },
+  {
+   "ticker": "TATT",
+   "vol_x": 2.83
   },
   {
    "ticker": "CLRO",
@@ -118,12 +53,12 @@
    "vol_x": 0.79
   },
   {
-   "ticker": "ZG",
-   "vol_x": 0.78
-  },
-  {
    "ticker": "BESS",
    "vol_x": 0.74
+  },
+  {
+   "ticker": "ZIM",
+   "vol_x": 0.7
   },
   {
    "ticker": "RRBI",
@@ -152,37 +87,40 @@
   {
    "ticker": "AMTB",
    "vol_x": 0.49
-  },
-  {
-   "ticker": "GYRE",
-   "vol_x": 0.49
   }
  ],
- "trades": [
-  {
-   "ticker": "TRLV",
-   "bought_at": "2026-11-02T15:36+00:00",
-   "sold_at": "2026-11-02T20:50+00:00",
-   "entry": 11.056045076370237,
-   "exit": 11.149999618530273,
-   "cost_gbp": 1000.915548252919,
-   "pl_gbp": 6.993940638782078,
-   "pl_pct": 0.0069875432058078045,
-   "reason": "End of day: sold 10 minutes before the close."
-  }
- ],
- "total_gbp": 6.993940638782078,
+ "trades": [],
+ "total_gbp": 0,
  "alerts": [
-  "10:36 Day trade: bought TRLV: 121 TRLV at $11.06 (about \u00a31,001). Stop $10.50. Broke above its opening-range high ($10.95) at $11.05. In play: 0.3x normal volume, normally moves 6% a day. Stop $10.49. News (prnewswire): Trulieve Receives DEA Registrations for State-Licensed Medical Marijuana Operations Trulie. Claude: catalyst (strength 4/5): An OFFICIAL same-day release says Trulieve received DEA registrations for its state-licensed medical marijuana operations, a regulatory milestone, and the stock",
-  "15:50 Day trade: sold TRLV (+\u00a37): End of day: sold 10 minutes before the close. Result +\u00a37 (+0.7%).",
-  "15:50 Day trade summary: 1 trade(s) today: TRLV +\u00a37. Total +\u00a37."
+  "15:50 Day trade summary: No trade today: nothing in play broke out."
  ],
  "log": [
-  "ZIM: Claude: no catalyst (strength 1/5): The only official ZIM headline is a date announcement for Q3 results, which is routine; the other OFFICIAL item is about an unrelated company (IRIS), and the pr",
-  "TRLV: Claude: catalyst (strength 4/5): An OFFICIAL same-day release says Trulieve received DEA registrations for its state-licensed medical marijuana operations, a regulatory milestone, and the stock",
-  "Day trade buy order: 121 TRLV at about $11.05. Broke above its opening-range high ($10.95) at $11.05. In play: 0.3x normal volume, normally moves 6% a day. Stop $10.49. News (prnewswire): Trulieve Receives DEA Registrations for State-Licensed Medical Marijuana Operations Trulie. Claude: catalyst (strength 4/5): An OFFICIAL same-day release says Trulieve received DEA registrations for its state-licensed medical marijuana operations, a regulatory milestone, and the stock",
-  "Bought 121 TRLV at 11.06 (cost \u00a31,001).",
-  "Sold TRLV (about +\u00a37). End of day: sold 10 minutes before the close.",
-  "Day trading finished: 1 trade(s), total +\u00a37."
+  "Added RIVN to today's list at 10:16 New York: 0.2x normal volume in the last 30 min; no news found",
+  "Added TEM to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
+  "Added SBET to today's list at 10:16 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Added CVLG to today's list at 10:16 New York: 0.2x normal volume in the last 30 min; no news found",
+  "Added PFIS to today's list at 10:16 New York: 0.6x normal volume in the last 30 min; no news found",
+  "Added TATT to today's list at 10:16 New York: 0.5x normal volume in the last 30 min; no news found",
+  "Added STRT to today's list at 10:16 New York: 0.2x normal volume in the last 30 min; no news found",
+  "RIVN: Claude: no catalyst (strength 1/5): No OFFICIAL headline from the last 48 hours; the Q3 beat and record deliveries appear only in OTHER commentary, and the UBS upgrade is an ANALYST item without a",
+  "PFIS: Claude: no catalyst (strength 1/5): The only official news is the Q3 earnings release from 30 October, outside the 48-hour window, and the rest is OTHER commentary noting the stock slipped on the ",
+  "SBET: Claude: no catalyst (strength 1/5): All headlines are OTHER-category commentary, price pages, earnings-date previews and analyst summaries with no official company announcement in the last 48 hour",
+  "CVLG: Claude: no catalyst (strength 1/5): No OFFICIAL headline in the last 48 hours; the Q3 earnings coverage is labeled OTHER, so the positive move rests on commentary rather than a company announcemen",
+  "STRT: Claude: no catalyst (strength 1/5): The only coverage is OTHER commentary on Q1 FY2027 results showing a 3.4% sales drop and steeper profit decline, which is negative, and there is no OFFICIAL hea",
+  "Added RRBI to today's list at 10:32 New York: 0.5x normal volume in the last 30 min; no news found",
+  "Added ACCO to today's list at 10:32 New York: 0.8x normal volume in the last 30 min; no news found",
+  "Added RMNI to today's list at 10:32 New York: 0.2x normal volume in the last 30 min; no news found",
+  "Added ISBA to today's list at 10:32 New York: 0.5x normal volume in the last 30 min; no news found",
+  "ISBA: Claude: no catalyst (strength 1/5): The only fresh news is the Grand River Commerce merger completion, which is labelled OTHER rather than OFFICIAL and is routine for a bank this size; the Q3 earn",
+  "RMNI: Claude: no catalyst (strength 1/5): No OFFICIAL headline from the last 48 hours; the Q3 earnings news dates from 30 October and the rest are OTHER commentary, so there is no fresh company catalyst",
+  "TEM: Claude: no catalyst (strength 1/5): All headlines are OTHER, and the Q3 2026 results (23% revenue growth, narrower net loss) appear only in secondary coverage, not in an OFFICIAL company announcem",
+  "Added IDXX to today's list at 10:48 New York: 0.3x normal volume in the last 30 min; no news found",
+  "Added DKNG to today's list at 10:48 New York: 0.2x normal volume in the last 30 min; news: DraftKings DFS Fantasy Golf Cheat Sheet: 2026 PGA TOUR World Wide Technology Cha",
+  "Added USLM to today's list at 10:48 New York: 0.3x normal volume in the last 30 min; no news found",
+  "Added RBBN to today's list at 10:48 New York: 0.6x normal volume in the last 30 min; no news found",
+  "Added PDEX to today's list at 10:48 New York: 0.3x normal volume in the last 30 min; no news found",
+  "RBBN: Claude: no catalyst (strength 1/5): The only official-type item is a CEO insider share purchase, which is not a company catalyst, and the other headlines are OTHER commentary (fair value cut, narr",
+  "USLM: Claude: no catalyst (strength 1/5): No OFFICIAL company announcement in the last 48 hours; the Q3 results were released before that window and the coverage describes a margin slip and a cooling st",
+  "Day trading finished: 0 trade(s), total +\u00a30."
  ]
 }

@@ -1,53 +1,26 @@
 {
  "date": "2026-10-30",
- "generated": "2026-11-04T09:43+00:00",
+ "generated": "2026-11-04T17:31+00:00",
  "fx_gbpusd": 1.3378641605377197,
  "result": "done",
  "require_news": true,
  "strategy": "catalyst",
  "bars": "5m",
  "require_trend": true,
- "added_during_day": [],
- "drift_list": [],
- "list": [
-  {
-   "ticker": "FBIZ",
-   "name": "First Business Financial Services, Inc.",
-   "vol_x": 0.59,
-   "buy_pct30": 0.6882351987876517,
-   "change": 0.011523840150535758,
-   "score": 4.43,
-   "news": [
-    "First Business Bank Reports Record Third Quarter Earnings - Business Wire"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "DXCM",
-   "name": "DexCom, Inc.",
-   "vol_x": 0.3,
-   "buy_pct30": 0.7225106201047174,
-   "change": 0.055798812303818446,
-   "score": 3.49,
-   "news": [
-    "DexCom Q3 Results, Higher Revenue Guidance Point to Stronger 2027, RBC Says",
-    "Dexcom G7 15 Day Continuous Glucose Monitoring System to Launch in Canada in November - Dexcom"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "ALNY",
-   "name": "Alnylam Pharmaceuticals, Inc.",
-   "vol_x": 0.23,
-   "buy_pct30": 0.7474871380508012,
-   "change": 0.025747101882408474,
-   "score": 2.95,
-   "news": [
-    "Alnylam Pharmaceuticals' Fundamentals Remain Strong Despite Lower-End Guidance Expectations, UBS Says"
-   ],
-   "on_t212": true
-  }
+ "added_during_day": [
+  "Added EXC to today's list at 10:16 New York: 0.2x normal volume in the last 30 min; no news found",
+  "Added ERIE to today's list at 10:16 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Added CPRI to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
+  "Added RRBI to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
+  "Added OVBC to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
+  "Added CHDN to today's list at 10:32 New York: 0.3x normal volume in the last 30 min; no news found",
+  "Added DFIN to today's list at 10:32 New York: 0.3x normal volume in the last 30 min; no news found",
+  "Added FBIZ to today's list at 10:32 New York: 0.2x normal volume in the last 30 min; no news found",
+  "Added CZFS to today's list at 10:32 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Added CVEO to today's list at 10:32 New York: 0.3x normal volume in the last 30 min; no news found"
  ],
+ "drift_list": [],
+ "list": [],
  "quiet": [
   {
    "ticker": "ONEG",
@@ -116,6 +89,18 @@
   "15:50 Day trade summary: No trade today: nothing in play broke out."
  ],
  "log": [
+  "Added EXC to today's list at 10:16 New York: 0.2x normal volume in the last 30 min; no news found",
+  "Added ERIE to today's list at 10:16 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Added CPRI to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
+  "Added RRBI to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
+  "Added OVBC to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
+  "ERIE: Claude: no catalyst (strength 2/5): The Q3 2026 earnings release is an official headline, but without its text I cannot confirm a beat, and the other headlines point to a shrinking book and mixed ",
+  "Added CHDN to today's list at 10:32 New York: 0.3x normal volume in the last 30 min; no news found",
+  "Added DFIN to today's list at 10:32 New York: 0.3x normal volume in the last 30 min; no news found",
+  "Added FBIZ to today's list at 10:32 New York: 0.2x normal volume in the last 30 min; no news found",
+  "Added CZFS to today's list at 10:32 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Added CVEO to today's list at 10:32 New York: 0.3x normal volume in the last 30 min; no news found",
+  "DFIN: Claude: no catalyst (strength 1/5): No OFFICIAL headline is present; the earnings beat and Needham target raise appear only in OTHER and ANALYST items, and no release text was available to judge.",
   "Day trading finished: 0 trade(s), total +\u00a30."
  ]
 }

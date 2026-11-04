@@ -1,28 +1,17 @@
 {
  "date": "2026-09-15",
- "generated": "2026-11-04T09:28+00:00",
+ "generated": "2026-11-04T17:17+00:00",
  "fx_gbpusd": 1.3500925302505493,
  "result": "done",
  "require_news": true,
  "strategy": "catalyst",
  "bars": "5m",
  "require_trend": true,
- "added_during_day": [],
- "drift_list": [],
- "list": [
-  {
-   "ticker": "ALMU",
-   "name": "Aeluma, Inc.",
-   "vol_x": 0.38,
-   "buy_pct30": 0.7824643677290621,
-   "change": 0.024720926679404176,
-   "score": 2.39,
-   "news": [
-    "Aeluma Executes Strategic Agreement with Sumitomo Chemical - GlobeNewswire"
-   ],
-   "on_t212": true
-  }
+ "added_during_day": [
+  "Added VRA to today's list at 10:32 New York: 2.2x normal volume in the last 30 min; no news found"
  ],
+ "drift_list": [],
+ "list": [],
  "quiet": [
   {
    "ticker": "VRA",
@@ -61,6 +50,10 @@
    "vol_x": 0.66
   },
   {
+   "ticker": "WAY",
+   "vol_x": 0.63
+  },
+  {
    "ticker": "PBF",
    "vol_x": 0.59
   },
@@ -79,10 +72,6 @@
   {
    "ticker": "PTLE",
    "vol_x": 0.49
-  },
-  {
-   "ticker": "ECO",
-   "vol_x": 0.48
   }
  ],
  "trades": [],
@@ -91,6 +80,7 @@
   "15:50 Day trade summary: No trade today: nothing in play broke out."
  ],
  "log": [
+  "Added VRA to today's list at 10:32 New York: 2.2x normal volume in the last 30 min; no news found",
   "Day trading finished: 0 trade(s), total +\u00a30."
  ]
 }

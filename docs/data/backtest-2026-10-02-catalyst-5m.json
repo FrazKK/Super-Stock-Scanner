@@ -1,81 +1,35 @@
 {
  "date": "2026-10-02",
- "generated": "2026-11-04T09:40+00:00",
+ "generated": "2026-11-04T17:23+00:00",
  "fx_gbpusd": 1.3199577331542969,
  "result": "done",
  "require_news": true,
  "strategy": "catalyst",
  "bars": "5m",
  "require_trend": true,
- "added_during_day": [],
+ "added_during_day": [
+  "Added CTVA to today's list at 10:32 New York: 0.2x normal volume in the last 30 min; no news found",
+  "Added VECO to today's list at 10:48 New York: 0.3x normal volume in the last 30 min; no news found"
+ ],
  "drift_list": [],
  "list": [
-  {
-   "ticker": "CYCU",
-   "name": "Cycurion, Inc.",
-   "vol_x": 32.37,
-   "buy_pct30": 0.12962529120077138,
-   "change": 0.042750932003909003,
-   "score": 63.76,
-   "news": [
-    "Cycurion Discusses Record Contract Win, Public Safety Expansion and Growth Strategy in New Interview - GlobeNewswire"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "HPE",
-   "name": "Hewlett Packard Enterprise Company",
-   "vol_x": 0.22,
-   "buy_pct30": 0.7438081875466318,
-   "change": 0.055744787427211895,
-   "score": 2.92,
-   "news": [
-    "HPE Secures Its First AMD Helios Order in $1.2 Billion Deal With Vultr - Business Wire"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "LQDA",
-   "name": "Liquidia Corporation",
-   "vol_x": 0.23,
-   "buy_pct30": 0.6000519836110028,
-   "change": 0.0009860426917642773,
-   "score": 2.36,
-   "news": [
-    "Liquidia Provides Update on Hatch-Waxman Litigation Tied to \u2018327 Patent - GlobeNewswire"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "BULL",
-   "name": "Webull Corporation",
-   "vol_x": 0.26,
-   "buy_pct30": 0.5657520564552311,
-   "change": 0.047297293172567034,
-   "score": 2.28,
-   "news": [
-    "Webull Powers Launch of MOUM, Meritz Securities' Next-Generation AI Investment Platform - PR Newswire"
-   ],
-   "on_t212": true
-  },
   {
    "ticker": "TEVA",
    "name": "Teva Pharmaceutical Industries Limited",
    "vol_x": 0.23,
    "buy_pct30": 0.4472998252360787,
    "change": 0.001653488283853033,
-   "score": 1.25,
+   "score": 0.75,
    "news": [
-    "Samsung Bioepis and Teva Expand Strategic Partnership to Advance Up to Six Potential Biosimilar Candidates - Business Wire",
-    "TAPI (Technology & API Services) Names Serge Rogasik CEO to lead next chapter of growth and competitiveness - Teva Pharmaceuticals"
+    "Samsung Bioepis and Teva Expand Strategic Partnership to Advance Up to Six Potential Biosimilar Candidates - Business Wire"
    ],
    "on_t212": true
   }
  ],
  "quiet": [
   {
-   "ticker": "AMOD",
-   "vol_x": 73.87
+   "ticker": "CYCU",
+   "vol_x": 32.37
   },
   {
    "ticker": "QTEX",
@@ -106,10 +60,6 @@
    "vol_x": 0.5
   },
   {
-   "ticker": "EXOD",
-   "vol_x": 0.5
-  },
-  {
    "ticker": "FEAM",
    "vol_x": 0.48
   },
@@ -132,35 +82,21 @@
   {
    "ticker": "APLD",
    "vol_x": 0.4
-  }
- ],
- "trades": [
+  },
   {
-   "ticker": "CYCU",
-   "bought_at": "2026-10-02T14:26+00:00",
-   "sold_at": "2026-10-02T14:46+00:00",
-   "entry": 3.202799581289291,
-   "exit": 4.1958,
-   "cost_gbp": 1001.19323857012,
-   "pl_gbp": 306.48241819140594,
-   "pl_pct": 0.3061171474041482,
-   "reason": "Stop-loss order filled"
+   "ticker": "NVTS",
+   "vol_x": 0.4
   }
  ],
- "total_gbp": 306.48241819140594,
+ "trades": [],
+ "total_gbp": 0,
  "alerts": [
-  "10:26 Day trade: bought CYCU: 412 CYCU at $3.20 (about \u00a31,001). Stop $3.04. Broke above its opening-range high ($3.02) at $3.20. In play: 32.4x normal volume, normally moves 8% a day. Stop $3.04. News (GlobeNewswire): Cycurion Discusses Record Contract Win, Public Safety Expansion and Growth Strategy in New. Claude: catalyst (strength 3/5): An official 30 Sep release references a record contract win, and other coverage cites a $54.6M 10-year state health contract, though the official item is an int",
-  "10:46 Day trade update: CYCU: stop-loss order filled (+\u00a3306)",
-  "15:50 Day trade summary: 1 trade(s) today: CYCU +\u00a3306. Total +\u00a3306."
+  "15:50 Day trade summary: No trade today: nothing in play broke out."
  ],
  "log": [
-  "BULL: Claude: catalyst (strength 2/5): Official partnership news (Webull powering Meritz Securities' MOUM platform launch) could add technology-licensing revenue, but no deal size is disclosed and th",
-  "CYCU: Claude: catalyst (strength 3/5): An official 30 Sep release references a record contract win, and other coverage cites a $54.6M 10-year state health contract, though the official item is an int",
-  "Day trade buy order: 412 CYCU at about $3.20. Broke above its opening-range high ($3.02) at $3.20. In play: 32.4x normal volume, normally moves 8% a day. Stop $3.04. News (GlobeNewswire): Cycurion Discusses Record Contract Win, Public Safety Expansion and Growth Strategy in New. Claude: catalyst (strength 3/5): An official 30 Sep release references a record contract win, and other coverage cites a $54.6M 10-year state health contract, though the official item is an int",
-  "Bought 412 CYCU at 3.20 (cost \u00a31,001).",
-  "CYCU: stop raised from 3.04 to 3.59.",
-  "CYCU: stop raised from 3.59 to 4.20.",
-  "CYCU: stop-loss order filled, P&L +\u00a3306.",
-  "Day trading finished: 1 trade(s), total +\u00a3306."
+  "Added CTVA to today's list at 10:32 New York: 0.2x normal volume in the last 30 min; no news found",
+  "CTVA: Claude: no catalyst (strength 1/5): The official headlines cover a corporate separation milestone, debt exchange offers and consent solicitations, which are financing or structural items rather th",
+  "Added VECO to today's list at 10:48 New York: 0.3x normal volume in the last 30 min; no news found",
+  "Day trading finished: 0 trade(s), total +\u00a30."
  ]
 }
