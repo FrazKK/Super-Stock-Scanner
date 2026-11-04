@@ -43,6 +43,16 @@ RSS_FEEDS = {
     "accessnewswire": "https://www.accessnewswire.com/newsroom/rss",
 }
 PRN_LIST = "https://www.prnewswire.com/news-releases/news-releases-list/?page={page}&pagesize=100"
+# Wires that block GitHub's servers (GlobeNewswire 403, ACCESS 404, Newsfile bot check) are read through Google
+# News instead: a "site:" search for the last day returns up to ~100 of each wire's releases. Several searches per
+# wire widen the net; results are de-duplicated by headline.
+GOOGLE_RSS = "https://news.google.com/rss/search?q={q}&hl=en-US&gl=US&ceid=US:en"
+GOOGLE_WIRES = {
+    "globenewswire": ("globenewswire.com", ["", "Nasdaq", "NYSE", "announces", "results", "FDA OR trial",
+                                            "contract OR order OR award", "drilling OR resource OR production"]),
+    "accessnewswire": ("accessnewswire.com", ["", "Nasdaq OR NYSE OR OTC", "announces"]),
+    "newsfile": ("newsfilecorp.com", ["", "Nasdaq OR NYSE", "announces", "drilling OR assay OR resource"]),
+}
 NEWSFILE_LIST = "https://www.newsfilecorp.com/news/business?pg={page}"
 EDGAR_CURRENT = ("https://www.sec.gov/cgi-bin/browse-edgar?action=getcurrent&type={form}&company=&dateb=&owner=include"
                  "&start={start}&count=100&output=atom")
@@ -323,6 +333,31 @@ def main():
             raw += got
         except Exception as e:  # noqa: BLE001
             note(name, [], str(e)[:200])
+
+    # Blocked wires via Google News (see GOOGLE_WIRES)
+    from urllib.parse import quote
+    seen_titles = {re.sub(r"\W+", " ", i["title"]).strip().lower() for i in prev.get("items", [])}
+    seen_titles |= {re.sub(r"\W+", " ", i["title"]).strip().lower() for i in raw}
+    for wire, (site, extras) in GOOGLE_WIRES.items():
+        got_g, err = [], None
+        for extra in extras:
+            q = quote(f"site:{site} {extra} when:1d".replace("  ", " "))
+            try:
+                items = parse_rss(get(GOOGLE_RSS.format(q=q)), wire)
+            except Exception as e:  # noqa: BLE001
+                err = f"{extra or 'all'}: {e}"[:200]
+                continue
+            for it in items:
+                # Google appends " - GlobeNewswire" etc. to the headline
+                it["title"] = re.sub(r"\s+-\s+[^-]{2,40}$", "", it["title"]).strip()
+                key = re.sub(r"\W+", " ", it["title"]).strip().lower()
+                if key and key not in seen_titles:
+                    seen_titles.add(key)
+                    it["via"] = "google-news"
+                    got_g.append(it)
+            time.sleep(1)
+        note(f"google-{wire}", got_g, err if not got_g else None)
+        raw += got_g
 
     # PR Newswire: page back until we overlap what we already have (or 40 h back on the first run).
     got_prn, err = [], None
