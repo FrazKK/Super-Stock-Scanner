@@ -3658,6 +3658,17 @@
     ],
     "added": 57
    }
+  },
+  "catalyst": {
+   "2026-11-02": {
+    "total": 0,
+    "trades": 0,
+    "wins": 0,
+    "list": [
+     "IMNM"
+    ],
+    "added": 38
+   }
   }
  },
  "totals": {
@@ -3759,6 +3770,15 @@
    "total_gbp": -50.45,
    "best_day": "2026-10-05",
    "worst_day": "2026-10-06"
+  },
+  "catalyst": {
+   "days": 1,
+   "days_traded": 0,
+   "trades": 0,
+   "wins": 0,
+   "total_gbp": 0,
+   "best_day": "2026-11-02",
+   "worst_day": "2026-11-02"
   }
  }
 }
