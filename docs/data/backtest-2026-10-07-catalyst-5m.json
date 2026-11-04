@@ -1,6 +1,6 @@
 {
  "date": "2026-10-07",
- "generated": "2026-11-03T22:08+00:00",
+ "generated": "2026-11-04T09:35+00:00",
  "fx_gbpusd": 1.326682209968567,
  "result": "done",
  "require_news": true,
@@ -14,7 +14,7 @@
    "ticker": "PENG",
    "name": "Penguin Solutions, Inc.",
    "vol_x": 2.49,
-   "buy_pct30": 0.6486821546506639,
+   "buy_pct30": 0.648683400546291,
    "change": 0.16500547222815998,
    "score": 7.07,
    "news": [
@@ -124,12 +124,13 @@
  ],
  "total_gbp": -30.559260995614522,
  "alerts": [
-  "10:20 Day trade: bought BKV: 54 BKV at $24.36 (about \u00a3993). Stop $23.15. Broke above its opening-range high ($24.20) at $24.34. In play: 1.2x normal volume, normally moves 3% a day. Stop $23.12. News (MT Newswires): Update: BKV Shares Rise After Signing Equipment Supply Contract for Potential Power Projec. Claude unavailable (400), keyword check used",
+  "10:20 Day trade: bought BKV: 54 BKV at $24.36 (about \u00a3993). Stop $23.15. Broke above its opening-range high ($24.20) at $24.34. In play: 1.2x normal volume, normally moves 3% a day. Stop $23.12. News (MT Newswires): Update: BKV Shares Rise After Signing Equipment Supply Contract for Potential Power Projec. Claude: catalyst (strength 3/5): An OFFICIAL headline reports a signed equipment supply contract for a potential Texas power project, a specific business win, though its size relative to BKV an",
   "15:50 Day trade: sold BKV (-\u00a331): End of day: sold 10 minutes before the close. Result -\u00a331 (-3.1%).",
   "15:50 Day trade summary: 1 trade(s) today: BKV -\u00a331. Total -\u00a331."
  ],
  "log": [
-  "Day trade buy order: 54 BKV at about $24.34. Broke above its opening-range high ($24.20) at $24.34. In play: 1.2x normal volume, normally moves 3% a day. Stop $23.12. News (MT Newswires): Update: BKV Shares Rise After Signing Equipment Supply Contract for Potential Power Projec. Claude unavailable (400), keyword check used",
+  "BKV: Claude: catalyst (strength 3/5): An OFFICIAL headline reports a signed equipment supply contract for a potential Texas power project, a specific business win, though its size relative to BKV an",
+  "Day trade buy order: 54 BKV at about $24.34. Broke above its opening-range high ($24.20) at $24.34. In play: 1.2x normal volume, normally moves 3% a day. Stop $23.12. News (MT Newswires): Update: BKV Shares Rise After Signing Equipment Supply Contract for Potential Power Projec. Claude: catalyst (strength 3/5): An OFFICIAL headline reports a signed equipment supply contract for a potential Texas power project, a specific business win, though its size relative to BKV an",
   "Bought 54 BKV at 24.36 (cost \u00a3993).",
   "Sold BKV (about -\u00a331). End of day: sold 10 minutes before the close.",
   "Day trading finished: 1 trade(s), total -\u00a331."

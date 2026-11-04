@@ -1,6 +1,6 @@
 {
  "date": "2026-10-29",
- "generated": "2026-11-03T22:15+00:00",
+ "generated": "2026-11-04T09:46+00:00",
  "fx_gbpusd": 1.332800269126892,
  "result": "done",
  "require_news": true,
@@ -14,7 +14,7 @@
    "ticker": "LENZ",
    "name": "LENZ Therapeutics, Inc.",
    "vol_x": 1.91,
-   "buy_pct30": 0.6264196137945577,
+   "buy_pct30": 0.6263052559633895,
    "change": 0.017445480876156383,
    "score": 5.83,
    "news": [
@@ -35,10 +35,22 @@
    "on_t212": true
   },
   {
+   "ticker": "MO",
+   "name": "Altria Group, Inc.",
+   "vol_x": 0.24,
+   "buy_pct30": 0.6427816159002714,
+   "change": 0.04507468162511641,
+   "score": 3.55,
+   "news": [
+    "Altria Reports 2026 Third-Quarter and Nine-Months Results; Announces Expanded Share Repurchase Program; Raises 2026 Full-Year Earnings Guidance - Business Wire"
+   ],
+   "on_t212": true
+  },
+  {
    "ticker": "ORLY",
    "name": "O'Reilly Automotive, Inc.",
    "vol_x": 0.29,
-   "buy_pct30": 0.7176672348560702,
+   "buy_pct30": 0.7177812463804665,
    "change": 0.016309137929056527,
    "score": 2.95,
    "news": [
@@ -55,6 +67,18 @@
    "score": 2.33,
    "news": [
     "MGM Resorts International and People Incorporated Enter into Amended Voting Agreement - PR Newswire"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "TXT",
+   "name": "Textron Inc.",
+   "vol_x": 0.31,
+   "buy_pct30": 0.520615985581867,
+   "change": 0.11146582470569788,
+   "score": 2.2,
+   "news": [
+    "HALO-Flight Strengthens its Texas-based Air Med Fleet with additional Bell 407GXi Purchase Order - Textron Inc. - Investor Relations"
    ],
    "on_t212": true
   },
@@ -98,7 +122,7 @@
    "ticker": "FCN",
    "name": "FTI Consulting, Inc.",
    "vol_x": 0.23,
-   "buy_pct30": 0.29353595002509947,
+   "buy_pct30": 0.2916062874604686,
    "change": 0.08084060256198344,
    "score": 0.13,
    "news": [
@@ -175,23 +199,24 @@
    "bought_at": "2026-10-29T14:16+00:00",
    "sold_at": "2026-10-29T16:16+00:00",
    "entry": 1.3974961442947387,
-   "exit": 1.3236750476360322,
+   "exit": 1.32867,
    "cost_gbp": 1001.8088753195958,
-   "pl_gbp": -55.761785099837084,
-   "pl_pct": -0.05566110110778169,
+   "pl_gbp": -52.19183025468283,
+   "pl_pct": -0.05209759220593115,
    "reason": "Stop-loss order filled"
   }
  ],
- "total_gbp": -55.761785099837084,
+ "total_gbp": -52.19183025468283,
  "alerts": [
-  "10:16 Day trade: bought KDK: 954 KDK at $1.40 (about \u00a31,002). Stop $1.33. Broke above its opening-range high ($1.35) at $1.40. In play: 1.9x normal volume, normally moves 10% a day. Stop $1.33. News (GlobeNewswire): Kodiak AI and DTL Transport Reach Historic Agreement To - GlobeNewswire. Claude unavailable (400), keyword check used",
-  "12:16 Day trade update: KDK: stop-loss order filled (-\u00a356)",
-  "15:50 Day trade summary: 1 trade(s) today: KDK -\u00a356. Total -\u00a356."
+  "10:16 Day trade: bought KDK: 954 KDK at $1.40 (about \u00a31,002). Stop $1.33. Broke above its opening-range high ($1.35) at $1.40. In play: 1.9x normal volume, normally moves 10% a day. Stop $1.33. News (GlobeNewswire): Kodiak AI and DTL Transport Reach Historic Agreement To - GlobeNewswire. Claude: catalyst (strength 3/5): An OFFICIAL 28 Oct GlobeNewswire release announces a 'historic agreement' between Kodiak AI and DTL Transport, a specific commercial partnership, though the tru",
+  "12:16 Day trade update: KDK: stop-loss order filled (-\u00a352)",
+  "15:50 Day trade summary: 1 trade(s) today: KDK -\u00a352. Total -\u00a352."
  ],
  "log": [
-  "Day trade buy order: 954 KDK at about $1.40. Broke above its opening-range high ($1.35) at $1.40. In play: 1.9x normal volume, normally moves 10% a day. Stop $1.33. News (GlobeNewswire): Kodiak AI and DTL Transport Reach Historic Agreement To - GlobeNewswire. Claude unavailable (400), keyword check used",
+  "KDK: Claude: catalyst (strength 3/5): An OFFICIAL 28 Oct GlobeNewswire release announces a 'historic agreement' between Kodiak AI and DTL Transport, a specific commercial partnership, though the tru",
+  "Day trade buy order: 954 KDK at about $1.40. Broke above its opening-range high ($1.35) at $1.40. In play: 1.9x normal volume, normally moves 10% a day. Stop $1.33. News (GlobeNewswire): Kodiak AI and DTL Transport Reach Historic Agreement To - GlobeNewswire. Claude: catalyst (strength 3/5): An OFFICIAL 28 Oct GlobeNewswire release announces a 'historic agreement' between Kodiak AI and DTL Transport, a specific commercial partnership, though the tru",
   "Bought 954 KDK at 1.40 (cost \u00a31,002).",
-  "KDK: stop-loss order filled, P&L -\u00a356.",
-  "Day trading finished: 1 trade(s), total -\u00a356."
+  "KDK: stop-loss order filled, P&L -\u00a352.",
+  "Day trading finished: 1 trade(s), total -\u00a352."
  ]
 }

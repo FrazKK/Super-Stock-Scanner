@@ -1,6 +1,6 @@
 {
  "date": "2026-09-21",
- "generated": "2026-11-03T22:01+00:00",
+ "generated": "2026-11-04T09:31+00:00",
  "fx_gbpusd": 1.3388673067092896,
  "result": "done",
  "require_news": true,
@@ -30,7 +30,7 @@
    "change": 0.032736757543041284,
    "score": 2.04,
    "news": [
-    "Tesla Launches Model Y L Accessories in the U.S. - BASENOR - Tesla Accessories"
+    "Tesla FSD Supervised Approved in Czechia: What Owners Need to Know - BASENOR - Tesla Accessories"
    ],
    "on_t212": true
   },
@@ -109,29 +109,13 @@
    "vol_x": 0.5
   }
  ],
- "trades": [
-  {
-   "ticker": "HELP",
-   "bought_at": "2026-09-21T14:16+00:00",
-   "sold_at": "2026-09-21T19:50+00:00",
-   "entry": 13.503489770889281,
-   "exit": 13.84000015258789,
-   "cost_gbp": 999.987637938285,
-   "pl_gbp": 23.384886164812087,
-   "pl_pct": 0.02338517525379179,
-   "reason": "End of day: sold 10 minutes before the close."
-  }
- ],
- "total_gbp": 23.384886164812087,
+ "trades": [],
+ "total_gbp": 0,
  "alerts": [
-  "10:16 Day trade: bought HELP: 99 HELP at $13.50 (about \u00a31,000). Stop $12.83. Broke above its opening-range high ($13.38) at $13.49. In play: 0.3x normal volume, normally moves 8% a day. Stop $12.82. News (Helus Pharma): Helus Pharma Presents New Analyses on HLP003 in Major Depressive Disorder at Psych Congres. Claude unavailable (400), keyword check used",
-  "15:50 Day trade: sold HELP (+\u00a323): End of day: sold 10 minutes before the close. Result +\u00a323 (+2.3%).",
-  "15:50 Day trade summary: 1 trade(s) today: HELP +\u00a323. Total +\u00a323."
+  "15:50 Day trade summary: No trade today: nothing in play broke out."
  ],
  "log": [
-  "Day trade buy order: 99 HELP at about $13.49. Broke above its opening-range high ($13.38) at $13.49. In play: 0.3x normal volume, normally moves 8% a day. Stop $12.82. News (Helus Pharma): Helus Pharma Presents New Analyses on HLP003 in Major Depressive Disorder at Psych Congres. Claude unavailable (400), keyword check used",
-  "Bought 99 HELP at 13.50 (cost \u00a31,000).",
-  "Sold HELP (about +\u00a323). End of day: sold 10 minutes before the close.",
-  "Day trading finished: 1 trade(s), total +\u00a323."
+  "HELP: Claude: no catalyst (strength 2/5): The official headlines are a conference presentation of new HLP003 analyses, with no stated positive results, and a conference participation notice, both of whi",
+  "Day trading finished: 0 trade(s), total +\u00a30."
  ]
 }

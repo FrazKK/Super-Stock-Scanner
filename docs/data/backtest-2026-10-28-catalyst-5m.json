@@ -1,6 +1,6 @@
 {
  "date": "2026-10-28",
- "generated": "2026-11-03T22:18+00:00",
+ "generated": "2026-11-04T09:44+00:00",
  "fx_gbpusd": 1.330629587173462,
  "result": "done",
  "require_news": true,
@@ -67,6 +67,18 @@
    "score": 2.51,
    "news": [
     "SoFi Reports Third Quarter 2026 with Record Net Revenue of $1.4 Billion, Net Income of $241 Million and Raises Full-Year Guidance - SoFi Investor Relations"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "WING",
+   "name": "Wingstop Inc.",
+   "vol_x": 0.62,
+   "buy_pct30": 0.5518223311479499,
+   "change": 0.08166695110127464,
+   "score": 1.95,
+   "news": [
+    "Wingstop Inc. Reports Fiscal Third Quarter Financial Results - PR Newswire"
    ],
    "on_t212": true
   },
@@ -218,8 +230,8 @@
    "vol_x": 1.53
   },
   {
-   "ticker": "LCII",
-   "vol_x": 1.28
+   "ticker": "BKYI",
+   "vol_x": 1.42
   },
   {
    "ticker": "SBFM",
@@ -257,12 +269,13 @@
  ],
  "total_gbp": -24.955280674499136,
  "alerts": [
-  "10:30 Day trade: bought KDK: 996 KDK at $1.34 (about \u00a31,002). Stop $1.27. Broke above its opening-range high ($1.30) at $1.34. In play: 0.7x normal volume, normally moves 10% a day. Stop $1.27. News (GlobeNewswire): Kodiak AI and DTL Transport Reach Historic Agreement To - GlobeNewswire. Claude unavailable (400), keyword check used",
+  "10:30 Day trade: bought KDK: 996 KDK at $1.34 (about \u00a31,002). Stop $1.27. Broke above its opening-range high ($1.30) at $1.34. In play: 0.7x normal volume, normally moves 10% a day. Stop $1.27. News (GlobeNewswire): Kodiak AI and DTL Transport Reach Historic Agreement To - GlobeNewswire. Claude: catalyst (strength 3/5): An official GlobeNewswire release dated today announces a 'historic agreement' with DTL Transport, and the heavy-volume breakout supports it, but the truncated ",
   "15:50 Day trade: sold KDK (-\u00a325): End of day: sold 10 minutes before the close. Result -\u00a325 (-2.5%).",
   "15:50 Day trade summary: 1 trade(s) today: KDK -\u00a325. Total -\u00a325."
  ],
  "log": [
-  "Day trade buy order: 996 KDK at about $1.34. Broke above its opening-range high ($1.30) at $1.34. In play: 0.7x normal volume, normally moves 10% a day. Stop $1.27. News (GlobeNewswire): Kodiak AI and DTL Transport Reach Historic Agreement To - GlobeNewswire. Claude unavailable (400), keyword check used",
+  "KDK: Claude: catalyst (strength 3/5): An official GlobeNewswire release dated today announces a 'historic agreement' with DTL Transport, and the heavy-volume breakout supports it, but the truncated ",
+  "Day trade buy order: 996 KDK at about $1.34. Broke above its opening-range high ($1.30) at $1.34. In play: 0.7x normal volume, normally moves 10% a day. Stop $1.27. News (GlobeNewswire): Kodiak AI and DTL Transport Reach Historic Agreement To - GlobeNewswire. Claude: catalyst (strength 3/5): An official GlobeNewswire release dated today announces a 'historic agreement' with DTL Transport, and the heavy-volume breakout supports it, but the truncated ",
   "Bought 996 KDK at 1.34 (cost \u00a31,002).",
   "Sold KDK (about -\u00a325). End of day: sold 10 minutes before the close.",
   "Day trading finished: 1 trade(s), total -\u00a325."

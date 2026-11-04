@@ -1,20 +1,23 @@
 {
  "date": "2026-10-19",
- "generated": "2026-11-03T22:11+00:00",
+ "generated": "2026-11-04T09:38+00:00",
  "fx_gbpusd": 1.3335645198822021,
  "result": "done",
  "require_news": true,
  "strategy": "catalyst",
  "bars": "5m",
  "require_trend": true,
- "added_during_day": [],
+ "added_during_day": [
+  "Added KLAR to today's list at 10:48 New York: 0.2x normal volume in the last 30 min; news: Klarna Expands Fiserv Partnership to Enterprise Merchants After Going Live at 10",
+  "Added ESEA to today's list at 10:48 New York: 0.3x normal volume in the last 30 min; news: Euroseas Ltd. Announces a New Time Charter Contract for its - GlobeNewswire"
+ ],
  "drift_list": [],
  "list": [
   {
    "ticker": "FUFU",
    "name": "BitFuFu Inc.",
    "vol_x": 167.54,
-   "buy_pct30": 0.5871153965136249,
+   "buy_pct30": 0.5870860870570966,
    "change": 0.6001111030608046,
    "score": 335.93,
    "news": [
@@ -26,7 +29,7 @@
    "ticker": "TSLA",
    "name": "Tesla, Inc.",
    "vol_x": 0.24,
-   "buy_pct30": 0.6212141128364309,
+   "buy_pct30": 0.6212137758940773,
    "change": 0.020311757294404043,
    "score": 2.46,
    "news": [
@@ -121,29 +124,16 @@
    "vol_x": 0.59
   }
  ],
- "trades": [
-  {
-   "ticker": "TSLA",
-   "bought_at": "2026-10-19T14:16+00:00",
-   "sold_at": "2026-10-19T19:50+00:00",
-   "entry": 364.54017086791987,
-   "exit": 368.3299865722656,
-   "cost_gbp": 821.3033018225568,
-   "pl_gbp": 7.295497292467644,
-   "pl_pct": 0.00888282961517162,
-   "reason": "End of day: sold 10 minutes before the close."
-  }
- ],
- "total_gbp": 7.295497292467644,
+ "trades": [],
+ "total_gbp": 0,
  "alerts": [
-  "10:16 Day trade: bought TSLA: 3 TSLA at $364.54 (about \u00a3821). Stop $346.31. Broke above its opening-range high ($362.92) at $364.18. In play: 0.2x normal volume, normally moves 3% a day. Stop $354.47. News (BASENOR - Tesla Accessories): Tesla Model Y L Launch Series Waits Stretch to Early 2027 - BASENOR - Tesla Accessories. Claude unavailable (400), keyword check used",
-  "15:50 Day trade: sold TSLA (+\u00a37): End of day: sold 10 minutes before the close. Result +\u00a37 (+0.9%).",
-  "15:50 Day trade summary: 1 trade(s) today: TSLA +\u00a37. Total +\u00a37."
+  "15:50 Day trade summary: No trade today: nothing in play broke out."
  ],
  "log": [
-  "Day trade buy order: 3 TSLA at about $364.18. Broke above its opening-range high ($362.92) at $364.18. In play: 0.2x normal volume, normally moves 3% a day. Stop $354.47. News (BASENOR - Tesla Accessories): Tesla Model Y L Launch Series Waits Stretch to Early 2027 - BASENOR - Tesla Accessories. Claude unavailable (400), keyword check used",
-  "Bought 3 TSLA at 364.54 (cost \u00a3821).",
-  "Sold TSLA (about +\u00a37). End of day: sold 10 minutes before the close.",
-  "Day trading finished: 1 trade(s), total +\u00a37."
+  "TSLA: Claude: no catalyst (strength 1/5): The only OFFICIAL-tagged items are a third-party accessories site noting longer Model Y L delivery waits and a fan-app event video, neither a material company a",
+  "Added KLAR to today's list at 10:48 New York: 0.2x normal volume in the last 30 min; news: Klarna Expands Fiserv Partnership to Enterprise Merchants After Going Live at 10",
+  "Added ESEA to today's list at 10:48 New York: 0.3x normal volume in the last 30 min; news: Euroseas Ltd. Announces a New Time Charter Contract for its - GlobeNewswire",
+  "ESEA: Claude: catalyst (strength 2/5): An official release announces a new time charter for M/V EM Corfu and a roughly $26M sale of a sister vessel, a real but modest item for a fleet operator, with ",
+  "Day trading finished: 0 trade(s), total +\u00a30."
  ]
 }

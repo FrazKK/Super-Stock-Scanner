@@ -1,15 +1,29 @@
 {
  "date": "2026-09-18",
- "generated": "2026-11-03T21:59+00:00",
+ "generated": "2026-11-04T09:28+00:00",
  "fx_gbpusd": 1.335800051689148,
  "result": "done",
  "require_news": true,
  "strategy": "catalyst",
  "bars": "5m",
  "require_trend": true,
- "added_during_day": [],
+ "added_during_day": [
+  "Added TSLA to today's list at 10:48 New York: 0.5x normal volume in the last 30 min; news: Tesla Launches Model Y L Accessories in the U.S. - BASENOR - Tesla Accessories"
+ ],
  "drift_list": [],
  "list": [
+  {
+   "ticker": "MAR",
+   "name": "Marriott International",
+   "vol_x": 0.26,
+   "buy_pct30": 0.9469094522833499,
+   "change": 0.005119734895443484,
+   "score": 3.81,
+   "news": [
+    "MARRIOTT INTERNATIONAL AND \u00d6ZAK GYO SIGN AGREEMENT TO OPEN A RITZ-CARLTON RESORT WITHIN T\u00dcRK\u0130YE'S PREMIERE SEAFRONT DESTINATION OF KEMER, ANTALYA - PR Newswire"
+   ],
+   "on_t212": true
+  },
   {
    "ticker": "DASH",
    "name": "DoorDash, Inc.",
@@ -18,7 +32,7 @@
    "change": 0.0025185315548561515,
    "score": 2.29,
    "news": [
-    "DoorDash and Costco Expand Global Partnership with Nationwide U.S. Launch - DoorDash"
+    "DoorDash and Costco Expand Global Partnership with Nationwide U.S. Launch - DoorDash - Investor Relations"
    ],
    "on_t212": true
   },
@@ -26,7 +40,7 @@
    "ticker": "IDXX",
    "name": "IDEXX Laboratories, Inc.",
    "vol_x": 0.23,
-   "buy_pct30": 0.2036599931567525,
+   "buy_pct30": 0.20345052635747105,
    "change": 0.006248969275569616,
    "score": 0.77,
    "news": [
@@ -69,16 +83,8 @@
    "vol_x": 0.63
   },
   {
-   "ticker": "CRWV",
-   "vol_x": 0.58
-  },
-  {
    "ticker": "GOOG",
    "vol_x": 0.55
-  },
-  {
-   "ticker": "SNDK",
-   "vol_x": 0.53
   },
   {
    "ticker": "GOOGL",
@@ -95,31 +101,24 @@
   {
    "ticker": "ALMR",
    "vol_x": 0.45
-  }
- ],
- "trades": [
+  },
   {
-   "ticker": "IDXX",
-   "bought_at": "2026-09-18T14:26+00:00",
-   "sold_at": "2026-09-18T19:50+00:00",
-   "entry": 512.4569523315429,
-   "exit": 513.5750122070312,
-   "cost_gbp": 768.4168556679653,
-   "pl_gbp": 0.5230939264438348,
-   "pl_pct": 0.0006807423894796302,
-   "reason": "End of day: sold 10 minutes before the close."
+   "ticker": "MEDS",
+   "vol_x": 0.44
+  },
+  {
+   "ticker": "AMZN",
+   "vol_x": 0.43
   }
  ],
- "total_gbp": 0.5230939264438348,
+ "trades": [],
+ "total_gbp": 0,
  "alerts": [
-  "10:26 Day trade: bought IDXX: 2 IDXX at $512.46 (about \u00a3768). Stop $486.83. Broke above its opening-range high ($510.33) at $511.95. In play: 0.2x normal volume, normally moves 3% a day. Stop $505.21. News (Business Wire): IDEXX Laboratories Acquires CoVetAI to Advance Veterinary Workflow Intelligence - Business. Claude unavailable (400), keyword check used",
-  "15:50 Day trade: sold IDXX (+\u00a31): End of day: sold 10 minutes before the close. Result +\u00a31 (+0.1%).",
-  "15:50 Day trade summary: 1 trade(s) today: IDXX +\u00a31. Total +\u00a31."
+  "15:50 Day trade summary: No trade today: nothing in play broke out."
  ],
  "log": [
-  "Day trade buy order: 2 IDXX at about $511.95. Broke above its opening-range high ($510.33) at $511.95. In play: 0.2x normal volume, normally moves 3% a day. Stop $505.21. News (Business Wire): IDEXX Laboratories Acquires CoVetAI to Advance Veterinary Workflow Intelligence - Business. Claude unavailable (400), keyword check used",
-  "Bought 2 IDXX at 512.46 (cost \u00a3768).",
-  "Sold IDXX (about +\u00a31). End of day: sold 10 minutes before the close.",
-  "Day trading finished: 1 trade(s), total +\u00a31."
+  "IDXX: Claude: no catalyst (strength 1/5): The only official headline is IDEXX's acquisition of CoVetAI, a small AI workflow startup with no disclosed size or financials, so it is unlikely to move the st",
+  "Added TSLA to today's list at 10:48 New York: 0.5x normal volume in the last 30 min; news: Tesla Launches Model Y L Accessories in the U.S. - BASENOR - Tesla Accessories",
+  "Day trading finished: 0 trade(s), total +\u00a30."
  ]
 }

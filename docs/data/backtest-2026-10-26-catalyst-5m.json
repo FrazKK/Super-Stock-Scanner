@@ -1,15 +1,30 @@
 {
  "date": "2026-10-26",
- "generated": "2026-11-03T22:15+00:00",
+ "generated": "2026-11-04T09:45+00:00",
  "fx_gbpusd": 1.3377747535705566,
  "result": "done",
  "require_news": true,
  "strategy": "catalyst",
  "bars": "5m",
  "require_trend": true,
- "added_during_day": [],
+ "added_during_day": [
+  "Added AGYS to today's list at 10:48 New York: 0.6x normal volume in the last 30 min; news: Agilysys Announces Record Revenue of $93.4M in Fiscal 2027 Second Quarter - Busi"
+ ],
  "drift_list": [],
  "list": [
+  {
+   "ticker": "TSLA",
+   "name": "Tesla, Inc.",
+   "vol_x": 0.38,
+   "buy_pct30": 0.7270044611098195,
+   "change": 0.05537019432388801,
+   "score": 3.67,
+   "news": [
+    "Tesla FSD Approved in Latvia: What Owners Need to Do - BASENOR - Tesla Accessories",
+    "Tesla to Launch Unsupervised FSD, Let Owners Join Robotaxi Network in Q2 2027 - Not a Tesla App"
+   ],
+   "on_t212": true
+  },
   {
    "ticker": "ORKA",
    "name": "Oruka Therapeutics, Inc.",
@@ -23,14 +38,14 @@
    "on_t212": true
   },
   {
-   "ticker": "TSLA",
-   "name": "Tesla, Inc.",
-   "vol_x": 0.38,
-   "buy_pct30": 0.727004569382619,
-   "change": 0.05537019432388801,
-   "score": 3.17,
+   "ticker": "RBCAA",
+   "name": "Republic Bancorp, Inc.",
+   "vol_x": 0.55,
+   "buy_pct30": 0.06734245710807744,
+   "change": 0.0003274975960327886,
+   "score": -0.13,
    "news": [
-    "Tesla to Launch Unsupervised FSD, Let Owners Join Robotaxi Network in Q2 2027 - Not a Tesla App"
+    "Republic Bancorp Reports Solid Third Quarter Results Highlighted by Continued Strong Core Banking Net Interest Income Expansion - Business Wire"
    ],
    "on_t212": true
   }
@@ -43,10 +58,6 @@
   {
    "ticker": "XNCR",
    "vol_x": 2.9
-  },
-  {
-   "ticker": "RRC",
-   "vol_x": 2.2
   },
   {
    "ticker": "FRMM",
@@ -95,31 +106,38 @@
   {
    "ticker": "KPLT",
    "vol_x": 0.4
+  },
+  {
+   "ticker": "UAN",
+   "vol_x": 0.37
   }
  ],
  "trades": [
   {
-   "ticker": "TSLA",
-   "bought_at": "2026-10-26T14:20+00:00",
+   "ticker": "AGYS",
+   "bought_at": "2026-10-26T14:48+00:00",
    "sold_at": "2026-10-26T19:50+00:00",
-   "entry": 395.98069863891595,
-   "exit": 393.3565979003906,
-   "cost_gbp": 889.3305886399917,
-   "pl_gbp": -7.216622479743819,
-   "pl_pct": -0.008114668012015458,
+   "entry": 124.17405305480956,
+   "exit": 124.25,
+   "cost_gbp": 929.6057785697539,
+   "pl_gbp": -0.8246091810101461,
+   "pl_pct": -0.0008870525549861035,
    "reason": "End of day: sold 10 minutes before the close."
   }
  ],
- "total_gbp": -7.216622479743819,
+ "total_gbp": -0.8246091810101461,
  "alerts": [
-  "10:20 Day trade: bought TSLA: 3 TSLA at $395.98 (about \u00a3889). Stop $376.18. Broke above its opening-range high ($394.93) at $395.59. In play: 0.4x normal volume, normally moves 3% a day. Stop $383.84. News (Not a Tesla App): Tesla to Launch Unsupervised FSD, Let Owners Join Robotaxi Network in Q2 2027 - Not a Tesl. Claude unavailable (400), keyword check used",
-  "15:50 Day trade: sold TSLA (-\u00a37): End of day: sold 10 minutes before the close. Result -\u00a37 (-0.8%).",
-  "15:50 Day trade summary: 1 trade(s) today: TSLA -\u00a37. Total -\u00a37."
+  "10:48 Day trade: bought AGYS: 10 AGYS at $124.17 (about \u00a3930). Stop $117.97. Broke above its opening-range high ($122.39) at $124.05. In play: 0.6x normal volume, normally moves 4% a day. Stop $119.76. News (Business Wire): Agilysys Announces Record Revenue of $93.4M in Fiscal 2027 Second Quarter - Business Wire. Claude: catalyst (strength 4/5): Official Business Wire release reports record quarterly revenue of $93.4M, and an OTHER headline notes raised full-year guidance, a specific positive earnings c",
+  "15:50 Day trade: sold AGYS (-\u00a31): End of day: sold 10 minutes before the close. Result -\u00a31 (-0.1%).",
+  "15:50 Day trade summary: 1 trade(s) today: AGYS -\u00a31. Total -\u00a31."
  ],
  "log": [
-  "Day trade buy order: 3 TSLA at about $395.59. Broke above its opening-range high ($394.93) at $395.59. In play: 0.4x normal volume, normally moves 3% a day. Stop $383.84. News (Not a Tesla App): Tesla to Launch Unsupervised FSD, Let Owners Join Robotaxi Network in Q2 2027 - Not a Tesl. Claude unavailable (400), keyword check used",
-  "Bought 3 TSLA at 395.98 (cost \u00a3889).",
-  "Sold TSLA (about -\u00a37). End of day: sold 10 minutes before the close.",
-  "Day trading finished: 1 trade(s), total -\u00a37."
+  "TSLA: Claude: no catalyst (strength 2/5): The only items in the last 48 hours are fan-site reports of minor updates (a small-market FSD approval in Latvia, a Model 3 spec change, a Houston robotaxi area",
+  "Added AGYS to today's list at 10:48 New York: 0.6x normal volume in the last 30 min; news: Agilysys Announces Record Revenue of $93.4M in Fiscal 2027 Second Quarter - Busi",
+  "AGYS: Claude: catalyst (strength 4/5): Official Business Wire release reports record quarterly revenue of $93.4M, and an OTHER headline notes raised full-year guidance, a specific positive earnings c",
+  "Day trade buy order: 10 AGYS at about $124.05. Broke above its opening-range high ($122.39) at $124.05. In play: 0.6x normal volume, normally moves 4% a day. Stop $119.76. News (Business Wire): Agilysys Announces Record Revenue of $93.4M in Fiscal 2027 Second Quarter - Business Wire. Claude: catalyst (strength 4/5): Official Business Wire release reports record quarterly revenue of $93.4M, and an OTHER headline notes raised full-year guidance, a specific positive earnings c",
+  "Bought 10 AGYS at 124.17 (cost \u00a3930).",
+  "Sold AGYS (about -\u00a31). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 1 trade(s), total -\u00a31."
  ]
 }

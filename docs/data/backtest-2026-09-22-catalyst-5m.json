@@ -1,6 +1,6 @@
 {
  "date": "2026-09-22",
- "generated": "2026-11-03T22:03+00:00",
+ "generated": "2026-11-04T09:31+00:00",
  "fx_gbpusd": 1.3370896577835083,
  "result": "done",
  "require_news": true,
@@ -38,7 +38,7 @@
    "ticker": "LXEO",
    "name": "Lexeo Therapeutics, Inc.",
    "vol_x": 0.74,
-   "buy_pct30": 0.6329426253298552,
+   "buy_pct30": 0.6327921648586003,
    "change": 0.03921564960882984,
    "score": 2.51,
    "news": [
@@ -74,7 +74,7 @@
    "ticker": "GRRR",
    "name": "Gorilla Technology Group Inc.",
    "vol_x": 0.25,
-   "buy_pct30": 0.44627144038726485,
+   "buy_pct30": 0.44627613867017174,
    "change": 0.008124051476156025,
    "score": 0.79,
    "news": [

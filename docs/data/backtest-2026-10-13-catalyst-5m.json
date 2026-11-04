@@ -1,6 +1,6 @@
 {
  "date": "2026-10-13",
- "generated": "2026-11-03T22:10+00:00",
+ "generated": "2026-11-04T09:36+00:00",
  "fx_gbpusd": 1.3209795951843262,
  "result": "done",
  "require_news": true,
@@ -43,6 +43,18 @@
    "score": 2.6,
    "news": [
     "AMC Theatres and Hoyt Games Launch AMC Movie Trivia Game Show App for Mobile Devices - Business Wire"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "DNUT",
+   "name": "Krispy Kreme, Inc.",
+   "vol_x": 0.22,
+   "buy_pct30": 0.45078086132389794,
+   "change": 0.009966998304552721,
+   "score": 0.74,
+   "news": [
+    "Krispy Kreme Announces Development Deal to Expand Across the New York Metro Area - Business Wire"
    ],
    "on_t212": true
   },
@@ -136,12 +148,13 @@
  ],
  "total_gbp": -2.5005539521761193,
  "alerts": [
-  "10:16 Day trade: bought EFXT: 48 EFXT at $27.54 (about \u00a31,002). Stop $26.16. Broke above its opening-range high ($27.39) at $27.51. In play: 0.4x normal volume, normally moves 4% a day. Stop $26.13. News (GlobeNewswire): Enerflex Announces Major Project Award and Increases - GlobeNewswire. Claude unavailable (400), keyword check used",
+  "10:16 Day trade: bought EFXT: 48 EFXT at $27.54 (about \u00a31,002). Stop $26.16. Broke above its opening-range high ($27.39) at $27.51. In play: 0.4x normal volume, normally moves 4% a day. Stop $26.13. News (GlobeNewswire): Enerflex Announces Major Project Award and Increases - GlobeNewswire. Claude: catalyst (strength 4/5): An official GlobeNewswire release announces a major project award, which is a specific contract catalyst, though the headline is truncated and its size relative",
   "15:50 Day trade: sold EFXT (-\u00a33): End of day: sold 10 minutes before the close. Result -\u00a33 (-0.2%).",
   "15:50 Day trade summary: 1 trade(s) today: EFXT -\u00a33. Total -\u00a33."
  ],
  "log": [
-  "Day trade buy order: 48 EFXT at about $27.51. Broke above its opening-range high ($27.39) at $27.51. In play: 0.4x normal volume, normally moves 4% a day. Stop $26.13. News (GlobeNewswire): Enerflex Announces Major Project Award and Increases - GlobeNewswire. Claude unavailable (400), keyword check used",
+  "EFXT: Claude: catalyst (strength 4/5): An official GlobeNewswire release announces a major project award, which is a specific contract catalyst, though the headline is truncated and its size relative",
+  "Day trade buy order: 48 EFXT at about $27.51. Broke above its opening-range high ($27.39) at $27.51. In play: 0.4x normal volume, normally moves 4% a day. Stop $26.13. News (GlobeNewswire): Enerflex Announces Major Project Award and Increases - GlobeNewswire. Claude: catalyst (strength 4/5): An official GlobeNewswire release announces a major project award, which is a specific contract catalyst, though the headline is truncated and its size relative",
   "Bought 48 EFXT at 27.54 (cost \u00a31,002).",
   "Sold EFXT (about -\u00a33). End of day: sold 10 minutes before the close.",
   "Day trading finished: 1 trade(s), total -\u00a33."

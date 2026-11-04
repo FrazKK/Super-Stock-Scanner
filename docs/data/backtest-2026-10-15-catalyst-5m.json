@@ -1,6 +1,6 @@
 {
  "date": "2026-10-15",
- "generated": "2026-11-03T22:10+00:00",
+ "generated": "2026-11-04T09:39+00:00",
  "fx_gbpusd": 1.3230137825012207,
  "result": "done",
  "require_news": true,
@@ -16,7 +16,7 @@
    "ticker": "NRXS",
    "name": "Neuraxis, Inc.",
    "vol_x": 3.22,
-   "buy_pct30": 0.40428679249304855,
+   "buy_pct30": 0.4042169210564918,
    "change": 0.07963246006415914,
    "score": 6.56,
    "news": [
@@ -28,7 +28,7 @@
    "ticker": "ADBE",
    "name": "Adobe Inc.",
    "vol_x": 0.22,
-   "buy_pct30": 0.7108828229487077,
+   "buy_pct30": 0.710894545050553,
    "change": 0.0464725492677327,
    "score": 2.78,
    "news": [
@@ -40,7 +40,7 @@
    "ticker": "CLNE",
    "name": "Clean Energy Fuels Corp.",
    "vol_x": 0.28,
-   "buy_pct30": 0.6655607880593016,
+   "buy_pct30": 0.6656862717205463,
    "change": 0.037037001061669184,
    "score": 2.72,
    "news": [
@@ -52,11 +52,11 @@
    "ticker": "NOW",
    "name": "ServiceNow, Inc.",
    "vol_x": 0.27,
-   "buy_pct30": 0.5860406115464513,
+   "buy_pct30": 0.586042980729412,
    "change": 0.01782404952228256,
    "score": 2.38,
    "news": [
-    "ServiceNow advances its operational harness for enterprise AI with AI Passport and expanded governance capabilities - ServiceNow Newsroom"
+    "ServiceNow advances its operational harness for enterprise AI with AI Passport and expanded governance capabilities - ServiceNow"
    ],
    "on_t212": true
   },
@@ -111,6 +111,10 @@
    "vol_x": 0.89
   },
   {
+   "ticker": "BRBR",
+   "vol_x": 0.8
+  },
+  {
    "ticker": "KEN",
    "vol_x": 0.69
   },
@@ -141,36 +145,19 @@
   {
    "ticker": "CNTN",
    "vol_x": 0.54
-  },
-  {
-   "ticker": "ITIC",
-   "vol_x": 0.48
   }
  ],
- "trades": [
-  {
-   "ticker": "CLNE",
-   "bought_at": "2026-10-15T14:16+00:00",
-   "sold_at": "2026-10-15T19:50+00:00",
-   "entry": 1.4402387772798537,
-   "exit": 1.5049999952316284,
-   "cost_gbp": 1001.9281907771378,
-   "pl_gbp": 43.484195632820274,
-   "pl_pct": 0.0434005111674641,
-   "reason": "End of day: sold 10 minutes before the close."
-  }
- ],
- "total_gbp": 43.484195632820274,
+ "trades": [],
+ "total_gbp": 0,
  "alerts": [
-  "10:16 Day trade: bought CLNE: 919 CLNE at $1.44 (about \u00a31,002). Stop $1.37. Broke above its opening-range high ($1.41) at $1.44. In play: 0.3x normal volume, normally moves 3% a day. Stop $1.37. News (Business Wire): Clean Energy Names Sean Wine as Chief Revenue Officer - Business Wire. Claude unavailable (400), keyword check used",
-  "15:50 Day trade: sold CLNE (+\u00a343): End of day: sold 10 minutes before the close. Result +\u00a343 (+4.3%).",
-  "15:50 Day trade summary: 1 trade(s) today: CLNE +\u00a343. Total +\u00a343."
+  "15:50 Day trade summary: No trade today: nothing in play broke out."
  ],
  "log": [
   "Added NRXP to today's list at 10:16 New York: 0.2x normal volume in the last 30 min; news: NRx Pharmaceuticals Announces Receipt of FDA Labeling Review Letter for Preserva",
-  "Day trade buy order: 919 CLNE at about $1.44. Broke above its opening-range high ($1.41) at $1.44. In play: 0.3x normal volume, normally moves 3% a day. Stop $1.37. News (Business Wire): Clean Energy Names Sean Wine as Chief Revenue Officer - Business Wire. Claude unavailable (400), keyword check used",
-  "Bought 919 CLNE at 1.44 (cost \u00a31,002).",
-  "Sold CLNE (about +\u00a343). End of day: sold 10 minutes before the close.",
-  "Day trading finished: 1 trade(s), total +\u00a343."
+  "CLNE: Claude: no catalyst (strength 1/5): The only official headline in the window is a routine executive appointment (Chief Revenue Officer), and the other items are repeat coverage of it or an earning",
+  "NOW: Claude: no catalyst (strength 1/5): Both OFFICIAL headlines describe generic AI platform and governance product updates with no quantified revenue, contract, or earnings impact, so they read as ro",
+  "ADBE: Claude: no catalyst (strength 2/5): The official Adobe-NVIDIA expanded collaboration is a partnership announcement with no disclosed money, contract size or revenue impact, so it does not meet the",
+  "NRXP: Claude: catalyst (strength 2/5): The official release reports an FDA labeling review letter for preservative-free ketamine ahead of a Nov 10 goal date, a regulatory milestone short of approval ",
+  "Day trading finished: 0 trade(s), total +\u00a30."
  ]
 }

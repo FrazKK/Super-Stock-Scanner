@@ -1,6 +1,6 @@
 {
  "date": "2026-09-08",
- "generated": "2026-11-03T22:03+00:00",
+ "generated": "2026-11-04T09:32+00:00",
  "fx_gbpusd": 1.3546831607818604,
  "result": "done",
  "require_news": true,
@@ -16,7 +16,7 @@
    "ticker": "PHVS",
    "name": "Pharvaris N.V.",
    "vol_x": 3.86,
-   "buy_pct30": 0.5060969588867107,
+   "buy_pct30": 0.5060914651017796,
    "change": 0.1703546402302194,
    "score": 10.24,
    "news": [
@@ -40,7 +40,7 @@
    "ticker": "NRGV",
    "name": "Energy Vault Holdings, Inc.",
    "vol_x": 0.27,
-   "buy_pct30": 0.6945731286580721,
+   "buy_pct30": 0.6944974443613139,
    "change": 0.07421877401066057,
    "score": 3.32,
    "news": [
@@ -58,6 +58,18 @@
    "score": 1.95,
    "news": [
     "IonQ & Congruity360 Ink $8.18M Quantum Security Agreement - IonQ"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "QNT",
+   "name": "Quantinuum Inc.",
+   "vol_x": 0.69,
+   "buy_pct30": 0.33817949152226795,
+   "change": 0.0365558624557738,
+   "score": 1.23,
+   "news": [
+    "Quantinuum Finalizes $100 Million CHIPS R&D Award with U.S. Department of Commerce to Advance Trapped-Ion Quantum Computer Manufacturing in the US - PR Newswire"
    ],
    "on_t212": true
   }
@@ -124,30 +136,16 @@
    "vol_x": 0.82
   }
  ],
- "trades": [
-  {
-   "ticker": "NRGV",
-   "bought_at": "2026-09-08T14:16+00:00",
-   "sold_at": "2026-09-08T19:50+00:00",
-   "entry": 4.2592551145553585,
-   "exit": 4.264999866485596,
-   "cost_gbp": 1001.3225456610478,
-   "pl_gbp": -0.1512040466416238,
-   "pl_pct": -0.00015100433651157102,
-   "reason": "End of day: sold 10 minutes before the close."
-  }
- ],
- "total_gbp": -0.1512040466416238,
+ "trades": [],
+ "total_gbp": 0,
  "alerts": [
-  "10:16 Day trade: bought NRGV: 318 NRGV at $4.26 (about \u00a31,001). Stop $4.05. Broke above its opening-range high ($4.18) at $4.26. In play: 0.3x normal volume, normally moves 8% a day. Stop $4.04. News (Energy Global): Energy Vault acquires land for BESS project - Energy Global. Claude unavailable (400), keyword check used",
-  "15:50 Day trade: sold NRGV (-\u00a30): End of day: sold 10 minutes before the close. Result -\u00a30 (-0.0%).",
-  "15:50 Day trade summary: 1 trade(s) today: NRGV -\u00a30. Total -\u00a30."
+  "15:50 Day trade summary: No trade today: nothing in play broke out."
  ],
  "log": [
   "Added KDK to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; news: Kodiak AI On Track For Year-End Driverless Long-Haul Launch as Safety Case Readi",
-  "Day trade buy order: 318 NRGV at about $4.26. Broke above its opening-range high ($4.18) at $4.26. In play: 0.3x normal volume, normally moves 8% a day. Stop $4.04. News (Energy Global): Energy Vault acquires land for BESS project - Energy Global. Claude unavailable (400), keyword check used",
-  "Bought 318 NRGV at 4.26 (cost \u00a31,001).",
-  "Sold NRGV (about -\u00a30). End of day: sold 10 minutes before the close.",
-  "Day trading finished: 1 trade(s), total -\u00a30."
+  "NRGV: Claude: no catalyst (strength 1/5): The only official headlines are land-ownership news for a Stoney Creek BESS project dated 4 September, which is outside the 48-hour window and is a routine proj",
+  "KDK: Claude: no catalyst (strength 2/5): The official headline is a timeline reaffirmation and progress update (safety case 93% ready) with no new contract, approval, financial result or other concrete",
+  "LCTX: Claude: no catalyst (strength 1/5): The only official item is a patent issuance for a manufacturing platform, which is not an approval, trial result, earnings or guidance change, contract, partner",
+  "Day trading finished: 0 trade(s), total +\u00a30."
  ]
 }

@@ -1,6 +1,6 @@
 {
  "date": "2026-10-21",
- "generated": "2026-11-03T22:18+00:00",
+ "generated": "2026-11-04T09:43+00:00",
  "fx_gbpusd": 1.337327480316162,
  "result": "done",
  "require_news": true,
@@ -14,7 +14,7 @@
    "ticker": "TSLA",
    "name": "Tesla, Inc.",
    "vol_x": 0.36,
-   "buy_pct30": 0.5493369312019826,
+   "buy_pct30": 0.5493361493256851,
    "change": 0.03716789747674465,
    "score": 2.42,
    "news": [
@@ -23,10 +23,22 @@
    "on_t212": true
   },
   {
+   "ticker": "WGO",
+   "name": "Winnebago Industries, Inc.",
+   "vol_x": 0.27,
+   "buy_pct30": 0.5687568547124102,
+   "change": 0.06171775142283509,
+   "score": 1.32,
+   "news": [
+    "Winnebago Industries Reports Fourth Quarter and Full Year Fiscal 2026 Results - GlobeNewswire"
+   ],
+   "on_t212": true
+  },
+  {
    "ticker": "IMSR",
    "name": "Terrestrial Energy Inc.",
    "vol_x": 0.22,
-   "buy_pct30": 0.5393924952641327,
+   "buy_pct30": 0.5393843952922341,
    "change": 0.05535713358193006,
    "score": 1.1,
    "news": [
@@ -65,10 +77,6 @@
    "vol_x": 0.73
   },
   {
-   "ticker": "MLR",
-   "vol_x": 0.71
-  },
-  {
    "ticker": "UIS",
    "vol_x": 0.7
   },
@@ -95,6 +103,10 @@
   {
    "ticker": "ALK",
    "vol_x": 0.57
+  },
+  {
+   "ticker": "DHR",
+   "vol_x": 0.56
   }
  ],
  "trades": [],

@@ -1,15 +1,13 @@
 {
  "date": "2026-10-30",
- "generated": "2026-11-03T22:17+00:00",
+ "generated": "2026-11-04T09:43+00:00",
  "fx_gbpusd": 1.3378641605377197,
  "result": "done",
  "require_news": true,
  "strategy": "catalyst",
  "bars": "5m",
  "require_trend": true,
- "added_during_day": [
-  "Added CHDN to today's list at 10:32 New York: 0.3x normal volume in the last 30 min; news: Thoroughbred Championship Series Expands to Include Oaks Division for Three-Year"
- ],
+ "added_during_day": [],
  "drift_list": [],
  "list": [
   {
@@ -33,7 +31,7 @@
    "score": 3.49,
    "news": [
     "DexCom Q3 Results, Higher Revenue Guidance Point to Stronger 2027, RBC Says",
-    "Dexcom G7 15 Day Continuous Glucose Monitoring System to Launch in Canada in November - DexCom, Inc. - Investor Relations"
+    "Dexcom G7 15 Day Continuous Glucose Monitoring System to Launch in Canada in November - Dexcom"
    ],
    "on_t212": true
   },
@@ -112,30 +110,12 @@
    "vol_x": 0.71
   }
  ],
- "trades": [
-  {
-   "ticker": "CHDN",
-   "bought_at": "2026-10-30T14:32+00:00",
-   "sold_at": "2026-10-30T19:50+00:00",
-   "entry": 93.03294244384765,
-   "exit": 93.45500183105469,
-   "cost_gbp": 974.998003893693,
-   "pl_gbp": 2.956308828833585,
-   "pl_pct": 0.0030321178269365158,
-   "reason": "End of day: sold 10 minutes before the close."
-  }
- ],
- "total_gbp": 2.956308828833585,
+ "trades": [],
+ "total_gbp": 0,
  "alerts": [
-  "10:32 Day trade: bought CHDN: 14 CHDN at $93.03 (about \u00a3975). Stop $88.38. Broke above its opening-range high ($92.26) at $92.94. In play: 0.3x normal volume, normally moves 3% a day. Stop $90.55. News (Churchill Downs Incorporated): Thoroughbred Championship Series Expands to Include Oaks Division for Three-Year-Old Filli. Claude unavailable (400), keyword check used",
-  "15:50 Day trade: sold CHDN (+\u00a33): End of day: sold 10 minutes before the close. Result +\u00a33 (+0.3%).",
-  "15:50 Day trade summary: 1 trade(s) today: CHDN +\u00a33. Total +\u00a33."
+  "15:50 Day trade summary: No trade today: nothing in play broke out."
  ],
  "log": [
-  "Added CHDN to today's list at 10:32 New York: 0.3x normal volume in the last 30 min; news: Thoroughbred Championship Series Expands to Include Oaks Division for Three-Year",
-  "Day trade buy order: 14 CHDN at about $92.94. Broke above its opening-range high ($92.26) at $92.94. In play: 0.3x normal volume, normally moves 3% a day. Stop $90.55. News (Churchill Downs Incorporated): Thoroughbred Championship Series Expands to Include Oaks Division for Three-Year-Old Filli. Claude unavailable (400), keyword check used",
-  "Bought 14 CHDN at 93.03 (cost \u00a3975).",
-  "Sold CHDN (about +\u00a33). End of day: sold 10 minutes before the close.",
-  "Day trading finished: 1 trade(s), total +\u00a33."
+  "Day trading finished: 0 trade(s), total +\u00a30."
  ]
 }

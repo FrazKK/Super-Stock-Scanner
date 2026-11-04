@@ -1,6 +1,6 @@
 {
  "date": "2026-09-11",
- "generated": "2026-11-03T22:01+00:00",
+ "generated": "2026-11-04T09:30+00:00",
  "fx_gbpusd": 1.3509314060211182,
  "result": "done",
  "require_news": true,
@@ -160,27 +160,31 @@
  ],
  "trades": [
   {
-   "ticker": "IBEX",
-   "bought_at": "2026-09-11T14:16+00:00",
+   "ticker": "ADBE",
+   "bought_at": "2026-09-11T14:50+00:00",
    "sold_at": "2026-09-11T19:50+00:00",
-   "entry": 38.28825,
-   "exit": 39.36000061035156,
-   "cost_gbp": 993.4619012802933,
-   "pl_gbp": 26.279008748390766,
-   "pl_pct": 0.026451954236518284,
+   "entry": 250.85060610961912,
+   "exit": 254.9250030517578,
+   "cost_gbp": 929.8284165245631,
+   "pl_gbp": 13.687301281514578,
+   "pl_pct": 0.014720244120602228,
    "reason": "End of day: sold 10 minutes before the close."
   }
  ],
- "total_gbp": 26.279008748390766,
+ "total_gbp": 13.687301281514578,
  "alerts": [
-  "10:16 Day trade: bought IBEX: 35 IBEX at $38.29 (about \u00a3993). Stop $36.37. Broke above its opening-range high ($38.24) at $38.25. In play: 0.4x normal volume, normally moves 3% a day. Stop $36.34. News (Business Wire): Ibex Celebrates a Decade of Clinical AI Leadership Following Its Latest Record-Setting Qua. Claude unavailable (400), keyword check used",
-  "15:50 Day trade: sold IBEX (+\u00a326): End of day: sold 10 minutes before the close. Result +\u00a326 (+2.6%).",
-  "15:50 Day trade summary: 1 trade(s) today: IBEX +\u00a326. Total +\u00a326."
+  "10:50 Day trade: bought ADBE: 5 ADBE at $250.85 (about \u00a3930). Stop $238.31. Broke above its opening-range high ($249.77) at $250.60. In play: 0.6x normal volume, normally moves 3% a day. Stop $241.52. News (Adobe Newsroom): Adobe Reports Record Q3 Results - Adobe Newsroom. Claude: catalyst (strength 4/5): Official record Q3 results released 10 September fall within the 48-hour window, and the stock is breaking out on heavy volume, though the headline does not con",
+  "15:50 Day trade: sold ADBE (+\u00a314): End of day: sold 10 minutes before the close. Result +\u00a314 (+1.5%).",
+  "15:50 Day trade summary: 1 trade(s) today: ADBE +\u00a314. Total +\u00a314."
  ],
  "log": [
-  "Day trade buy order: 35 IBEX at about $38.25. Broke above its opening-range high ($38.24) at $38.25. In play: 0.4x normal volume, normally moves 3% a day. Stop $36.34. News (Business Wire): Ibex Celebrates a Decade of Clinical AI Leadership Following Its Latest Record-Setting Qua. Claude unavailable (400), keyword check used",
-  "Bought 35 IBEX at 38.29 (cost \u00a3993).",
-  "Sold IBEX (about +\u00a326). End of day: sold 10 minutes before the close.",
-  "Day trading finished: 1 trade(s), total +\u00a326."
+  "IBEX: Claude: no catalyst (strength 1/5): The only official headline is a promotional anniversary release that refers back to an earlier record quarter, adds no new specific result, and is dated 2026-09",
+  "TEN: Claude: no catalyst (strength 2/5): The only official item is a routine H1/Q2 2026 earnings release reporting profits, with no evidence it beat expectations or guidance, so it doesn't clearly qual",
+  "MTN: Claude: no catalyst (strength 1/5): The only OFFICIAL headline is a routine board-nominations update with no financial or operational impact, so the intraday move lacks a specific price-moving cat",
+  "ADBE: Claude: catalyst (strength 4/5): Official record Q3 results released 10 September fall within the 48-hour window, and the stock is breaking out on heavy volume, though the headline does not con",
+  "Day trade buy order: 5 ADBE at about $250.60. Broke above its opening-range high ($249.77) at $250.60. In play: 0.6x normal volume, normally moves 3% a day. Stop $241.52. News (Adobe Newsroom): Adobe Reports Record Q3 Results - Adobe Newsroom. Claude: catalyst (strength 4/5): Official record Q3 results released 10 September fall within the 48-hour window, and the stock is breaking out on heavy volume, though the headline does not con",
+  "Bought 5 ADBE at 250.85 (cost \u00a3930).",
+  "Sold ADBE (about +\u00a314). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 1 trade(s), total +\u00a314."
  ]
 }

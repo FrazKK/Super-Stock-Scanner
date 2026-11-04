@@ -1,6 +1,6 @@
 {
  "date": "2026-10-05",
- "generated": "2026-11-03T22:09+00:00",
+ "generated": "2026-11-04T09:36+00:00",
  "fx_gbpusd": 1.3242928981781006,
  "result": "done",
  "require_news": true,
@@ -62,7 +62,7 @@
    "ticker": "ZETA",
    "name": "Zeta Global Holdings Corp.",
    "vol_x": 0.35,
-   "buy_pct30": 0.593322808832242,
+   "buy_pct30": 0.5933443519987754,
    "change": 0.04673606071903591,
    "score": 3.57,
    "news": [
@@ -98,23 +98,11 @@
    "ticker": "AIFA",
    "name": "All In FutureTech Alliance, Inc.",
    "vol_x": 0.98,
-   "buy_pct30": 0.28079746303737835,
+   "buy_pct30": 0.2807867540119536,
    "change": 0.16554816167532627,
    "score": 1.58,
    "news": [
     "All In FutureTech Alliance Inc. Launches New Digital - GlobeNewswire"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "DKNG",
-   "name": "DraftKings Inc.",
-   "vol_x": 0.31,
-   "buy_pct30": 0.5463368883902571,
-   "change": 0.020978987974572316,
-   "score": 1.31,
-   "news": [
-    "DraftKings NFL Millionaire Winning Lineup Breakdown for Week 4 - DraftKings Network"
    ],
    "on_t212": true
   },
@@ -141,8 +129,16 @@
    "vol_x": 2.22
   },
   {
+   "ticker": "RXO",
+   "vol_x": 1.84
+  },
+  {
    "ticker": "PMI",
    "vol_x": 1.62
+  },
+  {
+   "ticker": "PAGS",
+   "vol_x": 1.51
   },
   {
    "ticker": "STNE",
@@ -151,10 +147,6 @@
   {
    "ticker": "XP",
    "vol_x": 1.48
-  },
-  {
-   "ticker": "ACB",
-   "vol_x": 1.43
   },
   {
    "ticker": "NAUT",
@@ -167,10 +159,6 @@
   {
    "ticker": "ALVO",
    "vol_x": 1.17
-  },
-  {
-   "ticker": "AGBK",
-   "vol_x": 0.95
   },
   {
    "ticker": "MNSB",
@@ -208,12 +196,13 @@
  ],
  "total_gbp": 21.04231614029095,
  "alerts": [
-  "10:46 Day trade: bought INTT: 89 INTT at $14.76 (about \u00a3994). Stop $14.03. Broke above its opening-range high ($14.68) at $14.75. In play: 1.1x normal volume, normally moves 4% a day. Stop $14.01. News (Business Wire): InTest Expects Record Orders for Q3 2026 and Revenue at High End of Guidance Range for Q3 . Claude unavailable (400), keyword check used",
+  "10:46 Day trade: bought INTT: 89 INTT at $14.76 (about \u00a3994). Stop $14.03. Broke above its opening-range high ($14.68) at $14.75. In play: 1.1x normal volume, normally moves 4% a day. Stop $14.01. News (Business Wire): InTest Expects Record Orders for Q3 2026 and Revenue at High End of Guidance Range for Q3 . Claude: catalyst (strength 4/5): An official Business Wire pre-announcement reports record Q3 2026 orders (about $48\u201350M against roughly $35M revenue) and revenue at the high end of guidance, w",
   "15:50 Day trade: sold INTT (+\u00a321): End of day: sold 10 minutes before the close. Result +\u00a321 (+2.1%).",
   "15:50 Day trade summary: 1 trade(s) today: INTT +\u00a321. Total +\u00a321."
  ],
  "log": [
-  "Day trade buy order: 89 INTT at about $14.75. Broke above its opening-range high ($14.68) at $14.75. In play: 1.1x normal volume, normally moves 4% a day. Stop $14.01. News (Business Wire): InTest Expects Record Orders for Q3 2026 and Revenue at High End of Guidance Range for Q3 . Claude unavailable (400), keyword check used",
+  "INTT: Claude: catalyst (strength 4/5): An official Business Wire pre-announcement reports record Q3 2026 orders (about $48\u201350M against roughly $35M revenue) and revenue at the high end of guidance, w",
+  "Day trade buy order: 89 INTT at about $14.75. Broke above its opening-range high ($14.68) at $14.75. In play: 1.1x normal volume, normally moves 4% a day. Stop $14.01. News (Business Wire): InTest Expects Record Orders for Q3 2026 and Revenue at High End of Guidance Range for Q3 . Claude: catalyst (strength 4/5): An official Business Wire pre-announcement reports record Q3 2026 orders (about $48\u201350M against roughly $35M revenue) and revenue at the high end of guidance, w",
   "Bought 89 INTT at 14.76 (cost \u00a3994).",
   "Sold INTT (about +\u00a321). End of day: sold 10 minutes before the close.",
   "Day trading finished: 1 trade(s), total +\u00a321."

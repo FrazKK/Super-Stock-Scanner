@@ -1,6 +1,6 @@
 {
  "date": "2026-10-20",
- "generated": "2026-11-03T22:16+00:00",
+ "generated": "2026-11-04T09:41+00:00",
  "fx_gbpusd": 1.330849051475525,
  "result": "done",
  "require_news": true,
@@ -34,18 +34,6 @@
    "news": [
     "Equifax Delivers Strong 10% Revenue Growth in Third Quarter 2026 Driven by 8% Diversified Markets Revenue Growth Despite Challenging U.S. Mortgage Market; Returns $158 Million Cash to Shareholders - Equifax",
     "Equifax expands access to cash flow data solutions for confident decisioning - PR Newswire"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "MMM",
-   "name": "3M Company",
-   "vol_x": 0.55,
-   "buy_pct30": 0.6463462290721296,
-   "change": 0.05240420826510084,
-   "score": 3.19,
-   "news": [
-    "3M announces collaboration with GSEO to advance Expanded Beam Optical manufacturing and development - PR Newswire"
    ],
    "on_t212": true
   },
@@ -150,33 +138,35 @@
    "reason": "Stop-loss order filled"
   },
   {
-   "ticker": "MMM",
+   "ticker": "KLAR",
    "bought_at": "2026-10-20T14:46+00:00",
    "sold_at": "2026-10-20T19:50+00:00",
-   "entry": 171.53136061096188,
-   "exit": 170.80999755859375,
-   "cost_gbp": 903.5740020477172,
-   "pl_gbp": -5.147556475617421,
-   "pl_pct": -0.005696884221936237,
+   "entry": 13.348335038185118,
+   "exit": 13.164999961853027,
+   "cost_gbp": 994.453424350535,
+   "pl_gbp": -15.127485936685616,
+   "pl_pct": -0.015211859667098222,
    "reason": "End of day: sold 10 minutes before the close."
   }
  ],
- "total_gbp": -59.129893076943745,
+ "total_gbp": -69.10982253801194,
  "alerts": [
-  "10:26 Day trade: bought RAPP: 43 RAPP at $30.94 (about \u00a31,001). Stop $29.39. Broke above its opening-range high ($30.32) at $30.91. In play: 3.9x normal volume, normally moves 6% a day. Stop $29.36. News (GlobeNewswire): Rapport Therapeutics Announces Positive Topline Results - GlobeNewswire. Claude unavailable (400), keyword check used",
+  "10:26 Day trade: bought RAPP: 43 RAPP at $30.94 (about \u00a31,001). Stop $29.39. Broke above its opening-range high ($30.32) at $30.91. In play: 3.9x normal volume, normally moves 6% a day. Stop $29.36. News (GlobeNewswire): Rapport Therapeutics Announces Positive Topline Results - GlobeNewswire. Claude: catalyst (strength 4/5): An official GlobeNewswire release today announces positive topline trial results, a clinical catalyst that fits the stock's heavy-volume breakout, though the he",
   "10:46 Day trade update: RAPP: stop-loss order filled (-\u00a354)",
-  "10:46 Day trade: bought MMM: 7 MMM at $171.53 (about \u00a3904). Stop $162.95. Broke above its opening-range high ($170.80) at $171.36. In play: 0.6x normal volume, normally moves 2% a day. Stop $162.79. News (PR Newswire): 3M announces collaboration with GSEO to advance Expanded Beam Optical manufacturing and de. Claude unavailable (400), keyword check used",
-  "15:50 Day trade: sold MMM (-\u00a35): End of day: sold 10 minutes before the close. Result -\u00a35 (-0.6%).",
-  "15:50 Day trade summary: 2 trade(s) today: RAPP -\u00a354, MMM -\u00a35. Total -\u00a359."
+  "10:46 Day trade: bought KLAR: 99 KLAR at $13.35 (about \u00a3994). Stop $12.68. Broke above its opening-range high ($13.25) at $13.34. In play: 0.2x normal volume, normally moves 4% a day. Stop $12.76. News (Business Wire): Klarna Expands Fiserv Partnership to Enterprise Merchants After Going Live at 100,000 U.S.. Claude: catalyst (strength 3/5): An official Business Wire release reports an expanded Fiserv partnership with Klarna going live at 100,000 U.S. locations, a meaningful distribution deal, thoug",
+  "15:50 Day trade: sold KLAR (-\u00a315): End of day: sold 10 minutes before the close. Result -\u00a315 (-1.5%).",
+  "15:50 Day trade summary: 2 trade(s) today: RAPP -\u00a354, KLAR -\u00a315. Total -\u00a369."
  ],
  "log": [
   "Added RAPP to today's list at 10:16 New York: 3.9x normal volume in the last 30 min; news: Rapport Therapeutics Announces Positive Topline Results - GlobeNewswire",
-  "Day trade buy order: 43 RAPP at about $30.91. Broke above its opening-range high ($30.32) at $30.91. In play: 3.9x normal volume, normally moves 6% a day. Stop $29.36. News (GlobeNewswire): Rapport Therapeutics Announces Positive Topline Results - GlobeNewswire. Claude unavailable (400), keyword check used",
+  "RAPP: Claude: catalyst (strength 4/5): An official GlobeNewswire release today announces positive topline trial results, a clinical catalyst that fits the stock's heavy-volume breakout, though the he",
+  "Day trade buy order: 43 RAPP at about $30.91. Broke above its opening-range high ($30.32) at $30.91. In play: 3.9x normal volume, normally moves 6% a day. Stop $29.36. News (GlobeNewswire): Rapport Therapeutics Announces Positive Topline Results - GlobeNewswire. Claude: catalyst (strength 4/5): An official GlobeNewswire release today announces positive topline trial results, a clinical catalyst that fits the stock's heavy-volume breakout, though the he",
   "Bought 43 RAPP at 30.94 (cost \u00a31,001).",
   "RAPP: stop-loss order filled, P&L -\u00a354.",
-  "Day trade buy order: 7 MMM at about $171.36. Broke above its opening-range high ($170.80) at $171.36. In play: 0.6x normal volume, normally moves 2% a day. Stop $162.79. News (PR Newswire): 3M announces collaboration with GSEO to advance Expanded Beam Optical manufacturing and de. Claude unavailable (400), keyword check used",
-  "Bought 7 MMM at 171.53 (cost \u00a3904).",
-  "Sold MMM (about -\u00a35). End of day: sold 10 minutes before the close.",
-  "Day trading finished: 2 trade(s), total -\u00a359."
+  "KLAR: Claude: catalyst (strength 3/5): An official Business Wire release reports an expanded Fiserv partnership with Klarna going live at 100,000 U.S. locations, a meaningful distribution deal, thoug",
+  "Day trade buy order: 99 KLAR at about $13.34. Broke above its opening-range high ($13.25) at $13.34. In play: 0.2x normal volume, normally moves 4% a day. Stop $12.76. News (Business Wire): Klarna Expands Fiserv Partnership to Enterprise Merchants After Going Live at 100,000 U.S.. Claude: catalyst (strength 3/5): An official Business Wire release reports an expanded Fiserv partnership with Klarna going live at 100,000 U.S. locations, a meaningful distribution deal, thoug",
+  "Bought 99 KLAR at 13.35 (cost \u00a3994).",
+  "Sold KLAR (about -\u00a315). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 2 trade(s), total -\u00a369."
  ]
 }

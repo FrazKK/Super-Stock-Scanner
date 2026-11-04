@@ -1,6 +1,6 @@
 {
  "date": "2026-10-27",
- "generated": "2026-11-03T22:18+00:00",
+ "generated": "2026-11-04T09:44+00:00",
  "fx_gbpusd": 1.334507703781128,
  "result": "done",
  "require_news": true,
@@ -10,6 +10,18 @@
  "added_during_day": [],
  "drift_list": [],
  "list": [
+  {
+   "ticker": "AEYE",
+   "name": "AudioEye, Inc.",
+   "vol_x": 2.0,
+   "buy_pct30": 0.724140580279027,
+   "change": 0.2749326065872417,
+   "score": 5.4,
+   "news": [
+    "AudioEye Reports Record Third Quarter 2026 Results - PR Newswire"
+   ],
+   "on_t212": true
+  },
   {
    "ticker": "SOFI",
    "name": "SoFi Technologies, Inc.",
@@ -167,10 +179,6 @@
    "vol_x": 2.65
   },
   {
-   "ticker": "AEYE",
-   "vol_x": 2.0
-  },
-  {
    "ticker": "RCL",
    "vol_x": 1.35
   },
@@ -217,31 +225,36 @@
   {
    "ticker": "CLYM",
    "vol_x": 0.57
+  },
+  {
+   "ticker": "QTEX",
+   "vol_x": 0.55
   }
  ],
  "trades": [
   {
-   "ticker": "STLA",
-   "bought_at": "2026-10-27T14:16+00:00",
+   "ticker": "SOFI",
+   "bought_at": "2026-10-27T14:26+00:00",
    "sold_at": "2026-10-27T19:50+00:00",
-   "entry": 4.154150095462799,
-   "exit": 4.15500020980835,
-   "cost_gbp": 1000.7303817959494,
-   "pl_gbp": -1.2943623788379455,
-   "pl_pct": -0.0012934176901025357,
+   "entry": 16.311295076370236,
+   "exit": 16.354999542236328,
+   "cost_gbp": 991.5242300877605,
+   "pl_gbp": 1.167651096325244,
+   "pl_pct": 0.00117763243791016,
    "reason": "End of day: sold 10 minutes before the close."
   }
  ],
- "total_gbp": -1.2943623788379455,
+ "total_gbp": 1.167651096325244,
  "alerts": [
-  "10:16 Day trade: bought STLA: 321 STLA at $4.15 (about \u00a31,001). Stop $3.95. Broke above its opening-range high ($4.14) at $4.15. In play: 0.4x normal volume, normally moves 3% a day. Stop $4.07. News (Media Stellantis): STELLANTIS INDIA CONTINUES NETWORK EXPANSION WITH NEW JEEP\u00ae AND CITRO\u00cbN BRAND HOUSE IN PAT. Claude unavailable (400), keyword check used",
-  "15:50 Day trade: sold STLA (-\u00a31): End of day: sold 10 minutes before the close. Result -\u00a31 (-0.1%).",
-  "15:50 Day trade summary: 1 trade(s) today: STLA -\u00a31. Total -\u00a31."
+  "10:26 Day trade: bought SOFI: 81 SOFI at $16.31 (about \u00a3992). Stop $15.50. Broke above its opening-range high ($16.28) at $16.30. In play: 1.1x normal volume, normally moves 4% a day. Stop $15.67. News (SoFi Investor Relations): SoFi Reports Third Quarter 2026 with Record Net Revenue of $1.4 Billion, Net Income of $24. Claude: catalyst (strength 4/5): Official Q3 2026 results show record revenue and net income with raised full-year guidance, a strong earnings catalyst consistent with the heavy-volume breakout",
+  "15:50 Day trade: sold SOFI (+\u00a31): End of day: sold 10 minutes before the close. Result +\u00a31 (+0.1%).",
+  "15:50 Day trade summary: 1 trade(s) today: SOFI +\u00a31. Total +\u00a31."
  ],
  "log": [
-  "Day trade buy order: 321 STLA at about $4.15. Broke above its opening-range high ($4.14) at $4.15. In play: 0.4x normal volume, normally moves 3% a day. Stop $4.07. News (Media Stellantis): STELLANTIS INDIA CONTINUES NETWORK EXPANSION WITH NEW JEEP\u00ae AND CITRO\u00cbN BRAND HOUSE IN PAT. Claude unavailable (400), keyword check used",
-  "Bought 321 STLA at 4.15 (cost \u00a31,001).",
-  "Sold STLA (about -\u00a31). End of day: sold 10 minutes before the close.",
-  "Day trading finished: 1 trade(s), total -\u00a31."
+  "SOFI: Claude: catalyst (strength 4/5): Official Q3 2026 results show record revenue and net income with raised full-year guidance, a strong earnings catalyst consistent with the heavy-volume breakout",
+  "Day trade buy order: 81 SOFI at about $16.30. Broke above its opening-range high ($16.28) at $16.30. In play: 1.1x normal volume, normally moves 4% a day. Stop $15.67. News (SoFi Investor Relations): SoFi Reports Third Quarter 2026 with Record Net Revenue of $1.4 Billion, Net Income of $24. Claude: catalyst (strength 4/5): Official Q3 2026 results show record revenue and net income with raised full-year guidance, a strong earnings catalyst consistent with the heavy-volume breakout",
+  "Bought 81 SOFI at 16.31 (cost \u00a3992).",
+  "Sold SOFI (about +\u00a31). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 1 trade(s), total +\u00a31."
  ]
 }

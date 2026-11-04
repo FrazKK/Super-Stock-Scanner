@@ -1,6 +1,6 @@
 {
  "date": "2026-10-02",
- "generated": "2026-11-03T22:08+00:00",
+ "generated": "2026-11-04T09:40+00:00",
  "fx_gbpusd": 1.3199577331542969,
  "result": "done",
  "require_news": true,
@@ -26,7 +26,7 @@
    "ticker": "HPE",
    "name": "Hewlett Packard Enterprise Company",
    "vol_x": 0.22,
-   "buy_pct30": 0.7438065158395301,
+   "buy_pct30": 0.7438081875466318,
    "change": 0.055744787427211895,
    "score": 2.92,
    "news": [
@@ -136,27 +136,31 @@
  ],
  "trades": [
   {
-   "ticker": "BULL",
-   "bought_at": "2026-10-02T14:20+00:00",
-   "sold_at": "2026-10-02T19:50+00:00",
-   "entry": 7.492485133647918,
-   "exit": 7.360000133514404,
-   "cost_gbp": 1000.528552108523,
-   "pl_gbp": -19.163777341819355,
-   "pl_pct": -0.019153653637803175,
-   "reason": "End of day: sold 10 minutes before the close."
+   "ticker": "CYCU",
+   "bought_at": "2026-10-02T14:26+00:00",
+   "sold_at": "2026-10-02T14:46+00:00",
+   "entry": 3.202799581289291,
+   "exit": 4.1958,
+   "cost_gbp": 1001.19323857012,
+   "pl_gbp": 306.48241819140594,
+   "pl_pct": 0.3061171474041482,
+   "reason": "Stop-loss order filled"
   }
  ],
- "total_gbp": -19.163777341819355,
+ "total_gbp": 306.48241819140594,
  "alerts": [
-  "10:20 Day trade: bought BULL: 176 BULL at $7.49 (about \u00a31,001). Stop $7.12. Broke above its opening-range high ($7.48) at $7.49. In play: 0.3x normal volume, normally moves 5% a day. Stop $7.24. News (PR Newswire): Webull Powers Launch of MOUM, Meritz Securities' Next-Generation AI Investment Platform - . Claude unavailable (400), keyword check used",
-  "15:50 Day trade: sold BULL (-\u00a319): End of day: sold 10 minutes before the close. Result -\u00a319 (-1.9%).",
-  "15:50 Day trade summary: 1 trade(s) today: BULL -\u00a319. Total -\u00a319."
+  "10:26 Day trade: bought CYCU: 412 CYCU at $3.20 (about \u00a31,001). Stop $3.04. Broke above its opening-range high ($3.02) at $3.20. In play: 32.4x normal volume, normally moves 8% a day. Stop $3.04. News (GlobeNewswire): Cycurion Discusses Record Contract Win, Public Safety Expansion and Growth Strategy in New. Claude: catalyst (strength 3/5): An official 30 Sep release references a record contract win, and other coverage cites a $54.6M 10-year state health contract, though the official item is an int",
+  "10:46 Day trade update: CYCU: stop-loss order filled (+\u00a3306)",
+  "15:50 Day trade summary: 1 trade(s) today: CYCU +\u00a3306. Total +\u00a3306."
  ],
  "log": [
-  "Day trade buy order: 176 BULL at about $7.49. Broke above its opening-range high ($7.48) at $7.49. In play: 0.3x normal volume, normally moves 5% a day. Stop $7.24. News (PR Newswire): Webull Powers Launch of MOUM, Meritz Securities' Next-Generation AI Investment Platform - . Claude unavailable (400), keyword check used",
-  "Bought 176 BULL at 7.49 (cost \u00a31,001).",
-  "Sold BULL (about -\u00a319). End of day: sold 10 minutes before the close.",
-  "Day trading finished: 1 trade(s), total -\u00a319."
+  "BULL: Claude: catalyst (strength 2/5): Official partnership news (Webull powering Meritz Securities' MOUM platform launch) could add technology-licensing revenue, but no deal size is disclosed and th",
+  "CYCU: Claude: catalyst (strength 3/5): An official 30 Sep release references a record contract win, and other coverage cites a $54.6M 10-year state health contract, though the official item is an int",
+  "Day trade buy order: 412 CYCU at about $3.20. Broke above its opening-range high ($3.02) at $3.20. In play: 32.4x normal volume, normally moves 8% a day. Stop $3.04. News (GlobeNewswire): Cycurion Discusses Record Contract Win, Public Safety Expansion and Growth Strategy in New. Claude: catalyst (strength 3/5): An official 30 Sep release references a record contract win, and other coverage cites a $54.6M 10-year state health contract, though the official item is an int",
+  "Bought 412 CYCU at 3.20 (cost \u00a31,001).",
+  "CYCU: stop raised from 3.04 to 3.59.",
+  "CYCU: stop raised from 3.59 to 4.20.",
+  "CYCU: stop-loss order filled, P&L +\u00a3306.",
+  "Day trading finished: 1 trade(s), total +\u00a3306."
  ]
 }

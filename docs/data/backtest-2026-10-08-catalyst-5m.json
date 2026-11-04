@@ -1,6 +1,6 @@
 {
  "date": "2026-10-08",
- "generated": "2026-11-03T22:08+00:00",
+ "generated": "2026-11-04T09:37+00:00",
  "fx_gbpusd": 1.3214927911758423,
  "result": "done",
  "require_news": true,
@@ -31,6 +31,18 @@
    "score": 3.31,
    "news": [
     "FTI Consulting Expands Technology Transformation Capabilities in EMEA With Appointment of Anita Fuller - GlobeNewswire"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "FRO",
+   "name": "Frontline Plc",
+   "vol_x": 0.28,
+   "buy_pct30": 0.6326186774778484,
+   "change": 0.04636258991336839,
+   "score": 2.59,
+   "news": [
+    "Frontline Managed Services Acquires KL Software Technologies, Launches Intelligent Applications Business for Law Firms - PR Newswire Canada"
    ],
    "on_t212": true
   },
@@ -67,6 +79,18 @@
    "score": 1.63,
    "news": [
     "ServiceNow launches AI Workflow Factory to turn workflow improvement into a continuous, agentic AI-powered loop - ServiceNow Newsroom"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "SECZ",
+   "name": "Securitize Corp.",
+   "vol_x": 0.43,
+   "buy_pct30": 0.46785172633579936,
+   "change": 0.013157945370521729,
+   "score": 1.23,
+   "news": [
+    "Securitize Launches Global Onchain Trading of U.S. Stocks with Security Entitlements - PR Newswire"
    ],
    "on_t212": true
   },
@@ -160,12 +184,13 @@
  ],
  "total_gbp": -49.075465338041454,
  "alerts": [
-  "10:16 Day trade: bought GFS: 25 GFS at $51.05 (about \u00a3967). Stop $48.49. Broke above its opening-range high ($50.23) at $50.99. In play: 0.7x normal volume, normally moves 3% a day. Stop $48.60. News (GlobalFoundries): GlobalFoundries reaches agreement to establish U.S.-based supply of silicon interposers fo. Claude unavailable (400), keyword check used",
+  "10:16 Day trade: bought GFS: 25 GFS at $51.05 (about \u00a3967). Stop $48.49. Broke above its opening-range high ($50.23) at $50.99. In play: 0.7x normal volume, normally moves 3% a day. Stop $48.60. News (GlobalFoundries): GlobalFoundries reaches agreement to establish U.S.-based supply of silicon interposers fo. Claude: catalyst (strength 3/5): An official announcement of an agreement to establish U.S.-based silicon interposer supply for AI packaging is a specific, business-relevant development, though",
   "13:06 Day trade update: GFS: stop-loss order filled (-\u00a349)",
   "15:50 Day trade summary: 1 trade(s) today: GFS -\u00a349. Total -\u00a349."
  ],
  "log": [
-  "Day trade buy order: 25 GFS at about $50.99. Broke above its opening-range high ($50.23) at $50.99. In play: 0.7x normal volume, normally moves 3% a day. Stop $48.60. News (GlobalFoundries): GlobalFoundries reaches agreement to establish U.S.-based supply of silicon interposers fo. Claude unavailable (400), keyword check used",
+  "GFS: Claude: catalyst (strength 3/5): An official announcement of an agreement to establish U.S.-based silicon interposer supply for AI packaging is a specific, business-relevant development, though",
+  "Day trade buy order: 25 GFS at about $50.99. Broke above its opening-range high ($50.23) at $50.99. In play: 0.7x normal volume, normally moves 3% a day. Stop $48.60. News (GlobalFoundries): GlobalFoundries reaches agreement to establish U.S.-based supply of silicon interposers fo. Claude: catalyst (strength 3/5): An official announcement of an agreement to establish U.S.-based silicon interposer supply for AI packaging is a specific, business-relevant development, though",
   "Bought 25 GFS at 51.05 (cost \u00a3967).",
   "GFS: stop-loss order filled, P&L -\u00a349.",
   "Day trading finished: 1 trade(s), total -\u00a349."

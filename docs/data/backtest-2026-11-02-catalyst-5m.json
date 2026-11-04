@@ -1,6 +1,6 @@
 {
  "date": "2026-11-02",
- "generated": "2026-11-03T22:17+00:00",
+ "generated": "2026-11-04T09:46+00:00",
  "fx_gbpusd": 1.3385626077651978,
  "result": "done",
  "require_news": true,
@@ -60,6 +60,18 @@
    "on_t212": true
   },
   {
+   "ticker": "TFII",
+   "name": "TFI International Inc.",
+   "vol_x": 0.22,
+   "buy_pct30": 0.484006548901873,
+   "change": 0.009001328440121581,
+   "score": 1.88,
+   "news": [
+    "TFI International Faces LTL Headwinds Despite Stronger Freight Trends, RBC Says"
+   ],
+   "on_t212": true
+  },
+  {
    "ticker": "FOXA",
    "name": "Fox Corporation",
    "vol_x": 0.27,
@@ -106,6 +118,10 @@
    "vol_x": 0.79
   },
   {
+   "ticker": "ZG",
+   "vol_x": 0.78
+  },
+  {
    "ticker": "BESS",
    "vol_x": 0.74
   },
@@ -140,35 +156,33 @@
   {
    "ticker": "GYRE",
    "vol_x": 0.49
-  },
-  {
-   "ticker": "HNI",
-   "vol_x": 0.47
   }
  ],
  "trades": [
   {
-   "ticker": "ZIM",
-   "bought_at": "2026-11-02T15:16+00:00",
-   "sold_at": "2026-11-02T20:06+00:00",
-   "entry": 28.763735610961913,
-   "exit": 28.31166,
-   "cost_gbp": 989.9548427351916,
-   "pl_gbp": -18.477791220164477,
-   "pl_pct": -0.01866528696310161,
-   "reason": "Stop-loss order filled"
+   "ticker": "TRLV",
+   "bought_at": "2026-11-02T15:36+00:00",
+   "sold_at": "2026-11-02T20:50+00:00",
+   "entry": 11.056045076370237,
+   "exit": 11.149999618530273,
+   "cost_gbp": 1000.915548252919,
+   "pl_gbp": 6.993940638782078,
+   "pl_pct": 0.0069875432058078045,
+   "reason": "End of day: sold 10 minutes before the close."
   }
  ],
- "total_gbp": -18.477791220164477,
+ "total_gbp": 6.993940638782078,
  "alerts": [
-  "10:16 Day trade: bought ZIM: 46 ZIM at $28.76 (about \u00a3990). Stop $27.33. Broke above its opening-range high ($28.62) at $28.74. In play: 0.7x normal volume, normally moves 2% a day. Stop $28.31. News (prnewswire): IRIS Expands Accountancy Portfolio with Launch of AI-Powered Document Management Solution . Claude unavailable (400), keyword check used",
-  "15:06 Day trade update: ZIM: stop-loss order filled (-\u00a318)",
-  "15:50 Day trade summary: 1 trade(s) today: ZIM -\u00a318. Total -\u00a318."
+  "10:36 Day trade: bought TRLV: 121 TRLV at $11.06 (about \u00a31,001). Stop $10.50. Broke above its opening-range high ($10.95) at $11.05. In play: 0.3x normal volume, normally moves 6% a day. Stop $10.49. News (prnewswire): Trulieve Receives DEA Registrations for State-Licensed Medical Marijuana Operations Trulie. Claude: catalyst (strength 4/5): An OFFICIAL same-day release says Trulieve received DEA registrations for its state-licensed medical marijuana operations, a regulatory milestone, and the stock",
+  "15:50 Day trade: sold TRLV (+\u00a37): End of day: sold 10 minutes before the close. Result +\u00a37 (+0.7%).",
+  "15:50 Day trade summary: 1 trade(s) today: TRLV +\u00a37. Total +\u00a37."
  ],
  "log": [
-  "Day trade buy order: 46 ZIM at about $28.74. Broke above its opening-range high ($28.62) at $28.74. In play: 0.7x normal volume, normally moves 2% a day. Stop $28.31. News (prnewswire): IRIS Expands Accountancy Portfolio with Launch of AI-Powered Document Management Solution . Claude unavailable (400), keyword check used",
-  "Bought 46 ZIM at 28.76 (cost \u00a3990).",
-  "ZIM: stop-loss order filled, P&L -\u00a318.",
-  "Day trading finished: 1 trade(s), total -\u00a318."
+  "ZIM: Claude: no catalyst (strength 1/5): The only official ZIM headline is a date announcement for Q3 results, which is routine; the other OFFICIAL item is about an unrelated company (IRIS), and the pr",
+  "TRLV: Claude: catalyst (strength 4/5): An OFFICIAL same-day release says Trulieve received DEA registrations for its state-licensed medical marijuana operations, a regulatory milestone, and the stock",
+  "Day trade buy order: 121 TRLV at about $11.05. Broke above its opening-range high ($10.95) at $11.05. In play: 0.3x normal volume, normally moves 6% a day. Stop $10.49. News (prnewswire): Trulieve Receives DEA Registrations for State-Licensed Medical Marijuana Operations Trulie. Claude: catalyst (strength 4/5): An OFFICIAL same-day release says Trulieve received DEA registrations for its state-licensed medical marijuana operations, a regulatory milestone, and the stock",
+  "Bought 121 TRLV at 11.06 (cost \u00a31,001).",
+  "Sold TRLV (about +\u00a37). End of day: sold 10 minutes before the close.",
+  "Day trading finished: 1 trade(s), total +\u00a37."
  ]
 }
