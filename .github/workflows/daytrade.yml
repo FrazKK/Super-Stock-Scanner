@@ -39,6 +39,7 @@ jobs:
           T212_KEY: ${{ secrets.T212_KEY }}
           T212_SECRET: ${{ secrets.T212_SECRET }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          SEC_CONTACT: ${{ secrets.SEC_CONTACT }}
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
           SITE_URL: ${{ secrets.SITE_URL }}
         run: |
