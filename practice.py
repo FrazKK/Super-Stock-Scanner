@@ -842,7 +842,7 @@ def claude_check(st, day, c, when):
             r = requests.post("https://api.anthropic.com/v1/messages", timeout=60,
                               headers={"x-api-key": key, "anthropic-version": "2023-06-01",
                                        "content-type": "application/json"},
-                              json={"model": CLAUDE_MODEL, "max_tokens": max_tokens, "temperature": 0,
+                              json={"model": CLAUDE_MODEL, "max_tokens": max_tokens,
                                     "system": CLAUDE_SYSTEM,
                                     "messages": [{"role": "user", "content": prompt + "\n\nAnswer with the JSON object only, "
                                                   "no other text."}]})
@@ -855,8 +855,9 @@ def claude_check(st, day, c, when):
             time.sleep(5)
             continue
         if r.status_code != 200:
-            print(f"  Claude check failed ({r.status_code}): {r.text[:200]}")
-            return True, f"Claude unavailable ({r.status_code}), keyword check used"
+            why = f"Claude unavailable ({r.status_code}: {r.text[:120]}), keyword check used"
+            log(st, f"{c['ticker']}: {why}")
+            return True, why
         raw = "".join(b.get("text", "") for b in r.json().get("content", []) if b.get("type") == "text")
         v = parse_verdict(raw)
         if v is not None:
@@ -864,7 +865,9 @@ def claude_check(st, day, c, when):
         print(f"  Claude reply unreadable (attempt {attempt + 1}): {raw[:200]!r}")
     if v is None:
         # couldn't get a readable answer: don't throw the stock out, fall back to the keyword check
-        return True, "Claude reply unreadable, keyword check used"
+        why = f"Claude reply unreadable or busy ({raw[:80]!r}), keyword check used"
+        log(st, f"{c['ticker']}: {why}")
+        return True, why
     ok = bool(v.get("catalyst")) and int(v.get("strength") or 0) >= CLAUDE_MIN_STRENGTH
     reason = f"Claude: {'catalyst' if v.get('catalyst') else 'no catalyst'} (strength {v.get('strength')}/5): " \
              f"{str(v.get('reason') or '')[:160]}"
