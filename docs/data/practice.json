@@ -1,45 +1,6 @@
 {
  "started": "2026-10-31",
- "open": [
-  {
-   "id": "america-CRON-2026-11-05-1",
-   "status": "open",
-   "ticker": "CRON",
-   "t212": "CRON_US_EQ",
-   "name": "Cronos Group Inc. Common Share",
-   "market": "america",
-   "exchange": "NASDAQ",
-   "ysym": "CRON",
-   "source": "daytrade",
-   "methods": [
-    {
-     "method": "daytrade"
-    }
-   ],
-   "bought": "2026-11-05",
-   "bought_at": "2026-11-05T15:01+00:00",
-   "ref_price": 3.899899959564209,
-   "qty": 345.0,
-   "why": "Broke above its opening-range high ($3.90) at $3.90. In play: 1.0x normal volume, normally moves 3% a day. Stop $3.70. Claude: catalyst (strength 4/5): Official Q3 2026 release shows record net revenue up 73% organically, record gross profit and Adjusted EBITDA, share count reduction, and a beat versus estimate",
-   "initial_stop": 3.7049049615859984,
-   "risk": 0.19499499797821063,
-   "high": 3.9,
-   "high_time": "2026-11-05T15:01:27.723856+00:00",
-   "order_id": 57550591974,
-   "entry_t212": 3.9,
-   "unit": 1.0,
-   "entry_local": 3.9,
-   "cost_gbp": 999.77,
-   "stop_local": 3.7049999999999996,
-   "price_t212": 3.71,
-   "value_gbp": 951.5,
-   "pl_gbp": -48.27,
-   "stop_order_id": 57550591985,
-   "stop_t212": 3.7,
-   "stop_breached": false,
-   "last_check": "$3.71 (-4.9%), high $3.90, stop $3.70"
-  }
- ],
+ "open": [],
  "closed": [
   {
    "ticker": "PLBY",
@@ -82,6 +43,27 @@
    "reason": "End of day: sold 10 minutes before the close.",
    "bought_at": "2026-11-03T15:17+00:00",
    "sold_at": "2026-11-03T20:51+00:00"
+  },
+  {
+   "ticker": "CRON",
+   "name": "Cronos Group Inc. Common Share",
+   "market": "america",
+   "source": "daytrade",
+   "methods": [
+    "daytrade"
+   ],
+   "bought": "2026-11-05",
+   "sold": "2026-11-05",
+   "days": 0,
+   "entry": 3.9,
+   "exit": 3.71,
+   "cost_gbp": 999.77,
+   "proceeds_gbp": 951.44,
+   "pl_gbp": -48.32999999999993,
+   "pl_pct": -0.04834111845724509,
+   "reason": "End of day: sold 10 minutes before the close.",
+   "bought_at": "2026-11-05T15:01+00:00",
+   "sold_at": "2026-11-05T20:51+00:00"
   }
  ],
  "log": [
@@ -296,29 +278,39 @@
   {
    "time": "2026-11-05T15:02+00:00",
    "text": "Bought 345 CRON at 3.90 (cost \u00a31,000)."
+  },
+  {
+   "time": "2026-11-05T20:51+00:00",
+   "text": "Sold CRON (about -\u00a348). End of day: sold 10 minutes before the close."
+  },
+  {
+   "time": "2026-11-05T20:51+00:00",
+   "text": "Day trading finished: 1 trade(s), total -\u00a348."
   }
  ],
  "done": {},
  "account": {
   "currency": "GBP",
-  "value": 4901.92,
-  "cash": 3950.57,
-  "realised": -42.22,
-  "unrealised": -48.42,
-  "time": "2026-11-05T20:38+00:00"
+  "value": 4900.58,
+  "cash": 4900.58,
+  "realised": -90.55,
+  "unrealised": 0.0,
+  "time": "2026-11-05T20:51+00:00"
  },
  "rules": {
   "trade_gbp": 1000.0,
   "max_open": 10
  },
  "start_value": 5000.0,
- "updated": "2026-11-05T20:49:24+00:00",
+ "updated": "2026-11-05T20:51:32+00:00",
  "day": {
   "date": "2026-11-05",
   "buys": 1,
-  "sold": {},
+  "sold": {
+   "CRON": "2026-11-05T20:51:26.459507+00:00"
+  },
   "skip": {},
-  "finished": false,
+  "finished": true,
   "list": [
    "EGHT"
   ],
