@@ -31,13 +31,13 @@
    "entry_local": 3.9,
    "cost_gbp": 999.77,
    "stop_local": 3.7049999999999996,
-   "price_t212": 3.75,
-   "value_gbp": 960.81,
-   "pl_gbp": -38.96,
+   "price_t212": 3.78,
+   "value_gbp": 968.06,
+   "pl_gbp": -31.71,
    "stop_order_id": 57550591985,
    "stop_t212": 3.7,
    "stop_breached": false,
-   "last_check": "$3.75 (-3.8%), high $3.90, stop $3.70"
+   "last_check": "$3.78 (-3.1%), high $3.90, stop $3.70"
   }
  ],
  "closed": [
@@ -312,7 +312,7 @@
   "max_open": 10
  },
  "start_value": 5000.0,
- "updated": "2026-11-05T16:12:45+00:00",
+ "updated": "2026-11-05T16:22:50+00:00",
  "day": {
   "date": "2026-11-05",
   "buys": 1,
