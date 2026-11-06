@@ -1,45 +1,6 @@
 {
  "started": "2026-10-31",
- "open": [
-  {
-   "id": "america-CLAR-2026-11-06-1",
-   "status": "open",
-   "ticker": "CLAR",
-   "t212": "CLAR_US_EQ",
-   "name": "Clarus Corporation",
-   "market": "america",
-   "exchange": "NASDAQ",
-   "ysym": "CLAR",
-   "source": "daytrade",
-   "methods": [
-    {
-     "method": "daytrade"
-    }
-   ],
-   "bought": "2026-11-06",
-   "bought_at": "2026-11-06T15:17+00:00",
-   "ref_price": 5.070000171661377,
-   "qty": 263.0,
-   "why": "Broke above its opening-range high ($4.95) at $5.07. In play: 0.5x normal volume, normally moves 5% a day. Stop $4.82. Claude: catalyst (strength 4/5): Official Q3 release shows adjusted EBITDA up to $6.8m from $1.8m, adjusted EPS of $0.15 that beat estimates by about 8c, and raised full-year guidance, though p",
-   "initial_stop": 4.816500163078308,
-   "risk": 0.2535000085830692,
-   "high": 5.14,
-   "high_time": "2026-11-06T16:02:34.388720+00:00",
-   "order_id": 57650204138,
-   "entry_t212": 5.07,
-   "unit": 1.0,
-   "entry_local": 5.07,
-   "cost_gbp": 997.27,
-   "stop_local": 4.8165000000000004,
-   "price_t212": 4.96,
-   "value_gbp": 976.69,
-   "pl_gbp": -20.58,
-   "stop_order_id": 57650204181,
-   "stop_t212": 4.82,
-   "stop_breached": false,
-   "last_check": "$4.96 (-2.2%), high $5.14, stop $4.82"
-  }
- ],
+ "open": [],
  "closed": [
   {
    "ticker": "PLBY",
@@ -103,6 +64,27 @@
    "reason": "End of day: sold 10 minutes before the close.",
    "bought_at": "2026-11-05T15:01+00:00",
    "sold_at": "2026-11-05T20:51+00:00"
+  },
+  {
+   "ticker": "CLAR",
+   "name": "Clarus Corporation",
+   "market": "america",
+   "source": "daytrade",
+   "methods": [
+    "daytrade"
+   ],
+   "bought": "2026-11-06",
+   "sold": "2026-11-06",
+   "days": 0,
+   "entry": 5.07,
+   "exit": 4.79,
+   "cost_gbp": 997.27,
+   "proceeds_gbp": 941.94,
+   "pl_gbp": -55.32999999999993,
+   "pl_pct": -0.055481464397805935,
+   "reason": "Stop-loss order filled",
+   "bought_at": "2026-11-06T15:17+00:00",
+   "sold_at": "2026-11-06T19:19+00:00"
   }
  ],
  "log": [
@@ -353,6 +335,10 @@
   {
    "time": "2026-11-06T15:20+00:00",
    "text": "Bought 263 CLAR at 5.07 (cost \u00a3997)."
+  },
+  {
+   "time": "2026-11-06T19:19+00:00",
+   "text": "CLAR: stop-loss order filled, P&L -\u00a355."
   }
  ],
  "done": {},
@@ -369,7 +355,7 @@
   "max_open": 10
  },
  "start_value": 5000.0,
- "updated": "2026-11-06T19:09:48+00:00",
+ "updated": "2026-11-06T19:19:52+00:00",
  "day": {
   "date": "2026-11-06",
   "buys": 1,
