@@ -45,6 +45,8 @@ jobs:
         env:
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
           SITE_URL: ${{ secrets.SITE_URL }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          SEC_CONTACT: ${{ secrets.SEC_CONTACT }}
           MARKETS: ${{ inputs.markets }}
         run: python screener.py --opening --markets "$MARKETS"
       - if: steps.due.outputs.due == 'true'
