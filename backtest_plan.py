@@ -10,7 +10,10 @@ import os
 import re
 from zoneinfo import ZoneInfo
 
-today = dt.datetime.now(ZoneInfo("America/New_York")).date()
+now_ny = dt.datetime.now(ZoneInfo("America/New_York"))
+today = now_ny.date()
+# today's session can be replayed once the US market has closed (16:00 New York, plus a few minutes for the data)
+last_day = today if now_ny.time() >= dt.time(16, 10) else today - dt.timedelta(days=1)
 bars = "5m" if os.getenv("BARS", "").startswith("5") else "1m"
 oldest = today - dt.timedelta(days=58 if bars == "5m" else 29)
 
@@ -28,7 +31,7 @@ def parse(t):
 text = os.getenv("DATES", "").strip()
 days = []
 if not text:
-    d = today - dt.timedelta(days=1)
+    d = last_day
     while len(days) < 10:
         if d.weekday() < 5:
             days.append(d)
@@ -47,7 +50,7 @@ else:
                 d += dt.timedelta(days=1)
         else:
             days.append(parse(part))
-days = sorted({d for d in days if d.weekday() < 5 and oldest <= d < today})
+days = sorted({d for d in days if d.weekday() < 5 and oldest <= d <= last_day})
 skipped = text and not days
 news = os.getenv("NEWS", "required")
 modes = ["required", "not required"] if news == "both" else [news]
