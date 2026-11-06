@@ -867,9 +867,11 @@ def claude_check(st, day, c, when):
             seen.add(t[:200])
             bodies.append(f"--- {n.get('source', '')} {n.get('date', '')}: {n.get('title', '')[:120]}\n{t}")
     mcap = c.get("mcap")
-    prompt = (f"Stock: {c.get('name')} ({c['ticker']}), US-listed"
-              + (f", market cap about ${mcap / 1e6:,.0f}m" if mcap else "") + f". Today is {ny(when):%A %d %B %Y}, "
-              f"{ny(when):%H:%M} New York. It is up on the day and breaking out on heavy volume.\n"
+    cur = "£" if c.get("listing", "").startswith("UK") else "$"
+    prompt = (f"Stock: {c.get('name')} ({c['ticker']}), {c.get('listing', 'US-listed')}"
+              + (f", market cap about {cur}{mcap / 1e6:,.0f}m" if mcap else "") + f". Today is {ny(when):%A %d %B %Y}, "
+              f"{ny(when):%H:%M} New York. "
+              + c.get("situation", "It is up on the day and breaking out on heavy volume.") + "\n"
               f"Headlines:\n" + "\n".join(lines)
               + ("\n\nRelease text (opening part):\n" + "\n\n".join(bodies) if bodies else
                  "\n\n(No release text could be read; judge from the headlines only.)"))
@@ -1117,13 +1119,14 @@ def live_discover(when, known):
         if not news_ok(news, DT_REQUIRE_NEWS):
             rejected.append(tick)
             continue
-        top = next((n["title"] for n in news if n.get("tone") == "pos"), "")
+        top = next((n["title"] for n in news if n.get("tone") == "pos"), "") or \
+            next(("to be read: " + n["title"] for n in news if n.get("tone") == "review"), "")
         chg = S.num(r.get("change"))
         found.append({"ticker": tick, "name": str(r.get("description") or tick), "exchange": str(r["exchange"]).upper(),
                       "mcap": S.num(r.get("market_cap_basic")),
                       "ysym": r["ysym"], "vol_x": sc["vol_x"], "avg": S.num(r.get("average_volume_10d_calc")), "news": news,
                       "prev": (S.num(r.get("close")) / (1 + chg / 100)) if chg is not None and S.num(r.get("close")) else None,
-                      "why": f"{sc['vol_x']:.1f}x normal volume in the last 30 min" + (f"; news: {top[:80]}" if top else
+                      "why": f"{sc['vol_x']:.1f}x a normal day's volume in the last 30 min" + (f"; news: {top[:80]}" if top else
                                                                                          "; no news found")})
     return found, rejected
 
@@ -1478,13 +1481,13 @@ def cmd_drift(api, st, fetch_bars, clock, pause, find_drift):
 def apply_catalyst():
     """Fraz's catalyst rules (1 Nov 2026). Up to 5 trades a day, one at a time: each is held until its sell rule
     fires, then it looks for the next stock that still matches (never the same stock twice in a day).
-    Rules: positive news in the last 24-48 hours, relative volume above 1.5x
-    (about 0.22x a normal day's volume in the first 30 minutes, given the morning is the busiest part of the day),
+    Rules: positive news in the last 24-48 hours, at least a third of a normal day's volume in 30 minutes
+    (Fraz's rule; it was 0.22x, his "relative volume above 1.5x", until 5 Nov),
     green on the day and breaking above short-term resistance (the opening-range high). No uptrend or
     daily-range requirement. Trades exactly like breakout: one trade a day, stop at the opening-range low
     (max 5%), break-even then trailing stop, sold before the close."""
     global DT_STRATEGY, DT_MIN_RANGE, DT_BO_BUYS, DT_BUY_UNTIL, DT_MIN_PRICE
-    S.OPEN_VOL_MULT = 0.22
+    S.OPEN_VOL_MULT = 1 / 3
     S.OPEN_NEWS_DAYS = 2
     S.OPEN_REQUIRE_TREND = False
     DT_MIN_RANGE = 0.0

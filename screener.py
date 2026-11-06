@@ -2416,7 +2416,7 @@ def wire_news(ticker, since):
             print(f"  news collector file not available: {e}")
     tick = str(ticker).upper().rstrip(".")
     out = []
-    for it in _wire_items():
+    for it in _wire_items() + _archive_items(since):
         ticks = it.get("tickers") or []
         ticks = [ticks] if isinstance(ticks, str) else ticks
         names = {str(t).upper().split(":")[-1].strip() for t in ticks}
@@ -2437,6 +2437,32 @@ def wire_news(ticker, since):
         out.append({"title": str(it.get("title") or "").strip(), "date": when.date().isoformat(),
                     "url": str(it.get("url") or ""), "source": str(it.get("source") or "newswire"),
                     "official": True, "_flags": flags, "items": it.get("items") or []})
+    return out
+
+
+_ARCHIVE = {}
+
+
+def _archive_items(since):
+    """Older releases for replays: the collector saves each finished day to the news-archive branch."""
+    import requests
+
+    have = [i.get("time") for i in (_wire_items() or []) if i.get("time")]
+    start = min(have)[:10] if have else dt.datetime.now(dt.timezone.utc).date().isoformat()
+    day, out = since.date(), []
+    end = (since.date() + dt.timedelta(days=8)).isoformat()      # news windows are a few days; replays look back
+    while day.isoformat() < min(start, end):
+        k = day.isoformat()
+        if k not in _ARCHIVE:
+            _ARCHIVE[k] = []
+            try:
+                r = requests.get(f"https://raw.githubusercontent.com/{REPO}/news-archive/{k}.json", timeout=20)
+                if r.status_code == 200:
+                    _ARCHIVE[k] = r.json().get("items") or []
+            except Exception as e:
+                print(f"  news archive {k} not available: {e}")
+        out += _ARCHIVE[k]
+        day += dt.timedelta(days=1)
     return out
 
 
@@ -2722,6 +2748,18 @@ def opening_scan(market, fetch_open, fetch_news, now_utc, context=None, fetch_ba
         bp = item["buy_pct30"] if item["buy_pct30"] is not None else item["buy_pct"]
         item["buyers"] = bp is not None and bp >= OPEN_BUYERS
         item["sellers"] = bp is not None and bp <= OPEN_SELLERS
+        # read the releases (Claude), the same check the day trader uses: good-news headlines must be confirmed and
+        # plain "Reports Q3 results" headlines are judged on their numbers. Without a Claude key, headlines decide.
+        if ("pos" in tones or "review" in tones) and os.getenv("ANTHROPIC_API_KEY", "").strip():
+            try:
+                import practice as P
+                c = {**item, "listing": "US-listed" if market == "america" else "UK-listed (LSE/AIM)",
+                     "situation": "It traded heavy volume in the first 30 minutes of today's session and is up on the day."}
+                ok, why = P.claude_check({"log": []}, {}, c, now_utc)
+                item["claude"] = why
+                tones = {"pos"} if ok else {"neutral"}
+            except Exception as e:
+                print(f"  Claude check failed for {rec['ticker']}: {e}")
         if "pos" in tones:
             item["score"] = round(2 * vx + (1 if holding else 0) + (1 if item["near_high"] else 0)
                                   + 0.5 * sum(n["tone"] == "pos" for n in news) - (1 if item["extended"] else 0)
@@ -2770,10 +2808,11 @@ def opening_alerts(op, markets):
                                      ("long-term trend still down", x.get("longterm_down")),
                                      ("up a lot already", x["extended"]), ("you own it", x["owned"])) if on]
             lst = f" On {', '.join(x['lists'])} list." if x["lists"] else ""
-            top = next((n for n in x["news"] if n["tone"] == "pos"), None)
+            top = next((n for n in x["news"] if n["tone"] in ("pos", "review")), None)
             lines.append(f"{x['ticker']} {pct(x['change'])}, {vol_text(x)}{flow_text(x)}"
                          f"{' (' + ', '.join(flags) + ')' if flags else ''}.{lst}"
-                         f"{' News: ' + top['title'][:90] if top else ''}")
+                         f"{' News: ' + top['title'][:90] if top else ''}"
+                         f"{' ' + x['claude'][:200] if x.get('claude') else ''}")
         push(f"{MARKETS[m]['label']} opening surge: {', '.join(x['ticker'] for x in picks[:5])}",
              "\n\n".join(lines), 4, "chart_with_upwards_trend")
 
@@ -2785,7 +2824,7 @@ def opening_html(op):
              'with <b>positive-looking news in the last 3 days</b>. Placings, warnings and similar are left out. '
              '<b>Buying %</b> is an estimate from 1-minute price bars (how near the top of each minute\'s range the '
              'price closed): 60%+ suggests buyers are in control, 45% or less suggests sellers. '
-             'Headlines are sorted by keywords, so read them before acting.</p>')
+             'When the Claude check is set up, each release is read and judged by the same rules as the US news risers check (a 10%+ rise expected from the news); otherwise headlines are sorted by keywords.</p>')
     mk = (op or {}).get("markets") or {}
     if not mk:
         return intro + '<p class="empty">No opening check has run yet.</p>'
@@ -2812,13 +2851,16 @@ def opening_html(op):
                          f'<div class="nm">{E(x["name"])}</div></div><div class="px">{fmt_price(x["price"], x["currency"], x["exchange"])}'
                          f'<div class="pos">{pct(x["change"])}</div></div></div>'
                          f'<div class="meta">{E(vol_text(x) + flow_text(x))}{rv} · mkt cap {fmt_cap(x["mcap"])} · {E(x["sector"])}</div>'
-                         f'<div class="flags">{flags}</div><ul class="news">{news}</ul>'
+                         f'<div class="flags">{flags}</div>'
+                         + (f'<div class="meta"><b>Release read:</b> {E(x["claude"])}</div>' if x.get("claude") else "")
+                         + f'<ul class="news">{news}</ul>'
                          f'<div class="links"><a href="{E(x["chart_url"])}" target="_blank" rel="noopener">Chart ↗</a></div></div>')
         if data["quiet"]:
             parts.append('<details class="sub"><summary>Volume and trend, but no clear good news ('
                          f'{len(data["quiet"])})</summary>' + "".join(
                 f'<div class="meta">{E(x["ticker"])} {pct(x["change"])}, {E(vol_text(x) + flow_text(x))}'
-                f'{" · " + E(x["news"][0]["title"][:80]) if x["news"] else " · no headlines found"}</div>' for x in data["quiet"])
+                f'{" · " + E(x["news"][0]["title"][:80]) if x["news"] else " · no headlines found"}'
+                f'{" · " + E(x["claude"][:160]) if x.get("claude") else ""}</div>' for x in data["quiet"])
                 + "</details>")
     return "".join(parts)
 
