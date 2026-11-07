@@ -24,6 +24,7 @@ on:
           - "breakout-market"
           - "breakout-strong"
           - "catalyst"
+          - "catalyst-tight"
           - "drift"
           - "rotation"
         default: "all"
