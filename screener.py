@@ -142,7 +142,10 @@ STINE_BREAKOUT_LOOKBACK = 8    # breakout must be within the last 8 weeks
 STINE_VOL_MULT = 3.0           # Stine: breakout week on huge volume...
 STINE_LOW_FLOAT = 50e6         # ...in a low-float stock (shares); market cap is used when float is unknown
 STINE_STEEP = 0.03             # 30-wk MA up 3%+ in 4 weeks
-STINE_MIN_SCORE = 6
+STINE_MIN_SCORE = 6            # (unused; see STINE_MIN_PCT)
+STINE_MIN_PCT = 0.70           # 7 Nov 2026: a Stine pick needs at least 70% of the max score (UK scored before director buys)
+STINE_REQUIRE_INSIDER = True   # 7 Nov 2026: insider/director buying in the last 90 days is required (Stine's core rule).
+                               # Canada has no automatic insider data, so it gets no Stine picks while this is on.
 EPS_GROWTH_MIN = 25.0
 PE_MAX = 20.0
 SMALL_FLOAT = 30e6
@@ -477,7 +480,7 @@ def stine(rec, w, insider, market):
     add("Low float / small company", small, 1, note, req=True)
     if market == "america":
         add("Insider buying (90 days)", bool(insider), 2,
-            f"{insider['buys']} buy(s), ${insider['value']:,.0f}" if insider else "none found")
+            f"{insider['buys']} buy(s), ${insider['value']:,.0f}" if insider else "none found", req=STINE_REQUIRE_INSIDER)
     else:
         checks.append({"label": "Insider buying", "pass": None, "pts": 0, "max": 0, "note": "check link", "req": False})
 
@@ -495,8 +498,14 @@ def stine(rec, w, insider, market):
     plan = (f"Entry zone: near the 10-week MA ({fmt_num(ma10.iloc[-1])}). "
             f"Sell rule: weekly close below it.")
     return {"strategy": "stine", "checks": checks, "tag": tag, "tag_class": cls, "plan": plan,
-            "stop": None, "required_ok": all(ch["pass"] for ch in checks if ch["req"]),
+            "stop": None, "required_ok": all(ch["pass"] for ch in checks if ch["req"]) and stine_score_ok(checks),
             "trend_ok": trend, "dist_ma10": dist}
+
+
+def stine_score_ok(checks):
+    """At least STINE_MIN_PCT of the maximum score (e.g. 10/14 US, 8/12 UK before director buys are added)."""
+    mx = sum(ch["max"] for ch in checks)
+    return sum(ch["pts"] for ch in checks) >= round(STINE_MIN_PCT * mx)
 
 
 # ---------------------------------------------------------------------------
@@ -559,11 +568,12 @@ def weinstein(rec, w, bench_w, explain=False):
     add("Still above 30-week MA, MA not falling", above and slope >= -0.005, 1, f"MA {slope * 100:+.1f}% in 4 wks", req=True)
     add("Beating the market (Mansfield RS > 0)", mrs is not None and mrs > 0, 2, req=True, note=
         "no index data" if mrs is None else f"{mrs * 100:+.0f}%")
-    add("30-week MA rising", slope > 0.005, 1)
+    add("30-week MA rising", slope > 0.005, 1, req=True)        # 7 Nov 2026: required (true Stage 2), was a bonus
     add("Breakout volume 3x+", found["vx"] >= 3, 1)
     add("Not extended (within 15% of breakout)", last <= found["res"] * 1.15, 1,
         f"{(last / found['res'] - 1) * 100:+.0f}% vs breakout")
-    add("RS rank 70+", rs is not None and rs >= 70, 1, "no data" if rs is None else f"RS {rs:.0f}")
+    add("RS rank 70+", rs is not None and rs >= 70, 1, "no data" if rs is None else f"RS {rs:.0f}",
+        req=True)                                              # 7 Nov 2026: required, was a bonus (picks need 8/10+)
 
     if last > ma30.iloc[-1] * 1.25 or last > found["res"] * 1.15:
         tag, cls = "Extended, wait", "z-ext"
@@ -1164,6 +1174,9 @@ def run_pipeline(fetch_tv, fetch_prices, fetch_insiders, today: dt.date, ledger:
                 apply_uk_dealings(lists, fetch_uk_dealings(ticks, today) if ticks else {})
             except Exception as e:
                 print(f"  UK director dealings failed: {e}")
+        if STINE_REQUIRE_INSIDER and m != "america":
+            # UK director buys are only known after the RNS check above; Canada has no insider data at all
+            lists["stine"] = [x for x in lists["stine"] if x.get("insider")]
         # cross-reference which methods flagged each ticker (Minervini "trend only" doesn't count)
         flagged: dict[str, list] = {}
         for k, L in lists.items():

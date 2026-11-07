@@ -307,7 +307,8 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--date", default="")
     ap.add_argument("--no-news", action="store_true", help="also trade heavy buying + uptrend without news")
-    ap.add_argument("--strategy", default="breakout", choices=["breakout", "breakout-market", "breakout-strong", "catalyst", "drift", "rotation"])
+    ap.add_argument("--strategy", default="breakout", choices=["breakout", "breakout-market", "breakout-strong", "catalyst",
+                                                         "catalyst-tight", "drift", "rotation"])
     ap.add_argument("--bars", default="1m", choices=["1m", "5m"])
     ap.add_argument("--no-trend", action="store_true", help="don't require an uptrend (lets news gaps in)")
     a = ap.parse_args()
@@ -318,8 +319,11 @@ def main():
         P.DT_BO_MIN_VOLX, P.DT_TOP_N = 1.0, 3   # in the first 30 minutes, top 3 only
     BAR.update(interval=a.bars, minutes=5 if a.bars == "5m" else 1)
     S.OPEN_REQUIRE_TREND = not a.no_trend
+    P.DT_WATCH_ALERT = False                     # replays never send the live watch-list alert
     if a.strategy == "catalyst":
         P.apply_catalyst()                       # after the trend setting: catalyst has no uptrend rule
+    if a.strategy == "catalyst-tight":
+        P.apply_catalyst_tight()                 # catalyst + VWAP, 10% gap cap, market filter, fresh news first
     day = parse_day(a.date) if a.date.strip() else last_weekday(dt.datetime.now(NY).date())
     print(f"Replaying {day} (US)")
     picks, quiet, mins, info, meta, since = build_list(day)

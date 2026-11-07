@@ -55,7 +55,7 @@ skipped = text and not days
 news = os.getenv("NEWS", "required")
 modes = ["required", "not required"] if news == "both" else [news]
 strat = os.getenv("STRATEGY", "all")
-strategies = ["breakout", "breakout-market", "breakout-strong", "catalyst", "drift", "rotation"] if strat == "all" else [strat]
+strategies = ["breakout", "breakout-market", "breakout-strong", "catalyst", "catalyst-tight", "drift", "rotation"] if strat == "all" else [strat]
 tr = os.getenv("TREND", "required")
 trends = ["required", "not required"] if tr == "both" else [tr]
 jobs = [{"day": d.isoformat(), "news": m, "strategy": s, "bars": bars, "trend": t}

@@ -72,7 +72,7 @@ DT_OVERTAKE = 1.5            # to swap, the new stock's buying must be at least 
 DT_OVERTAKE_MIN = 1 / 3      # ...and at least a third of a normal day's volume bought in the last 30 minutes
 DT_MAX_UP = 0.20             # don't buy a stock already up more than 20% on the day
 
-# Which day-trading strategy to run: "breakout" (default), "catalyst", "drift" or "rotation"
+# Which day-trading strategy to run: "catalyst" (default), "catalyst-tight", "breakout", "drift" or "rotation"
 DT_STRATEGY = os.getenv("PRACTICE_STRATEGY", "catalyst").strip().lower()
 # Breakout (opening-range breakout on "stocks in play"):
 DT_OR_MIN = 30               # opening range = the first 30 minutes' high and low
@@ -87,6 +87,12 @@ DT_BE_AT_R = 1.0             # once up 1x the risk, move the stop to break-even 
 DT_TRAIL_AT_R = 2.0          # once up 2x the risk, trail the stop...
 DT_TRAIL_R = 1.0             # ...1x the risk below the highest price since buying
 DT_MARKET_FILTER = os.getenv("PRACTICE_MARKET_FILTER", "no").lower() in ("yes", "true", "1")
+# "Tight" filters (7 Nov 2026), switched on by the catalyst-tight strategy. Replay it before running it live.
+DT_VWAP = False              # only buy while the price is above today's VWAP (buyers still in control)
+DT_MAX_GAP = None            # skip stocks that opened this far above yesterday's close (0.10 = 10%): already priced in
+DT_FRESH_FIRST = False       # rank stocks whose official good news is dated today ahead of older news
+DT_WATCH_ALERT = os.getenv("PRACTICE_WATCH_ALERT", "yes").lower() not in ("no", "false", "0")
+                             # once the opening range is set, push the watch list with buy/stop levels for Fraz
 # Claude news check (optional): before each buy, Claude reads the stock's headlines and decides whether there's a
 # genuine, price-moving company catalyst. Needs the ANTHROPIC_API_KEY secret; without it the keyword check is used.
 CLAUDE_MODEL = os.getenv("CLAUDE_MODEL", "claude-haiku-5-5")
@@ -1171,6 +1177,87 @@ def opening_range(bars, when):
     return float(first["High"].max()), float(first["Low"].min())
 
 
+def today_bars(bars, when):
+    """Today's regular-session bars only."""
+    if bars is None or not len(bars):
+        return None
+    o = ny(when).replace(hour=9, minute=30, second=0, microsecond=0)
+    idx = bars.index.tz_convert(o.tzinfo) if bars.index.tz is not None else bars.index.tz_localize("UTC").tz_convert(o.tzinfo)
+    t = bars[idx >= o]
+    return t if len(t) else None
+
+
+def session_vwap(bars, when):
+    """Volume-weighted average price since today's open (typical price x volume)."""
+    t = today_bars(bars, when)
+    if t is None:
+        return None
+    v = t["Volume"].fillna(0)
+    if float(v.sum()) <= 0:
+        return None
+    tp = (t["High"] + t["Low"] + t["Close"]) / 3
+    return float((tp * v).sum() / v.sum())
+
+
+def open_gap(bars, when, prev):
+    """How far today's opening price was above yesterday's close (0.12 = opened 12% up)."""
+    t = today_bars(bars, when)
+    if t is None or not prev:
+        return None
+    return float(t["Open"].iloc[0]) / prev - 1
+
+
+def fresh_news(c, when):
+    """True when the stock has official positive news dated today (New York date)."""
+    today = ny(when).date().isoformat()
+    return any(n.get("tone") == "pos" and n.get("official") and str(n.get("date", ""))[:10] == today
+               for n in c.get("news") or [])
+
+
+def watch_alert(st, day, cands, stats, fetch_bars, when):
+    """One phone alert a day once the opening range is set: the stocks in play with a buy trigger (opening-range
+    high), a stop (opening-range low, max 5%) and VWAP, so Fraz can pick his own trade."""
+    if not DT_WATCH_ALERT or day.get("watch_sent"):
+        return
+    day["watch_sent"] = True
+    ok = [c for c in cands if (stats.get(c["ysym"]) or {}).get("range", 0) >= DT_MIN_RANGE]
+    ok = sorted(ok, key=lambda c: (fresh_news(c, when) if DT_FRESH_FIRST else False, has_analyst(c),
+                                   c.get("vol_x") or 0), reverse=True)[:DT_TOP_N]
+    bars = fetch_bars([c["ysym"] for c in ok]) if ok else {}
+    lines = []
+    for c in ok:
+        b = bars.get(c["ysym"])
+        rng = opening_range(b, when)
+        if not rng or b is None or not len(b):
+            continue
+        last = float(b["Close"].iloc[-1])
+        stop = max(rng[1], rng[0] * (1 - DT_BO_MAX_RISK))
+        vw = session_vwap(b, when)
+        gap = open_gap(b, when, (stats.get(c["ysym"]) or {}).get("prev"))
+        flags = []
+        if DT_MAX_GAP is not None and gap is not None and gap >= DT_MAX_GAP:
+            flags.append(f"gapped {gap * 100:.0f}%, bot skips")
+        if vw and last < vw:
+            flags.append("below VWAP")
+        top = next((n for n in c.get("news") or [] if n.get("tone") == "pos"), None)
+        lines.append(f"{c['ticker']}: buy above ${rng[0]:,.2f}, stop ${stop:,.2f}"
+                     + (f", VWAP ${vw:,.2f}" if vw else "") + f", now ${last:,.2f}"
+                     + (f" ({'; '.join(flags)})" if flags else "")
+                     + (f". {top['title'][:70]}" if top else ""))
+    mkt = "" if market_ok_any(fetch_bars, when) else " Market (SPY) is below its open: the bot won't buy yet."
+    S.push("US day-trade watch list",
+           ("\n".join(lines) + "\nRule: buy only on a break above the trigger while above VWAP; sell at the stop."
+            + mkt) if lines else "Nothing in play with a clear opening range today.", 3, "eyes")
+    log(st, f"Watch list sent: {', '.join(l.split(':')[0] for l in lines) or 'none'}")
+
+
+def market_ok_any(fetch_bars, when):
+    """SPY above today's open, whether or not the market filter is switched on."""
+    b = (fetch_bars(["SPY"]) or {}).get("SPY")
+    t = today_bars(b, when)
+    return t is None or float(t["Close"].iloc[-1]) >= float(t["Open"].iloc[0])
+
+
 def market_ok(fetch_bars, when):
     """True when SPY is trading above today's opening price (used only if DT_MARKET_FILTER is on)."""
     if not DT_MARKET_FILTER:
@@ -1291,6 +1378,11 @@ def cmd_breakout(api, st, fetch_bars, fetch_stats, clock, pause, discover):
                     day["list"].append(x["ticker"])
                     log(st, f"Added {x['ticker']} to today's list at {ny(when):%H:%M} New York: {x.get('why', '')}")
         traded = False
+        if mins >= DT_OR_MIN and not day.get("watch_sent"):
+            try:
+                watch_alert(st, day, cands, stats, fetch_bars, when)
+            except Exception as e:
+                print(f"  watch list alert failed: {e}")
         if hold and hold["status"] == "open":
             if manage_hold(api, st, day, hold, positions, active, when):
                 hold, traded = None, True
@@ -1300,7 +1392,9 @@ def cmd_breakout(api, st, fetch_bars, fetch_stats, clock, pause, discover):
             ok = [c for c in ok if c["ticker"] not in day.get("bought_list", [])
                   and (day.get("claude", {}).get(c["ticker"]) or {}).get("ok", True)]
             # broker upgrades on top of official news move a stock up the queue; then the most unusual volume
-            ok = sorted(ok, key=lambda c: (has_analyst(c), c.get("vol_x") or 0), reverse=True)[:DT_TOP_N]
+            # (catalyst-tight: stocks with official good news dated today go first: less of it is priced in)
+            ok = sorted(ok, key=lambda c: (fresh_news(c, when) if DT_FRESH_FIRST else False, has_analyst(c),
+                                           c.get("vol_x") or 0), reverse=True)[:DT_TOP_N]
             bars = fetch_bars([c["ysym"] for c in ok]) if ok else {}
             for c in ok:
                 if c["ticker"] in day.get("bought_list", []):
@@ -1313,6 +1407,14 @@ def cmd_breakout(api, st, fetch_bars, fetch_stats, clock, pause, discover):
                 last = float(b["Close"].iloc[-1])
                 if last <= rng[0] or last < DT_MIN_PRICE or (prev and last / prev - 1 > DT_MAX_UP):
                     continue
+                if DT_MAX_GAP is not None:
+                    gap = open_gap(b, when, prev)
+                    if gap is not None and gap >= DT_MAX_GAP:
+                        continue                       # opened 10%+ up: the news was priced in before the open
+                if DT_VWAP:
+                    vw = session_vwap(b, when)
+                    if vw and last <= vw:
+                        continue                       # below VWAP: sellers in control today
                 stop = max(rng[1], last * (1 - DT_BO_MAX_RISK))
                 if stop >= last * 0.995:
                     stop = last * 0.99
@@ -1497,8 +1599,18 @@ def apply_catalyst():
     DT_STRATEGY = "breakout"
 
 
+def apply_catalyst_tight():
+    """Catalyst rules plus the 7 Nov 2026 filters: buy only above VWAP, skip stocks that gapped up 10%+ at the open,
+    only buy while the US market (SPY) is above its open, and rank today's fresh official news first."""
+    global DT_VWAP, DT_MAX_GAP, DT_FRESH_FIRST, DT_MARKET_FILTER
+    apply_catalyst()
+    DT_VWAP, DT_MAX_GAP, DT_FRESH_FIRST, DT_MARKET_FILTER = True, 0.10, True, True
+
+
 def cmd_daytrade(api, st, fetch_bars=None, fetch_avg=None, clock=None, pause=None, discover=None, fetch_stats=None,
                  find_drift=None):
+    if DT_STRATEGY == "catalyst-tight":
+        apply_catalyst_tight()                  # catalyst plus VWAP, gap, market and fresh-news filters
     if DT_STRATEGY == "catalyst":
         apply_catalyst()                        # sets its rules, then runs the breakout engine
     if DT_STRATEGY == "drift":

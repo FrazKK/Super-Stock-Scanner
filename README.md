@@ -8,8 +8,8 @@ Only stocks at a **buy point right now** are listed, up to **10 per method per m
 
 | Method | Must pass | Listed only when (buy point) | Sell rule |
 |---|---|---|---|
-| **Stine superstocks** | Price under 15, profitable, above a rising 30-week MA, broke out of a 12-week base in the last 8 weeks on 3x+ weekly volume (biggest in 6 months), low float (under 50M shares, or a small company if float is unknown) | Pulled back to the 10-week MA ("magic line") | Weekly close below the 10-week MA |
-| **Weinstein Stage 2** | Breakout above resistance on 2x+ volume from a flat Stage 1 base, above a flat or rising 30-week MA, beating the market (Mansfield RS > 0) | Breakout in the last 2 weeks and within 10% of the breakout level, or a pullback to the breakout level | Weekly close below the 30-week MA |
+| **Stine superstocks** | Price under 15, profitable, above a rising 30-week MA, broke out of a 12-week base in the last 8 weeks on 3x+ weekly volume (biggest in 6 months), low float (under 50M shares, or a small company if float is unknown), **insider/director buying in the last 90 days** (Canada has no insider data, so no Canadian Stine picks), and at least 70% of the maximum score | Pulled back to the 10-week MA ("magic line") | Weekly close below the 10-week MA |
+| **Weinstein Stage 2** | Breakout above resistance on 2x+ volume from a flat Stage 1 base, above a flat or rising 30-week MA, beating the market (Mansfield RS > 0), **30-week MA rising** and **RS rank 70+** (so a pick scores at least 8/10) | Breakout in the last 2 weeks and within 10% of the breakout level, or a pullback to the breakout level | Weekly close below the 30-week MA |
 | **Minervini trend + VCP** | All 8 Trend Template rules, including RS rank 70+ | Breaking out of the pivot on volume, no more than 5% above it | 8% stop below entry |
 | **Episodic pivots** | Gapped up 10%+ on 3x+ volume, still holding the gap | Gap in the last 3 trading days, not run on more than 10% since | Below the gap-day low |
 | **Simple Stage 2** | Above a rising 30-week MA, 10-week MA above the 30-week, beating the market (Mansfield RS > 0). No volume or base rules | Entered Stage 2 in the last 8 weeks and no more than 15% above the 30-week MA | Weekly close below the 30-week MA |
@@ -100,7 +100,13 @@ The bot day-trades a Trading 212 **practice** account, one US stock at a time.
 
 It uses Claude Haiku and costs pennies a day. Without the key, or if the credit runs out, the bot falls back to the keyword check, so trading carries on.
 
-**Current strategy: breakout (one trade a day).**
+**Watch list alert (for your own trades):** once the opening range is set (10:00 New York, 15:00 UK) the bot sends one phone alert with the stocks in play: the buy trigger (opening-range high), the stop (opening-range low, max 5%), VWAP and the latest price. Buy only on a break above the trigger while the price is above VWAP. Set `PRACTICE_WATCH_ALERT=no` to turn it off.
+
+**Being tested: catalyst-tight** (added 7 Nov 2026). The catalyst rules plus four filters: buy only while the price is above today's VWAP; skip stocks that opened 10%+ above yesterday's close (already priced in); buy only while the US market (SPY) is above its open; and rank stocks with official good news dated today first. Replay it (Actions, Replay days, strategy `catalyst-tight`, 5-minute, the last 40 weekdays) and compare it with `catalyst` before setting `PRACTICE_STRATEGY=catalyst-tight`.
+
+**Exits (all breakout-type strategies):** there's no fixed profit target. The stop starts at the opening-range low (max 5% below the buy). At +1x the risk it moves to break-even plus fees, and from +2x it trails 1x the risk below the highest price. Anything still held is sold 10 minutes before the close.
+
+**Earlier strategy: breakout (one trade a day).**
 - **What it watches:** the 5 US stocks most "in play". They need positive news, the most unusual volume, and a normal daily move of at least 4%.
 - **When it buys:** the first of them to break above its opening-range high (the highest price in the first 30 minutes).
 - **Stop:** the opening-range low, never more than 5% below the buy price.
