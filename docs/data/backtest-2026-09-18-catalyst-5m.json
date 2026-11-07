@@ -1,16 +1,13 @@
 {
  "date": "2026-09-18",
- "generated": "2026-11-04T17:19+00:00",
+ "generated": "2026-11-07T16:20+00:00",
  "fx_gbpusd": 1.335800051689148,
  "result": "done",
  "require_news": true,
  "strategy": "catalyst",
  "bars": "5m",
  "require_trend": true,
- "added_during_day": [
-  "Added FTCI to today's list at 10:32 New York: 0.9x normal volume in the last 30 min; no news found",
-  "Added TSLA to today's list at 10:48 New York: 0.5x normal volume in the last 30 min; news: Tesla Launches Model Y L Accessories in the U.S. - BASENOR - Tesla Accessories"
- ],
+ "added_during_day": [],
  "drift_list": [],
  "list": [],
  "quiet": [
@@ -27,8 +24,8 @@
    "vol_x": 2.69
   },
   {
-   "ticker": "AKAN",
-   "vol_x": 2.33
+   "ticker": "TAOX",
+   "vol_x": 1.92
   },
   {
    "ticker": "USDE",
@@ -41,10 +38,6 @@
   {
    "ticker": "IDN",
    "vol_x": 0.79
-  },
-  {
-   "ticker": "BIAF",
-   "vol_x": 0.63
   },
   {
    "ticker": "GOOG",
@@ -73,6 +66,10 @@
   {
    "ticker": "AMZN",
    "vol_x": 0.43
+  },
+  {
+   "ticker": "GILD",
+   "vol_x": 0.42
   }
  ],
  "trades": [],
@@ -81,8 +78,6 @@
   "15:50 Day trade summary: No trade today: nothing in play broke out."
  ],
  "log": [
-  "Added FTCI to today's list at 10:32 New York: 0.9x normal volume in the last 30 min; no news found",
-  "Added TSLA to today's list at 10:48 New York: 0.5x normal volume in the last 30 min; news: Tesla Launches Model Y L Accessories in the U.S. - BASENOR - Tesla Accessories",
   "Day trading finished: 0 trade(s), total +\u00a30."
  ]
 }

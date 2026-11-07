@@ -1,6 +1,6 @@
 {
  "date": "2026-09-29",
- "generated": "2026-11-04T17:24+00:00",
+ "generated": "2026-11-07T16:19+00:00",
  "fx_gbpusd": 1.3254337310791016,
  "result": "done",
  "require_news": true,
@@ -9,36 +9,10 @@
  "require_trend": true,
  "added_during_day": [
   "Added KMX to today's list at 10:16 New York: 0.4x normal volume in the last 30 min; no news found",
-  "Added ACET to today's list at 10:48 New York: 0.5x normal volume in the last 30 min; no news found",
   "Added CRVO to today's list at 10:48 New York: 0.7x normal volume in the last 30 min; no news found"
  ],
  "drift_list": [],
- "list": [
-  {
-   "ticker": "PCB",
-   "name": "PCB Bancorp",
-   "vol_x": 0.26,
-   "buy_pct30": 0.9430241051862673,
-   "change": 0.03642621077232344,
-   "score": 3.79,
-   "news": [
-    "PCB Bancorp Announces Stock Repurchase Program - Business Wire"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "DPRO",
-   "name": "Draganfly Inc.",
-   "vol_x": 0.23,
-   "buy_pct30": 0.4623106039260636,
-   "change": 0.008042909380056251,
-   "score": 0.81,
-   "news": [
-    "Draganfly Announces Strategic Investment from Unusual Machines and a Leading U.S. Investment Fund - Draganfly"
-   ],
-   "on_t212": true
-  }
- ],
+ "list": [],
  "quiet": [
   {
    "ticker": "BKYI",
@@ -108,12 +82,8 @@
  ],
  "log": [
   "Added KMX to today's list at 10:16 New York: 0.4x normal volume in the last 30 min; no news found",
-  "DPRO: Claude: no catalyst (strength 2/5): The official headline is an equity investment from a strategic partner and a fund, which is financing with no disclosed size, terms or revenue impact, so it is ",
-  "PCB: Claude: no catalyst (strength 2/5): The official item is a stock buyback program announcement with no stated size relative to market cap or earnings context, so it is at most mildly positive, and ",
-  "Added ACET to today's list at 10:48 New York: 0.5x normal volume in the last 30 min; no news found",
   "Added CRVO to today's list at 10:48 New York: 0.7x normal volume in the last 30 min; no news found",
-  "CRVO: Claude: no catalyst (strength 1/5): The only headline is OTHER (Yahoo Finance, unknown source), not an OFFICIAL company announcement, so it cannot count as a catalyst even though it describes FDA ",
-  "ACET: Claude: no catalyst (strength 1/5): All headlines are OTHER (press coverage and aggregator items), with no OFFICIAL company announcement in the last 48 hours, so the positive lupus Phase 1 data ca",
+  "CRVO: Claude: no catalyst (strength 2/5): The only headline is labelled OTHER with an unknown source, so it cannot count as an official announcement; if verified, FDA removal of the drug exposure limit ",
   "Day trading finished: 0 trade(s), total +\u00a30."
  ]
 }

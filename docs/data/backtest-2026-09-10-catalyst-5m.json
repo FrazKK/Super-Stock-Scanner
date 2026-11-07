@@ -1,6 +1,6 @@
 {
  "date": "2026-09-10",
- "generated": "2026-11-04T17:14+00:00",
+ "generated": "2026-11-07T16:21+00:00",
  "fx_gbpusd": 1.3551971912384033,
  "result": "done",
  "require_news": true,
@@ -9,9 +9,7 @@
  "require_trend": true,
  "added_during_day": [
   "Added IMPP to today's list at 10:16 New York: 0.5x normal volume in the last 30 min; no news found",
-  "Added RBCAA to today's list at 10:32 New York: 0.2x normal volume in the last 30 min; no news found",
-  "Added OCC to today's list at 10:32 New York: 0.4x normal volume in the last 30 min; no news found",
-  "Added ANVS to today's list at 10:32 New York: 0.3x normal volume in the last 30 min; no news found"
+  "Added OCC to today's list at 10:32 New York: 0.4x normal volume in the last 30 min; no news found"
  ],
  "drift_list": [],
  "list": [],
@@ -84,11 +82,8 @@
  ],
  "log": [
   "Added IMPP to today's list at 10:16 New York: 0.5x normal volume in the last 30 min; no news found",
-  "Added RBCAA to today's list at 10:32 New York: 0.2x normal volume in the last 30 min; no news found",
   "Added OCC to today's list at 10:32 New York: 0.4x normal volume in the last 30 min; no news found",
-  "Added ANVS to today's list at 10:32 New York: 0.3x normal volume in the last 30 min; no news found",
-  "OCC: Claude: catalyst (strength 3/5): Official Q3 FY2026 results (revenue $24.3M, EPS $0.21) show sharper earnings year over year, but without release text I cannot confirm a beat versus expectation",
-  "ANVS: Claude: no catalyst (strength 1/5): Only OTHER headlines are present: a Q2 earnings summary noting a narrower-than-expected loss with no revenue, and a Zacks/Yahoo piece on a 26.5% four-week decli",
+  "OCC: Claude: catalyst (strength 2/5): (reply cut short)",
   "Day trading finished: 0 trade(s), total +\u00a30."
  ]
 }

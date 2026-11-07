@@ -1,6 +1,6 @@
 {
  "date": "2026-10-23",
- "generated": "2026-11-04T20:44+00:00",
+ "generated": "2026-11-07T16:31+00:00",
  "fx_gbpusd": 1.3403927087783813,
  "result": "done",
  "require_news": true,
@@ -8,14 +8,7 @@
  "bars": "5m",
  "require_trend": true,
  "added_during_day": [
-  "Added FCNCA to today's list at 10:16 New York: 0.5x normal volume in the last 30 min; no news found",
-  "Added NOVT to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
-  "Added OII to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
-  "Added BFC to today's list at 10:16 New York: 0.2x normal volume in the last 30 min; no news found",
-  "Added NVDA to today's list at 10:32 New York: 0.2x normal volume in the last 30 min; news: NVIDIA and Supply Chain Partners Expand Capacity to Accelerate AI Infrastructure",
-  "Added GRC to today's list at 10:32 New York: 0.3x normal volume in the last 30 min; no news found",
-  "Added EAF to today's list at 10:32 New York: 0.3x normal volume in the last 30 min; no news found",
-  "Added NAUT to today's list at 10:48 New York: 0.3x normal volume in the last 30 min; no news found"
+  "Added FCNCA to today's list at 10:16 New York: 0.5x normal volume in the last 30 min; no news found"
  ],
  "drift_list": [],
  "list": [],
@@ -30,7 +23,7 @@
   },
   {
    "ticker": "TGEN",
-   "vol_x": 4.8
+   "vol_x": 4.81
   },
   {
    "ticker": "BKYI",
@@ -69,15 +62,15 @@
    "vol_x": 0.63
   },
   {
+   "ticker": "OMC",
+   "vol_x": 0.5
+  },
+  {
    "ticker": "FCNCA",
    "vol_x": 0.47
   },
   {
    "ticker": "NFGC",
-   "vol_x": 0.46
-  },
-  {
-   "ticker": "MWYN",
    "vol_x": 0.46
   }
  ],
@@ -88,19 +81,7 @@
  ],
  "log": [
   "Added FCNCA to today's list at 10:16 New York: 0.5x normal volume in the last 30 min; no news found",
-  "Added NOVT to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
-  "Added OII to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
-  "Added BFC to today's list at 10:16 New York: 0.2x normal volume in the last 30 min; no news found",
-  "OII: Claude: no catalyst (strength 1/5): No OFFICIAL headline in the last 48 hours; all items are OTHER commentary, and the Q3 earnings coverage describes a stock decline on margin pressure and a mixed",
-  "BFC: Claude: no catalyst (strength 1/5): No OFFICIAL headline in the last 48 hours; the only recent items are OTHER commentary noting a share price drop after Q3 earnings and a margin squeeze, which is",
-  "NOVT: Claude: no catalyst (strength 1/5): Only OTHER commentary and valuation pieces appear in the headlines, with no OFFICIAL company announcement in the last 48 hours to explain the move.",
-  "Added NVDA to today's list at 10:32 New York: 0.2x normal volume in the last 30 min; news: NVIDIA and Supply Chain Partners Expand Capacity to Accelerate AI Infrastructure",
-  "Added GRC to today's list at 10:32 New York: 0.3x normal volume in the last 30 min; no news found",
-  "Added EAF to today's list at 10:32 New York: 0.3x normal volume in the last 30 min; no news found",
-  "EAF: Claude: no catalyst (strength 1/5): No OFFICIAL headline with readable release text; the headlines show a Q3 loss with only a revenue beat, which is mixed and not a clear price-moving catalyst.",
-  "NVDA: Claude: no catalyst (strength 1/5): The official headlines are product launches, reference architectures and partnership expansions with no disclosed contract values, financials or guidance, and N",
-  "Added NAUT to today's list at 10:48 New York: 0.3x normal volume in the last 30 min; no news found",
-  "FCNCA: Claude: catalyst (strength 3/5): Q3 2026 earnings released alongside a new share repurchase plan is an official positive, but the headlines alone don't show a beat, and a large bank is unlikely",
+  "FCNCA: Claude: catalyst (strength 2/5): Q3 2026 earnings release plus an additional share repurchase plan is a positive official item, but without release text the beat versus expectations is unverifi",
   "Day trading finished: 0 trade(s), total +\u00a30."
  ]
 }

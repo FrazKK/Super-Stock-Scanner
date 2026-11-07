@@ -1,6 +1,6 @@
 {
  "date": "2026-09-14",
- "generated": "2026-11-04T17:17+00:00",
+ "generated": "2026-11-07T16:20+00:00",
  "fx_gbpusd": 1.3525760173797607,
  "result": "done",
  "require_news": true,
@@ -8,8 +8,8 @@
  "bars": "5m",
  "require_trend": true,
  "added_during_day": [
-  "Added NOC to today's list at 10:16 New York: 0.2x normal volume in the last 30 min; no news found",
-  "Added CODA to today's list at 10:16 New York: 0.4x normal volume in the last 30 min; no news found"
+  "Added CODA to today's list at 10:16 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Added VNCE to today's list at 10:32 New York: 2.1x normal volume in the last 30 min; no news found"
  ],
  "drift_list": [],
  "list": [
@@ -76,16 +76,16 @@
    "vol_x": 0.98
   },
   {
+   "ticker": "STXS",
+   "vol_x": 0.95
+  },
+  {
    "ticker": "SKYQ",
    "vol_x": 0.84
   },
   {
    "ticker": "CRVL",
    "vol_x": 0.82
-  },
-  {
-   "ticker": "CODA",
-   "vol_x": 0.8
   }
  ],
  "trades": [],
@@ -94,10 +94,9 @@
   "15:50 Day trade summary: No trade today: nothing in play broke out."
  ],
  "log": [
-  "Added NOC to today's list at 10:16 New York: 0.2x normal volume in the last 30 min; no news found",
   "Added CODA to today's list at 10:16 New York: 0.4x normal volume in the last 30 min; no news found",
-  "CODA: Claude: no catalyst (strength 1/5): The only official item is a routine quarterly results headline with no release text, so beat versus expectations cannot be judged, and the other items are earni",
-  "NOC: Claude: no catalyst (strength 1/5): The only OFFICIAL headline is a vague defence collaboration from 10 September, outside the 48-hour window and not a specific, quantified catalyst; the rest is O",
+  "CODA: Claude: no catalyst (strength 1/5): The only earnings headlines are tagged OTHER, the release text is unavailable, and nothing shows results beating expectations, so no qualifying official catalys",
+  "Added VNCE to today's list at 10:32 New York: 2.1x normal volume in the last 30 min; no news found",
   "Day trading finished: 0 trade(s), total +\u00a30."
  ]
 }

@@ -1,6 +1,6 @@
 {
  "date": "2026-10-20",
- "generated": "2026-11-04T17:34+00:00",
+ "generated": "2026-11-07T16:29+00:00",
  "fx_gbpusd": 1.330849051475525,
  "result": "done",
  "require_news": true,
@@ -8,11 +8,9 @@
  "bars": "5m",
  "require_trend": true,
  "added_during_day": [
-  "Added MMM to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
   "Added AUB to today's list at 10:16 New York: 0.5x normal volume in the last 30 min; no news found",
   "Added TMP to today's list at 10:16 New York: 0.9x normal volume in the last 30 min; no news found",
   "Added RAPP to today's list at 10:16 New York: 3.9x normal volume in the last 30 min; news: Rapport Therapeutics Announces Positive Topline Results - GlobeNewswire",
-  "Added HAS to today's list at 10:46 New York: 0.3x normal volume in the last 30 min; no news found",
   "Added AVBH to today's list at 10:46 New York: 0.4x normal volume in the last 30 min; no news found"
  ],
  "drift_list": [],
@@ -50,6 +48,10 @@
   {
    "ticker": "WORX",
    "vol_x": 3.19
+  },
+  {
+   "ticker": "FNWD",
+   "vol_x": 1.45
   },
   {
    "ticker": "MF",
@@ -98,10 +100,6 @@
   {
    "ticker": "MLR",
    "vol_x": 0.62
-  },
-  {
-   "ticker": "ACFN",
-   "vol_x": 0.61
   }
  ],
  "trades": [
@@ -119,25 +117,22 @@
  ],
  "total_gbp": -53.982336601326324,
  "alerts": [
-  "10:26 Day trade: bought RAPP: 43 RAPP at $30.94 (about \u00a31,001). Stop $29.39. Broke above its opening-range high ($30.32) at $30.91. In play: 3.9x normal volume, normally moves 6% a day. Stop $29.36. News (GlobeNewswire): Rapport Therapeutics Announces Positive Topline Results - GlobeNewswire. Claude: catalyst (strength 4/5): OFFICIAL headline announces positive topline trial results, which likely means a met primary endpoint, though the release text was not available to confirm stat",
+  "10:26 Day trade: bought RAPP: 43 RAPP at $30.94 (about \u00a31,001). Stop $29.39. Broke above its opening-range high ($30.32) at $30.91. In play: 3.9x normal volume, normally moves 6% a day. Stop $29.36. News (GlobeNewswire): Rapport Therapeutics Announces Positive Topline Results - GlobeNewswire. Claude: catalyst (strength 4/5): An official release reports positive topline results, and the stock is breaking out on heavy volume, though the headline alone does not confirm the endpoint was",
   "10:46 Day trade update: RAPP: stop-loss order filled (-\u00a354)",
   "15:50 Day trade summary: 1 trade(s) today: RAPP -\u00a354. Total -\u00a354."
  ],
  "log": [
-  "Added MMM to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
   "Added AUB to today's list at 10:16 New York: 0.5x normal volume in the last 30 min; no news found",
   "Added TMP to today's list at 10:16 New York: 0.9x normal volume in the last 30 min; no news found",
   "Added RAPP to today's list at 10:16 New York: 3.9x normal volume in the last 30 min; news: Rapport Therapeutics Announces Positive Topline Results - GlobeNewswire",
-  "RAPP: Claude: catalyst (strength 4/5): OFFICIAL headline announces positive topline trial results, which likely means a met primary endpoint, though the release text was not available to confirm stat",
-  "Day trade buy order: 43 RAPP at about $30.91. Broke above its opening-range high ($30.32) at $30.91. In play: 3.9x normal volume, normally moves 6% a day. Stop $29.36. News (GlobeNewswire): Rapport Therapeutics Announces Positive Topline Results - GlobeNewswire. Claude: catalyst (strength 4/5): OFFICIAL headline announces positive topline trial results, which likely means a met primary endpoint, though the release text was not available to confirm stat",
+  "RAPP: Claude: catalyst (strength 4/5): An official release reports positive topline results, and the stock is breaking out on heavy volume, though the headline alone does not confirm the endpoint was",
+  "Day trade buy order: 43 RAPP at about $30.91. Broke above its opening-range high ($30.32) at $30.91. In play: 3.9x normal volume, normally moves 6% a day. Stop $29.36. News (GlobeNewswire): Rapport Therapeutics Announces Positive Topline Results - GlobeNewswire. Claude: catalyst (strength 4/5): An official release reports positive topline results, and the stock is breaking out on heavy volume, though the headline alone does not confirm the endpoint was",
   "Bought 43 RAPP at 30.94 (cost \u00a31,001).",
   "RAPP: stop-loss order filled, P&L -\u00a354.",
-  "Added HAS to today's list at 10:46 New York: 0.3x normal volume in the last 30 min; no news found",
   "Added AVBH to today's list at 10:46 New York: 0.4x normal volume in the last 30 min; no news found",
-  "TMP: Claude: no catalyst (strength 1/5): Only OTHER headlines are present: a Form 4 insider filing, a volume alert, and an earnings date preview, with no official company announcement in the last 48 ho",
-  "AUB: Claude: no catalyst (strength 2/5): The only official item is a Q3 earnings release headline with no readable text, so there is no evidence of results well ahead of expectations, and the OTHER cal",
-  "MMM: Claude: catalyst (strength 3/5): Official Q3 2026 results with a raised full-year EPS guidance is a clear positive, though the headline gives no size of beat and 3M is a large cap, so the move ",
-  "HOST: Claude: catalyst (strength 3/5): An official $15M share buyback authorization is a material capital-return signal for a small cap, and the stock is breaking out on heavy volume, though the comp",
+  "TMP: Claude: no catalyst (strength 1/5): No OFFICIAL headline in the last 48 hours; the only items are a Form 4 insider filing, a volume-alert market report and an earnings-date preview, none of which ",
+  "AUB: Claude: no catalyst (strength 1/5): The only official item is a bare Q3 earnings release with no text, and the commentary says EPS merely matched forecast ($0.96), which is an in-line result rathe",
+  "HOST: Claude: catalyst (strength 3/5): OFFICIAL announcement of a $15M share buyback, which may be meaningful for a small cap, though its size relative to market cap is unknown and no release text wa",
   "Day trading finished: 1 trade(s), total -\u00a354."
  ]
 }

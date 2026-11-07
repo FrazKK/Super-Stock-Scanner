@@ -1,6 +1,6 @@
 {
  "date": "2026-09-24",
- "generated": "2026-11-04T17:15+00:00",
+ "generated": "2026-11-07T16:21+00:00",
  "fx_gbpusd": 1.3241524696350098,
  "result": "done",
  "require_news": true,
@@ -16,9 +16,9 @@
    "ticker": "DGNX",
    "name": "Diginex Limited",
    "vol_x": 1.17,
-   "buy_pct30": 0.0642686229874136,
+   "buy_pct30": 0.06357273195878561,
    "change": 0.013605428936910968,
-   "score": 1.1,
+   "score": 1.09,
    "news": [
     "Diginex Consolidates Group-Wide Expertise and Launches Sustainability Science & Intelligence Initiative to Accelerate Product Innovation and Drive Measurable Client Outcomes - GlobeNewswire"
    ],
@@ -35,8 +35,16 @@
    "vol_x": 38.17
   },
   {
+   "ticker": "WETO",
+   "vol_x": 3.85
+  },
+  {
    "ticker": "SKYQ",
    "vol_x": 3.06
+  },
+  {
+   "ticker": "LITS",
+   "vol_x": 2.95
   },
   {
    "ticker": "KYTX",
@@ -71,20 +79,12 @@
    "vol_x": 0.58
   },
   {
-   "ticker": "CYCU",
-   "vol_x": 0.51
-  },
-  {
    "ticker": "SECZ",
    "vol_x": 0.48
   },
   {
    "ticker": "ITIC",
    "vol_x": 0.48
-  },
-  {
-   "ticker": "QMCO",
-   "vol_x": 0.45
   }
  ],
  "trades": [],
@@ -94,7 +94,7 @@
  ],
  "log": [
   "Added RZLT to today's list at 10:16 New York: 0.5x normal volume in the last 30 min; no news found",
-  "RZLT: Claude: no catalyst (strength 1/5): The only headline is an OTHER-tagged earnings-release title with no readable content, so no specific beat, approval or contract can be verified; the price move ",
+  "RZLT: Claude: no catalyst (strength 1/5): Both headlines are OTHER-labelled, and the 10-K summary shows zero revenue and a $77.6M net loss with only a generic business update, so there is no specific po",
   "Day trading finished: 0 trade(s), total +\u00a30."
  ]
 }

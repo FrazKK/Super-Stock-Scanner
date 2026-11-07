@@ -1,6 +1,6 @@
 {
  "date": "2026-10-01",
- "generated": "2026-11-04T17:23+00:00",
+ "generated": "2026-11-07T16:26+00:00",
  "fx_gbpusd": 1.326435923576355,
  "result": "done",
  "require_news": true,
@@ -67,6 +67,10 @@
    "vol_x": 4.18
   },
   {
+   "ticker": "SDOT",
+   "vol_x": 4.14
+  },
+  {
    "ticker": "ACN",
    "vol_x": 1.46
   },
@@ -105,10 +109,6 @@
   {
    "ticker": "JLHL",
    "vol_x": 0.51
-  },
-  {
-   "ticker": "TDAY",
-   "vol_x": 0.49
   }
  ],
  "trades": [],

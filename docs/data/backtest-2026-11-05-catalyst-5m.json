@@ -1,0 +1,154 @@
+{
+ "date": "2026-11-05",
+ "generated": "2026-11-07T16:35+00:00",
+ "fx_gbpusd": 1.3477089405059814,
+ "result": "done",
+ "require_news": true,
+ "strategy": "catalyst",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [
+  "Added APP to today's list at 10:16 New York: 0.6x normal volume in the last 30 min; no news found",
+  "Added TRP to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
+  "Added ALL to today's list at 10:16 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Added FWONA to today's list at 10:16 New York: 0.6x normal volume in the last 30 min; no news found",
+  "Added U to today's list at 10:16 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Added BSY to today's list at 10:16 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Added SEZL to today's list at 10:16 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Added EWTX to today's list at 10:16 New York: 0.5x normal volume in the last 30 min; no news found",
+  "Added PLMR to today's list at 10:16 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Added ADMA to today's list at 10:16 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Added XERS to today's list at 10:16 New York: 0.5x normal volume in the last 30 min; no news found",
+  "Added ANIP to today's list at 10:16 New York: 0.6x normal volume in the last 30 min; no news found",
+  "Added ONT to today's list at 10:16 New York: 0.5x normal volume in the last 30 min; no news found",
+  "Added DNUT to today's list at 10:16 New York: 0.6x normal volume in the last 30 min; no news found",
+  "Added WW to today's list at 10:16 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Added CCLD to today's list at 10:16 New York: 1.8x normal volume in the last 30 min; no news found",
+  "Added CPAY to today's list at 10:32 New York: 0.6x normal volume in the last 30 min; no news found",
+  "Added ACAD to today's list at 10:32 New York: 0.5x normal volume in the last 30 min; no news found",
+  "Added ARDT to today's list at 10:32 New York: 0.3x normal volume in the last 30 min; no news found",
+  "Added CRCT to today's list at 10:32 New York: 0.5x normal volume in the last 30 min; no news found",
+  "Added WEYS to today's list at 10:32 New York: 1.3x normal volume in the last 30 min; no news found",
+  "Added ARQ to today's list at 10:32 New York: 4.2x normal volume in the last 30 min; no news found"
+ ],
+ "drift_list": [],
+ "list": [
+  {
+   "ticker": "EGHT",
+   "name": "8x8 Inc",
+   "vol_x": 0.38,
+   "buy_pct30": 0.5162042822523787,
+   "change": 0.0818583821062846,
+   "score": 2.32,
+   "news": [
+    "8x8, Inc. Reports Record Revenue in Second Quarter of Fiscal Year 2027"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "TPR",
+   "name": "Tapestry, Inc.",
+   "vol_x": 0.35,
+   "buy_pct30": 0.28721499063729145,
+   "change": 0.09528371777218503,
+   "score": 0.85,
+   "news": [
+    "Tapestry, Inc. Reports Fiscal 2027 First Quarter Results and Raises Full Year Outlook - Tapestry, Inc.",
+    "Tapestry, Inc. Reports Fiscal 2027 First Quarter Results and Raises Full Year Outlook - Business Wire"
+   ],
+   "on_t212": false
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "AEHL",
+   "vol_x": 44.71
+  },
+  {
+   "ticker": "ARQ",
+   "vol_x": 27.43
+  },
+  {
+   "ticker": "ZNB",
+   "vol_x": 16.91
+  },
+  {
+   "ticker": "SMX",
+   "vol_x": 15.77
+  },
+  {
+   "ticker": "ELPW",
+   "vol_x": 10.48
+  },
+  {
+   "ticker": "AMTX",
+   "vol_x": 7.65
+  },
+  {
+   "ticker": "APYX",
+   "vol_x": 6.33
+  },
+  {
+   "ticker": "DTIL",
+   "vol_x": 5.07
+  },
+  {
+   "ticker": "CCLD",
+   "vol_x": 3.24
+  },
+  {
+   "ticker": "TBI",
+   "vol_x": 1.99
+  },
+  {
+   "ticker": "APP",
+   "vol_x": 1.55
+  },
+  {
+   "ticker": "U",
+   "vol_x": 1.52
+  },
+  {
+   "ticker": "ZVIA",
+   "vol_x": 1.38
+  },
+  {
+   "ticker": "HLP",
+   "vol_x": 1.32
+  },
+  {
+   "ticker": "XERS",
+   "vol_x": 1.17
+  }
+ ],
+ "trades": [],
+ "total_gbp": 0,
+ "alerts": [
+  "15:50 Day trade summary: No trade today: nothing in play broke out."
+ ],
+ "log": [
+  "Added APP to today's list at 10:16 New York: 0.6x normal volume in the last 30 min; no news found",
+  "Added TRP to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
+  "Added ALL to today's list at 10:16 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Added FWONA to today's list at 10:16 New York: 0.6x normal volume in the last 30 min; no news found",
+  "Added U to today's list at 10:16 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Added BSY to today's list at 10:16 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Added SEZL to today's list at 10:16 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Added EWTX to today's list at 10:16 New York: 0.5x normal volume in the last 30 min; no news found",
+  "Added PLMR to today's list at 10:16 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Added ADMA to today's list at 10:16 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Added XERS to today's list at 10:16 New York: 0.5x normal volume in the last 30 min; no news found",
+  "Added ANIP to today's list at 10:16 New York: 0.6x normal volume in the last 30 min; no news found",
+  "Added ONT to today's list at 10:16 New York: 0.5x normal volume in the last 30 min; no news found",
+  "Added DNUT to today's list at 10:16 New York: 0.6x normal volume in the last 30 min; no news found",
+  "Added WW to today's list at 10:16 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Added CCLD to today's list at 10:16 New York: 1.8x normal volume in the last 30 min; no news found",
+  "Added CPAY to today's list at 10:32 New York: 0.6x normal volume in the last 30 min; no news found",
+  "Added ACAD to today's list at 10:32 New York: 0.5x normal volume in the last 30 min; no news found",
+  "Added ARDT to today's list at 10:32 New York: 0.3x normal volume in the last 30 min; no news found",
+  "Added CRCT to today's list at 10:32 New York: 0.5x normal volume in the last 30 min; no news found",
+  "Added WEYS to today's list at 10:32 New York: 1.3x normal volume in the last 30 min; no news found",
+  "Added ARQ to today's list at 10:32 New York: 4.2x normal volume in the last 30 min; no news found",
+  "Day trading finished: 0 trade(s), total +\u00a30."
+ ]
+}

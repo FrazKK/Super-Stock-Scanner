@@ -1,6 +1,6 @@
 {
  "date": "2026-10-09",
- "generated": "2026-11-04T17:23+00:00",
+ "generated": "2026-11-07T16:25+00:00",
  "fx_gbpusd": 1.322908878326416,
  "result": "done",
  "require_news": true,
@@ -8,24 +8,10 @@
  "bars": "5m",
  "require_trend": true,
  "added_during_day": [
-  "Added ATEX to today's list at 10:16 New York: 0.2x normal volume in the last 30 min; no news found",
   "Added HOVR to today's list at 10:16 New York: 0.4x normal volume in the last 30 min; no news found"
  ],
  "drift_list": [],
- "list": [
-  {
-   "ticker": "SECZ",
-   "name": "Securitize Corp.",
-   "vol_x": 0.24,
-   "buy_pct30": 0.3751119510350676,
-   "change": 0.010284390807001387,
-   "score": 0.48,
-   "news": [
-    "Securitize Launches Global Onchain Trading of U.S. Stocks with Security Entitlements - PR Newswire"
-   ],
-   "on_t212": true
-  }
- ],
+ "list": [],
  "quiet": [
   {
    "ticker": "BDAI",
@@ -50,6 +36,14 @@
   {
    "ticker": "CLOV",
    "vol_x": 0.64
+  },
+  {
+   "ticker": "AAOI",
+   "vol_x": 0.54
+  },
+  {
+   "ticker": "IMMR",
+   "vol_x": 0.49
   },
   {
    "ticker": "PCG",
@@ -78,14 +72,6 @@
   {
    "ticker": "NN",
    "vol_x": 0.38
-  },
-  {
-   "ticker": "KOPN",
-   "vol_x": 0.38
-  },
-  {
-   "ticker": "TATT",
-   "vol_x": 0.38
   }
  ],
  "trades": [],
@@ -94,10 +80,7 @@
   "15:50 Day trade summary: No trade today: nothing in play broke out."
  ],
  "log": [
-  "Added ATEX to today's list at 10:16 New York: 0.2x normal volume in the last 30 min; no news found",
   "Added HOVR to today's list at 10:16 New York: 0.4x normal volume in the last 30 min; no news found",
-  "ATEX: Claude: no catalyst (strength 1/5): All headlines are OTHER commentary or market reports on a SpaceX spectrum deal, with no OFFICIAL company announcement in the last 48 hours to act as the catalys",
-  "SECZ: Claude: no catalyst (strength 2/5): An OFFICIAL product launch of onchain trading of US stocks is a fairly routine product announcement with no stated revenue size, contract value or financial imp",
   "Day trading finished: 0 trade(s), total +\u00a30."
  ]
 }

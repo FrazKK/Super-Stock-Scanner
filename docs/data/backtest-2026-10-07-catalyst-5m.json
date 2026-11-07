@@ -1,6 +1,6 @@
 {
  "date": "2026-10-07",
- "generated": "2026-11-04T17:24+00:00",
+ "generated": "2026-11-07T16:26+00:00",
  "fx_gbpusd": 1.326682209968567,
  "result": "done",
  "require_news": true,
@@ -8,38 +8,15 @@
  "bars": "5m",
  "require_trend": true,
  "added_during_day": [
-  "Added PENG to today's list at 10:16 New York: 0.9x normal volume in the last 30 min; no news found",
-  "Added VTVT to today's list at 10:32 New York: 0.3x normal volume in the last 30 min; news: vTv Therapeutics Announces FDA Orphan Drug Designation for HPPD in Sickle Cell D",
-  "Added PSIX to today's list at 10:48 New York: 0.3x normal volume in the last 30 min; no news found"
+  "Added VTVT to today's list at 10:32 New York: 0.3x normal volume in the last 30 min; news: vTv Therapeutics Announces FDA Orphan Drug Designation for HPPD in Sickle Cell D"
  ],
  "drift_list": [],
- "list": [
-  {
-   "ticker": "MBOT",
-   "name": "Microbot Medical Inc.",
-   "vol_x": 0.27,
-   "buy_pct30": 0.5635059355843512,
-   "change": 0.05626165702464103,
-   "score": 2.29,
-   "news": [
-    "Microbot Medical\u00ae and Medtechnica Ltd. Enter into Three-Year Exclusive Distribution Agreement in Israel - GlobeNewswire"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "PXS",
-   "name": "Pyxis Tankers Inc.",
-   "vol_x": 0.25,
-   "buy_pct30": 0.3967390383420653,
-   "change": 0.014276461337263013,
-   "score": 1.59,
-   "news": [
-    "Pyxis Tankers Announces Two-Year Time Charter for Pyxis Lamda at $31,000 per Day - GlobeNewswire"
-   ],
-   "on_t212": true
-  }
- ],
+ "list": [],
  "quiet": [
+  {
+   "ticker": "LPCN",
+   "vol_x": 2263.49
+  },
   {
    "ticker": "ICU",
    "vol_x": 3.66
@@ -49,12 +26,12 @@
    "vol_x": 2.49
   },
   {
-   "ticker": "BKV",
-   "vol_x": 1.25
+   "ticker": "WETO",
+   "vol_x": 2.16
   },
   {
-   "ticker": "CANG",
-   "vol_x": 0.92
+   "ticker": "BKV",
+   "vol_x": 1.25
   },
   {
    "ticker": "BKH",
@@ -73,12 +50,16 @@
    "vol_x": 0.45
   },
   {
+   "ticker": "ZIM",
+   "vol_x": 0.43
+  },
+  {
    "ticker": "BWLP",
    "vol_x": 0.43
   },
   {
-   "ticker": "ZIM",
-   "vol_x": 0.43
+   "ticker": "HTZ",
+   "vol_x": 0.39
   },
   {
    "ticker": "WRAP",
@@ -87,18 +68,6 @@
   {
    "ticker": "PG",
    "vol_x": 0.34
-  },
-  {
-   "ticker": "BSP",
-   "vol_x": 0.33
-  },
-  {
-   "ticker": "GNK",
-   "vol_x": 0.31
-  },
-  {
-   "ticker": "CMTV",
-   "vol_x": 0.29
   }
  ],
  "trades": [],
@@ -107,10 +76,7 @@
   "15:50 Day trade summary: No trade today: nothing in play broke out."
  ],
  "log": [
-  "Added PENG to today's list at 10:16 New York: 0.9x normal volume in the last 30 min; no news found",
-  "PXS: Claude: catalyst (strength 3/5): An official two-year time charter for Pyxis Lamda at $31,000 per day locks in meaningful revenue for a small tanker fleet, and rates are rising, though one vess",
   "Added VTVT to today's list at 10:32 New York: 0.3x normal volume in the last 30 min; news: vTv Therapeutics Announces FDA Orphan Drug Designation for HPPD in Sickle Cell D",
-  "Added PSIX to today's list at 10:48 New York: 0.3x normal volume in the last 30 min; no news found",
   "Day trading finished: 0 trade(s), total +\u00a30."
  ]
 }

@@ -1,6 +1,6 @@
 {
  "date": "2026-10-06",
- "generated": "2026-11-04T17:24+00:00",
+ "generated": "2026-11-07T16:25+00:00",
  "fx_gbpusd": 1.32185959815979,
  "result": "done",
  "require_news": true,
@@ -38,18 +38,6 @@
    "on_t212": true
   },
   {
-   "ticker": "HTB",
-   "name": "HomeTrust Bancshares, Inc.",
-   "vol_x": 0.22,
-   "buy_pct30": 0.7350491629114032,
-   "change": 0.023425750723915284,
-   "score": 2.88,
-   "news": [
-    "HomeTrust Bancshares, Inc. Announces Completion of Previous Stock Repurchase Program and Authorization of New Stock Repurchase Program - Business Wire"
-   ],
-   "on_t212": true
-  },
-  {
    "ticker": "PUSA",
    "name": "Powerus Corporation",
    "vol_x": 0.66,
@@ -66,6 +54,10 @@
   {
    "ticker": "OSTX",
    "vol_x": 8.22
+  },
+  {
+   "ticker": "HYFT",
+   "vol_x": 5.78
   },
   {
    "ticker": "APOG",
@@ -117,10 +109,6 @@
   },
   {
    "ticker": "LW",
-   "vol_x": 0.56
-  },
-  {
-   "ticker": "GRRR",
    "vol_x": 0.56
   }
  ],

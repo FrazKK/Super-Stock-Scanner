@@ -1,6 +1,6 @@
 {
  "date": "2026-09-17",
- "generated": "2026-11-04T17:19+00:00",
+ "generated": "2026-11-07T16:21+00:00",
  "fx_gbpusd": 1.3382940292358398,
  "result": "done",
  "require_news": true,
@@ -8,10 +8,22 @@
  "bars": "5m",
  "require_trend": true,
  "added_during_day": [
-  "Added DRTS to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found"
+  "Added DRVN to today's list at 10:48 New York: 1.1x normal volume in the last 30 min; news: Driven Brands gives green light on $100 million share buyback, talks Auto Glass "
  ],
  "drift_list": [],
  "list": [
+  {
+   "ticker": "WETO",
+   "name": "Wetour Robotics Limited",
+   "vol_x": 3.27,
+   "buy_pct30": 0.3820475760973389,
+   "change": 0.09239127934824132,
+   "score": 6.57,
+   "news": [
+    "Wetour Robotics Launches Vantrapower to Expand into - GlobeNewswire"
+   ],
+   "on_t212": true
+  },
   {
    "ticker": "MNTS",
    "name": "Momentus Inc.",
@@ -35,10 +47,6 @@
    "vol_x": 14.71
   },
   {
-   "ticker": "CETX",
-   "vol_x": 7.31
-  },
-  {
    "ticker": "BCBP",
    "vol_x": 4.56
   },
@@ -49,10 +57,6 @@
   {
    "ticker": "GNRC",
    "vol_x": 2.48
-  },
-  {
-   "ticker": "AKAN",
-   "vol_x": 2.12
   },
   {
    "ticker": "ECOR",
@@ -75,16 +79,24 @@
    "vol_x": 0.87
   },
   {
-   "ticker": "BIAF",
-   "vol_x": 0.74
-  },
-  {
    "ticker": "SECZ",
    "vol_x": 0.73
   },
   {
    "ticker": "NRXS",
    "vol_x": 0.73
+  },
+  {
+   "ticker": "NBIS",
+   "vol_x": 0.71
+  },
+  {
+   "ticker": "SPCB",
+   "vol_x": 0.68
+  },
+  {
+   "ticker": "RGR",
+   "vol_x": 0.67
   }
  ],
  "trades": [],
@@ -93,8 +105,7 @@
   "15:50 Day trade summary: No trade today: nothing in play broke out."
  ],
  "log": [
-  "Added DRTS to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
-  "DRTS: Claude: no catalyst (strength 1/5): The only headline is an OTHER-sourced commentary piece on a wider-than-expected quarterly loss, which is negative sentiment and not an official company catalyst",
+  "Added DRVN to today's list at 10:48 New York: 1.1x normal volume in the last 30 min; news: Driven Brands gives green light on $100 million share buyback, talks Auto Glass ",
   "Day trading finished: 0 trade(s), total +\u00a30."
  ]
 }

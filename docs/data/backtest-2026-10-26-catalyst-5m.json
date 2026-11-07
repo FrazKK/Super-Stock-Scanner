@@ -1,6 +1,6 @@
 {
  "date": "2026-10-26",
- "generated": "2026-11-04T20:43+00:00",
+ "generated": "2026-11-07T16:33+00:00",
  "fx_gbpusd": 1.3377747535705566,
  "result": "done",
  "require_news": true,
@@ -8,29 +8,11 @@
  "bars": "5m",
  "require_trend": true,
  "added_during_day": [
-  "Added ORKA to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
-  "Added KFRC to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
-  "Added EAF to today's list at 10:16 New York: 0.2x normal volume in the last 30 min; no news found",
-  "Added FRMM to today's list at 10:16 New York: 0.4x normal volume in the last 30 min; no news found",
-  "Added HBT to today's list at 10:32 New York: 0.2x normal volume in the last 30 min; no news found",
   "Added BWMX to today's list at 10:32 New York: 0.7x normal volume in the last 30 min; no news found",
   "Added AGYS to today's list at 10:48 New York: 0.6x normal volume in the last 30 min; news: Agilysys Announces Record Revenue of $93.4M in Fiscal 2027 Second Quarter - Busi"
  ],
  "drift_list": [],
- "list": [
-  {
-   "ticker": "RBCAA",
-   "name": "Republic Bancorp, Inc.",
-   "vol_x": 0.55,
-   "buy_pct30": 0.06734245710807744,
-   "change": 0.0003274975960327886,
-   "score": -0.13,
-   "news": [
-    "Republic Bancorp Reports Solid Third Quarter Results Highlighted by Continued Strong Core Banking Net Interest Income Expansion - Business Wire"
-   ],
-   "on_t212": true
-  }
- ],
+ "list": [],
  "quiet": [
   {
    "ticker": "BRAI",
@@ -89,7 +71,7 @@
    "vol_x": 0.44
   },
   {
-   "ticker": "KPLT",
+   "ticker": "GEF.B",
    "vol_x": 0.4
   }
  ],
@@ -99,17 +81,10 @@
   "15:50 Day trade summary: No trade today: nothing in play broke out."
  ],
  "log": [
-  "Added ORKA to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
-  "Added KFRC to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
-  "Added EAF to today's list at 10:16 New York: 0.2x normal volume in the last 30 min; no news found",
-  "Added FRMM to today's list at 10:16 New York: 0.4x normal volume in the last 30 min; no news found",
-  "FRMM: Claude: no catalyst (strength 1/5): The only news is a $94.4M AI compute contract reported by TradingView and Stock Titan, both OTHER sources, with no OFFICIAL company announcement or release text",
-  "KFRC: Claude: no catalyst (strength 2/5): Only an OTHER-sourced Yahoo Finance headline on Q3 revenue rising and Q4 guidance is available, with no release text, so a beat or raise versus expectations can",
-  "Added HBT to today's list at 10:32 New York: 0.2x normal volume in the last 30 min; no news found",
   "Added BWMX to today's list at 10:32 New York: 0.7x normal volume in the last 30 min; no news found",
-  "BWMX: Claude: no catalyst (strength 1/5): No OFFICIAL headline in the last 48 hours; the only items are OTHER earnings commentary, and Zacks reports BWMX lagged Q3 estimates, which is negative sentiment",
+  "BWMX: Claude: no catalyst (strength 1/5): No OFFICIAL headline in the last 48 hours; the only recent earnings coverage is OTHER commentary, and Zacks reports Q3 lagging estimates, which is negative sent",
   "Added AGYS to today's list at 10:48 New York: 0.6x normal volume in the last 30 min; news: Agilysys Announces Record Revenue of $93.4M in Fiscal 2027 Second Quarter - Busi",
-  "AGYS: Claude: catalyst (strength 3/5): Official fiscal Q2 release reports record revenue of $93.4M, a clearly positive result, but without release text or consensus comparison it's unclear whether it",
+  "AGYS: Claude: catalyst (strength 3/5): Official release of record fiscal Q2 revenue ($93.4M) is a clear positive, but without release text I can't confirm a beat versus expectations or the profit tre",
   "Day trading finished: 0 trade(s), total +\u00a30."
  ]
 }

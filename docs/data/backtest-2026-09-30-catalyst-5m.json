@@ -1,15 +1,30 @@
 {
  "date": "2026-09-30",
- "generated": "2026-11-04T17:24+00:00",
+ "generated": "2026-11-07T16:19+00:00",
  "fx_gbpusd": 1.323276400566101,
  "result": "done",
  "require_news": true,
  "strategy": "catalyst",
  "bars": "5m",
  "require_trend": true,
- "added_during_day": [],
+ "added_during_day": [
+  "Added FDS to today's list at 10:32 New York: 0.4x normal volume in the last 30 min; no news found"
+ ],
  "drift_list": [],
- "list": [],
+ "list": [
+  {
+   "ticker": "MDB",
+   "name": "MongoDB, Inc.",
+   "vol_x": 0.54,
+   "buy_pct30": 0.619097419503657,
+   "change": 0.05892429407001987,
+   "score": 3.06,
+   "news": [
+    "MongoDB Launches MongoDB 9.0, the Best Version Ever Built, and Atlas Infinite for AI-Scale Demand - PR Newswire"
+   ],
+   "on_t212": true
+  }
+ ],
  "quiet": [
   {
    "ticker": "SOTK",
@@ -32,12 +47,20 @@
    "vol_x": 1.23
   },
   {
+   "ticker": "GRWG",
+   "vol_x": 0.93
+  },
+  {
    "ticker": "QSI",
    "vol_x": 0.87
   },
   {
    "ticker": "PMVP",
    "vol_x": 0.83
+  },
+  {
+   "ticker": "WETO",
+   "vol_x": 0.76
   },
   {
    "ticker": "LLYVA",
@@ -52,20 +75,12 @@
    "vol_x": 0.55
   },
   {
-   "ticker": "MDB",
-   "vol_x": 0.54
-  },
-  {
    "ticker": "CRVO",
    "vol_x": 0.52
   },
   {
    "ticker": "FUNC",
    "vol_x": 0.5
-  },
-  {
-   "ticker": "NRXP",
-   "vol_x": 0.49
   },
   {
    "ticker": "OPTX",
@@ -78,6 +93,7 @@
   "15:50 Day trade summary: No trade today: nothing in play broke out."
  ],
  "log": [
+  "Added FDS to today's list at 10:32 New York: 0.4x normal volume in the last 30 min; no news found",
   "Day trading finished: 0 trade(s), total +\u00a30."
  ]
 }

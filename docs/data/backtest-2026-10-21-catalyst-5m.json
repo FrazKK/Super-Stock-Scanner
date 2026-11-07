@@ -1,36 +1,16 @@
 {
  "date": "2026-10-21",
- "generated": "2026-11-04T20:47+00:00",
+ "generated": "2026-11-07T16:29+00:00",
  "fx_gbpusd": 1.337327480316162,
  "result": "done",
  "require_news": true,
  "strategy": "catalyst",
  "bars": "5m",
  "require_trend": true,
- "added_during_day": [
-  "Added MCB to today's list at 10:48 New York: 0.2x normal volume in the last 30 min; no news found",
-  "Added OVID to today's list at 10:48 New York: 0.3x normal volume in the last 30 min; no news found"
- ],
+ "added_during_day": [],
  "drift_list": [],
- "list": [
-  {
-   "ticker": "TSLA",
-   "name": "Tesla, Inc.",
-   "vol_x": 0.36,
-   "buy_pct30": 0.5493361493256851,
-   "change": 0.03716789747674465,
-   "score": 2.42,
-   "news": [
-    "Tesla Launches iPad and iPhone Duo App - Not a Tesla App"
-   ],
-   "on_t212": true
-  }
- ],
+ "list": [],
  "quiet": [
-  {
-   "ticker": "SPHL",
-   "vol_x": 65.9
-  },
   {
    "ticker": "POM",
    "vol_x": 46.27
@@ -56,6 +36,10 @@
    "vol_x": 0.73
   },
   {
+   "ticker": "MLR",
+   "vol_x": 0.71
+  },
+  {
    "ticker": "UIS",
    "vol_x": 0.7
   },
@@ -64,11 +48,11 @@
    "vol_x": 0.63
   },
   {
-   "ticker": "AMPG",
+   "ticker": "CPIX",
    "vol_x": 0.62
   },
   {
-   "ticker": "CPIX",
+   "ticker": "AMPG",
    "vol_x": 0.62
   },
   {
@@ -94,9 +78,6 @@
   "15:50 Day trade summary: No trade today: nothing in play broke out."
  ],
  "log": [
-  "Added MCB to today's list at 10:48 New York: 0.2x normal volume in the last 30 min; no news found",
-  "Added OVID to today's list at 10:48 New York: 0.3x normal volume in the last 30 min; no news found",
-  "OVID: Claude: no catalyst (strength 1/5): The only headline is OTHER commentary from a non-financial site about a narrower-than-expected Q2 loss, with no OFFICIAL company announcement or release text to",
   "Day trading finished: 0 trade(s), total +\u00a30."
  ]
 }

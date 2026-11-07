@@ -1,6 +1,6 @@
 {
  "date": "2026-10-30",
- "generated": "2026-11-04T20:46+00:00",
+ "generated": "2026-11-07T16:32+00:00",
  "fx_gbpusd": 1.3378641605377197,
  "result": "done",
  "require_news": true,
@@ -8,17 +8,8 @@
  "bars": "5m",
  "require_trend": true,
  "added_during_day": [
-  "Added EXC to today's list at 10:16 New York: 0.2x normal volume in the last 30 min; no news found",
   "Added ERIE to today's list at 10:16 New York: 0.4x normal volume in the last 30 min; no news found",
-  "Added CPRI to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
-  "Added RRBI to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
-  "Added OVBC to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
-  "Added CHDN to today's list at 10:32 New York: 0.3x normal volume in the last 30 min; no news found",
-  "Added CDNA to today's list at 10:32 New York: 0.2x normal volume in the last 30 min; no news found",
-  "Added DFIN to today's list at 10:32 New York: 0.3x normal volume in the last 30 min; no news found",
-  "Added FBIZ to today's list at 10:32 New York: 0.2x normal volume in the last 30 min; no news found",
-  "Added CZFS to today's list at 10:32 New York: 0.4x normal volume in the last 30 min; no news found",
-  "Added CVEO to today's list at 10:32 New York: 0.3x normal volume in the last 30 min; no news found"
+  "Added CZFS to today's list at 10:32 New York: 0.4x normal volume in the last 30 min; no news found"
  ],
  "drift_list": [],
  "list": [],
@@ -90,19 +81,9 @@
   "15:50 Day trade summary: No trade today: nothing in play broke out."
  ],
  "log": [
-  "Added EXC to today's list at 10:16 New York: 0.2x normal volume in the last 30 min; no news found",
   "Added ERIE to today's list at 10:16 New York: 0.4x normal volume in the last 30 min; no news found",
-  "Added CPRI to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
-  "Added RRBI to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
-  "Added OVBC to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
-  "ERIE: Claude: no catalyst (strength 2/5): The only official item is a Q3 2026 earnings release with no text to confirm a beat, and OTHER coverage points to a shrinking book and slowing premium growth, s",
-  "Added CHDN to today's list at 10:32 New York: 0.3x normal volume in the last 30 min; no news found",
-  "Added CDNA to today's list at 10:32 New York: 0.2x normal volume in the last 30 min; no news found",
-  "Added DFIN to today's list at 10:32 New York: 0.3x normal volume in the last 30 min; no news found",
-  "Added FBIZ to today's list at 10:32 New York: 0.2x normal volume in the last 30 min; no news found",
+  "ERIE: Claude: no catalyst (strength 2/5): The Q3 2026 earnings release is official, but without its text no clear beat or raised guidance can be confirmed, and the OTHER headlines point to slowing premi",
   "Added CZFS to today's list at 10:32 New York: 0.4x normal volume in the last 30 min; no news found",
-  "Added CVEO to today's list at 10:32 New York: 0.3x normal volume in the last 30 min; no news found",
-  "DFIN: Claude: no catalyst (strength 1/5): The earnings beat and analyst target raise appear only in OTHER and ANALYST headlines, with no OFFICIAL company release in the last 48 hours to qualify as a cat",
   "Day trading finished: 0 trade(s), total +\u00a30."
  ]
 }

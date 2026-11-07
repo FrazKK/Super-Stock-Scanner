@@ -1,6 +1,6 @@
 {
  "date": "2026-10-27",
- "generated": "2026-11-04T20:44+00:00",
+ "generated": "2026-11-07T16:32+00:00",
  "fx_gbpusd": 1.334507703781128,
  "result": "done",
  "require_news": true,
@@ -8,11 +8,6 @@
  "bars": "5m",
  "require_trend": true,
  "added_during_day": [
-  "Added KNSA to today's list at 10:16 New York: 0.2x normal volume in the last 30 min; no news found",
-  "Added WHR to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
-  "Added ESQ to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
-  "Added THFF to today's list at 10:16 New York: 0.5x normal volume in the last 30 min; no news found",
-  "Added CLYM to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
   "Added AVBH to today's list at 10:16 New York: 0.4x normal volume in the last 30 min; no news found",
   "Added ISBA to today's list at 10:16 New York: 0.5x normal volume in the last 30 min; no news found",
   "Added AEYE to today's list at 10:16 New York: 2.4x normal volume in the last 30 min; no news found"
@@ -32,26 +27,14 @@
    "on_t212": true
   },
   {
-   "ticker": "ESLT",
-   "name": "Elbit Systems Ltd.",
-   "vol_x": 0.25,
-   "buy_pct30": 0.5963662728865934,
-   "change": 0.005193040661780612,
-   "score": 1.39,
+   "ticker": "RCL",
+   "name": "Royal Caribbean Cruises Ltd.",
+   "vol_x": 1.35,
+   "buy_pct30": 0.5224551702324233,
+   "change": 0.06425516175022983,
+   "score": 3.29,
    "news": [
-    "Elbit Systems Awarded Approximately $200 Million in Contracts for Airborne ISTAR and Training Solutions in Asia-Pacific - PR Newswire"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "GDYN",
-   "name": "Grid Dynamics Holdings, Inc.",
-   "vol_x": 0.28,
-   "buy_pct30": 0.5518118062939672,
-   "change": 0.005807223313428089,
-   "score": 1.27,
-   "news": [
-    "Grid Dynamics Launches Business Process Consulting Practice to Bridge the Gap Between AI Investment and Business Results - Business Wire"
+    "ROYAL CARIBBEAN GROUP REPORTS THIRD QUARTER RESULTS ABOVE EXPECTATIONS AND RAISES FULL YEAR GUIDANCE - PR Newswire"
    ],
    "on_t212": true
   },
@@ -70,6 +53,10 @@
  ],
  "quiet": [
   {
+   "ticker": "ZNB",
+   "vol_x": 43.14
+  },
+  {
    "ticker": "BRAI",
    "vol_x": 12.91
   },
@@ -80,10 +67,6 @@
   {
    "ticker": "AEYE",
    "vol_x": 2.0
-  },
-  {
-   "ticker": "RCL",
-   "vol_x": 1.35
   },
   {
    "ticker": "POM",
@@ -106,10 +89,6 @@
    "vol_x": 0.68
   },
   {
-   "ticker": "TONX",
-   "vol_x": 0.64
-  },
-  {
    "ticker": "COOK",
    "vol_x": 0.61
   },
@@ -128,6 +107,10 @@
   {
    "ticker": "CLYM",
    "vol_x": 0.57
+  },
+  {
+   "ticker": "NVA",
+   "vol_x": 0.55
   }
  ],
  "trades": [
@@ -145,21 +128,16 @@
  ],
  "total_gbp": 1.167651096325244,
  "alerts": [
-  "10:26 Day trade: bought SOFI: 81 SOFI at $16.31 (about \u00a3992). Stop $15.50. Broke above its opening-range high ($16.28) at $16.30. In play: 1.1x normal volume, normally moves 4% a day. Stop $15.67. News (SoFi Investor Relations): SoFi Reports Third Quarter 2026 with Record Net Revenue of $1.4 Billion, Net Income of $24. Claude: catalyst (strength 4/5): Official Q3 2026 release reports record net revenue of $1.4B, net income of $241M and a raised full-year guidance, a beat-and-raise that the stock is already re",
+  "10:26 Day trade: bought SOFI: 81 SOFI at $16.31 (about \u00a3992). Stop $15.50. Broke above its opening-range high ($16.28) at $16.30. In play: 1.1x normal volume, normally moves 4% a day. Stop $15.67. News (SoFi Investor Relations): SoFi Reports Third Quarter 2026 with Record Net Revenue of $1.4 Billion, Net Income of $24. Claude: catalyst (strength 4/5): Official Q3 2026 release reports record $1.4B net revenue, $241M net income and raised full-year guidance, a strong beat on growth, though the company is mid-ca",
   "15:50 Day trade: sold SOFI (+\u00a31): End of day: sold 10 minutes before the close. Result +\u00a31 (+0.1%).",
   "15:50 Day trade summary: 1 trade(s) today: SOFI +\u00a31. Total +\u00a31."
  ],
  "log": [
-  "Added KNSA to today's list at 10:16 New York: 0.2x normal volume in the last 30 min; no news found",
-  "Added WHR to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
-  "Added ESQ to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
-  "Added THFF to today's list at 10:16 New York: 0.5x normal volume in the last 30 min; no news found",
-  "Added CLYM to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
   "Added AVBH to today's list at 10:16 New York: 0.4x normal volume in the last 30 min; no news found",
   "Added ISBA to today's list at 10:16 New York: 0.5x normal volume in the last 30 min; no news found",
   "Added AEYE to today's list at 10:16 New York: 2.4x normal volume in the last 30 min; no news found",
-  "SOFI: Claude: catalyst (strength 4/5): Official Q3 2026 release reports record net revenue of $1.4B, net income of $241M and a raised full-year guidance, a beat-and-raise that the stock is already re",
-  "Day trade buy order: 81 SOFI at about $16.30. Broke above its opening-range high ($16.28) at $16.30. In play: 1.1x normal volume, normally moves 4% a day. Stop $15.67. News (SoFi Investor Relations): SoFi Reports Third Quarter 2026 with Record Net Revenue of $1.4 Billion, Net Income of $24. Claude: catalyst (strength 4/5): Official Q3 2026 release reports record net revenue of $1.4B, net income of $241M and a raised full-year guidance, a beat-and-raise that the stock is already re",
+  "SOFI: Claude: catalyst (strength 4/5): Official Q3 2026 release reports record $1.4B net revenue, $241M net income and raised full-year guidance, a strong beat on growth, though the company is mid-ca",
+  "Day trade buy order: 81 SOFI at about $16.30. Broke above its opening-range high ($16.28) at $16.30. In play: 1.1x normal volume, normally moves 4% a day. Stop $15.67. News (SoFi Investor Relations): SoFi Reports Third Quarter 2026 with Record Net Revenue of $1.4 Billion, Net Income of $24. Claude: catalyst (strength 4/5): Official Q3 2026 release reports record $1.4B net revenue, $241M net income and raised full-year guidance, a strong beat on growth, though the company is mid-ca",
   "Bought 81 SOFI at 16.31 (cost \u00a3992).",
   "Sold SOFI (about +\u00a31). End of day: sold 10 minutes before the close.",
   "Day trading finished: 1 trade(s), total +\u00a31."

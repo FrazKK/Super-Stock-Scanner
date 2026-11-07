@@ -1,6 +1,6 @@
 {
  "date": "2026-10-02",
- "generated": "2026-11-04T17:23+00:00",
+ "generated": "2026-11-07T16:27+00:00",
  "fx_gbpusd": 1.3199577331542969,
  "result": "done",
  "require_news": true,
@@ -8,29 +8,11 @@
  "bars": "5m",
  "require_trend": true,
  "added_during_day": [
-  "Added CTVA to today's list at 10:32 New York: 0.2x normal volume in the last 30 min; no news found",
-  "Added VECO to today's list at 10:48 New York: 0.3x normal volume in the last 30 min; no news found"
+  "Added QTEX to today's list at 10:16 New York: 6.4x normal volume in the last 30 min; no news found"
  ],
  "drift_list": [],
- "list": [
-  {
-   "ticker": "TEVA",
-   "name": "Teva Pharmaceutical Industries Limited",
-   "vol_x": 0.23,
-   "buy_pct30": 0.4472998252360787,
-   "change": 0.001653488283853033,
-   "score": 0.75,
-   "news": [
-    "Samsung Bioepis and Teva Expand Strategic Partnership to Advance Up to Six Potential Biosimilar Candidates - Business Wire"
-   ],
-   "on_t212": true
-  }
- ],
+ "list": [],
  "quiet": [
-  {
-   "ticker": "CYCU",
-   "vol_x": 32.37
-  },
   {
    "ticker": "QTEX",
    "vol_x": 13.39
@@ -57,6 +39,10 @@
   },
   {
    "ticker": "ON",
+   "vol_x": 0.5
+  },
+  {
+   "ticker": "EXOD",
    "vol_x": 0.5
   },
   {
@@ -94,9 +80,7 @@
   "15:50 Day trade summary: No trade today: nothing in play broke out."
  ],
  "log": [
-  "Added CTVA to today's list at 10:32 New York: 0.2x normal volume in the last 30 min; no news found",
-  "CTVA: Claude: no catalyst (strength 1/5): The official headlines cover a corporate separation milestone, debt exchange offers and consent solicitations, which are financing or structural items rather th",
-  "Added VECO to today's list at 10:48 New York: 0.3x normal volume in the last 30 min; no news found",
+  "Added QTEX to today's list at 10:16 New York: 6.4x normal volume in the last 30 min; no news found",
   "Day trading finished: 0 trade(s), total +\u00a30."
  ]
 }

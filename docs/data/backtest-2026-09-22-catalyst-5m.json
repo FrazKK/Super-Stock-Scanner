@@ -1,6 +1,6 @@
 {
  "date": "2026-09-22",
- "generated": "2026-11-04T17:16+00:00",
+ "generated": "2026-11-07T16:21+00:00",
  "fx_gbpusd": 1.3370896577835083,
  "result": "done",
  "require_news": true,
@@ -25,18 +25,6 @@
    "on_t212": true
   },
   {
-   "ticker": "FSLY",
-   "name": "Fastly, Inc.",
-   "vol_x": 0.29,
-   "buy_pct30": 0.5366094924566518,
-   "change": 0.022611263220579714,
-   "score": 2.23,
-   "news": [
-    "Fastly Launches AI Firewall and AI Runtime Control to Secure and Scale AI - Business Wire"
-   ],
-   "on_t212": true
-  },
-  {
    "ticker": "CUE",
    "name": "Cue Biopharma, Inc.",
    "vol_x": 0.51,
@@ -53,10 +41,6 @@
   {
    "ticker": "SPRO",
    "vol_x": 7.41
-  },
-  {
-   "ticker": "AKAN",
-   "vol_x": 2.37
   },
   {
    "ticker": "COOK",
@@ -103,12 +87,16 @@
    "vol_x": 0.7
   },
   {
+   "ticker": "TAOX",
+   "vol_x": 0.7
+  },
+  {
    "ticker": "SHOP",
    "vol_x": 0.64
   },
   {
-   "ticker": "SUIG",
-   "vol_x": 0.6
+   "ticker": "VLN",
+   "vol_x": 0.59
   }
  ],
  "trades": [],
@@ -118,7 +106,7 @@
  ],
  "log": [
   "Added TARA to today's list at 10:32 New York: 0.8x normal volume in the last 30 min; no news found",
-  "TARA: Claude: no catalyst (strength 1/5): Only OTHER headlines are present: a cash-burn commentary piece and a report of a wider-than-expected Q2 loss with a pullback, with no official company announcem",
+  "TARA: Claude: no catalyst (strength 1/5): Only OTHER headlines are present, with no official company announcement in the last 48 hours; the sentiment is negative (cash burn concerns, wider-than-expected",
   "Day trading finished: 0 trade(s), total +\u00a30."
  ]
 }

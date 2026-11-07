@@ -1,0 +1,161 @@
+{
+ "date": "2026-11-04",
+ "generated": "2026-11-07T16:35+00:00",
+ "fx_gbpusd": 1.343418002128601,
+ "result": "done",
+ "require_news": true,
+ "strategy": "catalyst",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [
+  "Added XYZ to today's list at 10:16 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Added NYT to today's list at 10:16 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Added BRKR to today's list at 10:16 New York: 0.5x normal volume in the last 30 min; no news found",
+  "Added KD to today's list at 10:16 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Added VRDN to today's list at 10:16 New York: 0.5x normal volume in the last 30 min; no news found",
+  "Added UFPT to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
+  "Added LMB to today's list at 10:16 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Added OPRT to today's list at 10:16 New York: 0.5x normal volume in the last 30 min; no news found",
+  "Added TREE to today's list at 10:16 New York: 0.5x normal volume in the last 30 min; no news found",
+  "Added ADV to today's list at 10:16 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Added ALIT to today's list at 10:16 New York: 1.1x normal volume in the last 30 min; no news found",
+  "Added ANGI to today's list at 10:16 New York: 0.6x normal volume in the last 30 min; no news found",
+  "Added RXST to today's list at 10:16 New York: 0.5x normal volume in the last 30 min; no news found",
+  "Added STIM to today's list at 10:16 New York: 0.6x normal volume in the last 30 min; no news found",
+  "Added FTCI to today's list at 10:16 New York: 48.0x normal volume in the last 30 min; no news found",
+  "Added SWK to today's list at 10:32 New York: 0.3x normal volume in the last 30 min; no news found",
+  "Added YOU to today's list at 10:32 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Added RIOT to today's list at 10:32 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Added TPC to today's list at 10:32 New York: 0.3x normal volume in the last 30 min; no news found",
+  "Added RNW to today's list at 10:32 New York: 0.8x normal volume in the last 30 min; no news found",
+  "Added CRCT to today's list at 10:32 New York: 1.5x normal volume in the last 30 min; no news found",
+  "Added RVLV to today's list at 10:32 New York: 0.8x normal volume in the last 30 min; no news found",
+  "Added RSVR to today's list at 10:32 New York: 0.7x normal volume in the last 30 min; no news found",
+  "Added SGHT to today's list at 10:32 New York: 0.3x normal volume in the last 30 min; no news found",
+  "Added RYTM to today's list at 10:48 New York: 0.4x normal volume in the last 30 min; news: Rhythm Pharmaceuticals and LG Chem Enter into Amendment to Bivamelagon Exclusive",
+  "Added ARX to today's list at 10:48 New York: 0.5x normal volume in the last 30 min; no news found",
+  "Added SHLS to today's list at 10:48 New York: 0.7x normal volume in the last 30 min; no news found",
+  "Added SAFT to today's list at 10:48 New York: 0.5x normal volume in the last 30 min; no news found",
+  "Added ARRY to today's list at 10:48 New York: 0.5x normal volume in the last 30 min; no news found",
+  "Added WEYS to today's list at 10:48 New York: 0.7x normal volume in the last 30 min; no news found",
+  "Added SMRT to today's list at 10:48 New York: 0.4x normal volume in the last 30 min; no news found"
+ ],
+ "drift_list": [],
+ "list": [
+  {
+   "ticker": "FLOC",
+   "name": "Flowco Holdings Inc.",
+   "vol_x": 0.46,
+   "buy_pct30": 0.24002574543874916,
+   "change": 0.043354053714937724,
+   "score": 0.38,
+   "news": [
+    "Flowco Holdings Inc. Announces Expansion of Share Repurchase Program - Business Wire"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "FTCI",
+   "vol_x": 267.31
+  },
+  {
+   "ticker": "OMH",
+   "vol_x": 123.98
+  },
+  {
+   "ticker": "ALIT",
+   "vol_x": 5.23
+  },
+  {
+   "ticker": "SMRT",
+   "vol_x": 2.8
+  },
+  {
+   "ticker": "HYFT",
+   "vol_x": 2.77
+  },
+  {
+   "ticker": "ARRY",
+   "vol_x": 2.66
+  },
+  {
+   "ticker": "WORX",
+   "vol_x": 2.07
+  },
+  {
+   "ticker": "CRCT",
+   "vol_x": 1.94
+  },
+  {
+   "ticker": "ASTI",
+   "vol_x": 1.66
+  },
+  {
+   "ticker": "TREE",
+   "vol_x": 1.61
+  },
+  {
+   "ticker": "STIM",
+   "vol_x": 1.57
+  },
+  {
+   "ticker": "RIOT",
+   "vol_x": 1.48
+  },
+  {
+   "ticker": "CPSH",
+   "vol_x": 1.39
+  },
+  {
+   "ticker": "CSIQ",
+   "vol_x": 1.32
+  },
+  {
+   "ticker": "FSLR",
+   "vol_x": 1.31
+  }
+ ],
+ "trades": [],
+ "total_gbp": 0,
+ "alerts": [
+  "15:50 Day trade summary: No trade today: nothing in play broke out."
+ ],
+ "log": [
+  "Added XYZ to today's list at 10:16 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Added NYT to today's list at 10:16 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Added BRKR to today's list at 10:16 New York: 0.5x normal volume in the last 30 min; no news found",
+  "Added KD to today's list at 10:16 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Added VRDN to today's list at 10:16 New York: 0.5x normal volume in the last 30 min; no news found",
+  "Added UFPT to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
+  "Added LMB to today's list at 10:16 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Added OPRT to today's list at 10:16 New York: 0.5x normal volume in the last 30 min; no news found",
+  "Added TREE to today's list at 10:16 New York: 0.5x normal volume in the last 30 min; no news found",
+  "Added ADV to today's list at 10:16 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Added ALIT to today's list at 10:16 New York: 1.1x normal volume in the last 30 min; no news found",
+  "Added ANGI to today's list at 10:16 New York: 0.6x normal volume in the last 30 min; no news found",
+  "Added RXST to today's list at 10:16 New York: 0.5x normal volume in the last 30 min; no news found",
+  "Added STIM to today's list at 10:16 New York: 0.6x normal volume in the last 30 min; no news found",
+  "Added FTCI to today's list at 10:16 New York: 48.0x normal volume in the last 30 min; no news found",
+  "Added SWK to today's list at 10:32 New York: 0.3x normal volume in the last 30 min; no news found",
+  "Added YOU to today's list at 10:32 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Added RIOT to today's list at 10:32 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Added TPC to today's list at 10:32 New York: 0.3x normal volume in the last 30 min; no news found",
+  "Added RNW to today's list at 10:32 New York: 0.8x normal volume in the last 30 min; no news found",
+  "Added CRCT to today's list at 10:32 New York: 1.5x normal volume in the last 30 min; no news found",
+  "Added RVLV to today's list at 10:32 New York: 0.8x normal volume in the last 30 min; no news found",
+  "Added RSVR to today's list at 10:32 New York: 0.7x normal volume in the last 30 min; no news found",
+  "Added SGHT to today's list at 10:32 New York: 0.3x normal volume in the last 30 min; no news found",
+  "RVLV: Claude: no catalyst (strength 2/5): Q3 sales grew 20% and active customers 18%, but net income fell 27%, adjusted EBITDA fell 7%, free cash flow was negative, and the data-breach report is negativ",
+  "RNW: Claude: no catalyst (strength 1/5): No OFFICIAL headline in the last 48 hours; the only earnings-related items are third-party OTHER commentary on a Q2 call, so there is no verifiable company cata",
+  "Added RYTM to today's list at 10:48 New York: 0.4x normal volume in the last 30 min; news: Rhythm Pharmaceuticals and LG Chem Enter into Amendment to Bivamelagon Exclusive",
+  "Added ARX to today's list at 10:48 New York: 0.5x normal volume in the last 30 min; no news found",
+  "Added SHLS to today's list at 10:48 New York: 0.7x normal volume in the last 30 min; no news found",
+  "Added SAFT to today's list at 10:48 New York: 0.5x normal volume in the last 30 min; no news found",
+  "Added ARRY to today's list at 10:48 New York: 0.5x normal volume in the last 30 min; no news found",
+  "Added WEYS to today's list at 10:48 New York: 0.7x normal volume in the last 30 min; no news found",
+  "Added SMRT to today's list at 10:48 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Day trading finished: 0 trade(s), total +\u00a30."
+ ]
+}

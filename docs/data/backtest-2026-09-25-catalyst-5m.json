@@ -1,6 +1,6 @@
 {
  "date": "2026-09-25",
- "generated": "2026-11-04T17:15+00:00",
+ "generated": "2026-11-07T16:23+00:00",
  "fx_gbpusd": 1.3210737705230713,
  "result": "done",
  "require_news": true,
@@ -14,7 +14,7 @@
    "ticker": "DGNX",
    "name": "Diginex Limited",
    "vol_x": 0.75,
-   "buy_pct30": 0.7558359167178005,
+   "buy_pct30": 0.7558375231195247,
    "change": 0.017857126131349377,
    "score": 4.02,
    "news": [
@@ -37,12 +37,20 @@
    "vol_x": 2.09
   },
   {
+   "ticker": "IFBD",
+   "vol_x": 1.87
+  },
+  {
    "ticker": "IPST",
    "vol_x": 1.87
   },
   {
    "ticker": "STEM",
    "vol_x": 0.99
+  },
+  {
+   "ticker": "BARK",
+   "vol_x": 0.79
   },
   {
    "ticker": "AESI",
@@ -69,19 +77,11 @@
    "vol_x": 0.51
   },
   {
-   "ticker": "SUIG",
-   "vol_x": 0.47
-  },
-  {
    "ticker": "DDOG",
    "vol_x": 0.44
   },
   {
    "ticker": "PGEN",
-   "vol_x": 0.41
-  },
-  {
-   "ticker": "DGXX",
    "vol_x": 0.41
   }
  ],

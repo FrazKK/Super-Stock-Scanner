@@ -1,6 +1,6 @@
 {
  "date": "2026-10-14",
- "generated": "2026-11-04T17:25+00:00",
+ "generated": "2026-11-07T16:27+00:00",
  "fx_gbpusd": 1.3257324695587158,
  "result": "done",
  "require_news": true,
@@ -8,8 +8,7 @@
  "bars": "5m",
  "require_trend": true,
  "added_during_day": [
-  "Added MXCT to today's list at 10:32 New York: 3.8x normal volume in the last 30 min; no news found",
-  "Added DFNS to today's list at 10:48 New York: 0.2x normal volume in the last 30 min; news: T3 Defense Subsidiary Positech Commences Deliveries On $3.9 Million Defense Orde"
+  "Added MXCT to today's list at 10:32 New York: 3.8x normal volume in the last 30 min; no news found"
  ],
  "drift_list": [],
  "list": [],
@@ -31,12 +30,12 @@
    "vol_x": 1.5
   },
   {
-   "ticker": "GEF.B",
-   "vol_x": 0.85
+   "ticker": "NCPL",
+   "vol_x": 1.32
   },
   {
-   "ticker": "CANG",
-   "vol_x": 0.62
+   "ticker": "GEF.B",
+   "vol_x": 0.85
   },
   {
    "ticker": "ENVX",
@@ -82,8 +81,6 @@
  ],
  "log": [
   "Added MXCT to today's list at 10:32 New York: 3.8x normal volume in the last 30 min; no news found",
-  "Added DFNS to today's list at 10:48 New York: 0.2x normal volume in the last 30 min; news: T3 Defense Subsidiary Positech Commences Deliveries On $3.9 Million Defense Orde",
-  "DFNS: Claude: catalyst (strength 3/5): An official release reports a firm $3.9M defense order with deliveries starting, a contract that could matter for a small-cap, though the order size relative to",
   "Day trading finished: 0 trade(s), total +\u00a30."
  ]
 }

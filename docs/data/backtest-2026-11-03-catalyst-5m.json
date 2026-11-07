@@ -1,6 +1,6 @@
 {
  "date": "2026-11-03",
- "generated": "2026-11-04T20:47+00:00",
+ "generated": "2026-11-07T16:34+00:00",
  "fx_gbpusd": 1.340985894203186,
  "result": "done",
  "require_news": true,
@@ -8,39 +8,15 @@
  "bars": "5m",
  "require_trend": true,
  "added_during_day": [
-  "Added WAT to today's list at 10:16 New York: 0.2x normal volume in the last 30 min; no news found",
-  "Added DD to today's list at 10:16 New York: 0.2x normal volume in the last 30 min; no news found",
-  "Added EQH to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
   "Added RRX to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
-  "Added BETA to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
   "Added IBTA to today's list at 10:16 New York: 0.5x normal volume in the last 30 min; no news found",
-  "Added UPWK to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
-  "Added EBS to today's list at 10:16 New York: 0.2x normal volume in the last 30 min; no news found",
   "Added CVGI to today's list at 10:16 New York: 0.4x normal volume in the last 30 min; no news found",
-  "Added TEVA to today's list at 10:32 New York: 0.2x normal volume in the last 30 min; no news found",
   "Added TLN to today's list at 10:32 New York: 0.4x normal volume in the last 30 min; no news found",
-  "Added SIBN to today's list at 10:32 New York: 0.3x normal volume in the last 30 min; no news found",
-  "Added BLZE to today's list at 10:32 New York: 0.3x normal volume in the last 30 min; no news found",
-  "Added SOC to today's list at 10:32 New York: 0.4x normal volume in the last 30 min; no news found",
-  "Added CCJ to today's list at 10:48 New York: 0.3x normal volume in the last 30 min; no news found",
-  "Added MDGL to today's list at 10:48 New York: 0.3x normal volume in the last 30 min; no news found",
-  "Added TPC to today's list at 10:48 New York: 0.3x normal volume in the last 30 min; no news found"
+  "Added UPWK to today's list at 10:32 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Added SOC to today's list at 10:32 New York: 0.4x normal volume in the last 30 min; no news found"
  ],
  "drift_list": [],
  "list": [
-  {
-   "ticker": "XMAX",
-   "name": "XMAX, Inc.",
-   "vol_x": 0.42,
-   "buy_pct30": 0.7451565919178522,
-   "change": 0.10496255461033721,
-   "score": 3.82,
-   "news": [
-    "XMax Announces $30 Million Share Repurchase Program XMax Inc. (NASDAQ: XMAX) (\"XMax\" or the \"Company\"), a distributor of contemporary furniture and artificial intelligence software and platform-based...",
-    "XMax Announces $30 Million Share Repurchase Program - GlobeNewswire"
-   ],
-   "on_t212": true
-  },
   {
    "ticker": "NBIX",
    "name": "Neurocrine Biosciences, Inc.",
@@ -50,18 +26,6 @@
    "score": 3.14,
    "news": [
     "Neurocrine Biosciences Launches Interactive Educational Resources to Support Clinical Learning in Classic Congenital Adrenal Hyperplasia - PR Newswire"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "PTCT",
-   "name": "PTC Therapeutics, Inc.",
-   "vol_x": 0.36,
-   "buy_pct30": 0.704787305793346,
-   "change": 0.07670830981782628,
-   "score": 3.04,
-   "news": [
-    "PTC Therapeutics Board of Directors Authorizes $500 Million Share Repurchase Program PTC Therapeutics, Inc., (NASDAQ: PTCT) today announced that its Board of Directors has authorized a share repurchase program under which PTC may..."
    ],
    "on_t212": true
   }
@@ -134,27 +98,16 @@
   "15:50 Day trade summary: No trade today: nothing in play broke out."
  ],
  "log": [
-  "Added WAT to today's list at 10:16 New York: 0.2x normal volume in the last 30 min; no news found",
-  "Added DD to today's list at 10:16 New York: 0.2x normal volume in the last 30 min; no news found",
-  "Added EQH to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
   "Added RRX to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
-  "Added BETA to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
   "Added IBTA to today's list at 10:16 New York: 0.5x normal volume in the last 30 min; no news found",
-  "Added UPWK to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
-  "Added EBS to today's list at 10:16 New York: 0.2x normal volume in the last 30 min; no news found",
   "Added CVGI to today's list at 10:16 New York: 0.4x normal volume in the last 30 min; no news found",
-  "PTCT: Claude: catalyst (strength 3/5): An official $500M buyback authorization is large relative to PTCT's market cap and is a clearly positive signal, though it is not an earnings beat or clinical e",
-  "RRX: Claude: catalyst (strength 3/5): (reply cut short)",
-  "Added TEVA to today's list at 10:32 New York: 0.2x normal volume in the last 30 min; no news found",
+  "RRX: Claude: no catalyst (strength 2/5): The only earnings headline from the company is tagged OTHER and no release text was readable, so a beat or raised guidance cannot be confirmed; the 11.8% surge ",
   "Added TLN to today's list at 10:32 New York: 0.4x normal volume in the last 30 min; no news found",
-  "Added SIBN to today's list at 10:32 New York: 0.3x normal volume in the last 30 min; no news found",
-  "Added BLZE to today's list at 10:32 New York: 0.3x normal volume in the last 30 min; no news found",
+  "Added UPWK to today's list at 10:32 New York: 0.4x normal volume in the last 30 min; no news found",
   "Added SOC to today's list at 10:32 New York: 0.4x normal volume in the last 30 min; no news found",
-  "TLN: Claude: no catalyst (strength 2/5): The official Q3 release reaffirms 2026 guidance and introduces 2027 guidance, which reads as in line rather than clearly ahead of expectations, and the ~8% move",
-  "SOC: Claude: no catalyst (strength 1/5): All headlines are OTHER commentary, earnings-date previews, short-interest data or a legal/PR campaign item; no official company announcement of a qualifying ca",
-  "Added CCJ to today's list at 10:48 New York: 0.3x normal volume in the last 30 min; no news found",
-  "Added MDGL to today's list at 10:48 New York: 0.3x normal volume in the last 30 min; no news found",
-  "Added TPC to today's list at 10:48 New York: 0.3x normal volume in the last 30 min; no news found",
+  "TLN: Claude: no catalyst (strength 2/5): The official Q3 release only reaffirms 2026 guidance and introduces 2027 guidance without a clear beat, and OTHER headlines say Q3 earnings fell, so the news is",
+  "SOC: Claude: no catalyst (strength 1/5): All headlines are OTHER (earnings previews, short-interest data, a legal/political attack story) with no official company announcement in the last 48 hours, so ",
+  "UPWK: Claude: no catalyst (strength 2/5): The only OFFICIAL item is the Upwork Now product launch, which is a generic launch with no stated revenue impact; the Q3 earnings beat and raised guidance appea",
   "Day trading finished: 0 trade(s), total +\u00a30."
  ]
 }

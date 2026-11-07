@@ -1,6 +1,6 @@
 {
  "date": "2026-09-15",
- "generated": "2026-11-04T17:17+00:00",
+ "generated": "2026-11-07T16:21+00:00",
  "fx_gbpusd": 1.3500925302505493,
  "result": "done",
  "require_news": true,
@@ -16,10 +16,6 @@
   {
    "ticker": "VRA",
    "vol_x": 37.07
-  },
-  {
-   "ticker": "CANG",
-   "vol_x": 5.38
   },
   {
    "ticker": "RLGT",
@@ -72,6 +68,10 @@
   {
    "ticker": "PTLE",
    "vol_x": 0.49
+  },
+  {
+   "ticker": "ECO",
+   "vol_x": 0.48
   }
  ],
  "trades": [],

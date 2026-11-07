@@ -1,34 +1,19 @@
 {
  "date": "2026-10-13",
- "generated": "2026-11-04T17:23+00:00",
+ "generated": "2026-11-07T16:28+00:00",
  "fx_gbpusd": 1.3209795951843262,
  "result": "done",
  "require_news": true,
  "strategy": "catalyst",
  "bars": "5m",
  "require_trend": true,
- "added_during_day": [
-  "Added GOSS to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found"
- ],
+ "added_during_day": [],
  "drift_list": [],
- "list": [
-  {
-   "ticker": "MSFT",
-   "name": "Microsoft Corporation",
-   "vol_x": 0.26,
-   "buy_pct30": 0.5361435604380828,
-   "change": 0.016113776789655754,
-   "score": 3.16,
-   "news": [
-    "Microsoft Azure Enclave: Secure collaboration for sensitive workloads | The Microsoft Cloud Blog - Microsoft"
-   ],
-   "on_t212": true
-  }
- ],
+ "list": [],
  "quiet": [
   {
-   "ticker": "PFAI",
-   "vol_x": 6.85
+   "ticker": "JBDI",
+   "vol_x": 1265.42
   },
   {
    "ticker": "BKYI",
@@ -40,6 +25,10 @@
   },
   {
    "ticker": "BBAI",
+   "vol_x": 0.82
+  },
+  {
+   "ticker": "PAMT",
    "vol_x": 0.82
   },
   {
@@ -81,10 +70,6 @@
   {
    "ticker": "JRSH",
    "vol_x": 0.48
-  },
-  {
-   "ticker": "MPTI",
-   "vol_x": 0.46
   }
  ],
  "trades": [],
@@ -93,8 +78,6 @@
   "15:50 Day trade summary: No trade today: nothing in play broke out."
  ],
  "log": [
-  "Added GOSS to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
-  "GOSS: Claude: no catalyst (strength 1/5): The only headline is an OTHER auto-generated earnings recap from a dubious domain, with no OFFICIAL company announcement in the last 48 hours, and it reports sh",
   "Day trading finished: 0 trade(s), total +\u00a30."
  ]
 }

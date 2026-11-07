@@ -1,6 +1,6 @@
 {
  "date": "2026-10-15",
- "generated": "2026-11-04T17:27+00:00",
+ "generated": "2026-11-07T16:28+00:00",
  "fx_gbpusd": 1.3230137825012207,
  "result": "done",
  "require_news": true,
@@ -9,38 +9,11 @@
  "require_trend": true,
  "added_during_day": [
   "Added INDP to today's list at 10:16 New York: 0.5x normal volume in the last 30 min; no news found",
-  "Added ACFN to today's list at 10:16 New York: 0.6x normal volume in the last 30 min; no news found",
-  "Added NFGC to today's list at 10:32 New York: 0.4x normal volume in the last 30 min; no news found",
-  "Added BHRB to today's list at 10:48 New York: 0.2x normal volume in the last 30 min; no news found",
-  "Added AMTB to today's list at 10:48 New York: 0.2x normal volume in the last 30 min; no news found"
+  "Added ACFN to today's list at 10:16 New York: 0.5x normal volume in the last 30 min; no news found",
+  "Added NFGC to today's list at 10:32 New York: 0.4x normal volume in the last 30 min; no news found"
  ],
  "drift_list": [],
- "list": [
-  {
-   "ticker": "ADBE",
-   "name": "Adobe Inc.",
-   "vol_x": 0.22,
-   "buy_pct30": 0.7108828229487077,
-   "change": 0.0464725492677327,
-   "score": 2.78,
-   "news": [
-    "Adobe and NVIDIA Expand Collaboration to Speed Agentic Creation - Adobe Newsroom"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "AZN",
-   "name": "AstraZeneca PLC",
-   "vol_x": 0.29,
-   "buy_pct30": 0.6288598631783795,
-   "change": 0.04320187652124097,
-   "score": 2.6,
-   "news": [
-    "AstraZeneca announces new strategic collaboration with insitro to use advanced AI systems to develop transformative therapeutics for difficult to treat cardiometabolic diseases - AstraZeneca"
-   ],
-   "on_t212": true
-  }
- ],
+ "list": [],
  "quiet": [
   {
    "ticker": "OPK",
@@ -63,8 +36,8 @@
    "vol_x": 1.23
   },
   {
-   "ticker": "CANG",
-   "vol_x": 0.89
+   "ticker": "JBDI",
+   "vol_x": 0.87
   },
   {
    "ticker": "BRBR",
@@ -110,15 +83,10 @@
  ],
  "log": [
   "Added INDP to today's list at 10:16 New York: 0.5x normal volume in the last 30 min; no news found",
-  "Added ACFN to today's list at 10:16 New York: 0.6x normal volume in the last 30 min; no news found",
-  "ACFN: Claude: no catalyst (strength 1/5): The only headline is an OTHER-sourced auto-generated earnings item with no consensus comparison and no official company announcement or release text, so there i",
-  "ADBE: Claude: no catalyst (strength 1/5): Adobe is a mega cap, and an expanded NVIDIA collaboration on agentic creation is a product-partnership headline with no disclosed money, contract value or reven",
+  "Added ACFN to today's list at 10:16 New York: 0.5x normal volume in the last 30 min; no news found",
+  "ACFN: Claude: no catalyst (strength 1/5): The only headline is an OTHER market-commentary item about old Q4 2025 earnings with no official company announcement or new price-moving news in the last 48 ho",
   "Added NFGC to today's list at 10:32 New York: 0.4x normal volume in the last 30 min; no news found",
-  "NFGC: Claude: no catalyst (strength 1/5): All headlines are labeled OTHER (commentary on the Q3 production results), with no OFFICIAL company announcement in the set and no release text to judge, so no ",
-  "Added BHRB to today's list at 10:48 New York: 0.2x normal volume in the last 30 min; no news found",
-  "Added AMTB to today's list at 10:48 New York: 0.2x normal volume in the last 30 min; no news found",
-  "BHRB: Claude: no catalyst (strength 1/5): The only headline is an OTHER-category MarketBeat preview of expected quarterly earnings, with no official company announcement or results in the last 48 hours.",
-  "AMTB: Claude: no catalyst (strength 1/5): Only OTHER earnings-preview headlines appear with no OFFICIAL company announcement in the last 48 hours, so there is no specific price-moving catalyst.",
+  "NFGC: Claude: no catalyst (strength 2/5): All headlines are labelled OTHER, so no OFFICIAL company announcement is present; the coverage describes a positive first-commercial-production milestone (4,863",
   "Day trading finished: 0 trade(s), total +\u00a30."
  ]
 }

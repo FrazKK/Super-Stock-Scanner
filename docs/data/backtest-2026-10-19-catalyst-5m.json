@@ -1,29 +1,15 @@
 {
  "date": "2026-10-19",
- "generated": "2026-11-04T17:28+00:00",
+ "generated": "2026-11-07T16:27+00:00",
  "fx_gbpusd": 1.3335645198822021,
  "result": "done",
  "require_news": true,
  "strategy": "catalyst",
  "bars": "5m",
  "require_trend": true,
- "added_during_day": [
-  "Added ESEA to today's list at 10:48 New York: 0.3x normal volume in the last 30 min; news: Euroseas Ltd. Announces a New Time Charter Contract for its - GlobeNewswire"
- ],
+ "added_during_day": [],
  "drift_list": [],
  "list": [
-  {
-   "ticker": "XE",
-   "name": "X-Energy, Inc.",
-   "vol_x": 0.28,
-   "buy_pct30": 0.38632446482190297,
-   "change": 0.020270274624152318,
-   "score": 0.61,
-   "news": [
-    "X-energy, AEP & Amazon Partner on Indiana SMR Project - X-energy"
-   ],
-   "on_t212": true
-  },
   {
    "ticker": "DRTS",
    "name": "Alpha Tau Medical Ltd.",
@@ -105,8 +91,6 @@
   "15:50 Day trade summary: No trade today: nothing in play broke out."
  ],
  "log": [
-  "Added ESEA to today's list at 10:48 New York: 0.3x normal volume in the last 30 min; news: Euroseas Ltd. Announces a New Time Charter Contract for its - GlobeNewswire",
-  "ESEA: Claude: no catalyst (strength 2/5): The official release announces a time charter for a 2001-built feeder and the sale of a sister vessel for about $26M, but the headlines give no charter rate or ",
   "Day trading finished: 0 trade(s), total +\u00a30."
  ]
 }

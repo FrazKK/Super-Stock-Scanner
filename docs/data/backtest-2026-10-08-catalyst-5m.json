@@ -1,6 +1,6 @@
 {
  "date": "2026-10-08",
- "generated": "2026-11-04T17:23+00:00",
+ "generated": "2026-11-07T16:26+00:00",
  "fx_gbpusd": 1.3214927911758423,
  "result": "done",
  "require_news": true,
@@ -13,30 +13,6 @@
  ],
  "drift_list": [],
  "list": [
-  {
-   "ticker": "FRO",
-   "name": "Frontline Plc",
-   "vol_x": 0.28,
-   "buy_pct30": 0.6326186774778484,
-   "change": 0.04636258991336839,
-   "score": 2.59,
-   "news": [
-    "Frontline Managed Services Acquires KL Software Technologies, Launches Intelligent Applications Business for Law Firms - PR Newswire"
-   ],
-   "on_t212": true
-  },
-  {
-   "ticker": "NOW",
-   "name": "ServiceNow, Inc.",
-   "vol_x": 0.24,
-   "buy_pct30": 0.6616739792820635,
-   "change": 0.01269311715368171,
-   "score": 1.63,
-   "news": [
-    "ServiceNow launches AI Workflow Factory to turn workflow improvement into a continuous, agentic AI-powered loop - ServiceNow Newsroom"
-   ],
-   "on_t212": true
-  },
   {
    "ticker": "SECZ",
    "name": "Securitize Corp.",
@@ -51,6 +27,10 @@
   }
  ],
  "quiet": [
+  {
+   "ticker": "FLYE",
+   "vol_x": 5106.75
+  },
   {
    "ticker": "PROF",
    "vol_x": 6.98
@@ -106,23 +86,37 @@
   {
    "ticker": "PTHS",
    "vol_x": 0.51
-  },
-  {
-   "ticker": "GAU",
-   "vol_x": 0.5
   }
  ],
- "trades": [],
- "total_gbp": 0,
+ "trades": [
+  {
+   "ticker": "IMC",
+   "bought_at": "2026-10-08T14:32+00:00",
+   "sold_at": "2026-10-08T14:46+00:00",
+   "entry": 7.097090152740478,
+   "exit": 7.13286,
+   "cost_gbp": 1000.4132185889681,
+   "pl_gbp": 2.030306571153801,
+   "pl_pct": 0.002029467957268143,
+   "reason": "Stop-loss order filled"
+  }
+ ],
+ "total_gbp": 2.030306571153801,
  "alerts": [
-  "15:50 Day trade summary: No trade today: nothing in play broke out."
+  "10:32 Day trade: bought IMC: 186 IMC at $7.10 (about \u00a31,000). Stop $6.74. Broke above its opening-range high ($7.02) at $7.09. In play: 3.2x normal volume, normally moves 13% a day. Stop $6.90. News (PR Newswire): IMC Rare Earths Discovers New High-Grade, Near-Surface Terbium Zone Beyond Existing 1.1 Bi. Claude: catalyst (strength 4/5): An official announcement of a new high-grade, near-surface terbium zone beyond the existing 1.1 billion tonne resource is a material exploration result for a sm",
+  "10:46 Day trade update: IMC: stop-loss order filled (+\u00a32)",
+  "15:50 Day trade summary: 1 trade(s) today: IMC +\u00a32. Total +\u00a32."
  ],
  "log": [
   "Added BYRN to today's list at 10:16 New York: 0.4x normal volume in the last 30 min; no news found",
-  "BYRN: Claude: no catalyst (strength 2/5): The only OFFICIAL item is a fiscal Q3 earnings release headline with no visible text, so a beat, raised guidance or other specific positive cannot be confirmed.",
-  "SECZ: Claude: catalyst (strength 3/5): An official launch of onchain trading of US stocks is a product that could matter to revenue, but the headline gives no size, volume or financial figures, and t",
+  "BYRN: Claude: no catalyst (strength 2/5): Only the fiscal Q3 2026 results headline is available with no release text, so there is no evidence the results beat expectations or prior periods by a clear ma",
+  "SECZ: Claude: catalyst (strength 3/5): Official launch of onchain trading of US stocks is a meaningful product launch that could drive revenue, but with headlines only, no release text, and an unquan",
   "Added IMC to today's list at 10:32 New York: 3.2x normal volume in the last 30 min; news: IMC Rare Earths Discovers New High-Grade, Near-Surface Terbium Zone Beyond Exist",
-  "IMC: Claude: catalyst (strength 3/5): An official release reports a new high-grade, near-surface terbium zone beyond the existing 1.1 Bt resource, a meaningful mining discovery, but the headline giv",
-  "Day trading finished: 0 trade(s), total +\u00a30."
+  "IMC: Claude: catalyst (strength 4/5): An official announcement of a new high-grade, near-surface terbium zone beyond the existing 1.1 billion tonne resource is a material exploration result for a sm",
+  "Day trade buy order: 186 IMC at about $7.09. Broke above its opening-range high ($7.02) at $7.09. In play: 3.2x normal volume, normally moves 13% a day. Stop $6.90. News (PR Newswire): IMC Rare Earths Discovers New High-Grade, Near-Surface Terbium Zone Beyond Existing 1.1 Bi. Claude: catalyst (strength 4/5): An official announcement of a new high-grade, near-surface terbium zone beyond the existing 1.1 billion tonne resource is a material exploration result for a sm",
+  "Bought 186 IMC at 7.10 (cost \u00a31,000).",
+  "IMC: stop raised from 6.91 to 7.14.",
+  "IMC: stop-loss order filled, P&L +\u00a32.",
+  "Day trading finished: 1 trade(s), total +\u00a32."
  ]
 }

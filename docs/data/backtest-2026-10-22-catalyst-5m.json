@@ -1,6 +1,6 @@
 {
  "date": "2026-10-22",
- "generated": "2026-11-04T20:44+00:00",
+ "generated": "2026-11-07T16:32+00:00",
  "fx_gbpusd": 1.339566707611084,
  "result": "done",
  "require_news": true,
@@ -8,14 +8,7 @@
  "bars": "5m",
  "require_trend": true,
  "added_during_day": [
-  "Added SPOT to today's list at 10:16 New York: 0.2x normal volume in the last 30 min; no news found",
-  "Added QS to today's list at 10:16 New York: 0.2x normal volume in the last 30 min; no news found",
-  "Added PLBC to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
-  "Added AVBH to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
-  "Added FRAF to today's list at 10:16 New York: 0.2x normal volume in the last 30 min; no news found",
-  "Added PEBK to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
-  "Added FIBK to today's list at 10:32 New York: 0.3x normal volume in the last 30 min; no news found",
-  "Added TSCO to today's list at 10:48 New York: 0.3x normal volume in the last 30 min; no news found"
+  "Added HBCP to today's list at 10:16 New York: 0.4x normal volume in the last 30 min; no news found"
  ],
  "drift_list": [],
  "list": [
@@ -23,9 +16,9 @@
    "ticker": "TSLA",
    "name": "Tesla, Inc.",
    "vol_x": 0.37,
-   "buy_pct30": 0.6818469673991376,
-   "change": 0.0006339304898534959,
-   "score": 2.97,
+   "buy_pct30": 0.6803802805513,
+   "change": 0.0004916356788524645,
+   "score": 2.96,
    "news": [
     "Tesla Launches iPad and iPhone Duo App - Not a Tesla App"
    ],
@@ -44,10 +37,6 @@
   {
    "ticker": "SKYQ",
    "vol_x": 9.38
-  },
-  {
-   "ticker": "AKAN",
-   "vol_x": 4.15
   },
   {
    "ticker": "ATOM",
@@ -78,6 +67,10 @@
    "vol_x": 1.01
   },
   {
+   "ticker": "RCUS",
+   "vol_x": 0.96
+  },
+  {
    "ticker": "RRBI",
    "vol_x": 0.87
   },
@@ -100,20 +93,8 @@
   "15:50 Day trade summary: No trade today: nothing in play broke out."
  ],
  "log": [
-  "Added SPOT to today's list at 10:16 New York: 0.2x normal volume in the last 30 min; no news found",
-  "Added QS to today's list at 10:16 New York: 0.2x normal volume in the last 30 min; no news found",
-  "Added PLBC to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
-  "Added AVBH to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
-  "Added FRAF to today's list at 10:16 New York: 0.2x normal volume in the last 30 min; no news found",
-  "Added PEBK to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
-  "AVBH: Claude: no catalyst (strength 1/5): The only headline is an OTHER earnings preview with no official company announcement, so there is no genuine price-moving catalyst in the last 48 hours.",
-  "PEBK: Claude: no catalyst (strength 1/5): No OFFICIAL headline in the last 48 hours; the only coverage is OTHER commentary saying the stock slipped after Q3 earnings, and no release text was available t",
-  "FRAF: Claude: no catalyst (strength 1/5): Only OTHER headlines about an upcoming earnings date and consensus estimate; no official company announcement in the last 48 hours, so no confirmed catalyst des",
-  "Added FIBK to today's list at 10:32 New York: 0.3x normal volume in the last 30 min; no news found",
-  "FIBK: Claude: no catalyst (strength 2/5): The only OFFICIAL item is a bare third-quarter earnings headline with no release text, so there is no evidence of results well ahead of expectations; the upward",
-  "Added TSCO to today's list at 10:48 New York: 0.3x normal volume in the last 30 min; no news found",
-  "TSCO: Claude: no catalyst (strength 1/5): Q3 results only reaffirm the FY2026 outlook, which is in line rather than a beat or raise, and TSCO is a large-cap with no release text to show a clear surprise",
-  "PLBC: Claude: no catalyst (strength 1/5): The only official items are a CFO transition and a routine quarterly dividend, neither a material price-moving catalyst; the rise appears tied to earlier Q3 ear",
+  "Added HBCP to today's list at 10:16 New York: 0.4x normal volume in the last 30 min; no news found",
+  "HBCP: Claude: no catalyst (strength 1/5): No OFFICIAL headline in the last 48 hours; the Q3 coverage is mixed to negative (record net interest income offset by credit strain and a stock sink), and the C",
   "Day trading finished: 0 trade(s), total +\u00a30."
  ]
 }
