@@ -1,0 +1,83 @@
+{
+ "date": "2026-10-13",
+ "generated": "2026-11-07T17:32+00:00",
+ "fx_gbpusd": 1.3209795951843262,
+ "result": "done",
+ "require_news": true,
+ "strategy": "catalyst-tight",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [],
+ "drift_list": [],
+ "list": [],
+ "quiet": [
+  {
+   "ticker": "JBDI",
+   "vol_x": 1265.42
+  },
+  {
+   "ticker": "BKYI",
+   "vol_x": 3.07
+  },
+  {
+   "ticker": "FRMI",
+   "vol_x": 2.05
+  },
+  {
+   "ticker": "BBAI",
+   "vol_x": 0.82
+  },
+  {
+   "ticker": "PAMT",
+   "vol_x": 0.82
+  },
+  {
+   "ticker": "ABLV",
+   "vol_x": 0.75
+  },
+  {
+   "ticker": "ESLT",
+   "vol_x": 0.68
+  },
+  {
+   "ticker": "GS",
+   "vol_x": 0.65
+  },
+  {
+   "ticker": "ENGS",
+   "vol_x": 0.64
+  },
+  {
+   "ticker": "GOSS",
+   "vol_x": 0.64
+  },
+  {
+   "ticker": "HQI",
+   "vol_x": 0.59
+  },
+  {
+   "ticker": "RELL",
+   "vol_x": 0.53
+  },
+  {
+   "ticker": "JPM",
+   "vol_x": 0.51
+  },
+  {
+   "ticker": "TRNS",
+   "vol_x": 0.51
+  },
+  {
+   "ticker": "JRSH",
+   "vol_x": 0.48
+  }
+ ],
+ "trades": [],
+ "total_gbp": 0,
+ "alerts": [
+  "15:50 Day trade summary: No trade today: nothing in play broke out."
+ ],
+ "log": [
+  "Day trading finished: 0 trade(s), total +\u00a30."
+ ]
+}

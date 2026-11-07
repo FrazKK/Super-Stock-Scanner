@@ -1,0 +1,111 @@
+{
+ "date": "2026-09-22",
+ "generated": "2026-11-07T17:27+00:00",
+ "fx_gbpusd": 1.3370896577835083,
+ "result": "done",
+ "require_news": true,
+ "strategy": "catalyst-tight",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [
+  "Added TARA to today's list at 10:32 New York: 0.8x normal volume in the last 30 min; no news found"
+ ],
+ "drift_list": [],
+ "list": [
+  {
+   "ticker": "VKTX",
+   "name": "Viking Therapeutics, Inc.",
+   "vol_x": 6.76,
+   "buy_pct30": 0.5633702910106423,
+   "change": 0.3151776044968577,
+   "score": 14.27,
+   "news": [
+    "Viking Therapeutics Announces Positive Topline Results from Maintenance Study of GLP-1/GIP Agonist VK2735 Demonstrating the Promise of Multiple Maintenance Dosing Regimens - PR Newswire"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "CUE",
+   "name": "Cue Biopharma, Inc.",
+   "vol_x": 0.51,
+   "buy_pct30": 0.604018889751927,
+   "change": 0.004598484565319527,
+   "score": 1.94,
+   "news": [
+    "Cue Biopharma Announces Positive Topline Results from CUE-221 Phase 2 Study in Chronic Spontaneous Urticaria - GlobeNewswire"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "SPRO",
+   "vol_x": 7.41
+  },
+  {
+   "ticker": "COOK",
+   "vol_x": 1.82
+  },
+  {
+   "ticker": "ONON",
+   "vol_x": 1.45
+  },
+  {
+   "ticker": "GRML",
+   "vol_x": 1.41
+  },
+  {
+   "ticker": "MAZE",
+   "vol_x": 1.04
+  },
+  {
+   "ticker": "BB",
+   "vol_x": 0.82
+  },
+  {
+   "ticker": "JELD",
+   "vol_x": 0.81
+  },
+  {
+   "ticker": "MAAS",
+   "vol_x": 0.77
+  },
+  {
+   "ticker": "GRAB",
+   "vol_x": 0.76
+  },
+  {
+   "ticker": "SOFI",
+   "vol_x": 0.75
+  },
+  {
+   "ticker": "LXEO",
+   "vol_x": 0.74
+  },
+  {
+   "ticker": "VFF",
+   "vol_x": 0.7
+  },
+  {
+   "ticker": "TAOX",
+   "vol_x": 0.7
+  },
+  {
+   "ticker": "SHOP",
+   "vol_x": 0.64
+  },
+  {
+   "ticker": "VLN",
+   "vol_x": 0.59
+  }
+ ],
+ "trades": [],
+ "total_gbp": 0,
+ "alerts": [
+  "15:50 Day trade summary: No trade today: nothing in play broke out."
+ ],
+ "log": [
+  "Added TARA to today's list at 10:32 New York: 0.8x normal volume in the last 30 min; no news found",
+  "Day trading finished: 0 trade(s), total +\u00a30."
+ ]
+}

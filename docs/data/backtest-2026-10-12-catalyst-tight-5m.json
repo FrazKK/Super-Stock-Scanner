@@ -1,0 +1,96 @@
+{
+ "date": "2026-10-12",
+ "generated": "2026-11-07T17:33+00:00",
+ "fx_gbpusd": 1.3241524696350098,
+ "result": "done",
+ "require_news": true,
+ "strategy": "catalyst-tight",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [],
+ "drift_list": [],
+ "list": [
+  {
+   "ticker": "TRAX",
+   "name": "First Tracks Biotherapeutics, Inc.",
+   "vol_x": 3.11,
+   "buy_pct30": 0.3216519754863388,
+   "change": 0.1422292192272956,
+   "score": 6.01,
+   "news": [
+    "First Tracks Biotherapeutics Announces Positive Top-Line - GlobeNewswire"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "YMAT",
+   "vol_x": 13.17
+  },
+  {
+   "ticker": "ALLT",
+   "vol_x": 0.98
+  },
+  {
+   "ticker": "AI",
+   "vol_x": 0.86
+  },
+  {
+   "ticker": "PFIS",
+   "vol_x": 0.79
+  },
+  {
+   "ticker": "FBIZ",
+   "vol_x": 0.6
+  },
+  {
+   "ticker": "HELP",
+   "vol_x": 0.53
+  },
+  {
+   "ticker": "GRML",
+   "vol_x": 0.51
+  },
+  {
+   "ticker": "PEBK",
+   "vol_x": 0.5
+  },
+  {
+   "ticker": "ENVX",
+   "vol_x": 0.49
+  },
+  {
+   "ticker": "ENGS",
+   "vol_x": 0.48
+  },
+  {
+   "ticker": "OZ",
+   "vol_x": 0.48
+  },
+  {
+   "ticker": "NGNE",
+   "vol_x": 0.45
+  },
+  {
+   "ticker": "CCC",
+   "vol_x": 0.44
+  },
+  {
+   "ticker": "SFST",
+   "vol_x": 0.44
+  },
+  {
+   "ticker": "ASTS",
+   "vol_x": 0.43
+  }
+ ],
+ "trades": [],
+ "total_gbp": 0,
+ "alerts": [
+  "15:50 Day trade summary: No trade today: nothing in play broke out."
+ ],
+ "log": [
+  "Day trading finished: 0 trade(s), total +\u00a30."
+ ]
+}

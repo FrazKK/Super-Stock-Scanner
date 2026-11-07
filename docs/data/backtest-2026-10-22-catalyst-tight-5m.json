@@ -1,0 +1,99 @@
+{
+ "date": "2026-10-22",
+ "generated": "2026-11-07T17:37+00:00",
+ "fx_gbpusd": 1.339566707611084,
+ "result": "done",
+ "require_news": true,
+ "strategy": "catalyst-tight",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [
+  "Added HBCP to today's list at 10:16 New York: 0.4x normal volume in the last 30 min; no news found"
+ ],
+ "drift_list": [],
+ "list": [
+  {
+   "ticker": "TSLA",
+   "name": "Tesla, Inc.",
+   "vol_x": 0.37,
+   "buy_pct30": 0.6803802805513,
+   "change": 0.0004916356788524645,
+   "score": 2.96,
+   "news": [
+    "Tesla Launches iPad and iPhone Duo App - Not a Tesla App"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "STAK",
+   "vol_x": 17.81
+  },
+  {
+   "ticker": "BHVN",
+   "vol_x": 9.52
+  },
+  {
+   "ticker": "SKYQ",
+   "vol_x": 9.38
+  },
+  {
+   "ticker": "ATOM",
+   "vol_x": 3.74
+  },
+  {
+   "ticker": "NANO",
+   "vol_x": 3.52
+  },
+  {
+   "ticker": "HTCO",
+   "vol_x": 3.3
+  },
+  {
+   "ticker": "TPET",
+   "vol_x": 2.32
+  },
+  {
+   "ticker": "BKYI",
+   "vol_x": 1.83
+  },
+  {
+   "ticker": "TRON",
+   "vol_x": 1.18
+  },
+  {
+   "ticker": "EDHL",
+   "vol_x": 1.01
+  },
+  {
+   "ticker": "RCUS",
+   "vol_x": 0.96
+  },
+  {
+   "ticker": "RRBI",
+   "vol_x": 0.87
+  },
+  {
+   "ticker": "TROO",
+   "vol_x": 0.87
+  },
+  {
+   "ticker": "WINA",
+   "vol_x": 0.81
+  },
+  {
+   "ticker": "SPOT",
+   "vol_x": 0.8
+  }
+ ],
+ "trades": [],
+ "total_gbp": 0,
+ "alerts": [
+  "15:50 Day trade summary: No trade today: nothing in play broke out."
+ ],
+ "log": [
+  "Added HBCP to today's list at 10:16 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Day trading finished: 0 trade(s), total +\u00a30."
+ ]
+}

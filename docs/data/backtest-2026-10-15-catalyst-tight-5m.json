@@ -1,0 +1,91 @@
+{
+ "date": "2026-10-15",
+ "generated": "2026-11-07T17:34+00:00",
+ "fx_gbpusd": 1.3230137825012207,
+ "result": "done",
+ "require_news": true,
+ "strategy": "catalyst-tight",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [
+  "Added INDP to today's list at 10:16 New York: 0.5x normal volume in the last 30 min; no news found",
+  "Added ACFN to today's list at 10:16 New York: 0.5x normal volume in the last 30 min; no news found",
+  "Added NFGC to today's list at 10:32 New York: 0.4x normal volume in the last 30 min; no news found"
+ ],
+ "drift_list": [],
+ "list": [],
+ "quiet": [
+  {
+   "ticker": "OPK",
+   "vol_x": 17.51
+  },
+  {
+   "ticker": "NRXS",
+   "vol_x": 3.22
+  },
+  {
+   "ticker": "TNDM",
+   "vol_x": 1.41
+  },
+  {
+   "ticker": "FMFC",
+   "vol_x": 1.26
+  },
+  {
+   "ticker": "STRT",
+   "vol_x": 1.23
+  },
+  {
+   "ticker": "JBDI",
+   "vol_x": 0.87
+  },
+  {
+   "ticker": "BRBR",
+   "vol_x": 0.8
+  },
+  {
+   "ticker": "KEN",
+   "vol_x": 0.69
+  },
+  {
+   "ticker": "PLBL",
+   "vol_x": 0.64
+  },
+  {
+   "ticker": "BCAL",
+   "vol_x": 0.6
+  },
+  {
+   "ticker": "TNXP",
+   "vol_x": 0.59
+  },
+  {
+   "ticker": "QNT",
+   "vol_x": 0.57
+  },
+  {
+   "ticker": "PEGA",
+   "vol_x": 0.54
+  },
+  {
+   "ticker": "MPTI",
+   "vol_x": 0.54
+  },
+  {
+   "ticker": "CNTN",
+   "vol_x": 0.54
+  }
+ ],
+ "trades": [],
+ "total_gbp": 0,
+ "alerts": [
+  "15:50 Day trade summary: No trade today: nothing in play broke out."
+ ],
+ "log": [
+  "Added INDP to today's list at 10:16 New York: 0.5x normal volume in the last 30 min; no news found",
+  "Added ACFN to today's list at 10:16 New York: 0.5x normal volume in the last 30 min; no news found",
+  "Added NFGC to today's list at 10:32 New York: 0.4x normal volume in the last 30 min; no news found",
+  "NFGC: Claude: no catalyst (strength 2/5): All headlines are classed OTHER, not OFFICIAL, and no release text was readable; the first-production news is likely positive but cannot be verified as an offic",
+  "Day trading finished: 0 trade(s), total +\u00a30."
+ ]
+}

@@ -1,0 +1,108 @@
+{
+ "date": "2026-09-21",
+ "generated": "2026-11-07T17:27+00:00",
+ "fx_gbpusd": 1.3388673067092896,
+ "result": "done",
+ "require_news": true,
+ "strategy": "catalyst-tight",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [],
+ "drift_list": [],
+ "list": [
+  {
+   "ticker": "OPTX",
+   "name": "Syntec Optics Holdings, Inc.",
+   "vol_x": 2.24,
+   "buy_pct30": 0.638515336214025,
+   "change": 0.2341679177497331,
+   "score": 5.53,
+   "news": [
+    "Syntec Optics (NASDAQ: OPTX) Secures Landmark Order for U.S. Space Force and Reconnaissance - GlobeNewswire"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "NUAI",
+   "name": "New Era Energy & Digital, Inc.",
+   "vol_x": 1.48,
+   "buy_pct30": 0.6532917949974335,
+   "change": 0.29180887358127716,
+   "score": 4.07,
+   "news": [
+    "New Era Energy & Digital Secures 20-Year, 207 MW PPA with Vistra - GlobeNewswire"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "GRML",
+   "vol_x": 84.42
+  },
+  {
+   "ticker": "ABLV",
+   "vol_x": 49.75
+  },
+  {
+   "ticker": "MX",
+   "vol_x": 6.25
+  },
+  {
+   "ticker": "CRML",
+   "vol_x": 3.75
+  },
+  {
+   "ticker": "NCPL",
+   "vol_x": 3.24
+  },
+  {
+   "ticker": "AIBZ",
+   "vol_x": 1.26
+  },
+  {
+   "ticker": "TAOX",
+   "vol_x": 1.17
+  },
+  {
+   "ticker": "USDE",
+   "vol_x": 1.09
+  },
+  {
+   "ticker": "LITS",
+   "vol_x": 1.07
+  },
+  {
+   "ticker": "PROV",
+   "vol_x": 1.05
+  },
+  {
+   "ticker": "GEF.B",
+   "vol_x": 0.88
+  },
+  {
+   "ticker": "HSDT",
+   "vol_x": 0.88
+  },
+  {
+   "ticker": "GRAL",
+   "vol_x": 0.57
+  },
+  {
+   "ticker": "BKKT",
+   "vol_x": 0.54
+  },
+  {
+   "ticker": "SBET",
+   "vol_x": 0.5
+  }
+ ],
+ "trades": [],
+ "total_gbp": 0,
+ "alerts": [
+  "15:50 Day trade summary: No trade today: nothing in play broke out."
+ ],
+ "log": [
+  "Day trading finished: 0 trade(s), total +\u00a30."
+ ]
+}

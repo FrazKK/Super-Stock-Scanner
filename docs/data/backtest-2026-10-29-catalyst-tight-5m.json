@@ -1,0 +1,143 @@
+{
+ "date": "2026-10-29",
+ "generated": "2026-11-07T17:41+00:00",
+ "fx_gbpusd": 1.332800269126892,
+ "result": "done",
+ "require_news": true,
+ "strategy": "catalyst-tight",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [
+  "Added GATX to today's list at 10:16 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Added RJET to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
+  "Added RCKY to today's list at 10:16 New York: 0.5x normal volume in the last 30 min; no news found",
+  "Added SPOK to today's list at 10:16 New York: 0.5x normal volume in the last 30 min; no news found",
+  "Added LENZ to today's list at 10:16 New York: 1.2x normal volume in the last 30 min; no news found",
+  "Added BLCO to today's list at 10:32 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Added PHAT to today's list at 10:32 New York: 0.3x normal volume in the last 30 min; no news found",
+  "Added GKOS to today's list at 10:48 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Added TDOC to today's list at 10:48 New York: 0.3x normal volume in the last 30 min; no news found"
+ ],
+ "drift_list": [],
+ "list": [
+  {
+   "ticker": "BHC",
+   "name": "Bausch Health Companies Inc.",
+   "vol_x": 1.72,
+   "buy_pct30": 0.6637027842079775,
+   "change": 0.19364163841245752,
+   "score": 5.59,
+   "news": [
+    "Bausch Health Announces US$50 Million Share Repurchase Program - PR Newswire"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "RCL",
+   "name": "Royal Caribbean Cruises Ltd.",
+   "vol_x": 0.34,
+   "buy_pct30": 0.6509073190850354,
+   "change": 0.03709353970569307,
+   "score": 2.78,
+   "news": [
+    "ROYAL CARIBBEAN GROUP REPORTS THIRD QUARTER RESULTS ABOVE EXPECTATIONS AND RAISES FULL YEAR GUIDANCE - PR Newswire"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "VNDA",
+   "name": "Vanda Pharmaceuticals Inc.",
+   "vol_x": 0.43,
+   "buy_pct30": 0.5157264446639191,
+   "change": 0.06749999523162842,
+   "score": 1.42,
+   "news": [
+    "Vanda Pharmaceuticals Announces Positive Results from Study 3601 of NEREUS\u2122 (tradipitant) for Prevention of GLP-1-Induced Vomiting - PR Newswire"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "NUWE",
+   "vol_x": 3.91
+  },
+  {
+   "ticker": "DKI",
+   "vol_x": 2.69
+  },
+  {
+   "ticker": "OPCH",
+   "vol_x": 2.14
+  },
+  {
+   "ticker": "LENZ",
+   "vol_x": 1.91
+  },
+  {
+   "ticker": "KDK",
+   "vol_x": 1.9
+  },
+  {
+   "ticker": "TTEC",
+   "vol_x": 1.58
+  },
+  {
+   "ticker": "TDOC",
+   "vol_x": 1.27
+  },
+  {
+   "ticker": "GKOS",
+   "vol_x": 1.24
+  },
+  {
+   "ticker": "TOYO",
+   "vol_x": 1.21
+  },
+  {
+   "ticker": "HII",
+   "vol_x": 1.13
+  },
+  {
+   "ticker": "JRSH",
+   "vol_x": 1.13
+  },
+  {
+   "ticker": "PRCH",
+   "vol_x": 1.03
+  },
+  {
+   "ticker": "NCLH",
+   "vol_x": 0.95
+  },
+  {
+   "ticker": "CROX",
+   "vol_x": 0.88
+  },
+  {
+   "ticker": "BOOM",
+   "vol_x": 0.85
+  }
+ ],
+ "trades": [],
+ "total_gbp": 0,
+ "alerts": [
+  "15:50 Day trade summary: No trade today: nothing in play broke out."
+ ],
+ "log": [
+  "Added GATX to today's list at 10:16 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Added RJET to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
+  "Added RCKY to today's list at 10:16 New York: 0.5x normal volume in the last 30 min; no news found",
+  "Added SPOK to today's list at 10:16 New York: 0.5x normal volume in the last 30 min; no news found",
+  "Added LENZ to today's list at 10:16 New York: 1.2x normal volume in the last 30 min; no news found",
+  "SPOK: Claude: no catalyst (strength 2/5): The official Q3 release has no readable text, and the coverage describes mixed results: adjusted EBITDA up 30% but revenue declining, which the rules treat as m",
+  "RCKY: Claude: no catalyst (strength 2/5): The Q3 2026 results (13.3% net sales growth) appear only as OTHER-tagged headlines with no release text, so there is no official catalyst to judge; the positive",
+  "Added BLCO to today's list at 10:32 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Added PHAT to today's list at 10:32 New York: 0.3x normal volume in the last 30 min; no news found",
+  "LENZ: Claude: no catalyst (strength 1/5): Only OTHER headlines are present, and they describe a 75% workforce cut and CEO shakeup, which is negative news rather than a catalyst; the upside move is not e",
+  "GATX: Claude: no catalyst (strength 2/5): Q3 results headline only, with no release text to show a beat or raised guidance versus expectations, so the earnings news is unverified and mildly positive at ",
+  "Added GKOS to today's list at 10:48 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Added TDOC to today's list at 10:48 New York: 0.3x normal volume in the last 30 min; no news found",
+  "Day trading finished: 0 trade(s), total +\u00a30."
+ ]
+}

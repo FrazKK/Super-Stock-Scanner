@@ -1,0 +1,96 @@
+{
+ "date": "2026-09-25",
+ "generated": "2026-11-07T17:26+00:00",
+ "fx_gbpusd": 1.3210737705230713,
+ "result": "done",
+ "require_news": true,
+ "strategy": "catalyst-tight",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [],
+ "drift_list": [],
+ "list": [
+  {
+   "ticker": "DGNX",
+   "name": "Diginex Limited",
+   "vol_x": 0.75,
+   "buy_pct30": 0.7558375231195247,
+   "change": 0.017857126131349377,
+   "score": 4.02,
+   "news": [
+    "Diginex Consolidates Group-Wide Expertise and Launches Sustainability Science & Intelligence Initiative to Accelerate Product Innovation and Drive Measurable Client Outcomes - GlobeNewswire"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "AKAM",
+   "vol_x": 2.53
+  },
+  {
+   "ticker": "PARK",
+   "vol_x": 2.12
+  },
+  {
+   "ticker": "ENGN",
+   "vol_x": 2.09
+  },
+  {
+   "ticker": "IFBD",
+   "vol_x": 1.87
+  },
+  {
+   "ticker": "IPST",
+   "vol_x": 1.87
+  },
+  {
+   "ticker": "STEM",
+   "vol_x": 0.99
+  },
+  {
+   "ticker": "BARK",
+   "vol_x": 0.79
+  },
+  {
+   "ticker": "AESI",
+   "vol_x": 0.69
+  },
+  {
+   "ticker": "BIVI",
+   "vol_x": 0.58
+  },
+  {
+   "ticker": "GEF.B",
+   "vol_x": 0.57
+  },
+  {
+   "ticker": "COST",
+   "vol_x": 0.53
+  },
+  {
+   "ticker": "TAYD",
+   "vol_x": 0.51
+  },
+  {
+   "ticker": "QTEX",
+   "vol_x": 0.51
+  },
+  {
+   "ticker": "DDOG",
+   "vol_x": 0.44
+  },
+  {
+   "ticker": "PGEN",
+   "vol_x": 0.41
+  }
+ ],
+ "trades": [],
+ "total_gbp": 0,
+ "alerts": [
+  "15:50 Day trade summary: No trade today: nothing in play broke out."
+ ],
+ "log": [
+  "Day trading finished: 0 trade(s), total +\u00a30."
+ ]
+}

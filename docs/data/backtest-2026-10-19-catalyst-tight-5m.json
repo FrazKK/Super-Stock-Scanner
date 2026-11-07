@@ -1,0 +1,96 @@
+{
+ "date": "2026-10-19",
+ "generated": "2026-11-07T17:35+00:00",
+ "fx_gbpusd": 1.3335645198822021,
+ "result": "done",
+ "require_news": true,
+ "strategy": "catalyst-tight",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [],
+ "drift_list": [],
+ "list": [
+  {
+   "ticker": "DRTS",
+   "name": "Alpha Tau Medical Ltd.",
+   "vol_x": 0.37,
+   "buy_pct30": 0.14540389087722952,
+   "change": 0.010577714796129012,
+   "score": -0.18,
+   "news": [
+    "Alpha Tau Announces FDA Approval to Expand Alpha DaRT\u00ae U.S. Recurrent Glioblastoma REGAIN Trial; New Trial Data to be Presented at SNO 2026 Annual Meeting - Alpha Tau Medical"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "YMAT",
+   "vol_x": 4.41
+  },
+  {
+   "ticker": "IRON",
+   "vol_x": 4.25
+  },
+  {
+   "ticker": "RPGL",
+   "vol_x": 2.62
+  },
+  {
+   "ticker": "DH",
+   "vol_x": 2.19
+  },
+  {
+   "ticker": "VCIG",
+   "vol_x": 1.13
+  },
+  {
+   "ticker": "AIBZ",
+   "vol_x": 1.05
+  },
+  {
+   "ticker": "KRSA",
+   "vol_x": 0.94
+  },
+  {
+   "ticker": "CLF",
+   "vol_x": 0.87
+  },
+  {
+   "ticker": "MEDS",
+   "vol_x": 0.79
+  },
+  {
+   "ticker": "IMC",
+   "vol_x": 0.76
+  },
+  {
+   "ticker": "TCRT",
+   "vol_x": 0.64
+  },
+  {
+   "ticker": "KNOP",
+   "vol_x": 0.61
+  },
+  {
+   "ticker": "MPTI",
+   "vol_x": 0.59
+  },
+  {
+   "ticker": "NVEC",
+   "vol_x": 0.54
+  },
+  {
+   "ticker": "ZNTL",
+   "vol_x": 0.51
+  }
+ ],
+ "trades": [],
+ "total_gbp": 0,
+ "alerts": [
+  "15:50 Day trade summary: No trade today: nothing in play broke out."
+ ],
+ "log": [
+  "Day trading finished: 0 trade(s), total +\u00a30."
+ ]
+}

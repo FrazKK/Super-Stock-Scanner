@@ -1,0 +1,98 @@
+{
+ "date": "2026-10-28",
+ "generated": "2026-11-07T17:40+00:00",
+ "fx_gbpusd": 1.330629587173462,
+ "result": "done",
+ "require_news": true,
+ "strategy": "catalyst-tight",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [
+  "Added SDGR to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
+  "Added SCL to today's list at 10:16 New York: 0.5x normal volume in the last 30 min; no news found",
+  "Added BOOM to today's list at 10:16 New York: 4.3x normal volume in the last 30 min; no news found",
+  "Added AXGN to today's list at 10:32 New York: 0.6x normal volume in the last 30 min; no news found",
+  "Added KIDS to today's list at 10:32 New York: 0.7x normal volume in the last 30 min; news: OrthoPediatrics Announces FDA 510(k) Clearance of PNP | - GlobeNewswire",
+  "Added CHE to today's list at 10:48 New York: 0.6x normal volume in the last 30 min; no news found",
+  "Added PDLB to today's list at 10:48 New York: 0.4x normal volume in the last 30 min; no news found"
+ ],
+ "drift_list": [],
+ "list": [],
+ "quiet": [
+  {
+   "ticker": "ELPW",
+   "vol_x": 1524.59
+  },
+  {
+   "ticker": "CHSN",
+   "vol_x": 119.06
+  },
+  {
+   "ticker": "BOOM",
+   "vol_x": 13.59
+  },
+  {
+   "ticker": "LUNG",
+   "vol_x": 3.91
+  },
+  {
+   "ticker": "BRAI",
+   "vol_x": 3.73
+  },
+  {
+   "ticker": "MGN",
+   "vol_x": 3.1
+  },
+  {
+   "ticker": "WEN",
+   "vol_x": 2.76
+  },
+  {
+   "ticker": "LCII",
+   "vol_x": 2.42
+  },
+  {
+   "ticker": "SIND",
+   "vol_x": 1.7
+  },
+  {
+   "ticker": "AXGN",
+   "vol_x": 1.55
+  },
+  {
+   "ticker": "OSS",
+   "vol_x": 1.53
+  },
+  {
+   "ticker": "BKYI",
+   "vol_x": 1.42
+  },
+  {
+   "ticker": "SBFM",
+   "vol_x": 1.02
+  },
+  {
+   "ticker": "ELVA",
+   "vol_x": 0.95
+  },
+  {
+   "ticker": "STLA",
+   "vol_x": 0.89
+  }
+ ],
+ "trades": [],
+ "total_gbp": 0,
+ "alerts": [
+  "15:50 Day trade summary: No trade today: nothing in play broke out."
+ ],
+ "log": [
+  "Added SDGR to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
+  "Added SCL to today's list at 10:16 New York: 0.5x normal volume in the last 30 min; no news found",
+  "Added BOOM to today's list at 10:16 New York: 4.3x normal volume in the last 30 min; no news found",
+  "Added AXGN to today's list at 10:32 New York: 0.6x normal volume in the last 30 min; no news found",
+  "Added KIDS to today's list at 10:32 New York: 0.7x normal volume in the last 30 min; news: OrthoPediatrics Announces FDA 510(k) Clearance of PNP | - GlobeNewswire",
+  "Added CHE to today's list at 10:48 New York: 0.6x normal volume in the last 30 min; no news found",
+  "Added PDLB to today's list at 10:48 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Day trading finished: 0 trade(s), total +\u00a30."
+ ]
+}

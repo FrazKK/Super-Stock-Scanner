@@ -1,0 +1,83 @@
+{
+ "date": "2026-10-16",
+ "generated": "2026-11-07T17:34+00:00",
+ "fx_gbpusd": 1.327316164970398,
+ "result": "done",
+ "require_news": true,
+ "strategy": "catalyst-tight",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [],
+ "drift_list": [],
+ "list": [],
+ "quiet": [
+  {
+   "ticker": "VRNS",
+   "vol_x": 8.73
+  },
+  {
+   "ticker": "SMX",
+   "vol_x": 1.97
+  },
+  {
+   "ticker": "WORX",
+   "vol_x": 1.89
+  },
+  {
+   "ticker": "PRAA",
+   "vol_x": 0.79
+  },
+  {
+   "ticker": "ENGS",
+   "vol_x": 0.75
+  },
+  {
+   "ticker": "RGC",
+   "vol_x": 0.62
+  },
+  {
+   "ticker": "SRTA",
+   "vol_x": 0.6
+  },
+  {
+   "ticker": "HQI",
+   "vol_x": 0.58
+  },
+  {
+   "ticker": "TRI",
+   "vol_x": 0.57
+  },
+  {
+   "ticker": "TCRT",
+   "vol_x": 0.55
+  },
+  {
+   "ticker": "GPN",
+   "vol_x": 0.53
+  },
+  {
+   "ticker": "AA",
+   "vol_x": 0.53
+  },
+  {
+   "ticker": "OPK",
+   "vol_x": 0.52
+  },
+  {
+   "ticker": "KPLT",
+   "vol_x": 0.52
+  },
+  {
+   "ticker": "LAD",
+   "vol_x": 0.5
+  }
+ ],
+ "trades": [],
+ "total_gbp": 0,
+ "alerts": [
+  "15:50 Day trade summary: No trade today: nothing in play broke out."
+ ],
+ "log": [
+  "Day trading finished: 0 trade(s), total +\u00a30."
+ ]
+}

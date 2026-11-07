@@ -1,0 +1,88 @@
+{
+ "date": "2026-10-30",
+ "generated": "2026-11-07T17:38+00:00",
+ "fx_gbpusd": 1.3378641605377197,
+ "result": "done",
+ "require_news": true,
+ "strategy": "catalyst-tight",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [
+  "Added ERIE to today's list at 10:16 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Added CZFS to today's list at 10:32 New York: 0.4x normal volume in the last 30 min; no news found"
+ ],
+ "drift_list": [],
+ "list": [],
+ "quiet": [
+  {
+   "ticker": "ONEG",
+   "vol_x": 263.27
+  },
+  {
+   "ticker": "WKHS",
+   "vol_x": 4.73
+  },
+  {
+   "ticker": "ASUR",
+   "vol_x": 2.27
+  },
+  {
+   "ticker": "CVEO",
+   "vol_x": 2.19
+  },
+  {
+   "ticker": "NFE",
+   "vol_x": 1.37
+  },
+  {
+   "ticker": "ACCO",
+   "vol_x": 1.36
+  },
+  {
+   "ticker": "OSPN",
+   "vol_x": 1.23
+  },
+  {
+   "ticker": "REGN",
+   "vol_x": 1.18
+  },
+  {
+   "ticker": "MEOH",
+   "vol_x": 0.91
+  },
+  {
+   "ticker": "INO",
+   "vol_x": 0.89
+  },
+  {
+   "ticker": "PARK",
+   "vol_x": 0.82
+  },
+  {
+   "ticker": "MF",
+   "vol_x": 0.78
+  },
+  {
+   "ticker": "GDYN",
+   "vol_x": 0.74
+  },
+  {
+   "ticker": "EXC",
+   "vol_x": 0.72
+  },
+  {
+   "ticker": "CPRI",
+   "vol_x": 0.71
+  }
+ ],
+ "trades": [],
+ "total_gbp": 0,
+ "alerts": [
+  "15:50 Day trade summary: No trade today: nothing in play broke out."
+ ],
+ "log": [
+  "Added ERIE to today's list at 10:16 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Added CZFS to today's list at 10:32 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Day trading finished: 0 trade(s), total +\u00a30."
+ ]
+}

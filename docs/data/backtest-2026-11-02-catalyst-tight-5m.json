@@ -1,0 +1,100 @@
+{
+ "date": "2026-11-02",
+ "generated": "2026-11-07T17:41+00:00",
+ "fx_gbpusd": 1.3385626077651978,
+ "result": "done",
+ "require_news": true,
+ "strategy": "catalyst-tight",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [
+  "Added SBET to today's list at 10:16 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Added PFIS to today's list at 10:16 New York: 0.6x normal volume in the last 30 min; no news found",
+  "Added TATT to today's list at 10:16 New York: 0.5x normal volume in the last 30 min; no news found",
+  "Added RRBI to today's list at 10:32 New York: 0.5x normal volume in the last 30 min; no news found",
+  "Added ISBA to today's list at 10:32 New York: 0.5x normal volume in the last 30 min; no news found",
+  "Added RBBN to today's list at 10:48 New York: 0.6x normal volume in the last 30 min; no news found"
+ ],
+ "drift_list": [],
+ "list": [],
+ "quiet": [
+  {
+   "ticker": "INO",
+   "vol_x": 6.23
+  },
+  {
+   "ticker": "TATT",
+   "vol_x": 2.83
+  },
+  {
+   "ticker": "CLRO",
+   "vol_x": 1.86
+  },
+  {
+   "ticker": "NVA",
+   "vol_x": 0.94
+  },
+  {
+   "ticker": "IDXX",
+   "vol_x": 0.85
+  },
+  {
+   "ticker": "ESCA",
+   "vol_x": 0.79
+  },
+  {
+   "ticker": "ZG",
+   "vol_x": 0.78
+  },
+  {
+   "ticker": "BESS",
+   "vol_x": 0.74
+  },
+  {
+   "ticker": "ZIM",
+   "vol_x": 0.7
+  },
+  {
+   "ticker": "NXH",
+   "vol_x": 0.66
+  },
+  {
+   "ticker": "RRBI",
+   "vol_x": 0.57
+  },
+  {
+   "ticker": "BAP",
+   "vol_x": 0.55
+  },
+  {
+   "ticker": "INTG",
+   "vol_x": 0.55
+  },
+  {
+   "ticker": "TEM",
+   "vol_x": 0.54
+  },
+  {
+   "ticker": "ACCO",
+   "vol_x": 0.52
+  }
+ ],
+ "trades": [],
+ "total_gbp": 0,
+ "alerts": [
+  "15:50 Day trade summary: No trade today: nothing in play broke out."
+ ],
+ "log": [
+  "Added SBET to today's list at 10:16 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Added PFIS to today's list at 10:16 New York: 0.6x normal volume in the last 30 min; no news found",
+  "Added TATT to today's list at 10:16 New York: 0.5x normal volume in the last 30 min; no news found",
+  "PFIS: Claude: no catalyst (strength 1/5): The only OFFICIAL item is the Q3 earnings release from 30 October, outside the 48-hour window, and coverage says the modest beat failed to ignite the stock, so ",
+  "SBET: Claude: no catalyst (strength 1/5): No OFFICIAL company announcement in the last 48 hours; headlines are only commentary, earnings previews, analyst coverage and seasonal charts, so the breakout l",
+  "Added RRBI to today's list at 10:32 New York: 0.5x normal volume in the last 30 min; no news found",
+  "Added ISBA to today's list at 10:32 New York: 0.5x normal volume in the last 30 min; no news found",
+  "ISBA: Claude: no catalyst (strength 1/5): The only fresh item is the completion of a previously announced Grand River Commerce acquisition, which is already known and routine, and the Q3 earnings are ov",
+  "Added RBBN to today's list at 10:48 New York: 0.6x normal volume in the last 30 min; no news found",
+  "RBBN: Claude: no catalyst (strength 1/5): Only OTHER headlines are present: the CEO insider purchase is a modest sentiment signal, the Q3 earnings coverage is commentary, and no official company announc",
+  "Day trading finished: 0 trade(s), total +\u00a30."
+ ]
+}

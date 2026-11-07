@@ -1,0 +1,99 @@
+{
+ "date": "2026-09-23",
+ "generated": "2026-11-07T17:27+00:00",
+ "fx_gbpusd": 1.3343117237091064,
+ "result": "done",
+ "require_news": true,
+ "strategy": "catalyst-tight",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [
+  "Added WOR to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found"
+ ],
+ "drift_list": [],
+ "list": [
+  {
+   "ticker": "IONQ",
+   "name": "IonQ, Inc.",
+   "vol_x": 1.53,
+   "buy_pct30": 0.32584207362879364,
+   "change": 0.051055422942135165,
+   "score": 2.86,
+   "news": [
+    "IonQ and SDT Announce the First Strategic Partnership to Bring Both Advanced Quantum Computing and Quantum Networking to the Asia-Pacific Region - IonQ"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "GNPX",
+   "vol_x": 10.27
+  },
+  {
+   "ticker": "TLSI",
+   "vol_x": 2.89
+  },
+  {
+   "ticker": "FLYE",
+   "vol_x": 1.84
+  },
+  {
+   "ticker": "WOR",
+   "vol_x": 1.2
+  },
+  {
+   "ticker": "NNBR",
+   "vol_x": 1.08
+  },
+  {
+   "ticker": "QUBT",
+   "vol_x": 0.93
+  },
+  {
+   "ticker": "IRTC",
+   "vol_x": 0.79
+  },
+  {
+   "ticker": "GRML",
+   "vol_x": 0.67
+  },
+  {
+   "ticker": "TWFG",
+   "vol_x": 0.6
+  },
+  {
+   "ticker": "WCCB",
+   "vol_x": 0.59
+  },
+  {
+   "ticker": "SMX",
+   "vol_x": 0.56
+  },
+  {
+   "ticker": "WDFC",
+   "vol_x": 0.52
+  },
+  {
+   "ticker": "TNMG",
+   "vol_x": 0.52
+  },
+  {
+   "ticker": "MAAS",
+   "vol_x": 0.51
+  },
+  {
+   "ticker": "IRMD",
+   "vol_x": 0.49
+  }
+ ],
+ "trades": [],
+ "total_gbp": 0,
+ "alerts": [
+  "15:50 Day trade summary: No trade today: nothing in play broke out."
+ ],
+ "log": [
+  "Added WOR to today's list at 10:16 New York: 0.3x normal volume in the last 30 min; no news found",
+  "Day trading finished: 0 trade(s), total +\u00a30."
+ ]
+}

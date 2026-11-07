@@ -1,0 +1,108 @@
+{
+ "date": "2026-09-17",
+ "generated": "2026-11-07T17:27+00:00",
+ "fx_gbpusd": 1.3382940292358398,
+ "result": "done",
+ "require_news": true,
+ "strategy": "catalyst-tight",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [],
+ "drift_list": [],
+ "list": [
+  {
+   "ticker": "WETO",
+   "name": "Wetour Robotics Limited",
+   "vol_x": 3.27,
+   "buy_pct30": 0.3820475760973389,
+   "change": 0.09239127934824132,
+   "score": 6.57,
+   "news": [
+    "Wetour Robotics Launches Vantrapower to Expand into - GlobeNewswire"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "MNTS",
+   "name": "Momentus Inc.",
+   "vol_x": 0.54,
+   "buy_pct30": 0.6187166765328879,
+   "change": 0.0892419944990015,
+   "score": 3.05,
+   "news": [
+    "Momentus Technologies Launches MomentusMAX, an AI Platform Built for Venues, and Brings MAX for Sales to General Availability - PR Newswire"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "NUWE",
+   "vol_x": 45.49
+  },
+  {
+   "ticker": "KXIN",
+   "vol_x": 14.71
+  },
+  {
+   "ticker": "BCBP",
+   "vol_x": 4.56
+  },
+  {
+   "ticker": "GLOO",
+   "vol_x": 2.66
+  },
+  {
+   "ticker": "GNRC",
+   "vol_x": 2.48
+  },
+  {
+   "ticker": "ECOR",
+   "vol_x": 1.22
+  },
+  {
+   "ticker": "GHRS",
+   "vol_x": 1.14
+  },
+  {
+   "ticker": "PSIX",
+   "vol_x": 0.96
+  },
+  {
+   "ticker": "FEAM",
+   "vol_x": 0.93
+  },
+  {
+   "ticker": "OSTX",
+   "vol_x": 0.87
+  },
+  {
+   "ticker": "SECZ",
+   "vol_x": 0.73
+  },
+  {
+   "ticker": "NRXS",
+   "vol_x": 0.73
+  },
+  {
+   "ticker": "NBIS",
+   "vol_x": 0.71
+  },
+  {
+   "ticker": "SPCB",
+   "vol_x": 0.68
+  },
+  {
+   "ticker": "RGR",
+   "vol_x": 0.67
+  }
+ ],
+ "trades": [],
+ "total_gbp": 0,
+ "alerts": [
+  "15:50 Day trade summary: No trade today: nothing in play broke out."
+ ],
+ "log": [
+  "Day trading finished: 0 trade(s), total +\u00a30."
+ ]
+}

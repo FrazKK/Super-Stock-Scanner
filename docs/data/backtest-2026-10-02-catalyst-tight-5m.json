@@ -1,0 +1,86 @@
+{
+ "date": "2026-10-02",
+ "generated": "2026-11-07T17:33+00:00",
+ "fx_gbpusd": 1.3199577331542969,
+ "result": "done",
+ "require_news": true,
+ "strategy": "catalyst-tight",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [
+  "Added QTEX to today's list at 10:16 New York: 6.4x normal volume in the last 30 min; no news found"
+ ],
+ "drift_list": [],
+ "list": [],
+ "quiet": [
+  {
+   "ticker": "QTEX",
+   "vol_x": 13.39
+  },
+  {
+   "ticker": "MGY",
+   "vol_x": 1.16
+  },
+  {
+   "ticker": "OVBC",
+   "vol_x": 0.79
+  },
+  {
+   "ticker": "AUNA",
+   "vol_x": 0.72
+  },
+  {
+   "ticker": "NNBR",
+   "vol_x": 0.63
+  },
+  {
+   "ticker": "SHIP",
+   "vol_x": 0.62
+  },
+  {
+   "ticker": "ON",
+   "vol_x": 0.5
+  },
+  {
+   "ticker": "EXOD",
+   "vol_x": 0.5
+  },
+  {
+   "ticker": "FEAM",
+   "vol_x": 0.48
+  },
+  {
+   "ticker": "ATLC",
+   "vol_x": 0.47
+  },
+  {
+   "ticker": "OPY",
+   "vol_x": 0.46
+  },
+  {
+   "ticker": "BIRD",
+   "vol_x": 0.45
+  },
+  {
+   "ticker": "HOOD",
+   "vol_x": 0.43
+  },
+  {
+   "ticker": "APLD",
+   "vol_x": 0.4
+  },
+  {
+   "ticker": "NVTS",
+   "vol_x": 0.4
+  }
+ ],
+ "trades": [],
+ "total_gbp": 0,
+ "alerts": [
+  "15:50 Day trade summary: No trade today: nothing in play broke out."
+ ],
+ "log": [
+  "Added QTEX to today's list at 10:16 New York: 6.4x normal volume in the last 30 min; no news found",
+  "Day trading finished: 0 trade(s), total +\u00a30."
+ ]
+}

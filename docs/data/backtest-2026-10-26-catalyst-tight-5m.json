@@ -1,0 +1,90 @@
+{
+ "date": "2026-10-26",
+ "generated": "2026-11-07T17:41+00:00",
+ "fx_gbpusd": 1.3377747535705566,
+ "result": "done",
+ "require_news": true,
+ "strategy": "catalyst-tight",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [
+  "Added BWMX to today's list at 10:32 New York: 0.7x normal volume in the last 30 min; no news found",
+  "Added AGYS to today's list at 10:48 New York: 0.6x normal volume in the last 30 min; news: Agilysys Announces Record Revenue of $93.4M in Fiscal 2027 Second Quarter - Busi"
+ ],
+ "drift_list": [],
+ "list": [],
+ "quiet": [
+  {
+   "ticker": "BRAI",
+   "vol_x": 8.72
+  },
+  {
+   "ticker": "XNCR",
+   "vol_x": 2.9
+  },
+  {
+   "ticker": "RRC",
+   "vol_x": 2.2
+  },
+  {
+   "ticker": "FRMM",
+   "vol_x": 1.09
+  },
+  {
+   "ticker": "BWMX",
+   "vol_x": 0.9
+  },
+  {
+   "ticker": "MED",
+   "vol_x": 0.77
+  },
+  {
+   "ticker": "TRST",
+   "vol_x": 0.64
+  },
+  {
+   "ticker": "TSBK",
+   "vol_x": 0.55
+  },
+  {
+   "ticker": "TTRX",
+   "vol_x": 0.54
+  },
+  {
+   "ticker": "HHH",
+   "vol_x": 0.5
+  },
+  {
+   "ticker": "EAF",
+   "vol_x": 0.49
+  },
+  {
+   "ticker": "FRBA",
+   "vol_x": 0.48
+  },
+  {
+   "ticker": "WTTR",
+   "vol_x": 0.46
+  },
+  {
+   "ticker": "WINA",
+   "vol_x": 0.44
+  },
+  {
+   "ticker": "GEF.B",
+   "vol_x": 0.4
+  }
+ ],
+ "trades": [],
+ "total_gbp": 0,
+ "alerts": [
+  "15:50 Day trade summary: No trade today: nothing in play broke out."
+ ],
+ "log": [
+  "Added BWMX to today's list at 10:32 New York: 0.7x normal volume in the last 30 min; no news found",
+  "BWMX: Claude: no catalyst (strength 1/5): All headlines are OTHER commentary; the Q3 results coverage notes a miss versus estimates (Zacks: lags Q3 estimates) and margin debate, with no official company",
+  "Added AGYS to today's list at 10:48 New York: 0.6x normal volume in the last 30 min; news: Agilysys Announces Record Revenue of $93.4M in Fiscal 2027 Second Quarter - Busi",
+  "AGYS: Claude: catalyst (strength 3/5): An OFFICIAL same-day release reports record quarterly revenue of $93.4M, a clearly positive result, but the headline gives no beat versus expectations or profit",
+  "Day trading finished: 0 trade(s), total +\u00a30."
+ ]
+}

@@ -1,0 +1,108 @@
+{
+ "date": "2026-09-28",
+ "generated": "2026-11-07T17:25+00:00",
+ "fx_gbpusd": 1.3229262828826904,
+ "result": "done",
+ "require_news": true,
+ "strategy": "catalyst-tight",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [],
+ "drift_list": [],
+ "list": [
+  {
+   "ticker": "DPRO",
+   "name": "Draganfly Inc.",
+   "vol_x": 0.83,
+   "buy_pct30": 0.7174343164036042,
+   "change": 0.06915885834665136,
+   "score": 4.03,
+   "news": [
+    "Draganfly Announces Strategic Investment from Unusual Machines and a Leading U.S. Investment Fund - Draganfly"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "NVDA",
+   "name": "NVIDIA Corporation",
+   "vol_x": 0.37,
+   "buy_pct30": 0.675883051002886,
+   "change": 0.03065710077729178,
+   "score": 3.94,
+   "news": [
+    "NVIDIA Launches Open Agent Safety Platform to Secure Agents From Testing to Deployment - NVIDIA Newsroom"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "CLRO",
+   "vol_x": 137.92
+  },
+  {
+   "ticker": "KOD",
+   "vol_x": 12.38
+  },
+  {
+   "ticker": "ELAB",
+   "vol_x": 2.18
+  },
+  {
+   "ticker": "GBLI",
+   "vol_x": 1.76
+  },
+  {
+   "ticker": "NTWK",
+   "vol_x": 1.71
+  },
+  {
+   "ticker": "MX",
+   "vol_x": 1.64
+  },
+  {
+   "ticker": "AMPX",
+   "vol_x": 1.29
+  },
+  {
+   "ticker": "SHMD",
+   "vol_x": 1.18
+  },
+  {
+   "ticker": "RDNW",
+   "vol_x": 0.72
+  },
+  {
+   "ticker": "IMUX",
+   "vol_x": 0.66
+  },
+  {
+   "ticker": "ODC",
+   "vol_x": 0.62
+  },
+  {
+   "ticker": "MEDS",
+   "vol_x": 0.57
+  },
+  {
+   "ticker": "CAAP",
+   "vol_x": 0.53
+  },
+  {
+   "ticker": "LXRX",
+   "vol_x": 0.5
+  },
+  {
+   "ticker": "JRSH",
+   "vol_x": 0.5
+  }
+ ],
+ "trades": [],
+ "total_gbp": 0,
+ "alerts": [
+  "15:50 Day trade summary: No trade today: nothing in play broke out."
+ ],
+ "log": [
+  "Day trading finished: 0 trade(s), total +\u00a30."
+ ]
+}

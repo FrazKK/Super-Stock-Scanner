@@ -1,0 +1,83 @@
+{
+ "date": "2026-09-30",
+ "generated": "2026-11-07T17:27+00:00",
+ "fx_gbpusd": 1.323276400566101,
+ "result": "done",
+ "require_news": true,
+ "strategy": "catalyst-tight",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [],
+ "drift_list": [],
+ "list": [],
+ "quiet": [
+  {
+   "ticker": "SOTK",
+   "vol_x": 2.64
+  },
+  {
+   "ticker": "UPC",
+   "vol_x": 2.56
+  },
+  {
+   "ticker": "QTTB",
+   "vol_x": 2.21
+  },
+  {
+   "ticker": "NAUT",
+   "vol_x": 1.87
+  },
+  {
+   "ticker": "CELC",
+   "vol_x": 1.23
+  },
+  {
+   "ticker": "GRWG",
+   "vol_x": 0.93
+  },
+  {
+   "ticker": "QSI",
+   "vol_x": 0.87
+  },
+  {
+   "ticker": "PMVP",
+   "vol_x": 0.83
+  },
+  {
+   "ticker": "WETO",
+   "vol_x": 0.76
+  },
+  {
+   "ticker": "LLYVA",
+   "vol_x": 0.62
+  },
+  {
+   "ticker": "PACB",
+   "vol_x": 0.56
+  },
+  {
+   "ticker": "IMTX",
+   "vol_x": 0.55
+  },
+  {
+   "ticker": "MDB",
+   "vol_x": 0.54
+  },
+  {
+   "ticker": "CRVO",
+   "vol_x": 0.52
+  },
+  {
+   "ticker": "FUNC",
+   "vol_x": 0.5
+  }
+ ],
+ "trades": [],
+ "total_gbp": 0,
+ "alerts": [
+  "15:50 Day trade summary: No trade today: nothing in play broke out."
+ ],
+ "log": [
+  "Day trading finished: 0 trade(s), total +\u00a30."
+ ]
+}

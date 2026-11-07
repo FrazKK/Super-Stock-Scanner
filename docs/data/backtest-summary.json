@@ -2523,6 +2523,356 @@
     "added": 11
    }
   },
+  "catalyst-tight, 5-min bars": {
+   "2026-09-10": {
+    "total": 0,
+    "trades": 0,
+    "wins": 0,
+    "list": [],
+    "added": 2
+   },
+   "2026-09-11": {
+    "total": 0,
+    "trades": 0,
+    "wins": 0,
+    "list": [
+     "BOC"
+    ],
+    "added": 2
+   },
+   "2026-09-14": {
+    "total": 0,
+    "trades": 0,
+    "wins": 0,
+    "list": [
+     "DFTX"
+    ],
+    "added": 2
+   },
+   "2026-09-15": {
+    "total": 0,
+    "trades": 0,
+    "wins": 0,
+    "list": [],
+    "added": 1
+   },
+   "2026-09-16": {
+    "total": 0,
+    "trades": 0,
+    "wins": 0,
+    "list": [],
+    "added": 0
+   },
+   "2026-09-17": {
+    "total": 0,
+    "trades": 0,
+    "wins": 0,
+    "list": [
+     "WETO",
+     "MNTS"
+    ],
+    "added": 0
+   },
+   "2026-09-18": {
+    "total": 0,
+    "trades": 0,
+    "wins": 0,
+    "list": [],
+    "added": 0
+   },
+   "2026-09-21": {
+    "total": 0,
+    "trades": 0,
+    "wins": 0,
+    "list": [
+     "OPTX",
+     "NUAI"
+    ],
+    "added": 0
+   },
+   "2026-09-22": {
+    "total": 0,
+    "trades": 0,
+    "wins": 0,
+    "list": [
+     "VKTX",
+     "CUE"
+    ],
+    "added": 1
+   },
+   "2026-09-23": {
+    "total": 0,
+    "trades": 0,
+    "wins": 0,
+    "list": [
+     "IONQ"
+    ],
+    "added": 1
+   },
+   "2026-09-24": {
+    "total": 0,
+    "trades": 0,
+    "wins": 0,
+    "list": [
+     "DGNX"
+    ],
+    "added": 1
+   },
+   "2026-09-25": {
+    "total": 0,
+    "trades": 0,
+    "wins": 0,
+    "list": [
+     "DGNX"
+    ],
+    "added": 0
+   },
+   "2026-09-28": {
+    "total": 0,
+    "trades": 0,
+    "wins": 0,
+    "list": [
+     "DPRO",
+     "NVDA"
+    ],
+    "added": 0
+   },
+   "2026-09-29": {
+    "total": 0,
+    "trades": 0,
+    "wins": 0,
+    "list": [],
+    "added": 2
+   },
+   "2026-09-30": {
+    "total": 0,
+    "trades": 0,
+    "wins": 0,
+    "list": [],
+    "added": 0
+   },
+   "2026-10-01": {
+    "total": 0,
+    "trades": 0,
+    "wins": 0,
+    "list": [
+     "ABAT",
+     "SNPS",
+     "BYRN"
+    ],
+    "added": 1
+   },
+   "2026-10-02": {
+    "total": 0,
+    "trades": 0,
+    "wins": 0,
+    "list": [],
+    "added": 1
+   },
+   "2026-10-05": {
+    "total": 21.04,
+    "trades": 1,
+    "wins": 1,
+    "list": [
+     "ALEC",
+     "PCVX",
+     "INTT",
+     "AIFA"
+    ],
+    "added": 0
+   },
+   "2026-10-06": {
+    "total": 0,
+    "trades": 0,
+    "wins": 0,
+    "list": [
+     "AIFA",
+     "MBOT",
+     "PUSA"
+    ],
+    "added": 2
+   },
+   "2026-10-07": {
+    "total": 0,
+    "trades": 0,
+    "wins": 0,
+    "list": [],
+    "added": 1
+   },
+   "2026-10-08": {
+    "total": 2.03,
+    "trades": 1,
+    "wins": 1,
+    "list": [
+     "SECZ"
+    ],
+    "added": 2
+   },
+   "2026-10-09": {
+    "total": 0,
+    "trades": 0,
+    "wins": 0,
+    "list": [],
+    "added": 1
+   },
+   "2026-10-12": {
+    "total": 0,
+    "trades": 0,
+    "wins": 0,
+    "list": [
+     "TRAX"
+    ],
+    "added": 0
+   },
+   "2026-10-13": {
+    "total": 0,
+    "trades": 0,
+    "wins": 0,
+    "list": [],
+    "added": 0
+   },
+   "2026-10-14": {
+    "total": 0,
+    "trades": 0,
+    "wins": 0,
+    "list": [],
+    "added": 1
+   },
+   "2026-10-15": {
+    "total": 0,
+    "trades": 0,
+    "wins": 0,
+    "list": [],
+    "added": 3
+   },
+   "2026-10-16": {
+    "total": 0,
+    "trades": 0,
+    "wins": 0,
+    "list": [],
+    "added": 0
+   },
+   "2026-10-19": {
+    "total": 0,
+    "trades": 0,
+    "wins": 0,
+    "list": [
+     "DRTS"
+    ],
+    "added": 0
+   },
+   "2026-10-20": {
+    "total": -53.98,
+    "trades": 1,
+    "wins": 0,
+    "list": [
+     "HOST",
+     "ALVO"
+    ],
+    "added": 4
+   },
+   "2026-10-21": {
+    "total": 0,
+    "trades": 0,
+    "wins": 0,
+    "list": [],
+    "added": 0
+   },
+   "2026-10-22": {
+    "total": 0,
+    "trades": 0,
+    "wins": 0,
+    "list": [
+     "TSLA"
+    ],
+    "added": 1
+   },
+   "2026-10-23": {
+    "total": 0,
+    "trades": 0,
+    "wins": 0,
+    "list": [],
+    "added": 1
+   },
+   "2026-10-26": {
+    "total": 0,
+    "trades": 0,
+    "wins": 0,
+    "list": [],
+    "added": 2
+   },
+   "2026-10-27": {
+    "total": 0,
+    "trades": 0,
+    "wins": 0,
+    "list": [
+     "SOFI",
+     "RCL",
+     "VNDA"
+    ],
+    "added": 7
+   },
+   "2026-10-28": {
+    "total": 0,
+    "trades": 0,
+    "wins": 0,
+    "list": [],
+    "added": 7
+   },
+   "2026-10-29": {
+    "total": 0,
+    "trades": 0,
+    "wins": 0,
+    "list": [
+     "BHC",
+     "RCL",
+     "VNDA"
+    ],
+    "added": 9
+   },
+   "2026-10-30": {
+    "total": 0,
+    "trades": 0,
+    "wins": 0,
+    "list": [],
+    "added": 2
+   },
+   "2026-11-02": {
+    "total": 0,
+    "trades": 0,
+    "wins": 0,
+    "list": [],
+    "added": 6
+   },
+   "2026-11-03": {
+    "total": 0,
+    "trades": 0,
+    "wins": 0,
+    "list": [
+     "NBIX"
+    ],
+    "added": 5
+   },
+   "2026-11-04": {
+    "total": 0,
+    "trades": 0,
+    "wins": 0,
+    "list": [
+     "FLOC"
+    ],
+    "added": 31
+   },
+   "2026-11-05": {
+    "total": 0,
+    "trades": 0,
+    "wins": 0,
+    "list": [
+     "EGHT",
+     "TPR"
+    ],
+    "added": 22
+   }
+  },
   "breakout-market": {
    "2026-10-05": {
     "total": -18.45,
@@ -3713,6 +4063,15 @@
    "total_gbp": -483.7,
    "best_day": "2026-10-05",
    "worst_day": "2026-09-09"
+  },
+  "catalyst-tight, 5-min bars": {
+   "days": 41,
+   "days_traded": 3,
+   "trades": 3,
+   "wins": 2,
+   "total_gbp": -30.91,
+   "best_day": "2026-10-05",
+   "worst_day": "2026-10-20"
   },
   "breakout-market": {
    "days": 20,

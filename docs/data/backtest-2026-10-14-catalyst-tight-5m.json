@@ -1,0 +1,86 @@
+{
+ "date": "2026-10-14",
+ "generated": "2026-11-07T17:32+00:00",
+ "fx_gbpusd": 1.3257324695587158,
+ "result": "done",
+ "require_news": true,
+ "strategy": "catalyst-tight",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [
+  "Added MXCT to today's list at 10:32 New York: 3.8x normal volume in the last 30 min; no news found"
+ ],
+ "drift_list": [],
+ "list": [],
+ "quiet": [
+  {
+   "ticker": "MXCT",
+   "vol_x": 18.11
+  },
+  {
+   "ticker": "GRML",
+   "vol_x": 4.23
+  },
+  {
+   "ticker": "BSP",
+   "vol_x": 1.69
+  },
+  {
+   "ticker": "RGC",
+   "vol_x": 1.5
+  },
+  {
+   "ticker": "NCPL",
+   "vol_x": 1.32
+  },
+  {
+   "ticker": "GEF.B",
+   "vol_x": 0.85
+  },
+  {
+   "ticker": "ENVX",
+   "vol_x": 0.57
+  },
+  {
+   "ticker": "JRSH",
+   "vol_x": 0.56
+  },
+  {
+   "ticker": "GENB",
+   "vol_x": 0.55
+  },
+  {
+   "ticker": "ESLT",
+   "vol_x": 0.51
+  },
+  {
+   "ticker": "PDEX",
+   "vol_x": 0.46
+  },
+  {
+   "ticker": "GFS",
+   "vol_x": 0.45
+  },
+  {
+   "ticker": "IKT",
+   "vol_x": 0.41
+  },
+  {
+   "ticker": "ARWR",
+   "vol_x": 0.38
+  },
+  {
+   "ticker": "VAL",
+   "vol_x": 0.36
+  }
+ ],
+ "trades": [],
+ "total_gbp": 0,
+ "alerts": [
+  "15:50 Day trade summary: No trade today: nothing in play broke out."
+ ],
+ "log": [
+  "Added MXCT to today's list at 10:32 New York: 3.8x normal volume in the last 30 min; no news found",
+  "Day trading finished: 0 trade(s), total +\u00a30."
+ ]
+}

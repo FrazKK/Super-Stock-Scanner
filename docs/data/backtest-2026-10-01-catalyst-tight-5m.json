@@ -1,0 +1,123 @@
+{
+ "date": "2026-10-01",
+ "generated": "2026-11-07T17:32+00:00",
+ "fx_gbpusd": 1.326435923576355,
+ "result": "done",
+ "require_news": true,
+ "strategy": "catalyst-tight",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [
+  "Added CTVA to today's list at 10:16 New York: 0.4x normal volume in the last 30 min; no news found"
+ ],
+ "drift_list": [],
+ "list": [
+  {
+   "ticker": "ABAT",
+   "name": "American Battery Technology Company",
+   "vol_x": 5.25,
+   "buy_pct30": 0.7125293236043628,
+   "change": 0.06787323726682981,
+   "score": 12.85,
+   "news": [
+    "American Battery Technology Company Receives Approval for Sale of $100 Million of Exported Recycled Black Mass Critical Minerals with License from U.S. Department of Commerce - GlobeNewswire"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "SNPS",
+   "name": "Synopsys, Inc.",
+   "vol_x": 0.84,
+   "buy_pct30": 0.6435423427360268,
+   "change": 0.12290197791008417,
+   "score": 3.75,
+   "news": [
+    "Synopsys and Amazon Announce Strategic, Multi-year IP Agreement for Custom Silicon; Collaboration Also Extends to Cloud and AI-Powered Engineering - PR Newswire"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "BYRN",
+   "name": "Byrna Technologies, Inc.",
+   "vol_x": 0.35,
+   "buy_pct30": 0.7009224068431908,
+   "change": 0.0733944987573798,
+   "score": 3.0,
+   "news": [
+    "Byrna Technologies Launches Media Campaign with - GlobeNewswire"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "VEEA",
+   "vol_x": 21.57
+  },
+  {
+   "ticker": "AISP",
+   "vol_x": 13.16
+  },
+  {
+   "ticker": "RPGL",
+   "vol_x": 9.57
+  },
+  {
+   "ticker": "MEDS",
+   "vol_x": 4.18
+  },
+  {
+   "ticker": "SDOT",
+   "vol_x": 4.14
+  },
+  {
+   "ticker": "ACN",
+   "vol_x": 1.46
+  },
+  {
+   "ticker": "ETSS",
+   "vol_x": 1.26
+  },
+  {
+   "ticker": "QSI",
+   "vol_x": 1.11
+  },
+  {
+   "ticker": "INSG",
+   "vol_x": 0.91
+  },
+  {
+   "ticker": "BSET",
+   "vol_x": 0.79
+  },
+  {
+   "ticker": "EFXT",
+   "vol_x": 0.76
+  },
+  {
+   "ticker": "CRAI",
+   "vol_x": 0.55
+  },
+  {
+   "ticker": "VUZI",
+   "vol_x": 0.53
+  },
+  {
+   "ticker": "TRNS",
+   "vol_x": 0.51
+  },
+  {
+   "ticker": "JLHL",
+   "vol_x": 0.51
+  }
+ ],
+ "trades": [],
+ "total_gbp": 0,
+ "alerts": [
+  "15:50 Day trade summary: No trade today: nothing in play broke out."
+ ],
+ "log": [
+  "Added CTVA to today's list at 10:16 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Day trading finished: 0 trade(s), total +\u00a30."
+ ]
+}

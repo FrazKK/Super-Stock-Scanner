@@ -1,0 +1,83 @@
+{
+ "date": "2026-09-18",
+ "generated": "2026-11-07T17:27+00:00",
+ "fx_gbpusd": 1.335800051689148,
+ "result": "done",
+ "require_news": true,
+ "strategy": "catalyst-tight",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [],
+ "drift_list": [],
+ "list": [],
+ "quiet": [
+  {
+   "ticker": "TNMG",
+   "vol_x": 271.05
+  },
+  {
+   "ticker": "NCPL",
+   "vol_x": 3.09
+  },
+  {
+   "ticker": "FTCI",
+   "vol_x": 2.69
+  },
+  {
+   "ticker": "TAOX",
+   "vol_x": 1.92
+  },
+  {
+   "ticker": "USDE",
+   "vol_x": 1.17
+  },
+  {
+   "ticker": "SECZ",
+   "vol_x": 0.87
+  },
+  {
+   "ticker": "IDN",
+   "vol_x": 0.79
+  },
+  {
+   "ticker": "GOOG",
+   "vol_x": 0.55
+  },
+  {
+   "ticker": "GOOGL",
+   "vol_x": 0.51
+  },
+  {
+   "ticker": "AMGN",
+   "vol_x": 0.46
+  },
+  {
+   "ticker": "TRGP",
+   "vol_x": 0.46
+  },
+  {
+   "ticker": "ALMR",
+   "vol_x": 0.45
+  },
+  {
+   "ticker": "MEDS",
+   "vol_x": 0.44
+  },
+  {
+   "ticker": "AMZN",
+   "vol_x": 0.43
+  },
+  {
+   "ticker": "GILD",
+   "vol_x": 0.42
+  }
+ ],
+ "trades": [],
+ "total_gbp": 0,
+ "alerts": [
+  "15:50 Day trade summary: No trade today: nothing in play broke out."
+ ],
+ "log": [
+  "Day trading finished: 0 trade(s), total +\u00a30."
+ ]
+}

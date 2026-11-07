@@ -1,0 +1,136 @@
+{
+ "date": "2026-10-27",
+ "generated": "2026-11-07T17:39+00:00",
+ "fx_gbpusd": 1.334507703781128,
+ "result": "done",
+ "require_news": true,
+ "strategy": "catalyst-tight",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [
+  "Added AVBH to today's list at 10:16 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Added ISBA to today's list at 10:16 New York: 0.5x normal volume in the last 30 min; no news found",
+  "Added AEYE to today's list at 10:16 New York: 2.4x normal volume in the last 30 min; no news found",
+  "Added KLIC to today's list at 10:32 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Added CBK to today's list at 10:32 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Added ACU to today's list at 10:48 New York: 0.5x normal volume in the last 30 min; no news found",
+  "Added GNLX to today's list at 10:48 New York: 1.1x normal volume in the last 30 min; no news found"
+ ],
+ "drift_list": [],
+ "list": [
+  {
+   "ticker": "SOFI",
+   "name": "SoFi Technologies, Inc.",
+   "vol_x": 1.07,
+   "buy_pct30": 0.5542852000741769,
+   "change": 0.11346475352300556,
+   "score": 3.86,
+   "news": [
+    "SoFi Reports Third Quarter 2026 with Record Net Revenue of $1.4 Billion, Net Income of $241 Million and Raises Full-Year Guidance - SoFi Investor Relations"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "RCL",
+   "name": "Royal Caribbean Cruises Ltd.",
+   "vol_x": 1.35,
+   "buy_pct30": 0.5224523069801444,
+   "change": 0.06425516175022983,
+   "score": 3.29,
+   "news": [
+    "ROYAL CARIBBEAN GROUP REPORTS THIRD QUARTER RESULTS ABOVE EXPECTATIONS AND RAISES FULL YEAR GUIDANCE - PR Newswire"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "VNDA",
+   "name": "Vanda Pharmaceuticals Inc.",
+   "vol_x": 0.35,
+   "buy_pct30": 0.35952966394091734,
+   "change": 0.01269034304318195,
+   "score": 0.64,
+   "news": [
+    "Vanda Pharmaceuticals Announces Positive Results from Study 3601 of NEREUS\u2122 (tradipitant) for Prevention of GLP-1-Induced Vomiting - PR Newswire"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "ZNB",
+   "vol_x": 43.14
+  },
+  {
+   "ticker": "BRAI",
+   "vol_x": 12.91
+  },
+  {
+   "ticker": "TDIC",
+   "vol_x": 2.65
+  },
+  {
+   "ticker": "AEYE",
+   "vol_x": 2.0
+  },
+  {
+   "ticker": "POM",
+   "vol_x": 1.35
+  },
+  {
+   "ticker": "CLS",
+   "vol_x": 0.87
+  },
+  {
+   "ticker": "CSHR",
+   "vol_x": 0.79
+  },
+  {
+   "ticker": "IMSR",
+   "vol_x": 0.69
+  },
+  {
+   "ticker": "KNSA",
+   "vol_x": 0.68
+  },
+  {
+   "ticker": "COOK",
+   "vol_x": 0.61
+  },
+  {
+   "ticker": "MBOT",
+   "vol_x": 0.59
+  },
+  {
+   "ticker": "HWKN",
+   "vol_x": 0.58
+  },
+  {
+   "ticker": "ESQ",
+   "vol_x": 0.57
+  },
+  {
+   "ticker": "CLYM",
+   "vol_x": 0.57
+  },
+  {
+   "ticker": "NVA",
+   "vol_x": 0.55
+  }
+ ],
+ "trades": [],
+ "total_gbp": 0,
+ "alerts": [
+  "15:50 Day trade summary: No trade today: nothing in play broke out."
+ ],
+ "log": [
+  "Added AVBH to today's list at 10:16 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Added ISBA to today's list at 10:16 New York: 0.5x normal volume in the last 30 min; no news found",
+  "Added AEYE to today's list at 10:16 New York: 2.4x normal volume in the last 30 min; no news found",
+  "Added KLIC to today's list at 10:32 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Added CBK to today's list at 10:32 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Added ACU to today's list at 10:48 New York: 0.5x normal volume in the last 30 min; no news found",
+  "Added GNLX to today's list at 10:48 New York: 1.1x normal volume in the last 30 min; no news found",
+  "GNLX: Claude: no catalyst (strength 1/5): Only OTHER headlines are present: a price-range technical note and a wider-than-expected Q2 loss with downward estimate revisions, with no official company anno",
+  "Day trading finished: 0 trade(s), total +\u00a30."
+ ]
+}

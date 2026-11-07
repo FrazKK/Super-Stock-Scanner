@@ -1,0 +1,86 @@
+{
+ "date": "2026-09-15",
+ "generated": "2026-11-07T17:26+00:00",
+ "fx_gbpusd": 1.3500925302505493,
+ "result": "done",
+ "require_news": true,
+ "strategy": "catalyst-tight",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [
+  "Added VRA to today's list at 10:32 New York: 2.2x normal volume in the last 30 min; no news found"
+ ],
+ "drift_list": [],
+ "list": [],
+ "quiet": [
+  {
+   "ticker": "VRA",
+   "vol_x": 37.07
+  },
+  {
+   "ticker": "RLGT",
+   "vol_x": 4.08
+  },
+  {
+   "ticker": "CHOW",
+   "vol_x": 3.97
+  },
+  {
+   "ticker": "FPS",
+   "vol_x": 1.42
+  },
+  {
+   "ticker": "PDSB",
+   "vol_x": 1.02
+  },
+  {
+   "ticker": "PSIG",
+   "vol_x": 0.68
+  },
+  {
+   "ticker": "MLAB",
+   "vol_x": 0.67
+  },
+  {
+   "ticker": "RENT",
+   "vol_x": 0.66
+  },
+  {
+   "ticker": "WAY",
+   "vol_x": 0.63
+  },
+  {
+   "ticker": "PBF",
+   "vol_x": 0.59
+  },
+  {
+   "ticker": "OSUR",
+   "vol_x": 0.59
+  },
+  {
+   "ticker": "FLXS",
+   "vol_x": 0.54
+  },
+  {
+   "ticker": "FCBM",
+   "vol_x": 0.49
+  },
+  {
+   "ticker": "PTLE",
+   "vol_x": 0.49
+  },
+  {
+   "ticker": "ECO",
+   "vol_x": 0.48
+  }
+ ],
+ "trades": [],
+ "total_gbp": 0,
+ "alerts": [
+  "15:50 Day trade summary: No trade today: nothing in play broke out."
+ ],
+ "log": [
+  "Added VRA to today's list at 10:32 New York: 2.2x normal volume in the last 30 min; no news found",
+  "Day trading finished: 0 trade(s), total +\u00a30."
+ ]
+}

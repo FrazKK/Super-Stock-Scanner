@@ -1,0 +1,100 @@
+{
+ "date": "2026-09-24",
+ "generated": "2026-11-07T17:25+00:00",
+ "fx_gbpusd": 1.3241524696350098,
+ "result": "done",
+ "require_news": true,
+ "strategy": "catalyst-tight",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [
+  "Added RZLT to today's list at 10:16 New York: 0.5x normal volume in the last 30 min; no news found"
+ ],
+ "drift_list": [],
+ "list": [
+  {
+   "ticker": "DGNX",
+   "name": "Diginex Limited",
+   "vol_x": 1.17,
+   "buy_pct30": 0.06357273195878561,
+   "change": 0.013605428936910968,
+   "score": 1.09,
+   "news": [
+    "Diginex Consolidates Group-Wide Expertise and Launches Sustainability Science & Intelligence Initiative to Accelerate Product Innovation and Drive Measurable Client Outcomes - GlobeNewswire"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "SRZN",
+   "vol_x": 40.62
+  },
+  {
+   "ticker": "YMAT",
+   "vol_x": 38.17
+  },
+  {
+   "ticker": "WETO",
+   "vol_x": 3.85
+  },
+  {
+   "ticker": "SKYQ",
+   "vol_x": 3.06
+  },
+  {
+   "ticker": "LITS",
+   "vol_x": 2.95
+  },
+  {
+   "ticker": "KYTX",
+   "vol_x": 1.39
+  },
+  {
+   "ticker": "NCPL",
+   "vol_x": 0.98
+  },
+  {
+   "ticker": "TSSI",
+   "vol_x": 0.87
+  },
+  {
+   "ticker": "FRVO",
+   "vol_x": 0.8
+  },
+  {
+   "ticker": "RSKD",
+   "vol_x": 0.69
+  },
+  {
+   "ticker": "BDSX",
+   "vol_x": 0.65
+  },
+  {
+   "ticker": "NKSH",
+   "vol_x": 0.6
+  },
+  {
+   "ticker": "GFUZ",
+   "vol_x": 0.58
+  },
+  {
+   "ticker": "SECZ",
+   "vol_x": 0.48
+  },
+  {
+   "ticker": "ITIC",
+   "vol_x": 0.48
+  }
+ ],
+ "trades": [],
+ "total_gbp": 0,
+ "alerts": [
+  "15:50 Day trade summary: No trade today: nothing in play broke out."
+ ],
+ "log": [
+  "Added RZLT to today's list at 10:16 New York: 0.5x normal volume in the last 30 min; no news found",
+  "RZLT: Claude: no catalyst (strength 1/5): Only OTHER-sourced headlines: a 10-K summary showing zero revenue and a $77.6M net loss, plus a routine fiscal-year results notice, with no identifiable positiv",
+  "Day trading finished: 0 trade(s), total +\u00a30."
+ ]
+}

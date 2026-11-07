@@ -1,0 +1,83 @@
+{
+ "date": "2026-09-16",
+ "generated": "2026-11-07T17:27+00:00",
+ "fx_gbpusd": 1.3473457098007202,
+ "result": "done",
+ "require_news": true,
+ "strategy": "catalyst-tight",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [],
+ "drift_list": [],
+ "list": [],
+ "quiet": [
+  {
+   "ticker": "MGN",
+   "vol_x": 144.06
+  },
+  {
+   "ticker": "MEDS",
+   "vol_x": 14.23
+  },
+  {
+   "ticker": "NRXS",
+   "vol_x": 3.45
+  },
+  {
+   "ticker": "BBNX",
+   "vol_x": 1.28
+  },
+  {
+   "ticker": "ALVO",
+   "vol_x": 1.06
+  },
+  {
+   "ticker": "LIFE",
+   "vol_x": 0.8
+  },
+  {
+   "ticker": "IPSC",
+   "vol_x": 0.71
+  },
+  {
+   "ticker": "VRA",
+   "vol_x": 0.62
+  },
+  {
+   "ticker": "APEI",
+   "vol_x": 0.58
+  },
+  {
+   "ticker": "AGPU",
+   "vol_x": 0.57
+  },
+  {
+   "ticker": "GRAL",
+   "vol_x": 0.53
+  },
+  {
+   "ticker": "ALMU",
+   "vol_x": 0.53
+  },
+  {
+   "ticker": "CIFR",
+   "vol_x": 0.52
+  },
+  {
+   "ticker": "ADPT",
+   "vol_x": 0.49
+  },
+  {
+   "ticker": "CRML",
+   "vol_x": 0.49
+  }
+ ],
+ "trades": [],
+ "total_gbp": 0,
+ "alerts": [
+  "15:50 Day trade summary: No trade today: nothing in play broke out."
+ ],
+ "log": [
+  "Day trading finished: 0 trade(s), total +\u00a30."
+ ]
+}

@@ -1,0 +1,88 @@
+{
+ "date": "2026-09-29",
+ "generated": "2026-11-07T17:26+00:00",
+ "fx_gbpusd": 1.3254337310791016,
+ "result": "done",
+ "require_news": true,
+ "strategy": "catalyst-tight",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [
+  "Added KMX to today's list at 10:16 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Added CRVO to today's list at 10:48 New York: 0.7x normal volume in the last 30 min; no news found"
+ ],
+ "drift_list": [],
+ "list": [],
+ "quiet": [
+  {
+   "ticker": "BKYI",
+   "vol_x": 816.44
+  },
+  {
+   "ticker": "NAUT",
+   "vol_x": 3.95
+  },
+  {
+   "ticker": "SMMT",
+   "vol_x": 1.92
+  },
+  {
+   "ticker": "NTWK",
+   "vol_x": 1.36
+  },
+  {
+   "ticker": "JELD",
+   "vol_x": 1.17
+  },
+  {
+   "ticker": "NVTS",
+   "vol_x": 1.14
+  },
+  {
+   "ticker": "QSI",
+   "vol_x": 1.14
+  },
+  {
+   "ticker": "LONA",
+   "vol_x": 1.06
+  },
+  {
+   "ticker": "MX",
+   "vol_x": 1.05
+  },
+  {
+   "ticker": "KMX",
+   "vol_x": 0.98
+  },
+  {
+   "ticker": "CCL",
+   "vol_x": 0.96
+  },
+  {
+   "ticker": "IOVA",
+   "vol_x": 0.87
+  },
+  {
+   "ticker": "COOK",
+   "vol_x": 0.76
+  },
+  {
+   "ticker": "WW",
+   "vol_x": 0.72
+  },
+  {
+   "ticker": "CZFS",
+   "vol_x": 0.66
+  }
+ ],
+ "trades": [],
+ "total_gbp": 0,
+ "alerts": [
+  "15:50 Day trade summary: No trade today: nothing in play broke out."
+ ],
+ "log": [
+  "Added KMX to today's list at 10:16 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Added CRVO to today's list at 10:48 New York: 0.7x normal volume in the last 30 min; no news found",
+  "Day trading finished: 0 trade(s), total +\u00a30."
+ ]
+}

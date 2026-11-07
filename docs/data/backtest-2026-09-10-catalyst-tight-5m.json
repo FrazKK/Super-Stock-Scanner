@@ -1,0 +1,89 @@
+{
+ "date": "2026-09-10",
+ "generated": "2026-11-07T17:27+00:00",
+ "fx_gbpusd": 1.3551971912384033,
+ "result": "done",
+ "require_news": true,
+ "strategy": "catalyst-tight",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [
+  "Added IMPP to today's list at 10:16 New York: 0.5x normal volume in the last 30 min; no news found",
+  "Added OCC to today's list at 10:32 New York: 0.4x normal volume in the last 30 min; no news found"
+ ],
+ "drift_list": [],
+ "list": [],
+ "quiet": [
+  {
+   "ticker": "TPET",
+   "vol_x": 47.96
+  },
+  {
+   "ticker": "SKYQ",
+   "vol_x": 17.29
+  },
+  {
+   "ticker": "STAK",
+   "vol_x": 2.18
+  },
+  {
+   "ticker": "GTBP",
+   "vol_x": 1.72
+  },
+  {
+   "ticker": "TSSI",
+   "vol_x": 1.61
+  },
+  {
+   "ticker": "AVAV",
+   "vol_x": 1.46
+  },
+  {
+   "ticker": "CMRC",
+   "vol_x": 1.31
+  },
+  {
+   "ticker": "PSIG",
+   "vol_x": 1.31
+  },
+  {
+   "ticker": "VOYA",
+   "vol_x": 1.01
+  },
+  {
+   "ticker": "PRTS",
+   "vol_x": 0.79
+  },
+  {
+   "ticker": "INDO",
+   "vol_x": 0.76
+  },
+  {
+   "ticker": "SWMR",
+   "vol_x": 0.72
+  },
+  {
+   "ticker": "AMTX",
+   "vol_x": 0.72
+  },
+  {
+   "ticker": "DBI",
+   "vol_x": 0.7
+  },
+  {
+   "ticker": "EGAN",
+   "vol_x": 0.67
+  }
+ ],
+ "trades": [],
+ "total_gbp": 0,
+ "alerts": [
+  "15:50 Day trade summary: No trade today: nothing in play broke out."
+ ],
+ "log": [
+  "Added IMPP to today's list at 10:16 New York: 0.5x normal volume in the last 30 min; no news found",
+  "Added OCC to today's list at 10:32 New York: 0.4x normal volume in the last 30 min; no news found",
+  "OCC: Claude: no catalyst (strength 0/5): (reply cut short)",
+  "Day trading finished: 0 trade(s), total +\u00a30."
+ ]
+}

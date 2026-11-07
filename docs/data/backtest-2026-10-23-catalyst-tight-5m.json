@@ -1,0 +1,87 @@
+{
+ "date": "2026-10-23",
+ "generated": "2026-11-07T17:37+00:00",
+ "fx_gbpusd": 1.3403927087783813,
+ "result": "done",
+ "require_news": true,
+ "strategy": "catalyst-tight",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [
+  "Added FCNCA to today's list at 10:16 New York: 0.5x normal volume in the last 30 min; no news found"
+ ],
+ "drift_list": [],
+ "list": [],
+ "quiet": [
+  {
+   "ticker": "BOLT",
+   "vol_x": 8.26
+  },
+  {
+   "ticker": "CLRO",
+   "vol_x": 8.01
+  },
+  {
+   "ticker": "TGEN",
+   "vol_x": 4.8
+  },
+  {
+   "ticker": "BKYI",
+   "vol_x": 1.65
+  },
+  {
+   "ticker": "YMAT",
+   "vol_x": 1.62
+  },
+  {
+   "ticker": "HURA",
+   "vol_x": 0.87
+  },
+  {
+   "ticker": "EDHL",
+   "vol_x": 0.84
+  },
+  {
+   "ticker": "STAK",
+   "vol_x": 0.78
+  },
+  {
+   "ticker": "IFRX",
+   "vol_x": 0.67
+  },
+  {
+   "ticker": "RNG",
+   "vol_x": 0.66
+  },
+  {
+   "ticker": "GRC",
+   "vol_x": 0.63
+  },
+  {
+   "ticker": "FCNCA",
+   "vol_x": 0.47
+  },
+  {
+   "ticker": "NFGC",
+   "vol_x": 0.46
+  },
+  {
+   "ticker": "MWYN",
+   "vol_x": 0.46
+  },
+  {
+   "ticker": "SAM",
+   "vol_x": 0.43
+  }
+ ],
+ "trades": [],
+ "total_gbp": 0,
+ "alerts": [
+  "15:50 Day trade summary: No trade today: nothing in play broke out."
+ ],
+ "log": [
+  "Added FCNCA to today's list at 10:16 New York: 0.5x normal volume in the last 30 min; no news found",
+  "FCNCA: Claude: no catalyst (strength 2/5): Quarterly earnings with a new buyback plan is mildly positive, but without release text the beat versus expectations and the buyback size relative to a large-ca",
+  "Day trading finished: 0 trade(s), total +\u00a30."
+ ]
+}

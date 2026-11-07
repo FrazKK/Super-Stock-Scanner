@@ -1,0 +1,86 @@
+{
+ "date": "2026-10-09",
+ "generated": "2026-11-07T17:34+00:00",
+ "fx_gbpusd": 1.322908878326416,
+ "result": "done",
+ "require_news": true,
+ "strategy": "catalyst-tight",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [
+  "Added HOVR to today's list at 10:16 New York: 0.4x normal volume in the last 30 min; no news found"
+ ],
+ "drift_list": [],
+ "list": [],
+ "quiet": [
+  {
+   "ticker": "BDAI",
+   "vol_x": 4.14
+  },
+  {
+   "ticker": "VEEA",
+   "vol_x": 2.46
+  },
+  {
+   "ticker": "CRGY",
+   "vol_x": 2.14
+  },
+  {
+   "ticker": "GFUZ",
+   "vol_x": 1.23
+  },
+  {
+   "ticker": "HUM",
+   "vol_x": 0.99
+  },
+  {
+   "ticker": "CLOV",
+   "vol_x": 0.64
+  },
+  {
+   "ticker": "AAOI",
+   "vol_x": 0.54
+  },
+  {
+   "ticker": "IMMR",
+   "vol_x": 0.49
+  },
+  {
+   "ticker": "PCG",
+   "vol_x": 0.47
+  },
+  {
+   "ticker": "FSLY",
+   "vol_x": 0.44
+  },
+  {
+   "ticker": "PYPL",
+   "vol_x": 0.42
+  },
+  {
+   "ticker": "COHR",
+   "vol_x": 0.42
+  },
+  {
+   "ticker": "ATEX",
+   "vol_x": 0.4
+  },
+  {
+   "ticker": "SNOW",
+   "vol_x": 0.38
+  },
+  {
+   "ticker": "NN",
+   "vol_x": 0.38
+  }
+ ],
+ "trades": [],
+ "total_gbp": 0,
+ "alerts": [
+  "15:50 Day trade summary: No trade today: nothing in play broke out."
+ ],
+ "log": [
+  "Added HOVR to today's list at 10:16 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Day trading finished: 0 trade(s), total +\u00a30."
+ ]
+}

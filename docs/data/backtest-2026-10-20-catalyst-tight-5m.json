@@ -1,0 +1,137 @@
+{
+ "date": "2026-10-20",
+ "generated": "2026-11-07T17:33+00:00",
+ "fx_gbpusd": 1.330849051475525,
+ "result": "done",
+ "require_news": true,
+ "strategy": "catalyst-tight",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [
+  "Added AUB to today's list at 10:16 New York: 0.5x normal volume in the last 30 min; no news found",
+  "Added TMP to today's list at 10:16 New York: 0.9x normal volume in the last 30 min; no news found",
+  "Added RAPP to today's list at 10:16 New York: 3.9x normal volume in the last 30 min; news: Rapport Therapeutics Announces Positive Topline Results - GlobeNewswire",
+  "Added AVBH to today's list at 10:46 New York: 0.4x normal volume in the last 30 min; no news found"
+ ],
+ "drift_list": [],
+ "list": [
+  {
+   "ticker": "HOST",
+   "name": "Host Digital Inc.",
+   "vol_x": 4.85,
+   "buy_pct30": 0.3326346455359881,
+   "change": 0.0572916753978161,
+   "score": 9.53,
+   "news": [
+    "Host Digital Authorizes $15 Million Share Buyback Program - GlobeNewswire"
+   ],
+   "on_t212": true
+  },
+  {
+   "ticker": "ALVO",
+   "name": "Alvotech",
+   "vol_x": 0.48,
+   "buy_pct30": 0.18115637968261397,
+   "change": 0.049701787191282376,
+   "score": 0.18,
+   "news": [
+    "Alvotech receives FDA approval for new SIMLANDI\u00ae manufacturing process that more than doubles output per batch - GlobeNewswire"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "MYGN",
+   "vol_x": 6.61
+  },
+  {
+   "ticker": "WORX",
+   "vol_x": 3.19
+  },
+  {
+   "ticker": "FNWD",
+   "vol_x": 1.45
+  },
+  {
+   "ticker": "MF",
+   "vol_x": 1.39
+  },
+  {
+   "ticker": "HAS",
+   "vol_x": 1.29
+  },
+  {
+   "ticker": "PEW",
+   "vol_x": 1.15
+  },
+  {
+   "ticker": "RCUS",
+   "vol_x": 1.13
+  },
+  {
+   "ticker": "AMPG",
+   "vol_x": 1.01
+  },
+  {
+   "ticker": "PRK",
+   "vol_x": 0.85
+  },
+  {
+   "ticker": "TMP",
+   "vol_x": 0.85
+  },
+  {
+   "ticker": "HTZ",
+   "vol_x": 0.81
+  },
+  {
+   "ticker": "CZFS",
+   "vol_x": 0.8
+  },
+  {
+   "ticker": "QNBC",
+   "vol_x": 0.78
+  },
+  {
+   "ticker": "KVYO",
+   "vol_x": 0.69
+  },
+  {
+   "ticker": "MLR",
+   "vol_x": 0.62
+  }
+ ],
+ "trades": [
+  {
+   "ticker": "RAPP",
+   "bought_at": "2026-10-20T14:26+00:00",
+   "sold_at": "2026-10-20T14:46+00:00",
+   "entry": 30.94090984725952,
+   "exit": 29.36061,
+   "cost_gbp": 1001.2065685736503,
+   "pl_gbp": -53.982336601326324,
+   "pl_pct": -0.053917281703646056,
+   "reason": "Stop-loss order filled"
+  }
+ ],
+ "total_gbp": -53.982336601326324,
+ "alerts": [
+  "10:26 Day trade: bought RAPP: 43 RAPP at $30.94 (about \u00a31,001). Stop $29.39. Broke above its opening-range high ($30.32) at $30.91. In play: 3.9x normal volume, normally moves 6% a day. Stop $29.36. News (GlobeNewswire): Rapport Therapeutics Announces Positive Topline Results - GlobeNewswire. Claude: catalyst (strength 4/5): An official announcement of positive topline trial results is a clear biotech catalyst, though without release text I can't confirm the primary endpoint was met",
+  "10:46 Day trade update: RAPP: stop-loss order filled (-\u00a354)",
+  "15:50 Day trade summary: 1 trade(s) today: RAPP -\u00a354. Total -\u00a354."
+ ],
+ "log": [
+  "Added AUB to today's list at 10:16 New York: 0.5x normal volume in the last 30 min; no news found",
+  "Added TMP to today's list at 10:16 New York: 0.9x normal volume in the last 30 min; no news found",
+  "Added RAPP to today's list at 10:16 New York: 3.9x normal volume in the last 30 min; news: Rapport Therapeutics Announces Positive Topline Results - GlobeNewswire",
+  "RAPP: Claude: catalyst (strength 4/5): An official announcement of positive topline trial results is a clear biotech catalyst, though without release text I can't confirm the primary endpoint was met",
+  "Day trade buy order: 43 RAPP at about $30.91. Broke above its opening-range high ($30.32) at $30.91. In play: 3.9x normal volume, normally moves 6% a day. Stop $29.36. News (GlobeNewswire): Rapport Therapeutics Announces Positive Topline Results - GlobeNewswire. Claude: catalyst (strength 4/5): An official announcement of positive topline trial results is a clear biotech catalyst, though without release text I can't confirm the primary endpoint was met",
+  "Bought 43 RAPP at 30.94 (cost \u00a31,001).",
+  "RAPP: stop-loss order filled, P&L -\u00a354.",
+  "Added AVBH to today's list at 10:46 New York: 0.4x normal volume in the last 30 min; no news found",
+  "TMP: Claude: no catalyst (strength 1/5): All headlines are OTHER: a routine Form 4 insider filing, a volume-alert market report and an earnings preview, with no official company announcement in the las",
+  "AUB: Claude: no catalyst (strength 1/5): The only official item is a routine Q3 results release, and the OTHER headlines say EPS matched forecast, which is in line rather than a beat, with no release t",
+  "Day trading finished: 1 trade(s), total -\u00a354."
+ ]
+}

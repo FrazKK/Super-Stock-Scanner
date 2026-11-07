@@ -1,0 +1,82 @@
+{
+ "date": "2026-10-07",
+ "generated": "2026-11-07T17:31+00:00",
+ "fx_gbpusd": 1.326682209968567,
+ "result": "done",
+ "require_news": true,
+ "strategy": "catalyst-tight",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [
+  "Added VTVT to today's list at 10:32 New York: 0.3x normal volume in the last 30 min; news: vTv Therapeutics Announces FDA Orphan Drug Designation for HPPD in Sickle Cell D"
+ ],
+ "drift_list": [],
+ "list": [],
+ "quiet": [
+  {
+   "ticker": "LPCN",
+   "vol_x": 2263.49
+  },
+  {
+   "ticker": "ICU",
+   "vol_x": 3.66
+  },
+  {
+   "ticker": "PENG",
+   "vol_x": 2.49
+  },
+  {
+   "ticker": "WETO",
+   "vol_x": 2.16
+  },
+  {
+   "ticker": "BKV",
+   "vol_x": 1.25
+  },
+  {
+   "ticker": "BKH",
+   "vol_x": 0.58
+  },
+  {
+   "ticker": "ENTX",
+   "vol_x": 0.56
+  },
+  {
+   "ticker": "NWE",
+   "vol_x": 0.45
+  },
+  {
+   "ticker": "PNTG",
+   "vol_x": 0.45
+  },
+  {
+   "ticker": "ZIM",
+   "vol_x": 0.43
+  },
+  {
+   "ticker": "BWLP",
+   "vol_x": 0.43
+  },
+  {
+   "ticker": "HTZ",
+   "vol_x": 0.39
+  },
+  {
+   "ticker": "WRAP",
+   "vol_x": 0.35
+  },
+  {
+   "ticker": "PG",
+   "vol_x": 0.34
+  }
+ ],
+ "trades": [],
+ "total_gbp": 0,
+ "alerts": [
+  "15:50 Day trade summary: No trade today: nothing in play broke out."
+ ],
+ "log": [
+  "Added VTVT to today's list at 10:32 New York: 0.3x normal volume in the last 30 min; news: vTv Therapeutics Announces FDA Orphan Drug Designation for HPPD in Sickle Cell D",
+  "Day trading finished: 0 trade(s), total +\u00a30."
+ ]
+}

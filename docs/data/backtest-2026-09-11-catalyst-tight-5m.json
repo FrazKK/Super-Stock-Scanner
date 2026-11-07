@@ -1,0 +1,101 @@
+{
+ "date": "2026-09-11",
+ "generated": "2026-11-07T17:29+00:00",
+ "fx_gbpusd": 1.3509314060211182,
+ "result": "done",
+ "require_news": true,
+ "strategy": "catalyst-tight",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [
+  "Added CRMT to today's list at 10:16 New York: 0.5x normal volume in the last 30 min; no news found",
+  "Added ORCL to today's list at 10:32 New York: 0.3x normal volume in the last 30 min; no news found"
+ ],
+ "drift_list": [],
+ "list": [
+  {
+   "ticker": "BOC",
+   "name": "Boston Omaha Corporation",
+   "vol_x": 0.34,
+   "buy_pct30": 0.46434458928701117,
+   "change": 0.028497425785291908,
+   "score": 1.04,
+   "news": [
+    "Boston Omaha Corporation Authorizes New $30 Million Share Repurchase Program - Business Wire"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "LBGJ",
+   "vol_x": 33.09
+  },
+  {
+   "ticker": "FEIM",
+   "vol_x": 2.52
+  },
+  {
+   "ticker": "HOFT",
+   "vol_x": 1.55
+  },
+  {
+   "ticker": "AIRT",
+   "vol_x": 1.33
+  },
+  {
+   "ticker": "ASTI",
+   "vol_x": 1.27
+  },
+  {
+   "ticker": "STVN",
+   "vol_x": 0.96
+  },
+  {
+   "ticker": "AVIR",
+   "vol_x": 0.9
+  },
+  {
+   "ticker": "MAAS",
+   "vol_x": 0.89
+  },
+  {
+   "ticker": "ORCL",
+   "vol_x": 0.87
+  },
+  {
+   "ticker": "TEN",
+   "vol_x": 0.81
+  },
+  {
+   "ticker": "PSIG",
+   "vol_x": 0.79
+  },
+  {
+   "ticker": "PRTS",
+   "vol_x": 0.76
+  },
+  {
+   "ticker": "IMPP",
+   "vol_x": 0.72
+  },
+  {
+   "ticker": "CRMT",
+   "vol_x": 0.65
+  },
+  {
+   "ticker": "KINS",
+   "vol_x": 0.59
+  }
+ ],
+ "trades": [],
+ "total_gbp": 0,
+ "alerts": [
+  "15:50 Day trade summary: No trade today: nothing in play broke out."
+ ],
+ "log": [
+  "Added CRMT to today's list at 10:16 New York: 0.5x normal volume in the last 30 min; no news found",
+  "Added ORCL to today's list at 10:32 New York: 0.3x normal volume in the last 30 min; no news found",
+  "Day trading finished: 0 trade(s), total +\u00a30."
+ ]
+}

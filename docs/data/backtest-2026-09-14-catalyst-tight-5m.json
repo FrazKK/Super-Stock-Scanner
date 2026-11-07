@@ -1,0 +1,102 @@
+{
+ "date": "2026-09-14",
+ "generated": "2026-11-07T17:27+00:00",
+ "fx_gbpusd": 1.3525760173797607,
+ "result": "done",
+ "require_news": true,
+ "strategy": "catalyst-tight",
+ "bars": "5m",
+ "require_trend": true,
+ "added_during_day": [
+  "Added CODA to today's list at 10:16 New York: 0.4x normal volume in the last 30 min; no news found",
+  "Added VNCE to today's list at 10:32 New York: 2.1x normal volume in the last 30 min; no news found"
+ ],
+ "drift_list": [],
+ "list": [
+  {
+   "ticker": "DFTX",
+   "name": "Definium Therapeutics, Inc.",
+   "vol_x": 1.23,
+   "buy_pct30": 0.3662580581814315,
+   "change": 0.05644123757452335,
+   "score": 2.43,
+   "news": [
+    "Definium Therapeutics Announces Positive Topline Results from Phase 3 Panorama Study of DT120 ODT in Generalized Anxiety Disorder - Business Wire"
+   ],
+   "on_t212": true
+  }
+ ],
+ "quiet": [
+  {
+   "ticker": "BMGL",
+   "vol_x": 8703.02
+  },
+  {
+   "ticker": "ELMT",
+   "vol_x": 23.86
+  },
+  {
+   "ticker": "CRBP",
+   "vol_x": 6.86
+  },
+  {
+   "ticker": "DV",
+   "vol_x": 5.33
+  },
+  {
+   "ticker": "VNCE",
+   "vol_x": 4.08
+  },
+  {
+   "ticker": "BMM",
+   "vol_x": 3.23
+  },
+  {
+   "ticker": "RUM",
+   "vol_x": 3.05
+  },
+  {
+   "ticker": "ALLT",
+   "vol_x": 2.33
+  },
+  {
+   "ticker": "FTFT",
+   "vol_x": 1.49
+  },
+  {
+   "ticker": "BHC",
+   "vol_x": 1.39
+  },
+  {
+   "ticker": "THRY",
+   "vol_x": 1.01
+  },
+  {
+   "ticker": "SFST",
+   "vol_x": 0.98
+  },
+  {
+   "ticker": "STXS",
+   "vol_x": 0.95
+  },
+  {
+   "ticker": "SKYQ",
+   "vol_x": 0.84
+  },
+  {
+   "ticker": "CRVL",
+   "vol_x": 0.82
+  }
+ ],
+ "trades": [],
+ "total_gbp": 0,
+ "alerts": [
+  "15:50 Day trade summary: No trade today: nothing in play broke out."
+ ],
+ "log": [
+  "Added CODA to today's list at 10:16 New York: 0.4x normal volume in the last 30 min; no news found",
+  "CODA: Claude: no catalyst (strength 1/5): Only OTHER-labelled earnings headlines with no release text, so no verifiable beat, raised guidance or other specific catalyst can be confirmed.",
+  "Added VNCE to today's list at 10:32 New York: 2.1x normal volume in the last 30 min; no news found",
+  "Day trading finished: 0 trade(s), total +\u00a30."
+ ]
+}
