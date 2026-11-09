@@ -1,0 +1,405 @@
+{
+"date": "2026-11-08",
+"count": 26,
+"items": [
+{
+"source": "prnewswire",
+"title": "Strathcona Resources Ltd. Announces Agreement to Acquire Greenfire Resources Ltd.",
+"url": "https://www.prnewswire.com/news-releases/strathcona-resources-ltd-announces-agreement-to-acquire-greenfire-resources-ltd-302932925.html",
+"time": "2026-11-09T04:44:00Z",
+"tickers": [
+"GFR"
+],
+"t212": [
+"GFR"
+],
+"flags": [],
+"first_seen": "2026-11-09T07:00:56Z"
+},
+{
+"source": "prnewswire",
+"title": "Cars.com Announces Inducement Award Under NYSE Rule 303A.08",
+"url": "https://www.prnewswire.com/news-releases/carscom-announces-inducement-award-under-nyse-rule-303a08-302932900.html",
+"time": "2026-11-09T04:14:00Z",
+"tickers": [
+"CARS"
+],
+"t212": [
+"CARS"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-09T07:00:56Z"
+},
+{
+"source": "newsfile",
+"title": "Greenfire Resources Reports Third Quarter 2026 Results and Provides an Operational Update",
+"url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOb3g3dExzZVFmUzdWSGllZUpSMGs5dS1yU3Z3TGdIalFGbWxFOVVMRnhaRmZpZ1o0R3kweTF1bWItbDBCX2l6TjRtOThGRlJ3czI0bzU0ZTJaNk5Yd3dybkRVdmpEeXhnRV9SRjk5S0N4NmR4UU9RQ3RqeHhGQ3E4ajNBYnNEdmJwTkRNZ2c0Nm9uVXk0bmVydUFNMU9DaGFsYlRqaDZoN1d5czdTZVdIMi1Jd09mZEU1TEppQlRLdVlWdVotYW1XZ1dsU0xKQQ?oc=5",
+"time": "2026-11-09T02:09:00Z",
+"via": "google-news",
+"tickers": [
+"GFR"
+],
+"t212": [
+"GFR"
+],
+"flags": [],
+"first_seen": "2026-11-09T03:03:49Z"
+},
+{
+"source": "prnewswire",
+"title": "FF EAI Robotics Ecosystem Inc. (FFR) and Faraday Future Announce FF OmniMind and Its Model Achieve No. 1 in RoboColiseum Embodied AI Model Ranking; Advance Sales with Several Leading U.S. Integrators of Security and Inspection Robotics Solutions",
+"url": "https://www.prnewswire.com/news-releases/ff-eai-robotics-ecosystem-inc-ffr-and-faraday-future-announce-ff-omnimind-and-its-model-achieve-no-1-in-robocoliseum-embodied-ai-model-ranking-advance-sales-with-several-leading-us-integrators-of-security-and-inspection-rob-302932828.html",
+"time": "2026-11-09T01:42:00Z",
+"tickers": [
+"FFR"
+],
+"t212": [
+"FFR"
+],
+"flags": [],
+"first_seen": "2026-11-09T03:03:49Z"
+},
+{
+"source": "prnewswire",
+"title": "Rosen Law Firm Encourages Fervo Energy Company Investors to Inquire About Securities Class Action Investigation - FRVO",
+"url": "https://www.prnewswire.com/news-releases/rosen-law-firm-encourages-fervo-energy-company-investors-to-inquire-about-securities-class-action-investigation---frvo-302932548.html",
+"time": "2026-11-08T22:50:00Z",
+"tickers": [
+"FRVO"
+],
+"t212": [
+"FRVO"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-08T23:47:47Z"
+},
+{
+"source": "globenewswire",
+"title": "Mineralys Therapeutics Presents New Late-Breaking Data from",
+"url": "https://news.google.com/rss/articles/CBMi1wJBVV95cUxOZ0tBYUZNQUZ6MDNjblMzeEc4X29CM0ZIcFRQa0VnYVJ4dVVzTXpWUWR5NkVaaTA4UWNXMlJXYTBsaGQ1VHdHeENncEM4LVpkdmJKc01ma3I2OWNFV280MktIZ3AxMzg3MVZ0M2xaVDNMRnNEZG45aTdLTTRzYXVHWVgyZ1MxUkd3WlpwQXpQN0hrcjVfTTM1Qk9aemZmTXpIQUYwSUU3UlRXRjFLa0VFdUZ6WnpPcTBHLUNHaGZiR0FOVjB3VDlhbWR3M3BoYnBFdlFSd0U5ZEJRelFoU1hpMDYzZkVTaDJQNVVJRzVxUjNtcS14U19td25mRXJ5cWFiWFp1aTIzQlpKa0drcEZfbHdFUGlobGNUblNmV05vZmJ0YjdqaWRXanpvbVd0NklMNUJyQk1aSUxkTy1zcTd1Rk1aWmZ4X0lKM2luQXFlMGhxQnBDdDlN?oc=5",
+"time": "2026-11-08T21:35:00Z",
+"via": "google-news",
+"tickers": [
+"MLYS"
+],
+"t212": [
+"MLYS"
+],
+"flags": [],
+"first_seen": "2026-11-08T23:47:47Z"
+},
+{
+"source": "globenewswire",
+"title": "RadNet Reports Third Quarter Financial Results with Record",
+"url": "https://news.google.com/rss/articles/CBMiyAJBVV95cUxNbEF1Yng0N2YwRkV6SnBFanJWd0pkdFhqYVBGSE9IUWdVLWxLMVRyT2h4NGlmc2RYNGpjR0Y0eGZHRHdJWGhkT09DbkhkSVNHWnZEN1lXY2pjNnZxTi15XzJmczc3WjVwR1drV0tTazNjbUwydmlaX0c4WHAxQkd5X2hrU01KVlU3RHJlMU1CUExuclVoWVlfems0cGJFVTMxTkZwQXg5UFR1UUd4SUFVNzVudURnaENvcGQ0MFRzYWdNN2xuc1U4NTRLV3o1X08wRjNaRmJSMFl5WnVvTzF4X0V1TWxkZjNKS0VCNmEtQ3NWd2htMGl2UjdoUTlQaURIODFGMnBzUGJWV2ZUS2N2UzNjb1NUUjdoWmFsUm0yaGc1NkcyWU95UWJhSUJ2SXExeWFIR0VSblZRekR1UnZiUHFxN1JjU3VB?oc=5",
+"time": "2026-11-08T21:01:00Z",
+"via": "google-news",
+"tickers": [
+"RDNT"
+],
+"t212": [
+"RDNT"
+],
+"flags": [],
+"first_seen": "2026-11-08T23:47:47Z"
+},
+{
+"source": "globenewswire",
+"title": "AVITA Medical to Host Investor Webinar Briefing",
+"url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOWl8xS3lyWU5fUEoyUWFMZUM3aXVOOUFiYnJkUVR2NllmUUpPRlBOcWRIYTdOTDhCVWVrcjlnem5DS213WDFJRVZWTl80WWJqRzN0UVN5Skdra1liM1k1ektMUmdhNVFNSEhZWk03NWpUVFpaMUo0OUFjdmZVcW9EdElRelpZQ2hfc0p5S0h3V1N3SGVMWWNIbUtTbVNJTVdieC1KcXE3a3JOUVJMWU1tUzQ4RTB1RzI4ME9Z?oc=5",
+"time": "2026-11-08T20:30:00Z",
+"via": "google-news",
+"tickers": [
+"RCEL"
+],
+"t212": [
+"RCEL"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-08T23:47:47Z"
+},
+{
+"source": "prnewswire",
+"title": "Rosen Law Firm Encourages J.B. Hunt Transport Services, Inc. Investors to Inquire About Securities Class Action Investigation - JBHT",
+"url": "https://www.prnewswire.com/news-releases/rosen-law-firm-encourages-jb-hunt-transport-services-inc-investors-to-inquire-about-securities-class-action-investigation---jbht-302932547.html",
+"time": "2026-11-08T20:01:00Z",
+"tickers": [
+"JBHT"
+],
+"t212": [
+"JBHT"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-08T20:13:50Z"
+},
+{
+"source": "globenewswire",
+"title": "Silvercrest Asset Management Secures Full Central Bank of Ireland MiFID License to Expand International Growth",
+"url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOaG1aS29fNE5YclRqRVV3R0gyUERWTGNXVG9IRzBWZzFlSkQ4VUZwSTBkU2dqaC1vUjlVMXgzQkhxN1FKSnVRemp3Q2xxbGxsbFZlYXprX2txMndSa1VGRnRsd3hvc1p0S0wzeG1qdFR4RlZUVFh0cjF4dnNKdjcwZGVpVQ?oc=5",
+"time": "2026-11-08T19:59:57Z",
+"via": "google-news",
+"tickers": [
+"SAMG"
+],
+"t212": [
+"SAMG"
+],
+"flags": [],
+"first_seen": "2026-11-08T23:47:47Z"
+},
+{
+"source": "prnewswire",
+"title": "BULL Investors Have Opportunity to Lead Webull Corporation Securities Fraud Lawsuit Filed by The Rosen Law Firm",
+"url": "https://www.prnewswire.com/news-releases/bull-investors-have-opportunity-to-lead-webull-corporation-securities-fraud-lawsuit-filed-by-the-rosen-law-firm-302932336.html",
+"time": "2026-11-08T19:27:00Z",
+"tickers": [
+"BULL"
+],
+"t212": [
+"BULL"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-08T20:13:50Z"
+},
+{
+"source": "prnewswire",
+"title": "Webull Corporation (BULL) Class Action Lawsuit: Investors Face December 7, 2026, Deadline - Kessler Topaz Meltzer & Check, LLP",
+"url": "https://www.prnewswire.com/news-releases/webull-corporation-bull-class-action-lawsuit-investors-face-december-7-2026-deadline---kessler-topaz-meltzer--check-llp-302932296.html",
+"time": "2026-11-08T18:13:00Z",
+"tickers": [
+"BULL"
+],
+"t212": [
+"BULL"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-08T20:13:50Z"
+},
+{
+"source": "prnewswire",
+"title": "Rosen Law Firm Encourages Azenta, Inc. Investors to Inquire About Securities Class Action Investigation - AZTA",
+"url": "https://www.prnewswire.com/news-releases/rosen-law-firm-encourages-azenta-inc-investors-to-inquire-about-securities-class-action-investigation---azta-302932546.html",
+"time": "2026-11-08T18:01:00Z",
+"tickers": [
+"AZTA"
+],
+"t212": [
+"AZTA"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-08T20:13:50Z"
+},
+{
+"source": "prnewswire",
+"title": "Allergan Aesthetics Reports Improved Satisfaction With Facial Appearance Following Aesthetic Treatment in Two Studies of Patients on GLP-1 Medications Allergan Aesthetics, an AbbVie company (NYSE: ABBV), today announced results from HARMONY IN DIVERSITY and HALO, two Phase 4 studies of aesthetic...",
+"url": "https://www.prnewswire.com/news-releases/allergan-aesthetics-reports-improved-satisfaction-with-facial-appearance-following-aesthetic-treatment-in-two-studies-of-patients-on-glp-1-medications-302932241.html",
+"time": "2026-11-08T17:45:00Z",
+"tickers": [
+"ABBV"
+],
+"t212": [
+"ABBV"
+],
+"flags": [],
+"first_seen": "2026-11-08T20:13:50Z"
+},
+{
+"source": "prnewswire",
+"title": "ASTS Deadline in 5 Days: AST SpaceMobile, Inc. Securities Fraud Class Action Lawsuit Filed; November 13, 2026, Lead Plaintiff Deadline - Kessler Topaz Meltzer & Check, LLP",
+"url": "https://www.prnewswire.com/news-releases/asts-deadline-in-5-days-ast-spacemobile-inc-securities-fraud-class-action-lawsuit-filed-november-13-2026-lead-plaintiff-deadline---kessler-topaz-meltzer--check-llp-302932289.html",
+"time": "2026-11-08T16:48:00Z",
+"tickers": [
+"ASTS"
+],
+"t212": [
+"ASTS"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-08T20:13:50Z"
+},
+{
+"source": "prnewswire",
+"title": "Johnson & Johnson reports 73% PSA response rate with investigational pasritamig-based immunotherapy combination in advanced prostate cancer",
+"url": "https://www.prnewswire.com/news-releases/johnson--johnson-reports-73-psa-response-rate-with-investigational-pasritamig-based-immunotherapy-combination-in-advanced-prostate-cancer-302932750.html",
+"time": "2026-11-08T16:00:00Z",
+"tickers": [
+"JNJ"
+],
+"t212": [
+"JNJ"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-08T20:13:50Z"
+},
+{
+"source": "globenewswire",
+"title": "Gildan Activewear Inc. (GIL) Investor Alert: GIL Stock",
+"url": "https://news.google.com/rss/articles/CBMixwJBVV95cUxQNFJhdFVPWHM2X0dFTWlVN19qNnFCMEdpYy11UnMwdXpjclR6bi1ZNlpxVDZGX2x0NWdqQmdjWVVSSUdIRTNwSzBfUVJFMFJCWGFnLV8zX3ptR3RlaVRuanlhMDZ6VUFzZlBOMnBVZEgwOEc2WWRyOGJWRWpKalhRb1kzRjZJN2FNbHF2TWdNU2VSa1RVUXktTVFQQ0c4MERQY2NLczhDMENqUkRoQW1IcWEzU21iY0NvVGpwUS1WY2Y0c0hydlZreWh3OUd5Uy13eFZrRHRuNm1NeWVkZjk2OE9NQ3NzZkEyV0pDQmFjOXVVSHVNTDdKbC1xSFZPVlFLbFp1dXJ6MDEtZlFZUXQ4cmdnTWUzM3Z2NWl0R05LS05wbDdtTTBTeEhWWXk1VFh4RnloTEEyY1FLRFBwMjI1VG1LYTM3bTA?oc=5",
+"time": "2026-11-08T15:33:00Z",
+"via": "google-news",
+"tickers": [
+"GIL"
+],
+"t212": [
+"GIL"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-08T15:53:16Z"
+},
+{
+"source": "prnewswire",
+"title": "GIL INVESTOR NOTICE: Gildan Activewear Inc. Investors with Substantial Losses May Seek to Lead Class Action Lawsuit Before December 14, 2026 Deadline",
+"url": "https://www.prnewswire.com/news-releases/gil-investor-notice-gildan-activewear-inc-investors-with-substantial-losses-may-seek-to-lead-class-action-lawsuit-before-december-14-2026-deadline-302932348.html",
+"time": "2026-11-08T15:30:00Z",
+"tickers": [
+"GIL"
+],
+"t212": [
+"GIL"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-08T15:53:16Z"
+},
+{
+"source": "globenewswire",
+"title": "CRISPR Therapeutics Provides Update on Zugocabtagene",
+"url": "https://news.google.com/rss/articles/CBMimgJBVV95cUxORFJ2anhlcndrNDZUcHZ3eXRITW5xeVZNcm13QTRRYlBWb1Zmb2hEVnRDN0dOem11YUNqZlVlZ3NQeFZvTm1Fel9sMUFLNGI4dU1DX2tjV05zbEs3Zl90QUNwdmZocks4V3hVMGd6NThIcEQxUU5pUjQ2UlJZZUVlNzdYM2RHVzB5SXNOQmJuc21LcUZUendHNkFwWW82WEY5QnRlb0llazl0WDAyNnYtaDkxcmZPX2dkbHZQempaWkx6aWdHVUMxcERrV0lqdzg4UEktZ1poNXVRczZRRWNkakxIbU12VUlueUQ2T2dKOGdLdlFQX2tsSUFpMmh3NFdTQ3RBWW1kSEpPaVFnYTZ2QVlFT011c1FJa2c?oc=5",
+"time": "2026-11-08T15:30:00Z",
+"via": "google-news",
+"tickers": [
+"CRSP"
+],
+"t212": [
+"CRSP"
+],
+"flags": [],
+"first_seen": "2026-11-08T15:53:16Z"
+},
+{
+"source": "accessnewswire",
+"title": "- ACCESS Newswire",
+"url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5WM29LM01OWWJGb0RjbnJCQk5jc0R1S1p4bFh6UGJtR2xRVkQxQlRrYndRNVFyZ2htWlMwc1RYVmRUbmVUVGM5a2prNEJ0b2dLQVE?oc=5",
+"time": "2026-11-08T15:24:37Z",
+"via": "google-news",
+"tickers": [
+"ACCS"
+],
+"t212": [
+"ACCS"
+],
+"flags": [],
+"first_seen": "2026-11-08T20:13:50Z"
+},
+{
+"source": "globenewswire",
+"title": "Cabaletta Bio Presents New Rese-cel Phase 1/2 Clinical Data",
+"url": "https://news.google.com/rss/articles/CBMi7AJBVV95cUxQLTZRRmVrYjRvSEViejIyRkROUlE2U3RZODBuWmVPUmF2M0lpZ0RXNkJXeGdEM1NlZmpHenN3RkRyQUlmWmFGS2dpeWhPZnl3SWNhTE4wTjVZWUlaSEZKMzZhMmpSa1l2RFdmUHZFbVByTFZrdXJ0MWM3U2RLemZhZUo3NFVkWFRyZ0xibFpYV2lid25YZGtWYmtDMVdWZ0FuTS1yb2V6TEsyM0s2d2U2cHMwOWJDUVdaZ2U4Vk92ZS1vV09QYTFUV3hrbDduZWs2YmkxY19FdzlMaEIycXExWkt4S1BCWkU0QlR2cDBkUlhMR0g1OWpNVUU0SGxqTVRxOE5IUkNQaHZzczBIdjAxSnItZmdpYlVZcmsxUTVyX05JXzh4bWhrU3ZpaFN1RUp4YUhmLVdjNkpnQWVVYmVYZlBERFd4ek5Kdm1KaWFkSVY4STlDcGhwNmZlM2ROOW5ZckkzbS03RDN5b1dh?oc=5",
+"time": "2026-11-08T15:00:00Z",
+"via": "google-news",
+"tickers": [
+"CABA"
+],
+"t212": [
+"CABA"
+],
+"flags": [],
+"first_seen": "2026-11-08T15:53:16Z"
+},
+{
+"source": "prnewswire",
+"title": "D-Wave Quantum Inc. (QBTS) Investors: December 15, 2026, Deadline in Securities Fraud Class Action Lawsuit - Kessler Topaz Meltzer & Check, LLP",
+"url": "https://www.prnewswire.com/news-releases/d-wave-quantum-inc-qbts-investors-december-15-2026-deadline-in-securities-fraud-class-action-lawsuit---kessler-topaz-meltzer--check-llp-302932280.html",
+"time": "2026-11-08T14:27:00Z",
+"tickers": [
+"QBTS"
+],
+"t212": [
+"QBTS"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-08T15:53:16Z"
+},
+{
+"source": "prnewswire",
+"title": "ENSG Investors Have Opportunity to Lead The Ensign Group, Inc. Securities Fraud Lawsuit Filed by The Rosen Law Firm",
+"url": "https://www.prnewswire.com/news-releases/ensg-investors-have-opportunity-to-lead-the-ensign-group-inc-securities-fraud-lawsuit-filed-by-the-rosen-law-firm-302932335.html",
+"time": "2026-11-08T12:30:00Z",
+"tickers": [
+"ENSG"
+],
+"t212": [
+"ENSG"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-08T15:53:16Z"
+},
+{
+"source": "prnewswire",
+"title": "Club Offers for Travel Enthusiasts in Germany",
+"url": "https://www.prnewswire.com/news-releases/club-offers-for-travel-enthusiasts-in-germany-302932690.html",
+"time": "2026-11-08T09:56:00Z",
+"tickers": [
+"TZOO"
+],
+"t212": [
+"TZOO"
+],
+"flags": [],
+"first_seen": "2026-11-08T15:53:16Z"
+},
+{
+"source": "prnewswire",
+"title": "Club Offers for Travel Enthusiasts in Canada",
+"url": "https://www.prnewswire.com/news-releases/club-offers-for-travel-enthusiasts-in-canada-302932399.html",
+"time": "2026-11-08T08:00:00Z",
+"tickers": [
+"TZOO"
+],
+"t212": [
+"TZOO"
+],
+"flags": [],
+"first_seen": "2026-11-08T08:57:41Z"
+},
+{
+"source": "prnewswire",
+"title": "Club Offers for Travel Enthusiasts in the U.S.",
+"url": "https://www.prnewswire.com/news-releases/club-offers-for-travel-enthusiasts-in-the-us-302932402.html",
+"time": "2026-11-08T05:00:00Z",
+"tickers": [
+"TZOO"
+],
+"t212": [
+"TZOO"
+],
+"flags": [],
+"first_seen": "2026-11-08T08:57:41Z"
+}
+]
+}
