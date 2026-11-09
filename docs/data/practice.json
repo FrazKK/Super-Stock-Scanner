@@ -367,6 +367,10 @@
   {
    "time": "2026-11-09T15:01+00:00",
    "text": "TTD: Claude: no catalyst (strength 1/5): All headlines are OTHER commentary and earnings previews; the Q3 report lands after the bell, and no official company announcement with a concrete catalyst is i"
+  },
+  {
+   "time": "2026-11-09T15:17+00:00",
+   "text": "Added DCTH to today's list at 10:17 New York: 0.5x a normal day's volume in the last 30 min; news: to be read: 8-K DELCATH SYSTEMS, INC.: 2.02 results"
   }
  ],
  "done": {},
@@ -383,7 +387,7 @@
   "max_open": 10
  },
  "start_value": 5000.0,
- "updated": "2026-11-09T15:11:50+00:00",
+ "updated": "2026-11-09T15:21:58+00:00",
  "day": {
   "date": "2026-11-09",
   "buys": 0,
@@ -393,7 +397,8 @@
   "list": [
    "TTD",
    "IMVT",
-   "JHX"
+   "JHX",
+   "DCTH"
   ],
   "watch_sent": true,
   "claude": {
