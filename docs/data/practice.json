@@ -371,6 +371,14 @@
   {
    "time": "2026-11-09T15:17+00:00",
    "text": "Added DCTH to today's list at 10:17 New York: 0.5x a normal day's volume in the last 30 min; news: to be read: 8-K DELCATH SYSTEMS, INC.: 2.02 results"
+  },
+  {
+   "time": "2026-11-09T15:34+00:00",
+   "text": "Added WRBY to today's list at 10:34 New York: 0.4x a normal day's volume in the last 30 min; news: to be read: Warby Parker (WRBY) Q3 Earnings: How Key Metrics Compare to Wall Str"
+  },
+  {
+   "time": "2026-11-09T15:34+00:00",
+   "text": "WRBY: Claude: no catalyst (strength 1/5): All headlines are OTHER commentary; the Q3 sales growth and smart-glasses launch are not shown as OFFICIAL releases in the last 48 hours, and the pre-orders and"
   }
  ],
  "done": {},
@@ -387,7 +395,7 @@
   "max_open": 10
  },
  "start_value": 5000.0,
- "updated": "2026-11-09T15:32:03+00:00",
+ "updated": "2026-11-09T15:42:14+00:00",
  "day": {
   "date": "2026-11-09",
   "buys": 0,
@@ -398,7 +406,8 @@
    "TTD",
    "IMVT",
    "JHX",
-   "DCTH"
+   "DCTH",
+   "WRBY"
   ],
   "watch_sent": true,
   "claude": {
@@ -409,6 +418,10 @@
    "TTD": {
     "ok": false,
     "reason": "Claude: no catalyst (strength 1/5): All headlines are OTHER commentary and earnings previews; the Q3 report lands after the bell, and no official company announcement with a concrete catalyst is i"
+   },
+   "WRBY": {
+    "ok": false,
+    "reason": "Claude: no catalyst (strength 1/5): All headlines are OTHER commentary; the Q3 sales growth and smart-glasses launch are not shown as OFFICIAL releases in the last 48 hours, and the pre-orders and"
    }
   }
  }
