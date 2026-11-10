@@ -391,6 +391,10 @@
   {
    "time": "2026-11-10T15:01+00:00",
    "text": "Watch list sent: SENS"
+  },
+  {
+   "time": "2026-11-10T15:17+00:00",
+   "text": "Added PEPG to today's list at 10:17 New York: 1.6x a normal day's volume in the last 30 min; news: to be read: 8-K PepGen Inc.: 2.02 results, 7.01 Reg FD release, 8.01 other event"
   }
  ],
  "done": {},
@@ -407,7 +411,7 @@
   "max_open": 10
  },
  "start_value": 5000.0,
- "updated": "2026-11-10T15:11:38+00:00",
+ "updated": "2026-11-10T15:21:45+00:00",
  "day": {
   "date": "2026-11-10",
   "buys": 0,
@@ -415,7 +419,8 @@
   "skip": {},
   "finished": false,
   "list": [
-   "SENS"
+   "SENS",
+   "PEPG"
   ],
   "watch_sent": true
  }
