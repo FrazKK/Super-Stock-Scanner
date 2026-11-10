@@ -1,179 +1,234 @@
 {
  "markets": {
   "america": {
-   "date": "2026-11-09",
-   "time": "Mon 09 Nov 10:15",
+   "date": "2026-11-10",
+   "time": "Tue 10 Nov 10:15",
    "picks": [
     {
-     "ticker": "VIR",
-     "name": "Vir Biotechnology, Inc.",
+     "ticker": "PEPG",
+     "name": "PepGen Inc.",
      "exchange": "NASDAQ",
-     "ysym": "VIR",
+     "ysym": "PEPG",
      "market": "america",
-     "price": 13.95,
-     "low": 13.0,
+     "price": 5.7192,
+     "low": 5.1501,
      "currency": "USD",
-     "change": 0.14250614250614238,
-     "vol_x": 1.54,
+     "change": 1.3929707112970708,
+     "vol_x": 8.7,
      "vol_basis": "first30",
-     "vol_day_x": 1.56,
-     "buy_pct30": 0.589,
-     "buy_pct": 0.574,
-     "rvol_time": 19.205724423077633,
-     "value": 43184289.6,
-     "mcap": 2389227209.8525796,
+     "vol_day_x": 8.72,
+     "buy_pct30": 0.606,
+     "buy_pct": 0.61,
+     "rvol_time": 368.3461682619801,
+     "value": 348943233.324,
+     "mcap": 165530245.0,
      "sector": "Health Technology",
-     "holding": true,
-     "extended": false,
-     "near_high": true,
-     "longterm_down": false,
-     "chart_url": "https://www.tradingview.com/chart/?symbol=NASDAQ:VIR&interval=D",
+     "holding": false,
+     "extended": true,
+     "near_high": false,
+     "longterm_down": true,
+     "chart_url": "https://www.tradingview.com/chart/?symbol=NASDAQ:PEPG&interval=D",
      "lists": [],
      "owned": false,
      "news": [
       {
-       "title": "8-K Vir Biotechnology, Inc.: 7.01 Reg FD release, 8.01 other events",
-       "date": "2026-11-09",
-       "url": "https://www.sec.gov/Archives/edgar/data/1706431/000162828026071908/0001628280-26-071908-index.htm",
+       "title": "8-K PepGen Inc.: 2.02 results, 7.01 Reg FD release, 8.01 other events",
+       "date": "2026-11-10",
+       "url": "https://www.sec.gov/Archives/edgar/data/1835597/000119312526454469/0001193125-26-454469-index.htm",
        "source": "sec-edgar",
        "official": true,
        "items": [
+        "2.02",
         "7.01",
         "8.01"
        ],
+       "tone": "review"
+      },
+      {
+       "title": "PepGen says early trial for muscular dystrophy drug looks promising - STAT",
+       "date": "2026-11-10",
+       "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNV2ZFNXQzRUZvd25HN0wxcHd5N0NpZDBYaF9UelhXMnJ0aDR2N0NYUFMydU5TRGxkUVVCTTBadEFfeTFqOWVGdzBUcUJmZGxjTGJadXBDTllMbzVVcVRmSzFWU3Z4Qlh5ZmVocmdxbkp4b1BtbENZTFFhVTF3LW1wN2pySXM2MUlaNTNFZ285eThWVUtFdmc?oc=5",
+       "source": "STAT",
+       "official": false,
        "tone": "neutral"
       },
       {
-       "title": "Vir Biotechnology to Present Topline Phase 3 ECLIPSE 1 Data for Elebsiran and Tobevibart in Chronic Hepatitis Delta at AASLD\u2019s The Liver Meeting\u00ae 2026 and Host Investor Conference Call - Business Wire",
-       "date": "2026-11-05",
-       "url": "https://news.google.com/rss/articles/CBMi2wJBVV95cUxQbjBEMnM2dEVLaVY3dUwzZC1BSW5udGFMQW1BRmE5YlJqU0ZYOHFBM1BtWWtJT1NDMENWVFZ3NElQQUpFckFlZTVMS0x2MTBQdWY0WGFqekVtNTV3c3pBQXQ3UHoyckpidlNKLUhFZlZOM3BkbFVDaE9Pb3kxY1BYWjhkN0RRN1hzUXZ1dEt0cU4wN29kTHh0QXJ4WlBLMUhZbzlhR19tN2JMRlJnX2hxakFTMEU5WmNDLUR5d0pxbjBMUXl6ZUJYcEdoQnBYaTdaekpaSVc1Y0J4TURoWnJLUERJaVY0aE1XX3dQcXRYRURmU2x1V1lRN3dEeS1xUklVbUJKRG9nbEpXaDIwNW9EUVNVa1hDRm9wVDR2MDdpRkRhTUhpbjBlaDRIUzhJdTVzdVBVWlA1d29GamNkQXp0aEN1V1d4SkRmMGlVOEhUdGRINm9qZzlBZWtpRQ?oc=5",
+       "title": "PepGen Reports Third Quarter 2026 Financial Results and Recent Corporate Highlights - Yahoo Finance",
+       "date": "2026-11-10",
+       "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNTDdfLVF0dVJBZGNBZy1SMk5uRzh0QVVoLVpvOGswZDhHeklDaXN2bDVFZmJYbFVTWWhyQlA1c0poOWJqb3p1SjNGVDBya1drYk0tU2pEOEZxaEhuNURPNlRNOGtENm04YzcwSFJWV3JRamxwcmEwMm5XWGpsS1R2NlZIbmhvUmp6M3JPcHZLcUdxb1JVOWZ2d2xn?oc=5",
+       "source": "Yahoo Finance",
+       "official": false,
+       "tone": "review"
+      },
+      {
+       "title": "PepGen surges on new mid-stage trial data for muscle disorder therapy - Seeking Alpha",
+       "date": "2026-11-10",
+       "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPc25JZEpiOTNLTUwwc0tfYzJnMFdZQkh4Y2NZWGNHSERnS1ZqeWNxZUpRM1Y5OHY0c0VlVTRwQlR3N1ROcnBhaWpCT01SSjhOZzNFUThXMUphMlNNSXVGc05UcTc2dkFMMGZMZEwweXlpbmVaRTZrMm03U3ltWXd6QlVkaExfeWMzRVRTMUpQUHc?oc=5",
+       "source": "Seeking Alpha",
+       "official": false,
+       "tone": "neutral"
+      },
+      {
+       "title": "PepGen (PEPG) Reports Q3 Loss, Market Signals Mixed Outlook Amid Guru and Insider Activity - GuruFocus",
+       "date": "2026-11-10",
+       "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQVVJuMGFqeGZ2a2xvc0tjaUF6M1g0cGozaFk2c010TWd1X3BFX0tMdzM3MUFnNFAxNzRnWkk3SnVBY3lYQUh5UXBGSm9QdGRVS083VUxWX2VzaWg3RGgzQWl0MEFMMTBOLVJQN1gwSHgyY2tpRGJuZ3VlV2p1Ul9Rdmc2Nl9BTWZ5Q1NTUlBMWWhKbTFIQVQtLVM3X1o1UVlndmxrdDVuamVyWHp6ODVTX2hwU3hLT1JoSnZGNVd6ZnhMS1lw?oc=5",
+       "source": "GuruFocus",
+       "official": false,
+       "tone": "neutral"
+      },
+      {
+       "title": "PepGen Inc. reports results for the quarter ended September 30 - Earnings Summary - TradingView",
+       "date": "2026-11-10",
+       "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQbWJNTVJQMTV1RFRrSTRTOERsODRKUEFhUTM1a0REZ183cFZ0WFQxeDNuRE5KLUItM0Y2SzN4UnN2eTlrMTg1QmNrdnhvRWhBSmF2NkdHRjVnLWpWU1ljaEtRUEx6al9fNWZEcXBvWTZlblVBX0cyWmNnV2wzWUVPblZaSWR3RXg5UXFieElJbkZxbm1BY0lQWW1TTDJpTHRydkdfbGtlNTljVWhtSXNWWDNqbzlPaWNWY2RRLWFFdDZUdmZGdENPYUVnWlhRM1RVeTlHc1FCSmZNWVdhSUJ0NUhn?oc=5",
+       "source": "TradingView",
+       "official": false,
+       "tone": "review"
+      },
+      {
+       "title": "PepGen Reports 46.5% Splicing Correction in DM1 Trial - grafa.com",
+       "date": "2026-11-10",
+       "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOV1dVOHdVOHBPMHF1ZTdFWGlOdjBmaGpGNUp0NWVzNkJNN0UzS29MSGFfelRjYmlfTTBLWlhwV19tVHdTMWY2RFFtd0tmRHNKSm5SWGUyYUpqcHlPV0RqcXdoMS1GRDF2UkpNYV9yOEhwTFpFMjhaYnJXZm1BdXlwbHp4ZDFETTBnZm1qMVFWTnQ4SnpJeW9mdWFLNEpVUzIzdFpHOVZrQnQtQQ?oc=5",
+       "source": "grafa.com",
+       "official": false,
+       "tone": "neutral"
+      },
+      {
+       "title": "PepGen Surges on Positive Phase 2 DM1 Trial Update - Quiver Quantitative",
+       "date": "2026-11-10",
+       "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxObGdLbk9HVXpPUEFVMFZVU2hLSko4ejdtbl9nZU5iU2c5bkxrS2tFZUZUUHlHRk1Scm9VWFZHLURGdTBwS0NkMUJiX0ZuemVFZjVEMG9iWVNXbEVCQlhyMzE1aHJTR0FwUUtDM1BKSVpDS09pTlpsMzJSX0F2cWMyalhDeUVXQ2RnZHhj?oc=5",
+       "source": "Quiver Quantitative",
+       "official": false,
+       "tone": "chatter"
+      },
+      {
+       "title": "PepGen Announces Positive Phase 2 FREEDOM2-DM1 10 mg/kg Results Demonstrating Highest Reported Splicing Correction and Improvements Across Multiple Functional Measures - Yahoo Finance",
+       "date": "2026-11-10",
+       "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOYVdzWnhoWmJLOW0tMWZPMTRkMDJMdDNKTkZKUk03ZlR4MVRha2hEcVdTbHNJa3ZkLUpnRy1aWWEyX0hlQzhHWTl5amlCS25lVlpYdUxoRENIdzBjN0NzWk03QWoyNTQ4LVNrRTRBYWRkQWhCdFZ1ZVhGTWczOFlFR3N2QjY2S3RGRzROWkV0SGlUMk04VFJZT2RB?oc=5",
+       "source": "Yahoo Finance",
+       "official": false,
+       "tone": "chatter"
+      },
+      {
+       "title": "PepGen stock soars over 100% on positive Phase 2 trial data for DM1 drug - Investing.com",
+       "date": "2026-11-10",
+       "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOMUJ1d2MzUHlSWjhiZ0tkRkVmNTVhX1IwYnczU2Q1aFM3anZ4R2U1bktGMFBsOGZwZ2J0NUFWcXVyTVp1VC1tR3U1SmMwLW5QVDJISGhGZWFPS3FGQVZlckRYNkNhN2pXTXZVWVBFLW93WUR6Y1R4R0VOazlKUXEzdlZhbWNlbEpubmYyTW1HRkVHOUFRY0xoakVQYWd4OXpIaHduQUNGdXhYbFJxNUg4RGpBc1ljblVWeUltQ0tPSjJuR056UDNR?oc=5",
+       "source": "Investing.com",
+       "official": false,
+       "tone": "chatter"
+      }
+     ],
+     "buyers": true,
+     "sellers": false,
+     "claude": "Claude: catalyst (strength 4/5): Official release reports positive Phase 2 FREEDOM2-DM1 10 mg/kg data with 46.5% mean splicing correction (highest reported in a multiple-dose study) and functio",
+     "score": 16.81
+    }
+   ],
+   "quiet": [
+    {
+     "ticker": "MRT",
+     "name": "Marti Technologies, Inc.",
+     "exchange": "AMEX",
+     "ysym": "MRT",
+     "market": "america",
+     "price": 2.17,
+     "low": 2.04,
+     "currency": "USD",
+     "change": 0.0483091787439614,
+     "vol_x": 3.6,
+     "vol_basis": "first30",
+     "vol_day_x": 3.6,
+     "buy_pct30": 0.579,
+     "buy_pct": 0.579,
+     "rvol_time": 1.4493930465635012,
+     "value": 539922.04,
+     "mcap": 186712719.0,
+     "sector": "Finance",
+     "holding": true,
+     "extended": false,
+     "near_high": false,
+     "longterm_down": false,
+     "chart_url": "https://www.tradingview.com/chart/?symbol=AMEX:MRT&interval=D",
+     "lists": [],
+     "owned": false,
+     "news": [
+      {
+       "title": "6-K Marti Technologies, Inc.: 6-K report",
+       "date": "2026-11-09",
+       "url": "https://www.sec.gov/Archives/edgar/data/1852767/000121390026117170/0001213900-26-117170-index.htm",
+       "source": "sec-edgar",
+       "official": true,
+       "items": [],
+       "tone": "neutral"
+      },
+      {
+       "title": "Marti Technologies, Inc. to Report 2026 Third Quarter Results on November 9, 2026 - Business Wire",
+       "date": "2026-11-06",
+       "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPMnl6U0lYZE50SzJzWjczQWZjMU5BaUFpR1lLWFZYMVdrZF9wZEdwTnRSTTkwM05DOEVaU3M1TkRMZzY4YWd5MVdnaHF3WUFYbmZmb0hkMkVsOWE0aDk0am9oYlRaMUxacmFuZUprXzBwUkNUVFFlLWtGcGJoRm5vWEwwcXozanBTZDBqYk1RMk4yLXBJZ0hXTVM2V2ZmTzZRRWR4SVhhWExVR3BEV3BjZmlxc3B0TVlNU3FBcDgxd211RkVfcnI5aUJTM3lETnFDWVE?oc=5",
        "source": "Business Wire",
        "official": true,
        "tone": "neutral"
       },
       {
-       "title": "8-K Vir Biotechnology, Inc.: 2.02 results",
-       "date": "2026-11-04",
-       "url": "https://www.sec.gov/Archives/edgar/data/1706431/000162828026070148/0001628280-26-070148-index.htm",
-       "source": "sec-edgar",
-       "official": true,
-       "items": [
-        "2.02"
-       ],
-       "tone": "review"
-      },
-      {
-       "title": "Vir Biotechnology stock jumps 22% after hepatitis delta Phase 3 trial success - Investing.com",
-       "date": "2026-11-09",
-       "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOdkk2V1VFbzR5V3RCTV8tbjVjdTZSZm9menlQMlZySHItNFlVRGJacW04VjdZYjhRalh2My1ONmNJXzE3ZW50R2YxdGU2OGRwODREVzVBZ2UwVDI2Y1liNndCZ3JSbVdoQ1NjNmlZdlpmcC1qNmR1cEw5VDIyYkJZNEZRUFBDaGgzdExyWXI2QmtzNFBaVjJKSk1ha091NVl2d0RrVU9iMEpnSzNyWl84dEliR1FoU1FTbHROMGp6OTZwejV0SFA2b3FadVJOdw?oc=5",
-       "source": "Investing.com",
+       "title": "Marti Technologies Reports First Operating Income as Q3 Revenue Rises 128.1% - www.tokenpost.com",
+       "date": "2026-11-10",
+       "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5LNUprWVRlYXlVakRtMmtYOTVIOGRrN1NIekotbDBDVjZoMDc1cjZOMmUweXlRX3NNbExhbVkwd3Y4R21uREozQUxySllEZnFPazR1TUhadkY?oc=5",
+       "source": "www.tokenpost.com",
        "official": false,
        "tone": "neutral"
       },
       {
-       "title": "VIR: Vir Biotechnology Inc. filed SEC Form 8-K: Regulation FD Disclosure, Other Events - Quantisnow",
+       "title": "Marti Technologies, Inc. Q3 2026 Earnings Call Summary - Yahoo Finance",
        "date": "2026-11-09",
-       "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNQ1NqTVY5UWtEZE1kT2pKbzdPYW4yb0NBbVhSTG5kSHJHZlVkT0RMOGd1OVJCSHF5UnJZTEFFS0U2eXNDT2hTRzdGOG5KZUdRQjVoajRCYVlweXQ2OXluRXNWMXBEb2NKX0Z0NVFJUHpacVRvQlZRWTB4NFZZN21vbnlqUzFpZk92TFN5ZzlLSzJmMEpRQU0wN2dIVHRrbFYzV0l2T0NuZw?oc=5",
-       "source": "Quantisnow",
+       "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOVURmSHNnajRFZVRxaUszMXBkM1FhUC0tbG5URkF0alFfcDlqdHJxVkZ4YnA0V2ZvVWVwcWpRbmRoY0xWS3NwQWpocDN2dUJ4cUxOdTBTZXp2Sm5hTXBueUlIaF9EYlJKODRLTGNHVXQtc1gyLU00U3ZyS2NyelZ6YWVsS1ppUnVkbXR3dFhGQlkxNWFXY3N2X2ZmUQ?oc=5",
+       "source": "Yahoo Finance",
        "official": false,
        "tone": "neutral"
       },
       {
-       "title": "Vir Biotechnology stock Analysis closes at $12.21, up 10.8% - The Cryptonomist",
+       "title": "What Marti Technologies (MRT) Said on Its Q3 Earnings Call - TradingView",
        "date": "2026-11-09",
-       "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOOU5oNHZCUFRBZ3RzX1pWWHp5UV9JbHRZeWNuU0dWSUg2VEk0MW5TM2h1czZDaWRtb2YzZDJFTEcyOGxHTC01MjJJZmxaY0hoZ1JScTFaMHFKTEs2TGw0UG80MlR3b1dCQmFKVGdMNWttd3JteTJfa0xYa2Y0N3o3VEJ6WmRrYm9EOW9oOQ?oc=5",
-       "source": "The Cryptonomist",
+       "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOOGpQanN5MjhkRDR5VW5wYnJ5dXJCY1FOYzc2ZnZKQWRueHYyaElySVVJUElRaW90RTItb0FEVXNzcGZhdEl1WVo1UVlnYWFXR3FPRXNMbkstUFRjM3JGNlFfTERTNWl2WUx1amxxSlg3dWEtbm5jaWJaVXQ4ZU1Fc3V2ajMyOUJnU2hhR01FRzk5alIwa09LajdWcUJ4SXRZVjJVN0RjdjBHbkdTNzJBWGpJbXBEOFE1?oc=5",
+       "source": "TradingView",
        "official": false,
        "tone": "neutral"
       },
       {
-       "title": "Vir Biotechnology (VIR) Shares Surge 16% on Positive Phase 3 Hepatitis Delta Trial Results - GuruFocus",
+       "title": "Marti Technologies Inc (MRT) (Q3 2026) Earnings Call Highlights: - GuruFocus",
        "date": "2026-11-09",
-       "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQbFhVM1VJX0pUNlRtWElSVFZWOU1seGtuRUFsSTBXNGxzTzVDb3BzdWUwVUE5RlM1NEQtM3dsaFktRHZKNkF2cE5TdllvSVotOUZqVTZQcVFjdTBFZFFUVXFaV2Fwa2MtLWdhSUlhWXZ6cV9nZnEwaEVjTVdYQXRMcGVZdy1PVEdoSk5yTzVLTnMycmFPZ0pvSUx0Ul9uY1hPUjZLVll2R2FFbnVJc0hfU21IM3FaaUtoX3B5ZTYtck9FUW5K?oc=5",
+       "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxNWDNmREtaZ20wVVotYmYtRElnc1dCR3RWUnN0dTlfU1ZqSW4yMG9wc05HNG1nVE5wQlY1dHc0ay1GUFR3VG1ZeE1neDU3am5lM054M0VZV1BVTnJJcWxtbS1Wa1N6QUw2NkUyeUtEWXNkWnJvWWhNTGJPMUdWNWNRN2JNUzViWnZGN1lnRGxXNGJFdDlzc01LMGhSSFgyU19lemdvS0dGUXhZNktHNl9WYXI3QVVUYlNpMFlwUzdDbVpEMlBTNDhPTE9pbVhoaE9vSDRBQ00xX2tNQmx6LTVwR0xiZTd1UVcxU3YzLTlhYVViQ0ExTHVCeGh3?oc=5",
        "source": "GuruFocus",
        "official": false,
-       "tone": "chatter"
-      },
-      {
-       "title": "Vir Biotechnology's Hepatitis Delta Combo Meets Primary Endpoint in Phase 3 Trial; Shares Rise Pre-Bell - marketscreener.com",
-       "date": "2026-11-09",
-       "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPNU5KT3BTd2hmZDJLTFRWZnU4RDhsOVlUX0R5cHh5SGV4Wkl6ZEZlQ3VSdUZKSXNHUjJ3SjlvME00eThnUThReFM1S2xfWDJlSFVYbHdZNFpuLWQ3dXJ5MnFOOXRZTkFQQkxieGhUb0VVVHowLXNJOGppZXRyeUNhcWdsOGJhSmNkQUMtdDlDR3NZaUtkcFFER1FfTmdJTW9iT2Z4OUlmOTJuQzl0V0NrQzRsaUFmMXF1anpiRDN3cFc5ZWVIdDB2OVFiMDZmVmhuekktRGdsbUQ4NEpBa0VVQy1iMEU5THM?oc=5",
-       "source": "marketscreener.com",
-       "official": false,
-       "tone": "chatter"
-      },
-      {
-       "title": "Vir Biotechnology reports positive Phase 3 trial results for hepatitis delta treatment - Investing.com",
-       "date": "2026-11-09",
-       "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxONk9RdG02OXNoUkdHcnE1ZGpQWU4tamVQX2Zsa2dUaGNCLVRrdGVDbTdDWDloNDhHbmNORFdmR3RidEFkenZ5MkdDWGxGQ1RDb2JJMXNjTjVoQWVIOWp0MXF0Xy1CaXZ6T3RGTm1Ycm5zYmFCLUJCRkJXSHdVdHpHa1l1Rkd3UXR2akE3LWxTQXRsNzR4TlJacUlwM3hibWdiZ1ZkRlhHaUJGRUVoa1h0dzRIRWxmYUhEeS0wSndMcGs3UFpmSUtBdG4xWG1hOEVWR2YxNEFXQTFJdw?oc=5",
-       "source": "Investing.com",
-       "official": false,
-       "tone": "chatter"
-      },
-      {
-       "title": "Vir Biotechnology Potential Chronic Hepatitis Delta Treatment Shows 'Rapid Viral Suppression' in Preliminary Phase 2 Results - marketscreener.com",
-       "date": "2026-11-09",
-       "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPSFd0VklHbUNQV3NDWmtXUDctUXBWS0h6RkVteXhyX2dhUTJha0RFSXB1dGp1OTl2T3BHY2hKa0p0ZTFaVmxlZlBrUjFOWTd4bC1iQURYM2RuZl91bjRzd0F2Y3ZOOWJPWUo1V3NhTnJqb2REanllSVFLdmRzZmtxMHdEWjJiUWUtX0IyU3E3WnpYUUtNWmRfTXplWEpzMFE1Nm40TmVqS29rMGlSMmpVeVVwRi0tNDRvaGN5dGlJTWV6bVJJUjlfOFdEUkpDcHVtVkFhZDZPU2JMX0ttQzlYbkw3T3VLZw?oc=5",
-       "source": "marketscreener.com",
-       "official": false,
        "tone": "neutral"
-      }
-     ],
-     "buyers": false,
-     "sellers": false,
-     "claude": "Claude: catalyst (strength 4/5): (reply cut short)",
-     "score": 5.43
-    }
-   ],
-   "quiet": [
-    {
-     "ticker": "SPPL",
-     "name": "SIMPPLE LTD.",
-     "exchange": "NASDAQ",
-     "ysym": "SPPL",
-     "market": "america",
-     "price": 2.87,
-     "low": 2.43,
-     "currency": "USD",
-     "change": 0.17622950819672137,
-     "vol_x": 4.72,
-     "vol_basis": "first30",
-     "vol_day_x": 4.72,
-     "buy_pct30": null,
-     "buy_pct": null,
-     "rvol_time": 8.745742389005645,
-     "value": 459906.02,
-     "mcap": 28086345.0,
-     "sector": "Technology Services",
-     "holding": true,
-     "extended": false,
-     "near_high": false,
-     "longterm_down": true,
-     "chart_url": "https://www.tradingview.com/chart/?symbol=NASDAQ:SPPL&interval=D",
-     "lists": [],
-     "owned": false,
-     "news": [
+      },
       {
-       "title": "Simpple Ltd. (SPPL) Seasonal returns chart - Yahoo Finance UK",
-       "date": "2026-11-08",
-       "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBheWZjMjlBU0dWMTlfM0ZyNHg0SzYzYXZCclQxZkgwZjAzTU00S1VXSlIwbmkzRE44OEtseXZqTTlJSHJoY3gzeUUySDI3OUhRQWczTnpjQkVqZmJzVHltZktB?oc=5",
-       "source": "Yahoo Finance UK",
+       "title": "Marti Technologies (MRT) Q3 2026 Earnings Call Transcript - The Globe and Mail",
+       "date": "2026-11-09",
+       "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQbkRIS3hxM3lEUkl2RUpzMVlLVTlqLXJxYWhfamVGeE16Mm5mT2RiOE1ucVh6T0ZNb3h5dkQyaUt3akllUHpfN3ZLYldldS1ndnRKZFhEWWJuSmFzOEZFb3ZGUHZtbDc3cE16LTM1SUZaUzNzLWw3ZmxtZmREa1BZWEdpeExEN3k3cG9Yd0ZLTEZ3MExLeFAxMVVWWUdScTFXNU93aFA5bjVHTTA4bkNyNEpaMUYwWHlDU3J2WFc4QkhZN0hpVk5oczY3RzJOdkE?oc=5",
+       "source": "The Globe and Mail",
        "official": false,
        "tone": "neutral"
       },
       {
-       "title": "Simpple Ltd. (SPPL) Stock Price Prediction for 2026, 2030-2040 - Traders Union",
-       "date": "2026-11-06",
-       "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5SRGJRVWhrTGRYVnlKSVd3bnJVa1FOcEFvNzFEMmFSNy04WEdCUzlVY3FKVmI2QUxqUk1yWkRfVjVaZkdPbHIxT2pNRktMcmNyVFh1dVpqY3VkTnNKWl9nTkZFdGE?oc=5",
-       "source": "Traders Union",
+       "title": "Marti Technologies, Inc. 2026 Q3 - Results - Earnings Call Presentation (NYSE:MRT) 2026-11-09 - Seeking Alpha",
+       "date": "2026-11-09",
+       "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNRGhnYVZRalpmcmRWREU3dzRjbVE5Sy1ZNmx0S3IzMkhGMG95ODVnTS10Y1FiRTlUaUcwUXBRLTk3RnRubnhqVGJiblJrVWRoT3h6RUdFVWxBY1p0WFNvWXlZUzRPdkZWUWpmU09tZTRlY1JqM05YS2hOUXBnM2FFZGxhMzJRMUhtZnVEaWhDVEN5SjN4c0ItQWhLNVNGbHVsVW53dnBhcDlLZw?oc=5",
+       "source": "Seeking Alpha",
        "official": false,
        "tone": "neutral"
       },
       {
-       "title": "SIMPPLE Director Sold Shares Worth Over $51,248M - TradingView",
-       "date": "2026-11-05",
-       "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPR1EzeFRPSmQ2STcxU2VPb25OdENMbmFxZ3NnYkhXUFVrekFyQnBXQXA5U0VXTFV5Y2VNbkxnenplaGxScHNsa1NBWVlNMUJWM3lWMC0zLXFMRWduRkVrUFd0eEQwbG45Z3Bjc0ZPTmt4d2lYVkNjNDZfTXNjUVhuVElodjBjMFpFRkxOZEdlMVVUY2JRT2w1Tk9KcmlwVlhzaW5VV3JMNFlIallqQVE?oc=5",
-       "source": "TradingView",
+       "title": "Marti Technologies Backs 2026 Rev $85M >MRT - Moomoo",
+       "date": "2026-11-09",
+       "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPTmU5SzRsOHlzTmhkXzNRVzduUmpFOTg5bWo2N3h1aFBUVml0MC1GOVM0MjZ2OE9Mb1ZpTHJPbV84cTVKdVk4ZC1nWTlLdUhVZHY2M09VZHRPeWwzWkl6Q0RBMzNYcnZMcFJyMHd0MlkwSHM0bTdyLUhyZVVzcllSNUtqd29FU1NIblhJaUdR?oc=5",
+       "source": "Moomoo",
+       "official": false,
+       "tone": "neutral"
+      },
+      {
+       "title": "Marti Technologies (MRT) Tops Q3 EPS by 3c - StreetInsider",
+       "date": "2026-11-09",
+       "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPOEFpVFpjdGxaak5QdHUza0EwMGlTVjVETEF4UEwzMEhFekwtVXI5UF9zYWg0dFVOMnp4aTFOcU9WWi13SFY3N0c5bmoxQlAwRWlJell0VGFHcm1SY0djODRRQm1QS3FsOWk1bndBTWItWW54d01La3pyS2FqdWJNWkxpQXVnalF1MVp1cmktTGpDV3lVcmRLQWxMbDYySklP?oc=5",
+       "source": "StreetInsider",
        "official": false,
        "tone": "neutral"
       }
@@ -182,213 +237,173 @@
      "sellers": false
     },
     {
-     "ticker": "PSHG",
-     "name": "Performance Shipping Inc.",
-     "exchange": "NASDAQ",
-     "ysym": "PSHG",
+     "ticker": "AWX",
+     "name": "Avalon Holdings Corporation",
+     "exchange": "AMEX",
+     "ysym": "AWX",
      "market": "america",
-     "price": 2.13,
-     "low": 2.02,
+     "price": 2.76,
+     "low": 2.627,
      "currency": "USD",
-     "change": 0.024038461538461453,
-     "vol_x": 1.25,
+     "change": 0.08235294117647057,
+     "vol_x": 2.8,
      "vol_basis": "first30",
-     "vol_day_x": 1.25,
-     "buy_pct30": 0.833,
-     "buy_pct": 0.819,
-     "rvol_time": 11.130789385043169,
-     "value": 501710.85,
-     "mcap": 26480496.908653844,
-     "sector": "Transportation",
+     "vol_day_x": 7.42,
+     "buy_pct30": 0.0,
+     "buy_pct": 0.314,
+     "rvol_time": 1.1983620814610814,
+     "value": 278481.24,
+     "mcap": 10762430.0,
+     "sector": "Industrial Services",
      "holding": true,
      "extended": false,
      "near_high": false,
      "longterm_down": true,
-     "chart_url": "https://www.tradingview.com/chart/?symbol=NASDAQ:PSHG&interval=D",
+     "chart_url": "https://www.tradingview.com/chart/?symbol=AMEX:AWX&interval=D",
      "lists": [],
      "owned": false,
      "news": [
       {
-       "title": "Performance Shipping Inc. Announces $4.0 Million Share Buyback Plan",
-       "date": "2026-11-09",
-       "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOeTh5STR6WVFPT21sVTkybnZiaE9GLWV3SDYzV0dHWDZJbkVPc0lJNlBCc2FlU2tpRmR1QVZEM2lNRnMxVnM5Z3NvX0pxVDJuYjdTTDladDI2dTNUbWE2VHI3UndveGd5VzVZbTMyZUJaTEpfejhSeFBHRVpfY2s2bncydkl6a1VWUGZWaTJfclk5OUd1Q1V1U3puSVFyalNmMUM0aGNkRWtqQnF2NW5FbTlWVWl3VzBkTnlpOXdYaTQwbXM1RG04XzZTT2dTZmZEd3QtYUlDQXE?oc=5",
-       "source": "globenewswire",
+       "title": "AVALON HOLDINGS CORPORATION ANNOUNCES THIRD QUARTER RESULTS",
+       "date": "2026-11-06",
+       "url": "https://www.prnewswire.com/news-releases/avalon-holdings-corporation-announces-third-quarter-results-302925629.html",
+       "source": "prnewswire",
        "official": true,
        "items": [],
-       "tone": "pos"
+       "tone": "review"
       },
       {
-       "title": "6-K Performance Shipping Inc.: 6-K report",
-       "date": "2026-11-04",
-       "url": "https://www.sec.gov/Archives/edgar/data/1481241/000114036126041961/0001140361-26-041961-index.htm",
-       "source": "sec-edgar",
+       "title": "AVALON HOLDINGS CORPORATION ANNOUNCES THIRD QUARTER RESULTS - PR Newswire",
+       "date": "2026-11-06",
+       "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNU0NnOFUzcUIyaUVHWHY3ZjZVbTlrdlBHZlF0eTh3OEJzNmlybWhHMklERERXYXhKQ05IbjR3TzFBZDY3bkdhR1F4cDJlMGotZVJjVC15dlVaREpvTms2QmJvZFpIOHc2eS1aTENub29VU21ENG5TOFA3bnhKRGR0T2hHUTJ3ZmYzd2ZGUFpBaTFlTXZ1VzVWOWJnVGNlTHRSYWdhZkRnWUNUNzBJbEtvc3ZFak5XQQ?oc=5",
+       "source": "PR Newswire",
        "official": true,
-       "items": [],
+       "tone": "review"
+      },
+      {
+       "title": "How Did Avalon Holdings Corporation (NYSEAM:AWX) Lift Third-Quarter Profit Despite Lower Revenue? - Kalkine",
+       "date": "2026-11-09",
+       "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxONkJlanhzOXNlYno1a2w3c3I0TjVhMDlYbTRZR24wM01HTWZrNWNjSUR5ZHpLRXd6TFk0bWk0bjJLdWRkMVFYQ2RDYjk3R2lyYjB3TWZzcXFxR1ZwM0hMbWE1ZDh2WTRpQTJxNVNUNkstR2RrRWYzcmdXaGJWN3BOMlNXZnZMb0ZwM1RkQTB1Nmk4dGdaYXdxVjhvZmNPY0dvZm11cU4tZGNxMXNoMVF3Z19kcGMwd0JtRWdYcjdMZnpVOThPc3Uxc0JrQjhxZw?oc=5",
+       "source": "Kalkine",
+       "official": false,
        "tone": "neutral"
       },
       {
-       "title": "Performance Shipping Inc. Announces $4.0 Million Share Buyback Plan - Quantisnow",
+       "title": "Avalon - Athletic Futsal, 2026: watch sports online in high quality on Kyivstar TV - Kyivstar TV",
        "date": "2026-11-09",
-       "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNSnN5RmQyc1p6b1RCUENlNkJNVGZ1aVpReENVb1Y4N0g4UDRwNWFCRjVnT0pFS1h3c0dybWJkR0ZyQ3VlLWhCclhqXzJkVzE0SmRvRS1RWWw4SGtOcGFIVXVNczhPb1pwYl9nWm9XV1V4QnNHQThWaWJYLUEtNE5yajVGNmVQYnhvVHEyWlZRN0JxbURKNy1fZUxKWTk0X3NXWXFmX2dmbjNKTDA?oc=5",
+       "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPVGNybnA3WTdaS3BmZ1EtcVZzNGlXdVNyb3NiT2xGSzlxejRfeW0zeW95Z2NMMXU3MElNbTRrcWx6ajZ6aGFwTnZqbjBVMDNoQ3dQVk9hQmFLeWlGN3pSM0hpVGhScWhIanN1Um5DQTVBUXpFa2NxdVZucW9MSnkyc3RKLWNYY0tMNlRRNw?oc=5",
+       "source": "Kyivstar TV",
+       "official": false,
+       "tone": "neutral"
+      },
+      {
+       "title": "Avalon Jetty Surf Report, Surf Forecast and Surf Cam - Surfline",
+       "date": "2026-11-08",
+       "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNeWk3S3V1T0lnVzhielZjU2NUOU9SSXNXZ1BzbWY1M1ZUbUtyc3Nfc1NFZFZ5TzkyaldueEEybjQtWm1fOGVNSWtvaDdqV2lZVnJfWFlrNnN3VmFBRGNleHJPVXhWWXVES3Rvd1ItbmtpZldEUjRPajVDbnBPZExmUC10aS1SemJ3MXdwZ2NqTDVLb05mVEllWS1jNFI?oc=5",
+       "source": "Surfline",
+       "official": false,
+       "tone": "neutral"
+      },
+      {
+       "title": "Avalon Holdings Corporation (AWX) Stock Price, News, Quote & History - Yahoo Finance",
+       "date": "2026-11-07",
+       "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTFBPWVB6WlBiSzloZDRHdmx4X05zLUluZEp2em44NHNfR1R3d3p2RmVDLTJDZWstSXNNMXNackZKaXZnMlotQWZsMGVCX0U?oc=5",
+       "source": "Yahoo Finance",
+       "official": false,
+       "tone": "neutral"
+      },
+      {
+       "title": "Avalon GARRETT Obituary - The Press Democrat",
+       "date": "2026-11-06",
+       "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9saVFuSVdxX1lWUHU4eDU4MThVUEhXamhXX01SNFV5d002cVRwX3pEdGRCaTNvUHdBcXdiM1BfTWM3bmVXcVlLckM4T2xaYUxkVU1EQ3JlSmpTOTVYMjJPdjRZQ1NvY00tRFpxcG1UTnRrdEhuQVRQWWQ5eTY?oc=5",
+       "source": "The Press Democrat",
+       "official": false,
+       "tone": "neutral"
+      },
+      {
+       "title": "AVALON HOLDINGS CORPORATION ANNOUNCES THIRD QUARTER RESULTS - Quantisnow",
+       "date": "2026-11-06",
+       "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPenMyeDVnaTFJS280RU9CMXhyaG1vSC1xQUJJUHBRMmEwdTVUY01vc1BMamp6R1FWMXdwRmQ2VnRoaFExbnFic3pBWWt5OVJoeUR0M2tGRFBKVUN2MjgxVzB1cmhQX3ZWR1lXOHVVNndwLW9TM0lBcFNUU09PV2FwcnN0RGRieG1kTHpuaTVZcjdXdFFYeU1SS2x2enpqdFU0TUxxeA?oc=5",
        "source": "Quantisnow",
        "official": false,
-       "tone": "chatter"
+       "tone": "review"
       },
       {
-       "title": "Performance Shipping approves $4m share buyback program By Investing.com - Investing.com UK",
-       "date": "2026-11-09",
-       "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPZElnRExtejRvY29vUXpma29fcTl0Wk1reGRvZlhRbmI1UFZBa19hY1NqSW5QYnNOd25oS2liVHViOENlWE5NYnlqZWpmb2p0Y29DVHlUcTVLZmktV3NyNU45S1JIbnAzdEtab2E0MW1RdEhYWDF2YXBYRDVBWGdyWnNwY200U21UOGR2c2p3amZ2UDAzQVlJUkRsaGVuTkRhNFRKckxtbEtkMmFSZHo5MzRhVWM2UQ?oc=5",
-       "source": "Investing.com UK",
+       "title": "Avalon Holdings 3Q 2026: Revenue $24.3M \u2014 10-Q Summary - TradingView",
+       "date": "2026-11-06",
+       "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQRDBETVNLRU5WVFV6MmlnTkpVeW1JUzVlVXVFUS1UVnFGMGNFZlFrQUlGOU5JWlNQdU9JRWlQTW9nRTFzc2cwZUpTOGtLbjcxSTl0VkI2cXo5bkVLekpkb0lSR1o2TW9vdlNseGwwWTlYbE5mc2d2UHY4dXphQ1N2VFhDbW1ZWmRkZkNWYm1LOWRCeFFvQzhvWEtoT2NNeS1TQUZxLTVXZzMxcDVUY1FhN1RB?oc=5",
+       "source": "TradingView",
        "official": false,
-       "tone": "chatter"
+       "tone": "neutral"
       },
       {
-       "title": "Performance Shipping approves $4M share repurchase plan - StreetInsider",
-       "date": "2026-11-09",
-       "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQamFuZ3Rta0RnZUhnSzB3MUlCTlpNemlhRldIWXZBdmtvUnp3T1czbERNRDhOUUh0dzMxOHAtT0IwZW9HR0EwSURYdTdCV2VQNEpxRXZ0LWJJVkJHX05NNEpNN1BqQ3k0QS1YZ3Y1WmdrLWRQdTNkWWZlY1ktMWhoamk3MmZsMklDeGtqUy0tTmp2eW04ZzFmRlFGVFkyb0k0SU1YeEpSR1FIN243ZzFBbWcwc0ViZkU?oc=5",
+       "title": "Avalon Holdings (AWX) Tops Q3 EPS by 69c - StreetInsider",
+       "date": "2026-11-06",
+       "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNU1I0RFhhNDVBV3NacWlqZ0ozQmQzc3lJVzdkcWxTa25MNllmV1pqVUZnVzRYVUhZcEtuNnBsN3QzWDNXbk80OXdCZzM3cGJ0WlFDUTZRUEZyeThLWHNhV1hJSm1Zc1hFcXNpRDVtN0VGUlpSYmE5WURleWdxWDdsMEpQQVpoLUR2LWljaWEzQkZqRHZHS2pWZHFFbFZJZw?oc=5",
        "source": "StreetInsider",
-       "official": false,
-       "tone": "neutral"
-      },
-      {
-       "title": "Performance Shipping Stock Price Forecast. Should You Buy PSHG? - StockInvest.us",
-       "date": "2026-11-06",
-       "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBIa0RKeDFUbkRqN0t1bmc4eURyaURBV1dDbEVVV09NTFE0ZGpTdTJvTEtKZzdIYV9TN0VDLUtiM1EzS3laOVpETQ?oc=5",
-       "source": "StockInvest.us",
-       "official": false,
-       "tone": "neutral"
-      },
-      {
-       "title": "Performance Shipping Inc. (PSHG) Seasonal returns chart - Yahoo Finance Singapore",
-       "date": "2026-11-06",
-       "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE80b0RJZTBqQVdodk0wWFJDTzQzWTB3Uk9seWk5MUhJbVplZTJxR0RSX0huRndreWxzWXlQc2tLWE9uc1ZURkZOb2l6RVQ5UXNjOGo1c2t1b1hyS0hMckhLUWd3?oc=5",
-       "source": "Yahoo Finance Singapore",
-       "official": false,
-       "tone": "neutral"
-      },
-      {
-       "title": "Performance Shipping Shareholders Approve Director Elections and 2026 Auditor - The Globe and Mail",
-       "date": "2026-11-05",
-       "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxNWWxYRkFEVWdmT1liUU1UOFFtQTJST2ZWMXg3LXFkeHV4X3dQVVA1am9WdnMtU1gzS3BxTzZvV2N4WHA4MVpwRURNcldlQW95aVJsUklhLXRKWDY1RjJJR20xSURXQWNCRnpWWVpRNEJtckRXbHkzcmNxZmNKTldQU0J1YjI1a0pLYTZGaTZCZGc4N1lHQWxLQmI0TGVEVmtsUHY1bUxkQnZXOTQxc3VudldEcUd3bHRuTERVNGQtUFhlQ2VITWJLb2ZSUDhMQkhkRTFlcFNieTJPUnJFakVxZXJfdkFycTFlVXFpbW4tOA?oc=5",
-       "source": "The Globe and Mail",
-       "official": false,
-       "tone": "neutral"
-      },
-      {
-       "title": "All proposals pass at Performance Shipping (PSHG)'s November 4 annual meeting in Athens. - Stock Titan",
-       "date": "2026-11-04",
-       "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPQ0RLT1Vkd2x1RzF0Ykh2NlRObnB5YV9jS2VFa2tvQmlaa0g5ZGpVVzdSOGhzM2dXc3JUME5NM2RVNFlyRmZKTGR6Nnk2MmZHalF1b2h1WTJEeDlkOFZuQzNWcWFqLTVKNXNaYzlNNTgtN3Zkb1hPMHhZd1JaaVA2cUhXaC1GNU9HazlVbjl3X09ZWWszZ3Q3dFBpczNmUG9uQVNfaXJIYWQ2TW9EaEJ5U3c3N1QzU1cxenFjSw?oc=5",
-       "source": "Stock Titan",
-       "official": false,
-       "tone": "neutral"
-      }
-     ],
-     "buyers": true,
-     "sellers": false,
-     "claude": "Claude: catalyst (strength 3/5): An official $4.0M share buyback is roughly 15% of the roughly $26m market cap, a meaningful capital return that fits the heavy volume and intraday gain, though "
-    },
-    {
-     "ticker": "OMH",
-     "name": "Ohmyhome Limited",
-     "exchange": "NASDAQ",
-     "ysym": "OMH",
-     "market": "america",
-     "price": 31.8236,
-     "low": 19.91,
-     "currency": "USD",
-     "change": 3.3238586956521736,
-     "vol_x": 0.95,
-     "vol_basis": "first30",
-     "vol_day_x": 0.96,
-     "buy_pct30": 0.284,
-     "buy_pct": 0.338,
-     "rvol_time": 3.127081067167336,
-     "value": 394132453.6996,
-     "mcap": 15543534.0,
-     "sector": "Finance",
-     "holding": true,
-     "extended": true,
-     "near_high": false,
-     "longterm_down": true,
-     "chart_url": "https://www.tradingview.com/chart/?symbol=NASDAQ:OMH&interval=D",
-     "lists": [],
-     "owned": false,
-     "news": [
-      {
-       "title": "$Ohmyhome (OMH.US)$ \ud83d\ude18 hope you nailed it if it breaks 27.6 might test for 34.. - Moomoo",
-       "date": "2026-11-09",
-       "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNcFB1UEU1bjBNaDFoVnU1MURLOWc4ODBEVE15bS1wd29ZWHB4c0d0OURoNUtUN3NYVE16dlR5NzJ2eVpFZnB3Qm1nbE1aX21DYW9QY2hETTNpdVJLaHB0MnRCUzlTWlhDcGN2SHlNWGtsc3BGZ0FhUHJMcDV3ekVZZ3NHU2tfTnpzUFlUdUtTRkdYZw?oc=5",
-       "source": "Moomoo",
-       "official": false,
-       "tone": "neutral"
-      },
-      {
-       "title": "$Ohmyhome (OMH.US)$ it was fun COME OVER AND JOIN THE TAYLOR GANG AT $Blue Gold (BGL.US)$ - Moomoo",
-       "date": "2026-11-06",
-       "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQVGlPLU9ZQVFsdXFra1ZBUUthRlFKS3dZRUM5RzRmX0E1emtzVmVTcjVxZXhpTFVzMzczVkZBN1FxRmtybTB0WnB3S1Y1MkpRUkZ6cTg0a2ZfZVJuakxxRTdHUVE5Y1dJNC1NMTJ1ZXF3VjNoajFPUVk1TkhsXzJiOWZyY0prcDY4T1BKenZxRm5xdlkweXgyVXhOUGFBT2tl?oc=5",
-       "source": "Moomoo",
-       "official": false,
-       "tone": "neutral"
-      },
-      {
-       "title": "Why Did Ohmyhome Limited (NASDAQ:OMH) Shares Drop 34.73% in a Single Session? - kalkine.ca",
-       "date": "2026-11-05",
-       "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQSXo2WDdESGNKUm9CVkxBVFBWQllkbnFmbjJpbjRzb3Y4UGNDTVRBaUw1TVU4Z0xrTzZHdTFSN0VobU04SjZVdGR3YUdMMEVqdHZyQURtcGJ4QU0tWlVFaFhSLXhWYk9kaE9zTG02dERXeEU0OG9UbTNwT1BZYVI5LVR4ZUt3c0JkWng5U3ExWHlFTFYtRmo1ZHNSUXdJYzRTWlQtZXllTEZVQUE?oc=5",
-       "source": "kalkine.ca",
-       "official": false,
-       "tone": "neutral"
-      },
-      {
-       "title": "OMH Stock Spikes As Traders React To New Offering - Timothy Sykes",
-       "date": "2026-11-05",
-       "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBfUTVXdktQdzlrcmNob3F3ZVNqMU9GcUlUTHNfelpYY1BRcU5fZkFnS00zS0pRZHRYbXdXZDFqTG4zT2UzZ2pSZWlvVy1DendUbHdQMnpiVnZwd1VLa2x3NGF2MDdtOFRkZVc0SlM2T2MzTkxZQ3c?oc=5",
-       "source": "Timothy Sykes",
-       "official": false,
-       "tone": "neutral"
-      },
-      {
-       "title": "What Lifted Ohmyhome (NASDAQ:OMH) Up 101.71% After Its 1-for-50 Consolidation? - kalkine.ca",
-       "date": "2026-11-04",
-       "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOOXgzZ0FNeGgtTGx3NzBUVXpzY1lRRjNUSndUR1RkSGZlWDhwX0RvSnpzYXFqbERsa0dDdUZ0d1BmVGRqdmNma3FtS05BcVg5T0RnU214RXNCSUdFc2FZR1ptWlZXb0ctSGRLTzdqeXZIellPVEZ2NGJhQmJjdU5WYkI0UC1IQ0VqMjdTOFRKSlFhSkVtZTNEUzg3TldobUtYWW1OZXVRXzAwY201?oc=5",
-       "source": "kalkine.ca",
        "official": false,
        "tone": "neutral"
       }
      ],
      "buyers": false,
-     "sellers": true
+     "sellers": true,
+     "claude": "Claude: catalyst (strength 3/5): Official Q3 release shows net income up to $2.7M from $1.9M (EPS $0.69 vs $0.49), large relative to an ~$11m market cap, though revenue fell 5.6% and the beat r"
     },
     {
-     "ticker": "LSBK",
-     "name": "Lake Shore Bancorp, Inc.",
-     "exchange": "NASDAQ",
-     "ysym": "LSBK",
+     "ticker": "FSI",
+     "name": "Flexible Solutions International Inc.",
+     "exchange": "AMEX",
+     "ysym": "FSI",
      "market": "america",
-     "price": 18.845,
-     "low": 18.63,
+     "price": 6.7,
+     "low": 6.2,
      "currency": "USD",
-     "change": 0.006139882541377386,
-     "vol_x": 0.86,
+     "change": 0.08943089430894306,
+     "vol_x": 2.62,
      "vol_basis": "first30",
-     "vol_day_x": 0.86,
+     "vol_day_x": 2.62,
      "buy_pct30": null,
      "buy_pct": null,
-     "rvol_time": 0.9167525049161906,
-     "value": 286255.55,
-     "mcap": 146612176.0,
-     "sector": "Finance",
+     "rvol_time": 3.8234227701232775,
+     "value": 257621.7,
+     "mcap": 85589134.0,
+     "sector": "Process Industries",
      "holding": true,
      "extended": false,
-     "near_high": true,
+     "near_high": false,
      "longterm_down": false,
-     "chart_url": "https://www.tradingview.com/chart/?symbol=NASDAQ:LSBK&interval=D",
+     "chart_url": "https://www.tradingview.com/chart/?symbol=AMEX:FSI&interval=D",
      "lists": [],
      "owned": false,
      "news": [
       {
-       "title": "Avoiding Lag: Real-Time Signals in (LSBK) Movement - Stock Traders Daily",
+       "title": "Flexible Solutions International (FSI) Surges 8.9%: Is This an Indication of Further Gains? - Yahoo Finance",
+       "date": "2026-11-10",
+       "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPWF83bDlBZndRTy0zZnljUktTN3FHYmJuMEg2cjc5YjdsNms4Vk02cTA1VkR0UHZLcWE4RXRfVHdSWURhRXktdU14VEszT1JwbU9PSElnQUVyOEhpRkg4Rk81dDRxNXBiUE9jTzZkcWM1aVNQcXJnZG1iQ08tSnJjYW1XUXhuTFdtbzhNTURjNElydHFsaW4wQzlyUUk3d2tRNm5SRlpabUFCY3Fv?oc=5",
+       "source": "Yahoo Finance",
+       "official": false,
+       "tone": "neutral"
+      },
+      {
+       "title": "Flexible Solutions International (FSI) Surges 8.9%: Is This an Indication of Further Gains?",
+       "date": "2026-11-10",
+       "url": "https://finance.yahoo.com/markets/stocks/articles/flexible-solutions-international-fsi-surges-070900092.html",
+       "source": "Zacks",
+       "official": false,
+       "tone": "neutral"
+      },
+      {
+       "title": "Flexible Solutions International Inc. (FSI) Seasonal returns chart - Yahoo Finance UK",
+       "date": "2026-11-08",
+       "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFB6LTZUSU41UWtaOHpkdUY5NGJBaGdqcW9feDdaS3N0Tld6UE9wcGJTMHFwNVUtbXJuMlZTUnQyQks4REF5U3BYQ0Q3bTdfSnpra1lRLVMza00wUFQ2alRkaw?oc=5",
+       "source": "Yahoo Finance UK",
+       "official": false,
+       "tone": "neutral"
+      },
+      {
+       "title": "Why (FSI) Price Action Is Critical for Tactical Trading - Stock Traders Daily",
        "date": "2026-11-06",
-       "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNT0pxNUhyMU5wUzZ6clVDRUZ5U1NfLXEzSTZoaGNlQ1JQRC1vYzMtUW96dmxRV0JDVTZBcG1ZNjJJOGM1WFB0RWxlYnB4dE4tdXBqSmtLZ3J5ZE1UYUZRM0NxeWkzQ0xCeDR4ZmhQRlpGay11U3gwRmkwM3UtYkFlZ0M2VkN3LWZHeHpnYnp1S3I3Tk4xZUtmeGFBa0tSZXRxLU91S29OUTYxemxnc2lMYU9wSHRBSjJkNmRsWnBaTFpHWkZkUlV3?oc=5",
+       "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPbE9BYjIxZlFrVkRNQ0FtMG0zQmYwaHh1c1hKbGVEVG5ZVHNrNmRXZk9Lb0tORzZDYjBKcVBwY3Q1NzBDUXJmd2IzYktzSTJrR2l5QTJzTDJVRmdBMkJtOEpSNWc0ZWRuRnEzd0tGRldsZG1tekgxV04ySUp3Sk5rNm8zVE8tT3pZaTZIS2hveU4xVFFPemdpYkg4RndEc3NZaEh4Mk41WGNJWU9IVEFqQjlBUFlHREszTlVNNWhfcDkyWDdKTVhKSlRtNElFUQ?oc=5",
        "source": "Stock Traders Daily",
        "official": false,
        "tone": "neutral"
@@ -398,350 +413,60 @@
      "sellers": false
     },
     {
-     "ticker": "UEIC",
-     "name": "Universal Electronics Inc.",
-     "exchange": "NASDAQ",
-     "ysym": "UEIC",
+     "ticker": "ATNM",
+     "name": "Actinium Pharmaceuticals, Inc. (Delaware)",
+     "exchange": "AMEX",
+     "ysym": "ATNM",
      "market": "america",
-     "price": 5.68,
-     "low": 5.54,
+     "price": 1.54,
+     "low": 1.43,
      "currency": "USD",
-     "change": 0.02898550724637684,
-     "vol_x": 0.83,
+     "change": 0.076923076923077,
+     "vol_x": 2.6,
      "vol_basis": "first30",
-     "vol_day_x": 0.83,
-     "buy_pct30": 0.258,
-     "buy_pct": 0.243,
-     "rvol_time": 5.6284058715750165,
-     "value": 335750.48,
-     "mcap": 73301904.37681158,
-     "sector": "Consumer Durables",
+     "vol_day_x": 3.01,
+     "buy_pct30": 0.963,
+     "buy_pct": 0.965,
+     "rvol_time": 1.0879940469501337,
+     "value": 721286.72,
+     "mcap": 48419808.00000001,
+     "sector": "Health Technology",
      "holding": true,
      "extended": false,
      "near_high": false,
      "longterm_down": false,
-     "chart_url": "https://www.tradingview.com/chart/?symbol=NASDAQ:UEIC&interval=D",
-     "lists": [
-      "Kell"
-     ],
+     "chart_url": "https://www.tradingview.com/chart/?symbol=AMEX:ATNM&interval=D",
+     "lists": [],
      "owned": false,
      "news": [
       {
-       "title": "Universal Electronics and Carrier Introduce Smart Thermostat Featuring InteliSense Technology to Advance Comfort and Service - Business Wire",
+       "title": "Actinium Pharmaceuticals Announces Formation of Scientific Advisory Board Featuring Leading Experts in Oncology and Radiopharmaceutical Development Actinium Pharmaceuticals, Inc. (NYSE American: ATNM) (\"Actinium\" or the \"Company\"), a pioneer in the development of targeted radiotherapies, today...",
        "date": "2026-11-09",
-       "url": "https://news.google.com/rss/articles/CBMijgJBVV95cUxPazNTdW4xWERncDRDenhtRWZrbm5aMmhsMGRERGFLTGRNWklQSFRGXzFTQ0w4TWVOX2ZvUkFZYkFvcUpiRnRUcVNUcjZyS21JSVBaUTg5SU93X2VNN0RrcDhWRDVodVI1TGJVTmtDRGNSTFhZRmhWOWZwOVZfZVdUeW5uUl9hUGExXzlrbGxuV3VvTl9hYnI4UjFhaFNhOS1xc2xxM2RoZmJrR0dodEJZZjZGU0c5Q25rZUlLQzlsUE5tTzJmRUVhUXF0VExxNEVNSTkyX3JwUk5oekhIeTNvSmVscmZhUV9xUjRVVC1MNVBBMDVtbjNBWnB3cU15MTk5cVpHY3RIYlVQWUxkeVE?oc=5",
-       "source": "Business Wire",
+       "url": "https://www.prnewswire.com/news-releases/actinium-pharmaceuticals-announces-formation-of-scientific-advisory-board-featuring-leading-experts-in-oncology-and-radiopharmaceutical-development-302933142.html",
+       "source": "prnewswire",
        "official": true,
+       "items": [],
        "tone": "neutral"
       },
       {
-       "title": "8-K UNIVERSAL ELECTRONICS INC: 2.02 results",
-       "date": "2026-11-05",
-       "url": "https://www.sec.gov/Archives/edgar/data/101984/000010198426000139/0000101984-26-000139-index.htm",
-       "source": "sec-edgar",
-       "official": true,
-       "items": [
-        "2.02"
-       ],
-       "tone": "review"
-      },
-      {
-       "title": "Universal Electronics Reports Financial Results for the Third Quarter 2026 - Business Wire",
-       "date": "2026-11-05",
-       "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPUmlObGhGaURMUlRycjI4aXRKNklibzBpZm9VblZzNGVrMUNhM201LVFVYm9qVlJvazl1Y0tjOWNWcDAwT2NFeUpDa0xyd3I3WGhHLVhfY0EyY3JVTnFTSDFZSlZPVU9ZZ0VFNG14cTNOd245RTdHSTBiaUJ4Zjk3cWotS2tzbFNrQkJqZkJWU1pyVEJnWEJlaGhDLUxMM3FESEpBRmNqZUZtSVhBRmh3QV84aVF1MG5UdDRCeVlNSVlfaXdxakpnTHZkQQ?oc=5",
-       "source": "Business Wire",
-       "official": true,
-       "tone": "review"
-      },
-      {
-       "title": "Universal Electronics and Carrier Introduce Smart Thermostat... - Quantisnow",
+       "title": "ATNM: Introducing ATNM-400's HER3 Target",
        "date": "2026-11-09",
-       "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNbkJBclVGODNMX1RDYWdwMS00LS01S2NJYVZ1OGNLSGpma2VLOWl4VnZLcWVrTHZDSUM0Uk1peDdxR0wxTzlEX052Mlk0cVhqWS1HcFFvSDQ2c0J0N1k5d0RXR3JWOUFUN1dSbDdnY3hFVVZKbXBJRXBBQWE5bU5iVWNpWmdiVTRqWGNxSzVUUHBmckhsVW9qeTZScTlNbHI1aFQwcExyWDNIUzk0WkV6ODJTUlV1WHlVYm4tcHdKckJDMlpvLWZyN2VXMW0?oc=5",
-       "source": "Quantisnow",
-       "official": false,
-       "tone": "neutral"
-      },
-      {
-       "title": "Universal Electronics and Carrier Introduce Smart Thermostat Featuring InteliSense Technology to Advance Comfort and Service",
-       "date": "2026-11-09",
-       "url": "https://finance.yahoo.com/technology/articles/universal-electronics-carrier-introduce-smart-132800583.html?.tsrc=rss",
+       "url": "https://finance.yahoo.com/healthcare/articles/atnm-introducing-atnm-400s-her3-170000688.html?.tsrc=rss",
        "source": "Yahoo Finance (source unknown)",
        "official": false,
        "tone": "neutral"
       },
       {
-       "title": "Universal Electronics Inc. (UEIC) stock price, news, quote and history - Yahoo Finance UK",
-       "date": "2026-11-08",
-       "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5iTjFHeTBHak5RVmxwWFV4cjM5ckFoWXZ0eHhYc1NpajZXTzc0Y1RZTFFLdzNsa0trSzk2TlhUdExNaTdBbkpzWDBhQk9DZlU1SEE?oc=5",
-       "source": "Yahoo Finance UK",
-       "official": false,
-       "tone": "neutral"
-      },
-      {
-       "title": "Is It Too Late To Consider Buying Universal Electronics Inc. (NASDAQ:UEIC)? - Simply Wall St",
-       "date": "2026-11-07",
-       "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQcHItWHFkUVlQajJoQzFkTjdvN2VVMHBnTXExNU5aX2FWcWpZQ2Q3cklpY2RFdVFtbDduMnAzNEtRUzI4VlpGT0txUXdkZzlaaGdDbXdGRVA0TWpGU1oyZl9yMFlpR1hsNnkxTUxTT1JSMVJ1LVRKYS00NHREekQ2QkxNeUlwREVYWTBzRllpdWM5TTBQRm1TdDh6cXdkcVk4VTJyQXRoWXZKWm5zQ2YtQUU4LTJCMThrRHd6SlFZanlWU3FqX0V1ODZTcXZZcmU0Y1FXSFNkTEdQSzhYSy1lSzh30gHnAUFVX3lxTE9HakVuRVptR0pxemY3YkRFMFBNNy1vdFIzcmIxd3FMU1JFVFA1RWRhZWUzYWt4S3ZLQkxsaGdDYXp1ZjhDdTRlMWZXR2xXT2wwMDBMbF84OWVBUC1XZ0R1Wk5ldktua3FNR2ZiUnl6SzFBYXFMWHFfbHJKREcydENxOUE3QU5BZDR2R04tYXA3SDFodDJvWnJORVN0c0hQWmwwWHY0dzBSaFdpTzlhTmsxeU0tRF9MeElkU0lXWjBRM2dnc1hCV2xidFh1NDA3N2ZnRWx0bGVCbnl4WWVfV081eVI2ek1taw?oc=5",
-       "source": "Simply Wall St",
-       "official": false,
-       "tone": "neutral"
-      },
-      {
-       "title": "Universal Electronics Inc. (UEIC) Stock Price, News, Quote & History - Yahoo! Finance Canada",
-       "date": "2026-11-07",
-       "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1QTWI3VExYZEpOOUNsTW53a1RoVmI1YnBpLWQxbG44R0xSRjI1T0JQcDV5X29lWHVUNTVVc0xZYnFzclFPSmFmZjhMd0U5LW9yRUE?oc=5",
-       "source": "Yahoo! Finance Canada",
-       "official": false,
-       "tone": "neutral"
-      },
-      {
-       "title": "What Universal Electronics (UEIC) Said on Its Q3 Earnings Call - TradingView",
-       "date": "2026-11-06",
-       "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQd3pGbUF6UWZwbHphd1A2V0Z5dEd5MjJNNEo4YlRNbmJzblhPbDZkX21BN2p1SkUyRkNJUmtiZHBaYWVkNk14RHlSVmZGU0xXc2ZBTENuakZTQU9oM1dkRV93U19fYUtSM3dtV3k0ME5qVXhVV0lZWm56aHFfenhaa3NYWUFRNFNFYzFhTzRRVkpYZmNOLUlfSlZHRFBrbENfREV1OFUwc2lQQ3Y2UEFHdGFtSVAteXNBUFRYcVF3?oc=5",
-       "source": "TradingView",
-       "official": false,
-       "tone": "neutral"
-      },
-      {
-       "title": "What Universal Electronics (UEIC) Said on Its Q3 Earnings Call - Yahoo Finance",
-       "date": "2026-11-06",
-       "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOcE1BWV9QUk54R3FBLW5jQWIxNTlZNmtZOUdudWVPdWJISVU4MzhET0N2U1pOUlJtb1p5TnlDWURrUzVlZ3dfSFB3ejBqX1dBYUNGeGl2NzEzWFgtLU1TZWdrNjJfSlA1dXJrZE8yX3VvbktpV1B6Y28yVWh5N1Q4RzRfeG1ZYlZsZFF2ZmhPOURLb1cyLTB5WXFRVVhTYXJH?oc=5",
-       "source": "Yahoo Finance",
-       "official": false,
-       "tone": "neutral"
-      }
-     ],
-     "buyers": false,
-     "sellers": true,
-     "claude": "Claude: no catalyst (strength 2/5): The official Carrier smart-thermostat launch is a named-partner product announcement with no disclosed revenue or contract value, and the Q3 results (mixed sale"
-    },
-    {
-     "ticker": "CRNT",
-     "name": "Ceragon Networks Ltd.",
-     "exchange": "NASDAQ",
-     "ysym": "CRNT",
-     "market": "america",
-     "price": 2.415,
-     "low": 2.315,
-     "currency": "USD",
-     "change": 0.05921052631578958,
-     "vol_x": 0.68,
-     "vol_basis": "first30",
-     "vol_day_x": 0.72,
-     "buy_pct30": 0.501,
-     "buy_pct": 0.51,
-     "rvol_time": 8.648085381569542,
-     "value": 875908.425,
-     "mcap": 219508263.25657898,
-     "sector": "Electronic Technology",
-     "holding": true,
-     "extended": false,
-     "near_high": false,
-     "longterm_down": true,
-     "chart_url": "https://www.tradingview.com/chart/?symbol=NASDAQ:CRNT&interval=D",
-     "lists": [],
-     "owned": false,
-     "news": [
-      {
-       "title": "Ceragon Networks Ltd. (CRNT) stock price, news, quote and history - Yahoo Finance Singapore",
+       "title": "Actinium Pharmaceuticals Announces Formation of Scientific Advisory Board Featuring Leading Experts in Oncology and Radiopharmaceutical Development",
        "date": "2026-11-09",
-       "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1vSUIyTWVVa2pzQ3hxRjFWUm12UVhEOWVXaTFLY1d3dUxId1dNZGlXQkZ1QklyRWJLcWlyY3VGN24yd1Z4NmFXelVqcUk4SEZQQWc?oc=5",
-       "source": "Yahoo Finance Singapore",
+       "url": "https://finance.yahoo.com/healthcare/articles/actinium-pharmaceuticals-announces-formation-scientific-130000460.html?.tsrc=rss",
+       "source": "Yahoo Finance (source unknown)",
        "official": false,
        "tone": "neutral"
-      },
-      {
-       "title": "Ceragon Networks Ltd. (CRNT) Stock Price, News, Quote & History - Yahoo! Finance Canada",
-       "date": "2026-11-08",
-       "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE84ZnEzR1VtTVpCWXB1YUdFSHh0dDRmU1Y0dFd3bHFpRGVMSW0xQ0o4S1hRRlhOQWNRLWN1LXBubjl5RmFFYUp1eXFyVnlObnBLN3c?oc=5",
-       "source": "Yahoo! Finance Canada",
-       "official": false,
-       "tone": "neutral"
-      },
-      {
-       "title": "Ceragon Networks Ltd (CRNT) (Q3 2026) Earnings Call Highlights: - GuruFocus",
-       "date": "2026-11-07",
-       "url": "https://news.google.com/rss/articles/CBMi_wJBVV95cUxNdTMzemNPNk1rNFRZYzB1TzhMNkVrMTg0V1lRQm5BQ2tLQ0ZMeHJSOXJyWVRlOW8xNGszUDdNcW1TV2tlQlFGVC1PdnhBZjAtV0dQVWJkSjhkR0NadHNITmxseDgzUm5idUJHYjdSa0ZhbEZnZ285X2YtQ25HUHpOMnFSZENNWVZDUmJXZGtqSVpRSGQwRjY1anlkTGNnNXJjYl9KenM4SVBURGphRHhySzBkaFEyNzRWYUtkT1VzUTVJVU9OWldLTEk3YVJkclR3dy0xZDdaVk92OEItVHdCQnVlSUpBUXRnWTVjNnY5TjhGNWpPVFdKekdJSGNIdnY5LWpwN1A2czg1Q0NNR0ZUajJRY0d1RmdQVm9rRzVwVXhra21HOGRZSWc1anBLT1BXMkNNWE5kcmJNc2tVNkg1cl9Henkxd1JHMXNRYnF0MGllM1ZGdnBZTFdUdGNHR2RxQnp0enA4Q0FJdkRobnQ4ekZMR09QdHZCbVZoS1hUSQ?oc=5",
-       "source": "GuruFocus",
-       "official": false,
-       "tone": "neutral"
-      },
-      {
-       "title": "Form 4 CERAGON NETWORKS LTD: Ronen Ben-Hamou (Chief Revenue Officer) For: 4 November - Investing.com Nigeria",
-       "date": "2026-11-07",
-       "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOM2g0LWUydl95QnUzRkk1OW1GVnh0Y0JHSTRmNGMwcFVGdUVRSXRjZ1ZQREdzQVNSdDA5cmFWajcxaGxxS2E4OE1HbldaM3RJamxhdkpHQ21kMkRPTHlscVB0SEgyd3plUFlDV01OcTBZWm41WVhXX2pneTNScUJheFdGWU5reXktVkVSbGZfV1E1OE94Wi1uT1FCS1RROXRrdUh0cXotNGM4WDZmVjNpM2hfVFR4YXJDX1NKMVNrcExTWmdDSzRQbGdTdG81WTR4UmZEb0xpVQ?oc=5",
-       "source": "Investing.com Nigeria",
-       "official": false,
-       "tone": "neutral"
-      },
-      {
-       "title": "Ceragon Networks Ltd (CRNT) (Q3 2026) Earnings Call Highlights: Revenue Jumps 11. ... - Yahoo Finance",
-       "date": "2026-11-07",
-       "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPMWVBZlZhcVg2ZHFmS0w5djl3NFVZV2cyZURkT2dtY0QxcXFSR1lPTHhvRk05V2tjT1Q0MWE5bWZyc3VoNTZsVTJpWFJBT3FmVjV0WGRiX3B1Vl9QMmo2NElrQTFQeDRuT2JpcWQzRENLVjVjbTJsWUJhQ2lEa1JRNFExdDNWaGpnRmx2ZWpqdFRYX0pqZnFTaA?oc=5",
-       "source": "Yahoo Finance",
-       "official": false,
-       "tone": "neutral"
-      },
-      {
-       "title": "Wall Street Zen Upgrades Ceragon Networks (NASDAQ:CRNT) to \"Strong-Buy\" - MarketBeat",
-       "date": "2026-11-07",
-       "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPU1NKZUZDdURKQzFPMUQ1UUdSSmJrVUlreEwtTzhqOUhXdmZUZGVxb2l6MExnNUJNNmN5R2xmMkpXejdiR1ptaHNNaG80NmFaR1hza1VhRTAxMHJzRHNWTzFZN3dCX1pUdWhheUNXelFOVTN2RkR5YkU4RENmQzRxTURldW04UWpjZldsMDg5cjdDcUM0MjlZdlQzNWtEOENwOHo1RmpOd3ZCZlBXVkFwaUQyUjBOVWdKWmRTNjJfQmpRcktvanVZaw?oc=5",
-       "source": "MarketBeat",
-       "official": false,
-       "tone": "neutral"
-      },
-      {
-       "title": "Ceragon Networks Ltd (CRNT) (Q3 2026) Earnings Call Highlights: Revenue Jumps 11. ...",
-       "date": "2026-11-07",
-       "url": "https://finance.yahoo.com/markets/stocks/articles/ceragon-networks-ltd-crnt-q3-191047638.html",
-       "source": "GuruFocus.com",
-       "official": false,
-       "tone": "neutral"
-      },
-      {
-       "title": "Ceragon Networks Stock Price Forecast. Should You Buy CRNT? - StockInvest.us",
-       "date": "2026-11-06",
-       "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE9rWEdFNGtBNkk4Yk9jdnM3eVpiUVllSUVnYXR6QTFTSG5FeXdKMnVBMjVIYUMtMTJVd1RNZFczTFMyYmhuci0tcA?oc=5",
-       "source": "StockInvest.us",
-       "official": false,
-       "tone": "neutral"
-      },
-      {
-       "title": "Ceragon Networks Ltd. 2026 Q3 - Results - Earnings Call Presentation (NASDAQ:CRNT) 2026-11-06 - Seeking Alpha",
-       "date": "2026-11-06",
-       "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPOWo4NEdFWEo2RE53eEZSZmMxeDVJVHFzVXROVF9peU1CSVBQWmpMbnRTT0tnbm80RFo2Tm5VYWdWWlFQMFkxQ2V2RXZmY29fR2FESm9lSU1rVHg2VVN6M09zTk1hcVAwSTVBbzlad2JlY2x5UVVqbEgxVzJIbXRsSW1ETE00WHJCbVhWazlaRE1oWUNlOFd5anJpZnJxV2NRdkNRR2JfZw?oc=5",
-       "source": "Seeking Alpha",
-       "official": false,
-       "tone": "neutral"
-      },
-      {
-       "title": "Ceragon Networks Ltd. (CRNT) Seasonal Returns Chart - Yahoo Finance - Yahoo! Finance Canada",
-       "date": "2026-11-06",
-       "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE0teVhPaXNnLWM2NHBIdUhLWTRlYW15MWpNeGpqY1pVZUFoN2NwcTB2RmtpLUZtUWxUZlFMWHcxdHlobUZSODMzUi04cjdrWmdvcWl0RE9LTFRnWDN0Y3VHMFF3?oc=5",
-       "source": "Yahoo! Finance Canada",
-       "official": false,
-       "tone": "neutral"
-      }
-     ],
-     "buyers": false,
-     "sellers": false
-    },
-    {
-     "ticker": "TMCI",
-     "name": "Treace Medical Concepts, Inc.",
-     "exchange": "NASDAQ",
-     "ysym": "TMCI",
-     "market": "america",
-     "price": 4.86,
-     "low": 4.48,
-     "currency": "USD",
-     "change": 0.20595533498759305,
-     "vol_x": 0.67,
-     "vol_basis": "first30",
-     "vol_day_x": 0.67,
-     "buy_pct30": 0.657,
-     "buy_pct": 0.607,
-     "rvol_time": 8.384275633948427,
-     "value": 912683.7000000001,
-     "mcap": 316067946.1637717,
-     "sector": "Health Technology",
-     "holding": true,
-     "extended": true,
-     "near_high": false,
-     "longterm_down": false,
-     "chart_url": "https://www.tradingview.com/chart/?symbol=NASDAQ:TMCI&interval=D",
-     "lists": [],
-     "owned": false,
-     "news": [
-      {
-       "title": "8-K TREACE MEDICAL CONCEPTS, INC.: 2.02 results",
-       "date": "2026-11-06",
-       "url": "https://www.sec.gov/Archives/edgar/data/1630627/000119312526450715/0001193125-26-450715-index.htm",
-       "source": "sec-edgar",
-       "official": true,
-       "items": [
-        "2.02"
-       ],
-       "tone": "review"
-      },
-      {
-       "title": "Treace Medical Concepts Reports Third Quarter 2026 Financial Results",
-       "date": "2026-11-06",
-       "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQRGNRenptYTlKRVdzcVZMNWNhajZFZlB3OEF6MXNSYXpZOEpOZ0xSTFpLdTBtODhxMmxsNU9BQXFQUExIcUVFZUNUYnNzaW1pUWpnck5mdDIzV3ZHTGctMXl5Z1lXTWNIODVKdk5QblZheDExVl9NSmU5cGE0OV9ldldLalJ4c0FMd0FnVER1MlJDOVdwcEgtUDNLRW9qZnJLTzZ0eG1MZXRESWFMMU1BQ1ZiRTNLXzh4ZDRBV1VELVNLVU5WT2M1ZjA3YS1yY2xvT3ZDVjE3SQ?oc=5",
-       "source": "globenewswire",
-       "official": true,
-       "items": [],
-       "tone": "review"
-      },
-      {
-       "title": "Treace Medical Concepts upgraded by Stifel with a new price target - Quantisnow",
-       "date": "2026-11-09",
-       "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQWENCQ0tETjAzNER4RnR2Y1FOZEdjUTRrWXlvUzBZb1NoQm9EUlRnNWczS3hLd2xjRHNESG1FdWVLRlhGRHg2YS04U0tLcEF5Q0FJOFdacXFNM3hxazlXMFlzMDAwLVF3MVliaVpKUzQ3amRjMFlSRVcyNm5ONEZpd0RqSmd2UW94U1BRVy1ETWdRdWJkcm5IcHFZUnNxaENyekhkZg?oc=5",
-       "source": "Quantisnow",
-       "official": false,
-       "analyst": "Stifel",
-       "tone": "analyst"
-      },
-      {
-       "title": "TMCI Upgraded by Stifel -- Price Target Raised to $6.50 - GuruFocus",
-       "date": "2026-11-09",
-       "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQd3l5SEZscktVRU12eFdEXzhqYThOcnVvWXVTT2NCUUU3ckZleFBfZVoyQmZCZUVrNVRuYmo4aWRtUUNvWHhpR2gtakhLY01mTjl6cjg2Si1uSVd1TkJkWHJHWWJWdVpiNWhrNnRHUG9vNjNzLTk0OTN4aC11ZUV4em4wTkIyQVEwWW5saE1wa1kxaHM?oc=5",
-       "source": "GuruFocus",
-       "official": false,
-       "analyst": "Stifel",
-       "tone": "analyst"
-      },
-      {
-       "title": "Treace Medical Concepts Q3 Revenue Falls 3.8% to $48.3 Million - TOKENPOST",
-       "date": "2026-11-08",
-       "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBkRTVJUGtuZWVVRE83MzZNOE9weFltdmxCSEtCQmNfeDEyb0JDMUlUT2tjSFVCODhJcnpWRVRtZ28zQ1VIaDI0dUV0dU1JWlVwTWJRR2doUG4?oc=5",
-       "source": "TOKENPOST",
-       "official": false,
-       "tone": "neutral"
-      },
-      {
-       "title": "Treace Medical Concepts, Inc. (TMCI) Stock Price, News, Quote & History - Yahoo! Finance Canada",
-       "date": "2026-11-07",
-       "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1rOE90NGdvZTFBODBOeFIzejZoWTFDLVRRMmZUZ1BNQ2huM21RMzBKa284VlVhbXpkMlBWUGdnUjJwc3M1VUpwcEYxUDkwVklWaHc?oc=5",
-       "source": "Yahoo! Finance Canada",
-       "official": false,
-       "tone": "neutral"
-      },
-      {
-       "title": "Treace Medical Concepts Inc (TMCI) Q3 2026 Earnings Call Highlig - GuruFocus",
-       "date": "2026-11-07",
-       "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxOX2JUR2xoLXJEaDBzTW9RSFluVG9wNndSYXUycWtWZmJvc19XRGdVYkJ6SjFWVnlIS1k2X0JfSlRRSVZKWGdWcU5xOGI0cDExazZubklCczBwZmhPb25USzl2N0dpaTBrVmQ4YzJwQ3JyZWFTMFpRaTBuSWN0UktaYkw1SHdwU0VoTEZ0Um0tTnFBWjE5MV96cEVyOTVrS0cyVk5EMU9QeTA3SHl2ZWhYV2t3VkFscjNCRGIzQXdWRUNWby1xeEdSOWM3SDlFUm1JaUZLSlBGUm1NQ2J6R3lBS21DdlVNTFNGbjk4?oc=5",
-       "source": "GuruFocus",
-       "official": false,
-       "tone": "neutral"
-      },
-      {
-       "title": "What Treace Medical Concepts (TMCI) Said on Its Q3 Earnings Call - TradingView",
-       "date": "2026-11-06",
-       "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQeEZOSEc4b0gwRXBONTB1eFVuUVlkQS1WYlFBd0c3X2xacjJUYmcxc1lhYzNicW0ya3h2SmdTOHVCUjNUN0VWdllGNU1JZ0s5NmhQY0hZdGEwQUhsTEc5RV83NFZsQVpiV0JOWVFjS0NxSzdwU2Vuckw3NWRKVGVYQ29SYlhpTG56S0dkS0FmOHB5b0puelV4TVVOQ3pxNklfVTRSc3p4eDN2QlIzTXBqRVlNZkpaTnpLallBem9zOA?oc=5",
-       "source": "TradingView",
-       "official": false,
-       "tone": "neutral"
-      },
-      {
-       "title": "Treace Medical Concepts Q3 2026 Earnings Call Transcript - Benzinga",
-       "date": "2026-11-06",
-       "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPQTRwS1psOFhVdTJiVXNpSVk0RDVxZ1pNMVZSYjRpNVB6RzhVSlN5RTFJTXdDWW56SFg0M0lPVG45NHBrY2FIX1VqcnpmMEt3UU9WbHhFcjUyaExDcjVPRW9NSnBPMEpMT2dPRlFEa184QlRXMVg2U2FST0tmeVBDSXJaWXpJMkloZVdrcE1pX01kUW9COFpKN25TUzBKOUszMDZB?oc=5",
-       "source": "Benzinga",
-       "official": false,
-       "tone": "neutral"
-      },
-      {
-       "title": "Treace Medical Concepts: Q3 Earnings Snapshot - Yahoo Finance",
-       "date": "2026-11-06",
-       "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQNWkwWFlZb2VoaGdzOUdIc0R2cFJqT2d6RjE2d2hFTHRCdFlfZUtSR19MbWsweTJsMDBkT3d4MGdtUHUxT3V1eWNzQTl2Sl9IZ2NIalQ0YTRkdU9TUmJXVFlMR0VRVkVzYjkwVk9JOC1ENWw4NGUtd1dsZjdrbjYzS0ZxM1Q2TlQwV1JVY0JBdnJlNFJHNG1YNGxDa0t4bGZDVVE?oc=5",
-       "source": "Yahoo Finance",
-       "official": false,
-       "tone": "review"
       }
      ],
      "buyers": true,
-     "sellers": false,
-     "claude": "Claude: no catalyst (strength 2/5): Q3 results are mixed: revenue fell 4% year on year, while the net loss narrowed and adjusted EBITDA turned slightly positive, and the Stifel upgrade is an analy"
+     "sellers": false
     },
     {
      "ticker": "GNE",
@@ -749,18 +474,18 @@
      "exchange": "NYSE",
      "ysym": "GNE",
      "market": "america",
-     "price": 18.59,
+     "price": 19.25,
      "low": 18.02,
      "currency": "USD",
-     "change": 0.04909706546275401,
-     "vol_x": 0.63,
+     "change": 0.08634311512415356,
+     "vol_x": 2.45,
      "vol_basis": "first30",
-     "vol_day_x": 0.74,
-     "buy_pct30": 0.256,
-     "buy_pct": 0.263,
-     "rvol_time": 32.743834485651085,
-     "value": 1212904.55,
-     "mcap": 489275703.07223475,
+     "vol_day_x": 2.45,
+     "buy_pct30": 0.844,
+     "buy_pct": 0.844,
+     "rvol_time": 1.6748918547191654,
+     "value": 5115995.5,
+     "mcap": 506646457.0,
      "sector": "Utilities",
      "holding": true,
      "extended": false,
@@ -772,6 +497,30 @@
      ],
      "owned": false,
      "news": [
+      {
+       "title": "Genie Energy Stock Gains 3.7% as Q3 Earnings Increase Y/Y - TradingView",
+       "date": "2026-11-09",
+       "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNZ1hFWHpBbWloSUlLdlJWeHhYcnFNWHJGMVg0R2hxM19NNkxVUzJlQ2FtMjcxblIzQWhYTk8wRkg2VElJV0tfckVKejZSNDZXOGszUmtpTmxpdEUzUWo5by16MUhQZnN6Mlg3eVkyVEtVWXhHY0JLaFNKQnctamcwWVhvVHJwWFJ1RHV4U3FqWWdpSUpEY185RThGOG1uOER1S3VKdnllcmEyaDJBbHlWdFZn?oc=5",
+       "source": "TradingView",
+       "official": false,
+       "tone": "review"
+      },
+      {
+       "title": "Genie Energy (NYSE:GNE) Reaches New 52-Week High - Here's Why - MarketBeat",
+       "date": "2026-11-09",
+       "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQOHpQcE1OZ1R2SlZwZXBqUV9HS1cxN1lMczR5cGEySlNkMnhRX25BNnp5SDBVVkxMVlMxa1VhYWhpcy1aSVBMNGhTODRoNUt3U3d5a1VpQ2gxdG5BYy1SMjRLaEdaN1ByZFdqMzJGclZvejJBY1ZORzJPc3ZJeGNaQWxKeUdCSV82RmwydmJJWkpyNmU0WEZhNHVFTHFqcHFLSXhMT0JYRHJiRDUwbXdnOFc2TGNvWXc?oc=5",
+       "source": "MarketBeat",
+       "official": false,
+       "tone": "neutral"
+      },
+      {
+       "title": "Genie Energy Stock Gains 3.7% as Q3 Earnings Increase Y/Y",
+       "date": "2026-11-09",
+       "url": "https://finance.yahoo.com/markets/stocks/articles/genie-energy-stock-gains-3-160000755.html",
+       "source": "Zacks",
+       "official": false,
+       "tone": "review"
+      },
       {
        "title": "Why You Might Be Interested In Genie Energy Ltd. (NYSE:GNE) For Its Upcoming Dividend - Simply Wall St",
        "date": "2026-11-08",
@@ -785,14 +534,6 @@
        "date": "2026-11-08",
        "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBQVHdBQ3FFUmxjZk5hQUVkU0hBU1Q1SmdRTG1GOFFwSHFoMkxuMkJqQ2pxV3NMZG1RdmtwaXpFOW5iWkFDT29ySjJQU1l0eXFXTmxoOGY3VldRWS0xZGtRV1U1d28?oc=5",
        "source": "Yahoo Finance UK",
-       "official": false,
-       "tone": "neutral"
-      },
-      {
-       "title": "Genie Energy Sets Nov. 23 Payment for $0.075 Quarterly Dividend - TOKENPOST",
-       "date": "2026-11-07",
-       "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE4tQmdhdGxXZUNBMjFkQnF0R3dmS1Fhay1Bbk1KVGtJUG5mRUVNdHNGYTRRZnV5UG1xVVI2S2VpMHotNDlOeTZIOWQySFExeldrUGZiN3dVQTM?oc=5",
-       "source": "TOKENPOST",
        "official": false,
        "tone": "neutral"
       },
@@ -835,19 +576,231 @@
        "source": "Yahoo! Finance Canada",
        "official": false,
        "tone": "neutral"
+      }
+     ],
+     "buyers": true,
+     "sellers": false,
+     "claude": "Claude: no catalyst (strength 1/5): No OFFICIAL headline from the last 48 hours; the Q3 earnings coverage is OTHER commentary from 7-9 November, and the rally is attributed to that earlier news ra"
+    },
+    {
+     "ticker": "JHX",
+     "name": "James Hardie Industries plc.",
+     "exchange": "NYSE",
+     "ysym": "JHX",
+     "market": "america",
+     "price": 29.94,
+     "low": 28.64,
+     "currency": "USD",
+     "change": 0.07504488330341112,
+     "vol_x": 2.34,
+     "vol_basis": "first30",
+     "vol_day_x": 2.89,
+     "buy_pct30": 0.29,
+     "buy_pct": 0.336,
+     "rvol_time": 2.766093982749268,
+     "value": 1054030424.58,
+     "mcap": 17414731786.000004,
+     "sector": "Non-Energy Minerals",
+     "holding": true,
+     "extended": false,
+     "near_high": true,
+     "longterm_down": false,
+     "chart_url": "https://www.tradingview.com/chart/?symbol=NYSE:JHX&interval=D",
+     "lists": [],
+     "owned": false,
+     "news": [
+      {
+       "title": "James Hardie Industries Set to Join S&P MidCap 400",
+       "date": "2026-11-06",
+       "url": "https://www.prnewswire.com/news-releases/james-hardie-industries-set-to-join-sp-midcap-400-302932466.html",
+       "source": "prnewswire",
+       "official": true,
+       "items": [],
+       "tone": "neutral"
       },
       {
-       "title": "Genie Energy Ltd (GNE) (Q3 2026) Earnings Call Highlights: Margi - GuruFocus",
-       "date": "2026-11-06",
-       "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxQVGJSUW50eHJQRko1alNzemxOUWd1NDRzTVlOY0FBUzNyMWpDM216VjNiaUtROV9ZSVdsRFhPTWs5dWhIeWVpclQtMVJNUERQRlJJNEtiR3lHczM5d0pPaWR1TzcxVkFmZjY3bmI3WlcwdG1Xc2E3RjJOUmQtMkdTTFVqWnZ6cHpZMm1KcEhvbUNtVnFTS3lhdzBZSTdlUFdoUTgwNW9ZY2hJcGZ0TzlMZ2tRMUhHel93c3hENHdTdThfN1Y4U1V2NkxXZ1o5VWFLV1lycExHd0hubHhXR011eXZJcU1kRjhBVV9Fcm1HMWU4TnhZMEFOb1hJUQ?oc=5",
-       "source": "GuruFocus",
+       "title": "8-K James Hardie Industries plc: 2.02 results",
+       "date": "2026-11-05",
+       "url": "https://www.sec.gov/Archives/edgar/data/1159152/000162828026071067/0001628280-26-071067-index.htm",
+       "source": "sec-edgar",
+       "official": true,
+       "items": [
+        "2.02"
+       ],
+       "tone": "review"
+      },
+      {
+       "title": "James Hardie Industries plc (JHX) Stock Price, News, Quote & History - Yahoo! Finance Canada",
+       "date": "2026-11-09",
+       "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBFMjNfZEU4UXA4Wmd4a2gxM0ZONmdFd2VjM0dBenBnWkVqcEs5RDVjdW51Q3plcV9yLVlzVnRXNDN3d1hBQldnNEd0R2JfN2Z4?oc=5",
+       "source": "Yahoo! Finance Canada",
        "official": false,
        "tone": "neutral"
       },
       {
-       "title": "Genie Energy Ltd. Q3 2026 Earnings Call Summary - Yahoo Finance",
+       "title": "James Hardie Industries plc. (JHX) Stock Forecasts - Yahoo Finance",
+       "date": "2026-11-09",
+       "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNTDhzVFE5a3BuMVYtNUZvTnhqclV2VTFiSHBfVjNqVHVCZ2VualVmRnF0NUstdGJzT0RWQ1RpWllYN0doclJuZ0tRWmx5SjgyVEFoNjY3TEV6cXROTTJzQ01jMHl1T0pkZDAxUVpKNUVjQlZNWGx1S0pfX3VDZ0ZDaXNRWjNEdXUwdXBZeQ?oc=5",
+       "source": "Yahoo Finance",
+       "official": false,
+       "tone": "neutral"
+      },
+      {
+       "title": "James Hardie (ASX:JHX) Adds Nearly 52% Over a Year, Cash Flow Sets the Next Test - Kalkine",
+       "date": "2026-11-08",
+       "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPT0N6N3lURmlXSUpWcHpRZ25LR1Q5MkdWdW5aVnFOb3NTbmlFcGczOTQ3cG9wUmZFOWFxWlh2aWt1VlpzcWlpQUMtX09DNmpadjZjYTNfOWpnZExKbGpaTEtIOF90cUZxMVRmQ1RtXzNFazBSdkZaekFkeDQxajlCZG1TdEZVWVl0aVJPVTItWjRmVEh3U1ljR2E2Q2dLNEg4OHphcVhUQWVLeVVVZk9aWmh0dnhjQQ?oc=5",
+       "source": "Kalkine",
+       "official": false,
+       "tone": "neutral"
+      },
+      {
+       "title": "What James Hardie Industries (JHX) Said on Its Q2 Earnings Call - TradingView",
+       "date": "2026-11-07",
+       "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQQ2I3RjBGZ0FZb3FpX0dtd0xfcG9JcHdxcmFrSWk3OWIzNTJHN0I4ZjluQTcyV0FOWUhTUWYwLVlnMTk3M3pHX1hkME4zRVRrWjJUek9HM2VvMW82cU9DZWFZNXprbDJaeHFPS3cybkE2cGVqbGU4Qk9DYkZVcDlfM0h3Q1JERFNqa0k4dkFUd0FkaGVEa3E0empZWTEwc3NteUZ5QlpPUlh2ck0zODJnTTNkZE9FNnBJNXZGSTA3VQ?oc=5",
+       "source": "TradingView",
+       "official": false,
+       "tone": "neutral"
+      },
+      {
+       "title": "James Hardie Industries Price Target Cut to $33.00/Share From $34.00 by Stephens & Co. - Moomoo",
+       "date": "2026-11-07",
+       "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPZXcwUThSV055bnJzcmpOOExwdjNUZERvWTdkWklEVURRZ3lnUk9PSUNPdjYyMzVVN1U3QjkwMG1MZTMxNXpoQ2todDhRa0QwVGJtTkNudWVlck5mUlFmbkdMSXBxZkVObEFhTXp2c0F6N0NlQWlfNXpmWFN6TUtkTTBSeU8wcDg0ZnZIOHBMZ1o4azRqSm5UOWxRaVNjMDA5?oc=5",
+       "source": "Moomoo",
+       "official": false,
+       "tone": "neutral"
+      },
+      {
+       "title": "James Hardie Industries plc (JHX) stock price, news, quote and history - Yahoo Finance Australia",
+       "date": "2026-11-07",
+       "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5kYlJZbHZEVFcxX0Z0aHJCSHNSZlpsLXFHRU5NWWRodXU3SXNpUS1jSVdoZ2Q1S3FISDF0SHNGQTdSRGIwUHBHVVMtOElDNVlq?oc=5",
+       "source": "Yahoo Finance Australia",
+       "official": false,
+       "tone": "neutral"
+      },
+      {
+       "title": "James Hardie Posts $1.56 Billion in Q2 Revenue, $0.42 Non-GAAP EPS - TOKENPOST",
+       "date": "2026-11-07",
+       "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1JbmJRMDBISldUVWNzRTJ5VDFjMk1JV0ptVEQwcUxsc0xRci1kcW1PQ0c0OHduczlpY0VkUC1KQjIyOGx1VGpNcGxLMWdteG94RThDdXozSGY?oc=5",
+       "source": "TOKENPOST",
+       "official": false,
+       "tone": "neutral"
+      },
+      {
+       "title": "James Hardie Industries (ASX:JHX) Half-Year Sales Rise 43% as the Building Products Group Reports Results - Kalkine",
+       "date": "2026-11-07",
+       "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPSFV4QTBhcXM3MElwT0x6YUVEd1NhTkQ4SmRTTUJPdzFoYWVBajZNeUxTV2tpdUZuRGZ0MmRXZjZZOGxsaTVDMTNEY3BtWXBuY0cyWmNoMDItdGdua2llWGlFSDNHaTNWTm5LeDdRTTlDS1BNdHFVdks3Q0QtSUgyZUJIdTNDdjc2M1dKOThMQ09FejBoc2lsOWxIamxrOTVZT2JIMHE1TzVNalVhTHdpV3B4MEstTW5oZHMyV1hCei1Db214VVJoLWpZY3c2NkhIdTBLMUxhQkY?oc=5",
+       "source": "Kalkine",
+       "official": false,
+       "tone": "review"
+      }
+     ],
+     "buyers": false,
+     "sellers": true,
+     "claude": "Claude: no catalyst (strength 1/5): The strong Q2 results (Nov 5) and the S&P MidCap 400 addition (Nov 6) are both official but fall outside the 48-hour window, and the remaining headlines are rou"
+    },
+    {
+     "ticker": "TIC",
+     "name": "TIC Solutions, Inc.",
+     "exchange": "NYSE",
+     "ysym": "TIC",
+     "market": "america",
+     "price": 11.29,
+     "low": 10.64,
+     "currency": "USD",
+     "change": 0.08871745419479266,
+     "vol_x": 2.05,
+     "vol_basis": "first30",
+     "vol_day_x": 2.87,
+     "buy_pct30": 0.401,
+     "buy_pct": 0.491,
+     "rvol_time": 0.7181406755198002,
+     "value": 83743823.38,
+     "mcap": 2463795282.0,
+     "sector": "Commercial Services",
+     "holding": true,
+     "extended": false,
+     "near_high": true,
+     "longterm_down": false,
+     "chart_url": "https://www.tradingview.com/chart/?symbol=NYSE:TIC&interval=D",
+     "lists": [],
+     "owned": false,
+     "news": [
+      {
+       "title": "TiC Solutions Announces Participation in Upcoming Investor Conferences - Business Wire",
+       "date": "2026-11-09",
+       "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOM1B5NWx2QnN3LVI4R2pxMnBEemNLM0plcVZMc3lnSnJJTlIyWlFjYnBFZk5YQ3lwWHJjSndwY3RHejE2LVU5NVVKc3VjVkdjTUo0c1QtTGtuLUVrTFJxdkhvMm5xdTBrTHNHY1VRY1hnem9fbGNjUExVam42U2phRVRvQ3MxUnBxVlUtTnVYbmRKc0hTNGRtY2NPQ2U5X0RIUm15RllvUHdWM1RLakNnVndubUxXclViaWptUkV5S0FFNWpCaVE?oc=5",
+       "source": "Business Wire",
+       "official": true,
+       "tone": "neutral"
+      },
+      {
+       "title": "TIC: Backlog Is The Story, Integration Now Looks Built For Growth - Simply Wall St",
+       "date": "2026-11-09",
+       "url": "https://news.google.com/rss/articles/CBMi9wJBVV95cUxPclJ1d1pVdXVMZER6aWtkbTF1bm5qbldKRHBlaXd0dmRfQzY3ZTlZYVhyUUFZTWNiNnQwTmdCSnhXUFpKMlJVREFZWVVKRDN4ajVGZU9iR1ZVbEJXdkNRQnpjQUVvb01LTEl6c1BKdFotRGg0NTBpWWEyVXh2RHdQTm5idmhrUWdYUVM2X2RLemk5bndaaHhKaWpmZ0hBLUU3ZjVJZXJpZkZtdTlXNWdxcnZCZlpZRlluQktUX09hT1V4VTMxOEhJY191NHZ3Y19zcFZiRWJ5TUt0dmlpRXFMRzVZaUVsT3E4VDJRb0dWZlZYNTRHS3JlOVhFNlNBQWlFU3pDQzM2bmw0eUxFcXVnX1VRTEZZVHowNFd0ZEtIMGFxM3p3N1FiQkhrNGl5VzZOekoxbndyNG5NTElyZGYyRmJnN0VZY2pkay0tREtiWnZZdWlGYmUzRVo5a3FJUENIeUFQU3prVE1UU1hOem1tOXlkci0wZ3M?oc=5",
+       "source": "Simply Wall St",
+       "official": false,
+       "tone": "neutral"
+      },
+      {
+       "title": "TIC Solutions (NYSE:TIC) Stock Price Up 10.6% - Time to Buy? - MarketBeat",
+       "date": "2026-11-09",
+       "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPQzFNandqUU5EakU5WWRmLW14dVh6MHZYRDJGOU5jWFRBNDBEbVRUUXNnaDZEX181MUU3UEo4SjZucmFKaHh4VVFkTWFYdHdZUGthRmJkRHVkblZvYTBha3p5bHFyYldaWGpMLXlId3VXZks5aUtvMC1jemRIdjdsZVoyajdrU2N1Y185ZkZ1cDBWdVJxWkNUNkp3TnZWWTlGOVBZMnRtSlBReWZKa1gweU1pcw?oc=5",
+       "source": "MarketBeat",
+       "official": false,
+       "tone": "neutral"
+      },
+      {
+       "title": "TiC Solutions Announces Participation in Upcoming Investor Conferences",
+       "date": "2026-11-09",
+       "url": "https://finance.yahoo.com/markets/stocks/articles/tic-solutions-announces-participation-upcoming-120000876.html?.tsrc=rss",
+       "source": "Yahoo Finance (source unknown)",
+       "official": false,
+       "tone": "neutral"
+      },
+      {
+       "title": "TIC Solutions Q3 Earnings Call Highlights - MarketBeat",
+       "date": "2026-11-08",
+       "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOaUhWVEVTYzRVQUNFSjF2cVFRRy1maEdIN0xKb2kxQkUxblZHbW4xQVhnUUFIRFZxZnUzc3lnRkEtU3B5dksxZVpibklwNHVSUFJtYUNmS0I4TVlDRTVSRXNxa2Q1VU1pSEVXQ3BGa0FWTTUzNGppalhHVHZXUlgxUUNmVENjWjdxZmVjcG5lQW9LOHc1M0RyYjlNWF91RUE4STdDZ05CeXBNUQ?oc=5",
+       "source": "MarketBeat",
+       "official": false,
+       "tone": "neutral"
+      },
+      {
+       "title": "TIC Solutions (TIC) Stock Still Seems Undervalued Despite Its 16% Run - Simply Wall St",
+       "date": "2026-11-08",
+       "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPckNwb0hnUV9DVFBHZE5OTDFFbXcxUUc4U1VRWWIxS3pKU1g2OVF3cVRyRDE1Y3ZvR1Y1Z0VtY1RCSmMwNHVIREp4Zk52SGw2VFVPRk5XT25JMmk0emU5cVpyTElFdW1abEpsT0tqRDdqMUR5eXcza2NJS2FzbUZJeXg1T2U3bW52VUlySFFFWjdIdmJTUFFycVA0NG4tSG1ERGFyMGYtcjVBbWNWVGQ1SEZubWFtUEZONFRTcXdEejZsTW44ZEVtOThvSE1aTlhWdFc2THdB0gHbAUFVX3lxTE5MNzQ1R0N0X05pbHFfSUhtNjJVX2NoQldQb2lWdDhCbGQtbVE4OERFdERTdi1aaFRWRnlPWEd5XzV2RG1ldHQ2TWFldEpEcng4NERiTk9mZVVVV2JFUFJqYzhQQUVIU0VJbGpIb200eDVvR19LU1BZY1ZkbzJsTUZ4OGZ5ekhlVzBPRVo4N3hEa09pM25rYzNadmJaWG01Y1c3dXNHS01rU3NrdHhMREI0TTA1Rk5JNkJScFJDM1VHbG9hSi1YbDI2UmhJajFwMzVrdEZCMkZMOG9aUQ?oc=5",
+       "source": "Simply Wall St",
+       "official": false,
+       "tone": "neutral"
+      },
+      {
+       "title": "TIC Solutions Q3 Earnings Call Highlights",
+       "date": "2026-11-08",
+       "url": "https://www.marketbeat.com/instant-alerts/transcript-tic-solutions-q3-earnings-call-highlights-2026-11-08/?utm_source=yahoofinance&utm_medium=yahoofinance",
+       "source": "MarketBeat",
+       "official": false,
+       "tone": "neutral"
+      },
+      {
+       "title": "TIC Solutions (NYSE:TIC) Stock Lifted to \"Hold\" by Wall Street Zen - MarketBeat",
+       "date": "2026-11-07",
+       "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPdmZCZXdZclZoMy1WLUN2MzVzbnZjendMcVVHQ2xkSm9PZEJHbktraVVubHc1UEl5XzdFeERyYzVDOFZNZnNlZzhTSGVrY05hMDExMDBYT0pXeUhVWU1qRExNanFteXkwdGVSVk9mMmw1SjhsV1FtS0UzTUtwQnY2b1NLT3JHdjg4aVJJai1PZmRXVWFvS01DUElvb21iZzFXTVFqcFlOT2ExY0VDdWtRWkh0V3ZCLTlVNm9Ia0VjNG9rZw?oc=5",
+       "source": "MarketBeat",
+       "official": false,
+       "tone": "neutral"
+      },
+      {
+       "title": "TIC Solutions (TIC) Lifts Guidance As Record Quarter Puts Valuation Back In Focus - Simply Wall St",
+       "date": "2026-11-07",
+       "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPcjZ2MVdwcm5nbF9jakVvcmlQYmgwdHNIeDVIV1hidE1HWUotLW5HMzB4WFRkUlI3US1HV3Q5RHdrRGducW1oZFktMWNqUlJ5NFdYOTc5OFgtYTJyRGZ1TExKVWJCNUI3UGNlTDlYX3JvNE10U0hvVGhmbFc2dHRRdElQdjQ1ZUdyVWpUbGo1UkpZYjNMMTY3MzRUQ0ZaN2hnVnAtNldSRU82S2phMkZqQjcwT2FiYy1NX3BPNXJ2aHdRWGNfT0VGeTM1S3hJODA5U3FSV2pZNNIB3AFBVV95cUxOUDVnU1pyQXE1RUpXa3VZMXhMVjhpd1NVN2xUaWhwZ3R4T2ZEZ1dWTnkwWUtYU1UyeWxvRW94b3prbk9PVDVMNDZuWFhna1RuazdhWmhCX2NmdkVjcDJDVkNKQW5wWGZUNW5UVnZVRW1ydGpGQ2FTRnJaZUhkTlZ5TG5RSlVBU25sMnFkdFVYb3ZUVHdaX0FmY2JRYlRMaGJRMTItWFpjQ3ZLOU1EVUppbHc1Rk5FUWJub2w3TzV0Z1JqRldfZXdTVG5QUW16NnpBNHZHTGJKalhuLTVo?oc=5",
+       "source": "Simply Wall St",
+       "official": false,
+       "tone": "chatter"
+      },
+      {
+       "title": "TIC Solutions (TIC) Lifts Guidance And Backlog, Is The Stock Still Cheap? - Yahoo Finance",
        "date": "2026-11-06",
-       "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNRHl0YWlqeHdSczdxQzBNUF9JUFVLdzc4U0VIek1qZUxTcEpTa19Qb1RXdzYxVlJJU3JVSV83Q1RiVVFLVTRPZEczMVB0MlhnQVJTYjUydDBIVFhUbXBWcGZWejlyN2JnNkM0bVU2RlpVOUVCQkhLdGNjWHpNRmlESjVNSDhsSnJtOG01ZE15c0Z2WGs?oc=5",
+       "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQVW52V3V4VE4tZHJzelJNQlI1c0VNVjZHbEREQ0VtMEthbFZjV1RlYXRjbjV6NEF1NFp6U21IZ1NrOUxaNWhSZTNrbEprbkIyTmZpNXFuRmh0YlZsNG5nQ3A1dFpGeVd4cVJIN1RKWWJVNS1rbG15YnB2S054ZDNibFFGTGNVNU1xbGhfUTZWcGxUUWp6UHdxb1M4Z1dZQQ?oc=5",
        "source": "Yahoo Finance",
        "official": false,
        "tone": "neutral"
@@ -857,45 +810,36 @@
      "sellers": true
     },
     {
-     "ticker": "TLS",
-     "name": "Telos Corporation",
-     "exchange": "NASDAQ",
-     "ysym": "TLS",
+     "ticker": "FERG",
+     "name": "Ferguson Enterprises Inc.",
+     "exchange": "NYSE",
+     "ysym": "FERG",
      "market": "america",
-     "price": 5.76,
-     "low": 5.5623,
+     "price": 259.93,
+     "low": 246.4,
      "currency": "USD",
-     "change": 0.19502074688796667,
-     "vol_x": 0.6,
+     "change": 0.11223791185280282,
+     "vol_x": 1.7,
      "vol_basis": "first30",
-     "vol_day_x": 0.6,
-     "buy_pct30": 0.292,
-     "buy_pct": 0.335,
-     "rvol_time": 6.455153625982503,
-     "value": 3513818.88,
-     "mcap": 430483902.27385885,
-     "sector": "Technology Services",
-     "holding": false,
+     "vol_day_x": 2.17,
+     "buy_pct30": 0.506,
+     "buy_pct": 0.479,
+     "rvol_time": 1.2062368581254124,
+     "value": 977446490.46,
+     "mcap": 50284162276.00001,
+     "sector": "Distribution Services",
+     "holding": true,
      "extended": false,
-     "near_high": false,
-     "longterm_down": false,
-     "chart_url": "https://www.tradingview.com/chart/?symbol=NASDAQ:TLS&interval=D",
+     "near_high": true,
+     "longterm_down": true,
+     "chart_url": "https://www.tradingview.com/chart/?symbol=NYSE:FERG&interval=D",
      "lists": [],
      "owned": false,
      "news": [
       {
-       "title": "Telos Corporation Announces Third Quarter 2026 Earnings",
+       "title": "8-K Ferguson Enterprises Inc. /DE/: 2.02 results",
        "date": "2026-11-09",
-       "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNYVhUWlROemdOY3JaR2xTMFZYeGRuWXdZZ3BBdWJvQ1MxYktROTVuOE9LUV9xSVYtY0d5QmhGUnZQSE5yTE9hWGhCM21ka0VRSFBRVkVDa3ZZZnhQWmYyX0xMYzRzaTJMMjFhdVUtZkQ2OUVkZ1hVeHpUWGZiUDByZzhwY01rOUo0QXlLcEowNl9qN0lYcUVtT3RBeVJCZTRXR0pic2pjSVhqcFZOQldCRWswTVJBWnRjQXF6cjUzY0JyOVZickE?oc=5",
-       "source": "globenewswire",
-       "official": true,
-       "items": [],
-       "tone": "review"
-      },
-      {
-       "title": "8-K TELOS CORP: 2.02 results",
-       "date": "2026-11-09",
-       "url": "https://www.sec.gov/Archives/edgar/data/320121/000032012126000041/0000320121-26-000041-index.htm",
+       "url": "https://www.sec.gov/Archives/edgar/data/2011641/000201164126000042/0002011641-26-000042-index.htm",
        "source": "sec-edgar",
        "official": true,
        "items": [
@@ -904,126 +848,313 @@
        "tone": "review"
       },
       {
-       "title": "Telos Corporation Announces Third Quarter 2026 Earnings - GlobeNewswire",
+       "title": "Ferguson Enterprises Lifts Sales Growth Outlook Following Third-Quarter Beat",
        "date": "2026-11-09",
-       "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNYVhUWlROemdOY3JaR2xTMFZYeGRuWXdZZ3BBdWJvQ1MxYktROTVuOE9LUV9xSVYtY0d5QmhGUnZQSE5yTE9hWGhCM21ka0VRSFBRVkVDa3ZZZnhQWmYyX0xMYzRzaTJMMjFhdVUtZkQ2OUVkZ1hVeHpUWGZiUDByZzhwY01rOUo0QXlLcEowNl9qN0lYcUVtT3RBeVJCZTRXR0pic2pjSVhqcFZOQldCRWswTVJBWnRjQXF6cjUzY0JyOVZickE?oc=5",
-       "source": "GlobeNewswire",
+       "url": "https://finance.yahoo.com/markets/stocks/articles/ferguson-enterprises-lifts-sales-growth-151632604.html",
+       "source": "MT Newswires",
        "official": true,
-       "tone": "review"
+       "tone": "neutral"
       },
       {
-       "title": "Telos Corporation Announces Third Quarter 2026 Earnings - Quantisnow",
-       "date": "2026-11-09",
-       "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOVWl6VnZrbm5fM3FJTThnZG5MQTZRS2lKam01T0sxTFFBU043ZmxQdmxfQmU1TmZkOTd0bEUxSGVmWE4zMzc0UXF3RHBkV0hPaG9pd3NkT3k4a2NfNkw1clJkOEdobjBTbjJXZWl1dXlxazJlY2tkbFZSWVFtenkzYWhKWkRsbDQ0bERDUVRLMVdlWEZBOFpXUmhTdS1YOHc?oc=5",
-       "source": "Quantisnow",
-       "official": false,
-       "tone": "review"
-      },
-      {
-       "title": "TLS: Higher Information Assurance wins and Telos ID strength lifted FY26 guidance - TradingView",
-       "date": "2026-11-09",
-       "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxQQTRvZlpmOGZTTkVLYzdyRkhtZHlWQ3dTdmo4RUR2U09SX05wTHkwT29fT0pieU4tYmVjN3Zvd1I1QVdOQ2wzMkRqT09TN0R1NTBuYXl6RHZ0RlVsNlJ3dURiME5xQUd3am9udWNocDhLVFlra29Vc016NnNxN21yUmNBYmR5TXN3ZDQwLVZGeUhvd045Z0tVRzFQaXJfaXl3VzRkWXV3T2pDMlRQbGVoUVgwOVhDNTh0WktjUHdwUWdHWl9MSC1kQjNwbC1TTHpQdHRyYWpVYzA5ejh0QlN6QV9rOFBqSzNiU2o1YkowRlRXU3Q5cGc?oc=5",
-       "source": "TradingView",
+       "title": "Ferguson Stock: Managing A Mixed Macro Admirably (NYSE:FERG) - Seeking Alpha",
+       "date": "2026-11-10",
+       "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNRWMxTXoyQmZGV2xJUHRkRzRxWEYwUlAxaGRsWWhmZ0dsUFBMbTN5U0NPNUU4VUxydUNxQVkxdEFHTThqY2o4bXowb3BXRG5FLW1wRnpLdk01dkpmV3k2dlE4VUtsN3hiaEJkQVVMLVVQSjV6NGUzYTc3eXh6MHpTTmZVYnBlSEVFWmc?oc=5",
+       "source": "Seeking Alpha",
        "official": false,
        "tone": "neutral"
       },
       {
-       "title": "Form 8K Telos Corp For: 9 November By Investing.com - Investing.com Canada",
+       "title": "Is Ferguson Enterprises Inc (FERG) Overvalued After 11.2% Rally? - GuruFocus",
+       "date": "2026-11-10",
+       "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOX2tCQnFGMk1NS2FpNkJsQ3FmS3ZrNzZkMUdVWnpRNUtMbFNoS2VtaWlvdjRIWU4zcmwyMFVPdFRyUGJLakw4VmttZFlpLV9ETlFjRXlIQWMzQlg4YjZXMDRUT2NYRTRJSHA3QU95cDlpTGxTVk4wRUVTdWM5QllpcHZQeDBweFNfOFI4M0NjWjlrZGpsSGdfVmdXZ0syVS1STWRXSllzVWttdGlUZlRmSGVRQUpIb0Y4N3o4V3lfNng?oc=5",
+       "source": "GuruFocus",
+       "official": false,
+       "tone": "neutral"
+      },
+      {
+       "title": "Ferguson Enterprises (FERG) Raised Guidance, Is The Stock Still Undervalued? - Simply Wall St",
+       "date": "2026-11-10",
+       "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOMFJ6RlZmWWNPaF9TYzlFcU5Memp0SVg3TjBvTDlsNmpaY0I1bm8xQjV4UUVwaFRkSjh5eWpWOWd4R1ZreFhIaFpxZFBNVmVycFFkNzJ2UVZ4RTR5a0JWaHpjVlZ2VnRHeko1ckFFU2VPVGFsVldTM2M1b3lhNHJOeG10VnJtX1pyNUl0X1N5TDYydWdvTF8ta3ozRmhjRm55cW1EWmVJYlQ4Q1hEd2FPTlhfZGI0cEQ4a3U0NEFKLUI2N1Q5U1JvOFdndHQ5Z2dvTHJiWV83RnF2NDFiQTdR0gHfAUFVX3lxTE4wUnpGVmZZY09oX1NjOUVxTkx6anRJWDdOMG9MOWw2alpjQjVubzFCNXhRRXBoVGRKOHl5alY5Z3hHVmt4WEhoWnFkUE1WZXJwUWQ3MnZRVnhFNHlrQlZoemNWVnZWdEd6SjVyQUVTZU9UYWxWV1MzYzVveWE0ck54bXRWcm1fWnI1SXRfU3lMNjJ1Z29MXy1rejNGaGNGbnlxbURaZUliVDhDWER3YU9OWF9kYjRwRDhrdTQ0QUotQjY3VDlTUm84V2d0dDlnZ29McmJZXzdGcXY0MWJBN1E?oc=5",
+       "source": "Simply Wall St",
+       "official": false,
+       "tone": "chatter"
+      },
+      {
+       "title": "Ferguson Enterprises Inc. (FERG) Stock Forecasts - Yahoo Finance",
        "date": "2026-11-09",
-       "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQal96ZmQ3TkM0TEVmMjZKaVphZmtka19XVVZXaU9ndll0MHktZ0lFdTIyYmJOb09xMWVZOUM3enJfMnJvbkZiUUd2dFhNSzdWcWtwUTAtdGtYOHZ4eFg3RzlTem9rdlNfSkJXZXo1Z2V4V3F2ZTJjUEJmcmVLUXlfbHo2RHNLR1gtWS1NWVBIS2ZxWXZJY2t6UU1B?oc=5",
+       "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOWWhmTmpDSWt6QTFVYWEyaHJPNUdtYnNKSHhEa2gxVzNGS20yX21EN1RDUndaZndaV1NkV2o3bG9namZURUhuT011ejdWZEhmNVRidm9EbFdpMVdTZE1WY2ZUOEJoemRGdXRYalRLY3VzRDd6dGdNdlJ6R3VqRmhaNkt1WTlEYWV4NDYwUQ?oc=5",
+       "source": "Yahoo Finance",
+       "official": false,
+       "tone": "neutral"
+      },
+      {
+       "title": "FERG: Ferguson Enterprises Inc. filed SEC Form 8-K: Results of... - Quantisnow",
+       "date": "2026-11-09",
+       "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQbEZkN19zX01Ublh4ejAtRDljdHF6V3pjZjhZS29TSkgwSkRoTkdCbEVRamtGbC00bjFIemNMLVlWcHBuZ2lxc0J0X0luSGdCakNUZ3JjUHJmN01pZk1JRUVrelRnejg5T0otaEJ5bTM4QWgxV1NwQmdJM2FTYVFsd1hhN1EwdUplUzVuYmJMMVVseDFqa1dLc0NTanV6b1d3QldFSGpyYw?oc=5",
+       "source": "Quantisnow",
+       "official": false,
+       "tone": "neutral"
+      },
+      {
+       "title": "Ferguson Enterprises Inc (FERG) (Q3 2026) Earnings Call Highligh - GuruFocus",
+       "date": "2026-11-09",
+       "url": "https://news.google.com/rss/articles/CBMimAJBVV95cUxOeHNlRnRqZS1LRGowWEJ2YU53T3Z1aFhpZVI5WjVkZGhfdGUwbnNoLS1VOTNvSG5NV0pfTTEyeWhiOG5OQnIzZXJsMXUwVDFCQU9Hc0FCZnFXaG1kQTZxZy1mbFV3YjN4WkdtRElxczVuMFEwZjR5WHZMVEc1SUlpRG5zWU4zMzI0b08tWEF5VHBXSFdCSTJaLVdQM05FVGFQUzZvMEx5aDlwdGQzTktLVjZkSlZKaDQzMmpVQUoyd3VsUVQ3WUF0dGdIbkFCaVNfLWg2a3ZaazA1bWVOTkZKWFM3SGVFQkI4Nm4yTjJIWDhRTWIybTFzQmRDWkJ6by1GQTdhWFVwMHdjWlpwbWlGVlFDMllDeWJa?oc=5",
+       "source": "GuruFocus",
+       "official": false,
+       "tone": "neutral"
+      },
+      {
+       "title": "Ferguson Enterprises Inc. 2026 Q3 - Results - Earnings Call Presentation (NYSE:FERG) 2026-11-09 - Seeking Alpha",
+       "date": "2026-11-09",
+       "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOU01pUjBFOUQ3MEhweUxsMnFndXlibUNuOUdNTk1OVDZZVjlKWkI0Z29iTk1YTTNUQ0lBNFdzRE8tOVJ3Z1RpaWZZSEd6OGdhLUJ5cXRHSk1hS2pnSXk3TEhZMkR2Q0xObm5RSDUzVDUySjA0dFFUQTA5LXpwMDhnRmIzcnFFMzB0czlsUFNJRzl6MVg5Z01Wa3RqalhzaXdYdWlPNkVkYmF3SmVC?oc=5",
+       "source": "Seeking Alpha",
+       "official": false,
+       "tone": "neutral"
+      },
+      {
+       "title": "Ferguson Enterprises Q3 2026 Earnings Call Transcript - Benzinga",
+       "date": "2026-11-09",
+       "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOZkZsclEtUk9ucGgySEs1ZVI1SEl3Z0o0OGgwNm9qWkhnQ1VHTkZTaEI5VkY0bUZvMTVvMlg4d3lscDU5UW9vOUF2VWNucFZZV3lsVFRHbGhGSGUxcVE0OHZEUk1tekRkWG5yZ0xiTEhGMmNBdXVlNUJkaHliMUxOMTBqUDVEeWN5WWg1aDh5c29QQU5XZWRqb0NBa3hhQzQ?oc=5",
+       "source": "Benzinga",
+       "official": false,
+       "tone": "neutral"
+      }
+     ],
+     "buyers": false,
+     "sellers": false,
+     "claude": "Claude: no catalyst (strength 2/5): Mixed Q3 results (reported EPS down 4.9%, adjusted EPS up 7.9%) with a modest guidance raise that is partly acquisition-driven, news already priced in after an "
+    },
+    {
+     "ticker": "WRBY",
+     "name": "Warby Parker Inc.",
+     "exchange": "NYSE",
+     "ysym": "WRBY",
+     "market": "america",
+     "price": 30.21,
+     "low": 25.72,
+     "currency": "USD",
+     "change": 0.18563579277864994,
+     "vol_x": 1.52,
+     "vol_basis": "first30",
+     "vol_day_x": 2.1,
+     "buy_pct30": 0.512,
+     "buy_pct": 0.552,
+     "rvol_time": 1.2577025459961084,
+     "value": 343793999.19,
+     "mcap": 3741519402.0,
+     "sector": "Retail Trade",
+     "holding": true,
+     "extended": false,
+     "near_high": true,
+     "longterm_down": true,
+     "chart_url": "https://www.tradingview.com/chart/?symbol=NYSE:WRBY&interval=D",
+     "lists": [],
+     "owned": false,
+     "news": [
+      {
+       "title": "Warby Parker: There's Too Much Riding On An Untested Intelligent Eyewear Launch (WRBY) - Seeking Alpha",
+       "date": "2026-11-10",
+       "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPd0xUZkFWb0F0a0pqQXI1aGxCeHZPakpZTW5kTUYzX3FaX19EWkhmX0MyR1V5bFZQM0I1TXpGVnlLdDNTQTE3ZnNvMWpaMWZBRGtSMGVXRTVpVTNqNTNpMnZQZlV0TFhKN3p3cGhPWExIYlBWRkVTbDYyN05NN1pBMmRCZ2hWSXA3VnNrWmZRb01NUUFRQ1lyTUczSE5tTG1NbHpOWmJEQkFNTmRaX1BmQlJqZDM?oc=5",
+       "source": "Seeking Alpha",
+       "official": false,
+       "tone": "neutral"
+      },
+      {
+       "title": "Warby Parker\u2019s (WRBY) Prospects Are Looking Brighter \u2014 Here\u2019s Why - Yahoo Finance",
+       "date": "2026-11-10",
+       "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNOVRhMkJMb085dFNHVEhhZ1l1YnhPdlBXUFJ6TE9abUtER3ZGUTBTbFJsNlBEVkdqRm10UFhyUW5adWlIMTlfTEFvaGNwa3Ayb1QwNEJrc0ttUExUa2M5TnljWGVJa2s1Sm9oLTNmNlYxcl83R1ZjcGlseEIyTnVHZXlzNS1fWmdCR2FMTjNnSGZ6ZHZiZ0FxcjQ3TGVwRENocEE?oc=5",
+       "source": "Yahoo Finance",
+       "official": false,
+       "tone": "neutral"
+      },
+      {
+       "title": "Warby Parker\u2019s (WRBY) Prospects Are Looking Brighter \u2014 Here\u2019s Why",
+       "date": "2026-11-10",
+       "url": "https://finance.yahoo.com/markets/stocks/articles/warby-parker-wrby-prospects-looking-033428066.html",
+       "source": "Insider Monkey",
+       "official": false,
+       "tone": "neutral"
+      },
+      {
+       "title": "Warby Parker Collaborates With Filmmaker Spike Jonze to Reissue Archival Pieces - WWD",
+       "date": "2026-11-09",
+       "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQdGFJYW9GbUU3VVFtVk5wWDc1aEFZRWw3bEhRQUN0dktnajJySnEwcHBMVWJsbmxnQVJjTVl1Sy1wTUNzT1IyQ2hKOE1ielhiVjA5dGFDQ20xcDFmUTJFMGQwVTFHQ2ctbzMtMVB4b3dxSDlXMkpad0dxWGhMaVZRYjdKcXY3U083SElhMmpfUlVvSk1TQjJDTGdJaW43QWVUSkFCTTRwYjZqWDVVcmhKaDZuWTg?oc=5",
+       "source": "WWD",
+       "official": false,
+       "tone": "neutral"
+      },
+      {
+       "title": "Warby Parker Stock Hits 52-Week High on Smart-Glasses Buzz - Benzinga",
+       "date": "2026-11-09",
+       "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPMGFNQ1dmMG9BQ2hGUDVBUEhVRUIzTzIzT2ExVVBYblR5MnBZREZyMUczb1VIUFc3NVVsZkNuUTBiUEdleXNDZFZCMDl6UUh0ZlJJVW9tOXhDZU95WUhKUjNnVWtHT3hQSlRzdFVzZG43enZzWm9aN0pZcXFpYVNhaXZJZEszLWdkQ3VyU0h2alJYaGd0emU2MWgyN2dGMnA1eEhyOWtCWHBsU016dDVJQVFORmVfQ0hxY3dB?oc=5",
+       "source": "Benzinga",
+       "official": false,
+       "tone": "neutral"
+      },
+      {
+       "title": "Warby Parker Surges 17.3% Amid Sector-Wide Rally - AlphaStreet",
+       "date": "2026-11-09",
+       "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQRlZ6dnRwUUhXNl9Sb2o3MmRDaEFEdFJQcmE4ODlpbmpHbWp6bWZZYU1mWks3YXd3M2pDZC13VlpuRnVWV2pzMHJkOTA0bUxrOWVqQS1XbTU5eGxLZTlVRnhYeE55cC1nWUFGeUEtOVdDeWdQSnJoS2V0M0FrOFAwMjBkb9IBiAFBVV95cUxOVW54UGVVeEwxR1RPNWI3RG5RLUlzNlIyS2FLeUVmOUU3OExLUUxhRUx2WlVhMy1UM3VndjVvWHM2WWhOTXdSeDNlcWdfOWxPbUZvTS1BQlVKY1d2OUpjM2NPSF9ZSThBQ25LaXdac0ZtV2FlNldOZnNueC1QZjBiVWRwUXRWUGtG?oc=5",
+       "source": "AlphaStreet",
+       "official": false,
+       "tone": "neutral"
+      },
+      {
+       "title": "Warby Parker to Open Fifth Montgomery County Location - The MoCo Show -",
+       "date": "2026-11-09",
+       "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPVFV3d09zU3oxcEo0VHFLeXNxT3NHd19vM1RMZHFBeVAya2xBZDZhYkJmUEtZOUpUaFBHUjVENUFzcXZaQzd0QW5SVkpJQl9CV0FkODUyQ0tQNXVmdzJNcUkzY2s5UUp0OHlxaWhDYlNaTU1lN2FIR0ZpeDMxYkZFUHFtRmlqVHdkQVNDMkxTQQ?oc=5",
+       "source": "The MoCo Show -",
+       "official": false,
+       "tone": "neutral"
+      },
+      {
+       "title": "Warby Parker (WRBY) Shares Surge to 52-Week High After Q3 Earnin - GuruFocus",
+       "date": "2026-11-09",
+       "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPQW5tbF9UN1duRzdXQVRMaGE1c2ZiRUNNYVc1SU5URmNNeXJBR3VxaFBZVGM2Zklod2VfWDZreU1DcXhNR0p1X2VVWmFWX09lQVo5RzRac1FJaWwxYmNQaktiS0RuNkFzUjRIVnFTYkl3TEE0UGZhcGkxRWt0Y0pnakhENHUwVTg3Y0ptMXpqT1F2bzNGa2ZpVWpBUGctVTUyZzJPcA?oc=5",
+       "source": "GuruFocus",
+       "official": false,
+       "tone": "neutral"
+      },
+      {
+       "title": "Why is Warby Parker (WRBY) stock soaring today - Barchart.com",
+       "date": "2026-11-09",
+       "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNZS0zV1dXQ0pPaERVaVVZdXhRcmVKa3lLa2JrTEdSYlQwZE1INEdudG1Xd3hiUmhpaVJuTmNVVzMwbE9UN0o4cXZhZW8zVnV4cEJWZ0h4czFUaGpLaWxSRGZWUmFtUVpzcHpBNXpvN01ydTBMYnpGdndQQVZQV0gySFpMNVlXZWIwMVNCUFNoTnhoUQ?oc=5",
+       "source": "Barchart.com",
+       "official": false,
+       "tone": "neutral"
+      },
+      {
+       "title": "Warby Parker stock hits 52-week high at 31.03 USD - Investing.com",
+       "date": "2026-11-09",
+       "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOWWdnY2ZmazdfOEhRbzl0MFZCc2VhTk9BYzdZYzdVTnYzSjh1emQ5YWh6Wmw0OGt6cktRckE1ckNDYU1YcWFHelhHOXFPTUo0NUxSa0FsRjc1MVp1ME5jcE01WlQ5dlZsWkZLMk00anNRNVR6MzJHYUJ3WjdhZFh5aUtFRG9TTVZ6UEs3LS1YeUtXRHJaSThEanlPNkhtcU1KelBOWVRRSQ?oc=5",
+       "source": "Investing.com",
+       "official": false,
+       "tone": "neutral"
+      }
+     ],
+     "buyers": false,
+     "sellers": false
+    },
+    {
+     "ticker": "EVI",
+     "name": "EVI Industries, Inc.",
+     "exchange": "AMEX",
+     "ysym": "EVI",
+     "market": "america",
+     "price": 21.73,
+     "low": 21.03,
+     "currency": "USD",
+     "change": 0.043206913106097075,
+     "vol_x": 1.39,
+     "vol_basis": "first30",
+     "vol_day_x": 1.39,
+     "buy_pct30": 0.445,
+     "buy_pct": 0.445,
+     "rvol_time": 5.463116566508244,
+     "value": 3070905.33,
+     "mcap": 281863755.00000006,
+     "sector": "Distribution Services",
+     "holding": true,
+     "extended": false,
+     "near_high": false,
+     "longterm_down": false,
+     "chart_url": "https://www.tradingview.com/chart/?symbol=AMEX:EVI&interval=D",
+     "lists": [],
+     "owned": false,
+     "news": [
+      {
+       "title": "8-K EVI INDUSTRIES, INC.: 2.02 results",
+       "date": "2026-11-09",
+       "url": "https://www.sec.gov/Archives/edgar/data/65312/000143774926035892/0001437749-26-035892-index.htm",
+       "source": "sec-edgar",
+       "official": true,
+       "items": [
+        "2.02"
+       ],
+       "tone": "review"
+      },
+      {
+       "title": "EVI Industries Reports Q1 Fiscal 2027 Earnings: EPS of $0.24 Exc - GuruFocus",
+       "date": "2026-11-10",
+       "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNaWl1dlVNemlyTnRSUUZMZFdpeVEwanZfWGNEYkJTa1VaNzdRaXVpVEVXbHNyek56LTk0bFhkS1cyZ2xxUTREUnowNndXbU9YX29ZaldEZDZmazNGb1UyRDN4XzZhcl9odzZ2cWRBVEMta3ZTSXh4UEN5Wkdpc0ZZTHR0MVYzT3BUY2Y5TjFoRTQ5LU9seER3NzRHUlRCTFZkeTk4MDJqVjg3WU5JekZBY2o2R3o3ZVhhWUdqcnVOTEVsbFQwMmVpMHROeS02WHZIbnpVcGVrZnlDM3dNUGc?oc=5",
+       "source": "GuruFocus",
+       "official": false,
+       "tone": "review"
+      },
+      {
+       "title": "EVI Industries earnings beat by $0.04, revenue fell short of estimates - Investing.com",
+       "date": "2026-11-10",
+       "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOM3RhSWNUNk91bE05TGpCSFZiQTlmWmtHbU9jeGFoTE5pSUI2ZTBpeG5NVHZraGE2d1RoNzlOMVhvNU5ZVmZRNWp6dnJaWVM2VzR2dGktNGdLcTlSZDlIaWVpanpJTlhRLUw4eGQxZ2dpUWk5UjdRcFFMVUJLUEQxTDhuSFdZRGtfZ2xoZmZpbEVyOHlmOE1iRHV2bnB0RVhFVmk1YjBwamNSMFp1aGttWDQyTURiZw?oc=5",
+       "source": "Investing.com",
+       "official": false,
+       "tone": "neutral"
+      },
+      {
+       "title": "EVI Industries: Commercial Laundry Equipment Company Acquisition Expands Florida Distribution Network - Pulse 2.0",
+       "date": "2026-11-10",
+       "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPU3hCUjBXX3o3NWJNbzAtV0dteUxYenR0aEViQWpDR0NyZlBGT2ozMDBoeUxJZWRfV2phenpLUTlOYklERWdFLUZhaFRmM05WaWZNcmhydHpldUdHclY2UTBoWktodllVY2RscnFUci1SVGpDdUpwOFIyTGNDYWR2VW5mLXdSZWxWaE5sREJGZUYxdDdVMmpsMmdsbzFmajRoNVZPWVJaMjBSTVRyTnNEWm8yem5odXJEeUJtbw?oc=5",
+       "source": "Pulse 2.0",
+       "official": false,
+       "tone": "neutral"
+      },
+      {
+       "title": "What Were EVI Industries' (NYSEAM:EVI) First Fiscal Quarter Results for 2027? - Kalkine",
+       "date": "2026-11-10",
+       "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPdDJxQTg2alE3b3Axd2pIb1hxODM2elFSM09TazhMdVBxV19HRjhpVUVOemo2VmpVNWRqUnpfZ21PWnBiV0wza2JPaTlWeGdCanhXSE9DT3BhWktaRmptZEkyRmhBSmE0V29FMGRnNWxoQ3ZnSm04ano1TmRBTzJIQXhMQ25na0V4V1dLUktqQzJCRjVCM1EzWEJzcjNNRmlVNUZ3NFQyV3FqMTlPRVNuRHFB?oc=5",
+       "source": "Kalkine",
+       "official": false,
+       "tone": "review"
+      },
+      {
+       "title": "EVI Industries earnings beat by $0.04, revenue fell short of estimates - Investing.com UK",
+       "date": "2026-11-10",
+       "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQeUpGVGpqRnFXbmE5V0xORjhYZ0dTeXZWX3VKOThFWTVBQnVreGVFVlRnck8wRjlMWUxfX0hHRG1hVGRjeUJ3Y2Q5aWlyQTd6NkxYWlp0bVozZGQ0V0QySzVkemhhWjJfYkUtRTFKMC10SHlLOUJGR215cEo0YUV1RUtXS0dFUjd6a3lWR2ZUQmVZR3hnRERHZG51aVdISFczWWd3U1k2ajMtSFRlam1nSjBJUG4?oc=5",
+       "source": "Investing.com UK",
+       "official": false,
+       "tone": "neutral"
+      },
+      {
+       "title": "EVI Industries earnings beat by $0.04, revenue fell short of estimates - Investing.com Canada",
+       "date": "2026-11-10",
+       "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQQU1MMW5zbUYwNUpqSGtIY3F5VE9NUUF0bW9ONW9GYW55TW10T1RuTDZkRzFUNDFCUF9ZbUltQ0NIVTRtbjlQck1SYk9maHloRkhJdDFYaktEcGcyeWwzekRlNjludHdYRWlRbFl4RVczdGcxd0c3VVd4VWlrZUR2WGlZbnVIY3hZUWpvNE9ndjR3SURLMDdIOVJDbmsxNTk2THd0eXczRzRROWp3dTZWNUppRWI?oc=5",
        "source": "Investing.com Canada",
        "official": false,
        "tone": "neutral"
       },
       {
-       "title": "Telos Q3 Results: Adj. EPS $0.09 beats estimate, sales up 7.3% YoY - scanx.trade",
+       "title": "EVI Industries Reports Record First Fiscal Quarter Results, Highlighting Earnings Growth and Continued Progress Across Its Businesses - Yahoo Finance",
        "date": "2026-11-09",
-       "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQOXB6OXpvMDlldW92X0xTZGFYeVNiUExrU2lmXzI1WFktUkJlOVNDbGdsT0FURi01dGVwQkZUcjFfUlVJSER3SWxxUmlvd1FIRGxXYnlrNldtREN1dnpGNEczd1B1ZUsxSVJCNW5fbVV4N0FZd1FoMV9OeGxjOUFOOGN4YXBZbmViM1VJc0lmbnZZR2Y3dHJWMFZsVlJtNFU0VlV6a3g2U0RYQko2c0FZNm12NmNRZ1dSQnc?oc=5",
-       "source": "scanx.trade",
+       "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOT1hBcjNIZ2oxTXliUEYwaEJwWmI0ODBwMGw4Yl9VYmdhZEg1RnhRQ2JrTFBFSE9qckxjandaUmxlRm5ra2FHYXRJVEphTjhNMXc3d1N2Q3NVcHBhSDJNeHdNQWFLSjI3NTF0WmFMbTZ4NkFCYVVuS0pPOWZjS3ZJbHV2TnZ0ZGlRMHVtaHg5WTBMSF9MbG01WlNsSUNZRXVzcWc?oc=5",
+       "source": "Yahoo Finance",
        "official": false,
        "tone": "review"
       },
       {
-       "title": "Telos promotes new CEO - Virginia Business",
-       "date": "2026-11-06",
-       "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE91d3dVcU5QWnRrS2tIZEJpbmtSelY3cW12WTlaalA4X19IeTRwSFdXRlA3YV9YRHQ5X0Z1RTJUSGc1dXhSWkV3WGRMaU10MlB0Sk1aMFlaT1QydlFfZHh6elFB?oc=5",
-       "source": "Virginia Business",
+       "title": "EVI Industries adds 33rd commercial laundry business with CLZ deal - TradingView",
+       "date": "2026-11-09",
+       "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNdHowN1hqZzZsUGZIeE5jRUdMT2VlaFhYQ2VzajNucGtiX3NjZEN6VUMyelZNV3otRW9FaUFqcWNXVHFnNlJGakM3ZXd0Q2N4OVNxX1YyeDE4elJ3MTNXYjZRWnFlWUpsN2IxdkJrU0xhVFdwS1pLM0tDTzFLZExkMnN2SXhmS285SEcxaWwxSWdudGdraFhuWjh1Tzh2T0xVRmY0X2h1a29WNnBoR09zUlZkQy1iZU0wRVFOUzFsLURfT2tMWWZVbQ?oc=5",
+       "source": "TradingView",
        "official": false,
        "tone": "neutral"
       },
       {
-       "title": "Telos Alliance Launches Voltair II - Radio World",
-       "date": "2026-11-06",
-       "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPbDFIbHZYSkt1YU5VS0dZYnhSZklycmJVbTM5VUlBeFpwYlNZbEQwdHJvSTNVQ0dFWkFUVE5UajlsYXRsYW5UaWxXdmVQdTBPYkpwMUZ4RV8xTkk5ZHk1R1E2RjI1dVBGU0VRR3d1MkF3OGxQSmJqU1c2RU1YSDkyMkllV3pvM3FuRW9tYXN4RFBzSGpMN0E?oc=5",
-       "source": "Radio World",
+       "title": "EVI Industries Q1 2027: Record Margins Drive a 71% EPS Beat - 24/7 Wall St.",
+       "date": "2026-11-09",
+       "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQTUFJcWpjWG41Vi1BdDhJRE9OV2NpQzYxdnpFMXBkUnJwTDB4UEJoUVhET2pMT2JxX0FkM19ycy1WT3BkVUNSNFBRVDBLbDZodldvVWZwV1BUcjNUUlVZYmJVU3c1dURUNWxjUnhuUjAxWUxCMVVNOXpRQS1xNHRwN1hrWkg0cDBGaExKUXliWUZUelJq?oc=5",
+       "source": "24/7 Wall St.",
        "official": false,
-       "tone": "chatter"
-      },
-      {
-       "title": "Telos Corp (TLS) Q3 2026 Earnings Report Preview: What to Look For - Yahoo Finance",
-       "date": "2026-11-06",
-       "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNVk96eElocmh0ZGYwbFMzdFZpM251eUk3RGlwTFZpdFdwbjJqLWllV2lWTWlQS1l0T3Z6V1ZWMEIzMU1abVdoWEF5bjVSWkRFYmdHMjlMRkp1aHU2N29tSGJZSHZ0a0hFQUs4d2NqczBwZmhCX1BTRUpVZGotd3Q1XzlSMVdrU1RPb1NXczdpTTc?oc=5",
-       "source": "Yahoo Finance",
-       "official": false,
-       "tone": "review"
+       "tone": "neutral"
       }
      ],
      "buyers": false,
      "sellers": true,
-     "claude": "Claude: no catalyst (strength 2/5): The official release text contains only the earnings date and webcast details with no figures; the reported EPS beat, 7.3% sales growth and FY26 guidance raise "
-    },
-    {
-     "ticker": "KXIN",
-     "name": "Kaixin Holdings",
-     "exchange": "NASDAQ",
-     "ysym": "KXIN",
-     "market": "america",
-     "price": 2.62,
-     "low": 2.45,
-     "currency": "USD",
-     "change": 0.02343750000000002,
-     "vol_x": 0.59,
-     "vol_basis": "first30",
-     "vol_day_x": 0.59,
-     "buy_pct30": 0.72,
-     "buy_pct": 0.709,
-     "rvol_time": 16.47975670100338,
-     "value": 2368925.4,
-     "mcap": 118629805.09375,
-     "sector": "Retail Trade",
-     "holding": true,
-     "extended": false,
-     "near_high": false,
-     "longterm_down": true,
-     "chart_url": "https://www.tradingview.com/chart/?symbol=NASDAQ:KXIN&interval=D",
-     "lists": [],
-     "owned": false,
-     "news": [
-      {
-       "title": "Live Kaixin Auto Holdings (KXIN) Technical Analysis - Traders Union",
-       "date": "2026-11-08",
-       "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9QcUJXVFNReEV0WlNFcjhac2RIcl9pUlpSY08zY3dOcVNZYjFmMWRXaS01bEQyUi16d2djcklBLVdDeHh6QzNyZm9hSDJpZzE3RXJ5MzIzaXVPMVZkU3F4RHQtUnJieUdyaWNMdHgzUQ?oc=5",
-       "source": "Traders Union",
-       "official": false,
-       "tone": "neutral"
-      },
-      {
-       "title": "Kaixin Holdings (KXIN) Seasonal returns chart - Yahoo Finance UK",
-       "date": "2026-11-06",
-       "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1wSnFMSFRJRzQ0QkZ5OW5wQ2NwV2l4U3ZqVnBCa0tOVzJCU1pMOWREM1JWTUNEbXVveE5QU1FOQThsNjVCNGs3UGhvZnlWSVJtRU9rREdwOFl6MGlMQjRzQy1R?oc=5",
-       "source": "Yahoo Finance UK",
-       "official": false,
-       "tone": "neutral"
-      }
-     ],
-     "buyers": true,
-     "sellers": false
+     "claude": "Claude: catalyst (strength 3/5): Official Q1 FY2027 release shows record gross margin, net income up 108% and adjusted EBITDA up 47%, with EPS beating estimates, but revenue missed, tariff refu"
     }
    ]
   },
   "canada": {
-   "date": "2026-11-09",
-   "time": "Mon 09 Nov 10:15",
+   "date": "2026-11-10",
+   "time": "Tue 10 Nov 10:15",
    "picks": [],
    "quiet": [
     {
@@ -1043,7 +1174,7 @@
      "buy_pct": null,
      "rvol_time": 40.25974025974026,
      "value": 2294000.0,
-     "mcap": 17189584773.0,
+     "mcap": 17106083340.000002,
      "sector": "Communications",
      "holding": true,
      "extended": true,
@@ -1054,9 +1185,17 @@
      "owned": false,
      "news": [
       {
+       "title": "Quebecor Inc. (TSX:QBR.B) Reports Third Quarter Net Income Up 25.5% on Record Mobile Subscriber Growth - kalkine.ca",
+       "date": "2026-11-10",
+       "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNbGtqSXpENnRSR0t6N0FDZXBWbHB3X1lZY3lxeXU3eGRTWU9NUzcweFJvRm5oMmxmampLN0M1OFczSndVbFVRckxtcEtIVjB2bF9CZllGVmgxcVBkYzNlNjI2WXNsbnhDODZJUzJ2RDVqeXJRUFBTQXpwcFJFajBUN2VTR0NlZVBlOTN0ZjE2T085ZHVwUUxNektJdGJ4dUZDVTU3RTNTeGs5LXJDQzd2ekl4STJzZWttalZVRjB2aEkzVDY2MUY2VDFn?oc=5",
+       "source": "kalkine.ca",
+       "official": false,
+       "tone": "neutral"
+      },
+      {
        "title": "What Quebecor (QBR.A) Said on Its Q3 Earnings Call - TradingView",
        "date": "2026-11-08",
-       "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOX3c1T3Njbm5MR2l6R20xeHcyamxQTFBVdWdIZnV5bFF2ZW1wNFhOQXV3MXZfLURTemx6b2VndDAxVm9waFBWN08tUG1XWmJjMVQxakx6WGxsYXpjZndlbThKdHE0OFZUMnNpdE1LZTR4VUFZb3ZUSU1CNmlsaDVKNmg4MmhyVy1iOWpwZVhXR2lYdktsS0VONjRzUEhNaHJ0LUVqVUMyOXF4VE1QRVE?oc=5",
+       "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOMUg1NHRXSEdlcjVURDI5WksyVldEbnEyLXJCWVdTZGd3WWtDNk84cC1Yenk2enh0T0FyQkMxZ3l0YUhadkc1Y3EzOHFxQTMtd3VMbDF5ODAwWXNPVF9kbWdFS3diUVduNWNtcnZLaVJzTFRFcV9hbkRpZmFVTTJ1RVRNZzgyR1JXOWZuVHpNcE53N0RQQkxlanBwSGxzTDdRWXJubG1XLTdsSXhJ?oc=5",
        "source": "TradingView",
        "official": false,
        "tone": "neutral"
@@ -1070,331 +1209,154 @@
        "tone": "neutral"
       },
       {
-       "title": "Quebecor Earnings Call Signals Strong Growth and Discipline - TipRanks",
+       "title": "Quebecor Inc To Go Ex-Dividend On November 20th, 2026 With 0.45 CAD Dividend Per Share - Moomoo",
        "date": "2026-11-07",
-       "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNZWpaak9ORXdoRnhGRWgzUTFNYkxkR1pZQk1VM0lyZzZhekZacEJEV1d6WHJCUnhFMm1FX3NTcnczTElGeThsUnE4dHcxU01Jd1FzQlJZTXNtUy1tNkl5RmNMSmNQM3NSbFl0dnBUT3lNMGN1cUM4eUFXdll0LTM5b2I3SjhFSVlzUGc1U21Xal9NLU1pZFFSYUs0bDZ2bTRrRUVhVW84MnlXSkI0QXhqdw?oc=5",
-       "source": "TipRanks",
-       "official": false,
-       "tone": "neutral"
-      },
-      {
-       "title": "Quebecor revenue grows in Q3 with telecommunications boost - Playback",
-       "date": "2026-11-06",
-       "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOVlJGQ3c5Z3RFZmwzNGRFcGUzYnZuLWs4UmJNZWZWQmlLM2lnTzZSZXh1d1lWVHBsNHJhcW9xTlRRbWdodjdoVUF1eEI2X2xWa2xsS2dibDNYbUFHbWJiTVEzZUU5Qy10bkROUzhIN2d5OUJPWXlGMnp1a3BOeXY1TEFuVVRoMzNrMmwtTG9ZZmFSbC1wNXBzSkFVUHQ?oc=5",
-       "source": "Playback",
-       "official": false,
-       "tone": "neutral"
-      },
-      {
-       "title": "Quebecor Inc. (TSX:QBR.A): High Profit Per Employee Reflects Telecom Scale, Media Reach and a Deleveraging Earnings Path - kalkine.ca",
-       "date": "2026-11-06",
-       "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQb3o4dG04YTh4UFhUc2IyLXB0TS16cTB2Q1o4VE9PSHI0R19pbHJZZUxlaThJN2tObTNCVVNMWDhGazNrSHRqY3VDdGdhVmdRczdPWTZDYTVhdkRkQlNOLXlHWm53ejR4NnBxdk4yOEJ6NkdtaTN6aUtOWll0d2ZuU3JvY1pqUmhwd2VXNGRaVGdUa3UzVkQ2TXhtWVMxMHpEcnh3MzlPeGZQLUNYc2Z5ajhJUHBOWFhUNlFMaTB1b2pKRElOc0ctZlpzUWNIS1NZRWEyUVE1UEpzZVBGSnhkTXBR?oc=5",
-       "source": "kalkine.ca",
-       "official": false,
-       "tone": "neutral"
-      },
-      {
-       "title": "Quebecor Inc. Class B News \u2014 NEO:QBR.B - TradingView",
-       "date": "2026-11-06",
-       "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1GdGxnaUM5MFNYSGVtd0I3dXN5VTVja1lWNjA0ZGk5bnFrNmllY2ZrVGRlbjVyUnJqTE5yNUNBMVoxVHlBOXp0Nk1vdVowdThfeFdWNC16RkZlTjRVV1g2amNkYkswUHhPc3N2ME01VmotOEEy?oc=5",
-       "source": "TradingView",
-       "official": false,
-       "tone": "neutral"
-      },
-      {
-       "title": "Quebecor declares CAD 0.45 dividend - TradingView",
-       "date": "2026-11-06",
-       "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQUDVGdHltWjJqSUJVOGl6QkJDZUJEdTZDbS1BXzlsQjNaS2ZxYXVGMVRkZ0dwZFdBeVRBYWZuUHlJenRQYzFhUzNZZ2ZOczFMbUphSy1qSGJJUVZKRXVOUFA4MWdTMnMtT0w0dkFCTWltSmxINGcyRm5McUloLTBqLTFtVVItSVp4NkFQQk5vTE5vRmY1d21Cb0V4TS05SGM?oc=5",
-       "source": "TradingView",
-       "official": false,
-       "tone": "neutral"
-      },
-      {
-       "title": "Quebecor Upgraded to Outperform at RBC - www.marketscreener.com",
-       "date": "2026-11-06",
-       "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxORm1rWUtPR01uWXluUkJQTTFpeEhTWFpZUjlrOXA1TmtWX0RRUUZWM3dKbE9Fa3pBWmtZajdFSDlSeWtoNnR3VDBTYUNnY3RKdlJ2bTIyWHg0d3Q3aHc0dGo3NzJpSTJ4N19zMXVtQWczRkdtRTFRMWV6RDgyT1FGWTJENEhYZ1EzWlUxX19DY1BRM3FGSVE?oc=5",
-       "source": "www.marketscreener.com",
-       "official": false,
-       "analyst": "RBC",
-       "tone": "analyst"
-      },
-      {
-       "title": "Quebecor Q3 results boosted by strong telecoms, media performance - Telecompaper",
-       "date": "2026-11-06",
-       "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNRzlFNlF3Y1ZacDBLdmJvNHVTcjhxbTB4N2dUMkwyUHR3eWtQVEJuR1JiWnV0ZkZobk9iSGxXOTNSc1hpRVg1bXN5M2JZRFNzV0VraHdOdjNBbUdfbnRWcUpScUNGR0JHNk9rU2Nhcl81dFkza3hQSEozZ1VTSTRISVp6YUJNYTd6NEIyTHBzZm9xUS0tN3NSd2t5b2l5b2lOTXQ4ZjBqZEV6Q1k?oc=5",
-       "source": "Telecompaper",
-       "official": false,
-       "tone": "review"
-      },
-      {
-       "title": "Quebecor (TSX:QBR.A) Posts Strong Q3 Wireless Growth, Is The Valuation Still Attractive? - Simply Wall St",
-       "date": "2026-11-06",
-       "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPZTRzYVhOUVhhMXBpZUNyZFd5a0F4VkdHZHFhVm5FckNKRjg1bGVrWTBFZnVHS25PelVfRVd0RDVKZ2l2OUNwRXllYTNyd2hMT3duTmlSR0tRbnY5NVFSWWdSYjdETG9oMjNSR2RTcHI2Qmp1NjNEc2huWnA5WDhKeGx0bDZrZ3YybjJ5ZUdKX3hyNkcxdlF5TWItWThIcWl1b1BkNGZ0dUlteU5RSGN3ZnJZd215ekloeWJBQVdUMWdQMl9zUUp4emFIbEN2WFFU0gHQAUFVX3lxTE9lNHNhWE5RWGExcGllQ3JkV3lrQXhWR0dkcWFWbkVyQ0pGODVsZWtZMEVmdUdLbk96VV9FV3RENUpnaXY5Q3BFeWVhM3J3aExPd25OaVJHS1Fudjk1UVJZZ1JiN0RMb2gyM1JHZFNwcjZCanU2M0RzaG5acDlYOEp4bHRsNmtndjJuMnllR0pfeHI2RzF2UXlNYi1ZOEhxaXVvUGQ0ZnR1SW15TlFIY3dmcll3bXl6SWh5YkFBV1QxZ1AyX3NRSnh6YUhsQ3ZYUVQ?oc=5",
-       "source": "Simply Wall St",
-       "official": false,
-       "tone": "neutral"
-      }
-     ],
-     "buyers": false,
-     "sellers": false,
-     "claude": "Claude: no catalyst (strength 1/5): No OFFICIAL headline in the last 48 hours; the Q3 results and dividend are only covered by commentary, the RBC upgrade cannot add strength without an official c"
-    },
-    {
-     "ticker": "CTEK",
-     "name": "Cleantek Industries Inc.",
-     "exchange": "TSXV",
-     "ysym": "CTEK.V",
-     "market": "canada",
-     "price": 0.65,
-     "low": 0.62,
-     "currency": "CAD",
-     "change": 0.015625000000000014,
-     "vol_x": 2.65,
-     "vol_basis": "first30",
-     "vol_day_x": 2.65,
-     "buy_pct30": null,
-     "buy_pct": null,
-     "rvol_time": 3.555166374781086,
-     "value": 65975.0,
-     "mcap": 19165494.0,
-     "sector": "Industrial Services",
-     "holding": true,
-     "extended": false,
-     "near_high": false,
-     "longterm_down": false,
-     "chart_url": "https://www.tradingview.com/chart/?symbol=TSXV:CTEK&interval=D",
-     "lists": [],
-     "owned": false,
-     "news": [
-      {
-       "title": "Cleantek Industries Earnings Date and Estimates - MarketBeat",
-       "date": "2026-11-07",
-       "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxObVB6NjNJUm9WM3A1WG9ZcTZ3QVBtQlVPVVN4MjVQYmlPTFlFRXQxUldGTVB2VURNcGdPaXhNRTh1SGlPWVBDcGg4WGdmZmZRMXBMNDZBXzRJV1lMcGQwYW5vWERGdVpkdVB2X1dkN2VxTlgyd01iWlRBUkFzUF9pRGN2Snp3dWJ0eUE?oc=5",
-       "source": "MarketBeat",
-       "official": false,
-       "tone": "neutral"
-      }
-     ],
-     "buyers": false,
-     "sellers": false
-    },
-    {
-     "ticker": "QBR.B",
-     "name": "Quebecor Inc. Class B",
-     "exchange": "NEO",
-     "ysym": "QBR-B.NE",
-     "market": "canada",
-     "price": 76.96,
-     "low": 75.82,
-     "currency": "CAD",
-     "change": 0.03621920021543016,
-     "vol_x": 2.56,
-     "vol_basis": "first30",
-     "vol_day_x": 2.56,
-     "buy_pct30": null,
-     "buy_pct": null,
-     "rvol_time": 3.4811112318446886,
-     "value": 6656963.039999999,
-     "mcap": 17189584773.0,
-     "sector": "Communications",
-     "holding": true,
-     "extended": false,
-     "near_high": true,
-     "longterm_down": false,
-     "chart_url": "https://www.tradingview.com/chart/?symbol=NEO:QBR.B&interval=D",
-     "lists": [],
-     "owned": false,
-     "news": [
-      {
-       "title": "What Quebecor (QBR.A) Said on Its Q3 Earnings Call - TradingView",
-       "date": "2026-11-08",
-       "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOX3c1T3Njbm5MR2l6R20xeHcyamxQTFBVdWdIZnV5bFF2ZW1wNFhOQXV3MXZfLURTemx6b2VndDAxVm9waFBWN08tUG1XWmJjMVQxakx6WGxsYXpjZndlbThKdHE0OFZUMnNpdE1LZTR4VUFZb3ZUSU1CNmlsaDVKNmg4MmhyVy1iOWpwZVhXR2lYdktsS0VONjRzUEhNaHJ0LUVqVUMyOXF4VE1QRVE?oc=5",
-       "source": "TradingView",
-       "official": false,
-       "tone": "neutral"
-      },
-      {
-       "title": "What Quebecor (QBR.A) Said on Its Q3 Earnings Call",
-       "date": "2026-11-08",
-       "url": "https://www.marketbeat.com/instant-alerts/transcript-what-quebecor-qbra-said-on-its-q3-earnings-call-2026-11-08/?utm_source=yahoofinance&utm_medium=yahoofinance",
-       "source": "MarketBeat",
-       "official": false,
-       "tone": "neutral"
-      },
-      {
-       "title": "Quebecor Earnings Call Signals Strong Growth and Discipline - TipRanks",
-       "date": "2026-11-07",
-       "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNZWpaak9ORXdoRnhGRWgzUTFNYkxkR1pZQk1VM0lyZzZhekZacEJEV1d6WHJCUnhFMm1FX3NTcnczTElGeThsUnE4dHcxU01Jd1FzQlJZTXNtUy1tNkl5RmNMSmNQM3NSbFl0dnBUT3lNMGN1cUM4eUFXdll0LTM5b2I3SjhFSVlzUGc1U21Xal9NLU1pZFFSYUs0bDZ2bTRrRUVhVW84MnlXSkI0QXhqdw?oc=5",
-       "source": "TipRanks",
-       "official": false,
-       "tone": "neutral"
-      },
-      {
-       "title": "Quebecor revenue grows in Q3 with telecommunications boost - Playback",
-       "date": "2026-11-06",
-       "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOVlJGQ3c5Z3RFZmwzNGRFcGUzYnZuLWs4UmJNZWZWQmlLM2lnTzZSZXh1d1lWVHBsNHJhcW9xTlRRbWdodjdoVUF1eEI2X2xWa2xsS2dibDNYbUFHbWJiTVEzZUU5Qy10bkROUzhIN2d5OUJPWXlGMnp1a3BOeXY1TEFuVVRoMzNrMmwtTG9ZZmFSbC1wNXBzSkFVUHQ?oc=5",
-       "source": "Playback",
-       "official": false,
-       "tone": "neutral"
-      },
-      {
-       "title": "Quebecor Inc. (TSX:QBR.A): High Profit Per Employee Reflects Telecom Scale, Media Reach and a Deleveraging Earnings Path - kalkine.ca",
-       "date": "2026-11-06",
-       "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQb3o4dG04YTh4UFhUc2IyLXB0TS16cTB2Q1o4VE9PSHI0R19pbHJZZUxlaThJN2tObTNCVVNMWDhGazNrSHRqY3VDdGdhVmdRczdPWTZDYTVhdkRkQlNOLXlHWm53ejR4NnBxdk4yOEJ6NkdtaTN6aUtOWll0d2ZuU3JvY1pqUmhwd2VXNGRaVGdUa3UzVkQ2TXhtWVMxMHpEcnh3MzlPeGZQLUNYc2Z5ajhJUHBOWFhUNlFMaTB1b2pKRElOc0ctZlpzUWNIS1NZRWEyUVE1UEpzZVBGSnhkTXBR?oc=5",
-       "source": "kalkine.ca",
-       "official": false,
-       "tone": "neutral"
-      },
-      {
-       "title": "Quebecor Inc. Class B News \u2014 NEO:QBR.B - TradingView",
-       "date": "2026-11-06",
-       "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1GdGxnaUM5MFNYSGVtd0I3dXN5VTVja1lWNjA0ZGk5bnFrNmllY2ZrVGRlbjVyUnJqTE5yNUNBMVoxVHlBOXp0Nk1vdVowdThfeFdWNC16RkZlTjRVV1g2amNkYkswUHhPc3N2ME01VmotOEEy?oc=5",
-       "source": "TradingView",
-       "official": false,
-       "tone": "neutral"
-      },
-      {
-       "title": "Quebecor declares CAD 0.45 dividend - TradingView",
-       "date": "2026-11-06",
-       "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQUDVGdHltWjJqSUJVOGl6QkJDZUJEdTZDbS1BXzlsQjNaS2ZxYXVGMVRkZ0dwZFdBeVRBYWZuUHlJenRQYzFhUzNZZ2ZOczFMbUphSy1qSGJJUVZKRXVOUFA4MWdTMnMtT0w0dkFCTWltSmxINGcyRm5McUloLTBqLTFtVVItSVp4NkFQQk5vTE5vRmY1d21Cb0V4TS05SGM?oc=5",
-       "source": "TradingView",
-       "official": false,
-       "tone": "neutral"
-      },
-      {
-       "title": "Quebecor Upgraded to Outperform at RBC - www.marketscreener.com",
-       "date": "2026-11-06",
-       "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxORm1rWUtPR01uWXluUkJQTTFpeEhTWFpZUjlrOXA1TmtWX0RRUUZWM3dKbE9Fa3pBWmtZajdFSDlSeWtoNnR3VDBTYUNnY3RKdlJ2bTIyWHg0d3Q3aHc0dGo3NzJpSTJ4N19zMXVtQWczRkdtRTFRMWV6RDgyT1FGWTJENEhYZ1EzWlUxX19DY1BRM3FGSVE?oc=5",
-       "source": "www.marketscreener.com",
-       "official": false,
-       "analyst": "RBC",
-       "tone": "analyst"
-      },
-      {
-       "title": "Quebecor Q3 results boosted by strong telecoms, media performance - Telecompaper",
-       "date": "2026-11-06",
-       "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNRzlFNlF3Y1ZacDBLdmJvNHVTcjhxbTB4N2dUMkwyUHR3eWtQVEJuR1JiWnV0ZkZobk9iSGxXOTNSc1hpRVg1bXN5M2JZRFNzV0VraHdOdjNBbUdfbnRWcUpScUNGR0JHNk9rU2Nhcl81dFkza3hQSEozZ1VTSTRISVp6YUJNYTd6NEIyTHBzZm9xUS0tN3NSd2t5b2l5b2lOTXQ4ZjBqZEV6Q1k?oc=5",
-       "source": "Telecompaper",
-       "official": false,
-       "tone": "review"
-      },
-      {
-       "title": "Quebecor (TSX:QBR.A) Posts Strong Q3 Wireless Growth, Is The Valuation Still Attractive? - Simply Wall St",
-       "date": "2026-11-06",
-       "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPZTRzYVhOUVhhMXBpZUNyZFd5a0F4VkdHZHFhVm5FckNKRjg1bGVrWTBFZnVHS25PelVfRVd0RDVKZ2l2OUNwRXllYTNyd2hMT3duTmlSR0tRbnY5NVFSWWdSYjdETG9oMjNSR2RTcHI2Qmp1NjNEc2huWnA5WDhKeGx0bDZrZ3YybjJ5ZUdKX3hyNkcxdlF5TWItWThIcWl1b1BkNGZ0dUlteU5RSGN3ZnJZd215ekloeWJBQVdUMWdQMl9zUUp4emFIbEN2WFFU0gHQAUFVX3lxTE9lNHNhWE5RWGExcGllQ3JkV3lrQXhWR0dkcWFWbkVyQ0pGODVsZWtZMEVmdUdLbk96VV9FV3RENUpnaXY5Q3BFeWVhM3J3aExPd25OaVJHS1Fudjk1UVJZZ1JiN0RMb2gyM1JHZFNwcjZCanU2M0RzaG5acDlYOEp4bHRsNmtndjJuMnllR0pfeHI2RzF2UXlNYi1ZOEhxaXVvUGQ0ZnR1SW15TlFIY3dmcll3bXl6SWh5YkFBV1QxZ1AyX3NRSnh6YUhsQ3ZYUVQ?oc=5",
-       "source": "Simply Wall St",
-       "official": false,
-       "tone": "neutral"
-      }
-     ],
-     "buyers": false,
-     "sellers": false,
-     "claude": "Claude: no catalyst (strength 1/5): The Q3 results were released 6 November, outside the 48-hour window, and the headlines are third-party commentary rather than an official release; the dividend "
-    },
-    {
-     "ticker": "GIB.A",
-     "name": "CGI Inc. Class A",
-     "exchange": "NEO",
-     "ysym": "GIB-A.NE",
-     "market": "canada",
-     "price": 117.68,
-     "low": 114.25,
-     "currency": "CAD",
-     "change": 0.02081887578070789,
-     "vol_x": 2.49,
-     "vol_basis": "first30",
-     "vol_day_x": 2.49,
-     "buy_pct30": null,
-     "buy_pct": null,
-     "rvol_time": 2.8991047819299753,
-     "value": 1070888.0,
-     "mcap": 24116454140.0,
-     "sector": "Technology Services",
-     "holding": true,
-     "extended": false,
-     "near_high": false,
-     "longterm_down": false,
-     "chart_url": "https://www.tradingview.com/chart/?symbol=NEO:GIB.A&interval=D",
-     "lists": [],
-     "owned": false,
-     "news": [
-      {
-       "title": "CGI (TSX:GIB.A): Earnings, Growth and the Next Catalyst to Watch - kalkine.ca",
-       "date": "2026-11-09",
-       "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNMGVQUUQ3dnFLX25BdDd6YTRBYnFRQ1dFeVdybmxNLTVsUGNnbWtDZ0ExeWRaXzdmSmVqWjJ6bWgwcVQ5R1d4VkQ3dWZmRUhzdDFRdmFLSW8yZDRhaEp4WjJQTnY2NXZia3o1SVdWZkFMd3VSdXJNZnJ5cFh0SzkxR3dtMmNQT1dfdWJ2ZmJDbjRSUHAtOWw2MQ?oc=5",
-       "source": "kalkine.ca",
-       "official": false,
-       "tone": "neutral"
-      },
-      {
-       "title": "CGI Inc. Class A (TSX:GIB.A) Takes Centre Stage on the TSX as the Next Market Move Comes Into View - kalkine.ca",
-       "date": "2026-11-09",
-       "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNUE0xdWp1Q190V0sxNkV3VE5pVlN6VVh3WjdJZjhETm1HTE1IRWZLOGxOVFJaVlZUbmlsMXZzaW01LXltSk9VVk51c29aa0pCNDA3UVNfOERjbzZjeHc3dS1xMTRjY0ZZRnN1WUFLQzJTOXZINXRVMTcwbmdOckdHLWpLZnZEX0Vjd1FaYkdQN0Y1RGNEdlp6S3dXcjlpdlV1Y0VvbERYdTZTSUdLV181cUk1YkJJSEYwdDJJTmoxblJqdE9xRGs4?oc=5",
-       "source": "kalkine.ca",
-       "official": false,
-       "tone": "neutral"
-      },
-      {
-       "title": "CGI visits Hamile, appeals for peace and support for border security operations - GhanaWeb",
-       "date": "2026-11-08",
-       "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQblpldlVDQXZ2bFg5N1JJWXpZRHQ2dHJvbU5ISV9YRkFwOVJpdmxvLUtEd1RIaVhBUzVBYld0Z2U1aXZWVGFkWkVpaThGM2FYQmFhY1EyamxvaU5Od2dHN2xvVjNsT0ZkMmc0T1A5YVh6a1ZvR3NDekNDWVRFX3hGUWp0bkNSMjNXeHA4N082MGNUZnRHWm44cWx2UkVVVE5VY0FGQXFPdUNQNXZvcTN5dXhjX21vQzd4ZldJRHBPdWttc0hhZWVsSE1pSm9FSWRlVTBZ?oc=5",
-       "source": "GhanaWeb",
-       "official": false,
-       "tone": "neutral"
-      },
-      {
-       "title": "GIB: CGI Inc - Ordinary Shares - Class A Latest Stock Price, Analysis, News and Trading Ideas - Stocktwits",
-       "date": "2026-11-06",
-       "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE54cTdTMXFpUklEX0JIb2JsN1hZRlA1UWY3RklGWmJFVnFaV0ZXTFZwblBvTXhSSnh2SGh3SUdrMmI0QzVWYnMtVA?oc=5",
-       "source": "Stocktwits",
-       "official": false,
-       "tone": "neutral"
-      },
-      {
-       "title": "CGI Inc. Class A News \u2014 LSE:0A18 - TradingView",
-       "date": "2026-11-06",
-       "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBUZlFZRS0zZVo4a0YtVHQzcjlzME5vNEd1aW5lcW5RaGpVRC1vd0c4WUhYQkhLd2FGajNuNFpYcjlONEJ6QTlQMkVVVE9oMWVzXzBySnpyTFZRcGNkeHlDclhYVGxXUWNPeUtwODc1OTh0YWc?oc=5",
-       "source": "TradingView",
-       "official": false,
-       "tone": "neutral"
-      },
-      {
-       "title": "CGI Inc. Class A: Trading Volume, Business Fundamentals and Market Outlook - kalkine.ca",
-       "date": "2026-11-06",
-       "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQaXUtcUZ4anpmUndKU0xELWJVOFZjM3JES21BY3JVYnRtcXBTZG9RcGJ6X3pNU0pTbmlRbHZEZHdmLThRVndWcWhramhMQXpsVG5SM3ZEZDBwcFR6QXZBVGo3THVhZ0FPU01sRjJSZnhxaDBwR0xTMlAxSVVUaE4xQ2NvVkRyaUQ1T1lrbE5WcWVJalFCWjI5TWdQS3BXQVhURWhjUVVENUZiQQ?oc=5",
-       "source": "kalkine.ca",
-       "official": false,
-       "tone": "neutral"
-      },
-      {
-       "title": "CGI (TSX:GIB.A) Trends in Focus as S&P/TSX Investors Reassess Technology and Growth - kalkine.ca",
-       "date": "2026-11-06",
-       "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOMUNfeEw3dy10dGhEZHRwb19xLWQzemVRbFY1Ym1WN1pLY05mOGg4Q21Kb2I3OEdwSzIwZXlUOGZUOXVNM01VV3pMRFNJY3hvdlY1VzdiTTNtOWVhbGxYRmNjS3V1eVdlbTI5SndCRDl2YTQxazg5aFgxMmFzUEctd1ZLdFhlS2pDcHFLbVV1dFF4SFN4ZkhNakNOd1dQNWdjSWxxNF80UnN1TDhvUWV1N1p3?oc=5",
-       "source": "kalkine.ca",
-       "official": false,
-       "tone": "neutral"
-      },
-      {
-       "title": "S&P/TSX Composite Index Volatility Puts CGI Inc. Class A (TSX:GIB.A) in Focus as Investors Reprice Risk - kalkine.ca",
-       "date": "2026-11-06",
-       "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQNlNielVwYWJncnktak5HMTZ5NW9GVTl6eHVuY1l4LU4ydkxRRU5OeERCbENmTkM2ZFFXRDVaajczUmQ1Zm5GRER0eTMxd1BNYWlJcEZqdnFZOEVlWDJWdllJWjFaWkRSU2VIS1ExeV9vYjJRT1lRR1ZaTjJKd3dhWXZjZDRmbWh3UlJ6dVkzTEVvbG9ZZ1BIU0xkbWxhd05rVXVKaW4yd2hFdTVyNlJEdjFfNnZ6eGdFNlZoSFBXY3liLWlnNDIzelBhTQ?oc=5",
-       "source": "kalkine.ca",
-       "official": false,
-       "tone": "neutral"
-      },
-      {
-       "title": "Earnings Preview: CGI Inc to Report Financial Results on November 11 - Moomoo",
-       "date": "2026-11-06",
-       "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOQ2lUWDJWMl9SbVNnc1Awamw0SlEzZ3pFeTBKRDJORnZvc1VWRU1sa2t2V3RqSW1hVFN2RGp2U0tLTEpiOElxV3huN2JvR2E1TTJFMzQxVG1nNUlNMm1rbFVlN0NUTFo4dzlNVFlGZGhHVVZhYnVTNXMzeHhKTnpnVXBETDlwWl9pdHVpLUhrQ0FTbGNFNjNkOWZZeUxseDZvM1dra29iN1pUV0du?oc=5",
+       "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPT0lTazhkVFp2Wlg4WTJ2MnpudEZMS0dETWRJYmluakFlLUVOY1htSkdiZS1zYXNWQ2JYeDdJa05IMGhqY1pmMDJxa1dnelZKN29uMnFSSXNpNmRRcWlBX2gyZFR3SmNUQmZVUEtfX0VLQU5xeXRtT1c1RWU5Tm5OTmpCcVRUZlYxTEwxQ0pwdDh4c3oxT3JlYzUwRTc?oc=5",
        "source": "Moomoo",
        "official": false,
        "tone": "neutral"
       },
       {
-       "title": "CGI Federal, AWS & University of Tennessee Launch AI Workforce Training Coalition - ExecutiveBiz",
+       "title": "Quebecor Earnings Call Signals Strong Growth and Discipline - TipRanks",
+       "date": "2026-11-07",
+       "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNZWpaak9ORXdoRnhGRWgzUTFNYkxkR1pZQk1VM0lyZzZhekZacEJEV1d6WHJCUnhFMm1FX3NTcnczTElGeThsUnE4dHcxU01Jd1FzQlJZTXNtUy1tNkl5RmNMSmNQM3NSbFl0dnBUT3lNMGN1cUM4eUFXdll0LTM5b2I3SjhFSVlzUGc1U21Xal9NLU1pZFFSYUs0bDZ2bTRrRUVhVW84MnlXSkI0QXhqdw?oc=5",
+       "source": "TipRanks",
+       "official": false,
+       "tone": "neutral"
+      },
+      {
+       "title": "Quebecor revenue grows in Q3 with telecommunications boost - Playback",
        "date": "2026-11-06",
-       "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPdnNnbWhOakpXQUFHUjZwQWhJYS01YkJkS0F2cFFoUHlsaUduYXJ4NDYtMTZ2aU9DS19QX1hhdk1oWHI2SFBOOUxRa1d5ZnpmcldGSmZ1aHk5RldXanNsbWRsM0lCTlBFN2xUQzRDRFpGZUxFZGVqdUdEUUxBajZBWWhHdXNxUmdDUDVSWkhqOA?oc=5",
-       "source": "ExecutiveBiz",
+       "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOVlJGQ3c5Z3RFZmwzNGRFcGUzYnZuLWs4UmJNZWZWQmlLM2lnTzZSZXh1d1lWVHBsNHJhcW9xTlRRbWdodjdoVUF1eEI2X2xWa2xsS2dibDNYbUFHbWJiTVEzZUU5Qy10bkROUzhIN2d5OUJPWXlGMnp1a3BOeXY1TEFuVVRoMzNrMmwtTG9ZZmFSbC1wNXBzSkFVUHQ?oc=5",
+       "source": "Playback",
+       "official": false,
+       "tone": "neutral"
+      },
+      {
+       "title": "Quebecor Inc. (TSX:QBR.A): High Profit Per Employee Reflects Telecom Scale, Media Reach and a Deleveraging Earnings Path - kalkine.ca",
+       "date": "2026-11-06",
+       "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQb3o4dG04YTh4UFhUc2IyLXB0TS16cTB2Q1o4VE9PSHI0R19pbHJZZUxlaThJN2tObTNCVVNMWDhGazNrSHRqY3VDdGdhVmdRczdPWTZDYTVhdkRkQlNOLXlHWm53ejR4NnBxdk4yOEJ6NkdtaTN6aUtOWll0d2ZuU3JvY1pqUmhwd2VXNGRaVGdUa3UzVkQ2TXhtWVMxMHpEcnh3MzlPeGZQLUNYc2Z5ajhJUHBOWFhUNlFMaTB1b2pKRElOc0ctZlpzUWNIS1NZRWEyUVE1UEpzZVBGSnhkTXBR?oc=5",
+       "source": "kalkine.ca",
+       "official": false,
+       "tone": "neutral"
+      },
+      {
+       "title": "Quebecor Inc. Class B News \u2014 NEO:QBR.B - TradingView",
+       "date": "2026-11-06",
+       "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1GdGxnaUM5MFNYSGVtd0I3dXN5VTVja1lWNjA0ZGk5bnFrNmllY2ZrVGRlbjVyUnJqTE5yNUNBMVoxVHlBOXp0Nk1vdVowdThfeFdWNC16RkZlTjRVV1g2amNkYkswUHhPc3N2ME01VmotOEEy?oc=5",
+       "source": "TradingView",
+       "official": false,
+       "tone": "neutral"
+      },
+      {
+       "title": "Quebecor declares CAD 0.45 dividend - TradingView",
+       "date": "2026-11-06",
+       "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQUDVGdHltWjJqSUJVOGl6QkJDZUJEdTZDbS1BXzlsQjNaS2ZxYXVGMVRkZ0dwZFdBeVRBYWZuUHlJenRQYzFhUzNZZ2ZOczFMbUphSy1qSGJJUVZKRXVOUFA4MWdTMnMtT0w0dkFCTWltSmxINGcyRm5McUloLTBqLTFtVVItSVp4NkFQQk5vTE5vRmY1d21Cb0V4TS05SGM?oc=5",
+       "source": "TradingView",
+       "official": false,
+       "tone": "neutral"
+      },
+      {
+       "title": "Quebecor Upgraded to Outperform at RBC - www.marketscreener.com",
+       "date": "2026-11-06",
+       "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxORm1rWUtPR01uWXluUkJQTTFpeEhTWFpZUjlrOXA1TmtWX0RRUUZWM3dKbE9Fa3pBWmtZajdFSDlSeWtoNnR3VDBTYUNnY3RKdlJ2bTIyWHg0d3Q3aHc0dGo3NzJpSTJ4N19zMXVtQWczRkdtRTFRMWV6RDgyT1FGWTJENEhYZ1EzWlUxX19DY1BRM3FGSVE?oc=5",
+       "source": "www.marketscreener.com",
+       "official": false,
+       "analyst": "RBC",
+       "tone": "analyst"
+      }
+     ],
+     "buyers": false,
+     "sellers": false
+    },
+    {
+     "ticker": "NTMC",
+     "name": "Neotech Metals Corp.",
+     "exchange": "CSE",
+     "ysym": "NTMC.CN",
+     "market": "canada",
+     "price": 0.235,
+     "low": 0.21,
+     "currency": "CAD",
+     "change": 0.021739130434782504,
+     "vol_x": 6.64,
+     "vol_basis": "first30",
+     "vol_day_x": 6.64,
+     "buy_pct30": null,
+     "buy_pct": null,
+     "rvol_time": 17.9978471474704,
+     "value": 202464.01499999998,
+     "mcap": 20664764.0,
+     "sector": "Non-Energy Minerals",
+     "holding": true,
+     "extended": false,
+     "near_high": false,
+     "longterm_down": true,
+     "chart_url": "https://www.tradingview.com/chart/?symbol=CSE:NTMC&interval=D",
+     "lists": [],
+     "owned": false,
+     "news": [
+      {
+       "title": "Neotech Metals Corp (V690.DU) Balance Sheet - Yahoo Finance - Yahoo! Finance Canada",
+       "date": "2026-11-09",
+       "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE40OVpJOUdFTGx5cUNzd0lsTFZRd3l3eEVkYTBHUV9SVUhxbnJ0TU1zeUlhVGNIWWJmc1BNd2tXZXE2cWlINWtxSUFYaXVrNjJ2TnJqamNBUEZjNllwUmdweVJOVU9ldmZN?oc=5",
+       "source": "Yahoo! Finance Canada",
+       "official": false,
+       "tone": "neutral"
+      },
+      {
+       "title": "Neotech Metals Corp (V690.DU) latest stock news and headlines \u2013 Yahoo Finance - Yahoo Finance Singapore",
+       "date": "2026-11-08",
+       "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5Tck94dWo4MWhJUFhxdmdsUE9STUljemJQUmxEWnBiTF9fR0RJbDZCWUxidVVuemYwQWlkamdlWlk2VWNMTmZNc1NCNkpxOXMtUEYxdEtkZ1dEU2hI?oc=5",
+       "source": "Yahoo Finance Singapore",
+       "official": false,
+       "tone": "neutral"
+      },
+      {
+       "title": "Neotech Metals Corp (V690.HA) Stock Price, News, Quote & History - Yahoo! Finance Canada",
+       "date": "2026-11-07",
+       "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFB5aV9qb2hWSzYzQmtUUi14T2haVVdiWGlBWU1QT0Nid2dZU1ZOYmdZRXIyeXZLZmF5M1NkcXJndUtRcFBhdFlHY1J5dmFQb0RlMmRLMllHUGlLaWR4c3Y5QU5Qck9Edw?oc=5",
+       "source": "Yahoo! Finance Canada",
+       "official": false,
+       "tone": "neutral"
+      },
+      {
+       "title": "Neotech Metals Corp (V690.HA) Options Chain - Yahoo Finance - Yahoo! Finance Canada",
+       "date": "2026-11-06",
+       "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1Fa291OUdJX0NCZDNybWlkc1ZkUndoYzA2Nm9MVHN3ckRWUGZHMU1XR1BTMG12MTdrSzVFc3JXLV9UYXduRlI3QTJoLU1OVURLanRNWVFGb2M3aFZCSnByLQ?oc=5",
+       "source": "Yahoo! Finance Canada",
+       "official": false,
+       "tone": "neutral"
+      },
+      {
+       "title": "Neotech Metals Corp (V690.HA) Stock Major Holders - Yahoo Finance - Yahoo! Finance Canada",
+       "date": "2026-11-06",
+       "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBULUhQVndiaFg0SHc1bzFuWldUNEpzbWNSeXd2Tnd3dkRBdG5hYWVNaTVHeGJIM3NNbGgxc0tla1FRMEU3eG43eUwtOGlmT1B5VG05bkItNEc1cUxEVGlQdg?oc=5",
+       "source": "Yahoo! Finance Canada",
+       "official": false,
+       "tone": "neutral"
+      },
+      {
+       "title": "Neotech Metals Corp (V690.HA) Company Profile & Facts - Yahoo Finance - Yahoo! Finance Canada",
+       "date": "2026-11-06",
+       "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9DQVBPUkpWVV9ZNmg5dDFneXB3WkNGSklsT05ucmFKTG94a3lWSlNKMkx2SDFhVDdSNUF3OTAwMTdYUGhGaEV4eUY3cFhrUHhWQUd0dGQ0V082ZU80dWVwSg?oc=5",
+       "source": "Yahoo! Finance Canada",
+       "official": false,
+       "tone": "neutral"
+      },
+      {
+       "title": "Neotech Metals Corp (V690.HA) Valuation Measures & Financial Statistics - Yahoo! Finance Canada",
+       "date": "2026-11-06",
+       "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFB3SVJpTmJlRGVPQlltZndGYlRQc18wbTdKVTRpdEh2bmpvRi1HNXk3Ry0wZElTU0dkak1ZNVdQOHh4X19aRFJHQUhid0xqZ1g1OVVveGxjSDhrQWZwVzlLRnkwOVpRZWtMY2c?oc=5",
+       "source": "Yahoo! Finance Canada",
+       "official": false,
+       "tone": "neutral"
+      },
+      {
+       "title": "Neotech Metals Corp (V690.DU) insider ownership and holdings \u2013 Yahoo Finance - Yahoo Finance Singapore",
+       "date": "2026-11-06",
+       "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1pSVZ2U0I2UElvbEoyUjVnVkFuZ2ZsVWVzeml6WE54QUd5Qlc2YkpBMDBfS3V5SDVzck9hV0RaLUFsNVhzcTlwTHJjOVVnU0U4dXBkY09oWXl3M0huVC1MUGg1S0RiUzg3VHc?oc=5",
+       "source": "Yahoo Finance Singapore",
        "official": false,
        "tone": "neutral"
       }
@@ -1403,171 +1365,607 @@
      "sellers": false
     },
     {
-     "ticker": "ACQ",
-     "name": "AutoCanada Inc.",
+     "ticker": "SVI",
+     "name": "StorageVault Canada Inc.",
      "exchange": "NEO",
-     "ysym": "ACQ.NE",
+     "ysym": "SVI.NE",
      "market": "canada",
-     "price": 29.07,
-     "low": 28.3,
+     "price": 4.23,
+     "low": 4.14,
      "currency": "CAD",
-     "change": 0.021433591004919164,
-     "vol_x": 1.87,
+     "change": 0.014388489208633212,
+     "vol_x": 6.23,
      "vol_basis": "first30",
-     "vol_day_x": 1.87,
-     "buy_pct30": 0.828,
-     "buy_pct": 0.828,
-     "rvol_time": 5.465116279069767,
-     "value": 136629.0,
-     "mcap": 656297224.0,
-     "sector": "Retail Trade",
-     "holding": true,
-     "extended": false,
-     "near_high": true,
-     "longterm_down": false,
-     "chart_url": "https://www.tradingview.com/chart/?symbol=NEO:ACQ&interval=D",
-     "lists": [],
-     "owned": false,
-     "news": [
-      {
-       "title": "AUTOCANADA ACQUIRES COCHRANE COLLISION REPAIR FACILITY - PR Newswire Canada",
-       "date": "2026-11-09",
-       "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNOHBEX185elNVTVNNOGxSMkwyekw2ZVBSUGNNZzZyd2FrSWpRTkZCcnBTWGExaHk4SW1DVnlCTlZ6cy1pQktEVjJaRGVXM29tYjJEREdNYzdmc1hwSFRlUG5IR3lTeDU3aURmQ2ItMkJRSGdsX1lkZXBNUmFNdGl2clFiLWl5bEF6bjYyazktWDlPY1RkRVNOOURJaXo2V0Q4Yjd4MEtObXBDUFE?oc=5",
-       "source": "PR Newswire Canada",
-       "official": true,
-       "tone": "neutral"
-      },
-      {
-       "title": "AutoCanada Expands Alberta Collision Network With Cochrane Acquisition - TipRanks",
-       "date": "2026-11-09",
-       "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNRmdoQ0Q2NHhSU0xKQ1FSYnU1WmFrV0lIczVkM01RZ21GYmdjWHp2Yl9hTWxvam8zM2UtVXlXQktCWEF2cHZEdExBZ3ZITWN4N2Vaa2dBQll0eG5HUmR3c3I0NkNWTG1DX0h2ek8tUWxDbHNhbDNfdE56RDVDMXFtUXZndDFfSE9ENW10cThsT3pFNmd5dzEtTnVBbkN4aFd2RTZ3V0NPYjRJSVFTckpTOU02M3NzbDB4cmVqVVZfUQ?oc=5",
-       "source": "TipRanks",
-       "official": false,
-       "tone": "neutral"
-      },
-      {
-       "title": "AUTOCANADA ACQUIRES COCHRANE COLLISION REPAIR FACILITY",
-       "date": "2026-11-09",
-       "url": "https://finance.yahoo.com/news/autocanada-acquires-cochrane-collision-repair-130000134.html?.tsrc=rss",
-       "source": "Yahoo Finance (source unknown)",
-       "official": false,
-       "tone": "neutral"
-      },
-      {
-       "title": "Autocanada Inc (TSX: ACQ) Share Price, ACQ Stock News, ACQ Share Price & Updates - kalkine.ca",
-       "date": "2026-11-06",
-       "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE40RVhlS182bVF3ajVQekhUN1Y0LWktMW9oS0U5UXYyZXNQZXIwNFMzcjJDcFA5RGUwTVdmT1N1RGlMN1hzQmw2eUtvNA?oc=5",
-       "source": "kalkine.ca",
-       "official": false,
-       "tone": "neutral"
-      },
-      {
-       "title": "Autocanada Inc News \u2014 OTC:AOCIF - TradingView",
-       "date": "2026-11-06",
-       "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFB2YmZZOWczNjVyc1RHSHpkbjZsQjJTY1NDcjJ5NUtVbnlqampLVmc1RDQybmVIdFJVUDhnWVRLZkczY0NYbnpUcF9mS2RKNy1LSTBRVU5QNk0yNzB4ckN0MGNxRFFNVGI5UkY5MHhXVlhwdWxa?oc=5",
-       "source": "TradingView",
-       "official": false,
-       "tone": "neutral"
-      },
-      {
-       "title": "AutoCanada Inc. (ACQ.TO) Seasonal returns chart - Yahoo Finance UK",
-       "date": "2026-11-05",
-       "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE90cHFubWxmeWswXzNWX004bVd3YnlsUmY0Rm1ySzZBZjBSS3d4bjBYbWhacUYtc3NRNkQzT1IyYWlXc0ZZTlpVYWY3eFFFbFNRdUxGdEwxV2VYVjZqQmJWN0FITm0?oc=5",
-       "source": "Yahoo Finance UK",
-       "official": false,
-       "tone": "neutral"
-      },
-      {
-       "title": "AutoCanada launches strategic review of collision repair centres - RENX",
-       "date": "2026-11-04",
-       "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPRVdYakZzaG8zRDF6aUpOLTBrTmhEYk9zQUFfZGJLeVNZMlUwMV84WTBVU1hLTm9FRDA4ZmRtVndmMFBlNFQ4dnhnTU44MzQtemtsYmdyZTFxVXh0MXd1bWZPNVVQZzllQ2RIRGlaNjJSVjM0VDE2d292TllaT0p4MzJKQjdCOEZIQnJtR3g3Q0Nsa1pRUm1TdC0zQQ?oc=5",
-       "source": "RENX",
-       "official": false,
-       "tone": "chatter"
-      }
-     ],
-     "buyers": true,
-     "sellers": false
-    },
-    {
-     "ticker": "GEO",
-     "name": "Geodrill Limited",
-     "exchange": "TSX",
-     "ysym": "GEO.TO",
-     "market": "canada",
-     "price": 3.15,
-     "low": 3.04,
-     "currency": "CAD",
-     "change": 0.10139860139860142,
-     "vol_x": 1.77,
-     "vol_basis": "first30",
-     "vol_day_x": 1.93,
-     "buy_pct30": 0.476,
-     "buy_pct": 0.506,
-     "rvol_time": 6.578947368421052,
-     "value": 158646.6,
-     "mcap": 135887526.0,
-     "sector": "Non-Energy Minerals",
+     "vol_day_x": 6.23,
+     "buy_pct30": null,
+     "buy_pct": null,
+     "rvol_time": 15.255772951000319,
+     "value": 1317645.0000000002,
+     "mcap": 1547139934.0,
+     "sector": "Transportation",
      "holding": true,
      "extended": false,
      "near_high": false,
      "longterm_down": true,
-     "chart_url": "https://www.tradingview.com/chart/?symbol=TSX:GEO&interval=D",
+     "chart_url": "https://www.tradingview.com/chart/?symbol=NEO:SVI&interval=D",
      "lists": [],
      "owned": false,
      "news": [
       {
-       "title": "GEODRILL REPORTS THIRD QUARTER 2026 FINANCIAL RESULTS - Yahoo! Finance Canada",
-       "date": "2026-11-09",
-       "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPRm1kbHBXd3pUSXFGd3JneDZGSXhzczhsMC10bW9ZSUsyY0VGWU1kVDRudnJnZ2lRMzRUX2pBZnhUU1RpcjRzeDgwZG5jMFBQT3pqWnp0NUVpTGFjUDN5RnFUM0xNNGhCNXFEOVlSaTI3WXJkUURqZGtUQ2dieUJHR0g2WW5vSzZnbS0yWg?oc=5",
-       "source": "Yahoo! Finance Canada",
-       "official": false,
-       "tone": "review"
-      },
-      {
-       "title": "Geodrill Q3 Results: EPS $0.02 beats estimate, sales up 41% YoY - scanx.trade",
-       "date": "2026-11-09",
-       "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPOEszQi0yemRsejFBUFJHTUR2NjR2LTFmVGx5RHdpT0I4LWJnSnItbE13bFVNVGpWWDFSTldfSThYQXR5Snk5R0xOZWE0eWNOUjkyS3U0dEZJT09fWllFbkNZeDBwWjJmdVJZVkxsNGoxeVhtSlZqRXU1dFNaZXpkUG5GQWJuYnlYOTdQSkFBanVEMlN0NkNxcWFBVGsxeU5qdVpPUDJxdkhaMjlFWHJSUDU0WUtLSE0?oc=5",
-       "source": "scanx.trade",
-       "official": false,
-       "tone": "review"
-      },
-      {
-       "title": "GEO: Second straight $55.1 million revenue quarter; profitability returned - TradingView",
-       "date": "2026-11-09",
-       "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQa0N6M2FFWU5oMHRobG1XNi1ZdVc4eU5XRkRzaVprRUI1YVdYXzVlNU5MekprWUVtTVV6eHVlOFZVT3JobE9EWDFRaHBNai0wWFduMkhaZXdVYkNOaUt1ZTFaVEFJcWxDRHRwOGhrOFFrUTFCWlhXV1loN1N4d04xeXkxWDlLNUNOUW14WDFqNkJKVjZaR0JreUFaQ19QUzNYM2twSHEtUDE0SUFlOTNGQ0d6bThtS2lUWkFmc2VkRHp6Z2dKTnQydnJTVExsLXBCbFdUUWpHWXVmQ3U3aE80Qy1TUEhBY1pWOVE?oc=5",
-       "source": "TradingView",
+       "title": "StorageVault Canada stock is quoted at EUR 2.73 on November 10 - ad-hoc-news.de",
+       "date": "2026-11-10",
+       "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOaERxbUxnOElVR3k2SWt5WHdjcU5MRjhnb2JCajBjcDBUa1JQdFYwVmdHQkFvSHlad1JWdWNJM3llOXFNZVlfU0dOYWtrLXI2NElMMjR2ZEFCcmF2dHMxODNjMkdkQUVCcGg3TEp3enpXajh3anNSdXFnUmJmM2FITE85V0Exa2RSVl9OTVVvTmpfMk91bC1TWjNGMnFYQkNlOFRTMnl4Zmw1UUxBTkdFVkJBR1ZPb2xBX0hRaEtVWno5WTA?oc=5",
+       "source": "ad-hoc-news.de",
        "official": false,
        "tone": "neutral"
       },
       {
-       "title": "Geodrill Reports Record Revenue and Returns to Profitability - TipRanks",
-       "date": "2026-11-09",
-       "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPaG9XenhQUDUyRTU2NUE2MTZIWW5vOV9zR2wwQ0tqeHFnazlrRmotbXpRcmtud2xMcnY1SXQwMkFNay1JbjF5RURmRE9zd21neDN6alJjd19NUS1HLUhPS3dDS29hdzVIdmdhQmdCZEJUSTduaUZQV0pZeVF2QmcxMHkxLXBmbWkwLWlQTTExUFE4cHl5cjRldXZSQzA2dDBlcG55WHVwZi1jWW91ajZUVDd3?oc=5",
-       "source": "TipRanks",
-       "official": false,
-       "tone": "chatter"
-      },
-      {
-       "title": "GEODRILL REPORTS THIRD QUARTER 2026 FINANCIAL RESULTS",
-       "date": "2026-11-09",
-       "url": "https://finance.yahoo.com/news/geodrill-reports-third-quarter-2026-120000020.html?.tsrc=rss",
-       "source": "Yahoo Finance (source unknown)",
-       "official": false,
-       "tone": "review"
-      },
-      {
-       "title": "(GEO) Equity Trading Insights (GEO:CA) - Stock Traders Daily",
+       "title": "StorageVault Canada stock trades at EUR 2.64 on November 7 - ad-hoc-news.de",
        "date": "2026-11-08",
-       "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPTkllbldLNDZEbXVRWW9Mc3lXX3kxYTJDR29fSWJuMU1Na0RDN3hLNVJsdXI4Q2VjUXJfMUQtbHBRNUhKd1AtX1Z3OERzN2lUZ292cnVtY3hhd1J2MUNmZ01iYUJ0VnY4bnNQWHVSaE5ITWxhdnBSLVpiOVl2cXJlUzJxUUtlbktvTmNUODhB?oc=5",
+       "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPb2MzdWdldWk1NTRjdmFVNmZHaV8wQXg1a3F1eG9Qdjh2aEEtZ0ZPU25uOXJic3J4RkEzMDZMRnJoYVRwQWRtZHpLNWJsYk5TRnpqTzgzTGkxUFhibHhFbl9zMnVHQnNxX1BONERZdlBhRVFUS2I3NzFvWmIxc184SmlNS3RyS1pHNi1ZcUNEMG8zc3dlcmk5SVJOSGdiUDlTc2FZY1JqRjZuUXZ5czRaS21oRklTMU9vVmlBSDV3?oc=5",
+       "source": "ad-hoc-news.de",
+       "official": false,
+       "tone": "neutral"
+      },
+      {
+       "title": "Storagevault Canada Stock Price Forecast. Should You Buy SVI.TO? - StockInvest.us",
+       "date": "2026-11-06",
+       "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9wRnFJeVlwWFJhYmlIYkRwbDNVdmFYdjJ1X3o1bmhWNG1fYkJXTWtGeFcwUmduQmxNbHlxX0xvUG5qdFdMRjdZaTk2WQ?oc=5",
+       "source": "StockInvest.us",
+       "official": false,
+       "tone": "neutral"
+      },
+      {
+       "title": "StorageVault Canada Inc. (TSE:SVI) Stock Rated \"Buy\" by Wall Street Brokerages - MarketBeat",
+       "date": "2026-11-06",
+       "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOUThPczBiRndpTjN5NFhMcWlCbVlJV2tLVmhFMkV5RlpsOUNycVpnZG1VVWwzNThJaUJ6VzhDTV91VmdqYnFYd2gwZ0Z0X2tuM2VTZnNMbG1pRUs2MHg3a0d4aEdrVnF1dHlUZ0RqSFlMbUt0X3lHcjNwNzBNV2V6R0FPeUFpYXF4Uml5VUF6X1E2UkNQa2JOMEFzb1kxdDlWdF80NkJmRjlLUnozZ1ZDekw2N0tRa3dOTm1lT2dRemVWeEdkcURGME96c3AzM2kwOUdv?oc=5",
+       "source": "MarketBeat",
+       "official": false,
+       "tone": "neutral"
+      }
+     ],
+     "buyers": false,
+     "sellers": false
+    },
+    {
+     "ticker": "GRGD",
+     "name": "Groupe Dynamite Inc.",
+     "exchange": "NEO",
+     "ysym": "GRGD.NE",
+     "market": "canada",
+     "price": 65.7,
+     "low": 63.75,
+     "currency": "CAD",
+     "change": 0.07055564608114723,
+     "vol_x": 4.57,
+     "vol_basis": "first30",
+     "vol_day_x": 4.57,
+     "buy_pct30": null,
+     "buy_pct": null,
+     "rvol_time": 8.064516129032258,
+     "value": 985500.0,
+     "mcap": 7110556957.0,
+     "sector": "Distribution Services",
+     "holding": true,
+     "extended": false,
+     "near_high": false,
+     "longterm_down": true,
+     "chart_url": "https://www.tradingview.com/chart/?symbol=NEO:GRGD&interval=D",
+     "lists": [],
+     "owned": false,
+     "news": [
+      {
+       "title": "Groupe Dynamite Inc (EU7.HM) Company Profile & Facts - Yahoo Finance - Yahoo! Finance Canada",
+       "date": "2026-11-09",
+       "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5KbUFHbDNyM25yQ0hRMjVfcDU2d2hiRFZkNnlkVHlkWTBfSnFtT0xpYUJEVFFldUdKcklIdXJpa0VHd0pMUGt0OWZIN3hxdXUwSFQ0VXZEclNacjdJT3d3?oc=5",
+       "source": "Yahoo! Finance Canada",
+       "official": false,
+       "tone": "neutral"
+      },
+      {
+       "title": "(GRGD) Technical Pivots with Risk Controls (GRGD:CA) - Stock Traders Daily",
+       "date": "2026-11-08",
+       "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQRFVGTXRrNTV6R3pPMlVFamhncGRmZXVITE9XQm5QUk16b3ZXd3k2M1RSS2VYY3FvWGdsb3VEeE1EUXRZSVB1Q1ZGN1BPQmd4LUtGdFdKNlJGeVlWdHdDZzE4TlhUdkhjYUpZX0FxeTVYQXFLSUxpa0F6QXFBcFNFVmoxWEFzUEdQeHg4RGVVS1VCN28tTjY3Q1p2TjVjbFU?oc=5",
        "source": "Stock Traders Daily",
        "official": false,
        "tone": "neutral"
       },
       {
-       "title": "Geodrill Limited [TSX:GEO]: New Market Signals Put This Canadian Stock Under the Spotlight - kalkine.ca",
+       "title": "Groupe Dynamite Inc (EU7.HM) Analyst Insights, Price Targets & Recommendations - Yahoo Finance - Yahoo! Finance Canada",
+       "date": "2026-11-06",
+       "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBGbjFwek5ZNW9fMmdBUUtnRlQ2eGV5OFFXUHlobE00QVlpT3d1UENsNF9La2d5OW14dngyMnQxdVByeVJyem5RY0E4czMxT2Y4NGROX29vbDJhLUhGSlRHZWprRTVnZGdFTHlV?oc=5",
+       "source": "Yahoo! Finance Canada",
+       "official": false,
+       "tone": "neutral"
+      },
+      {
+       "title": "Groupe Dynamite Inc (EU7.HM) options chain - Yahoo Finance Singapore",
+       "date": "2026-11-06",
+       "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5RY0xNMnNEWjdCRVY5TFhFTTZNS0w0SkhDbjFqbEZiMmgtbWJQLWdkNEhXZzV6d2R3RWwxTWZiXzFSTWN4Q1hlQmxLR2t0dldxWTVOT0o5ZkpjMXlaMVgw?oc=5",
+       "source": "Yahoo Finance Singapore",
+       "official": false,
+       "tone": "neutral"
+      }
+     ],
+     "buyers": false,
+     "sellers": false
+    },
+    {
+     "ticker": "SNDL",
+     "name": "SNDL Inc.",
+     "exchange": "NEO",
+     "ysym": "SNDL.NE",
+     "market": "canada",
+     "price": 1.99,
+     "low": 1.99,
+     "currency": "CAD",
+     "change": 0.04188481675392674,
+     "vol_x": 1.87,
+     "vol_basis": "first30",
+     "vol_day_x": 1.87,
+     "buy_pct30": null,
+     "buy_pct": null,
+     "rvol_time": 1.8264005355253403,
+     "value": 50494.26,
+     "mcap": 481210484.53171355,
+     "sector": "Process Industries",
+     "holding": true,
+     "extended": false,
+     "near_high": false,
+     "longterm_down": true,
+     "chart_url": "https://www.tradingview.com/chart/?symbol=NEO:SNDL&interval=D",
+     "lists": [],
+     "owned": false,
+     "news": [
+      {
+       "title": "SNDL stock trades at 1.24 euros on Lang & Schwarz - ad-hoc-news.de",
+       "date": "2026-11-10",
+       "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPakZpMTZ6NnlIamRSUGtCRXRadnRNZ1hHbm15a1BWTEJzNFBQR3NQZjl0aEpXOEY1MmVVcmpCQU5GaGh5LXU5Q1FCMDI3eGZ6SVBqOTJiYTRYeVdIaTRQb1U3MGt6YkhVb2dab3JlWmZYRDVESks5d2pBemlNN3BLUnQ0Y2gwMUVwcGdrZ1dkUHN6czZ4Y0tWcDdMa1YteUZiVVh3NjdnQUxnY00xZmNZ?oc=5",
+       "source": "ad-hoc-news.de",
+       "official": false,
+       "tone": "neutral"
+      },
+      {
+       "title": "SNDL receives EU-GMP Certification for Atholville Facility - StratCann",
+       "date": "2026-11-09",
+       "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQdFU4cUZIQURKeUMzQUlfbk94Snpva2dJUkJBalRRMkpaYmZ2Q3k5aHFUT2hEcHQ4TDJCSjJTLTY1RVFoMjFHdE9yYjBtRGg0U3RWZ25tSWVpN252b3BldC1jVXdxVUFmM1RuVGtKd1lVUXlYbFo4ME96dkVjUk1fd2xLUjI3Qzhla1lFQmZEVQ?oc=5",
+       "source": "StratCann",
+       "official": false,
+       "tone": "neutral"
+      },
+      {
+       "title": "SNDL shares technical analysis: Buyer support remains strong as momentum builds - Traders Union",
+       "date": "2026-11-09",
+       "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPVEhxT0UwMlZoN1pQcFBFMkFpYjdKZDNfT0xiS3locUkxVFkxcm5jSkpsUGN3MklPbWM5ekowd0lmaWxPZ1loOE5aSWptcGhTcHg4NEFEWkZUd2lHelp2T1NqTTBkZlR0ZTIzV0NFMWRnZDBZazNXdUVkNVI3WW5PeFBEUVlWMjZ1TThsVQ?oc=5",
+       "source": "Traders Union",
+       "official": false,
+       "tone": "neutral"
+      },
+      {
+       "title": "SNDL stock faces cannabis reset after mixed Q3 results - ad-hoc-news.de",
+       "date": "2026-11-08",
+       "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPYWo5QlRHZHBad09xb3EwQl9vWHVGU2dOWVJEaFdjNU9MUlUtWFRqekhNckNkS05Rb3NKd3JKbGs4S0FPTm5EdU9GTkt4RTFLOUdqa0lLVFMxbHRnX2dxcFhwd1NHWHpfNjF4RE1hOS1JWlI3QWNicHJ4M2lDS1FPZmZ6UlJmVHRXYy1qNE9ldkQxRDNETE5ESjAxc3E5Q0ZubGR5MzFFWlVieG1vMHo1Qk9lTGFadjV6?oc=5",
+       "source": "ad-hoc-news.de",
+       "official": false,
+       "tone": "review"
+      },
+      {
+       "title": "SNDL (SNDL) Institutional Ownership 2026 - MarketBeat",
+       "date": "2026-11-06",
+       "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1CTk1WOVZJYnBYMzZ6SVpQLVU5VHBkcjBVZXhoNTF0emM0SUI3RFVIa3FBakJZb0gzWWhMXy1jYnNNM1VkcHQ2SG5ReTNmeGNzSXVDLWhjWG9WYmtVV0pTak9ZcUZjeFhocW9GVXRNcnBEYnVwVm1vd3FR?oc=5",
+       "source": "MarketBeat",
+       "official": false,
+       "tone": "neutral"
+      },
+      {
+       "title": "SNDL stock slips as weak momentum persists below the 200-day moving average - Traders Union",
+       "date": "2026-11-06",
+       "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPUFNwY2o1RGJZWHhpOGJoajlkd1NUZUY1bm00TGc1M1VzdWFtRlY3NHRkNWJtLVN2bXdPUmNrbFM5NndMWTFCbHBQNlFpNXZXdklBVVc4N2kxMG5qWUpSek5XSlRQalloNklpb2w3VlJYY0JPUThIOV9UZ3IzdEp6NmRabFZYdXBXTVE?oc=5",
+       "source": "Traders Union",
+       "official": false,
+       "tone": "neutral"
+      },
+      {
+       "title": "SNDL stock falls around 3.5% as technical momentum turns mixed and downside bias emerges - Traders Union",
+       "date": "2026-11-06",
+       "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOTG5iUWRCd0NyNW1IRHR6TDJ0NHk0M3k5Q1I2SzFyUVFKbW5NbnRQa3pHcTY1Vi0zbW9lUzc1UEluanJPcDdCN202ME5iWE5GRGFjdHpKRmE1UkJ5UlF2VjJqcGJ3NUtFTmlJNm1FWHYwUG42UExfRHJCbDFuWVlIQ0N1NGVWQUZvX2c?oc=5",
+       "source": "Traders Union",
+       "official": false,
+       "tone": "neutral"
+      },
+      {
+       "title": "Can SNDL (NASDAQ:SNDL) Keep Its Record Run Going? - Kalkine Media",
        "date": "2026-11-05",
-       "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPejQ4X2poUFJfblA4bDBDbFRlaGVIZFI4UnpicTFhVkYtQlNvQ29XYUdmU18zN184aXVpeTcxRzhEWWtIQjdLcThfNWQ3Z2FoNzZBRXdIODl2UUk5UWFYQmRTTUI2Tm51cGEzVXVSLVRhLWlTRHgwQmlqSlhjYW1ZREVGY2dhb3NSU0hzWE9odUt2TWdpR3N5MXBubDZZM1VoVC1pSFQxR216MlZsMllVWFFuSkcxODY2?oc=5",
+       "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPcVU1Q2pNMDkxelV4akhpcWJYdFRERlEwNXZLUl94SUU4Rm5JbnF5Rml3ODNRUG9BbU5lb2JmTUk1OXh0b1BLNXo4SDVlZlZaNzRVblhvSmpOM3pvd1FMS3lFcmtMRm8yVUdvcGNrZk01YldVblJma1MxRVJnZ09GWWJEcFB4bW9WWl9ZUWlhTUFLN28?oc=5",
+       "source": "Kalkine Media",
+       "official": false,
+       "tone": "neutral"
+      }
+     ],
+     "buyers": false,
+     "sellers": false,
+     "claude": "Claude: no catalyst (strength 1/5): No OFFICIAL company announcement in the last 48 hours; the EU-GMP certification item is third-party (StratCann) coverage, and the remaining headlines are market"
+    },
+    {
+     "ticker": "ZEFI",
+     "name": "Zefiro Methane Corp.",
+     "exchange": "NEO",
+     "ysym": "ZEFI.NE",
+     "market": "canada",
+     "price": 0.67,
+     "low": 0.64,
+     "currency": "CAD",
+     "change": 0.015151515151515164,
+     "vol_x": 1.81,
+     "vol_basis": "first30",
+     "vol_day_x": 1.81,
+     "buy_pct30": null,
+     "buy_pct": null,
+     "rvol_time": 1.748682231805991,
+     "value": 147333.67,
+     "mcap": 74310122.1,
+     "sector": "Industrial Services",
+     "holding": true,
+     "extended": false,
+     "near_high": false,
+     "longterm_down": false,
+     "chart_url": "https://www.tradingview.com/chart/?symbol=NEO:ZEFI&interval=D",
+     "lists": [],
+     "owned": false,
+     "news": [
+      {
+       "title": "Zefiro Methane accelerates growth | 2026-11-09 | Investing News - Stockhouse",
+       "date": "2026-11-10",
+       "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNc29sQktER0hLVkNldUpSMngyamN3VjFZNWdxdDAzQ3FqUkV1QkRFeWhuMkF4MkNOU0s4Z3RrdXN4ejAzTVdBalRLY0NEUXVSdEZuNC1pajlRVVJRdlYzendXdktRNXdVSm1oQjJ5NTJ4RUhMLW5aRENhY3gwUTh3UWE4MmI1RFFCNFZIa1J6aVFYUQ?oc=5",
+       "source": "Stockhouse",
+       "official": false,
+       "tone": "neutral"
+      },
+      {
+       "title": "Zefiro Methane Corp. (NEO:ZEFI) Wins ~$1.9M in New Well-Plugging Awards - TradingView",
+       "date": "2026-11-08",
+       "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNTGRORU1RNnRBcDVUb0JPazg1dTNUZngzLTBtS2pmSndKeVdLVlgwUV9nV1doQjN0VE5FSlExVy1MdDFvRWZGTVdRVG9RSi1kUC1paEhHWGxDMkxGUDVmS2lZUnlyUHo1M3kzMVhUVjV0OGsyMVRLN1E0cEZwXzYxN3hLTEtlRzdKZEVFOUpEd3BvUEdVQ1U5eTQ4ZVpHUkZnck1ScjdFdU1fT0tJTnFDZlZuLTdQZnZON1FqaUJ6OXJYRkZEM1NN?oc=5",
+       "source": "TradingView",
+       "official": false,
+       "tone": "chatter"
+      },
+      {
+       "title": "Zefiro Methane Corp. (ZEFI.NE) Seasonal returns chart - Yahoo Finance UK",
+       "date": "2026-11-07",
+       "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9lSWROYldwei1WbENaUnJXc0UyM1ZjamNnWTZNWmxhemNLTU5Tdk93NzZyYzBfMXlxd1ItSFdpYmVvYXZGdkpiZ2VWLTk5Qjc5aGdtdUZaOVlYbUZYaGZoVXVtNWJ5dw?oc=5",
+       "source": "Yahoo Finance UK",
+       "official": false,
+       "tone": "neutral"
+      }
+     ],
+     "buyers": false,
+     "sellers": false
+    },
+    {
+     "ticker": "STN",
+     "name": "Stantec Inc",
+     "exchange": "NEO",
+     "ysym": "STN.NE",
+     "market": "canada",
+     "price": 107.58,
+     "low": 106.74,
+     "currency": "CAD",
+     "change": 0.022137767220902597,
+     "vol_x": 1.77,
+     "vol_basis": "first30",
+     "vol_day_x": 1.77,
+     "buy_pct30": null,
+     "buy_pct": null,
+     "rvol_time": 2.087912087912088,
+     "value": 1022010.0,
+     "mcap": 12090836123.0,
+     "sector": "Industrial Services",
+     "holding": false,
+     "extended": false,
+     "near_high": false,
+     "longterm_down": true,
+     "chart_url": "https://www.tradingview.com/chart/?symbol=NEO:STN&interval=D",
+     "lists": [],
+     "owned": false,
+     "news": [
+      {
+       "title": "Stantec Inc. (STN) Stock Price, News, Quote & History - Yahoo! Finance Canada",
+       "date": "2026-11-09",
+       "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE45Z3NCWlBHc3VlR214b25lclpZYmdlOWIxTlhfbFduTzVxOGl0RmdNSW9sS0N5R3lWLWNaSG00TDJOTG1BQjdfSmRETHhDT0M3?oc=5",
+       "source": "Yahoo! Finance Canada",
+       "official": false,
+       "tone": "neutral"
+      },
+      {
+       "title": "Stantec\u2019s new CEO vows stability, even as data centre projects face pushback - Edmonton Journal",
+       "date": "2026-11-09",
+       "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQeFBVWHhOZjBmYXZEc05BVUNiOTZIOVFLMkhoZ3kxMkZ3ekxMbDFmTF9QdGZrcFNVYVJEZm5UZkw3Vkhqc0lPMVNxQmNwMWV4eHFKZm0yR3lPVUVBX1pnTEw2cU1mcVVCclZZeXhXaEVCSUE5ek1vQ0FvZy1aRXk2NlVzc3ljZVZWY0tlRQ?oc=5",
+       "source": "Edmonton Journal",
+       "official": false,
+       "tone": "neutral"
+      },
+      {
+       "title": "Is Stantec (TSX:STN) Building Momentum Across Industrial Markets Today? - Kalkine Media",
+       "date": "2026-11-09",
+       "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPcXVHMVgyRmRBRFM3U1NSSmg0R0ZzaGhhMVh2NnI4bVN3ZjVBRFRVdGNFZWhKSGxxWVRzMzVjX21ZRklQYlVYZEcxYUJ1UHZ0VDYweW0tVEdROG43X2xxay0xZEpUX2FBcTl4SUtlTU1WcUM2N3FZRFE4ZHk4UDZZc1BSbHc5TFdvdlFyQ1J5cHYwNncyWE8yRFNhLTdqTUxIOTVTNzRfcFJWVmZWbk5xd1lBSQ?oc=5",
+       "source": "Kalkine Media",
+       "official": false,
+       "tone": "neutral"
+      },
+      {
+       "title": "Stantec And 2 Other Canadian Undervalued Stocks To Own - Yahoo Finance",
+       "date": "2026-11-09",
+       "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQLUx5MUpnYnNxWV9mYzJMRTJJaTktY3pQRXhrY1puamxXN1B3Z0w1Ry1ncGdGbXotNm5OQTE0WXlGR1c0Q1BUWjROZjczUlZnenpWNXFtbnZMdWx5NG5WU09RTVZ1THhaYVg0bkxLQnI3MjhKeGZrZzNyUDU0azg2aV9lZ3lYWlVnb05MbFZCSVA0dmFKRW1lOVhFSFVDWlFpbFF3?oc=5",
+       "source": "Yahoo Finance",
+       "official": false,
+       "tone": "neutral"
+      },
+      {
+       "title": "Stantec And 2 Other Canadian Undervalued Stocks To Own",
+       "date": "2026-11-09",
+       "url": "https://finance.yahoo.com/markets/stocks/articles/stantec-2-other-canadian-undervalued-051135968.html",
+       "source": "Simply Wall St.",
+       "official": false,
+       "tone": "neutral"
+      },
+      {
+       "title": "Stantec Inc. (STN.TO) Stock Price, News, Quote & History - Yahoo! Finance Canada",
+       "date": "2026-11-08",
+       "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9GdkhXdERaQ0JXbF9TUjNWeURTRXFiT2ZJcEVGVFJVMEpWcS01NjlJelZpeWRMOWNiRmN1eU9sbWhZOHJQQlF0UlRRNi00cy1POE40dw?oc=5",
+       "source": "Yahoo! Finance Canada",
+       "official": false,
+       "tone": "neutral"
+      },
+      {
+       "title": "Stantec Inc.: Trading Volume, Business Fundamentals and Market Outlook - kalkine.ca",
+       "date": "2026-11-06",
+       "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOdGRMSXJMRDlJTWVSLTFXU3hzREpUTXdpTzVjQ0dmVnFlMk96d2xQczZySDFNb1JBMW8wV19iamh1U0tsWHZxX1AwaFpvemVNcy1mNzBCUEROc0lXQXJCVU1LemVRNXFLbDB1NjlfZXJweldqMkdQRjhYa3ZENkp0anZQVFRTanhhd0d2SGtNN1BsVkh1MWQ2dDRrcVlXNDIxUm1kV09B?oc=5",
+       "source": "kalkine.ca",
+       "official": false,
+       "tone": "neutral"
+      },
+      {
+       "title": "Stantec (TSX:STN) in Focus as S&P/TSX Investors Track Infrastructure and Operating Momentum - kalkine.ca",
+       "date": "2026-11-06",
+       "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOS0xYeUE5eEJ0X0o4TEtORC1fTTdyRXFSOFFGTVVsM3VGXzhSeHVrcmFuelZ4WlRldU05T1QtdWpzZm91UVlHdXgzTDNBUm0tX2tUMEVjLVQ4TkVfeTdnSXUzRGNrLUVzMnNyZHJzSkU0YzFLbGZoWDR1eFltRTZvVUIweVRjX3RTS0FxdWdySG1WcTJyQ0tLUmxPNFVNU1ZfSmY0SHo3aWZXb1FETFZvVGFDcTBPd1F4alQzbUVJcw?oc=5",
+       "source": "kalkine.ca",
+       "official": false,
+       "tone": "neutral"
+      },
+      {
+       "title": "Top Stantec (STN) Competitors 2026 - MarketBeat",
+       "date": "2026-11-06",
+       "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9MX3VjZDR5a1M1am5vdEExWnZOdlNJSUVweDNzTmNmV0otRXpfZ1UzYXpqMlpzd0NMTFB5cllfUnZBd3k3QlQ4SXV1SUxXMmJibkcwaUFaM3RSUk9WZi16M0FoSzRqamZsWENZblpJTnVRSWlzSHRuOHBkM2c?oc=5",
+       "source": "MarketBeat",
+       "official": false,
+       "tone": "neutral"
+      },
+      {
+       "title": "Stantec Inc. (STN.TO) Seasonal Returns Chart - Yahoo Finance - Yahoo! Finance Canada",
+       "date": "2026-11-06",
+       "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBySnFtWU1MMWlQbXpuWGV2cElZRnVtNTRPLU1XV0hXSkQ2QVcyaGxIaU5ldkJLTExXRk5LMVpydGVCV2dnejAwZWN3TDBxR3Nkb0xLalc1eG9DM3FhSWtSMHhVNGo?oc=5",
+       "source": "Yahoo! Finance Canada",
+       "official": false,
+       "tone": "neutral"
+      }
+     ],
+     "buyers": false,
+     "sellers": false
+    },
+    {
+     "ticker": "BBD.B",
+     "name": "Bombardier Inc. Class B",
+     "exchange": "NEO",
+     "ysym": "BBD-B.NE",
+     "market": "canada",
+     "price": 335.0,
+     "low": 322.95,
+     "currency": "CAD",
+     "change": 0.0481852315394242,
+     "vol_x": 1.68,
+     "vol_basis": "first30",
+     "vol_day_x": 1.68,
+     "buy_pct30": null,
+     "buy_pct": null,
+     "rvol_time": 1.8554900676708144,
+     "value": 1708500.0,
+     "mcap": 33125671312.0,
+     "sector": "Electronic Technology",
+     "holding": true,
+     "extended": false,
+     "near_high": false,
+     "longterm_down": false,
+     "chart_url": "https://www.tradingview.com/chart/?symbol=NEO:BBD.B&interval=D",
+     "lists": [],
+     "owned": false,
+     "news": [
+      {
+       "title": "Bombardier Inc. (BDRBF) Stock Price, News, Quote & History - Yahoo! Finance Canada",
+       "date": "2026-11-10",
+       "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9hdWhmbWpEdE1lQlgtQlZvZE50Q3pJcWx3dkJXb1RsX0JKRi1fSWFDZnh0a29BaVh6bWQxT1FvcGVWZTBnTVpUUTA2NkF3NTA2SC1j?oc=5",
+       "source": "Yahoo! Finance Canada",
+       "official": false,
+       "tone": "neutral"
+      },
+      {
+       "title": "Bombardier Inc. (TSX:BBD.B) Raises 2026 Free Cash Flow Outlook After Record Services Revenue in Third Quarter - kalkine.ca",
+       "date": "2026-11-10",
+       "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQMWpPRFRsd0I0dTJmcUw2Y3kzV0J2N3ZUWXFMbV9IUzFQZk9yTFFhNmVyNXNfZUNaenZLVGNKYU9jYzRfeHlzeWtyQVYtSzREX0hFQmQ0VnJNVDZQVG14RGYxSzBiTHlnV3QzbnZ5WnZKVGhuVmptNTFCSXBlZlZYZ0FlMXd1MXJpU25sSGozdzdVSVAzSXdvMTdnajR4cGl6S2pELVBZU1NyXzduT1ZsWnk4N0x0Ri10VWNSbGlhUUNlQUhUREYzNU5LMUhpcl9Lc3FYYk95QQ?oc=5",
+       "source": "kalkine.ca",
+       "official": false,
+       "tone": "neutral"
+      },
+      {
+       "title": "Bombardier Inc. (BBD-B.TO) Stock Price, News, Quote & History - Yahoo! Finance Canada",
+       "date": "2026-11-10",
+       "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1qOHRMeG5hbWlmSGpPemM2N2t1MzV3TXUxQWJzLWFFLXpZenZETUdsTkh2T3lES1hGa3NXbUlCWHdDNmhEZDg1RUJhV1BnM3ZtT3NNWHhSaw?oc=5",
+       "source": "Yahoo! Finance Canada",
+       "official": false,
+       "tone": "neutral"
+      },
+      {
+       "title": "Bombardier (TSX:BBD.B) Jumped, What Is Behind The Latest Attention? - Simply Wall St",
+       "date": "2026-11-10",
+       "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPV0NsVzB5OXdPVGNpbklSclpidS02MjN6cFBSR0FCSlVWMFRpWXgtVjdQVVZ4UTFyakk2U1NnYmE4Ukg5S1JfUC13VnJpdEJfTFUwWUdEeVFnZURjdFJKT1FkdmY3SnU0bkVhbUpDSk1sRUFYVk1scEQtaGN0eVZ6YW5TTHZoc2RVX2l2YmJZb2M0b1pQZV9tRXpXWm0xLUdsWXJJWjJpd0hOcGNyRG41aEQ4aUtOekZ4aVNTTnN1eGNzUE1MWWJETmxNcElYbG1WQndrbFJ30gHbAUFVX3lxTE1UMlBuVnpkUk8wUk9yV3Y3YzNqZDlTRXEtS1k4ZlhEM2dfel9oWXhMb3NadlRuU1l5V1ctTFUwOG9MUUFFLVk2MkhJMWxyMzBjaTJfVEpnMTBzSDYxeUtqX3BCczZsX1JPTnZlYUJPdzV1NC1WbWU3NWM5ZzB0V09SMjJhckNGMGItLTUxcTVXaENONmF4WnJ1dXdKYzNuM3ZkUDBxdGJyOG1ZWkhqSWk3UnU5U1NVSzNOTjhyb0ZCZjVTeDdsR3hlR0tEdk9hRmdqcEZ4NWFaYVdnSQ?oc=5",
+       "source": "Simply Wall St",
+       "official": false,
+       "tone": "neutral"
+      },
+      {
+       "title": "Bombardier Inc. (BBD-A.TO) Stock Price, News, Quote & History - Yahoo! Finance Canada",
+       "date": "2026-11-09",
+       "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1BZ3RlRnFMcE9zZzJSRnlhNGs1cmVCNGJiRUdVaHFmTTRObmZaYkVPZVBVQWFvTUpkcUw3aVplRTVYR0NOMExxck1jdXIwck5kcExPSml5aw?oc=5",
+       "source": "Yahoo! Finance Canada",
+       "official": false,
+       "tone": "neutral"
+      },
+      {
+       "title": "Bombardier Inc. (BBD-PB.TO) Stock Price, News, Quote & History - Yahoo! Finance Canada",
+       "date": "2026-11-09",
+       "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE42MS1abHJRNU9qWjgxTmlSb0RrY1dMVmJidVdaN1RlT0tpbjd0T1ZlTTlBWGJHNmZaVE84M2k5bnVUVzlWWTUyLXlndGVrZ1ZVU0NLM0lpMXk?oc=5",
+       "source": "Yahoo! Finance Canada",
+       "official": false,
+       "tone": "neutral"
+      },
+      {
+       "title": "Bombardier to celebrate opening of Fort Wayne aircraft service center - Inside INdiana Business",
+       "date": "2026-11-09",
+       "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQazRoRk91bDFUaERhM1hNT2ZjMmNrbFp3cUJ4Sk9vSGdfUzJGc19CbWhkYVJuRC1YN2pPam0xT0hkVF9jbzdQVlpJa3ZaclVKSFVYMTRsd1UyNWd0djRKeHJRMklveGV0UTlkZ3ZNaHdKWkNnTUhuVGNhYVUxd2swZGt3d3Z3UW1FUlVuS1RJclFneFdvckptZnBDa18tNXhXSl9kSE5hNEI2eHo3SGoyMEpPLW9pWnM?oc=5",
+       "source": "Inside INdiana Business",
+       "official": false,
+       "tone": "neutral"
+      },
+      {
+       "title": "Bombardier Q3 Earnings Call Highlights - TradingView",
+       "date": "2026-11-08",
+       "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNczFna1VmbTNoank5V1BXb0lLSWJ4b0ZWWDFocmxpZWQwWGhpb1Q4cUJlSGtrdEhfdlhaajdza3loUVNuWkZxN1phWWZHME4zYjY2bFVjcnZvaWpYY192bEJ5dnF3RHl5UmsxaGlMTXVIeXVJWktQcTJ6cXdKWnVXMkw4ajMySms1WWdVUkpsdlpmZEpXRW1veGdBRlJRSUJ1?oc=5",
+       "source": "TradingView",
+       "official": false,
+       "tone": "neutral"
+      },
+      {
+       "title": "Bombardier Q3 Earnings Call Highlights - MarketBeat",
+       "date": "2026-11-08",
+       "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOZWZLSGF5ajlVODdmcEFISGlFcVdxaFM1c1ByakNZTUdZV0FtY1FNbldtMUhtSlpyS3ZVVXBGby1FZHdQcV9CY2x3TGQ0U2ZwQzRFQVBkZ0syeDVFWEVLekpVMExGdGpVaURqQVpLUzc1VHp6NHBnQ19Sd3RRMER3ZHBHbXJHZ1ZrdnJfMDg0LUEyRWhUNjZCUzlVaGhmSldZMVNoM3B3?oc=5",
+       "source": "MarketBeat",
+       "official": false,
+       "tone": "neutral"
+      },
+      {
+       "title": "Bombardier Q3 Earnings Call Highlights",
+       "date": "2026-11-08",
+       "url": "https://www.marketbeat.com/instant-alerts/transcript-bombardier-q3-earnings-call-highlights-2026-11-08/?utm_source=yahoofinance&utm_medium=yahoofinance",
+       "source": "MarketBeat",
+       "official": false,
+       "tone": "neutral"
+      }
+     ],
+     "buyers": false,
+     "sellers": false
+    },
+    {
+     "ticker": "CPX",
+     "name": "Capital Power Corporation",
+     "exchange": "NEO",
+     "ysym": "CPX.NE",
+     "market": "canada",
+     "price": 65.71,
+     "low": 65.26,
+     "currency": "CAD",
+     "change": 0.03236449332285931,
+     "vol_x": 1.61,
+     "vol_basis": "first30",
+     "vol_day_x": 1.61,
+     "buy_pct30": null,
+     "buy_pct": null,
+     "rvol_time": 2.688968875714588,
+     "value": 834516.9999999999,
+     "mcap": 10290311256.0,
+     "sector": "Utilities",
+     "holding": true,
+     "extended": false,
+     "near_high": false,
+     "longterm_down": true,
+     "chart_url": "https://www.tradingview.com/chart/?symbol=NEO:CPX&interval=D",
+     "lists": [],
+     "owned": false,
+     "news": [
+      {
+       "title": "Capital Power Corporation (TSX:CPX) Reports Third Quarter 2026 Results With Higher Adjusted EBITDA and Raised Sustaining Capital Guidance - kalkine.ca",
+       "date": "2026-11-10",
+       "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxPem5ORk5YRFMzQVhXMktQS3EydGY0Tk9NMm5UbE4ySzBWenQ0TGhYVXAtNDVxVS1MU0xPa1VoZnB5a05WUFVkdmFhaEtBYlVTYmUxSV9qclRKVV9nOTl6dmliNlRZbnlGTk9TVFBsdjkzcEFGOTQ4cVk0TkRCRWQ1WVBSY3VYWFJiTmJGNFZfSUU3NWdQUEluVE1JSUpsckZYcnktdzlwUTdCenhiQTgtR0lkeVdGc2pBTm83MHk4eEkzaFc3ZzAtZXhyRUZDVXFKZTQtSEdUZzhpY3dhY0R0SVVkSXlYTzJUVmJtSUc4c1N2NjFHcEZ0RC01Unc?oc=5",
+       "source": "kalkine.ca",
+       "official": false,
+       "tone": "review"
+      },
+      {
+       "title": "Capital Power Corp (CPX-PC.TO) Stock Price, News, Quote & History - Yahoo! Finance Canada",
+       "date": "2026-11-10",
+       "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5aQ3U4cnpSLU43cWl1RWxGZWZRa19ObnpWTGZsZDRmVTExZWFhZUhmZ2xUaEZaQW9Gem9mWVZGOXRpb1oyR0Zzc0x5c2pNY1VueTI5NkZEYVk?oc=5",
+       "source": "Yahoo! Finance Canada",
+       "official": false,
+       "tone": "neutral"
+      },
+      {
+       "title": "How Investors Are Reacting To Capital Power Stock (TSX:CPX) Weaker Earnings Results - Simply Wall St",
+       "date": "2026-11-10",
+       "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOdld6U3FVMEtnZWl3cWxuZUJoMV9uQVBMaDZkdjFyRjNIYm5VRWIwSXVwUUlwQXhvZHdJWG9obnMxMnNZM1dmY29UbVR6NTlvdHF5YjhQbmlpY05jZjl1bDZLTVRNNzFHMWVHMTFOZkNTNVVYSVN3dTVPS0RmRDhtSzNEUm53RDNRQThQdXI0Um9BM0tLOWk4MFY0S3FMMnhPZzdvTVVNTWVkMHl2VTRpYjlzcnhfMElBQ013NndwMEFlY3paaHFtYjJYRjh4dG1fV3fSAdcBQVVfeXFMTXVIMjZILUx5dU1OUDV0VGVqMk9fb0taaGt6WWtsWFNDYVRYX25iUVhZdWdtd29qRS1OQ19GMmN2bmY1MUl2cEZNRWFheTZYWS1zUmljbXlXdmg5bGdRZE1kVmpDb1NIQk1uamFJbXlPRGFFVUFwMU12OWNZdW5HZmN4VjhIMmo0TWc3emxyck5fcGh1b0VnVEJ1bUhXNFRYZFVscklHZ3Jpbmdack5ZU0xzVmZhTFIxN3JnRnR1a1IwQ3lQM3BtanBHTlAydVFuekRRUFRwbms?oc=5",
+       "source": "Simply Wall St",
+       "official": false,
+       "tone": "neutral"
+      },
+      {
+       "title": "Capital Power (TSX:CPX) Stock May Look Rich Following Ontario Expansion News - Yahoo Finance",
+       "date": "2026-11-10",
+       "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQNFhaVVA5Nm1YSjRiYXN0WVlXZjAyTm52bnVGQVk1RWotQXowdHFQVTU3VUZyX0dJQnU5dTdmSmVMWF9lZUdSbmRVT3BtaU8xT0tZX1NweUtkT1gyU251enhVVUdIc25XdDBmMFl1bFlvY1F2OVJONHFIN1FaejVSaVJMMEhHQlJJbEpmdVF2WnFfSF9sR04w?oc=5",
+       "source": "Yahoo Finance",
+       "official": false,
+       "tone": "neutral"
+      },
+      {
+       "title": "Can Contracts Steady Capital Power (TSX:CPX) After Its Data Centre Deal? - Kalkine Media",
+       "date": "2026-11-10",
+       "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNT1M2aWRtenZhVDBHbnVQY01NV1hmRnVTSFhINHZTQnB2cHE2WHd6WUd2d3QyWno0d0Z0eEstRkpxNXo4NldWQUk5NEdaQ0Q1MnNnSVFpVmdiM3hlTE5ZRWpFazZKR3czNnFTUFFidVNXdktZM2ZnQ1J0c21PWEl5VWJITTY2eFhDajlJTjFDM0RrZXZtM1FqbWRHRVlUb2hTY0QzSWdrOW1yV1VrOV8zUEZ3?oc=5",
+       "source": "Kalkine Media",
+       "official": false,
+       "tone": "neutral"
+      },
+      {
+       "title": "Capital Power (TSX:CPX) Stock May Look Rich Following Ontario Expansion News",
+       "date": "2026-11-10",
+       "url": "https://finance.yahoo.com/markets/stocks/articles/capital-power-tsx-cpx-stock-001422103.html",
+       "source": "Simply Wall St.",
+       "official": false,
+       "tone": "neutral"
+      },
+      {
+       "title": "Capital Power (TSX:CPX): The Fresh Catalyst Putting This Canadian Stock in Focus - kalkine.ca",
+       "date": "2026-11-09",
+       "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxONGxmd3BhZjRJYUtuemFZblE4XzBuQXoxUVBfZlJLWGNOWW5oQlFVRnR2Wk5raGdBcFNWb21NUEtFbnVobEpTVG5KQW9NR0d1TEJGSHZFbGI0eG1TYVQ2Mzg0ZU9fUVVOVkQ4RDdnWlp2c2l1ZF9VZ0V0V1B4bzRzYWZKbFF5ZXFVM0VLeDhKYnFrMGE0N2J4QTU3WUxndjNhWUNyTFpodUpianMtaXJV?oc=5",
+       "source": "kalkine.ca",
+       "official": false,
+       "tone": "neutral"
+      },
+      {
+       "title": "CAPITAL POWER CORPORATION To Go Ex-Dividend On December 31st, 2026 With 0.52571 USD Dividend Per Share - \u5bcc\u9014\u725b\u725b",
+       "date": "2026-11-08",
+       "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxORUxkNUdaT3JvWUc3cS1qSFAwTUh4Y05Dc1hfT2ZnSTU5Z1ItdjdMQW80bVdKZnZvRTczZ0Z2dlh6eUdVam1HR05qNlRaVkZ6eW54QWJzM1BLQ3diSFNzSnZ1QzY4OTVRUWRRVVN4aEhja0xOYXR3ZHNvaVhpUkpwXzlQVDhHYkJ3R2FQSU9rbVRXWnpCLUN5c0pEamNud3ZrVW9KdEtR?oc=5",
+       "source": "\u5bcc\u9014\u725b\u725b",
+       "official": false,
+       "tone": "neutral"
+      },
+      {
+       "title": "Capital Power Corporation (CPXWF) Seasonal returns chart - Yahoo Finance - Yahoo Finance Singapore",
+       "date": "2026-11-07",
+       "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9Rejdjc0xpZjY3U0R1ZmRxNDdNQkpYaS1Sd1JXWHl0dm5idTBwVEt5SHNoYXJUOXhqOHota0toN09sVU1MRlk2ZVdxSENxVkNFNG8wNDNhOW8zYjZIRzlBRkpNZw?oc=5",
+       "source": "Yahoo Finance Singapore",
+       "official": false,
+       "tone": "neutral"
+      },
+      {
+       "title": "Capital Power (TSX:CPX) in Focus as S&P/TSX Investors Track Power Demand and Infrastructure Growth - kalkine.ca",
+       "date": "2026-11-06",
+       "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPMjRGVjZ6a1p3UkIyTDNuRnJtSXBCQW1WY1NRNE9fWWFOdDRlVUQ3VHNvNnRWSFRFUnZzLUg2WWctVTh4aThkQkQyXzhQSmpHbS1lcjRmSVZHc3gwMmpuMl9tWUJCRkJlX0p6SE5MamhPNnNURE5Oa1IzSUlxcjhwRmpodW9MVm42NU44VXBUSjhnckxqNHM3TXU3LThtbklrT19mM3FCLVNBcXVBcTRQTmhiZzBVcnRqMHJzNThTX1Z4MkFIOHc?oc=5",
        "source": "kalkine.ca",
        "official": false,
        "tone": "neutral"
@@ -1575,411 +1973,121 @@
      ],
      "buyers": false,
      "sellers": false,
-     "claude": "Claude: no catalyst (strength 2/5): (reply cut short)"
+     "claude": "Claude: no catalyst (strength 1/5): No OFFICIAL headline in the last 48 hours; the Q3 results and Ontario/data-centre items are all OTHER commentary, and one piece cites weaker earnings, so there "
     },
     {
-     "ticker": "ELEF",
-     "name": "Silver Elephant Mining Corp",
-     "exchange": "TSX",
-     "ysym": "ELEF.TO",
-     "market": "canada",
-     "price": 0.285,
-     "low": 0.26,
-     "currency": "CAD",
-     "change": 0.0754716981132074,
-     "vol_x": 1.74,
-     "vol_basis": "first30",
-     "vol_day_x": 2.01,
-     "buy_pct30": 0.612,
-     "buy_pct": 0.617,
-     "rvol_time": 24.41307578008915,
-     "value": 235305.40499999997,
-     "mcap": 15247552.0,
-     "sector": "Non-Energy Minerals",
-     "holding": true,
-     "extended": false,
-     "near_high": false,
-     "longterm_down": true,
-     "chart_url": "https://www.tradingview.com/chart/?symbol=TSX:ELEF&interval=D",
-     "lists": [],
-     "owned": false,
-     "news": [
-      {
-       "title": "Silver Elephant Reclaims Pulacayo-Paca Silver Mining Project Following Favorable Ruling by Bolivian Supreme Tribunal of Justice - TMX Newsfile",
-       "date": "2026-11-06",
-       "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxPMmNoazJpWWR0OGVhd0lCd05ZQkJXMmF5Y214cDZLMmowemJ4bjdoSW5ia3NMX2tKM293dHV0c0FLdkpZLUQwWkwwc0d4VEU3MnpzLU1qTzFUa0s4SU1jazlyWVpTY2YxdmwzOUtMLUlvMGo5QmJjTGNqcGVyelBuZmh0YlBDRXBQZjA3TWRyWDFsRi1wWHdNMDZDeDBNeElmQjF0NzA5X3dCMW5tbWlaOGhDV24tRlhUNmdyRXYtdzFfQktWelVZMlRjOEpZZ1pNODY2dHpfSlZSRW9oVDB0YnVfeGRlTVRURWFrWWxpaVhldXVEejVFU0diSFlLaXM?oc=5",
-       "source": "TMX Newsfile",
-       "official": true,
-       "tone": "neutral"
-      },
-      {
-       "title": "Silver Elephant Mining Corp. R (1P2.DU) Seasonal returns chart - Yahoo Finance UK",
-       "date": "2026-11-09",
-       "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9kTHpXOEVHVy1PeWEtOFlrWWI1R0hZWU9qdDNpaVgxdFYzNk9md0RIZ2ZfSDZ0WGx0aFZjTVhZQWdtUW1vQ3k1VWtqbHVOcEgwUTFrUjJwY2xHZklGOWRvVTVLTjE?oc=5",
-       "source": "Yahoo Finance UK",
-       "official": false,
-       "tone": "neutral"
-      },
-      {
-       "title": "Silver Elephant Mining Reclaims Bolivia's Pulacayo-Paca Silver Project After Supreme Tribunal Rules in Its Favour - kalkine.ca",
-       "date": "2026-11-06",
-       "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQY21SdzV3T2NBajgxcEFfWXNHRlJZMmxzaGxsYnNTV2REWnZ6NG84dGFzaW12al9aODg4c2VQbzZKVlRmNTJMUThuc19VSTlXYnBWaHhaQ2JlTW9PY2FJNU9NNloxVGVfMEtGWXA1MU90YVVRUE53MmtnT25MRFlCNWVNZ253TDJ2dU04dVF2OWdZdlI0TTZqSnBIYTNrQXdKVm43XzZqU0M1WFU4dERKenBfOXBMeGc5WnhpX0g2S1pIeGtVbUFVSWRHcGZTR3VOZjg1RlhWMzNySndqc3BJdTlRVHk?oc=5",
-       "source": "kalkine.ca",
-       "official": false,
-       "tone": "neutral"
-      },
-      {
-       "title": "SILVER ELEPHANT MINING CORP COM (ELEF.NE) Seasonal Returns Chart - Yahoo Finance - Yahoo! Finance Canada",
-       "date": "2026-11-06",
-       "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE05Zmkxck5ieWhhVzhiWHRqREZzTEFwQ3FjYkNVdkJkdUJjbUp0RjEzdXVlYk9zVVZnOWkydW1GNHZ3RzZkNm1GUkFfTVF1aWtsUURKWHpHMUpiTUpnSTBqUF9wbUpLZw?oc=5",
-       "source": "Yahoo! Finance Canada",
-       "official": false,
-       "tone": "neutral"
-      },
-      {
-       "title": "Silver Elephant Mining Jumps 120% After Bolivian Court Restores Pulacayo-Paca Project to the Company - marketscreener.com",
-       "date": "2026-11-06",
-       "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNd1BYNk1HQ0JDSkMzN1o1NEQ0czFKd1dUd245TkFyVGZsdzhWOUNOZENuQW1melFXdUtLS1J4cFl0M1JUbHY1NkZNcHNVYm96ZUpxZ1dxVWVoTXk3aWpPQmpteHM2LVVoNWNIUThWUExTT0F0MHZzWnd6NWxnVG1mYlRaVE5uRE5uS0NhOHBpWW40VjQ1dHNqNU5YZUdwRXFoR0p1S043Z1ZuUmMyN09kR3pUXzNoTVlhYlp0QnpBcm83eTB0RlhoREpEeWVZTzh3cmpqVTBMaUltenI5dnRvdEJjS085cFE?oc=5",
-       "source": "marketscreener.com",
-       "official": false,
-       "tone": "neutral"
-      },
-      {
-       "title": "Silver Elephant Mining Corp (1P2.MU) Seasonal Returns Chart - Yahoo Finance - Yahoo! Finance Canada",
-       "date": "2026-11-06",
-       "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE43MWlfUXR2UC1ETTdkMDlrd3hEQmFxZkRDaGRuZ2JRT3d6UWlMTVQ1bkpKd1RlR1hBdklEWDVjRTNiVnlRU2ZfdUwxdmt2NnBXQVFGaUlUV1VBUzhWaDFabDFHTXg?oc=5",
-       "source": "Yahoo! Finance Canada",
-       "official": false,
-       "tone": "neutral"
-      },
-      {
-       "title": "Bolivia's Supreme Tribunal Restores Silver Elephant Mining's Rights to Pulacayo-Paca Silver Project - Kalkine Media",
-       "date": "2026-11-06",
-       "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQTS05OVVXbDBBNFB1bmpfWEpKWEZwXzh1Mi15bWY3RzZXYmFJbEExc05WNXlmNHJnWkJlRUR3R05FQnROeUYtdXN6NHJUUUlKUXZBNW9qWjdtMWxEYXoxMGFGb0duMHRxUHFabEZ6QzRIM3pBXzFJMFYtQ1JaQ01uaFdXd0dFZ2ZtZmpCbC0wUUhKNXNsZFdqcmhDX3ZGSXBybmE3dDZwakt2d3ZJMXQ0RDk3R1dCRDRjQlBjVklGa25nakZpUTJsd25lWjEwbjMtSnlFZnlya1NMUHNH?oc=5",
-       "source": "Kalkine Media",
-       "official": false,
-       "tone": "neutral"
-      },
-      {
-       "title": "Silver Elephant Reclaims Pulacayo-Paca Project After Bolivian Court Ruling - TipRanks",
-       "date": "2026-11-06",
-       "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNemdJRUxMMEhCY0NpY3Y0RW1BUDRwdGVjRFl5bkhobW1TdjFnTGNNWDZoby0wWks5RTFPYzFHWi1zX3ZfQUdjTVNCN09OWTNNdkx6azRrV2x4cklPdmFVWGM5UzJLV3M2RXRzbTFGZ3daaHJZN2FJUHZYRV9DSlludGxLaG9peHJuN3hpMDBKR3RwM0Nrc3BsYzlqaW9tbzA0LUNOc29keGlHdHV4ckZfYU1ZMlhwRW9FeHlFTkxDckEwQ3l4?oc=5",
-       "source": "TipRanks",
-       "official": false,
-       "tone": "neutral"
-      },
-      {
-       "title": "Canadian Investment Regulatory Organization Trade Resumption - ELEF",
-       "date": "2026-11-06",
-       "url": "https://finance.yahoo.com/markets/stocks/articles/canadian-investment-regulatory-organization-trade-154000433.html?.tsrc=rss",
-       "source": "Yahoo Finance (source unknown)",
-       "official": false,
-       "tone": "neutral"
-      },
-      {
-       "title": "Silver Elephant Reclaims Pulacayo-Paca Silver Mining Project Following Favorable Ruling by Bolivian Supreme Tribunal of Justice",
-       "date": "2026-11-06",
-       "url": "https://finance.yahoo.com/markets/commodities/articles/silver-elephant-reclaims-pulacayo-paca-150400576.html?.tsrc=rss",
-       "source": "Yahoo Finance (source unknown)",
-       "official": false,
-       "tone": "neutral"
-      }
-     ],
-     "buyers": true,
-     "sellers": false
-    },
-    {
-     "ticker": "CGX",
-     "name": "Cineplex Inc.",
+     "ticker": "BDI",
+     "name": "Black Diamond Group Limited",
      "exchange": "NEO",
-     "ysym": "CGX.NE",
+     "ysym": "BDI.NE",
      "market": "canada",
-     "price": 14.29,
-     "low": 13.78,
+     "price": 21.93,
+     "low": 21.44,
      "currency": "CAD",
-     "change": 0.04765395894428142,
-     "vol_x": 1.43,
+     "change": 0.04032258064516136,
+     "vol_x": 1.15,
      "vol_basis": "first30",
-     "vol_day_x": 1.43,
+     "vol_day_x": 1.15,
      "buy_pct30": null,
      "buy_pct": null,
-     "rvol_time": 0.669831223628692,
-     "value": 362966.0,
-     "mcap": 897790389.0,
-     "sector": "Consumer Services",
+     "rvol_time": 1.826086956521739,
+     "value": 92106.0,
+     "mcap": 1506853545.0,
+     "sector": "Consumer Durables",
      "holding": true,
      "extended": false,
      "near_high": true,
      "longterm_down": false,
-     "chart_url": "https://www.tradingview.com/chart/?symbol=NEO:CGX&interval=D",
-     "lists": [],
+     "chart_url": "https://www.tradingview.com/chart/?symbol=NEO:BDI&interval=D",
+     "lists": [
+      "Stage 2"
+     ],
      "owned": false,
      "news": [
       {
-       "title": "Cineplex Boards Sanfic Title \u2018La Residencia\u2019 From \u2018Algo Azul\u2019 Director Mariel Garc\u00eda Spooner - IMDb",
-       "date": "2026-11-09",
-       "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1NbHVFbWFKQkdnZ1dNVmg1N2J5aFB1OVR5cVVfaWFOd2tnRGgyRkRMb1lVNnZtU09oUGdqNGJ0RTRqb1ViUzJhOXQwLVJvUlhaT3RITWR6ZjItOF9CMnZKOWpIUjFMZw?oc=5",
-       "source": "IMDb",
+       "title": "Black Diamond Therapeutics Announces Positive Updated Silevertinib Phase 2 Results, FDA Feedback Supporting a Clear Path to Potential Registration in 1L EGFR-NCM NSCLC, and Provides Corporate Update - GlobeNewswire",
+       "date": "2026-11-10",
+       "url": "https://news.google.com/rss/articles/CBMi7AJBVV95cUxPQkpIV1VkdDhzY1k5MC1HcmNYRTBTQTBPY0IwRjVkVUVNU3ZORlNrcWtVd09pOXlxVDItQ3lRZnp1a3JnQThCSnlyd0lCUllEWmpfTzJyMmp5eGNSX2dDVmFwcUFzYk43ZG9KZDktdXZBS3NEZ001bjBiVll2aDlaWUs5Y0ltRm1mRHJ3eHk5LXJjVTlZM1JqUmtoOFJ1TnNWZlpwOHlmTEVtMGs1cTRPR2o4RzdSQjFBQk9BZ3hSaklKRFhZVkN2UXNPS3U3N3JzWF96RHFDOTJneEp3cG1rQWJRTDRnWFVFUllSR2Zid2VvbU5MajZJbUJyNmhRX1VYSi1SeHlXWmhxUmhhVDlsMWVTejRXc2R5X1g4blNCUDcyQ2tKZjNrRGVvSHVEbE50LWtCbkx2OTBDSUMtV3lGeXFFa3FQenNROWVrZlllTjFZbG9yRTVOUUliazJ0UzBWTXp3TFJ2YzZ4eUR1?oc=5",
+       "source": "GlobeNewswire",
+       "official": true,
+       "tone": "pos"
+      },
+      {
+       "title": "Black Diamond Solution Climbing Harness Review: The Best Gear Loops I Tested - Treeline Review",
+       "date": "2026-11-10",
+       "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNaGVKUzVLUmFmZnlJbFJTS3hpVU9tdGNoZjBMOXYxU2pQYzNMTndwUnBkdXB4Vms0VEh0N1E5bllkOGxNbEo5MElqczJOTXRDOXJQbHFkX05vYTdEX3g4aVhxWmtYVnpHWUVNSmthREsyQnZUUGg2dGMzYmNrMDBidzRtU28zNWpmcVRjX0k3UTAxcTg?oc=5",
+       "source": "Treeline Review",
        "official": false,
        "tone": "neutral"
       },
       {
-       "title": "Cineplex doubles down on \u2018Algo Azul\u2019 director Mariel Garc\u00eda Spooner with \u2018La Residencia\u2019 - Martin Cid Magazine",
-       "date": "2026-11-09",
-       "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOenBxX19ielA5QzVnUks3UUpLXzFLRnQzNkExZVhzZkJBeUphdUtWZ3g0VHlXVGNxaWJFZVI2cU1ucFFqTjZfaTk4amx1eEtqYS1VZDZKRkNRWjVzMGFsSmpUUFMxeXBhT2JJNGNUeF8zeTg2ODRfamo2bDVfTDAxb1FHaG9YeDZPQVk2ZFp1Mkg1UQ?oc=5",
-       "source": "Martin Cid Magazine",
+       "title": "Black Diamond: Q3 Earnings Snapshot - Yahoo Finance",
+       "date": "2026-11-10",
+       "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQVm9sak5kcW5IWl9HS1UydDhSbFFsckxNbm1TODE1bGJjaHdYMTBWelpLSkRJaHJTbVNVekNJRnQyTXIwZTVrb1VrTHFSTnB2aUlOQ3RhZWMtbVdrbzEzb0QtNFpUU0UwQThTakNTT1YxZkVZZnBSZGs2RU04M3VYOFZpYTNZYUdYS3RnenVyUXlXWXJsLV9PUE53MVpnSW1t?oc=5",
+       "source": "Yahoo Finance",
        "official": false,
-       "tone": "neutral"
+       "tone": "review"
       },
       {
-       "title": "Cineplex Boards Sanfic Title \u2018La Residencia\u2019 From \u2018Algo Azul\u2019 Director Mariel Garc\u00eda Spooner - Variety",
-       "date": "2026-11-08",
-       "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPVFhpZDdsbUR5cXpUT1NMT1JYSi13OFJJN2pYLUVwYVI5eE1CQlZjdzRIdkZIY2Q1Sk1jNGtweEtxeXN2QWxjRXhhbjhna3ZiRWUyZ2RuN3RlNVozaVdDbHhlVFB3OFIwUVY0WnVtYWNyN1RkSk1OaFIyRGNfRG9GSVBmNk1VczRuc2Q5dWlIV2pJanFuVjktVWk3Y1RWUWdweFEzTHlB?oc=5",
-       "source": "Variety",
-       "official": false,
-       "tone": "neutral"
-      },
-      {
-       "title": "Cineplex Acquires North and South American Rights for Mariel Garc\u00eda Spooner\u2019s \u2018La Residencia\u2019 - The Chenab Times",
-       "date": "2026-11-08",
-       "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNWms3djc2MGkzQnV3N2Y4MWVRQXVIbzF3Y3VjTS13RTQ5R0xYNHkyemRhUV9QcnVjTGZwdGVDTExPdmZ5ek0tbHhoaVQ4Y2RDMEpNQ1ZmOGJKZjh3cUxQQUcwTnhyMHRwN3FlbTU3NlIyaEhZanlxbVhiMnpTQ1V4WDhlNWxWQVROY2hnWVRlOVFzU0FjeEZXS1JWV2RMQmg0QmhQejZmblVjUEw2V3hTT3VsY0dfcnB6NG5mUFNrd05WYVdfamV2Uw?oc=5",
-       "source": "The Chenab Times",
-       "official": false,
-       "tone": "neutral"
-      },
-      {
-       "title": "What Cineplex (CGX) Said on Its Q3 Earnings Call",
-       "date": "2026-11-08",
-       "url": "https://www.marketbeat.com/instant-alerts/transcript-what-cineplex-cgx-said-on-its-q3-earnings-call-2026-11-08/?utm_source=yahoofinance&utm_medium=yahoofinance",
-       "source": "MarketBeat",
-       "official": false,
-       "tone": "neutral"
-      },
-      {
-       "title": "Cineplex Inc. 2026 Q3 - Results - Earnings Call Presentation (TSX:CGX:CA) 2026-11-07 - Seeking Alpha",
-       "date": "2026-11-07",
-       "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOQzRscTZSZFdfZ3pnT05vR1B1NUlDOGZnSjZ1dFo1VmtKa3drS1lGZEhGdHlUaFRMX0MzYjQycHJqQTY4TnBZemxoVk5XdEs1RzlOQl9Wc2dJTlZyU25sa3NvNDlKbUxsQmJzOTZaZGVLejkyZ0VMUk80TWFCNmJuQlU2Yk4zbENUUjlkTlRzSmRmdGJGbmZJblRjQkI?oc=5",
-       "source": "Seeking Alpha",
-       "official": false,
-       "tone": "neutral"
-      },
-      {
-       "title": "Cineplex posts record revenue as Spider-Man, Odyssey drove moviegoers - Global News",
-       "date": "2026-11-06",
-       "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5pUmZVU204Q0ozZFVNTnlLSGJ2YUtvQUMyVVRBSXZEYk5FSUpPMEt5cVhmcHdVUGo5cFcwUk52YWdpSXpBYU5jQUprQXAzdzdwREVLWmFIUjBnWDJtU09sajcwb09NQXlOLTdvMWptWThkcVFaT3R4aG5xVko?oc=5",
-       "source": "Global News",
+       "title": "Black Diamond Therapeutics Announces Positive Phase 2 Silevertinib Results - TradingView",
+       "date": "2026-11-10",
+       "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOMGRCcW1FRzZQdlZkM1Y4QUtvQ3p5ZnRkV2kxS2lfaldUQ29xV0s5anpRU3ZsS3FGaFNDR3I1bzA5R1NnUFJUUnhWSjhfRnpoNUxpOFZFVnJNbDMzRzB6aGRKYm1MZ2FkOFp6RVZVU0FDT1ZMM19VVmFTWHJTT1diRWRsQzlpdzk5ZUxLWE9WTHlCOXBXREVvNDJvdHhWdjd0QmVmXzU5M3NqRUptSUN1dUYzc1ZmaWtzaUdTcWZUQkk1QldEdEc2QV8xUlZKTHJnbnZ1OWhHbTY5S25B?oc=5",
+       "source": "TradingView",
        "official": false,
        "tone": "chatter"
       },
       {
-       "title": "Cineplex Inc (CPXGF) (Q3 2026) Earnings Call Highlights: Record Revenue and EBITDA as ... - Yahoo! Finance Canada",
-       "date": "2026-11-06",
-       "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPSjhPX2p6cl8xNE9xV245bV9kRVFYVE1INUR4TGEydXBmdnBzZnF5ODRfTW1wWEdXd0JEbnkyWHdZQVd2bmlfLVJTdTRMT1ZZeUNWTTVXbXAtc3JBbGIzcTI2OVg4enB1Zl9KMGdkNGlILTdpeDloZUhMeXYwa1VrYQ?oc=5",
-       "source": "Yahoo! Finance Canada",
+       "title": "Black Diamond Therapeutics plans pivotal lung-cancer trial - Mugglehead Investment Magazine",
+       "date": "2026-11-10",
+       "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOdldVZVlyallWWHJZbUs2Qm05YUhRYjR6a3J3cm1mU3lDZnVFaGJ2X1VMWFNldXNYdERjRmoxSUcyb2pQYnJ3a21lVHpwVW1ON205dW80aDN0TnRzRnRoMGNSOTFwZ3FEVjVMc2JLaEYyZmYwcVBGSVVLSFNfUTRJS3Y0UURsUGdFd3VCdA?oc=5",
+       "source": "Mugglehead Investment Magazine",
        "official": false,
        "tone": "neutral"
       },
       {
-       "title": "Cineplex media revenue slips despite record box office quarter - Media in Canada",
-       "date": "2026-11-06",
-       "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNSnl1TmEzbktDX3VYQXI3VmN0Y1NDbFZJcUhXZGtsZjBpQ1hEcnhteFFhNjJDYVp2T3FCQ2dfbGstallfWUM2bzRiaVktX3BWSEtxR3Y2TGxuVmVlbzdjWjFTQlEtdDB4ZncyOUU0UGNZS1NKbmR6emJaVU9WUFVsNXIweFJDN09wWXM3RmFIeW1oX19xMGpCeXBuMlZwWVZWQ3c?oc=5",
-       "source": "Media in Canada",
+       "title": "Black Diamond Therapeutics, Inc. Reports Earnings Results for the Third Quarter and Nine Months Ended September 30, 2026 - marketscreener.com",
+       "date": "2026-11-10",
+       "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOdk9wQTZJVzhUU1B1ZVprcXFJX0x3SndaWGYzc2R1VE8zV2V5WDNYLWNrbTlqTlZ5a1hSaTZGUWRMRkxCeHZacW5PZTVmcFl0MEhTOWN3bGhsMC1sdW9MX1g3emlwblNQbU1Ub3R5OENwVFJwMEQ3OVU3dS10akYxYldaandPX3BBWFNCQzUwNDIybVgzdkZpd1phRXRJWTJGek8wYlRSWTM3WUh6TFFWTTZEbm90ZmF5b3FlNkstendzMHpGVTNWYS05bkpycXJxU1RrejNMVUoxLXVZaUtWNTRiZWZPdw?oc=5",
+       "source": "marketscreener.com",
        "official": false,
-       "tone": "neutral"
+       "tone": "review"
       },
       {
-       "title": "Cineplex reports record $440.2M quarterly revenue as adjusted EBITDA more than doubles - Retail Insider",
-       "date": "2026-11-06",
-       "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOQ0VZaEVQYzJwTndZdnNpSlA4UWVnQ2dQRUZLd0huQjA2Ukxia1poWWZJNUZzejNVc3M2MGpxaWVyWGRRTk81dzl1SGtUNDE3RXBoUDBuU2stQllwQy1OMEd6YXBMMzFFZVZpdFVYRTNLV1dBcVY4MmhtV0hQMXU2S09HeTZIcXE1ck9FcFZyVHI4aGFaQUdCdWs1UnFHX2dUa0oxU1U5VDV4VjBQTlJhdVAtRjhSVEN0V1hrYTBaaEpRZU1pb1BLZmdqVWpfN296V0E?oc=5",
-       "source": "Retail Insider",
-       "official": false,
-       "tone": "neutral"
-      }
-     ],
-     "buyers": false,
-     "sellers": false
-    },
-    {
-     "ticker": "LUG",
-     "name": "Lundin Gold Inc.",
-     "exchange": "NEO",
-     "ysym": "LUG.NE",
-     "market": "canada",
-     "price": 98.37,
-     "low": 93.66,
-     "currency": "CAD",
-     "change": 0.026612398246712708,
-     "vol_x": 1.32,
-     "vol_basis": "first30",
-     "vol_day_x": 1.32,
-     "buy_pct30": null,
-     "buy_pct": null,
-     "rvol_time": 1.4380059650617811,
-     "value": 531198.0,
-     "mcap": 23810850685.0,
-     "sector": "Non-Energy Minerals",
-     "holding": true,
-     "extended": false,
-     "near_high": false,
-     "longterm_down": true,
-     "chart_url": "https://www.tradingview.com/chart/?symbol=NEO:LUG&interval=D",
-     "lists": [],
-     "owned": false,
-     "news": [
-      {
-       "title": "What Lundin Gold (LUG) Said on Its Q3 Earnings Call - TradingView",
-       "date": "2026-11-08",
-       "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQbWRaVzNrZ3lvMnRmSjc5Sl82MVY0cE5zaVV1VVFRNGpSY3ZpaFVJV2hzQU5VVlAzc1JGMmVBczc4c1FyOE5KeXZHbUVhWjVKc0lkT3FMMU00N2JPZGRZeUc4OWpLcGxYZ21NRldVLUhudjd2ZDNTaWxMUjlDSklwZXo5QzdrV3VzaHZaRlV5WWhCSldjQVM3c0JLOFdjTVpES3FtMFZxRWY5akJjZkE?oc=5",
+       "title": "Black Diamond Reports Updated Phase 2 Silevertinib Data, FDA Registration Path - TradingView",
+       "date": "2026-11-10",
+       "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOS0JOejV2bTBDMGRvTksyYnlJaEFkb0s3ejkxRE9HeVpfS21vWXRQd3RHRW1sQkg2bjRrYndYa2sxLUVGWTdhU1gyS0ZsODA2bWl3WkxCZUswVDRqQWVxZXVyU1NrUHotLU9odURoM2N6NDF0SE90M1ZWbU9uWkhXdERycHpkT1NfU2hwcFBPSHBZQmJBOTVPYXl2UVNWODYyNEoxZ0FzXzVyeThiY203dlpHVm1nYkZvN0YxQnV1QXBwMDNneVdDOGYyUldKQUVRdXRYMkk2aTNONjhrQ3l0Rw?oc=5",
        "source": "TradingView",
        "official": false,
        "tone": "neutral"
       },
       {
-       "title": "Lundin Gold Inc. (TSE:LUG) Just Released Its Third-Quarter Earnings: Here's What Analysts Think - Simply Wall St",
-       "date": "2026-11-08",
-       "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQUXN1UklPMktsX3VUZjNLVjJ4U0xLWm9nNGdKV3BNU29yLThUMDdYV1pyNlNlMFk4UUdKVDI5T0g3QUNIOWlPeVE3dHVUMlNNeVhFeHk2R0JkQ3ZiYzhuT25VVktqNXF2eEhnNFowNlVrek5jbXZFVThod09Zd1k0ajdNVVBrbGxuQldTUzg0V3hvZFhzUEppb0NlMWVkZW9kOWdSSGdSN2RseTVIU2RmVGtWcWZLS01ZV3RfeGNsVmFJMVF0Y2c5c0tPdFlyOG_SAdQBQVVfeXFMTWNFeDZIdWRvWjRlaVlvVEZzY0Z0U3k1UEJjUXdRa2tFZjlGZzNKMXBXREJiWEo2X1VYQTctdnVRTUNtV3pLa1FBQk8wczlYNmFCbjFONEoyRG1jM21DSVZrc2c1OFJ0bFdHVWhFXzVid2NFZ3VnRmJFTWE2VUpjaFJCUWdyMkhaSWROaGRQMlE0N0VMbEJEX0tEX2xwTFFpdEYzbFdfaldaYnFNdjhCTC01dFdLbVhKRm5xaThMUEVtN0cwb1ZtdVZLN1BReHJIcnlrMTA?oc=5",
-       "source": "Simply Wall St",
+       "title": "Black Diamond Rodeo earns 2026 Utah Small Rodeo of the Year honors - ETV News",
+       "date": "2026-11-10",
+       "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQV3ZoMEQ1TjBMZ3dVcjRuVDU3cEo2WkRwVHpRZmVEeVpIdzNzdVhNRGp2bllBQXlSZnZhYzdWX3pnVWtBWVJuUHhDNlk3Ny1YSl9WRXNIWG5oYUtHRjlJZVlVX0s3T2QwNW5wRUY5aFNKTE1DR051aXBpc3JWQWI4LTJFanRTMHRNcXdvZ1RuRnpXWkpzNlhicUYyZmZpYk01T1hlVldNeTM?oc=5",
+       "source": "ETV News",
        "official": false,
        "tone": "neutral"
       },
       {
-       "title": "What Lundin Gold (LUG) Said on Its Q3 Earnings Call - Yahoo Finance",
-       "date": "2026-11-08",
-       "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPS0VCZzV5WHVqeHRCM0Z0bjY5am4wZlQ4Mk1WZjE2Q0hkMEtNV3JmZV92amF1dllmOGpsM2xKM3VvUTF3aVlUZlhGNk8tY1l5MDd3d0xDQXdxR3BBcWI0d2VvN1hMOXdrelN3czAyNEtMM2R0SzU2X255U3FPQm9yb0ttVDNpeGxUd1RLcGV1WTNVUQ?oc=5",
-       "source": "Yahoo Finance",
+       "title": "Black Diamond Reports $10.0 Million Q3 Loss and Updated Silevertinib Data - Quiver Quantitative",
+       "date": "2026-11-10",
+       "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPcWpQU3RSS0R2Si1UVE9VT0hJQ2s5TnhGZHZuUGZQZkc1YUpHcmZCMUZmcjlCS1Zac3oyZTQ4WEN1bkI2WEpuaVFYWmRnbE5ULVRiVEtaTFk5ZFNTcEprbi1ZTkFGZlpMSnV4QUdLZzF3akxETzFwSzFZS1Jzekd5OWdPT1prVml4Z2RxVXZjQXo5SVFYVGNTOWtSZ1RYTUtRZ01rX09nblZrdFho?oc=5",
+       "source": "Quiver Quantitative",
        "official": false,
        "tone": "neutral"
       },
       {
-       "title": "What Lundin Gold (LUG) Said on Its Q3 Earnings Call",
-       "date": "2026-11-08",
-       "url": "https://www.marketbeat.com/instant-alerts/transcript-what-lundin-gold-lug-said-on-its-q3-earnings-call-2026-11-07/?utm_source=yahoofinance&utm_medium=yahoofinance",
-       "source": "MarketBeat",
-       "official": false,
-       "tone": "neutral"
-      },
-      {
-       "title": "S&P/TSX Composite Index Volatility Puts Lundin Gold Inc. (TSX:LUG) in Focus as Investors Reprice Risk - kalkine.ca",
-       "date": "2026-11-06",
-       "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQd1A2MEoyX0xpZXdzTTcxMnFTR1hyNEJDUC03TGZqUUt5UkRDWGFzNjNMdUd3VkpQdTQxeXJFZEt0aGVZMGptbTVfRzlackI3bkRWWDNtNVNtTFdQeDY4dU9YUm9JeUhsN1o5SWQ2ZjlLR0ZINUwtXzVqUmFtNmhOSFFlcGFBUHR2Ymk0ZDFHLWVnWkpnbXM5MGY1TWNfb001aTg4c1lhQjFfT1pyOVJBdGhkOFJXV05WS3NTR0pOR2Faa1ZB?oc=5",
-       "source": "kalkine.ca",
-       "official": false,
-       "tone": "neutral"
-      },
-      {
-       "title": "Lundin Gold Stock Price Forecast. Should You Buy LUG.TO? - StockInvest.us",
-       "date": "2026-11-06",
-       "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE91YTJrdnQwLVVfUUk4WkctQVFPZ0hlUERWZE80ZmZVU2p4MjVJVEFfN3pFRjROa3EyQ2JiVWZ0RG16YklhQzExczVaWQ?oc=5",
-       "source": "StockInvest.us",
-       "official": false,
-       "tone": "neutral"
-      },
-      {
-       "title": "Lundin Gold Inc (LUGDF) (Q3 2026) Earnings Call Highlights: Record Production, $331 Million ... By GuruFocus - Investing.com Canada",
-       "date": "2026-11-06",
-       "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPQ3hBbWRseWtkcUxpMHZJeThfajVBRFBEZDJYSTltbGxzYm5lUTlrSjJsbGZKdWtaMDI2VzAzbGlDdGN3UnJiZWYtU1JpQkhCUmE3Y3dRTlhGMHh0Ylp3S29mV1J5MGF5YnduZzFjaFRzWWdBcmt0YmEzTWlGTGhoekdPTlRrWlB1VkRNbmlPRkc5QmJXRjl1bDN5S21PNkFYaWxpME5xZ3RHeXFBREJkSHF6cFd3WXM5ZTJHclhLbFRhc282bHZUVVQ3dGVEYzFhalE?oc=5",
-       "source": "Investing.com Canada",
-       "official": false,
-       "tone": "neutral"
-      },
-      {
-       "title": "Lundin Gold Inc. Advances as Constructive Investor Sentiment Supports Canadian Share-Price Momentum - kalkine.ca",
-       "date": "2026-11-06",
-       "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPcDY3NzAxU3lyZzBPU3NzNTRMa1M1a2xidXJUa1VzWXg3ZVdqZWdYNzJFZjlyejZHSDhBdlAyRXpoUUZra0NqMjVHeW9HMm8xSE4xNXF3UExEalBsYXZtNjBra0lzQ1N4VXRQSmhDbmlacHgwZDJxNFRncGVtRldHb2p2T2lXbjNyenpfWVFTVnVIbGpzOGlrMVd3SmpDY3BPT3JFTWNvMG9IZWtVTmFtbmx6VDFBTDBsckN0aVloNEtpaUc2Z1BtNA?oc=5",
-       "source": "kalkine.ca",
-       "official": false,
-       "tone": "neutral"
-      },
-      {
-       "title": "Lundin Gold (TSX:LUG) Sets a Record: What Is Fuelling Fruta del Norte? - Kalkine Media",
-       "date": "2026-11-06",
-       "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOaHlmYUZXQWVmMnNwUTlwN2ZfYkZiT2hMTVkzNm5Hb1VRRlpFbEp3bm5TTjcwSlVYdzN3MzMwSjl0Y0p4UjFfUDRQa1Y2clFlWUxsck9WcFF6OHl2aWg2ZG4xYmZrTThpOWtNYk1NWEY1QjBZTzNxRnpZbHVDaEk5WlJWamY5SGEwalBkNVJGXzJRbmhqZWZhMkZvU19nSnpoNHBIRlFVa2U?oc=5",
-       "source": "Kalkine Media",
-       "official": false,
-       "tone": "neutral"
-      },
-      {
-       "title": "Lundin Gold Inc (LUGDF) (Q3 2026) Earnings Call Highlights: Record Production, $331 Million ...",
-       "date": "2026-11-06",
-       "url": "https://finance.yahoo.com/markets/stocks/articles/lundin-gold-inc-lugdf-q3-071452376.html",
-       "source": "GuruFocus.com",
+       "title": "Public market insider selling at Black Diamond Group (BDI) - The Globe and Mail",
+       "date": "2026-11-09",
+       "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQYVBOS0E1NHhPVF9Yb1YwdS1pUkt1VXk0QUFuMWZqZE5xalBzQ0dnaTFlT1k4NXRYRU9HRTgtNTFCS2RveDltUl9UU0FEcXdsYW5zeFhnVnJTTHllRi1wb1h4TUF4bDg1NXd2SlZNY3N0QlBJZW5IQl9acnp4TllHMjdaNk5FYUpaeWd5Y0FPNW9NN0d0SWlvU1RUcUpEYkdrZlI1LVZzczRNX2Vsajk1c0xPX2lCZmFzSHB6MnhlcUZXTHVyWU0wWmR5NGV0dHlFWnFGZmsyMA?oc=5",
+       "source": "The Globe and Mail",
        "official": false,
        "tone": "neutral"
       }
      ],
      "buyers": false,
-     "sellers": false
-    },
-    {
-     "ticker": "TDG",
-     "name": "TDG Gold Corp",
-     "exchange": "TSXV",
-     "ysym": "TDG.V",
-     "market": "canada",
-     "price": 0.51,
-     "low": 0.49,
-     "currency": "CAD",
-     "change": 0.051546391752577365,
-     "vol_x": 1.25,
-     "vol_basis": "first30",
-     "vol_day_x": 1.25,
-     "buy_pct30": null,
-     "buy_pct": null,
-     "rvol_time": 1.3445378151260505,
-     "value": 110160.0,
-     "mcap": 143398743.0,
-     "sector": "Commercial Services",
-     "holding": true,
-     "extended": false,
-     "near_high": false,
-     "longterm_down": true,
-     "chart_url": "https://www.tradingview.com/chart/?symbol=TSXV:TDG&interval=D",
-     "lists": [],
-     "owned": false,
-     "news": [
-      {
-       "title": "TDG Gold Corp (34M.HA) Stock Forum & Discussion - Yahoo Finance - Yahoo! Finance Canada",
-       "date": "2026-11-06",
-       "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE14ZXQ4c0JOb3RNREJpTGkwMk1GZ3B6MU9rLUJtRmpjZWlQZF9iQnAtbU1UcWVZcTRJUDNUcGh0VXNhNjBJd0RMYy03Y19kU053cUdIbnZJYUdEU1cxc1JROXJn?oc=5",
-       "source": "Yahoo! Finance Canada",
-       "official": false,
-       "tone": "neutral"
-      },
-      {
-       "title": "TDG Gold Corp (34M.HA) Stock Major Holders - Yahoo Finance - Yahoo! Finance Canada",
-       "date": "2026-11-06",
-       "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE8zLW1UYmd4VEZLWk9tREQtQUJQcHNMTXZjbFhMUnFFXzJuSGl2MXZjSTVXRldqNEJkMjNDTWx0eHdEeFg3dkpOcXpZQ2RNYk1mbTBfLUpDUFpoT0VQTkhN?oc=5",
-       "source": "Yahoo! Finance Canada",
-       "official": false,
-       "tone": "neutral"
-      },
-      {
-       "title": "TDG Gold Corp (34M.HA) Recent Insider Transactions - Yahoo Finance - Yahoo! Finance Canada",
-       "date": "2026-11-06",
-       "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE4wbGFRb0FGZ1M1dzd2d1ZDOEpuak45SGJ3bHNoczZrN1IzVy1mNzZXMDZIUVpGTEh5THJKdDJ0alI0N0hzUzlMWUtvbGlycnNURjQ0c1FTMTBJQ2tGalNDWDBxdU5XMGJEZFhXZ3VveXI?oc=5",
-       "source": "Yahoo! Finance Canada",
-       "official": false,
-       "tone": "neutral"
-      },
-      {
-       "title": "Tdg Gold Corp. (TDG.V) Stock Price, News, Earnings & Company Profile - RTTNews",
-       "date": "2026-11-06",
-       "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1SSmlPSThKalh5RHZfS0xLb2RxV0F3MGdMUl9ubEFHWkg5ckkwOERsVFA4UVp4MUkzeDFINURxMS1XZHZ6d0o5ZEN1OHVnZHRrTE9UV2dpY3ZiVFVmbkdpUjZTRUU2WnRGSHFoMnlBeVRzZHJqbUE?oc=5",
-       "source": "RTTNews",
-       "official": false,
-       "tone": "neutral"
-      },
-      {
-       "title": "TDG Gold Corp. (34M.F) balance sheet - Yahoo Finance UK",
-       "date": "2026-11-06",
-       "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBJcnRpYmctQlNJa0swSDVNZ1ZueVEzZ0d5ZjhubXdpeXJsWG12c2Mxa00yeXdrSzI1UU5jMUQwbmtoMmNEUm16ekRmU0wtSDYweEx1aTNNYlJZd3IxdURWTnJPTUZKZw?oc=5",
-       "source": "Yahoo Finance UK",
-       "official": false,
-       "tone": "neutral"
-      }
-     ],
-     "buyers": false,
-     "sellers": false
+     "sellers": false,
+     "claude": "Claude: no catalyst (strength 1/5): The only OFFICIAL headline concerns Black Diamond Therapeutics (a US biotech), not the UK-listed Black Diamond Group Limited, so it cannot be attributed to this"
     }
    ]
   },
