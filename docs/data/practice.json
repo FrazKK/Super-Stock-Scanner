@@ -451,18 +451,18 @@
  "done": {},
  "account": {
   "currency": "GBP",
-  "value": 4843.75,
-  "cash": 4843.75,
+  "value": 4856.77,
+  "cash": 3844.95,
   "realised": -144.46,
-  "unrealised": 0.0,
-  "time": "2026-11-09T20:51+00:00"
+  "unrealised": 14.52,
+  "time": "2026-11-10T20:38+00:00"
  },
  "rules": {
   "trade_gbp": 1000.0,
   "max_open": 10
  },
  "start_value": 5000.0,
- "updated": "2026-11-10T20:38:12+00:00",
+ "updated": "2026-11-10T20:38:14+00:00",
  "day": {
   "date": "2026-11-10",
   "buys": 1,
