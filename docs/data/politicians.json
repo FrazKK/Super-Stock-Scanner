@@ -2,9 +2,17 @@
  "seen": [
   "20035130",
   "20035143",
-  "20035553"
+  "20035553",
+  "20035780"
  ],
  "buys": [
+  {
+   "who": "Nancy Pelosi",
+   "filed": "2026-11-06",
+   "url": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035780.pdf",
+   "unreadable": true,
+   "doc": "20035780"
+  },
   {
    "who": "Nancy Pelosi",
    "filed": "2026-10-02",
@@ -27,5 +35,5 @@
    "doc": "20035130"
   }
  ],
- "updated": "2026-11-07"
+ "updated": "2026-11-10"
 }
