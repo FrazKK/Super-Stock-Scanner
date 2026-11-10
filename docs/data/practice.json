@@ -3,7 +3,7 @@
  "open": [
   {
    "id": "america-TLS-2026-11-10-1",
-   "status": "pending",
+   "status": "open",
    "ticker": "TLS",
    "t212": "TLS_US_EQ",
    "name": "Telos Corporation",
@@ -19,13 +19,25 @@
    "bought": "2026-11-10",
    "bought_at": "2026-11-10T15:36+00:00",
    "ref_price": 7.380000114440918,
-   "qty": 181,
+   "qty": 181.0,
    "why": "Broke above its opening-range high ($7.37) at $7.38. In play: 0.3x normal volume, normally moves 8% a day. Stop $7.01. Claude: catalyst (strength 4/5): Official Q3 2026 earnings release (Nov 9) reported by OTHER coverage as beating estimates with record adjusted EBITDA and raised guidance for a ~$544m company, ",
    "initial_stop": 7.011000108718871,
    "risk": 0.3690000057220466,
-   "high": 7.380000114440918,
-   "high_time": "2026-11-10T15:36:02.391832+00:00",
-   "order_id": 57801232804
+   "high": 7.39,
+   "high_time": "2026-11-10T15:46:30.626899+00:00",
+   "order_id": 57801232804,
+   "entry_t212": 7.36,
+   "unit": 1.0,
+   "entry_local": 7.36,
+   "cost_gbp": 997.3,
+   "stop_local": 6.992,
+   "price_t212": 7.39,
+   "value_gbp": 1001.79,
+   "pl_gbp": 4.49,
+   "stop_order_id": 57801232974,
+   "stop_t212": 6.99,
+   "stop_breached": false,
+   "last_check": "$7.39 (+0.4%), high $7.39, stop $6.99"
   }
  ],
  "closed": [
@@ -115,10 +127,6 @@
   }
  ],
  "log": [
-  {
-   "time": "2026-11-02T15:01+00:00",
-   "text": "Added LEGH to today's list at 10:01 New York: 0.5x normal volume in the last 30 min; news: Legacy Housing (LEGH) Expected to Announce Earnings on Wednesday - MarketBeat"
-  },
   {
    "time": "2026-11-02T15:01+00:00",
    "text": "Added PLBY to today's list at 10:01 New York: 0.7x normal volume in the last 30 min; news: Crystal Hefner Says Hugh Attempted 'Disgusting' Act With Playboy Twins - TMZ"
@@ -434,6 +442,10 @@
   {
    "time": "2026-11-10T15:36+00:00",
    "text": "Day trade buy order: 181 TLS at about $7.38. Broke above its opening-range high ($7.37) at $7.38. In play: 0.3x normal volume, normally moves 8% a day. Stop $7.01. Claude: catalyst (strength 4/5): Official Q3 2026 earnings release (Nov 9) reported by OTHER coverage as beating estimates with record adjusted EBITDA and raised guidance for a ~$544m company, "
+  },
+  {
+   "time": "2026-11-10T15:38+00:00",
+   "text": "Bought 181 TLS at 7.36 (cost \u00a3997)."
   }
  ],
  "done": {},
@@ -450,7 +462,7 @@
   "max_open": 10
  },
  "start_value": 5000.0,
- "updated": "2026-11-10T15:36:25+00:00",
+ "updated": "2026-11-10T15:46:31+00:00",
  "day": {
   "date": "2026-11-10",
   "buys": 1,
