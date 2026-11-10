@@ -23,21 +23,21 @@
    "why": "Broke above its opening-range high ($7.37) at $7.38. In play: 0.3x normal volume, normally moves 8% a day. Stop $7.01. Claude: catalyst (strength 4/5): Official Q3 2026 earnings release (Nov 9) reported by OTHER coverage as beating estimates with record adjusted EBITDA and raised guidance for a ~$544m company, ",
    "initial_stop": 7.011000108718871,
    "risk": 0.3690000057220466,
-   "high": 7.39,
-   "high_time": "2026-11-10T15:46:30.626899+00:00",
+   "high": 7.44,
+   "high_time": "2026-11-10T16:00:37.500003+00:00",
    "order_id": 57801232804,
    "entry_t212": 7.36,
    "unit": 1.0,
    "entry_local": 7.36,
    "cost_gbp": 997.3,
    "stop_local": 6.992,
-   "price_t212": 7.36,
-   "value_gbp": 999.11,
-   "pl_gbp": 1.81,
+   "price_t212": 7.44,
+   "value_gbp": 1010.0,
+   "pl_gbp": 12.7,
    "stop_order_id": 57801232974,
    "stop_t212": 6.99,
    "stop_breached": false,
-   "last_check": "$7.36 (+0.0%), high $7.39, stop $6.99"
+   "last_check": "$7.44 (+1.1%), high $7.44, stop $6.99"
   }
  ],
  "closed": [
@@ -462,7 +462,7 @@
   "max_open": 10
  },
  "start_value": 5000.0,
- "updated": "2026-11-10T15:56:34+00:00",
+ "updated": "2026-11-10T16:06:38+00:00",
  "day": {
   "date": "2026-11-10",
   "buys": 1,
