@@ -1,6 +1,44 @@
 {
  "started": "2026-10-31",
- "open": [],
+ "open": [
+  {
+   "id": "america-CARL-2026-11-11-1",
+   "status": "open",
+   "ticker": "CARL",
+   "t212": "CARL_US_EQ",
+   "name": "Carlsmed, Inc.",
+   "market": "america",
+   "exchange": "NASDAQ",
+   "ysym": "CARL",
+   "source": "daytrade",
+   "methods": [
+    {
+     "method": "daytrade"
+    }
+   ],
+   "bought": "2026-11-11",
+   "bought_at": "2026-11-11T15:03+00:00",
+   "ref_price": 17.510000228881836,
+   "qty": 75.0,
+   "why": "Broke above its opening-range high ($17.50) at $17.51. In play: 0.6x normal volume, normally moves 7% a day. Stop $16.63. News (globenewswire): Carlsmed\u00ae Reports Third Quarter 2026 Financial Results and Raises Full-Year Guidance. Analyst upgrade too. Claude: catalyst (strength 4/5): Official Q3 release shows 65% revenue growth to $21.6m with full-year 2026 guidance raised to $78-80m, though the net loss widened and opex rose, which tempers ",
+   "initial_stop": 16.634500217437743,
+   "risk": 0.8755000114440925,
+   "high": 17.82,
+   "high_time": "2026-11-11T15:03:48.091854+00:00",
+   "order_id": 57850394890,
+   "entry_t212": 17.82,
+   "unit": 1.0,
+   "entry_local": 17.82,
+   "cost_gbp": 1007.1,
+   "stop_local": 16.929,
+   "price_t212": 17.51,
+   "value_gbp": 989.54,
+   "pl_gbp": -17.56,
+   "stop_order_id": 57850394925,
+   "stop_t212": 16.93,
+   "stop_breached": false
+  }
+ ],
  "closed": [
   {
    "ticker": "PLBY",
@@ -109,18 +147,6 @@
   }
  ],
  "log": [
-  {
-   "time": "2026-11-02T15:01+00:00",
-   "text": "Added HNI to today's list at 10:01 New York: 0.5x normal volume in the last 30 min; news: HNI (NYSE:HNI) Stock Crosses Above 50-Day Moving Average - Here's Why - MarketBe"
-  },
-  {
-   "time": "2026-11-02T15:01+00:00",
-   "text": "Added CHPT to today's list at 10:01 New York: 0.2x normal volume in the last 30 min; news: CHPT: Better Results Are Real, Margin And Growth Assumptions Still Look Ahead - "
-  },
-  {
-   "time": "2026-11-02T15:07+00:00",
-   "text": "Day trade buy order: 1044 PLBY at about $1.28. Broke above its opening-range high ($1.28) at $1.28. In play: 0.7x normal volume, normally moves 5% a day. Stop $1.22."
-  },
   {
    "time": "2026-11-02T15:08+00:00",
    "text": "Bought 1,044 PLBY at 1.29 (cost \u00a31,003)."
@@ -428,6 +454,18 @@
   {
    "time": "2026-11-11T15:01+00:00",
    "text": "Watch list sent: CARL, FOSL, RSKD, TTEC, REZI"
+  },
+  {
+   "time": "2026-11-11T15:03+00:00",
+   "text": "CARL: Claude: catalyst (strength 4/5): Official Q3 release shows 65% revenue growth to $21.6m with full-year 2026 guidance raised to $78-80m, though the net loss widened and opex rose, which tempers "
+  },
+  {
+   "time": "2026-11-11T15:03+00:00",
+   "text": "Day trade buy order: 75 CARL at about $17.51. Broke above its opening-range high ($17.50) at $17.51. In play: 0.6x normal volume, normally moves 7% a day. Stop $16.63. News (globenewswire): Carlsmed\u00ae Reports Third Quarter 2026 Financial Results and Raises Full-Year Guidance. Analyst upgrade too. Claude: catalyst (strength 4/5): Official Q3 release shows 65% revenue growth to $21.6m with full-year 2026 guidance raised to $78-80m, though the net loss widened and opex rose, which tempers "
+  },
+  {
+   "time": "2026-11-11T15:04+00:00",
+   "text": "Bought 75 CARL at 17.82 (cost \u00a31,007)."
   }
  ],
  "done": {},
@@ -444,10 +482,10 @@
   "max_open": 10
  },
  "start_value": 5000.0,
- "updated": "2026-11-11T15:01:46+00:00",
+ "updated": "2026-11-11T15:04:03+00:00",
  "day": {
   "date": "2026-11-11",
-  "buys": 0,
+  "buys": 1,
   "sold": {},
   "skip": {},
   "finished": false,
@@ -458,6 +496,15 @@
    "TTEC",
    "REZI"
   ],
-  "watch_sent": true
+  "watch_sent": true,
+  "claude": {
+   "CARL": {
+    "ok": true,
+    "reason": "Claude: catalyst (strength 4/5): Official Q3 release shows 65% revenue growth to $21.6m with full-year 2026 guidance raised to $78-80m, though the net loss widened and opex rose, which tempers "
+   }
+  },
+  "bought_list": [
+   "CARL"
+  ]
  }
 }
