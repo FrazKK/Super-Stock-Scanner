@@ -23,21 +23,21 @@
    "why": "Broke above its opening-range high ($17.50) at $17.51. In play: 0.6x normal volume, normally moves 7% a day. Stop $16.63. News (globenewswire): Carlsmed\u00ae Reports Third Quarter 2026 Financial Results and Raises Full-Year Guidance. Analyst upgrade too. Claude: catalyst (strength 4/5): Official Q3 release shows 65% revenue growth to $21.6m with full-year 2026 guidance raised to $78-80m, though the net loss widened and opex rose, which tempers ",
    "initial_stop": 16.634500217437743,
    "risk": 0.8755000114440925,
-   "high": 18.66,
-   "high_time": "2026-11-11T20:11:54.281742+00:00",
+   "high": 18.87,
+   "high_time": "2026-11-12T15:01:34.361587+00:00",
    "order_id": 57850394890,
    "entry_t212": 17.82,
    "unit": 1.0,
    "entry_local": 17.82,
    "cost_gbp": 1007.1,
-   "stop_local": 16.929,
-   "price_t212": 18.59,
-   "value_gbp": 1050.05,
-   "pl_gbp": 42.95,
-   "stop_order_id": 57850394925,
-   "stop_t212": 16.93,
+   "stop_local": 17.92692,
+   "price_t212": 18.87,
+   "value_gbp": 1068.36,
+   "pl_gbp": 61.26,
+   "stop_order_id": 57950055011,
+   "stop_t212": 17.93,
    "stop_breached": false,
-   "last_check": "$18.59 (+4.3%), high $18.66, stop $16.93"
+   "last_check": "$18.87 (+5.9%), high $18.87, stop $16.93"
   }
  ],
  "closed": [
@@ -148,14 +148,6 @@
   }
  ],
  "log": [
-  {
-   "time": "2026-11-02T15:08+00:00",
-   "text": "Bought 1,044 PLBY at 1.29 (cost \u00a31,003)."
-  },
-  {
-   "time": "2026-11-02T20:51+00:00",
-   "text": "Sold PLBY (about -\u00a315). End of day: sold 10 minutes before the close."
-  },
   {
    "time": "2026-11-02T20:51+00:00",
    "text": "Day trading finished: 1 trade(s), total -\u00a315."
@@ -467,6 +459,14 @@
   {
    "time": "2026-11-11T15:04+00:00",
    "text": "Bought 75 CARL at 17.82 (cost \u00a31,007)."
+  },
+  {
+   "time": "2026-11-12T15:01+00:00",
+   "text": "Watch list sent: none"
+  },
+  {
+   "time": "2026-11-12T15:01+00:00",
+   "text": "CARL: stop raised from 16.93 to 17.93."
   }
  ],
  "done": {},
@@ -483,29 +483,14 @@
   "max_open": 10
  },
  "start_value": 5000.0,
- "updated": "2026-11-11T20:38:05+00:00",
+ "updated": "2026-11-12T15:01:37+00:00",
  "day": {
-  "date": "2026-11-11",
-  "buys": 1,
+  "date": "2026-11-12",
+  "buys": 0,
   "sold": {},
   "skip": {},
   "finished": false,
-  "list": [
-   "FOSL",
-   "RSKD",
-   "CARL",
-   "TTEC",
-   "REZI"
-  ],
-  "watch_sent": true,
-  "claude": {
-   "CARL": {
-    "ok": true,
-    "reason": "Claude: catalyst (strength 4/5): Official Q3 release shows 65% revenue growth to $21.6m with full-year 2026 guidance raised to $78-80m, though the net loss widened and opex rose, which tempers "
-   }
-  },
-  "bought_list": [
-   "CARL"
-  ]
+  "list": [],
+  "watch_sent": true
  }
 }
