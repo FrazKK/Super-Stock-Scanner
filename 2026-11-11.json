@@ -1,0 +1,4601 @@
+{
+"date": "2026-11-11",
+"count": 299,
+"items": [
+{
+"source": "prnewswire",
+"title": "Investigation of MDGL Reminder: Madrigal Pharmaceuticals, Inc. Investors are Encouraged to Contact Kessler Topaz Meltzer & Check, LLP",
+"url": "https://www.prnewswire.com/news-releases/investigation-of-mdgl-reminder-madrigal-pharmaceuticals-inc-investors-are-encouraged-to-contact-kessler-topaz-meltzer--check-llp-302937005.html",
+"time": "2026-11-12T01:38:00Z",
+"tickers": [
+"MDGL"
+],
+"t212": [
+"MDGL"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-12T02:30:21Z"
+},
+{
+"source": "globenewswire",
+"title": "Glass House Brands Announces Change of Auditor",
+"url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQQ1dUeGh6QXZfVkJIai1KS2NROVI4U3ZrbzZwYmczbmp4Y08xWHpid1dPVFVWT091ZUpRZ2k3WnJoQlBXSV9YUkJFSUp3X1hxZENHZmFTdUFxTjJRQUxUMmc5c0poNGNWLWhsZW10TUxzSHc5S2swOXJkZHZMRjdpSE9RUjFZdlh3T2hzNHFHWDdHZkJBcXZIbjgxWkhSS3Nhekd5UlNnWUQxdzZDQ0UwVDJ0OTFBUTNyT3c?oc=5",
+"time": "2026-11-12T01:00:00Z",
+"via": "google-news",
+"tickers": [
+"GLAS"
+],
+"t212": [
+"GLAS"
+],
+"flags": [],
+"first_seen": "2026-11-12T02:30:21Z"
+},
+{
+"source": "prnewswire",
+"title": "Sempra Declares Common Dividend",
+"url": "https://www.prnewswire.com/news-releases/sempra-declares-common-dividend-302937057.html",
+"time": "2026-11-11T23:56:00Z",
+"tickers": [
+"SRE"
+],
+"t212": [
+"SRE"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-12T02:30:21Z"
+},
+{
+"source": "prnewswire",
+"title": "Ingram Micro Holding Set to Join S&P SmallCap 600",
+"url": "https://www.prnewswire.com/news-releases/ingram-micro-holding-set-to-join-sp-smallcap-600-302937055.html",
+"time": "2026-11-11T23:51:00Z",
+"tickers": [
+"INGM"
+],
+"t212": [
+"INGM"
+],
+"flags": [],
+"first_seen": "2026-11-12T02:30:21Z"
+},
+{
+"source": "prnewswire",
+"title": "Kodiak Sciences to Present at Three Upcoming Investor Conferences",
+"url": "https://www.prnewswire.com/news-releases/kodiak-sciences-to-present-at-three-upcoming-investor-conferences-302937051.html",
+"time": "2026-11-11T23:43:00Z",
+"tickers": [
+"KOD"
+],
+"t212": [
+"KOD"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-12T02:30:21Z"
+},
+{
+"source": "prnewswire",
+"title": "APP UPCOMING DEADLINE: Faruqi & Faruqi, LLP Reminds AppLovin (NASDAQ: APP) Investors of Securities Class Action Lawsuit Deadline on November 16, 2026",
+"url": "https://www.prnewswire.com/news-releases/app-upcoming-deadline-faruqi--faruqi-llp-reminds-applovin-nasdaq-app-investors-of-securities-class-action-lawsuit-deadline-on-november-16-2026-302936745.html",
+"time": "2026-11-11T23:40:00Z",
+"tickers": [
+"APP"
+],
+"t212": [
+"APP"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-12T02:30:21Z"
+},
+{
+"source": "globenewswire",
+"title": "Prairie Operating Co. Announces Third Quarter 2026 Earnings Release Date and Conference Call",
+"url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxPVEdrOERDODJGci0zLW9KdXBOQm85Y21jTXRPLURGcy1DVUhwVWdzTVZtbGdMRUFlZ0FtMk9FWmRuaVNKaHBXZHNKclJlWG9XbkFXUl9hYWtISkVKOHp5Z1JjNm9FbkM4X2Z4MWkzTDdvUm84SVV1RFJJZE01MWRqcU1RbUdVWnhsaTM5Q0hyMkxpYnFid0psSWRETWsyeER0MDJRbm9NMFZoVjJJMURTWUZ4WklpalBJN0JuVm9FdHRKU3FVUkVMb0NIOVJiOFF1OTcxN2lLV1pGTnkyUnBrR19BdDVaYlQtMFMwRm9PX1dHNm1CMnc?oc=5",
+"time": "2026-11-11T23:37:00Z",
+"via": "google-news",
+"tickers": [
+"PROP"
+],
+"t212": [
+"PROP"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-12T02:30:21Z"
+},
+{
+"source": "prnewswire",
+"title": "ARDX UPCOMING DEADLINE: Faruqi & Faruqi, LLP Reminds Ardelyx (NASDAQ: ARDX) Investors of Securities Class Action Lawsuit Deadline on November 16, 2026 Faruqi & Faruqi, LLP, a leading national securities law firm, is investigating potential claims against Ardelyx, Inc. (\"Ardelyx\" or the \"Company\")...",
+"url": "https://www.prnewswire.com/news-releases/ardx-upcoming-deadline-faruqi--faruqi-llp-reminds-ardelyx-nasdaq-ardx-investors-of-securities-class-action-lawsuit-deadline-on-november-16-2026-302936750.html",
+"time": "2026-11-11T23:15:00Z",
+"tickers": [
+"ARDX"
+],
+"t212": [
+"ARDX"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-12T02:30:21Z"
+},
+{
+"source": "prnewswire",
+"title": "Endava plc Class Action Reminder - Robbins LLP Encourages DAVA Investors to Contact the Firm for Information About Their Rights Shareholder rights law firm Robbins LLP reminds investors that a class action was filed on behalf of persons and entities who purchased or otherwise...",
+"url": "https://www.prnewswire.com/news-releases/endava-plc-class-action-reminder---robbins-llp-encourages-dava-investors-to-contact-the-firm-for-information-about-their-rights-302936961.html",
+"time": "2026-11-11T23:10:00Z",
+"tickers": [
+"DAVA"
+],
+"t212": [
+"DAVA"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-12T02:30:21Z"
+},
+{
+"source": "globenewswire",
+"title": "BCP Investment Corporation Announces Third Quarter 2026 Financial Results",
+"url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQbFA1N0F0UVRvb2cwV3lsNkFxLUl2T0RlSzFrdzVISmVXYWdMR3UteHlBNFJ6OS1iRFVPazdHY25tYWc4cUlHUXE0TkhISlg1ZmFjanZLWlVQbTFsZ1BxYnY0azlESEFOUE5IcmU1MGNHZFR1ZGhqVkpYREZtdUluSlR6U09vTldoR2FFUm1veHdxLWFpSkkwUm1fSzBrWXlXdjZDTDkyczFYTTFRYjlRVlpGTTRvUTBTeVFjcjVOUEZsNlN5M2pyYWd0VkhrTUx1a3pJTDNSbnIwOXItWEtsUTFB?oc=5",
+"time": "2026-11-11T23:07:04Z",
+"via": "google-news",
+"tickers": [
+"BCIC"
+],
+"t212": [
+"BCIC"
+],
+"flags": [],
+"first_seen": "2026-11-12T02:30:21Z"
+},
+{
+"source": "prnewswire",
+"title": "Tigo Energy Class Action Reminder - Contact Robbins LLP Before November 23, 2026 to Learn More About Leading the TYGO Class Action Shareholder rights law firm Robbins LLP reminds investors that a class action was filed on behalf of persons or entities who purchased or otherwise...",
+"url": "https://www.prnewswire.com/news-releases/tigo-energy-class-action-reminder--contact-robbins-llp-before-november-23-2026-to-learn-more-about-leading-the-tygo-class-action-302936955.html",
+"time": "2026-11-11T23:07:00Z",
+"tickers": [
+"TYGO"
+],
+"t212": [
+"TYGO"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-12T02:30:21Z"
+},
+{
+"source": "prnewswire",
+"title": "Lightwave Logic Investigation Notice: SueWallSt Notifies Investors of Pending Investigation Into Lightwave Logic (LWLG) Slower foundry process qualification cycles were the reason Lightwave Logic, Inc. (NASDAQ: LWLG) gave on November 10, 2026, for moving its start of...",
+"url": "https://www.prnewswire.com/news-releases/lightwave-logic-investigation-notice-suewallst-notifies-investors-of-pending-investigation-into-lightwave-logic-lwlg-302936946.html",
+"time": "2026-11-11T23:05:00Z",
+"tickers": [
+"LWLG"
+],
+"t212": [
+"LWLG"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-12T02:30:21Z"
+},
+{
+"source": "globenewswire",
+"title": "Investcorp Credit Management BDC, Inc. to Merge into BCP Investment Corporation",
+"url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQMl9pckFYalFxaWExb2xRVUhXUXJVczFNZms3VXQ1LWU5ZkZ6TEJLay13MmVLbFluTF9xWGkzek1kbTM3SG96bEJ0d2R0UDQxeTQ3NWtXVXdXS2IxWDd4dHRPV29Fbm1GZGlpdUI2aEktRXUwa3BHbDkzT2NPaWN3ajNCOGpTMVlzZDdWRzhUVFBVVWRhQ3dmcHVTWUFtX1VGWGo2Y0JsQVluZnB2NlpoLXVBXzd3clZKZ0h4Tlg2LWs2QktQYUp3aFZua1VMSVl2MjVMVW5HU3FUR2E0cldqSkIzOGE2NEU?oc=5",
+"time": "2026-11-11T23:00:00Z",
+"via": "google-news",
+"tickers": [
+"ICMB"
+],
+"t212": [
+"ICMB"
+],
+"flags": [],
+"first_seen": "2026-11-12T02:30:21Z"
+},
+{
+"source": "prnewswire",
+"title": "BrightView Investigation Notice: SueWallSt Notifies Investors of Pending Investigation Into BrightView (BV) BrightView Holdings, Inc. (NYSE: BV) shares fell roughly $1.70 per share, or nearly 15%, to open at approximately $9.73 per share on November 11,...",
+"url": "https://www.prnewswire.com/news-releases/brightview-investigation-notice-suewallst-notifies-investors-of-pending-investigation-into-brightview-bv-302936924.html",
+"time": "2026-11-11T23:00:00Z",
+"tickers": [
+"BV"
+],
+"t212": [
+"BV"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-12T02:30:21Z"
+},
+{
+"source": "globenewswire",
+"title": "AtlasClear Adds Ninth Correspondent to a Clearing Platform That Grew Revenue 85% in Fiscal 2026",
+"url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxOdEd4eXc5OFhpN0xDQXR1MjR1SHdlTm9vWUlWMDZTR3djRWtsRjBVdjg0RmZpdmp6QjVPSU5kbmV1NnFINVNyU1JudjhJQnZrN1dYMFFmYWJuYTVIdnN3aXo3Yll1OUswS25CZnBmRHNoRWVnaUwtajZxTlVrbmlKQk1zTE53blV2WmJKblU5Q3I5RGdyeGNlUU9jX3hFQWd6TjVOWkFBaVNqUW10eHlEcWt6b2JFYjNLdDA3aVFyOTIwQVVWTVJMRjZyYWpmRU96WXMzbmo3R2dkYXRraFlBaEFJdy1yaUxZYWJDc3p1MlZjSDNMQ1VDTE5B?oc=5",
+"time": "2026-11-11T22:58:22Z",
+"via": "google-news",
+"tickers": [
+"ATCH"
+],
+"t212": [
+"ATCH"
+],
+"flags": [],
+"first_seen": "2026-11-12T02:30:21Z"
+},
+{
+"source": "prnewswire",
+"title": "Integra Reports Third Quarter 2026 Results from Florida Canyon: Increase in Quarterly Gold Production and Strengthened Financial Position; Provides Operational Update Integra Resources Corp. (\"Integra\" or the \"Company\") (TSXV: ITR) (NYSE American: ITRG) is pleased to announce financial and operating results for the ...",
+"url": "https://www.prnewswire.com/news-releases/integra-reports-third-quarter-2026-results-from-florida-canyon-increase-in-quarterly-gold-production-and-strengthened-financial-position-provides-operational-update-302937029.html",
+"time": "2026-11-11T22:54:00Z",
+"tickers": [
+"ITRG"
+],
+"t212": [
+"ITRG"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-12T02:30:21Z"
+},
+{
+"source": "globenewswire",
+"title": "AppLovin Corporation (APP) Securities Fraud Class Action",
+"url": "https://news.google.com/rss/articles/CBMiuAJBVV95cUxQTkk3ZGtJLUpiVW56NzlweG10WVh0OEN1Xzk2UnFpQzlYZFZrUUJpaGplblBDeGZoeXJYSksxNVM0aXJNc0Z6cGVZaE5Ibkdvbmx3VXZET1NHanJJa3VKZmozV25SLVFQdE1OQUZfZ2RnV2UtWnd4WWE3WEcxWm44WDlncW9rRU1BaERkc1c5Mm1KT0lkX1djd3I2cFNHVnB5Y28tRDVybGZRX1ItSXdGb2VxSlNrMXk2NnBUVGxOQlhpeG1iRHNwc2xBb0xTeG1MZU1MQi04S0ZIOFEtbDQwM1JiTEwxQU41dkpkLXBrRk5PMm9LN3VNdmtwaW5rUHVvQnRqWE1fZWJvUUZsQng4LXp3d3EzS21pa2pqcnM2OHRWT2UxNDdFakdpSVFIZjVtZWNJQ3B2TTI?oc=5",
+"time": "2026-11-11T22:44:17Z",
+"via": "google-news",
+"tickers": [
+"APP"
+],
+"t212": [
+"APP"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-12T02:30:21Z"
+},
+{
+"source": "prnewswire",
+"title": "Franco-Nevada Reports Q3 2026 Results Franco-Nevada generated strong Q3 financial results. Revenue, cash flow and earnings were all higher than the prior-year period, driven by stronger...",
+"url": "https://www.prnewswire.com/news-releases/franco-nevada-reports-q3-2026-results-812447402.html",
+"time": "2026-11-11T22:30:00Z",
+"tickers": [
+"FNV"
+],
+"t212": [
+"FNV"
+],
+"flags": [],
+"first_seen": "2026-11-12T02:30:21Z"
+},
+{
+"source": "prnewswire",
+"title": "Franco-Nevada Reports Q3 2026 Results Franco-Nevada generated strong Q3 financial results. Revenue, cash flow and earnings were all higher than the prior-year period, driven by stronger...",
+"url": "https://www.prnewswire.com/news-releases/franco-nevada-reports-q3-2026-results-302936997.html",
+"time": "2026-11-11T22:30:00Z",
+"tickers": [
+"FNV"
+],
+"t212": [
+"FNV"
+],
+"flags": [],
+"first_seen": "2026-11-12T02:30:21Z"
+},
+{
+"source": "globenewswire",
+"title": "Avista Corp. Board Declares Common Stock Dividend",
+"url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPWVpWaFg4cmxOalV1cGhnZXBtTENnMnRpa1hNR0k0Ql8wVGhOcUFJSHRpR2JoZi1GbWtBLWNScnB0TnAxTENzR1pwV1dBbTRSc0RVeldIOXZ3MnZwV0w3VlhlWWJiNFFOdG9ULVlsbDVqOUllU2dIdG5TMVNadUxXUG9aUzVUSXZ2cFdyNEUyNnByOU9nV2hkMTFpWVdlS01Ib05ETGgzZ24tWW5Qc2VsWngzSDBxMExNMUdUVQ?oc=5",
+"time": "2026-11-11T22:29:59Z",
+"via": "google-news",
+"tickers": [
+"AVA"
+],
+"t212": [
+"AVA"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-12T02:30:21Z"
+},
+{
+"source": "prnewswire",
+"title": "Stoneridge to Participate in the Stephens Annual Investment Conference Stoneridge, Inc. (NYSE: SRI) today announced that the company will participate in the Stephens Annual Investment Conference, to be held November...",
+"url": "https://www.prnewswire.com/news-releases/stoneridge-to-participate-in-the-stephens-annual-investment-conference-302937014.html",
+"time": "2026-11-11T22:27:00Z",
+"tickers": [
+"SRI"
+],
+"t212": [
+"SRI"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-12T02:30:21Z"
+},
+{
+"source": "accessnewswire",
+"title": "Tecogen Reports Third Quarter 2026 Financial Results",
+"url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQVTNhZWJ1UWlLSHJZcHhWZTBrX2JWVGJrM1k1VDlsQ3dfMmp0aE5UV1lEUGM0ckRvUDRaZ2hWWVZreEZWVnJ3ZkNnV2JzR0g5NGVoNDN4YlZjeVBPTmNKTjZyd0tuUExXNFI3cnRXRzRZOTBab1ljN08xb3B2R2Y5eGhBTVBBamY0bGZKQ19GTEk1OFBJdWRNcHVxQzR6YkNoT2ZYNDNOS0ZGclNnSXlHRDIwZlhJclB5ZkVJUDUxVQ?oc=5",
+"time": "2026-11-11T22:20:00Z",
+"via": "google-news",
+"tickers": [
+"TGEN"
+],
+"t212": [
+"TGEN"
+],
+"flags": [],
+"first_seen": "2026-11-12T02:30:21Z"
+},
+{
+"source": "prnewswire",
+"title": "Kimberly-Clark Declares Quarterly Dividend The board of directors of Kimberly-Clark Corporation (NASDAQ: KMB) has declared a regular quarterly dividend of $1.28 per share. The dividend is...",
+"url": "https://www.prnewswire.com/news-releases/kimberly-clark-declares-quarterly-dividend-302937007.html",
+"time": "2026-11-11T22:17:00Z",
+"tickers": [
+"KMB"
+],
+"t212": [
+"KMB"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-12T02:30:21Z"
+},
+{
+"source": "accessnewswire",
+"title": "Vox Royalty Reports Q3 2026 Results and Declares Quarterly Dividend",
+"url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOdUowTk1rQkVQWGFod2plOFJfaEdnQXJ6endkNlE5RlJNWkxmejBMcFhKeEdxX0dnR3czLVhpM0ZPZ2hiQ0hETmpodW5jckdTeExTdVljdXE4bjBsUzVOcll4WVhXb1REdnpzSXBHMFVZMkJ3cTJEQXQxd2R1V2VvSkpJYkpXUU9ZMkYxaHlybG5CVUVZV2Ryek5RejVVY09pbWVpdmcxUmZYelhDRXRBOW9TVS1lSFRQdEhacy1XdUc5YWNaWGxoaUFLcmZjMHJYY0E?oc=5",
+"time": "2026-11-11T22:05:00Z",
+"via": "google-news",
+"tickers": [
+"VOXR"
+],
+"t212": [
+"VOXR"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-12T02:30:21Z"
+},
+{
+"source": "newsfile",
+"title": "New Found Gold Reports Q3 2026 Financial and Operational Results",
+"url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPVjFJSldzbDFQVXV6UjAwYUgzU000U3hMckZpM2hONFdWU3JTNS12OUpiSjlLNUJoenNQdmhxRHo4QlFEZlVaM3ByQ01ra0VHVlUwelFZa1VmRFJ1WGR2WWU0UVNzRmt4RGtFWEd3bVVWWVJYZVhNcnJnSjhhc0pOeGoxU2lSN3ZZeWpzekJVQjN0RXo1MDRRSXJOU2tGZnlHUnZTRmdjM0Y5SkhO?oc=5",
+"time": "2026-11-11T22:04:47Z",
+"via": "google-news",
+"tickers": [
+"NFGC"
+],
+"t212": [
+"NFGC"
+],
+"flags": [],
+"first_seen": "2026-11-12T02:30:21Z"
+},
+{
+"source": "globenewswire",
+"title": "Navient declares fourth quarter common stock dividend",
+"url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOcjU0SmM5TGdxVHdhZ1NKU0t2VWdKN054dUpvcHQtVEVVanpjci0tY0dyNTlFaHZ1MkVmRlBpZ25semk1RWtKUDUwZ3BlNnZaQnEwaFFrWF96Zk1wdUJPbUswekZtSGlwYWJEUU5jcnVZekZFMm5UMVY0Mjlnbkt4akZPbklla3EtbUZuSHMwZDY3eVYxdXFDM09yVkd4RzloRVVncTVnTVc0OE05anpaeFVHNExzYzVodnVDQlk5Z1k3Qjk2bk12aw?oc=5",
+"time": "2026-11-11T22:00:00Z",
+"via": "google-news",
+"tickers": [
+"NAVI"
+],
+"t212": [
+"NAVI"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-12T02:30:21Z"
+},
+{
+"source": "globenewswire",
+"title": "AutoZone to Release First Quarter Fiscal 2027 Earnings December 8, 2026",
+"url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxON3I1N0RmZXYxdDBkRl9BazRHbjRROXROT3dMMHZoZlhramgtcEhnVG1JNldFY2h1dl9KLWRxbTdEMmhXWFItajI0QTlvQjJnc2pnVzJ4WnN5eC1WTnp2bFVwUGxFY2hzS1FYSkFkX3R5N3FPWHFQcHlZLTlGZjJLZ3Q3V0FZRDVGTlJibkF5UzdseGV6a2dZZGotOTZvdEZMLUF4Vm4ycERkb0N0V3dtZFhRbnFFUXJ3WDRSXzZnR010N3VxVUVDdE8ydER5alBReWdxMl9ETG05ZG92UkE?oc=5",
+"time": "2026-11-11T22:00:00Z",
+"via": "google-news",
+"tickers": [
+"AZO"
+],
+"t212": [
+"AZO"
+],
+"flags": [],
+"first_seen": "2026-11-12T02:30:21Z"
+},
+{
+"source": "globenewswire",
+"title": "Ashland board authorizes quarterly dividend",
+"url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQUkJqSEV3VkM4aDlWS085dklhRWRRalA5SE9rY3NObUFxSjdGRU5yMTZCX1FIam9hSTRCalI0eVJoazN1bzdGd0E5YVpZcV9SbGV5dzJWcDFrNzlpY1hiNTFlRXZVUWdzamZnQUYwZXluYk5BMktxRTRkTHNHSzdVdjQtdFNiU3JWQUhmQjRnTDlvWmNnOUdaN1pWN0s1LVpDZHZLLTNyalBJcHp1M2U4OGxycFljZw?oc=5",
+"time": "2026-11-11T22:00:00Z",
+"via": "google-news",
+"tickers": [
+"ASH"
+],
+"t212": [
+"ASH"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-12T02:30:21Z"
+},
+{
+"source": "prnewswire",
+"title": "Novavax to Participate in Jefferies London Healthcare Conference Novavax, Inc. (Nasdaq: NVAX) today announced that company management will participate in the following upcoming investor conference: Jefferies London ...",
+"url": "https://www.prnewswire.com/news-releases/novavax-to-participate-in-jefferies-london-healthcare-conference-302936885.html",
+"time": "2026-11-11T22:00:00Z",
+"tickers": [
+"NVAX"
+],
+"t212": [
+"NVAX"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-12T02:30:21Z"
+},
+{
+"source": "prnewswire",
+"title": "Allison Declares Quarterly Dividend Allison Transmission Holdings Inc. (NYSE: ALSN), a global leader in high-performance mobility and work solutions built for the needs of the modern...",
+"url": "https://www.prnewswire.com/news-releases/allison-declares-quarterly-dividend-302936729.html",
+"time": "2026-11-11T22:00:00Z",
+"tickers": [
+"ALSN"
+],
+"t212": [
+"ALSN"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-12T02:30:21Z"
+},
+{
+"source": "prnewswire",
+"title": "Corteva Reports Third-Quarter 2026 Results; Updates FY 2026 Outlook",
+"url": "https://www.prnewswire.com/news-releases/corteva-reports-third-quarter-2026-results-updates-fy-2026-outlook-302936913.html",
+"time": "2026-11-11T21:30:00Z",
+"tickers": [
+"CTVA"
+],
+"t212": [
+"CTVA"
+],
+"flags": [],
+"first_seen": "2026-11-11T21:41:21Z"
+},
+{
+"source": "prnewswire",
+"title": "Cardinal Health Board of Directors Approves Quarterly Dividend",
+"url": "https://www.prnewswire.com/news-releases/cardinal-health-board-of-directors-approves-quarterly-dividend-302936942.html",
+"time": "2026-11-11T21:30:00Z",
+"tickers": [
+"CAH"
+],
+"t212": [
+"CAH"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-11T21:41:21Z"
+},
+{
+"source": "prnewswire",
+"title": "Vylor Reaffirms Full-Year Guidance on Strong YTD Results, Advances Leading Technology",
+"url": "https://www.prnewswire.com/news-releases/vylor-reaffirms-full-year-guidance-on-strong-ytd-results-advances-leading-technology-302936902.html",
+"time": "2026-11-11T21:30:00Z",
+"tickers": [
+"VYLR"
+],
+"t212": [
+"VYLR"
+],
+"flags": [],
+"first_seen": "2026-11-11T21:41:21Z"
+},
+{
+"source": "prnewswire",
+"title": "Adecoagro S.A.: Adjusted EBITDA reached $471.8 million in 9M26, reaching an all-time high for a nine-month period. Monthly records set for urea and ammonia production and strong cane productivity.",
+"url": "https://www.prnewswire.com/news-releases/adecoagro-sa-adjusted-ebitda-reached-471-8-million-in-9m26--reaching-an-all-time-high-for-a-nine-month-period-monthly-records-set-for-urea-and-ammonia-production-and-strong-cane-productivity-302936947.html",
+"time": "2026-11-11T21:30:00Z",
+"tickers": [
+"AGRO"
+],
+"t212": [
+"AGRO"
+],
+"flags": [],
+"first_seen": "2026-11-11T21:41:21Z"
+},
+{
+"source": "prnewswire",
+"title": "Castle Biosciences to Present at the Piper Sandler 38th Annual Healthcare Conference",
+"url": "https://www.prnewswire.com/news-releases/castle-biosciences-to-present-at-the-piper-sandler-38th-annual-healthcare-conference-302935495.html",
+"time": "2026-11-11T21:30:00Z",
+"tickers": [
+"CSTL"
+],
+"t212": [
+"CSTL"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-11T21:41:21Z"
+},
+{
+"source": "businesswire",
+"title": "FIS to Present at Upcoming Conference",
+"url": "http://www.businesswire.com/news/home/20261111448010/en/FIS-to-Present-at-Upcoming-Conference/?feedref=JjAwJuNHiystnCoBq_hl-WsGkFyUNMTSNrPsg57HLEqqcp-o_pnudlUwsb5apQ1S4gUE65BTfjH3-pSuqdv0gW3cb3F4oTIgUqCPafFkgu5AneicJQDNboWvodvG82E0",
+"time": "2026-11-11T21:30:00Z",
+"tickers": [
+"FIS"
+],
+"t212": [
+"FIS"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-11T21:41:21Z"
+},
+{
+"source": "globenewswire",
+"title": "Brown & Brown, Inc. earns 2027 Military Friendly\u00ae Employer designation and Silver Award",
+"url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOZmRFdVl0R0tESkJOdm00R1EzS0RhTi1TN2daRGEyLVNfTFNpMndUajFuTHZSa3pHMkNXeDRpZXRMdUhUaDVQT2FiOUhETVFUTjVHRjBWSlUtNTlLMjJDY1RRYWIzZGJzU3ZwVFBhVnRIcDlmWTNvRURHVDJHTi1Zb1JiWDlJbnN4OTZRZmVHZWw2elZwVUQ2RTM0RlpmemtRLXdQRVFROVRydFVQU1dVMXdFVDg3cHJmZjFheXUxYy1vcE9hdy1ESzlZZEhPZmhHVFBPRTFWUWd2WGRVZ2w1UkpqeGJ3UmJrOWc?oc=5",
+"time": "2026-11-11T21:30:00Z",
+"via": "google-news",
+"tickers": [
+"BRO"
+],
+"t212": [
+"BRO"
+],
+"flags": [],
+"first_seen": "2026-11-11T21:41:21Z"
+},
+{
+"source": "globenewswire",
+"title": "Star Equity Holdings Reports 2026 Third Quarter Results",
+"url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNaHhOYm5WSlh0clhOS2lvSkthX25rSjRlOGMzMXdmX1ZLZjFHb3p4R2d3Qk9mSl9uMG1tb1pWOG9OdDR0cEplV2xzWW0taWl2X0VOc21SUG1yS3RlT0lTV1dNM3A2OVhvUWw5MXNpaUsyejFiVUhEblhKT05Bb3JldExFdE04dU00SmRpMGhEVjZaWE53RGVoS3BvV0N5QmVENEZQQWw4Q0pVZmUwWDlFUm5HZEE2d0pRS0FiWUVXS1o0QUJpSjBXTndDYw?oc=5",
+"time": "2026-11-11T21:30:00Z",
+"via": "google-news",
+"tickers": [
+"STRR"
+],
+"t212": [
+"STRR"
+],
+"flags": [],
+"first_seen": "2026-11-11T21:41:21Z"
+},
+{
+"source": "prnewswire",
+"title": "CAE reports second quarter fiscal 2027 results (Nasdaq: CAE) (TSX: CAE) - CAE Inc. (CAE or the Company) today reported its financial results for the fiscal second quarter ended September 30, 2026. ...",
+"url": "https://www.prnewswire.com/news-releases/cae-reports-second-quarter-fiscal-2027-results-302936965.html",
+"time": "2026-11-11T21:30:00Z",
+"tickers": [
+"CAE"
+],
+"t212": [
+"CAE"
+],
+"flags": [],
+"first_seen": "2026-11-11T21:41:21Z"
+},
+{
+"source": "prnewswire",
+"title": "Nauticus Robotics, Inc. Announces Date for 2026 Third Quarter Earnings Conference Call",
+"url": "https://www.prnewswire.com/news-releases/nauticus-robotics-inc-announces-date-for-2026-third-quarter-earnings-conference-call-302936830.html",
+"time": "2026-11-11T21:28:00Z",
+"tickers": [
+"KITT"
+],
+"t212": [
+"KITT"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-11T21:41:21Z"
+},
+{
+"source": "globenewswire",
+"title": "Solana Company Reports Third Quarter 2026 Financial Results",
+"url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPTjEybTFqb3ZPQ0dNQm1LUmFUVFp0SURPdDc1ZGY0WnRCRzF4V0M5WGNrVWxxM0tZYV9kZEE4dFA3cnhLV1RRajJPSVJjdnZHa3pTc3g1cFBaM0s1b0tkOTNGY0JVTUktV0J3R2VZaHUxNUU0a0Y0WTdQdWVrRkQ3VGNqUWVUQWhMU2VoRTRfM3JjYmpxT0JldnRvUTNqRmM1Mm02WXVpOFAtVG8td1JhMGtFRHJjMnhKR3VvQzltR3RjRFdBcVNHQXh0WQ?oc=5",
+"time": "2026-11-11T21:25:00Z",
+"via": "google-news",
+"tickers": [
+"HSDT"
+],
+"t212": [
+"HSDT"
+],
+"flags": [],
+"first_seen": "2026-11-11T21:41:21Z"
+},
+{
+"source": "globenewswire",
+"title": "Okeanis Eco Tankers Corp. \u2013 Key Information relating to Q3 2026 dividend",
+"url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNajJrWDJpOTBRb0NnOUQ2N1ctbVZhNTN5c3JQRl9ydGw2dEFZSVpYZHo5M3dSbDhyS3RhY09PUnZuMHpaTGxFRXU3TlNmQi1ZMVhFaUgzZjVNZHhaeHJXTG5lX3JRMDh1al9rYlhhT2dqUGg3emMtcDlpNy0wZXVjN2tCNGdiQzlWemRDTFlkRE9tOWoyRXc4dWZob1d5c2U2LTBySWdSNm9yQU9McGlTR0FwS3VBVmdlTnd3dnhmLTREOW1xenhObFJkUlJpWDlqaDNjem1Ta1Y?oc=5",
+"time": "2026-11-11T21:20:00Z",
+"via": "google-news",
+"tickers": [
+"ECO"
+],
+"t212": [
+"ECO"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-11T21:41:21Z"
+},
+{
+"source": "prnewswire",
+"title": "Nektar Therapeutics to Participate in Two Investor Conferences in November",
+"url": "https://www.prnewswire.com/news-releases/nektar-therapeutics-to-participate-in-two-investor-conferences-in-november-302936871.html",
+"time": "2026-11-11T21:15:00Z",
+"tickers": [
+"NKTR"
+],
+"t212": [
+"NKTR"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-11T21:41:21Z"
+},
+{
+"source": "prnewswire",
+"title": "Huntsman Announces Fourth Quarter 2026 Common Dividend",
+"url": "https://www.prnewswire.com/news-releases/huntsman-announces-fourth-quarter-2026-common-dividend-302935643.html",
+"time": "2026-11-11T21:15:00Z",
+"tickers": [
+"HUN"
+],
+"t212": [
+"HUN"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-11T21:41:21Z"
+},
+{
+"source": "prnewswire",
+"title": "CPC Biotech Launches the Quattroflow HTX All-in-One Pump Drive for Bioprocessing",
+"url": "https://www.prnewswire.com/news-releases/cpc-biotech-launches-the-quattroflow-htx-all-in-one-pump-drive-for-bioprocessing-302936614.html",
+"time": "2026-11-11T21:15:00Z",
+"tickers": [
+"DOV"
+],
+"t212": [
+"DOV"
+],
+"flags": [],
+"first_seen": "2026-11-11T21:41:21Z"
+},
+{
+"source": "globenewswire",
+"title": "Alvotech Announces Financial Results for the Nine Months to September 30, 2026, with a Business Update",
+"url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxQMFNLLVFqd0NxR19INTR3a3BzOEpiQk9zSF9iZWpzTFVFNGdVSktJOTNwOEtpUDlSdVRibU9rMkRkVVhRc0lUTzhRT3pYenlDZnpaYTRYRTRRWmFrS2dRNTdXTXg4dGZ6RkxsQVU4c25kc2g1WlJxMVV3Wm5keUtzLUh0dXI5RHlJVEt4VGNPZ002QW5CM24ySnBFMGgxNDF1T0ZFVDBMWGtkMDBQTzk0Q3FrT3VfYnU4SUhxbHlSZzFMQlVjc1BPbDV1QkdwUXpPd3hxbjlLb1hELTFkcnpxT3VpYnFxbnRfX1pGSGVGdExZaVJaOUM1VkQ1cmZFYWxIb0E?oc=5",
+"time": "2026-11-11T21:15:00Z",
+"via": "google-news",
+"tickers": [
+"ALVO"
+],
+"t212": [
+"ALVO"
+],
+"flags": [],
+"first_seen": "2026-11-11T21:41:21Z"
+},
+{
+"source": "globenewswire",
+"title": "Milestone Scientific Schedules Third Quarter 2026 Financial Results Conference Call",
+"url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQVmdmSTVtY3U0SkE5QmpNaTVfT3k1czZISjdBZl95WGUyMjY2RzJzd0ticjJGYi1GYzVhNlhiRTdtOWc5a0ROanJ4NlJiaVdiS3h2cmZQRmtoZXVOVzYwcW5mZnd2RW9MZUlHUkgtQmVjcUtRX1NTMnNZZ1N5ZHBUR2lPYkVRMTdydTdXSU84aFZQb1h5SlhmTVJHVi1JR1ZKODdnTnU4bERGQ3k4cHNBcjd1bEpGV0hLa2hKcGdWdUQyQlQwMVdMTU1mNkdhWnlBTlZOX2Jsem9acjJ6YVZrUlhLX0hRb014UFJTS09YcXk?oc=5",
+"time": "2026-11-11T21:15:00Z",
+"via": "google-news",
+"tickers": [
+"MLSS"
+],
+"t212": [
+"MLSS"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-11T21:41:21Z"
+},
+{
+"source": "globenewswire",
+"title": "StablecoinX to Report Third Quarter 2026 Financial Results",
+"url": "https://news.google.com/rss/articles/CBMisgJBVV95cUxQYkVJUlhUSzF6UjFVMGZmOW1tOVFpa2QxTGlZRDNRT1RfeDRJcmdLT0lEbkhXc015S25mcTRmTHVWdkU1bl9GbVdCWkNXSGpJRFN0UHBNZHBob2lna0xaT2VwaUVyREhybk1nWmZkMDB2eHlTMXNpaTFVemNVQ1VSb010b29KTVRVcU82RkdyU29icGc3RkkxaGg4amtyM3hTcFQ4WWFoZHJWYV9Va3piaXlwNzd2TkFWNm0wSWl0SFRjR2xZZFk3cHROYXMycTZlUnZRRXN1TDhldVc0ZHpZX0Vka1FvVmJKdTlqRmxiU2M2bm9YR0ZVdlpZajRpcVZzMkJHRHNESmVlcnVla3NTYzA1ZmJmOVh2VlFQREVONkFiQmFvNmFVcDRua0tqVUxxc3c?oc=5",
+"time": "2026-11-11T21:15:00Z",
+"via": "google-news",
+"tickers": [
+"USDE"
+],
+"t212": [
+"USDE"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-11T21:41:21Z"
+},
+{
+"source": "globenewswire",
+"title": "Okeanis Eco Tankers Corp. \u2013 Unaudited Condensed Financial",
+"url": "https://news.google.com/rss/articles/CBMilAJBVV95cUxQQUNTWDlFc2dRbURRZ1dFQlUyNTNBV3dFWXYxU2hLRTBqQTBXbnktMXd4OTMtZ2JiN2VMSFByN05CYmYwYmZQWUNqMS12Ui02NGpLd3lxNjM3MGI5R2JRMk15TEV5WldnTFByS0RHZElfTGlObGpVaTFUWG5QWnhNWmhoa1pSZmpiV0tMVzZPYVhCUXFfbF9hem1SbGZVMHoybF9GbndERHdib2xhRExHQUFnamNjZWxSakZjY0FDYUY2eGltVXhlOGYxNmVWOU52MmRwMDlqdzJsMEw5bzhrNVdMQ1doQWtwS2RaeGw5d2YzQ1VOTTF4YzRRUmY1RkNBRTlNZW5uZV9KZWFOQmJhczI1RmY?oc=5",
+"time": "2026-11-11T21:15:00Z",
+"via": "google-news",
+"tickers": [
+"ECO"
+],
+"t212": [
+"ECO"
+],
+"flags": [],
+"first_seen": "2026-11-11T21:41:21Z"
+},
+{
+"source": "prnewswire",
+"title": "AMH Announces Distributions",
+"url": "https://www.prnewswire.com/news-releases/amh-announces-distributions-302936933.html",
+"time": "2026-11-11T21:10:00Z",
+"tickers": [
+"AMH"
+],
+"t212": [
+"AMH"
+],
+"flags": [],
+"first_seen": "2026-11-11T21:41:21Z"
+},
+{
+"source": "globenewswire",
+"title": "Maris-Tech Announces Receipt of Nasdaq Minimum Bid Price Notification",
+"url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOcDlTak8wMEtJTTM3UGl5MWRLVUppZHhlMWhNaWRKWk1oazVaMW9EU2swN2U5bDdsejUzdXloZ2JaTHhLekpuZXB5MmJobEJ3eGRpMmFhWnVIRENlMkFZbndQVDA3VzFwdGI2ZGxxY1NneFJ2ekRldzRNRFBpSXZaa0E2N1pmaG9ZRjF6Y0pEU0N2N1l5bjFpQW9aM1lVVGNWc1ZIUW9jWHEtMXhOVEprbk9rd0l2bE1YbHZKVlZ3bGd4ZTl6blFoa0lwR0VRTERJOVcweDlqdU4?oc=5",
+"time": "2026-11-11T21:10:00Z",
+"via": "google-news",
+"tickers": [
+"MTEK"
+],
+"t212": [
+"MTEK"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-11T21:41:21Z"
+},
+{
+"source": "globenewswire",
+"title": "EZCORP Reports Fourth Quarter Fiscal 2026 Results",
+"url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOU0hoVDJkOVpaN3BmUEVja0lNckcyejZIQTNaQXZ5LVlDbkxsMm5oQ1F0OUFtazJBLWRmTUxBVG5zYi05RXRlSUpqbFdzTUtpMjhuVnlhdlJJelRoUWNMbjdURzlMZlVhZGc4QVRiODMycVpSZmNURk51VU9JNTJnYlF0UDY3RURVRV8zdkZTaEtRMHpxS01BTHNUenl2cmtPa1BFRVpPLTIxYllhb3lmdW5KWjI5akxDdGhfbFR0dlNUVnc?oc=5",
+"time": "2026-11-11T21:09:18Z",
+"via": "google-news",
+"tickers": [
+"EZPW"
+],
+"t212": [
+"EZPW"
+],
+"flags": [],
+"first_seen": "2026-11-12T02:30:21Z"
+},
+{
+"source": "globenewswire",
+"title": "OR Royalties Declares Fourth Quarter 2026 Dividend",
+"url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPd1FhekZUckZidU83eDBkcmlKcmo5Yy1jN2RPeWpSaHIzSVFDT05yRFpGSmtzQi1ieE1POHBJRE1RRTVhWjFlaGV1NTJDQU1rNWdZeVNwbDloVVlOT2EyR0hVaEgtYy1VQUhNZWV2eTNaRHN4b0dGYWVQZElrNnJENzg4eGt6ZC1jOHVFY0wtcjRVdENua3NlQUpCOEJiU0ZLVnFTUGY1RFJTWGJIX0g0WWloWVMwV09vMzROSGxudw?oc=5",
+"time": "2026-11-11T21:07:47Z",
+"via": "google-news",
+"tickers": [
+"OR"
+],
+"t212": [
+"OR"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-11T21:41:21Z"
+},
+{
+"source": "businesswire",
+"title": "Digi International Reports Fourth Fiscal Quarter and Full Year Fiscal 2026 Results",
+"url": "http://www.businesswire.com/news/home/20261111846753/en/Digi-International-Reports-Fourth-Fiscal-Quarter-and-Full-Year-Fiscal-2026-Results/?feedref=JjAwJuNHiystnCoBq_hl-WsGkFyUNMTSNrPsg57HLEqqcp-o_pnudlUwsb5apQ1S4gUE65BTfjH3-pSuqdv0gW3cb3F4oTIgUqCPafFkgu5AneicJQDNboWvodvG82E0",
+"time": "2026-11-11T21:07:00Z",
+"tickers": [
+"DGII"
+],
+"t212": [
+"DGII"
+],
+"flags": [],
+"first_seen": "2026-11-11T21:41:21Z"
+},
+{
+"source": "prnewswire",
+"title": "The Andersons to Present at Stephens Annual Investment Conference",
+"url": "https://www.prnewswire.com/news-releases/the-andersons-to-present-at-stephens-annual-investment-conference-302936916.html",
+"time": "2026-11-11T21:05:00Z",
+"tickers": [
+"ANDE"
+],
+"t212": [
+"ANDE"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-11T21:41:21Z"
+},
+{
+"source": "businesswire",
+"title": "F5 to Participate in Upcoming Financial Conference",
+"url": "http://www.businesswire.com/news/home/20261111169621/en/F5-to-Participate-in-Upcoming-Financial-Conference/?feedref=JjAwJuNHiystnCoBq_hl-WsGkFyUNMTSNrPsg57HLEqqcp-o_pnudlUwsb5apQ1S4gUE65BTfjH3-pSuqdv0gW3cb3F4oTIgUqCPafFkgu5AneicJQDNboWvodvG82E0",
+"time": "2026-11-11T21:05:00Z",
+"tickers": [
+"FFIV"
+],
+"t212": [
+"FFIV"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-11T21:41:21Z"
+},
+{
+"source": "globenewswire",
+"title": "Datadog to Present at Upcoming Investor Conferences",
+"url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQSVhiZXBOcjZRS1NSNjZaLUp2azdXZzdzTHFpd2otbUNQMXZGeDhTaTJYTVZNRTJ6WkVKM2h6Y1lGQkpGMC1Ua25fX2Y2Mi1zTm52Njc5ZHp6Mk9OcmE3T0h0X2YzTXR1ckNIRmFJTVlwUDVMWjBZZE5tMnhTUldRYXI5OGpmc0ZaUzhFUDF2MzVxNEd3eURna19Oc3BrdjE3LU1uV25IaHQ5MnNMRFNhbTA0dHVUWnppWm9icXUzUWk?oc=5",
+"time": "2026-11-11T21:05:00Z",
+"via": "google-news",
+"tickers": [
+"DDOG"
+],
+"t212": [
+"DDOG"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-11T21:41:21Z"
+},
+{
+"source": "globenewswire",
+"title": "Teekay Tankers Ltd. Reports Third Quarter 2026 Results; and Declares Dividend",
+"url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPR3hfTFdGVk8wbEhPckJfQnhrckl0MF94Y1R1RmxnY2g2ZldWWDhDVV9iSm0xNFlQUk1DOHY0R3lqbzVoaEtmbW9CbWxMb0RaQkRqNXZvcFNIa185RHl0QlFwZ0ZBRFZZVXVjYzk4bWZkd29QOTB1SWE2a0tkYW1uZ05IX0pQelZUQ1RpYUNOV3hEZHU0M1dHN3ozUW0yOGhHWEI0SXBPUnFPX1ZSWkpxNkJ6OWh1VXhYWWdnTW80eTNnVWhhenR6N2NMbmZWZzBSQS1mb2xWaGg2SGV5b1B2TA?oc=5",
+"time": "2026-11-11T21:05:00Z",
+"via": "google-news",
+"tickers": [
+"TNK"
+],
+"t212": [
+"TNK"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-11T21:41:21Z"
+},
+{
+"source": "globenewswire",
+"title": "Vivani Medical Reports Third Quarter 2026 Financial Results and Provides Business Update",
+"url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxNbC1hQmxEU1ZIT2tHY0VWVWtFRHA0VWU2ajVrTDlxUFpnRjJ1OGNsNXBGZ0hUOEJoZjhrell2czNZYnFXYkVMd2E4aE1NbU9pa0ZxMmd0b0xEVlRTUXppdUlFUkZxdzlsM0lPNy1panJVSE11T0VwTTMyb1o5elFoakZKVER4Ni1ycDZ0QklrS1ViaHJ6Y3RCX1M0dHQ3Mjlrb1pFV0NuY0hxYmtURmpjOU95VzJuUDF2cHNDQ1lYR3pNT2sxQ3d4eE5iaGRLUUJqRWtwcE02QlZHM0wyTkNqYnNfd1V1eklXd0JwaVA5VUIxUQ?oc=5",
+"time": "2026-11-11T21:05:00Z",
+"via": "google-news",
+"tickers": [
+"VANI"
+],
+"t212": [
+"VANI"
+],
+"flags": [],
+"first_seen": "2026-11-11T21:41:21Z"
+},
+{
+"source": "globenewswire",
+"title": "InspireMD Announces Updated Timing for Third Quarter 2026 Financial Results",
+"url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPLXB3alVWLTYtZ1hkV3A1NDE1cXlTdkxXNEVONVBQZTRsQXdORDlKc3dJcTNDMmRGdjFaYXBILThLdzZfd1BkUF9ScE5idUo5QVNpNC1pbllqbWxhV24wOXFKbS1UZ1UwdW1wWGRjZFNvMjNiaGJTam5QZDhIbmVRWGEtNzg1bTgzNEpxcVRETlIzRE4zOS1YZGptWXhRTDBEVGJuSFN2QV9MdFQtbzZReWx1MnREemNrX2N6MnNKbWc5bGtCN0dZbUEyNS0zMEtRaUs2bFAyZE5temJZX2VieQ?oc=5",
+"time": "2026-11-11T21:05:00Z",
+"via": "google-news",
+"tickers": [
+"NSPR"
+],
+"t212": [
+"NSPR"
+],
+"flags": [],
+"first_seen": "2026-11-11T21:41:21Z"
+},
+{
+"source": "globenewswire",
+"title": "Orion Group Holdings Appoints Mark A. Handley to Board of Directors",
+"url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNdDBCX09MVVdWUUFYejRuZ3ppNjMyOE9lbHdmX0VmUUNKdVFpQkxXdjZubnU5MmdyWnRjZE1Hb1AyUWQ1UnFwRGlOSEEzejdTMzNHclVNOGxGN3VJUUlMcXplNVZaNElhMjhLMEtBcUlfTXo3Nmw5YTNSSzdyZlIwMGVDUEVXSkE1VVE0VVY3VU14cnZGdjlvUXhHb1VXYXJfWHM1b1g3cUpoTE5xSlNsbWtXMkhjUC1LRU1wR2ZTemxLV0dNU3BMaFhGblZzdTl2M3gwWFhhRXg?oc=5",
+"time": "2026-11-11T21:05:00Z",
+"via": "google-news",
+"tickers": [
+"ORN"
+],
+"t212": [
+"ORN"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-11T21:41:21Z"
+},
+{
+"source": "globenewswire",
+"title": "Ellomay Capital Announces 2026 Annual General Meeting of Shareholders",
+"url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOenk5UENMOUs3bmczTjdRbjlCUldJNDh6Z3lzNEhNTXRuRlJ6NENsNFFoRVI0aHRTQTBGRWZQblNLX0ZpRW12b09adDZ5UDYyOFlpcWhtN2NYVDU1S01FSERZWXJwUV80NFl6Y0ZyWTVUMUdPenBuc3NKVUotSzhBc3BJUHJKal93NFoxSEFWSGdQNkVma2w1aXVfTVdJdS1fZU9JZWtCQ09HNEN0Zm16VXJmc0NhSUtGWnlKYkkyWGg1Z0VuTkQyY2RoMU42c3c3a0V6WjlLQmE?oc=5",
+"time": "2026-11-11T21:05:00Z",
+"via": "google-news",
+"tickers": [
+"ELLO"
+],
+"t212": [
+"ELLO"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-11T21:41:21Z"
+},
+{
+"source": "globenewswire",
+"title": "Teekay Corporation Ltd. Third Quarter 2026 Update",
+"url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNRlBfSnZCdmtzcHZreE5rMzdwVi1RWUk1cGdpQ2JuUVlGWTNESFdjN2JVOVBCX3ZaVlp4Q1AzS2FRNEZKbmtUamdnaklvN3VpZWtUc0RZaHJkMElqN203MUJCa3RVa0s5WE9WWjlhLVJFYi04bENQWG5rb0VVd0pJdU9BX2Y2aEtFVHBXSzlidERkSWtrdUlpbkVGeGpGRGJTZFA0VWNCdGFpNkpvZGFBR3dteFo4S2tmVG9oWA?oc=5",
+"time": "2026-11-11T21:05:00Z",
+"via": "google-news",
+"tickers": [
+"TK"
+],
+"t212": [
+"TK"
+],
+"flags": [],
+"first_seen": "2026-11-11T21:41:21Z"
+},
+{
+"source": "globenewswire",
+"title": "AirSculpt Technologies Announces First-Ever Nationwide Open House Event, \"The Gift of Body Confidence\"",
+"url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxPVFNuVXZ2YV9ycUNDbTdWUk5iNVpYUTd1TmswRXA5X0Z2aS1PR1VCOHhrQXdWOVVTMUdHc0RxMTdsdmtyNVg4V1p0WGdSNW1CY21EbFBGcHpCanhRQVBESUlMSEhrV0lyT0ZZYmotN1NsdXlFNEJ1RVVBVTlvX1NydDRuNUlyaE9yLVA4REFJM1hXYmpPd0EtV3dHUUhGS1QyUk5vdVpJWjFiNVhqWGFBS0xXeVdEbzUxeFhmYnlUYmNQdEJvVS1JN0syWFpZbVhac0xZWVUzT3R1ZlR3ZExPYVM4aDhZTHNhVUF4UHg2RWNGMVgtUWVPUVpzYTY5M095?oc=5",
+"time": "2026-11-11T21:05:00Z",
+"via": "google-news",
+"tickers": [
+"AIRS"
+],
+"t212": [
+"AIRS"
+],
+"flags": [],
+"first_seen": "2026-11-11T21:41:21Z"
+},
+{
+"source": "globenewswire",
+"title": "iRhythm Announces Approval of $200 Million Share Repurchase Program",
+"url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOaVhFYThOQzFxZ3R2N29aVk1MU09ONXE2bzZBY2ZPUjdZQ3kzMDBORXdHc1h6UDd4ZFJSSjdPNldDU2tpVTMtRGJpZlRlRjFkSFQzRzI1NnNOU3dBQ3FFeFp0bk1UZ1RfZ0V5SFA1WGZraGtlM2tLZ0FleGtka1NhcXJPdWN3Q0NTdmJCOWpNWG5IWVFPT2RBTUtmWXBWZzhiMkFDMWJYQXNQeml1S04xUkdtcEVyUER2bG9vMXJEaFBNWW5NOVhMUHhNOGJsZGVoVHFDZw?oc=5",
+"time": "2026-11-11T21:05:00Z",
+"via": "google-news",
+"tickers": [
+"IRTC"
+],
+"t212": [
+"IRTC"
+],
+"flags": [],
+"first_seen": "2026-11-11T21:41:21Z"
+},
+{
+"source": "globenewswire",
+"title": "Oncolytics Biotech\u00ae Announces Clinical Supply Agreement to",
+"url": "https://news.google.com/rss/articles/CBMiywJBVV95cUxONHY3OG90UDAyLWVfZ1lma0FWZGcyT0NWZG9aMy1GY1Y0Zl92N08wcXFtcDNPVk9PZldCVElNb05RcVZZdXhOckFwU0NVdS11ZWZkdkdjRWhBTUVRNHFTd3B3ZHprbkwyc0xiVTVTa2FNd0s0QmR4cklLLWtodG82S2lnd3VybVZEbXdBcUdlMnppNTExWmFZV1Z3ajlfQ0JIMzZJWWh5VGY5aTZzTllXMmctZUpGOVJnRWQ2bmJ4MEZ0Z1BIU0szNkdEWGJld2VrSXdmMzMxQW14elpEaHAtRkp4S19Pd2FsT2pVN2lxcncydWJvN1dtZFZ0aEc1TGQxVUFUU3AyS0RTV25FZFFBZ2I5em5GX2tXbzJZN0hNRi1Lc1B6TDVqa0wtZFFKYjZGck10bkwzTGZDN0VnWHJuMnY3cUNQVllwbGhN?oc=5",
+"time": "2026-11-11T21:05:00Z",
+"via": "google-news",
+"tickers": [
+"ONCY"
+],
+"t212": [
+"ONCY"
+],
+"flags": [],
+"first_seen": "2026-11-11T21:41:21Z"
+},
+{
+"source": "globenewswire",
+"title": "Beyond Air Reports Financial Results and Provides Corporate Update for the Quarter Ended September 30, 2026",
+"url": "https://news.google.com/rss/articles/CBMiigJBVV95cUxNdTlSR1RqNXFrZmVrRENpNVpCN294RUtwOWdFaXE0OXJtQkdiazQ1azVTTVhGcGpESjNOYllGSXRrNlRiWEdhSUJ1TV9mWkZjaTZPY2w1bE9pY2Zpcl9rcV9nLVY0d0Jyc2NjWGpjMUF1dGxoamVDVERwRTNNRU9wVUtZNTNCMWl0NHZkbVpDSk5UNkFQRjhuVlEtZWpHTGozVnk0NG9VMFBSWXdjOFJPcFRWcXBQd3RDRUpPWmxILThpSTlfOEdURTk1UWRjX2VRa2hTa0psMWp6MHNwMl9MZHJMMVhPdDBNMzJzdE9xOFRWV2J3Zk1ya0VNeEdHcG5jQjRRY1huQkw2Zw?oc=5",
+"time": "2026-11-11T21:05:00Z",
+"via": "google-news",
+"tickers": [
+"XAIR"
+],
+"t212": [
+"XAIR"
+],
+"flags": [],
+"first_seen": "2026-11-11T21:41:21Z"
+},
+{
+"source": "globenewswire",
+"title": "SpyGlass Pharma Reports Third Quarter 2026 Financial Results and Provides Corporate Updates",
+"url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxQUE9Xem1aX0JJeGRGaUdBTTdYWk1KVVlrSDJIR3h2ZmZ5YUl2N1N3TmZZSlRzbnpISlpJUXlNR2VUNmRxVEw5NWtGQ2xoSkVIZzhldkE2cXRnbVRqYWFKQy1oZ3phY3R3d1RRMXRRZFFObXRacE1QOFFXMFFrOWk0Y3Q2dE84dUtJTUpkWUxHMWQwTm1MUDJmdnp3TzJjVFFwakFuNHNfeVAxM2FBTGROelRxX0tDVmtBRWpvSllyWTB1X1JpUkJkUGs3b1R2Rk5lRG44d1l2U1I3TkV2ZU5fQ2RCOEd3SENBMVpmMm5OWWJ2WTFYOGc?oc=5",
+"time": "2026-11-11T21:05:00Z",
+"via": "google-news",
+"tickers": [
+"SGP"
+],
+"t212": [
+"SGP"
+],
+"flags": [],
+"first_seen": "2026-11-11T21:41:21Z"
+},
+{
+"source": "globenewswire",
+"title": "SeaStar Medical Reports Third Quarter 2026 Financial Results and Provides Business Updates",
+"url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxQc2g1OG9zZVQ3czJkbTYxSGd0Zld4dThBb1B0eHc0TEZkRnN0cXMwSFE4M2hlVDNhWHdtUVFldE9oZHdXd19ocjFXUFJBZTRlck1DbjUzUFBxVEpDT1hFdmM5aGxzNmlubVFHWTZFRmlUUUpaUGNiMHN6UFR4Yk4xUXI4Y0J3S0J6d01JMElOaTFKa0FiVDNVQ0I5TTF0MmIyb0NzVzFZVkJFSEZxd0JqV0RTNGxUYnROSXAtVlRoSFNMbkFQNDk2VElWc094c0cxazJWMmE1ZzIyVHBwY2t4WWhhY3BnNnBmNndReVR3NC1xWFNR?oc=5",
+"time": "2026-11-11T21:05:00Z",
+"via": "google-news",
+"tickers": [
+"ICU"
+],
+"t212": [
+"ICU"
+],
+"flags": [],
+"first_seen": "2026-11-11T21:41:21Z"
+},
+{
+"source": "accessnewswire",
+"title": "CuriosityStream Delivers Strong Third Quarter 2026 Results and Raises Outlook; Revenue grows 13% and Adjusted EBITDA Grows 67%",
+"url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNRktMRGhXY2NxQXVwT0R4bUdrY2NkYmk4VFpfRThzOFVVbkMxTVVVb2R3eFlHaDRDRUU0SlpLZmZyTVh6WkYyckNEWFJ2T1lfVXRVWVQzTWcwcDVmWkE5bmtoWXpIT0NLYURDa3FNdW82N0diMG1FRk1iaHVtc0FoSnY2VDk4WXBLdkNScDdwTmp5dEVLZjFkNFl2SUJWdHVfSWhuVVFicDJNZjRsX0lLaWpxN1hiLTl0NDNlcG82bzg2ZW5qZURBVlpSVmdiUWYzNmtUcEczWGsxV052NTRnNGZyZ0E?oc=5",
+"time": "2026-11-11T21:05:00Z",
+"via": "google-news",
+"tickers": [
+"CURI"
+],
+"t212": [
+"CURI"
+],
+"flags": [],
+"first_seen": "2026-11-11T21:41:21Z"
+},
+{
+"source": "prnewswire",
+"title": "EastGroup Properties Announces Recent Business Activity and Participation in Upcoming Conference EastGroup Properties, Inc. (NYSE: EGP) (the \"Company\", \"we\", \"our\", \"us\" or \"EastGroup\") announced today its recent business activity and...",
+"url": "https://www.prnewswire.com/news-releases/eastgroup-properties-announces-recent-business-activity-and-participation-in-upcoming-conference-302936783.html",
+"time": "2026-11-11T21:05:00Z",
+"tickers": [
+"EGP"
+],
+"t212": [
+"EGP"
+],
+"flags": [],
+"first_seen": "2026-11-11T21:41:21Z"
+},
+{
+"source": "prnewswire",
+"title": "Pixelworks Reports Third Quarter 2026 Financial Results Pixelworks, Inc. (NASDAQ: PXLW) (\"Pixelworks\" or the \"Company\"), a provider of innovative cinematic and enhanced visualization solutions, today...",
+"url": "https://www.prnewswire.com/news-releases/pixelworks-reports-third-quarter-2026-financial-results-302936914.html",
+"time": "2026-11-11T21:05:00Z",
+"tickers": [
+"PXLW"
+],
+"t212": [
+"PXLW"
+],
+"flags": [],
+"first_seen": "2026-11-11T21:41:21Z"
+},
+{
+"source": "prnewswire",
+"title": "Zillow Group to present at UBS Global Technology and AI Conference 2026 Zillow Group, Inc. (Nasdaq: Z and ZG), which is transforming the way people buy, sell, rent and finance homes, today announced Zillow Group will...",
+"url": "https://www.prnewswire.com/news-releases/zillow-group-to-present-at-ubs-global-technology-and-ai-conference-2026-302936938.html",
+"time": "2026-11-11T21:05:00Z",
+"tickers": [
+"Z"
+],
+"t212": [
+"Z"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-11T21:41:21Z"
+},
+{
+"source": "prnewswire",
+"title": "A2Z Reports Third Quarter 2026 Revenue of $10.9 Million A2Z Cust2Mate Solutions Corp. (NASDAQ: AZ) (the \"Company\" or \"A2Z\"), a global leader in smart retail technology, announced its financial results for...",
+"url": "https://www.prnewswire.com/news-releases/a2z-reports-third-quarter-2026-revenue-of-10-9-million-302936799.html",
+"time": "2026-11-11T21:05:00Z",
+"tickers": [
+"AZ"
+],
+"t212": [
+"AZ"
+],
+"flags": [],
+"first_seen": "2026-11-11T21:41:21Z"
+},
+{
+"source": "globenewswire",
+"title": "OR Royalties Reports Strong Third Quarter 2026 Results",
+"url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPRHVyMTFFYjJJNzFkSTVlZVlkX2pPdGtOOUpPR01iN1BMOWk0Zkpub05fOFhCcnpjamRROGFDMXdSTGpFYkZna1ZTQUpqLVhnT2hxY21VX3VDYjZqZDVmQkoxV25yaDhiNU5nUDViSFRJVlN6Z3VBb1BCVmQ2cmZCSkZCOWdaNy0yTzA3UURFTURGMktLcml4U0Y4QlVaMF80ZWpUTGdmZUl2OVFETHhaaUtZaEMwUGJwbHBhek9hYnZmSjBL?oc=5",
+"time": "2026-11-11T21:04:41Z",
+"via": "google-news",
+"tickers": [
+"OR"
+],
+"t212": [
+"OR"
+],
+"flags": [],
+"first_seen": "2026-11-12T02:30:21Z"
+},
+{
+"source": "globenewswire",
+"title": "Lakefront Biotherapeutics Reports Nine Months 2026 Financial Results and Provides Business Update",
+"url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxPUG1YOWg5dXBwM0lpcTAzMVVsOG05aFlKSGxyQTRvTTh1MXU3SEk2cXdpTWg3blNMbFJHVjllSGV5Y0VHSmsxazFsZktRakpJaHoyNGJOMk1mdDlMMXQ3VHptSXdxd2hiazZ4YnlNaFNxczAzM1RvdURlR2pxT0VIMUZ1VmpHVTFHUUtTLVI3SVdxa21xNmFZRlU3MXVaVUk1SU1tSHdESlJnWHBvbzJwMVNMdWdpSmt0TjJpMUdUckNOYVpKb1VBd3NZNFFNVmhrN1lEXzJDcFB3ZTNmdWpjY0htSzR5eldlX2pfenRVRU13a2F6UG5QdnVHMTRJQQ?oc=5",
+"time": "2026-11-11T21:01:00Z",
+"via": "google-news",
+"tickers": [
+"LKFT"
+],
+"t212": [
+"LKFT"
+],
+"flags": [],
+"first_seen": "2026-11-11T21:41:21Z"
+},
+{
+"source": "prnewswire",
+"title": "Olin Marks 100 Years of Consecutive Quarterly Dividends Olin Corporation (NYSE: OLN) announced today that its Board of Directors declared a quarterly dividend of $0.20 per share on Olin common stock. This...",
+"url": "https://www.prnewswire.com/news-releases/olin-marks-100-years-of-consecutive-quarterly-dividends-302936940.html",
+"time": "2026-11-11T21:01:00Z",
+"tickers": [
+"OLN"
+],
+"t212": [
+"OLN"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-11T21:41:21Z"
+},
+{
+"source": "globenewswire",
+"title": "OptimizeRx Reports Third Quarter 2026 Financial Results and Updates Fiscal Year 2026 Guidance",
+"url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxOTWpvNTNxZExEZnUzX0E1S0RWTUlHOXBmUVJTeFV2TW5lY3BJSnpWdDZQU3JSQ3dQTVdTYmhZMGFINUhkOGNYVmMzNV85ZHJtRlpMVmo4Y3phZ2l5dXMyMzQ0bEg1dXB1eGxnbFk4Y2hvOFFJbzc1TVFyZ2RfVWpnX2Z1ZDBjTDRHazRGWUhsekZWWkFpYnVlODA3UXozSndBV1NGY3diVkhnVXJrZk45NXd1aENNQnFRSDRHMDNod2xnVXNTSGJQWmRjQ2ppb19jeVVkM005X1U2dF9LVHBhaUJLYUtIZ21iVWhHZlh0dXdUMG0yOVRqdQ?oc=5",
+"time": "2026-11-11T21:01:00Z",
+"via": "google-news",
+"tickers": [
+"OPRX"
+],
+"t212": [
+"OPRX"
+],
+"flags": [],
+"first_seen": "2026-11-12T02:30:21Z"
+},
+{
+"source": "globenewswire",
+"title": "StoneX Group Inc. to Announce 2026 Fiscal Fourth Quarter Earnings on November 18, 2026",
+"url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxOTmNlb1k1eGxZX0cySjlsYm5nU19JT0ZfSmZqRFJrcVJDWERhcGE4SlNPTGVzTDBSdkhQcjE2bFUwY3ZTWG5GZVJqSWVzNTVkaDdYSW9OcVhna2NNX3gwWmFneklaMTNmcWtPcG5QOVRubFBiSlNubGMzaHlIbnNkNGFRYjV6VU03Njg2MnBSbFhRMTBlYjdXR2EzdzUtcmpBOUw4TDZkNVE5U20yUkR4Rlp2M2hMU2tOR0Y1WTctT1lFRUJ6VF94eUNHWXpjRzF6dkctR1VxQ0dSSkZnQ2xNYmtaZHRSX3FJZUlTeXhoaXdpZw?oc=5",
+"time": "2026-11-11T21:00:00Z",
+"via": "google-news",
+"tickers": [
+"SNEX"
+],
+"t212": [
+"SNEX"
+],
+"flags": [],
+"first_seen": "2026-11-11T21:41:21Z"
+},
+{
+"source": "globenewswire",
+"title": "DeFi Development Corp. Announces CHAD Preferred Stock Now Tokenized in Partnership with xStocks",
+"url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxPTWM2OVY5MzhHVFBId203T2VYZkxETVRVNEtZODdpVm9ETmthQ3VPMWREUzZPSm5MNmZ1dldub2dRYTlodENYeDlKYVU4X2duRFpiQ01NMUlrYVZWUmdXQ2hZWWQ3M25GakR3UTZjX0NLUk9NMGt3ZDZINUZDYXNtU2RBM3YyLTJMTUMxOUV3UHd5ejhnTlFOTXhjN0ptNllRWkU0aFJwak9GZkVSNlI4SmJXRXNEbmEyZjhGUVVmaGgzcnBmWjloekFDRE9qSmJaQzlCRTBNb1JpODJzdFFobVpRNVM4LXgzcllCR3hNSGFNSFJCN3lLa1dB?oc=5",
+"time": "2026-11-11T21:00:00Z",
+"via": "google-news",
+"tickers": [
+"DFDV"
+],
+"t212": [
+"DFDV"
+],
+"flags": [],
+"first_seen": "2026-11-11T21:41:21Z"
+},
+{
+"source": "globenewswire",
+"title": "NextNRG Announces Nasdaq Delisting Determination; Trading",
+"url": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxPZWNuOUpOcks1WXkweDc1cHdlYW9BRHFjdlBPZFRfR2Rrd1VyMmpCbUNwbVl6QkZSd0ZfTFRxQWZramNIZnV1Q0lyaGlPVWJiQlZDLS04Y0hoU0QwaXA4YXRFMGV2djlpQ1VhWWFkZlRMWlFJTXU2RXpqTDJ0aGxWQlhtWUJBWVRZQTVXVWNzdE5XSEE4ekt1SlZCcVlNT2l2bXdqd0xrdGExbEVtYmxaY1FEdnA3WXoyX1pqaEZUcnpWMXh3SXFEa29za002Z2tXTlFMTWpwaFZKTTV1M2tWSEh2X0NzVGtObGNpN002Q3BGM3lBTDhicnBrMmh6V2xUUVJtRlB5TDlnU1k?oc=5",
+"time": "2026-11-11T20:50:00Z",
+"via": "google-news",
+"tickers": [
+"NXXT"
+],
+"t212": [
+"NXXT"
+],
+"flags": [],
+"first_seen": "2026-11-11T21:41:21Z"
+},
+{
+"source": "prnewswire",
+"title": "Lemonade Announces Online Viewing Details for 2026 Investor Day",
+"url": "https://www.prnewswire.com/news-releases/lemonade-announces-online-viewing-details-for-2026-investor-day-302936912.html",
+"time": "2026-11-11T20:30:00Z",
+"tickers": [
+"LMND"
+],
+"t212": [
+"LMND"
+],
+"flags": [],
+"first_seen": "2026-11-11T20:57:48Z"
+},
+{
+"source": "businesswire",
+"title": "Arrow Electronics recognized as 2026 Microsoft Distribution Partner of the Year for second consecutive year",
+"url": "http://www.businesswire.com/news/home/20261111768745/en/Arrow-Electronics-recognized-as-2026-Microsoft-Distribution-Partner-of-the-Year-for-second-consecutive-year/?feedref=JjAwJuNHiystnCoBq_hl-WsGkFyUNMTSNrPsg57HLEqqcp-o_pnudlUwsb5apQ1S4gUE65BTfjH3-pSuqdv0gW3cb3F4oTIgUqCPafFkgu5AneicJQDNboWvodvG82E0",
+"time": "2026-11-11T20:00:00Z",
+"tickers": [
+"ARW"
+],
+"t212": [
+"ARW"
+],
+"flags": [],
+"first_seen": "2026-11-11T20:10:23Z"
+},
+{
+"source": "businesswire",
+"title": "TD SYNNEX Recognized as the Winner of 2026 Microsoft Global Commercial Device Channel Partner of the Year Award",
+"url": "http://www.businesswire.com/news/home/20261111329206/en/TD-SYNNEX-Recognized-as-the-Winner-of-2026-Microsoft-Global-Commercial-Device-Channel-Partner-of-the-Year-Award/?feedref=JjAwJuNHiystnCoBq_hl-WsGkFyUNMTSNrPsg57HLEqqcp-o_pnudlUwsb5apQ1S4gUE65BTfjH3-pSuqdv0gW3cb3F4oTIgUqCPafFkgu5AneicJQDNboWvodvG82E0",
+"time": "2026-11-11T20:00:00Z",
+"tickers": [
+"SNX"
+],
+"t212": [
+"SNX"
+],
+"flags": [],
+"first_seen": "2026-11-11T20:10:23Z"
+},
+{
+"source": "prnewswire",
+"title": "BIDU UPCOMING DEADLINE: Faruqi & Faruqi, LLP Reminds Baidu (NASDAQ: BIDU) Investors of Securities Class Action Lawsuit Deadline on November 13, 2026",
+"url": "https://www.prnewswire.com/news-releases/bidu-upcoming-deadline-faruqi--faruqi-llp-reminds-baidu-nasdaq-bidu-investors-of-securities-class-action-lawsuit-deadline-on-november-13-2026-302936779.html",
+"time": "2026-11-11T19:49:00Z",
+"tickers": [
+"BIDU"
+],
+"t212": [
+"BIDU"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-11T19:50:28Z"
+},
+{
+"source": "prnewswire",
+"title": "Priority Technology Investor Alert: Kahn Swick & Foti, LLC Investigates Adequacy of Price and Process in Proposed Sale of Priority Technology Holdings, Inc. - PRTH",
+"url": "https://www.prnewswire.com/news-releases/priority-technology-investor-alert-kahn-swick--foti-llc-investigates-adequacy-of-price-and-process-in-proposed-sale-of-priority-technology-holdings-inc---prth-302936741.html",
+"time": "2026-11-11T19:29:00Z",
+"tickers": [
+"PRTH"
+],
+"t212": [
+"PRTH"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-11T19:30:40Z"
+},
+{
+"source": "prnewswire",
+"title": "SHAREHOLDER ALERT: Bronstein Gewirtz & Grossman, LLC Announces Class Action Against Kinross Gold Corporation (NYSE: KGC) -- Investors Who Suffered Losses Are Encouraged to Contact the Firm.",
+"url": "https://www.prnewswire.com/news-releases/shareholder-alert-bronstein-gewirtz--grossman-llc-announces-class-action-against-kinross-gold-corporation-nyse-kgc--investors-who-suffered-losses-are-encouraged-to-contact-the-firm-302936044.html",
+"time": "2026-11-11T18:42:00Z",
+"tickers": [
+"KGC"
+],
+"t212": [
+"KGC"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-11T18:50:24Z"
+},
+{
+"source": "accessnewswire",
+"title": "American Rebel Holdings, Inc. (OTCID: AREB) Honors Veterans Across America",
+"url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOQmJ0M1p1OGhkcmdZQXFSOTZGRy1VZ1htYVhKcXM4cDZ6WElsNlpFNHZkY3JqR1FBSnh0YlNOaTlZa2FreTFtZkg4NklEVHFxcHRaNndybEthMzA3OVNsZGhWTkswQllyY1ZXS2FRLUdyVURTVlhRUXJrNjBYTjIzWUFxZld5cGhmUm1KUnQtbjl2aWZlZXNncFFyQ1duUHRqSUVEUXpnZ0lLYnREZXg1RUNzZ2h5emhBQ0NTSGZKdjJmZFU2c3hZWWFNVV9oT1NVZ2JKMVVsUk93NWJ1a2VpWEgxNVY?oc=5",
+"time": "2026-11-11T18:35:00Z",
+"via": "google-news",
+"tickers": [
+"AREB"
+],
+"t212": [
+"AREB"
+],
+"flags": [],
+"first_seen": "2026-11-11T18:50:24Z"
+},
+{
+"source": "prnewswire",
+"title": "Nasdaq Jumps Over 4% This Week as Chip Names Drive a Sharp Midweek Rally",
+"url": "https://www.prnewswire.com/news-releases/nasdaq-jumps-over-4-this-week-as-chip-names-drive-a-sharp-midweek-rally-302936836.html",
+"time": "2026-11-11T18:30:00Z",
+"tickers": [
+"NDAQ"
+],
+"t212": [
+"NDAQ"
+],
+"flags": [],
+"first_seen": "2026-11-11T18:40:25Z"
+},
+{
+"source": "businesswire",
+"title": "Calix Honors 8 Innovative Customers Achieving Revenue Growth, Cost Savings, Business Expansion, and Stronger Subscriber Loyalty",
+"url": "http://www.businesswire.com/news/home/20261111856184/en/Calix-Honors-8-Innovative-Customers-Achieving-Revenue-Growth-Cost-Savings-Business-Expansion-and-Stronger-Subscriber-Loyalty/?feedref=JjAwJuNHiystnCoBq_hl-WsGkFyUNMTSNrPsg57HLEqqcp-o_pnudlUwsb5apQ1S4gUE65BTfjH3-pSuqdv0gW3cb3F4oTIgUqCPafFkgu5AneicJQDNboWvodvG82E0",
+"time": "2026-11-11T18:30:00Z",
+"tickers": [
+"CALX"
+],
+"t212": [
+"CALX"
+],
+"flags": [],
+"first_seen": "2026-11-11T18:40:25Z"
+},
+{
+"source": "globenewswire",
+"title": "Kaplan Fox Reminds Yiren Digital Ltd. (NYSE: YRD) Investors",
+"url": "https://news.google.com/rss/articles/CBMioAJBVV95cUxNTnNWUExFcnh0ZFBIaU9RSXRkbkhhMm95TG0zZE9tSEVfTmF4dS1vOVJRczlWQ3dVbjdDaWE3akN0cVA5SmNFTVVscFBZSFM5cjhOWmFkREtyd2RFbDFDSW9MUDRTWVhpa3pWSS1oMUtaUWhLZlh4NTJxR0ZscXg1d0VacUNlVlR2dlJiNmstUXExWGhrbXd4ZjIzZzV3aUV1anRYc1BTWU1acXZUSU5iVnp0OXpoRHZTY0c2WjZoNjNKMmhsUjJTSm45Y3dUQW9pTG50NG15aDVMM3lMWnZuUXhKcERnSE9zVjZKLU90czU4OE9ETFZaaHZ3ZG1PN2drQVdEOXRTYlhjaFFncmpBYlp2WmJ5bm1XMlRodVhVTDE?oc=5",
+"time": "2026-11-11T18:25:00Z",
+"via": "google-news",
+"tickers": [
+"YRD"
+],
+"t212": [
+"YRD"
+],
+"flags": [],
+"first_seen": "2026-11-11T21:41:21Z"
+},
+{
+"source": "globenewswire",
+"title": "Suja Life (SUJA) Shares Decline Following Reduced 2026 Outlook \u2013 Kehoe Law Firm Investigating",
+"url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxOc3Y1LV9hU1BHek9QRFZHRVlIMHlibGhXcWdvUVZsUXgxY0hRdl90aHRlWW04dkxoaGZFcEFFRUdjcU53anYwaDVwVlV6Ti12M0ZQaU5iSXloeHB0U1FmUko5SmJHaDNmaDJ0WE5aVUlUbFlnQ0VXTkVCSDZteUh4bEJuRDRSdnFLQmNLaE1WVVo1ZThRUFNwbTRJTnNoallfNGU0MERtbWNDbzhUTnNOdW9nUzJXa3gyZFFmYTlpM1JjUzRseGJWd2FUa3BiLWE5YmZVUF9FWGRGS2JGNElnVUh5bkVBZ3BFbmk1bV9VclpKRGM?oc=5",
+"time": "2026-11-11T18:23:50Z",
+"via": "google-news",
+"tickers": [
+"SUJA"
+],
+"t212": [
+"SUJA"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-12T02:30:21Z"
+},
+{
+"source": "globenewswire",
+"title": "Kaplan Fox Alerts Gildan Activewear Inc. (NYSE: GIL)",
+"url": "https://news.google.com/rss/articles/CBMi4AJBVV95cUxOT3JzbWRDeWFoWlFRbEtGdzlYTTRseUItb0xzamlQYjl6ZWg2Ri04Ny14bGt0UlpkYl94QXgwdkk5SFppNjhHM0UtYmJnVkZfVm9QbWVQbFp5MGlQdk1RY1dlRUhaS1VHTEtLR2dLdjUweF9YQzJBbmI5SmlVSllwLS02aFdyT1NlaWczR09mMXU4dFV0QlY3NFZfSGtpZkMySmk0X3czSGU1MTk0WkNhYzVRczR6R1RELWRCT2xWRWdadlMwWU0tN1NVX3ZCeW1sS21nTjlGWjkxUy1URlJWMTlmc3JqeFF2X2JZd3FJSTJrNmtkRzN3QVE0c2UwX0RXSV82aWNSQkFrbkxpTnBraHdtYUNXXzhfNmRoczdjX1JTc003WFN2M250bERkZGJfZ25FQnhyMVFKa21RT3I0dnkyOWVJTEhHN3I5ZHJxaFhaWnM2Qk5MeVVoRWtzQkE3?oc=5",
+"time": "2026-11-11T18:15:00Z",
+"via": "google-news",
+"tickers": [
+"GIL"
+],
+"t212": [
+"GIL"
+],
+"flags": [],
+"first_seen": "2026-11-11T18:30:40Z"
+},
+{
+"source": "globenewswire",
+"title": "PETVIVO HOLDINGS TO FILE QUARTERLY REPORT ON NOVEMBER 13,",
+"url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxQNW1xRXdJeFVHUFNRNGMxNVplRF9nTHdIamVQc2pieEpxTWxLdkxVeHgwVFdrVkhQMWNpYW1CWENyUVJTZmtWRUJ6OHRmb0RWZ3FFenpmeERlX3drMGRBRHJoTTJJS2lLX3pfcEk5NS0yWDRqSjFWeDNTTUxjU2p1VWNnWnNXUUlDOUJzVnRoZG1lT1dTYlVqMTJHNVBpTW1xQnhVTXQ0NDM4czZVeHdFaF9fMXhPQzI1bHFBY2JQdFFqSG5XeU5mdDh3SjM0Zkd1T1BNbkc0NC1mYlhsSzUxeWRRSFNJYnRhWTk1V09VcUh5X2JTbFRQaE1oSkl4XzBKVTQwTUx6ZHg?oc=5",
+"time": "2026-11-11T18:12:00Z",
+"via": "google-news",
+"tickers": [
+"PETV"
+],
+"t212": [
+"PETV"
+],
+"flags": [],
+"first_seen": "2026-11-11T18:20:25Z"
+},
+{
+"source": "globenewswire",
+"title": "Kaplan Fox Encourages Millrose Properties, Inc. (NYSE: MRP)",
+"url": "https://news.google.com/rss/articles/CBMiuAJBVV95cUxOQjVLMEl0Xzg3Vkxzb1ozWmE2Q1RJTDdyUkluN2huZlk1LUgxemhXNG84UnU5d1l5eG1YWno3ZHVXLUxkTEZDQURTOFdLTHFVeHJpZlFBUlVXallGODR6UnpUZnZpX1BpMTZWdjk2aHBwWWlfSkJzMmg1endmczFaOW1QSXoxYm1MQzhCRUFNYjJqUTJxeEEwLUZyX3doNV9HUGJQb1BfaE8tSUdSWm1kZHplc1pxM0RFdTJnNEh4SjROMk04bTg3NTVDbVd0RnBXb3hLQ1E2ME55TjM0ai1PN1Z3QzdtV0tWekVVbUZQQ1k2Rmg0OUNkZERXV2dVN1A0MGRWelZjYjBPaW43RnduVm1ra3g2ZS1Na1daTkJ5TXZUNS0zV25LeUtvSjdfbW1mMk1lS2hVWGs?oc=5",
+"time": "2026-11-11T18:05:00Z",
+"via": "google-news",
+"tickers": [
+"MRP"
+],
+"t212": [
+"MRP"
+],
+"flags": [],
+"first_seen": "2026-11-11T18:20:25Z"
+},
+{
+"source": "businesswire",
+"title": "XTEND Announces Timing for Third Quarter Earnings Conference Call and Participation in Upcoming Investor Conferences",
+"url": "http://www.businesswire.com/news/home/20261111911776/en/XTEND-Announces-Timing-for-Third-Quarter-Earnings-Conference-Call-and-Participation-in-Upcoming-Investor-Conferences/?feedref=JjAwJuNHiystnCoBq_hl-WsGkFyUNMTSNrPsg57HLEqqcp-o_pnudlUwsb5apQ1S4gUE65BTfjH3-pSuqdv0gW3cb3F4oTIgUqCPafFkgu5AneicJQDNboWvodvG82E0",
+"time": "2026-11-11T18:00:00Z",
+"tickers": [
+"XTND"
+],
+"t212": [
+"XTND"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-11T18:10:24Z"
+},
+{
+"source": "globenewswire",
+"title": "Kaplan Fox Notifies The Ensign Group, Inc. (NASDAQ: ENSG)",
+"url": "https://news.google.com/rss/articles/CBMiqgJBVV95cUxNSDRXZlF4TVZQbHB2VzVGUUE1cWZWNW9xZGhRVF9IalZ0NXZTWTU4a0NqUGVEbWdDTGV5X0lVdWI3VEVOS2JsRnJNUG5CVGs5NVA1UlBVSGRUMW9DY3g3WFVvUmE1a0pHTDlYVHVXN2Z1NGtwQnZ5aVZuVEM4VGhuX05Gdk5NN01vN1FuTlNaU1kwWk1JVml0bW9xUE9DT1dGSVJ6dFlJTS1XNEJIOWxWMjVXVWlPZHdITzJpSnF6eTlBc2lsQVpvZGdVUWgta2tBdjNlOGg5dTgwTVk5ZEI2NUhsU2xrZWV6aXR0LXNHZy1LOXRkYTUwcUZyOTA1TjJubnFqM1JIa05TTDBySl9Kbk5uNVdGVk0zSjd3ZnN4ZWQ0N0RRaXA0R21B?oc=5",
+"time": "2026-11-11T17:55:00Z",
+"via": "google-news",
+"tickers": [
+"ENSG"
+],
+"t212": [
+"ENSG"
+],
+"flags": [],
+"first_seen": "2026-11-11T18:30:40Z"
+},
+{
+"source": "prnewswire",
+"title": "Armada et Johnson Controls lancent Galleon Forge Two \u00c3 Dublin, implantant ainsi en Europe un mod\u00c3\u00a8le de production d'infrastructure d'IA souveraine Armada, soci\u00c3\u00a9t\u00c3\u00a9 d'infrastructure de syst\u00c3\u00a8mes d'information souverains, et Johnson Controls (NYSE : JCI) a annonc\u00c3\u00a9 aujourd'hui le d\u00c3\u00a9marrage de la...",
+"url": "https://www.prnewswire.com/news-releases/armada-et-johnson-controls-lancent-galleon-forge-two-a-dublin-implantant-ainsi-en-europe-un-modele-de-production-dinfrastructure-dia-souveraine-302936806.html",
+"time": "2026-11-11T17:53:00Z",
+"tickers": [
+"JCI"
+],
+"t212": [
+"JCI"
+],
+"flags": [],
+"first_seen": "2026-11-11T18:01:02Z"
+},
+{
+"source": "prnewswire",
+"title": "BETR Shareholder Alert: Better Home & Finance Holding Company Securities Class Action Lawsuit - Investors Should Contact Levi & Korsinsky Levi & Korsinsky, LLP alerts investors in Better Home & Finance Holding Company (NASDAQ: BETR) that a securities class action has been filed on...",
+"url": "https://www.prnewswire.com/news-releases/betr-shareholder-alert-better-home--finance-holding-company-securities-class-action-lawsuit---investors-should-contact-levi--korsinsky-302936623.html",
+"time": "2026-11-11T17:38:00Z",
+"tickers": [
+"BETR"
+],
+"t212": [
+"BETR"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-11T17:40:26Z"
+},
+{
+"source": "prnewswire",
+"title": "QFIN Shareholder Alert: Qfin Holdings, Inc. Securities Class Action Lawsuit - Investors With Losses May Contact Levi & Korsinsky Levi & Korsinsky, LLP alerts investors in Qfin Holdings, Inc. (NASDAQ: QFIN) that three senior executives, including the Company's CEO and CFO during ...",
+"url": "https://www.prnewswire.com/news-releases/qfin-shareholder-alert-qfin-holdings-inc-securities-class-action-lawsuit---investors-with-losses-may-contact-levi--korsinsky-302936618.html",
+"time": "2026-11-11T17:38:00Z",
+"tickers": [
+"QFIN"
+],
+"t212": [
+"QFIN"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-11T17:40:26Z"
+},
+{
+"source": "prnewswire",
+"title": "Levi & Korsinsky Reminds AppLovin Corporation Investors of the Pending Class Action Lawsuit With a Lead Plaintiff Deadline of November 16, 2026 - APP Levi & Korsinsky, LLP notifies investors in AppLovin Corporation (NASDAQ: APP) that a class action has been filed on behalf of shareholders who...",
+"url": "https://www.prnewswire.com/news-releases/levi--korsinsky-reminds-applovin-corporation-investors-of-the-pending-class-action-lawsuit-with-a-lead-plaintiff-deadline-of-november-16-2026---app-302936634.html",
+"time": "2026-11-11T17:38:00Z",
+"tickers": [
+"APP"
+],
+"t212": [
+"APP"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-11T17:40:26Z"
+},
+{
+"source": "prnewswire",
+"title": "HONA Deadline Alert: Levi & Korsinsky Reminds Honeywell Aerospace Inc. (HONA) Investors of Securities Class Action Deadline on November 23, 2026 Levi & Korsinsky, LLP notifies investors in Honeywell Aerospace Inc. (NASDAQ: HONA) that a class action has been filed on behalf of shareholders who...",
+"url": "https://www.prnewswire.com/news-releases/hona-deadline-alert-levi--korsinsky-reminds-honeywell-aerospace-inc-hona-investors-of-securities-class-action-deadline-on-november-23-2026-302936617.html",
+"time": "2026-11-11T17:38:00Z",
+"tickers": [
+"HONA"
+],
+"t212": [
+"HONA"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-11T17:40:26Z"
+},
+{
+"source": "prnewswire",
+"title": "Levi & Korsinsky Reminds Doximity, Inc. Investors of the Pending Class Action Lawsuit With a Lead Plaintiff Deadline of November 16, 2026 - DOCS Levi & Korsinsky, LLP highlights the contrast between Doximity, Inc.'s (NYSE: DOCS) public promises and its reported results for investors who...",
+"url": "https://www.prnewswire.com/news-releases/levi--korsinsky-reminds-doximity-inc-investors-of-the-pending-class-action-lawsuit-with-a-lead-plaintiff-deadline-of-november-16-2026---docs-302936641.html",
+"time": "2026-11-11T17:38:00Z",
+"tickers": [
+"DOCS"
+],
+"t212": [
+"DOCS"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-11T17:40:26Z"
+},
+{
+"source": "prnewswire",
+"title": "Levi & Korsinsky Reminds Ardelyx, Inc. Investors of the Pending Class Action Lawsuit With a Lead Plaintiff Deadline of November 16, 2026 - ARDX Levi & Korsinsky, LLP notifies investors in Ardelyx, Inc. (NASDAQ: ARDX) that a class action has been filed on behalf of shareholders who purchased...",
+"url": "https://www.prnewswire.com/news-releases/levi--korsinsky-reminds-ardelyx-inc-investors-of-the-pending-class-action-lawsuit-with-a-lead-plaintiff-deadline-of-november-16-2026---ardx-302936625.html",
+"time": "2026-11-11T17:38:00Z",
+"tickers": [
+"ARDX"
+],
+"t212": [
+"ARDX"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-11T17:40:26Z"
+},
+{
+"source": "prnewswire",
+"title": "Amdocs Limited (DOX) Securities Investigation Notice - Levi & Korsinsky",
+"url": "https://www.prnewswire.com/news-releases/amdocs-limited-dox-securities-investigation-notice---levi--korsinsky-302936682.html",
+"time": "2026-11-11T17:36:00Z",
+"tickers": [
+"DOX"
+],
+"t212": [
+"DOX"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-11T17:40:26Z"
+},
+{
+"source": "prnewswire",
+"title": "Fidelity National Information Services (FIS) Securities Investigation Notice - Levi & Korsinsky",
+"url": "https://www.prnewswire.com/news-releases/fidelity-national-information-services-fis-securities-investigation-notice---levi--korsinsky-302936648.html",
+"time": "2026-11-11T17:36:00Z",
+"tickers": [
+"FIS"
+],
+"t212": [
+"FIS"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-11T17:40:26Z"
+},
+{
+"source": "prnewswire",
+"title": "Unum Group (UNM) Securities Investigation Notice - Levi & Korsinsky",
+"url": "https://www.prnewswire.com/news-releases/unum-group-unm-securities-investigation-notice---levi--korsinsky-302936687.html",
+"time": "2026-11-11T17:36:00Z",
+"tickers": [
+"UNM"
+],
+"t212": [
+"UNM"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-11T17:40:26Z"
+},
+{
+"source": "prnewswire",
+"title": "BULL UPCOMING DEADLINE: Levi & Korsinsky Alerts Webull Corporation Stockholders of Securities Class Action - Contact the Firm Levi & Korsinsky, LLP announces that a securities class action has been filed against Webull Corporation (NASDAQ: BULL). You may be affected if you...",
+"url": "https://www.prnewswire.com/news-releases/bull-upcoming-deadline-levi--korsinsky-alerts-webull-corporation-stockholders-of-securities-class-action---contact-the-firm-302936681.html",
+"time": "2026-11-11T17:36:00Z",
+"tickers": [
+"BULL"
+],
+"t212": [
+"BULL"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-11T17:40:26Z"
+},
+{
+"source": "prnewswire",
+"title": "CC Shareholder Alert: The Chemours Company Securities Class Action Lawsuit - Investors Should Contact Levi & Korsinsky Levi & Korsinsky, LLP notifies investors in The Chemours Company (NYSE: CC) that a securities fraud class action has been filed on behalf of...",
+"url": "https://www.prnewswire.com/news-releases/cc-shareholder-alert-the-chemours-company-securities-class-action-lawsuit---investors-should-contact-levi--korsinsky-302936676.html",
+"time": "2026-11-11T17:36:00Z",
+"tickers": [
+"CC"
+],
+"t212": [
+"CC"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-11T17:40:26Z"
+},
+{
+"source": "prnewswire",
+"title": "COMP Shareholder Alert: Compass, Inc. Securities Class Action Lawsuit - Investors Should Contact Levi & Korsinsky Levi & Korsinsky, LLP encourages investors who suffered losses in Compass, Inc. (NYSE: COMP) to contact the firm. WHO IS AFFECTED: Former Anywhere...",
+"url": "https://www.prnewswire.com/news-releases/comp-shareholder-alert-compass-inc-securities-class-action-lawsuit---investors-should-contact-levi--korsinsky-302936672.html",
+"time": "2026-11-11T17:36:00Z",
+"tickers": [
+"COMP"
+],
+"t212": [
+"COMP"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-11T17:40:26Z"
+},
+{
+"source": "prnewswire",
+"title": "Levi & Korsinsky Reminds Shareholders of a Lead Plaintiff Deadline of January 4, 2027 in Lululemon Athletica Inc. Lawsuit - LULU Levi & Korsinsky, LLP notifies shareholders of Lululemon Athletica Inc. (NASDAQ: LULU) that a securities class action under Section 10(b) of the...",
+"url": "https://www.prnewswire.com/news-releases/levi--korsinsky-reminds-shareholders-of-a-lead-plaintiff-deadline-of-january-4-2027-in-lululemon-athletica-inc-lawsuit---lulu-302936699.html",
+"time": "2026-11-11T17:36:00Z",
+"tickers": [
+"LULU"
+],
+"t212": [
+"LULU"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-11T17:40:26Z"
+},
+{
+"source": "prnewswire",
+"title": "Levi & Korsinsky Reminds Gildan Activewear Investors of the Pending Class Action Lawsuit With a Lead Plaintiff Deadline of December 14, 2026 - GIL Levi & Korsinsky, LLP notifies investors in Gildan Activewear Inc. (NYSE: GIL) that a securities class action has been filed on behalf of purchasers...",
+"url": "https://www.prnewswire.com/news-releases/levi--korsinsky-reminds-gildan-activewear-investors-of-the-pending-class-action-lawsuit-with-a-lead-plaintiff-deadline-of-december-14-2026---gil-302936657.html",
+"time": "2026-11-11T17:36:00Z",
+"tickers": [
+"GIL"
+],
+"t212": [
+"GIL"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-11T17:40:26Z"
+},
+{
+"source": "prnewswire",
+"title": "CCB Shareholder Alert: December 1, 2026 Lead Plaintiff Deadline in Coastal Financial Corporation Securities Class Action - Contact Levi & Korsinsky Levi & Korsinsky, LLP notifies investors in Coastal Financial Corporation (NASDAQ: CCB) that the Company's chief executive and two chief financial...",
+"url": "https://www.prnewswire.com/news-releases/ccb-shareholder-alert-december-1-2026-lead-plaintiff-deadline-in-coastal-financial-corporation-securities-class-action---contact-levi--korsinsky-302936674.html",
+"time": "2026-11-11T17:36:00Z",
+"tickers": [
+"CCB"
+],
+"t212": [
+"CCB"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-11T17:40:26Z"
+},
+{
+"source": "prnewswire",
+"title": "CVRX Shareholder Alert: January 8, 2027 Lead Plaintiff Deadline in CVRx, Inc. Securities Class Action - Contact Levi & Korsinsky Levi & Korsinsky, LLP notifies investors that Robert John, Chief Revenue Officer of CVRx, Inc. (Nasdaq: CVRX) from June 2024 to August 2026, is named ...",
+"url": "https://www.prnewswire.com/news-releases/cvrx-shareholder-alert-january-8-2027-lead-plaintiff-deadline-in-cvrx-inc-securities-class-action---contact-levi--korsinsky-302936650.html",
+"time": "2026-11-11T17:36:00Z",
+"tickers": [
+"CVRX"
+],
+"t212": [
+"CVRX"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-11T17:40:26Z"
+},
+{
+"source": "prnewswire",
+"title": "KGC Shareholder Alert: Investors With Losses May Seek to Lead the Class Action in Kinross Gold Securities Lawsuit - Contact Levi & Korsinsky CIBC lowered its Kinross Gold Corporation (NYSE: KGC) price target to $50.00 from $54.00 after the miner cut its production outlook. Levi &...",
+"url": "https://www.prnewswire.com/news-releases/kgc-shareholder-alert-investors-with-losses-may-seek-to-lead-the-class-action-in-kinross-gold-securities-lawsuit---contact-levi--korsinsky-302936616.html",
+"time": "2026-11-11T17:36:00Z",
+"tickers": [
+"KGC"
+],
+"t212": [
+"KGC"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-11T17:40:26Z"
+},
+{
+"source": "prnewswire",
+"title": "TENX UPCOMING DEADLINE: Levi & Korsinsky Alerts Tenax Therapeutics, Inc. Stockholders of Securities Class Action - Contact the Firm Levi & Korsinsky, LLP reminds purchasers of Tenax Therapeutics, Inc. (NASDAQ: TENX) securities that a biotech securities class action is pending on...",
+"url": "https://www.prnewswire.com/news-releases/tenx-upcoming-deadline-levi--korsinsky-alerts-tenax-therapeutics-inc-stockholders-of-securities-class-action---contact-the-firm-302936652.html",
+"time": "2026-11-11T17:36:00Z",
+"tickers": [
+"TENX"
+],
+"t212": [
+"TENX"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-11T17:40:26Z"
+},
+{
+"source": "prnewswire",
+"title": "TIGR UPCOMING DEADLINE: Levi & Korsinsky Alerts UP Fintech Holding Limited Stockholders of Securities Class Action - Contact the Firm TIGR INVESTOR ALERT -- Levi & Korsinsky, LLP alerts investors in UP Fintech Holding Limited (NASDAQ: TIGR) of a pending securities class action....",
+"url": "https://www.prnewswire.com/news-releases/tigr-upcoming-deadline-levi--korsinsky-alerts-up-fintech-holding-limited-stockholders-of-securities-class-action---contact-the-firm-302936693.html",
+"time": "2026-11-11T17:36:00Z",
+"tickers": [
+"TIGR"
+],
+"t212": [
+"TIGR"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-11T17:40:26Z"
+},
+{
+"source": "prnewswire",
+"title": "GOOGL/GOOG Shareholder Alert: December 1, 2026 Lead Plaintiff Deadline in Alphabet Inc. Securities Class Action - Contact Levi & Korsinsky Levi & Korsinsky, LLP notifies investors in Alphabet Inc. (NASDAQ: GOOGL, GOOG) that a securities class action is pending on behalf of persons and...",
+"url": "https://www.prnewswire.com/news-releases/googlgoog-shareholder-alert-december-1-2026-lead-plaintiff-deadline-in-alphabet-inc-securities-class-action---contact-levi--korsinsky-302936685.html",
+"time": "2026-11-11T17:36:00Z",
+"tickers": [
+"GOOGL"
+],
+"t212": [
+"GOOGL"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-11T17:40:26Z"
+},
+{
+"source": "prnewswire",
+"title": "FLNC Shareholder Alert: Fluence Energy, Inc. Securities Class Action Lawsuit - Investors With Losses May Contact Levi & Korsinsky Levi & Korsinsky, LLP notifies investors in Fluence Energy, Inc. (NASDAQ: FLNC) that a securities class action was filed in the United States...",
+"url": "https://www.prnewswire.com/news-releases/flnc-shareholder-alert-fluence-energy-inc-securities-class-action-lawsuit---investors-with-losses-may-contact-levi--korsinsky-302936684.html",
+"time": "2026-11-11T17:36:00Z",
+"tickers": [
+"FLNC"
+],
+"t212": [
+"FLNC"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-11T17:40:26Z"
+},
+{
+"source": "prnewswire",
+"title": "Levi & Korsinsky Reminds D-Wave Quantum Inc. Investors of the Pending Class Action Lawsuit With a Lead Plaintiff Deadline of December 15, 2026 - QBTS Levi & Korsinsky, LLP highlights the contrast between what D-Wave Quantum Inc. (NYSE: QBTS) promised shareholders and what it later reported. A...",
+"url": "https://www.prnewswire.com/news-releases/levi--korsinsky-reminds-d-wave-quantum-inc-investors-of-the-pending-class-action-lawsuit-with-a-lead-plaintiff-deadline-of-december-15-2026---qbts-302936666.html",
+"time": "2026-11-11T17:36:00Z",
+"tickers": [
+"QBTS"
+],
+"t212": [
+"QBTS"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-11T17:40:26Z"
+},
+{
+"source": "prnewswire",
+"title": "DUOL Deadline Alert: Levi & Korsinsky Reminds Duolingo, Inc. (DUOL) Investors of Securities Class Action Deadline on December 7, 2026 Levi & Korsinsky, LLP reminds purchasers of Duolingo, Inc. (NASDAQ: DUOL) securities of a pending securities class action. THE CASE: The action seeks ...",
+"url": "https://www.prnewswire.com/news-releases/duol-deadline-alert-levi--korsinsky-reminds-duolingo-inc-duol-investors-of-securities-class-action-deadline-on-december-7-2026-302936691.html",
+"time": "2026-11-11T17:36:00Z",
+"tickers": [
+"DUOL"
+],
+"t212": [
+"DUOL"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-11T17:40:26Z"
+},
+{
+"source": "prnewswire",
+"title": "OI Shareholder Alert: O-I Glass, Inc. Securities Class Action Lawsuit - Investors Should Contact Levi & Korsinsky Levi & Korsinsky, LLP notifies investors in O-I Glass, Inc. (NYSE: OI) that a class action lawsuit has been filed on behalf of shareholders who...",
+"url": "https://www.prnewswire.com/news-releases/oi-shareholder-alert-o-i-glass-inc-securities-class-action-lawsuit---investors-should-contact-levi--korsinsky-302936700.html",
+"time": "2026-11-11T17:36:00Z",
+"tickers": [
+"OI"
+],
+"t212": [
+"OI"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-11T17:40:26Z"
+},
+{
+"source": "prnewswire",
+"title": "IT Tech Packaging, Inc. Announces Reverse Stock Split IT Tech Packaging, Inc. (NYSE American: ITP) (\"IT Tech Packaging\" or the \"Company\"), a leading manufacturer and distributor of diversified paper...",
+"url": "https://www.prnewswire.com/news-releases/it-tech-packaging-inc-announces-reverse-stock-split-302936784.html",
+"time": "2026-11-11T17:30:00Z",
+"tickers": [
+"ITP"
+],
+"t212": [
+"ITP"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-11T17:30:39Z"
+},
+{
+"source": "globenewswire",
+"title": "Kaplan Fox Reminds AST SpaceMobile, Inc. (NASDAQ: ASTS)",
+"url": "https://news.google.com/rss/articles/CBMiqwJBVV95cUxNdlBjQnc0aU9UWmp5aklScEFkR3dZZV8tSmxPV1dnc3Vyb3U5R3VhdndGb1dpRGhDZG9EbVJRdnJuMWtfSXB6aHlkZWJKS0JWbEZOeTdYMElRT0xUXzRsZnozT1JoSFlZQUw1cjJCcFhVb18xckdlTWVrdGpQZ3c0ZWIwOVRMcEhldERnSVRmenpNYTRaekx5UjkwM0lKV05nbHZ5YVNHWmdha05tR3l5RjIzeURRekFVOWpHeGxiMEpFdmVFUXJKdWVGMkJYZ2YxZWVYWkVTaFJkNnlFQXhYcjQyQXkyWVIyZFpIQUdGTVZiNjJnQ1pYbEhUdU1jX1J4cE94emZycmoxNTZYNW9OcnJLd2k2UUZxRU9zNi1BdXQ4RVVRMmg0ajZJVQ?oc=5",
+"time": "2026-11-11T17:15:00Z",
+"via": "google-news",
+"tickers": [
+"ASTS"
+],
+"t212": [
+"ASTS"
+],
+"flags": [],
+"first_seen": "2026-11-11T17:30:39Z"
+},
+{
+"source": "globenewswire",
+"title": "Banner Health generates $25.3 billion in annual economic output for Arizona",
+"url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNcG9VbU9rQTFTZjZRYTlXWDI1MU42M3NGTHA0X2JHZ0R1Y0JoamV6ZXZNSm9McVd6TEtmdm9sbDhuWHJvZTFxRkp3MzQ3NmhwM0pqSU5TTThFVlVWV1dWTnJKdi1CNWprTkZ1N05GaFI3YkozZ0ZWTVNrbW13LVNKdUo5UlktcGVqWGVvMXlCOEhWOUFvdl9MRTNTb08ycmZPbi1NWkl0VlZLSV9NY1h1MmI0LWx0THFmcG9kMzFVcVdqc3JGR3duS245blFpNjFxc1FKQzgyS1QtT3JEeVNF?oc=5",
+"time": "2026-11-11T17:08:58Z",
+"via": "google-news",
+"tickers": [
+"BANR"
+],
+"t212": [
+"BANR"
+],
+"flags": [],
+"first_seen": "2026-11-11T17:20:27Z"
+},
+{
+"source": "prnewswire",
+"title": "FPL doubles Saving Steps funding to $30 million to help more customers save energy and money",
+"url": "https://www.prnewswire.com/news-releases/fpl-doubles-saving-steps-funding-to-30-million-to-help-more-customers-save-energy-and-money-302936743.html",
+"time": "2026-11-11T16:45:00Z",
+"tickers": [
+"NEE"
+],
+"t212": [
+"NEE"
+],
+"flags": [],
+"first_seen": "2026-11-11T16:50:52Z"
+},
+{
+"source": "prnewswire",
+"title": "Century Communities Celebrates Grand Opening of Sierra Brooke, Offering New Homes in Lawrenceville, GA, From the $400s",
+"url": "https://www.prnewswire.com/news-releases/century-communities-celebrates-grand-opening-of-sierra-brooke-offering-new-homes-in-lawrenceville-ga-from-the-400s-302936707.html",
+"time": "2026-11-11T16:13:00Z",
+"tickers": [
+"CCS"
+],
+"t212": [
+"CCS"
+],
+"flags": [
+"financing"
+],
+"first_seen": "2026-11-11T16:20:30Z"
+},
+{
+"source": "accessnewswire",
+"title": "Moderna Announces JAMA Network Open Publication of Real-World Comparative Effectiveness Data for mNEXSPIKE (COVID-19 Vaccine, mRNA) in Adults Aged 65 Years and Older",
+"url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQVGc5WEFkNENjTXlvS0lGSEdBbTN5OFFQcFpyU0JiZ2xHWlhxcU9VSDFDY0VpRjlRdGd3dkhmRzZWcVZzZGFDMFI5T1BJaTN6ZlFwRHkxQ2JxdDM5WUtMaF9CdkVQamQxb1BPbk9mTjNfak9fV2VGNVhHQ2tuOXlrWEFvYmFKNzZOTlJBZGZxUl9tZE1NV0FBdU1jMlFjYUFuTkc4aXYyQXp6QUxhWDRvS09xZmlPYmNFaWlkWU16NHE0aFZaNUkzUXdZSU5WWjZwdWlmcFRkZFphZ05VOUJDekZLbXE?oc=5",
+"time": "2026-11-11T16:10:00Z",
+"via": "google-news",
+"tickers": [
+"MRNA"
+],
+"t212": [
+"MRNA"
+],
+"flags": [],
+"first_seen": "2026-11-11T16:20:30Z"
+},
+{
+"source": "prnewswire",
+"title": "Rocket One's Tracer Drone Secures Public Safety Wins Across Four Law Enforcement Agencies, Two Sheriff's Departments and Two Fire Departments",
+"url": "https://www.prnewswire.com/news-releases/rocket-ones-tracer-drone-secures-public-safety-wins-across-four-law-enforcement-agencies-two-sheriffs-departments-and-two-fire-departments-302936698.html",
+"time": "2026-11-11T16:06:00Z",
+"tickers": [
+"RKTO"
+],
+"t212": [
+"RKTO"
+],
+"flags": [],
+"first_seen": "2026-11-11T16:10:25Z"
+},
+{
+"source": "prnewswire",
+"title": "Urban Outfitters' Annual Singles Day Vinyl Collection Features Exclusive Singles By Ad\u00e9la, SZA, And More Year-Defining Artists",
+"url": "https://www.prnewswire.com/news-releases/urban-outfitters-annual-singles-day-vinyl-collection-features-exclusive-singles-by-adela-sza-and-more-year-defining-artists-302935997.html",
+"time": "2026-11-11T16:00:00Z",
+"tickers": [
+"URBN"
+],
+"t212": [
+"URBN"
+],
+"flags": [],
+"first_seen": "2026-11-11T16:05:31Z"
+},
+{
+"source": "prnewswire",
+"title": "Deere to Announce Fourth Quarter 2026 Financial Results",
+"url": "https://www.prnewswire.com/news-releases/deere-to-announce-fourth-quarter-2026-financial-results-302935106.html",
+"time": "2026-11-11T16:00:00Z",
+"tickers": [
+"DE"
+],
+"t212": [
+"DE"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-11T16:05:31Z"
+},
+{
+"source": "globenewswire",
+"title": "Richardson Electronics to Participate in the 15th Annual ROTH Technology Conference on November 18",
+"url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxNX3hzamlsNzRET19sVzVOUVVVM1J5YTV1VWI3T1U5WU5scnA4bTM5cjB2UkE5cGMwNXVXVnpMbFpybldBUDJmbnZqbXRXLWkydjgtclg2U05LQ2RvZXJJU3FlTk5WdjduOFZmV0p6ZUpUNXZaRk5LYTc4QzVRaG5vLW1UZ0N3Y1VCV1c2cU9KSmFmTHJkTUZ6eXVNeE5XbzRYLS0tSEU5ZFZweXdUTkJRUkx4RmRIcldBS3pJWl9xMi1tajd2S3dBa3ViSExFbk5rdm9TaVkyWVRnb0hrTHBxRW9wM3BDZ3hzS1htQ1d3QVpfNnZBYkZpS0NnN0o5aVk?oc=5",
+"time": "2026-11-11T16:00:00Z",
+"via": "google-news",
+"tickers": [
+"RELL"
+],
+"t212": [
+"RELL"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-11T16:05:31Z"
+},
+{
+"source": "prnewswire",
+"title": "Quantinuum und RIKEN erweitern ihre Partnerschaft, um die Kommerzialisierung von Quanten-KI-Hybrid-Supercomputing in Japan zu beschleunigen",
+"url": "https://www.prnewswire.com/news-releases/quantinuum-und-riken-erweitern-ihre-partnerschaft-um-die-kommerzialisierung-von-quanten-ki-hybrid-supercomputing-in-japan-zu-beschleunigen-302936678.html",
+"time": "2026-11-11T15:55:00Z",
+"tickers": [
+"QNT"
+],
+"t212": [
+"QNT"
+],
+"flags": [],
+"first_seen": "2026-11-11T16:05:31Z"
+},
+{
+"source": "globenewswire",
+"title": "Toll Brothers Announces New Luxury Homes Coming Soon to Jacksonville, Florida",
+"url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNOW9sZlVYMEZRdENsbllsazRfTk1MbnpvWnJSd0l6Q0piR00wbWx5NDNRSy1hcjdVRXRwSGZKRE5oOS1EZGRrcTEySmZoMlBBbHViLUtfWlA3cVlEb3Nmc3lUT0ppOVZDajlldVpKVjgtVE9zNzB4ZzRMV2M0NFRacWdFeTluVkZpSzdkRzAzVUNfSjRJWWo3WkVvUHNMZ1pGYV9hVDdnbEd4MEtKN2VWNEkxVjVaYUpMbGh0MmY4QlFaWnpacEwtcGJ2SWhodFdtbkllV2k4eWtOYjU3bnkzVU5R?oc=5",
+"time": "2026-11-11T15:51:20Z",
+"via": "google-news",
+"tickers": [
+"TOL"
+],
+"t212": [
+"TOL"
+],
+"flags": [],
+"first_seen": "2026-11-11T16:05:31Z"
+},
+{
+"source": "businesswire",
+"title": "Verisign Announces .Web Launch, Key Dates",
+"url": "http://www.businesswire.com/news/home/20261111358681/en/Verisign-Announces-.Web-Launch-Key-Dates/?feedref=JjAwJuNHiystnCoBq_hl-WsGkFyUNMTSNrPsg57HLEqqcp-o_pnudlUwsb5apQ1S4gUE65BTfjH3-pSuqdv0gW3cb3F4oTIgUqCPafFkgu5AneicJQDNboWvodvG82E0",
+"time": "2026-11-11T15:27:00Z",
+"tickers": [
+"VRSN"
+],
+"t212": [
+"VRSN"
+],
+"flags": [],
+"first_seen": "2026-11-11T15:40:24Z"
+},
+{
+"source": "prnewswire",
+"title": "Research Solutions Announces Date and Time Change of First Quarter Fiscal Year 2027 Results and Conference Call",
+"url": "https://www.prnewswire.com/news-releases/research-solutions-announces-date-and-time-change-of-first-quarter-fiscal-year-2027-results-and-conference-call-302936628.html",
+"time": "2026-11-11T15:22:00Z",
+"tickers": [
+"RSSS"
+],
+"t212": [
+"RSSS"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-11T15:30:41Z"
+},
+{
+"source": "prnewswire",
+"title": "KGC Shareholder Notice: Shareholder Rights Law Firm Robbins LLP Reminds Investors of the Class Action Lawsuit Against Kinross Gold Corporation",
+"url": "https://www.prnewswire.com/news-releases/kgc-shareholder-notice-shareholder-rights-law-firm-robbins-llp-reminds-investors-of-the-class-action-lawsuit-against-kinross-gold-corporation-302936021.html",
+"time": "2026-11-11T15:17:00Z",
+"tickers": [
+"KGC"
+],
+"t212": [
+"KGC"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-11T15:20:29Z"
+},
+{
+"source": "prnewswire",
+"title": "GILT SHAREHOLDER INVESTIGATION: SueWallSt Notifies Investors of Potential Securities Claims Involving Gilat Satellite Networks Ltd. With its third-quarter 2026 results, Gilat Satellite Networks Ltd. (NASDAQ: GILT) reduced its 2026 revenue guidance from $500 million\u00e2\u0080\u0093$520 million to ...",
+"url": "https://www.prnewswire.com/news-releases/gilt-shareholder-investigation-suewallst-notifies-investors-of-potential-securities-claims-involving-gilat-satellite-networks-ltd-302936018.html",
+"time": "2026-11-11T15:11:00Z",
+"tickers": [
+"GILT"
+],
+"t212": [
+"GILT"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-11T15:20:29Z"
+},
+{
+"source": "prnewswire",
+"title": "IHRT SHAREHOLDER INVESTIGATION: SueWallSt Notifies Investors of Potential Securities Claims Involving iHeartMedia, Inc. iHeartMedia, Inc. (NASDAQ: IHRT) shares fell approximately 35% to 37% in after-hours trading following the Company's November 9, 2026 third-quarter...",
+"url": "https://www.prnewswire.com/news-releases/ihrt-shareholder-investigation-suewallst-notifies-investors-of-potential-securities-claims-involving-iheartmedia-inc-302936016.html",
+"time": "2026-11-11T15:11:00Z",
+"tickers": [
+"IHRT"
+],
+"t212": [
+"IHRT"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-11T15:20:29Z"
+},
+{
+"source": "prnewswire",
+"title": "Robbins LLP Urges QBTS Shareholders to Contact the Firm for Information About the D-Wave Quantum Inc. Securities Class Action",
+"url": "https://www.prnewswire.com/news-releases/robbins-llp-urges-qbts-shareholders-to-contact-the-firm-for-information-about-the-d-wave-quantum-inc-securities-class-action-302936008.html",
+"time": "2026-11-11T15:10:00Z",
+"tickers": [
+"QBTS"
+],
+"t212": [
+"QBTS"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-11T15:20:29Z"
+},
+{
+"source": "prnewswire",
+"title": "Armada y Johnson Controls lanzan Galleon Forge Two en Dubl\u00c3\u00adn Armada, empresa dedicada a la infraestructura de computaci\u00c3\u00b3n soberana, y Johnson Controls (NYSE: JCI) han anunciado hoy el inicio de la producci\u00c3\u00b3n en ...",
+"url": "https://www.prnewswire.com/news-releases/armada-y-johnson-controls-lanzan-galleon-forge-two-en-dublin-302936602.html",
+"time": "2026-11-11T14:58:00Z",
+"tickers": [
+"JCI"
+],
+"t212": [
+"JCI"
+],
+"flags": [],
+"first_seen": "2026-11-11T15:05:58Z"
+},
+{
+"source": "prnewswire",
+"title": "Group 1 Automotive Welcomes Porsche Atlanta North Following Hennessy Acquisition As part of its ongoing nationwide initiative to unify its extensive network of dealerships, Group 1 Automotive, Inc., a Houston-based automotive...",
+"url": "https://www.prnewswire.com/news-releases/group-1-automotive-welcomes-porsche-atlanta-north-following-hennessy-acquisition-302935995.html",
+"time": "2026-11-11T14:52:00Z",
+"tickers": [
+"GPI"
+],
+"t212": [
+"GPI"
+],
+"flags": [],
+"first_seen": "2026-11-11T15:05:58Z"
+},
+{
+"source": "prnewswire",
+"title": "Group 1 Automotive Welcomes Porsche Atlanta Northwest Following Hennessy Acquisition",
+"url": "https://www.prnewswire.com/news-releases/group-1-automotive-welcomes-porsche-atlanta-northwest-following-hennessy-acquisition-302935980.html",
+"time": "2026-11-11T14:46:00Z",
+"tickers": [
+"GPI"
+],
+"t212": [
+"GPI"
+],
+"flags": [],
+"first_seen": "2026-11-11T14:50:25Z"
+},
+{
+"source": "prnewswire",
+"title": "New Phase 3b data on Lilly's Taltz (ixekizumab) and Zepbound (tirzepatide) used together showed improved and durable efficacy, patient-reported and metabolic outcomes at one year in adults with psoriatic arthritis and obesity Eli Lilly and Company (NYSE: LLY) today announced detailed 52-week results showing improved and durable efficacy from the TOGETHER-PsA Phase 3b...",
+"url": "https://www.prnewswire.com/news-releases/new-phase-3b-data-on-lillys-taltz-ixekizumab-and-zepbound-tirzepatide-used-together-showed-improved-and-durable-efficacy-patient-reported-and-metabolic-outcomes-at-one-year-in-adults-with-psoriatic-arthritis-and-obesity-302935708.html",
+"time": "2026-11-11T14:45:00Z",
+"tickers": [
+"LLY"
+],
+"t212": [
+"LLY"
+],
+"flags": [],
+"first_seen": "2026-11-11T14:50:25Z"
+},
+{
+"source": "prnewswire",
+"title": "Group 1 Automotive Continues Nationwide Brand Alignment with Lexus Gwinnett",
+"url": "https://www.prnewswire.com/news-releases/group-1-automotive-continues-nationwide-brand-alignment-with-lexus-gwinnett-302936026.html",
+"time": "2026-11-11T14:41:00Z",
+"tickers": [
+"GPI"
+],
+"t212": [
+"GPI"
+],
+"flags": [],
+"first_seen": "2026-11-11T14:44:25Z"
+},
+{
+"source": "prnewswire",
+"title": "Group 1 Automotive Continues Nationwide Brand Alignment with Lexus of Atlanta",
+"url": "https://www.prnewswire.com/news-releases/group-1-automotive-continues-nationwide-brand-alignment-with-lexus-of-atlanta-302936000.html",
+"time": "2026-11-11T14:36:00Z",
+"tickers": [
+"GPI"
+],
+"t212": [
+"GPI"
+],
+"flags": [],
+"first_seen": "2026-11-11T14:40:26Z"
+},
+{
+"source": "accessnewswire",
+"title": "Cosmos Health Provides U.S. E-Commerce Update for October 2026: Monthly Subscription Value Reaches $1.83 Million, Approximately $22 Million Annualized",
+"url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQZlo3cG04eWl6dkoyQzY0LUpjb3RjZHNqOWVfcjkxU2hPczI3Z3phTllRaEVSZUk0SGpZeFc0SEVFTjRoUlE3OHBERkMtY1V5N25BLVJrVE1kMHo1UEhxb1daN0hZUnRMUGlRVjVWaTFFWHgtcnNHcTUxcV9KZDZ2T0Ftb3poczlpYWc3MGNua2FYRzNwRU9rRm5ncDV6RTRqTDdwaDF3ZTAwV1BqSW54RmlMTUhURHlycTNBYURRRlV0Ull3SzMxd3UxaHFiUVdtYVBzQnVOOTBkc29yVU5XNmpkV0k?oc=5",
+"time": "2026-11-11T14:30:00Z",
+"via": "google-news",
+"tickers": [
+"COSM"
+],
+"t212": [
+"COSM"
+],
+"flags": [],
+"first_seen": "2026-11-11T14:50:25Z"
+},
+{
+"source": "prnewswire",
+"title": "Group 1 Automotive Welcomes Land Rover North Atlanta Following Hennessy Acquisition",
+"url": "https://www.prnewswire.com/news-releases/group-1-automotive-welcomes-land-rover-north-atlanta-following-hennessy-acquisition-302935966.html",
+"time": "2026-11-11T14:28:00Z",
+"tickers": [
+"GPI"
+],
+"t212": [
+"GPI"
+],
+"flags": [],
+"first_seen": "2026-11-11T14:30:46Z"
+},
+{
+"source": "accessnewswire",
+"title": "PodcastOne (Nasdaq: PODC) to Report Second Quarter Fiscal 2027 Financial Results on November 12, 2026",
+"url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQTXhyRXN3QzNGS3BGdTVkVUt1V3FObjlUaU5aTi1FaWJFVEJqSzVlU0YwOVZjM0dmLTAyOGxXNmFmU2dyR1liSU5IWTRYcGNxbFlPVkdMMGdVdzBrNTlLejdpUXdST090SEQwTWZQNnc2NUtCSlc5NzdtTWxFTHpUanFGd2tmZ3RCRHBXYzhSSkVneHlETi0tZTUydURKdXNCaFliLWJaZVRrMjBQckMzRktxSUpnOVlfM0tVZjJ5ZFhjcnlaMTdFX2tVa3RXdVhSR2I1OU0ySi12MUhqUzVCVVkyTkc?oc=5",
+"time": "2026-11-11T14:25:00Z",
+"via": "google-news",
+"tickers": [
+"PODC"
+],
+"t212": [
+"PODC"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-11T14:30:46Z"
+},
+{
+"source": "accessnewswire",
+"title": "LiveOne (Nasdaq: LVO) to Report Second Quarter Fiscal 2027 Financial Results on November 12, 2026",
+"url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPOWVGMnFSTWt3eXJLZ1hHVmhhWW53QzBvUG1ncXdsMDEyX19lWUxkUVVIN0RWQUlEWjVEb01xODdreElCem1jS2lsNmtJRnJqUmJ2WGE4ZjRDZERBeV9tSEVkOFBWazBBb2ZXU3dySHoxNV9wV0wweUwyQkx1eE9UVkZYMUFpRUxpdDROZWZDcXE3QkM2LTdvOEo3WkRpRTgwSFB5UHNvZHZjaHE4cHVyVjBKQ1MwLXpGTFFYcmk0TnFtVXg3bDlCVHFYRjBjeTYtRkotT2hHaXBaTmFjSDlQTVhhWQ?oc=5",
+"time": "2026-11-11T14:25:00Z",
+"via": "google-news",
+"tickers": [
+"LVO"
+],
+"t212": [
+"LVO"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-11T14:30:46Z"
+},
+{
+"source": "prnewswire",
+"title": "Group 1 Automotive Welcomes Land Rover Gwinnett Following Hennessy Acquisition",
+"url": "https://www.prnewswire.com/news-releases/group-1-automotive-welcomes-land-rover-gwinnett-following-hennessy-acquisition-302936004.html",
+"time": "2026-11-11T14:22:00Z",
+"tickers": [
+"GPI"
+],
+"t212": [
+"GPI"
+],
+"flags": [],
+"first_seen": "2026-11-11T14:30:46Z"
+},
+{
+"source": "prnewswire",
+"title": "Group 1 Automotive Continues Nationwide Brand Alignment with Jaguar Land Rover Buckhead As part of its ongoing nationwide initiative to unify its extensive network of dealerships, Group 1 Automotive, Inc., a Houston-based automotive...",
+"url": "https://www.prnewswire.com/news-releases/group-1-automotive-continues-nationwide-brand-alignment-with-jaguar-land-rover-buckhead-302935977.html",
+"time": "2026-11-11T14:19:00Z",
+"tickers": [
+"GPI"
+],
+"t212": [
+"GPI"
+],
+"flags": [],
+"first_seen": "2026-11-11T14:20:27Z"
+},
+{
+"source": "globenewswire",
+"title": "Fabric.AI Files U.S. Patent Application to Put Surplus",
+"url": "https://news.google.com/rss/articles/CBMiqgJBVV95cUxPdm01aXpJbE9ScE1SQURVRlBFQjhjVDZiZVRvalhPWE5acDVuclBVN2JXTmdUUDhqWW4tcU10NXJiQU5DNGlSTGZBUU52bGhrbFJfNzIxX1o0b2xFblBkTEVMRTZmOEFockczSW95M25Yci1UMlFoVlVnN2ZrbnFKQUhFQWVqU1VKa1U0TFJ0WGJOb0hFVDNjN1ZQekVncHNEWDEzdm1VNDJzWUEyRWF6M192cll2cmt0U19WZ3JjVWgzMkZJV043V1VaQTVUT01WYXoyNWZJX2dIeXdOSGxzMnc4OXlFTXZ6a19hb3JNQjE2UVh0TGFKbFZQelVXd0ZINW1feGpROHBpQVdGNGFNejRmTmVDZmV6RzlTWlFrajByMkFjOG5WLVd3?oc=5",
+"time": "2026-11-11T14:15:00Z",
+"via": "google-news",
+"tickers": [
+"FABC"
+],
+"t212": [
+"FABC"
+],
+"flags": [],
+"first_seen": "2026-11-11T14:30:46Z"
+},
+{
+"source": "prnewswire",
+"title": "Group 1 Automotive Announces Hennessy Honda of Woodstock is now Group 1 Honda Woodstock",
+"url": "https://www.prnewswire.com/news-releases/group-1-automotive-announces-hennessy-honda-of-woodstock-is-now-group-1-honda-woodstock-302935986.html",
+"time": "2026-11-11T14:14:00Z",
+"tickers": [
+"GPI"
+],
+"t212": [
+"GPI"
+],
+"flags": [],
+"first_seen": "2026-11-11T14:20:27Z"
+},
+{
+"source": "newsfile",
+"title": "Oracle Commodity Holding Announces $105,000 Private Placement",
+"url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNQTgyQ3JPQWViSkJRNTNOYk02Yndwd1Q4VkhCREtoLXFNc1JhUEYwOWVObmt3NXpaUWdhdzRnVWcyektTaEtSWGVQTWVNV1lLUVJhTzNzRjZiNXZKdEExZ0toYUNkT0lmU2tObG9VWUl6d24xRWFvWUNVS2xZOG1QcFMycVc0YlNPM1BTSmNqZ0ZsT1U0VVZ4dFJVTWlzOFNpV09lbk5n?oc=5",
+"time": "2026-11-11T14:14:00Z",
+"via": "google-news",
+"tickers": [
+"ORCL"
+],
+"t212": [
+"ORCL"
+],
+"flags": [
+"financing"
+],
+"first_seen": "2026-11-11T14:40:26Z"
+},
+{
+"source": "prnewswire",
+"title": "GuideOne Insurance, a Member Company of The Mutual Group, Completes Guidewire Cloud Migration to Speed Innovation",
+"url": "https://www.prnewswire.com/news-releases/guideone-insurance-a-member-company-of-the-mutual-group-completes-guidewire-cloud-migration-to-speed-innovation-302936568.html",
+"time": "2026-11-11T14:12:00Z",
+"tickers": [
+"GWRE"
+],
+"t212": [
+"GWRE"
+],
+"flags": [],
+"first_seen": "2026-11-11T14:20:27Z"
+},
+{
+"source": "accessnewswire",
+"title": "Arrive AI Announces Strategic Investment in Ottonomy to Accelerate Autonomous Delivery Network Expansion",
+"url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPWHVWQ0xsVGRCa05rOThGWi1TbjhOX0pqYi1zOURhRHVQVXRXMHE4VThSNXJGSHRPck9FaFNDd1dYLXJXQW9rbFdEU1kwN1pHNHVQOFVMU0J3ZjNQVUVaT0MzckRBVTFIVnhhaUkzUTNYLWk2MmpMR0ZVVFp0ZF9HbzlWb3cyRkJyY05NOHR4ZUlkZFpHQVdyWWRVM0Z5X0VvWGg3ejU2VEtaN1d0NDdTdVlvYU9kUTY2SnBhZ2NWSUNQWGxlWE83NXdncllSczdlS1pPR3lGTGlZb3hMU0YxTWZYSVo?oc=5",
+"time": "2026-11-11T14:12:00Z",
+"via": "google-news",
+"tickers": [
+"ARAI"
+],
+"t212": [
+"ARAI"
+],
+"flags": [],
+"first_seen": "2026-11-11T14:20:27Z"
+},
+{
+"source": "prnewswire",
+"title": "Group 1 Automotive Announces Hennessy Ford Lincoln is now Group 1 Ford Lincoln Atlanta In a strategic move to unify its extensive network of dealerships, Group 1 Automotive, Inc., a Houston-based automotive retailer with dealerships...",
+"url": "https://www.prnewswire.com/news-releases/group-1-automotive-announces-hennessy-ford-lincoln-is-now-group-1-ford-lincoln-atlanta-302935973.html",
+"time": "2026-11-11T14:09:00Z",
+"tickers": [
+"GPI"
+],
+"t212": [
+"GPI"
+],
+"flags": [],
+"first_seen": "2026-11-11T14:10:26Z"
+},
+{
+"source": "globenewswire",
+"title": "Critical Metals Corp (Nasdaq: CRML) Delivers 2026",
+"url": "https://news.google.com/rss/articles/CBMiyAJBVV95cUxOVTRZZEphUjduenhvT3MxTXdXYktVWngxbkMwR0NKUGxGOXJFdndPSTgwU2lkYkVMMU9IckVBQm9CV1ZESUFQQmlPMld2QVNydTRSM3R1bjBGZ25CTl9hX3FvcGRjY0V6UjlJUExnUkhsbjBSc1pkLVJBNzlHMGlrWlNVNmNXY1ZLWjNsVmFJbkg4aU5rWTBzUUNURm93X1YtTnJ1MUNHamNhZm15SjFKTWhDbHo5MVpPT1htTkFfUjlLdjVWT3VBOUI0UWppQmFSTDM0anFOWXNBNTZpYndJeGF1WlhabEZVUWg4WEJBLTQ1VlNpR3NydDI3ZHd1YWxWSkc3LTlJYUJqR2lRMldRd20zRjFIRDNvSVRLREp5WGg0RXFVY1JYcDhxVC1tbDJKeU1ubGxFd09zN09WZlBqSEF5XzBwcXds?oc=5",
+"time": "2026-11-11T14:05:05Z",
+"via": "google-news",
+"tickers": [
+"CRML"
+],
+"t212": [
+"CRML"
+],
+"flags": [],
+"first_seen": "2026-11-11T14:20:27Z"
+},
+{
+"source": "prnewswire",
+"title": "Group 1 Automotive Continues Nationwide Brand Alignment with Cadillac Duluth",
+"url": "https://www.prnewswire.com/news-releases/group-1-automotive-continues-nationwide-brand-alignment-with-cadillac-duluth-302935972.html",
+"time": "2026-11-11T14:05:00Z",
+"tickers": [
+"GPI"
+],
+"t212": [
+"GPI"
+],
+"flags": [],
+"first_seen": "2026-11-11T14:10:26Z"
+},
+{
+"source": "prnewswire",
+"title": "Supermicro Now Shipping Next-Generation Servers Powered by 6th Gen AMD EPYC\u00e2\u0084\u00a2 9006 Series CPUs for Cloud, HPC, and Agentic AI Workloads Super Micro Computer, Inc. (NASDAQ: SMCI), an AI, Enterprise, Storage, and 5G/Edge Total IT Solution Provider featuring Data Center Building Block...",
+"url": "https://www.prnewswire.com/news-releases/supermicro-now-shipping-next-generation-servers-powered-by-6th-gen-amd-epyc-9006-series-cpus-for-cloud-hpc-and-agentic-ai-workloads-302935896.html",
+"time": "2026-11-11T14:05:00Z",
+"tickers": [
+"SMCI"
+],
+"t212": [
+"SMCI"
+],
+"flags": [],
+"first_seen": "2026-11-11T14:10:26Z"
+},
+{
+"source": "globenewswire",
+"title": "Xometry to Participate in Upcoming Investor Conferences",
+"url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPdHhlenVWb2t4MG1Wa1BOWHc5MjI5RlA1dmxYRmpYYlp3c1lJZDVXVTRWVVJJaDBjNlFUNHp4Z3UzZnE4R2NRcV9LUmZGRjN6WVdUWlNLU05Xbmpmb2puYnlTT3dHRkNWNC04VXM1OWlSOXZ0LVM0d2lXQ2FlamY0V2lmOXg5VXRUVHVqcDN4RHlwc2lJdFk0WS1ITE9aZE1jeEJJREFhLXBuMW5rWlNPUWtEQjVfaU94UUlUcTVRZVRta0hPNmc?oc=5",
+"time": "2026-11-11T14:05:00Z",
+"via": "google-news",
+"tickers": [
+"XMTR"
+],
+"t212": [
+"XMTR"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-11T14:20:27Z"
+},
+{
+"source": "prnewswire",
+"title": "Simpson Manufacturing Co., Inc. Announces Participation at The Stephens Annual Investment Conference Simpson Manufacturing Co., Inc. (the \"Company\") (NYSE: SSD), an industry leader in engineered structural connectors and building solutions, announced ...",
+"url": "https://www.prnewswire.com/news-releases/simpson-manufacturing-co-inc-announces-participation-at-the-stephens-annual-investment-conference-302933640.html",
+"time": "2026-11-11T14:00:00Z",
+"tickers": [
+"SSD"
+],
+"t212": [
+"SSD"
+],
+"flags": [],
+"first_seen": "2026-11-11T14:00:51Z"
+},
+{
+"source": "prnewswire",
+"title": "CVS Health earns global recognition for industry-leading AI and technology innovation CVS Health\u00c2\u00ae (NYSE: CVS) is being recognized with seven Stevie\u00c2\u00ae Awards for technology and responsible AI innovations that are simplifying access to...",
+"url": "https://www.prnewswire.com/news-releases/cvs-health-earns-global-recognition-for-industry-leading-ai-and-technology-innovation-302932347.html",
+"time": "2026-11-11T14:00:00Z",
+"tickers": [
+"CVS"
+],
+"t212": [
+"CVS"
+],
+"flags": [],
+"first_seen": "2026-11-11T14:00:51Z"
+},
+{
+"source": "prnewswire",
+"title": "Cineverse Building Upon Social Video Revenue Growth with a First-Time Spanish-Language Dog Whisperer Channel on YouTube + a Yu-Gi-Oh! Live Stream In June, entertainment technology company and studio Cineverse (Nasdaq: CNVS) recorded its highest-ever gross revenue from social video in a single...",
+"url": "https://www.prnewswire.com/news-releases/cineverse-building-upon-social-video-revenue-growth-with-a-first-time-spanish-language-dog-whisperer-channel-on-youtube--a-yu-gi-oh-live-stream-302935650.html",
+"time": "2026-11-11T14:00:00Z",
+"tickers": [
+"CNVS"
+],
+"t212": [
+"CNVS"
+],
+"flags": [],
+"first_seen": "2026-11-11T14:00:51Z"
+},
+{
+"source": "prnewswire",
+"title": "BIRKENSTOCK OPENS IN ARMADALE, MELBOURNE On 7 November, BIRKENSTOCK officially opened its High Street, Armadale store, marking the iconic German footwear brand's first retail footprint on...",
+"url": "https://www.prnewswire.com/news-releases/birkenstock-opens-in-armadale-melbourne-302936464.html",
+"time": "2026-11-11T14:00:00Z",
+"tickers": [
+"BIRK"
+],
+"t212": [
+"BIRK"
+],
+"flags": [],
+"first_seen": "2026-11-11T14:00:51Z"
+},
+{
+"source": "businesswire",
+"title": "Credo Schedules Second Quarter Fiscal Year 2027 Financial Results Conference Call",
+"url": "http://www.businesswire.com/news/home/20261111758581/en/Credo-Schedules-Second-Quarter-Fiscal-Year-2027-Financial-Results-Conference-Call/?feedref=JjAwJuNHiystnCoBq_hl-WsGkFyUNMTSNrPsg57HLEqqcp-o_pnudlUwsb5apQ1S4gUE65BTfjH3-pSuqdv0gW3cb3F4oTIgUqCPafFkgu5AneicJQDNboWvodvG82E0",
+"time": "2026-11-11T14:00:00Z",
+"tickers": [
+"CRDO"
+],
+"t212": [
+"CRDO"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-11T14:10:26Z"
+},
+{
+"source": "prnewswire",
+"title": "NEREUS\u00e2\u0084\u00a2 - The Goat of Biscayne Bay Arrives for Miami Art Week Vanda Pharmaceuticals Inc. (Nasdaq: VNDA) today announced that \"NEREUS\u00e2\u0084\u00a2 \u00e2\u0080\u0093 The Goat of Biscayne Bay\" is arriving during Miami Art Week, offering a...",
+"url": "https://www.prnewswire.com/news-releases/nereus--the-goat-of-biscayne-bay-arrives-for-miami-art-week-302936553.html",
+"time": "2026-11-11T14:00:00Z",
+"tickers": [
+"VNDA"
+],
+"t212": [
+"VNDA"
+],
+"flags": [
+"financing"
+],
+"first_seen": "2026-11-11T14:10:26Z"
+},
+{
+"source": "globenewswire",
+"title": "Onfolio Holdings Sets Third Quarter 2026 Earnings Call for November 17, 2026, at 8:00 a.m. ET",
+"url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxQNnp5SGNMTndOR3pmT0tmN3BJZ2pSWDJwME9sMGpCOXhPMk5vdUVzTnNmTXpRTk43bGtTel94dDVsRzFIQWswMEpka2kyNlFJUUt1QUo4ZGdiUHY2Zzk4N1R5SURZQ0FOckxITlZ1ZVBaWDRqTDFocmNrbG16aHVkTzFfM1I4VGNaSnhkOWFCMWNnNUdFckxLRVF2bURPRXlfSkh2N1QxSE1McWxPN1QyRXJZZHNFRlBxY2k0ekM1S2FaeGpoM1ZaSkJ4S282YnhMYi1TejFDSXNjUHg3ZmFYbkF4emRkTHE3d3VBM0MzcHMxcGtM?oc=5",
+"time": "2026-11-11T14:00:00Z",
+"via": "google-news",
+"tickers": [
+"ONFO"
+],
+"t212": [
+"ONFO"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-11T14:20:27Z"
+},
+{
+"source": "globenewswire",
+"title": "Alphatec Holdings, Inc. (NASDAQ: ATEC) INVESTIGATION ALERT:",
+"url": "https://news.google.com/rss/articles/CBMi0AJBVV95cUxQSk92eHM0aGRzS1ZNaWVKMm5MMFh4NXZvOVgzSGRzYVczRUs4Vlh4dW1RZkRjanF4X1J5YjJ6d1F2aUNYazcxMGlTRVhuQ3RBRFBHUzVEVGR4MWhVcWsybWxvRW9Id3h6LVVSTUVxRXJLZXk4ODB5RU56V1o4ZUNKUkxtbVF3bmgtcWNqbDVFdnNVT1dlRDQtWGlfZVlYbElESFJrMVFVVW10WGJaOE0zaDgzdXZvTnF5ZjZoRjBqa3NoZi1POTAzNTc2bGJoaW53SmVMYWxfLXpRWG9GZnFyRFBjWV9xZGlkQjhIOW91VWxNSEMySnFRVzZjYzlJTm1YUkhRVmt0UUdxeUo3c0t3WWVwZUF2MHlPSGZuRWFlOUp4S0ZkTE5BRjVKY21MVmU0eFp2YUM2VlVGcmZrLV9Dc1ctalp6WlY5UGZYNmVvUnA?oc=5",
+"time": "2026-11-11T14:00:00Z",
+"via": "google-news",
+"tickers": [
+"ATEC"
+],
+"t212": [
+"ATEC"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-11T14:20:27Z"
+},
+{
+"source": "globenewswire",
+"title": "NEXGEL Announces Noteholder Participation in Strategic",
+"url": "https://news.google.com/rss/articles/CBMiogJBVV95cUxOd3hhZDBzZzdhSGYwZFBGcy1GdjIzUUFVa2M3RFVjbFd4Y1lBZ0NRZ0pxV2tyaHZ4V0M2Rk1SenFfcFktRUhtbVlFTUt6dUlJcGMzZHY3WnJ1bGd5R1NCNV9iR2VaMnJTRDVEemJodlJEOEVuOFMtQXppNEphWngtUkdvbk9EYUNubTd6UmNrSmE3UDR4TWhNV1UySThmdzJqSVdqVGdhSG8zbVF1eVBDUUZBMTNxMXUycUlJZWxMclNMYlpsTW5FcUFfcVR6UjZ2TlNmZXpyN0E0bG01ZmM2Z1ViYkwxQjJBZnlqbmxZLW9BUVQ4LVFIZmllODlfOHN4Sm9kd0lqVnQzREdKMDYzWllfY3FpTXREU1hjQ3VPdGRfQQ?oc=5",
+"time": "2026-11-11T14:00:00Z",
+"via": "google-news",
+"tickers": [
+"NXGL"
+],
+"t212": [
+"NXGL"
+],
+"flags": [],
+"first_seen": "2026-11-11T14:20:27Z"
+},
+{
+"source": "globenewswire",
+"title": "Vivakor Acquisition Target Direct Midstream Reports Definitive Operating Agreements for 52-Well New Mexico Portfolio",
+"url": "https://news.google.com/rss/articles/CBMilwJBVV95cUxOVmVXWDRPOGY5T1pwUjRQdktpX2hFNGI3dG13amtTRDZIQ3BUM2lEYWNKblZwc3ZROHFRaVVfRExHbHpqcXVJd283Qm0tdnRPcFY4R21ubjZvMGIyY2piZzQwc2psTUREUTY4RDcxUW1NRTlVZFpzM0Vxa1kxaUtUVHRUZVJGUkZxUktWTXBpZFFDV1czS29Ic2tlcVJ4T3Mtc1luZFlVRHpJdzlscURGMzZPTklvLV9BSzYxODBMSUg2SFJRVV8zOXNiaXB2eWRIZDNHaElEQlF2OEd0OWxNbHRjeno5blFsLXNxQXV0S2h4WEZ4TDlycUNLX0NwOHRwcXdpRlhOaVFIbi1jZEt6Y2lJZ0l0cUU?oc=5",
+"time": "2026-11-11T14:00:00Z",
+"via": "google-news",
+"tickers": [
+"VIVK"
+],
+"t212": [
+"VIVK"
+],
+"flags": [],
+"first_seen": "2026-11-11T14:20:27Z"
+},
+{
+"source": "globenewswire",
+"title": "SINTX Technologies Advances SiN/PEEK 3D Printing Platform",
+"url": "https://news.google.com/rss/articles/CBMimgJBVV95cUxNd0Z4czlGRE9NUk5KeWhMZDBvVWhGQ2pyR0VvVndvNlR0ejhfeW9ydkk0dW90UkVLQ0Rwdi1OOEstb2h0Z195Tjh5VlFpQ1liSEpyOTNMck5NZUppeS15LXFuZDJmbDhpM25PQ21VcHB2TmVOWDJsemRhUThYOTFFM200S2I2c1ZVRGpJUmNYek1iMHlaczlWaWIwbFFfbFJNbmY3ZHZmZm9OZk1ncGNJMnpGU0dYSnZ5aGZnWEFiOWRlU3ZSZU52Vm1uV1kwTkUtdkVzYTR1YWh4WkNvVUxZVVBoSnBKS2NHR0FsVHJFWHlNanNKaE00cVZ2SGpwMWpSLW1rMnRJRWt3Z1l1TmswSkJsaW93RTVXaXc?oc=5",
+"time": "2026-11-11T14:00:00Z",
+"via": "google-news",
+"tickers": [
+"SINT"
+],
+"t212": [
+"SINT"
+],
+"flags": [],
+"first_seen": "2026-11-11T14:20:27Z"
+},
+{
+"source": "globenewswire",
+"title": "Arbor Realty Trust, Inc. (NYSE: ABR) INVESTIGATION ALERT:",
+"url": "https://news.google.com/rss/articles/CBMizwJBVV95cUxPdDZ6M2UzblJ2emVyeWpnWFVwRnJfMHo4ZWpMQ3FXS0NHQXV5LXNqZVJOYXJQaDFjTXVlclNuT3B1MzJDX0FkcHVWdVRxa0R6bUVsZXRqX0gtckRrci1FUnRjOUVhZW13NGRzWEc3SGZwbEl3X0dxUm84U00yMGtZbHdrdDEwdDNUZUhyYkZYdERWU191ODdQWEpfRWdwUVpCYkJHWERVd2hRS0M2aUdwN0stcTg3Qm5TR1ZPcTdDNjFISk5EaUFpTkFNeE5iaEZOVUxYTHo2ZFpEVmVFdEdwZDgwUVJUbnZZc3VISXliSlV4VlRqbW9mNUl0Q2ZfUmdWQWdWUDAzZ2k2dE5iNnhPVVd3amhMZTM4bWl2c01KSkstZ19zS0JyLWozVXpHUnphSlp1Qk1vMVlGTWR5OVlNTDN1elJJU3ZWMkE0N3RBbw?oc=5",
+"time": "2026-11-11T14:00:00Z",
+"via": "google-news",
+"tickers": [
+"ABR"
+],
+"t212": [
+"ABR"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-11T14:20:27Z"
+},
+{
+"source": "globenewswire",
+"title": "Beeline Medicines Announces Presentation of Phase 2 Results",
+"url": "https://news.google.com/rss/articles/CBMiqAJBVV95cUxQbDVJSkxsMGpLNm54d2w3Y3gzc3JaaEdEWk1XQnd0Wlp3TTlnREo2WjM2WFlKUEtoN0pfdkJqbDFsc3Y1b3VEZUhSdllyYi1ONXBfLVVkcGRBTnN4ZlBwcEpaVTRNWGZDUVVseE1kQ3pyekJKOGFKUERleC1SbWFzTjRGaGFEcWxNM0JzOXA4T29SQi1pUUNBc0N0SEQyYjR5TThlQTBlWnNHZ1pyWDIzcHJvd2hZOG9aSWk2Xy1LMGVzQ3A5Zm1OVkQ1WWJ0YVdfYk5sSk9KMkNCY2hoYUMyMVlFSE9RVVlPSUdaV2xWem1hbnMyMVBKRVY2eWVRaWVhR1pZcHF1V1FfazFIbGN0Vlp3ZDRuSHZvdmV3VFhmWE5SS2xfbzUxTw?oc=5",
+"time": "2026-11-11T14:00:00Z",
+"via": "google-news",
+"tickers": [
+"BLNE"
+],
+"t212": [
+"BLNE"
+],
+"flags": [],
+"first_seen": "2026-11-11T14:20:27Z"
+},
+{
+"source": "accessnewswire",
+"title": "Aptevo Therapeutics Announces Exercise of Existing Warrants for $3.0 Million Gross Proceeds",
+"url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNdUJJNHRqYTJqWWZhbGUtWEota2lqSnhnMWlsQVhUazZvcmgyOXZyX2dndkJYNW94NWpmclJBYVFDTXNXY0JFZDUyRTZ3LTQxbmQwQ1BaSzFCY0ZQQzB5a3ZGM1FPMjBiTVVpU2V4UmVXenhCaWFjWVpxMGxza2FkOXphdHI1eGxVRGZiQkxKN3pFN1NzSjFkWTlhVGFqNGUydExQUC1zYjhVMnFqclduTnd6X1hrV2J3TG1aUFlidFdzRTdXUlplbjhLemVDVXBQTkcwalJDeTdaN3ByYWxZSURGTU4?oc=5",
+"time": "2026-11-11T14:00:00Z",
+"via": "google-news",
+"tickers": [
+"APVO"
+],
+"t212": [
+"APVO"
+],
+"flags": [
+"financing"
+],
+"first_seen": "2026-11-11T14:20:27Z"
+},
+{
+"source": "globenewswire",
+"title": "QuantumScape Expands Commercial Roadmap with Osprey, the Open All-Solid-State Platform for Battery Development",
+"url": "https://news.google.com/rss/articles/CBMijgJBVV95cUxQUnY5MjN5eXZkVE1zS1ZvZnAyVlVtWnRxVFVFWl9WSGpCMzNoSHpZRE0wR2pZM0lhUloyZjFEcVZ3cGZ4ZFZIMGJEaU5SS1JSVmd4NjJDUEFpcTZFTDQtb0xsc1lJZFVsZnlPa2wtaE9JWmxiX3lhVXpBb2Z5TGRPUWdUQ2lmdWFKWlgwQnRCY3ExSFV1ZVl6SzBJTU9uRnoyaE9mSml3LVdkN19Nek1YOFIzbzFjRjdpbTJCOHh6OWhQazZleGw4ZU9hcV9CRHZQSWQ1TEhaZmJEN3R0d2Nial95eWF2aTc2LVB1ZjhBcTQwVXVVS2RGVUFqVVJXOEJrOElvdWJoUnYtcThyVFE?oc=5",
+"time": "2026-11-11T14:00:00Z",
+"via": "google-news",
+"tickers": [
+"QS"
+],
+"t212": [
+"QS"
+],
+"flags": [],
+"first_seen": "2026-11-11T15:20:29Z"
+},
+{
+"source": "globenewswire",
+"title": "Xerox Holdings Corporation (NASDAQ: XRX) INVESTIGATION",
+"url": "https://news.google.com/rss/articles/CBMi3AJBVV95cUxNem1vaHMyZFk4Y09saXJzOTlrRHNqOTVheEtQalJudF9VX0N3RnBtQUc2Z1FNendDWENZX1JxQ0VNYktRck9LY3U1bUoyczRTUHkwVlhoTkNaRktWSUU3bnBLSVdRZTRHYU9kZWJ5MlRtUnhZbHJUVTBzRWJNRmtfdHdyZkZWcDFRM0lGWWN0RzlSdHd5U0pUdTNQRmROTG5CSjUxY25VdG5XVVZhb3d0cElUak9pZ2taQmZadmp4N2ZvNmU4OXJvRUxjaDRSSFY5SF9IYVRKb3NUMUFjcVJsZjNOMk5XSmRzYnAtQkFCaTAyVlRhbVlfUFF4SFNpUWRsVHUwM21fdm9rbVR5ZmRycDBXalFSUmdvOVJrNmRMZTc3akxIYzltX3d5V3IxWDdPX2RpOU1WWGNkckRpUThtZmJNcE9fT3h2MS1zN2FqZmw4YzZjR09TOV9FSHM?oc=5",
+"time": "2026-11-11T14:00:00Z",
+"via": "google-news",
+"tickers": [
+"XRX"
+],
+"t212": [
+"XRX"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-11T15:50:38Z"
+},
+{
+"source": "accessnewswire",
+"title": "ACCESS Newswire Newsroom: Latest Press Releases & News",
+"url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1tYm9jMjZJTFhYMFBBMXE2aFYtcXVITVMybzNTMWtBbmlyNmp3M3I1MTB1cUI0T2FRaUJxSmtmX0ZwdVlrOWdEZlFhUElwREJt?oc=5",
+"time": "2026-11-11T13:57:16Z",
+"via": "google-news",
+"tickers": [
+"ACCS"
+],
+"t212": [
+"ACCS"
+],
+"flags": [],
+"first_seen": "2026-11-11T14:50:25Z"
+},
+{
+"source": "globenewswire",
+"title": "ServiceTitan (TTAN) Shareholder Alert: Johnson Fistel",
+"url": "https://news.google.com/rss/articles/CBMiqAJBVV95cUxQclVDSzZoamg2eDJGWXBOZml3Umg5aU5uYU55NngyZTJSQi1WV2c1TW9sLWdGQXlPc3dDWVZidTNyYTB5ZU9GUU5kbTMwd2FGS0J2MHNMeGlHQzRMS2RlakRCR1NBMzRZZzhicjN1YWNwZl9SaEludE9nck5lYW5JaEI5NkRaTmg2SG9DMlVHOXMydzRRMWprMDFveWY2VWdwT2d4d2RSVzkzblZ2WnBnTHVhQ2NwTGVBYU5lbXdOVVVLSW9PODlxbnoyTUpnaUVicnU4WFlrMUJWRkgtRnY0OFpxSVdWckNQZEd2eWVLaDJoY3hidW9OQWRESml5b1RiWjdCb1U5WVMwLW1SWUd4V3YxcWZHaTRMYVZ1LVVidlRSYV9pUWpFQg?oc=5",
+"time": "2026-11-11T13:54:51Z",
+"via": "google-news",
+"tickers": [
+"TTAN"
+],
+"t212": [
+"TTAN"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-12T02:30:21Z"
+},
+{
+"source": "globenewswire",
+"title": "Tempest Therapeutics Exercises Option to License Senlang\u2019s",
+"url": "https://news.google.com/rss/articles/CBMi4AJBVV95cUxPdGlZeDFTYmlzYUdZS1Y3djMtRXNxakR6VWhOcTUwcmpBVERFQnBISzd5eEhsTThiZlEyU0dwUVlMcm9qYV9pYTBqcnQ4LVd5LVV2dWJFdlBDaTBkdEs0UUo5eGUwdGNBTXlrSXFFQklVRW93R1o5V2RJQmZ5UW1WZVVZT19YTDdvRHItaWE3ZUZYeFF4dkt3ZV9BaTZOWi1Zd0hYY0RscEpkYTJIQ19FM1JXbVNNQklQYV9RSDNHTTJOX0lBM3JjaWxESi1rSjZRVXRVaFd1d2RTdzhhdlBBNV9MV0ZPSEpIZ0VoR3dBOWVaMmdKclhWMEdHTFF5SUJBNkFEcmlRS3FBZVl3VDVKcmkyY1oxb0lNUllEdFkxVmhSMmpnbDNvSVlFeXFQS0FXdUktM0xpX1RuZHczODh1SGEzZ3pCaVFOYkVPQm9FYjh3YzEyZW1weVhIQmV5UlZU?oc=5",
+"time": "2026-11-11T13:53:41Z",
+"via": "google-news",
+"tickers": [
+"TPST"
+],
+"t212": [
+"TPST"
+],
+"flags": [],
+"first_seen": "2026-11-11T14:00:51Z"
+},
+{
+"source": "prnewswire",
+"title": "Hitachi Vantara Expands VSP One for Enterprise AI with New Object Storage and Data Lakehouse Capabilities",
+"url": "https://www.prnewswire.com/news-releases/hitachi-vantara-expands-vsp-one-for-enterprise-ai-with-new-object-storage-and-data-lakehouse-capabilities-302935847.html",
+"time": "2026-11-11T13:50:00Z",
+"tickers": [
+"HTHIY"
+],
+"t212": [
+"HTHIY"
+],
+"flags": [],
+"first_seen": "2026-11-11T14:00:51Z"
+},
+{
+"source": "globenewswire",
+"title": "Akari Therapeutics Participates in Virtual Investor \u201cWhat",
+"url": "https://news.google.com/rss/articles/CBMitAJBVV95cUxQeDJTenp6aUpVbGJub2RDaXU5UlE2VWMyUzFCVlk4dm5xeGxTTDNqeWNFX2xvZXRpQ2NlSS1SeGFWekgta1BtdHNfMFN4UnlGY0dlSXBleU1naFc1aXNGOU54Q3kyTVZXeDh2NHI0T29DWDc4d3RocjVsM20wRVV3NXpGXy1sa09KRGxWemxkMEJhMGdKWnU3VzlmZFpEZUFtM1AweDU5LVl5QXFJc1FVWkZ6SE5fR01haGlEMDNJRHlFcWF6cnRfUnAyXzNqRzZndzg4Nl92TURCM1FqYUM3V1FZTmlhSWVrS1NwVTBYRVhUNFZnbkZBemVLMTlKdzZpRVd6YVM1SzFaVDQ4eElLU1ZVS2FJU2pET2JPQlN0dTJEWlZ4YUIyUElWM0ZoaHJVV3dFWA?oc=5",
+"time": "2026-11-11T13:44:00Z",
+"via": "google-news",
+"tickers": [
+"AKTX"
+],
+"t212": [
+"AKTX"
+],
+"flags": [],
+"first_seen": "2026-11-11T13:50:25Z"
+},
+{
+"source": "prnewswire",
+"title": "MDGL INVESTIGATION NOTICE: Hagens Berman, National Securities Law Firm, Investigating Madrigal Pharmaceuticals (NASDAQ: MDGL) Following Whistleblower Allegations of Clinical Data Integrity Concerns Hagens Berman, a national complex securities litigation law firm, announces an investigation into Madrigal Pharmaceuticals, Inc. (NASDAQ: MDGL). The...",
+"url": "https://www.prnewswire.com/news-releases/mdgl-investigation-notice-hagens-berman-national-securities-law-firm-investigating-madrigal-pharmaceuticals-nasdaq-mdgl-following-whistleblower-allegations-of-clinical-data-integrity-concerns-302935930.html",
+"time": "2026-11-11T13:39:00Z",
+"tickers": [
+"MDGL"
+],
+"t212": [
+"MDGL"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-11T13:40:30Z"
+},
+{
+"source": "prnewswire",
+"title": "NVDA INVESTOR ALERT: Hagens Berman Urges NVIDIA Corporation (NASDAQ: NVDA) Investors with Substantial Losses to Contact Firm Ahead of January 8, 2027 Lead Plaintiff Deadline",
+"url": "https://www.prnewswire.com/news-releases/nvda-investor-alert-hagens-berman-urges-nvidia-corporation-nasdaq-nvda-investors-with-substantial-losses-to-contact-firm-ahead-of-january-8-2027-lead-plaintiff-deadline-302935923.html",
+"time": "2026-11-11T13:38:00Z",
+"tickers": [
+"NVDA"
+],
+"t212": [
+"NVDA"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-11T13:40:30Z"
+},
+{
+"source": "prnewswire",
+"title": "HAGENS BERMAN, NATIONAL SECURITIES LAW FIRM, Encourages CVRx, Inc. (CVRX) Investors with Substantial Losses to Contact Firm, Securities Class Action Filed",
+"url": "https://www.prnewswire.com/news-releases/hagens-berman-national-securities-law-firm-encourages-cvrx-inc-cvrx-investors-with-substantial-losses-to-contact-firm-securities-class-action-filed-302935924.html",
+"time": "2026-11-11T13:36:00Z",
+"tickers": [
+"CVRX"
+],
+"t212": [
+"CVRX"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-11T13:40:30Z"
+},
+{
+"source": "prnewswire",
+"title": "APP 5-DAY DEADLINE ALERT: AppLovin Corporation Investors with Substantial Losses Encouraged to Contact Hagens Berman, Securities Class Action Pending",
+"url": "https://www.prnewswire.com/news-releases/app-5-day-deadline-alert-applovin-corporation-investors-with-substantial-losses-encouraged-to-contact-hagens-berman-securities-class-action-pending-302935899.html",
+"time": "2026-11-11T13:33:00Z",
+"tickers": [
+"APP"
+],
+"t212": [
+"APP"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-11T13:40:30Z"
+},
+{
+"source": "globenewswire",
+"title": "Lexicon Pharmaceuticals to Present at the Jefferies Global Healthcare Conference in London",
+"url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxPSGlPOWlkRm8xRXhZTjBlRUlDemcyTFV5eHlHNFF3SWV5SjJyTVdZTU9BQnhxRU9FOVlNNl9EY3Nua040ODJsb3p2bUdMa2I2RzZ1aWtxNGc5VTd6S1RCelRkUWVsRDRVWEtsUU1VZHpmY0lvaWFLOFM0enNUMnRRUEJwbk1HcTlDQzI4MHljRVViSWM2bU90VExHV1JiX2NYMmtSWGpOSGxDS3ZUUGtYZkpHSVBwYm91MXp1akNsd3E5aXBvd0dkQWpPQ19oVFZtWmtORXdUT3FRZm9id0tPQThlSTBKUWo2bTJOXzBiNWFFanN6?oc=5",
+"time": "2026-11-11T13:30:00Z",
+"via": "google-news",
+"tickers": [
+"LXRX"
+],
+"t212": [
+"LXRX"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-11T13:40:30Z"
+},
+{
+"source": "globenewswire",
+"title": "InterDigital to Present at Two Upcoming Investor Conferences",
+"url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPdnZkUm54RXJ0OUpHSUttRWcwcXlUaGxvUWlxTFVDdnpGRzgtRXVOSEtwaVRoazBjV0Y3MzU3aExCZDVJemV3RlJXaXJZdHh4eEZXcWtfbnRkeklGcTA3S3paUzJlU0xrbkJleUlDSTU5QWtkbFhBd3JoRGlteFJsYTJVQUQ5MXdFZl9tZDlibUx3SkVkZmtscFBMSDAxYjRkQUtHaVpOOGlUczM4dDU4MVZZU3ZSQV9MY3hVSVNQMzRnWS1GOFlPYUFxTmtib1NieXc?oc=5",
+"time": "2026-11-11T13:30:00Z",
+"via": "google-news",
+"tickers": [
+"IDCC"
+],
+"t212": [
+"IDCC"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-11T13:40:30Z"
+},
+{
+"source": "globenewswire",
+"title": "Wave Life Sciences to Present at Jefferies Global Healthcare Conference in London",
+"url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQNHlrdFZfUUhwSUlYU1EzNDU2VHRXMzRhT1M0dVpaMi1WVnY4dHBTdHZLNUdmS1Y3ZzBXZkptVDM1bm9CcnZGYUxpWmVES3hOb2FTQTF0Z3dlNHNOM1Z2T0VtSWphbjZsNG91U0dPSnQ0eDBmZ3J6eHdTbzJxM0ZSTWZSdXRsbV9hQjNTRWJ4YjFkbHc3Vm5DYWd6UXNtcXBXTzh4R1czYjloVjREal9EeExlU0hRZ2Z6UjVua0VmVGpNcGtGM2RLUEwwdjZnTmlWeHBoRUcyWkg4OFVTUlZ0Y1QyUmtYTUVF?oc=5",
+"time": "2026-11-11T13:30:00Z",
+"via": "google-news",
+"tickers": [
+"WVE"
+],
+"t212": [
+"WVE"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-11T13:40:30Z"
+},
+{
+"source": "globenewswire",
+"title": "LEEF Brands Announces Third Quarter 2026 Earnings Release Date and Conference Call",
+"url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQNTllUG1UTGUzSVhQNTBPTFlSZl9QYjNDSTZ1TlpjMnlJa1VJaEd2ejBFcWlfMkRZMXAwOTdweVJKNkwxV1Y5QmJrUVF5dHBZMHVBa2JTbmMwSTF5OHIxTzZuMkxPeU5SX3FhclU1S0ZZZHJodVhIaEplakZvRFRxbklwbEpZRWNuMThvOExZY2J5WnljUmNmNG9wRjBJTGRjbWVfUHkzcWF5VDI5aXdyRUIxWEdvV0FtaG9yZDNMdUJPejVTWEJ3dlNYYmRXZ1pXaVZQQTVZRHMzM1dWa0dheEdDYnMwam9YeUE?oc=5",
+"time": "2026-11-11T13:30:00Z",
+"via": "google-news",
+"tickers": [
+"LEEEF"
+],
+"t212": [
+"LEEEF"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-11T13:40:30Z"
+},
+{
+"source": "globenewswire",
+"title": "FG Communities Holdings Announces Third Quarter 2026",
+"url": "https://news.google.com/rss/articles/CBMipgJBVV95cUxNWndfQWx0QXBHTVJTNUNONTU4V095YkZWclNxS3ZxYlk1NVNUa01GdTh5SHNGRHZoQXVUclI3MW5ZWFpDeENuTUVCUDNHZ202TWpHMnpzdERMd0xnZGw0Y2Z1M3FyQ0Vsd00wbzlJcFBDSHBFNkpkT1lNVXVkUS00eWtnUnlyYWhxTVRTb0Q0YlhMdTFQNWdPRzVmXzNZTWU5ZzBsM0V4bW5uM2VlM0ZmZFY5OTg0czJIWWJaYUlnTWFTSXZzbTZqWTJZSXdRd3F2ZTZRU1dkQTlKYzJUbkR3Sk8xdUcycERXNDQ5VkpZRmZVM01OaVY3eGJ0U0xiS0lZR21TTWI5aWZaZFUyYTVxX3g2QnVyZHVVX2ItTXBQTXIyaF9Ldmc?oc=5",
+"time": "2026-11-11T13:30:00Z",
+"via": "google-news",
+"tickers": [
+"FGC"
+],
+"t212": [
+"FGC"
+],
+"flags": [],
+"first_seen": "2026-11-11T13:40:30Z"
+},
+{
+"source": "accessnewswire",
+"title": "5E Advanced Materials to Host Fiscal First Quarter 2027 Earnings Conference Call on November 17, 2026",
+"url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOeEthV21vNndYRUY4UkNVc0t6a1ZZbkRzeWhhb2xNMWwwZ2s0SWxkbEVSZHR0eDZfbVpJazlMUjdILUVTYng3ZVdVdHV5dm1XWVIxRU44NHVuc2xUWjh0c2JnMTM1bnctd2RzT3M0NWNNRWwxV3g1RE1XSm03a240TEltcUI2Wm44cVNreGRCd0ZXSnFYZi13M2pwYldreWIxWUlkX1lsMDlTQ3VHLU1tN0RfR1l6b1FOcmRlMjltNkh0Nmd3ajJLOWlnRFotejFvRW9ZeW9ZQzVYQ0FVY3NncHhKWQ?oc=5",
+"time": "2026-11-11T13:30:00Z",
+"via": "google-news",
+"tickers": [
+"FEAM"
+],
+"t212": [
+"FEAM"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-11T13:40:30Z"
+},
+{
+"source": "accessnewswire",
+"title": "FG Communities Holdings Announces Third Quarter 2026 Financial Results and Provides Update on Execution of Real Estate Strategy",
+"url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQUWFNYWNjbDBsUDZ2elcybEJIZG9TYjdWbUN6blFTS21ray1LcmlTTFU2RkhxSXF6OWgxaEptMUlJUXBFMGdVUGZmc2VOTjcyOHhCbFJtSkJqVmhkYUdmX3F6OWUwVlQ4cUUyeUZiSWFLVk9odTRWcThqZmM4WWZrUDhrUEE3UnNuWVhBQ3NjazJXa0kyTFVjUzlTUDBBZ0N0U096cnlhM1dUV0UwMy1iRnFZOHZWTmlIYzlQSVBZRDk3Wm91QllPQ2tIWFRaakFvUHdQQl9wanhiTEVuYm0wY2FYNmc?oc=5",
+"time": "2026-11-11T13:30:00Z",
+"via": "google-news",
+"tickers": [
+"FGC"
+],
+"t212": [
+"FGC"
+],
+"flags": [],
+"first_seen": "2026-11-11T13:40:30Z"
+},
+{
+"source": "prnewswire",
+"title": "IceCure Medical to Report Third Quarter 2026 Financial and Operating Results on November 18, 2026 IceCure Medical Ltd. (NASDAQ: ICCM) (\"IceCure\", \"IceCure Medical\" or the \"Company\"), developer of minimally-invasive cryoablation technology that...",
+"url": "https://www.prnewswire.com/news-releases/icecure-medical-to-report-third-quarter-2026-financial-and-operating-results-on-november-18-2026-302936442.html",
+"time": "2026-11-11T13:30:00Z",
+"tickers": [
+"ICCM"
+],
+"t212": [
+"ICCM"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-11T13:40:30Z"
+},
+{
+"source": "prnewswire",
+"title": "BETR 9-DAY DEADLINE ALERT: Better Home & Finance Holding Company Investors with Substantial Losses Encouraged to Contact Hagens Berman Before Nov. 20th Deadline in Securities Class Action Hagens Berman, a leading securities litigation law firm, reminds investors in Better Home & Finance Holding Company (NASDAQ: BETR) of the pending...",
+"url": "https://www.prnewswire.com/news-releases/betr-9-day-deadline-alert-better-home--finance-holding-company-investors-with-substantial-losses-encouraged-to-contact-hagens-berman-before-nov-20th-deadline-in-securities-class-action-302935881.html",
+"time": "2026-11-11T13:30:00Z",
+"tickers": [
+"BETR"
+],
+"t212": [
+"BETR"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-11T13:40:30Z"
+},
+{
+"source": "prnewswire",
+"title": "Perrigo to Attend the Jefferies Miami Consumer Conference Perrigo Company plc (NYSE: PRGO), a leading provider of consumer self-care products, today announced that Interim President and CEO Albert Manzone...",
+"url": "https://www.prnewswire.com/news-releases/perrigo-to-attend-the-jefferies-miami-consumer-conference-302936438.html",
+"time": "2026-11-11T13:30:00Z",
+"tickers": [
+"PRGO"
+],
+"t212": [
+"PRGO"
+],
+"flags": [],
+"first_seen": "2026-11-11T13:40:30Z"
+},
+{
+"source": "prnewswire",
+"title": "Invesco Quantitative Strategies (IQS) ETF Suite Launches, Offering Systematic Active Investing Expertise Invesco Ltd. (NYSE: IVZ), a leading global asset management firm, today announced the launch of four systematic active exchange-traded funds managed...",
+"url": "https://www.prnewswire.com/news-releases/invesco-quantitative-strategies-iqs-etf-suite-launches-offering-systematic-active-investing-expertise-302935955.html",
+"time": "2026-11-11T13:30:00Z",
+"tickers": [
+"IVZ"
+],
+"t212": [
+"IVZ"
+],
+"flags": [
+"financing"
+],
+"first_seen": "2026-11-11T13:40:30Z"
+},
+{
+"source": "prnewswire",
+"title": "T. ROWE PRICE GROUP REPORTS MONTH-END ASSETS UNDER MANAGEMENT FOR OCTOBER 2026 T. Rowe Price Group, Inc. (NASDAQ-GS: TROW) announced October month-end assets under management of $1.83 trillion. Net outflows for October 2026 were ...",
+"url": "https://www.prnewswire.com/news-releases/t-rowe-price-group-reports-month-end-assets-under-management-for-october-2026-302935845.html",
+"time": "2026-11-11T13:30:00Z",
+"tickers": [
+"GS"
+],
+"t212": [
+"GS"
+],
+"flags": [],
+"first_seen": "2026-11-11T13:40:30Z"
+},
+{
+"source": "prnewswire",
+"title": "Citius Pharmaceuticals to Participate in the Jefferies Global Healthcare Conference in London Citius Pharmaceuticals, Inc. (\"Citius Pharma\" or the \"Company\") (Nasdaq: CTXR), a biopharmaceutical company dedicated to the development and...",
+"url": "https://www.prnewswire.com/news-releases/citius-pharmaceuticals-to-participate-in-the-jefferies-global-healthcare-conference-in-london-302935928.html",
+"time": "2026-11-11T13:30:00Z",
+"tickers": [
+"CTXR"
+],
+"t212": [
+"CTXR"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-11T13:40:30Z"
+},
+{
+"source": "globenewswire",
+"title": "Flywire to Attend Upcoming Investor Conferences",
+"url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxON2NPMDRoZTdNTEhwWFJpSEl3UWZkb18tdnJETFJoUVRxamU2dXE0ZElYX1VmaVozNEFPY18tUzczbnN4ZmppWFREZFY3RldUd09mVEN5U3hyYmVzVVR3cDNJQU5YWDJpamJnaDd2bHNmVmQySjRaeFliYVRjNGZjS2dIM3VSVGpBRkpQV2NOalJPODBJUHI1THFNTlRwN0x6d1lZLWZHYlhUd0pqNDRnd0twck11Y2xFcmNv?oc=5",
+"time": "2026-11-11T13:30:00Z",
+"via": "google-news",
+"tickers": [
+"FLYW"
+],
+"t212": [
+"FLYW"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-11T14:20:27Z"
+},
+{
+"source": "globenewswire",
+"title": "Axe Compute to Host Q3 2026 Financial Results Conference Call",
+"url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPdjBYWWhIdzB4VGlrWEdsOV8zVUlkTDh4QlJVOTBwV1FXMmlwMnE0cmVRbmZ6Zk1jNHUwVFVJMmNaMjVzZWJ1em4zZGp5d3pfTGlmSVlXWUNOZGlQTGRseHRJbzNGWFV3cjIxSDF3aEx6SmI3MzNSQ0dfdkJWTjdwWEVraWhlbE5LWUptQ2ZxbzY0Q29IbTNjNlBmb0I4QnhHMzREWFAwSG1abnYtMUZKZ2w5V2RJeGpKN0JZdXVmMWNYMTN5VGlwUWJZeFk2NDY3SUdn?oc=5",
+"time": "2026-11-11T13:30:00Z",
+"via": "google-news",
+"tickers": [
+"AGPU"
+],
+"t212": [
+"AGPU"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-11T15:30:41Z"
+},
+{
+"source": "prnewswire",
+"title": "Fluence Energy (FLNC) Shares Tumble Again - This Time on Top Executives' Departures; Securities Class Action Pending",
+"url": "https://www.prnewswire.com/news-releases/fluence-energy-flnc-shares-tumble-again--this-time-on-top-executives-departures-securities-class-action-pending-302935875.html",
+"time": "2026-11-11T13:27:00Z",
+"tickers": [
+"FLNC"
+],
+"t212": [
+"FLNC"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-11T13:30:44Z"
+},
+{
+"source": "prnewswire",
+"title": "DAVA SHAREHOLDER NOTICE: Endava plc Investors with Substantial Losses Have Opportunity to Lead the Endava Class Action Lawsuit",
+"url": "https://www.prnewswire.com/news-releases/dava-shareholder-notice-endava-plc-investors-with-substantial-losses-have-opportunity-to-lead-the-endava-class-action-lawsuit-302935876.html",
+"time": "2026-11-11T13:25:00Z",
+"tickers": [
+"DAVA"
+],
+"t212": [
+"DAVA"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-11T13:30:44Z"
+},
+{
+"source": "globenewswire",
+"title": "Biodesix (BDSX) Shares Plunge; Johnson Fistel's Colorado Office Initiates Investigation on Behalf of Investors",
+"url": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxNMU1yd29iQVBCSlVWRjJBUXdlc0VDODd5Z2dBNzdFWTk0VGpmcElscVlMTUNZSUNPLUM1d3FObTA4MUVaX3BoT1p1cGxCelFGTEh0OEl3bUNrM0ZsMVphbjJUQWM5cldhWWhmVHl4OEhudVVRUnRIc2gzYzZCeF8yb3FJWGVMT1RXSWswYXNtd0R0OXk3Yk9iQjRtYWtVWGJTSGsxNG91eVVJNFpYd0FfQ0xDbFFqMzRvdGtZaUcyNTNVYjJlRlVMX0R2NjBSUi1taWRSUHVybmROdWhkYWxLaF82VG5lbXhrMXZuUzlrRG05TGxUTmVZazd0UWp1cHlKRHZwZllhbDR2NW8?oc=5",
+"time": "2026-11-11T13:23:46Z",
+"via": "google-news",
+"tickers": [
+"BDSX"
+],
+"t212": [
+"BDSX"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-12T07:00:48Z"
+},
+{
+"source": "globenewswire",
+"title": "Wealthfront (WLTH) Investor Alert: Johnson Fistel Investigates Post-IPO Disclosures",
+"url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQbTRDN08wQlFJVkhhc1VidXpfYkpRNmU0SjIzclctdzlBaUZRb0VZNDZXNUt0T21NSzl5MDVUaVhMWk9HcjhKc1V5eUh2cjRaMjRTTkdULVlKdHVsVFM1UDY5bFo3OHl1NnlzYmlVYVJ6Nk1uemxXVjlBeGJLblFXc2F4WFM0aDBwcW9qazlZajdZSURCUDRXZmFldnNTUzVqSV9oNXJRNzkxNEUxb1VaXzFIR1NUOV80TjRlUjFteU5zZDVSQXB0b1Q4TzU1YjBibWNBNkRseGhIZUdZS3FQUTJ3eGNuTGs?oc=5",
+"time": "2026-11-11T13:23:16Z",
+"via": "google-news",
+"tickers": [
+"WLTH"
+],
+"t212": [
+"WLTH"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-11T13:30:44Z"
+},
+{
+"source": "prnewswire",
+"title": "Coastal Financial Corporation (CCB) Alert: Securities Class Action Filed, Investors with Losses Encouraged to Contact Hagens Berman Before December 1, 2026 Lead Plaintiff Deadline",
+"url": "https://www.prnewswire.com/news-releases/coastal-financial-corporation-ccb-alert-securities-class-action-filed-investors-with-losses-encouraged-to-contact-hagens-berman-before-december-1-2026-lead-plaintiff-deadline-302935872.html",
+"time": "2026-11-11T13:23:00Z",
+"tickers": [
+"CCB"
+],
+"t212": [
+"CCB"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-11T13:30:44Z"
+},
+{
+"source": "globenewswire",
+"title": "Greenland Energy Company (GLND) Shareholder Alert: Johnson",
+"url": "https://news.google.com/rss/articles/CBMimwJBVV95cUxNNnBHbnpJemY1czc5MDRLeFo4NDdDZHhYWDJRcGZseDRmZmNTaU5TSXp0d2RyYmFPdHZYaGc5M2Z0ak9nLWI0cDZrcThTOXpXUjFDSElRZm9KOFNKenBTNS0wNnhSdVpyZ0RuUDZsNmkwX05ZV3lpRjBTd0Vnd0EyWWVGUFBHb2lXdjJHRVhEYm16VU51djRfSnJqR1dXaGI0cF9mYllVNnVNYmxwQmZlbVUzSElZZmw4SHVWWEhETHpDLXdmYWFBa2d2QjF4aTZrZnBKLUt2LTd0NDk0ZlZRNW0tcGJnRVJ5eDNKbW1JWTZWV0VyRnp4U2NMbnhQMzBJQmlBRHJtMnVxVGFSUjQ4cms2akJnaU5hcVEw?oc=5",
+"time": "2026-11-11T13:21:16Z",
+"via": "google-news",
+"tickers": [
+"GLND"
+],
+"t212": [
+"GLND"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-11T13:30:44Z"
+},
+{
+"source": "prnewswire",
+"title": "GIL INVESTOR ALERT: Gildan Activewear Inc. Investors with Substantial Losses Have Opportunity to Lead the GIL Securities Class Action",
+"url": "https://www.prnewswire.com/news-releases/gil-investor-alert-gildan-activewear-inc-investors-with-substantial-losses-have-opportunity-to-lead-the-gil-securities-class-action-302935870.html",
+"time": "2026-11-11T13:21:00Z",
+"tickers": [
+"GIL"
+],
+"t212": [
+"GIL"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-11T13:30:44Z"
+},
+{
+"source": "globenewswire",
+"title": "High Roller Technologies Forms ROLR FCM LLC and Engages",
+"url": "https://news.google.com/rss/articles/CBMiqAJBVV95cUxONXdqN05xSFA2SlNMMXgwTEFUY3hjRDRzdTIzb2I2RWtCRnV0TERnSVdNNzBhSnJzcmk1cmdrOGE4WmhkWjVVYjFXM0s0Wm1KZm01UFNsTjFRQmllSDV3QW5uLVhneXVtT2F2UVNMcUNrU0Q4REJBaHBBLXdoSjFRNGxoaU10bVlORjhNQUZjSnRyOXYyMUZ6Z3pQMFd1ZjVkWmVIVU1GSWhwRWNOb1VsOEdiTkMxQzJhYmhvdDdOSlY5SkMyWmdSWGllcm1nV19nb3R5X2llTUlPcTZsUm41ejlmX1BFbjYwUHd0UVJRX2JHUXNzYzZtRlY1Z0JhY1h0Q0s2bEZKYnlLSjhGM243YW82SDNzNHUyVWlYV1F1T3UxUGJHajBqWQ?oc=5",
+"time": "2026-11-11T13:19:00Z",
+"via": "google-news",
+"tickers": [
+"ROLR"
+],
+"t212": [
+"ROLR"
+],
+"flags": [],
+"first_seen": "2026-11-11T13:30:44Z"
+},
+{
+"source": "prnewswire",
+"title": "BULL INVESTOR ALERT: Webull Hit With FINRA AML Fine, Stock Slides Again; Securities Class Action Pending",
+"url": "https://www.prnewswire.com/news-releases/bull-investor-alert-webull-hit-with-finra-aml-fine-stock-slides-again-securities-class-action-pending-302936002.html",
+"time": "2026-11-11T13:18:00Z",
+"tickers": [
+"BULL"
+],
+"t212": [
+"BULL"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-11T13:20:29Z"
+},
+{
+"source": "globenewswire",
+"title": "Braiin Ltd. Wins 2026 Best Enterprise-Ready AI Platform Award for ARIA",
+"url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQdWNaVmNOQzhVM2pzcm1PRk9SaWlTOVpjNTF5MklIUUNSUWYtRFdtOHRITDlCVDl0a3JFam9aQWhVTWlOYjZnYUMxWkpQMlA3YmViUWJ4cG44ZEpVQ3dnY3RqVVdtM21xX21sUnVIQnlDRnFNZjhVaERIUm9FMGs5eTBKMzVKT3RfaHdOZDNRWHFnS2g3Y21HUEV1NEs5eTAyQ0JCZHVKWGFBeGx2eWttbFNZRW5CNWU2QkVXR3FuNWphTVE5S3ZVYldsUVpxY1FfVXlUZHRGYkw?oc=5",
+"time": "2026-11-11T13:15:00Z",
+"via": "google-news",
+"tickers": [
+"BRAI"
+],
+"t212": [
+"BRAI"
+],
+"flags": [],
+"first_seen": "2026-11-11T13:20:29Z"
+},
+{
+"source": "accessnewswire",
+"title": "Valion Bio Reinforces Commitment to American Troops; Discusses Entolimod with Attendees at RW Baird's National Security Conference",
+"url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNR2ppWTlfMHp5UThrZ1pmUktsQ09abnFXdUxZX0FNdldnZXpyZEZ3aU84eFJSNkdmdURiZzVZRmkteVFoaWYwd2tkVk9tQ2VmczRORDJIQ2x6MnFrRnl3VDg3VVR1d2EzaWlVUE02eExXaFEtVF8tX3FWVEdkRGdSdEM0a0RBamVPRGdMVVdvdVBhTXlYbWhmazhQOVlyaVNKXy1QdWN5Rm1fREdWa2JYczBrZTJIcGRuU0JJZU16MzMwdVMwZGtJQVRVSnF6bEJpc2RNa2NlSU5yc0JzZnlsV1ZxTy0?oc=5",
+"time": "2026-11-11T13:10:00Z",
+"via": "google-news",
+"tickers": [
+"VBIO"
+],
+"t212": [
+"VBIO"
+],
+"flags": [],
+"first_seen": "2026-11-11T13:20:29Z"
+},
+{
+"source": "prnewswire",
+"title": "INOVIO to Participate in Upcoming Investor Conferences",
+"url": "https://www.prnewswire.com/news-releases/inovio-to-participate-in-upcoming-investor-conferences-302935927.html",
+"time": "2026-11-11T13:05:00Z",
+"tickers": [
+"INO"
+],
+"t212": [
+"INO"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-11T13:10:24Z"
+},
+{
+"source": "prnewswire",
+"title": "Arlo Delivers Personalization to Front Doors Everywhere with New Video Doorbells Available in Four Colorways",
+"url": "https://www.prnewswire.com/news-releases/arlo-delivers-personalization-to-front-doors-everywhere-with-new-video-doorbells-available-in-four-colorways-302935735.html",
+"time": "2026-11-11T13:03:00Z",
+"tickers": [
+"ARLO"
+],
+"t212": [
+"ARLO"
+],
+"flags": [],
+"first_seen": "2026-11-11T13:10:24Z"
+},
+{
+"source": "globenewswire",
+"title": "Safe Pro Awarded Artificial Intelligence Powered Demining",
+"url": "https://news.google.com/rss/articles/CBMiywJBVV95cUxNcDNNbzJaemlWTlZZOUFzNEE0MTRrZEkwU0lPZHhIc3l6SFFadUVtWi03Y3ZpZDFhM04yQzZ2UVVZNzhBMUtUZFAyS3NfRE5faEtpR2VrQVZiX3NsdE5rc1Y0OWl6S0RZVF93bnRJZ2NxU0xFcmxQOGVtdDNlczR2Ynp5amVSZDJ5N2x2cnVUREJVdHQzaFg2aW54eDZDN2tSUWV5bUxXY3hKa0RfVGVrLUwyRHp3RkVUWGUwZlZPZFVZa29TYnJ0R2pmT01iNjhUeEctV3RHV1NtN0kyWjMxaTU4OG5QeTdmeUVwVDZDLU5sRzBDXzJfdDR1VHRna2hYVV9RN0Vtb21GYW5PY2I0bXFheWdIQkNtbWNmejFTMjlWQ3BCaEJVMy1uaHRzM0Z2aExsNU12RDZWTmw3Rm1Ib1FWUW5oNmlKWWxV?oc=5",
+"time": "2026-11-11T13:02:00Z",
+"via": "google-news",
+"tickers": [
+"SPAI"
+],
+"t212": [
+"SPAI"
+],
+"flags": [],
+"first_seen": "2026-11-11T13:10:24Z"
+},
+{
+"source": "prnewswire",
+"title": "Sound Seal Introduces OSP-2, Outdoor Sound Panel: An Affordable, Modular Solution for Exterior Noise Control",
+"url": "https://www.prnewswire.com/news-releases/sound-seal-introduces-osp-2-outdoor-sound-panel-an-affordable-modular-solution-for-exterior-noise-control-302935781.html",
+"time": "2026-11-11T13:01:00Z",
+"tickers": [
+"SOGP"
+],
+"t212": [
+"SOGP"
+],
+"flags": [],
+"first_seen": "2026-11-11T13:10:24Z"
+},
+{
+"source": "globenewswire",
+"title": "newcleo to Host Q3 2026 Business Update Call on November 18, 2026",
+"url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNeXEwTE1xSzQ3S1c2M3hBSEtJV2VHTWtGT256TVBlMngzZ19xbzk5VDhSLTNTc2wxeDBVS19Ja0Ytc1B6VU5vcTI1RlE1WjdsUzlfRmZ0TFQ3UEpvNV9WMkhzbE9HN0c0eHhrcHRvRWRLeGNSR2YzMEF4eGVHTklyUHFHcXFHVnYwZzMzY2hRd2ZFTEdiZk8wWHlKQi03Vzk2Sll5MWhObmxvUEx3b0lZX0huVjNlemNjTzhZSW1nUXNHRmVuOTdsVWZkRmNudzFoOVE?oc=5",
+"time": "2026-11-11T13:00:48Z",
+"via": "google-news",
+"tickers": [
+"NWCL"
+],
+"t212": [
+"NWCL"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-11T14:00:51Z"
+},
+{
+"source": "prnewswire",
+"title": "AMGEN ANNOUNCES POSITIVE PHASE 3 RESULTS FOR DAZODALIBEP IN SJ\u00c3\u0096GREN'S DISEASE Amgen (NASDAQ: AMGN) today announced results from the Phase 3 OASIZ-301 study of dazodalibep, the only global Phase 3 trial to demonstrate clinically ...",
+"url": "https://www.prnewswire.com/news-releases/amgen-announces-positive-phase-3-results-for-dazodalibep-in-sjogrens-disease-302935991.html",
+"time": "2026-11-11T13:00:00Z",
+"tickers": [
+"AMGN"
+],
+"t212": [
+"AMGN"
+],
+"flags": [],
+"first_seen": "2026-11-11T13:00:52Z"
+},
+{
+"source": "prnewswire",
+"title": "SAP and VFC Open Intelligent Fashion Store SAP SE (NYSE: SAP) and VF Corporation (NYSE: VFC) today opened S.Fashion, a retail innovation space at the SAP headquarters in Walldorf designed to...",
+"url": "https://www.prnewswire.com/news-releases/sap-and-vfc-open-intelligent-fashion-store-302936265.html",
+"time": "2026-11-11T13:00:00Z",
+"tickers": [
+"SAP",
+"VFC"
+],
+"t212": [
+"SAP",
+"VFC"
+],
+"flags": [],
+"first_seen": "2026-11-11T13:00:52Z"
+},
+{
+"source": "businesswire",
+"title": "Abacus Global Management Announces Upcoming Conference Participation",
+"url": "http://www.businesswire.com/news/home/20261111220661/en/Abacus-Global-Management-Announces-Upcoming-Conference-Participation/?feedref=JjAwJuNHiystnCoBq_hl-WsGkFyUNMTSNrPsg57HLEqqcp-o_pnudlUwsb5apQ1S4gUE65BTfjH3-pSuqdv0gW3cb3F4oTIgUqCPafFkgu5AneicJQDNboWvodvG82E0",
+"time": "2026-11-11T13:00:00Z",
+"tickers": [
+"ABX"
+],
+"t212": [
+"ABX"
+],
+"flags": [],
+"first_seen": "2026-11-11T13:10:24Z"
+},
+{
+"source": "businesswire",
+"title": "CoreWeave Database Launches So AI Teams Can Build, Run, and Scale Production Applications on One Platform",
+"url": "http://www.businesswire.com/news/home/20261111687728/en/CoreWeave-Database-Launches-So-AI-Teams-Can-Build-Run-and-Scale-Production-Applications-on-One-Platform/?feedref=JjAwJuNHiystnCoBq_hl-WsGkFyUNMTSNrPsg57HLEqqcp-o_pnudlUwsb5apQ1S4gUE65BTfjH3-pSuqdv0gW3cb3F4oTIgUqCPafFkgu5AneicJQDNboWvodvG82E0",
+"time": "2026-11-11T13:00:00Z",
+"tickers": [
+"CRWV"
+],
+"t212": [
+"CRWV"
+],
+"flags": [],
+"first_seen": "2026-11-11T13:10:24Z"
+},
+{
+"source": "globenewswire",
+"title": "Longevity Health Holdings Announces Exploration of Strategic Alternatives",
+"url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQa2xfZFRIZ05pR1VYSzI5enNiUzBXUGdRNWk1SlRMMGZYSXZpNlhVY3pfM1EyS05DVkZUcS1WbUkzZ2UyU0hpYlFZXzZHY3ltU2VONGZobHlVeDFOQlVMekxpMDU3ZXg3T2RlQlZ2TWVEeUpWNll3ZGFUUDZBQ2pBdXZXMFpYLU9QVklMeHBtRlZYS3lXcDZ2WkFPbjgzMnRUbmdWOWQzdmVNRkd2M0liYzd1enJJWXc1d3NTRFViLWQwUVJyQmdjSzhTQzBiZVZwM1g4Q05WaGdndzE4bHc?oc=5",
+"time": "2026-11-11T13:00:00Z",
+"via": "google-news",
+"tickers": [
+"XAGE"
+],
+"t212": [
+"XAGE"
+],
+"flags": [],
+"first_seen": "2026-11-11T13:10:24Z"
+},
+{
+"source": "prnewswire",
+"title": "Research Solutions Announces Agreement With Fortune 500 Biopharma Company Valued at $1 Million Research Solutions (NASDAQ: RSSS), a leading provider of SaaS and AI-powered scientific research tools, announces the largest deal in company...",
+"url": "https://www.prnewswire.com/news-releases/research-solutions-announces-agreement-with-fortune-500-biopharma-company-valued-at-1-million-302935837.html",
+"time": "2026-11-11T13:00:00Z",
+"tickers": [
+"RSSS"
+],
+"t212": [
+"RSSS"
+],
+"flags": [],
+"first_seen": "2026-11-11T13:10:24Z"
+},
+{
+"source": "prnewswire",
+"title": "ADP Increases Cash Dividend; Marks 52nd Consecutive Year of Dividend Increases The board of directors of ADP (Nasdaq: ADP) approved a $0.20 increase in the quarterly cash dividend to an annual rate of $7.60 per share, Maria...",
+"url": "https://www.prnewswire.com/news-releases/adp-increases-cash-dividend-marks-52nd-consecutive-year-of-dividend-increases-302935722.html",
+"time": "2026-11-11T13:00:00Z",
+"tickers": [
+"ADP"
+],
+"t212": [
+"ADP"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-11T13:10:24Z"
+},
+{
+"source": "prnewswire",
+"title": "IBM Digital Sovereignty Index: In the AI Era, Control Is No Longer Enough. Enterprises Must Prove it. A new report from IBM (NYSE: IBM), Proof, Not Promises: The Digital Sovereignty Index, reveals an \"overconfidence gap\": leaders believe they can...",
+"url": "https://www.prnewswire.com/news-releases/ibm-digital-sovereignty-index-in-the-ai-era-control-is-no-longer-enough-enterprises-must-prove-it-302935665.html",
+"time": "2026-11-11T13:00:00Z",
+"tickers": [
+"IBM"
+],
+"t212": [
+"IBM"
+],
+"flags": [],
+"first_seen": "2026-11-11T13:10:24Z"
+},
+{
+"source": "prnewswire",
+"title": "Trulieve Announces November 2026 Event Participation Trulieve Cannabis Corp. (NYSE: TRLV) (\"Trulieve\" or \"the Company\"), a leading and top-performing medical cannabis company in the U.S., today...",
+"url": "https://www.prnewswire.com/news-releases/trulieve-announces-november-2026-event-participation-302935685.html",
+"time": "2026-11-11T13:00:00Z",
+"tickers": [
+"TRLV"
+],
+"t212": [
+"TRLV"
+],
+"flags": [],
+"first_seen": "2026-11-11T13:10:24Z"
+},
+{
+"source": "prnewswire",
+"title": "Actinium Pharmaceuticals Announces Enrollment in the RADIANZ Imaging Clinical Trial Intended to Demonstrate the Pan-Cancer Potential of ATNM-400, A First-in-Class HER3-Targeting Radiotherapy Actinium Pharmaceuticals, Inc. (NYSE American: ATNM) (Actinium or the Company), a pioneer in differentiated targeted radiotherapies with the...",
+"url": "https://www.prnewswire.com/news-releases/actinium-pharmaceuticals-announces-enrollment-in-the-radianz-imaging-clinical-trial-intended-to-demonstrate-the-pan-cancer-potential-of-atnm-400-a-first-in-class-her3-targeting-radiotherapy-302935884.html",
+"time": "2026-11-11T13:00:00Z",
+"tickers": [
+"ATNM"
+],
+"t212": [
+"ATNM"
+],
+"flags": [],
+"first_seen": "2026-11-11T13:10:24Z"
+},
+{
+"source": "globenewswire",
+"title": "Blue Gold Provides Update on Strategic Review and Corporate Restructuring Initiatives",
+"url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxPZDFodlUyazRyeURXdTFwTWdZNFVvcnJYdmpveTAxX1FwbFhEc3ZsMkI0UWxzVU1WSFV1bzJxTHpCYmh2QzhGUXlhODdmM0p4NklodWtyb29hY1BJUVNKX0YwUWJuTG5rVVlZaDV0WkhRaWx2cHFmNmhnM2RDclB0Y3U1a3NmQ25HeVVuWkF4TW93Rk5NTC05dDhlZzE1RFE2U3AzQXZ0R2pyNERTZHlndTZrRFAwT2FuQXBJM0N0WGhScFA5MGk2eXNndm9lVkV3NURySU1BU05jZmtXa0dXY0ZBWDVseDVYSk5Ib0Zn?oc=5",
+"time": "2026-11-11T13:00:00Z",
+"via": "google-news",
+"tickers": [
+"BGL"
+],
+"t212": [
+"BGL"
+],
+"flags": [],
+"first_seen": "2026-11-11T13:20:29Z"
+},
+{
+"source": "globenewswire",
+"title": "CareCloud Accelerates Wound Care Expansion with New",
+"url": "https://news.google.com/rss/articles/CBMipgJBVV95cUxNN3pKNTUyd20yRXZEQTFoU0JLSUhvUUVuV0psRnpZRDVUZ2dmb2hEVWNnU3ozaDJWSTZjdUZjMEJaTUNsYmZPNTcxTlBfMS1ueDFrOE1fVy1iM09zNFU1dmljelBxNmFOa3hseThueXdEQjBUUUk1OHp1cXFobktqTTBxUWRBd1Q2NFNIVXZQVHdGNG1JbTN2a0l0dzE3ekw5T1BDQUlTRWFnR0UzNko3a19wRHJrY1FURXNNMXFXNERyS2hUQjg5cmExa3RpbEtFUmpBTEdGMVRCN2R0SUN4dXZDRnd6bDZUX0FpWWtIam9VRU4wcWZEbTFDZ1BVQ3BWa1NVczgzeWRrVng2WW9XaWgyU3pleFp1MWI0bUk4Q185SE9QZEE?oc=5",
+"time": "2026-11-11T13:00:00Z",
+"via": "google-news",
+"tickers": [
+"CCLD"
+],
+"t212": [
+"CCLD"
+],
+"flags": [],
+"first_seen": "2026-11-11T13:20:29Z"
+},
+{
+"source": "globenewswire",
+"title": "Filana Therapeutics Names Biopharma Executive Jill M. Quigley to Board",
+"url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOS2FJaElocmJjN2ktWjlDYVpkM0wyaXhYSHI4Zm5ILXRBaEhQRDU1b3NFZEZxN2ZFNVAyT0VhNUlXTWUxZmxsSjR2MmtMeDloT2JrNkpVal9aQnlHbjRrbWx3VVdnekRtZHdDVDB5SDBBWnBfSDNTM1NFeDUtdlBvcEtkUkg4Y2I3eVBsVjJ6Mkw5Zlo4ZS1DQmhmMnE0TFkxZWdzb3dqLWQ1bzA4U1Q0cWV4QTl2VkJneURPSTEzTVJkTmhHU3JCMzVQZW4tc3ZPbzY5N0hUUTliaVNG?oc=5",
+"time": "2026-11-11T13:00:00Z",
+"via": "google-news",
+"tickers": [
+"FLNA"
+],
+"t212": [
+"FLNA"
+],
+"flags": [],
+"first_seen": "2026-11-11T13:20:29Z"
+},
+{
+"source": "globenewswire",
+"title": "BioAge Labs to Present at Upcoming Investor Conferences",
+"url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNcTZVUWNfU255VldDOURfSi1oOHB4clNKdGd3NHo1SHRLTlcxUW9qVERMX0FQR1VGbXVMZGtFdlowU0FoYmRta1A3YXJHRDhCOW5PNmQxckVUekZlNFNzZDhXSWUyNnNUVjRkOGdvNHpITDMyTERqWUFON1ZfN1FMSTRneVFDR0pqX3hIa3hPdUJsYndPSm1NVWdTaUN6b0w4M3pRNzBSbG44SGhsZ0Q5ekhMR3pqcDR5R2VlTUVuWmNoM3c1MWc?oc=5",
+"time": "2026-11-11T13:00:00Z",
+"via": "google-news",
+"tickers": [
+"BIOA"
+],
+"t212": [
+"BIOA"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-11T13:20:29Z"
+},
+{
+"source": "globenewswire",
+"title": "EuroDry Ltd. Reports Results for the Quarter and Nine-Month Period Ended September 30, 2026",
+"url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxQXzNPUkJ6WDR5X2NQNEp5V2dwU1V5eHN5OWViaE85aUt2LXp0QTkxWUZjelhZYXhuNXJEcGR5TWRLaThzQlR5UEdmSUNXNWxmVUF6SGxLNWxuaUtFTlVOc1VZR1QybVhyNVQ3eEhrWVVoaFZnamJaY3lod1ZDQktzc3BOSHNFWXZ5NEd6d2VzNERiYU9ZUnVRNkdYb2pVQm5uczdjVkprRXBsMmJLVUlLR2ttX19pbXA4ZWxZM0VoTXg3Wk1waFVEeWRKVmVrWFpoYWlBOEdFQmp0WVZPRWlvMG5XT0tZZjZhbXVDdi12VjNDM2c?oc=5",
+"time": "2026-11-11T13:00:00Z",
+"via": "google-news",
+"tickers": [
+"EDRY"
+],
+"t212": [
+"EDRY"
+],
+"flags": [],
+"first_seen": "2026-11-11T13:20:29Z"
+},
+{
+"source": "globenewswire",
+"title": "Mobiquity Technologies and Intercept Music Deliver Breakout",
+"url": "https://news.google.com/rss/articles/CBMirAJBVV95cUxPWFQza29JSUczU2ZYY2toSjdyZTJBUkVORnlRejBEVG1WSXFld0tuSUVvWFk0a3pXWTFUb1duTmNrTmFiWGctZzd0cV9nYlhrdXpWS1dMeFU1Mk4zekN6WUFsdTdEcUI4T0g1VGxxd1dwVVNCSTJxejIwN1JwVGM4TDV2c0VHNjlfS3dETDRubW8yN3E2UFRvUmVUMkJsOFhNS2lISFVZZndCdWJOdTU1VjNxQWxVaWVwcklOZWJwN2FlR0lUVXoyVDNYQkJWWFZoSWlzQ2xTazJSdkZjQlIya0NIV19LQ3ZzT0hoSDY0bDdzNHE1UEFLODNLUmYyRFVfeHVHanp6XzYwdUNnaTk5V2NZWjQwYV9vUnpoV1hIOFMwMVBlT2gwS2ZIVTA?oc=5",
+"time": "2026-11-11T13:00:00Z",
+"via": "google-news",
+"tickers": [
+"MOBQ"
+],
+"t212": [
+"MOBQ"
+],
+"flags": [],
+"first_seen": "2026-11-11T13:20:29Z"
+},
+{
+"source": "globenewswire",
+"title": "Metagenomi Therapeutics, Inc. to Present at the Jefferies Global Healthcare Conference in London",
+"url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxPbHFXUm9JOEpHMUo2aTA3LTVUNmR6MjlMQlRWVlBuZlFTSG00N2paVklxUEpQbEUxYzl4MWFLcDlnUzVRUWRZUk91SlhQZU1jTlN2VEtQWnRHWEo0WVNuQzZGakYtYW5Ma0s5MFZISVhkNE5UVHo5VUhxZFJPTEJIX0JjVkFVY2VPX3g0a2hlNFhBcTl6VUs3RDRpeElYVklDUExyLTRXUXBQTWJaTFEtaUV1YUJmSGlHVXZGajA2M1pxY1p3MGp4N05HQUN5VFFBaVBPbVhPYkJ2Q2UtLWV1N3ZLeFpSQk44QWhtOG9qS2FKZ29aQ1U0Q1lR?oc=5",
+"time": "2026-11-11T13:00:00Z",
+"via": "google-news",
+"tickers": [
+"MGX"
+],
+"t212": [
+"MGX"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-11T13:30:44Z"
+},
+{
+"source": "globenewswire",
+"title": "BCP Investment Corporation Schedules Third Quarter 2026 Earnings Release and Conference Call",
+"url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxOSUZmRVRLOXVjb0pFRnpjRDZxSGZrVFBwczl2UlRDMjZiOTZNYlZhMHdnb0kteW1qbWhRc3QwZzRoTFhsSGVNUzZGQWxZVDc0aWRYTVEtM21wb0FkaHpIdExvWXI4RjJQX3RRaGdCSXh0RS1nRXpKT1Fyd05VaVZsc25jakhpQmRnUnRNbkU3d2ZJVVVhOU4xXzlyVkpOQXhWYndBQVJlV3RaQ05wME5pWU51aHJ0eHhaU29DZHc5MFpMWmZjV253aHYtSms0N1NLV2FUOUljYWtDNHVaZVBYUWQ2WnA0bkRJRGd6YUNROUNlaXNWbXN0TnUwRQ?oc=5",
+"time": "2026-11-11T13:00:00Z",
+"via": "google-news",
+"tickers": [
+"BCIC"
+],
+"t212": [
+"BCIC"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-11T15:05:58Z"
+},
+{
+"source": "globenewswire",
+"title": "aTyr Pharma to Participate in Upcoming Investor Conferences",
+"url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOMHQtRkJiOVVVYXJObWw3djlwSFRybmZodl8wMGhtTXJmRm55OTFZY1FVWFYtdDhSdC0xdzJ0UTZhVHhLM1RLd2VYR2VXMWE1NFFYT2xKM0NkYy1jY1h3c01JanQwVk5TVkVnM1JBWUlYM2Q5R281U004cnFXSll2UXJucjBmQVJmQ1YxS0J3ODZ2Z2xlRk1nMGIxUkFXSEJ0dlA5VkU0UnNqejBodGhkWlM1Nk5wX0xXdFB6NHQ1UUtkODE0dVZrQXEtTQ?oc=5",
+"time": "2026-11-11T13:00:00Z",
+"via": "google-news",
+"tickers": [
+"ATYR"
+],
+"t212": [
+"ATYR"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-11T21:41:21Z"
+},
+{
+"source": "businesswire",
+"title": "Sangoma Technologies Corporation Files Management Information Circular for its Special Meeting of Shareholders to Approve Proposed Plan of Arrangement with BRC Group Holdings, Inc.",
+"url": "http://www.businesswire.com/news/home/20261110744853/en/Sangoma-Technologies-Corporation-Files-Management-Information-Circular-for-its-Special-Meeting-of-Shareholders-to-Approve-Proposed-Plan-of-Arrangement-with-BRC-Group-Holdings-Inc./?feedref=JjAwJuNHiystnCoBq_hl-WsGkFyUNMTSNrPsg57HLEqqcp-o_pnudlUwsb5apQ1S4gUE65BTfjH3-pSuqdv0gW3cb3F4oTIgUqCPafFkgu5AneicJQDNboWvodvG82E0",
+"time": "2026-11-11T12:55:00Z",
+"tickers": [
+"SANG"
+],
+"t212": [
+"SANG"
+],
+"flags": [],
+"first_seen": "2026-11-11T13:00:52Z"
+},
+{
+"source": "globenewswire",
+"title": "Aeries Technology Reports Second Quarter Fiscal 2027 Financial Results",
+"url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOZWV6eGo3QXRkd190ZEdXWEo5LVAyMXdJelRsUGFqc18xNzJrdmU1QWRSVGNiRC1welRINkJETW9GeWhBYkJUTU96dmtpUThNYlJZQkk2VUUxcFF6aDY1SUFQUDM5NnB2X29uRGpwZ2dqUXFJY0YteXRicE16STVWNWswVEZQOGZ5Nm5yWTMzSVJic3NrZTVwVm9GdDgtUHBqSjNSNUdNU0JLMVpTdi02djBJX1EySUpJX1hEQWVvNm1IQnh5X3lGbHNiUXIzdXNodktPU3dEdm5GZw?oc=5",
+"time": "2026-11-11T12:54:25Z",
+"via": "google-news",
+"tickers": [
+"AERT"
+],
+"t212": [
+"AERT"
+],
+"flags": [],
+"first_seen": "2026-11-11T13:10:24Z"
+},
+{
+"source": "prnewswire",
+"title": "U.S. consumer debt hit $18.56 trillion in Q3 2026 as non-mortgage delinquencies stabilized Equifax\u00c2\u00ae (NYSE: EFX) has released its Market Pulse Third Quarter U.S. Consumer Credit Trends, which includes U.S. national consumer credit data and...",
+"url": "https://www.prnewswire.com/news-releases/us-consumer-debt-hit-18-56-trillion-in-q3-2026-as-non-mortgage-delinquencies-stabilized-302935687.html",
+"time": "2026-11-11T12:45:00Z",
+"tickers": [
+"EFX"
+],
+"t212": [
+"EFX"
+],
+"flags": [],
+"first_seen": "2026-11-11T12:50:22Z"
+},
+{
+"source": "prnewswire",
+"title": "Clarivate to Present at the RBC Capital Markets Global Technology, Internet, Media and Telecommunications Conference on November 18 Clarivate Plc (NYSE: CLVT), a leading global provider of transformative intelligence, announced today that Matti Shem Tov, Chief Executive Officer,...",
+"url": "https://www.prnewswire.com/news-releases/clarivate-to-present-at-the-rbc-capital-markets-global-technology-internet-media-and-telecommunications-conference-on-november-18-302935902.html",
+"time": "2026-11-11T12:30:00Z",
+"tickers": [
+"CLVT"
+],
+"t212": [
+"CLVT"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-11T12:30:41Z"
+},
+{
+"source": "prnewswire",
+"title": "Clarivate to Present at the RBC Capital Markets Global Technology, Internet, Media and Telecommunications Conference on November 18 Clarivate Plc (NYSE: CLVT), a leading global provider of transformative intelligence, announced today that Matti Shem Tov, Chief Executive Officer,...",
+"url": "https://www.prnewswire.com/news-releases/clarivate-to-present-at-the-rbc-capital-markets-global-technology-internet-media-and-telecommunications-conference-on-november-18-302935874.html",
+"time": "2026-11-11T12:30:00Z",
+"tickers": [
+"CLVT"
+],
+"t212": [
+"CLVT"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-11T12:30:41Z"
+},
+{
+"source": "globenewswire",
+"title": "PolyPid Provides Corporate Update and Reports Third Quarter 2026 Financial Results",
+"url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQbUI4OUw2OG1zTy1Wc2JWR0ZHWkVZaGxubjdocUdkVWpMR1ZvQ2JyQmlZVnAzcElNQzl4WTMzc1FUM1I2eEtBQnQ5QU9SMWI3eWk5NENvTFMzeU9jQ2RLdkFqenVtSWFlMS1ONmZCaU1zRGtxTFhTc0R2bnJZazBWdDJKaG54LXdCbWVQNE4tM0R5VjlnX1l2Z0xPRFVfWUY3OUlLZ3RWYXNzT1pXbW1oWlI5SE5sNGFBQ2lMb0prRFBzMHBSMThUYUlfVnBTRGRjb09NS3RKbksyaUlTNHRYamNJUDRJNnhfREE?oc=5",
+"time": "2026-11-11T12:30:00Z",
+"via": "google-news",
+"tickers": [
+"PYPD"
+],
+"t212": [
+"PYPD"
+],
+"flags": [],
+"first_seen": "2026-11-11T12:40:22Z"
+},
+{
+"source": "globenewswire",
+"title": "Dyne Therapeutics to Participate in Upcoming Investor Conference",
+"url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPV1NnaDJtbldsRXNKRVV0d19CX3JqeHczVFpPa2NTV2JDbUZQaFFJMWE1ZnZKdGMwcy1sbXBGS3ZCX3ZJTU5GbzhINjVZOWRaektNSkZING1fc3ItUC1adEh4cV9JbldSeTZjT21BM2lTaWg3UFhfeVpEYTM1S09lVlpQYkd0MzVITkNlTGRmYWJkUVN6cThQb0pBYVNyY1BxNDMyVHp4OGNPTEpsZThuLTdEVDFnWmhDMmJoMTJiQ2dNNGZmMjVic3NyQkc1alZjU3c?oc=5",
+"time": "2026-11-11T12:30:00Z",
+"via": "google-news",
+"tickers": [
+"DYN"
+],
+"t212": [
+"DYN"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-11T12:40:22Z"
+},
+{
+"source": "globenewswire",
+"title": "MiNK Therapeutics Reports Third Quarter 2026 Results, First",
+"url": "https://news.google.com/rss/articles/CBMi7AJBVV95cUxOSi1sZHl1bnQ5dnpETXZLdURwQ2UxakhXbFVGSTJpYnA0bVA4N2lEb2RaSXpFdjRTMDBVVncxaDgtb09SUU15SzZDaWVlRUhBTVp1UW0zUDlKUHZiS0E2OWdVSHJ3emhMREZsNVctOWx4NkNvOU5tNmpWU0M3aXQxeGhIUWJydWNueDFZZkk4VklqczNqaFI0ajhWUWIzNktHU3ZMRzBJZkVRTTVHY1ZJTnpjWmx6R1dtdmxlazlnWGFXTHFvRHB5MC04SzA4Z1hiaV93cHhSSlFQeldCbW1KQUdiM24xWXRhMFRzU0g1ZFh5THZZOVJ1RVZPNGd2OWJ3T0dMNTh6LWxYTUU1SFYyX0t2N1JITlA4dmxiZ3dhaFVRLW9NT2VqM3IzSzBWX0MxV3ZTUVJiZ0k0WVRQaUloX1lLZmZhSDBFbWFOaDF3bTB4V01uRnNDbmVLTHJfVkFNVDdiZ1hWdFFqSzRW?oc=5",
+"time": "2026-11-11T12:30:00Z",
+"via": "google-news",
+"tickers": [
+"INKT"
+],
+"t212": [
+"INKT"
+],
+"flags": [],
+"first_seen": "2026-11-11T12:40:22Z"
+},
+{
+"source": "globenewswire",
+"title": "Merlin Awarded Contract for U.S. Africa Command Autonomous Casualty Evacuation Technology Challenge",
+"url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxQTGJDSHdwTUdnaGxVRWhqTV8wd2UtcFVtZ0JHeE1pMnA0bGtxeDhPeWFYU2VjZUpVOTl3anNPc3otTHNRRmtqV1RJcDdPYlE1T3YwbEpPYVBFdXZPYmFhSGctTm1fOTkza25Ra2VMam9PblRuTGZyeEd3dVNZLTVWdTNiZzM5WWlxMzd0cXFmanZ2UzE5NC1rZGIzZEZxWXQyNlFYdGgzczBEdDNBd1d6b3hWQXdZa2MxcXhGZGVrWHFzTTRXZ20zc29NM0c1end5TlBVTUUycFVBUEpGbjFBRDY2TmxIRUFIYm9pM1BSdHVOWHVnWjhHaWVjbERLT3M?oc=5",
+"time": "2026-11-11T12:30:00Z",
+"via": "google-news",
+"tickers": [
+"MRLN"
+],
+"t212": [
+"MRLN"
+],
+"flags": [],
+"first_seen": "2026-11-11T12:40:22Z"
+},
+{
+"source": "globenewswire",
+"title": "Lycia Therapeutics to Present at the 2026 Jefferies Global Healthcare Conference",
+"url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxORTkzQzY2SHJsR0lJMkNRWkFUM2ZBdHhsMnhvUl9FSzZYV1B6TTlkSnA4MERXa28ycVVUbUllWGpCRDFOTTRROEYtaExvcGNvZVlQdm96b1RIM2E5eHJwZHZzc2dqWnVrOF90TThSNkx5VGVINkI5dnI1VDVONFhSR1htQ3k4eUxYQ1ZpbXlWM1RFNWFjQ1pkWDY4WU5vRTgyMDZSdTl1V1pjSk1NZjlfa1BYRzVXbGU5ZlBXY0dEMVdMZDU1MlVyMGZpUTA3UEpTSVVldkdMYl8wMVNZeEphTDg5cHc5VUU?oc=5",
+"time": "2026-11-11T12:30:00Z",
+"via": "google-news",
+"tickers": [
+"LYCA"
+],
+"t212": [
+"LYCA"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-11T12:40:22Z"
+},
+{
+"source": "accessnewswire",
+"title": "XCF Global Hosts USDA at New Rise Renewables Reno as Facility Surpasses 4.4 Million Gallons Since Restart",
+"url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOelBURXo0d3dXc0U1SEFnNzF2YzZxem1VeVh4OUNQRW1LWU9WTlB4WC1vLVhpalJvR0lkTTRrdWtoOVU5dkhCWnBqQTBXTFltTHEySHFWeTBSUjN6WkVDdXk5eERQcDRnRzJRc3FMYm00WHVTS3hxWFJUN0g4RjVxY2VPREVweGRzMjF4aWRKTDhkd01YMU0wTmZpSnp0eVpodDFXMHNYOWhjRmE1N0syZkZ3cXo2REM0N1BERzNqVDV4dWh2WkJWajRuYXl1MmJzMkwyUlVMLV9Ic1laQTZxVFFEV1M?oc=5",
+"time": "2026-11-11T12:30:00Z",
+"via": "google-news",
+"tickers": [
+"SAFX"
+],
+"t212": [
+"SAFX"
+],
+"flags": [],
+"first_seen": "2026-11-11T12:40:22Z"
+},
+{
+"source": "globenewswire",
+"title": "Silver Bow Mining Commences Underground Exploration Drilling at Rainbow Block, Butte, Montana",
+"url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxNM1lxZGVFMGlGQVlWS0hlSUQzckNmMHh5QlBNRFNLbkl3eDRyQzVzeTdFbHlzSlpnNFpfckhRZmtyd0E1V3dSLWNubEQ1VVpOdmVobzZEUEN6T0N6dXEtQ25DQW9BVE9BZjFOenZPcXZ2SDd1YmhWUVZhWVdtOUoxTU1CVlloUDZUUGpSMjJhcFJVaUNFc3NHZTJpSXlhc0kyNmp4NG5LTm9vRHdJSWw4MVhWMVpVd3hlRzl6eGM3dEluNTFkb1BPQnh6QkduSGpiSzZ3YUxsLUZySDN3cGl6a29hNGFWUktKMm81TjVxUGZWY3FOZEE?oc=5",
+"time": "2026-11-11T12:25:00Z",
+"via": "google-news",
+"tickers": [
+"SBMT"
+],
+"t212": [
+"SBMT"
+],
+"flags": [],
+"first_seen": "2026-11-11T12:30:41Z"
+},
+{
+"source": "prnewswire",
+"title": "YYForce Issues US$70 Million Revenue Guidance for FY2026",
+"url": "https://www.prnewswire.com/news-releases/yyforce-issues-us70-million-revenue-guidance-for-fy2026-302935886.html",
+"time": "2026-11-11T12:15:00Z",
+"tickers": [
+"YFOR"
+],
+"t212": [
+"YFOR"
+],
+"flags": [],
+"first_seen": "2026-11-11T12:20:27Z"
+},
+{
+"source": "globenewswire",
+"title": "Quantum BioPharma Announces Results of Annual General and",
+"url": "https://news.google.com/rss/articles/CBMizAJBVV95cUxQMmtmLS1QdTRMYkN0OVh5S2E4TDdySElBeTZJOEY4ckdWbGVJVVMwdklMWUVRa1ZuUGpxajA4dmhYM1pYcUVObTNZVEVQMFZyVlk2bEtOeXRPVVlWY0t2OVkzZjNMR0FmUjBFUEVjQzgyMUxyWi0yUjhnWVozczZvaHhLcDgwSWZTX1k5TzZfV2VqZzFBY3lrMDJ1dHQwaFF2dGJ0dDZVOThkX0hWQklKY1BjOGk4UkJjYzd4eWVpbjFIeDdXeHFkWEF5aF9sRDVDYVpodEFlSmlDUnJ3U1NKZlVYbWg0aWhoMmI0TXNIaUxQYWdVQV9xODFDLWxyaWF1eTNRa2hfX3JEaEtDYjh3dl9jeDJ6VHcyV2NMenBUNE1XMlg2bGN6NHNiclhTS2R3cmNFT05ER1YwWEYyS3J1c09kYnVFVjZ2d1VuYQ?oc=5",
+"time": "2026-11-11T12:07:45Z",
+"via": "google-news",
+"tickers": [
+"QNTM"
+],
+"t212": [
+"QNTM"
+],
+"flags": [],
+"first_seen": "2026-11-11T12:20:27Z"
+},
+{
+"source": "prnewswire",
+"title": "Production of Airedale\u00ae Chillers for Data Center Customers Begins at New Texas Facility",
+"url": "https://www.prnewswire.com/news-releases/production-of-airedale-chillers-for-data-center-customers-begins-at-new-texas-facility-302935612.html",
+"time": "2026-11-11T12:00:00Z",
+"tickers": [
+"MOD"
+],
+"t212": [
+"MOD"
+],
+"flags": [],
+"first_seen": "2026-11-11T12:00:50Z"
+},
+{
+"source": "prnewswire",
+"title": "Genprex to Highlight Dual Delivery Strategy for Diabetes Gene Therapy at Future of Cell and Gene Therapy Symposium",
+"url": "https://www.prnewswire.com/news-releases/genprex-to-highlight-dual-delivery-strategy-for-diabetes-gene-therapy-at-future-of-cell-and-gene-therapy-symposium-302935830.html",
+"time": "2026-11-11T12:00:00Z",
+"tickers": [
+"GNPX"
+],
+"t212": [
+"GNPX"
+],
+"flags": [],
+"first_seen": "2026-11-11T12:00:50Z"
+},
+{
+"source": "prnewswire",
+"title": "RADCOM Reports Third Quarter 2026 Results",
+"url": "https://www.prnewswire.com/news-releases/radcom-reports-third-quarter-2026-results-302936352.html",
+"time": "2026-11-11T12:00:00Z",
+"tickers": [
+"RDCM"
+],
+"t212": [
+"RDCM"
+],
+"flags": [],
+"first_seen": "2026-11-11T12:00:50Z"
+},
+{
+"source": "prnewswire",
+"title": "Hamilton Lane Strengthens Global Infrastructure Team with Three Senior Appointments Amid Continued Platform Growth",
+"url": "https://www.prnewswire.com/news-releases/hamilton-lane-strengthens-global-infrastructure-team-with-three-senior-appointments-amid-continued-platform-growth-302935907.html",
+"time": "2026-11-11T12:00:00Z",
+"tickers": [
+"HLNE"
+],
+"t212": [
+"HLNE"
+],
+"flags": [],
+"first_seen": "2026-11-11T12:00:50Z"
+},
+{
+"source": "prnewswire",
+"title": "InMode Reports Third Quarter 2026 Financial Results: Quarterly GAAP Revenues of $92.1 Million; Reaffirms Full-Year 2026 Financial Outlook",
+"url": "https://www.prnewswire.com/news-releases/inmode-reports-third-quarter-2026-financial-results-quarterly-gaap-revenues-of-92-1-million-reaffirms-full-year-2026-financial-outlook-302935662.html",
+"time": "2026-11-11T12:00:00Z",
+"tickers": [
+"INMD"
+],
+"t212": [
+"INMD"
+],
+"flags": [],
+"first_seen": "2026-11-11T12:00:50Z"
+},
+{
+"source": "prnewswire",
+"title": "Innoviz Reports Third Quarter 2026 Results Innoviz Technologies Ltd. (NASDAQ: INVZ) (the \"Company,\" \"we,\" or \"Innoviz\"), a leading supplier of high-performance, automotive-grade LiDAR sensor...",
+"url": "https://www.prnewswire.com/news-releases/innoviz-reports-third-quarter-2026-results-302936411.html",
+"time": "2026-11-11T12:00:00Z",
+"tickers": [
+"INVZ"
+],
+"t212": [
+"INVZ"
+],
+"flags": [],
+"first_seen": "2026-11-11T12:00:50Z"
+},
+{
+"source": "prnewswire",
+"title": "IBM Quantum Nighthawk Demonstrates New Levels of Speed and Quality, with Plans to Scale Beyond 1,000 Qubits in 2027 IBM (NYSE: IBM) today announced IBM Quantum Nighthawk r3, its next-generation processor, will be built to accurately execute 10,000 quantum...",
+"url": "https://www.prnewswire.com/news-releases/ibm-quantum-nighthawk-demonstrates-new-levels-of-speed-and-quality-with-plans-to-scale-beyond-1-000-qubits-in-2027--302935826.html",
+"time": "2026-11-11T12:00:00Z",
+"tickers": [
+"IBM"
+],
+"t212": [
+"IBM"
+],
+"flags": [],
+"first_seen": "2026-11-11T12:00:50Z"
+},
+{
+"source": "prnewswire",
+"title": "DecisionDx\u00c2\u00ae-Melanoma Data at SDPA and Dermato-Onco2026 Support the Test's Ability to Refine Risk Assessment Beyond AJCC Staging Castle Biosciences, Inc. (Nasdaq: CSTL), a company improving health through innovative tests that guide patient care, today announced it will present ...",
+"url": "https://www.prnewswire.com/news-releases/decisiondx-melanoma-data-at-sdpa-and-dermato-onco2026-support-the-tests-ability-to-refine-risk-assessment-beyond-ajcc-staging-302935721.html",
+"time": "2026-11-11T12:00:00Z",
+"tickers": [
+"CSTL"
+],
+"t212": [
+"CSTL"
+],
+"flags": [],
+"first_seen": "2026-11-11T12:00:50Z"
+},
+{
+"source": "prnewswire",
+"title": "Thomson Reuters Announces $500 Million Share Repurchase Program and New Normal Course Issuer Bid Thomson Reuters (TSX/Nasdaq: TRI), a global content and technology company, today announced that it plans to repurchase up to $500 million of its...",
+"url": "https://www.prnewswire.com/news-releases/thomson-reuters-announces-500-million-share-repurchase-program-and-new-normal-course-issuer-bid-302936436.html",
+"time": "2026-11-11T12:00:00Z",
+"tickers": [
+"TRI"
+],
+"t212": [
+"TRI"
+],
+"flags": [],
+"first_seen": "2026-11-11T12:00:50Z"
+},
+{
+"source": "businesswire",
+"title": "UL Solutions Announces Quarterly Dividend",
+"url": "http://www.businesswire.com/news/home/20261111856402/en/UL-Solutions-Announces-Quarterly-Dividend/?feedref=JjAwJuNHiystnCoBq_hl-WsGkFyUNMTSNrPsg57HLEqqcp-o_pnudlUwsb5apQ1S4gUE65BTfjH3-pSuqdv0gW3cb3F4oTIgUqCPafFkgu5AneicJQDNboWvodvG82E0",
+"time": "2026-11-11T12:00:00Z",
+"tickers": [
+"ULS"
+],
+"t212": [
+"ULS"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-11T12:10:24Z"
+},
+{
+"source": "globenewswire",
+"title": "Auddia\u2019s Discovr Radio Announces Affiliate Partnership with Symphonic, its First with a Music Distributor",
+"url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxQejVrOXpkSTZ6cFpOVHJiMkxiODV1MEhQUVA4MmdIY1JUNjlxbjlQYlBmNFc5Q1d4LWJUck1wWC1FWl9Pc0x1YXhlYmJucE9zbFF0eTlMcFp5NW5GSGplb29ZQnBUWE55dGRSd1l0dFFNNWVCSFhwM0pyQlY2VjVEd2FZcWRvcFFFSFJlMzhiSWh3MmVYNXpoLXdhMUVkRWwxYUlLTm54V2xNUXYxQ2czaml0cDdzblJEY3FzbEFRWUV2MHpudTFZUE1IUkxvUWpXdjlZbmJGSUtLeUtQcjJiME9OS1NScjJCVzBBNGVuWEl4Ymp2TmxYWkwta0RMbXFlcUhvZW0tbw?oc=5",
+"time": "2026-11-11T12:00:00Z",
+"via": "google-news",
+"tickers": [
+"AUUD"
+],
+"t212": [
+"AUUD"
+],
+"flags": [],
+"first_seen": "2026-11-11T12:10:24Z"
+},
+{
+"source": "globenewswire",
+"title": "Arvinas to Present at Jefferies Global Healthcare Conference",
+"url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNcWE0elNhSFZUUjRuUVZaMU83RnFkbFIzRmxJMi0yZmtRc3I2SDVuYTdCeVdvRUFLNmljNDFCd3pfMHNrU3V4YjVZekQtU2xveFBnRDhhM21rUnlVR05oNm1qcWZscDZnZ09UenJGNkx6VGVzTEVSbXZONmFBWXhYbUswZHVPajJlVHNqOUoyV0xWZG42SV85b0FITURxbmh1VXVwT2RDZGtpNzNaWmRpdWNTY3hmWEhxc0t6d0NqYjkyc0lyU1lwLUc5N0I?oc=5",
+"time": "2026-11-11T12:00:00Z",
+"via": "google-news",
+"tickers": [
+"ARVN"
+],
+"t212": [
+"ARVN"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-11T12:10:24Z"
+},
+{
+"source": "globenewswire",
+"title": "NRx Pharmaceuticals Begins Selling U.S.-Made, Preservative-Free Ketamine Amid Long-Running Shortage",
+"url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxNaF9WVnJuaXJ1eEtEQ3VZd2ZwRlphTWtUT2JyYWk2Nm1uWlFrcWJYR3RvUGVEVnEyNXBCRWJndHJUTl8xdmdaWDVpODBILVdtYVUtblN5dFBSNTBBd09seWR6X09OdEtUTjBhb1FqQ3NURFg5TDd6bmRNWk9fa1Jna09GZzZZQkdyV2s3YUtyS1NjUEs2VkdWQ1VydjZ1RDR2dGlTX0EtUFVac1VxV3lJWExObmdlZW1ickVRSUN2eFRYeFh5dkhuUzZuTExkc0czMTVMcUVzblR6S2VJVmx5dTZud2s0emNORjlMUlBtckM5NUptT1YxM1lBVjdCUQ?oc=5",
+"time": "2026-11-11T12:00:00Z",
+"via": "google-news",
+"tickers": [
+"NRXP"
+],
+"t212": [
+"NRXP"
+],
+"flags": [],
+"first_seen": "2026-11-11T12:10:24Z"
+},
+{
+"source": "globenewswire",
+"title": "Hemab Therapeutics to Participate in Upcoming Investor Conferences",
+"url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNbzBvRHpUQWxxWnF1UGFDZ01tVENvelJDcG9tazRxSEg0UUFTWXItblNxTmRONHZJVFhhdHJMQ1E2d194eW12YzNXLUlOSHEtaGRhaVpiZXBCVHVqWXRNdVRSMEJUa0dmN3BUMUZRMHduR1hfNHYydENreEFLdUlhMVRfWlo5b05zUFNZYjU1aTdzeV9JeXFWcG1icTlxMFJJZ1VXSWplSWx2WjNLR2pMUWV5Zm9GSXFaVzFhVUJ0NjZ2Z0wzVEg2WDVaYzJ3N3liNEpqWA?oc=5",
+"time": "2026-11-11T12:00:00Z",
+"via": "google-news",
+"tickers": [
+"COAG"
+],
+"t212": [
+"COAG"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-11T12:10:24Z"
+},
+{
+"source": "globenewswire",
+"title": "Nkarta Presents Initial Safety Data for NKX019 in 40",
+"url": "https://news.google.com/rss/articles/CBMimAJBVV95cUxOQURLSnNjcGphaUpRdkowZXZjZmVKY2NMYnhZNmR2Qi16NU40d24zMDdPOE1NYko5dUVCbWFSazZkWkRIMlpoaGhDZHNxSzM5UU81U2xLekRSbUZJNzRra3dPcHNqYWhBb05uODRRMzNfLTZHbGY4ekdUZENDQ2NRLWZETTZESjhDV0xkdnNxVl9yNFlucnlERjlOWWhSdmEyS2pWbmV0NjJvZ1RlZzdWblhmMkNiSkFyYm55TG9iMUJIZ29WUFVMQWN1bUlmaFUxYWx5LU56elRIUDBxdm1tMTd2YkNBbHZTZVlpMHl4X0w5bmJwRkFwaUhseE5DbDVyRjFVMnpfdnJabWh1eE9fUGktaXBDUXVk?oc=5",
+"time": "2026-11-11T12:00:00Z",
+"via": "google-news",
+"tickers": [
+"NKTX"
+],
+"t212": [
+"NKTX"
+],
+"flags": [],
+"first_seen": "2026-11-11T12:10:24Z"
+},
+{
+"source": "globenewswire",
+"title": "Nurix Therapeutics Appoints Arati V. Rao, M.D., as Chief Medical Officer",
+"url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNRWtWNGZucXVVa0JRa21aSkFibmNaYjZEanBFaS1sMi1nR0hRNWZsZVFUaEJQcXFlbUg5d1BkZVdmTC1XZkFWUEVOZGc2VlB1c2padE9IMlUxcWNHT21WS09qRnZTM3d1NjlfTHB5QUdoN3lfcWJjX0FjSEhHVkQxenE3ckRDMGd5dHRkWXo0bjc4QmJ2X0hoNDZ5VTUwMm1SdmE5ZjloR2FtdlE0NXFsbmpNRndDSHluOEdCbVJOWFFaeHZ4bWlsd2lXLTZhak1wN3BMUDNWYw?oc=5",
+"time": "2026-11-11T12:00:00Z",
+"via": "google-news",
+"tickers": [
+"NRIX"
+],
+"t212": [
+"NRIX"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-11T12:10:24Z"
+},
+{
+"source": "globenewswire",
+"title": "ODDITY Tech Reports Third Quarter 2026 Results Ahead of",
+"url": "https://news.google.com/rss/articles/CBMimAJBVV95cUxQeWJ5aVZmcG9iUnBRM3lCd2xMS2tPS2wwTGhiSjU4SVBzazhQRFllZnN0WUs5OTFUUmx2Y2o1TkstNzJ0TnduTzV6NFFHTS1lVllIV1hjYjU4Smoxa18tQlhUVEFpZF9IM0h4ckN1d18xZjJvSDVNUzhqaTgtOHpuQXk4bjlSQmtuVEpDdi1yZDY1elAzQjJDc1QxOUFiSlRFczJYeUo1UnZFQjMtWFlXZHNPNjJ4bVFlbEFob0plSl9EUmJ2VGNLbk1FY0RreVRIaHVLaG5kdWtyWjhHVTNrdGR5MzZYbXFOZkh3Z3NMVWtBOUl6U0Zvc2x0enFuTjFmcXBHRjVtRVkwV1JRUVBsT1Y0UzkwckJz?oc=5",
+"time": "2026-11-11T12:00:00Z",
+"via": "google-news",
+"tickers": [
+"ODD"
+],
+"t212": [
+"ODD"
+],
+"flags": [],
+"first_seen": "2026-11-11T12:20:27Z"
+},
+{
+"source": "globenewswire",
+"title": "Aebi Schmidt Group reports continued growth in Net Sales",
+"url": "https://news.google.com/rss/articles/CBMiuAJBVV95cUxQVktUaUQ5RlAwUVdyeXBnVEtoZ0w0UUlhc0FUcUhNTFhxRF85M3cyN1B6cnpNbVpoT29PVkJOcWFvbE5kVm1Fbm05OGs3aE93ajJIYmxoaGQxMWxLaTRLN1VPelkxbWtTNFZoWXQxTGFWRlRJTGNONkFxZVNfVFhCcXlHT0VjbXZjd1E0dnFKMjBrQlRTMmZJS29YbUtYa0phZGhFeWViczVQckU4RE1VQmxIN0lIWGlBNlNDRmdlRTlTVnJybERhdVo5Z1FMYWppNjROc0NWTXFRXzlfbXVKQ2hCbWFyV01SRlN5eURmdTRjNkxPeUM3YjRMVlY2YTB3NUZrWGd4M083R1FjVDZhblB2RjgxUWJOSVZCVWhhYlhuUk92NkZZcS1hblp6VVJSNVg5QUY2TS0?oc=5",
+"time": "2026-11-11T12:00:00Z",
+"via": "google-news",
+"tickers": [
+"AEBI"
+],
+"t212": [
+"AEBI"
+],
+"flags": [],
+"first_seen": "2026-11-11T12:20:27Z"
+},
+{
+"source": "globenewswire",
+"title": "TryHard Dazzles 50,000 Spectators With 4,050-Drone Light Show at Saga International Balloon Fiesta",
+"url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxNNFNzY0FPdFdNYzlyU3dmYWRlNklncWZsYUx0enJVN3JrMlA0eE9FcWZIMDRmYzZSTEtFXzc5ZVk0M1ZDUVhPVEZPakx1cjhsM2E4WEtKdEVtMkJLY2tWbTN0Yk5Nang2UkdEX1BTY2YzQ0c5elRGY2h3TGw4bXF4eUdkQ0l6Zi1LWjVwSnhkZlJmVDJUMVVidXo4Z3dQU3ZiTWZyMG93eHM5bTZ3Zmtqd3kxdlNBZ3VHVS1YY1ZyR0V4RlZsQlBJRFVTOExOal92RjhpTXl3LUlNUXJXcHdQaTVlMS1oVVRsUGJnZU5wWjBWUzNUX0o3ODJDaDcxYVE?oc=5",
+"time": "2026-11-11T12:00:00Z",
+"via": "google-news",
+"tickers": [
+"THH"
+],
+"t212": [
+"THH"
+],
+"flags": [],
+"first_seen": "2026-11-11T15:05:58Z"
+},
+{
+"source": "globenewswire",
+"title": "ARKO Petroleum Corp. Completes Acquisition of the Business",
+"url": "https://news.google.com/rss/articles/CBMi2AJBVV95cUxPc3llcVFBbE1sREhBelJ6aE00aFR0TjdleXhJQnZzR2R5YmJzRldGem1SemtPUUwtR2JWM2tUSnd2VjYxeWtoQnBvVE8wYzhxaUJNeU11UjdYUDlVaXRRRUZBOEZsUi1ENXRwbXVTdmt5Y09BZnBQaV9jaHdhVE5md0JWUk1KX01UaTczRFpibnNXQUU4UkJIcW1kRVpQQ3I4SFpmeGkyU0t4Z2VKQjJieFFNWTRrUE1RRmFvWGNyTnR4TUxwYnVyWS1PME1rSkFOalg4Sjhkd1FrZ05NTmRtVm03T01ROHBRRXJwS1JPb2ItcTlQZFpvOG4wSkFjVDAwRElRVXktSDd2TlRybDV6U1JUb0I0aTlMV1dWbWxqSHBYVWtfQW1NTWZfTVRScXN6Rjc4SzR5VXpvc3FCenV3RjlQUTdkQUg1TGJoNUZZM0RCQlRjc0VIWQ?oc=5",
+"time": "2026-11-11T12:00:00Z",
+"via": "google-news",
+"tickers": [
+"APC"
+],
+"t212": [
+"APC"
+],
+"flags": [],
+"first_seen": "2026-11-11T15:05:58Z"
+},
+{
+"source": "globenewswire",
+"title": "AC Immune to Present at Jefferies Global Healthcare Conference 2026",
+"url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNcG1CVUgzWUluVHRTcjdWTGRxNGlzZHh4SnlXa01nZDhsR1VxWE9WVUtZUDVabGU4eTU5VHlnclRySkNoX2JMMUdsSmZrdElsWHZpZHQyZGI3R2t3ZUdCQ0JkTkY0MlBHaGdFU3dCb1NldlVJN0lkeDFsTjk1V3EwSlRZdlJHSzJ4Z1ZMc0wtSm5ubGMyRmNjbXlVczN2TURFbVl6WlhCRU5qTUNCLXBvRjZwRDBnUnVqaDM3N0hES3VfMVlWb2Z6RHdEeHZqbWV0dFVRZmtR?oc=5",
+"time": "2026-11-11T12:00:00Z",
+"via": "google-news",
+"tickers": [
+"ACIU"
+],
+"t212": [
+"ACIU"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-11T20:00:51Z"
+},
+{
+"source": "prnewswire",
+"title": "Q32 Bio to Participate in the 2026 Jefferies Global Healthcare Conference in London Q32 Bio Inc. (Nasdaq: QTTB) (\"Q32 Bio\"), a clinical-stage biotechnology company focused on developing innovative therapies for alopecia areata (\"AA\") ...",
+"url": "https://www.prnewswire.com/news-releases/q32-bio-to-participate-in-the-2026-jefferies-global-healthcare-conference-in-london-302933693.html",
+"time": "2026-11-11T11:59:00Z",
+"tickers": [
+"QTTB"
+],
+"t212": [
+"QTTB"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-11T12:00:50Z"
+},
+{
+"source": "prnewswire",
+"title": "Viatris to Participate in Upcoming Investor Conferences Viatris Inc. (Nasdaq: VTRS), a global healthcare company, today announced that the Company will participate in fireside chats at three upcoming...",
+"url": "https://www.prnewswire.com/news-releases/viatris-to-participate-in-upcoming-investor-conferences-302935785.html",
+"time": "2026-11-11T11:59:00Z",
+"tickers": [
+"VTRS"
+],
+"t212": [
+"VTRS"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-11T12:00:50Z"
+},
+{
+"source": "accessnewswire",
+"title": "BlackBerry to Participate in Upcoming Investor Conferences",
+"url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNaThVQkhCUGlteXdZOFBYN0Y3LTRmbnNpZWFfejc1SGF0ZC1lN2JFdWVEaHMtZlJkVVpLVFY5eG9JZ1FnZk5pQ3FzR0xKSm1vaDREeUNmWklHcGRXUzdKWHViUTNnNU8yWVVCdG5ROVhKZFlFRkRQaG0xRnVUbXJteExzdzVVRGtlVmRHWm5VTi1OSko0cXNhbURjS0RrRmdlQWkwcmptYUhZX2Z5MlB3Tm1hU0UwUkNlRWZaRzJkeENqZ0UyZWp3emRMN1hvV0EwZzZhTEtwMm5va28?oc=5",
+"time": "2026-11-11T11:58:00Z",
+"via": "google-news",
+"tickers": [
+"BB"
+],
+"t212": [
+"BB"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-11T12:10:24Z"
+},
+{
+"source": "prnewswire",
+"title": "Quantinuum et RIKEN renforcent leur partenariat afin d'acc\u00c3\u00a9l\u00c3\u00a9rer la commercialisation du supercalcul hybride quantique-IA au Japon Quantinuum (NASDAQ : QNT), une entreprise leader dans le domaine de l'informatique quantique compl\u00c3\u00a8te, et RIKEN, le principal institut de recherche...",
+"url": "https://www.prnewswire.com/news-releases/quantinuum-et-riken-renforcent-leur-partenariat-afin-daccelerer-la-commercialisation-du-supercalcul-hybride-quantique-ia-au-japon-302936427.html",
+"time": "2026-11-11T11:48:00Z",
+"tickers": [
+"QNT"
+],
+"t212": [
+"QNT"
+],
+"flags": [],
+"first_seen": "2026-11-11T11:50:28Z"
+},
+{
+"source": "globenewswire",
+"title": "W&T Offshore to Host Live Investor Presentation via Investor Meet Company",
+"url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPMHNxaVdrM05YdjlXajJTdXBmdVRtQUl3ek4yMHpCeXNkcEpsbGZZLWFqX3pGeXJGLXYxSXJqUC00ejFhMVd4SmZpWk9rcVlHSFItYjVLd3JvTEVfcko3Vi1HWi1yeWR5OVd1Nmhuc21NV25sR1FSaTNKd2xIZE83NTFod3Y1LTM5cU5nOGNhQXJqUWJ1emtNVjlBWk1TMU5pb0ZzdFNmeXBNeS1CRVl3VlZTOThmdGJHR1JnNGsxNjZ6bFcxTkRvZjJOeEY3VDNVVUdHelhPY2RkZ2k1LVE?oc=5",
+"time": "2026-11-11T11:45:00Z",
+"via": "google-news",
+"tickers": [
+"WTI"
+],
+"t212": [
+"WTI"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-11T11:50:28Z"
+},
+{
+"source": "businesswire",
+"title": "Riskified Reports Strong Third Quarter of 2026 with Accelerating Revenue and Gross Profit Growth",
+"url": "http://www.businesswire.com/news/home/20261111481301/en/Riskified-Reports-Strong-Third-Quarter-of-2026-with-Accelerating-Revenue-and-Gross-Profit-Growth/?feedref=JjAwJuNHiystnCoBq_hl-WsGkFyUNMTSNrPsg57HLEqqcp-o_pnudlUwsb5apQ1S4gUE65BTfjH3-pSuqdv0gW3cb3F4oTIgUqCPafFkgu5AneicJQDNboWvodvG82E0",
+"time": "2026-11-11T11:45:00Z",
+"tickers": [
+"RSKD"
+],
+"t212": [
+"RSKD"
+],
+"flags": [],
+"first_seen": "2026-11-11T12:00:50Z"
+},
+{
+"source": "prnewswire",
+"title": "CGI reports fourth quarter and Fiscal 2026 results CGI (TSX: GIB.A) (NYSE: GIB) Q4-F2026 results \"CGI's fourth quarter performance reflects the strength of our client relationships, the relevance of...",
+"url": "https://www.prnewswire.com/news-releases/cgi-reports-fourth-quarter-and-fiscal-2026-results-302935758.html",
+"time": "2026-11-11T11:30:00Z",
+"tickers": [
+"GIB"
+],
+"t212": [
+"GIB"
+],
+"flags": [],
+"first_seen": "2026-11-11T11:30:38Z"
+},
+{
+"source": "prnewswire",
+"title": "Valens Semiconductor Reports Strong Third Quarter 2026 Results Valens Semiconductor Ltd. (NYSE: VLN), a leading provider of high-performance connectivity chipsets, today reported financial results for the third...",
+"url": "https://www.prnewswire.com/news-releases/valens-semiconductor-reports-strong-third-quarter-2026-results-302936347.html",
+"time": "2026-11-11T11:30:00Z",
+"tickers": [
+"VLN"
+],
+"t212": [
+"VLN"
+],
+"flags": [],
+"first_seen": "2026-11-11T11:30:38Z"
+},
+{
+"source": "globenewswire",
+"title": "Bimergen Energy to Advance Strategic Partnerships and Battery Storage Portfolio at RE+ 2026",
+"url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxORFduTld6X2dMSjQtNHUwS2pNRzNTZDhwY3F1QUdmUHVkTzFsLXRfSVNUTHZLaE9KcjFwTEtVQWFsaE11aVBud2RsNzlXU0tTTkxVQ2cxVC1rYjZJYlVUTmlORDdGX1U1SjIxRHBHMEVlV0VtbGY4OUw2NEFaUjlvbWJZOGVPZUlaQWVlNXhHcElVaVA2NVE3aU5BM28yV0NxTzllMnVVd0V3VkFFMUw2b1Zpa093UEdLVkxCZDNmaHFKaEJmWV9tWVFmbDFhendVOGw4SUtUZEJXZnVwQWUwZHlqdnRnSWZBelZIdWgxQWlzeTE1?oc=5",
+"time": "2026-11-11T11:30:00Z",
+"via": "google-news",
+"tickers": [
+"BESS"
+],
+"t212": [
+"BESS"
+],
+"flags": [],
+"first_seen": "2026-11-11T11:40:24Z"
+},
+{
+"source": "prnewswire",
+"title": "China Automotive Systems Reports Record Third Quarter 2026 EPS Sales; Board Approves $5 Million Share Repurchase Program China Automotive Systems, Inc. (Nasdaq: CAAS) (\"CAAS\" or the \"Company\"), a leading power steering components and systems supplier in China, today...",
+"url": "https://www.prnewswire.com/news-releases/china-automotive-systems-reports-record-third-quarter-2026-eps-sales-board-approves-5-million-share-repurchase-program-302935730.html",
+"time": "2026-11-11T11:00:00Z",
+"tickers": [
+"CAAS"
+],
+"t212": [
+"CAAS"
+],
+"flags": [],
+"first_seen": "2026-11-11T11:00:54Z"
+},
+{
+"source": "prnewswire",
+"title": "Lowe's Companies, Inc. to Host Third Quarter 2026 Earnings Conference Call on Nov. 18 Lowe's Companies, Inc. (NYSE: LOW) announced today that it will hold its Third Quarter 2026 Earnings Conference Call at 9 a.m. Eastern time on...",
+"url": "https://www.prnewswire.com/news-releases/lowes-companies-inc-to-host-third-quarter-2026-earnings-conference-call-on-nov-18-302935547.html",
+"time": "2026-11-11T11:00:00Z",
+"tickers": [
+"LOW"
+],
+"t212": [
+"LOW"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-11T11:00:54Z"
+},
+{
+"source": "prnewswire",
+"title": "Ceragon to Participate in Upcoming Investor Conferences in November Ceragon (NASDAQ: CRNT), a leading solutions provider of end-to-end wireless connectivity, announced today that management will participate in the...",
+"url": "https://www.prnewswire.com/news-releases/ceragon-to-participate-in-upcoming-investor-conferences-in-november-302936365.html",
+"time": "2026-11-11T11:00:00Z",
+"tickers": [
+"CRNT"
+],
+"t212": [
+"CRNT"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-11T11:00:54Z"
+},
+{
+"source": "prnewswire",
+"title": "Amphastar Pharmaceuticals to Present at the Jefferies Global Healthcare Conference in London Amphastar Pharmaceuticals, Inc. (NASDAQ: AMPH) announced today that Bill Peters, CFO, and Jacob Liawatidewi, EVP of Corporate Administration, will be ...",
+"url": "https://www.prnewswire.com/news-releases/amphastar-pharmaceuticals-to-present-at-the-jefferies-global-healthcare-conference-in-london-302935832.html",
+"time": "2026-11-11T11:00:00Z",
+"tickers": [
+"AMPH"
+],
+"t212": [
+"AMPH"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-11T11:00:54Z"
+},
+{
+"source": "prnewswire",
+"title": "INVESTOR ACTION NOTICE: Moore Law PLLC Encourages Investors in NVIDIA Corporation to Contact Law Firm",
+"url": "https://www.prnewswire.com/news-releases/investor-action-notice-moore-law-pllc-encourages-investors-in-nvidia-corporation-to-contact-law-firm-302936256.html",
+"time": "2026-11-11T11:00:00Z",
+"tickers": [
+"NVDA"
+],
+"t212": [
+"NVDA"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-11T11:10:28Z"
+},
+{
+"source": "globenewswire",
+"title": "Gogoro Releases Third Quarter Financial Results, Gogoro Reports Continued Gross Margin Improvement",
+"url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxPUHJHRDJOSEpNbHBxT1VvcUFERHZhN3ZaV3ZzT3pUZjlkWW9UVW9qYmtrVU9GT3lMekdLOU5RSlBVc1Y2UnNkcUtMUmpTcEpBc1Q5MmxMaEFUakFQUE5Dd2hOYjZTZWFHVWxHemFKRmFsbVcwcGlNaXc0U3U0UlZ4a2pqRU9OS3FvRVl4cEFQSUI1VW1US2tKV2NkOGxtUDdhdGd4cFNwMTVhVW9pRzV1VWY0SDJjLUdMU0IxLU5mY0FyM3pKVGdxM0JDMXdHWTl0Uk0xbmtmYmFnelE3QkIzeWUtaTJOTkZ3N3VGbmRyNFM0aFg2VUsyZHN4U1RJQQ?oc=5",
+"time": "2026-11-11T11:00:00Z",
+"via": "google-news",
+"tickers": [
+"GGR"
+],
+"t212": [
+"GGR"
+],
+"flags": [],
+"first_seen": "2026-11-11T11:10:28Z"
+},
+{
+"source": "globenewswire",
+"title": "Inlif (INLF) Entered into US$30 Million Framework",
+"url": "https://news.google.com/rss/articles/CBMiuAJBVV95cUxQVnM1WUVnWmhMWWp3VVJHSjd1dmJtd1JMV2VXWEUwOFUzU1g5RTlhal9nVzVmaVdhN0FOWHZfYWxZZkVuMFdqNHhTZHZNX0lST1Z2bFB4bC1GRFN0MDgyTzl3UHp4Ty1NcVBuZWpTb1JOdFM2dDZPTzh5RjBFenBQNDM2dGV6ZXFtRDUwX2JtengyZmxEbUQ3cG5nYVJfUVl3RXdKTGh1NDBUTXpVSGNWeUVEaHZoUmtsMjNKcnpWMXl3MVVmYVVTZU42aURPa2dVZjZPdjVvQUw2ZTN4X3FteFV0bUl4UWoxckFOVVlPeG90aFhOeUNyTERra0MxZDd0bWZpdXF6UFlsOGtVeDNRNHh3aGw2RzcyRllud0V2SzhQYWNhZHJTUlF0WEtQVWtzM0sxeTVpcUw?oc=5",
+"time": "2026-11-11T11:00:00Z",
+"via": "google-news",
+"tickers": [
+"INLF"
+],
+"t212": [
+"INLF"
+],
+"flags": [],
+"first_seen": "2026-11-11T12:50:22Z"
+},
+{
+"source": "globenewswire",
+"title": "FLSmidth & Co. A/S financial calendar for 2027",
+"url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxON2ktOEtFbksxYVdVeU55U0pVTDl0eXl6VDN3YkgyZ0NMSjUwYUJjN3NEaVlHWkRDRGJUUGptWlBfY3ZsXzJHMEdvdWtpSWhIUUVQTUZHdFQya3RGZFhtZUlkR1RZQXZqZ212SmpJWXcxRGlBNU5KQk5xTnROWXBVZjk2OW9tOW5Oc1BNU2NTN002NEtrUC00UzVXM0l5NU5MQ3Faam9YRjFweElxY2QtV1pmRzltdw?oc=5",
+"time": "2026-11-11T10:57:15Z",
+"via": "google-news",
+"tickers": [
+"FLIDY"
+],
+"t212": [
+"FLIDY"
+],
+"flags": [],
+"first_seen": "2026-11-11T11:20:27Z"
+},
+{
+"source": "globenewswire",
+"title": "UCLOUDLINK GROUP INC. Announces Unaudited Third Quarter 2026 Financial Results",
+"url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNQkx2aEJrMURSSnY3d0QwT2NKclA2dlVsd2wtMjE5aGhDRDExU0U4ODNUYjFSMTV4SGVsckJQMk45R1ZxOFJPOHVGRWw4TEhELXBlVTF4cDA2Q3VDU3lJRG1qbnJVNnphb2tiOTlZT2gxc1NnWnpPdGxRVm5Da0NqRG1rY0MzUnJiNUJBTzlfNGNGMkpDSy1yT3pmNHltcUNfWjE4TnVxSTlZdTYtWnlUNndJNzdxT1RsU2dmOVpnZHBEdVZBYjdaV3V2a1o5bjZlZExiWEhTRXlQbEdrVUF2R1V0WQ?oc=5",
+"time": "2026-11-11T09:00:00Z",
+"via": "google-news",
+"tickers": [
+"UCL"
+],
+"t212": [
+"UCL"
+],
+"flags": [],
+"first_seen": "2026-11-11T09:10:25Z"
+},
+{
+"source": "prnewswire",
+"title": "Armada and Johnson Controls Launch Galleon Forge Two in Dublin, Bringing Sovereign AI Infrastructure Production to Europe Armada, the Sovereign SI Infrastructure company, and Johnson Controls (NYSE: JCI) today announced the start of production at Galleon Forge Two,...",
+"url": "https://www.prnewswire.com/news-releases/armada-and-johnson-controls-launch-galleon-forge-two-in-dublin-bringing-sovereign-ai-infrastructure-production-to-europe-302935706.html",
+"time": "2026-11-11T08:00:00Z",
+"tickers": [
+"JCI"
+],
+"t212": [
+"JCI"
+],
+"flags": [],
+"first_seen": "2026-11-11T08:01:00Z"
+},
+{
+"source": "prnewswire",
+"title": "Clarivate's IPOne Connects Trusted Patent, Trademark and Litigation Intelligence to Claude Clarivate Plc (NYSE:CLVT), a leading global provider of transformative intelligence, today announced that trusted patent and litigation intelligence...",
+"url": "https://www.prnewswire.com/news-releases/clarivates-ipone-connects-trusted-patent-trademark-and-litigation-intelligence-to-claude-302935723.html",
+"time": "2026-11-11T08:00:00Z",
+"tickers": [
+"CLVT"
+],
+"t212": [
+"CLVT"
+],
+"flags": [],
+"first_seen": "2026-11-11T08:01:00Z"
+},
+{
+"source": "prnewswire",
+"title": "Armada and Johnson Controls Launch Galleon Forge Two in Dublin, Bringing Sovereign AI Infrastructure Production to Europe Armada, the Sovereign SI Infrastructure company, and Johnson Controls (NYSE: JCI) today announced the start of production at Galleon Forge Two,...",
+"url": "https://www.prnewswire.com/news-releases/armada-and-johnson-controls-launch-galleon-forge-two-in-dublin-bringing-sovereign-ai-infrastructure-production-to-europe-302935710.html",
+"time": "2026-11-11T08:00:00Z",
+"tickers": [
+"JCI"
+],
+"t212": [
+"JCI"
+],
+"flags": [],
+"first_seen": "2026-11-11T08:01:00Z"
+},
+{
+"source": "prnewswire",
+"title": "Hitachi Energy recognized as a Leader in the 2026 IDC MarketScape for worldwide advanced distribution management systems Hitachi Energy, a global leader in electrification, has been recognized as a Leader in the IDC MarketScape: Worldwide Advanced Distribution...",
+"url": "https://www.prnewswire.com/news-releases/hitachi-energy-recognized-as-a-leader-in-the-2026-idc-marketscape-for-worldwide-advanced-distribution-management-systems-302936121.html",
+"time": "2026-11-11T07:30:00Z",
+"tickers": [
+"HTHIY"
+],
+"t212": [
+"HTHIY"
+],
+"flags": [],
+"first_seen": "2026-11-11T07:30:37Z"
+},
+{
+"source": "prnewswire",
+"title": "Hitachi Energy recognized as a Leader in the 2026 IDC MarketScape for worldwide advanced distribution management systems Hitachi Energy, a global leader in electrification, has been recognized as a Leader in the IDC MarketScape: Worldwide Advanced Distribution...",
+"url": "https://www.prnewswire.com/news-releases/hitachi-energy-recognized-as-a-leader-in-the-2026-idc-marketscape-for-worldwide-advanced-distribution-management-systems-302936154.html",
+"time": "2026-11-11T07:30:00Z",
+"tickers": [
+"HTHIY"
+],
+"t212": [
+"HTHIY"
+],
+"flags": [],
+"first_seen": "2026-11-11T07:30:37Z"
+},
+{
+"source": "prnewswire",
+"title": "Telix to Participate in UBS Global Biopharma Conference Telix Pharmaceuticals Limited (ASX: TLX, NASDAQ: TLX, \"Telix\") will participate in the upcoming UBS Global Biopharma Conference in London (UK). Dr....",
+"url": "https://www.prnewswire.com/news-releases/telix-to-participate-in-ubs-global-biopharma-conference-302936092.html",
+"time": "2026-11-11T07:00:00Z",
+"tickers": [
+"TLX"
+],
+"t212": [
+"TLX"
+],
+"flags": [
+"routine"
+],
+"first_seen": "2026-11-11T07:00:50Z"
+},
+{
+"source": "accessnewswire",
+"title": "Guardian Metal Resources PLC Announces Proposed Spin-Out of Non-Tungsten Projects",
+"url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPWVRHaXFhcmpRcWdmMTdHbU1ueWRHV2JGeGhsQnBoNlNNR1VsZWI3T2VDR2hvUEJvYnB1cElUWkZMdDl2SE1lSlJmd2JZVFFlaFk5OWQ1cVYxYjlaYWUwWW5PdHlUN3QzbV9sR1ZkUTVaS252Y2h2SDJod3hNSUxpWWdOcFB1SVJFQjFWTDF0UVJsU2FZcHN5aDlERllYVmt4ZThySWlVMlBzUFdIS0pqOU5ESkZUaFZiSzE4cEVDVUJjdmpuYnEyYVRIQjRlbDVEY2JhUWxLb2ZHcUdreFBSbHZ1dlg?oc=5",
+"time": "2026-11-11T07:00:00Z",
+"via": "google-news",
+"tickers": [
+"GMTL"
+],
+"t212": [
+"GMTL"
+],
+"flags": [],
+"first_seen": "2026-11-11T07:10:27Z"
+},
+{
+"source": "prnewswire",
+"title": "Flex LNG - Third Quarter 2026 Earnings Release",
+"url": "https://www.prnewswire.com/news-releases/flex-lng---third-quarter-2026-earnings-release-302936147.html",
+"time": "2026-11-11T06:38:00Z",
+"tickers": [
+"FLNG"
+],
+"t212": [
+"FLNG"
+],
+"flags": [],
+"first_seen": "2026-11-11T06:43:19Z"
+},
+{
+"source": "prnewswire",
+"title": "Flex LNG - Third Quarter 2026 Presentation",
+"url": "https://www.prnewswire.com/news-releases/flex-lng--third-quarter-2026-presentation-302936123.html",
+"time": "2026-11-11T06:23:00Z",
+"tickers": [
+"FLNG"
+],
+"t212": [
+"FLNG"
+],
+"flags": [],
+"first_seen": "2026-11-11T06:43:19Z"
+}
+]
+}
