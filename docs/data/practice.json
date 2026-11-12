@@ -131,18 +131,6 @@
  ],
  "log": [
   {
-   "time": "2026-11-03T15:01+00:00",
-   "text": "Added CVGI to today's list at 10:01 New York: 0.7x normal volume in the last 30 min; news: Commercial Vehicle Group: Q3 Earnings Snapshot"
-  },
-  {
-   "time": "2026-11-03T15:01+00:00",
-   "text": "Added WMB to today's list at 10:01 New York: 0.2x normal volume in the last 30 min; news: Williams Q3 Profit Rises 8% as Natural Gas Expansion Accelerates"
-  },
-  {
-   "time": "2026-11-03T15:18+00:00",
-   "text": "Added GTN.A to today's list at 10:17 New York: 3.0x normal volume in the last 30 min; news: Gray Media expands Term Loan G by $75M to redeem $150M notes - scanx.trade"
-  },
-  {
    "time": "2026-11-03T15:18+00:00",
    "text": "Added VFF to today's list at 10:17 New York: 0.5x normal volume in the last 30 min; news: What Will Village Farms (NASDAQ:VFF) Reveal as European Medical Cannabis Exports"
   },
@@ -449,6 +437,18 @@
   {
    "time": "2026-11-12T15:19+00:00",
    "text": "ENGN: Claude: catalyst (strength 3/5): (reply cut short)"
+  },
+  {
+   "time": "2026-11-12T15:48+00:00",
+   "text": "Added USEA to today's list at 10:48 New York: 1.9x a normal day's volume in the last 30 min; news: to be read: United Maritime Reports Third Quarter and Nine-Month 2026 Financial "
+  },
+  {
+   "time": "2026-11-12T15:48+00:00",
+   "text": "Added ANGX to today's list at 10:48 New York: 0.7x a normal day's volume in the last 30 min; news: to be read: 8-K Angel Studios, Inc.: 2.02 results"
+  },
+  {
+   "time": "2026-11-12T15:48+00:00",
+   "text": "ANGX: Claude: catalyst (strength 3/5): (reply cut short)"
   }
  ],
  "done": {},
@@ -465,7 +465,7 @@
   "max_open": 10
  },
  "start_value": 5000.0,
- "updated": "2026-11-12T15:42:12+00:00",
+ "updated": "2026-11-12T15:52:28+00:00",
  "day": {
   "date": "2026-11-12",
   "buys": 0,
@@ -474,11 +474,17 @@
   "finished": false,
   "list": [
    "CURI",
-   "ENGN"
+   "ENGN",
+   "USEA",
+   "ANGX"
   ],
   "watch_sent": true,
   "claude": {
    "ENGN": {
+    "ok": false,
+    "reason": "Claude: catalyst (strength 3/5): (reply cut short)"
+   },
+   "ANGX": {
     "ok": false,
     "reason": "Claude: catalyst (strength 3/5): (reply cut short)"
    }
