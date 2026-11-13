@@ -23,21 +23,21 @@
    "why": "Broke above its opening-range high ($23.78) at $24.31. In play: 0.7x normal volume, normally moves 5% a day. Stop $23.09. Claude: catalyst (strength 4/5): (reply cut short)",
    "initial_stop": 23.089750289916992,
    "risk": 1.215250015258789,
-   "high": 24.64,
-   "high_time": "2026-11-13T18:09:50.826346+00:00",
+   "high": 24.7,
+   "high_time": "2026-11-13T18:15:54.455369+00:00",
    "order_id": 57999969931,
    "entry_t212": 24.5,
    "unit": 1.0,
    "entry_local": 24.5,
    "cost_gbp": 1000.88,
    "stop_local": 23.275,
-   "price_t212": 24.62,
-   "value_gbp": 1006.37,
-   "pl_gbp": 5.49,
+   "price_t212": 24.64,
+   "value_gbp": 1006.78,
+   "pl_gbp": 5.9,
    "stop_order_id": 57999969936,
    "stop_t212": 23.27,
    "stop_breached": false,
-   "last_check": "$24.62 (+0.5%), high $24.64, stop $23.27"
+   "last_check": "$24.64 (+0.6%), high $24.70, stop $23.27"
   }
  ],
  "closed": [
@@ -504,7 +504,7 @@
   "max_open": 10
  },
  "start_value": 5000.0,
- "updated": "2026-11-13T18:11:51+00:00",
+ "updated": "2026-11-13T18:21:56+00:00",
  "day": {
   "date": "2026-11-13",
   "buys": 1,
