@@ -131,14 +131,6 @@
  ],
  "log": [
   {
-   "time": "2026-11-03T15:18+00:00",
-   "text": "Day trade buy order: 460 VFF at about $2.91. Broke above its opening-range high ($2.81) at $2.91. In play: 0.5x normal volume, normally moves 4% a day. Stop $2.77."
-  },
-  {
-   "time": "2026-11-03T15:18+00:00",
-   "text": "Bought 460 VFF at 2.92 (cost \u00a31,001)."
-  },
-  {
    "time": "2026-11-03T20:51+00:00",
    "text": "Sold VFF (about -\u00a324). End of day: sold 10 minutes before the close."
   },
@@ -449,6 +441,14 @@
   {
    "time": "2026-11-13T15:01+00:00",
    "text": "Watch list sent: LFTO, VTSI, HAWK"
+  },
+  {
+   "time": "2026-11-13T15:18+00:00",
+   "text": "Added NMAX to today's list at 10:18 New York: 1.1x a normal day's volume in the last 30 min; news: to be read: 8-K Newsmax Inc.: 2.02 results, 7.01 Reg FD release"
+  },
+  {
+   "time": "2026-11-13T15:18+00:00",
+   "text": "Added SBC to today's list at 10:18 New York: 1.1x a normal day's volume in the last 30 min; news: to be read: 8-K SBC Medical Group Holdings Inc: 2.02 results, 7.01 Reg FD releas"
   }
  ],
  "done": {},
@@ -465,7 +465,7 @@
   "max_open": 10
  },
  "start_value": 5000.0,
- "updated": "2026-11-13T15:11:59+00:00",
+ "updated": "2026-11-13T15:22:09+00:00",
  "day": {
   "date": "2026-11-13",
   "buys": 0,
@@ -475,7 +475,9 @@
   "list": [
    "VTSI",
    "LFTO",
-   "HAWK"
+   "HAWK",
+   "NMAX",
+   "SBC"
   ],
   "watch_sent": true
  }
