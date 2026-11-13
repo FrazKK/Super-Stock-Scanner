@@ -131,22 +131,6 @@
  ],
  "log": [
   {
-   "time": "2026-11-03T20:51+00:00",
-   "text": "Sold VFF (about -\u00a324). End of day: sold 10 minutes before the close."
-  },
-  {
-   "time": "2026-11-03T20:51+00:00",
-   "text": "Day trading finished: 1 trade(s), total -\u00a324."
-  },
-  {
-   "time": "2026-11-03T20:59+00:00",
-   "text": "Connection check OK."
-  },
-  {
-   "time": "2026-11-03T20:59+00:00",
-   "text": "TEST: Claude: catalyst (strength 5/5): An OFFICIAL 2026-11-03 Business Wire release announces FDA approval of the company's lead drug, a major regulatory catalyst that fits the rule and is consistent"
-  },
-  {
    "time": "2026-11-04T20:51+00:00",
    "text": "Day trading finished: 0 trade(s), total +\u00a30."
   },
@@ -449,6 +433,22 @@
   {
    "time": "2026-11-13T15:18+00:00",
    "text": "Added SBC to today's list at 10:18 New York: 1.1x a normal day's volume in the last 30 min; news: to be read: 8-K SBC Medical Group Holdings Inc: 2.02 results, 7.01 Reg FD releas"
+  },
+  {
+   "time": "2026-11-13T15:34+00:00",
+   "text": "Added SNAL to today's list at 10:34 New York: 0.4x a normal day's volume in the last 30 min; news: to be read: 8-K Snail, Inc.: 2.02 results"
+  },
+  {
+   "time": "2026-11-13T15:34+00:00",
+   "text": "Added STN to today's list at 10:34 New York: 0.3x a normal day's volume in the last 30 min; news: to be read: Stantec reports third quarter 2026 results with strong net"
+  },
+  {
+   "time": "2026-11-13T15:34+00:00",
+   "text": "Added KLAR to today's list at 10:34 New York: 0.4x a normal day's volume in the last 30 min; news: to be read: Klarna Group PLC expected to post a loss of 13 cents a share - Earni"
+  },
+  {
+   "time": "2026-11-13T15:34+00:00",
+   "text": "Added FENC to today's list at 10:34 New York: 0.4x a normal day's volume in the last 30 min; news: to be read: Fennec Pharmaceuticals Reports Third Quarter 2026 Financial Results "
   }
  ],
  "done": {},
@@ -465,7 +465,7 @@
   "max_open": 10
  },
  "start_value": 5000.0,
- "updated": "2026-11-13T15:32:15+00:00",
+ "updated": "2026-11-13T15:42:28+00:00",
  "day": {
   "date": "2026-11-13",
   "buys": 0,
@@ -477,7 +477,11 @@
    "LFTO",
    "HAWK",
    "NMAX",
-   "SBC"
+   "SBC",
+   "SNAL",
+   "STN",
+   "KLAR",
+   "FENC"
   ],
   "watch_sent": true
  }
