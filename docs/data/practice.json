@@ -173,22 +173,6 @@
  ],
  "log": [
   {
-   "time": "2026-11-05T20:51+00:00",
-   "text": "Sold CRON (about -\u00a348). End of day: sold 10 minutes before the close."
-  },
-  {
-   "time": "2026-11-05T20:51+00:00",
-   "text": "Day trading finished: 1 trade(s), total -\u00a348."
-  },
-  {
-   "time": "2026-11-06T15:01+00:00",
-   "text": "Added FROG to today's list at 10:01 New York: 0.6x a normal day's volume in the last 30 min; news: to be read: 8-K JFrog Ltd: 2.02 results"
-  },
-  {
-   "time": "2026-11-06T15:01+00:00",
-   "text": "Added SLVM to today's list at 10:01 New York: 0.4x a normal day's volume in the last 30 min; news: to be read: 8-K Sylvamo Corp: 2.02 results"
-  },
-  {
    "time": "2026-11-06T15:17+00:00",
    "text": "Added CLAR to today's list at 10:17 New York: 0.5x a normal day's volume in the last 30 min; news: to be read: 8-K Clarus Corp: 2.02 results"
   },
@@ -491,6 +475,22 @@
   {
    "time": "2026-11-17T20:50+00:00",
    "text": "Day trading finished: 1 trade(s), total -\u00a353."
+  },
+  {
+   "time": "2026-11-18T15:01+00:00",
+   "text": "Added HIHO to today's list at 10:01 New York: 0.6x a normal day's volume in the last 30 min; news: to be read: HIGHWAY HOLDINGS RETURNS TO STRONG REVENUE GROWTH AND OPERATING PROF"
+  },
+  {
+   "time": "2026-11-18T15:01+00:00",
+   "text": "Added TGT to today's list at 10:01 New York: 0.5x a normal day's volume in the last 30 min; news: Target Corporation Reports Third Quarter Earnings Third quarter net sales grew 7"
+  },
+  {
+   "time": "2026-11-18T15:01+00:00",
+   "text": "Added CLRO to today's list at 10:01 New York: 1.3x a normal day's volume in the last 30 min; news: to be read: 8-K CLEARONE INC: 1.01 material agreement, 3.02 unregistered share s"
+  },
+  {
+   "time": "2026-11-18T15:01+00:00",
+   "text": "Watch list sent: CLRO, HIHO, TGT"
   }
  ],
  "done": {},
@@ -507,28 +507,18 @@
   "max_open": 10
  },
  "start_value": 5000.0,
- "updated": "2026-11-17T20:50:18+00:00",
+ "updated": "2026-11-18T15:01:40+00:00",
  "day": {
-  "date": "2026-11-17",
-  "buys": 1,
+  "date": "2026-11-18",
+  "buys": 0,
   "sold": {},
   "skip": {},
-  "finished": true,
+  "finished": false,
   "list": [
-   "TCX",
-   "AS",
-   "ACM",
-   "SMWB"
+   "HIHO",
+   "TGT",
+   "CLRO"
   ],
-  "watch_sent": true,
-  "claude": {
-   "AS": {
-    "ok": true,
-    "reason": "Claude: catalyst (strength 4/5): Q3 2026 revenue rose about 23% and diluted EPS about 64% year on year, the EPS beat was 15c, guidance was raised, and a $1bn buyback (about 5% of market cap) wa"
-   }
-  },
-  "bought_list": [
-   "AS"
-  ]
+  "watch_sent": true
  }
 }
