@@ -3,9 +3,17 @@
   "20035130",
   "20035143",
   "20035553",
-  "20035780"
+  "20035780",
+  "20036864"
  ],
  "buys": [
+  {
+   "who": "Terri Sewell",
+   "filed": "2026-11-18",
+   "url": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20036864.pdf",
+   "unreadable": true,
+   "doc": "20036864"
+  },
   {
    "who": "Nancy Pelosi",
    "filed": "2026-11-06",
@@ -19,14 +27,7 @@
    "url": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035553.pdf",
    "unreadable": true,
    "doc": "20035553"
-  },
-  {
-   "who": "Nancy Pelosi",
-   "filed": "2026-08-21",
-   "url": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035143.pdf",
-   "unreadable": true,
-   "doc": "20035143"
   }
  ],
- "updated": "2026-11-19"
+ "updated": "2026-11-20"
 }
