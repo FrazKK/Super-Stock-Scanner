@@ -174,10 +174,6 @@
  "log": [
   {
    "time": "2026-11-09T15:01+00:00",
-   "text": "Added JHX to today's list at 10:01 New York: 0.5x a normal day's volume in the last 30 min; news: to be read: 8-K James Hardie Industries plc: 2.02 results"
-  },
-  {
-   "time": "2026-11-09T15:01+00:00",
    "text": "Watch list sent: JHX, TTD, IMVT"
   },
   {
@@ -491,6 +487,10 @@
   {
    "time": "2026-11-20T15:01+00:00",
    "text": "Watch list sent: BSP"
+  },
+  {
+   "time": "2026-11-20T15:17+00:00",
+   "text": "Added GLOB to today's list at 10:17 New York: 0.4x a normal day's volume in the last 30 min; news: to be read: Globant Reports 2026 Third Quarter Financial Results Globant (NYSE: "
   }
  ],
  "done": {},
@@ -507,7 +507,7 @@
   "max_open": 10
  },
  "start_value": 5000.0,
- "updated": "2026-11-20T15:11:40+00:00",
+ "updated": "2026-11-20T15:21:47+00:00",
  "day": {
   "date": "2026-11-20",
   "buys": 0,
@@ -515,7 +515,8 @@
   "skip": {},
   "finished": false,
   "list": [
-   "BSP"
+   "BSP",
+   "GLOB"
   ],
   "watch_sent": true
  }
