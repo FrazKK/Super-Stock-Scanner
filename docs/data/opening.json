@@ -1933,322 +1933,30 @@
    ]
   },
   "uk": {
-   "date": "2026-11-24",
-   "time": "Tue 24 Nov 08:45",
+   "date": "2026-11-25",
+   "time": "Wed 25 Nov 08:45",
    "picks": [],
    "quiet": [
-    {
-     "ticker": "HKLD",
-     "name": "Hongkong Land Holdings Limited",
-     "exchange": "LSE",
-     "ysym": "HKLD.L",
-     "market": "uk",
-     "price": 8.6017,
-     "low": 8.6017,
-     "currency": "USD",
-     "change": 0.16082321187584334,
-     "vol_x": 10.0,
-     "vol_basis": "first30",
-     "vol_day_x": 10.0,
-     "buy_pct30": null,
-     "buy_pct": null,
-     "rvol_time": 0.3076923076923077,
-     "value": 67093.26,
-     "mcap": 13705189410.312578,
-     "sector": "Finance",
-     "holding": true,
-     "extended": false,
-     "near_high": true,
-     "longterm_down": false,
-     "chart_url": "https://www.tradingview.com/chart/?symbol=LSE:HKLD&interval=D",
-     "lists": [],
-     "owned": false,
-     "news": [
-      {
-       "title": "LANDMARK Unveils Festive Spectacle \"Christmas...",
-       "date": "2026-11-23",
-       "url": "https://www.investegate.co.uk/announcement/eqs/hongkong-land-holding-ltd-sing-reg---hkld/landmark-unveils-festive-spectacle-christmas-/9887371",
-       "source": "RNS",
-       "official": true,
-       "tone": "neutral"
-      },
-      {
-       "title": "Quarterly Trading Update",
-       "date": "2026-11-20",
-       "url": "https://www.investegate.co.uk/announcement/rns/hongkong-land-holding-ltd-sing-reg---hkld/quarterly-trading-update-/9886559",
-       "source": "RNS",
-       "official": true,
-       "tone": "neutral"
-      },
-      {
-       "title": "Transaction in Own Shares",
-       "date": "2026-11-19",
-       "url": "https://www.investegate.co.uk/announcement/rns/hongkong-land-holding-ltd-sing-reg---hkld/transaction-in-own-shares/9884034",
-       "source": "RNS",
-       "official": true,
-       "tone": "neutral"
-      },
-      {
-       "title": "LANDMARK\u2019s \u2018Destination CENTRAL\u2019  Opens an In...",
-       "date": "2026-11-19",
-       "url": "https://www.investegate.co.uk/announcement/eqs/hongkong-land-holding-ltd-sing-reg---hkld/landmark-s-destination-central-opens-an-in-/9884116",
-       "source": "RNS",
-       "official": true,
-       "tone": "neutral"
-      },
-      {
-       "title": "Hongkong Land, HKEX and Gammon turn 10 tonnes of construction waste into flood protection sandbags for the community - pan african visions",
-       "date": "2026-11-24",
-       "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNV3Y2ZjRfWkVEZFJ1ckFiZHRlWWVzZ3V3bXNCbXppMWtJMTBUOGZCTENqeXpvYjlaZEZ0NHZEaWlBWURIVFZvV1Uxa09hdUNTNEt2elVhLWd2akFZeThvaDc5RnBBT280MERVX1B3SHVZRFNYX0U4LWpTdEZYMEtKY1VlUUNGV0VNeWxlWTc2cm8xWkszemRCbThPQ1AzcHZabmFPQlRVd1RHZTFERjRKWlR6VGY0YWEyYkl1emRQMlYwWXBwQUM1ZnMycmxjamdyVmNRYmx2Rkt1TmxjcVk3aG1icUM0WExMOXc?oc=5",
-       "source": "pan african visions",
-       "official": false,
-       "tone": "neutral"
-      },
-      {
-       "title": "Hongkong Land (-HKLD) Launches - kalkine.co.uk",
-       "date": "2026-11-23",
-       "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPMGpEUm03T1RmUVhyTWpDaXlmSGxHbERRQlItZlV6dlNCWWcxSDI3NWI2Ty1aTmhIZU40UHVyYkNKRVk0eGxGcm0zWDZ2R0NjMlF6Q1hHSFlwcUk2NmdIcUFZd1p0UkZLUzBfZXJKcUM5MW05QVRNdXQ0c3A1VGJnRVpkeEJWNmdfbVNIZmJ1QkRtT3dlVHROSDBQRWh6bV8wdTdvVWgwaGYxaTA1YUtiMFhFd1FtaFJ2dF9JQlBpOTBBcVgwalVTeUtrSUtWTkdnbHg1QXNKWTNBajBvRTZVQ1psSzNzSmM?oc=5",
-       "source": "kalkine.co.uk",
-       "official": false,
-       "tone": "chatter"
-      },
-      {
-       "title": "Hongkong Land Underlying Profit Jumps 38% on Hong Kong, Mainland China Gains - Mingtiandi",
-       "date": "2026-11-23",
-       "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOcDhOc1d3eUgwVHdxTVluREhINS1uLUhYNHNwb2hxSUM2YVEydTNELXFUMGRrckNLQ0NLcFdwcGVrTF81eXE0S190SUtPSFZfcUN1bk5ncmVTT2lIdmZYTHlCTTVqcGhTa2xwczR0azl5Mnd6UFhYaHdEZTdkQng1SzJ4dFRQWG1mMlN0Q2kxTHJsMzFlZEg1OHRwSkpHQWlZWmtyMEdPV1A?oc=5",
-       "source": "Mingtiandi",
-       "official": false,
-       "tone": "neutral"
-      },
-      {
-       "title": "Hongkong Land guides for full-year EPS growth to be in 'high teens' range - The Edge Singapore",
-       "date": "2026-11-22",
-       "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQWDRCaDVFZVNBdlNBMjRHVUpWMVJyTHdGbjg5Mlp5Ymc1LXVCSmRIa200OGkzRDZkVktmQ2o3YWEyN2NrQ1E1aHdyamJaajNBRThCMmdJMFdGLW8xTHZ2R0gxRWxld2R5c0JKNWFCSmNhdmd6ME5ONnRQSFFkTk9VazFvcTdUdUh2SEdObUxRNDVsVjhISWo1TnlfWFlGaXJkd3ctQXJNaXpZOVI5S2hB?oc=5",
-       "source": "The Edge Singapore",
-       "official": false,
-       "tone": "neutral"
-      },
-      {
-       "title": "Hongkong Land Reports 38% Third-Quarter Underlying Profit Growth - TipRanks",
-       "date": "2026-11-22",
-       "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOWFFoenFJVmNWY3RUdGs4ZGs5cU9mX0ZlTE96YTZxMUxmSHpZc29jbnRoOHZtSmNwR3pQcjcydzg0ZmZTaWdRZWhlaGpjT3R1Y3ROa3A4UnF0OGFid2JzOGpiNk5ZdzdJdVo5MlpITG1LempFVHlPY0p0UGg5M2hSYVBkemJQUWlndzFjWmRkY3JOUWdOeVQ1OWFZRXkwZ053eHFEWjF3b01mbVN2bi1Lb0I2MEIwdw?oc=5",
-       "source": "TipRanks",
-       "official": false,
-       "tone": "neutral"
-      },
-      {
-       "title": "Hongkong Land Holdings Limited (H78.SI) Stock Price, News, Quote & History - Yahoo! Finance Canada",
-       "date": "2026-11-20",
-       "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1fRVlFRVh6enpGbHN3QXdNaE9Xd2dmNExLUXNKSmNsaE56VGJIdXRSVE1GZnRac2tXQ1pITXphU0hNZTdVVWhLQUtHTnJkWW9pbzJKLQ?oc=5",
-       "source": "Yahoo! Finance Canada",
-       "official": false,
-       "tone": "neutral"
-      }
-     ],
-     "buyers": false,
-     "sellers": false
-    },
-    {
-     "ticker": "PPH",
-     "name": "PPHE Hotel Group Limited",
-     "exchange": "LSE",
-     "ysym": "PPH.L",
-     "market": "uk",
-     "price": 1586.0,
-     "low": 1522.0,
-     "currency": "GBX",
-     "change": 0.01797175866495507,
-     "vol_x": 2.18,
-     "vol_basis": "first30",
-     "vol_day_x": 2.18,
-     "buy_pct30": null,
-     "buy_pct": null,
-     "rvol_time": 3.2702250903860355,
-     "value": 649657.32,
-     "mcap": 652665146.0,
-     "sector": "Consumer Services",
-     "holding": true,
-     "extended": false,
-     "near_high": false,
-     "longterm_down": true,
-     "chart_url": "https://www.tradingview.com/chart/?symbol=LSE:PPH&interval=D",
-     "lists": [],
-     "owned": false,
-     "news": [
-      {
-       "title": "2026 Annual General Meeting Voting Outcome Update",
-       "date": "2026-11-19",
-       "url": "https://www.investegate.co.uk/announcement/rns/pphe-hotel-group-ltd--pph/2026-annual-general-meeting-voting-outcome-update/9885038",
-       "source": "RNS",
-       "official": true,
-       "tone": "neutral"
-      }
-     ],
-     "buyers": false,
-     "sellers": false
-    },
-    {
-     "ticker": "SFR",
-     "name": "Severfield Plc",
-     "exchange": "LSE",
-     "ysym": "SFR.L",
-     "market": "uk",
-     "price": 41.0,
-     "low": 40.0,
-     "currency": "GBX",
-     "change": 0.07894736842105263,
-     "vol_x": 1.89,
-     "vol_basis": "first30",
-     "vol_day_x": 1.89,
-     "buy_pct30": 0.41,
-     "buy_pct": 0.41,
-     "rvol_time": 38.09888398971883,
-     "value": 250025.79,
-     "mcap": 112369155.0,
-     "sector": "Industrial Services",
-     "holding": false,
-     "extended": false,
-     "near_high": true,
-     "longterm_down": false,
-     "chart_url": "https://www.tradingview.com/chart/?symbol=LSE:SFR&interval=D",
-     "lists": [],
-     "owned": false,
-     "news": [
-      {
-       "title": "Interim Results",
-       "date": "2026-11-24",
-       "url": "https://www.investegate.co.uk/announcement/rns/severfield--sfr/interim-results/9889851",
-       "source": "RNS",
-       "official": true,
-       "tone": "neutral"
-      },
-      {
-       "title": "Severfield lifts profit outlook as earnings surge 289% and order book reaches \u00a3629 million - Yahoo Finance UK",
-       "date": "2026-11-24",
-       "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPM0YyS2RDbTFnVTczLUI0V2lWcUhsamtINm9YcnU4M0szb0hGYVhyMkFZc2JXaTdhMjZyWUVfd3U5UVNWTDNQMlA3TDVSX0FWY2cxQUtaeTh1cUhxQkF2Mnl6Q1FvMjJMYkpyNXRkOHhyTWJYbTF6WUJpX2pyNnV1Ukg2aGVNY3Fid1FoV2NTcDZtVUk?oc=5",
-       "source": "Yahoo Finance UK",
-       "official": false,
-       "tone": "neutral"
-      },
-      {
-       "title": "Severfield returns to profit after shake-up - Construction Enquirer",
-       "date": "2026-11-24",
-       "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOR25qWG1uSG45MkZMbzktRDhuYnJSS05OT0VfY1lOem1QMlhvek93OUlyaGxpSTRxNUFJUUFYZHBoTXFxT2VGTnpCRWo1OVl4S3hNNkJIaV9vU09nRG5UOU42VkVINTVPNkZ2Z1k3V3N3MG1tRV9XRmJaX3k0eUNVeVFmX243a3l2N1Nxdi01bTRONVVraklv?oc=5",
-       "source": "Construction Enquirer",
-       "official": false,
-       "tone": "chatter"
-      },
-      {
-       "title": "Severfield lifts profit expectations as turnaround gathers pace - TheBusinessDesk.com",
-       "date": "2026-11-24",
-       "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOOGFXTkcwdjRWWjBpeGpyNmFSanRVZFl1VDlLdlFRV2RXNk9ZS3FCMmt4dE5yQXdJaEY5QnRrQmJ6Y3haY2ttQXpOS0JSLW1yRzNsU1hGWUNZWVJ1Ni1xd3V4TDhlV1NLdnBlenFwU2xoU0dQWHpsZzY4c1N6dmlNYW9MZWFUcVFVemgyZVQ0UW5oeVd1THRGUm13NlZDVElzOXRDWkdGMnlmSFB2ampqbXUtWFhaV0NSMVE?oc=5",
-       "source": "TheBusinessDesk.com",
-       "official": false,
-       "tone": "neutral"
-      },
-      {
-       "title": "Severfield lifts profit outlook after first-half earnings surge - Investing.com",
-       "date": "2026-11-24",
-       "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPYXk3Nnl5a1IyWl9uZlQzNGlxbGNVMG9FbUtISTdyOV91OEdZTFhOU092OWNqLWxfTWtlTW1QMW5GbWllQ0Y0UjdqRFFZSEJHeUh2aHdiZmZ0UFNjUVZ5bjdaWUp3NGFnNGRDRzBBVVlOdEtqU05Xei1PMy1WV3lFUGkxbm84ZTBlZ19rMi0wNnUyb0xyVUV5cGdzM0EwZE40Vjhzc2JZbllCYWlKdlFEWUJpbWwtaVhYWjBCRVZMN0FmZw?oc=5",
-       "source": "Investing.com",
-       "official": false,
-       "tone": "neutral"
-      }
-     ],
-     "buyers": false,
-     "sellers": true
-    },
-    {
-     "ticker": "PCIP",
-     "name": "PCI-PAL PLC",
-     "exchange": "LSE",
-     "ysym": "PCIP.L",
-     "market": "uk",
-     "price": 87.0,
-     "low": 79.0,
-     "currency": "GBX",
-     "change": 0.05454545454545454,
-     "vol_x": 1.26,
-     "vol_basis": "first30",
-     "vol_day_x": 1.26,
-     "buy_pct30": 0.669,
-     "buy_pct": 0.669,
-     "rvol_time": 12.55015954811537,
-     "value": 164108.97,
-     "mcap": 58011671.0,
-     "sector": "Technology Services",
-     "holding": true,
-     "extended": false,
-     "near_high": true,
-     "longterm_down": false,
-     "chart_url": "https://www.tradingview.com/chart/?symbol=LSE:PCIP&interval=D",
-     "lists": [],
-     "owned": false,
-     "news": [
-      {
-       "title": "Appointment of CFO",
-       "date": "2026-11-24",
-       "url": "https://www.investegate.co.uk/announcement/rns/pci-pal--pcip/appointment-of-cfo/9890088",
-       "source": "RNS",
-       "official": true,
-       "tone": "neutral"
-      },
-      {
-       "title": "Final Results, Analyst Briefing & Investor Pres",
-       "date": "2026-11-24",
-       "url": "https://www.investegate.co.uk/announcement/rns/pci-pal--pcip/final-results-analyst-briefing-investor-pres/9889920",
-       "source": "RNS",
-       "official": true,
-       "tone": "neutral"
-      },
-      {
-       "title": "PCI-PAL Appoints Haywood Chapman As CFO - TradingView",
-       "date": "2026-11-24",
-       "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQTl8zdDhrMHBic2hBZFJ3X284a29HalVUYUNaZ2llckpubTJwcFpSbm8zbUV3dlhibk1zUEkwdGZsMkhFYWdNbHNVVTBQY0NzbGI2MllkR2lRZFRRQ3RBNEpNOXJpRFdidTNKMmZ2ckdtWW44Y19uQTR3SGUtMGVVWjB6TXV0OWJLNWtkcUlSbTAybEViMVNUUl9lRnZpQkMtUVN0OFA2SEdYcDJDY3c?oc=5",
-       "source": "TradingView",
-       "official": false,
-       "tone": "neutral"
-      },
-      {
-       "title": "PCIP: Recurring-revenue growth and partner momentum offset planned FY26 investment-led profit decline - TradingView",
-       "date": "2026-11-24",
-       "url": "https://news.google.com/rss/articles/CBMikAJBVV95cUxNbEt0Nk9CQjFJSlIxMWVTQ0s5ZEJEQTBBQmdhY0lQSS1RckplcEVDYUVKeXU2aFJKV1JuRDBnMTM4WV9RcE9MOXZvajZ6YkpPWUVwVi0zdnVMZGRzc29tZlg0VHMxLUxDQ0ZzU29PaHNiVXRzN0gzSW1MNUJDZDE0WjhMamtaQjFibjd0UTQwQ0FjTlFTVHpocTl6V3lWZVJqRERUb2RFMkpheWh1UW9oSWE3a3pPMF9QaFZJRDBoODJvLXlTY252dVRQdXY1bURpa0I4R2ZKa05BV3Y5TVByZTJvallua0VmYzVzM2hiNVVraG56VGJXQkJsaWdwUURRS0Nlb2pBQlViTFNXd3BCVg?oc=5",
-       "source": "TradingView",
-       "official": false,
-       "tone": "neutral"
-      },
-      {
-       "title": "PCIP: Record new business and recurring-revenue growth set up FY27, despite planned investment weighing on profit - TradingView",
-       "date": "2026-11-24",
-       "url": "https://news.google.com/rss/articles/CBMinwJBVV95cUxNSDJOSklzMjNNTjl5akdlNl81WDFRR2IyNk10d0RYdnl6NVZXMGFONWlzNWZyQWNpQW1JbXVONHpCczJiSTU1dVF6dUNrcEdVOExmb2M1MV85UmJwRldyaTNQdHJpTkhTVTc4Nk9yOUhRU2d2T0dWTVl5QTdiWk5CNjRmNlAxOG9JYWlKdEhQclhUTC1XM2R0Q1RRQTdXRmNYVVl0dVBWRnQtYzZUUmg4X185Tm13TWItTFFUbW5DTDhrWk1QdWVZUjR0S0dsU1dCYnl4OTRLU05TS2JlN0EwNW5udGdFRi1Tb2VDM1BiUUQ1YzZyNU5uTV84VHNvUm5BanJFemxMTnRJTEdPN1NKOGw2REQzX3Nvc2Z0TE9vQQ?oc=5",
-       "source": "TradingView",
-       "official": false,
-       "tone": "neutral"
-      }
-     ],
-     "buyers": true,
-     "sellers": false
-    },
     {
      "ticker": "CAR",
      "name": "Carclo plc",
      "exchange": "LSE",
      "ysym": "CAR.L",
      "market": "uk",
-     "price": 45.5,
+     "price": 44.8,
      "low": 44.0,
      "currency": "GBX",
-     "change": 0.03409090909090909,
-     "vol_x": 0.52,
+     "change": 0.01818181818181812,
+     "vol_x": 2.15,
      "vol_basis": "first30",
-     "vol_day_x": 0.52,
-     "buy_pct30": 0.992,
-     "buy_pct": 0.992,
-     "rvol_time": 2.630423132426904,
-     "value": 105934.01,
-     "mcap": 27713679.0,
+     "vol_day_x": 2.15,
+     "buy_pct30": null,
+     "buy_pct": null,
+     "rvol_time": 2.5012542193757317,
+     "value": 518390.208,
+     "mcap": 32517384.0,
      "sector": "Producer Manufacturing",
-     "holding": true,
+     "holding": false,
      "extended": false,
      "near_high": false,
      "longterm_down": true,
@@ -2265,10 +1973,26 @@
        "tone": "neutral"
       },
       {
+       "title": "Carclo plc 2027 Q2 - Results - Earnings Call Presentation (OTCMKTS:CCEGF) 2026-11-24 - Seeking Alpha",
+       "date": "2026-11-24",
+       "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOdVZiWXBFVUs2c3ZyVUFSNXQ1OXZKZnowRWRVTkVXVjNKMlNSc0hyTU9tM2d6WlZEYVo2QVN5WG81a054cWl3TVNkUXE1X3hLLTlySHN1MVY5LTN6bnBRZ0xnUkRVNG80QjNQbXlCMFppZmdVZUthRTRqN3JpMXljRHVOM1pMRml2QW5FM18xaEVrS3BXa2tPd193?oc=5",
+       "source": "Seeking Alpha",
+       "official": false,
+       "tone": "neutral"
+      },
+      {
        "title": "Carclo Earnings Call Highlights Stronger Profit and Returns - TipRanks",
        "date": "2026-11-24",
        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNNjJqZGJNeVZFWHd0c3NhUGxUZkNMcXVyR2lOdGYtb1lzTnRCSllzTURGY3V1UjBvSl9BbTZ5Y1dPeGQ2OVVCU3NkSlAzcFZEY3VoRDFHR3d0Z2d6a1dkOVoyY1UzbnRvbmlhOGJVdUlJcEx4aVRqaUJmOTg3RHhPZUs2UVNJN2dieDUwYXdyTlYzTXRYU040NlMtN250aG9aRG1lTllQY3U5UnlZUWhNbw?oc=5",
        "source": "TipRanks",
+       "official": false,
+       "tone": "neutral"
+      },
+      {
+       "title": "Carclo Reports 21.8% Rise in Half-Year Operating Profit to \u00a36.7 Million as Cash Generation Doubles - Yahoo Finance UK",
+       "date": "2026-11-23",
+       "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE10bkVTZW9ETmhra3h5S2J4RGtyUUhsU2xCNEMwQ3VqSnlPejh1TXBmbEhack5SWElOS3VnLWFwSGNIVmFQN21FZ3dsUnpBSWRFSFN1cWFuTUpVOG0yM01qbzNfcWdyVDg0WHlLWTJ4dFpweFFHWERFcVlEemF3dw?oc=5",
+       "source": "Yahoo Finance UK",
        "official": false,
        "tone": "neutral"
       },
@@ -2289,26 +2013,10 @@
        "tone": "neutral"
       },
       {
-       "title": "Carclo Reports 21.8% Rise in Half-Year Operating Profit to \u00a36.7 Million as Cash Generation Doubles - Yahoo Finance UK",
-       "date": "2026-11-23",
-       "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE10bkVTZW9ETmhra3h5S2J4RGtyUUhsU2xCNEMwQ3VqSnlPejh1TXBmbEhack5SWElOS3VnLWFwSGNIVmFQN21FZ3dsUnpBSWRFSFN1cWFuTUpVOG0yM01qbzNfcWdyVDg0WHlLWTJ4dFpweFFHWERFcVlEemF3dw?oc=5",
-       "source": "Yahoo Finance UK",
-       "official": false,
-       "tone": "neutral"
-      },
-      {
        "title": "Carclo plc Reaffirms Earnings Guidance for the Year 2026 - www.marketscreener.com",
        "date": "2026-11-23",
        "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOcnNhT2JHa1BHaW5iZXJtQXpQMGZWMnVrcEZyNXQxSjFnVFZUWGpVNUF2Zi1zV3h0WHg1c3ROUE1HcUJwdGE1TlJ3SXhiRXEwb1ptUDdXNk9yWWE5U0d2RWNWejN4eFFvSXhDVTdybjlkWk5DNUxpXzZ1ZkE5Wm5XZy1DZlJyNWlRMlFDZmM1R0J6MWhDS3R3TkVrd0s2NS02YmliMHhyLTdiTHd1QlE?oc=5",
        "source": "www.marketscreener.com",
-       "official": false,
-       "tone": "neutral"
-      },
-      {
-       "title": "Carclo (AIM:CAR): Profitability Surprise Puts Precision Engineer on the Market Radar - kalkine.co.uk",
-       "date": "2026-11-23",
-       "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQQk5icjkxWlQ1dzlrOXdrYWl4OEgwQzl6UVdDMnY0a3pnTWZhMnFkUFVNOGVzR2ktVlZaWTdzUThDTG5CREY5Y2tCeTZIa1JfSXczV0xndXVjZFNiWjVDeklfZ1JreWJFMHprY2RKc2VFLU1seHZQRm41Si1RblF6TWEzM0V2dExZV2ZIdjZMSE0wRzZ2SWk4TEtsazdBTDQ0eFM3ZjhVM1praWo1MEU0aVdjY1VKM2U5VnFF?oc=5",
-       "source": "kalkine.co.uk",
        "official": false,
        "tone": "neutral"
       },
@@ -2327,234 +2035,115 @@
        "source": "kalkine.co.uk",
        "official": false,
        "tone": "neutral"
-      },
-      {
-       "title": "Carclo plc (CAR): Execution and Order Momentum Make This FTSE AIM All-Share Small Cap Value Stock in Focus - kalkine.co.uk",
-       "date": "2026-11-20",
-       "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPR0psdlVNd2lZbHFmVVdvV2xiYTV1OEU5Y0RVR2xIZ0N5SUNxN3hFRUtWbjVkUVNHR3MyX3lzZjlWV0U4aGFlejZCZEVnNjBSZDZWMnk1UXA4WnFqcy02WGg5ZVh0X0RBNVBtU0paSGY3LUZNTGo3VDUyTF9QTVRYcWRQSTdDemgtV2tlRHhsTGlaT080b0NvWEkxa1pMRUptYXpsT2hFOUJLQmZ2cHBBVWd0NFhSOFZoM0daOGt5Q0xlemdfU1RBWklHQTEzNEl1Z0tnQkxiYzRxZw?oc=5",
-       "source": "kalkine.co.uk",
-       "official": false,
-       "tone": "neutral"
       }
      ],
-     "buyers": true,
+     "buyers": false,
      "sellers": false
     },
     {
-     "ticker": "VSVS",
-     "name": "Vesuvius Plc",
+     "ticker": "PETS",
+     "name": "Pets At Home Group Plc",
      "exchange": "LSE",
-     "ysym": "VSVS.L",
+     "ysym": "PETS.L",
      "market": "uk",
-     "price": 479.2,
-     "low": 471.2,
+     "price": 288.2,
+     "low": 274.2,
      "currency": "GBX",
-     "change": 0.013107822410147968,
-     "vol_x": 0.46,
+     "change": 0.10336906584992343,
+     "vol_x": 1.16,
      "vol_basis": "first30",
-     "vol_day_x": 0.46,
-     "buy_pct30": 0.833,
-     "buy_pct": 0.833,
-     "rvol_time": 5.542516906184499,
-     "value": 2348578.368,
-     "mcap": 1128753894.0,
-     "sector": "Producer Manufacturing",
+     "vol_day_x": 0.79,
+     "buy_pct30": 0.258,
+     "buy_pct": 0.258,
+     "rvol_time": 20.19688832670098,
+     "value": 2014111.6379999998,
+     "mcap": 1135186085.0,
+     "sector": "Retail Trade",
      "holding": true,
      "extended": false,
-     "near_high": false,
+     "near_high": true,
      "longterm_down": false,
-     "chart_url": "https://www.tradingview.com/chart/?symbol=LSE:VSVS&interval=D",
+     "chart_url": "https://www.tradingview.com/chart/?symbol=LSE:PETS&interval=D",
      "lists": [],
      "owned": false,
      "news": [
       {
-       "title": "PUSU Deadline Extension - Replacement",
-       "date": "2026-11-24",
-       "url": "https://www.investegate.co.uk/announcement/rns/vesuvius--vsvs/pusu-deadline-extension-replacement/9890741",
+       "title": "Pets at Home Group plc FY27 Interim Results",
+       "date": "2026-11-25",
+       "url": "https://www.investegate.co.uk/announcement/rns/pets-at-home-group--pets/pets-at-home-group-plc-fy27-interim-results/9892177",
        "source": "RNS",
        "official": true,
        "tone": "neutral"
       },
       {
-       "title": "PUSU Deadline Extension",
-       "date": "2026-11-24",
-       "url": "https://www.investegate.co.uk/announcement/rns/vesuvius--vsvs/pusu-deadline-extension/9889903",
-       "source": "RNS",
-       "official": true,
-       "tone": "neutral"
-      },
-      {
-       "title": "Form 8.3 Vesuvius plc",
-       "date": "2026-11-23",
-       "url": "https://www.investegate.co.uk/announcement/bzw/vesuvius--vsvs/form-8-3-vesuvius-plc/9889608",
-       "source": "RNS",
-       "official": true,
-       "tone": "neutral"
-      },
-      {
-       "title": "Form 8.3 - Vesuvius Plc",
-       "date": "2026-11-23",
-       "url": "https://www.investegate.co.uk/announcement/prn/vesuvius--vsvs/form-8-3-vesuvius-plc/9889574",
-       "source": "RNS",
-       "official": true,
-       "tone": "neutral"
-      },
-      {
-       "title": "Form 8.3 - Vesuvius plc",
-       "date": "2026-11-23",
-       "url": "https://www.investegate.co.uk/announcement/rns/vesuvius--vsvs/form-8-3-vesuvius-plc/9889573",
-       "source": "RNS",
-       "official": true,
-       "tone": "neutral"
-      },
-      {
-       "title": "Form 8.3 - Vesuvius PLC",
-       "date": "2026-11-23",
-       "url": "https://www.investegate.co.uk/announcement/rns/vesuvius--vsvs/form-8-3-vesuvius-plc/9889537",
-       "source": "RNS",
-       "official": true,
-       "tone": "neutral"
-      },
-      {
-       "title": "Form 8.3 Vesuvius plc",
-       "date": "2026-11-23",
-       "url": "https://www.investegate.co.uk/announcement/bzw/vesuvius--vsvs/form-8-3-vesuvius-plc/9889524",
-       "source": "RNS",
-       "official": true,
-       "tone": "neutral"
-      },
-      {
-       "title": "Form 8.3 - VESUVIUS PLC",
-       "date": "2026-11-23",
-       "url": "https://www.investegate.co.uk/announcement/rns/vesuvius--vsvs/form-8-3-vesuvius-plc/9889521",
-       "source": "RNS",
-       "official": true,
-       "tone": "neutral"
-      },
-      {
-       "title": "Form 8.3 - RHI MAGNESITA NV",
-       "date": "2026-11-23",
-       "url": "https://www.investegate.co.uk/announcement/rns/vesuvius--vsvs/form-8-3-rhi-magnesita-nv/9889507",
-       "source": "RNS",
-       "official": true,
-       "tone": "neutral"
-      },
-      {
-       "title": "Form 8.3 - Vesuvius PLC",
-       "date": "2026-11-23",
-       "url": "https://www.investegate.co.uk/announcement/rns/vesuvius--vsvs/form-8-3-vesuvius-plc/9889465",
-       "source": "RNS",
-       "official": true,
-       "tone": "neutral"
-      }
-     ],
-     "buyers": true,
-     "sellers": false
-    },
-    {
-     "ticker": "BBY",
-     "name": "Balfour Beatty plc",
-     "exchange": "LSE",
-     "ysym": "BBY.L",
-     "market": "uk",
-     "price": 913.0,
-     "low": 895.0,
-     "currency": "GBX",
-     "change": 0.05002875215641174,
-     "vol_x": 0.41,
-     "vol_basis": "first30",
-     "vol_day_x": 0.41,
-     "buy_pct30": 0.359,
-     "buy_pct": 0.359,
-     "rvol_time": 9.221572365417575,
-     "value": 4449615.06,
-     "mcap": 3928750004.0,
-     "sector": "Industrial Services",
-     "holding": true,
-     "extended": false,
-     "near_high": false,
-     "longterm_down": false,
-     "chart_url": "https://www.tradingview.com/chart/?symbol=LSE:BBY&interval=D",
-     "lists": [],
-     "owned": false,
-     "news": [
-      {
-       "title": "BALFOUR BEATTY 2026 TRADING UPDATE",
-       "date": "2026-11-24",
-       "url": "https://www.investegate.co.uk/announcement/rns/balfour-beatty--bby/balfour-beatty-2026-trading-update/9889873",
-       "source": "RNS",
-       "official": true,
-       "tone": "neutral"
-      },
-      {
-       "title": "Transaction in Own Shares",
-       "date": "2026-11-23",
-       "url": "https://www.investegate.co.uk/announcement/rns/balfour-beatty--bby/transaction-in-own-shares/9887845",
-       "source": "RNS",
-       "official": true,
-       "tone": "neutral"
-      },
-      {
-       "title": "Balfour Beatty raises profit forecast as UK margins rise - Construction News",
-       "date": "2026-11-24",
-       "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNX2Uxa01HcGF1NWFCRHlRcTBVS1ZRQVZaWThGQTVxclV0aWxJUGpzaW11X1NvOHBUUEo0WEoyaGhMbVJwSUg0NkFaV0pLdGw5Q1JvSHdsWDBmUmJyTnhjRmtQV0c2b3FiZXNqTXV1S3pydWhnYlVSY2ZKWkZOREprREt0UVhfcTByT0VXQ3VqLV9NZG1zUU5vU3FJWXZvdDRiWkRkbjBOamFhLTRMUXF2ajRZYw?oc=5",
-       "source": "Construction News",
+       "title": "Pets at Home profit jumps as ex-Waitrose boss leads turnaround - City AM",
+       "date": "2026-11-25",
+       "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNOExDOWhOTVpObHV1Z2JpV181WV9ySWZNMGphUnY0QjBNbWhqYkN3UGNuRk5CRi1GRXQ2YWJYbXhZZHRvcjhOb3FENnZPQVdGM0hVQUVyNkhMQzdya3FpUk90cnZDWDhnRm45YXZWX3BUVGxiNGFDUFpET3dmblNsV0RYS0Jka29JRHg4akJuRQ?oc=5",
+       "source": "City AM",
        "official": false,
        "tone": "neutral"
       },
       {
-       "title": "Balfour Beatty raises forecasts after storming second half - Construction Enquirer",
-       "date": "2026-11-24",
-       "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNODhJcG5ybTIwYmNlWEl4SGVwWnpjNUdHNDFkR2R6ZDhoZWtrQXNvWjd0NlJnMlc2VEQxMUVVTVRxZ1VjZFJyVWxNN1lfbXZCU3lIOVZmSkp5N1NaMThVR2R6aXF4VjZWSEhsNlVQMFU1UHd3VlpoM1BKUVBqcExYdkJxWDRKWV9mTmZnSFF6Zl9xYWNtRlJkbUY4MlZJN2w1Qi1MMGR6WlEzekU?oc=5",
-       "source": "Construction Enquirer",
+       "title": "Pets at Home retail sales recover as turnaround gains momentum - The Grocer",
+       "date": "2026-11-25",
+       "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPOWZzdzhuUFE4YzJ1RE1vanhSUzVpMTVoQzVUWENiN0ZMelBINEVjdkFMcG00OGIyMmgtZG5OWmhPOElSMFVnQlZtNGdlQXp6SDRlZnBMclo3S2IyeFRDRmY0cWFRbEh5bFpLdWNEYTZLTHpiNnhHVXI0blFGLW5xVWphX3cwTlZwNTM3d3N6a0lvbHBFWDdPYlgwaTBhbkJnZHNsLTFxVnhOWjN5bG5v?oc=5",
+       "source": "The Grocer",
        "official": false,
        "tone": "neutral"
       },
       {
-       "title": "Balfour Beatty raises 2026 profit outlook as US data centre demand drives growth - Yahoo Finance UK",
-       "date": "2026-11-24",
-       "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOLTlYQjExeVVCeWx1Q3BVVU4yTTAtNGszQ3BybXhqT3lyY1BPOVRWazFTdE1IQ2x1dEprLWJQR096ZDVUZjEtVXZ6VU5pVG92WGhfYW9TN25PMUhQbmwzQUdBVUtLR2NabEI1MnViSUt4R0FMdkRScFRIQTltcEpnSllpTVNvTFRlQXc?oc=5",
-       "source": "Yahoo Finance UK",
+       "title": "New Pets at Home CEO oversees dramatic rise in profits - BusinessCloud",
+       "date": "2026-11-25",
+       "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOVU1Ib3pFcUkyekxvZzVZX1g1NmZjQzdzSnd3Ym5ESGI3QzNJTzlJcUxDcFJSdG1ZRWVtWWhidnEwU3FUS0ROajRkcjkzU0puWHJjT3VHNEhSOTlYZ09xcjNUbHNHWUZSNjNxS1pxakpMeGJHRWNySmk0QjhWNGJ0dFhZTnVKaUVLYXVKcXFLNGt1dw?oc=5",
+       "source": "BusinessCloud",
        "official": false,
        "tone": "neutral"
       },
       {
-       "title": "Balfour Beatty Expects FY26 Revenue From Continuing Operations To Be 10% Higher Than FY25 - TradingView",
-       "date": "2026-11-24",
-       "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxQUG9KMUpvWE9fMUc4R2dxbXo3MGRXdGY2ZU13Qjd1ZU5jOTFIZTBNNVNsaEUxTnd1eDA1QVVsa25rMHlMTGNmeHR5YjJKRGJfdGIzSjFpb2VQb1U4Tm5ZX3Z4RVZ4eVY3cTZXcjJKNnNxWE9iVEFSSkQ0QWNxRVp6WUNvNjB1b0pyOVMtZUZUM0lJdEZhTjVZZzZyRnhob185bWNRYUtpQjFWWG1GNmpKcWlfYlZUeHB3UW9WcE5oQjBpbkl6Y2U4ZGZRVmt4eVh6X055NHFyc1FNelo5cWdIRjU1NVRRSktsU1ZLdHBiNA?oc=5",
+       "title": "Pets at Home raises profit outlook after 44% jump in first-half earnings - Proactive financial news",
+       "date": "2026-11-25",
+       "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPSGxjNkNtTHNFWUo3bThyTHlWUWJtcWl4TTZHYVBESC1GSXgwQ3pQOXktcUp1MEcyZFp1S19oRFMzWU5lWnJNYWtUWVNSWVdFakFnOGxhSUNfSWQ0aG04SG1WYTl3R0JQY05pSWpEZExvM01scW8xUUVDemNXeVBjSHM1TjhLS0F4UERNcExUM2JIeUVxMFF5MFVZLXJSQzJzWjJBQmNsV1hTS2x6TFBPcnFVam5sbDA4TTFxVkR2ZzNVVU10akw0RFJSOUk2RHhTcnU3VU14bEZsQQ?oc=5",
+       "source": "Proactive financial news",
+       "official": false,
+       "tone": "neutral"
+      },
+      {
+       "title": "Pets at Home expects profits to be at upper end of expectations after strong first half - Insider Media Ltd",
+       "date": "2026-11-25",
+       "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOTzNkRWptdllkRTdPNHRQdFdLSHNaeTJwZjlSZnprdWlZYWljQmVvU0RYYnEyaUQ1TEpqWmdzbU54eEVVbWtIdzFvczdOVEtsaHVNQjB5NzZpbm4yZklIWXFWaWFRLThvbk1DMnFiejY3QlJPdDZKMjNZWlBtbjZYejlkU0M3b1hfaXZBU2xEcS1mYUs3TlhaQ2piTjIzY2pGcGctbWUyeVNaaXVFeVZOR0xZTDloN01lQWoyTWRwOGtZU0xCMHJjZ0RDQTU?oc=5",
+       "source": "Insider Media Ltd",
+       "official": false,
+       "tone": "neutral"
+      },
+      {
+       "title": "Pets at Home profits surge 44% as store sales return to growth - Retail Bulletin",
+       "date": "2026-11-25",
+       "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQUDZ2Qjl5T3ZMRGpQdmt1OTZWanRFamxKM09QUGlTOFVZQWtIblJVNHhyX2phY3psUHNPcnJMNElSQTNFa2lZeTd6QXdMbk5MeDNtVEp0c1V4eGNfamNOYTZjY2tOV1JnZVBtbXhuZDhKaUt0ZmxtVGhvYXV3c3ZWSHVqQmFvTHFvcmhTUU0zV0tnWTNHUE9felFGQ2pwdTBtS0VHMDBkSER5SmNwcTZHdFR2MnJxenM2Vnp5RHhPdTVnQ2FsMHc?oc=5",
+       "source": "Retail Bulletin",
+       "official": false,
+       "tone": "neutral"
+      },
+      {
+       "title": "Profits surge 44% at Pets at Home as Vets and Retail turnaround gains traction - TheBusinessDesk.com",
+       "date": "2026-11-25",
+       "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQaGRsZ1ZPZkhRaTRwZjRCTFFqc0F4UDZUMlVrQ2FKSTJVbFphaDBmSkJ4QmN3dnQtbXBpSWw5VWE2djVVV1ZfWVFLeFhlVmJxbjdtcHZKemNSVzVidS1uWEo2ZzNvRW5TUy1XRmRReklYcVhxcVRNbklaeDJyVmVVNkVrdE9LdWtkUWhpZHZSdkpndmdzZDRaSUlVcVN0UWI0dkJHYzVUdjhzV3FTQU8yTll6cG5qdXBEbnI0ay1vTVlONjBUOXd4N1dqSy0?oc=5",
+       "source": "TheBusinessDesk.com",
+       "official": false,
+       "tone": "neutral"
+      },
+      {
+       "title": "UK's Pets at Home H1 profit jumps as costs fall - TradingView",
+       "date": "2026-11-25",
+       "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPWlkyN2Q4OTFxbEtEQkwwcjlVV2lUZ0lWRGY1YW85bnlnOUg1VDNQQnVvQ3hCZ1JNZGZBbURtU295aXhYZl9kbm53NWJkTWZaQUQyTjRKMDJLS3ZPdGNSUGhXbFFJSDZJM0tzei1SX3dlSGhYWUZWNUV3WEFqc25kcTR6c2NCUnRGRThTcFFqd3lCNHh6bW9PM2NvTmpLUmgxalRVR0hmZmUwLUN2NzZtWWV1Ymwxd2lZ?oc=5",
        "source": "TradingView",
        "official": false,
        "tone": "neutral"
       },
       {
-       "title": "Balfour Beatty up 4% on raised 2026 profit outlook - Investing.com",
-       "date": "2026-11-24",
-       "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOcVZUUUFOTDIxeVB5SWNMMEhTRGFuYm9PTmJmby1YRVBwcEdsQ25xbHhRZHpuN05KZWdQdzVmSExjUWtpWXpCYmNUMXhpdjlxZDJuSU5KSERUcWw3VGR0eUxkc3BSaF80MEUxT19FZ3QtWUJXZ2kzX0hjV09Pb2xuLWZXNmk4b05oNDNORFc4LVZnNERXX3NYcGFNQi1oc29QYWkyQWdobjU1dw?oc=5",
-       "source": "Investing.com",
-       "official": false,
-       "tone": "neutral"
-      },
-      {
-       "title": "Balfour Beatty Earns Six ABC Eagle Awards in Florida - Construction Owners",
-       "date": "2026-11-21",
-       "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOc1hnZ3N0dXlVQ0ZfbHItaDhEeFFGX2ZLOHJPMXg2SnNRX2g2bzNHMU8xbHBpSFAzNEZoUl9FVWxLMkNnX2JkVGhVMlZrOVpGenVuOGVxQTBOMTlzRF9Fd3BRaEJ4MC1kai0zaEtiYlU5dFBHS2ZJdkFDc1VLSDNwOVJ2MFpzaG85ckNjSTRVenYydFAwczJybVdqOHFacGtTVGhuTVV4RG85Yk5yeVlScXhlMHRwQzM3b3ByM3dB?oc=5",
-       "source": "Construction Owners",
-       "official": false,
-       "tone": "neutral"
-      },
-      {
-       "title": "Balfour Beatty Wins \u00a3325m SSEN Contract for UK Grid Hub - TipRanks",
-       "date": "2026-11-20",
-       "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPTExNRmZkb2JUT0x3R3RGT2NOZTA5TnZiVlpCZGZMRV9TTmhWSFpXRlNNR09JVjQ4Smo0MzUwaXkxcGRkRUU5RWRuUG9qaG85UHV1eGI3Q0JCZENGY3FxUWdWdXhub2JSRzh2Wk1oamxPajhnNTUwRThpY1B4NnFSc012b1RVUExUc18yZV9Qa1k4akEyS0QzYWgyZ3ViQjV5RV9ZQ1pTOUV5dw?oc=5",
-       "source": "TipRanks",
-       "official": false,
-       "tone": "chatter"
-      },
-      {
-       "title": "Balfour Beatty (BBY) in Focus Today: What Is Driving the Stock and What Investors Are Watching Next? \u2014 FTSE 250, Mid cap, Value - kalkine.co.uk",
-       "date": "2026-11-19",
-       "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxOMFZCejhYTlpsSE81NjlpLTc3TVBlcmpLN1VCTE5SMVpPVGk4aWpqTnNHMXFsUlBoVk93YWk2TFVwUlBFZDE2WVZxVWt1VnFnekM3YUlvel9WdXBlN2lCenpjSHU2cm9ndVFScjVmX1RVOTFsNzI5YUpqSUNxeWZvT0ppYjJwckh6Zy14MExXREg1RndBUTBPTGVUSFNPTHh4MmZoSmhzRFlnR0M0SGFuQWg5Y2NYYzB4c1RPQktIdjNlR1h4N3pzbUdCUzFnNDY5SUlfRTZwYldTX3NXa0JKb1AtSHltNFJTV3c1MURuZw?oc=5",
-       "source": "kalkine.co.uk",
+       "title": "Pets at Home upgrades profit guidance after strong first half - Retail Week",
+       "date": "2026-11-25",
+       "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQdll4RkdqeXFMRzl6NlVlU21VaXYtOVQwZE0zQTVoNjdyRUUxRmI5X1FOOVpMemNEV3hzQ3l1TThoajRmaC1MaHZmSmQwSngyOWplTmg1bl9TVGNYTVVVblluMzdyNDVoSFZHVndvcXZVZE1Ucm1hRGhNYVJQWGFlODg2MXZSR3JtWDB1dElSc2FPZkJ6Q090dWdzM2QzQVJUYXgxYmxjLV9ySHIxUE1FUlFwbUVJWnl4bnpCSDZyOW1JYkZN?oc=5",
+       "source": "Retail Week",
        "official": false,
        "tone": "neutral"
       }
@@ -2563,76 +2152,275 @@
      "sellers": true
     },
     {
-     "ticker": "AVG",
-     "name": "Avingtrans plc",
+     "ticker": "ECEL",
+     "name": "Eurocell Plc",
      "exchange": "LSE",
-     "ysym": "AVG.L",
+     "ysym": "ECEL.L",
      "market": "uk",
-     "price": 764.4,
-     "low": 760.0,
+     "price": 145.0,
+     "low": 140.0,
      "currency": "GBX",
-     "change": 0.005789473684210496,
-     "vol_x": 0.38,
+     "change": 0.050724637681159424,
+     "vol_x": 0.48,
      "vol_basis": "first30",
-     "vol_day_x": 0.38,
-     "buy_pct30": null,
-     "buy_pct": null,
-     "rvol_time": 7.52982740646357,
-     "value": 99379.644,
-     "mcap": 278829574.0,
+     "vol_day_x": 0.48,
+     "buy_pct30": 0.686,
+     "buy_pct": 0.686,
+     "rvol_time": 3.474564070700446,
+     "value": 125694.7,
+     "mcap": 121709538.0,
      "sector": "Producer Manufacturing",
-     "holding": true,
-     "extended": false,
-     "near_high": true,
-     "longterm_down": false,
-     "chart_url": "https://www.tradingview.com/chart/?symbol=LSE:AVG&interval=D",
-     "lists": [],
-     "owned": false,
-     "news": [
-      {
-       "title": "Avingtrans plc (LSE:AVG) Edges Ahead as Specialist Engineering in Energy and Medical Markets Keeps the Group in Investor View - kalkine.co.uk",
-       "date": "2026-11-23",
-       "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxOTi1yaEpDLXVqbFl3c2RmOENKRXNTQXZ1aTlYZFI0VG0tLVJicGs4bDBxS0owWHo5dlZtSzBLQTlLV2hURW1FY1Z3S3k1ZXhTekpZdkZqQUdkeTFVdGtmZF9aSWxjeEZsNFlSdXRqQzdwZWNTeWhpN0FXNGI2a29YcHIwR3VNZkFQSGFTUEI2TUt1Zi1CalVCY0ZzZjM5bkpUSnQ2WFFJMzU0QlVMSjZHZDZZNjM2OG1fX21tMmpLUDJJbUFtMDdMT2t1R0JNWm5sWWFwNnc5aDRpSkpLb2RlVUhkRXhycW8xMGZQY1Jhd3BFbWM?oc=5",
-       "source": "kalkine.co.uk",
-       "official": false,
-       "tone": "neutral"
-      }
-     ],
-     "buyers": false,
-     "sellers": false
-    },
-    {
-     "ticker": "RWA",
-     "name": "Robert Walters Plc",
-     "exchange": "LSE",
-     "ysym": "RWA.L",
-     "market": "uk",
-     "price": 142.0,
-     "low": 138.9,
-     "currency": "GBX",
-     "change": 0.014285714285714285,
-     "vol_x": 0.34,
-     "vol_basis": "first30",
-     "vol_day_x": 0.34,
-     "buy_pct30": null,
-     "buy_pct": null,
-     "rvol_time": 0.12735932755551035,
-     "value": 123114.0,
-     "mcap": 92084904.0,
-     "sector": "Commercial Services",
      "holding": true,
      "extended": false,
      "near_high": false,
      "longterm_down": false,
-     "chart_url": "https://www.tradingview.com/chart/?symbol=LSE:RWA&interval=D",
+     "chart_url": "https://www.tradingview.com/chart/?symbol=LSE:ECEL&interval=D",
      "lists": [],
      "owned": false,
      "news": [
       {
-       "title": "Robert Walters PLC (RBW.DU) Seasonal returns chart - Yahoo Finance - Yahoo Finance Singapore",
-       "date": "2026-11-21",
-       "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE8yT2dXQVNrMks3ajFOclNtRURaYlRYdE5DTDVyRkMxbW13c3IzRHI4QVRXOGVrWkVBTnhRdEhNNWNjdGNrZWJKNm1ZYkVwc1d3RHlYMlpJWmxZQkhSM3ZWV0dDanI?oc=5",
-       "source": "Yahoo Finance Singapore",
+       "title": "Director/PDMR Shareholding",
+       "date": "2026-11-24",
+       "url": "https://www.investegate.co.uk/announcement/rns/eurocell--ecel/director-pdmr-shareholding/9891781",
+       "source": "RNS",
+       "official": true,
+       "tone": "neutral"
+      },
+      {
+       "title": "Trading Update",
+       "date": "2026-11-24",
+       "url": "https://www.investegate.co.uk/announcement/rns/eurocell--ecel/trading-update/9889829",
+       "source": "RNS",
+       "official": true,
+       "tone": "neutral"
+      },
+      {
+       "title": "Eurocell \"confident\" for full-year outlook as sales rise - London South East",
+       "date": "2026-11-24",
+       "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNcVlaanRraVM5VUktN202MVdvNlpmMHN6eXZXZ1F6ZV83dVVkalBLVnRGeHI0MWd3Y1hHWHhra3lDUjZXc2pDclhkNmlUQWdjVVVJVXRMdFJzWFZwSlhvdUg5YU8tdmVtcXNKNmVYZWlWSERIQ3BFTFhBNGpQelU4SGpVQWFVbUktYUp0Vkh5Ni1DcUNnbEtNMFRxTFNWZ1FNY0s1YQ?oc=5",
+       "source": "London South East",
+       "official": false,
+       "tone": "neutral"
+      },
+      {
+       "title": "Price to earnings forward of EUROCELL PLC \u2013 OTC:ERCLY - TradingView",
+       "date": "2026-11-24",
+       "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNc3FBal9PUDhNQzBVckM0THYybllUMW9fOEJaZnItdndXdVBMLXZjSHh3MFA5Q2EyQ3VPRFVwVzVzSm5KaVEwaENNeDYyWjJSbHNidTFhaDNNZ2JpWjZHb29OZEZYRkNReEVOc0xMcjgyd3V4bHdiaklDV2lSUTFNd1hURXJQc2c5cWRkOWxzbGtqd0Eya0xEVk5tMGtLR1E?oc=5",
+       "source": "TradingView",
+       "official": false,
+       "tone": "neutral"
+      },
+      {
+       "title": "Eurocell shares bounce on \u00a35m buyback and unchanged guidance - Stockopedia",
+       "date": "2026-11-24",
+       "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPRHZrZzFnMnVHektMZTI0d05MS2x5N19NendaajVicWQ2Z2RFd3VNUTVTdnNXcVR6OXljbHE2dEx3S0stdkpVOHE3UjdwUEM3T0psLUdPTS0za3RQeXd0c013X0NnemZEenQ4dTNGZ0ZUY0F2UXV4VG82V0xoN01aRWpTS2tOZTBJMnpxclJ2cHU2SEwybW9XYXI5ZGJKMnMzSjFzOG9kSQ?oc=5",
+       "source": "Stockopedia",
+       "official": false,
+       "tone": "chatter"
+      },
+      {
+       "title": "REG - Eurocell plc - Director/PDMR Shareholding - TradingView",
+       "date": "2026-11-24",
+       "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQem5VMnpOUUdHV3JPelM0N0RETGdEbTQ3MGVsdGduVVRrbGZkaWRpbkFaTXZDWjN4U29TTFZvUUhrUTAxZVIxSkNoRjZ3SllQNm5FeDduVU5vT2VhcXZKcUZiWi02SWEyUlBndkxGeWNLYXg3a181dExLYi1KbG1aSUwzdW1yOXlvNFMweEM3bW1acDRtQkE3MW1NVEJaQlhPVkFJelhCelNlYWExOE1MN1pFTFllcGt5WjRv?oc=5",
+       "source": "TradingView",
+       "official": false,
+       "tone": "neutral"
+      },
+      {
+       "title": "Eurocell (LON:ECEL) Stock: Insider Derek Mapp Acquires 100,000 Shares - MarketBeat",
+       "date": "2026-11-24",
+       "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPQkdCTjMzaDRrV2Q4d1dyNlZGdGpxSlhtLXBrYlhOSVZWbmxUWHpUVEMzMEpOelBLejlIVGZkYWlJNkNJREFNVkh0cy1LeFM1M3VkZFJpQ3Z0QVZxUUlIdTI2QVdBMUNMTWJJU3V5ODdjRWlkRTV5dlJzUUJyT3ptWjhRTWt6UUJfY3ZVQTJfSGlWOWRUdTREb19BOUNDV3NZM2Z1VWdISVZLRmlZUVBMRnp3NVU0aGRsbElfZGVuQnZ2UjJiV1E?oc=5",
+       "source": "MarketBeat",
+       "official": false,
+       "tone": "neutral"
+      },
+      {
+       "title": "Eurocell plc (ECEL) Announces \u00a35 Million Share Buyback Amid 6% Revenue Growth in Ten-Month Trading Update - Kalkine Media",
+       "date": "2026-11-24",
+       "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNOGJrWndXUGRBSUlMVGRTUVo2X0RsMUVpdGRuYXU2clNrem9BbGxtS1RNWlhXTXFtNnBzSHdxN29jYTdFUWFiZm15aGFZRHRSaXRYcjBucTdoTWU1a2hTSEZqVHhpQVZ6RXloSzI2SE4tVm1XclpMU2R4cjlLdThZRTYzZExibG01RjZaYmt6cG5weGFBb1BPTG1DQ1pIZ2hieGlwZmlOZWpkdjdFOU9jaUJ3TkhKd1JUbWFyc3dPbTg2RE9EQUF3bnZMTHAxNkNkNFdWeDNSTVpTX1JSZThfOVZrU28?oc=5",
+       "source": "Kalkine Media",
+       "official": false,
+       "tone": "chatter"
+      },
+      {
+       "title": "REG - Eurocell plc - Trading Update - TradingView",
+       "date": "2026-11-24",
+       "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOdFk5NlgyWFdVZkp6T3VzMWhMb0VKWVJNcExua0QxYUdNODZCTlJrLVlKNm9TU0ZzS1F2eGdlQ2hNSGdKenJLNjJKcVRlbE1CRDRxMXFGWW1ub2Z5U3h5Vnp4WXB3YkFBeVdoOW0tczZPd2xrTVNSYURYTm9nVmtUZzlud3VVbDljRHdQWGVOLTNvZGxuc2dSUk9ua21ESjNtZ2J5UW9KQk9zRmc?oc=5",
+       "source": "TradingView",
+       "official": false,
+       "tone": "neutral"
+      },
+      {
+       "title": "Eurocell Remains Confident In Meeting Market Expectations For FY26 - TradingView",
+       "date": "2026-11-24",
+       "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQQmFYUmdpZzBGbnhwbFZBeENNbGN5b1AyazdXWlBEZXA3Wjg2a1NCMlVIUV9MRHgzZzZSNUM1TFhNNGZMTzhWd18tTE9jdlh2VjdpdXpPTjdlM1VmWVlHQ0V4X2ZURVFDVEs2TnJ6NUlQS0JVQU1NdW56LWlrUll1WEFMSUVhMzltdkl2MjBkQ2V1QnlrcnVqUncxaEhkbnJKYkY1eC1fQXM2Y25FOTFCdWdrSlRabGYzMEZhaVFIUDA0NW9OYWlxVWpTekc1OVhIeEE?oc=5",
+       "source": "TradingView",
+       "official": false,
+       "tone": "neutral"
+      }
+     ],
+     "buyers": true,
+     "sellers": false
+    },
+    {
+     "ticker": "CABP",
+     "name": "CAB Payments Holdings PLC",
+     "exchange": "LSE",
+     "ysym": "CABP.L",
+     "market": "uk",
+     "price": 87.28,
+     "low": 86.093,
+     "currency": "GBX",
+     "change": 0.0032183908045977146,
+     "vol_x": 0.43,
+     "vol_basis": "first30",
+     "vol_day_x": 0.43,
+     "buy_pct30": 0.074,
+     "buy_pct": 0.074,
+     "rvol_time": 8.2474604322021,
+     "value": 302723.6976,
+     "mcap": 209414013.0,
+     "sector": "Finance",
+     "holding": true,
+     "extended": false,
+     "near_high": false,
+     "longterm_down": false,
+     "chart_url": "https://www.tradingview.com/chart/?symbol=LSE:CABP&interval=D",
+     "lists": [],
+     "owned": false,
+     "news": [
+      {
+       "title": "Form 8.3 - CAB Payments Holdings plc",
+       "date": "2026-11-24",
+       "url": "https://www.investegate.co.uk/announcement/rns/cab-payments-holdings-1-3p-wi---cabp/form-8-3-cab-payments-holdings-plc/9891811",
+       "source": "RNS",
+       "official": true,
+       "tone": "neutral"
+      },
+      {
+       "title": "Form 8.3 - CAB Payments Holdings plc",
+       "date": "2026-11-24",
+       "url": "https://www.investegate.co.uk/announcement/rns/cab-payments-holdings-1-3p-wi---cabp/form-8-3-cab-payments-holdings-plc/9891802",
+       "source": "RNS",
+       "official": true,
+       "tone": "neutral"
+      },
+      {
+       "title": "STATEMENT REGARDING PUBLICATION OF OFFER DOCUMENT",
+       "date": "2026-11-24",
+       "url": "https://www.investegate.co.uk/announcement/rns/cab-payments-holdings-1-3p-wi---cabp/statement-regarding-publication-of-offer-document/9891413",
+       "source": "RNS",
+       "official": true,
+       "tone": "neutral"
+      },
+      {
+       "title": "Form 8.5 EPT/Non RI CAB PAYMENTS HOLDINGS PLC",
+       "date": "2026-11-24",
+       "url": "https://www.investegate.co.uk/announcement/rns/cab-payments-holdings-1-3p-wi---cabp/form-8-5-ept-non-ri-cab-payments-holdings-plc/9891345",
+       "source": "RNS",
+       "official": true,
+       "tone": "neutral"
+      },
+      {
+       "title": "Offer Update",
+       "date": "2026-11-24",
+       "url": "https://www.investegate.co.uk/announcement/rns/cab-payments-holdings-1-3p-wi---cabp/offer-update/9890865",
+       "source": "RNS",
+       "official": true,
+       "tone": "neutral"
+      },
+      {
+       "title": "Offer Document Posted",
+       "date": "2026-11-24",
+       "url": "https://www.investegate.co.uk/announcement/rns/cab-payments-holdings-1-3p-wi---cabp/offer-document-posted/9889953",
+       "source": "RNS",
+       "official": true,
+       "tone": "neutral"
+      },
+      {
+       "title": "Form 8.3 - CAB Payments Holdings plc",
+       "date": "2026-11-23",
+       "url": "https://www.investegate.co.uk/announcement/rns/cab-payments-holdings-1-3p-wi---cabp/form-8-3-cab-payments-holdings-plc/9889558",
+       "source": "RNS",
+       "official": true,
+       "tone": "neutral"
+      },
+      {
+       "title": "Form 8.3 - CAB Payments Holdings plc",
+       "date": "2026-11-23",
+       "url": "https://www.investegate.co.uk/announcement/rns/cab-payments-holdings-1-3p-wi---cabp/form-8-3-cab-payments-holdings-plc/9889550",
+       "source": "RNS",
+       "official": true,
+       "tone": "neutral"
+      },
+      {
+       "title": "Form 8.3 - CAB Payments Holdings plc",
+       "date": "2026-11-23",
+       "url": "https://www.investegate.co.uk/announcement/rns/cab-payments-holdings-1-3p-wi---cabp/form-8-3-cab-payments-holdings-plc/9889538",
+       "source": "RNS",
+       "official": true,
+       "tone": "neutral"
+      },
+      {
+       "title": "Form 8.5 EPT/Non RI CAB PAYMENTS HOLDINGS PLC",
+       "date": "2026-11-23",
+       "url": "https://www.investegate.co.uk/announcement/rns/cab-payments-holdings-1-3p-wi---cabp/form-8-5-ept-non-ri-cab-payments-holdings-plc/9888909",
+       "source": "RNS",
+       "official": true,
+       "tone": "neutral"
+      }
+     ],
+     "buyers": false,
+     "sellers": true
+    },
+    {
+     "ticker": "TUNE",
+     "name": "Focusrite PLC",
+     "exchange": "LSE",
+     "ysym": "TUNE.L",
+     "market": "uk",
+     "price": 244.7,
+     "low": 237.5,
+     "currency": "GBX",
+     "change": 0.028151260504201633,
+     "vol_x": 0.36,
+     "vol_basis": "first30",
+     "vol_day_x": 0.36,
+     "buy_pct30": 0.572,
+     "buy_pct": 0.572,
+     "rvol_time": 6.127309815214783,
+     "value": 49982.422,
+     "mcap": 135420566.0,
+     "sector": "Electronic Technology",
+     "holding": true,
+     "extended": false,
+     "near_high": false,
+     "longterm_down": false,
+     "chart_url": "https://www.tradingview.com/chart/?symbol=LSE:TUNE&interval=D",
+     "lists": [],
+     "owned": false,
+     "news": [
+      {
+       "title": "Capital Markets Event-Launching Crescendo Strategy",
+       "date": "2026-11-25",
+       "url": "https://www.investegate.co.uk/announcement/rns/focusrite--tune/capital-markets-event-launching-crescendo-strategy/9892184",
+       "source": "RNS",
+       "official": true,
+       "tone": "neutral"
+      },
+      {
+       "title": "Focusrite Expects Low To Mid-Teens Operating Margin In Medium Term - TradingView",
+       "date": "2026-11-25",
+       "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOWFgxMWc1bTBlal8yZldidGxaNnlQMVhJNmgyaC1kUTFsaEdtMHR4RDZtTkpucXJpcHg0X1JheGZqcV85VlVOTW1FQk1XaFNYNzh0Ujg0ZjM0Njk2VDIxTHk2NFJUS3RQWFR3LVQ0X2JtcWROZWdzQUJXNGhiS2JsQ210SUYyclJUTzdMT2ppN0RjeFFuRTFSUmlVbDQ0bG96X1RSLTZ5SnI1c2JmZk43QTJ1ZWVWbG82OUlIOE5qSl9NSndadG1wUV8zdVFkRlc2LXc?oc=5",
+       "source": "TradingView",
+       "official": false,
+       "tone": "neutral"
+      },
+      {
+       "title": "TUNE: Crescendo targets faster organic growth and low to mid-teens medium-term operating margins - TradingView",
+       "date": "2026-11-25",
+       "url": "https://news.google.com/rss/articles/CBMiigJBVV95cUxQcWlaNkJPdnZPZVVoRWZqZ1M4cVpOb1VXaEo3VUxXeG16LXhfMFhNNWxpSXpEajVsOWlFVXpmeS1qc0hNTnFDaERVVUl6OVJMWGVqM1dBTXh3SnE1UHJKWlpJWEJRdWl2c20xal9rY09UVnItVkNTanZRQ2ZDZVNrcFFtbVhSWE9aUF9FcExpUThlalk0aEJNaVNBT2s3VU11MEFCeTR3VXB3cnhsZjdDMlZVR29TMVpIM2lGYnpWUzQyVHZVVmJIVWU0eW9qdF84R1BrTTJmYnMwQVVvN1BaVkZ3ckNhNWxOZE92NE9ZdkdnNUtaa0Uwcy1qczliS25paWVIWjdWUmZfUQ?oc=5",
+       "source": "TradingView",
        "official": false,
        "tone": "neutral"
       }
