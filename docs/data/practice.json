@@ -507,16 +507,14 @@
   "max_open": 10
  },
  "start_value": 5000.0,
- "updated": "2026-11-25T20:38:33+00:00",
+ "updated": "2026-11-25T20:39:02+00:00",
  "day": {
   "date": "2026-11-25",
   "buys": 0,
   "sold": {},
   "skip": {},
   "finished": false,
-  "list": [
-   "BNAI"
-  ],
+  "list": [],
   "watch_sent": true
  }
 }
