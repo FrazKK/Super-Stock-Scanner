@@ -173,10 +173,6 @@
  ],
  "log": [
   {
-   "time": "2026-11-10T20:50+00:00",
-   "text": "Day trading finished: 1 trade(s), total +\u00a320."
-  },
-  {
    "time": "2026-11-11T15:01+00:00",
    "text": "Added FOSL to today's list at 10:01 New York: 2.0x a normal day's volume in the last 30 min; news: to be read: 8-K Fossil Group, Inc.: 2.02 results"
   },
@@ -491,6 +487,10 @@
   {
    "time": "2026-11-25T20:51+00:00",
    "text": "Day trading finished: 0 trade(s), total +\u00a30."
+  },
+  {
+   "time": "2026-11-26T15:01+00:00",
+   "text": "Watch list sent: none"
   }
  ],
  "done": {},
@@ -507,13 +507,13 @@
   "max_open": 10
  },
  "start_value": 5000.0,
- "updated": "2026-11-25T20:51:08+00:00",
+ "updated": "2026-11-26T15:01:35+00:00",
  "day": {
-  "date": "2026-11-25",
+  "date": "2026-11-26",
   "buys": 0,
   "sold": {},
   "skip": {},
-  "finished": true,
+  "finished": false,
   "list": [],
   "watch_sent": true
  }
