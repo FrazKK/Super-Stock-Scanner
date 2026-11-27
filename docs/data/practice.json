@@ -174,10 +174,6 @@
  "log": [
   {
    "time": "2026-11-11T15:01+00:00",
-   "text": "Added RSKD to today's list at 10:01 New York: 1.0x a normal day's volume in the last 30 min; news: to be read: Riskified: Q3 Earnings Snapshot - Yahoo Finance"
-  },
-  {
-   "time": "2026-11-11T15:01+00:00",
    "text": "Added CARL to today's list at 10:01 New York: 0.6x a normal day's volume in the last 30 min; news: Carlsmed\u00ae Reports Third Quarter 2026 Financial Results and Raises Full-Year Guid"
   },
   {
@@ -491,6 +487,10 @@
   {
    "time": "2026-11-26T20:50+00:00",
    "text": "Day trading finished: 0 trade(s), total +\u00a30."
+  },
+  {
+   "time": "2026-11-27T15:01+00:00",
+   "text": "Watch list sent: none"
   }
  ],
  "done": {},
@@ -507,13 +507,13 @@
   "max_open": 10
  },
  "start_value": 5000.0,
- "updated": "2026-11-26T20:50:44+00:00",
+ "updated": "2026-11-27T15:01:36+00:00",
  "day": {
-  "date": "2026-11-26",
+  "date": "2026-11-27",
   "buys": 0,
   "sold": {},
   "skip": {},
-  "finished": true,
+  "finished": false,
   "list": [],
   "watch_sent": true
  }
