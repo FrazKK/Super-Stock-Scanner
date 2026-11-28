@@ -1,11 +1,11 @@
 {
- "generated": "2026-11-21T15:21:45+00:00",
+ "generated": "2026-11-28T16:11:11+00:00",
  "items": [
   {
    "key": "AXL:uk",
    "ticker": "AXL",
    "market": "uk",
-   "updated": "2026-11-21",
+   "updated": "2026-11-28",
    "card": {
     "strategy": "stine",
     "market": "uk",
@@ -13,17 +13,17 @@
     "exchange": "LSE",
     "name": "Arrow Exploration Corp.",
     "ysym": "AXL.L",
-    "price": 29.75,
+    "price": 30.25,
     "currency": "GBX",
-    "mcap": 85259091.53511116,
+    "mcap": 87209457.19023275,
     "sector": "Energy Minerals",
     "industry": "Oil & Gas Production",
     "rs_rank": 94.0,
-    "score": 5,
+    "score": 6,
     "max_score": 12,
     "tag": "No breakout yet",
     "tag_class": "z-ok",
-    "plan": "Entry zone: near the 10-week MA (35.93). Sell rule: weekly close below it.",
+    "plan": "Entry zone: near the 10-week MA (35.35). Sell rule: weekly close below it.",
     "checks": [
      {
       "label": "Above rising 30-week MA",
@@ -46,7 +46,7 @@
       "pass": true,
       "pts": 1,
       "max": 1,
-      "note": "+6.0% in 4 wks",
+      "note": "+4.6% in 4 wks",
       "req": false
      },
      {
@@ -62,15 +62,15 @@
       "pass": false,
       "pts": 0,
       "max": 1,
-      "note": "70% range",
+      "note": "54% range",
       "req": false
      },
      {
       "label": "EPS growth > 25%",
-      "pass": false,
-      "pts": 0,
+      "pass": true,
+      "pts": 1,
       "max": 1,
-      "note": "no data",
+      "note": "+118% YoY",
       "req": false
      },
      {
@@ -78,7 +78,7 @@
       "pass": true,
       "pts": 1,
       "max": 1,
-      "note": "P/E 7.7",
+      "note": "P/E 6.3",
       "req": false
      },
      {
@@ -116,9 +116,8 @@
     ],
     "stop": null,
     "stop_pct": null,
-    "dist_ma10": -0.17200111151763708,
+    "dist_ma10": -0.1443925876035167,
     "closes": [
-     21.25,
      21.5,
      24.0,
      23.5,
@@ -147,10 +146,10 @@
      41.0,
      31.0,
      34.75,
-     29.75
+     29.75,
+     30.25
     ],
     "ma10": [
-     20.69,
      21.165,
      21.665,
      21.915,
@@ -179,10 +178,10 @@
      35.465,
      35.84,
      36.355,
-     35.93
+     35.93,
+     35.355
     ],
     "ma30": [
-     15.6333,
      15.975,
      16.4167,
      16.8333,
@@ -211,10 +210,11 @@
      28.3233,
      28.6233,
      29.1067,
-     29.335
+     29.335,
+     29.635
     ],
     "insider": null,
-    "entry_close": 29.75,
+    "entry_close": 30.25,
     "chart_url": "https://www.tradingview.com/chart/?symbol=LSE:AXL&interval=W",
     "insider_url": "https://www.investegate.co.uk/company/AXL"
    },
@@ -223,7 +223,7 @@
      "verdict": "Doesn't qualify",
      "vclass": "v-no",
      "tag": "No breakout yet",
-     "plan": "Entry zone: near the 10-week MA (35.93). Sell rule: weekly close below it.",
+     "plan": "Entry zone: near the 10-week MA (35.35). Sell rule: weekly close below it.",
      "checks": [
       {
        "label": "Above rising 30-week MA",
@@ -246,7 +246,7 @@
        "pass": true,
        "pts": 1,
        "max": 1,
-       "note": "+6.0% in 4 wks",
+       "note": "+4.6% in 4 wks",
        "req": false
       },
       {
@@ -262,15 +262,15 @@
        "pass": false,
        "pts": 0,
        "max": 1,
-       "note": "70% range",
+       "note": "54% range",
        "req": false
       },
       {
        "label": "EPS growth > 25%",
-       "pass": false,
-       "pts": 0,
+       "pass": true,
+       "pts": 1,
        "max": 1,
-       "note": "no data",
+       "note": "+118% YoY",
        "req": false
       },
       {
@@ -278,7 +278,7 @@
        "pass": true,
        "pts": 1,
        "max": 1,
-       "note": "P/E 7.7",
+       "note": "P/E 6.3",
        "req": false
       },
       {
@@ -314,7 +314,7 @@
        "req": false
       }
      ],
-     "score": 5,
+     "score": 6,
      "max_score": 12
     },
     "weinstein": {
@@ -394,7 +394,7 @@
        "pass": true,
        "pts": 1,
        "max": 1,
-       "note": "+183%",
+       "note": "+181%",
        "req": true
       },
       {
@@ -402,7 +402,7 @@
        "pass": false,
        "pts": 0,
        "max": 1,
-       "note": "-31%",
+       "note": "-30%",
        "req": true
       },
       {
@@ -438,15 +438,15 @@
     "stage2": {
      "verdict": "Doesn't qualify",
      "vclass": "v-no",
-     "tag": "Stage 2 \u00b7 40 wks",
-     "plan": "Sell rule: weekly close below the 30-week MA (29.33).",
+     "tag": "Stage 2 \u00b7 41 wks",
+     "plan": "Sell rule: weekly close below the 30-week MA (29.63).",
      "checks": [
       {
        "label": "Above a rising 30-week MA",
        "pass": true,
        "pts": 2,
        "max": 2,
-       "note": "+1% above it",
+       "note": "+2% above it",
        "req": true
       },
       {
@@ -462,7 +462,7 @@
        "pass": true,
        "pts": 2,
        "max": 2,
-       "note": "+36%",
+       "note": "+34%",
        "req": true
       },
       {
@@ -470,7 +470,7 @@
        "pass": false,
        "pts": 0,
        "max": 2,
-       "note": "40 weeks in Stage 2",
+       "note": "41 weeks in Stage 2",
        "req": true
       },
       {
@@ -497,14 +497,14 @@
      "verdict": "Doesn't qualify",
      "vclass": "v-no",
      "tag": "Not set up",
-     "plan": "Stop at the bounce-day low 28.26 (max 5% risk). Sell on a daily close below the 9-day EMA (31.81).",
+     "plan": "Stop at the bounce-day low 28.74 (max 5% risk). Sell on a daily close below the 9-day EMA (30.46).",
      "checks": [
       {
        "label": "Big mover: up 30%+ in 1 or 3 months",
        "pass": false,
        "pts": 0,
        "max": 2,
-       "note": "+9%",
+       "note": "+5%",
        "req": true
       },
       {
@@ -512,7 +512,7 @@
        "pass": true,
        "pts": 1,
        "max": 1,
-       "note": "7.3%",
+       "note": "7.6%",
        "req": true
       },
       {
@@ -528,7 +528,7 @@
        "pass": false,
        "pts": 0,
        "max": 1,
-       "note": "VWAP 35.97",
+       "note": "VWAP 35.20",
        "req": true
       },
       {
@@ -579,7 +579,7 @@
      "verdict": "Doesn't qualify",
      "vclass": "v-no",
      "tag": "No wedge pop yet",
-     "plan": "Stop under the wedge pop low 28.50. Sell on a daily close below the 20-day EMA (33.68).",
+     "plan": "Stop under the wedge pop low 29.00. Sell on a daily close below the 20-day EMA (32.13).",
      "checks": [
       {
        "label": "Drifted below the 10-day EMA (wedge)",
@@ -591,8 +591,8 @@
       },
       {
        "label": "Lower highs into the pop",
-       "pass": false,
-       "pts": 0,
+       "pass": true,
+       "pts": 1,
        "max": 1,
        "note": "",
        "req": true
@@ -638,7 +638,7 @@
        "req": false
       }
      ],
-     "score": 4,
+     "score": 5,
      "max_score": 7
     },
     "slater": {
@@ -652,7 +652,7 @@
        "pass": true,
        "pts": 2,
        "max": 2,
-       "note": "+208%",
+       "note": "+77%",
        "req": true
       },
       {
@@ -660,7 +660,7 @@
        "pass": true,
        "pts": 2,
        "max": 2,
-       "note": "PEG 0.04",
+       "note": "PEG 0.08",
        "req": true
       },
       {
@@ -668,7 +668,7 @@
        "pass": true,
        "pts": 1,
        "max": 1,
-       "note": "P/E 7.7",
+       "note": "P/E 6.3",
        "req": true
       },
       {
@@ -684,7 +684,7 @@
        "pass": true,
        "pts": 1,
        "max": 1,
-       "note": "+183 pts",
+       "note": "+174 pts",
        "req": true
       },
       {
@@ -692,7 +692,7 @@
        "pass": true,
        "pts": 1,
        "max": 1,
-       "note": "85m",
+       "note": "87m",
        "req": true
       },
       {
@@ -715,10 +715,10 @@
      "checks": [
       {
        "label": "F-Score 8 or 9 (strong, improving finances)",
-       "pass": false,
-       "pts": 0,
+       "pass": true,
+       "pts": 3,
        "max": 3,
-       "note": "F-Score 7/9",
+       "note": "F-Score 8/9",
        "req": true
       },
       {
@@ -726,7 +726,7 @@
        "pass": false,
        "pts": 0,
        "max": 2,
-       "note": "P/B 1.63 (cut-off 0.75)",
+       "note": "P/B 1.51 (cut-off 0.78)",
        "req": true
       },
       {
@@ -734,7 +734,7 @@
        "pass": true,
        "pts": 1,
        "max": 1,
-       "note": "Z 2.6",
+       "note": "Z 2.7",
        "req": false
       },
       {
@@ -746,7 +746,7 @@
        "req": true
       }
      ],
-     "score": 1,
+     "score": 4,
      "max_score": 7
     },
     "magic": {
@@ -760,7 +760,7 @@
        "pass": true,
        "pts": 3,
        "max": 3,
-       "note": "#6 of 317",
+       "note": "#7 of 317",
        "req": true
       },
       {
@@ -768,7 +768,7 @@
        "pass": true,
        "pts": 1,
        "max": 1,
-       "note": "34%",
+       "note": "36%",
        "req": false
       },
       {
@@ -776,7 +776,7 @@
        "pass": true,
        "pts": 1,
        "max": 1,
-       "note": "24%",
+       "note": "28%",
        "req": false
       },
       {
@@ -796,7 +796,7 @@
     "state": "down",
     "text": "Downtrend: index below its 30-week MA. Most breakouts fail in weak markets, so go small or wait.",
     "bench": "^FTAI",
-    "change_4w": -5.3
+    "change_4w": -4.6
    },
    "added": "2026-10-25"
   }
